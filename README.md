@@ -11,6 +11,6 @@ npm install
 npm start
 ```
 
-For Documentation see:
+For documentation see:
 https://github.com/godfoder/idb-search-api/wiki
 
