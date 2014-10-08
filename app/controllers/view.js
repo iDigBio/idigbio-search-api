@@ -32,19 +32,23 @@ module.exports = function(app, config) {
                     "attribution": {}
                 };
 
-                var rs = {
-                    "uuid": body._source.recordset
-                };
-                if (config.recordsets[body._source.recordset]) {
-                    _.defaults(rs,config.recordsets[body._source.recordset])
-                    rb.attribution = rs;
-                    res.json(rb);
-                } else {
-                    loadRecordsets(function(){
+                if (body._source.recordset){
+                    var rs = {
+                        "uuid": body._source.recordset
+                    };
+                    if (config.recordsets[body._source.recordset]) {
                         _.defaults(rs,config.recordsets[body._source.recordset])
                         rb.attribution = rs;
                         res.json(rb);
-                    });
+                    } else {
+                        loadRecordsets(function(){
+                            _.defaults(rs,config.recordsets[body._source.recordset])
+                            rb.attribution = rs;
+                            res.json(rb);
+                        });
+                    }
+                } else {
+                    res.json(rb);                    
                 }
             })
         },        
