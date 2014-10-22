@@ -10,7 +10,7 @@ module.exports = function(app, config) {
     return {
         media: function(req, res) {
 
-            var q = getParam(req,"q",function(p){
+            var mq = getParam(req,"mq",function(p){
                 return JSON.parse(p)
             },{});
 
@@ -33,7 +33,7 @@ module.exports = function(app, config) {
             },[{"dqs":{"order":"asc"}}]);         
 
             var rquery = queryShim(rq);
-            var mrquery = queryShim(q);
+            var mrquery = queryShim(mq);
 
             var query = {
                 "query": {
@@ -131,7 +131,7 @@ module.exports = function(app, config) {
 
         basic: function(req, res) {
 
-            var q = getParam(req,"q",function(p){
+            var rq = getParam(req,"rq",function(p){
                 return JSON.parse(p)
             },{});
 
@@ -149,7 +149,7 @@ module.exports = function(app, config) {
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);               
 
-            var query = queryShim(q);
+            var query = queryShim(rq);
             query["aggs"] = {
                 "rs": {
                     "terms": {

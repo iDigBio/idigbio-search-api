@@ -1,7 +1,7 @@
 var config = {
     "port": 3000,
     "search": {
-        "server": "http://idb-search.acis.ufl.edu/",
+        "server": "http://search.idigbio.org/",
         "index": "idigbio/",
     },
     maxRecordsets: 1000,

@@ -2,12 +2,49 @@ var request = require('request');
 var _ = require("lodash");
 var async = require("async");
 var geohash = require("ngeohash");
+var Canvas = require('canvas')
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
     var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
     var tileMath = require("../lib/tile-math.js")(app,config);
     var getParam = require("../lib/get-param.js")(app,config);
+
+    function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
+        context.beginPath();
+        context.arc(x, y, radius, 0, 2 * Math.PI, false);
+        if(fillStyle){
+            context.fillStyle = fillStyle;
+        } else {
+            context.fillStyle = 'green';
+        }
+        context.fill();
+        context.lineWidth = 5;
+        if(strokeStyle){
+            context.strokeStyle = '#003300';
+        } else {
+            context.strokeStyle = '#003300';
+        }
+        context.stroke();  
+    }
+
+    function drawSquare(context,x,y,size,fillStyle,strokeStyle) {
+        context.beginPath();
+        context.fillRect(x,y,size,size)
+        if(fillStyle){
+            context.fillStyle = fillStyle;
+        } else {
+            context.fillStyle = 'green';
+        }
+        context.fill();
+        context.lineWidth = 5;
+        if(strokeStyle){
+            context.strokeStyle = '#003300';
+        } else {
+            context.strokeStyle = '#003300';
+        }
+        context.stroke();      
+    }      
 
     function geoJsonPoints(body,cb){
         var rb = {
@@ -108,12 +145,24 @@ module.exports = function(app, config) {
         });    
     }    
 
+    function tileGeohash(zoom,x,y,body,cb){
+        var canvas = new Canvas(256,256)
+        var context = canvas.getContext('2d');
+
+        body.aggregations.geohash.buckets.forEach(function(bucket){
+            ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator(bucket["key"],zoom);
+            drawCircle(context,ttpp[1][0],ttpp[1][1],1);
+        });
+
+        cb(canvas.toBuffer())
+    }
+
     return {
         basic: function(req, res) {
 
             var type = req.params.t;
 
-            var q = getParam(req,"q",function(p){
+            var rq = getParam(req,"rq",function(p){
                 console.log(p);
                 return JSON.parse(p);
             },{});
@@ -132,7 +181,7 @@ module.exports = function(app, config) {
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);
 
-            var query = queryShim(q);
+            var query = queryShim(rq);
 
             var wd = query;
             ["query","filtered","filter"].forEach(function(k){
@@ -193,6 +242,10 @@ module.exports = function(app, config) {
             var x = req.params.x;
             var y = req.params.y;
 
+            if (y.slice(-4) == ".png") {
+                y = y.slice(0,-4)
+            }
+
             var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z,x,y);
             //var gl = tileMath.zoom_to_geohash_len(z,false);
 
@@ -209,9 +262,7 @@ module.exports = function(app, config) {
                 gl = 6;
             }            
 
-            console.log(z,gl)
-
-            var q = getParam(req,"q",function(p){
+            var rq = getParam(req,"rq",function(p){
                 return JSON.parse(p)
             },{});
 
@@ -229,7 +280,7 @@ module.exports = function(app, config) {
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);              
 
-            var query = queryShim(q);
+            var query = queryShim(rq);
             var wd = query;
             ["query","filtered","filter"].forEach(function(k){
                 if (!wd[k]) {
@@ -288,12 +339,16 @@ module.exports = function(app, config) {
                     geoJsonGeohash(body,function(rb){
                         res.json(rb);
                     })
+                } else if (type == "tile") {
+                    tileGeohash(z,x,y,body,function(rb){
+                        res.send(rb);
+                    })
                 } else {
                     geoJsonPoints(body,function(rb){
                         res.json(rb);
                     })
                 }
             })   
-        },
+        },        
     }
 }
