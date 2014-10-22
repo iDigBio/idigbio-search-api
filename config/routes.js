@@ -9,6 +9,12 @@ module.exports = function(app, config) {
     app.get('/', home.index);
     app.get('/v1*', home.v1);
     app.get('/v2', home.v2);
+    app.route('/idigbio/:t/_search')
+        .get(home.searchProxy)
+        .post(home.searchProxy);
+    app.route('/idigbio/:t/_count')
+        .get(home.searchProxy)
+        .post(home.searchProxy);          
     app.get('/v2/view/:t/:uuid', view.basic);
     app.route('/v2/search/')
         .get(search.basic)
@@ -21,5 +27,5 @@ module.exports = function(app, config) {
         .post(mapping.tiled);               
     app.route('/v2/mapping/:t')
         .get(mapping.basic)
-        .post(mapping.basic);      
+        .post(mapping.basic);
 };

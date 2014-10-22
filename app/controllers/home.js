@@ -16,10 +16,16 @@ module.exports = function(app, config) {
             });
         },
         v1: function(req, res) {
-            console.log("http://api.idigbio.org" + req.originalUrl)
+            //console.log("http://api.idigbio.org" + req.originalUrl)
             request.get("http://api.idigbio.org" + req.originalUrl,function(error, response, body) {
                 res.json(JSON.parse(body))
             });
         },
+        searchProxy: function(req, res) {
+            //console.log(config.search.server + req.originalUrl)
+            request.get(config.search.server + req.originalUrl,function(error, response, body) {
+                res.json(JSON.parse(body))
+            });
+        },        
     }
 }
