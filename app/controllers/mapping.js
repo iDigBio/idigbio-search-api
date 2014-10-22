@@ -25,7 +25,7 @@ module.exports = function(app, config) {
         } else {
             context.strokeStyle = '#003300';
         }
-        context.stroke();  
+        context.stroke();
     }
 
     function drawSquare(context,x,y,size,fillStyle,strokeStyle) {
@@ -43,8 +43,30 @@ module.exports = function(app, config) {
         } else {
             context.strokeStyle = '#003300';
         }
-        context.stroke();      
-    }      
+        context.stroke();
+    }
+
+    function drawBbox(context,pp,fillStyle,strokeStyle) {
+
+        var xsize = pp[0][0] - pp[1][0];
+        var ysize = pp[0][1] - pp[1][1];
+
+        // console.log(pp[0][0],pp[0][1],xsize,ysize)
+
+        if(fillStyle){
+            context.fillStyle = fillStyle;
+        } else {
+            context.fillStyle = 'rgba(0,255,0,.4)';
+        }
+        if(strokeStyle){
+            context.strokeStyle = strokeStyle;
+        } else {
+            context.strokeStyle = 'rgba(0,255,0,.6)';
+        }
+        context.lineWidth = 1;
+        context.fillRect(pp[0][0],pp[0][1],xsize,ysize)
+        context.strokeRect(pp[0][0],pp[0][1],xsize,ysize)
+    }
 
     function geoJsonPoints(body,cb){
         var rb = {
@@ -91,7 +113,7 @@ module.exports = function(app, config) {
         },function(err,results){
             rb.attribution = results;
             cb(rb);
-        });    
+        });
     }
 
     function geoJsonGeohash(body,cb){
@@ -142,18 +164,45 @@ module.exports = function(app, config) {
         },function(err,results){
             rb.attribution = results;
             cb(rb);
-        });    
-    }    
+        });
+    }
 
+    var oor_count = 0;
     function tileGeohash(zoom,x,y,body,cb){
-        var canvas = new Canvas(256,256)
+        var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE)
         var context = canvas.getContext('2d');
 
-        console.log(zoom,x,y);
+        // Debug tile border
+        // context.strokeStyle = '#FF0000';
+        // context.lineWidth = 1;
+        // context.strokeRect(0,0,255,255)
 
         body.aggregations.geohash.buckets.forEach(function(bucket){
-            ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator(bucket["key"],zoom);
-            drawCircle(context,ttpp[1][0],ttpp[1][1],1);
+            var ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator_bbox(bucket["key"],zoom);
+
+            var nw_ttpp = ttpp[0];
+            var se_ttpp = ttpp[1];
+
+            // if(nw_ttpp[0][0] <= x && x <= se_ttpp[0][0] && nw_ttpp[0][1] <= y && y <= se_ttpp[0][1]){
+                var nw_pp = [
+                    nw_ttpp[1][0] + (nw_ttpp[0][0]-x)*tileMath.TILE_SIZE,
+                    nw_ttpp[1][1] + (nw_ttpp[0][1]-y)*tileMath.TILE_SIZE
+                ];
+
+                var se_pp = [
+                    se_ttpp[1][0] + (se_ttpp[0][0]-x)*tileMath.TILE_SIZE,
+                    se_ttpp[1][1] + (se_ttpp[0][1]-y)*tileMath.TILE_SIZE
+                ]
+
+                console.log([nw_pp,se_pp])
+
+                drawBbox(context,[nw_pp,se_pp])
+            // } else {
+            //     oor_count += 1;
+            //     console.log(nw_ttpp[0][0],x,se_ttpp[0][0])
+            //     console.log(nw_ttpp[0][1],y,se_ttpp[0][1])
+            //     console.log("oor", oor_count, zoom, x, y, bucket["key"], ttpp)
+            // }
         });
 
         canvas.toBuffer(cb)
@@ -175,7 +224,7 @@ module.exports = function(app, config) {
 
             var offset = getParam(req,"offset",function(p){
                 return parseInt(p);
-            },0);            
+            },0);
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
@@ -194,7 +243,7 @@ module.exports = function(app, config) {
             })
             if(!_.isArray(query["query"]["filtered"]["filter"]["and"])){
                 query["query"]["filtered"]["filter"]["and"] = [];
-            }            
+            }
             query["query"]["filtered"]["filter"]["and"].push({
                 "exists": {
                     "field": "geopoint",
@@ -240,29 +289,23 @@ module.exports = function(app, config) {
 
             var type = req.params.t;
 
-            var z = req.params.z;
             var x = req.params.x;
             var y = req.params.y;
+            var z = req.params.z;
 
             if (y.slice(-4) == ".png") {
                 y = y.slice(0,-4)
             }
 
-            var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z,x,y);
-            //var gl = tileMath.zoom_to_geohash_len(z,false);
+            x = parseInt(x);
+            y = parseInt(y);
+            z = parseInt(z);
 
-            var gl = 2;
-            if (z < 2) {
-                gl = 2;
-            } else if ( z < 5 ) {
-                gl = 3;
-            } else if ( z < 8) {
-                gl = 4;
-            } else if ( z < 10) {
-                gl = 5;
-            } else {
-                gl = 6;
-            }            
+            var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z,x,y);
+            var gl = tileMath.zoom_to_geohash_len(z,false);
+
+            var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
+            var padding_size = 3;
 
             var rq = getParam(req,"rq",function(p){
                 return JSON.parse(p)
@@ -274,13 +317,13 @@ module.exports = function(app, config) {
 
             var offset = getParam(req,"offset",function(p){
                 return parseInt(p);
-            },0);            
+            },0);
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
                 s[p] = {"order":"asc"}
                 return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);              
+            },[{"dqs":{"order":"asc"}}]);
 
             var query = queryShim(rq);
             var wd = query;
@@ -302,16 +345,16 @@ module.exports = function(app, config) {
                 "geo_bounding_box" : {
                     "geopoint" : {
                         "top_left" : {
-                            "lat" : tile_bbox[0][0],
-                            "lon" : tile_bbox[0][1]
+                            "lat" : tile_bbox[0][0] + (g_bbox_size[0]*padding_size),
+                            "lon" : tile_bbox[0][1] - (g_bbox_size[1]*padding_size)
                         },
                         "bottom_right" : {
-                            "lat" : tile_bbox[1][0],
-                            "lon" : tile_bbox[1][1]
+                            "lat" : tile_bbox[1][0] - (g_bbox_size[0]*padding_size),
+                            "lon" : tile_bbox[1][1] + (g_bbox_size[1]*padding_size)
                         }
                     }
                 }
-            })            
+            })
             query["aggs"] = {
                 "rs": {
                     "terms": {
@@ -350,7 +393,7 @@ module.exports = function(app, config) {
                         res.json(rb);
                     })
                 }
-            })   
-        },        
+            })
+        },
     }
 }
