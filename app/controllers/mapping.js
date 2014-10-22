@@ -149,6 +149,8 @@ module.exports = function(app, config) {
         var canvas = new Canvas(256,256)
         var context = canvas.getContext('2d');
 
+        console.log(zoom,x,y);
+
         body.aggregations.geohash.buckets.forEach(function(bucket){
             ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator(bucket["key"],zoom);
             drawCircle(context,ttpp[1][0],ttpp[1][1],1);
