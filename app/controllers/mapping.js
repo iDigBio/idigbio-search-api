@@ -154,7 +154,7 @@ module.exports = function(app, config) {
             drawCircle(context,ttpp[1][0],ttpp[1][1],1);
         });
 
-        cb(canvas.toBuffer())
+        canvas.toBuffer(cb)
     }
 
     return {
@@ -340,8 +340,8 @@ module.exports = function(app, config) {
                         res.json(rb);
                     })
                 } else if (type == "tile") {
-                    tileGeohash(z,x,y,body,function(rb){
-                        res.send(rb);
+                    tileGeohash(z,x,y,body,function(err,png_buff){
+                        res.send(png_buff);
                     })
                 } else {
                     geoJsonPoints(body,function(rb){
