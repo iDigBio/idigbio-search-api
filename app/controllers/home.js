@@ -26,6 +26,24 @@ module.exports = function(app, config) {
             request.get(config.search.server + req.originalUrl,function(error, response, body) {
                 res.json(JSON.parse(body))
             });
-        },        
+        },
+        searchProxyPost: function(req, res) {
+            // Fix broken decode on missing mime type
+            if (Object.keys(req.body).length == 1 && req.body[Object.keys(req.body)[0]] == '' ){
+                try {
+                    req.body = JSON.parse(Object.keys(req.body)[0])
+                } catch(e) {
+                    res.status(400).json({"error": "Bad Request"});
+                    return
+                }
+            }
+
+            request.post({
+                url: config.search.server + req.originalUrl,
+                body: JSON.stringify(req.body)
+            },function(error, response, body) {
+                res.json(JSON.parse(body))
+            });
+        },                    
     }
 }
