@@ -1,5 +1,5 @@
 var config = {
-    "port": 3000,
+    "port": 19196,
     "search": {
         "server": "http://search.idigbio.org/",
         "index": "idigbio/",
