@@ -28,4 +28,7 @@ module.exports = function(app, config) {
     app.route('/v2/mapping/:t')
         .get(mapping.basic)
         .post(mapping.basic);
+    app.route('/v2/mappoints/')
+        .get(mapping.mapPoints)
+        .post(mapping.mapPoints);        
 };

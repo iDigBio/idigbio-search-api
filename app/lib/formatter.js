@@ -1,3 +1,6 @@
+var _ = require("lodash");
+var async = require("async");
+
 module.exports = function(app,config) {
     function basic(body, res) {
         var body = JSON.parse(body);
