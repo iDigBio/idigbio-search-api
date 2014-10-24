@@ -9,6 +9,7 @@ module.exports = function(app, config) {
     var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
     var tileMath = require("../lib/tile-math.js")(app,config);
     var getParam = require("../lib/get-param.js")(app,config);
+    var formatter = require("../lib/formatter.js")(app,config);
 
     function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
         context.beginPath();
@@ -393,6 +394,83 @@ module.exports = function(app, config) {
                         res.json(rb);
                     })
                 }
+            })
+        },
+        mapPoints: function(req, res) {
+            var rq = getParam(req,"rq",function(p){
+                return JSON.parse(p)
+            },{});
+
+            var limit = getParam(req,"limit",function(p){
+                return parseInt(p);
+            },100);
+
+            var offset = getParam(req,"offset",function(p){
+                return parseInt(p);
+            },0);
+
+            var sort = getParam(req,"sort",function(p){
+                var s = {};
+                s[p] = {"order":"asc"}
+                return [s,{"dqs":{"order":"asc"}}];
+            },[{"dqs":{"order":"asc"}}]);
+
+            var lat = getParam(req,"lat",function(p){
+                return parseFloat(p);
+            },0);
+
+            var lon = getParam(req,"lon",function(p){
+                return parseFloat(p);
+            },0);
+
+            var z = getParam(req,"zoom",function(p){
+                return parseInt(p);
+            },0);
+
+            var gl = tileMath.zoom_to_geohash_len(z,false);
+
+            var query = queryShim(rq);
+            var wd = query;
+            ["query","filtered","filter"].forEach(function(k){
+                if (!wd[k]) {
+                    wd[k] = {};
+                }
+                wd = wd[k];
+            })
+            if(!query["query"]["filtered"]["filter"]["and"]){
+                query["query"]["filtered"]["filter"]["and"] = [];
+            }
+            query["query"]["filtered"]["filter"]["and"].push({
+                "exists": {
+                    "field": "geopoint",
+                }
+            })
+            query["query"]["filtered"]["filter"]["and"].push({
+                "geohash_cell" : {
+                    "geopoint" : {
+                        "lat": lat,
+                        "lon": lon
+                    },
+                    "precision": gl,
+                    "neighbors": true
+                }
+            })
+            query["aggs"] = {
+                "rs": {
+                    "terms": {
+                        "field": "recordset",
+                        "size": config.maxRecordsets
+                    }
+                }
+            }
+            query["from"] = offset;
+            query["size"] = limit;
+
+            request.post({
+                url: config.search.server + config.search.index + "records/_search",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                formatter.basic(body,res);
             })
         },
     }
