@@ -150,11 +150,9 @@ module.exports = function(app,config) {
                     })
                 } else if (shim[k]["type"] == "geohash_cell") {
                     var qd = _.cloneDeep(shim[k])
-                    delete qd["type"]
-                    var r = {};
-                    r[k] = qd;                    
+                    delete qd["type"]               
                     and_array.push({
-                        "geohash_cell": r
+                        "geohash_cell": qd
                     })
                 } else if (shim[k]["type"] == "fulltext") {
                     fulltext = shim[k]["value"]
