@@ -165,8 +165,14 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                // console.log(body)
                 var body = JSON.parse(body);
+
+                if (body.status == 400) {
+                    res.status(400).json({
+                        "error": "Bad Request"
+                    })
+                    return
+                }
 
                 var rb = {
                     "itemCount": body.hits.total,
