@@ -1,5 +1,5 @@
 module.exports = function(app,config) {
-    function function (body, res) {
+    function basic(body, res) {
         var body = JSON.parse(body);
 
         if (body.status == 400) {
