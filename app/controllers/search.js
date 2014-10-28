@@ -20,7 +20,7 @@ module.exports = function(app, config) {
             },{});
 
             var limit = getParam(req,"limit",function(p){
-                return parseInt(p);
+                return Math.max(parseInt(p),10000);
             },100);
 
             var offset = getParam(req,"offset",function(p){
@@ -98,7 +98,7 @@ module.exports = function(app, config) {
             },{});
 
             var limit = getParam(req,"limit",function(p){
-                return parseInt(p);
+                return Math.max(parseInt(p),10000);
             },100);
 
             var offset = getParam(req,"offset",function(p){
