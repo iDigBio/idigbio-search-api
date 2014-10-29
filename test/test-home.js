@@ -102,19 +102,67 @@ describe('Home', function(){
     })    
   })
   describe('search proxy', function(){
-    it('should accept get', function(done){
-      request(app.server)
-        .get("/idigbio/records/")
-        .expect('Content-Type', /json/)
-        .expect(200)
-        .end(function(error, response) {
-            if (error) {
-              done(error);
-            } else {
-              console.log(response.body)
-              response.body.should.have.property("records");
-            }
-        })
-    })  
+    describe('search', function(){
+      it('should accept get', function(done){
+        request(app.server)
+          .get("/idigbio/records/_search")
+          .expect('Content-Type', /json/)
+          .expect(200)
+          .end(function(error, response) {
+              if (error) {
+                done(error);
+              } else {
+                response.body.should.have.property("hits");
+                done()
+              }
+          })
+      })
+      it('should accept post', function(done){
+        request(app.server)
+          .post("/idigbio/records/_search")
+          .send({})
+          .expect('Content-Type', /json/)
+          .expect(200)
+          .end(function(error, response) {
+              if (error) {
+                done(error);
+              } else {
+                response.body.should.have.property("hits");
+                done()
+              }
+          })
+      })
+    })
+    describe('count', function(){
+      it('should accept get', function(done){
+        request(app.server)
+          .get("/idigbio/records/_count")
+          .expect('Content-Type', /json/)
+          .expect(200)
+          .end(function(error, response) {
+              if (error) {
+                done(error);
+              } else {
+                response.body.should.have.property("count");
+                done()
+              }
+          })
+      })
+      it('should accept post', function(done){
+        request(app.server)
+          .post("/idigbio/records/_count")
+          .send({})
+          .expect('Content-Type', /json/)
+          .expect(200)
+          .end(function(error, response) {
+              if (error) {
+                done(error);
+              } else {
+                response.body.should.have.property("count");
+                done()
+              }
+          })
+      })
+    })    
   })      
 })
