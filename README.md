@@ -13,5 +13,5 @@ npm start
 ```
 
 For documentation see:
-https://github.com/godfoder/idb-search-api/wiki
+https://github.com/idigbio/idigbio-search-api/wiki
 
