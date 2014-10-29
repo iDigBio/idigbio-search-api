@@ -1,3 +1,5 @@
+"use strict";
+
 var request = require('request');
 
 module.exports = function(app,config) {
@@ -5,8 +7,8 @@ module.exports = function(app,config) {
         request.post({
             url: config.search.server + config.search.index + "recordsets/_search",
             body: JSON.stringify({size: config.maxRecordsets})
-        },function (error, response, body) {
-            var body = JSON.parse(body);
+        }, function (error, response, body) {
+            body = JSON.parse(body);
 
             body.hits.hits.forEach(function(hit){
                 config.recordsets[hit._id] = {
@@ -14,12 +16,12 @@ module.exports = function(app,config) {
                     "description": hit._source.data["idigbio:data"].collection_description,
                     "logo": hit._source.data["idigbio:data"].logo_url,
                     "url": hit._source.data["idigbio:data"].institution_web_address,
-                }
-            })
+                };
+            });
 
             if (cb) {
                 cb();
             }
         });    
-    }
-}
+    };
+};

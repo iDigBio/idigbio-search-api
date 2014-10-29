@@ -1,24 +1,26 @@
+"use strict";
+
 var request = require('request');
 var _ = require("lodash");
-var async = require("async");
 
 module.exports = function(app, config) {
-    var queryShim = require('../lib/query-shim.js')(app,config);
     var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
-    var getParam = require("../lib/get-param.js")(app,config);
 
     return {
+        // version:
+        // http://idb-riak.acis.ufl.edu:8098/buckets/record_catalog/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45
+        // http://idb-riak.acis.ufl.edu:8098/buckets/record/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45-14cdaa01e6581b4af8b5d544c9eaa2750b2eb4cf
         basic: function(req, res) {
 
             var t = req.params.t;
             var uuid = req.params.uuid;
 
             request.get(config.search.server + config.search.index + t + "/" + uuid,function (error, response, body) {
-                var body = JSON.parse(body);
+                body = JSON.parse(body);
 
                 if (body.found) {
                     var indexterms = _.cloneDeep(body._source);
-                    delete indexterms["data"]
+                    delete indexterms["data"];
                     var rb = {
                         "uuid": body._id,
                         "etag": body._source.data["idigbio:etag"],
@@ -34,12 +36,12 @@ module.exports = function(app, config) {
                             "uuid": body._source.recordset
                         };
                         if (config.recordsets[body._source.recordset]) {
-                            _.defaults(rs,config.recordsets[body._source.recordset])
+                            _.defaults(rs,config.recordsets[body._source.recordset]);
                             rb.attribution = rs;
                             res.json(rb);
                         } else {
                             loadRecordsets(function(){
-                                _.defaults(rs,config.recordsets[body._source.recordset])
+                                _.defaults(rs,config.recordsets[body._source.recordset]);
                                 rb.attribution = rs;
                                 res.json(rb);
                             });
@@ -51,9 +53,9 @@ module.exports = function(app, config) {
                     res.status(404).json({
                         "error": "NotFound",
                         "statusCode": 404
-                    })
+                    });
                 }
-            })
+            });
         },        
-    }
-}
+    };
+};

@@ -1,0 +1,24 @@
+{
+  "checkbuild": {
+    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"]
+  },
+
+  "jshint": {
+    "args": ["app/lib/*.js","app/controllers/*.js"]
+  },
+
+  "jscs": {
+    "args": ["app/lib/*.js","app/controllers/*.js"]
+  },
+
+  "jsinspect": {
+    "args": ["app/lib/*.js","app/controllers/*.js"],
+    "diff": true
+  },
+
+  "buddyjs": {
+    "args": ["app/lib/*.js","app/controllers/*.js"]
+  },
+
+  "nsp": {}
+}

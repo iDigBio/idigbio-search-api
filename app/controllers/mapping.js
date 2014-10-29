@@ -1,8 +1,10 @@
+"use strict";
+
 var request = require('request');
 var _ = require("lodash");
 var async = require("async");
 var geohash = require("ngeohash");
-var Canvas = require('canvas')
+var Canvas = require('canvas');
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
@@ -11,41 +13,41 @@ module.exports = function(app, config) {
     var getParam = require("../lib/get-param.js")(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
 
-    function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
-        context.beginPath();
-        context.arc(x, y, radius, 0, 2 * Math.PI, false);
-        if(fillStyle){
-            context.fillStyle = fillStyle;
-        } else {
-            context.fillStyle = 'green';
-        }
-        context.fill();
-        context.lineWidth = 5;
-        if(strokeStyle){
-            context.strokeStyle = '#003300';
-        } else {
-            context.strokeStyle = '#003300';
-        }
-        context.stroke();
-    }
+    // function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
+    //     context.beginPath();
+    //     context.arc(x, y, radius, 0, 2 * Math.PI, false);
+    //     if(fillStyle){
+    //         context.fillStyle = fillStyle;
+    //     } else {
+    //         context.fillStyle = 'green';
+    //     }
+    //     context.fill();
+    //     context.lineWidth = 5;
+    //     if(strokeStyle){
+    //         context.strokeStyle = '#003300';
+    //     } else {
+    //         context.strokeStyle = '#003300';
+    //     }
+    //     context.stroke();
+    // }
 
-    function drawSquare(context,x,y,size,fillStyle,strokeStyle) {
-        context.beginPath();
-        context.fillRect(x,y,size,size)
-        if(fillStyle){
-            context.fillStyle = fillStyle;
-        } else {
-            context.fillStyle = 'green';
-        }
-        context.fill();
-        context.lineWidth = 5;
-        if(strokeStyle){
-            context.strokeStyle = '#003300';
-        } else {
-            context.strokeStyle = '#003300';
-        }
-        context.stroke();
-    }
+    // function drawSquare(context,x,y,size,fillStyle,strokeStyle) {
+    //     context.beginPath();
+    //     context.fillRect(x,y,size,size);
+    //     if(fillStyle){
+    //         context.fillStyle = fillStyle;
+    //     } else {
+    //         context.fillStyle = 'green';
+    //     }
+    //     context.fill();
+    //     context.lineWidth = 5;
+    //     if(strokeStyle){
+    //         context.strokeStyle = '#003300';
+    //     } else {
+    //         context.strokeStyle = '#003300';
+    //     }
+    //     context.stroke();
+    // }
 
     function drawBbox(context,pp,fillStyle,strokeStyle) {
 
@@ -65,8 +67,8 @@ module.exports = function(app, config) {
             context.strokeStyle = 'rgba(0,255,0,.6)';
         }
         context.lineWidth = 1;
-        context.fillRect(pp[0][0],pp[0][1],xsize,ysize)
-        context.strokeRect(pp[0][0],pp[0][1],xsize,ysize)
+        context.fillRect(pp[0][0],pp[0][1],xsize,ysize);
+        context.strokeRect(pp[0][0],pp[0][1],xsize,ysize);
     }
 
     function geoJsonPoints(body,cb){
@@ -75,11 +77,11 @@ module.exports = function(app, config) {
             "type": "FeatureCollection",
             "features": [],
             "attribution": []
-        }
+        };
 
         body.hits.hits.forEach(function(hit){
             var indexterms = _.cloneDeep(hit._source);
-            delete indexterms["data"]
+            delete indexterms["data"];
             rb.features.push({
                 "type": "Feature",
                 "geometry": {
@@ -94,7 +96,7 @@ module.exports = function(app, config) {
                     "recordIds": hit._source.data["idigbio:recordIds"],
                     "indexTerms": indexterms,
                 }
-            })
+            });
         });
 
         async.mapSeries(body.aggregations.rs.buckets,function(bucket,acb){
@@ -103,12 +105,12 @@ module.exports = function(app, config) {
                 "itemCount": bucket.doc_count
             };
             if (config.recordsets[bucket.key]) {
-                _.defaults(rs,config.recordsets[bucket.key])
-                acb(null,rs)
+                _.defaults(rs,config.recordsets[bucket.key]);
+                acb(null,rs);
             } else {
                 loadRecordsets(function(){
-                    _.defaults(rs,config.recordsets[bucket.key])
-                    acb(null,rs)
+                    _.defaults(rs,config.recordsets[bucket.key]);
+                    acb(null,rs);
                 });
             }
         },function(err,results){
@@ -123,7 +125,7 @@ module.exports = function(app, config) {
             "type": "FeatureCollection",
             "features": [],
             "attribution": []
-        }
+        };
 
         body.aggregations.geohash.buckets.forEach(function(bucket){
             var gh_bbox = geohash.decode_bbox(bucket.key);
@@ -145,7 +147,7 @@ module.exports = function(app, config) {
                     "geohash": bucket.key,
                     "itemCount": bucket.doc_count,
                 }
-            })
+            });
         });
 
         async.mapSeries(body.aggregations.rs.buckets,function(bucket,acb){
@@ -154,12 +156,12 @@ module.exports = function(app, config) {
                 "itemCount": bucket.doc_count
             };
             if (config.recordsets[bucket.key]) {
-                _.defaults(rs,config.recordsets[bucket.key])
-                acb(null,rs)
+                _.defaults(rs,config.recordsets[bucket.key]);
+                acb(null,rs);
             } else {
                 loadRecordsets(function(){
-                    _.defaults(rs,config.recordsets[bucket.key])
-                    acb(null,rs)
+                    _.defaults(rs,config.recordsets[bucket.key]);
+                    acb(null,rs);
                 });
             }
         },function(err,results){
@@ -168,9 +170,8 @@ module.exports = function(app, config) {
         });
     }
 
-    var oor_count = 0;
     function tileGeohash(zoom,x,y,body,cb){
-        var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE)
+        var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
         var context = canvas.getContext('2d');
 
         // Debug tile border
@@ -184,29 +185,20 @@ module.exports = function(app, config) {
             var nw_ttpp = ttpp[0];
             var se_ttpp = ttpp[1];
 
-            // if(nw_ttpp[0][0] <= x && x <= se_ttpp[0][0] && nw_ttpp[0][1] <= y && y <= se_ttpp[0][1]){
-                var nw_pp = [
-                    nw_ttpp[1][0] + (nw_ttpp[0][0]-x)*tileMath.TILE_SIZE,
-                    nw_ttpp[1][1] + (nw_ttpp[0][1]-y)*tileMath.TILE_SIZE
-                ];
+            var nw_pp = [
+                nw_ttpp[1][0] + (nw_ttpp[0][0]-x)*tileMath.TILE_SIZE,
+                nw_ttpp[1][1] + (nw_ttpp[0][1]-y)*tileMath.TILE_SIZE
+            ];
 
-                var se_pp = [
-                    se_ttpp[1][0] + (se_ttpp[0][0]-x)*tileMath.TILE_SIZE,
-                    se_ttpp[1][1] + (se_ttpp[0][1]-y)*tileMath.TILE_SIZE
-                ]
+            var se_pp = [
+                se_ttpp[1][0] + (se_ttpp[0][0]-x)*tileMath.TILE_SIZE,
+                se_ttpp[1][1] + (se_ttpp[0][1]-y)*tileMath.TILE_SIZE
+            ];
 
-                console.log([nw_pp,se_pp])
-
-                drawBbox(context,[nw_pp,se_pp])
-            // } else {
-            //     oor_count += 1;
-            //     console.log(nw_ttpp[0][0],x,se_ttpp[0][0])
-            //     console.log(nw_ttpp[0][1],y,se_ttpp[0][1])
-            //     console.log("oor", oor_count, zoom, x, y, bucket["key"], ttpp)
-            // }
+            drawBbox(context,[nw_pp,se_pp]);
         });
 
-        canvas.toBuffer(cb)
+        canvas.toBuffer(cb);
     }
 
     return {
@@ -216,9 +208,9 @@ module.exports = function(app, config) {
 
             var rq = getParam(req,"rq",function(p){
                 if (_.isString(p)) {
-                    p = JSON.parse(p)
+                    p = JSON.parse(p);
                 }
-                return p
+                return p;
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -231,7 +223,7 @@ module.exports = function(app, config) {
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
-                s[p] = {"order":"asc"}
+                s[p] = {"order":"asc"};
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);
 
@@ -243,7 +235,7 @@ module.exports = function(app, config) {
                     wd[k] = {};
                 }
                 wd = wd[k];
-            })
+            });
             if(!_.isArray(query["query"]["filtered"]["filter"]["and"])){
                 query["query"]["filtered"]["filter"]["and"] = [];
             }
@@ -251,7 +243,7 @@ module.exports = function(app, config) {
                 "exists": {
                     "field": "geopoint",
                 }
-            })
+            });
             query["aggs"] = {
                 "rs": {
                     "terms": {
@@ -266,27 +258,27 @@ module.exports = function(app, config) {
                         "size": "500", // > (5*precision)^2
                     }
                 }
-            }
+            };
             query["from"] = offset;
             query["size"] = limit;
+            query["sort"] = sort;
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                // console.log(body)
-                var body = JSON.parse(body);
+                body = JSON.parse(body);
 
-                if (type == "geohash") {
+                if (type === "geohash") {
                     geoJsonGeohash(body,function(rb){
                         res.json(rb);
-                    })
+                    });
                 } else {
                     geoJsonPoints(body,function(rb){
                         res.json(rb);
-                    })
+                    });
                 }
-            })
+            });
         },
         tiled: function(req, res) {
 
@@ -296,8 +288,8 @@ module.exports = function(app, config) {
             var y = req.params.y;
             var z = req.params.z;
 
-            if (y.slice(-4) == ".png") {
-                y = y.slice(0,-4)
+            if (y.slice(-4) === ".png") {
+                y = y.slice(0,-4);
             }
 
             x = parseInt(x);
@@ -312,9 +304,9 @@ module.exports = function(app, config) {
 
             var rq = getParam(req,"rq",function(p){
                 if (_.isString(p)) {
-                    p = JSON.parse(p)
+                    p = JSON.parse(p);
                 }
-                return p
+                return p;
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -327,7 +319,7 @@ module.exports = function(app, config) {
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
-                s[p] = {"order":"asc"}
+                s[p] = {"order":"asc"};
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);
 
@@ -338,7 +330,7 @@ module.exports = function(app, config) {
                     wd[k] = {};
                 }
                 wd = wd[k];
-            })
+            });
             if(!query["query"]["filtered"]["filter"]["and"]){
                 query["query"]["filtered"]["filter"]["and"] = [];
             }
@@ -346,7 +338,7 @@ module.exports = function(app, config) {
                 "exists": {
                     "field": "geopoint",
                 }
-            })
+            });
             query["query"]["filtered"]["filter"]["and"].push({
                 "geo_bounding_box" : {
                     "geopoint" : {
@@ -360,7 +352,7 @@ module.exports = function(app, config) {
                         }
                     }
                 }
-            })
+            });
             query["aggs"] = {
                 "rs": {
                     "terms": {
@@ -375,38 +367,39 @@ module.exports = function(app, config) {
                         "size": "100000", // > (5*precision)^2
                     }
                 }
-            }
+            };
             query["from"] = offset;
             query["size"] = limit;
+            query["sort"] = sort;
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
                 // console.log(body)
-                var body = JSON.parse(body);
+                body = JSON.parse(body);
 
-                if (type == "geohash") {
+                if (type === "geohash") {
                     geoJsonGeohash(body,function(rb){
                         res.json(rb);
-                    })
-                } else if (type == "tile") {
+                    });
+                } else if (type === "tile") {
                     tileGeohash(z,x,y,body,function(err,png_buff){
                         res.send(png_buff);
-                    })
+                    });
                 } else {
                     geoJsonPoints(body,function(rb){
                         res.json(rb);
-                    })
+                    });
                 }
-            })
+            });
         },
         mapPoints: function(req, res) {
             var rq = getParam(req,"rq",function(p){
                 if (_.isString(p)) {
-                    p = JSON.parse(p)
+                    p = JSON.parse(p);
                 }
-                return p
+                return p;
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -419,7 +412,7 @@ module.exports = function(app, config) {
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
-                s[p] = {"order":"asc"}
+                s[p] = {"order":"asc"};
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);
 
@@ -444,7 +437,7 @@ module.exports = function(app, config) {
                     wd[k] = {};
                 }
                 wd = wd[k];
-            })
+            });
             if(!query["query"]["filtered"]["filter"]["and"]){
                 query["query"]["filtered"]["filter"]["and"] = [];
             }
@@ -452,7 +445,7 @@ module.exports = function(app, config) {
                 "exists": {
                     "field": "geopoint",
                 }
-            })
+            });
             query["query"]["filtered"]["filter"]["and"].push({
                 "geohash_cell" : {
                     "geopoint" : {
@@ -462,7 +455,7 @@ module.exports = function(app, config) {
                     "precision": gl,
                     "neighbors": true
                 }
-            })
+            });
             query["aggs"] = {
                 "rs": {
                     "terms": {
@@ -470,16 +463,17 @@ module.exports = function(app, config) {
                         "size": config.maxRecordsets
                     }
                 }
-            }
+            };
             query["from"] = offset;
             query["size"] = limit;
+            query["sort"] = sort;
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
                 formatter.basic(body,res);
-            })
+            });
         },
-    }
-}
+    };
+};

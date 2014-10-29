@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function(app,config) {
     return function(req,param,munger,def) {
         if (req.body[param]) {
@@ -5,7 +7,7 @@ module.exports = function(app,config) {
         } else if (req.query[param]){
             return munger(req.query[param]);
         } else {
-            return def
+            return def;
         }
-    }
-}
+    };
+};

@@ -1,26 +1,30 @@
+"use strict";
+
 var _ = require("lodash");
 var async = require("async");
 
-module.exports = function(app,config) {
+module.exports = function(app,config) {    
+    var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
+    
     function basic(body, res) {
-        var body = JSON.parse(body);
+        body = JSON.parse(body);
 
-        if (body.status == 400) {
+        if (body.status === 400) {
             res.status(400).json({
                 "error": "Bad Request"
-            })
-            return
+            });
+            return;
         }
 
         var rb = {
             "itemCount": body.hits.total,
             "items": [],
             "attribution": []
-        }
+        };
 
         body.hits.hits.forEach(function(hit){
             var indexterms = _.cloneDeep(hit._source);
-            delete indexterms["data"]
+            delete indexterms["data"];
             rb.items.push({
                 "uuid": hit._id,
                 "etag": hit._source.data["idigbio:etag"],
@@ -28,7 +32,7 @@ module.exports = function(app,config) {
                 "data": hit._source.data["idigbio:data"],
                 "recordIds": hit._source.data["idigbio:recordIds"],
                 "indexTerms": indexterms,
-            })
+            });
         });
 
         async.mapSeries(body.aggregations.rs.buckets,function(bucket,acb){
@@ -37,12 +41,12 @@ module.exports = function(app,config) {
                 "itemCount": bucket.doc_count
             };
             if (config.recordsets[bucket.key]) {
-                _.defaults(rs,config.recordsets[bucket.key])
-                acb(null,rs)
+                _.defaults(rs,config.recordsets[bucket.key]);
+                acb(null,rs);
             } else {
                 loadRecordsets(function(){
-                    _.defaults(rs,config.recordsets[bucket.key])
-                    acb(null,rs)
+                    _.defaults(rs,config.recordsets[bucket.key]);
+                    acb(null,rs);
                 });
             }
         },function(err,results){
@@ -53,5 +57,5 @@ module.exports = function(app,config) {
 
     return {
         basic: basic
-    }
-}
+    };
+};

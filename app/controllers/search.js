@@ -1,10 +1,10 @@
+"use strict";
+
 var request = require('request');
 var _ = require("lodash");
-var async = require("async");
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
-    var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
     var getParam = require("../lib/get-param.js")(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
 
@@ -13,16 +13,16 @@ module.exports = function(app, config) {
 
             var mq = getParam(req,"mq",function(p){
                 if (_.isString(p)) {
-                    p = JSON.parse(p)
+                    p = JSON.parse(p);
                 }
-                return p
+                return p;
             },{});
 
             var rq = getParam(req,"rq",function(p){
                 if (_.isString(p)) {
-                    p = JSON.parse(p)
+                    p = JSON.parse(p);
                 }
-                return p
+                return p;
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -35,7 +35,7 @@ module.exports = function(app, config) {
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
-                s[p] = {"order":"asc"}
+                s[p] = {"order":"asc"};
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);         
 
@@ -49,7 +49,7 @@ module.exports = function(app, config) {
                         "query": {},
                     }
                 }
-            }
+            };
 
             if (mrquery["query"]["filtered"]["filter"]) {
                 query["query"]["filtered"]["filter"] = mrquery["query"]["filtered"]["filter"];
@@ -68,14 +68,14 @@ module.exports = function(app, config) {
                             mrquery["query"]["filtered"]["query"]
                         ]
                     }
-                }                
+                };                
             } else {
                 query["query"]["filtered"]["query"] = {
                     "has_parent" : {
                         "parent_type" : "records",
                         "query" : rquery["query"]
                     }
-                }
+                };
             }
             
             query["aggs"] = {
@@ -85,25 +85,26 @@ module.exports = function(app, config) {
                         "size": config.maxRecordsets
                     }
                 }
-            }
+            };
             query["from"] = offset;
-            query["size"] = limit;             
+            query["size"] = limit;
+            query["sort"] = sort;
 
             request.post({
                 url: config.search.server + config.search.index + "mediarecords/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
                 formatter.basic(body,res);
-            })
+            });
         },
 
         basic: function(req, res) {
 
             var rq = getParam(req,"rq",function(p){
                 if (_.isString(p)) {
-                    p = JSON.parse(p)
+                    p = JSON.parse(p);
                 }
-                return p
+                return p;
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -116,7 +117,7 @@ module.exports = function(app, config) {
 
             var sort = getParam(req,"sort",function(p){
                 var s = {};
-                s[p] = {"order":"asc"}
+                s[p] = {"order":"asc"};
                 return [s,{"dqs":{"order":"asc"}}];
             },[{"dqs":{"order":"asc"}}]);               
 
@@ -128,16 +129,17 @@ module.exports = function(app, config) {
                         "size": config.maxRecordsets
                     }
                 }
-            }
+            };
             query["from"] = offset;
             query["size"] = limit;
+            query["sort"] = sort;
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
                 formatter.basic(body,res);
-            })
+            });
         },        
-    }
-}
+    };
+};
