@@ -6,15 +6,18 @@ module.exports = function(app, config) {
     var mapping = require('../app/controllers/mapping')(app, config);
     var view = require('../app/controllers/view')(app, config);
 
-    app.get('/', home.index);
-    app.get('/v1*', home.v1);
-    app.get('/v2', home.v2);
+    app.route('/')
+        .get(home.index);
+    app.route('/v1*')
+        .get(home.v1);
+    app.route('/v2')
+        .get(home.v2);
     app.route('/idigbio/:t/_search')
         .get(home.searchProxy)
         .post(home.searchProxyPost);
     app.route('/idigbio/:t/_count')
         .get(home.searchProxy)
-        .post(home.searchProxyPost);          
+        .post(home.searchProxyPost); 
     app.get('/v2/view/:t/:uuid', view.basic);
     app.route('/v2/search/')
         .get(search.basic)
@@ -24,11 +27,15 @@ module.exports = function(app, config) {
         .post(search.media); 
     app.route('/v2/mapping/:t/:z/:x/:y')
         .get(mapping.tiled)
-        .post(mapping.tiled);               
+        .post(mapping.tiled); 
     app.route('/v2/mapping/:t')
         .get(mapping.basic)
         .post(mapping.basic);
     app.route('/v2/mappoints/')
         .get(mapping.mapPoints)
-        .post(mapping.mapPoints);        
+        .post(mapping.mapPoints); 
+
+    app.use(function(req, res, next){
+        res.status(404).json({"error": "Not Found"})
+    }); 
 };

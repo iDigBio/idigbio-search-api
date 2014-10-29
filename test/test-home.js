@@ -100,5 +100,21 @@ describe('Home', function(){
             done();
         })
     })    
-  })    
+  })
+  describe('search proxy', function(){
+    it('should accept get', function(done){
+      request(app.server)
+        .get("/idigbio/records/")
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+            if (error) {
+              done(error);
+            } else {
+              console.log(response.body)
+              response.body.should.have.property("records");
+            }
+        })
+    })  
+  })      
 })
