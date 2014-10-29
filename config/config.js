@@ -5,6 +5,7 @@ var config = {
         "index": "idigbio/",
     },
     maxRecordsets: 1000,
+    maxLimit: 5000,
     recordsets: {},
 }
 
