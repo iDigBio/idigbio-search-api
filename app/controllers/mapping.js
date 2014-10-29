@@ -215,8 +215,10 @@ module.exports = function(app, config) {
             var type = req.params.t;
 
             var rq = getParam(req,"rq",function(p){
-                console.log(p);
-                return JSON.parse(p);
+                if (_.isString(p)) {
+                    p = JSON.parse(p)
+                }
+                return p
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -309,7 +311,10 @@ module.exports = function(app, config) {
             var padding_size = 3;
 
             var rq = getParam(req,"rq",function(p){
-                return JSON.parse(p)
+                if (_.isString(p)) {
+                    p = JSON.parse(p)
+                }
+                return p
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -398,7 +403,10 @@ module.exports = function(app, config) {
         },
         mapPoints: function(req, res) {
             var rq = getParam(req,"rq",function(p){
-                return JSON.parse(p)
+                if (_.isString(p)) {
+                    p = JSON.parse(p)
+                }
+                return p
             },{});
 
             var limit = getParam(req,"limit",function(p){

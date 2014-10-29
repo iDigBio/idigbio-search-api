@@ -12,11 +12,17 @@ module.exports = function(app, config) {
         media: function(req, res) {
 
             var mq = getParam(req,"mq",function(p){
-                return JSON.parse(p)
+                if (_.isString(p)) {
+                    p = JSON.parse(p)
+                }
+                return p
             },{});
 
             var rq = getParam(req,"rq",function(p){
-                return JSON.parse(p)
+                if (_.isString(p)) {
+                    p = JSON.parse(p)
+                }
+                return p
             },{});
 
             var limit = getParam(req,"limit",function(p){
@@ -94,7 +100,10 @@ module.exports = function(app, config) {
         basic: function(req, res) {
 
             var rq = getParam(req,"rq",function(p){
-                return JSON.parse(p)
+                if (_.isString(p)) {
+                    p = JSON.parse(p)
+                }
+                return p
             },{});
 
             var limit = getParam(req,"limit",function(p){

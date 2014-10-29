@@ -12,6 +12,10 @@
     "request": "^2.45.0",
     "canvas": "~1.1.6"
   },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"    
+  },
   "scripts": {
     "start": "node app.js"
   }
