@@ -3,6 +3,8 @@ idb-search-api
 
 iDigBio Search API
 
+[![Build Status](https://travis-ci.org/iDigBio/idigbio-search-api.svg?branch=master)](https://travis-ci.org/iDigBio/idigbio-search-api)
+
 To install
 ```
 git clone https://github.com/idigbio/idigbio-search-api.git
