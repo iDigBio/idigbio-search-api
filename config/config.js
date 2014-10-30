@@ -1,3 +1,5 @@
+var redis = require("redis")
+
 var config = {
     "port": 19196,
     "search": {
@@ -8,6 +10,18 @@ var config = {
     defaultLimit: 100,
     maxLimit: 5000,
     recordsets: {},
+    "redis": {
+        "hostname": "localhost",
+        "port": 6379
+    }
 }
+
+if (process.env.NODE_ENV === "prod") {
+    config.redis.hostname = "idb-search-redis-prod";
+} else if (process.env.NODE_ENV === "beta") {
+    config.redis.hostname = "idb-search-redis-beta";
+}
+
+config.redis.client = redis.createClient(config.redis.port,config.redis.hostname)
 
 module.exports = config;

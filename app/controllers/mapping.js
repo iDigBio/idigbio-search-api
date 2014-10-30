@@ -4,6 +4,7 @@ var request = require('request');
 var _ = require("lodash");
 var geohash = require("ngeohash");
 var Canvas = require('canvas');
+var Hashids = require('hashids');
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
@@ -11,6 +12,9 @@ module.exports = function(app, config) {
     var getParam = require("../lib/get-param.js")(app,config);
     var cp = require("../lib/common-params.js")(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
+    var hasher = require("../lib/hasher.js")(app,config);
+
+    var hashids = new Hashids("idigbio", 8);
 
     // function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
     //     context.beginPath();
@@ -125,7 +129,6 @@ module.exports = function(app, config) {
                 "type": "Feature",
                 "geometry": {
                     "type": "Polygon",
-                    // TODO: Convert geohash to polygon.
                     "coordinates": [poly]
                 },
                 "properties": {
@@ -245,16 +248,24 @@ module.exports = function(app, config) {
                 }
             });
         },
-        tiled: function(req, res) {
-
-            var type = req.params.t;
+        getMapTile: function(req, res) {
+            var s = req.params.s;
 
             var x = req.params.x;
             var y = req.params.y;
             var z = req.params.z;
 
+            var type = getParam(req,"type",function(p){
+                if (p === "geohash") {
+                    return "geohash"
+                } else {
+                    return "points"
+                }
+            },"tile")
+
             if (y.slice(-".png".length) === ".png") {
                 y = y.slice(0,-".png".length);
+                type = "tile";
             }
 
             x = parseInt(x);
@@ -267,81 +278,77 @@ module.exports = function(app, config) {
             var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
             var padding_size = 3;
 
-            var rq = cp.query("rq", req);
+            config.redis.client.get(s,function(err,rv){
+                var map_def = JSON.parse(rv);
 
-            var limit = cp.limit(req);
+                var query = queryShim(map_def.rq);
+                
+                makeKeyDefined(["query","filtered","filter"],query);
 
-            var offset = cp.offset(req);
-
-            var sort = cp.sort(req);
-
-            var query = queryShim(rq);
-            
-            makeKeyDefined(["query","filtered","filter"],query);
-
-            if(!query["query"]["filtered"]["filter"]["and"]){
-                query["query"]["filtered"]["filter"]["and"] = [];
-            }
-
-            query["query"]["filtered"]["filter"]["and"].push({
-                "exists": {
-                    "field": "geopoint",
+                if(!query["query"]["filtered"]["filter"]["and"]){
+                    query["query"]["filtered"]["filter"]["and"] = [];
                 }
-            });
 
-            query["query"]["filtered"]["filter"]["and"].push({
-                "geo_bounding_box" : {
-                    "geopoint" : {
-                        "top_left" : {
-                            "lat" : tile_bbox[0][0] + (g_bbox_size[0]*padding_size),
-                            "lon" : tile_bbox[0][1] - (g_bbox_size[1]*padding_size)
-                        },
-                        "bottom_right" : {
-                            "lat" : tile_bbox[1][0] - (g_bbox_size[0]*padding_size),
-                            "lon" : tile_bbox[1][1] + (g_bbox_size[1]*padding_size)
+                query["query"]["filtered"]["filter"]["and"].push({
+                    "exists": {
+                        "field": "geopoint",
+                    }
+                });
+
+                query["query"]["filtered"]["filter"]["and"].push({
+                    "geo_bounding_box" : {
+                        "geopoint" : {
+                            "top_left" : {
+                                "lat" : tile_bbox[0][0] + (g_bbox_size[0]*padding_size),
+                                "lon" : tile_bbox[0][1] - (g_bbox_size[1]*padding_size)
+                            },
+                            "bottom_right" : {
+                                "lat" : tile_bbox[1][0] - (g_bbox_size[0]*padding_size),
+                                "lon" : tile_bbox[1][1] + (g_bbox_size[1]*padding_size)
+                            }
                         }
                     }
-                }
-            });
-            query["aggs"] = {
-                "rs": {
-                    "terms": {
-                        "field": "recordset",
-                        "size": config.maxRecordsets
+                });
+                query["aggs"] = {
+                    "rs": {
+                        "terms": {
+                            "field": "recordset",
+                            "size": config.maxRecordsets
+                        }
+                    },
+                    "geohash": {
+                        "geohash_grid": {
+                            "field": "geopoint",
+                            "precision": gl,
+                            "size": "100000", // > (5*precision)^2
+                        }
                     }
-                },
-                "geohash": {
-                    "geohash_grid": {
-                        "field": "geopoint",
-                        "precision": gl,
-                        "size": "100000", // > (5*precision)^2
+                };
+                // query["from"] = offset;
+                // query["size"] = limit;
+                // query["sort"] = sort;
+
+                request.post({
+                    url: config.search.server + config.search.index + "records/_search",
+                    body: JSON.stringify(query)
+                },function (error, response, body) {
+                    body = JSON.parse(body);
+
+                    if (type === "geohash") {
+                        geoJsonGeohash(body,function(rb){
+                            res.json(rb);
+                        });
+                    } else if (type === "tile") {
+                        tileGeohash(z,x,y,body,function(err,png_buff){
+                            res.type('png');
+                            res.send(png_buff);
+                        });
+                    } else {
+                        geoJsonPoints(body,function(rb){
+                            res.json(rb);
+                        });
                     }
-                }
-            };
-            query["from"] = offset;
-            query["size"] = limit;
-            query["sort"] = sort;
-
-            request.post({
-                url: config.search.server + config.search.index + "records/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
-                body = JSON.parse(body);
-
-                if (type === "geohash") {
-                    geoJsonGeohash(body,function(rb){
-                        res.json(rb);
-                    });
-                } else if (type === "tile") {
-                    tileGeohash(z,x,y,body,function(err,png_buff){
-                        res.type('png');
-                        res.send(png_buff);
-                    });
-                } else {
-                    geoJsonPoints(body,function(rb){
-                        res.json(rb);
-                    });
-                }
+                });
             });
         },
         mapPoints: function(req, res) {
@@ -408,5 +415,42 @@ module.exports = function(app, config) {
                 formatter.basic(body,res);
             });
         },
+        createMap: function(req,res){
+            var rq = cp.query("rq", req);
+
+            var map_def = {
+                rq: rq
+            }
+
+            var h = hasher.hash("sha1",map_def)
+
+            config.redis.client.exists(h,function(err,map_exists){
+                if (map_exists) {
+                    config.redis.client.get(h,function(err,s){
+                        config.redis.client.get(s,function(err,stored_map_def){
+                            res.json({
+                                s: s,
+                                h: h,
+                                map_def: JSON.parse(stored_map_def),
+                            })
+                        })
+                    })
+                } else {
+                    config.redis.client.incr("queryid",function(err,v){
+                        var s = hashids.encode(v);    
+                        config.redis.client.set(s,JSON.stringify(map_def),function(err,good){
+                            config.redis.client.set(h,s,function(err,good){
+                                res.json({
+                                    s: s,
+                                    h: h,
+                                    map_def: map_def,
+                                })                            
+                            });
+                        })
+                    });                
+
+                }
+            })
+        }
     };
 };

@@ -1,6 +1,6 @@
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs", "buddyjs", "nsp"]
+    "enable": ["jshint", "jscs", "buddyjs", "nsp", "jsinspect"]
   },
 
   "jshint": {
