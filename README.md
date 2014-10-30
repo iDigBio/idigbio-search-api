@@ -3,7 +3,7 @@ idb-search-api
 
 iDigBio Search API
 
-https://travis-ci.org/idigbio/idigbio-search-api.png?branch=master
+![Build Badge](https://travis-ci.org/idigbio/idigbio-search-api.png?branch=master)
 
 To install
 ```
