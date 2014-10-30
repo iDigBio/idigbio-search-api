@@ -9,7 +9,7 @@ module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
     var tileMath = require("../lib/tile-math.js")(app,config);
     var getParam = require("../lib/get-param.js")(app,config);
-    var cp = require("../lib/common-param.js")(app,config);
+    var cp = require("../lib/common-params.js")(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
 
     // function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
@@ -253,8 +253,8 @@ module.exports = function(app, config) {
             var y = req.params.y;
             var z = req.params.z;
 
-            if (y.slice(-4) === ".png") {
-                y = y.slice(0,-4);
+            if (y.slice(-".png".length) === ".png") {
+                y = y.slice(0,-".png".length);
             }
 
             x = parseInt(x);

@@ -16,7 +16,7 @@ module.exports = function(app,config) {
         limit: function(req) {
             return getParam(req,"limit",function(p){
                return Math.min(parseInt(p),config.maxLimit);
-            },100);
+            },config.defaultLimit);
         },
         offset: function(req) {
             return getParam(req,"offset",function(p){

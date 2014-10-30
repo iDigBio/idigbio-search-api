@@ -4,7 +4,8 @@ var geohash = require('ngeohash');
 
 //module.exports = function(app,config) {
 module.exports = function() {
-    var TILE_SIZE=256;
+    var TILE_SIZE = 256;
+    var BITS_PER_CHAR = 5;
 
     function deg2rad(deg){
         return deg * (Math.PI/180);
@@ -57,15 +58,15 @@ module.exports = function() {
         var pixles = Math.pow(2,zoom-1)*TILE_SIZE;
         var bits = Math.log(pixles,2)*2;
         if (floor) {
-            return Math.floor(bits/5);
+            return Math.floor(bits/BITS_PER_CHAR);
         } else {
-            return Math.ceil(bits/5);
+            return Math.ceil(bits/BITS_PER_CHAR);
         }
     }
 
     function geohash_len_to_bbox_size(gl){
-        var latbits = Math.floor((gl*5)/2);
-        var lonbits = Math.ceil((gl*5)/2);
+        var latbits = Math.floor((gl*BITS_PER_CHAR)/2);
+        var lonbits = Math.ceil((gl*BITS_PER_CHAR)/2);
 
         return [180/Math.pow(2,latbits),360/Math.pow(2,lonbits)];
     }

@@ -5,7 +5,7 @@ var request = require('request');
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
-    var cp = require("../lib/common-param.js")(app,config);
+    var cp = require("../lib/common-params.js")(app,config);
 
     return {
         media: function(req, res) {

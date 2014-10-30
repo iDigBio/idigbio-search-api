@@ -5,6 +5,7 @@ var app = require('../app.js');
 var config = app.config
 
 describe('Home', function(){
+  this.timeout(30000)
   describe('index', function(){
     it('should contain v1', function(done){
       request(app.server)

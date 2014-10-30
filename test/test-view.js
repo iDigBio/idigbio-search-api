@@ -7,6 +7,7 @@ var app = require('../app.js');
 var config = app.config
 
 describe('View', function(){
+  this.timeout(30000)
   describe('basic', function(){
     it('should accept get', function(done){
       request(app.server)

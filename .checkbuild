@@ -1,6 +1,6 @@
 {
   "checkbuild": {
-    "enable": ["jshint", "jscs", "jsinspect", "buddyjs", "nsp"]
+    "enable": ["jshint", "jscs", "buddyjs", "nsp"]
   },
 
   "jshint": {
@@ -17,7 +17,8 @@
   },
 
   "buddyjs": {
-    "args": ["app/lib/*.js","app/controllers/*.js"]
+    "args": ["app/lib/*.js","app/controllers/*.js"],
+    "ignore": [0, 1, 2, 3, 200, 404, 400, 180, 360]
   },
 
   "nsp": {}
