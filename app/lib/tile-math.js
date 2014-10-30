@@ -2,7 +2,8 @@
 
 var geohash = require('ngeohash');
 
-module.exports = function(app,config) {
+//module.exports = function(app,config) {
+module.exports = function() {
     var TILE_SIZE=256;
 
     function deg2rad(deg){

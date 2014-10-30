@@ -1,43 +1,24 @@
 "use strict";
 
 var request = require('request');
-var _ = require("lodash");
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
-    var getParam = require("../lib/get-param.js")(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
+    var cp = require("../lib/common-param.js")(app,config);
 
     return {
         media: function(req, res) {
 
-            var mq = getParam(req,"mq",function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
-                }
-                return p;
-            },{});
+            var mq = cp.query("mq", req);
 
-            var rq = getParam(req,"rq",function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
-                }
-                return p;
-            },{});
+            var rq = cp.query("rq", req);
 
-            var limit = getParam(req,"limit",function(p){
-                return Math.min(parseInt(p),config.maxLimit);
-            },100);
+            var limit = cp.limit(req);
 
-            var offset = getParam(req,"offset",function(p){
-                return parseInt(p);
-            },0);
+            var offset = cp.offset(req);
 
-            var sort = getParam(req,"sort",function(p){
-                var s = {};
-                s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);         
+            var sort = cp.sort(req);        
 
             var rquery = queryShim(rq);
             var mrquery = queryShim(mq);
@@ -100,26 +81,13 @@ module.exports = function(app, config) {
 
         basic: function(req, res) {
 
-            var rq = getParam(req,"rq",function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
-                }
-                return p;
-            },{});
+            var rq = cp.query("rq", req);
 
-            var limit = getParam(req,"limit",function(p){
-                return Math.min(parseInt(p),config.maxLimit);
-            },100);
+            var limit = cp.limit(req);
 
-            var offset = getParam(req,"offset",function(p){
-                return parseInt(p);
-            },0);            
+            var offset = cp.offset(req);
 
-            var sort = getParam(req,"sort",function(p){
-                var s = {};
-                s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);               
+            var sort = cp.sort(req);          
 
             var query = queryShim(rq);
             query["aggs"] = {

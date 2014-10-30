@@ -39,7 +39,7 @@
                         "exists": {
                             "field": k,
                         }
-                    })                    
+                    })
                 elif shim[k]["type"] == "missing":
                     and_array.append({
                         "missing": {
@@ -75,9 +75,9 @@
             "match": {
                 "_all": {
                     "query": fulltext,
-                    "operator": "and" 
+                    "operator": "and"
                 }
-            } 
+            }
         }
 
     if len(and_array) > 0:
@@ -89,7 +89,81 @@
 
 var _ = require("lodash");
 
-module.exports = function(app,config) {
+//module.exports = function(app,config) {
+module.exports = function() {
+
+    function existFilter(k){
+        return {
+            "exists": {
+                "field": k,
+            }
+        };
+    }
+
+    function missingFilter(k){
+        return {
+            "missing": {
+                "field": k,
+            }
+        };
+    }
+
+    function typeWrapper(k,t,shimK) {
+        var qd = _.cloneDeep(shimK);
+        delete qd["type"];
+        var r = {};
+        r[k] = qd;
+        var rv = {};
+        rv[t] = r;
+        return rv;
+    }
+
+    function rangeFilter(k,shimK) {
+        return typeWrapper(k,"range",shimK);
+    }
+
+    function geoBoundingBox(k,shimK) {
+        return typeWrapper(k,"geo_bounding_box",shimK);
+    }
+
+    function termFilter(k,shimK) {
+        var term = {};
+        term[k] = shimK;
+        return {
+            "term": term
+        };        
+    }
+
+    function termsFilter(k,shimK){
+        var or_array = [];
+        shimK.forEach(function(v){
+            or_array.push(v);
+        });
+        var term = {
+                "execution": "or"
+        };
+        term[k] = or_array;
+        return {
+            "terms": term
+        };        
+    }
+
+    function objectType(k, shimK) {
+        if (shimK["type"] === "exists") {
+            return existFilter(k);
+        } else if (shimK["type"] === "missing"){
+            return missingFilter(k);
+        } else if (shimK["type"] === "range") {
+            return rangeFilter(k,shimK);
+        } else if (shimK["type"] === "geo_bounding_box") {
+            return geoBoundingBox(k,shimK);
+        } else if (shimK["type"] === "fulltext") {
+            return shimK["value"];
+        } else {
+            console.log(k + " " + shimK);
+        }        
+    }
+
     return function(shim) {
         var query = {
             "query": {
@@ -101,59 +175,21 @@ module.exports = function(app,config) {
 
         var fulltext;
         var and_array = [];
-        var term, qd, r;
 
         _.keys(shim).forEach(function(k) {
             if (_.isString(shim[k]) || _.isBoolean(shim[k])) {
-                term = {};
-                term[k] = shim[k];
-                and_array.push({
-                    "term": term
-                });
+                and_array.push(termFilter(k,shim[k]));
             } else if (_.isArray(shim[k])) {
-                var or_array = [];
-                shim[k].forEach(function(v){
-                    or_array.push(v);
-                });
-                term = {
-                        "execution": "or"
-                };
-                term[k] = or_array;
-                and_array.push({
-                    "terms": term
-                });
+                and_array.push(termsFilter(k,shim[k]));
             } else {
-                if (shim[k]["type"] === "exists") {
-                    and_array.push({
-                        "exists": {
-                            "field": k,
-                        }
-                    });
-                } else if (shim[k]["type"] === "missing"){
-                    and_array.push({
-                        "missing": {
-                            "field": k,
-                        }
-                    });
-                } else if (shim[k]["type"] === "range") {
-                    qd = _.cloneDeep(shim[k]);
-                    delete qd["type"];
-                    r = {};
-                    r[k] = qd;
-                    and_array.push({
-                        "range": r
-                    });
-                } else if (shim[k]["type"] === "geo_bounding_box") {
-                    qd = _.cloneDeep(shim[k]);
-                    delete qd["type"];
-                    r = {};
-                    r[k] = qd;                    
-                    and_array.push({
-                        "geo_bounding_box": r
-                    });
-                } else if (shim[k]["type"] === "fulltext") {
-                    fulltext = shim[k]["value"];
-                } else {
+                if (shim[k]["type"]) {
+                    var f = objectType(k,shim[k]);
+                    if (_.isString(f)) {
+                        fulltext = f;
+                    } else {
+                        and_array.push(f);
+                    }
+                } else{
                     console.log(k + " " + shim[k]);
                 }
             }
@@ -164,9 +200,9 @@ module.exports = function(app,config) {
                 "match": {
                     "_all": {
                         "query": fulltext,
-                        "operator": "and" 
+                        "operator": "and"
                     }
-                } 
+                }
             };
         }
 

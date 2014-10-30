@@ -5,6 +5,26 @@ var async = require("async");
 
 module.exports = function(app,config) {    
     var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
+
+    function attribution(rss,cb) {
+        async.mapSeries(rss,function(bucket,acb){
+            var rs = {
+                "uuid": bucket.key,
+                "itemCount": bucket.doc_count
+            };
+            if (config.recordsets[bucket.key]) {
+                _.defaults(rs,config.recordsets[bucket.key]);
+                acb(null,rs);
+            } else {
+                loadRecordsets(function(){
+                    _.defaults(rs,config.recordsets[bucket.key]);
+                    acb(null,rs);
+                });
+            }
+        },function(err,results){
+            cb(results);
+        });        
+    }
     
     function basic(body, res) {
         body = JSON.parse(body);
@@ -35,27 +55,14 @@ module.exports = function(app,config) {
             });
         });
 
-        async.mapSeries(body.aggregations.rs.buckets,function(bucket,acb){
-            var rs = {
-                "uuid": bucket.key,
-                "itemCount": bucket.doc_count
-            };
-            if (config.recordsets[bucket.key]) {
-                _.defaults(rs,config.recordsets[bucket.key]);
-                acb(null,rs);
-            } else {
-                loadRecordsets(function(){
-                    _.defaults(rs,config.recordsets[bucket.key]);
-                    acb(null,rs);
-                });
-            }
-        },function(err,results){
+        attribution(body.aggregations.rs.buckets, function(results){
             rb.attribution = results;
-            res.json(rb);
-        });    
+            res.json(rb);            
+        });   
     }
 
     return {
-        basic: basic
+        basic: basic,
+        attribution: attribution
     };
 };

@@ -2,15 +2,14 @@
 
 var request = require('request');
 var _ = require("lodash");
-var async = require("async");
 var geohash = require("ngeohash");
 var Canvas = require('canvas');
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
-    var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
     var tileMath = require("../lib/tile-math.js")(app,config);
     var getParam = require("../lib/get-param.js")(app,config);
+    var cp = require("../lib/common-param.js")(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
 
     // function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
@@ -99,23 +98,9 @@ module.exports = function(app, config) {
             });
         });
 
-        async.mapSeries(body.aggregations.rs.buckets,function(bucket,acb){
-            var rs = {
-                "uuid": bucket.key,
-                "itemCount": bucket.doc_count
-            };
-            if (config.recordsets[bucket.key]) {
-                _.defaults(rs,config.recordsets[bucket.key]);
-                acb(null,rs);
-            } else {
-                loadRecordsets(function(){
-                    _.defaults(rs,config.recordsets[bucket.key]);
-                    acb(null,rs);
-                });
-            }
-        },function(err,results){
+        formatter.attribution(body.aggregations.rs.buckets, function(results){
             rb.attribution = results;
-            cb(rb);
+            cb(rb);            
         });
     }
 
@@ -150,23 +135,10 @@ module.exports = function(app, config) {
             });
         });
 
-        async.mapSeries(body.aggregations.rs.buckets,function(bucket,acb){
-            var rs = {
-                "uuid": bucket.key,
-                "itemCount": bucket.doc_count
-            };
-            if (config.recordsets[bucket.key]) {
-                _.defaults(rs,config.recordsets[bucket.key]);
-                acb(null,rs);
-            } else {
-                loadRecordsets(function(){
-                    _.defaults(rs,config.recordsets[bucket.key]);
-                    acb(null,rs);
-                });
-            }
-        },function(err,results){
+
+        formatter.attribution(body.aggregations.rs.buckets, function(results){
             rb.attribution = results;
-            cb(rb);
+            cb(rb);            
         });
     }
 
@@ -201,49 +173,42 @@ module.exports = function(app, config) {
         canvas.toBuffer(cb);
     }
 
+    function makeKeyDefined(path,wd){
+        path.forEach(function(k){
+            if (!wd[k]) {
+                wd[k] = {};
+            }
+            wd = wd[k];
+        });        
+    }
+
     return {
         basic: function(req, res) {
 
             var type = req.params.t;
 
-            var rq = getParam(req,"rq",function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
-                }
-                return p;
-            },{});
+            var rq = cp.query("rq", req);
 
-            var limit = getParam(req,"limit",function(p){
-                return Math.min(parseInt(p),config.maxLimit);
-            },100);
+            var limit = cp.limit(req);
 
-            var offset = getParam(req,"offset",function(p){
-                return parseInt(p);
-            },0);
+            var offset = cp.offset(req);
 
-            var sort = getParam(req,"sort",function(p){
-                var s = {};
-                s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);
+            var sort = cp.sort(req);
 
             var query = queryShim(rq);
 
-            var wd = query;
-            ["query","filtered","filter"].forEach(function(k){
-                if (!wd[k]) {
-                    wd[k] = {};
-                }
-                wd = wd[k];
-            });
+            makeKeyDefined(["query","filtered","filter"],query);
+
             if(!_.isArray(query["query"]["filtered"]["filter"]["and"])){
                 query["query"]["filtered"]["filter"]["and"] = [];
             }
+
             query["query"]["filtered"]["filter"]["and"].push({
                 "exists": {
                     "field": "geopoint",
                 }
             });
+
             query["aggs"] = {
                 "rs": {
                     "terms": {
@@ -302,43 +267,28 @@ module.exports = function(app, config) {
             var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
             var padding_size = 3;
 
-            var rq = getParam(req,"rq",function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
-                }
-                return p;
-            },{});
+            var rq = cp.query("rq", req);
 
-            var limit = getParam(req,"limit",function(p){
-                return Math.min(parseInt(p),config.maxLimit);
-            },100);
+            var limit = cp.limit(req);
 
-            var offset = getParam(req,"offset",function(p){
-                return parseInt(p);
-            },0);
+            var offset = cp.offset(req);
 
-            var sort = getParam(req,"sort",function(p){
-                var s = {};
-                s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);
+            var sort = cp.sort(req);
 
             var query = queryShim(rq);
-            var wd = query;
-            ["query","filtered","filter"].forEach(function(k){
-                if (!wd[k]) {
-                    wd[k] = {};
-                }
-                wd = wd[k];
-            });
+            
+            makeKeyDefined(["query","filtered","filter"],query);
+
             if(!query["query"]["filtered"]["filter"]["and"]){
                 query["query"]["filtered"]["filter"]["and"] = [];
             }
+
             query["query"]["filtered"]["filter"]["and"].push({
                 "exists": {
                     "field": "geopoint",
                 }
             });
+
             query["query"]["filtered"]["filter"]["and"].push({
                 "geo_bounding_box" : {
                     "geopoint" : {
@@ -376,7 +326,6 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                // console.log(body)
                 body = JSON.parse(body);
 
                 if (type === "geohash") {
@@ -395,26 +344,13 @@ module.exports = function(app, config) {
             });
         },
         mapPoints: function(req, res) {
-            var rq = getParam(req,"rq",function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
-                }
-                return p;
-            },{});
+            var rq = cp.query("rq", req);
 
-            var limit = getParam(req,"limit",function(p){
-                return Math.min(parseInt(p),config.maxLimit);
-            },100);
+            var limit = cp.limit(req);
 
-            var offset = getParam(req,"offset",function(p){
-                return parseInt(p);
-            },0);
+            var offset = cp.offset(req);
 
-            var sort = getParam(req,"sort",function(p){
-                var s = {};
-                s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);
+            var sort = cp.sort(req);
 
             var lat = getParam(req,"lat",function(p){
                 return parseFloat(p);

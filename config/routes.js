@@ -6,6 +6,13 @@ module.exports = function(app, config) {
     var mapping = require('../app/controllers/mapping')(app, config);
     var view = require('../app/controllers/view')(app, config);
 
+    // app.use(function(req, res, next){
+    //     console.log(req.originalUrl);
+    //     console.log(req.body);
+    //     console.log(req.params);
+    //     next();
+    // })
+
     app.route('/')
         .get(home.index);
     app.route('/v1*')
