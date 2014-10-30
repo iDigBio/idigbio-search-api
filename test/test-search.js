@@ -16,21 +16,29 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.itemCount.should.equal(0);
             response.body.items.length.should.equal(0);
             done();
+          }
         })
     })
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/search/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.itemCount.should.not.equal(0);
-          response.body.items.length.should.not.equal(0);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.not.equal(0);
+            response.body.items.length.should.not.equal(0);
+            done();
+          }
         })
     })
     it('should obey maxLimit', function(done){
@@ -40,8 +48,12 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.items.length.should.be.below(config.maxLimit+1);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.items.length.should.be.below(config.maxLimit+1);
+            done();
+          }
         })
     })          
   })
@@ -56,9 +68,13 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.itemCount.should.equal(0);
-          response.body.items.length.should.equal(0);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.equal(0);
+            response.body.items.length.should.equal(0);
+            done();
+          }
         })
     })
     it('should not return an empty search for {}', function(done){
@@ -67,13 +83,18 @@ describe('Search', function(){
         .post("/v2/search/")
         .send({
             rq: q,
+            limit: 10,
         })
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.itemCount.should.not.equal(0);
-          response.body.items.length.should.not.equal(0);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.not.equal(0);
+            response.body.items.length.should.not.equal(0);
+            done();
+          }
         })
     })
     it('should obey maxLimit', function(done){
@@ -87,8 +108,12 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.items.length.should.be.below(config.maxLimit+1);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.items.length.should.be.below(config.maxLimit+1);
+            done();
+          }
         })
     }) 
   })
@@ -100,21 +125,29 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)        
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.itemCount.should.equal(0);
             response.body.items.length.should.equal(0);
             done();
+          }
         })
     })
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/media/?rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.itemCount.should.not.equal(0);
-          response.body.items.length.should.not.equal(0);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.not.equal(0);
+            response.body.items.length.should.not.equal(0);
+            done();
+          }
         })
     })
     it('should obey maxLimit', function(done){
@@ -124,8 +157,12 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)        
         .end(function(error, response) {
-          response.body.items.length.should.be.below(config.maxLimit+1);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.items.length.should.be.below(config.maxLimit+1);
+            done();
+          }
         })
     }) 
   })
@@ -141,9 +178,13 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.itemCount.should.equal(0);
-          response.body.items.length.should.equal(0);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.equal(0);
+            response.body.items.length.should.equal(0);
+            done();
+          }
         })
     })
     it('should not return an empty search for {}', function(done){
@@ -152,14 +193,19 @@ describe('Search', function(){
         .post("/v2/media/")
         .send({
             rq: q,
-            mq: q
+            mq: q,
+            limit: 10,
         })
         .expect('Content-Type', /json/)
         .expect(200)        
         .end(function(error, response) {
-          response.body.itemCount.should.not.equal(0);
-          response.body.items.length.should.not.equal(0);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.not.equal(0);
+            response.body.items.length.should.not.equal(0);
+            done();
+          }
         })
     })
     it('should obey maxLimit', function(done){
@@ -174,8 +220,12 @@ describe('Search', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-          response.body.items.length.should.be.below(config.maxLimit+1);
-          done();
+          if(error) {
+            done(error);
+          } else {
+            response.body.items.length.should.be.below(config.maxLimit+1);
+            done();
+          }
         })
     })             
   })      

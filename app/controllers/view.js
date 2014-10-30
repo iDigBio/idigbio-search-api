@@ -51,7 +51,7 @@ module.exports = function(app, config) {
                     }
                 } else {
                     res.status(404).json({
-                        "error": "NotFound",
+                        "error": "Not Found",
                         "statusCode": 404
                     });
                 }

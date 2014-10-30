@@ -13,8 +13,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("v1"); 
             done();
+          }
         })
     }) 
     it('should contain v2', function(done){
@@ -23,8 +27,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("v2"); 
             done();
+          }
         })
     }) 
   })
@@ -35,8 +43,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("view");
             done();
+          }
         })
     })
     it('should contain search', function(done){
@@ -45,8 +57,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("search");
             done();
+          }
         })
     }) 
     it('should contain mapping', function(done){
@@ -55,8 +71,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("mapping"); 
             done();
+          }
         })
     }) 
   })
@@ -67,8 +87,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("records");
             done();
+          }
         })
     })
     it('should contain mediarecords', function(done){
@@ -77,8 +101,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("mediarecords");
             done();
+          }
         })
     }) 
     it('should contain recordsets', function(done){
@@ -87,8 +115,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("recordsets"); 
             done();
+          }
         })
     })
     it('should contain publishers', function(done){
@@ -97,8 +129,12 @@ describe('Home', function(){
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
             response.body.should.have.property("publishers"); 
             done();
+          }
         })
     })    
   })
@@ -106,7 +142,7 @@ describe('Home', function(){
     describe('search', function(){
       it('should accept get', function(done){
         request(app.server)
-          .get("/idigbio/records/_search")
+          .get("/idigbio/records/_search?size=1")
           .expect('Content-Type', /json/)
           .expect(200)
           .end(function(error, response) {
@@ -121,7 +157,7 @@ describe('Home', function(){
       it('should accept post', function(done){
         request(app.server)
           .post("/idigbio/records/_search")
-          .send({})
+          .send({"size":1})
           .expect('Content-Type', /json/)
           .expect(200)
           .end(function(error, response) {

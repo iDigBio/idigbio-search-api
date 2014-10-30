@@ -334,6 +334,7 @@ module.exports = function(app, config) {
                     });
                 } else if (type === "tile") {
                     tileGeohash(z,x,y,body,function(err,png_buff){
+                        res.type('png');
                         res.send(png_buff);
                     });
                 } else {
@@ -367,13 +368,9 @@ module.exports = function(app, config) {
             var gl = tileMath.zoom_to_geohash_len(z,false);
 
             var query = queryShim(rq);
-            var wd = query;
-            ["query","filtered","filter"].forEach(function(k){
-                if (!wd[k]) {
-                    wd[k] = {};
-                }
-                wd = wd[k];
-            });
+            
+            makeKeyDefined(["query","filtered","filter"],query);
+
             if(!query["query"]["filtered"]["filter"]["and"]){
                 query["query"]["filtered"]["filter"]["and"] = [];
             }

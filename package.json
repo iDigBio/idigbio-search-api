@@ -13,12 +13,15 @@
     "canvas": "~1.1.6"
   },
   "devDependencies": {
+    "blanket": "*",
     "chai": "*",
     "mocha": "*",
-    "supertest": "*"
+    "supertest": "*",
+    "travis-cov": "*"
   },
+  "config": { "travis-cov": { "threshold": 70 } },
   "scripts": {
     "start": "node app.js",
-    "test": "node_modules/mocha/bin/mocha"
+    "test": "node_modules/mocha/bin/mocha test/test.js && node_modules/mocha/bin/mocha test/test.js -R travis-cov"
   }
 }

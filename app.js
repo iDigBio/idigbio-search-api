@@ -17,7 +17,7 @@ var server = app.listen(config.port, function() {
 
     loadRSDelay();    
 
-    console.log('Express server listening on port ' + server.address().port);
+    //console.log('Express server listening on port ' + server.address().port);
 });
 
 module.exports = {
