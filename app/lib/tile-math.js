@@ -76,6 +76,16 @@ module.exports = function() {
         return bb;
     }
 
+    function lat_lon_zoom_to_xy_tile_pixels_mercator(lat,lon,zoom){
+        var xtile = lon2xtile(lon,zoom);
+        var ytile = lat2ytile(lat,zoom);
+
+        var xpixel = lon2xpixel(lon,zoom) % TILE_SIZE;
+        var ypixel = lat2ypixel(lat,zoom) % TILE_SIZE;
+
+        return [[xtile,ytile],[xpixel,ypixel]];
+    }
+
     function geohash_zoom_to_xy_tile_pixels_mercator(ghash,zoom){
         var gl = zoom_to_geohash_len(zoom,false);
         if (ghash.length > gl) {
@@ -84,13 +94,7 @@ module.exports = function() {
 
         var lat_lon = geohash.decode(ghash);
 
-        var xtile = lon2xtile(lat_lon.longitude,zoom);
-        var ytile = lat2ytile(lat_lon.latitude,zoom);
-
-        var xpixel = lon2xpixel(lat_lon.longitude,zoom) % TILE_SIZE;
-        var ypixel = lat2ypixel(lat_lon.latitude,zoom) % TILE_SIZE;
-
-        return [[xtile,ytile],[xpixel,ypixel]];
+        return lat_lon_zoom_to_xy_tile_pixels_mercator(lat_lon.latitude,lat_lon.longitude,zoom)
     }
 
     function geohash_zoom_to_xy_tile_pixels_mercator_bbox(ghash,zoom){
@@ -105,36 +109,21 @@ module.exports = function() {
         // nw = maxlat,minlon = 2,1
         // se = minlat,maxlon = 0,3
 
-        var lat_lon_nw = [lat_lon_bbox[2], lat_lon_bbox[1]];
-        var lat_lon_se = [lat_lon_bbox[0], lat_lon_bbox[3]];
+        var ttpp_nw = lat_lon_zoom_to_xy_tile_pixels_mercator(lat_lon_bbox[2],lat_lon_bbox[1],zoom);
+        var ttpp_se = lat_lon_zoom_to_xy_tile_pixels_mercator(lat_lon_bbox[0],lat_lon_bbox[3],zoom);
 
         return [
-            [
-                // NW XY Tile
-                [
-                    lon2xtile(lat_lon_nw[1],zoom),
-                    lat2ytile(lat_lon_nw[0],zoom)
-                ],
-                // NW XY Pixel
-                [
-                    lon2xpixel(lat_lon_nw[1],zoom) % TILE_SIZE,
-                    lat2ypixel(lat_lon_nw[0],zoom) % TILE_SIZE
-                ]
-            ],
-            [
-                // SE XY Tile
-                [
-                    lon2xtile(lat_lon_se[1],zoom),
-                    lat2ytile(lat_lon_se[0],zoom)
-                ],
-                // SE XY Pixel
-                [
-                    lon2xpixel(lat_lon_se[1],zoom) % TILE_SIZE,
-                    lat2ypixel(lat_lon_se[0],zoom) % TILE_SIZE
-                ]
-            ]
+            ttpp_nw,
+            ttpp_se
         ];
 
+    }
+
+    function project_ttpp_to_current_tile_pixels(ttpp,x,y) {
+        return [
+            ttpp[1][0] + (ttpp[0][0]-x)*TILE_SIZE,
+            ttpp[1][1] + (ttpp[0][1]-y)*TILE_SIZE
+        ];
     }
 
     var mod = {
@@ -152,8 +141,10 @@ module.exports = function() {
         geohash_len_to_bbox_size: geohash_len_to_bbox_size,
         zoom_to_geohash_len: zoom_to_geohash_len,
         zoom_xy_to_nw_se_bbox: zoom_xy_to_nw_se_bbox,
+        lat_lon_zoom_to_xy_tile_pixels_mercator: lat_lon_zoom_to_xy_tile_pixels_mercator,
         geohash_zoom_to_xy_tile_pixels_mercator: geohash_zoom_to_xy_tile_pixels_mercator,
         geohash_zoom_to_xy_tile_pixels_mercator_bbox: geohash_zoom_to_xy_tile_pixels_mercator_bbox,
+        project_ttpp_to_current_tile_pixels: project_ttpp_to_current_tile_pixels,
     };
 
     return mod;

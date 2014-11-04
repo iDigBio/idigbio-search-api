@@ -32,21 +32,18 @@ module.exports = function(app, config) {
     app.route('/v2/media/')
         .get(search.media)
         .post(search.media); 
-    // app.route('/v2/mapping/:t/:z/:x/:y')
-    //     .get(mapping.tiled)
-    //     .post(mapping.tiled); 
     // app.route('/v2/mapping/:t')
     //     .get(mapping.basic)
     //     .post(mapping.basic);
-    // app.route('/v2/mappoints/')
-    //     .get(mapping.mapPoints)
-    //     .post(mapping.mapPoints); 
     app.route('/v2/mapping/')
         .get(mapping.createMap)
         .post(mapping.createMap);
-    app.route('/v2/mapping/:s/:z/:x/:y')
+    app.route('/v2/mapping/:s')
+        .get(mapping.getMap)        
+    app.route('/v2/mapping/:s/points')
+        .get(mapping.mapPoints)
+    app.route('/v2/mapping/:s/:z/:x/:y.:t')
         .get(mapping.getMapTile)
-        .post(mapping.getMapTile);
 
     app.use(function(req, res, next){
         res.status(404).json({"error": "Not Found"})
