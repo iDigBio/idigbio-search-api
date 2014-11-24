@@ -383,6 +383,14 @@ module.exports = function(app, config) {
             var gl = tileMath.zoom_to_geohash_len(z,false);            
 
             config.redis.client.get(s,function(err,rv){
+                if (!rv) {
+                    res.status(404).json({
+                        "error": "Not Found",
+                        "statusCode": 404
+                    });
+                    return
+                }
+
                 var map_def = JSON.parse(rv);
 
                 var query = queryShim(map_def.rq);
@@ -445,6 +453,14 @@ module.exports = function(app, config) {
             var padding_size = 3;
 
             config.redis.client.get(s,function(err,rv){
+                if (!rv) {
+                    res.status(404).json({
+                        "error": "Not Found",
+                        "statusCode": 404
+                    });
+                    return
+                }
+
                 var map_def = JSON.parse(rv);
 
                 var query = queryShim(map_def.rq);
@@ -620,6 +636,14 @@ module.exports = function(app, config) {
             var s = req.params.s;          
 
             config.redis.client.get(s,function(err,rv){
+                if (!rv) {
+                    res.status(404).json({
+                        "error": "Not Found",
+                        "statusCode": 404
+                    });
+                    return
+                }
+                
                 var map_def = JSON.parse(rv);
                 var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
                 
