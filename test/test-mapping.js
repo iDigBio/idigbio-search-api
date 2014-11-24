@@ -308,6 +308,7 @@ describe('Mapping', function(){
         })
     });    
   });
+  // These are more of "dont crash" tests for coverage, rather than corectness assements. Testing the PNGs for corectness is hard.
   describe('complex styles', function(){        
     it('should support complex styles for geohash doc counts', function(done){
       var q = {"institutioncode":["uf","flas","flmnh"]}

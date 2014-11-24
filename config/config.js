@@ -18,9 +18,9 @@ var config = {
 }
 
 if (process.env.NODE_ENV === "prod") {
-    config.redis.hostname = "idb-search-redis-prod";
+    config.redis.hostname = "idb-redis-search-prod";
 } else if (process.env.NODE_ENV === "beta") {
-    config.redis.hostname = "idb-search-redis-beta";
+    config.redis.hostname = "idb-redis-search-beta";
 }
 
 config.redis.client = redis.createClient(config.redis.port,config.redis.hostname)
