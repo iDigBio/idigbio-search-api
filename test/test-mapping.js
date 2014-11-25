@@ -311,7 +311,7 @@ describe('Mapping', function(){
   // These are more of "dont crash" tests for coverage, rather than corectness assements. Testing the PNGs for corectness is hard.
   describe('complex styles', function(){        
     it('should support complex styles for geohash doc counts', function(done){
-      var q = {"institutioncode":["uf","flas","flmnh"]}
+      var q = {"genus": "carex", "institutioncode":["uf","flas","flmnh"]}
       var geohash_style = {"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)","doc_count":[{"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)"},{"fill":"rgba(0,255,0,.4)","stroke":"rgba(0,255,0,.6)"},{"fill":"rgba(0,0,255,.4)","stroke":"rgba(0,0,255,.6)"}]}
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(geohash_style)))
@@ -337,7 +337,7 @@ describe('Mapping', function(){
         })
     });
     it('should support complex styles for point properties', function(done){
-      var q = {"institutioncode":["uf","flas","flmnh"]}
+      var q = {"genus": "carex", "institutioncode":["uf","flas","flmnh"]}
       var property_style = {"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)","institutioncode":{"flas":{"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)"},"uf":{"fill":"rgba(0,255,0,.4)","stroke":"rgba(0,255,0,.6)"},"flmnh":{"fill":"rgba(0,0,255,.4)","stroke":"rgba(0,0,255,.6)"}}}
       request(app.server)
         .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(property_style)))
