@@ -24,14 +24,16 @@ module.exports = function(app, config) {
         .post(home.searchProxyPost);
     app.route('/idigbio/:t/_count')
         .get(home.searchProxy)
-        .post(home.searchProxyPost); 
+        .post(home.searchProxyPost);
+    app.route('/v2/meta/fields/:t')
+        .get(home.indexFields);
     app.get('/v2/view/:t/:uuid', view.basic);
     app.route('/v2/search/')
         .get(search.basic)
         .post(search.basic);
     app.route('/v2/media/')
         .get(search.media)
-        .post(search.media); 
+        .post(search.media);
     // app.route('/v2/mapping/:t')
     //     .get(mapping.basic)
     //     .post(mapping.basic);
@@ -39,7 +41,7 @@ module.exports = function(app, config) {
         .get(mapping.createMap)
         .post(mapping.createMap);
     app.route('/v2/mapping/:s')
-        .get(mapping.getMap)        
+        .get(mapping.getMap)
     app.route('/v2/mapping/:s/points')
         .get(mapping.mapPoints)
     app.route('/v2/mapping/:s/:z/:x/:y.:t')
@@ -47,5 +49,5 @@ module.exports = function(app, config) {
 
     app.use(function(req, res, next){
         res.status(404).json({"error": "Not Found"})
-    }); 
+    });
 };

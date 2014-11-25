@@ -16,11 +16,11 @@ describe('Home', function(){
           if(error) {
             done(error);
           } else {
-            response.body.should.have.property("v1"); 
+            response.body.should.have.property("v1");
             done();
           }
         })
-    }) 
+    })
     it('should contain v2', function(done){
       request(app.server)
         .get("/")
@@ -30,11 +30,11 @@ describe('Home', function(){
           if(error) {
             done(error);
           } else {
-            response.body.should.have.property("v2"); 
+            response.body.should.have.property("v2");
             done();
           }
         })
-    }) 
+    })
   })
   describe('v2', function(){
     it('should contain view', function(done){
@@ -64,7 +64,7 @@ describe('Home', function(){
             done();
           }
         })
-    }) 
+    })
     it('should contain mapping', function(done){
       request(app.server)
         .get("/v2")
@@ -74,11 +74,11 @@ describe('Home', function(){
           if(error) {
             done(error);
           } else {
-            response.body.should.have.property("mapping"); 
+            response.body.should.have.property("mapping");
             done();
           }
         })
-    }) 
+    })
   })
   describe('v1', function(){
     it('should contain records', function(done){
@@ -108,7 +108,7 @@ describe('Home', function(){
             done();
           }
         })
-    }) 
+    })
     it('should contain recordsets', function(done){
       request(app.server)
         .get("/v1")
@@ -118,7 +118,7 @@ describe('Home', function(){
           if(error) {
             done(error);
           } else {
-            response.body.should.have.property("recordsets"); 
+            response.body.should.have.property("recordsets");
             done();
           }
         })
@@ -132,11 +132,11 @@ describe('Home', function(){
           if(error) {
             done(error);
           } else {
-            response.body.should.have.property("publishers"); 
+            response.body.should.have.property("publishers");
             done();
           }
         })
-    })    
+    })
   })
   describe('search proxy', function(){
     describe('search', function(){
@@ -200,6 +200,36 @@ describe('Home', function(){
               }
           })
       })
-    })    
-  })      
+    })
+  })
+  describe('meta fields', function(){
+    it('should not be blank for records', function(done){
+      request(app.server)
+        .get("/v2/meta/fields/records")
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
+            Object.keys(response.body).length.should.not.equal(0);
+            done();
+          }
+        })
+    })
+    it('should not be blank for media records', function(done){
+      request(app.server)
+        .get("/v2/meta/fields/mediarecords")
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
+            Object.keys(response.body).length.should.not.equal(0);
+            done();
+          }
+        })
+    })
+  })
 })
