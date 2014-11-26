@@ -10,9 +10,10 @@ module.exports = function(app, config) {
         Object.keys(props).forEach(function(key){
             if (props[key].type) {
                 var typ = props[key].type;
-                if (props[key].analyzer && props[key].analyzer === "keyword") {
-                    typ = "keyword";
-                }
+                // Can't decide if notifying of analyzer status is a good thing or not.
+                // if (props[key].analyzer && props[key].analyzer === "keyword") {
+                //     typ = "keyword";
+                // }
                 rv[key] = {
                     type: typ,
                     fieldName: fnPrefix + key
