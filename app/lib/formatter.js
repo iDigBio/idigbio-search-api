@@ -45,6 +45,9 @@ module.exports = function(app,config) {
         body.hits.hits.forEach(function(hit){
             var indexterms = _.cloneDeep(hit._source);
             delete indexterms["data"];
+            if(!hit._source.data["idigbio:data"]) {
+                hit._source.data["idigbio:data"] = {};
+            }
             rb.items.push({
                 "uuid": hit._id,
                 "etag": hit._source.data["idigbio:etag"],

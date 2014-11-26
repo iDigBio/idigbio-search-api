@@ -1,11 +1,14 @@
 "use strict";
 
 var request = require('request');
+var _ = require('lodash');
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
     var formatter = require("../lib/formatter.js")(app,config);
     var cp = require("../lib/common-params.js")(app,config);
+
+    var required_fields = ["data.idigbio:version", "data.idigbio:etag", "data.idigbio:recordIds"];
 
     return {
         media: function(req, res) {
@@ -18,7 +21,12 @@ module.exports = function(app, config) {
 
             var offset = cp.offset(req);
 
-            var sort = cp.sort(req);        
+            var sort = cp.sort(req);
+
+            var fields = cp.fields(req);
+            if (_.isArray(fields)) {
+                fields.push.apply(fields,required_fields);
+            }
 
             var rquery = queryShim(rq);
             var mrquery = queryShim(mq);
@@ -49,7 +57,7 @@ module.exports = function(app, config) {
                             mrquery["query"]["filtered"]["query"]
                         ]
                     }
-                };                
+                };
             } else {
                 query["query"]["filtered"]["query"] = {
                     "has_parent" : {
@@ -58,7 +66,7 @@ module.exports = function(app, config) {
                     }
                 };
             }
-            
+
             query["aggs"] = {
                 "rs": {
                     "terms": {
@@ -70,6 +78,9 @@ module.exports = function(app, config) {
             query["from"] = offset;
             query["size"] = limit;
             query["sort"] = sort;
+            if (_.isArray(fields)) {
+                query["_source"] = fields;
+            }
 
             request.post({
                 url: config.search.server + config.search.index + "mediarecords/_search",
@@ -87,7 +98,12 @@ module.exports = function(app, config) {
 
             var offset = cp.offset(req);
 
-            var sort = cp.sort(req);          
+            var sort = cp.sort(req);
+
+            var fields = cp.fields(req);
+            if (_.isArray(fields)) {
+                fields.push.apply(fields,required_fields);
+            }
 
             var query = queryShim(rq);
             query["aggs"] = {
@@ -101,6 +117,9 @@ module.exports = function(app, config) {
             query["from"] = offset;
             query["size"] = limit;
             query["sort"] = sort;
+            if (_.isArray(fields)) {
+                query["_source"] = fields;
+            }
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",
@@ -108,6 +127,6 @@ module.exports = function(app, config) {
             },function (error, response, body) {
                 formatter.basic(body,res);
             });
-        },        
+        },
     };
 };

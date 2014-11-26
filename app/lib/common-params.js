@@ -11,7 +11,7 @@ module.exports = function(app,config) {
                 var s = {};
                 s[p] = {"order":"asc"};
                 return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);            
+            },[{"dqs":{"order":"asc"}}]);
         },
         limit: function(req) {
             return getParam(req,"limit",function(p){
@@ -25,11 +25,27 @@ module.exports = function(app,config) {
         },
         query: function(n,req) {
             return  getParam(req,n,function(p){
-                if (_.isString(p)) {
-                    p = JSON.parse(p);
+                try {
+                    if (_.isString(p)) {
+                        p = JSON.parse(p);
+                    }
+                    return p;
+                } catch (e) {
+                    return {}
                 }
-                return p;
             },{});
+        },
+        fields: function(req) {
+            return getParam(req,"fields",function(p){
+                try {
+                    if (_.isString(p)) {
+                        p = JSON.parse(p);
+                    }
+                    return p;
+                } catch (e) {
+                    return undefined;
+                }
+            },undefined);
         }
     };
 };
