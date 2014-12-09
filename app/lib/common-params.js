@@ -10,8 +10,8 @@ module.exports = function(app,config) {
             return getParam(req,"sort",function(p){
                 var s = {};
                 s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"asc"}}];
-            },[{"dqs":{"order":"asc"}}]);
+                return [s,{"dqs":{"order":"desc"}}];
+            },[{"dqs":{"order":"desc"}}]);
         },
         limit: function(req) {
             return getParam(req,"limit",function(p){
