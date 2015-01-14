@@ -5,6 +5,8 @@ var _ = require("lodash");
 var geohash = require("ngeohash");
 var Canvas = require('canvas');
 var Hashids = require('hashids');
+var chroma = require('chroma-js');
+
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
@@ -184,7 +186,9 @@ module.exports = function(app, config) {
         try {
             max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
         } catch(e) {}
+        //console.log(map_def.style)
 
+        var scale = chroma.scale(map_def.style.fill).domain([1, max_bucket_value], 10, 'log');
         body.aggregations.geohash.buckets.forEach(function(bucket){
             var ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator_bbox(bucket["key"],zoom);
 
@@ -197,11 +201,17 @@ module.exports = function(app, config) {
             var prop_style = getStyle(map_def.style,getGeohashProps(bucket));
             var style = {}
 
-            if (map_def.style.doc_count && _.isArray(map_def.style.doc_count) && map_def.style.doc_count.length >= 1) {
-                var style_index = Math.min(Math.floor((bucket.doc_count/max_bucket_value)*map_def.style.doc_count.length),map_def.style.doc_count.length-1)
-                _.defaults(style,map_def.style.doc_count[style_index]);
-            }
+            /*if (map_def.style.doc_count && _.isArray(map_def.style.doc_count) && map_def.style.doc_count.length >= 1) {
+                //var style_index = Math.min(Math.floor((bucket.doc_count/max_bucket_value)*map_def.style.doc_count.length),map_def.style.doc_count.length-1)
+                //_.defaults(style,map_def.style.doc_count[style_index]);
+                var sp = Math.min(Math.floor((bucket.doc_count/max_bucket_value)*map_def.style.doc_count.length),map_def.style.doc_count.length-1)
+                
+            }*/
+            var fl = scale.mode('lab')(bucket.doc_count);
 
+            style.fill = fl.alpha(0.7).css()
+            style.stroke = fl.darker(0.2).alpha(0.7).css()
+            //console.log(style.fill)
             _.defaults(style,prop_style);
 
             drawBbox(context,[nw_pp,se_pp],style.fill,style.stroke);
@@ -220,7 +230,7 @@ module.exports = function(app, config) {
         // context.strokeRect(0,0,255,255)
 
         var point_size = 2;
-
+            
         body.hits.hits.forEach(function(hit){
             var ttpp = tileMath.lat_lon_zoom_to_xy_tile_pixels_mercator(hit._source.geopoint.lat,hit._source.geopoint.lon,zoom);
 
@@ -547,7 +557,7 @@ module.exports = function(app, config) {
                     body: JSON.stringify(query)
                 },function (error, response, body) {
                     body = JSON.parse(body);
-
+                         
                     if (response_type === "json") {
                         if (type === "geohash") {
                             geoJsonGeohash(body,function(rb){
@@ -591,7 +601,11 @@ module.exports = function(app, config) {
             };
 
             var style = getParam(req,"style",function(p){
-                return JSON.parse(p);
+                try {
+                    return JSON.parse(p);
+                }catch(e){
+                    return p
+                }
             },default_style);
 
             _.defaults(style,default_style);

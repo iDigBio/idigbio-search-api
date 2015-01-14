@@ -153,7 +153,50 @@ describe('Search', function(){
           }
         })
     })
+    it('should support multiple field sorting with an array', function(done){
+      var q = {"family":"asteraceae"}, s = [{"genus":"desc"},{"specificepithet":"asc"}];
+      request(app.server)
+        .post("/v2/search/")
+        .send({
+            rq: q,
+            sort: s,
+            limit: 10,
+        })
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.not.equal(0);
+            response.body.items.length.should.not.equal(0);
+            done();
+          }
+        })      
+    });
+    it('should support sorting with a single field name string', function(done){
+      var q = {"family":"asteraceae"}, s = "genus";
+      request(app.server)
+        .post("/v2/search/")
+        .send({
+            rq: q,
+            sort: s,
+            limit: 10,
+        })
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
+            response.body.itemCount.should.not.equal(0);
+            response.body.items.length.should.not.equal(0);
+            done();
+          }
+        })      
+    });
   })
+
   describe('mediaGET', function(){
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
       var q = {"scientificname": "nullius nullius"}

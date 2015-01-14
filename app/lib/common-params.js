@@ -8,9 +8,27 @@ module.exports = function(app,config) {
     return {
         sort: function(req) {
             return getParam(req,"sort",function(p){
-                var s = {};
-                s[p] = {"order":"asc"};
-                return [s,{"dqs":{"order":"desc"}}];
+                var order=[],param,s;
+                try {
+                    param = JSON.parse(p);
+                } catch(e) {
+                    param = p;
+                }
+                if(_.isString(param)){
+                    s={};
+                    s[param]={"order":"asc"};
+                    order.push(s); 
+                }else if(_.isArray(param)){
+                    param.forEach(function(item){
+                        s={};
+                        _.forOwn(item,function(v,k){
+                            s[k]={"order": v};
+                            order.push(s);
+                        });
+                    });
+                }
+                order.push({"dqs":{"order":"desc"}});
+                return order;
             },[{"dqs":{"order":"desc"}}]);
         },
         limit: function(req) {
