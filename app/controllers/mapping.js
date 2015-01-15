@@ -90,7 +90,6 @@ module.exports = function(app, config) {
             "geohash": bucket.key,
             "itemCount": bucket.doc_count,
         }
-
         return props;
     }
 
@@ -187,7 +186,7 @@ module.exports = function(app, config) {
             max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
         } catch(e) {}
         //console.log(map_def.style)
-
+       // console.log(map_def.style.fill)
         var scale = chroma.scale(map_def.style.fill).domain([1, max_bucket_value], 10, 'log');
         body.aggregations.geohash.buckets.forEach(function(bucket){
             var ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator_bbox(bucket["key"],zoom);
@@ -596,8 +595,8 @@ module.exports = function(app, config) {
             },"geohash");
 
             var default_style = {
-                fill: 'rgba(0,255,0,.4)',
-                stroke: 'rgba(0,255,0,.6)'                
+                fill: 'YlGnBu',
+                stroke: 'YlGnBu'                
             };
 
             var style = getParam(req,"style",function(p){
