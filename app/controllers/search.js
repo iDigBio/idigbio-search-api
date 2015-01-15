@@ -3,10 +3,10 @@
 var request = require('request');
 var _ = require('lodash');
 
-module.exports = function(app, config) {
-    var queryShim = require('../lib/query-shim.js')(app,config);
+module.exports = function(app, config) {   
     var formatter = require("../lib/formatter.js")(app,config);
     var cp = require("../lib/common-params.js")(app,config);
+    var qg = require("../lib/query-generators.js")(app,config);
 
     var required_fields = ["data.idigbio:version", "data.idigbio:etag", "data.idigbio:recordIds"];
 
@@ -28,59 +28,7 @@ module.exports = function(app, config) {
                 fields.push.apply(fields,required_fields);
             }
 
-            var rquery = queryShim(rq);
-            var mrquery = queryShim(mq);
-
-            var query = {
-                "query": {
-                    "filtered": {
-                        "filter": {},
-                        "query": {},
-                    }
-                }
-            };
-
-            if (mrquery["query"]["filtered"]["filter"]) {
-                query["query"]["filtered"]["filter"] = mrquery["query"]["filtered"]["filter"];
-            }
-
-            if (mrquery["query"]["filtered"]["query"]) {
-                query["query"]["filtered"]["query"] = {
-                    "bool": {
-                        "must": [
-                            {
-                                "has_parent" : {
-                                    "parent_type" : "records",
-                                    "query" : rquery["query"]
-                                }
-                            },
-                            mrquery["query"]["filtered"]["query"]
-                        ]
-                    }
-                };
-            } else {
-                query["query"]["filtered"]["query"] = {
-                    "has_parent" : {
-                        "parent_type" : "records",
-                        "query" : rquery["query"]
-                    }
-                };
-            }
-
-            query["aggs"] = {
-                "rs": {
-                    "terms": {
-                        "field": "recordset",
-                        "size": config.maxRecordsets
-                    }
-                }
-            };
-            query["from"] = offset;
-            query["size"] = limit;
-            query["sort"] = sort;
-            if (_.isArray(fields)) {
-                query["_source"] = fields;
-            }
+            var query = qg.media_query(rq,mq,fields,sort,limit,offset)
 
             request.post({
                 url: config.search.server + config.search.index + "mediarecords/_search",
@@ -105,21 +53,7 @@ module.exports = function(app, config) {
                 fields.push.apply(fields,required_fields);
             }
 
-            var query = queryShim(rq);
-            query["aggs"] = {
-                "rs": {
-                    "terms": {
-                        "field": "recordset",
-                        "size": config.maxRecordsets
-                    }
-                }
-            };
-            query["from"] = offset;
-            query["size"] = limit;
-            query["sort"] = sort;
-            if (_.isArray(fields)) {
-                query["_source"] = fields;
-            }
+            var query = qg.record_query(rq,fields,sort,limit,offset)
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",

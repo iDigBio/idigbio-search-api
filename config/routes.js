@@ -5,6 +5,7 @@ module.exports = function(app, config) {
     var search = require('../app/controllers/search')(app, config);
     var mapping = require('../app/controllers/mapping')(app, config);
     var view = require('../app/controllers/view')(app, config);
+    var summary = require('../app/controllers/summary')(app, config);
 
     // app.use(function(req, res, next){
     //     console.log(req.originalUrl);
@@ -34,6 +35,12 @@ module.exports = function(app, config) {
     app.route('/v2/media/')
         .get(search.media)
         .post(search.media);
+    app.route('/v2/summary/top/media')
+        .get(summary.top_media)
+        .post(summary.top_media);
+    app.route('/v2/summary/top/basic')
+        .get(summary.top_basic)
+        .post(summary.top_basic);        
     // app.route('/v2/mapping/:t')
     //     .get(mapping.basic)
     //     .post(mapping.basic);

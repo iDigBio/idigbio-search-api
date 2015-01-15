@@ -64,8 +64,43 @@ module.exports = function(app,config) {
         });   
     }
 
+    function top_aggs(b) {
+        var bv = {};
+
+        if (b.doc_count) {
+            bv["itemCount"] = b.doc_count
+        }
+
+        Object.keys(b).forEach(function(k){
+            if (k.slice(0,4) == "top_") {
+                var ok = k.slice(4);
+                bv[ok] = {};
+                b[k].buckets.forEach(function(bk){
+                    bv[ok][bk.key] = top_aggs(bk);
+                });
+            }
+        });
+        return bv;
+    }
+
+    function top_formatter(body, res) {
+        body = JSON.parse(body);
+
+        if (body.status === 400) {
+            res.status(400).json({
+                "error": "Bad Request"
+            });
+            return;
+        }
+
+        var rb = top_aggs(body.aggregations);
+
+        res.json(rb);
+    }
+
     return {
         basic: basic,
-        attribution: attribution
+        attribution: attribution,
+        top_formatter: top_formatter
     };
 };
