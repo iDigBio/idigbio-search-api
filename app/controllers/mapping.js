@@ -188,7 +188,7 @@ module.exports = function(app, config) {
         } catch(e) {}
         //console.log(map_def.style)
 
-        var scale = chroma.scale(map_def.style.fill).domain([1, max_bucket_value], 10, 'log');
+        var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
         body.aggregations.geohash.buckets.forEach(function(bucket){
             var ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator_bbox(bucket["key"],zoom);
 
@@ -597,7 +597,8 @@ module.exports = function(app, config) {
 
             var default_style = {
                 fill: 'rgba(0,255,0,.4)',
-                stroke: 'rgba(0,255,0,.6)'                
+                stroke: 'rgba(0,255,0,.6)',
+                scale: 'YlOrRd'
             };
 
             var style = getParam(req,"style",function(p){
