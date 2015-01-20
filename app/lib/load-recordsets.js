@@ -17,6 +17,7 @@ module.exports = function(app,config) {
                     "logo": hit._source.data["idigbio:data"].logo_url,
                     "url": hit._source.data["idigbio:data"].institution_web_address,
                     "contacts": hit._source.data["idigbio:data"].contacts,
+                    "data_rights": hit._source.data["idigbio:data"].data_rights,
                 };
             });
 
