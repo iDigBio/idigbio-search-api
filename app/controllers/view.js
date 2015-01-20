@@ -15,10 +15,21 @@ module.exports = function(app, config) {
             var t = req.params.t;
             var uuid = req.params.uuid;
 
-            request.get(config.search.server + config.search.index + t + "/" + uuid,function (error, response, body) {
-                body = JSON.parse(body);
+            var query = {
+                "query": { 
+                    "term": {
+                        "uuid": uuid
+                    }
+                }
+            }
 
-                if (body.found) {
+            request.post({
+                url: config.search.server + config.search.index + t + "/_search",
+                body: JSON.stringify(query)
+            }, function (error, response, body) {
+                body = JSON.parse(body);
+                if (body.hits.hits.length > 0) {
+                    body = body.hits.hits[0];
                     var indexterms = _.cloneDeep(body._source);
                     delete indexterms["data"];
                     var rb = {
