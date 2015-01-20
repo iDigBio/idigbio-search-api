@@ -4,7 +4,7 @@ var config = {
     "port": 19196,
     "search": {
         "server": "http://search.idigbio.org/",
-        "index": "idigbio/",
+        "index": "idigbio-2.0.0/",
     },
     maxRecordsets: 1000,
     defaultLimit: 100,
