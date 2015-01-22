@@ -28,7 +28,9 @@ module.exports = function(app, config) {
                 fields.push.apply(fields,required_fields);
             }
 
-            var query = qg.media_query(rq,mq,fields,sort,limit,offset)
+            var fields_exclude = cp.fields_exclude(req);
+
+            var query = qg.media_query(rq,mq,fields,sort,limit,offset,fields_exclude)
 
             request.post({
                 url: config.search.server + config.search.index + "mediarecords/_search",
@@ -53,7 +55,9 @@ module.exports = function(app, config) {
                 fields.push.apply(fields,required_fields);
             }
 
-            var query = qg.record_query(rq,fields,sort,limit,offset)
+            var fields_exclude = cp.fields_exclude(req);
+
+            var query = qg.record_query(rq,fields,sort,limit,offset,fields_exclude)
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",

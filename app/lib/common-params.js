@@ -69,6 +69,18 @@ module.exports = function(app,config) {
                     return undefined;
                 }
             },undefined);
+        },
+        fields_exclude: function(req) {
+            return getParam(req,"fields_exclude",function(p){
+                try {
+                    if (_.isString(p)) {
+                        p = JSON.parse(p);
+                    }
+                    return p;
+                } catch (e) {
+                    return undefined;
+                }
+            },undefined);
         }
     };
 };

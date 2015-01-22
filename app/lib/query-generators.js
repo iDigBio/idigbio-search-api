@@ -25,7 +25,7 @@ module.exports = function(app,config) {
         return rv;
     }
 
-    function media_query(rq,mq,fields,sort,limit,offset) {
+    function media_query(rq,mq,fields,sort,limit,offset,fields_exclude) {
         var rquery = queryShim(rq);
         var mrquery = queryShim(mq);
 
@@ -89,13 +89,24 @@ module.exports = function(app,config) {
         query["size"] = limit;
         query["sort"] = sort;
         if (_.isArray(fields)) {
-            query["_source"] = fields;
+            if (_.isArray(fields_exclude)) {
+                query["_source"] = {
+                    "include": fields,
+                    "exclude": fields_exclude
+                }
+            } else {
+                query["_source"] = fields;
+            }
+        } else if (_.isArray(fields_exclude)) {
+            query["_source"] = {
+                "exclude": fields_exclude
+            }
         }
 
         return query;
     }
 
-    function record_query(rq,fields,sort,limit,offset) {
+    function record_query(rq,fields,sort,limit,offset,fields_exclude) {
         var query = queryShim(rq);
         query["aggs"] = {
             "rs": {
@@ -109,7 +120,18 @@ module.exports = function(app,config) {
         query["size"] = limit;
         query["sort"] = sort;
         if (_.isArray(fields)) {
-            query["_source"] = fields;
+            if (_.isArray(fields_exclude)) {
+                query["_source"] = {
+                    "include": fields,
+                    "exclude": fields_exclude
+                }
+            } else {
+                query["_source"] = fields;
+            }
+        } else if (_.isArray(fields_exclude)) {
+            query["_source"] = {
+                "exclude": fields_exclude
+            }
         }
 
         return query;
