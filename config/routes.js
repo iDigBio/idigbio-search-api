@@ -40,7 +40,13 @@ module.exports = function(app, config) {
         .post(summary.top_media);
     app.route('/v2/summary/top/basic')
         .get(summary.top_basic)
-        .post(summary.top_basic);        
+        .post(summary.top_basic);
+    app.route('/v2/summary/count/media')
+        .get(summary.count_media)
+        .post(summary.count_media);
+    app.route('/v2/summary/count/basic')
+        .get(summary.count_basic)
+        .post(summary.count_basic);
     // app.route('/v2/mapping/:t')
     //     .get(mapping.basic)
     //     .post(mapping.basic);

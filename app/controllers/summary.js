@@ -75,5 +75,45 @@ module.exports = function(app, config) {
                 formatter.top_formatter(body,res);                
             });
         },
+
+        count_media: function(req, res) {
+
+            var mq = cp.query("mq", req);
+
+            var rq = cp.query("rq", req);
+
+            var query = qg.media_query(rq,mq,undefined,undefined,undefined,undefined)
+
+            delete query["aggs"];
+
+            request.post({
+                url: config.search.server + config.search.index + "mediarecords/_count",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                var bo = JSON.parse(body)
+                res.json({
+                    itemCount: bo.count
+                });
+            });
+        },
+
+        count_basic: function(req, res) {
+
+            var rq = cp.query("rq", req);
+
+            var query = qg.record_query(rq,undefined,undefined,undefined,undefined);
+
+            delete query["aggs"];
+
+            request.post({
+                url: config.search.server + config.search.index + "records/_count",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                var bo = JSON.parse(body)
+                res.json({
+                    itemCount: bo.count
+                });
+            });
+        },
     };
 };

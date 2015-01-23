@@ -94,6 +94,7 @@ module.exports = function(app,config) {
         }
 
         var rb = top_aggs(body.aggregations);
+        rb["itemCount"] = body.hits.total;
 
         res.json(rb);
     }
