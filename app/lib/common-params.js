@@ -41,6 +41,11 @@ module.exports = function(app,config) {
                 return parseInt(p);
             },0);
         },
+        top_count: function(req) {
+            return getParam(req,"count",function(p){
+               return Math.min(parseInt(p),config.maxLimit);
+            },10);
+        },
         query: function(n,req) {
             return  getParam(req,n,function(p){
                 try {

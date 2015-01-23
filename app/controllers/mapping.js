@@ -186,8 +186,7 @@ module.exports = function(app, config) {
             max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
         } catch(e) {}
         //console.log(map_def.style)
-       // console.log(map_def.style.fill)
-        var scale = chroma.scale(map_def.style.fill).domain([1, max_bucket_value], 10, 'log');
+        var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
         body.aggregations.geohash.buckets.forEach(function(bucket){
             var ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator_bbox(bucket["key"],zoom);
 
@@ -474,6 +473,7 @@ module.exports = function(app, config) {
 
                 var query = queryShim(map_def.rq);
                 var type = map_def.type;
+                var threshold = map_def.threshold;
 
                 makeKeyDefined(["query","filtered","filter"],query);
 
@@ -551,6 +551,20 @@ module.exports = function(app, config) {
                     };
                 }
 
+                var typeGeohash = function(){
+                    tileGeohash(z,x,y,map_def,body,function(err,png_buff){
+                        res.type('png');
+                        res.send(png_buff);
+                    });
+                }
+
+                var typePoints = function(){
+                    tilePoints(z,x,y,map_def,body,function(err,png_buff){
+                        res.type('png');
+                        res.send(png_buff);
+                    });                    
+                }
+
                 request.post({
                     url: config.search.server + config.search.index + "records/_search",
                     body: JSON.stringify(query)
@@ -569,16 +583,12 @@ module.exports = function(app, config) {
                         }
                     } else {
                         if (type === "geohash") {
-                            tileGeohash(z,x,y,map_def,body,function(err,png_buff){
-                                res.type('png');
-                                res.send(png_buff);
-                            });
+                            typeGeohash();
                         } else if (type === "points") {
-                            tilePoints(z,x,y,map_def,body,function(err,png_buff){
-                                res.type('png');
-                                res.send(png_buff);
-                            });
-                        }                        
+                            typePoints()
+                        } else if (type === "auto") {
+                            console.log(body);
+                        }                       
                     }
                 });
             });
@@ -589,14 +599,25 @@ module.exports = function(app, config) {
             var type = getParam(req,"type",function(p){
                 if (p === "points") {
                     return "points";
+                } else if(p === "auto"){
+                    return "auto";
                 } else {
                     return "geohash";
                 }
             },"geohash");
 
+            var threshold = getParam(req,"threshold",function(p){
+                if(_.isFinite(p)){
+                    return p;
+                }else{
+                    return 5000;
+                }
+            },5000);
+
             var default_style = {
-                fill: 'YlGnBu',
-                stroke: 'YlGnBu'                
+                fill: 'rgba(0,255,0,.4)',
+                stroke: 'rgba(0,255,0,.6)',
+                scale: 'YlOrRd'
             };
 
             var style = getParam(req,"style",function(p){
@@ -612,7 +633,8 @@ module.exports = function(app, config) {
             var map_def = {
                 rq: rq,
                 type: type,
-                style: style
+                style: style,
+                threshold: threshold
             };
 
             var h = hasher.hash("sha1",map_def);
