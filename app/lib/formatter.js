@@ -99,9 +99,31 @@ module.exports = function(app,config) {
         res.json(rb);
     }
 
+    function date_hist_formatter(body,res) {
+        body = JSON.parse(body);
+
+        if (body.status === 400) {
+            res.status(400).json({
+                "error": "Bad Request"
+            });
+            return;
+        }
+
+        var rb = { "dates": {} }
+        body.aggregations.fdh.dh.buckets.forEach(function(b){
+            rb.dates[b.key_as_string] = top_aggs(b);
+        })
+
+        rb["itemCount"] = body.hits.total;
+        rb["rangeCount"] = body.aggregations.fdh.doc_count;
+
+        res.json(rb);
+    }
+
     return {
         basic: basic,
         attribution: attribution,
-        top_formatter: top_formatter
+        top_formatter: top_formatter,
+        date_hist_formatter: date_hist_formatter
     };
 };
