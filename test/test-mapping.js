@@ -222,6 +222,31 @@ describe('Mapping', function(){
               })
           }
         })
+    }); 
+    it('should return an png image for auto maps', function(done){
+      var q = {"scientificname": "puma concolor"}
+      request(app.server)
+        .get("/v2/mapping/?type=auto&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error1, response1) {
+          if(error1) {
+            done(error1);
+          } else {          
+            request(app.server)
+              .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.png")
+              .expect('Content-Type', /png/)
+              .expect(200)
+              .end(function(error, response) {
+                if(error) {
+                  done(error);
+                } else {
+                  response.body.length.should.not.equal(0);
+                  done();
+                }
+              })
+          }
+        })
     });    
   });
   describe('geojson map tiles', function(){
