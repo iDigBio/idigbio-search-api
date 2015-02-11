@@ -73,7 +73,7 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.top_formatter(body,res);                
+                formatter.top_formatter(body,res);
             });
         },
 
@@ -177,6 +177,129 @@ module.exports = function(app, config) {
                 body: JSON.stringify(query)
             },function (error, response, body) {
                 formatter.date_hist_formatter(body,res);
+            });
+        },
+
+        stats: function(req, res) {
+
+            var query = {
+                "size": 0
+            };
+
+            var t = req.params.t;
+
+            var recordset = getParam(req,"recordset",function(p){
+               return p;
+            },undefined);
+
+            var minDate = getParam(req,"minDate",function(p){
+               return p;
+            },"2014-01-01");
+
+            var maxDate = getParam(req,"maxDate",function(p){
+               return p;
+            },"now");
+
+            var dateInterval = getParam(req,"dateInterval",function(p){
+               return p;
+            },"year");
+
+            var rf = {
+                "harvest_date": {
+                    "gte": minDate,
+                    "lte": maxDate,
+                }
+            }
+
+            var filt = {
+                "range": rf
+            };
+            if (recordset) {
+                filt = {
+                    "and": [
+                        {
+                            "range": rf
+                        },
+                        {
+                            "term": {
+                                "recordset_id": recordset
+                            }
+                        }
+                    ]
+                }
+            }
+
+            query.aggs = {
+                "fdh": {
+                    "filter": filt,
+                    "aggs": {
+                        "dh": {
+                            "date_histogram": {
+                                "field": "harvest_date",
+                                "interval": dateInterval,
+                                "format": "yyyy-MM-dd"
+                            },
+                            "aggs": {
+                                "rs": {
+                                    "terms": {
+                                        "field": "recordset_id",
+                                        "size": config.maxRecordsets
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (t == "fields" || t == "search") {
+                query.aggs.fdh.aggs.dh.aggs.rs.aggs = {
+                    "seen": {
+                        "sum": {
+                            "field": "seen.total"
+                        }
+                    },
+                    "search": {
+                        "sum": {
+                            "field": "search.total"
+                        }
+                    },
+                    "download": {
+                        "sum": {
+                            "field": "download.total"
+                        }
+                    },
+                    // "viewed": {
+                    //     "sum": {
+                    //         "field": "viewed.total"
+                    //     }
+                    // }
+                }
+            } else if (t == "api" || t == "digest") {
+                query.aggs.fdh.aggs.dh.aggs.rs.aggs = {
+                    "records": {
+                        "max": {
+                            "field": "records_count"
+                        }
+                    },
+                    "mediarecords": {
+                        "max": {
+                            "field": "mediarecords_count"
+                        }
+                    }
+                }
+            } else {
+                res.status(400).json({
+                    "error": "Bad Type"
+                });
+                return;
+            }
+
+            request.post({
+                url: config.search.server + "stats/" + t + "/_search",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                formatter.stats_hist_formatter(body,res);
             });
         }
     };

@@ -50,6 +50,9 @@ module.exports = function(app, config) {
     app.route('/v2/summary/datehist')
         .get(summary.date_hist)
         .post(summary.date_hist);
+    app.route('/v2/summary/stats/:t')
+        .get(summary.stats)
+        .post(summary.stats);
     // app.route('/v2/mapping/:t')
     //     .get(mapping.basic)
     //     .post(mapping.basic);

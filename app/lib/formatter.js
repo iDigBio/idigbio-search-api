@@ -3,7 +3,7 @@
 var _ = require("lodash");
 var async = require("async");
 
-module.exports = function(app,config) {    
+module.exports = function(app,config) {
     var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
 
     function attribution(rss,cb) {
@@ -23,9 +23,9 @@ module.exports = function(app,config) {
             }
         },function(err,results){
             cb(results);
-        });        
+        });
     }
-    
+
     function basic(body, res) {
         body = JSON.parse(body);
 
@@ -60,8 +60,8 @@ module.exports = function(app,config) {
 
         attribution(body.aggregations.rs.buckets, function(results){
             rb.attribution = results;
-            res.json(rb);            
-        });   
+            res.json(rb);
+        });
     }
 
     function top_aggs(b) {
@@ -120,10 +120,42 @@ module.exports = function(app,config) {
         res.json(rb);
     }
 
+    function stats_hist_formatter(body,res) {
+        body = JSON.parse(body);
+
+        if (body.status === 400) {
+            res.status(400).json({
+                "error": "Bad Request"
+            });
+            return;
+        }
+
+        var rb = { "dates": {} }
+        body.aggregations.fdh.dh.buckets.forEach(function(b){
+            var outer = {};
+            b.rs.buckets.forEach(function(rsb){
+                var inner = {};
+                Object.keys(rsb).forEach(function(f){
+                    if (f != "key" && f != "doc_count") {
+                        inner[f] = rsb[f]["value"];
+                        if (inner[f] == null) {
+                            inner[f] = 0;
+                        }
+                    }
+                })
+                outer[rsb.key] = inner;
+            })
+            rb.dates[b.key_as_string] = outer;
+        })
+
+        res.json(rb);
+    }
+
     return {
         basic: basic,
         attribution: attribution,
         top_formatter: top_formatter,
-        date_hist_formatter: date_hist_formatter
+        date_hist_formatter: date_hist_formatter,
+        stats_hist_formatter: stats_hist_formatter
     };
 };
