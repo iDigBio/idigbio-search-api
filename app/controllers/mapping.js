@@ -7,6 +7,9 @@ var Canvas = require('canvas');
 var Hashids = require('hashids');
 var chroma = require('chroma-js');
 
+var mapnik = require('mapnik'),
+    mercator = require('../lib/sphericalmercator');
+
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
@@ -219,34 +222,83 @@ module.exports = function(app, config) {
     }
 
     function tilePoints(zoom,x,y,map_def,body,cb){
-        var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
-        var context = canvas.getContext('2d');
+        var map = new mapnik.Map(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
 
-        // Debug tile border
-        // context.strokeStyle = '#FF0000';
-        // context.lineWidth = 1;
-        // context.strokeRect(0,0,255,255)
+        var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">';
+        s += '<Style name="style">';
+        s += ' <Rule>';
+        s += '  <MarkersSymbolizer marker-type="ellipse" fill="red" width="5" allow-overlap="true" placement="point"/>';
+        s += ' </Rule>';
+        s += '</Style>';
+        s += '</Map>';
+
+        var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
+        map.fromString(s,
+          {strict: true, base: './'},
+          function(err, map) {
+              if (err) {
+                cb(err,undefined)
+              }
+
+              var options = {
+                  extent: '-20037508.342789,-8283343.693883,20037508.342789,18365151.363070'
+              };
+
+              var mem_ds = new mapnik.MemoryDatasource({});
+
+              body.hits.hits.forEach(function(hit){
+                    var xy = mercator.ll_to_px([hit._source.geopoint.lat,hit._source.geopoint.lon], zoom);
+
+                     console.log('x: ' + xy[0] + ' y: ' + xy[1]);
+                     mem_ds.add({
+                                  'x' : xy[0],
+                                  'y' : xy[1],
+                                  'properties': {}
+                                });
+              });
+
+              var l = new mapnik.Layer('test');
+              l.srs = map.srs;
+              l.styles = ['style'];
+              l.datasource = mem_ds;
+              map.add_layer(l);
+              map.extent = bbox;
+              var im = new mapnik.Image(map.width, map.height);
+              map.render(im, function(err, im) {
+                  console.log("mapnik rendered")
+                  cb(err,im.encodeSync('png'));
+              });
+            }
+        );
+
+        // var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
+        // var context = canvas.getContext('2d');
+
+        // // Debug tile border
+        // // context.strokeStyle = '#FF0000';
+        // // context.lineWidth = 1;
+        // // context.strokeRect(0,0,255,255)
  
-        var point_size = 2;
-        if(zoom>4 && zoom<=7){
-            point_size = 3;
-        }else if(zoom>7 && zoom<=10){
-            point_size = 4;
-        }else if(zoom>10){
-            point_size = 5;
-        }
+        // var point_size = 2;
+        // if(zoom>4 && zoom<=7){
+        //     point_size = 3;
+        // }else if(zoom>7 && zoom<=10){
+        //     point_size = 4;
+        // }else if(zoom>10){
+        //     point_size = 5;
+        // }
             
-        body.hits.hits.forEach(function(hit){
-            var ttpp = tileMath.lat_lon_zoom_to_xy_tile_pixels_mercator(hit._source.geopoint.lat,hit._source.geopoint.lon,zoom);
+        // body.hits.hits.forEach(function(hit){
+        //     var ttpp = tileMath.lat_lon_zoom_to_xy_tile_pixels_mercator(hit._source.geopoint.lat,hit._source.geopoint.lon,zoom);
 
-            var pp = tileMath.project_ttpp_to_current_tile_pixels(ttpp,x,y);
+        //     var pp = tileMath.project_ttpp_to_current_tile_pixels(ttpp,x,y);
 
-            var style = getStyle(map_def.style,getPointProps(hit));
+        //     var style = getStyle(map_def.style,getPointProps(hit));
 
-            drawCircle(context,pp[0],pp[1],point_size,style.fill,style.stroke);
-        });
+        //     drawCircle(context,pp[0],pp[1],point_size,style.fill,style.stroke);
+        // });
 
-        canvas.toBuffer(cb);
+        // canvas.toBuffer(cb);
     }    
 
     function makeKeyDefined(path,wd){
@@ -339,7 +391,6 @@ module.exports = function(app, config) {
 
         var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z,x,y);
         var gl = tileMath.zoom_to_geohash_len(z,false);
-
         var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
         var padding_size = 3;
 
