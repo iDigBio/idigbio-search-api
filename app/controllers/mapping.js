@@ -245,11 +245,12 @@ module.exports = function(app, config) {
               };
 
               var mem_ds = new mapnik.MemoryDatasource({});
+              var proj = new mapnik.Projection('+init=epsg:3857');
 
               body.hits.hits.forEach(function(hit){
-                    var xy = mercator.ll_to_px([hit._source.geopoint.lat,hit._source.geopoint.lon], zoom);
+                    var xy = proj.forward([hit._source.geopoint.lon,hit._source.geopoint.lat]);
 
-                     console.log('x: ' + xy[0] + ' y: ' + xy[1]);
+                     //console.log('x: ' + xy[0] + ' y: ' + xy[1]);
                      mem_ds.add({
                                   'x' : xy[0],
                                   'y' : xy[1],
