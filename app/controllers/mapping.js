@@ -26,61 +26,6 @@ module.exports = function(app, config) {
 
     var hashids = new Hashids("idigbio", 8);
 
-    function drawCircle(context,x,y,radius,fillStyle,strokeStyle) {
-        if(fillStyle){
-            context.fillStyle = fillStyle;
-        } else {
-            context.fillStyle = 'rgba(0,255,0,.4)';
-        }
-        if(strokeStyle){
-            context.strokeStyle = strokeStyle;
-        } else {
-            context.strokeStyle = 'rgba(0,255,0,.6)';
-        }
-        context.lineWidth = 1;
-
-        context.beginPath();
-        context.arc(x, y, radius, 0, 6 * Math.PI, false);
-        context.fill();
-        context.stroke();
-    }
-
-    // function drawSquare(context,x,y,size,fillStyle,strokeStyle) {
-    //     context.beginPath();
-    //     context.fillRect(x,y,size,size);
-    //     if(fillStyle){
-    //         context.fillStyle = fillStyle;
-    //     } else {
-    //         context.fillStyle = 'green';
-    //     }
-    //     context.fill();
-    //     context.lineWidth = 5;
-    //     if(strokeStyle){
-    //         context.strokeStyle = '#003300';
-    //     } else {
-    //         context.strokeStyle = '#003300';
-    //     }
-    //     context.stroke();
-    // }
-
-    function getStyle(style,properties) {
-        var ret_style = {};
-        _.keys(style).forEach(function(k){
-            if (k !== "fill" && k !== "stroke" && k !== "doc_count") {
-                if(properties[k]) {
-                    if (style[k][properties[k]]) {
-                        _.defaults(ret_style,style[k][properties[k]]);
-                    }
-                }
-            }
-        })
-        _.defaults(ret_style,{
-            fill: style.fill,
-            stroke: style.stroke
-        });
-        return ret_style;
-    }
-
     function getPointProps(hit) {
         var props = {
             "uuid": hit._id,
@@ -99,28 +44,6 @@ module.exports = function(app, config) {
             "itemCount": bucket.doc_count,
         }
         return props;
-    }
-
-    function drawBbox(context,pp,fillStyle,strokeStyle) {
-
-        var xsize = pp[0][0] - pp[1][0];
-        var ysize = pp[0][1] - pp[1][1];
-
-        // console.log(pp[0][0],pp[0][1],xsize,ysize)
-
-        if(fillStyle){
-            context.fillStyle = fillStyle;
-        } else {
-            context.fillStyle = 'rgba(0,255,0,.4)';
-        }
-        if(strokeStyle){
-            context.strokeStyle = strokeStyle;
-        } else {
-            context.strokeStyle = 'rgba(0,255,0,.6)';
-        }
-        context.lineWidth = 1;
-        context.fillRect(pp[0][0],pp[0][1],xsize,ysize);
-        context.strokeRect(pp[0][0],pp[0][1],xsize,ysize);
     }
 
     function geoJsonPoints(body,cb){
