@@ -7,9 +7,14 @@ var Canvas = require('canvas');
 var Hashids = require('hashids');
 var chroma = require('chroma-js');
 
+var path = require('path');
+
 var mapnik = require('mapnik'),
     mercator = require('../lib/sphericalmercator');
 
+mapnik.Logger.setSeverity(mapnik.Logger.DEBUG)
+
+mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins,'csv.input'));
 
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app,config);
@@ -176,49 +181,86 @@ module.exports = function(app, config) {
     }
 
     function tileGeohash(zoom,x,y,map_def,body,cb){
-        var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
-        var context = canvas.getContext('2d');
 
-        // Debug tile border
-        // context.strokeStyle = '#FF0000';
-        // context.lineWidth = 1;
-        // context.strokeRect(0,0,255,255)
+        var map = new mapnik.Map(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
 
         var max_bucket_value = 1;
         try {
             max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
         } catch(e) {}
-        //console.log(map_def.style)
+
+
+        var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
+        s += '  <Style name="style" filter-mode="first">\n';
+
         var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
-        body.aggregations.geohash.buckets.forEach(function(bucket){
-            var ttpp = tileMath.geohash_zoom_to_xy_tile_pixels_mercator_bbox(bucket["key"],zoom);
+        scale.domain().forEach(function(domain){
+            var fl = scale.mode('lab')(domain);
+            s += '    <Rule>\n';
+            s += '        <Filter>[count] &lt;= ' + Math.ceil(domain) + '</Filter>\n';
+            s += '        <PolygonSymbolizer fill="' + fl.alpha(0.7).css() + '" clip="true" />\n';
+            s += '        <LineSymbolizer stroke="' + fl.darker(0.2).alpha(0.7).css() + '" stroke-width=".2" clip="true" />\n';
+            s += '    </Rule>\n';                    
+        })
+        s += '    <Rule>\n';
+        s += '        <ElseFilter/>\n';
+        s += '        <PolygonSymbolizer fill="black" clip="true" />\n';
+        s += '        <LineSymbolizer stroke="black" stroke-width=".2" clip="true" />\n';
+        s += '    </Rule>\n';       
+        s += '  </Style>\n';
+        s += '</Map>';
 
-            var nw_ttpp = ttpp[0];
-            var se_ttpp = ttpp[1];
+        var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
+        map.fromString(s,
+          {strict: true, base: './'},
+          function(err, map) {
+              if (err) {
+                cb(err,undefined)
+              }
 
-            var nw_pp = tileMath.project_ttpp_to_current_tile_pixels(nw_ttpp,x,y);
-            var se_pp = tileMath.project_ttpp_to_current_tile_pixels(se_ttpp,x,y);
+              var options = {
+                  extent: '-20037508.342789,-8283343.693883,20037508.342789,18365151.363070'
+              };
 
-            var prop_style = getStyle(map_def.style,getGeohashProps(bucket));
-            var style = {}
+            var csv_string = "count,geojson\n";
+              var proj = new mapnik.Projection('+init=epsg:3857');
 
-            /*if (map_def.style.doc_count && _.isArray(map_def.style.doc_count) && map_def.style.doc_count.length >= 1) {
-                //var style_index = Math.min(Math.floor((bucket.doc_count/max_bucket_value)*map_def.style.doc_count.length),map_def.style.doc_count.length-1)
-                //_.defaults(style,map_def.style.doc_count[style_index]);
-                var sp = Math.min(Math.floor((bucket.doc_count/max_bucket_value)*map_def.style.doc_count.length),map_def.style.doc_count.length-1)
-                
-            }*/
-            var fl = scale.mode('lab')(bucket.doc_count);
+            body.aggregations.geohash.buckets.forEach(function(bucket){
+                var gh_bbox = geohash.decode_bbox(bucket.key);
+                var merc_bbox = [];
+                merc_bbox.push.apply(merc_bbox, proj.forward([gh_bbox[1],gh_bbox[0]]));
+                merc_bbox.push.apply(merc_bbox, proj.forward([gh_bbox[3],gh_bbox[2]]));               
+                var poly = [
+                    [merc_bbox[1],merc_bbox[0]],
+                    [merc_bbox[3],merc_bbox[0]],
+                    [merc_bbox[3],merc_bbox[2]],
+                    [merc_bbox[1],merc_bbox[2]],
+                    [merc_bbox[1],merc_bbox[0]],
+                ];
+                var f = {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [poly]
+                    },
+                    "properties": getGeohashProps(bucket)
+                };
+                csv_string += bucket.doc_count + ",'" + JSON.stringify(f.geometry) + "'\n";
+            });
 
-            style.fill = fl.alpha(0.7).css()
-            style.stroke = fl.darker(0.2).alpha(0.7).css()
-            //console.log(style.fill)
-            _.defaults(style,prop_style);
-
-            drawBbox(context,[nw_pp,se_pp],style.fill,style.stroke);
-        });
-
-        canvas.toBuffer(cb);
+            var ds = new mapnik.Datasource({type:'csv', 'inline': csv_string});
+              var l = new mapnik.Layer('test');
+              l.srs = map.srs;
+              l.styles = ['style'];
+              l.datasource = ds;
+              map.add_layer(l);
+              map.extent = bbox;
+              var im = new mapnik.Image(map.width, map.height);
+              map.render(im, function(err, im) {
+                  cb(err,im.encodeSync('png'));
+              });
+            }
+        );
     }
 
     function tilePoints(zoom,x,y,map_def,body,cb){
@@ -250,7 +292,6 @@ module.exports = function(app, config) {
               body.hits.hits.forEach(function(hit){
                     var xy = proj.forward([hit._source.geopoint.lon,hit._source.geopoint.lat]);
 
-                     //console.log('x: ' + xy[0] + ' y: ' + xy[1]);
                      mem_ds.add({
                                   'x' : xy[0],
                                   'y' : xy[1],
@@ -266,40 +307,10 @@ module.exports = function(app, config) {
               map.extent = bbox;
               var im = new mapnik.Image(map.width, map.height);
               map.render(im, function(err, im) {
-                  console.log("mapnik rendered")
                   cb(err,im.encodeSync('png'));
               });
             }
         );
-
-        // var canvas = new Canvas(tileMath.TILE_SIZE,tileMath.TILE_SIZE);
-        // var context = canvas.getContext('2d');
-
-        // // Debug tile border
-        // // context.strokeStyle = '#FF0000';
-        // // context.lineWidth = 1;
-        // // context.strokeRect(0,0,255,255)
- 
-        // var point_size = 2;
-        // if(zoom>4 && zoom<=7){
-        //     point_size = 3;
-        // }else if(zoom>7 && zoom<=10){
-        //     point_size = 4;
-        // }else if(zoom>10){
-        //     point_size = 5;
-        // }
-            
-        // body.hits.hits.forEach(function(hit){
-        //     var ttpp = tileMath.lat_lon_zoom_to_xy_tile_pixels_mercator(hit._source.geopoint.lat,hit._source.geopoint.lon,zoom);
-
-        //     var pp = tileMath.project_ttpp_to_current_tile_pixels(ttpp,x,y);
-
-        //     var style = getStyle(map_def.style,getPointProps(hit));
-
-        //     drawCircle(context,pp[0],pp[1],point_size,style.fill,style.stroke);
-        // });
-
-        // canvas.toBuffer(cb);
     }    
 
     function makeKeyDefined(path,wd){
