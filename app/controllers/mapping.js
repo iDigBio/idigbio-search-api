@@ -218,34 +218,29 @@ module.exports = function(app, config) {
                 cb(err,undefined)
               }
 
-              var options = {
-                  extent: '-20037508.342789,-8283343.693883,20037508.342789,18365151.363070'
-              };
-
             var csv_string = "count,geojson\n";
-              var proj = new mapnik.Projection('+init=epsg:3857');
+            var proj = new mapnik.Projection('+init=epsg:3857');
+            var wgs84 = new mapnik.Projection('+init=epsg:4326');
+            var trans = new mapnik.ProjTransform(wgs84,proj);
 
             body.aggregations.geohash.buckets.forEach(function(bucket){
                 var gh_bbox = geohash.decode_bbox(bucket.key);
-                var merc_bbox = [];
-                merc_bbox.push.apply(merc_bbox, proj.forward([gh_bbox[1],gh_bbox[0]]));
-                merc_bbox.push.apply(merc_bbox, proj.forward([gh_bbox[3],gh_bbox[2]]));               
                 var poly = [
-                    [merc_bbox[1],merc_bbox[0]],
-                    [merc_bbox[3],merc_bbox[0]],
-                    [merc_bbox[3],merc_bbox[2]],
-                    [merc_bbox[1],merc_bbox[2]],
-                    [merc_bbox[1],merc_bbox[0]],
+                    [gh_bbox[1],gh_bbox[0]],
+                    [gh_bbox[3],gh_bbox[0]],
+                    [gh_bbox[3],gh_bbox[2]],
+                    [gh_bbox[1],gh_bbox[2]],
+                    [gh_bbox[1],gh_bbox[0]],
                 ];
-                var f = {
+                var f = new mapnik.Feature.fromJSON(JSON.stringify({
                     "type": "Feature",
                     "geometry": {
                         "type": "Polygon",
                         "coordinates": [poly]
                     },
                     "properties": getGeohashProps(bucket)
-                };
-                csv_string += bucket.doc_count + ",'" + JSON.stringify(f.geometry) + "'\n";
+                }));
+                csv_string += bucket.doc_count + ",'" + f.geometry().toJSON({transform: trans}) + "'\n";
             });
 
             var ds = new mapnik.Datasource({type:'csv', 'inline': csv_string});
