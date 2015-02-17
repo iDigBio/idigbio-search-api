@@ -191,16 +191,6 @@ module.exports = function(app, config) {
     function tilePoints(zoom, x, y, map_def, body, cb) {
         var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
 
-        console.log(body.aggregations.gstyle.f.style)
-
-        // var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">';
-        // s += '<Style name="style">';
-        // s += ' <Rule>';
-        // s += '  <MarkersSymbolizer marker-type="ellipse" fill="red" width="5" allow-overlap="true" placement="point"/>';
-        // s += ' </Rule>';
-        // s += '</Style>';
-        // s += '</Map>';
-
         var colors = {};
         for (var i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
             var b = body.aggregations.gstyle.f.style.buckets[i];
@@ -227,7 +217,6 @@ module.exports = function(app, config) {
         s += '    </Rule>\n';
         s += '  </Style>\n';
         s += '</Map>';
-        console.log(s);
 
         var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
         map.fromString(s, {
