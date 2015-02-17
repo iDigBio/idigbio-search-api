@@ -202,7 +202,7 @@ module.exports = function(app, config) {
         var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
         s += '  <Style name="style" filter-mode="first">\n';
 
-        var scale = chroma.scale(map_def.style.scale).domain([0, colorCount], colorCount);
+        var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
         Object.keys(colors).forEach(function(key) {
             var fl = scale.mode('lab')(colors[key]);
             s += '    <Rule>\n';
@@ -676,11 +676,9 @@ module.exports = function(app, config) {
 
             var default_style = {
                 scale: 'YlOrRd',
+                pointScale: 'Paired',
                 styleOn: "scientificname"
             };
-            if (type != "geohash") {
-                default_style.scale = 'Paired';
-            }
 
             var style = getParam(req, "style", function(p) {
                 try {
