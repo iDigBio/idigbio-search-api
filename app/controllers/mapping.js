@@ -191,13 +191,43 @@ module.exports = function(app, config) {
     function tilePoints(zoom, x, y, map_def, body, cb) {
         var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
 
-        var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">';
-        s += '<Style name="style">';
-        s += ' <Rule>';
-        s += '  <MarkersSymbolizer marker-type="ellipse" fill="red" width="5" allow-overlap="true" placement="point"/>';
-        s += ' </Rule>';
-        s += '</Style>';
+        console.log(body.aggregations.gstyle.f.style)
+
+        // var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">';
+        // s += '<Style name="style">';
+        // s += ' <Rule>';
+        // s += '  <MarkersSymbolizer marker-type="ellipse" fill="red" width="5" allow-overlap="true" placement="point"/>';
+        // s += ' </Rule>';
+        // s += '</Style>';
+        // s += '</Map>';
+
+        var colors = {};
+        for (var i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
+            var b = body.aggregations.gstyle.f.style.buckets[i];
+            colors[b.key] = i;
+        }
+        // +1 for other
+        var colorCount = Object.keys(colors).length + 1;
+
+        var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
+        s += '  <Style name="style" filter-mode="first">\n';
+
+        var scale = chroma.scale(map_def.style.scale).domain([0, colorCount], colorCount);
+        Object.keys(colors).forEach(function(key) {
+            var fl = scale.mode('lab')(colors[key]);
+            s += '    <Rule>\n';
+            s += "        <Filter>[styleOn] = '" + key + "'</Filter>\n";
+            s += '        <MarkersSymbolizer marker-type="ellipse" fill="' + fl.alpha(0.7).css() + '" stroke="' + fl.darker(0.2).alpha(0.7).css() + '" stroke-width=".2" width="5" allow-overlap="true" placement="point"/>';
+            s += '    </Rule>\n';
+        })
+        var fl = scale.mode('lab')(colorCount);
+        s += '    <Rule>\n';
+        s += '        <ElseFilter/>\n';
+        s += '        <MarkersSymbolizer marker-type="ellipse" fill="' + fl.alpha(0.7).css() + '" stroke="' + fl.darker(0.2).alpha(0.7).css() + '" stroke-width=".2" width="5" allow-overlap="true" placement="point"/>';
+        s += '    </Rule>\n';
+        s += '  </Style>\n';
         s += '</Map>';
+        console.log(s);
 
         var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
         map.fromString(s, {
@@ -222,7 +252,9 @@ module.exports = function(app, config) {
                     mem_ds.add({
                         'x': xy[0],
                         'y': xy[1],
-                        'properties': {}
+                        'properties': {
+                            'styleOn': hit._source[map_def.style.styleOn]
+                        }
                     });
                 });
 
@@ -385,12 +417,25 @@ module.exports = function(app, config) {
             };
         } else if (type === "points" || (type === "auto" && count <= threshold)) {
             query["size"] = config.maxTileObjects;
-            query["_source"] = ["geopoint"];
-            _.keys(map_def.style).forEach(function(k) {
-                if (k !== "fill" && k !== "stroke") {
-                    query["_source"].push(k)
+            query["_source"] = ["geopoint", map_def.style.styleOn];
+            query["aggs"] = {
+                "gstyle": {
+                    "global": {},
+                    "aggs": {
+                        "f": {
+                            "filter": unboxed_filter,
+                            "aggs": {
+                                "style": {
+                                    "terms": {
+                                        "field": map_def.style.styleOn,
+                                        "size": 9
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-            })
+            }
         }
 
         if (response_type === "json") {
@@ -641,10 +686,12 @@ module.exports = function(app, config) {
             }, 5000);
 
             var default_style = {
-                fill: 'rgba(0,255,0,.4)',
-                stroke: 'rgba(0,255,0,.6)',
-                scale: 'YlOrRd'
+                scale: 'YlOrRd',
+                styleOn: "scientificname"
             };
+            if (type != "geohash") {
+                default_style.scale = 'Paired';
+            }
 
             var style = getParam(req, "style", function(p) {
                 try {
