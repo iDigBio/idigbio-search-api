@@ -63,11 +63,13 @@ module.exports = function(app, config) {
         .get(mapping.createMap)
         .post(mapping.createMap);
     app.route('/v2/mapping/:s')
-        .get(mapping.getMap)
+        .get(mapping.getMap);
+    app.route('/v2/mapping/:s/style')
+        .get(mapping.getMapStyle);
     app.route('/v2/mapping/:s/points')
-        .get(mapping.mapPoints)
+        .get(mapping.mapPoints);
     app.route('/v2/mapping/:s/:z/:x/:y.:t')
-        .get(mapping.getMapTile)
+        .get(mapping.getMapTile);
 
     app.use(function(req, res, next){
         res.status(404).json({"error": "Not Found"})
