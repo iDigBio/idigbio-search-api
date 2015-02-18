@@ -139,13 +139,13 @@ module.exports = function(app, config) {
                 var fl = scale.mode('lab')(i);
                 rv["colors"][b.key] = {
                     "fill": fl.alpha(0.7).css(),
-                    "stroke": chroma("white").alpha(0.7).css()
+                    "stroke": chroma("black").alpha(0.7).css()
                 }
             }
             var fl = scale.mode('lab')(colorCount);
             rv["default"] = {
                 "fill": fl.alpha(0.7).css(),
-                "stroke": chroma("white").alpha(0.7).css()
+                "stroke": chroma("black").alpha(0.7).css()
             }
         }
         rv["order"] = order;
