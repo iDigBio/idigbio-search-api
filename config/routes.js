@@ -64,7 +64,7 @@ module.exports = function(app, config) {
         .post(mapping.createMap);
     app.route('/v2/mapping/:s')
         .get(mapping.getMap);
-    app.route('/v2/mapping/:s/style')
+    app.route('/v2/mapping/:s/style/:z')
         .get(mapping.getMapStyle);
     app.route('/v2/mapping/:s/points')
         .get(mapping.mapPoints);

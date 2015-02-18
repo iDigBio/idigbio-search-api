@@ -126,6 +126,10 @@ module.exports = function(app, config) {
                     "stroke": fl.darker(0.2).alpha(0.7).css()
                 }
             })
+            rv["default"] = {
+                "fill": "black",
+                "stroke": "black"
+            }            
         } else {
             var colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
             var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
@@ -143,10 +147,6 @@ module.exports = function(app, config) {
                 "fill": fl.alpha(0.7).css(),
                 "stroke": fl.darker(0.2).alpha(0.7).css()
             }
-        }
-        rv["default"] = {
-            "fill": "black",
-            "stroke": "black"
         }
         rv["order"] = order;
 
@@ -382,11 +382,16 @@ module.exports = function(app, config) {
         return query;
     }
 
-    function makeTileQuery(map_def, response_type) {
+    function makeTileQuery(map_def, z, x, y, response_type) {
         var query = makeBasicFilter(map_def);
 
         var unboxed_filter = _.cloneDeep(query.query.filtered.filter);
 
+        var gl = tileMath.zoom_to_geohash_len(z, false);
+        var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
+        var padding_size = 3;
+
+        var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
         query["query"]["filtered"]["filter"]["and"].push({
             "geo_bounding_box": {
                 "geopoint": {
@@ -401,7 +406,8 @@ module.exports = function(app, config) {
                 }
             }
         });
-        if (type === "geohash") {
+
+        if (map_def.type === "geohash") {
             query["size"] = 0
             query["aggs"] = {
                 "geohash": {
@@ -429,7 +435,7 @@ module.exports = function(app, config) {
                     }
                 }
             };
-        } else if (type === "points") {
+        } else if (map_def.type === "points") {
             query["size"] = config.maxTileObjects;
             query["_source"] = ["geopoint", map_def.style.styleOn];
             query["aggs"] = {
@@ -508,15 +514,7 @@ module.exports = function(app, config) {
 
         var response_type = req.params.t;
 
-        var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
-        var gl = tileMath.zoom_to_geohash_len(z, false);
-        var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
-        var padding_size = 3;
-
-        var type = map_def.type;
-        var threshold = map_def.threshold;
-
-        var query = makeTileQuery(map_def);
+        var query = makeTileQuery(map_def, z, x, y, response_type);
 
         var typeGeohash = function(body) {
             tileGeohash(z, x, y, map_def, body, function(err, png_buff) {
@@ -539,7 +537,7 @@ module.exports = function(app, config) {
             body = JSON.parse(body);
 
             if (response_type === "json") {
-                if (type === "geohash") {
+                if (map_def.type === "geohash") {
                     geoJsonGeohash(body, function(rb) {
                         res.json(rb);
                     });
@@ -549,7 +547,7 @@ module.exports = function(app, config) {
                     });
                 }
             } else {
-                if (type === "geohash") {
+                if (map_def.type === "geohash") {
                     typeGeohash(body);
                 } else {
                     typePoints(body)
@@ -702,13 +700,12 @@ module.exports = function(app, config) {
 
         getMapStyle: function(req, res) {
             getMapDef(req,res,function(map_def){
-                var query = makeTileQuery(map_def);
-
+                var query = makeTileQuery(map_def, req.params.z, 0, 0);
                 request.post({
                     url: config.search.server + config.search.index + "records/_search",
                     body: JSON.stringify(query)
                 }, function(error, response, body) {
-                    res.json(styleJSON(map_def,body));
+                    res.json(styleJSON(map_def,JSON.parse(body)));
                 });
             });
         },
