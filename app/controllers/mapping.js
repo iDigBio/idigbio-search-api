@@ -103,33 +103,82 @@ module.exports = function(app, config) {
         });
     }
 
+    function styleJSON(map_def, body) {
+        var rv = {
+            "colors": {}
+        };
+
+        var order = [];
+
+        if (map_def.type == "geohash") {
+            var max_bucket_value = 1;
+            try {
+                max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
+            } catch (e) {}
+
+            var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
+            scale.domain().forEach(function(domain) {
+                domain = Math.ceil(domain);
+                var fl = scale.mode('lab')(domain);
+                order.push(domain);
+                rv["colors"][domain] = {
+                    "fill": fl.alpha(0.7).css(),
+                    "stroke": fl.darker(0.2).alpha(0.7).css()
+                }
+            })
+        } else {
+            var colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
+            var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
+            for (var i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
+                var b = body.aggregations.gstyle.f.style.buckets[i];
+                order.push(b.key);
+                var fl = scale.mode('lab')(i);
+                rv["colors"][b.key] = {
+                    "fill": fl.alpha(0.7).css(),
+                    "stroke": fl.darker(0.2).alpha(0.7).css()
+                }
+            }
+            var fl = scale.mode('lab')(colorCount);
+            rv["default"] = {
+                "fill": fl.alpha(0.7).css(),
+                "stroke": fl.darker(0.2).alpha(0.7).css()
+            }
+        }
+        rv["default"] = {
+            "fill": "black",
+            "stroke": "black"
+        }
+        rv["order"] = order;
+
+        return rv;
+    }
+
+    var styleOnRule = _.template("<Rule>\n<Filter>[styleOn] = '<%= key %>'</Filter>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".2\" width=\"5\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
+    var pointElseRule = _.template("<Rule>\n<ElseFilter/>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".2\" width=\"5\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
+    var countRule = _.template("<Rule>\n<Filter>[count] &lt;= <%= key %></Filter>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".2\" clip=\"true\" />\n</Rule>\n");
+    var geohashElseRule = _.template("<Rule>\n<ElseFilter/>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".2\" clip=\"true\" />\n</Rule>\n");
+
     function tileGeohash(zoom, x, y, map_def, body, cb) {
 
         var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
 
-        var max_bucket_value = 1;
-        try {
-            max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
-        } catch (e) {}
-
+        var sj = styleJSON(map_def,body);
 
         var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
         s += '  <Style name="style" filter-mode="first">\n';
 
-        var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
-        scale.domain().forEach(function(domain) {
-            var fl = scale.mode('lab')(domain);
-            s += '    <Rule>\n';
-            s += '        <Filter>[count] &lt;= ' + Math.ceil(domain) + '</Filter>\n';
-            s += '        <PolygonSymbolizer fill="' + fl.alpha(0.7).css() + '" clip="true" />\n';
-            s += '        <LineSymbolizer stroke="' + fl.darker(0.2).alpha(0.7).css() + '" stroke-width=".2" clip="true" />\n';
-            s += '    </Rule>\n';
+        sj.order.forEach(function(key) {
+            s += countRule({
+                key: key,
+                fill: sj["colors"][key]["fill"],
+                stroke: sj["colors"][key]["stroke"],
+            })
         })
-        s += '    <Rule>\n';
-        s += '        <ElseFilter/>\n';
-        s += '        <PolygonSymbolizer fill="black" clip="true" />\n';
-        s += '        <LineSymbolizer stroke="black" stroke-width=".2" clip="true" />\n';
-        s += '    </Rule>\n';
+        s += geohashElseRule({
+            fill: sj["default"]["fill"],
+            stroke: sj["default"]["stroke"],
+        })
+
         s += '  </Style>\n';
         s += '</Map>';
 
@@ -191,30 +240,23 @@ module.exports = function(app, config) {
     function tilePoints(zoom, x, y, map_def, body, cb) {
         var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
 
-        var colors = {};
-        for (var i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
-            var b = body.aggregations.gstyle.f.style.buckets[i];
-            colors[b.key] = i;
-        }
-        // +1 for other
-        var colorCount = Object.keys(colors).length + 1;
+        var sj = styleJSON(map_def,body);
 
         var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
         s += '  <Style name="style" filter-mode="first">\n';
 
-        var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
-        Object.keys(colors).forEach(function(key) {
-            var fl = scale.mode('lab')(colors[key]);
-            s += '    <Rule>\n';
-            s += "        <Filter>[styleOn] = '" + key + "'</Filter>\n";
-            s += '        <MarkersSymbolizer marker-type="ellipse" fill="' + fl.alpha(0.7).css() + '" stroke="' + fl.darker(0.2).alpha(0.7).css() + '" stroke-width=".2" width="5" allow-overlap="true" placement="point"/>';
-            s += '    </Rule>\n';
+        sj.order.forEach(function(key) {
+            s += styleOnRule({
+                key: key,
+                fill: sj["colors"][key]["fill"],
+                stroke: sj["colors"][key]["stroke"],
+            })
         })
-        var fl = scale.mode('lab')(colorCount);
-        s += '    <Rule>\n';
-        s += '        <ElseFilter/>\n';
-        s += '        <MarkersSymbolizer marker-type="ellipse" fill="' + fl.alpha(0.7).css() + '" stroke="' + fl.darker(0.2).alpha(0.7).css() + '" stroke-width=".2" width="5" allow-overlap="true" placement="point"/>';
-        s += '    </Rule>\n';
+        s += pointElseRule({
+            fill: sj["default"]["fill"],
+            stroke: sj["default"]["stroke"],
+        })
+
         s += '  </Style>\n';
         s += '</Map>';
 
@@ -340,24 +382,7 @@ module.exports = function(app, config) {
         return query;
     }
 
-    function makeMapTile(req, res, map_def, count) {
-        //var s = req.params.s;
-
-        var x = parseInt(req.params.x);
-        var y = parseInt(req.params.y);
-        var z = parseInt(req.params.z);
-
-        var response_type = req.params.t;
-
-        var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
-        var gl = tileMath.zoom_to_geohash_len(z, false);
-        var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
-        var padding_size = 3;
-
-
-        var type = map_def.type;
-        var threshold = map_def.threshold;
-
+    function makeTileQuery(map_def, response_type) {
         var query = makeBasicFilter(map_def);
 
         var unboxed_filter = _.cloneDeep(query.query.filtered.filter);
@@ -376,7 +401,7 @@ module.exports = function(app, config) {
                 }
             }
         });
-        if (type === "geohash" || (type === "auto" && count > threshold)) {
+        if (type === "geohash") {
             query["size"] = 0
             query["aggs"] = {
                 "geohash": {
@@ -404,7 +429,7 @@ module.exports = function(app, config) {
                     }
                 }
             };
-        } else if (type === "points" || (type === "auto" && count <= threshold)) {
+        } else if (type === "points") {
             query["size"] = config.maxTileObjects;
             query["_source"] = ["geopoint", map_def.style.styleOn];
             query["aggs"] = {
@@ -437,6 +462,62 @@ module.exports = function(app, config) {
             };
         }
 
+        return query;
+    }
+
+    function getMapDef(req,res,cb) {
+        var self = this;
+        config.redis.client.get(req.params.s, function(err, rv) {
+            if (!rv) {
+                res.status(404).json({
+                    "error": "Not Found",
+                    "statusCode": 404
+                });
+                return
+            }
+            var map_def = JSON.parse(rv);
+            var count = 0;
+            if (map_def.type === 'auto') {
+                var query = makeBasicFilter(map_def);
+                request.post({
+                    url: config.search.server + config.search.index + "records/_count",
+                    body: JSON.stringify(query)
+                }, function(error, response, body) {
+                    body = JSON.parse(body);
+                    count = body.count;
+
+                    if (count > map_def.threshold) {
+                        map_def.type = "geohash"
+                    } else {
+                        map_def.type = "points"
+                    }
+                    cb(map_def);
+                });
+            } else {
+                cb(map_def);
+            }
+        });
+    }
+
+    function makeMapTile(req, res, map_def, count) {
+        //var s = req.params.s;
+
+        var x = parseInt(req.params.x);
+        var y = parseInt(req.params.y);
+        var z = parseInt(req.params.z);
+
+        var response_type = req.params.t;
+
+        var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
+        var gl = tileMath.zoom_to_geohash_len(z, false);
+        var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
+        var padding_size = 3;
+
+        var type = map_def.type;
+        var threshold = map_def.threshold;
+
+        var query = makeTileQuery(map_def);
+
         var typeGeohash = function(body) {
             tileGeohash(z, x, y, map_def, body, function(err, png_buff) {
                 res.type('png');
@@ -462,7 +543,7 @@ module.exports = function(app, config) {
                     geoJsonGeohash(body, function(rb) {
                         res.json(rb);
                     });
-                } else if (type === "points") {
+                } else {
                     geoJsonPoints(body, function(rb) {
                         res.json(rb);
                     });
@@ -470,14 +551,8 @@ module.exports = function(app, config) {
             } else {
                 if (type === "geohash") {
                     typeGeohash(body);
-                } else if (type === "points") {
+                } else {
                     typePoints(body)
-                } else if (type === "auto") {
-                    if (count > threshold) {
-                        typeGeohash(body);
-                    } else {
-                        typePoints(body);
-                    }
                 }
             }
         });
@@ -624,34 +699,25 @@ module.exports = function(app, config) {
                 });
             });
         },
-        getMapTile: function(req, res) {
-            var self = this;
-            config.redis.client.get(req.params.s, function(err, rv) {
-                if (!rv) {
-                    res.status(404).json({
-                        "error": "Not Found",
-                        "statusCode": 404
-                    });
-                    return
-                }
-                var map_def = JSON.parse(rv);
-                var count = 0;
-                if (map_def.type === 'auto') {
-                    var query = makeBasicFilter(map_def);
-                    request.post({
-                        url: config.search.server + config.search.index + "records/_count",
-                        body: JSON.stringify(query)
-                    }, function(error, response, body) {
-                        body = JSON.parse(body);
-                        count = body.count;
-                        makeMapTile(req, res, map_def, count);
-                    });
-                } else {
-                    makeMapTile(req, res, map_def, count);
-                }
+
+        getMapStyle: function(req, res) {
+            getMapDef(req,res,function(map_def){
+                var query = makeTileQuery(map_def);
+
+                request.post({
+                    url: config.search.server + config.search.index + "records/_search",
+                    body: JSON.stringify(query)
+                }, function(error, response, body) {
+                    res.json(styleJSON(map_def,body));
+                });
             });
         },
 
+        getMapTile: function(req, res) {
+            getMapDef(req,res,function(map_def){
+                makeMapTile(req, res, map_def);
+            });
+        },
 
         createMap: function(req, res) {
             var rq = cp.query("rq", req);
