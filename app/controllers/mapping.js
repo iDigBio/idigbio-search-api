@@ -417,7 +417,7 @@ module.exports = function(app, config) {
                                 "style": {
                                     "terms": {
                                         "field": map_def.style.styleOn,
-                                        "size": 9
+                                        "size": 10
                                     }
                                 }
                             }

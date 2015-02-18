@@ -47,6 +47,9 @@ module.exports = function(app, config) {
     app.route('/v2/summary/count/basic')
         .get(summary.count_basic)
         .post(summary.count_basic);
+    app.route('/v2/summary/count/recordset')
+        .get(summary.count_recordset)
+        .post(summary.count_recordset);
     app.route('/v2/summary/datehist')
         .get(summary.date_hist)
         .post(summary.date_hist);

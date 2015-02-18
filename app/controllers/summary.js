@@ -117,6 +117,25 @@ module.exports = function(app, config) {
             });
         },
 
+        count_recordset: function(req, res) {
+
+            var rsq = cp.query("rsq", req);
+
+            var query = qg.record_query(rsq,undefined,undefined,undefined,undefined);
+
+            delete query["aggs"];
+
+            request.post({
+                url: config.search.server + config.search.index + "recordsets/_count",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                var bo = JSON.parse(body)
+                res.json({
+                    itemCount: bo.count
+                });
+            });
+        },
+
         date_hist: function(req, res) {
 
             var rq = cp.query("rq", req);
