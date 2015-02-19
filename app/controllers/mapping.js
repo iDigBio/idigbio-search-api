@@ -372,6 +372,7 @@ module.exports = function(app, config) {
                 shortCode: s,
                 tiles: map_url + "/{z}/{x}/{y}.png",
                 geojson: map_url + "/{z}/{x}/{y}.json",
+                utf8grid: map_url + "/{z}/{x}/{y}.grid",
                 points: map_url + "/points",
                 mapDefinition: map_def,
             }
