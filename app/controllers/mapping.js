@@ -229,7 +229,7 @@ module.exports = function(app, config) {
                 l.datasource = ds;
                 map.add_layer(l);
                 map.extent = bbox;
-                if (render_type === "grid") {
+                if (render_type === "grid.json") {
                     var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
                     map.render(grid, {layer: 0, "fields": ["count"]}, function(err, grid2) {
                         cb(err, grid2.encodeSync('utf'));
@@ -306,7 +306,7 @@ module.exports = function(app, config) {
                 l.datasource = mem_ds;
                 map.add_layer(l);
                 map.extent = bbox;
-                if (render_type === "grid") {
+                if (render_type === "grid.json") {
                     var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
                     map.render(grid, {layer: 0, "fields": [map_def.style.styleOn]}, function(err, grid2) {
                         cb(err, grid2.encodeSync('utf'));
@@ -372,7 +372,7 @@ module.exports = function(app, config) {
                 shortCode: s,
                 tiles: map_url + "/{z}/{x}/{y}.png",
                 geojson: map_url + "/{z}/{x}/{y}.json",
-                utf8grid: map_url + "/{z}/{x}/{y}.grid",
+                utf8grid: map_url + "/{z}/{x}/{y}.grid.json",
                 points: map_url + "/points",
                 mapDefinition: map_def,
             }
@@ -533,11 +533,15 @@ module.exports = function(app, config) {
 
         var response_type = req.params.t;
 
+        if(req.params.y.slice(-5) == ".grid") {
+            response_type = "grid." + response_type;
+        }
+
         var query = makeTileQuery(map_def, z, x, y, response_type);
 
         var typeGeohash = function(body, response_type) {
             tileGeohash(z, x, y, map_def, body, function(err, png_buff) {
-                if (response_type === "grid") {
+                if (response_type === "grid.json") {
                     res.json(png_buff);
                 } else {
                     res.type('png');
@@ -548,7 +552,7 @@ module.exports = function(app, config) {
 
         var typePoints = function(body, response_type) {
             tilePoints(z, x, y, map_def, body, function(err, png_buff) {
-                if (response_type === "grid") {
+                if (response_type === "grid.json") {
                     res.json(png_buff);
                 } else {
                     res.type('png');
@@ -573,7 +577,7 @@ module.exports = function(app, config) {
                         res.json(rb);
                     });
                 }
-            } else if (response_type === "grid") {
+            } else if (response_type === "grid.json") {
                 if (map_def.type === "geohash") {
                     typeGeohash(body, response_type);
                 } else {
