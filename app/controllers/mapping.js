@@ -153,12 +153,12 @@ module.exports = function(app, config) {
         return rv;
     }
 
-    var styleOnRule = _.template("<Rule>\n<Filter>[styleOn] = '<%= key %>'</Filter>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
+    var styleOnRule = _.template("<Rule>\n<Filter>[<%= field %>] = '<%= key %>'</Filter>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
     var pointElseRule = _.template("<Rule>\n<ElseFilter/>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
     var countRule = _.template("<Rule>\n<Filter>[count] &lt;= <%= key %></Filter>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
     var geohashElseRule = _.template("<Rule>\n<ElseFilter/>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
 
-    function tileGeohash(zoom, x, y, map_def, body, cb) {
+    function tileGeohash(zoom, x, y, map_def, body, cb, render_type) {
 
         var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
 
@@ -192,7 +192,7 @@ module.exports = function(app, config) {
                     cb(err, undefined)
                 }
 
-                var csv_string = "count,geojson\n";
+                var csv_string = "id,count,geojson\n";
                 var proj = new mapnik.Projection('+init=epsg:3857');
                 var wgs84 = new mapnik.Projection('+init=epsg:4326');
                 var trans = new mapnik.ProjTransform(wgs84, proj);
@@ -214,7 +214,7 @@ module.exports = function(app, config) {
                         },
                         "properties": getGeohashProps(bucket)
                     }));
-                    csv_string += bucket.doc_count + ",'" + f.geometry().toJSON({
+                    csv_string += bucket.key + "," + bucket.doc_count + ",'" + f.geometry().toJSON({
                         transform: trans
                     }) + "'\n";
                 });
@@ -229,15 +229,22 @@ module.exports = function(app, config) {
                 l.datasource = ds;
                 map.add_layer(l);
                 map.extent = bbox;
-                var im = new mapnik.Image(map.width, map.height);
-                map.render(im, function(err, im) {
-                    cb(err, im.encodeSync('png'));
-                });
+                if (render_type === "grid") {
+                    var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
+                    map.render(grid, {layer: 0, "fields": ["count"]}, function(err, grid2) {
+                        cb(err, grid2.encodeSync('utf'));
+                    });
+                } else {
+                    var im = new mapnik.Image(map.width, map.height);
+                    map.render(im, function(err, im) {
+                        cb(err, im.encodeSync('png'));
+                    });
+                }
             }
         );
     }
 
-    function tilePoints(zoom, x, y, map_def, body, cb) {
+    function tilePoints(zoom, x, y, map_def, body, cb, render_type) {
         var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
 
         var sj = styleJSON(map_def,body);
@@ -247,6 +254,7 @@ module.exports = function(app, config) {
 
         sj.order.forEach(function(key) {
             s += styleOnRule({
+                field: map_def.style.styleOn,
                 key: key,
                 fill: sj["colors"][key]["fill"],
                 stroke: sj["colors"][key]["stroke"],
@@ -280,13 +288,16 @@ module.exports = function(app, config) {
                 body.hits.hits.forEach(function(hit) {
                     var xy = proj.forward([hit._source.geopoint.lon, hit._source.geopoint.lat]);
 
-                    mem_ds.add({
+                    var f = {
                         'x': xy[0],
                         'y': xy[1],
                         'properties': {
-                            'styleOn': hit._source[map_def.style.styleOn]
+                            'id': hit._id
                         }
-                    });
+                    }
+                    f["properties"][map_def.style.styleOn] = hit._source[map_def.style.styleOn]
+
+                    mem_ds.add(f);
                 });
 
                 var l = new mapnik.Layer('test');
@@ -295,10 +306,17 @@ module.exports = function(app, config) {
                 l.datasource = mem_ds;
                 map.add_layer(l);
                 map.extent = bbox;
-                var im = new mapnik.Image(map.width, map.height);
-                map.render(im, function(err, im) {
-                    cb(err, im.encodeSync('png'));
-                });
+                if (render_type === "grid") {
+                    var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
+                    map.render(grid, {layer: 0, "fields": [map_def.style.styleOn]}, function(err, grid2) {
+                        cb(err, grid2.encodeSync('utf'));
+                    });
+                } else {
+                    var im = new mapnik.Image(map.width, map.height);
+                    map.render(im, function(err, im) {
+                        cb(err, im.encodeSync('png'));
+                    });
+                }
             }
         );
     }
@@ -516,18 +534,26 @@ module.exports = function(app, config) {
 
         var query = makeTileQuery(map_def, z, x, y, response_type);
 
-        var typeGeohash = function(body) {
+        var typeGeohash = function(body, response_type) {
             tileGeohash(z, x, y, map_def, body, function(err, png_buff) {
-                res.type('png');
-                res.send(png_buff);
-            });
+                if (response_type === "grid") {
+                    res.json(png_buff);
+                } else {
+                    res.type('png');
+                    res.send(png_buff);
+                }
+            }, response_type);
         }
 
-        var typePoints = function(body) {
+        var typePoints = function(body, response_type) {
             tilePoints(z, x, y, map_def, body, function(err, png_buff) {
-                res.type('png');
-                res.send(png_buff);
-            });
+                if (response_type === "grid") {
+                    res.json(png_buff);
+                } else {
+                    res.type('png');
+                    res.send(png_buff);
+                }
+            }, response_type);
         }
 
         request.post({
@@ -545,6 +571,12 @@ module.exports = function(app, config) {
                     geoJsonPoints(body, function(rb) {
                         res.json(rb);
                     });
+                }
+            } else if (response_type === "grid") {
+                if (map_def.type === "geohash") {
+                    typeGeohash(body, response_type);
+                } else {
+                    typePoints(body, response_type)
                 }
             } else {
                 if (map_def.type === "geohash") {
