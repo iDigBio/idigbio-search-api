@@ -673,6 +673,14 @@ module.exports = function(app, config) {
                 return parseFloat(p);
             }, 0);
 
+            while (lon > 180) {
+                   lon -= 360;
+            }
+
+            while (lon < -180) {
+                   lon += 360;
+            }
+
             var z = getParam(req, "zoom", function(p) {
                 return parseInt(p);
             }, 0);
