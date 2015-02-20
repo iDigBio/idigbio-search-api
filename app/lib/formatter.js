@@ -26,7 +26,7 @@ module.exports = function(app,config) {
         });
     }
 
-    function basic(body, res) {
+    function basic(body, res, extra) {
         body = JSON.parse(body);
 
         if (body.status === 400) {
@@ -60,6 +60,9 @@ module.exports = function(app,config) {
 
         attribution(body.aggregations.rs.buckets, function(results){
             rb.attribution = results;
+            if (extra) {
+                _.merge(rb,extra);
+            }
             res.json(rb);
         });
     }

@@ -679,6 +679,24 @@ module.exports = function(app, config) {
 
             var gl = tileMath.zoom_to_geohash_len(z, false);
 
+            var gh = geohash.encode(lat,lon,gl);
+            var meta_bbox = geohash.decode_bbox(gh);
+            geohash.neighbors(gh).forEach(function(n){
+                var nbb = geohash.decode_bbox(n);
+                if (nbb[0] < meta_bbox[0]) {
+                    meta_bbox[0] = nbb[0];
+                }
+                if (nbb[1] < meta_bbox[1]) {
+                    meta_bbox[1] = nbb[1];
+                }
+                if (nbb[2] > meta_bbox[2]) {
+                    meta_bbox[2] = nbb[2];
+                }
+                if (nbb[3] > meta_bbox[3]) {
+                    meta_bbox[3] = nbb[3];
+                }
+            })
+
             config.redis.client.get(s, function(err, rv) {
                 if (!rv) {
                     res.status(404).json({
@@ -730,7 +748,18 @@ module.exports = function(app, config) {
                     url: config.search.server + config.search.index + "records/_search",
                     body: JSON.stringify(query)
                 }, function(error, response, body) {
-                    formatter.basic(body, res);
+                    formatter.basic(body, res, {
+                        "bbox": {
+                            "nw": {
+                                "lat": meta_bbox[2],
+                                "lon": meta_bbox[1]
+                            },
+                            "se": {
+                                "lat": meta_bbox[0],
+                                "lon": meta_bbox[3]
+                            }
+                        }
+                    });
                 });
             });
         },

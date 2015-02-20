@@ -305,6 +305,62 @@ describe('Mapping', function(){
         })
     });    
   });
+  describe('utf8 grid map tiles', function(){
+    it('should return utf8 grid for geohash maps', function(done){
+      var q = {"scientificname": "puma concolor"}
+      request(app.server)
+        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error1, response1) {
+          if(error1) {
+            done(error1);
+          } else {          
+            request(app.server)
+              .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.grid.json")
+              .expect('Content-Type', /json/)
+              .expect(200)
+              .end(function(error, response) {
+                if(error) {
+                  done(error);
+                } else {
+                  response.body.should.have.property("grid");
+                  response.body.should.have.property("data");
+                  response.body.should.have.property("keys");
+                  done();
+                }
+              })
+          }
+        })
+    });
+    it('should return utf8 grid for point maps', function(done){
+      var q = {"scientificname": "puma concolor"}
+      request(app.server)
+        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error1, response1) {
+          if(error1) {
+            done(error1);
+          } else {          
+            request(app.server)
+              .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.grid.json")
+              .expect('Content-Type', /json/)
+              .expect(200)
+              .end(function(error, response) {
+                if(error) {
+                  done(error);
+                } else {
+                  response.body.should.have.property("grid");
+                  response.body.should.have.property("data");
+                  response.body.should.have.property("keys");
+                  done();
+                }
+              })
+          }
+        })
+    });    
+  });
   describe('retrieve map points', function(){
     it('should return geojson for geohash maps', function(done){
       var q = {"scientificname": "puma concolor"}
@@ -326,6 +382,7 @@ describe('Mapping', function(){
                 } else {
                   response.body.itemCount.should.not.equal(0);
                   response.body.items.length.should.not.equal(0);
+                  response.body.should.have.property("bbox");
                   done();
                 }
               })
