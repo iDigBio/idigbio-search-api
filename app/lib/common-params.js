@@ -58,6 +58,18 @@ module.exports = function(app,config) {
                 }
             },{});
         },
+        top_fields: function(req) {
+            return getParam(req,"top_fields",function(p){
+                try {
+                    if (_.isString(p)) {
+                        p = JSON.parse(p);
+                    }
+                    return p;
+                } catch (e) {
+                    return undefined;
+                }
+            },undefined);
+        },
         fields: function(req) {
             return getParam(req,"fields",function(p){
                 try {
