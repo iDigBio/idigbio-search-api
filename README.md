@@ -1,11 +1,21 @@
 idb-search-api
 ==============
 
-iDigBio Search API
+## iDigBio Search API
+
+### API Users
+
+Developers who are interested in using the public iDigBio Search API / iDigBio API v2 service should consult the wiki which includes a list of endpoints, parameters, and query format.
+
+https://github.com/idigbio/idigbio-search-api/wiki
+
+### API Code Developers
+
+The remainder of this document is for developers who are interested in the internals of the API code itself.
 
 [![Build Status](https://travis-ci.org/iDigBio/idigbio-search-api.svg?branch=master)](https://travis-ci.org/iDigBio/idigbio-search-api)
 
-To install
+To install and run on Ubuntu:
 ```
 git clone https://github.com/idigbio/idigbio-search-api.git
 cd idigbio-search-api
@@ -21,6 +31,4 @@ npm install
 npm start
 ```
 
-For documentation see:
-https://github.com/idigbio/idigbio-search-api/wiki
 
