@@ -57,7 +57,7 @@ module.exports = function(app, config) {
 
             var fields_exclude = cp.fields_exclude(req);
 
-            var query = qg.record_query(rq,fields,sort,limit,offset,fields_exclude)
+            var query = qg.record_query(rq,fields,sort,limit,offset,fields_exclude);
 
             request.post({
                 url: config.search.server + config.search.index + "records/_search",

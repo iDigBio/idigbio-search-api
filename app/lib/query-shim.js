@@ -122,6 +122,15 @@ module.exports = function() {
         return typeWrapper(k,"range",shimK);
     }
 
+    function prefixFilter(k,shimK) {
+        var inner = {};
+        inner[k] = shimK["value"];
+
+        return {
+            "prefix": inner
+        };
+    }
+
     function geoBoundingBox(k,shimK) {
         return typeWrapper(k,"geo_bounding_box",shimK);
     }
@@ -159,6 +168,8 @@ module.exports = function() {
             return geoBoundingBox(k,shimK);
         } else if (shimK["type"] === "fulltext") {
             return shimK["value"];
+        } else if (shimK["type"] === "prefix") {
+            return prefixFilter(k,shimK);
         } else {
             console.log(k + " " + shimK);
         }        
