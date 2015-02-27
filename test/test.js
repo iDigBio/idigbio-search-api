@@ -7,4 +7,5 @@ var blanket = require("blanket")({
 var home = require("./test-home.js");
 var view = require("./test-view.js");
 var search = require("./test-search.js");
+var search = require("./test-search-deprecated.js");
 var search = require("./test-mapping.js");
