@@ -12,7 +12,7 @@ describe('Search', function(){
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
       var q = {"scientificname": "nullius nullius"}
       request(app.server)
-        .get("/v2/search/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/records/?rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -28,7 +28,7 @@ describe('Search', function(){
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/search/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/records/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -44,7 +44,7 @@ describe('Search', function(){
     it('should be able to return a limited set of fields', function(done){
       var q = {"scientificname": {"type": "exists"},"genus": "carex"}
       request(app.server)
-        .get("/v2/search/?limit=10&fields=[\"scientificname\"]&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/records/?limit=10&fields=[\"scientificname\"]&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -60,7 +60,7 @@ describe('Search', function(){
     it('should obey maxLimit', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/search/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/records/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -77,7 +77,7 @@ describe('Search', function(){
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
       var q = {"scientificname": "nullius nullius"}
       request(app.server)
-        .post("/v2/search/")
+        .post("/v2/search/records/")
         .send({
             rq: q,
         })
@@ -96,7 +96,7 @@ describe('Search', function(){
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .post("/v2/search/")
+        .post("/v2/search/records/")
         .send({
             rq: q,
             limit: 10,
@@ -116,7 +116,7 @@ describe('Search', function(){
     it('should be able to return a limited set of fields', function(done){
       var q = {"scientificname": {"type": "exists"},"genus": "carex"}
       request(app.server)
-        .post("/v2/search/")
+        .post("/v2/search/records/")
         .send({
             rq: q,
             limit: 10,
@@ -137,7 +137,7 @@ describe('Search', function(){
     it('should obey maxLimit', function(done){
       var q = {}
       request(app.server)
-        .post("/v2/search/")
+        .post("/v2/search/records/")
         .send({
             rq: q,
             limit: 10000,
@@ -156,7 +156,7 @@ describe('Search', function(){
     it('should support multiple field sorting with an array', function(done){
       var q = {"family":"asteraceae"}, s = [{"genus":"desc"},{"specificepithet":"asc"}];
       request(app.server)
-        .post("/v2/search/")
+        .post("/v2/search/records/")
         .send({
             rq: q,
             sort: s,
@@ -177,7 +177,7 @@ describe('Search', function(){
     it('should support sorting with a single field name string', function(done){
       var q = {"family":"asteraceae"}, s = "genus";
       request(app.server)
-        .post("/v2/search/")
+        .post("/v2/search/records/")
         .send({
             rq: q,
             sort: s,
@@ -201,7 +201,7 @@ describe('Search', function(){
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
       var q = {"scientificname": "nullius nullius"}
       request(app.server)
-        .get("/v2/media/?rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/media/?rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -217,7 +217,7 @@ describe('Search', function(){
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -233,7 +233,7 @@ describe('Search', function(){
     it('should be able to return a limited set of fields', function(done){
       var q = {"data.idigbio:data.ac:accessuri": {"type": "exists"}}
       request(app.server)
-        .get("/v2/media/?limit=10&fields=[\"data.idigbio:data.ac:accessuri\"]&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/media/?limit=10&fields=[\"data.idigbio:data.ac:accessuri\"]&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -249,7 +249,7 @@ describe('Search', function(){
     it('should obey maxLimit', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/media/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/media/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -266,7 +266,7 @@ describe('Search', function(){
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
       var q = {"scientificname": "nullius nullius"}
       request(app.server)
-        .post("/v2/media/")
+        .post("/v2/search/media/")
         .send({
             rq: q,
             mq: q
@@ -286,7 +286,7 @@ describe('Search', function(){
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .post("/v2/media/")
+        .post("/v2/search/media/")
         .send({
             rq: q,
             mq: q,
@@ -307,7 +307,7 @@ describe('Search', function(){
     it('should be able to return a limited set of fields', function(done){
       var q = {"data.idigbio:data.ac:accessuri": {"type": "exists"}}
       request(app.server)
-        .post("/v2/media/")
+        .post("/v2/search/media/")
         .send({
             mq: q,
             limit: 10,
@@ -328,7 +328,7 @@ describe('Search', function(){
     it('should obey maxLimit', function(done){
       var q = {}
       request(app.server)
-        .post("/v2/media/")
+        .post("/v2/search/media/")
         .send({
             rq: q,
             mq: q,

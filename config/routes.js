@@ -29,10 +29,16 @@ module.exports = function(app, config) {
     app.route('/v2/meta/fields/:t')
         .get(home.indexFields);
     app.get('/v2/view/:t/:uuid', view.basic);
-    app.route('/v2/search/')
+    app.route('/v2/search')
         .get(search.basic)
         .post(search.basic);
-    app.route('/v2/media/')
+    app.route('/v2/search/records')
+        .get(search.basic)
+        .post(search.basic);
+    app.route('/v2/media')
+        .get(search.media)
+        .post(search.media);
+    app.route('/v2/search/media')
         .get(search.media)
         .post(search.media);
     app.route('/v2/summary/top/media')
@@ -41,10 +47,16 @@ module.exports = function(app, config) {
     app.route('/v2/summary/top/basic')
         .get(summary.top_basic)
         .post(summary.top_basic);
+    app.route('/v2/summary/top/records')
+        .get(summary.top_basic)
+        .post(summary.top_basic);
     app.route('/v2/summary/count/media')
         .get(summary.count_media)
         .post(summary.count_media);
     app.route('/v2/summary/count/basic')
+        .get(summary.count_basic)
+        .post(summary.count_basic);
+    app.route('/v2/summary/count/records')
         .get(summary.count_basic)
         .post(summary.count_basic);
     app.route('/v2/summary/count/recordset')
