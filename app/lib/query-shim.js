@@ -188,7 +188,7 @@ module.exports = function() {
         var and_array = [];
 
         _.keys(shim).forEach(function(k) {
-            if (_.isString(shim[k]) || _.isBoolean(shim[k])) {
+            if (_.isString(shim[k]) || _.isBoolean(shim[k]) || _.isNumber(shim[k])) {
                 and_array.push(termFilter(k,shim[k]));
             } else if (_.isArray(shim[k])) {
                 and_array.push(termsFilter(k,shim[k]));
