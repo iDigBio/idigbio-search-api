@@ -14,7 +14,7 @@ var config = {
         "hostname": "localhost",
         "port": 6379
     },
-    maxTileObjects: 50000,
+    maxTileObjects: 10000,
 }
 
 if (process.env.NODE_ENV === "prod") {
