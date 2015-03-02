@@ -72,6 +72,10 @@ module.exports = function(app, config) {
         indexFields: function(req,res) {
             var t = req.params.t;
 
+            if (t == "media") {
+                t = "mediarecords";
+            }
+
             request.get(config.search.server + "/idigbio/" + t + "/_mapping",function(error, response, body) {
                 var mapping = JSON.parse(body);
                 var resp = {};

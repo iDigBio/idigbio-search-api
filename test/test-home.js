@@ -231,5 +231,19 @@ describe('Home', function(){
           }
         })
     })
+    it('should not be blank for media', function(done){
+      request(app.server)
+        .get("/v2/meta/fields/media")
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+          if(error) {
+            done(error);
+          } else {
+            Object.keys(response.body).length.should.not.equal(0);
+            done();
+          }
+        })
+    })    
   })
 })

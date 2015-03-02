@@ -38,6 +38,16 @@ describe('View', function(){
             response.body.error.should.equal("Not Found"); 
             done();
         })
+    })
+    it('should have media aliased to mediarecords', function(done){
+      request(app.server)
+        .get("/v2/view/media/b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3")
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error, response) {
+            response.body.uuid.should.equal("b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3"); 
+            done();
+        })
     })    
   })     
 })

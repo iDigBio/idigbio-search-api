@@ -15,6 +15,10 @@ module.exports = function(app, config) {
             var t = req.params.t;
             var uuid = req.params.uuid;
 
+            if (t == "media") {
+                t = "mediarecords";
+            }
+
             var query = {
                 "query": { 
                     "term": {
