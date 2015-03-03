@@ -9,6 +9,13 @@ module.exports = function(app, config) {
 
     var cache = require('../app/lib/cache.js')(app, config);
 
+    // app.use(function(req, res, next){
+    //     console.log(req.originalUrl);
+    //     console.log(req.body);
+    //     console.log(req.params);
+    //     next();
+    // })
+
     app.route('/')
         .get(home.index);
     app.route('/v1*')
