@@ -10,7 +10,7 @@ module.exports = function(app, config) {
         // version:
         // http://idb-riak.acis.ufl.edu:8098/buckets/record_catalog/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45
         // http://idb-riak.acis.ufl.edu:8098/buckets/record/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45-14cdaa01e6581b4af8b5d544c9eaa2750b2eb4cf
-        basic: function(req, res) {
+        basic: function(req, res, next) {
 
             var t = req.params.t;
             var uuid = req.params.uuid;

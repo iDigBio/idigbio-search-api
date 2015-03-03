@@ -11,7 +11,7 @@ module.exports = function(app, config) {
     var required_fields = ["data.idigbio:version", "data.idigbio:etag", "data.idigbio:recordIds"];
 
     return {
-        media: function(req, res) {
+        media: function(req, res, next) {
 
             var mq = cp.query("mq", req);
 
@@ -40,7 +40,7 @@ module.exports = function(app, config) {
             });
         },
 
-        basic: function(req, res) {
+        basic: function(req, res, next) {
 
             var rq = cp.query("rq", req);
 

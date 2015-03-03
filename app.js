@@ -6,6 +6,7 @@ var express = require('express'),
     config = require('./config/config');
 
 var app = express();
+var server;
 
 require('./config/express')(app, config);
 require('./config/routes')(app, config);
@@ -17,20 +18,29 @@ function loadRSDelay(){
     setTimeout(loadRSDelay,1000*60*60);
 }
 
-var numWorkers = 10;
-if (cluster.isMaster) {
-  // Fork workers.
-  for (var i = 0; i < numWorkers; i++) {
-    cluster.fork();
-  }
+if (process.env.NODE_ENV != "test") {
+    var numWorkers = 10;
+    if (cluster.isMaster) {
+      // Fork workers.
+      for (var i = 0; i < numWorkers; i++) {
+        cluster.fork();
+      }
 
-  cluster.on('exit', function(worker, code, signal) {
-    console.log('worker ' + worker.process.pid + ' died');
-  });
+      cluster.on('exit', function(worker, code, signal) {
+        console.log('worker ' + worker.process.pid + ' died');
+      });
+    } else {
+        server = app.listen(config.port, function() {
+
+            loadRSDelay();
+
+            //console.log('Express server listening on port ' + server.address().port);
+        });
+    }
 } else {
-    var server = app.listen(config.port, function() {
+    server = app.listen(config.port, function() {
 
-        loadRSDelay();    
+        loadRSDelay();
 
         //console.log('Express server listening on port ' + server.address().port);
     });

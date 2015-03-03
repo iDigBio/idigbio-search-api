@@ -490,7 +490,7 @@ module.exports = function(app, config) {
         return query;
     }
 
-    function getMapDef(req,res,cb) {
+    function getMapDef(req, res, next, cb) {
         var self = this;
         config.redis.client.get(req.params.s, function(err, rv) {
             if (!rv) {
@@ -524,7 +524,7 @@ module.exports = function(app, config) {
         });
     }
 
-    function makeMapTile(req, res, map_def, count) {
+    function makeMapTile(req, res, next, map_def, count) {
         //var s = req.params.s;
 
         var x = parseInt(req.params.x);
@@ -594,7 +594,7 @@ module.exports = function(app, config) {
     }
 
     return {
-        // basic: function(req, res) {
+        // basic: function(req, res, next) {
 
         //     var type = req.params.t;
 
@@ -656,7 +656,7 @@ module.exports = function(app, config) {
         //         }
         //     });
         // },
-        mapPoints: function(req, res) {
+        mapPoints: function(req, res, next) {
             var s = req.params.s;
 
             var limit = cp.limit(req);
@@ -772,8 +772,8 @@ module.exports = function(app, config) {
             });
         },
 
-        getMapStyle: function(req, res) {
-            getMapDef(req,res,function(map_def){
+        getMapStyle: function(req, res, next) {
+            getMapDef(req, res, next,function(map_def){
                 var query = makeTileQuery(map_def, req.params.z, 0, 0);
                 request.post({
                     url: config.search.server + config.search.index + "records/_search",
@@ -784,13 +784,13 @@ module.exports = function(app, config) {
             });
         },
 
-        getMapTile: function(req, res) {
-            getMapDef(req,res,function(map_def){
-                makeMapTile(req, res, map_def);
+        getMapTile: function(req, res, next) {
+            getMapDef(req, res, next,function(map_def){
+                makeMapTile(req, res, next, map_def);
             });
         },
 
-        createMap: function(req, res) {
+        createMap: function(req, res, next) {
             var rq = cp.query("rq", req);
 
             var type = getParam(req, "type", function(p) {
@@ -864,7 +864,7 @@ module.exports = function(app, config) {
                 }
             })
         },
-        getMap: function(req, res) {
+        getMap: function(req, res, next) {
             var s = req.params.s;
 
             config.redis.client.get(s, function(err, rv) {

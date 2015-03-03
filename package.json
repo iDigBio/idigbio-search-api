@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "node_modules/mocha/bin/mocha test/test.js && node_modules/mocha/bin/mocha test/test.js -R travis-cov"
+    "test": "NODE_ENV=test node_modules/mocha/bin/mocha test/test.js && NODE_ENV=test node_modules/mocha/bin/mocha test/test.js -R travis-cov"
   },
   "licenses": [
     {

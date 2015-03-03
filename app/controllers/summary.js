@@ -29,7 +29,7 @@ module.exports = function(app, config) {
     }
 
     return {
-        top_media: function(req, res) {
+        top_media: function(req, res, next) {
 
             var mq = cp.query("mq", req);
 
@@ -54,7 +54,7 @@ module.exports = function(app, config) {
             });
         },
 
-        top_basic: function(req, res) {
+        top_basic: function(req, res, next) {
 
             var rq = cp.query("rq", req);
 
@@ -77,7 +77,7 @@ module.exports = function(app, config) {
             });
         },
 
-        count_media: function(req, res) {
+        count_media: function(req, res, next) {
 
             var mq = cp.query("mq", req);
 
@@ -98,7 +98,7 @@ module.exports = function(app, config) {
             });
         },
 
-        count_basic: function(req, res) {
+        count_basic: function(req, res, next) {
 
             var rq = cp.query("rq", req);
 
@@ -117,7 +117,7 @@ module.exports = function(app, config) {
             });
         },
 
-        count_recordset: function(req, res) {
+        count_recordset: function(req, res, next) {
 
             var rsq = cp.query("rsq", req);
 
@@ -136,7 +136,7 @@ module.exports = function(app, config) {
             });
         },
 
-        date_hist: function(req, res) {
+        date_hist: function(req, res, next) {
 
             var rq = cp.query("rq", req);
 
@@ -199,7 +199,7 @@ module.exports = function(app, config) {
             });
         },
 
-        stats: function(req, res) {
+        stats: function(req, res, next) {
 
             var query = {
                 "size": 0

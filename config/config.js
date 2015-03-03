@@ -10,9 +10,9 @@ var config = {
     defaultLimit: 100,
     maxLimit: 5000,
     recordsets: {},
-    "redis": {
-        "hostname": "localhost",
-        "port": 6379
+    redis: {
+        hostname: "localhost",
+        port: 6379
     },
     maxTileObjects: 10000,
 }
