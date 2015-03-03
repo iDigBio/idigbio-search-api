@@ -50,7 +50,7 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "mediarecords/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.top_formatter(body,res);
+                formatter.top_formatter(body, res, next);
             });
         },
 
@@ -73,7 +73,7 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.top_formatter(body,res);
+                formatter.top_formatter(body, res, next);
             });
         },
 
@@ -95,6 +95,7 @@ module.exports = function(app, config) {
                 res.json({
                     itemCount: bo.count
                 });
+                next();
             });
         },
 
@@ -114,6 +115,7 @@ module.exports = function(app, config) {
                 res.json({
                     itemCount: bo.count
                 });
+                next();
             });
         },
 
@@ -133,6 +135,7 @@ module.exports = function(app, config) {
                 res.json({
                     itemCount: bo.count
                 });
+                next();
             });
         },
 
@@ -195,7 +198,7 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.date_hist_formatter(body,res);
+                formatter.date_hist_formatter(body, res, next);
             });
         },
 
@@ -311,6 +314,7 @@ module.exports = function(app, config) {
                 res.status(400).json({
                     "error": "Bad Type"
                 });
+                next();
                 return;
             }
 
@@ -318,7 +322,7 @@ module.exports = function(app, config) {
                 url: config.search.server + "stats/" + t + "/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.stats_hist_formatter(body,res);
+                formatter.stats_hist_formatter(body, res, next);
             });
         }
     };

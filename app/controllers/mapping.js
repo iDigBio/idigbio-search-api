@@ -139,7 +139,8 @@ module.exports = function(app, config) {
                 var fl = scale.mode('lab')(i);
                 rv["colors"][b.key] = {
                     "fill": fl.alpha(0.7).css(),
-                    "stroke": chroma("black").alpha(0.7).css()
+                    "stroke": chroma("black").alpha(0.7).css(),
+                    "itemCount": b["doc_count"]
                 }
             }
             var fl = scale.mode('lab')(colorCount);
@@ -498,6 +499,7 @@ module.exports = function(app, config) {
                     "error": "Not Found",
                     "statusCode": 404
                 });
+                next();
                 return
             }
             var map_def = JSON.parse(rv);
@@ -543,9 +545,11 @@ module.exports = function(app, config) {
             tileGeohash(z, x, y, map_def, body, function(err, png_buff) {
                 if (response_type === "grid.json") {
                     res.json(png_buff);
+                    next();
                 } else {
                     res.type('png');
                     res.send(png_buff);
+                    next();
                 }
             }, response_type);
         }
@@ -554,9 +558,11 @@ module.exports = function(app, config) {
             tilePoints(z, x, y, map_def, body, function(err, png_buff) {
                 if (response_type === "grid.json") {
                     res.json(png_buff);
+                    next();
                 } else {
                     res.type('png');
                     res.send(png_buff);
+                    next();
                 }
             }, response_type);
         }
@@ -571,10 +577,12 @@ module.exports = function(app, config) {
                 if (map_def.type === "geohash") {
                     geoJsonGeohash(body, function(rb) {
                         res.json(rb);
+                        next();
                     });
                 } else {
                     geoJsonPoints(body, function(rb) {
                         res.json(rb);
+                        next();
                     });
                 }
             } else if (response_type === "grid.json") {
@@ -648,10 +656,12 @@ module.exports = function(app, config) {
         //         if (type === "geohash") {
         //             geoJsonGeohash(body,function(rb){
         //                 res.json(rb);
+        //                 next();
         //             });
         //         } else if (type === "points") {
         //             geoJsonPoints(body,function(rb){
         //                 res.json(rb);
+        //                 next();
         //             });
         //         }
         //     });
@@ -711,6 +721,7 @@ module.exports = function(app, config) {
                         "error": "Not Found",
                         "statusCode": 404
                     });
+                    next();
                     return
                 }
 
@@ -756,7 +767,7 @@ module.exports = function(app, config) {
                     url: config.search.server + config.search.index + "records/_search",
                     body: JSON.stringify(query)
                 }, function(error, response, body) {
-                    formatter.basic(body, res, {
+                    formatter.basic(body, res, next, {
                         "bbox": {
                             "nw": {
                                 "lat": meta_bbox[2],
@@ -780,6 +791,7 @@ module.exports = function(app, config) {
                     body: JSON.stringify(query)
                 }, function(error, response, body) {
                     res.json(styleJSON(map_def,JSON.parse(body)));
+                    next();
                 });
             });
         },
@@ -844,6 +856,7 @@ module.exports = function(app, config) {
 
                             mapDef(s, map_url, map_def, function(rb) {
                                 res.json(rb);
+                                next();
                             })
                         })
                     })
@@ -856,6 +869,7 @@ module.exports = function(app, config) {
 
                                 mapDef(s, map_url, map_def, function(rb) {
                                     res.json(rb);
+                                    next();
                                 })
                             });
                         })
@@ -873,6 +887,7 @@ module.exports = function(app, config) {
                         "error": "Not Found",
                         "statusCode": 404
                     });
+                    next();
                     return
                 }
 
@@ -881,6 +896,7 @@ module.exports = function(app, config) {
 
                 mapDef(s, map_url, map_def, function(rb) {
                     res.json(rb);
+                    next();
                 })
             });
         }

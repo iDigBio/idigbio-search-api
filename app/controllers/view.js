@@ -54,21 +54,25 @@ module.exports = function(app, config) {
                             _.defaults(rs,config.recordsets[body._source.recordset]);
                             rb.attribution = rs;
                             res.json(rb);
+                            next();
                         } else {
                             loadRecordsets(function(){
                                 _.defaults(rs,config.recordsets[body._source.recordset]);
                                 rb.attribution = rs;
                                 res.json(rb);
+                                next();
                             });
                         }
                     } else {
                         res.json(rb);
+                        next();
                     }
                 } else {
                     res.status(404).json({
                         "error": "Not Found",
                         "statusCode": 404
                     });
+                    next();
                 }
             });
         },        

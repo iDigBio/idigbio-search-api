@@ -26,13 +26,14 @@ module.exports = function(app,config) {
         });
     }
 
-    function basic(body, res, extra) {
+    function basic(body, res, next, extra) {
         body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
                 "error": "Bad Request"
             });
+            next();
             return;
         }
 
@@ -64,6 +65,7 @@ module.exports = function(app,config) {
                 _.merge(rb,extra);
             }
             res.json(rb);
+            next();
         });
     }
 
@@ -86,13 +88,14 @@ module.exports = function(app,config) {
         return bv;
     }
 
-    function top_formatter(body, res) {
+    function top_formatter(body, res, next) {
         body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
                 "error": "Bad Request"
             });
+            next();
             return;
         }
 
@@ -100,15 +103,17 @@ module.exports = function(app,config) {
         rb["itemCount"] = body.hits.total;
 
         res.json(rb);
+        next();
     }
 
-    function date_hist_formatter(body,res) {
+    function date_hist_formatter(body, res, next) {
         body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
                 "error": "Bad Request"
             });
+            next();
             return;
         }
 
@@ -121,15 +126,17 @@ module.exports = function(app,config) {
         rb["rangeCount"] = body.aggregations.fdh.doc_count;
 
         res.json(rb);
+        next();
     }
 
-    function stats_hist_formatter(body,res) {
+    function stats_hist_formatter(body, res, next) {
         body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
                 "error": "Bad Request"
             });
+            next();
             return;
         }
 
@@ -152,6 +159,7 @@ module.exports = function(app,config) {
         })
 
         res.json(rb);
+        next();
     }
 
     return {

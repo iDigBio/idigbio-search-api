@@ -83,11 +83,13 @@ module.exports = function(app, config) {
     app.route('/v2/mapping/:s/:z/:x/:y.:t')
         .get(mapping.getMapTile);
 
-    app.use('/v2/mapping/:s', function(req, res, next){
-        console.log(req.originalUrl)
-    });
+    // app.use('/v2/mapping/:s', function(req, res, next){
+    //     console.log(req.originalUrl)
+    //     next();
+    // });
 
-    app.use(function(req, res, next){
+    app.use(function(err, req, res, next){
         res.status(404).json({"error": "Not Found"})
+        next();
     });
 };

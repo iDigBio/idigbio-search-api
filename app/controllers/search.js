@@ -36,7 +36,7 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "mediarecords/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.basic(body,res);
+                formatter.basic(body, res, next);
             });
         },
 
@@ -63,7 +63,7 @@ module.exports = function(app, config) {
                 url: config.search.server + config.search.index + "records/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.basic(body,res);
+                formatter.basic(body, res, next);
             });
         },
     };

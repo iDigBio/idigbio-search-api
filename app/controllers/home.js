@@ -26,38 +26,43 @@ module.exports = function(app, config) {
     }
 
     return {
-        index: function(req, res) {
+        index: function(req, res, next) {
             res.json({
                 'v1': req.protocol + '://' + req.get("host") + '/v1',
                 'v2': req.protocol + '://' + req.get("host") + '/v2',
             });
+            next();
         },
-        v2: function(req, res) {
+        v2: function(req, res, next) {
             res.json({
                 'search': req.protocol + '://' + req.get("host") + '/v2/search',
                 'mapping': req.protocol + '://' + req.get("host") + '/v2/mapping',
                 'view': req.protocol + '://' + req.get("host") + '/v2/view',
             });
+            next();
         },
-        v1: function(req, res) {
+        v1: function(req, res, next) {
             //console.log("http://api.idigbio.org" + req.originalUrl)
             request.get("http://api.idigbio.org" + req.originalUrl,function(error, response, body) {
                 res.json(JSON.parse(body));
+                next();
             });
         },
-        searchProxy: function(req, res) {
+        searchProxy: function(req, res, next) {
             //console.log(config.search.server + req.originalUrl)
             request.get(config.search.server + req.originalUrl,function(error, response, body) {
                 res.json(JSON.parse(body));
+                next();
             });
         },
-        searchProxyPost: function(req, res) {
+        searchProxyPost: function(req, res, next) {
             // Fix broken decode on missing mime type
             if (Object.keys(req.body).length === 1 && req.body[Object.keys(req.body)[0]] === '' ){
                 try {
                     req.body = JSON.parse(Object.keys(req.body)[0]);
                 } catch(e) {
                     res.status(400).json({"error": "Bad Request"});
+                    next();
                     return;
                 }
             }
@@ -67,9 +72,10 @@ module.exports = function(app, config) {
                 body: JSON.stringify(req.body)
             },function(error, response, body) {
                 res.json(JSON.parse(body));
+                next();
             });
         },
-        indexFields: function(req,res) {
+        indexFields: function(req, res, next) {
             var t = req.params.t;
 
             if (t == "media") {
@@ -83,6 +89,7 @@ module.exports = function(app, config) {
                     resp = getSubKeys(mapping[index]["mappings"][t], "");
                 });
                 res.json(resp);
+                next();
             });
         }
     };

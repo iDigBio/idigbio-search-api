@@ -9,7 +9,7 @@
     "canvas": "~1.1.6",
     "chroma-js": "*",
     "cors": "^2.5.2",
-    "express": "4.x",
+    "express": "^4.12.2",
     "hashids": "^1.0.1",
     "hiredis": "^0.1.17",
     "lodash": "^2.4.1",
@@ -39,5 +39,5 @@
       "type": "GPLv3",
       "url": "http://github.com/iDigBio/idigbio-search-api/raw/master/LICENSE.md"
     }
-  ]  
+  ]
 }
