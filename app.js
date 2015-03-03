@@ -1,3 +1,7 @@
+ var cluster = require('cluster');
+ var http = require('http');
+  http.globalAgent.maxSockets = 100;  
+
 var express = require('express'),
     config = require('./config/config');
 
@@ -13,12 +17,24 @@ function loadRSDelay(){
     setTimeout(loadRSDelay,1000*60*60);
 }
 
-var server = app.listen(config.port, function() {
+var numWorkers = 10;
+if (cluster.isMaster) {
+  // Fork workers.
+  for (var i = 0; i < numWorkers; i++) {
+    cluster.fork();
+  }
 
-    loadRSDelay();    
+  cluster.on('exit', function(worker, code, signal) {
+    console.log('worker ' + worker.process.pid + ' died');
+  });
+} else {
+    var server = app.listen(config.port, function() {
 
-    //console.log('Express server listening on port ' + server.address().port);
-});
+        loadRSDelay();    
+
+        //console.log('Express server listening on port ' + server.address().port);
+    });
+}
 
 module.exports = {
     app: app,
