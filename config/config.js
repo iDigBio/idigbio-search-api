@@ -15,6 +15,7 @@ var config = {
         port: 6379
     },
     maxTileObjects: 10000,
+    cacheTimeout: 60*60,
 }
 
 if (process.env.NODE_ENV === "prod") {

@@ -7,12 +7,7 @@ module.exports = function(app, config) {
     var view = require('../app/controllers/view')(app, config);
     var summary = require('../app/controllers/summary')(app, config);
 
-    // app.use(function(req, res, next){
-    //     console.log(req.originalUrl);
-    //     console.log(req.body);
-    //     console.log(req.params);
-    //     next();
-    // })
+    var cache = require('../app/lib/cache.js')(app, config);
 
     app.route('/')
         .get(home.index);
@@ -74,6 +69,9 @@ module.exports = function(app, config) {
     app.route('/v2/mapping/')
         .get(mapping.createMap)
         .post(mapping.createMap);
+
+    app.use('/v2/mapping/:s', cache);
+
     app.route('/v2/mapping/:s')
         .get(mapping.getMap);
     app.route('/v2/mapping/:s/style/:z')
@@ -82,11 +80,6 @@ module.exports = function(app, config) {
         .get(mapping.mapPoints);
     app.route('/v2/mapping/:s/:z/:x/:y.:t')
         .get(mapping.getMapTile);
-
-    // app.use('/v2/mapping/:s', function(req, res, next){
-    //     console.log(req.originalUrl)
-    //     next();
-    // });
 
     app.use(function(err, req, res, next){
         res.status(404).json({"error": "Not Found"})
