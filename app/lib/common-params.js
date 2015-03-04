@@ -21,10 +21,16 @@ module.exports = function(app,config) {
                 }else if(_.isArray(param)){
                     param.forEach(function(item){
                         s={};
-                        _.forOwn(item,function(v,k){
-                            s[k]={"order": v};
+                        if(_.isString(item)){
+                            s={};
+                            s[item]={"order":"asc"};
                             order.push(s);
-                        });
+                        } else {
+                            _.forOwn(item,function(v,k){
+                                s[k]={"order": v};
+                                order.push(s);
+                            });
+                        }
                     });
                 }
                 order.push({"dqs":{"order":"desc"}});
