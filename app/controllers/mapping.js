@@ -405,7 +405,7 @@ module.exports = function(app, config) {
     function makeTileQuery(map_def, z, x, y, response_type) {
         var query = makeBasicFilter(map_def);
 
-        var unboxed_filter = _.cloneDeep(query.query.filtered.filter);
+        var unboxed_query = _.cloneDeep(query.query);
 
         var gl = tileMath.zoom_to_geohash_len(z, false);
         var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
@@ -441,7 +441,9 @@ module.exports = function(app, config) {
                     "global": {},
                     "aggs": {
                         "f": {
-                            "filter": unboxed_filter,
+                            "filter": {
+                                "query": unboxed_query,
+                            },
                             "aggs": {
                                 "gh": {
                                     "geohash_grid": {
@@ -463,7 +465,9 @@ module.exports = function(app, config) {
                     "global": {},
                     "aggs": {
                         "f": {
-                            "filter": unboxed_filter,
+                            "filter": {
+                                "query": unboxed_query,
+                            },
                             "aggs": {
                                 "style": {
                                     "terms": {
