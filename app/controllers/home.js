@@ -56,17 +56,6 @@ module.exports = function(app, config) {
             });
         },
         searchProxyPost: function(req, res, next) {
-            // Fix broken decode on missing mime type
-            if (Object.keys(req.body).length === 1 && req.body[Object.keys(req.body)[0]] === '' ){
-                try {
-                    req.body = JSON.parse(Object.keys(req.body)[0]);
-                } catch(e) {
-                    res.status(400).json({"error": "Bad Request"});
-                    next();
-                    return;
-                }
-            }
-
             request.post({
                 url: config.search.server + req.originalUrl,
                 body: JSON.stringify(req.body)
