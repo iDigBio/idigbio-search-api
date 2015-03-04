@@ -734,7 +734,6 @@ module.exports = function(app, config) {
                 var query = queryShim(map_def.rq);
                 var type = map_def.type;
 
-
                 makeKeyDefined(["query", "filtered", "filter"], query);
 
                 if (!query["query"]["filtered"]["filter"]["and"]) {
