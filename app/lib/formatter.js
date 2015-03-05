@@ -69,6 +69,42 @@ module.exports = function(app,config) {
         });
     }
 
+    function basicNoAttr(body, res, next, extra) {
+        body = JSON.parse(body);
+
+        if (body.status === 400) {
+            res.status(400).json({
+                "error": "Bad Request"
+            });
+            next();
+            return;
+        }
+
+        var rb = {
+            "itemCount": body.hits.total,
+            "items": []
+        };
+
+        body.hits.hits.forEach(function(hit){
+            var indexterms = _.cloneDeep(hit._source);
+            delete indexterms["data"];
+            if(!hit._source.data["idigbio:data"]) {
+                hit._source.data["idigbio:data"] = {};
+            }
+            rb.items.push({
+                "uuid": hit._id,
+                "etag": hit._source.data["idigbio:etag"],
+                "version": hit._source.data["idigbio:version"],
+                "data": hit._source.data["idigbio:data"],
+                "recordIds": hit._source.data["idigbio:recordIds"],
+                "indexTerms": indexterms,
+            });
+        });
+
+        res.json(rb);
+        next();
+    }
+
     function top_aggs(b) {
         var bv = {};
 
@@ -167,6 +203,7 @@ module.exports = function(app,config) {
         attribution: attribution,
         top_formatter: top_formatter,
         date_hist_formatter: date_hist_formatter,
-        stats_hist_formatter: stats_hist_formatter
+        stats_hist_formatter: stats_hist_formatter,
+        basicNoAttr: basicNoAttr
     };
 };

@@ -66,5 +66,59 @@ module.exports = function(app, config) {
                 formatter.basic(body, res, next);
             });
         },
+
+        recordsets: function(req, res, next) {
+
+            var rsq = cp.query("rsq", req);
+
+            var limit = cp.limit(req);
+
+            var offset = cp.offset(req);
+
+            var sort = cp.sort(req);
+
+            var fields = cp.fields(req);
+            if (_.isArray(fields)) {
+                fields.push.apply(fields,required_fields);
+            }
+
+            var fields_exclude = cp.fields_exclude(req);
+
+            var query = qg.bare_query(rsq,fields,sort,limit,offset,fields_exclude);
+
+            request.post({
+                url: config.search.server + config.search.index + "recordsets/_search",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                formatter.basicNoAttr(body, res, next);
+            });
+        },
+
+        publishers: function(req, res, next) {
+
+            var pq = cp.query("pq", req);
+
+            var limit = cp.limit(req);
+
+            var offset = cp.offset(req);
+
+            var sort = cp.sort(req);
+
+            var fields = cp.fields(req);
+            if (_.isArray(fields)) {
+                fields.push.apply(fields,required_fields);
+            }
+
+            var fields_exclude = cp.fields_exclude(req);
+
+            var query = qg.bare_query(pq,fields,sort,limit,offset,fields_exclude);
+
+            request.post({
+                url: config.search.server + config.search.index + "publishers/_search",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                formatter.basicNoAttr(body, res, next);
+            });
+        },
     };
 };

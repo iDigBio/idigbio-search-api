@@ -27,20 +27,7 @@ module.exports = function(app,config) {
 
     function media_query(rq,mq,fields,sort,limit,offset,fields_exclude) {
         var rquery = queryShim(rq);
-        var mrquery = queryShim(mq);
-
-        var query = {
-            "query": {
-                "filtered": {
-                    "filter": {},
-                    "query": {},
-                }
-            }
-        };
-
-        if (hasTerms(["query","filtered","filter"], mrquery)) {
-            query["query"]["filtered"]["filter"] = mrquery["query"]["filtered"]["filter"];
-        }
+        var query = bare_query(mq,fields,sort,limit,offset,fields_exclude);
 
         var recordQuery;
 
@@ -54,21 +41,17 @@ module.exports = function(app,config) {
         }
 
         if (recordQuery) {
-            if (hasTerms(["query","filtered","query"], mrquery)) {
+            if (hasTerms(["query","filtered","query"], query)) {
                 query["query"]["filtered"]["query"] = {
                     "bool": {
                         "must": [
                             recordQuery,
-                            mrquery["query"]["filtered"]["query"]
+                            query["query"]["filtered"]["query"]
                         ]
                     }
                 };
             } else {
                 query["query"]["filtered"]["query"] = recordQuery;
-            }
-        } else {
-            if (hasTerms(["query","filtered","query"], mrquery)) {
-                query["query"]["filtered"]["query"] = mrquery["query"]["filtered"]["query"];
             }
         }
 
@@ -85,29 +68,12 @@ module.exports = function(app,config) {
                 }
             }
         };
-        query["from"] = offset;
-        query["size"] = limit;
-        query["sort"] = sort;
-        if (_.isArray(fields)) {
-            if (_.isArray(fields_exclude)) {
-                query["_source"] = {
-                    "include": fields,
-                    "exclude": fields_exclude
-                }
-            } else {
-                query["_source"] = fields;
-            }
-        } else if (_.isArray(fields_exclude)) {
-            query["_source"] = {
-                "exclude": fields_exclude
-            }
-        }
 
         return query;
     }
 
     function record_query(rq,fields,sort,limit,offset,fields_exclude) {
-        var query = queryShim(rq);
+        var query = bare_query(rq,fields,sort,limit,offset,fields_exclude);
         query["aggs"] = {
             "rs": {
                 "terms": {
@@ -116,6 +82,12 @@ module.exports = function(app,config) {
                 }
             }
         };
+
+        return query;
+    }
+
+    function bare_query(q,fields,sort,limit,offset,fields_exclude) {
+        var query = queryShim(q);
         query["from"] = offset;
         query["size"] = limit;
         query["sort"] = sort;
@@ -139,6 +111,7 @@ module.exports = function(app,config) {
 
     return {
         media_query: media_query,
-        record_query: record_query
+        record_query: record_query,
+        bare_query: bare_query
     };
 }

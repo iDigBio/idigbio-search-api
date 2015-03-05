@@ -43,6 +43,12 @@ module.exports = function(app, config) {
     app.route('/v2/search/media')
         .get(search.media)
         .post(search.media);
+    app.route('/v2/search/recordsets')
+        .get(search.recordsets)
+        .post(search.recordsets);
+    app.route('/v2/search/publishers')
+        .get(search.publishers)
+        .post(search.publishers);
     app.route('/v2/summary/top/media')
         .get(summary.top_media)
         .post(summary.top_media);
