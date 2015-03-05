@@ -150,6 +150,7 @@ module.exports = function(app, config) {
             }
         }
         rv["order"] = order;
+        rv["itemCount"] = body.hits.total;
 
         return rv;
     }
@@ -296,7 +297,12 @@ module.exports = function(app, config) {
                             'id': hit._id
                         }
                     }
-                    f["properties"][map_def.style.styleOn] = hit._source[map_def.style.styleOn]
+                    if (hit._source[map_def.style.styleOn]) {
+                        f["properties"][map_def.style.styleOn] = hit._source[map_def.style.styleOn]
+                    } else {
+                        f["properties"][map_def.style.styleOn] = "";
+                    }
+
 
                     mem_ds.add(f);
                 });

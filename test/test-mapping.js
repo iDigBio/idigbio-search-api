@@ -332,6 +332,34 @@ describe('Mapping', function(){
               })
           }
         })
+        it('should have values in data even if points are not styled', function(done){
+          var q = {"stateprovince": "florida","scientificname":{"type":"missing"}}
+          request(app.server)
+            .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .end(function(error1, response1) {
+              if(error1) {
+                done(error1);
+              } else {          
+                request(app.server)
+                  .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.grid.json")
+                  .expect('Content-Type', /json/)
+                  .expect(200)
+                  .end(function(error, response) {
+                    if(error) {
+                      done(error);
+                    } else {
+                      response.body.should.have.property("grid");
+                      response.body.should.have.property("data");
+                      Object.keys(response.body.data).length.should.not.equal(0);
+                      response.body.should.have.property("keys");
+                      done();
+                    }
+                  })
+              }
+            })
+      })
     });
     it('should return utf8 grid for point maps', function(done){
       var q = {"scientificname": "puma concolor"}
@@ -444,62 +472,61 @@ describe('Mapping', function(){
         })
     });
   });
-  // These are more of "dont crash" tests for coverage, rather than corectness assements. Testing the PNGs for corectness is hard.
-  describe('complex styles', function(){        
-    it('should support complex styles for geohash doc counts', function(done){
-      var q = {"genus": "carex", "institutioncode":["uf","flas","flmnh"]}
-      var geohash_style = {"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)","doc_count":[{"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)"},{"fill":"rgba(0,255,0,.4)","stroke":"rgba(0,255,0,.6)"},{"fill":"rgba(0,0,255,.4)","stroke":"rgba(0,0,255,.6)"}]}
-      request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(geohash_style)))
-        .expect('Content-Type', /json/)
-        .expect(200)
-        .end(function(error1, response1) {
-          if(error1) {
-            done(error1);
-          } else {          
-            request(app.server)
-              .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.png")
-              .expect('Content-Type', /png/)
-              .expect(200)
-              .end(function(error, response) {
-                if(error) {
-                  done(error);
-                } else {
-                  response.body.length.should.not.equal(0);
-                  done();
-                }
-              })
-          }
-        })
-    });
-    it('should support complex styles for point properties', function(done){
-      var q = {"genus": "carex", "institutioncode":["uf","flas","flmnh"]}
-      var property_style = {"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)","institutioncode":{"flas":{"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)"},"uf":{"fill":"rgba(0,255,0,.4)","stroke":"rgba(0,255,0,.6)"},"flmnh":{"fill":"rgba(0,0,255,.4)","stroke":"rgba(0,0,255,.6)"}}}
-      request(app.server)
-        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(property_style)))
-        .expect('Content-Type', /json/)
-        .expect(200)
-        .end(function(error1, response1) {
-          if(error1) {
-            done(error1);
-          } else {          
-            request(app.server)
-              .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.png")
-              .expect('Content-Type', /png/)
-              .expect(200)
-              .end(function(error, response) {
-                if(error) {
-                  done(error);
-                } else {
-                  response.body.length.should.not.equal(0);
-                  done();
-                }
-              })
-          }
-        })
-    });  
-
-  })
+  // // These are more of "dont crash" tests for coverage, rather than corectness assements. Testing the PNGs for corectness is hard.
+  // describe('complex styles', function(){        
+  //   it('should support complex styles for geohash doc counts', function(done){
+  //     var q = {"genus": "carex", "institutioncode":["uf","flas","flmnh"]}
+  //     var geohash_style = {"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)","doc_count":[{"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)"},{"fill":"rgba(0,255,0,.4)","stroke":"rgba(0,255,0,.6)"},{"fill":"rgba(0,0,255,.4)","stroke":"rgba(0,0,255,.6)"}]}
+  //     request(app.server)
+  //       .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(geohash_style)))
+  //       .expect('Content-Type', /json/)
+  //       .expect(200)
+  //       .end(function(error1, response1) {
+  //         if(error1) {
+  //           done(error1);
+  //         } else {          
+  //           request(app.server)
+  //             .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.png")
+  //             .expect('Content-Type', /png/)
+  //             .expect(200)
+  //             .end(function(error, response) {
+  //               if(error) {
+  //                 done(error);
+  //               } else {
+  //                 response.body.length.should.not.equal(0);
+  //                 done();
+  //               }
+  //             })
+  //         }
+  //       })
+  //   });
+  //   it('should support complex styles for point properties', function(done){
+  //     var q = {"genus": "carex", "institutioncode":["uf","flas","flmnh"]}
+  //     var property_style = {"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)","institutioncode":{"flas":{"fill":"rgba(255,0,0,.4)","stroke":"rgba(255,0,0,.6)"},"uf":{"fill":"rgba(0,255,0,.4)","stroke":"rgba(0,255,0,.6)"},"flmnh":{"fill":"rgba(0,0,255,.4)","stroke":"rgba(0,0,255,.6)"}}}
+  //     request(app.server)
+  //       .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(property_style)))
+  //       .expect('Content-Type', /json/)
+  //       .expect(200)
+  //       .end(function(error1, response1) {
+  //         if(error1) {
+  //           done(error1);
+  //         } else {          
+  //           request(app.server)
+  //             .get("/v2/mapping/" + response1.body.shortCode + "/1/0/0.png")
+  //             .expect('Content-Type', /png/)
+  //             .expect(200)
+  //             .end(function(error, response) {
+  //               if(error) {
+  //                 done(error);
+  //               } else {
+  //                 response.body.length.should.not.equal(0);
+  //                 done();
+  //               }
+  //             })
+  //         }
+  //       })
+  //   });
+  // })
   // describe('basic get points', function(){
   //   it('should return an empty search for {"scientificname": "puma concolor"}', function(done){
   //     var q = {"scientificname": "puma concolor"}
