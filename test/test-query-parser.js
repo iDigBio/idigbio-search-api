@@ -13,20 +13,28 @@ describe('Query Shim', function(){
             parsed.query.filtered.filter.and[0].term.should.have.property("genus");
             done();
         });
+        it('should lowercase strings', function(done){
+            var parsed = queryShim({
+                "genus": "Acer"
+            });
+            parsed.query.filtered.filter.and[0].term.should.have.property("genus");
+            parsed.query.filtered.filter.and[0].term.genus.should.equal("acer");
+            done();
+        });
         it('should support numbers', function(done){
             var parsed = queryShim({
                 "version": 2
-            });            
+            });
             parsed.query.filtered.filter.and[0].term.should.have.property("version");
             done();
         });
         it('should support booleans', function(done){
             var parsed = queryShim({
                 "hasImage": true
-            });            
+            });
             parsed.query.filtered.filter.and[0].term.should.have.property("hasImage");
             done();
-        });        
+        });
         it('should support lists of strings', function(done){
             var parsed = queryShim({
                 "genus": ["acer","quercus"]
@@ -34,6 +42,17 @@ describe('Query Shim', function(){
             parsed.query.filtered.filter.and[0].terms.should.have.property("genus");
             parsed.query.filtered.filter.and[0].terms.genus.should.be.an.Array;
             parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
+            parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer","quercus"]);
+            done();
+        });
+        it('should lowercase lists of strings', function(done){
+            var parsed = queryShim({
+                "genus": ["Acer","Quercus"]
+            });
+            parsed.query.filtered.filter.and[0].terms.should.have.property("genus");
+            parsed.query.filtered.filter.and[0].terms.genus.should.be.an.Array;
+            parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
+            parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer","quercus"]);
             done();
         });
         it('should support list of numbers', function(done){
@@ -53,7 +72,7 @@ describe('Query Shim', function(){
             parsed.query.filtered.filter.and[0].terms.hasImage.should.be.an.Array
             parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
             done();
-        });        
+        });
     });
     describe('type support', function(){
         it('should support exists', function(done){
@@ -61,7 +80,7 @@ describe('Query Shim', function(){
                 "genus": {
                     "type": "exists"
                 }
-            });            
+            });
             parsed.query.filtered.filter.and[0].should.have.property("exists");
             done();
         });
@@ -70,7 +89,7 @@ describe('Query Shim', function(){
                 "genus": {
                     "type": "missing"
                 }
-            });            
+            });
             parsed.query.filtered.filter.and[0].should.have.property("missing");
             done();
         });
@@ -81,10 +100,10 @@ describe('Query Shim', function(){
                 "gte": "100",
                 "lte": "200"
               }
-            });            
+            });
             parsed.query.filtered.filter.and[0].should.have.property("range");
             done();
-        });        
+        });
         it('should support geo_bounding_box', function(done){
             var parsed = queryShim({
               "geopoint": {
@@ -121,6 +140,6 @@ describe('Query Shim', function(){
             });
             parsed.query.filtered.filter.and[0].should.have.property("prefix");
             done();
-        });        
+        });
     });
 });

@@ -124,8 +124,11 @@ module.exports = function() {
 
     function prefixFilter(k,shimK) {
         var inner = {};
-        inner[k] = shimK["value"];
-
+        if (_.isString(shimK)) {
+            inner[k] = shimK["value"].toLowerCase();
+        } else {
+            inner[k] = shimK["value"];
+        }
         return {
             "prefix": inner
         };
@@ -137,16 +140,24 @@ module.exports = function() {
 
     function termFilter(k,shimK) {
         var term = {};
-        term[k] = shimK;
+        if (_.isString(shimK)) {
+            term[k] = shimK.toLowerCase();
+        } else {
+            term[k] = shimK;
+        }
         return {
             "term": term
-        };        
+        };
     }
 
     function termsFilter(k,shimK){
         var or_array = [];
         shimK.forEach(function(v){
-            or_array.push(v);
+            if (_.isString(v)) {
+                or_array.push(v.toLowerCase());
+            } else {
+                or_array.push(v);
+            }
         });
         var term = {
                 "execution": "or"
@@ -154,7 +165,7 @@ module.exports = function() {
         term[k] = or_array;
         return {
             "terms": term
-        };        
+        };
     }
 
     function objectType(k, shimK) {
@@ -167,12 +178,12 @@ module.exports = function() {
         } else if (shimK["type"] === "geo_bounding_box") {
             return geoBoundingBox(k,shimK);
         } else if (shimK["type"] === "fulltext") {
-            return shimK["value"];
+            return shimK["value"].toLowerCase();
         } else if (shimK["type"] === "prefix") {
             return prefixFilter(k,shimK);
         } else {
             console.log(k + " " + shimK);
-        }        
+        }
     }
 
     return function(shim) {
