@@ -22,18 +22,19 @@ module.exports = function(app,config) {
                     param.forEach(function(item){
                         s={};
                         if(_.isString(item)){
-                            s={};
                             s[item]={"order":"asc"};
-                            order.push(s);
                         } else {
                             _.forOwn(item,function(v,k){
-                                s[k]={"order": v};
-                                order.push(s);
+                                if(_.isString(v)) {
+                                    s[k] = {"order": v};
+                                } else {
+                                    s[k] = v;
+                                }
                             });
                         }
+                        order.push(s);
                     });
                 }
-                order.push({"dqs":{"order":"desc"}});
                 return order;
             },[{"dqs":{"order":"desc"}}]);
         },
