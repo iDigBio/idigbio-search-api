@@ -773,6 +773,11 @@ module.exports = function(app, config) {
                             "field": "recordset",
                             "size": config.maxRecordsets
                         }
+                    },
+                    "max_dm": {
+                        "max": {
+                            "field": "datemodified"
+                        }
                     }
                 };
                 query["from"] = offset;
