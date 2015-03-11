@@ -66,6 +66,11 @@ module.exports = function(app,config) {
                     "field": "recordset",
                     "size": config.maxRecordsets
                 }
+            },
+            "max_dm": {
+                "max": {
+                    "field": "datemodified"
+                }
             }
         };
 
@@ -79,6 +84,11 @@ module.exports = function(app,config) {
                 "terms": {
                     "field": "recordset",
                     "size": config.maxRecordsets
+                }
+            },
+            "max_dm": {
+                "max": {
+                    "field": "datemodified"
                 }
             }
         };

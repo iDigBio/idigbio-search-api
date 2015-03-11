@@ -70,6 +70,12 @@ module.exports = function(app, config) {
     app.route('/v2/summary/count/recordset')
         .get(summary.count_recordset)
         .post(summary.count_recordset);
+    app.route('/v2/summary/modified/media')
+        .get(summary.modified_media)
+        .post(summary.modified_media);
+    app.route('/v2/summary/modified/records')
+        .get(summary.modified_basic)
+        .post(summary.modified_basic);
     app.route('/v2/summary/datehist')
         .get(summary.date_hist)
         .post(summary.date_hist);

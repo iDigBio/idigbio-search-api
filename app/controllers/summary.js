@@ -119,6 +119,64 @@ module.exports = function(app, config) {
             });
         },
 
+        modified_media: function(req, res, next) {
+
+            var mq = cp.query("mq", req);
+
+            var rq = cp.query("rq", req);
+
+            var query = qg.media_query(rq,mq,undefined,undefined,undefined,undefined)
+
+            query["size"] = 0
+            query["aggs"] = {
+                "max_dm": {
+                    "max": {
+                        "field": "datemodified"
+                    }
+                }
+            }
+
+            request.post({
+                url: config.search.server + config.search.index + "mediarecords/_search",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                var bo = JSON.parse(body)
+                res.json({
+                    itemCount: bo.hits.total,
+                    lastModified: new Date(bo.aggregations.max_dm.value)
+                });
+                next();
+            });
+        },
+
+        modified_basic: function(req, res, next) {
+
+            var rq = cp.query("rq", req);
+
+            var query = qg.record_query(rq,undefined,undefined,undefined,undefined);
+
+            query["size"] = 0
+            query["aggs"] = {
+                "max_dm": {
+                    "max": {
+                        "field": "datemodified"
+                    }
+                }
+            }
+
+            request.post({
+                url: config.search.server + config.search.index + "records/_search",
+                body: JSON.stringify(query)
+            },function (error, response, body) {
+                var bo = JSON.parse(body)
+                res.json({
+                    itemCount: bo.hits.total,
+                    lastModified: new Date(bo.aggregations.max_dm.value)
+                });
+                next();
+            });
+        },
+
         count_recordset: function(req, res, next) {
 
             var rsq = cp.query("rsq", req);

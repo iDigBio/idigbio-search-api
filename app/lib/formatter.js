@@ -37,8 +37,11 @@ module.exports = function(app,config) {
             return;
         }
 
+        var lm_date = new Date(body.aggregations.max_dm.value);
+
         var rb = {
             "itemCount": body.hits.total,
+            "lastModified": lm_date,
             "items": [],
             "attribution": []
         };
