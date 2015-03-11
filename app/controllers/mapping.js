@@ -365,6 +365,11 @@ module.exports = function(app, config) {
                     "precision": 3,
                     "size": "500", // > (5*precision)^2
                 }
+            },
+            "max_dm": {
+                "max": {
+                    "field": "datemodified"
+                }
             }
         };
         query["size"] = 0;
@@ -382,6 +387,8 @@ module.exports = function(app, config) {
                 utf8grid: map_url + "/{z}/{x}/{y}.grid.json",
                 points: map_url + "/points",
                 mapDefinition: map_def,
+                itemCount: body.hits.total,
+                lastModified: new Date(body.aggregations.max_dm.value)
             }
 
             formatter.attribution(body.aggregations.rs.buckets, function(results) {
