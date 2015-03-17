@@ -121,6 +121,17 @@ describe('Query Shim', function(){
             parsed.query.filtered.filter.and[0].should.have.property("geo_bounding_box");
             done();
         });
+        it('should support geo_distance', function(done){
+            var parsed = queryShim({
+              "geopoint": {
+                "type": "geo_distance",
+                "distance": "100km",
+                "lat": -46.3445,
+                "lon": 110.454
+            }});
+            parsed.query.filtered.filter.and[0].should.have.property("geo_distance");
+            done();
+        });
         it('should support fulltext', function(done){
             var parsed = queryShim({
               "data": {

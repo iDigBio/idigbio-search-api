@@ -137,7 +137,17 @@ module.exports = function() {
     function geoBoundingBox(k,shimK) {
         return typeWrapper(k,"geo_bounding_box",shimK);
     }
-
+    function geoDistance(k,shimK){
+        var qd = _.cloneDeep(shimK);
+        delete qd["type"];
+        var r = {};
+        r['distance'] = qd["distance"];
+        delete qd["distance"];
+        r[k]=qd;
+        var rv = {};
+        rv['geo_distance'] = r;
+        return rv; 
+    }
     function termFilter(k,shimK) {
         var term = {};
         if (_.isString(shimK)) {
@@ -177,6 +187,8 @@ module.exports = function() {
             return rangeFilter(k,shimK);
         } else if (shimK["type"] === "geo_bounding_box") {
             return geoBoundingBox(k,shimK);
+        } else if (shimK["type"] === "geo_distance"){
+            return geoDistance(k,shimK);
         } else if (shimK["type"] === "fulltext") {
             return shimK["value"].toLowerCase();
         } else if (shimK["type"] === "prefix") {
