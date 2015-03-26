@@ -3,7 +3,6 @@
 var request = require('request');
 var _ = require("lodash");
 var geohash = require("ngeohash");
-var Canvas = require('canvas');
 var Hashids = require('hashids');
 var chroma = require('chroma-js');
 
@@ -234,7 +233,7 @@ module.exports = function(app, config) {
                 if (render_type === "grid.json") {
                     var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
                     map.render(grid, {layer: 0, "fields": ["count"]}, function(err, grid2) {
-                        cb(err, grid2.encodeSync('utf'));
+                        cb(err, grid2.encodeSync({"format": "utf"}));
                     });
                 } else {
                     var im = new mapnik.Image(map.width, map.height);
@@ -315,8 +314,9 @@ module.exports = function(app, config) {
                 map.extent = bbox;
                 if (render_type === "grid.json") {
                     var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
-                    map.render(grid, {layer: 0, "fields": [map_def.style.styleOn]}, function(err, grid2) {
-                        cb(err, grid2.encodeSync('utf'));
+                    var options = {layer: 0, "fields": [map_def.style.styleOn]}
+                    map.render(grid, options, function(err, grid2) {
+                        cb(err, grid2.encodeSync({"format": "utf"}));
                     });
                 } else {
                     var im = new mapnik.Image(map.width, map.height);
