@@ -429,12 +429,12 @@ module.exports = function(app, config) {
             "geo_bounding_box": {
                 "geopoint": {
                     "top_left": {
-                        "lat": tile_bbox[0][0] + (g_bbox_size[0] * padding_size),
-                        "lon": tile_bbox[0][1] - (g_bbox_size[1] * padding_size)
+                        "lat": Math.min(tile_bbox[0][0] + (g_bbox_size[0] * padding_size), 89.9999),
+                        "lon": Math.max(tile_bbox[0][1] - (g_bbox_size[1] * padding_size), -179.9999)
                     },
                     "bottom_right": {
-                        "lat": tile_bbox[1][0] - (g_bbox_size[0] * padding_size),
-                        "lon": tile_bbox[1][1] + (g_bbox_size[1] * padding_size)
+                        "lat": Math.max(tile_bbox[1][0] - (g_bbox_size[0] * padding_size), -89.9999),
+                        "lon": Math.min(tile_bbox[1][1] + (g_bbox_size[1] * padding_size), 179.9999)
                     }
                 }
             }
