@@ -55,6 +55,9 @@ module.exports = function() {
     }
 
     function zoom_to_geohash_len(zoom,floor){
+        if(zoom == 0) {
+            zoom = 1
+        }
         var pixles = Math.pow(2,zoom-1)*TILE_SIZE;
         var bits = Math.log(pixles,2)*2;
         if (floor) {
