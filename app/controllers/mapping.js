@@ -293,7 +293,9 @@ module.exports = function(app, config) {
                         'x': xy[0],
                         'y': xy[1],
                         'properties': {
-                            'id': hit._id
+                            'id': hit._id,
+                            'lat': hit._source.geopoint.lat,
+                            'lon': hit._source.geopoint.lon
                         }
                     }
                     if (hit._source[map_def.style.styleOn]) {
@@ -314,7 +316,7 @@ module.exports = function(app, config) {
                 map.extent = bbox;
                 if (render_type === "grid.json") {
                     var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
-                    var options = {layer: 0, "fields": [map_def.style.styleOn]}
+                    var options = {layer: 0, "fields": [map_def.style.styleOn,"lat","lon"]}
                     map.render(grid, options, function(err, grid2) {
                         cb(err, grid2.encodeSync({"format": "utf"}));
                     });
