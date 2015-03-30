@@ -284,6 +284,10 @@ module.exports = function(app, config) {
                return p;
             },"year");
 
+            var inverted = getParam(req,"inverted",function(p){
+                return p === "true";
+            },false);
+
             var rf = {
                 "harvest_date": {
                     "gte": minDate,
@@ -309,31 +313,10 @@ module.exports = function(app, config) {
                 }
             }
 
-            query.aggs = {
-                "fdh": {
-                    "filter": filt,
-                    "aggs": {
-                        "dh": {
-                            "date_histogram": {
-                                "field": "harvest_date",
-                                "interval": dateInterval,
-                                "format": "yyyy-MM-dd"
-                            },
-                            "aggs": {
-                                "rs": {
-                                    "terms": {
-                                        "field": "recordset_id",
-                                        "size": config.maxRecordsets
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            var internal_aggs;
 
             if (t == "fields" || t == "search") {
-                query.aggs.fdh.aggs.dh.aggs.rs.aggs = {
+                internal_aggs = {
                     "seen": {
                         "sum": {
                             "field": "seen.total"
@@ -356,7 +339,7 @@ module.exports = function(app, config) {
                     // }
                 }
             } else if (t == "api" || t == "digest") {
-                query.aggs.fdh.aggs.dh.aggs.rs.aggs = {
+                internal_aggs = {
                     "records": {
                         "max": {
                             "field": "records_count"
@@ -376,11 +359,63 @@ module.exports = function(app, config) {
                 return;
             }
 
+            if (inverted) {
+                query.aggs = {
+                    "fdh": {
+                        "filter": filt,
+                        "aggs": {
+                            "rs": {
+                                "terms": {
+                                    "field": "recordset_id",
+                                    "size": config.maxRecordsets
+                                },
+                                "aggs": {
+                                    "dh": {
+                                        "date_histogram": {
+                                            "field": "harvest_date",
+                                            "interval": dateInterval,
+                                            "format": "yyyy-MM-dd"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                query.aggs.fdh.aggs.rs.aggs.dh.aggs = internal_aggs;
+            } else {
+                query.aggs = {
+                    "fdh": {
+                        "filter": filt,
+                        "aggs": {
+                            "dh": {
+                                "date_histogram": {
+                                    "field": "harvest_date",
+                                    "interval": dateInterval,
+                                    "format": "yyyy-MM-dd"
+                                },
+                                "aggs": {
+                                    "rs": {
+                                        "terms": {
+                                            "field": "recordset_id",
+                                            "size": config.maxRecordsets
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
+            }
+
             request.post({
                 url: config.search.server + "stats/" + t + "/_search",
                 body: JSON.stringify(query)
             },function (error, response, body) {
-                formatter.stats_hist_formatter(body, res, next);
+                formatter.stats_hist_formatter(body, res, next, inverted);
             });
         }
     };

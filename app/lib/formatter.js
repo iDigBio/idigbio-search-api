@@ -177,7 +177,7 @@ module.exports = function(app,config) {
         next();
     }
 
-    function stats_hist_formatter(body, res, next) {
+    function stats_hist_formatter(body, res, next, inverted) {
         body = JSON.parse(body);
 
         if (body.status === 400) {
@@ -188,23 +188,43 @@ module.exports = function(app,config) {
             return;
         }
 
-        var rb = { "dates": {} }
-        body.aggregations.fdh.dh.buckets.forEach(function(b){
-            var outer = {};
-            b.rs.buckets.forEach(function(rsb){
-                var inner = {};
-                Object.keys(rsb).forEach(function(f){
-                    if (f != "key" && f != "doc_count") {
-                        inner[f] = rsb[f]["value"];
-                        if (inner[f] == null) {
-                            inner[f] = 0;
+        if (inverted) {
+            var rb = { "recordsets": {} }
+            body.aggregations.fdh.rs.buckets.forEach(function(b){
+                var outer = {};
+                b.dh.buckets.forEach(function(dhb){
+                    var inner = {};
+                    Object.keys(dhb).forEach(function(f){
+                        if (f != "key" && f != "doc_count" && f != "key_as_string") {
+                            inner[f] = dhb[f]["value"];
+                            if (inner[f] == null) {
+                                inner[f] = 0;
+                            }
                         }
-                    }
+                    })
+                    outer[dhb.key_as_string] = inner;
                 })
-                outer[rsb.key] = inner;
+                rb.recordsets[b.key] = outer;
             })
-            rb.dates[b.key_as_string] = outer;
-        })
+        } else {
+            var rb = { "dates": {} }
+            body.aggregations.fdh.dh.buckets.forEach(function(b){
+                var outer = {};
+                b.rs.buckets.forEach(function(rsb){
+                    var inner = {};
+                    Object.keys(rsb).forEach(function(f){
+                        if (f != "key" && f != "doc_count") {
+                            inner[f] = rsb[f]["value"];
+                            if (inner[f] == null) {
+                                inner[f] = 0;
+                            }
+                        }
+                    })
+                    outer[rsb.key] = inner;
+                })
+                rb.dates[b.key_as_string] = outer;
+            })
+        }
 
         res.json(rb);
         next();
