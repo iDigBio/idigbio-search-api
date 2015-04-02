@@ -332,11 +332,16 @@ module.exports = function(app, config) {
                             "field": "download.total"
                         }
                     },
-                    // "viewed": {
-                    //     "sum": {
-                    //         "field": "viewed.total"
-                    //     }
-                    // }
+                    "viewed_records": {
+                        "sum": {
+                            "field": "viewed.records.total"
+                        }
+                    },
+                    "viewed_media": {
+                        "sum": {
+                            "field": "viewed.mediarecords.total"
+                        }
+                    }
                 }
             } else if (t == "api" || t == "digest") {
                 internal_aggs = {
