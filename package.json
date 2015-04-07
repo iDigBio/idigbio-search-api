@@ -22,6 +22,7 @@
     "blanket": "*",
     "chai": "*",
     "mocha": "*",
+    "segfault-handler": "^0.2.4",
     "supertest": "*",
     "travis-cov": "*"
   },

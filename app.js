@@ -1,3 +1,7 @@
+var SegfaultHandler = require('segfault-handler');
+
+SegfaultHandler.registerHandler();
+
  var cluster = require('cluster');
  var http = require('http');
   http.globalAgent.maxSockets = 100;  

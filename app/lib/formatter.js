@@ -52,20 +52,15 @@ module.exports = function(app,config) {
             }
 
             if (!hit._source.data) {
-                hit._source.data = {
-                    "idigbio:data": {}
-                }
-            } else {
-                if(!hit._source.data["idigbio:data"]) {
-                    hit._source.data["idigbio:data"] = {};
-                }
+                hit._source.data = {}
             }
+
             rb.items.push({
                 "uuid": hit._id,
-                "etag": hit._source.data["idigbio:etag"],
-                "version": hit._source.data["idigbio:version"],
-                "data": hit._source.data["idigbio:data"],
-                "recordIds": hit._source.data["idigbio:recordIds"],
+                "etag": hit._source.etag,
+                "version": hit._source.version,
+                "data": hit._source.data,
+                "recordIds": hit._source.recordIds,
                 "indexTerms": indexterms,
             });
         });
@@ -98,15 +93,12 @@ module.exports = function(app,config) {
         body.hits.hits.forEach(function(hit){
             var indexterms = _.cloneDeep(hit._source);
             delete indexterms["data"];
-            if(!hit._source.data["idigbio:data"]) {
-                hit._source.data["idigbio:data"] = {};
-            }
             rb.items.push({
                 "uuid": hit._id,
-                "etag": hit._source.data["idigbio:etag"],
-                "version": hit._source.data["idigbio:version"],
-                "data": hit._source.data["idigbio:data"],
-                "recordIds": hit._source.data["idigbio:recordIds"],
+                "etag": hit._source.etag,
+                "version": hit._source.version,
+                "data": hit._source.data,
+                "recordIds": hit._source.recordIds,
                 "indexTerms": indexterms,
             });
         });

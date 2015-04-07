@@ -387,7 +387,7 @@ module.exports = function(app, config) {
                 query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
             }
 
-            searchShim("stats/",t,"_search",query,function(body){
+            searchShim("stats",t,"_search",query,function(body){
                 formatter.stats_hist_formatter(body, res, next, inverted);
             });
         }

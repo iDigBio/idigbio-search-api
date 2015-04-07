@@ -34,10 +34,10 @@ module.exports = function(app, config) {
                     delete indexterms["data"];
                     var rb = {
                         "uuid": body._id,
-                        "etag": body._source.data["idigbio:etag"],
-                        "version": body._source.data["idigbio:version"],
-                        "data": body._source.data["idigbio:data"],
-                        "recordIds": body._source.data["idigbio:recordIds"],
+                        "etag": body._source.etag,
+                        "version": body._source.version,
+                        "data": body._source.data,
+                        "recordIds": body._source.recordIds,
                         "indexTerms": indexterms,
                         "attribution": {}
                     };

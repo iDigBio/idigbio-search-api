@@ -3,8 +3,9 @@ var redis = require("redis")
 var config = {
     "port": 19196,
     "search": {
-        "server": "http://search.idigbio.org/",
-        "index": "idigbio-2.0.0/",
+        "server": "http://c17node52.acis.ufl.edu:9200",
+        "index": "idigbio-2.1.0",
+        // useEsClient: true
     },
     elasticsearch: {
         hosts: [
@@ -13,7 +14,10 @@ var config = {
             "c17node54.acis.ufl.edu:9200",
             "c17node55.acis.ufl.edu:9200",
             "c17node56.acis.ufl.edu:9200"
-        ]
+        ],
+        apiVersion: "1.4",
+        sniffOnStart: true,
+        sniffOnConnectionFault: true
     },
     maxRecordsets: 1000,
     defaultLimit: 100,

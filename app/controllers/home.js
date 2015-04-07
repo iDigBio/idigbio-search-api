@@ -3,6 +3,7 @@
 var request = require('request');
 
 module.exports = function(app, config) {
+    var searchShim = require("../lib/search-shim.js")(app,config);
 
     function getSubKeys(mappingDict, fnPrefix) {
         var rv = {};
@@ -71,8 +72,8 @@ module.exports = function(app, config) {
                 t = "mediarecords";
             }
 
-            request.get(config.search.server + "/idigbio/" + t + "/_mapping",function(error, response, body) {
-                var mapping = JSON.parse(body);
+            searchShim(conifg.search.index,t,"_mapping",undefined,function(mapping){
+                console.log("postshim")
                 var resp = {};
                 Object.keys(mapping).forEach(function(index){
                     resp = getSubKeys(mapping[index]["mappings"][t], "");

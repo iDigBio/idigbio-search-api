@@ -3,21 +3,18 @@
 var request = require('request');
 
 module.exports = function(app,config) {
-    return function(cb){
-        request.post({
-            url: config.search.server + config.search.index + "recordsets/_search",
-            body: JSON.stringify({size: config.maxRecordsets})
-        }, function (error, response, body) {
-            body = JSON.parse(body);
+    var searchShim = require("../lib/search-shim.js")(app,config);
 
+    return function(cb){
+        searchShim(config.search.index,"recordsets","_search",{size: config.maxRecordsets},function(body){
             body.hits.hits.forEach(function(hit){
                 config.recordsets[hit._id] = {
-                    "name": hit._source.data["idigbio:data"].collection_name,
-                    "description": hit._source.data["idigbio:data"].collection_description,
-                    "logo": hit._source.data["idigbio:data"].logo_url,
-                    "url": hit._source.data["idigbio:data"].institution_web_address,
-                    "contacts": hit._source.data["idigbio:data"].contacts,
-                    "data_rights": hit._source.data["idigbio:data"].data_rights,
+                    "name": hit._source.data.collection_name,
+                    "description": hit._source.data.collection_description,
+                    "logo": hit._source.data.logo_url,
+                    "url": hit._source.data.institution_web_address,
+                    "contacts": hit._source.data.contacts,
+                    "data_rights": hit._source.data.data_rights,
                 };
             });
 

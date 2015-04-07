@@ -231,16 +231,16 @@ describe('Search Deprecated Endpoints', function(){
         })
     })
     it('should be able to return a limited set of fields', function(done){
-      var q = {"data.idigbio:data.ac:accessuri": {"type": "exists"}}
+      var q = { "data.ac:accessURI": {"type": "exists"} }
       request(app.server)
-        .get("/v2/media/?limit=10&fields=[\"data.idigbio:data.ac:accessuri\"]&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/?limit=10&fields=[\"data.ac:accessURI\"]&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
           if(error) {
             done(error);
           } else {
-            response.body.items[0].data.should.have.property["ac:accessuri"];
+            response.body.items[0].data.should.have.property["ac:accessURI"];
             Object.keys(response.body.items[0].data).length.should.equal(1);
             done();
           }
@@ -305,13 +305,13 @@ describe('Search Deprecated Endpoints', function(){
         })
     })
     it('should be able to return a limited set of fields', function(done){
-      var q = {"data.idigbio:data.ac:accessuri": {"type": "exists"}}
+      var q = { "data.ac:accessURI": {"type": "exists"} }
       request(app.server)
         .post("/v2/media/")
         .send({
             mq: q,
             limit: 10,
-            fields: ["data.idigbio:data.ac:accessuri"]
+            fields: ["data.ac:accessURI"]
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -319,7 +319,7 @@ describe('Search Deprecated Endpoints', function(){
           if(error) {
             done(error);
           } else {
-            response.body.items[0].data.should.have.property["ac:accessuri"];
+            response.body.items[0].data.should.have.property["ac:accessURI"];
             Object.keys(response.body.items[0].data).length.should.equal(1);
             done();
           }
