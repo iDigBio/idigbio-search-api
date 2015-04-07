@@ -8,6 +8,7 @@
     "body-parser": "^1.12.0",
     "chroma-js": "*",
     "cors": "^2.5.2",
+    "elasticsearch": "^4.0.2",
     "express": "^4.12.2",
     "hashids": "^1.0.1",
     "hiredis": "^0.1.17",

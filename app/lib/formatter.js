@@ -27,7 +27,6 @@ module.exports = function(app,config) {
     }
 
     function basic(body, res, next, extra) {
-        body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
@@ -82,7 +81,6 @@ module.exports = function(app,config) {
     }
 
     function basicNoAttr(body, res, next, extra) {
-        body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
@@ -137,7 +135,6 @@ module.exports = function(app,config) {
     }
 
     function top_formatter(body, res, next) {
-        body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
@@ -155,7 +152,6 @@ module.exports = function(app,config) {
     }
 
     function date_hist_formatter(body, res, next) {
-        body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({
@@ -178,7 +174,6 @@ module.exports = function(app,config) {
     }
 
     function stats_hist_formatter(body, res, next, inverted) {
-        body = JSON.parse(body);
 
         if (body.status === 400) {
             res.status(400).json({

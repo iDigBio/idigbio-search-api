@@ -1,6 +1,5 @@
 "use strict";
 
-var request = require('request');
 var _ = require('lodash');
 
 module.exports = function(app, config) {
@@ -9,6 +8,7 @@ module.exports = function(app, config) {
     var cp = require("../lib/common-params.js")(app,config);
     var getParam = require("../lib/get-param.js")(app,config);
     var qg = require("../lib/query-generators.js")(app,config);
+    var searchShim = require("../lib/search-shim.js")(app,config);
 
     function top_fields_agg(top_fields,top_count) {
         var top_agg = {};
@@ -46,10 +46,7 @@ module.exports = function(app, config) {
 
             query.aggs = top_fields_agg(top_fields,top_count);
 
-            request.post({
-                url: config.search.server + config.search.index + "mediarecords/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
+            searchShim(config.search.index,"mediarecords","_search",query,function(body){
                 formatter.top_formatter(body, res, next);
             });
         },
@@ -69,12 +66,9 @@ module.exports = function(app, config) {
 
             query.aggs = top_fields_agg(top_fields,top_count);
 
-            request.post({
-                url: config.search.server + config.search.index + "records/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
+            searchShim(config.search.index,"records","_search",query,function(body){
                 formatter.top_formatter(body, res, next);
-            });
+            })
         },
 
         count_media: function(req, res, next) {
@@ -87,13 +81,9 @@ module.exports = function(app, config) {
 
             delete query["aggs"];
 
-            request.post({
-                url: config.search.server + config.search.index + "mediarecords/_count",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
-                var bo = JSON.parse(body)
+            searchShim(config.search.index,"mediarecords","_count",query,function(body){
                 res.json({
-                    itemCount: bo.count
+                    itemCount: body.count
                 });
                 next();
             });
@@ -107,13 +97,9 @@ module.exports = function(app, config) {
 
             delete query["aggs"];
 
-            request.post({
-                url: config.search.server + config.search.index + "records/_count",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
-                var bo = JSON.parse(body)
+            searchShim(config.search.index,"records","_count",query,function(body){
                 res.json({
-                    itemCount: bo.count
+                    itemCount: body.count
                 });
                 next();
             });
@@ -136,14 +122,10 @@ module.exports = function(app, config) {
                 }
             }
 
-            request.post({
-                url: config.search.server + config.search.index + "mediarecords/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
-                var bo = JSON.parse(body)
+            searchShim(config.search.index,"mediarecords","_search",query,function(body){
                 res.json({
-                    itemCount: bo.hits.total,
-                    lastModified: new Date(bo.aggregations.max_dm.value)
+                    itemCount: body.hits.total,
+                    lastModified: new Date(body.aggregations.max_dm.value)
                 });
                 next();
             });
@@ -164,14 +146,10 @@ module.exports = function(app, config) {
                 }
             }
 
-            request.post({
-                url: config.search.server + config.search.index + "records/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
-                var bo = JSON.parse(body)
+            searchShim(config.search.index,"records","_search",query,function(body){
                 res.json({
-                    itemCount: bo.hits.total,
-                    lastModified: new Date(bo.aggregations.max_dm.value)
+                    itemCount: body.hits.total,
+                    lastModified: new Date(body.aggregations.max_dm.value)
                 });
                 next();
             });
@@ -185,13 +163,9 @@ module.exports = function(app, config) {
 
             delete query["aggs"];
 
-            request.post({
-                url: config.search.server + config.search.index + "recordsets/_count",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
-                var bo = JSON.parse(body)
+            searchShim(config.search.index,"recordsets","_count",query,function(body){
                 res.json({
-                    itemCount: bo.count
+                    itemCount: body.count
                 });
                 next();
             });
@@ -252,10 +226,7 @@ module.exports = function(app, config) {
                 }
             }
 
-            request.post({
-                url: config.search.server + config.search.index + "records/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
+            searchShim(config.search.index,"records","_search",query,function(body){
                 formatter.date_hist_formatter(body, res, next);
             });
         },
@@ -416,10 +387,7 @@ module.exports = function(app, config) {
                 query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
             }
 
-            request.post({
-                url: config.search.server + "stats/" + t + "/_search",
-                body: JSON.stringify(query)
-            },function (error, response, body) {
+            searchShim("stats/",t,"_search",query,function(body){
                 formatter.stats_hist_formatter(body, res, next, inverted);
             });
         }

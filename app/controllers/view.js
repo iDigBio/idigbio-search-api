@@ -1,10 +1,10 @@
 "use strict";
 
-var request = require('request');
 var _ = require("lodash");
 
 module.exports = function(app, config) {
     var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
+    var searchShim = require("../lib/search-shim.js")(app,config);
 
     return {
         // version:
@@ -27,11 +27,7 @@ module.exports = function(app, config) {
                 }
             }
 
-            request.post({
-                url: config.search.server + config.search.index + t + "/_search",
-                body: JSON.stringify(query)
-            }, function (error, response, body) {
-                body = JSON.parse(body);
+            searchShim(config.search.index,t,"_search",query,function(body){
                 if (body.hits.hits.length > 0) {
                     body = body.hits.hits[0];
                     var indexterms = _.cloneDeep(body._source);

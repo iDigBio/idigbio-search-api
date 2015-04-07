@@ -1,6 +1,5 @@
 "use strict";
 
-var request = require('request');
 var _ = require("lodash");
 var geohash = require("ngeohash");
 var Hashids = require('hashids');
@@ -22,6 +21,7 @@ module.exports = function(app, config) {
     var cp = require("../lib/common-params.js")(app, config);
     var formatter = require("../lib/formatter.js")(app, config);
     var hasher = require("../lib/hasher.js")(app, config);
+    var searchShim = require("../lib/search-shim.js")(app,config);
 
     var hashids = new Hashids("idigbio", 8);
 
@@ -375,13 +375,7 @@ module.exports = function(app, config) {
             }
         };
         query["size"] = 0;
-
-        request.post({
-            url: config.search.server + config.search.index + "records/_search",
-            body: JSON.stringify(query)
-        }, function(error, response, body) {
-            body = JSON.parse(body);
-
+        searchShim(config.search.index,"records","_search",query,function(body){
             var rb = {
                 shortCode: s,
                 tiles: map_url + "/{z}/{x}/{y}.png",
@@ -525,11 +519,7 @@ module.exports = function(app, config) {
             var count = 0;
             if (map_def.type === 'auto') {
                 var query = makeBasicFilter(map_def);
-                request.post({
-                    url: config.search.server + config.search.index + "records/_count",
-                    body: JSON.stringify(query)
-                }, function(error, response, body) {
-                    body = JSON.parse(body);
+                searchShim(config.search.index,"records","_count",query,function(body){
                     count = body.count;
 
                     if (count > map_def.threshold) {
@@ -586,11 +576,7 @@ module.exports = function(app, config) {
             }, response_type);
         }
 
-        request.post({
-            url: config.search.server + config.search.index + "records/_search",
-            body: JSON.stringify(query)
-        }, function(error, response, body) {
-            body = JSON.parse(body);
+        searchShim(config.search.index,"records","_search",query,function(body){
 
             if (response_type === "json") {
                 if (map_def.type === "geohash") {
@@ -786,10 +772,7 @@ module.exports = function(app, config) {
                 query["size"] = limit;
                 query["sort"] = sort;
 
-                request.post({
-                    url: config.search.server + config.search.index + "records/_search",
-                    body: JSON.stringify(query)
-                }, function(error, response, body) {
+                searchShim(config.search.index,"records","_search",query,function(body){
                     formatter.basic(body, res, next, {
                         "bbox": {
                             "nw": {
@@ -809,11 +792,8 @@ module.exports = function(app, config) {
         getMapStyle: function(req, res, next) {
             getMapDef(req, res, next,function(map_def){
                 var query = makeTileQuery(map_def, req.params.z, 0, 0);
-                request.post({
-                    url: config.search.server + config.search.index + "records/_search",
-                    body: JSON.stringify(query)
-                }, function(error, response, body) {
-                    res.json(styleJSON(map_def,JSON.parse(body)));
+                searchShim(config.search.index,"records","_search",query,function(body){
+                    res.json(styleJSON(map_def,body));
                     next();
                 });
             });
