@@ -734,17 +734,7 @@ module.exports = function(app, config) {
                 }
             })
 
-            config.redis.client.get(s, function(err, rv) {
-                if (!rv) {
-                    res.status(404).json({
-                        "error": "Not Found",
-                        "statusCode": 404
-                    });
-                    next();
-                    return
-                }
-
-                var map_def = JSON.parse(rv);
+            getMapDef(req, res, next, function(map_def){
 
                 var query = queryShim(map_def.rq);
                 var type = map_def.type;
@@ -759,16 +749,40 @@ module.exports = function(app, config) {
                         "field": "geopoint",
                     }
                 });
-                query["query"]["filtered"]["filter"]["and"].push({
-                    "geohash_cell": {
-                        "geopoint": {
-                            "lat": lat,
-                            "lon": lon
-                        },
-                        "precision": gl,
-                        "neighbors": true
-                    }
-                });
+                if(type=='points'){
+                    query["query"]["filtered"]["filter"]["and"].push({
+                        "geo_distance": {
+                            "geopoint": {
+                                "lat": lat,
+                                "lon": lon
+                            },
+                            "distance":"10km"
+                        }
+                    })
+                }else{
+                    query["query"]["filtered"]["filter"]["and"].push({
+                        /*"geohash_cell": {
+                            "geopoint": {
+                                "lat": lat,
+                                "lon": lon
+                            },
+                            "precision": gl
+                        }*/
+                        "geo_bounding_box":{
+                            "geopoint":{
+                                "top_left":{
+                                    "lat":meta_bbox[2],
+                                    "lon":meta_bbox[1]
+                                },
+                                "bottom_right":{
+                                    "lat": meta_bbox[0],
+                                    "lon": meta_bbox[3]
+                                }
+                            }
+                        }
+                    })                    
+                }
+
                 query["aggs"] = {
                     "rs": {
                         "terms": {
@@ -790,18 +804,30 @@ module.exports = function(app, config) {
                     url: config.search.server + config.search.index + "records/_search",
                     body: JSON.stringify(query)
                 }, function(error, response, body) {
-                    formatter.basic(body, res, next, {
-                        "bbox": {
-                            "nw": {
-                                "lat": meta_bbox[2],
-                                "lon": meta_bbox[1]
-                            },
-                            "se": {
-                                "lat": meta_bbox[0],
-                                "lon": meta_bbox[3]
+                    var links, extra;
+                    if(type=='points'){
+                        extra={
+                            "radius":{
+                                "lat":lat,
+                                "lon":lon,
+                                "distance":10
                             }
                         }
-                    });
+                    }else{
+                        extra={
+                            "bbox": {
+                                "nw": {
+                                    "lat": meta_bbox[2],
+                                    "lon": meta_bbox[1]
+                                },
+                                "se": {
+                                    "lat": meta_bbox[0],
+                                    "lon": meta_bbox[3]
+                                }
+                            }
+                        };
+                    }
+                    formatter.basic(body, res, next, extra);
                 });
             });
         },
@@ -897,7 +923,6 @@ module.exports = function(app, config) {
                             });
                         })
                     });
-
                 }
             })
         },
