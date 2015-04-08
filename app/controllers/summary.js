@@ -46,8 +46,12 @@ module.exports = function(app, config) {
 
             query.aggs = top_fields_agg(top_fields,top_count);
 
-            searchShim(config.search.index,"mediarecords","_search",query,function(body){
-                formatter.top_formatter(body, res, next);
+            searchShim(config.search.index,"mediarecords","_search",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    formatter.top_formatter(body, res, next);
+                }
             });
         },
 
@@ -66,8 +70,12 @@ module.exports = function(app, config) {
 
             query.aggs = top_fields_agg(top_fields,top_count);
 
-            searchShim(config.search.index,"records","_search",query,function(body){
-                formatter.top_formatter(body, res, next);
+            searchShim(config.search.index,"records","_search",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    formatter.top_formatter(body, res, next);
+                }
             })
         },
 
@@ -81,11 +89,15 @@ module.exports = function(app, config) {
 
             delete query["aggs"];
 
-            searchShim(config.search.index,"mediarecords","_count",query,function(body){
-                res.json({
-                    itemCount: body.count
-                });
-                next();
+            searchShim(config.search.index,"mediarecords","_count",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json({
+                        itemCount: body.count
+                    });
+                    next();
+                }
             });
         },
 
@@ -97,11 +109,15 @@ module.exports = function(app, config) {
 
             delete query["aggs"];
 
-            searchShim(config.search.index,"records","_count",query,function(body){
-                res.json({
-                    itemCount: body.count
-                });
-                next();
+            searchShim(config.search.index,"records","_count",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json({
+                        itemCount: body.count
+                    });
+                    next();
+                }
             });
         },
 
@@ -122,12 +138,16 @@ module.exports = function(app, config) {
                 }
             }
 
-            searchShim(config.search.index,"mediarecords","_search",query,function(body){
-                res.json({
-                    itemCount: body.hits.total,
-                    lastModified: new Date(body.aggregations.max_dm.value)
-                });
-                next();
+            searchShim(config.search.index,"mediarecords","_search",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json({
+                        itemCount: body.hits.total,
+                        lastModified: new Date(body.aggregations.max_dm.value)
+                    });
+                    next();
+                }
             });
         },
 
@@ -146,12 +166,16 @@ module.exports = function(app, config) {
                 }
             }
 
-            searchShim(config.search.index,"records","_search",query,function(body){
-                res.json({
-                    itemCount: body.hits.total,
-                    lastModified: new Date(body.aggregations.max_dm.value)
-                });
-                next();
+            searchShim(config.search.index,"records","_search",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json({
+                        itemCount: body.hits.total,
+                        lastModified: new Date(body.aggregations.max_dm.value)
+                    });
+                    next();
+                }
             });
         },
 
@@ -163,11 +187,15 @@ module.exports = function(app, config) {
 
             delete query["aggs"];
 
-            searchShim(config.search.index,"recordsets","_count",query,function(body){
-                res.json({
-                    itemCount: body.count
-                });
-                next();
+            searchShim(config.search.index,"recordsets","_count",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json({
+                        itemCount: body.count
+                    });
+                    next();
+                }
             });
         },
 
@@ -226,8 +254,12 @@ module.exports = function(app, config) {
                 }
             }
 
-            searchShim(config.search.index,"records","_search",query,function(body){
-                formatter.date_hist_formatter(body, res, next);
+            searchShim(config.search.index,"records","_search",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    formatter.date_hist_formatter(body, res, next);
+                }
             });
         },
 
@@ -387,8 +419,12 @@ module.exports = function(app, config) {
                 query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
             }
 
-            searchShim("stats",t,"_search",query,function(body){
-                formatter.stats_hist_formatter(body, res, next, inverted);
+            searchShim("stats",t,"_search",query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    formatter.stats_hist_formatter(body, res, next, inverted);
+                }
             });
         }
     };

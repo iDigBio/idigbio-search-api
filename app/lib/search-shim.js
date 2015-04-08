@@ -51,13 +51,9 @@ module.exports = function(app,config) {
             })
 
             if (op == "_search") {
-                client.search(options, function(error,response){
-                    cb(response);
-                })
+                client.search(options, cb)
             } else if (op == "_count") {
-                client.count(options, function(error,response){
-                    cb(response);
-                })
+                client.count(options, cb)
             } else if (op == "_mapping") {
                 cb({})
             }
@@ -66,14 +62,23 @@ module.exports = function(app,config) {
                 request.get({
                     url: config.search.server + "/" + index + "/" + type + "/" + op
                 },function (error, response, body) {
-                    cb(JSON.parse(body));
+                    cb(error,JSON.parse(body));
                 });
             } else {
+                if (op == "_count") {
+                    if (_.keys(query).length == 0) {
+                        query = {
+                            query: {
+                                match_all: {}
+                            }
+                        }
+                    }
+                }
                 request.post({
                     url: config.search.server + "/" + index + "/" + type + "/" + op,
                     body: JSON.stringify(query)
                 },function (error, response, body) {
-                    cb(JSON.parse(body));
+                    cb(error,JSON.parse(body));
                 });
             }
         }

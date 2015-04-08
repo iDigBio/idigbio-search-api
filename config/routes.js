@@ -101,7 +101,11 @@ module.exports = function(app, config) {
         .get(mapping.getMapTile);
 
     app.use(function(err, req, res, next){
-        res.status(404).json({"error": "Not Found"})
-        next();
+        if(err) {
+            next(err);
+        } else {
+            res.status(404).json({"error": "Not Found"})
+            next();
+        }
     });
 };

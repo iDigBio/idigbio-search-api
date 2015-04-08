@@ -6,7 +6,7 @@ module.exports = function(app,config) {
     var searchShim = require("../lib/search-shim.js")(app,config);
 
     return function(cb){
-        searchShim(config.search.index,"recordsets","_search",{size: config.maxRecordsets},function(body){
+        searchShim(config.search.index,"recordsets","_search",{size: config.maxRecordsets},function(err,body){
             body.hits.hits.forEach(function(hit){
                 config.recordsets[hit._id] = {
                     "name": hit._source.data.collection_name,

@@ -128,7 +128,7 @@ module.exports = function(app, config) {
             rv["default"] = {
                 "fill": "black",
                 "stroke": "black"
-            }            
+            }
         } else {
             var colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
             var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
@@ -375,22 +375,26 @@ module.exports = function(app, config) {
             }
         };
         query["size"] = 0;
-        searchShim(config.search.index,"records","_search",query,function(body){
-            var rb = {
-                shortCode: s,
-                tiles: map_url + "/{z}/{x}/{y}.png",
-                geojson: map_url + "/{z}/{x}/{y}.json",
-                utf8grid: map_url + "/{z}/{x}/{y}.grid.json",
-                points: map_url + "/points",
-                mapDefinition: map_def,
-                itemCount: body.hits.total,
-                lastModified: new Date(body.aggregations.max_dm.value)
-            }
+        searchShim(config.search.index,"records","_search",query,function(err,body){
+            if(err) {
+                next(err)
+            } else {
+                var rb = {
+                    shortCode: s,
+                    tiles: map_url + "/{z}/{x}/{y}.png",
+                    geojson: map_url + "/{z}/{x}/{y}.json",
+                    utf8grid: map_url + "/{z}/{x}/{y}.grid.json",
+                    points: map_url + "/points",
+                    mapDefinition: map_def,
+                    itemCount: body.hits.total,
+                    lastModified: new Date(body.aggregations.max_dm.value)
+                }
 
-            formatter.attribution(body.aggregations.rs.buckets, function(results) {
-                rb.attribution = results;
-                cb(rb);
-            });
+                formatter.attribution(body.aggregations.rs.buckets, function(results) {
+                    rb.attribution = results;
+                    cb(rb);
+                });
+            }
         });
     }
 
@@ -519,15 +523,19 @@ module.exports = function(app, config) {
             var count = 0;
             if (map_def.type === 'auto') {
                 var query = makeBasicFilter(map_def);
-                searchShim(config.search.index,"records","_count",query,function(body){
-                    count = body.count;
-
-                    if (count > map_def.threshold) {
-                        map_def.type = "geohash"
+                searchShim(config.search.index,"records","_count",query,function(err,body){
+                    if(err) {
+                        next(err)
                     } else {
-                        map_def.type = "points"
+                        count = body.count;
+
+                        if (count > map_def.threshold) {
+                            map_def.type = "geohash"
+                        } else {
+                            map_def.type = "points"
+                        }
+                        cb(map_def);
                     }
-                    cb(map_def);
                 });
             } else {
                 cb(map_def);
@@ -576,31 +584,34 @@ module.exports = function(app, config) {
             }, response_type);
         }
 
-        searchShim(config.search.index,"records","_search",query,function(body){
-
-            if (response_type === "json") {
-                if (map_def.type === "geohash") {
-                    geoJsonGeohash(body, function(rb) {
-                        res.json(rb);
-                        next();
-                    });
-                } else {
-                    geoJsonPoints(body, function(rb) {
-                        res.json(rb);
-                        next();
-                    });
-                }
-            } else if (response_type === "grid.json") {
-                if (map_def.type === "geohash") {
-                    typeGeohash(body, response_type);
-                } else {
-                    typePoints(body, response_type)
-                }
+        searchShim(config.search.index,"records","_search",query,function(err,body){
+            if(err) {
+                next(err)
             } else {
-                if (map_def.type === "geohash") {
-                    typeGeohash(body);
+                if (response_type === "json") {
+                    if (map_def.type === "geohash") {
+                        geoJsonGeohash(body, function(rb) {
+                            res.json(rb);
+                            next();
+                        });
+                    } else {
+                        geoJsonPoints(body, function(rb) {
+                            res.json(rb);
+                            next();
+                        });
+                    }
+                } else if (response_type === "grid.json") {
+                    if (map_def.type === "geohash") {
+                        typeGeohash(body, response_type);
+                    } else {
+                        typePoints(body, response_type)
+                    }
                 } else {
-                    typePoints(body)
+                    if (map_def.type === "geohash") {
+                        typeGeohash(body);
+                    } else {
+                        typePoints(body)
+                    }
                 }
             }
         });
@@ -772,19 +783,23 @@ module.exports = function(app, config) {
                 query["size"] = limit;
                 query["sort"] = sort;
 
-                searchShim(config.search.index,"records","_search",query,function(body){
-                    formatter.basic(body, res, next, {
-                        "bbox": {
-                            "nw": {
-                                "lat": meta_bbox[2],
-                                "lon": meta_bbox[1]
-                            },
-                            "se": {
-                                "lat": meta_bbox[0],
-                                "lon": meta_bbox[3]
+                searchShim(config.search.index,"records","_search",query,function(err,body){
+                    if(err) {
+                        next(err)
+                    } else {
+                        formatter.basic(body, res, next, {
+                            "bbox": {
+                                "nw": {
+                                    "lat": meta_bbox[2],
+                                    "lon": meta_bbox[1]
+                                },
+                                "se": {
+                                    "lat": meta_bbox[0],
+                                    "lon": meta_bbox[3]
+                                }
                             }
-                        }
-                    });
+                        });
+                    }
                 });
             });
         },
@@ -792,9 +807,13 @@ module.exports = function(app, config) {
         getMapStyle: function(req, res, next) {
             getMapDef(req, res, next,function(map_def){
                 var query = makeTileQuery(map_def, req.params.z, 0, 0);
-                searchShim(config.search.index,"records","_search",query,function(body){
-                    res.json(styleJSON(map_def,body));
-                    next();
+                searchShim(config.search.index,"records","_search",query,function(err,body){
+                    if(err) {
+                        next(err)
+                    } else {
+                        res.json(styleJSON(map_def,body));
+                        next();
+                    }
                 });
             });
         },

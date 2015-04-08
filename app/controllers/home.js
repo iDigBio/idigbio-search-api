@@ -50,19 +50,29 @@ module.exports = function(app, config) {
             });
         },
         searchProxy: function(req, res, next) {
-            //console.log(config.search.server + req.originalUrl)
-            request.get(config.search.server + req.originalUrl,function(error, response, body) {
-                res.json(JSON.parse(body));
-                next();
+            var pa = req.originalUrl.split("?")[0].split("/");
+            var t = pa[2];
+            var op = pa[3];
+            searchShim(config.search.index,t,op,req.query,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json(body);
+                    next();
+                }
             });
         },
         searchProxyPost: function(req, res, next) {
-            request.post({
-                url: config.search.server + req.originalUrl,
-                body: JSON.stringify(req.body)
-            },function(error, response, body) {
-                res.json(JSON.parse(body));
-                next();
+            var pa = req.originalUrl.split("?")[0].split("/");
+            var t = pa[2];
+            var op = pa[3];
+            searchShim(config.search.index,t,op,req.body,function(err,body){
+                if(err) {
+                    next(err)
+                } else {
+                    res.json(body);
+                    next();
+                }
             });
         },
         indexFields: function(req, res, next) {
@@ -72,14 +82,17 @@ module.exports = function(app, config) {
                 t = "mediarecords";
             }
 
-            searchShim(conifg.search.index,t,"_mapping",undefined,function(mapping){
-                console.log("postshim")
+            searchShim(config.search.index,t,"_mapping",undefined,function(err,mapping){
                 var resp = {};
                 Object.keys(mapping).forEach(function(index){
                     resp = getSubKeys(mapping[index]["mappings"][t], "");
                 });
-                res.json(resp);
-                next();
+                if(err) {
+                    next(err)
+                } else {
+                    res.json(resp);
+                    next();
+                }
             });
         }
     };
