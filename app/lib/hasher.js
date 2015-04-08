@@ -12,18 +12,18 @@ var hash = function(hash_type,data,options){
     }); 
     var h = crypto.createHash(hash_type);
 
-    s = "";
+    var s = "";
     if(_.isArray(data)){
-        sa = []
+        var sa = []
         data.forEach(function(i){
             sa.push(hash(hash_type,i,options));
         })
         if (options.sort_arrays) {
             sa.sort();
-        }       
+        }
         s = sa.join("");
     } else if (_.isString(data)){
-        s = data;
+        s = _.cloneDeep(data);
     } else if (_.isNumber(data)) {
         s = util.format("%d",data);
     } else if (_.isPlainObject(data)) {
@@ -34,11 +34,21 @@ var hash = function(hash_type,data,options){
         ks.forEach(function(k){
             s += k + hash(hash_type,data[k],options);
         })
+    } else if (typeof data == "undefined") {
+        s = "undefined";
+    } else if (typeof data == "boolean") {
+        if(data) {
+            s = "true";
+        } else {
+            s = "false";
+        }
     } else {
         console.log(typeof data);
+        s = JSON.stringify(data);
     }
 
-    return h.update(s).digest('hex');
+    var hv = h.update(s).digest('hex')
+    return hv;
 }
 
 //module.exports = function(app,config) {

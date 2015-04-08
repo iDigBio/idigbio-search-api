@@ -169,5 +169,5 @@ describe('Summary', function(){
           }
         })
     })
-  })   
+  })
 })
