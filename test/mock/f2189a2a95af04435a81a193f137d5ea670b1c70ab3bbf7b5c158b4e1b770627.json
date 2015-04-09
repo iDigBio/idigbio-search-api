@@ -1,1 +1,106 @@
-{"took":4,"timed_out":false,"_shards":{"total":20,"successful":20,"failed":0},"hits":{"total":1,"max_score":14.596666,"hits":[{"_index":"idigbio-2.1.0","_type":"records","_id":"0000012b-9bb8-42f4-ad3b-c958cb22ae45","_score":14.596666,"_source":{"family":"myrtaceae","recordset":"40250f4d-7aa6-4fcc-ac38-2868fa4846bd","dqs":0.35714285714285715,"stateprovince":"saint john","phylum":"magnoliophyta","catalognumber":"asu0010142","specificepithet":"monticola","uuid":"0000012b-9bb8-42f4-ad3b-c958cb22ae45","basisofrecord":"preservedspecimen","collector":"p. acevedo; a. reilly","institutioncode":"asu","mediarecords":["d0ca23cd-d4eb-43b5-aaba-cb75f8aef9e3","ae175cc6-82f4-456b-910c-34da322e768d"],"datecollected":"1987-08-21","etag":"cb7d64ec3aef36fa4dec6a028b818e331a67aacc","recordnumber":"1897","hasImage":true,"kingdom":"plantae","collectionid":"a2e32c87-d320-4a01-bafd-a9182ae2e191","scientificname":"eugenia monticola","locality":"coral bay quarter, bordeaux mountain road.","data":{"dwc:startDayOfYear":"233","dwc:specificEpithet":"monticola","dwc:kingdom":"Plantae","dwc:recordedBy":"P. Acevedo; A. Reilly","dwc:georeferenceSources":"georef batch tool 2012-07-09","dwc:order":"Myrtales","dwc:habitat":"Sunny roadside.","dwc:scientificNameAuthorship":"Hitchc.","dwc:occurrenceID":"urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3","id":"762944","dwc:stateProvince":"Saint John","dwc:eventDate":"1987-08-21","dwc:collectionID":"a2e32c87-d320-4a01-bafd-a9182ae2e191","dwc:country":"U.S. Virgin Islands","idigbio:recordId":"urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3","dwc:collectionCode":"Plants","dwc:decimalLatitude":"18.348","dwc:occurrenceRemarks":"Small tree. 3.0 m. Bark brown, stems smooth; flowers in buds yellow.","dwc:basisOfRecord":"PreservedSpecimen","dwc:genus":"Eugenia","dwc:family":"Myrtaceae","dc:rights":"http://creativecommons.org/licenses/by-nc-sa/3.0/","dwc:identifiedBy":"Andrew Salywon, Jan 2003","dwc:dynamicProperties":"Small tree. 3.0 m. Bark brown, stems smooth; flowers in buds yellow.","symbiota:verbatimScientificName":"Eugenia monticola","dwc:phylum":"Magnoliophyta","dcterms:references":"http://swbiodiversity.org/seinet/collections/individual/index.php?occid=762944","dwc:locality":"Coral Bay Quarter, Bordeaux Mountain Road.","dwc:institutionCode":"ASU","dwc:reproductiveCondition":"flowers","dwc:georeferenceVerificationStatus":"reviewed - high confidence","dwc:catalogNumber":"ASU0010142","dwc:month":"8","dwc:decimalLongitude":"-64.7131","dwc:coordinateUncertaintyInMeters":"2000","dwc:otherCatalogNumbers":"156664","dwc:georeferencedBy":"jssharpe","dwc:recordNumber":"1897","dcterms:modified":"2012-07-09 12:00:09","dwc:scientificName":"Eugenia monticola","dwc:day":"21","dwc:year":"1987"},"datemodified":"2015-01-17","occurrenceid":"urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3","country":"u.s. virgin islands","geopoint":{"lat":18.348,"lon":-64.7131},"collectioncode":"plants","eventdate":"1987-08-21","flags":["geopoint_datum_missing"],"recordids":["urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3"],"genus":"eugenia","order":"myrtales"}}]}}
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 14.596666,
+    "hits": [
+      {
+        "_index": "idigbio-2.1.0",
+        "_type": "records",
+        "_id": "0000012b-9bb8-42f4-ad3b-c958cb22ae45",
+        "_score": 14.596666,
+        "_source": {
+          "family": "myrtaceae",
+          "recordset": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
+          "dqs": 0.35714285714285715,
+          "stateprovince": "saint john",
+          "phylum": "magnoliophyta",
+          "catalognumber": "asu0010142",
+          "specificepithet": "monticola",
+          "uuid": "0000012b-9bb8-42f4-ad3b-c958cb22ae45",
+          "basisofrecord": "preservedspecimen",
+          "collector": "p. acevedo; a. reilly",
+          "institutioncode": "asu",
+          "mediarecords": [
+            "d0ca23cd-d4eb-43b5-aaba-cb75f8aef9e3",
+            "ae175cc6-82f4-456b-910c-34da322e768d"
+          ],
+          "datecollected": "1987-08-21",
+          "etag": "cb7d64ec3aef36fa4dec6a028b818e331a67aacc",
+          "recordnumber": "1897",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "a2e32c87-d320-4a01-bafd-a9182ae2e191",
+          "scientificname": "eugenia monticola",
+          "locality": "coral bay quarter, bordeaux mountain road.",
+          "data": {
+            "dwc:startDayOfYear": "233",
+            "dwc:specificEpithet": "monticola",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "P. Acevedo; A. Reilly",
+            "dwc:georeferenceSources": "georef batch tool 2012-07-09",
+            "dwc:order": "Myrtales",
+            "dwc:habitat": "Sunny roadside.",
+            "dwc:scientificNameAuthorship": "Hitchc.",
+            "dwc:occurrenceID": "urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3",
+            "id": "762944",
+            "dwc:stateProvince": "Saint John",
+            "dwc:eventDate": "1987-08-21",
+            "dwc:collectionID": "a2e32c87-d320-4a01-bafd-a9182ae2e191",
+            "dwc:country": "U.S. Virgin Islands",
+            "idigbio:recordId": "urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3",
+            "dwc:collectionCode": "Plants",
+            "dwc:decimalLatitude": "18.348",
+            "dwc:occurrenceRemarks": "Small tree. 3.0 m. Bark brown, stems smooth; flowers in buds yellow.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Eugenia",
+            "dwc:family": "Myrtaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "dwc:identifiedBy": "Andrew Salywon, Jan 2003",
+            "dwc:dynamicProperties": "Small tree. 3.0 m. Bark brown, stems smooth; flowers in buds yellow.",
+            "symbiota:verbatimScientificName": "Eugenia monticola",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=762944",
+            "dwc:locality": "Coral Bay Quarter, Bordeaux Mountain Road.",
+            "dwc:institutionCode": "ASU",
+            "dwc:reproductiveCondition": "flowers",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:catalogNumber": "ASU0010142",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-64.7131",
+            "dwc:coordinateUncertaintyInMeters": "2000",
+            "dwc:otherCatalogNumbers": "156664",
+            "dwc:georeferencedBy": "jssharpe",
+            "dwc:recordNumber": "1897",
+            "dcterms:modified": "2012-07-09 12:00:09",
+            "dwc:scientificName": "Eugenia monticola",
+            "dwc:day": "21",
+            "dwc:year": "1987"
+          },
+          "datemodified": "2015-01-17",
+          "occurrenceid": "urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3",
+          "country": "u.s. virgin islands",
+          "geopoint": {
+            "lat": 18.348,
+            "lon": -64.7131
+          },
+          "collectioncode": "plants",
+          "eventdate": "1987-08-21",
+          "flags": [
+            "geopoint_datum_missing"
+          ],
+          "recordids": [
+            "urn:uuid:ed400275-09d7-4302-b777-b4e0dcf7f2a3"
+          ],
+          "genus": "eugenia",
+          "order": "myrtales"
+        }
+      }
+    ]
+  }
+}
