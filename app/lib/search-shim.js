@@ -6,8 +6,9 @@ module.exports = function(app,config) {
     var hasher = require("../lib/hasher.js")(app,config)
 
     function writeMock(h,body) {
-        console.log(h);
-        var str = JSON.stringify(body);
+        var b = _.cloneDeep(body);
+        b.took = undefined
+        var str = JSON.stringify(b,undefined,2);
         fs.writeFileSync("test/mock/" + h + ".json", str)
     }
 
@@ -30,8 +31,24 @@ module.exports = function(app,config) {
 
         return function(index, type, op, query, cb){
             var h = hasher.hash("sha256",[index,type,op,query]);
+
+            if (op == "_count") {
+                if (_.keys(query).length == 0) {
+                    query = {
+                        query: {
+                            match_all: {}
+                        }
+                    }
+                }
+            }
+
             if (config.search.useEsClient) {
                 var query_only = {};
+
+                if (!query) {
+                    query = {};
+                }
+
                 ["query","aggs"].forEach(function(k){
                     if(query[k]) {
                         query_only[k] = query[k];
@@ -64,19 +81,21 @@ module.exports = function(app,config) {
                     options.sort = [];
                     query.sort.forEach(function(sd){
                         k = _.keys(sd)[0];
-                        options.sort.push(k + ":" + sd[k].order)
-                    })
+                        options.sort.push(k + ":" + sd[k].order);
+                    });
                 }
                 ["size","from"].forEach(function(k){
-                    options[k] = query[k]
-                })
+                    if(query[k]) {
+                        options[k] = query[k];
+                    }
+                });
 
                 if (op == "_search") {
                     client.search(options, function(error,response){
                         if (process.env.GEN_MOCK == "true"){
                             writeMock(h,response);
                         }
-                        cb(error,response)
+                        cb(error,response);
                     })
                 } else if (op == "_count") {
                     client.count(options, function(error,response){
@@ -86,7 +105,17 @@ module.exports = function(app,config) {
                         cb(error,response)
                     })
                 } else if (op == "_mapping") {
-                    cb({})
+                    client.indices.getMapping({
+                        index: index,
+                        type: type
+                    },function(error,response){
+                        if (process.env.GEN_MOCK == "true"){
+                            writeMock(h,response);
+                        }
+                        cb(error,response);
+                    })
+                } else {
+                    cb("unsupported op", null);
                 }
             } else {
                 if(op == "_mapping") {
@@ -100,15 +129,6 @@ module.exports = function(app,config) {
                         cb(error,b);
                     });
                 } else {
-                    if (op == "_count") {
-                        if (_.keys(query).length == 0) {
-                            query = {
-                                query: {
-                                    match_all: {}
-                                }
-                            }
-                        }
-                    }
                     request.post({
                         url: config.search.server + "/" + index + "/" + type + "/" + op,
                         body: JSON.stringify(query)

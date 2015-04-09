@@ -1,0 +1,103 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0
+  },
+  "hits": {
+    "total": 27895712,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.1.0",
+        "_type": "records",
+        "_id": "0111a3ff-ba91-4723-bd54-ef5012864ff3",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "family": "plectorthidae",
+          "recordset": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+          "dqs": 0.4107142857142857,
+          "stateprovince": "ohio",
+          "municipality": "cincinnati",
+          "county": "hamilton county",
+          "earliestperiodorlowestsystem": "late ordovician",
+          "phylum": "brachiopoda",
+          "catalognumber": "ypm ip 401435",
+          "specificepithet": "plicatella",
+          "continent": "north america",
+          "group": "maysville grp",
+          "uuid": "0111a3ff-ba91-4723-bd54-ef5012864ff3",
+          "basisofrecord": "fossilspecimen",
+          "collector": "g. asherman",
+          "institutioncode": "ypm",
+          "datemodified": "2014-11-20",
+          "etag": "0db2f98d2351a5262adccbfc5cf7500cd6ef367e",
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; brachiopoda; rhynchonelliformea; rhynchonellata; orthida; orthidina; orthoidea; plectorthidae",
+          "scientificname": "plectorthis plicatella",
+          "data": {
+            "dwc:specificEpithet": "plicatella",
+            "dwc:county": "Hamilton County",
+            "dwc:recordedBy": "G. Asherman",
+            "dwc:order": "Orthida",
+            "dwc:individualCount": "1",
+            "dwc:group": "Maysville Grp",
+            "dcterms:language": "eng",
+            "dwc:scientificNameAuthorship": "Hall, 1847",
+            "id": "urn:uuid:84d35fd0-b6e4-41b1-8acf-8859200af498",
+            "dwc:stateProvince": "Ohio",
+            "dcterms:bibliographicCitation": "Plectorthis plicatella (YPM IP 401435)",
+            "dwc:institutionCode": "YPM",
+            "dwc:country": "USA",
+            "dwc:earliestPeriodOrLowestSystem": "Late Ordovician",
+            "dwc:collectionCode": "IP",
+            "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "39.0989",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:genus": "Plectorthis",
+            "dwc:continent": "North America",
+            "dwc:family": "Plectorthidae",
+            "dwc:dynamicProperties": "{ \"mm_repository_id\": \"400081\" }",
+            "dwc:municipality": "Cincinnati",
+            "dwc:higherClassification": "Animalia; Brachiopoda; Rhynchonelliformea; Rhynchonellata; Orthida; Orthidina; Orthoidea; Plectorthidae",
+            "dwc:ownerInstitutionCode": "YPM",
+            "dwc:phylum": "Brachiopoda",
+            "dwc:associatedMedia": "http://deliver.odai.yale.edu/content/repository/YPM/id/400081/format/3",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Rhynchonellata",
+            "dwc:catalogNumber": "YPM IP 401435",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America; USA; Ohio; Hamilton County; Cincinnati",
+            "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+            "dwc:decimalLongitude": "-84.5169",
+            "dwc:coordinateUncertaintyInMeters": "10000",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:occurrenceID": "urn:uuid:84d35fd0-b6e4-41b1-8acf-8859200af498",
+            "dcterms:modified": "2014-09-11T11:03:25.000Z",
+            "dwc:scientificName": "Plectorthis plicatella"
+          },
+          "class": "rhynchonellata",
+          "occurrenceid": "urn:uuid:84d35fd0-b6e4-41b1-8acf-8859200af498",
+          "country": "usa",
+          "geopoint": {
+            "lat": 39.0989,
+            "lon": -84.5169
+          },
+          "collectioncode": "ip",
+          "flags": [],
+          "recordids": [
+            "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\urn:uuid:84d35fd0-b6e4-41b1-8acf-8859200af498"
+          ],
+          "genus": "plectorthis",
+          "order": "orthida"
+        }
+      }
+    ]
+  }
+}
