@@ -710,7 +710,8 @@ module.exports = function(app, config) {
             var z = getParam(req, "zoom", function(p) {
                 return parseInt(p);
             }, 0);
-
+            var pdist = 10;//point layer radius
+            //console.log(z);
             var gl = tileMath.zoom_to_geohash_len(z, false);
 
             var gh = geohash.encode(lat,lon,gl);
@@ -747,13 +748,22 @@ module.exports = function(app, config) {
                     }
                 });
                 if(type=='points'){
+                    if(z<4){
+                        pdist=10;
+                    }else if(z>=4 && z<7){
+                        pdist=6;
+                    }else if(z>=7 && z<10){
+                        pdist=3;
+                    }else if(z>=10){
+                        pdist=.25;
+                    }
                     query["query"]["filtered"]["filter"]["and"].push({
                         "geo_distance": {
                             "geopoint": {
                                 "lat": lat,
                                 "lon": lon
                             },
-                            "distance":"10km"
+                            "distance":pdist+"km"
                         }
                     })
                 }else{
@@ -807,7 +817,7 @@ module.exports = function(app, config) {
                                 "radius":{
                                     "lat":lat,
                                     "lon":lon,
-                                    "distance":10
+                                    "distance":pdist
                                 }
                             }
                         }else{

@@ -390,7 +390,7 @@ describe('Mapping', function(){
     });    
   });
   describe('retrieve map points', function(){
-    it('should return data under normal conditions', function(done){
+    it('should return data under normal conditions with bounding box data', function(done){
       var q = {"scientificname": "puma concolor"}
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -411,6 +411,33 @@ describe('Mapping', function(){
                   response.body.itemCount.should.not.equal(0);
                   response.body.items.length.should.not.equal(0);
                   response.body.should.have.property("bbox");
+                  done();
+                }
+              })
+          }
+        })
+    });
+    it('should return data under normal conditions with point radius data', function(done){
+      var q = {"scientificname": "puma concolor"}
+      request(app.server)
+        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end(function(error1, response1) {
+          if(error1) {
+            done(error1);
+          } else {
+            request(app.server)
+              .get("/v2/mapping/" + response1.body.shortCode + "/points?lat=32.7141666667&lon=-108.7086111111&zoom=1")
+              .expect('Content-Type', /json/)
+              .expect(200)
+              .end(function(error, response) {
+                if(error) {
+                  done(error);
+                } else {
+                  response.body.itemCount.should.not.equal(0);
+                  response.body.items.length.should.not.equal(0);
+                  response.body.should.have.property("radius");
                   done();
                 }
               })
