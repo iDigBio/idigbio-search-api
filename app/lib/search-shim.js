@@ -6,7 +6,6 @@ module.exports = function(app,config) {
     var hasher = require("../lib/hasher.js")(app,config)
 
     function writeMock(h,body) {
-        console.log(h);
         var str = JSON.stringify(body);
         fs.writeFileSync("test/mock/" + h + ".json", str)
     }
