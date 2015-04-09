@@ -1,11 +1,11 @@
 var redis = require("redis")
 
 var config = {
-    "port": 19196,
-    "search": {
-        "server": "http://c17node52.acis.ufl.edu:9200",
-        "index": "idigbio-2.1.0",
-        // useEsClient: true
+    port: 19196,
+    search: {
+        server: "http://c17node52.acis.ufl.edu:9200",
+        index: "idigbio-2.1.0",
+        useEsClient: true
     },
     elasticsearch: {
         hosts: [
