@@ -1,0 +1,103 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0
+  },
+  "hits": {
+    "total": 28163070,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.2.0",
+        "_type": "records",
+        "_id": "094192e8-25f7-498c-8c91-e65571af5d5b",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 25.3819,
+            "lon": -80.6094
+          },
+          "family": "cicadellidae",
+          "recordset": "fc628e53-5fdf-4436-9782-bf637d812b48",
+          "dqs": 0.21428571428571427,
+          "stateprovince": "florida",
+          "county": "miami-dade",
+          "phylum": "arthropoda",
+          "catalognumber": "osuc 311503",
+          "specificepithet": "bicuspida",
+          "continent": "north america",
+          "uuid": "094192e8-25f7-498c-8c91-e65571af5d5b",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "delong, f. m. (fanny merchant) & delong, d. m. (dwight moore)",
+          "institutioncode": "c.a. triplehorn insect collection, ohio state university, columbus, oh (osuc)",
+          "datemodified": "2015-02-22T17:45:35.371000+00:00",
+          "etag": "616cec8d83f16af0ee2e875fffddc8913e6e9635",
+          "hasImage": false,
+          "kingdom": "animalia",
+          "scientificname": "empoasca bicuspida",
+          "data": {
+            "dwc:specificEpithet": "bicuspida",
+            "dwc:county": "Miami-Dade",
+            "dwc:recordedBy": "DeLong, F. M. (Fanny Merchant) & DeLong, D. M. (Dwight Moore)",
+            "dwc:georeferenceSources": "GNIS-USGS",
+            "dwc:order": "Hemiptera",
+            "dwc:individualCount": "1",
+            "dwc:georeferenceRemarks": "Royal Palm is now an area within Everglades N.P. and no longer a state park",
+            "dwc:occurrenceID": "urn:lsid:biosci.ohio-state.edu:osuc_occurrences:OSUC__311503",
+            "dwc:lifeStage": "adult",
+            "dcterms:language": "en",
+            "dwc:scientificNameID": "urn:lsid:biosci.ohio-state.edu:osuc_names:255008",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Insects",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "25.3819",
+            "dcterms:source": "http://hol.osu.edu/spmInfo.html?id=OSUC%20311503",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Empoasca",
+            "dwc:family": "Cicadellidae",
+            "dwc:sex": "undetermined",
+            "dwc:identifiedBy": "Davidson, R. H. (Ralph H.)",
+            "dwc:VerbatimEventDate": "29 March 1938",
+            "dwc:phylum": "Arthropoda",
+            "dwc:locality": "Everglades National Park, Royal Palm Area, Miami-Dade Co., FL",
+            "dwc:fieldNotes": "[R. Plm. Park, Fla.] [F.M. & D.M. DeLong Collrs.] [3-29-38] [D.M. DeLong Collection]",
+            "dwc:institutionCode": "C.A. Triplehorn Insect Collection, Ohio State University, Columbus, OH (OSUC)",
+            "dwc:class": "Hexapoda",
+            "dwc:catalogNumber": "OSUC 311503",
+            "dwc:decimalLongitude": "-80.6094",
+            "dwc:samplingProtocol": "none specified",
+            "dcterms:modified": "2014-08-07T11:14:45Z",
+            "dwc:scientificName": "Empoasca bicuspida",
+            "dwc:dateIdentified": "2013"
+          },
+          "class": "insecta",
+          "occurrenceid": "urn:lsid:biosci.ohio-state.edu:osuc_occurrences:osuc__311503",
+          "country": "united states",
+          "locality": "everglades national park, royal palm area, miami-dade co., fl",
+          "collectioncode": "insects",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_country_replaced",
+            "dwc_stateprovince_replaced",
+            "dwc_kingdom_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_phylum_replaced",
+            "dwc_order_replaced",
+            "dwc_class_replaced",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "fc628e53-5fdf-4436-9782-bf637d812b48\\urn:lsid:biosci.ohio-state.edu:osuc_occurrences:osuc__311503"
+          ],
+          "genus": "empoasca",
+          "order": "hemiptera"
+        }
+      }
+    ]
+  }
+}
