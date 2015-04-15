@@ -419,7 +419,7 @@ module.exports = function(app, config) {
                 query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
             }
 
-            searchShim("stats",t,"_search",query,function(err,body){
+            searchShim(config.search.statsIndex,t,"_search",query,function(err,body){
                 if(err) {
                     next(err)
                 } else {
