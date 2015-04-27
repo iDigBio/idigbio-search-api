@@ -1,0 +1,273 @@
+{
+  "idigbio-2.3.0": {
+    "mappings": {
+      "mediarecords": {
+        "date_detection": false,
+        "_parent": {
+          "type": "records"
+        },
+        "_routing": {
+          "required": true
+        },
+        "properties": {
+          "data": {
+            "properties": {
+              "\"http://purl.org/dc/terms/identifier": {
+                "type": "string"
+              },
+              "ac:accessURI": {
+                "type": "string"
+              },
+              "ac:associatedSpecimenReference": {
+                "type": "string"
+              },
+              "ac:attributionLogoURL": {
+                "type": "string"
+              },
+              "ac:bestQualityAccessURI": {
+                "type": "string"
+              },
+              "ac:bestQualityExtent": {
+                "type": "string"
+              },
+              "ac:bestQualityFormat": {
+                "type": "string"
+              },
+              "ac:caption": {
+                "type": "string"
+              },
+              "ac:captureDevice": {
+                "type": "string"
+              },
+              "ac:comments": {
+                "type": "string"
+              },
+              "ac:furtherInformationURL": {
+                "type": "string"
+              },
+              "ac:goodQualityAccessURI": {
+                "type": "string"
+              },
+              "ac:hashFunction": {
+                "type": "string"
+              },
+              "ac:hashValue": {
+                "type": "string"
+              },
+              "ac:licenseLogoURL": {
+                "type": "string"
+              },
+              "ac:metadataCreator": {
+                "type": "string"
+              },
+              "ac:metadataLanguage": {
+                "type": "string"
+              },
+              "ac:metadataLanguageLiteral": {
+                "type": "string"
+              },
+              "ac:metadataProvider": {
+                "type": "string"
+              },
+              "ac:provider": {
+                "type": "string"
+              },
+              "ac:providerManagedID": {
+                "type": "string"
+              },
+              "ac:resourceCreationTechnique": {
+                "type": "string"
+              },
+              "ac:subjectOrientation": {
+                "type": "string"
+              },
+              "ac:subjectPart": {
+                "type": "string"
+              },
+              "ac:subtype": {
+                "type": "string"
+              },
+              "ac:tag": {
+                "type": "string"
+              },
+              "ac:thumbnailAccessURI": {
+                "type": "string"
+              },
+              "ac:thumbnailFormat": {
+                "type": "string"
+              },
+              "ac:variantLiteral": {
+                "type": "string"
+              },
+              "coreid": {
+                "type": "string"
+              },
+              "dc:creator": {
+                "type": "string"
+              },
+              "dc:format": {
+                "type": "string"
+              },
+              "dc:rights": {
+                "type": "string"
+              },
+              "dc:type": {
+                "type": "string"
+              },
+              "dcterms:available": {
+                "type": "string"
+              },
+              "dcterms:created": {
+                "type": "string"
+              },
+              "dcterms:creator": {
+                "type": "string"
+              },
+              "dcterms:description": {
+                "type": "string"
+              },
+              "dcterms:format": {
+                "type": "string"
+              },
+              "dcterms:identifier": {
+                "type": "string"
+              },
+              "dcterms:license": {
+                "type": "string"
+              },
+              "dcterms:modified": {
+                "type": "string"
+              },
+              "dcterms:provider": {
+                "type": "string"
+              },
+              "dcterms:publisher": {
+                "type": "string"
+              },
+              "dcterms:references": {
+                "type": "string"
+              },
+              "dcterms:rights": {
+                "type": "string"
+              },
+              "dcterms:rightsHolder": {
+                "type": "string"
+              },
+              "dcterms:source": {
+                "type": "string"
+              },
+              "dcterms:title": {
+                "type": "string"
+              },
+              "dcterms:type": {
+                "type": "string"
+              },
+              "dwc:nameAccordingTo": {
+                "type": "string"
+              },
+              "dwc:scientificName": {
+                "type": "string"
+              },
+              "exif:PixelXDimension": {
+                "type": "string"
+              },
+              "exif:PixelYDimension": {
+                "type": "string"
+              },
+              "idigbio:associatedRecordReference": {
+                "type": "string"
+              },
+              "idigbio:associatedRecordsetReference": {
+                "type": "string"
+              },
+              "idigbio:recordId": {
+                "type": "string"
+              },
+              "photoshop:Credit": {
+                "type": "string"
+              },
+              "xmp:MetadataDate": {
+                "type": "string"
+              },
+              "xmpRights:Owner": {
+                "type": "string"
+              },
+              "xmpRights:UsageTerms": {
+                "type": "string"
+              },
+              "xmpRights:WebStatement": {
+                "type": "string"
+              }
+            }
+          },
+          "datemodified": {
+            "type": "date",
+            "format": "dateOptionalTime"
+          },
+          "dqs": {
+            "type": "float"
+          },
+          "etag": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "flags": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "format": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "hasSpecimen": {
+            "type": "boolean"
+          },
+          "licenselogourl": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "modified": {
+            "type": "date",
+            "format": "dateOptionalTime"
+          },
+          "records": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "recordset": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "rights": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "tag": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "uuid": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "webstatement": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "xpixels": {
+            "type": "integer"
+          },
+          "ypixels": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

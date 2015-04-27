@@ -1,0 +1,581 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 14.575735,
+    "hits": [
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "publishers",
+        "_id": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+        "_score": 14.575735,
+        "_source": {
+          "dqs": 0,
+          "etag": "84bf6ef514a643fe1f385ed9398932acece5a0c0",
+          "data": {
+            "rss_url": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+            "name": "SCAN Darwin Core Archive rss feed",
+            "auto_publish": false,
+            "base_url": "http://symbiota4.acis.ufl.edu/scan/portal/",
+            "publisher_type": "symbiota",
+            "recordsets": {
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/13b264e0-ea1c-4ff2-8229-0507f8dbf46a": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. John D. Oswald",
+                    "email": "j-oswald@tamu.edu"
+                  }
+                ],
+                "collection_name": "Texas A&amp;M University Insect Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/TAMU-TAMUIC_DwC-A.zip",
+                "collection_description": "The Texas A&amp;M University Insect Collection (TAMUIC) is a land-grant-university-based collection of insects and related arthropods whose primary holdings are focused on the regional faunas of the south-central and southwestern United States and the northern neotropics, especially Mexico. As the oldest and largest entomological collection in Texas, the TAMUIC serves research, education and extension missions throughout the state, and particularly supports the diverse activities of the TAMU Department of Entomology. The TAMUIC has grown steadily through the years, especially in the last three decades, to become a major research collection with 2.6+ million curated specimens and holdings of more than 45,000 species. Approximately 10,000 specimens are loaned annually to systematics and biodiversity researchers around the world.",
+                "institution_web_address": "http://insects.tamu.edu/tamuinsectcollection/ ",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/atm.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/13b264e0-ea1c-4ff2-8229-0507f8dbf46a"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/8b97d772-e666-4dd9-ac5d-c4701d593e41": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Scott Bundy",
+                    "email": "cbundy@nmsu.edu"
+                  }
+                ],
+                "collection_name": "New Mexico State Collection of Arthropods",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/NMSU-NMSU_DwC-A.zip",
+                "collection_description": "The New Mexico State Collection of Arthropods is located at New Mexico State University in Las Cruces, NM. It currently houses approximately 150,000 arthropod specimens as well as the Merrill Sweet Collection (350,000 specimens). The NMSU Collection primarily is composed of arthropods from the western United States, with an emphasis on the arachnids of the arid Southwest. The goals of the collection include survey of the arthropod fauna of New Mexico and the Southwest, providing reference material for researchers, and providing outreach to our constituents in the state and abroad.",
+                "institution_web_address": "http://arthropods.nmsu.edu/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/nms.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/8b97d772-e666-4dd9-ac5d-c4701d593e41"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/c425cbc1-db60-4f45-be76-95358932734c": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. Marshal Hedin",
+                    "email": "mhedin@mail.sdsu.edu"
+                  }
+                ],
+                "collection_name": "SDSU Terrestrial Arthropods Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/SDSU-TAC_DwC-A.zip",
+                "collection_description": "The SDSU Terrestrial Arthropods Collection includes an estimated 50,000 specimens of pinned insects, a slide-mount collection, and many terrestrial arthropods (e.g., insects, arachnids, myriapods) preserved in ethanol. Most of these specimens were collected in southern California and adjacent regions (e.g., Arizona, Baja California Mexico). The collection holdings in Arachnida, Orthoptera, Lepidoptera, and Coleoptera are particularly strong. The collection is an important resource for both the teaching and research missions of the Department of Biology at SDSU, with a synoptic collection of local insects kept specifically for this purpose.",
+                "institution_web_address": "http://www.sci.sdsu.edu/collections/terrestrialarthropods.htm",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/SDSU_TAC_logo.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/c425cbc1-db60-4f45-be76-95358932734c"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/7c429a87-93ff-406a-9c33-7a6ed387d3c9": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. John D. Oswald",
+                    "email": "j-oswald@tamu.edu"
+                  }
+                ],
+                "collection_name": "Tri-Trophic Interactions - Texas A&amp;M",
+                "update": "2015-01-29T00:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/TAMU-TAMU-TTI_DwC-A.zip",
+                "collection_description": "These data represent the segment of the Tri-Trophic Interactions Project housed at Texas A&amp;M University.",
+                "institution_web_address": "http://insects.tamu.edu/tamuinsectcollection/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/atm.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/7c429a87-93ff-406a-9c33-7a6ed387d3c9"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/05db5b76-3037-46db-ba55-79607d9fc050": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Rick Levy, Katy Wilcox",
+                    "email": "Richard.Levy@botanicgardens.org"
+                  }
+                ],
+                "collection_name": "Denver Botanic Gardens Collection of Arthropods",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC0",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/DBG-DBGA_DwC-A.zip",
+                "collection_description": "The Denver Botanic Gardens Collection of Arthropods (DBGA) is small collection with a research focus on horticultural pests and beneficial insects. Specimen and observation data is primarily collected from managed gardens and agricultural areas in the Colorado Front Range. The collection also contains specimens from other areas in the Southern Rocky Mountain Region, particularly sites with ongoing research projects organized by the Denver Botanic Gardens. Collections are primarily made by volunteers and identifications are often only to family level.",
+                "institution_web_address": "www.botanicgardens.org",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/icons/DBG-logo.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/05db5b76-3037-46db-ba55-79607d9fc050"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/e7bcca50-5afb-4728-a5c4-014551fe50a0": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Joseph V. McHugh",
+                    "email": "mchugh.jv@gmail.com"
+                  }
+                ],
+                "collection_name": "University of Georgia Collection of Arthropods",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UGCA-GMNH_DwC-A.zip",
+                "collection_description": "The University of Georgia Collection of Arthropods (UGCA) serves as the official state repository of insects and other non-marine arthropods. The Collection is part of the UGA Department of Entomology and the Georgia Museum of Natural History (GMNH). The UGCA includes approximately 2,000,000 pinned specimens. In addition the collection houses significant alcohol-preserved and slide-mounted collections. Approximately 60% of the holdings are from the southeastern United States as is consistent with our mission to serve as the primary systematics reference for the state. More than 70% of that regional material is identified to the species level.",
+                "institution_web_address": "http://www.ugca.uga.edu/index.html",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/UGCA_logo_sm.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/e7bcca50-5afb-4728-a5c4-014551fe50a0"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/6ca25e61-71fe-4605-848f-86f9b72a87df": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. Boris Kondratieff",
+                    "email": "Boris.Kondratieff@Colostate.edu"
+                  }
+                ],
+                "collection_name": "C.P. Gillette Museum of Arthropod Diversity",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/CSU-CSUC_DwC-A.zip",
+                "collection_description": "The collection houses approximately 3 million specimens representing about 60,000 species with fifty primary types and 1,000 secondary types. More than 10,000 specimens are added to the collection each year. As a large and comprehensive holding of arthropods, predominately insects, in the Southern Rocky Mountains, it is a major resource for regional and national biodiversity investigations. Much of the material has been identified by specialists to the specific level. Examples of the unique quality of material include the aphids, other Homoptera, Coleoptera, Diptera, Hymenoptera, Lepidoptera, and all aquatic orders. It serves as the repository for arthropod inventories of several National Parks including Canyonlands, Great Sand Dunes, Mesa Verde, Rocky Mountain, Dinosaur, and Yucca House and Colorado National Monuments.",
+                "institution_web_address": "http://www.bspm.colostate.edu/gillette%20museum/museum/home.html",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/csu.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/6ca25e61-71fe-4605-848f-86f9b72a87df"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/722da3b7-73fe-41b6-b1c9-8801accd20f3": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. Frank Krell or Dr. Paula Cushing",
+                    "email": "frank.krell@dmns.org / paula.cushing@dmns.org"
+                  }
+                ],
+                "collection_name": "Denver Museum of Nature &amp; Science",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/DMNS-DMNS_DwC-A.zip",
+                "collection_description": "Worldwide in scope though with a focus on the American West, the Entomology and Arachnology collections at the Denver Museum of Nature &amp; Science collectively comprise over 1,000,000 specimens and specimen lots. The Entomology collection contains over 950,000 specimens, with Coleoptera (750,000+ specimens) and Lepidoptera (130,000+ specimens) as primary foci. The holdings include at least 18 primary types and 150 paratypes, and dates of collection span from 1878 to the present. The dung beetle collection is the largest in the United States, and our scarab holdings are particularly strong in African as well as regional material. The Colorado Scarab Survey and the Colorado Microlepidoptera Survey, both long-term projects initiated and conducted by DMNS, are steadily growing our regional holdings and our knowledge of the Colorado fauna. The Arachnology collection, with over 55,000 vials of specimens and specimen lots, is the sixth largest in the United States. Holdings are particularly strong in Colorado species and in Solifugae, with 13 primary types and 65 paratypes. The Colorado Spider Survey, initiated at DMNS and now in its 15th year, has vastly expanded our knowledge of the Colorado spider fauna. At the end of 2014, the Entomology collection moved to a new, state-of-the-art collections facility in the south wing of the museum; the Arachnology collection will be moving to the new facility in 2015.",
+                "institution_web_address": "http://www.dmns.org/science/collections/dmns-zoology-collections/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/dmns.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/722da3b7-73fe-41b6-b1c9-8801accd20f3"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/aef2ae41-e2ab-4c73-a616-036ba2fc2326": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Wendy Moore",
+                    "email": "wmoore@email.arizona.edu"
+                  }
+                ],
+                "collection_name": "University of Arizona Insect Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UA-UAIC_DwC-A.zip",
+                "collection_description": "The University of Arizona Insect Collection (UAIC) contains approximately 2 million specimens representing 35,000 species of pinned, alcohol-preserved, slide-mounted and frozen-tissue preserved arthropods mostly from the Sonoran Desert Region. Significant holdings include Coleoptera, Hemiptera, Hymenoptera, Orthoptera and Lepidoptera, but all insect groups are extensively represented. The UAIC user community is diverse, ranging from outstanding undergraduate and graduate students to highly active emeritus insect systematists. Annually, we host thousands of visitors, ranging from resident researchers to individual walk-ins, campus tour groups, and vast numbers of people seeking information on the biology of the Sonoran Desert Region.",
+                "institution_web_address": "http://ag.arizona.edu/ento/UAIC/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/UAIC.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/aef2ae41-e2ab-4c73-a616-036ba2fc2326"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/029816b2-ba46-4c89-9ebb-c1c630a0ce7e": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "bdim@oeb.harvard.edu",
+                    "email": "bdim@oeb.harvard.edu"
+                  }
+                ],
+                "collection_name": "Museum of Comparative Zoology, Harvard University",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/MCZ_DwC-A.zip",
+                "collection_description": "The Museum of Comparative Zoology was founded in 1859 on the concept that collections are an integral and fundamental component of zoological research and teaching. This more than 150-year-old commitment remains a strong and proud tradition for the MCZ. &lt;br/&gt;&lt;br/&gt; The present-day MCZ contains over 21-million specimens in ten research collections which comprise one of the world's richest and most varied resources for studying the diversity of life. The museum serves as the primary repository for zoological specimens collected by past and present Harvard faculty-curators, staff and associates conducting research around the world. &lt;br/&gt;&lt;br/&gt; As a premier university museum and research institution, the specimens and their related data are available to researchers of the scientific and museum community.",
+                "institution_web_address": "http://www.mcz.harvard.edu/about/index.html",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/fh.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/029816b2-ba46-4c89-9ebb-c1c630a0ce7e"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/a8a78602-8293-4636-943a-aa4e7a91dfe7": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Eric Chapman",
+                    "email": "ericgchapman@gmail.com"
+                  }
+                ],
+                "collection_name": "Hymenoptera Institute Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UKY-HIC-HIC_DwC-A.zip",
+                "collection_description": "The Hymenoptera Institute Collection is a collection of largely parasitic Hymenoptera housed in Michael Sharkeyâs Lab in the Entomology Department (Agricultural Science Center North) at the University of Kentucky. The museum houses over 350 drawers of Hymenoptera focusing on Braconidae, with the primary focus on the braconid subfamily Agathidinae. The braconid collection is of world-scope, having received samples from all continents except Antarctica and is primarily used to describe new species and conduct molecular phylogenetics studies. Major recent projects include the Thailand Biodiversity Project (TIGER), the Columbia Biodiversity Project, and the Hymatol Project (phylogeny of Hymenoptera). More information can be found at the Sharkey Lab webpage: http://sharkeylab.org/sharkeylab/sharkeyProjects.php",
+                "institution_web_address": "http://sharkeylab.org/sharkeylab/sharkeyProjects.html",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/uky.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/a8a78602-8293-4636-943a-aa4e7a91dfe7"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/11991258-201f-460d-a69b-1ab112a01cf3": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Christy Bills",
+                    "email": "cbills@nhmu.utah.edu"
+                  }
+                ],
+                "collection_name": "Entomology Collection at the Natural History Museum of Utah",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UMNH-ENT_DwC-A.zip",
+                "collection_description": "The Entomology Collection at the Natural History Museum of Utah consists of approximately 250,000 pinned and alcohol specimens from around the world, with greatest specimen numbers from the intermountain west. The collection dates back to the late 1800s, with heaviest collection periods in the 1930s and 1960s. The collection was relocated in 2012 to a new facility with optimal storage conditions. Areas of greatest strength include Lepidoptera, Cicadidae and Cicindelidae. Future project emphasis is on databasing the collection to increase research utilization of the collection.",
+                "institution_web_address": "http://nhmu.utah.edu/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/NHMU.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/11991258-201f-460d-a69b-1ab112a01cf3"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/11c99ac1-da27-4232-88f0-6e0da3c5f4c1": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Gregory P. Setfill",
+                    "email": "setliff@kutztown.edu"
+                  }
+                ],
+                "collection_name": "Gregory P. Setliff Collection - Kutztown University",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/GPSC_DwC-A.zip",
+                "collection_description": "TBD.",
+                "institution_web_address": "http://www.kutztown.edu/acad/biology/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/GPSC.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/11c99ac1-da27-4232-88f0-6e0da3c5f4c1"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/cf2cd47f-8b74-43a7-b5e4-5bedf5d18cde": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Sandra Brantley",
+                    "email": "sbrantle@unm.edu"
+                  }
+                ],
+                "collection_name": "Museum of Southwestern Biology, Division of Arthropods",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UNM-MSBA_DwC-A.zip",
+                "collection_description": "The MSB Division of Arthropods houses collections from the southwestern US as well as Central and South America and other areas of the world. Species concentrations are in Arachnida, Myriapoda, Coleoptera, Lepidoptera, and Orthoptera. The collection began with material from ecological research (including LTER sites and several NPS sites) and is now increasing its systematics focus. There are an estimated 200,000 specimens but many are still being integrated into the collection.",
+                "institution_web_address": "http://msb.unm.edu/arthropods/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/unm.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/cf2cd47f-8b74-43a7-b5e4-5bedf5d18cde"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/0fc43ef4-018d-479a-a633-3653718ec766": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dan Rubinoff",
+                    "email": "rubinoff@hawaii.edu"
+                  }
+                ],
+                "collection_name": "University of Hawaii Insect Museum",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UHIM-UHIM_DwC-A.zip",
+                "collection_description": "The University of Hawaii Insect Museum (UHIM) is the second largest collection of insects in the state of Hawaii and ranks among the biggest collections in the world for Hawaiian insect holdings. The collection dates to 1908, and as such houses an important record of changes in arthropod biodiversity over time, including the extinction and introduction of species. The museum houses over 250,000 specimens, with strengths in endemic Diptera and Lepidoptera. The UHIM also serves as a center for research and education about biodiversity and systematics for the University of Hawaii system.",
+                "institution_web_address": "http://www.ctahr.hawaii.edu/insectmuseum/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/Manoa-seal.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/0fc43ef4-018d-479a-a633-3653718ec766"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/61cff121-261e-4eff-a186-a377f91aa027": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. Jennifer M. Zaspel",
+                    "email": "jzaspel@purdue.edu"
+                  }
+                ],
+                "collection_name": "The Purdue Entomological Research Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/PU-PERC_DwC-A.zip",
+                "collection_description": "The Purdue Entomological Research Collection (PERC) is an integral part of the Department of Entomology at Purdue University. Specimens housed in the collection are the basis for research in systematic entomology at Purdue and by specialists worldwide. The PERC also serves as a reference to facilitate the accurate and timely identification of insects for extension and teaching needs. Approximately 2 million specimens are held, representing more than 140,000 species. This includes mainly dry-mounted pinned material as well as many specimens stored in liquid preservative or mounted on slides.",
+                "institution_web_address": "http://www.entm.purdue.edu/PERC/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/PERC_Logo.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/61cff121-261e-4eff-a186-a377f91aa027"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/50e71d85-5bae-46d1-b082-984219f321a7": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Dr. Boris Kondratieff",
+                    "email": "Boris.Kondratieff@Colostate.edu"
+                  }
+                ],
+                "collection_name": "National Park Collections at Colorado State University",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/CSU-CSUNPS_DwC-A.zip",
+                "collection_description": "The NPS at CSU collection represents insect and arachnid specimens from 10 different national parks and monuments in the Southwest. They are specimens collected from National Parks stored by the Colorado State University arthropod museum. Specimens from Park Service lands are always kept in separate drawers.",
+                "institution_web_address": "http://www.bspm.colostate.edu/gillette%20museum/museum/home.html",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/csu.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/50e71d85-5bae-46d1-b082-984219f321a7"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/e6f892dc-9db7-4dbb-a446-496ab2156862": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Clint Burfitt",
+                    "email": "cburfitt@Utah.gov"
+                  }
+                ],
+                "collection_name": "Utah Department of Agriculture and Food Entomology Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC0",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UDAF-UDAFE_DwC-A.zip",
+                "collection_description": "The entomology collection at the Utah Department of Agriculture and Food is located in Salt Lake City. Specimens are collected from all over the state but a majority is from the Great Basin area. There are several thousand specimens in the collection with emphasis placed on insects significant to the future of agriculture in Utah, such as bark beetles, Japanese beetles and gypsy moths.",
+                "institution_web_address": "http://ag.utah.gov/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/udaf.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/e6f892dc-9db7-4dbb-a446-496ab2156862"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/b192dbaf-eae2-4613-a48c-5e9d0c4cca5c": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Robert Delph",
+                    "email": "Robert.Delph@nau.edu"
+                  }
+                ],
+                "collection_name": "Dugway Proving Ground Natural History Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/DUGWAY-DUG-ENT_DwC-A.zip",
+                "collection_description": "The Dugway Proving Ground Natural History Collection houses more than 1,100 specimens of plants, insects, spiders, amphibians, reptiles, birds and mammals collected primarily from the U.S. Army Dugway Proving Ground but also include some areas just outside the installation within Tooele County. The collection is used in support of the Army Mission on the West Desert of Utah, in scientific research, education and outreach efforts. One objective of this collection is to ensure preservation of species of concern and document localities and habitats for management of sensitive and/or rare species mandated by the endangered species act.",
+                "institution_web_address": "http://www.dugway.army.mil/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/dpg.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/b192dbaf-eae2-4613-a48c-5e9d0c4cca5c"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/98d9b8ed-08d6-47fc-b324-2853e44d75d1": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Nico Franz",
+                    "email": "nico.franz@asu.edu"
+                  }
+                ],
+                "collection_name": "Arizona State University Hasbrouck Insect Collection",
+                "update": "2015-04-02T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/ASU-ASUHIC_DwC-A.zip",
+                "collection_description": "The ASU Frank F. Hasbrouck Insect Collection contains approximately 750,000 insect specimens, representing at least 25 orders, 390 families, 4,000 genera, 12,000 species and 1,240 subspecies. Most specimens are from the southwestern United States; however considerable representative material is also available from other North American regions and Mexico. The collection was largely developed through the activities of past faculty - Drs. Frank Hasbrouck, Gordon Castle and Mont Cazier - and their students. An extensive reprint collection is available to visiting researchers. For further information and to arrange a visit or loan, please contact Curator Dr. Nico Franz (nico.franz[at]asu.edu) or Collection Manager Dr. Sangmi Lee (slee281[at]asu.edu).",
+                "institution_web_address": "http://taxonbytes.org/asuhic/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/asu.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/98d9b8ed-08d6-47fc-b324-2853e44d75d1"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/a9451a2e-c7ab-45be-bbd5-75bee864d055": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Stylianos Chatzimanolis",
+                    "email": "stylianos-chatzimanolis@utc.edu"
+                  }
+                ],
+                "collection_name": "University of Tennessee at Chattanooga",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UTC-UTCI_DwC-A.zip",
+                "collection_description": "The University of Tennessee at Chattanooga Insect collection started in 1970 with Dr. Charles Nelson, a Plecoptera expert. The Coleoptera collection (which is databased) started in 2008 when Dr. Stylianos Chatzimanolis was hired as an Assistant Professor. The main focus of the collection is the Southeastern USA but several other countries are represented.",
+                "institution_web_address": "http://www.utc.edu/biological-environmental-sciences/#li04",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/utc.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/a9451a2e-c7ab-45be-bbd5-75bee864d055"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/d4e788b4-5d52-47a3-873e-227c6df49c7b": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "James Cokendolpher",
+                    "email": "james.cokendolpher@ttu.edu"
+                  }
+                ],
+                "collection_name": "Texas Tech University - Invertebrate Zoology",
+                "update": "2015-03-17T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/TTU-TTU-Z_DwC-A.zip",
+                "collection_description": "The Invertebrate Zoology collection (TTU-Z) of the Museum of Texas Tech University is international in scope with an emphasis on arthropods from semi-arid and arid lands, especially from North America. The collection consists primarily of insects, arachnids, and crustaceans. The pinned collection contains over 3,200 genera and 7,500 identified species. These counts are underestimated because they were made over a decade ago and the majority of the collection holdings have not been identified nor cataloged. The estimated minimal numbers are: Pinned Insects about 1 million individuals, Med/Vet Zoology about 75,000, Arachnids under 50,000, Miscellaneous groups under 1,000. At least 3 million specimens are retained as sealed, bulk specimens. These samples are mostly cataloged and are being split and labeled as time permits (motivated by researchersÂ needs). There are currently slightly more than 800 type specimens (mostly paratypes) in the collection.",
+                "institution_web_address": "http://www.nsrl.ttu.edu/collections/Invertebrates/index.htm",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/TTU.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/d4e788b4-5d52-47a3-873e-227c6df49c7b"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/ad64ad57-a281-457e-b398-964dddc7e953": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Shawn Clark",
+                    "email": "shawn_clark@byu.edu"
+                  }
+                ],
+                "collection_name": "Brigham Young University Arthropod Museum",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/BYU-BYUC_DwC-A.zip",
+                "collection_description": "The BYU Arthropod Collection is housed in the Monte L. Bean Life Science Museum at Brigham Young University. It totals approximately 2,000,000 specimens, mostly insects. Although worldwide in coverage, an emphasis is on western North America. Although taxonomically diverse, strengths include Coleoptera, Plecoptera, and Siphonaptera. The insect tissue holdings are outstanding. The principal aim is systematic study, but the collection is available to a wide variety of researchers.",
+                "institution_web_address": "http://mlbean.byu.edu/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/BYU_logo_small.jpg",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/ad64ad57-a281-457e-b398-964dddc7e953"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/740f67ca-2de3-47db-8672-ecfe0e2dc4c4": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Neil Cobb",
+                    "email": "Neil.Cobb@nau.edu"
+                  }
+                ],
+                "collection_name": "National Park Collections at Northern Arizona University",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/NAU-NPS_DwC-A.zip",
+                "collection_description": "The NPS collection represents insect and arachnid specimens from 10 different national parks and monuments in the Southwest. They are specimens collected from National Parks stored by Northern Arizona University, Colorado State University and the University of New Mexico arthropod museums. Specimens from Park Service lands are always kept in separate drawers.",
+                "institution_web_address": "http://www.bugs.nau.edu",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/nauf.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/740f67ca-2de3-47db-8672-ecfe0e2dc4c4"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/17c97d22-5064-49c9-a323-110c14056ebe": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Deane Bowers",
+                    "email": "deane.bowers@colorado.edu"
+                  }
+                ],
+                "collection_name": "University of Colorado Museum of Natural History Entomology Collection",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/UCB-UCMC_DwC-A.zip",
+                "collection_description": "The Entomology collection (including both insects and arachnids) is one of six major collections housed at the University of Colorado Museum of Natural History in Boulder, Colorado.  This collection houses over 700,000 insect and spider specimens, representing over 17,000 species, with a focus on the Rocky Mountain region and North America.  Current research efforts in the collection are focused on grasshoppers, bees, and Lepidoptera.  The goals of this collection are to make our specimens and the data they contain available to researchers and the public, to participate in public education and outreach, and to conduct research relevant to issues of ecology, evolution, and conservation.",
+                "institution_web_address": "http://cumuseum.colorado.edu",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/cu-logo.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/17c97d22-5064-49c9-a323-110c14056ebe"
+              },
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/c87a0756-fdd7-4cb6-9921-ca5774f8330e": {
+                "contacts": [
+                  {
+                    "email": "Paul.Heinrich@nau.edu"
+                  },
+                  {
+                    "first_name": "Neil Cobb or Aaron Smith",
+                    "email": "Neil.Cobb@nau.edu, Aaron.Smith@nau.edu"
+                  }
+                ],
+                "collection_name": "Colorado Plateau Museum of Arthropod Biodiversity",
+                "update": "2015-03-14T01:00:00",
+                "ingest": true,
+                "data_rights": "CC BY-NC-SA",
+                "link": "http://symbiota4.acis.ufl.edu/scan/portal/collections/datasets/dwc/NAU-NAUF_DwC-A.zip",
+                "collection_description": "The Colorado Plateau Museum of Arthropod Biodiversity (CPMAB) is one of the museums within the Colorado Plateau Biodiversity Center at Northern Arizona University. The museum houses over 250,000 arthropod specimens, primarily from the western United States and Mexico. Our geographic area of focus is the Colorado Plateau and adjacent regions in the Southwest. The major goal of the museum is to make the collection more relevant to ecologists, especially those working on projects related to issues of conservation and biodiversity. We provide entomological consultation regarding identification and biology of insect and spider pests as well as 'bugs' that people are just curious in knowing about.",
+                "institution_web_address": "http://www.bugs.nau.edu/",
+                "other_guids": [],
+                "logo_url": "http://symbiota4.acis.ufl.edu/scan/portal/images/collicons/nauf.png",
+                "id": "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/c87a0756-fdd7-4cb6-9921-ca5774f8330e"
+              }
+            }
+          },
+          "uuid": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "datemodified": "2015-04-17T18:23:41.146000+00:00"
+        }
+      }
+    ]
+  }
+}
