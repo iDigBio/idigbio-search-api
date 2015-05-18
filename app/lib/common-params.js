@@ -93,6 +93,10 @@ module.exports = function(app,config) {
                     if (_.isString(p)) {
                         p = JSON.parse(p);
                     }
+                    // Special case for single value as string to make R easier to work with
+                    if (_.isString(p)) {
+                        p = [p];
+                    }
                     return p;
                 } catch (e) {
                     throw new ParameterParseException("unable to parse parameter", "top_fields");
@@ -105,6 +109,10 @@ module.exports = function(app,config) {
                     if (_.isString(p)) {
                         p = JSON.parse(p);
                     }
+                    // Special case for single value as string to make R easier to work with
+                    if (_.isString(p)) {
+                        p = [p];
+                    }
                     return p;
                 } catch (e) {
                     throw new ParameterParseException("unable to parse parameter", "fields");
@@ -116,6 +124,10 @@ module.exports = function(app,config) {
                 try {
                     if (_.isString(p)) {
                         p = JSON.parse(p);
+                    }
+                    // Special case for single value as string to make R easier to work with
+                    if (_.isString(p)) {
+                        p = [p];
                     }
                     return p;
                 } catch (e) {
