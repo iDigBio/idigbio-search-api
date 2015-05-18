@@ -89,6 +89,12 @@
 
 var _ = require("lodash");
 
+function QueryParseException(message,context) {
+   this.error = message;
+   this.context = context;
+   this.name = "QueryParseException";
+}
+
 //module.exports = function(app,config) {
 module.exports = function() {
 
@@ -218,13 +224,17 @@ module.exports = function() {
             } else {
                 if (shim[k]["type"]) {
                     var f = objectType(k,shim[k]);
-                    if (_.isString(f)) {
-                        fulltext = f;
+                    if (f) {
+                        if (_.isString(f)) {
+                            fulltext = f;
+                        } else {
+                            and_array.push(f);
+                        }
                     } else {
-                        and_array.push(f);
+                        throw new QueryParseException("unable to parse type", shim[k]);
                     }
                 } else{
-                    console.log(k + " " + shim[k]);
+                    throw new QueryParseException("unable to get type", shim[k]);
                 }
             }
         });

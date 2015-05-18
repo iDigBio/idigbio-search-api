@@ -683,161 +683,167 @@ module.exports = function(app, config) {
         //     });
         // },
         mapPoints: function(req, res, next) {
-            var s = req.params.s;
+            try {
+                var s = req.params.s;
 
-            var limit = cp.limit(req);
+                var limit = cp.limit(req);
 
-            var offset = cp.offset(req);
+                var offset = cp.offset(req);
 
-            var sort = cp.sort(req);
+                var sort = cp.sort(req);
 
-            var lat = getParam(req, "lat", function(p) {
-                return parseFloat(p);
-            }, 0);
+                var lat = getParam(req, "lat", function(p) {
+                    return parseFloat(p);
+                }, 0);
 
-            var lon = getParam(req, "lon", function(p) {
-                return parseFloat(p);
-            }, 0);
+                var lon = getParam(req, "lon", function(p) {
+                    return parseFloat(p);
+                }, 0);
 
-            while (lon > 180) {
-                   lon -= 360;
-            }
-
-            while (lon < -180) {
-                   lon += 360;
-            }
-
-            var z = getParam(req, "zoom", function(p) {
-                return parseInt(p);
-            }, 0);
-            var pdist = 10;//point layer radius
-            //console.log(z);
-            var gl = tileMath.zoom_to_geohash_len(z, false);
-
-            var gh = geohash.encode(lat,lon,gl);
-            var meta_bbox = geohash.decode_bbox(gh);
-            geohash.neighbors(gh).forEach(function(n){
-                var nbb = geohash.decode_bbox(n);
-                if (nbb[0] < meta_bbox[0]) {
-                    meta_bbox[0] = nbb[0];
+                while (lon > 180) {
+                       lon -= 360;
                 }
-                if (nbb[1] < meta_bbox[1]) {
-                    meta_bbox[1] = nbb[1];
-                }
-                if (nbb[2] > meta_bbox[2]) {
-                    meta_bbox[2] = nbb[2];
-                }
-                if (nbb[3] > meta_bbox[3]) {
-                    meta_bbox[3] = nbb[3];
-                }
-            })
 
-            getMapDef(req, res, next, function(map_def){
-
-                var query = queryShim(map_def.rq);
-                var type = map_def.type;
-
-                makeKeyDefined(["query", "filtered", "filter"], query);
-
-                if (!query["query"]["filtered"]["filter"]["and"]) {
-                    query["query"]["filtered"]["filter"]["and"] = [];
+                while (lon < -180) {
+                       lon += 360;
                 }
-                query["query"]["filtered"]["filter"]["and"].push({
-                    "exists": {
-                        "field": "geopoint",
+
+                var z = getParam(req, "zoom", function(p) {
+                    return parseInt(p);
+                }, 0);
+                var pdist = 10;//point layer radius
+                //console.log(z);
+                var gl = tileMath.zoom_to_geohash_len(z, false);
+
+                var gh = geohash.encode(lat,lon,gl);
+                var meta_bbox = geohash.decode_bbox(gh);
+                geohash.neighbors(gh).forEach(function(n){
+                    var nbb = geohash.decode_bbox(n);
+                    if (nbb[0] < meta_bbox[0]) {
+                        meta_bbox[0] = nbb[0];
                     }
-                });
-                if(type=='points'){
-                    if(z<4){
-                        pdist=10;
-                    }else if(z>=4 && z<7){
-                        pdist=6;
-                    }else if(z>=7 && z<10){
-                        pdist=3;
-                    }else if(z>=10){
-                        pdist=.25;
+                    if (nbb[1] < meta_bbox[1]) {
+                        meta_bbox[1] = nbb[1];
+                    }
+                    if (nbb[2] > meta_bbox[2]) {
+                        meta_bbox[2] = nbb[2];
+                    }
+                    if (nbb[3] > meta_bbox[3]) {
+                        meta_bbox[3] = nbb[3];
+                    }
+                })
+
+                getMapDef(req, res, next, function(map_def){
+
+                    var query = queryShim(map_def.rq);
+                    var type = map_def.type;
+
+                    makeKeyDefined(["query", "filtered", "filter"], query);
+
+                    if (!query["query"]["filtered"]["filter"]["and"]) {
+                        query["query"]["filtered"]["filter"]["and"] = [];
                     }
                     query["query"]["filtered"]["filter"]["and"].push({
-                        "geo_distance": {
-                            "geopoint": {
-                                "lat": lat,
-                                "lon": lon
-                            },
-                            "distance":pdist+"km"
+                        "exists": {
+                            "field": "geopoint",
                         }
-                    })
-                }else{
-                    query["query"]["filtered"]["filter"]["and"].push({
-                        /*"geohash_cell": {
-                            "geopoint": {
-                                "lat": lat,
-                                "lon": lon
-                            },
-                            "precision": gl
-                        }*/
-                        "geo_bounding_box":{
-                            "geopoint":{
-                                "top_left":{
-                                    "lat":meta_bbox[2],
-                                    "lon":meta_bbox[1]
+                    });
+                    if(type=='points'){
+                        if(z<4){
+                            pdist=10;
+                        }else if(z>=4 && z<7){
+                            pdist=6;
+                        }else if(z>=7 && z<10){
+                            pdist=3;
+                        }else if(z>=10){
+                            pdist=.25;
+                        }
+                        query["query"]["filtered"]["filter"]["and"].push({
+                            "geo_distance": {
+                                "geopoint": {
+                                    "lat": lat,
+                                    "lon": lon
                                 },
-                                "bottom_right":{
-                                    "lat": meta_bbox[0],
-                                    "lon": meta_bbox[3]
-                                }
+                                "distance":pdist+"km"
                             }
-                        }
-                    })                    
-                }
-
-                query["aggs"] = {
-                    "rs": {
-                        "terms": {
-                            "field": "recordset",
-                            "size": config.maxRecordsets
-                        }
-                    },
-                    "max_dm": {
-                        "max": {
-                            "field": "datemodified"
-                        }
-                    }
-                };
-                query["from"] = offset;
-                query["size"] = limit;
-                query["sort"] = sort;
-
-                searchShim(config.search.index,"records","_search",query,function(err,body){
-                    if(err) {
-                        next(err)
-                    } else {
-                        var links, extra;
-                        if(type=='points'){
-                            extra={
-                                "radius":{
-                                    "lat":lat,
-                                    "lon":lon,
-                                    "distance":pdist
-                                }
-                            }
-                        }else{
-                            extra={
-                                "bbox": {
-                                    "nw": {
-                                        "lat": meta_bbox[2],
-                                        "lon": meta_bbox[1]
+                        })
+                    }else{
+                        query["query"]["filtered"]["filter"]["and"].push({
+                            /*"geohash_cell": {
+                                "geopoint": {
+                                    "lat": lat,
+                                    "lon": lon
+                                },
+                                "precision": gl
+                            }*/
+                            "geo_bounding_box":{
+                                "geopoint":{
+                                    "top_left":{
+                                        "lat":meta_bbox[2],
+                                        "lon":meta_bbox[1]
                                     },
-                                    "se": {
+                                    "bottom_right":{
                                         "lat": meta_bbox[0],
                                         "lon": meta_bbox[3]
                                     }
                                 }
-                            };
-                        }
-                        formatter.basic(body, res, next, extra);
+                            }
+                        })                    
                     }
+
+                    query["aggs"] = {
+                        "rs": {
+                            "terms": {
+                                "field": "recordset",
+                                "size": config.maxRecordsets
+                            }
+                        },
+                        "max_dm": {
+                            "max": {
+                                "field": "datemodified"
+                            }
+                        }
+                    };
+                    query["from"] = offset;
+                    query["size"] = limit;
+                    query["sort"] = sort;
+
+                    searchShim(config.search.index,"records","_search",query,function(err,body){
+                        if(err) {
+                            next(err)
+                        } else {
+                            var links, extra;
+                            if(type=='points'){
+                                extra={
+                                    "radius":{
+                                        "lat":lat,
+                                        "lon":lon,
+                                        "distance":pdist
+                                    }
+                                }
+                            }else{
+                                extra={
+                                    "bbox": {
+                                        "nw": {
+                                            "lat": meta_bbox[2],
+                                            "lon": meta_bbox[1]
+                                        },
+                                        "se": {
+                                            "lat": meta_bbox[0],
+                                            "lon": meta_bbox[3]
+                                        }
+                                    }
+                                };
+                            }
+                            formatter.basic(body, res, next, extra);
+                        }
+                    });
                 });
-            });
+            } catch (e) {
+                res.status(400).json(e);
+                next();
+                return;
+            }
         },
 
         getMapStyle: function(req, res, next) {
@@ -861,79 +867,85 @@ module.exports = function(app, config) {
         },
 
         createMap: function(req, res, next) {
-            var rq = cp.query("rq", req);
+            try {
+                var rq = cp.query("rq", req);
 
-            var type = getParam(req, "type", function(p) {
-                if (p === "points") {
-                    return "points";
-                } else if (p === "auto") {
-                    return "auto";
-                } else {
-                    return "geohash";
-                }
-            }, "geohash");
+                var type = getParam(req, "type", function(p) {
+                    if (p === "points") {
+                        return "points";
+                    } else if (p === "auto") {
+                        return "auto";
+                    } else {
+                        return "geohash";
+                    }
+                }, "geohash");
 
-            var threshold = getParam(req, "threshold", function(p) {
-                if (_.isFinite(p)) {
-                    return p;
-                } else {
-                    return 5000;
-                }
-            }, 5000);
+                var threshold = getParam(req, "threshold", function(p) {
+                    if (_.isFinite(p)) {
+                        return p;
+                    } else {
+                        return 5000;
+                    }
+                }, 5000);
 
-            var default_style = {
-                scale: 'YlOrRd',
-                pointScale: 'Paired',
-                styleOn: "scientificname"
-            };
+                var default_style = {
+                    scale: 'YlOrRd',
+                    pointScale: 'Paired',
+                    styleOn: "scientificname"
+                };
 
-            var style = getParam(req, "style", function(p) {
-                try {
-                    return JSON.parse(p);
-                } catch (e) {
-                    return p
-                }
-            }, default_style);
+                var style = getParam(req, "style", function(p) {
+                    try {
+                        return JSON.parse(p);
+                    } catch (e) {
+                        return p
+                    }
+                }, default_style);
 
-            _.defaults(style, default_style);
+                _.defaults(style, default_style);
 
-            var map_def = {
-                rq: rq,
-                type: type,
-                style: style,
-                threshold: threshold
-            };
+                var map_def = {
+                    rq: rq,
+                    type: type,
+                    style: style,
+                    threshold: threshold
+                };
 
-            var h = hasher.hash("sha1", map_def);
+                var h = hasher.hash("sha1", map_def);
 
-            config.redis.client.exists(h, function(err, map_exists) {
-                if (map_exists) {
-                    config.redis.client.get(h, function(err, s) {
-                        config.redis.client.get(s, function(err, stored_map_def) {
-                            var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
-
-                            mapDef(s, map_url, map_def, function(rb) {
-                                res.json(rb);
-                                next();
-                            })
-                        })
-                    })
-                } else {
-                    config.redis.client.incr("queryid", function(err, v) {
-                        var s = hashids.encode(v);
-                        config.redis.client.set(s, JSON.stringify(map_def), function(err, good) {
-                            config.redis.client.set(h, s, function(err, good) {
+                config.redis.client.exists(h, function(err, map_exists) {
+                    if (map_exists) {
+                        config.redis.client.get(h, function(err, s) {
+                            config.redis.client.get(s, function(err, stored_map_def) {
                                 var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
 
                                 mapDef(s, map_url, map_def, function(rb) {
                                     res.json(rb);
                                     next();
                                 })
-                            });
+                            })
                         })
-                    });
-                }
-            })
+                    } else {
+                        config.redis.client.incr("queryid", function(err, v) {
+                            var s = hashids.encode(v);
+                            config.redis.client.set(s, JSON.stringify(map_def), function(err, good) {
+                                config.redis.client.set(h, s, function(err, good) {
+                                    var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
+
+                                    mapDef(s, map_url, map_def, function(rb) {
+                                        res.json(rb);
+                                        next();
+                                    })
+                                });
+                            })
+                        });
+                    }
+                })
+            } catch (e) {
+                res.status(400).json(e);
+                next();
+                return;
+            }
         },
         getMap: function(req, res, next) {
             var s = req.params.s;

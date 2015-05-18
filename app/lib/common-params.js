@@ -2,6 +2,13 @@
 
 var _ = require("lodash");
 
+
+function ParameterParseException(message,context) {
+   this.error = message;
+   this.param = context;
+   this.name = "ParameterParseException";
+}
+
 module.exports = function(app,config) {
     var getParam = require("./get-param.js")(app,config);
 
@@ -40,17 +47,32 @@ module.exports = function(app,config) {
         },
         limit: function(req) {
             return getParam(req,"limit",function(p){
-               return Math.min(parseInt(p),config.maxLimit);
+                var pp = parseInt(p);
+                if (isNaN(pp)) {
+                    throw new ParameterParseException("numeric paramter expected, parsing did not return a number", "limit");
+                } else {
+                    return Math.min(pp,config.maxLimit);
+                }
             },config.defaultLimit);
         },
         offset: function(req) {
             return getParam(req,"offset",function(p){
-                return parseInt(p);
+                var pp = parseInt(p);
+                if (isNaN(pp)) {
+                    throw new ParameterParseException("numeric paramter expected, parsing did not return a number", "limit");
+                } else {
+                    return pp
+                }
             },0);
         },
         top_count: function(req) {
             return getParam(req,"count",function(p){
-               return Math.min(parseInt(p),config.maxLimit);
+                var pp = parseInt(p);
+                if (isNaN(pp)) {
+                    throw new ParameterParseException("numeric paramter expected, parsing did not return a number", "limit");
+                } else {
+                    return Math.min(pp,config.maxLimit);
+                }
             },10);
         },
         query: function(n,req) {
@@ -61,7 +83,7 @@ module.exports = function(app,config) {
                     }
                     return p;
                 } catch (e) {
-                    return {}
+                    throw new ParameterParseException("unable to parse parameter", n);
                 }
             },{});
         },
@@ -73,7 +95,7 @@ module.exports = function(app,config) {
                     }
                     return p;
                 } catch (e) {
-                    return undefined;
+                    throw new ParameterParseException("unable to parse parameter", "top_fields");
                 }
             },undefined);
         },
@@ -85,7 +107,7 @@ module.exports = function(app,config) {
                     }
                     return p;
                 } catch (e) {
-                    return undefined;
+                    throw new ParameterParseException("unable to parse parameter", "fields");
                 }
             },undefined);
         },
@@ -97,7 +119,7 @@ module.exports = function(app,config) {
                     }
                     return p;
                 } catch (e) {
-                    return undefined;
+                    throw new ParameterParseException("unable to parse parameter", "fields_exclude");
                 }
             },undefined);
         }
