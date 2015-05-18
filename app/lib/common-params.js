@@ -90,7 +90,7 @@ module.exports = function(app,config) {
         top_fields: function(req) {
             return getParam(req,"top_fields",function(p){
                 try {
-                    if (_.isString(p) && ( p[0] == "\"" || p[0] = "["  || p[0] = "{" )) {
+                    if (_.isString(p) && ( p[0] == "\"" || p[0] == "["  || p[0] == "{" )) {
                         p = JSON.parse(p);
                     }
                     // Special case for single value as string to make R easier to work with
@@ -106,7 +106,7 @@ module.exports = function(app,config) {
         fields: function(req) {
             return getParam(req,"fields",function(p){
                 try {
-                    if (_.isString(p) && ( p[0] == "\"" || p[0] = "["  || p[0] = "{" )) {
+                    if (_.isString(p) && ( p[0] == "\"" || p[0] == "["  || p[0] == "{" )) {
                         p = JSON.parse(p);
                     }
                     // Special case for single value as string to make R easier to work with
