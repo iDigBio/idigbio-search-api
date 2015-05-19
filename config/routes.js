@@ -30,6 +30,7 @@ module.exports = function(app, config) {
         .post(home.searchProxyPost);
     app.route('/v2/meta/fields/:t')
         .get(home.indexFields);
+    app.get('/v2/view/:uuid', view.basic);
     app.get('/v2/view/:t/:uuid', view.basic);
     app.route('/v2/search')
         .get(search.basic)

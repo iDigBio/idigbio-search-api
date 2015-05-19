@@ -57,6 +57,7 @@ module.exports = function(app,config) {
 
             rb.items.push({
                 "uuid": hit._id,
+                "type": hit._type,
                 "etag": hit._source.etag,
                 "version": hit._source.version,
                 "data": hit._source.data,
@@ -95,6 +96,7 @@ module.exports = function(app,config) {
             delete indexterms["data"];
             rb.items.push({
                 "uuid": hit._id,
+                "type": hit._type,
                 "etag": hit._source.etag,
                 "version": hit._source.version,
                 "data": hit._source.data,

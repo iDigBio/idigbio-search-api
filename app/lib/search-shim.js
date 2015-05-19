@@ -61,6 +61,10 @@ module.exports = function(app,config) {
                         body: query_only
                 }
 
+                if (type == "_all") {
+                    delete options.type;
+                }
+
                 if (query._source) {
                     var source_object = false;
                     if (query._source.exclude) {
@@ -118,9 +122,14 @@ module.exports = function(app,config) {
                     cb("unsupported op", null);
                 }
             } else {
+                var search_url = config.search.server + "/" + index + "/" + type + "/" + op;
+                if (type == "_all") {
+                    search_url = config.search.server + "/" + index + "/" + op;
+                }
+
                 if(op == "_mapping") {
                     request.get({
-                        url: config.search.server + "/" + index + "/" + type + "/" + op
+                        url: search_url
                     },function (error, response, body) {
                         var b = JSON.parse(body)
                         if (process.env.GEN_MOCK == "true"){
@@ -130,7 +139,7 @@ module.exports = function(app,config) {
                     });
                 } else {
                     request.post({
-                        url: config.search.server + "/" + index + "/" + type + "/" + op,
+                        url: search_url,
                         body: JSON.stringify(query)
                     },function (error, response, body) {
                         var b = JSON.parse(body)
