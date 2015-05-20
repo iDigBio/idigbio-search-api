@@ -339,7 +339,7 @@ module.exports = function(app, config) {
         });
     }
 
-    function mapDef(s, map_url, map_def, cb) {
+    function mapDef(s, map_url, map_def, cb, stats_info) {
         var query = queryShim(map_def.rq);
 
         makeKeyDefined(["query", "filtered", "filter"], query);
@@ -395,7 +395,7 @@ module.exports = function(app, config) {
                     cb(rb);
                 });
             }
-        });
+        }, stats_info);
     }
 
     function makeBasicFilter(map_def) {
@@ -922,6 +922,10 @@ module.exports = function(app, config) {
                                 mapDef(s, map_url, map_def, function(rb) {
                                     res.json(rb);
                                     next();
+                                }, {
+                                    type: "mapping",
+                                    recordtype: "records",
+                                    ip: req.ip,
                                 })
                             })
                         })
@@ -935,6 +939,10 @@ module.exports = function(app, config) {
                                     mapDef(s, map_url, map_def, function(rb) {
                                         res.json(rb);
                                         next();
+                                    }, {
+                                        type: "mapping",
+                                        recordtype: "records",
+                                        ip: req.ip,
                                     })
                                 });
                             })
@@ -966,6 +974,10 @@ module.exports = function(app, config) {
                 mapDef(s, map_url, map_def, function(rb) {
                     res.json(rb);
                     next();
+                }, {
+                    type: "mapping",
+                    recordtype: "records",
+                    ip: req.ip,
                 })
             });
         }

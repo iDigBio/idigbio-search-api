@@ -68,6 +68,7 @@ module.exports = function(app,config) {
 
         attribution(body.aggregations.rs.buckets, function(results){
             rb.attribution = results;
+
             if (extra) {
                 _.merge(rb,extra);
             }

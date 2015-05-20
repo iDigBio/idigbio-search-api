@@ -134,6 +134,11 @@ module.exports = function(app,config) {
                     throw new ParameterParseException("unable to parse parameter", "fields_exclude");
                 }
             },undefined);
+        },
+        noattr: function(req) {
+            return getParam(req,"no_attribution",function(p){
+                return p
+            },false)
         }
     };
 };

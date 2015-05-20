@@ -38,6 +38,10 @@ module.exports = function(app, config) {
                     } else {
                         formatter.basic(body, res, next);
                     }
+                }, {
+                    type: "search",
+                    recordtype: "mediarecords",
+                    ip: req.ip,
                 });
             } catch (e) {
                 res.status(400).json(e);
@@ -70,6 +74,10 @@ module.exports = function(app, config) {
                     } else {
                         formatter.basic(body, res, next);
                     }
+                }, {
+                    type: "search",
+                    recordtype: "records",
+                    ip: req.ip,
                 });
             } catch (e) {
                 res.status(400).json(e);

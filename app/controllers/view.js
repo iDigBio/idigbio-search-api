@@ -75,6 +75,10 @@ module.exports = function(app, config) {
                         next();
                     }
                 }
+            }, {
+                    type: "view",
+                    recordtype: t,
+                    ip: req.ip,
             });
         },
     };

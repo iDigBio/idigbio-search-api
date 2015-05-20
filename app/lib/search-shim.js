@@ -12,8 +12,62 @@ module.exports = function(app,config) {
         fs.writeFileSync("test/mock/" + h + ".json", str)
     }
 
+    function statsFromResponse(query,stats_info,response){
+        if (process.env.NODE_ENV != "test") {
+            try {
+                var payload = {};
+                if (stats_info["type"] == "search") {
+                    var search_payload = {};
+
+                    response.aggregations.rs.buckets.forEach(function(b){
+                        search_payload[b["key"]] = b["doc_count"];
+                    });
+
+                    var seen_payload = {};
+                    response.hits.hits.forEach(function(h){
+                        seen_payload[h._id] = h._source.recordset
+                    })
+
+                    payload["seen_payload"] = seen_payload;
+                    payload["search_payload"] = search_payload;
+                } else if (stats_info["type"] == "mapping") {
+                    response.aggregations.rs.buckets.forEach(function(b){
+                        payload[b["key"]] = b["doc_count"];
+                    });
+                } else if (stats_info["type"] == "view") {
+                    if (response.hits.hits.length > 0) {
+                        query = "view";
+                        payload[response.hits.hits[0]._id] = response.hits.hits[0]._source.recordset;
+                    }
+                }
+
+                if (Object.keys(payload).length > 0) {
+                    var stats = {
+                        type: stats_info["type"],
+                        record_type: stats_info["recordtype"],
+                        ip: stats_info["ip"],
+                        query: query,
+                        source: "api-" + process.env.NODE_ENV,
+                        payload: payload
+                    }
+
+                    request.post(
+                        {
+                            url: "http://localhost:3000",
+                            body: JSON.stringify(stats)
+                        },function (error, response, body) {
+                            //console.log(error,body);
+                        }
+                    );
+                }
+            } catch(e) {
+                console.log("Stats error:", e)
+            }
+        }
+    }
+
     if (process.env.CI == "true") {
-        return function(index,type,op,query,cb){
+        return function(index,type,op,query,cb,stats_info){
             var h = hasher.hash("sha256",[index,type,op,query]);
             try {
                 var resp = JSON.parse(fs.readFileSync("test/mock/" + h + ".json"));
@@ -29,7 +83,7 @@ module.exports = function(app,config) {
              client = elasticsearch.Client(_.cloneDeep(config.elasticsearch));
         }
 
-        return function(index, type, op, query, cb){
+        return function(index, type, op, query, cb, stats_info){
             var h = hasher.hash("sha256",[index,type,op,query]);
 
             if (op == "_count") {
@@ -99,6 +153,9 @@ module.exports = function(app,config) {
                         if (process.env.GEN_MOCK == "true"){
                             writeMock(h,response);
                         }
+                        if (stats_info) {
+                            statsFromResponse(query_only.query,stats_info,response);
+                        }
                         cb(error,response);
                     })
                 } else if (op == "_count") {
@@ -145,6 +202,9 @@ module.exports = function(app,config) {
                         var b = JSON.parse(body)
                         if (process.env.GEN_MOCK == "true"){
                             writeMock(h,b);
+                        }
+                        if (stats_info) {
+                            statsFromResponse(query_only.query,stats_info,response);
                         }
                         cb(error,b);
                     });
