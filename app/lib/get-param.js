@@ -1,42 +1,50 @@
 "use strict";
 
+var _ = require("lodash");
+
 //module.exports = function(app,config) {
 module.exports = function() {
-    return function(req,param,munger,def) {
-        var params = [param];
-        var mangle_param;
-
-        // topFileds -> top_fields
-        if (/.*[A-Z].*/.test(param)) {
-            mangle_param = "";
-            param.split(/([A-Z])/).forEach(function(part){
-                if (/[A-Z]/.test(part)) {
-                    mangle_param += "_" + part.toLowerCase();
-                } else {
-                    mangle_param += part;
-                }
-            })
-            if (mangle_param != param) {
-                params.push(mangle_param);
-            }
+    return function(req,params,munger,def) {
+        if (!_.isArray(params)) {
+            params = [params]
         }
 
-        // top_fields -> topFields
-        if (/.*_.*/.test(param)) {
-            mangle_param = "";
-            param.split("_").forEach(function(part){
-                if (mangle_param == "") {
-                    mangle_param += part;
-                } else {
-                    mangle_param += part[0].toUpperCase() + part.substr(1);
-                }
-            });
-            if (mangle_param != param) {
-                params.push(mangle_param);
-            }
-        }
+        params.forEach(function(param){
+            var mangle_param;
 
-        for (var i in params) {
+            // topFileds -> top_fields
+            if (/.*[A-Z].*/.test(param)) {
+                mangle_param = "";
+                param.split(/([A-Z])/).forEach(function(part){
+                    if (/[A-Z]/.test(part)) {
+                        mangle_param += "_" + part.toLowerCase();
+                    } else {
+                        mangle_param += part;
+                    }
+                })
+                if (mangle_param != param) {
+                    params.push(mangle_param);
+                }
+            }
+
+            // top_fields -> topFields
+            if (/.*_.*/.test(param)) {
+                mangle_param = "";
+                param.split("_").forEach(function(part){
+                    if (mangle_param == "") {
+                        mangle_param += part;
+                    } else {
+                        mangle_param += part[0].toUpperCase() + part.substr(1);
+                    }
+                });
+                if (mangle_param != param) {
+                    params.push(mangle_param);
+                }
+            }
+        });
+
+
+        for (var i = 0; i < params.length; i++) {
             var p = params[i];
             if (req.body[p]) {
                 return munger(req.body[p]);
