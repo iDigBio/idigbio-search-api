@@ -30,13 +30,21 @@ module.exports = function(app, config) {
 
                 var fields_exclude = cp.fields_exclude(req);
 
+                var no_attribution = cp.noattr(req);
+
+                var extra = {};
+
+                if (no_attribution) {
+                    extra = { attribution: {} };
+                }
+
                 var query = qg.media_query(rq,mq,fields,sort,limit,offset,fields_exclude)
 
                 searchShim(config.search.index,"mediarecords","_search",query,function(err,body){
                     if(err) {
                         next(err)
                     } else {
-                        formatter.basic(body, res, next);
+                        formatter.basic(body, res, next, extra);
                     }
                 }, {
                     type: "search",
@@ -67,12 +75,20 @@ module.exports = function(app, config) {
 
                 var fields_exclude = cp.fields_exclude(req);
 
+                var no_attribution = cp.noattr(req);
+
+                var extra = {};
+
+                if (no_attribution) {
+                    extra = { attribution: {} };
+                }
+
                 var query = qg.record_query(rq,fields,sort,limit,offset,fields_exclude);
                 searchShim(config.search.index,"records","_search",query,function(err,body){
                     if(err) {
                         next(err)
                     } else {
-                        formatter.basic(body, res, next);
+                        formatter.basic(body, res, next, extra);
                     }
                 }, {
                     type: "search",
