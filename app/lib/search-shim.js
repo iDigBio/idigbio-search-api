@@ -53,7 +53,7 @@ module.exports = function(app,config) {
 
                     request.post(
                         {
-                            url: "http://localhost:3000",
+                            url: "http://idb-redis-stats.acis.ufl.edu:3000",
                             body: JSON.stringify(stats)
                         },function (error, response, body) {
                             //console.log(error,body);
