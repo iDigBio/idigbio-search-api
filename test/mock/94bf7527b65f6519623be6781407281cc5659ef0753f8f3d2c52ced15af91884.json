@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 715938,
+    "total": 715972,
     "max_score": null,
     "hits": [
       {
@@ -198,106 +198,6 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "records",
-        "_id": "7f38eced-b476-4166-879c-c703f4b30582",
-        "_score": null,
-        "_source": {
-          "geopoint": {
-            "lat": 31.670833,
-            "lon": -110.941667
-          },
-          "family": "asteraceae",
-          "recordset": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
-          "dqs": 0.3333333333333333,
-          "stateprovince": "arizona",
-          "county": "santa cruz county",
-          "phylum": "magnoliophyta",
-          "catalognumber": "des00035323",
-          "specificepithet": "acerosa",
-          "continent": "north america",
-          "uuid": "7f38eced-b476-4166-879c-c703f4b30582",
-          "countrycode": "usa",
-          "basisofrecord": "preservedspecimen",
-          "collector": "wendy hodgson",
-          "institutioncode": "des",
-          "mediarecords": [
-            "3a55004b-9d27-48f2-9bc1-51e9e782aec3"
-          ],
-          "datemodified": "2015-01-16T19:33:35.513000+00:00",
-          "datecollected": "1989-08-20T00:00:00+00:00",
-          "etag": "33d9994105ffb7e10e2114b47ef770248c9cf56a",
-          "recordnumber": "5624",
-          "minelevation": 1219,
-          "hasImage": true,
-          "kingdom": "plantae",
-          "collectionid": "edb9860c-c481-4d19-88cc-224a536ebcd4",
-          "scientificname": "zinnia acerosa",
-          "data": {
-            "dwc:startDayOfYear": "232",
-            "dwc:specificEpithet": "acerosa",
-            "dwc:county": "Santa Cruz County",
-            "dwc:recordedBy": "Wendy Hodgson",
-            "dwc:order": "Asterales",
-            "dwc:habitat": "Low hills",
-            "dwc:scientificNameAuthorship": "(DC.) A. Gray",
-            "dwc:occurrenceID": "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0",
-            "dwc:verbatimCoordinates": "31d 40m 15s N; 110d 56m 30s W; TRS: T20S R14E S19",
-            "dwc:verbatimElevation": "4000ft.",
-            "id": "2057029",
-            "dwc:stateProvince": "Arizona",
-            "dwc:eventDate": "1989-08-20",
-            "dwc:collectionID": "edb9860c-c481-4d19-88cc-224a536ebcd4",
-            "dwc:country": "USA",
-            "idigbio:recordId": "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0",
-            "dwc:kingdom": "Plantae",
-            "dwc:decimalLatitude": "31.670833",
-            "dwc:occurrenceRemarks": "Frequent perennial, subshrub, rays white.",
-            "dwc:basisOfRecord": "PreservedSpecimen",
-            "dwc:genus": "Zinnia",
-            "dwc:family": "Asteraceae",
-            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
-            "symbiota:verbatimScientificName": "Zinnia acerosa",
-            "dwc:phylum": "Magnoliophyta",
-            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=2057029",
-            "dwc:locality": "Foothills of Santa Rita Mountains, above (N of) Montosa Canyon, 0.7 miles SE of jtct of FSR 183 and 184, S of 184.",
-            "dwc:institutionCode": "DES",
-            "dwc:reproductiveCondition": "flowers & fruit",
-            "dwc:catalogNumber": "DES00035323",
-            "dwc:month": "8",
-            "dwc:decimalLongitude": "-110.941667",
-            "dwc:scientificName": "Zinnia acerosa",
-            "dwc:recordNumber": "5624",
-            "dwc:minimumElevationInMeters": "1219",
-            "dcterms:modified": "2015-01-06 12:31:47",
-            "dwc:associatedTaxa": "Tecoma stans, Hibiscus coulteri, Amoreuxia palmatifida, Erythrina flabelliformis, Cercidium floridum, Notholaena cochisensis, Notholaena sinuata, Aloysia wrightii, Ipomoea costellata, Cnidoscolus angustidens, Agave schottii, Agave palmeri, Opuntia phaeacantha var. major, Opuntia engelmannii, Fouquieria splendens, Janusia gracilis, Haplophyton crooksii, Calliandra eriophylla, Eysenhardtia orthocarpa, Mammillaria grahamii, Manihot angustiloba, Gossypium thurberi, Opuntia violacea var. gosseliniana, Lycium berlandieri, Nissolia schottii",
-            "dwc:day": "20",
-            "dwc:year": "1989"
-          },
-          "class": "magnoliopsida",
-          "occurrenceid": "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0",
-          "country": "united states",
-          "locality": "foothills of santa rita mountains, above (n of) montosa canyon, 0.7 miles se of jtct of fsr 183 and 184, s of 184.",
-          "eventdate": "1989-08-20",
-          "flags": [
-            "geopoint_datum_missing",
-            "dwc_country_replaced",
-            "idigbio_isocountrycode_added",
-            "dwc_continent_added",
-            "dwc_class_added"
-          ],
-          "recordids": [
-            "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0"
-          ],
-          "genus": "zinnia",
-          "order": "asterales"
-        },
-        "sort": [
-          "zinnia",
-          "acerosa"
-        ]
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "records",
         "_id": "60fddc93-9e63-493c-9848-4cae63884fbc",
         "_score": null,
         "_source": {
@@ -386,6 +286,206 @@
           ],
           "recordids": [
             "urn:uuid:a85c8550-3f61-4b99-9d1b-f2d1d9e783a4"
+          ],
+          "genus": "zinnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "zinnia",
+          "acerosa"
+        ]
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "records",
+        "_id": "ba819fdc-fc51-42d1-8d16-0322a4098788",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 32.98,
+            "lon": -109.26
+          },
+          "family": "asteraceae",
+          "recordset": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
+          "dqs": 0.31666666666666665,
+          "stateprovince": "arizona",
+          "county": "greenlee county",
+          "phylum": "magnoliophyta",
+          "specificepithet": "acerosa",
+          "continent": "north america",
+          "uuid": "ba819fdc-fc51-42d1-8d16-0322a4098788",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "h. d. hammond",
+          "institutioncode": "asu",
+          "mediarecords": [
+            "9b1ad905-3882-4441-a1e4-f6b66a0e64c7"
+          ],
+          "datemodified": "2015-01-17T07:12:03.028000+00:00",
+          "datecollected": "1999-08-12T00:00:00+00:00",
+          "etag": "a3df1a0e119a0f5f4657024da1e28f0e56d1774b",
+          "recordnumber": "11635",
+          "minelevation": 1135,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "a2e32c87-d320-4a01-bafd-a9182ae2e191",
+          "scientificname": "zinnia acerosa",
+          "data": {
+            "dwc:startDayOfYear": "224",
+            "dwc:specificEpithet": "acerosa",
+            "dwc:county": "Greenlee County",
+            "dwc:recordedBy": "H. D. Hammond",
+            "dwc:order": "Asterales",
+            "dwc:habitat": "Embankment above road",
+            "dwc:scientificNameAuthorship": "(DC.) A. Gray",
+            "dwc:occurrenceID": "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9",
+            "dwc:verbatimElevation": "3500ft",
+            "id": "757910",
+            "dwc:stateProvince": "Arizona",
+            "dwc:eventDate": "1999-08-12",
+            "dwc:collectionID": "a2e32c87-d320-4a01-bafd-a9182ae2e191",
+            "dwc:country": "USA",
+            "idigbio:recordId": "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9",
+            "dwc:collectionCode": "Plants",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "32.98",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Zinnia",
+            "dwc:family": "Asteraceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "symbiota:verbatimScientificName": "Zinnia acerosa",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=757910",
+            "dwc:locality": "Old Safford Road (Black Hills Back Country Byway); W of US Highway 191; N of Gila River",
+            "dwc:institutionCode": "ASU",
+            "dwc:reproductiveCondition": "flowers",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-109.26",
+            "dwc:scientificName": "Zinnia acerosa",
+            "dwc:otherCatalogNumbers": "228488",
+            "dwc:recordNumber": "11635",
+            "dwc:minimumElevationInMeters": "1135",
+            "dcterms:modified": "2015-01-06 12:31:47",
+            "dwc:associatedTaxa": "Larrea",
+            "dwc:day": "12",
+            "dwc:year": "1999"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9",
+          "country": "united states",
+          "locality": "old safford road (black hills back country byway); w of us highway 191; n of gila river",
+          "collectioncode": "plants",
+          "eventdate": "1999-08-12",
+          "flags": [
+            "geopoint_datum_missing",
+            "geopoint_low_precision",
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9"
+          ],
+          "genus": "zinnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "zinnia",
+          "acerosa"
+        ]
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "records",
+        "_id": "7f38eced-b476-4166-879c-c703f4b30582",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 31.670833,
+            "lon": -110.941667
+          },
+          "family": "asteraceae",
+          "recordset": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "arizona",
+          "county": "santa cruz county",
+          "phylum": "magnoliophyta",
+          "catalognumber": "des00035323",
+          "specificepithet": "acerosa",
+          "continent": "north america",
+          "uuid": "7f38eced-b476-4166-879c-c703f4b30582",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "wendy hodgson",
+          "institutioncode": "des",
+          "mediarecords": [
+            "3a55004b-9d27-48f2-9bc1-51e9e782aec3"
+          ],
+          "datemodified": "2015-01-16T19:33:35.513000+00:00",
+          "datecollected": "1989-08-20T00:00:00+00:00",
+          "etag": "33d9994105ffb7e10e2114b47ef770248c9cf56a",
+          "recordnumber": "5624",
+          "minelevation": 1219,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "edb9860c-c481-4d19-88cc-224a536ebcd4",
+          "scientificname": "zinnia acerosa",
+          "data": {
+            "dwc:startDayOfYear": "232",
+            "dwc:specificEpithet": "acerosa",
+            "dwc:county": "Santa Cruz County",
+            "dwc:recordedBy": "Wendy Hodgson",
+            "dwc:order": "Asterales",
+            "dwc:habitat": "Low hills",
+            "dwc:scientificNameAuthorship": "(DC.) A. Gray",
+            "dwc:occurrenceID": "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0",
+            "dwc:verbatimCoordinates": "31d 40m 15s N; 110d 56m 30s W; TRS: T20S R14E S19",
+            "dwc:verbatimElevation": "4000ft.",
+            "id": "2057029",
+            "dwc:stateProvince": "Arizona",
+            "dwc:eventDate": "1989-08-20",
+            "dwc:collectionID": "edb9860c-c481-4d19-88cc-224a536ebcd4",
+            "dwc:country": "USA",
+            "idigbio:recordId": "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "31.670833",
+            "dwc:occurrenceRemarks": "Frequent perennial, subshrub, rays white.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Zinnia",
+            "dwc:family": "Asteraceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "symbiota:verbatimScientificName": "Zinnia acerosa",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=2057029",
+            "dwc:locality": "Foothills of Santa Rita Mountains, above (N of) Montosa Canyon, 0.7 miles SE of jtct of FSR 183 and 184, S of 184.",
+            "dwc:institutionCode": "DES",
+            "dwc:reproductiveCondition": "flowers & fruit",
+            "dwc:catalogNumber": "DES00035323",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-110.941667",
+            "dwc:scientificName": "Zinnia acerosa",
+            "dwc:recordNumber": "5624",
+            "dwc:minimumElevationInMeters": "1219",
+            "dcterms:modified": "2015-01-06 12:31:47",
+            "dwc:associatedTaxa": "Tecoma stans, Hibiscus coulteri, Amoreuxia palmatifida, Erythrina flabelliformis, Cercidium floridum, Notholaena cochisensis, Notholaena sinuata, Aloysia wrightii, Ipomoea costellata, Cnidoscolus angustidens, Agave schottii, Agave palmeri, Opuntia phaeacantha var. major, Opuntia engelmannii, Fouquieria splendens, Janusia gracilis, Haplophyton crooksii, Calliandra eriophylla, Eysenhardtia orthocarpa, Mammillaria grahamii, Manihot angustiloba, Gossypium thurberi, Opuntia violacea var. gosseliniana, Lycium berlandieri, Nissolia schottii",
+            "dwc:day": "20",
+            "dwc:year": "1989"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0",
+          "country": "united states",
+          "locality": "foothills of santa rita mountains, above (n of) montosa canyon, 0.7 miles se of jtct of fsr 183 and 184, s of 184.",
+          "eventdate": "1989-08-20",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "urn:uuid:88770086-f689-4e82-85fd-19fb987509d0"
           ],
           "genus": "zinnia",
           "order": "asterales"
@@ -490,106 +590,6 @@
           "verbatimeventdate": "6 mar 2010",
           "recordids": [
             "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\urn:catalog:uconn:conn:conn00097165"
-          ],
-          "genus": "zinnia",
-          "order": "asterales"
-        },
-        "sort": [
-          "zinnia",
-          "acerosa"
-        ]
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "records",
-        "_id": "ba819fdc-fc51-42d1-8d16-0322a4098788",
-        "_score": null,
-        "_source": {
-          "geopoint": {
-            "lat": 32.98,
-            "lon": -109.26
-          },
-          "family": "asteraceae",
-          "recordset": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
-          "dqs": 0.31666666666666665,
-          "stateprovince": "arizona",
-          "county": "greenlee county",
-          "phylum": "magnoliophyta",
-          "specificepithet": "acerosa",
-          "continent": "north america",
-          "uuid": "ba819fdc-fc51-42d1-8d16-0322a4098788",
-          "countrycode": "usa",
-          "basisofrecord": "preservedspecimen",
-          "collector": "h. d. hammond",
-          "institutioncode": "asu",
-          "mediarecords": [
-            "9b1ad905-3882-4441-a1e4-f6b66a0e64c7"
-          ],
-          "datemodified": "2015-01-17T07:12:03.028000+00:00",
-          "datecollected": "1999-08-12T00:00:00+00:00",
-          "etag": "a3df1a0e119a0f5f4657024da1e28f0e56d1774b",
-          "recordnumber": "11635",
-          "minelevation": 1135,
-          "hasImage": true,
-          "kingdom": "plantae",
-          "collectionid": "a2e32c87-d320-4a01-bafd-a9182ae2e191",
-          "scientificname": "zinnia acerosa",
-          "data": {
-            "dwc:startDayOfYear": "224",
-            "dwc:specificEpithet": "acerosa",
-            "dwc:county": "Greenlee County",
-            "dwc:recordedBy": "H. D. Hammond",
-            "dwc:order": "Asterales",
-            "dwc:habitat": "Embankment above road",
-            "dwc:scientificNameAuthorship": "(DC.) A. Gray",
-            "dwc:occurrenceID": "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9",
-            "dwc:verbatimElevation": "3500ft",
-            "id": "757910",
-            "dwc:stateProvince": "Arizona",
-            "dwc:eventDate": "1999-08-12",
-            "dwc:collectionID": "a2e32c87-d320-4a01-bafd-a9182ae2e191",
-            "dwc:country": "USA",
-            "idigbio:recordId": "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9",
-            "dwc:collectionCode": "Plants",
-            "dwc:kingdom": "Plantae",
-            "dwc:decimalLatitude": "32.98",
-            "dwc:basisOfRecord": "PreservedSpecimen",
-            "dwc:genus": "Zinnia",
-            "dwc:family": "Asteraceae",
-            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
-            "symbiota:verbatimScientificName": "Zinnia acerosa",
-            "dwc:phylum": "Magnoliophyta",
-            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=757910",
-            "dwc:locality": "Old Safford Road (Black Hills Back Country Byway); W of US Highway 191; N of Gila River",
-            "dwc:institutionCode": "ASU",
-            "dwc:reproductiveCondition": "flowers",
-            "dwc:month": "8",
-            "dwc:decimalLongitude": "-109.26",
-            "dwc:scientificName": "Zinnia acerosa",
-            "dwc:otherCatalogNumbers": "228488",
-            "dwc:recordNumber": "11635",
-            "dwc:minimumElevationInMeters": "1135",
-            "dcterms:modified": "2015-01-06 12:31:47",
-            "dwc:associatedTaxa": "Larrea",
-            "dwc:day": "12",
-            "dwc:year": "1999"
-          },
-          "class": "magnoliopsida",
-          "occurrenceid": "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9",
-          "country": "united states",
-          "locality": "old safford road (black hills back country byway); w of us highway 191; n of gila river",
-          "collectioncode": "plants",
-          "eventdate": "1999-08-12",
-          "flags": [
-            "geopoint_datum_missing",
-            "geopoint_low_precision",
-            "dwc_country_replaced",
-            "idigbio_isocountrycode_added",
-            "dwc_continent_added",
-            "dwc_class_added"
-          ],
-          "recordids": [
-            "urn:uuid:992b0f99-2c14-438d-8972-d8a1556a78e9"
           ],
           "genus": "zinnia",
           "order": "asterales"
@@ -994,23 +994,23 @@
       "buckets": [
         {
           "key": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
-          "doc_count": 312280
+          "doc_count": 312293
         },
         {
           "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-          "doc_count": 84906
+          "doc_count": 84909
         },
         {
           "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
-          "doc_count": 45857
+          "doc_count": 45861
         },
         {
           "key": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
-          "doc_count": 30413
+          "doc_count": 30415
         },
         {
           "key": "7450a9e3-ef95-4f9e-8260-09b498d2c5e6",
-          "doc_count": 29353
+          "doc_count": 29354
         },
         {
           "key": "215eeaf0-0a88-409e-a75d-aec98b7c41eb",
@@ -1018,27 +1018,27 @@
         },
         {
           "key": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
-          "doc_count": 17754
+          "doc_count": 17755
         },
         {
           "key": "4523e216-ee13-4b15-a3f7-a6fd56431604",
-          "doc_count": 16925
+          "doc_count": 16927
         },
         {
           "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-          "doc_count": 16244
+          "doc_count": 16245
         },
         {
           "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
-          "doc_count": 13508
+          "doc_count": 13509
         },
         {
           "key": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
-          "doc_count": 11734
+          "doc_count": 11735
         },
         {
           "key": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
-          "doc_count": 11551
+          "doc_count": 11552
         },
         {
           "key": "05c029de-734c-450a-a41a-56061b7ebb18",
@@ -1058,7 +1058,7 @@
         },
         {
           "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
-          "doc_count": 7770
+          "doc_count": 7771
         },
         {
           "key": "1527b668-b797-42be-94d3-0058e1393e94",
@@ -1066,7 +1066,7 @@
         },
         {
           "key": "76fd34da-4892-4821-858d-98fe9e28ba8b",
-          "doc_count": 7071
+          "doc_count": 7072
         },
         {
           "key": "781fd581-7b93-471e-a025-413e4bcd8491",
@@ -1086,7 +1086,7 @@
         },
         {
           "key": "43aa1339-67e4-4298-b7c5-3d0f201266ef",
-          "doc_count": 5088
+          "doc_count": 5089
         },
         {
           "key": "09edf7d2-e68e-4a42-93da-762f86bb814f",
@@ -1110,7 +1110,7 @@
         },
         {
           "key": "204fbebc-37cc-4331-a2be-11f38949561c",
-          "doc_count": 1552
+          "doc_count": 1553
         },
         {
           "key": "06c35934-1b75-4196-838d-29d509951bf9",
@@ -1219,7 +1219,8 @@
       ]
     },
     "max_dm": {
-      "value": 1429341139664
+      "value": 1429341139664,
+      "value_as_string": "2015-04-18T07:12:19.664Z"
     }
   }
 }

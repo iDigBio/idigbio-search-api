@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 13432,
+    "total": 13433,
     "max_score": 1,
     "hits": [
       {
@@ -859,7 +859,7 @@
   },
   "aggregations": {
     "fdh": {
-      "doc_count": 12174,
+      "doc_count": 12177,
       "dh": {
         "buckets": [
           {
@@ -1565,7 +1565,7 @@
           {
             "key_as_string": "1995-01-01",
             "key": 788918400000,
-            "doc_count": 173
+            "doc_count": 174
           },
           {
             "key_as_string": "1996-01-01",
@@ -1665,7 +1665,7 @@
           {
             "key_as_string": "2015-01-01",
             "key": 1420070400000,
-            "doc_count": 20
+            "doc_count": 22
           }
         ]
       }

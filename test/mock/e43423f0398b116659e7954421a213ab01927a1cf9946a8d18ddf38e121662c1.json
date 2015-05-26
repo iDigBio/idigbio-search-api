@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 715963,
+    "total": 715972,
     "max_score": null,
     "hits": [
       {
@@ -166,88 +166,6 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "records",
-        "_id": "0962c706-5159-496f-8675-a70c0ddf270a",
-        "_score": null,
-        "_source": {
-          "individualcount": 1,
-          "geopoint": {
-            "lat": 35.475,
-            "lon": -115.53333
-          },
-          "family": "asteraceae",
-          "recordset": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
-          "dqs": 0.3,
-          "stateprovince": "california",
-          "collectioncode": "vascularplants",
-          "county": "san bernardino",
-          "phylum": "magnoliophyta",
-          "catalognumber": "ucr169806",
-          "specificepithet": "sphaerocephalus",
-          "continent": "north america",
-          "uuid": "0962c706-5159-496f-8675-a70c0ddf270a",
-          "countrycode": "usa",
-          "basisofrecord": "preservedspecimen",
-          "collector": "scott d. white, david charlton",
-          "institutioncode": "ucr",
-          "datemodified": "2014-09-12T02:10:45.546000+00:00",
-          "datecollected": "2005-05-10T00:00:00+00:00",
-          "etag": "1fdb1a19fb95a98130a4ec5eb71879f1dbbd127f",
-          "hasImage": false,
-          "kingdom": "plantae",
-          "scientificname": "acamptopappus sphaerocephalus var. sphaerocephalus",
-          "data": {
-            "dwc:specificEpithet": "sphaerocephalus",
-            "dwc:county": "San Bernardino",
-            "dwc:recordedBy": "Scott D. White, David Charlton",
-            "dwc:infraspecificEpithet": "sphaerocephalus",
-            "dcterms:references": "http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?UCR169806&related=yes",
-            "dwc:individualCount": "1",
-            "dwc:occurrenceID": "http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?UCR169806&related=yes",
-            "dwc:verbatimElevation": "1420 m",
-            "dwc:stateProvince": "California",
-            "dwc:eventDate": "2005-05-10",
-            "dwc:country": "United States",
-            "dwc:collectionCode": "VascularPlants",
-            "dwc:decimalLatitude": "35.475",
-            "dwc:basisOfRecord": "PreservedSpecimen",
-            "dwc:genus": "Acamptopappus",
-            "dwc:family": "ASTERACEAE",
-            "dwc:locality": "Eastern Mojave Desert Mountain Pass. North of the I-15 Freeway and south of Molycorp quarry. Proposed and approved for expanded quarry waste area.",
-            "dwc:institutionCode": "UCR",
-            "dwc:catalogNumber": "UCR169806",
-            "dwc:decimalLongitude": "-115.53333",
-            "dwc:verbatimEventDate": "May 10 2005",
-            "dwc:scientificName": "Acamptopappus sphaerocephalus var. sphaerocephalus"
-          },
-          "class": "magnoliopsida",
-          "occurrenceid": "http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?ucr169806&related=yes",
-          "country": "united states",
-          "locality": "eastern mojave desert mountain pass. north of the i-15 freeway and south of molycorp quarry. proposed and approved for expanded quarry waste area.",
-          "infraspecificepithet": "sphaerocephalus",
-          "eventdate": "2005-05-10",
-          "flags": [
-            "geopoint_datum_missing",
-            "dwc_phylum_added",
-            "dwc_continent_added",
-            "idigbio_isocountrycode_added",
-            "dwc_order_added",
-            "dwc_class_added",
-            "dwc_kingdom_added"
-          ],
-          "verbatimeventdate": "may 10 2005",
-          "recordids": [
-            "0b17c21a-f7e2-4967-bdf8-60cf9b06c721\\http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?ucr169806&related=yes"
-          ],
-          "genus": "acamptopappus",
-          "order": "asterales"
-        },
-        "sort": [
-          "acamptopappus"
-        ]
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "records",
         "_id": "07f608af-5014-4486-a918-7da421d8a446",
         "_score": null,
         "_source": {
@@ -319,6 +237,88 @@
           "verbatimeventdate": "may 12 2009",
           "recordids": [
             "0b17c21a-f7e2-4967-bdf8-60cf9b06c721\\http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?ucr222805&related=yes"
+          ],
+          "genus": "acamptopappus",
+          "order": "asterales"
+        },
+        "sort": [
+          "acamptopappus"
+        ]
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "records",
+        "_id": "0962c706-5159-496f-8675-a70c0ddf270a",
+        "_score": null,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 35.475,
+            "lon": -115.53333
+          },
+          "family": "asteraceae",
+          "recordset": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
+          "dqs": 0.3,
+          "stateprovince": "california",
+          "collectioncode": "vascularplants",
+          "county": "san bernardino",
+          "phylum": "magnoliophyta",
+          "catalognumber": "ucr169806",
+          "specificepithet": "sphaerocephalus",
+          "continent": "north america",
+          "uuid": "0962c706-5159-496f-8675-a70c0ddf270a",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "scott d. white, david charlton",
+          "institutioncode": "ucr",
+          "datemodified": "2014-09-12T02:10:45.546000+00:00",
+          "datecollected": "2005-05-10T00:00:00+00:00",
+          "etag": "1fdb1a19fb95a98130a4ec5eb71879f1dbbd127f",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "scientificname": "acamptopappus sphaerocephalus var. sphaerocephalus",
+          "data": {
+            "dwc:specificEpithet": "sphaerocephalus",
+            "dwc:county": "San Bernardino",
+            "dwc:recordedBy": "Scott D. White, David Charlton",
+            "dwc:infraspecificEpithet": "sphaerocephalus",
+            "dcterms:references": "http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?UCR169806&related=yes",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?UCR169806&related=yes",
+            "dwc:verbatimElevation": "1420 m",
+            "dwc:stateProvince": "California",
+            "dwc:eventDate": "2005-05-10",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "VascularPlants",
+            "dwc:decimalLatitude": "35.475",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acamptopappus",
+            "dwc:family": "ASTERACEAE",
+            "dwc:locality": "Eastern Mojave Desert Mountain Pass. North of the I-15 Freeway and south of Molycorp quarry. Proposed and approved for expanded quarry waste area.",
+            "dwc:institutionCode": "UCR",
+            "dwc:catalogNumber": "UCR169806",
+            "dwc:decimalLongitude": "-115.53333",
+            "dwc:verbatimEventDate": "May 10 2005",
+            "dwc:scientificName": "Acamptopappus sphaerocephalus var. sphaerocephalus"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?ucr169806&related=yes",
+          "country": "united states",
+          "locality": "eastern mojave desert mountain pass. north of the i-15 freeway and south of molycorp quarry. proposed and approved for expanded quarry waste area.",
+          "infraspecificepithet": "sphaerocephalus",
+          "eventdate": "2005-05-10",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_phylum_added",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "verbatimeventdate": "may 10 2005",
+          "recordids": [
+            "0b17c21a-f7e2-4967-bdf8-60cf9b06c721\\http://ucjeps.berkeley.edu/cgi-bin/new_detail.pl?ucr169806&related=yes"
           ],
           "genus": "acamptopappus",
           "order": "asterales"
@@ -837,15 +837,15 @@
       "buckets": [
         {
           "key": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
-          "doc_count": 312289
+          "doc_count": 312293
         },
         {
           "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-          "doc_count": 84908
+          "doc_count": 84909
         },
         {
           "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
-          "doc_count": 45860
+          "doc_count": 45861
         },
         {
           "key": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
@@ -861,7 +861,7 @@
         },
         {
           "key": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
-          "doc_count": 17754
+          "doc_count": 17755
         },
         {
           "key": "4523e216-ee13-4b15-a3f7-a6fd56431604",
@@ -869,7 +869,7 @@
         },
         {
           "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-          "doc_count": 16244
+          "doc_count": 16245
         },
         {
           "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
@@ -901,7 +901,7 @@
         },
         {
           "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
-          "doc_count": 7770
+          "doc_count": 7771
         },
         {
           "key": "1527b668-b797-42be-94d3-0058e1393e94",
@@ -1062,7 +1062,8 @@
       ]
     },
     "max_dm": {
-      "value": 1429341139664
+      "value": 1429341139664,
+      "value_as_string": "2015-04-18T07:12:19.664Z"
     }
   }
 }

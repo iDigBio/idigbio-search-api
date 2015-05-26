@@ -2,7 +2,10 @@
 
 var should = require('chai').should();
 
-var queryShim = require("../app/lib/query-shim.js")();
+var app = require('../app.js');
+var config = app.config
+
+var queryShim = require("../app/lib/query-shim.js")(app,config);
 
 describe('Query Shim', function(){
     describe('value support', function(){

@@ -254,44 +254,6 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "recordsets",
-        "_id": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-        "_score": 1,
-        "_source": {
-          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
-          "uuid": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-          "dqs": 0,
-          "etag": "d45d3a32abf58d2edfd1d6c41ecbd58f5121486a",
-          "data": {
-            "contacts": [
-              {
-                "first_name": "Stanley",
-                "last_name": "Blum",
-                "role": "Research Information Manager",
-                "email": "sblum@calacademy.org"
-              },
-              {
-                "first_name": "Deb",
-                "last_name": "Trock",
-                "role": "Senior Collections Manager, Botany",
-                "email": "dtrock@calacademy.org"
-              }
-            ],
-            "collection_name": "CAS Botany (BOT)",
-            "update": "2015-04-20T18:26:45",
-            "ingest": true,
-            "id": "f934f8e2-32ca-46a7-b2f8-b032a4740454",
-            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=botany",
-            "collection_description": "The electronic catalog of the botanical collection at the California Academy of Sciences, San Francisco.",
-            "other_guids": [],
-            "institution_web_address": "",
-            "data_rights": "No license, assume Public Domain"
-          },
-          "datemodified": "2015-04-21T06:02:25.545000+00:00"
-        }
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "recordsets",
         "_id": "5baa1d0c-cfc0-4c89-8e3e-7a49359b0caa",
         "_score": 1,
         "_source": {
@@ -691,6 +653,44 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "recordsets",
+        "_id": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+        "_score": 1,
+        "_source": {
+          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+          "uuid": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0,
+          "etag": "a078e418f23b461dbfc7dded97b04736e68f9aea",
+          "data": {
+            "contacts": [
+              {
+                "first_name": "Stanley",
+                "last_name": "Blum",
+                "role": "Research Information Manager",
+                "email": "sblum@calacademy.org"
+              },
+              {
+                "first_name": "Deb",
+                "last_name": "Trock",
+                "role": "Senior Collections Manager, Botany",
+                "email": "dtrock@calacademy.org"
+              }
+            ],
+            "collection_name": "CAS Botany (BOT)",
+            "update": "2015-04-27T18:28:09",
+            "ingest": true,
+            "id": "f934f8e2-32ca-46a7-b2f8-b032a4740454",
+            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=botany",
+            "collection_description": "The electronic catalog of the botanical collection at the California Academy of Sciences, San Francisco.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "data_rights": "No license, assume Public Domain"
+          },
+          "datemodified": "2015-04-28T06:02:50.530000+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "recordsets",
         "_id": "9b62118d-9b90-46b1-854d-06a5a9a22a90",
         "_score": 1,
         "_source": {
@@ -758,44 +758,6 @@
             "data_rights": "Unknown License, assume Public Domain"
           },
           "datemodified": "2015-03-30T13:22:03.333000+00:00"
-        }
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "recordsets",
-        "_id": "14a8f79f-eab7-48da-ad50-bda142703820",
-        "_score": 1,
-        "_source": {
-          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
-          "uuid": "14a8f79f-eab7-48da-ad50-bda142703820",
-          "dqs": 0,
-          "etag": "8cf3946b0cdb7a3da363e489eb9fdc284b6043f1",
-          "data": {
-            "contacts": [
-              {
-                "first_name": "Stanley",
-                "last_name": "Blum",
-                "role": "Research Information Manager",
-                "email": "sblum@calacademy.org"
-              },
-              {
-                "first_name": "Maureen",
-                "last_name": "Flannery",
-                "role": "Collections Manager, Ornithology & Mammalogy",
-                "email": "mflannery@calacademy.org"
-              }
-            ],
-            "collection_name": "CAS Mammalogy (MAM)",
-            "update": "2015-04-20T17:50:39",
-            "ingest": true,
-            "id": "6ce7290f-47f6-4046-8356-371f5b6749df",
-            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=mam",
-            "collection_description": "The electronic catalog of the mammalogy collection at the California Academy of Sciences, San Francisco.",
-            "other_guids": [],
-            "institution_web_address": "",
-            "data_rights": "No license, assume Public Domain"
-          },
-          "datemodified": "2015-04-21T06:02:24.792000+00:00"
         }
       },
       {
@@ -1591,6 +1553,44 @@
             "data_rights": "CC0"
           },
           "datemodified": "2015-03-30T13:22:12.189000+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "recordsets",
+        "_id": "14a8f79f-eab7-48da-ad50-bda142703820",
+        "_score": 1,
+        "_source": {
+          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+          "uuid": "14a8f79f-eab7-48da-ad50-bda142703820",
+          "dqs": 0,
+          "etag": "5fd00cd6abbf92f8ed65be2db5e77c0e47237578",
+          "data": {
+            "contacts": [
+              {
+                "first_name": "Stanley",
+                "last_name": "Blum",
+                "role": "Research Information Manager",
+                "email": "sblum@calacademy.org"
+              },
+              {
+                "first_name": "Maureen",
+                "last_name": "Flannery",
+                "role": "Collections Manager, Ornithology & Mammalogy",
+                "email": "mflannery@calacademy.org"
+              }
+            ],
+            "collection_name": "CAS Mammalogy (MAM)",
+            "update": "2015-04-27T17:50:54",
+            "ingest": true,
+            "id": "6ce7290f-47f6-4046-8356-371f5b6749df",
+            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=mam",
+            "collection_description": "The electronic catalog of the mammalogy collection at the California Academy of Sciences, San Francisco.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "data_rights": "No license, assume Public Domain"
+          },
+          "datemodified": "2015-04-28T06:02:49.771000+00:00"
         }
       },
       {
@@ -5223,44 +5223,6 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "recordsets",
-        "_id": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
-        "_score": 1,
-        "_source": {
-          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
-          "uuid": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
-          "dqs": 0,
-          "etag": "3783d2bf3c38c6f57b6f26ea0d8799cfa5601149",
-          "data": {
-            "contacts": [
-              {
-                "first_name": "Stanley",
-                "last_name": "Blum",
-                "role": "Research Information Manager",
-                "email": "sblum@calacademy.org"
-              },
-              {
-                "first_name": "David",
-                "last_name": "Catania",
-                "role": "Collection Manager, Ichthyology",
-                "email": "dcatania@calacademy.org"
-              }
-            ],
-            "collection_name": "CAS Ichthyology (ICH)",
-            "update": "2015-04-20T18:19:43",
-            "ingest": true,
-            "id": "5d6c10bd-ea31-4363-8b79-58c96d859f5b",
-            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=ich",
-            "collection_description": "The electronic catalog of the ichthyology collection at the California Academy of Sciences, San Francisco.",
-            "other_guids": [],
-            "institution_web_address": "http://research.calacademy.org/ichthyology/collections/",
-            "data_rights": "No license, assume Public Domain"
-          },
-          "datemodified": "2015-04-21T06:02:25.152000+00:00"
-        }
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "recordsets",
         "_id": "beecd160-a96c-46fc-bdce-7dcb7024d473",
         "_score": 1,
         "_source": {
@@ -5467,6 +5429,44 @@
             "id": "http://lichenportal.org/portal/webservices/dwc/313e6816-648d-4573-8c04-281214bf8e72"
           },
           "datemodified": "2014-12-02T21:24:56.766000+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "recordsets",
+        "_id": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
+        "_score": 1,
+        "_source": {
+          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+          "uuid": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
+          "dqs": 0,
+          "etag": "1a30425ea732b96eb19db8bd7107ca88842cb736",
+          "data": {
+            "contacts": [
+              {
+                "first_name": "Stanley",
+                "last_name": "Blum",
+                "role": "Research Information Manager",
+                "email": "sblum@calacademy.org"
+              },
+              {
+                "first_name": "David",
+                "last_name": "Catania",
+                "role": "Collection Manager, Ichthyology",
+                "email": "dcatania@calacademy.org"
+              }
+            ],
+            "collection_name": "CAS Ichthyology (ICH)",
+            "update": "2015-04-27T18:20:17",
+            "ingest": true,
+            "id": "5d6c10bd-ea31-4363-8b79-58c96d859f5b",
+            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=ich",
+            "collection_description": "The electronic catalog of the ichthyology collection at the California Academy of Sciences, San Francisco.",
+            "other_guids": [],
+            "institution_web_address": "http://research.calacademy.org/ichthyology/collections/",
+            "data_rights": "No license, assume Public Domain"
+          },
+          "datemodified": "2015-04-28T06:02:50.131000+00:00"
         }
       },
       {
@@ -11195,44 +11195,6 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "recordsets",
-        "_id": "b8cbed64-5126-46bd-97aa-43627743aba7",
-        "_score": 1,
-        "_source": {
-          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
-          "uuid": "b8cbed64-5126-46bd-97aa-43627743aba7",
-          "dqs": 0,
-          "etag": "64a347e4e45d601f0ecc7ce2a6afaf2ba4b5de68",
-          "data": {
-            "contacts": [
-              {
-                "first_name": "Stanley",
-                "last_name": "Blum",
-                "role": "Research Information Manager",
-                "email": "sblum@calacademy.org"
-              },
-              {
-                "first_name": "Maureen",
-                "last_name": "Flannery",
-                "role": "Collections Manager, Ornithology & Mammalogy",
-                "email": "mflannery@calacademy.org"
-              }
-            ],
-            "collection_name": "CAS Ornithology (ORN)",
-            "update": "2015-04-20T17:50:51",
-            "ingest": true,
-            "id": "4f29b6ab-20c0-4479-8795-4915bedcebd1",
-            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=orn",
-            "collection_description": "The electronic catalog of the ornithology collection at the California Academy of Sciences, San Francisco.",
-            "other_guids": [],
-            "institution_web_address": "",
-            "data_rights": "No license, assume Public Domain"
-          },
-          "datemodified": "2015-04-21T06:02:25.858000+00:00"
-        }
-      },
-      {
-        "_index": "idigbio-2.3.0",
-        "_type": "recordsets",
         "_id": "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194",
         "_score": 1,
         "_source": {
@@ -11452,6 +11414,44 @@
             "data_rights": "CC BY"
           },
           "datemodified": "2015-02-12T15:17:20.877000+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.3.0",
+        "_type": "recordsets",
+        "_id": "b8cbed64-5126-46bd-97aa-43627743aba7",
+        "_score": 1,
+        "_source": {
+          "publisher": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+          "uuid": "b8cbed64-5126-46bd-97aa-43627743aba7",
+          "dqs": 0,
+          "etag": "4f7c8a97a814d97e50ccc023b7f97dd5a87c382e",
+          "data": {
+            "contacts": [
+              {
+                "first_name": "Stanley",
+                "last_name": "Blum",
+                "role": "Research Information Manager",
+                "email": "sblum@calacademy.org"
+              },
+              {
+                "first_name": "Maureen",
+                "last_name": "Flannery",
+                "role": "Collections Manager, Ornithology & Mammalogy",
+                "email": "mflannery@calacademy.org"
+              }
+            ],
+            "collection_name": "CAS Ornithology (ORN)",
+            "update": "2015-04-27T17:51:05",
+            "ingest": true,
+            "id": "4f29b6ab-20c0-4479-8795-4915bedcebd1",
+            "link": "http://ipt.calacademy.org:8080/ipt/archive.do?r=orn",
+            "collection_description": "The electronic catalog of the ornithology collection at the California Academy of Sciences, San Francisco.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "data_rights": "No license, assume Public Domain"
+          },
+          "datemodified": "2015-04-28T06:02:50.844000+00:00"
         }
       },
       {

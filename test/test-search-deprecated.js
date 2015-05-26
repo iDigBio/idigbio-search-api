@@ -198,10 +198,10 @@ describe('Search Deprecated Endpoints', function(){
   })
 
   describe('mediaGET', function(){
-    it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
-      var q = {"scientificname": "nullius nullius"}
+    it('should return an empty search for {"type": "null"}', function(done){
+      var q = {"type": "null"}
       request(app.server)
-        .get("/v2/media/?rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/?rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -217,7 +217,7 @@ describe('Search Deprecated Endpoints', function(){
     it('should not return an empty search for {}', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -249,7 +249,7 @@ describe('Search Deprecated Endpoints', function(){
     it('should obey maxLimit', function(done){
       var q = {}
       request(app.server)
-        .get("/v2/media/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/?limit=10000&rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -263,12 +263,12 @@ describe('Search Deprecated Endpoints', function(){
     })
   })
   describe('mediaPOST', function(){
-    it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
-      var q = {"scientificname": "nullius nullius"}
+    it('should return an empty search for {"type": "null"}', function(done){
+      var q = {"type": "null"}
       request(app.server)
         .post("/v2/media/")
         .send({
-            rq: q,
+            rq: {},
             mq: q
         })
         .expect('Content-Type', /json/)
@@ -288,7 +288,7 @@ describe('Search Deprecated Endpoints', function(){
       request(app.server)
         .post("/v2/media/")
         .send({
-            rq: q,
+            rq: {},
             mq: q,
             limit: 10,
         })
@@ -330,7 +330,7 @@ describe('Search Deprecated Endpoints', function(){
       request(app.server)
         .post("/v2/media/")
         .send({
-            rq: q,
+            rq: {},
             mq: q,
             limit: 10000,
         })

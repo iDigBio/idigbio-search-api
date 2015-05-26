@@ -45,17 +45,19 @@ module.exports = function(app,config) {
         },
         checkTerms: function(type, term_list, only_missing) {
             var results = {};
+
             term_list.forEach(function(term){
                 var term_parts = term.split(".");
                 var root = config.indexterms[type];
-                // Use every instead of forEach to get early termination
 
+                // Use every instead of forEach to get early termination
                 var te = term_parts.every(function(term_part, i){
                     if (root[term_part]) {
                         if (i == (term_parts.length - 1)) {
                             return true;
                         } else {
                             root = root[term_part];
+                            return true
                         }
                     } else {
                         return false;

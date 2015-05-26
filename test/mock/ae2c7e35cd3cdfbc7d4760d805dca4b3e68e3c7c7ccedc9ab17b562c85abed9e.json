@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 141187,
+    "total": 141205,
     "max_score": null,
     "hits": [
       {
@@ -120,10 +120,10 @@
       {
         "_index": "idigbio-2.3.0",
         "_type": "records",
-        "_id": "b1f15d75-f519-4bba-b9a6-d06e39d8e50e",
+        "_id": "aad2e03b-643e-4ecd-b7bf-b595c456e99f",
         "_score": null,
         "_source": {
-          "scientificname": "carex deflexa var. boottii  l.h. bailey"
+          "scientificname": "carex scoparia fulva  w. boott"
         },
         "sort": [
           0.46666667
@@ -138,19 +138,19 @@
       "buckets": [
         {
           "key": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
-          "doc_count": 33985
+          "doc_count": 33987
         },
         {
           "key": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
-          "doc_count": 15781
+          "doc_count": 15784
         },
         {
           "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-          "doc_count": 12613
+          "doc_count": 12617
         },
         {
           "key": "75a2141b-bc93-4970-bd84-87bf637b1086",
-          "doc_count": 9505
+          "doc_count": 9506
         },
         {
           "key": "1527b668-b797-42be-94d3-0058e1393e94",
@@ -158,19 +158,19 @@
         },
         {
           "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-          "doc_count": 8552
+          "doc_count": 8553
         },
         {
           "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
-          "doc_count": 8471
+          "doc_count": 8472
         },
         {
           "key": "05c029de-734c-450a-a41a-56061b7ebb18",
-          "doc_count": 5408
+          "doc_count": 5409
         },
         {
           "key": "14f8f83f-7a0c-458c-b6d5-6da7dc8eaa0a",
-          "doc_count": 4161
+          "doc_count": 4163
         },
         {
           "key": "76fd34da-4892-4821-858d-98fe9e28ba8b",
@@ -190,7 +190,7 @@
         },
         {
           "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
-          "doc_count": 2344
+          "doc_count": 2346
         },
         {
           "key": "5835f642-2560-4e3e-9c25-741a12cc3fe8",
@@ -210,7 +210,7 @@
         },
         {
           "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
-          "doc_count": 1663
+          "doc_count": 1664
         },
         {
           "key": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
@@ -311,7 +311,8 @@
       ]
     },
     "max_dm": {
-      "value": 1429341136303
+      "value": 1429341136303,
+      "value_as_string": "2015-04-18T07:12:16.303Z"
     }
   }
 }

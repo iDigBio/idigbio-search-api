@@ -7,13 +7,13 @@
   },
   "hits": {
     "total": 1,
-    "max_score": 14.575363,
+    "max_score": 14.578212,
     "hits": [
       {
         "_index": "idigbio-2.3.0",
         "_type": "records",
         "_id": "0000012b-9bb8-42f4-ad3b-c958cb22ae45",
-        "_score": 14.575363,
+        "_score": 14.578212,
         "_source": {
           "geopoint": {
             "lat": 18.348,

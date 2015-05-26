@@ -7,13 +7,13 @@
   },
   "hits": {
     "total": 1,
-    "max_score": 14.575912,
+    "max_score": 14.57844,
     "hits": [
       {
         "_index": "idigbio-2.3.0",
         "_type": "mediarecords",
         "_id": "b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3",
-        "_score": 14.575912,
+        "_score": 14.57844,
         "_source": {
           "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
           "xpixels": 4095,
