@@ -340,7 +340,7 @@ module.exports = function(app, config) {
     }
 
     function mapDef(s, map_url, map_def, cb, stats_info) {
-        var query = queryShim(map_def.rq);
+        var query = queryShim(map_def.rq, "records");
 
         makeKeyDefined(["query", "filtered", "filter"], query);
 
@@ -919,14 +919,20 @@ module.exports = function(app, config) {
                             config.redis.client.get(s, function(err, stored_map_def) {
                                 var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
 
-                                mapDef(s, map_url, map_def, function(rb) {
-                                    res.json(rb);
+                                try {
+                                    mapDef(s, map_url, map_def, function(rb) {
+                                        res.json(rb);
+                                        next();
+                                    }, {
+                                        type: "mapping",
+                                        recordtype: "records",
+                                        ip: req.ip,
+                                    })
+                                } catch(e) {
+                                    res.status(400).json(e);
                                     next();
-                                }, {
-                                    type: "mapping",
-                                    recordtype: "records",
-                                    ip: req.ip,
-                                })
+                                    return;
+                                }
                             })
                         })
                     } else {
@@ -936,14 +942,20 @@ module.exports = function(app, config) {
                                 config.redis.client.set(h, s, function(err, good) {
                                     var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
 
-                                    mapDef(s, map_url, map_def, function(rb) {
-                                        res.json(rb);
+                                    try {
+                                        mapDef(s, map_url, map_def, function(rb) {
+                                            res.json(rb);
+                                            next();
+                                        }, {
+                                            type: "mapping",
+                                            recordtype: "records",
+                                            ip: req.ip,
+                                        })
+                                    } catch(e) {
+                                        res.status(400).json(e);
                                         next();
-                                    }, {
-                                        type: "mapping",
-                                        recordtype: "records",
-                                        ip: req.ip,
-                                    })
+                                        return;
+                                    }
                                 });
                             })
                         });
@@ -971,14 +983,20 @@ module.exports = function(app, config) {
                 var map_def = JSON.parse(rv);
                 var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
 
-                mapDef(s, map_url, map_def, function(rb) {
-                    res.json(rb);
+                try {
+                    mapDef(s, map_url, map_def, function(rb) {
+                        res.json(rb);
+                        next();
+                    }, {
+                        type: "mapping",
+                        recordtype: "records",
+                        ip: req.ip,
+                    })
+                } catch(e) {
+                    res.status(400).json(e);
                     next();
-                }, {
-                    type: "mapping",
-                    recordtype: "records",
-                    ip: req.ip,
-                })
+                    return;
+                }
             });
         }
     };

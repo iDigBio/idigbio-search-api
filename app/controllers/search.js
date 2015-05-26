@@ -52,6 +52,7 @@ module.exports = function(app, config) {
                     ip: req.ip,
                 });
             } catch (e) {
+                console.log(e);
                 res.status(400).json(e);
                 next();
                 return;

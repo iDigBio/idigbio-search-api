@@ -1,6 +1,7 @@
 "use strict";
 
 var _ = require('lodash');
+var async = require('async');
 
 module.exports = function(app,config) {
     var searchShim = require("../lib/search-shim.js")(app,config);
@@ -41,6 +42,35 @@ module.exports = function(app,config) {
                     cb();
                 }            
             });  
+        },
+        checkTerms: function(type, term_list, only_missing) {
+            var results = {};
+            term_list.forEach(function(term){
+                var term_parts = term.split(".");
+                var root = config.indexterms[type];
+                // Use every instead of forEach to get early termination
+
+                var te = term_parts.every(function(term_part, i){
+                    if (root[term_part]) {
+                        if (i == (term_parts.length - 1)) {
+                            return true;
+                        } else {
+                            root = root[term_part];
+                        }
+                    } else {
+                        return false;
+                    }
+                })
+
+                if (only_missing) {
+                    if (!te) {
+                        results[term] = te;
+                    }
+                } else {
+                    results[term] = te
+                }
+            })
+            return results;
         }
     }
 };

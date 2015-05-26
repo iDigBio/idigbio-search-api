@@ -95,8 +95,15 @@ function QueryParseException(message,context) {
    this.name = "QueryParseException";
 }
 
-//module.exports = function(app,config) {
-module.exports = function() {
+function TermNotFoundException(message,context) {
+   this.error = message;
+   this.context = context;
+   this.name = "TermNotFoundException";
+}
+
+module.exports = function(app,config) {
+
+    var checkTerms = require("../lib/load-index-terms.js")(app,config).checkTerms
 
     function existFilter(k){
         return {
@@ -204,7 +211,15 @@ module.exports = function() {
         }
     }
 
-    return function(shim) {
+    return function(shim, term_type) {
+        if (term_type) {
+            var term_errors = checkTerms(term_type,_.keys(shim),true)
+
+            if (_.keys(term_errors).length > 0) {
+                throw new TermNotFoundException("Some of the query terms supplied were not found in the index", term_errors)
+            }
+        }
+
         var query = {
             "query": {
                 "filtered": {

@@ -26,8 +26,9 @@ module.exports = function(app,config) {
     }
 
     function media_query(rq,mq,fields,sort,limit,offset,fields_exclude) {
-        var rquery = queryShim(rq);
-        var query = bare_query(mq,fields,sort,limit,offset,fields_exclude);
+        var rquery = queryShim(rq,"records");
+
+        var query = bare_query(mq,fields,sort,limit,offset,fields_exclude,"mediarecords");
 
         var recordQuery;
 
@@ -78,7 +79,7 @@ module.exports = function(app,config) {
     }
 
     function record_query(rq,fields,sort,limit,offset,fields_exclude) {
-        var query = bare_query(rq,fields,sort,limit,offset,fields_exclude);
+        var query = bare_query(rq,fields,sort,limit,offset,fields_exclude,"records");
         query["aggs"] = {
             "rs": {
                 "terms": {
@@ -96,8 +97,8 @@ module.exports = function(app,config) {
         return query;
     }
 
-    function bare_query(q,fields,sort,limit,offset,fields_exclude) {
-        var query = queryShim(q);
+    function bare_query(q,fields,sort,limit,offset,fields_exclude,term_type) {
+        var query = queryShim(q, term_type);
         query["from"] = offset;
         query["size"] = limit;
         query["sort"] = sort;
