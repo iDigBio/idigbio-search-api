@@ -37,7 +37,7 @@ module.exports = function(app, config) {
 
                 var query = qg.media_query(rq,mq,[],[],0,0)
 
-                var top_fields = cp.top_fields(req);
+                var top_fields = cp.top_fields(req,"mediarecords");
                 if (!top_fields) {
                     top_fields = ["flags"]
                 }
@@ -66,7 +66,7 @@ module.exports = function(app, config) {
 
                 var query = qg.record_query(rq,[],[],0,0);
 
-                var top_fields = cp.top_fields(req);
+                var top_fields = cp.top_fields(req,"records");
                 if (!top_fields) {
                     top_fields = ["scientificname"]
                 }
@@ -256,7 +256,7 @@ module.exports = function(app, config) {
                    return p;
                 },"year");
 
-                var top_fields = cp.top_fields(req);
+                var top_fields = cp.top_fields(req,"records");
                 if (!top_fields) {
                     top_fields = []
                 }

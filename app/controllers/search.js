@@ -23,12 +23,12 @@ module.exports = function(app, config) {
 
                 var sort = cp.sort(req);
 
-                var fields = cp.fields(req);
+                var fields = cp.fields(req, "mediarecords");
                 if (_.isArray(fields)) {
                     fields.push.apply(fields,required_fields);
                 }
 
-                var fields_exclude = cp.fields_exclude(req);
+                var fields_exclude = cp.fields_exclude(req, "mediarecords");
 
                 var no_attribution = cp.noattr(req);
 
@@ -69,12 +69,12 @@ module.exports = function(app, config) {
 
                 var sort = cp.sort(req);
 
-                var fields = cp.fields(req);
+                var fields = cp.fields(req, "records");
                 if (_.isArray(fields)) {
                     fields.push.apply(fields,required_fields);
                 }
 
-                var fields_exclude = cp.fields_exclude(req);
+                var fields_exclude = cp.fields_exclude(req, "records");
 
                 var no_attribution = cp.noattr(req);
 
@@ -113,12 +113,12 @@ module.exports = function(app, config) {
 
                 var sort = cp.sort(req);
 
-                var fields = cp.fields(req);
+                var fields = cp.fields(req, "recordsets");
                 if (_.isArray(fields)) {
                     fields.push.apply(fields,required_fields);
                 }
 
-                var fields_exclude = cp.fields_exclude(req);
+                var fields_exclude = cp.fields_exclude(req, "recordsets");
 
                 var query = qg.bare_query(rsq,fields,sort,limit,offset,fields_exclude);
 
@@ -146,12 +146,12 @@ module.exports = function(app, config) {
 
                 var sort = cp.sort(req);
 
-                var fields = cp.fields(req);
+                var fields = cp.fields(req, "publishers");
                 if (_.isArray(fields)) {
                     fields.push.apply(fields,required_fields);
                 }
 
-                var fields_exclude = cp.fields_exclude(req);
+                var fields_exclude = cp.fields_exclude(req, "publishers");
 
                 var query = qg.bare_query(pq,fields,sort,limit,offset,fields_exclude);
 

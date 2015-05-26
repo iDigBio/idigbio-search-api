@@ -9,8 +9,15 @@ function ParameterParseException(message,context) {
    this.name = "ParameterParseException";
 }
 
+function TermNotFoundException(message,context) {
+   this.error = message;
+   this.context = context;
+   this.name = "TermNotFoundException";
+}
+
 module.exports = function(app,config) {
     var getParam = require("./get-param.js")(app,config);
+     var checkTerms = require("../lib/load-index-terms.js")(app,config).checkTerms
 
     return {
         sort: function(req) {
@@ -24,7 +31,7 @@ module.exports = function(app,config) {
                 if(_.isString(param)){
                     s={};
                     s[param]={"order":"asc"};
-                    order.push(s); 
+                    order.push(s);
                 }else if(_.isArray(param)){
                     param.forEach(function(item){
                         s={};
@@ -87,7 +94,7 @@ module.exports = function(app,config) {
                 }
             },{});
         },
-        top_fields: function(req) {
+        top_fields: function(req, term_type) {
             return getParam(req,"top_fields",function(p){
                 try {
                     if (_.isString(p) && ( p[0] == "\"" || p[0] == "["  || p[0] == "{" )) {
@@ -97,13 +104,22 @@ module.exports = function(app,config) {
                     if (_.isString(p)) {
                         p = [p];
                     }
-                    return p;
                 } catch (e) {
                     throw new ParameterParseException("unable to parse parameter", "top_fields");
                 }
+
+                if (term_type) {
+                    var term_errors = checkTerms(term_type,p,true)
+
+                    if (_.keys(term_errors).length > 0) {
+                        throw new TermNotFoundException("Some of the top_fields terms supplied were not found in the index", term_errors)
+                    }
+                }
+
+                return p;
             },undefined);
         },
-        fields: function(req) {
+        fields: function(req, term_type) {
             return getParam(req,"fields",function(p){
                 try {
                     if (_.isString(p) && ( p[0] == "\"" || p[0] == "["  || p[0] == "{" )) {
@@ -113,13 +129,23 @@ module.exports = function(app,config) {
                     if (_.isString(p)) {
                         p = [p];
                     }
-                    return p;
+
                 } catch (e) {
                     throw new ParameterParseException("unable to parse parameter", "fields");
                 }
+
+                if (term_type) {
+                    var term_errors = checkTerms(term_type,p,true)
+
+                    if (_.keys(term_errors).length > 0) {
+                        throw new TermNotFoundException("Some of the fields terms supplied were not found in the index", term_errors)
+                    }
+                }
+
+                return p;
             },undefined);
         },
-        fields_exclude: function(req) {
+        fields_exclude: function(req, term_type) {
             return getParam(req,"fields_exclude",function(p){
                 try {
                     if (_.isString(p) && ( p[0] == "\"" || p[0] == "["  || p[0] == "{" )) {
@@ -129,10 +155,19 @@ module.exports = function(app,config) {
                     if (_.isString(p)) {
                         p = [p];
                     }
-                    return p;
                 } catch (e) {
                     throw new ParameterParseException("unable to parse parameter", "fields_exclude");
                 }
+
+                if (term_type) {
+                    var term_errors = checkTerms(term_type,p,true)
+
+                    if (_.keys(term_errors).length > 0) {
+                        throw new TermNotFoundException("Some of the fields_exclude terms supplied were not found in the index", term_errors)
+                    }
+                }
+
+                return p;
             },undefined);
         },
         noattr: function(req) {
