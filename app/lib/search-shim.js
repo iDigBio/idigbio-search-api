@@ -80,7 +80,11 @@ module.exports = function(app,config) {
     } else {
         var client;
         if (config.search.useEsClient) {
-             client = elasticsearch.Client(_.cloneDeep(config.elasticsearch));
+            esconfig = _.cloneDeep(config.elasticsearch);
+
+            esconfig.hosts = _.shuffle(esconfig.hosts);
+
+            client = elasticsearch.Client(esconfig);
         }
 
         return function(index, type, op, query, cb, stats_info){

@@ -16,14 +16,15 @@ var config = {
             "c17node55.acis.ufl.edu:9200",
             "c17node56.acis.ufl.edu:9200"
         ],
-        apiVersion: "1.4",
-        sniffOnStart: true,
+        apiVersion: "1.5",
+        sniffOnStart: false,
         sniffOnConnectionFault: true
     },
     maxRecordsets: 1000,
     defaultLimit: 100,
     maxLimit: 5000,
     recordsets: {},
+    indexterms: {},
     redis: {
         hostname: "localhost",
         port: 6379

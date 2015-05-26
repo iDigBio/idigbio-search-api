@@ -16,9 +16,15 @@ require('./config/express')(app, config);
 require('./config/routes')(app, config);
 
 var loadRecordsets = require("./app/lib/load-recordsets.js")(app,config);
+var loadIndexTerms = require("./app/lib/load-index-terms.js")(app,config).loadIndexTerms;
 
 function loadRSDelay(){
     loadRecordsets();
+    setTimeout(loadRSDelay,1000*60*60);
+}
+
+function loadITDelay(){
+    loadIndexTerms();
     setTimeout(loadRSDelay,1000*60*60);
 }
 
@@ -37,6 +43,7 @@ if (process.env.NODE_ENV != "test") {
         server = app.listen(config.port, function() {
 
             loadRSDelay();
+            loadITDelay();
 
             //console.log('Express server listening on port ' + server.address().port);
         });
@@ -45,6 +52,7 @@ if (process.env.NODE_ENV != "test") {
     server = app.listen(config.port, function() {
 
         loadRSDelay();
+        loadITDelay();
 
         //console.log('Express server listening on port ' + server.address().port);
     });
