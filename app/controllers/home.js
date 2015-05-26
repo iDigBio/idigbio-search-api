@@ -5,26 +5,7 @@ var request = require('request');
 module.exports = function(app, config) {
     var searchShim = require("../lib/search-shim.js")(app,config);
 
-    function getSubKeys(mappingDict, fnPrefix) {
-        var rv = {};
-        var props = mappingDict["properties"];
-        Object.keys(props).forEach(function(key){
-            if (props[key].type) {
-                var typ = props[key].type;
-                // Can't decide if notifying of analyzer status is a good thing or not.
-                // if (props[key].analyzer && props[key].analyzer === "keyword") {
-                //     typ = "keyword";
-                // }
-                rv[key] = {
-                    type: typ,
-                    fieldName: fnPrefix + key
-                };
-            } else if (props[key].properties) {
-                rv[key] = getSubKeys(props[key], fnPrefix + key + ".");
-            }
-        });
-        return rv;
-    }
+    var getSubKeys = require("../lib/load-index-terms.js")(app,config).getSubKeys;
 
     return {
         index: function(req, res, next) {
