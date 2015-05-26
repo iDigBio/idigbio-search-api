@@ -7,16 +7,18 @@ module.exports = function(app,config) {
 
     return function(cb){
         searchShim(config.search.index,"recordsets","_search",{size: config.maxRecordsets},function(err,body){
-            body.hits.hits.forEach(function(hit){
-                config.recordsets[hit._id] = {
-                    "name": hit._source.data.collection_name,
-                    "description": hit._source.data.collection_description,
-                    "logo": hit._source.data.logo_url,
-                    "url": hit._source.data.institution_web_address,
-                    "contacts": hit._source.data.contacts,
-                    "data_rights": hit._source.data.data_rights,
-                };
-            });
+            try {
+                body.hits.hits.forEach(function(hit){
+                    config.recordsets[hit._id] = {
+                        "name": hit._source.data.collection_name,
+                        "description": hit._source.data.collection_description,
+                        "logo": hit._source.data.logo_url,
+                        "url": hit._source.data.institution_web_address,
+                        "contacts": hit._source.data.contacts,
+                        "data_rights": hit._source.data.data_rights,
+                    };
+                });
+            } catch(e) {}
 
             if (cb) {
                 cb();
