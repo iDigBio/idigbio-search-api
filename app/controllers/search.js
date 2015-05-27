@@ -8,7 +8,7 @@ module.exports = function(app, config) {
     var qg = require("../lib/query-generators.js")(app,config);
     var searchShim = require("../lib/search-shim.js")(app,config);
 
-    var required_fields = ["data.idigbio:version", "data.idigbio:etag", "data.idigbio:recordIds"];
+    var required_fields = [];
 
     return {
         media: function(req, res, next) {

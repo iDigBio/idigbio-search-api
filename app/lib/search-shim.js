@@ -130,7 +130,7 @@ module.exports = function(app,config) {
                         source_object = true;
                     }
                     if (query._source.include) {
-                        options._sourceExclude = query._source.include;
+                        options._sourceInclude = query._source.include;
                         source_object = true;
                     }
 
@@ -151,6 +151,8 @@ module.exports = function(app,config) {
                         options[k] = query[k];
                     }
                 });
+
+                // console.log(JSON.stringify(options,undefined,2));
 
                 if (op == "_search") {
                     client.search(options, function(error,response){
