@@ -362,27 +362,27 @@ module.exports = function(app, config) {
                     internal_aggs = {
                         "seen": {
                             "sum": {
-                                "field": "seen.total"
+                                "field": "records.seen.total"
                             }
                         },
                         "search": {
                             "sum": {
-                                "field": "search.total"
+                                "field": "records.search.total"
                             }
                         },
                         "download": {
                             "sum": {
-                                "field": "download.total"
+                                "field": "records.download.total"
                             }
                         },
                         "viewed_records": {
                             "sum": {
-                                "field": "viewed.records.total"
+                                "field": "records.view.total"
                             }
                         },
                         "viewed_media": {
                             "sum": {
-                                "field": "viewed.mediarecords.total"
+                                "field": "mediarecords.view.total"
                             }
                         }
                     }
