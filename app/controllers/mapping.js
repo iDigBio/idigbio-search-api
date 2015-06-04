@@ -162,16 +162,24 @@ module.exports = function(app, config) {
                     }
                 } else {
                     fl = chroma(default_color);
-                    rv["default"] = {
+                    rv["colors"][b.key] = {
                         "fill": fl.alpha(0.7).css(),
                         "stroke": chroma("black").alpha(0.7).css()
                     }
                 }
             }
             var fl = scale.mode('lab')(colorCount);
-            rv["default"] = {
-                "fill": fl.alpha(0.7).css(),
-                "stroke": chroma("black").alpha(0.7).css()
+            if (fl) {
+                rv["default"] = {
+                    "fill": fl.alpha(0.7).css(),
+                    "stroke": chroma("black").alpha(0.7).css()
+                }
+            } else {
+                fl = chroma(default_color);
+                rv["default"] = {
+                    "fill": fl.alpha(0.7).css(),
+                    "stroke": chroma("black").alpha(0.7).css()
+                }
             }
         }
         rv["order"] = order;
