@@ -109,37 +109,63 @@ module.exports = function(app, config) {
 
         var order = [];
 
+        var default_color = "black";
+
         if (map_def.type == "geohash") {
             var max_bucket_value = 1;
             try {
                 max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
             } catch (e) {}
 
+            if (_.isArray(map_def.style.scale) && map_def.style.scale.length == 1){
+                default_color = map_def.style.scale[0];
+            } 
+
             var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
             scale.domain().forEach(function(domain) {
                 domain = Math.ceil(domain);
                 var fl = scale.mode('lab')(domain);
                 order.push(domain);
-                rv["colors"][domain] = {
-                    "fill": fl.alpha(0.7).css(),
-                    "stroke": fl.darker(0.2).alpha(0.7).css()
+                if (fl) {
+                    rv["colors"][domain] = {
+                        "fill": fl.alpha(0.7).css(),
+                        "stroke": fl.darker(0.2).alpha(0.7).css()
+                    }
+                } else {
+                    rv["colors"][domain] = {
+                        "fill": default_color,
+                        "stroke": default_color 
+                    }
                 }
             })
             rv["default"] = {
-                "fill": "black",
-                "stroke": "black"
+                "fill": default_color,
+                "stroke": default_color
             }
         } else {
             var colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
+
+            if (_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length == 1){
+                default_color = map_def.style.pointScale[0];
+            } 
+
             var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
             for (var i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
                 var b = body.aggregations.gstyle.f.style.buckets[i];
                 order.push(b.key);
                 var fl = scale.mode('lab')(i);
-                rv["colors"][b.key] = {
-                    "fill": fl.alpha(0.7).css(),
-                    "stroke": chroma("black").alpha(0.7).css(),
-                    "itemCount": b["doc_count"]
+                if (fl) {
+                    rv["colors"][b.key] = {
+                        "fill": fl.alpha(0.7).css(),
+                        "stroke": chroma("black").alpha(0.7).css(),
+                        "itemCount": b["doc_count"]
+                    }
+                } else {
+                    fl = chroma(default_color);
+                    rv["default"] = {
+                        "fill": fl.alpha(0.7).css(),
+                        "stroke": chroma("black").alpha(0.7).css()
+                    }
                 }
             }
             var fl = scale.mode('lab')(colorCount);
