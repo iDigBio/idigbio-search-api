@@ -36,8 +36,17 @@ if (process.env.NODE_ENV != "test") {
         cluster.fork();
       }
 
-      cluster.on('exit', function(worker, code, signal) {
-        console.log('worker ' + worker.process.pid + ' died');
+      cluster.on('exit', function(deadWorker, code, signal) {
+        // Restart the worker
+        var worker = cluster.fork();
+
+        // Note the process IDs
+        var newPID = worker.process.pid;
+        var oldPID = deadWorker.process.pid;
+
+        // Log the event
+        console.log('worker '+oldPID+' died.');
+        console.log('worker '+newPID+' born.');
       });
     } else {
         server = app.listen(config.port, function() {
