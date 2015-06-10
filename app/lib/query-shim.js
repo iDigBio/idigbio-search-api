@@ -1,92 +1,5 @@
 "use strict";
 
-/*
-
-    PYTHON IMPLEMENTATION
-
-    query = {
-        "query": {
-            "filtered": {
-                "filter": {}
-            }
-        }
-    }
-
-    fulltext = None
-    and_array = []
-    for k in shim:
-        if isinstance(shim[k],str) or isinstance(shim[k],unicode) or isinstance(shim[k],bool):
-            term = {};
-            term[k] = shim[k];
-            and_array.append({
-                "term": term
-            });
-        elif isinstance(shim[k],list):
-            or_array = []
-            for v in shim[k]:
-                or_array.append(v)
-            term = {
-                    "execution": "or"
-            }
-            term[k] = or_array
-            and_array.append({
-                "terms": term
-            })
-        else:
-            try:
-                if shim[k]["type"] == "exists":
-                    and_array.append({
-                        "exists": {
-                            "field": k,
-                        }
-                    })
-                elif shim[k]["type"] == "missing":
-                    and_array.append({
-                        "missing": {
-                            "field": k,
-                        }
-                    })
-                elif shim[k]["type"] == "range":
-                    qd = copy.deepcopy(shim[k])
-                    del qd["type"]
-                    and_array.append({
-                        "range": {
-                            k: qd,
-                        }
-                    })
-                elif shim[k]["type"] == "geo_bounding_box":
-                    qd = copy.deepcopy(shim[k])
-                    del qd["type"]
-                    and_array.append({
-                        "geo_bounding_box": {
-                            k: qd,
-                        }
-                    })
-                elif shim[k]["type"] == "fulltext":
-                    fulltext = shim[k]["value"]
-                else:
-                    logger.error(k + " " + shim[k])
-            except:
-                logger.error(traceback.format_exc())
-                logger.error(k + " " + shim[k])
-
-    if fulltext is not None:
-        query["query"]["filtered"]["query"] = {
-            "match": {
-                "_all": {
-                    "query": fulltext,
-                    "operator": "and"
-                }
-            }
-        }
-
-    if len(and_array) > 0:
-        query["query"]["filtered"]["filter"]["and"] = and_array
-
-    return query
-
-*/
-
 var _ = require("lodash");
 
 function QueryParseException(message,context) {
@@ -137,7 +50,7 @@ module.exports = function(app,config) {
 
     function prefixFilter(k,shimK) {
         var inner = {};
-        if (_.isString(shimK)) {
+        if (_.isString(shimK["value"])) {
             inner[k] = shimK["value"].toLowerCase();
         } else {
             inner[k] = shimK["value"];
