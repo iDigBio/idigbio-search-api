@@ -34,7 +34,7 @@ module.exports = function(app, config) {
             var pa = req.originalUrl.split("?")[0].split("/");
             var t = pa[2];
             var op = pa[3];
-            searchShim(config.search.index,t,op,req.query,function(err,body){
+            searchShim("idigbio",t,op,req.query,function(err,body){
                 if(err) {
                     next(err)
                 } else {
@@ -47,7 +47,7 @@ module.exports = function(app, config) {
             var pa = req.originalUrl.split("?")[0].split("/");
             var t = pa[2];
             var op = pa[3];
-            searchShim(config.search.index,t,op,req.body,function(err,body){
+            searchShim("idigbio",t,op,req.body,function(err,body){
                 if(err) {
                     next(err)
                 } else {
