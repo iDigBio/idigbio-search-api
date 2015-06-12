@@ -951,7 +951,7 @@ module.exports = function(app, config) {
                     if (map_exists) {
                         config.redis.client.get(h, function(err, s) {
                             config.redis.client.get(s, function(err, stored_map_def) {
-                                var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
+                                var map_url = 'https://' + req.get("host") + '/v2/mapping/' + s;
 
                                 try {
                                     mapDef(s, map_url, map_def, function(rb) {
@@ -974,7 +974,7 @@ module.exports = function(app, config) {
                             var s = hashids.encode(v);
                             config.redis.client.set(s, JSON.stringify(map_def), function(err, good) {
                                 config.redis.client.set(h, s, function(err, good) {
-                                    var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
+                                    var map_url = 'https://' + req.get("host") + '/v2/mapping/' + s;
 
                                     try {
                                         mapDef(s, map_url, map_def, function(rb) {
@@ -1015,7 +1015,7 @@ module.exports = function(app, config) {
                 }
 
                 var map_def = JSON.parse(rv);
-                var map_url = req.protocol + '://' + req.get("host") + '/v2/mapping/' + s;
+                var map_url = 'https://' + req.get("host") + '/v2/mapping/' + s;
 
                 try {
                     mapDef(s, map_url, map_def, function(rb) {
