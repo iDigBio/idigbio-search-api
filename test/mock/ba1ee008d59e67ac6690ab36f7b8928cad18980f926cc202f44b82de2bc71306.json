@@ -1,0 +1,1661 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0
+  },
+  "hits": {
+    "total": 13595,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f0122735-df61-4b44-b90e-b90be41e5b1b",
+        "_score": 1,
+        "_source": {
+          "family": "sapindaceae",
+          "recordset": "14f8f83f-7a0c-458c-b6d5-6da7dc8eaa0a",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "illinois",
+          "county": "dupage",
+          "phylum": "magnoliophyta",
+          "catalognumber": "0039716mor",
+          "specificepithet": "rubrum",
+          "continent": "north america",
+          "uuid": "f0122735-df61-4b44-b90e-b90be41e5b1b",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "elizabeth shimp",
+          "institutioncode": "mor",
+          "datemodified": "2015-04-14T18:35:13.450000+00:00",
+          "datecollected": "1989-04-13T00:00:00+00:00",
+          "etag": "0a1ecc3ecf105bac94900f340f818d4be314ea29",
+          "recordnumber": "2252v89",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "e36f3789-218d-4afd-abbf-ab3f9df0122f",
+          "scientificname": "acer rubrum",
+          "data": {
+            "dwc:startDayOfYear": "103",
+            "dwc:specificEpithet": "rubrum",
+            "dwc:county": "DuPage",
+            "dwc:recordedBy": "Elizabeth Shimp",
+            "dwc:order": "Sapindales",
+            "dcterms:references": "http://www.midwestherbaria.org/portal/collections/individual/index.php?occid=4274429",
+            "dwc:scientificNameAuthorship": "Wats.",
+            "dwc:occurrenceID": "4274429",
+            "dwc:stateProvince": "Illinois",
+            "dwc:eventDate": "1989-04-13",
+            "dwc:collectionID": "e36f3789-218d-4afd-abbf-ab3f9df0122f",
+            "dwc:country": "U.S.A.",
+            "idigbio:recordId": "urn:uuid:77743175-deca-402a-998c-85f258390a63",
+            "dwc:kingdom": "Plantae",
+            "dwc:occurrenceRemarks": "Original Source: Graft from Goteburg Bot. Gard. Oval tree 20' tall x 15' wide in good condition, but one main branch is dead. Trunk bark smooth to fissured, twigs gray, flower red, RHS #187-C.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:family": "Sapindaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "symbiota:verbatimScientificName": "Acer rubrum",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Acer Collection, R-99/70-40.",
+            "dwc:institutionCode": "MOR",
+            "dwc:reproductiveCondition": "flowers",
+            "dwc:catalogNumber": "0039716MOR",
+            "dwc:month": "4",
+            "dwc:otherCatalogNumbers": "83707",
+            "dwc:verbatimEventDate": "13-Apr-89",
+            "dwc:recordNumber": "2252V89",
+            "dcterms:modified": "2015-02-03 18:58:11",
+            "dwc:scientificName": "Acer rubrum",
+            "dwc:day": "13",
+            "dwc:year": "1989"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "4274429",
+          "country": "united states",
+          "locality": "acer collection, r-99/70-40.",
+          "eventdate": "1989-04-13",
+          "flags": [
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "13-apr-89",
+          "recordids": [
+            "urn:uuid:77743175-deca-402a-998c-85f258390a63"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f0972508-ed8a-48ae-9c47-e7c8ba8bde4f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": 42.925,
+            "lon": -89.15278
+          },
+          "family": "sapindaceae",
+          "recordset": "43aa1339-67e4-4298-b7c5-3d0f201266ef",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "illinois",
+          "municipality": "macomb",
+          "county": "mcdonough",
+          "phylum": "magnoliophyta",
+          "catalognumber": "mwi00018070",
+          "specificepithet": "tataricum",
+          "continent": "north america",
+          "uuid": "f0972508-ed8a-48ae-9c47-e7c8ba8bde4f",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "ribbens, eric",
+          "institutioncode": "mwi",
+          "datemodified": "2015-01-08T07:35:47.449000+00:00",
+          "datecollected": "2004-06-18T00:00:00+00:00",
+          "etag": "fea810c5bfda0b974350eb20c4b9bff274506f46",
+          "recordnumber": "91",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "urn:uuid:5f887025-5ee0-453e-b25b-360c1f5e870a",
+          "scientificname": "acer tataricum",
+          "data": {
+            "dwc:startDayOfYear": "170",
+            "dwc:specificEpithet": "tataricum",
+            "dwc:county": "McDonough",
+            "dwc:recordedBy": "Ribbens, Eric",
+            "dwc:georeferenceSources": "collector",
+            "dwc:order": "Sapindales",
+            "dcterms:references": "http://ngpherbaria.org/portal/collections/individual/index.php?occid=3449214",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:occurrenceID": "urn:uuid:f8f00c01-af6d-44ff-bfb7-2b1473bb0b64",
+            "dwc:dateIdentified": "2004",
+            "id": "3449214",
+            "dwc:stateProvince": "Illinois",
+            "dwc:eventDate": "2004-06-18",
+            "dwc:collectionID": "urn:uuid:5f887025-5ee0-453e-b25b-360c1f5e870a",
+            "dwc:country": "USA",
+            "idigbio:recordId": "urn:uuid:f8f00c01-af6d-44ff-bfb7-2b1473bb0b64",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "42.925",
+            "dwc:rightsHolder": "Western Illinois University",
+            "dwc:rights": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "dwc:genus": "Acer",
+            "dwc:family": "Sapindaceae",
+            "dwc:identifiedBy": "Eric Ribbens",
+            "dwc:municipality": "Macomb",
+            "dwc:disposition": "W IL Woody Plants",
+            "symbiota:verbatimScientificName": "Acer tataricum",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Macomb, Western Illinois University, southeast of Tillman Hall",
+            "dwc:institutionCode": "MWI",
+            "dwc:catalogNumber": "MWI00018070",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-89.15278",
+            "dwc:coordinateUncertaintyInMeters": "10",
+            "dwc:georeferencedBy": "Eric Ribbens",
+            "dwc:recordNumber": "91",
+            "dcterms:modified": "2013-08-10 11:41:17",
+            "dwc:scientificName": "Acer tataricum",
+            "dwc:day": "18",
+            "dwc:year": "2004"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:f8f00c01-af6d-44ff-bfb7-2b1473bb0b64",
+          "country": "united states",
+          "locality": "macomb, western illinois university, southeast of tillman hall",
+          "eventdate": "2004-06-18",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_country_replaced",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "urn:uuid:f8f00c01-af6d-44ff-bfb7-2b1473bb0b64"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f09a59db-1f9d-4b98-a189-48cb9d84bbbe",
+        "_score": 1,
+        "_source": {
+          "family": "sapindaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "stateprovince": "florida",
+          "county": "pinellas",
+          "phylum": "magnoliophyta",
+          "catalognumber": "134033",
+          "specificepithet": "rubrum",
+          "verbatimlocality": "united states: florida: pinellas county.  several,  along small stream;  1 mi. s. of fla. 582 and 6 mi. s.e. of tarpon springs.",
+          "datemodified": "2014-08-14T14:11:51.500000+00:00",
+          "uuid": "f09a59db-1f9d-4b98-a189-48cb9d84bbbe",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "l. baltzell",
+          "institutioncode": "flas",
+          "continent": "north america",
+          "etag": "858781a6d51f9975f734df253e72fcc971497d1b",
+          "recordnumber": "9325",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "data": {
+            "dwc:specificEpithet": "rubrum",
+            "dwc:county": "Pinellas",
+            "dwc:recordedBy": "L. Baltzell",
+            "dcterms:references": "http://www.flmnh.ufl.edu/herbarium/cat/catsearch.htm",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "dwc:occurrenceID": "beadcc58-4a43-4b76-904e-649ea5053812",
+            "dcterms:language": "en",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "id": "beadcc58-4a43-4b76-904e-649ea5053812",
+            "dwc:kingdom": "Plantae",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:institutionCode": "FLAS",
+            "dwc:catalogNumber": "134033",
+            "dwc:nomenclaturalCode": "ICN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimLocality": "United States: Florida: Pinellas County.  Several,  along small stream;  1 mi. s. of Fla. 582 and 6 mi. s.e. of Tarpon Springs.",
+            "dwc:verbatimEventDate": "25 March 1977",
+            "dwc:recordNumber": "9325",
+            "dcterms:rights": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dwc:family": "Sapindaceae"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "beadcc58-4a43-4b76-904e-649ea5053812",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "dqs": 0.26666666666666666,
+          "flags": [
+            "dwc_phylum_added",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "25 march 1977",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\beadcc58-4a43-4b76-904e-649ea5053812"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f0ee9ba9-c9af-43e0-a30b-9de0c539135f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": 37.76457,
+            "lon": -108.452883
+          },
+          "family": "sapindaceae",
+          "recordset": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "colorado",
+          "county": "dolores",
+          "phylum": "magnoliophyta",
+          "specificepithet": "glabrum",
+          "continent": "north america",
+          "uuid": "f0ee9ba9-c9af-43e0-a30b-9de0c539135f",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "shelley silva; tony silva",
+          "institutioncode": "asc",
+          "datemodified": "2015-01-17T03:56:16.437000+00:00",
+          "datecollected": "2011-06-24T00:00:00+00:00",
+          "etag": "73003444111e63d0bdc0b9c0a35c9781d12ccd16",
+          "recordnumber": "172",
+          "minelevation": 2667,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "17a53c97-835b-409e-8a9a-c9a7307a4965",
+          "scientificname": "acer glabrum",
+          "data": {
+            "dwc:startDayOfYear": "175",
+            "dwc:specificEpithet": "glabrum",
+            "dwc:county": "Dolores",
+            "dwc:recordedBy": "Shelley Silva; Tony Silva",
+            "dwc:order": "Sapindales",
+            "dwc:habitat": "Forest",
+            "dwc:scientificNameAuthorship": "Torr.",
+            "dwc:occurrenceID": "urn:uuid:a88bd7ff-abc1-4dff-9c47-98380320ea0e",
+            "id": "4399491",
+            "dwc:stateProvince": "Colorado",
+            "dwc:eventDate": "2011-06-24",
+            "dwc:collectionID": "17a53c97-835b-409e-8a9a-c9a7307a4965",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:a88bd7ff-abc1-4dff-9c47-98380320ea0e",
+            "dcterms:rightsHolder": "Deaver Herbarium",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "37.76457",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:family": "Sapindaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "symbiota:verbatimScientificName": "Acer glabrum",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=4399491",
+            "dwc:locality": "Lone Mesa State Park, 10 miles north of southern entrance at FS 514.",
+            "dwc:institutionCode": "ASC",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-108.452883",
+            "dwc:scientificName": "Acer glabrum",
+            "dwc:recordNumber": "172",
+            "dwc:minimumElevationInMeters": "2667",
+            "dcterms:modified": "2015-01-06 12:31:47",
+            "dwc:associatedTaxa": "Populus tremuloides, Quercus gambelii, Symphoricarpos",
+            "dwc:day": "24",
+            "dwc:year": "2011"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:a88bd7ff-abc1-4dff-9c47-98380320ea0e",
+          "country": "united states",
+          "locality": "lone mesa state park, 10 miles north of southern entrance at fs 514.",
+          "eventdate": "2011-06-24",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "urn:uuid:a88bd7ff-abc1-4dff-9c47-98380320ea0e"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f0feb19c-fdb0-4fef-b394-abdb18f724ef",
+        "_score": 1,
+        "_source": {
+          "family": "aceraceae",
+          "recordset": "05c029de-734c-450a-a41a-56061b7ebb18",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "michigan",
+          "phylum": "magnoliophyta",
+          "catalognumber": "297253",
+          "specificepithet": "tataricum",
+          "continent": "north america",
+          "uuid": "f0feb19c-fdb0-4fef-b394-abdb18f724ef",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "unknown",
+          "institutioncode": "msc",
+          "datemodified": "2015-02-20T16:06:24.426000+00:00",
+          "datecollected": "1887-05-25T00:00:00+00:00",
+          "etag": "6d2ab8ae9aa369de2c2eb69d9e1ca71d0348fc0b",
+          "flags": [
+            "dwc_phylum_added",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_replaced"
+          ],
+          "hasImage": false,
+          "kingdom": "plantae",
+          "scientificname": "acer tataricum",
+          "data": {
+            "dwc:specificEpithet": "tataricum",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "unknown",
+            "dwc:fieldNumber": "1",
+            "dwc:order": "Sapindales",
+            "dwc:occurrenceID": "f7a6b073-3039-11e3-963d-8844b9d50285",
+            "dcterms:language": "EN",
+            "id": "f7a6b073-3039-11e3-963d-8844b9d50285",
+            "dwc:stateProvince": "Michigan",
+            "dwc:eventDate": "1887-5-25",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Vascular Plants",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:continent": "North and Central America",
+            "dwc:preparations": "sheet",
+            "dwc:locality": "Lansing",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15587",
+            "dwc:institutionCode": "MSC",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "297253",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "United States, Michigan",
+            "dwc:month": "5",
+            "dwc:datasetName": "Michigan State University Herbarium Vascular Plant Collection",
+            "dwc:family": "Aceraceae",
+            "dcterms:modified": "2013-06-24 00:00:00.0",
+            "dwc:scientificName": "Acer tataricum",
+            "dwc:day": "25",
+            "dwc:year": "1887"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "f7a6b073-3039-11e3-963d-8844b9d50285",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:15587",
+          "country": "united states",
+          "locality": "lansing",
+          "collectioncode": "vascular plants",
+          "eventdate": "1887-5-25",
+          "fieldnumber": "1",
+          "recordids": [
+            "05c029de-734c-450a-a41a-56061b7ebb18\\f7a6b073-3039-11e3-963d-8844b9d50285"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f110efce-b7c5-41bf-85b5-539a70169c51",
+        "_score": 1,
+        "_source": {
+          "family": "aceraceae",
+          "recordset": "05c029de-734c-450a-a41a-56061b7ebb18",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "michigan",
+          "phylum": "magnoliophyta",
+          "catalognumber": "297306",
+          "specificepithet": "saccharum",
+          "continent": "north america",
+          "uuid": "f110efce-b7c5-41bf-85b5-539a70169c51",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "hoffman & poltorak",
+          "institutioncode": "msc",
+          "datemodified": "2015-02-20T16:20:32.454000+00:00",
+          "datecollected": "1954-06-24T00:00:00+00:00",
+          "etag": "3609b683859092d013e94f47dde20e08bb85b78a",
+          "flags": [
+            "dwc_phylum_added",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_replaced"
+          ],
+          "hasImage": false,
+          "kingdom": "plantae",
+          "scientificname": "acer saccharum",
+          "data": {
+            "dwc:specificEpithet": "saccharum",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Hoffman & Poltorak",
+            "dwc:fieldNumber": "1",
+            "dwc:order": "Sapindales",
+            "dwc:occurrenceID": "f7a8dd17-3039-11e3-963d-8844b9d50285",
+            "dcterms:language": "EN",
+            "id": "f7a8dd17-3039-11e3-963d-8844b9d50285",
+            "dwc:stateProvince": "Michigan",
+            "dwc:eventDate": "1954-6-24",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Vascular Plants",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:continent": "North and Central America",
+            "dwc:preparations": "sheet",
+            "dwc:locality": "Ogemaw County",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15587",
+            "dwc:institutionCode": "MSC",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "297306",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "United States, Michigan",
+            "dwc:month": "6",
+            "dwc:datasetName": "Michigan State University Herbarium Vascular Plant Collection",
+            "dwc:family": "Aceraceae",
+            "dcterms:modified": "2013-06-24 00:00:00.0",
+            "dwc:scientificName": "Acer saccharum",
+            "dwc:day": "24",
+            "dwc:year": "1954"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "f7a8dd17-3039-11e3-963d-8844b9d50285",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:15587",
+          "country": "united states",
+          "locality": "ogemaw county",
+          "collectioncode": "vascular plants",
+          "eventdate": "1954-6-24",
+          "fieldnumber": "1",
+          "recordids": [
+            "05c029de-734c-450a-a41a-56061b7ebb18\\f7a8dd17-3039-11e3-963d-8844b9d50285"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f160cc22-4e46-4314-a0ee-0c07f8990d80",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "family": "sapindaceae",
+          "recordset": "1527b668-b797-42be-94d3-0058e1393e94",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "connecticut",
+          "municipality": "groton",
+          "county": "new london county",
+          "phylum": "magnoliophyta",
+          "catalognumber": "yu.057717",
+          "specificepithet": "pensylvanicum",
+          "continent": "north america",
+          "uuid": "f160cc22-4e46-4314-a0ee-0c07f8990d80",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "c. w. swan",
+          "institutioncode": "ypm",
+          "datemodified": "2014-11-20T04:20:42.784000+00:00",
+          "datecollected": "1883-08-25T00:00:00+00:00",
+          "etag": "1a394c527ffaa034ba4ac42bda0015873a480c02",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "highertaxon": "plantae; tracheophyta; rosidae; sapindales; sapindaceae",
+          "scientificname": "acer pensylvanicum",
+          "data": {
+            "dwc:specificEpithet": "pensylvanicum",
+            "dwc:county": "New London County",
+            "dwc:recordedBy": "C. W. Swan",
+            "dwc:order": "Sapindales",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "urn:uuid:c5aa09e3-8c1c-46ac-8f75-b1c4191a866c",
+            "dcterms:language": "eng",
+            "dwc:scientificNameAuthorship": "L.",
+            "id": "urn:uuid:c5aa09e3-8c1c-46ac-8f75-b1c4191a866c",
+            "dwc:stateProvince": "Connecticut",
+            "dcterms:bibliographicCitation": "Acer pensylvanicum (YU.057717)",
+            "dwc:eventDate": "1883-08-25",
+            "dwc:institutionCode": "YPM",
+            "dwc:country": "USA",
+            "dwc:collectionCode": "YU",
+            "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "41.3623",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+            "dwc:genus": "Acer",
+            "dwc:continent": "North America",
+            "dwc:family": "Sapindaceae",
+            "dwc:dynamicProperties": "{ \"mm_repository_id\": \"207950\" }",
+            "dwc:municipality": "Groton",
+            "dwc:ownerInstitutionCode": "YPM",
+            "dwc:phylum": "Tracheophyta",
+            "dwc:associatedMedia": "http://deliver.odai.yale.edu/content/repository/YPM/id/207950/format/3",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae; Tracheophyta; Rosidae; Sapindales; Sapindaceae",
+            "dwc:catalogNumber": "YU.057717",
+            "dwc:nomenclaturalCode": "ICBN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America; USA; Connecticut; New London County; Groton",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-72.0285",
+            "dwc:coordinateUncertaintyInMeters": "6806",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:modified": "2013-04-21T13:18:18.000Z",
+            "dwc:scientificName": "Acer pensylvanicum",
+            "dwc:day": "25",
+            "dwc:year": "1883"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:c5aa09e3-8c1c-46ac-8f75-b1c4191a866c",
+          "country": "united states",
+          "geopoint": {
+            "lat": 41.362300000000005,
+            "lon": -72.0285
+          },
+          "collectioncode": "yu",
+          "eventdate": "1883-08-25",
+          "flags": [
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_phylum_replaced",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "1527b668-b797-42be-94d3-0058e1393e94\\urn:uuid:c5aa09e3-8c1c-46ac-8f75-b1c4191a866c"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f179acbf-3393-4145-ab2f-d8410eb5a0c8",
+        "_score": 1,
+        "_source": {
+          "family": "sapindaceae",
+          "recordset": "cb33cf97-2a7b-4b45-9b73-5aca568332a6",
+          "dqs": 0.31666666666666665,
+          "stateprovince": "ontario",
+          "county": "carleton",
+          "phylum": "magnoliophyta",
+          "specificepithet": "rubrum",
+          "continent": "north america",
+          "uuid": "f179acbf-3393-4145-ab2f-d8410eb5a0c8",
+          "countrycode": "can",
+          "basisofrecord": "preservedspecimen",
+          "collector": "w.j. cody; w.e. kemp",
+          "institutioncode": "eiu",
+          "datemodified": "2015-02-02T18:34:42.846000+00:00",
+          "datecollected": "1964-06-10T00:00:00+00:00",
+          "etag": "63f88a77f1871589ea57b4d81474aa3ce937336d",
+          "recordnumber": "13228",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "27dc3568-b638-4917-afcf-3dd7eac73cf9",
+          "scientificname": "acer rubrum",
+          "data": {
+            "dwc:startDayOfYear": "162",
+            "dwc:specificEpithet": "rubrum",
+            "dwc:county": "Carleton",
+            "dwc:recordedBy": "W.J. Cody; W.E. Kemp",
+            "dwc:order": "Sapindales",
+            "dwc:habitat": "Sandy slope of peat bog.",
+            "dwc:scientificNameAuthorship": "Wats.",
+            "dwc:occurrenceID": "urn:uuid:7b2f6297-fe10-47fc-814b-22aac8d9c009",
+            "id": "4892858",
+            "dwc:stateProvince": "Ontario",
+            "dwc:eventDate": "1964-06-10",
+            "dwc:collectionID": "27dc3568-b638-4917-afcf-3dd7eac73cf9",
+            "dwc:country": "Canada",
+            "idigbio:recordId": "urn:uuid:7b2f6297-fe10-47fc-814b-22aac8d9c009",
+            "dwc:kingdom": "Plantae",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:family": "Sapindaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "dwc:dynamicProperties": "Tree 60 ft., dbh 18 inches.",
+            "symbiota:verbatimScientificName": "Acer rubrum",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=4892858",
+            "dwc:locality": "Gloucester Twp., 10 miles E of center of Ottawa, near foot of sandy slope bordering Mer Bleu Peat Bog.",
+            "dwc:institutionCode": "EIU",
+            "dwc:month": "6",
+            "dwc:otherCatalogNumbers": "68177",
+            "dwc:recordNumber": "13228",
+            "dcterms:modified": "2015-01-06 12:31:47",
+            "dwc:scientificName": "Acer rubrum",
+            "dwc:day": "10",
+            "dwc:year": "1964"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:7b2f6297-fe10-47fc-814b-22aac8d9c009",
+          "country": "canada",
+          "locality": "gloucester twp., 10 miles e of center of ottawa, near foot of sandy slope bordering mer bleu peat bog.",
+          "eventdate": "1964-06-10",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "urn:uuid:7b2f6297-fe10-47fc-814b-22aac8d9c009"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f1e9391d-77b3-45fc-96af-0f595852856c",
+        "_score": 1,
+        "_source": {
+          "family": "sapindaceae",
+          "recordset": "14f8f83f-7a0c-458c-b6d5-6da7dc8eaa0a",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "illinois",
+          "county": "cook",
+          "phylum": "magnoliophyta",
+          "catalognumber": "0063250mor",
+          "specificepithet": "platanoides",
+          "continent": "north america",
+          "uuid": "f1e9391d-77b3-45fc-96af-0f595852856c",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "mike nee",
+          "institutioncode": "mor",
+          "datemodified": "2015-04-14T19:13:37.013000+00:00",
+          "datecollected": "1980-09-06T00:00:00+00:00",
+          "etag": "015ef69208c887b75e737b421a5d41525fd09142",
+          "recordnumber": "18190b",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "e36f3789-218d-4afd-abbf-ab3f9df0122f",
+          "scientificname": "acer platanoides",
+          "data": {
+            "dwc:startDayOfYear": "250",
+            "dwc:specificEpithet": "platanoides",
+            "dwc:county": "Cook",
+            "dwc:recordedBy": "Mike Nee",
+            "dwc:order": "Sapindales",
+            "dcterms:references": "http://www.midwestherbaria.org/portal/collections/individual/index.php?occid=4291782",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:occurrenceID": "4291782",
+            "dwc:stateProvince": "Illinois",
+            "dwc:eventDate": "1980-09-06",
+            "dwc:collectionID": "e36f3789-218d-4afd-abbf-ab3f9df0122f",
+            "dwc:country": "U.S.A.",
+            "idigbio:recordId": "urn:uuid:f1e15188-5ada-4e8e-97d4-ef019975d4a4",
+            "dwc:kingdom": "Plantae",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Acer",
+            "dwc:family": "Sapindaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "dwc:dynamicProperties": "Young street tree, 4 m. tall, with thick crown. Leaves. Only a very , few twigs of this tree are bearing fruit.",
+            "symbiota:verbatimScientificName": "Acer platanoides",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Along 4200 N. Hazel St., Chicago.",
+            "dwc:institutionCode": "MOR",
+            "dwc:reproductiveCondition": "fruits",
+            "dwc:catalogNumber": "0063250MOR",
+            "dwc:month": "9",
+            "dwc:otherCatalogNumbers": "46240",
+            "dwc:verbatimEventDate": "6-Sep-80",
+            "dwc:recordNumber": "18190b",
+            "dcterms:modified": "2015-02-03 18:58:11",
+            "dwc:scientificName": "Acer platanoides",
+            "dwc:day": "6",
+            "dwc:year": "1980"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "4291782",
+          "country": "united states",
+          "locality": "along 4200 n. hazel st., chicago.",
+          "eventdate": "1980-09-06",
+          "flags": [
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "6-sep-80",
+          "recordids": [
+            "urn:uuid:f1e15188-5ada-4e8e-97d4-ef019975d4a4"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f20389f5-2072-4ae4-bb9f-8906d51f2bf7",
+        "_score": 1,
+        "_source": {
+          "family": "aceraceae",
+          "recordset": "4523e216-ee13-4b15-a3f7-a6fd56431604",
+          "dqs": 0.35,
+          "stateprovince": "north carolina",
+          "county": "halifax county",
+          "phylum": "magnoliophyta",
+          "catalognumber": "lsu00104280",
+          "specificepithet": "saccharinum",
+          "continent": "north america",
+          "uuid": "f20389f5-2072-4ae4-bb9f-8906d51f2bf7",
+          "countrycode": "usa",
+          "basisofrecord": "specimen",
+          "collector": "steven w. leonard; a. e. radford",
+          "institutioncode": "lsu",
+          "datemodified": "2015-04-09T16:51:52.694000+00:00",
+          "datecollected": "1968-04-17T00:00:00+00:00",
+          "etag": "4967fc453ec72d6a74fe7a54eba55c64a37408be",
+          "recordnumber": "1320",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "fe609977-5b39-49c5-905a-32ca83233244",
+          "scientificname": "acer saccharinum",
+          "data": {
+            "dwc:startDayOfYear": "108",
+            "dwc:specificEpithet": "saccharinum",
+            "dwc:county": "Halifax County",
+            "dwc:recordedBy": "Steven W. Leonard; A. E. Radford",
+            "dwc:order": "Sapindales",
+            "dcterms:references": "http://sernecportal.org/portal/collections/individual/index.php?occid=5743990",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:occurrenceID": "47958190-27a5-11e3-8d47-005056be0003",
+            "id": "5743990",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "1968-04-17",
+            "dwc:collectionID": "fe609977-5b39-49c5-905a-32ca83233244",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:172193f1-1396-4fc8-bb17-309c8bdfa9d2",
+            "dwc:kingdom": "Plantae",
+            "dwc:basisOfRecord": "Specimen",
+            "dwc:taxonRemarks": "silver maple",
+            "dwc:preparations": "1",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "symbiota:verbatimScientificName": "Acer saccharinum",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Banks of Roanoke River at New Carolina Co., E of Weldon and US 158-301.",
+            "dwc:institutionCode": "LSU",
+            "dwc:catalogNumber": "LSU00104280",
+            "dwc:genus": "Acer",
+            "dwc:month": "4",
+            "dwc:otherCatalogNumbers": "40319",
+            "dwc:verbatimEventDate": "4/17/1968",
+            "dwc:recordNumber": "1320",
+            "dwc:family": "Aceraceae",
+            "dcterms:modified": "2015-01-05 12:55:56",
+            "dwc:scientificName": "Acer saccharinum",
+            "dwc:day": "17",
+            "dwc:year": "1968"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "47958190-27a5-11e3-8d47-005056be0003",
+          "country": "united states",
+          "locality": "banks of roanoke river at new carolina co., e of weldon and us 158-301.",
+          "eventdate": "1968-04-17",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "4/17/1968",
+          "recordids": [
+            "urn:uuid:172193f1-1396-4fc8-bb17-309c8bdfa9d2"
+          ],
+          "genus": "acer",
+          "order": "sapindales"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "fdh": {
+      "doc_count": 12416,
+      "dh": {
+        "buckets": [
+          {
+            "key_as_string": "1800-01-01",
+            "key": -5364662400000,
+            "doc_count": 101
+          },
+          {
+            "key_as_string": "1805-01-01",
+            "key": -5206896000000,
+            "doc_count": 2
+          },
+          {
+            "key_as_string": "1814-01-01",
+            "key": -4922899200000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1840-01-01",
+            "key": -4102444800000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1841-01-01",
+            "key": -4070822400000,
+            "doc_count": 3
+          },
+          {
+            "key_as_string": "1842-01-01",
+            "key": -4039286400000,
+            "doc_count": 3
+          },
+          {
+            "key_as_string": "1844-01-01",
+            "key": -3976214400000,
+            "doc_count": 2
+          },
+          {
+            "key_as_string": "1845-01-01",
+            "key": -3944592000000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1846-01-01",
+            "key": -3913056000000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1848-01-01",
+            "key": -3849984000000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1850-01-01",
+            "key": -3786825600000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1857-01-01",
+            "key": -3565900800000,
+            "doc_count": 2
+          },
+          {
+            "key_as_string": "1858-01-01",
+            "key": -3534364800000,
+            "doc_count": 2
+          },
+          {
+            "key_as_string": "1860-01-01",
+            "key": -3471292800000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1861-01-01",
+            "key": -3439670400000,
+            "doc_count": 4
+          },
+          {
+            "key_as_string": "1862-01-01",
+            "key": -3408134400000,
+            "doc_count": 3
+          },
+          {
+            "key_as_string": "1863-01-01",
+            "key": -3376598400000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1868-01-01",
+            "key": -3218832000000,
+            "doc_count": 2
+          },
+          {
+            "key_as_string": "1870-01-01",
+            "key": -3155673600000,
+            "doc_count": 3
+          },
+          {
+            "key_as_string": "1871-01-01",
+            "key": -3124137600000,
+            "doc_count": 1
+          },
+          {
+            "key_as_string": "1872-01-01",
+            "key": -3092601600000,
+            "doc_count": 7
+          },
+          {
+            "key_as_string": "1873-01-01",
+            "key": -3060979200000,
+            "doc_count": 10
+          },
+          {
+            "key_as_string": "1875-01-01",
+            "key": -2997907200000,
+            "doc_count": 5
+          },
+          {
+            "key_as_string": "1876-01-01",
+            "key": -2966371200000,
+            "doc_count": 2
+          },
+          {
+            "key_as_string": "1878-01-01",
+            "key": -2903212800000,
+            "doc_count": 4
+          },
+          {
+            "key_as_string": "1879-01-01",
+            "key": -2871676800000,
+            "doc_count": 7
+          },
+          {
+            "key_as_string": "1880-01-01",
+            "key": -2840140800000,
+            "doc_count": 4
+          },
+          {
+            "key_as_string": "1881-01-01",
+            "key": -2808518400000,
+            "doc_count": 8
+          },
+          {
+            "key_as_string": "1882-01-01",
+            "key": -2776982400000,
+            "doc_count": 7
+          },
+          {
+            "key_as_string": "1883-01-01",
+            "key": -2745446400000,
+            "doc_count": 15
+          },
+          {
+            "key_as_string": "1884-01-01",
+            "key": -2713910400000,
+            "doc_count": 4
+          },
+          {
+            "key_as_string": "1885-01-01",
+            "key": -2682288000000,
+            "doc_count": 10
+          },
+          {
+            "key_as_string": "1886-01-01",
+            "key": -2650752000000,
+            "doc_count": 7
+          },
+          {
+            "key_as_string": "1887-01-01",
+            "key": -2619216000000,
+            "doc_count": 16
+          },
+          {
+            "key_as_string": "1888-01-01",
+            "key": -2587680000000,
+            "doc_count": 21
+          },
+          {
+            "key_as_string": "1889-01-01",
+            "key": -2556057600000,
+            "doc_count": 4
+          },
+          {
+            "key_as_string": "1890-01-01",
+            "key": -2524521600000,
+            "doc_count": 9
+          },
+          {
+            "key_as_string": "1891-01-01",
+            "key": -2492985600000,
+            "doc_count": 29
+          },
+          {
+            "key_as_string": "1892-01-01",
+            "key": -2461449600000,
+            "doc_count": 31
+          },
+          {
+            "key_as_string": "1893-01-01",
+            "key": -2429827200000,
+            "doc_count": 16
+          },
+          {
+            "key_as_string": "1894-01-01",
+            "key": -2398291200000,
+            "doc_count": 82
+          },
+          {
+            "key_as_string": "1895-01-01",
+            "key": -2366755200000,
+            "doc_count": 54
+          },
+          {
+            "key_as_string": "1896-01-01",
+            "key": -2335219200000,
+            "doc_count": 38
+          },
+          {
+            "key_as_string": "1897-01-01",
+            "key": -2303596800000,
+            "doc_count": 34
+          },
+          {
+            "key_as_string": "1898-01-01",
+            "key": -2272060800000,
+            "doc_count": 27
+          },
+          {
+            "key_as_string": "1899-01-01",
+            "key": -2240524800000,
+            "doc_count": 34
+          },
+          {
+            "key_as_string": "1900-01-01",
+            "key": -2208988800000,
+            "doc_count": 37
+          },
+          {
+            "key_as_string": "1901-01-01",
+            "key": -2177452800000,
+            "doc_count": 70
+          },
+          {
+            "key_as_string": "1902-01-01",
+            "key": -2145916800000,
+            "doc_count": 68
+          },
+          {
+            "key_as_string": "1903-01-01",
+            "key": -2114380800000,
+            "doc_count": 58
+          },
+          {
+            "key_as_string": "1904-01-01",
+            "key": -2082844800000,
+            "doc_count": 51
+          },
+          {
+            "key_as_string": "1905-01-01",
+            "key": -2051222400000,
+            "doc_count": 51
+          },
+          {
+            "key_as_string": "1906-01-01",
+            "key": -2019686400000,
+            "doc_count": 74
+          },
+          {
+            "key_as_string": "1907-01-01",
+            "key": -1988150400000,
+            "doc_count": 34
+          },
+          {
+            "key_as_string": "1908-01-01",
+            "key": -1956614400000,
+            "doc_count": 59
+          },
+          {
+            "key_as_string": "1909-01-01",
+            "key": -1924992000000,
+            "doc_count": 51
+          },
+          {
+            "key_as_string": "1910-01-01",
+            "key": -1893456000000,
+            "doc_count": 47
+          },
+          {
+            "key_as_string": "1911-01-01",
+            "key": -1861920000000,
+            "doc_count": 41
+          },
+          {
+            "key_as_string": "1912-01-01",
+            "key": -1830384000000,
+            "doc_count": 30
+          },
+          {
+            "key_as_string": "1913-01-01",
+            "key": -1798761600000,
+            "doc_count": 20
+          },
+          {
+            "key_as_string": "1914-01-01",
+            "key": -1767225600000,
+            "doc_count": 34
+          },
+          {
+            "key_as_string": "1915-01-01",
+            "key": -1735689600000,
+            "doc_count": 45
+          },
+          {
+            "key_as_string": "1916-01-01",
+            "key": -1704153600000,
+            "doc_count": 45
+          },
+          {
+            "key_as_string": "1917-01-01",
+            "key": -1672531200000,
+            "doc_count": 32
+          },
+          {
+            "key_as_string": "1918-01-01",
+            "key": -1640995200000,
+            "doc_count": 28
+          },
+          {
+            "key_as_string": "1919-01-01",
+            "key": -1609459200000,
+            "doc_count": 65
+          },
+          {
+            "key_as_string": "1920-01-01",
+            "key": -1577923200000,
+            "doc_count": 63
+          },
+          {
+            "key_as_string": "1921-01-01",
+            "key": -1546300800000,
+            "doc_count": 32
+          },
+          {
+            "key_as_string": "1922-01-01",
+            "key": -1514764800000,
+            "doc_count": 70
+          },
+          {
+            "key_as_string": "1923-01-01",
+            "key": -1483228800000,
+            "doc_count": 38
+          },
+          {
+            "key_as_string": "1924-01-01",
+            "key": -1451692800000,
+            "doc_count": 16
+          },
+          {
+            "key_as_string": "1925-01-01",
+            "key": -1420070400000,
+            "doc_count": 39
+          },
+          {
+            "key_as_string": "1926-01-01",
+            "key": -1388534400000,
+            "doc_count": 24
+          },
+          {
+            "key_as_string": "1927-01-01",
+            "key": -1356998400000,
+            "doc_count": 68
+          },
+          {
+            "key_as_string": "1928-01-01",
+            "key": -1325462400000,
+            "doc_count": 57
+          },
+          {
+            "key_as_string": "1929-01-01",
+            "key": -1293840000000,
+            "doc_count": 76
+          },
+          {
+            "key_as_string": "1930-01-01",
+            "key": -1262304000000,
+            "doc_count": 117
+          },
+          {
+            "key_as_string": "1931-01-01",
+            "key": -1230768000000,
+            "doc_count": 70
+          },
+          {
+            "key_as_string": "1932-01-01",
+            "key": -1199232000000,
+            "doc_count": 85
+          },
+          {
+            "key_as_string": "1933-01-01",
+            "key": -1167609600000,
+            "doc_count": 109
+          },
+          {
+            "key_as_string": "1934-01-01",
+            "key": -1136073600000,
+            "doc_count": 107
+          },
+          {
+            "key_as_string": "1935-01-01",
+            "key": -1104537600000,
+            "doc_count": 80
+          },
+          {
+            "key_as_string": "1936-01-01",
+            "key": -1073001600000,
+            "doc_count": 77
+          },
+          {
+            "key_as_string": "1937-01-01",
+            "key": -1041379200000,
+            "doc_count": 109
+          },
+          {
+            "key_as_string": "1938-01-01",
+            "key": -1009843200000,
+            "doc_count": 91
+          },
+          {
+            "key_as_string": "1939-01-01",
+            "key": -978307200000,
+            "doc_count": 65
+          },
+          {
+            "key_as_string": "1940-01-01",
+            "key": -946771200000,
+            "doc_count": 96
+          },
+          {
+            "key_as_string": "1941-01-01",
+            "key": -915148800000,
+            "doc_count": 31
+          },
+          {
+            "key_as_string": "1942-01-01",
+            "key": -883612800000,
+            "doc_count": 40
+          },
+          {
+            "key_as_string": "1943-01-01",
+            "key": -852076800000,
+            "doc_count": 15
+          },
+          {
+            "key_as_string": "1944-01-01",
+            "key": -820540800000,
+            "doc_count": 49
+          },
+          {
+            "key_as_string": "1945-01-01",
+            "key": -788918400000,
+            "doc_count": 42
+          },
+          {
+            "key_as_string": "1946-01-01",
+            "key": -757382400000,
+            "doc_count": 37
+          },
+          {
+            "key_as_string": "1947-01-01",
+            "key": -725846400000,
+            "doc_count": 68
+          },
+          {
+            "key_as_string": "1948-01-01",
+            "key": -694310400000,
+            "doc_count": 67
+          },
+          {
+            "key_as_string": "1949-01-01",
+            "key": -662688000000,
+            "doc_count": 83
+          },
+          {
+            "key_as_string": "1950-01-01",
+            "key": -631152000000,
+            "doc_count": 70
+          },
+          {
+            "key_as_string": "1951-01-01",
+            "key": -599616000000,
+            "doc_count": 42
+          },
+          {
+            "key_as_string": "1952-01-01",
+            "key": -568080000000,
+            "doc_count": 55
+          },
+          {
+            "key_as_string": "1953-01-01",
+            "key": -536457600000,
+            "doc_count": 68
+          },
+          {
+            "key_as_string": "1954-01-01",
+            "key": -504921600000,
+            "doc_count": 69
+          },
+          {
+            "key_as_string": "1955-01-01",
+            "key": -473385600000,
+            "doc_count": 64
+          },
+          {
+            "key_as_string": "1956-01-01",
+            "key": -441849600000,
+            "doc_count": 67
+          },
+          {
+            "key_as_string": "1957-01-01",
+            "key": -410227200000,
+            "doc_count": 64
+          },
+          {
+            "key_as_string": "1958-01-01",
+            "key": -378691200000,
+            "doc_count": 135
+          },
+          {
+            "key_as_string": "1959-01-01",
+            "key": -347155200000,
+            "doc_count": 98
+          },
+          {
+            "key_as_string": "1960-01-01",
+            "key": -315619200000,
+            "doc_count": 86
+          },
+          {
+            "key_as_string": "1961-01-01",
+            "key": -283996800000,
+            "doc_count": 81
+          },
+          {
+            "key_as_string": "1962-01-01",
+            "key": -252460800000,
+            "doc_count": 108
+          },
+          {
+            "key_as_string": "1963-01-01",
+            "key": -220924800000,
+            "doc_count": 116
+          },
+          {
+            "key_as_string": "1964-01-01",
+            "key": -189388800000,
+            "doc_count": 204
+          },
+          {
+            "key_as_string": "1965-01-01",
+            "key": -157766400000,
+            "doc_count": 250
+          },
+          {
+            "key_as_string": "1966-01-01",
+            "key": -126230400000,
+            "doc_count": 202
+          },
+          {
+            "key_as_string": "1967-01-01",
+            "key": -94694400000,
+            "doc_count": 164
+          },
+          {
+            "key_as_string": "1968-01-01",
+            "key": -63158400000,
+            "doc_count": 180
+          },
+          {
+            "key_as_string": "1969-01-01",
+            "key": -31536000000,
+            "doc_count": 204
+          },
+          {
+            "key_as_string": "1970-01-01",
+            "key": 0,
+            "doc_count": 188
+          },
+          {
+            "key_as_string": "1971-01-01",
+            "key": 31536000000,
+            "doc_count": 170
+          },
+          {
+            "key_as_string": "1972-01-01",
+            "key": 63072000000,
+            "doc_count": 150
+          },
+          {
+            "key_as_string": "1973-01-01",
+            "key": 94694400000,
+            "doc_count": 167
+          },
+          {
+            "key_as_string": "1974-01-01",
+            "key": 126230400000,
+            "doc_count": 218
+          },
+          {
+            "key_as_string": "1975-01-01",
+            "key": 157766400000,
+            "doc_count": 191
+          },
+          {
+            "key_as_string": "1976-01-01",
+            "key": 189302400000,
+            "doc_count": 192
+          },
+          {
+            "key_as_string": "1977-01-01",
+            "key": 220924800000,
+            "doc_count": 126
+          },
+          {
+            "key_as_string": "1978-01-01",
+            "key": 252460800000,
+            "doc_count": 154
+          },
+          {
+            "key_as_string": "1979-01-01",
+            "key": 283996800000,
+            "doc_count": 206
+          },
+          {
+            "key_as_string": "1980-01-01",
+            "key": 315532800000,
+            "doc_count": 210
+          },
+          {
+            "key_as_string": "1981-01-01",
+            "key": 347155200000,
+            "doc_count": 193
+          },
+          {
+            "key_as_string": "1982-01-01",
+            "key": 378691200000,
+            "doc_count": 130
+          },
+          {
+            "key_as_string": "1983-01-01",
+            "key": 410227200000,
+            "doc_count": 116
+          },
+          {
+            "key_as_string": "1984-01-01",
+            "key": 441763200000,
+            "doc_count": 138
+          },
+          {
+            "key_as_string": "1985-01-01",
+            "key": 473385600000,
+            "doc_count": 86
+          },
+          {
+            "key_as_string": "1986-01-01",
+            "key": 504921600000,
+            "doc_count": 119
+          },
+          {
+            "key_as_string": "1987-01-01",
+            "key": 536457600000,
+            "doc_count": 139
+          },
+          {
+            "key_as_string": "1988-01-01",
+            "key": 567993600000,
+            "doc_count": 146
+          },
+          {
+            "key_as_string": "1989-01-01",
+            "key": 599616000000,
+            "doc_count": 124
+          },
+          {
+            "key_as_string": "1990-01-01",
+            "key": 631152000000,
+            "doc_count": 97
+          },
+          {
+            "key_as_string": "1991-01-01",
+            "key": 662688000000,
+            "doc_count": 155
+          },
+          {
+            "key_as_string": "1992-01-01",
+            "key": 694224000000,
+            "doc_count": 154
+          },
+          {
+            "key_as_string": "1993-01-01",
+            "key": 725846400000,
+            "doc_count": 150
+          },
+          {
+            "key_as_string": "1994-01-01",
+            "key": 757382400000,
+            "doc_count": 127
+          },
+          {
+            "key_as_string": "1995-01-01",
+            "key": 788918400000,
+            "doc_count": 174
+          },
+          {
+            "key_as_string": "1996-01-01",
+            "key": 820454400000,
+            "doc_count": 127
+          },
+          {
+            "key_as_string": "1997-01-01",
+            "key": 852076800000,
+            "doc_count": 188
+          },
+          {
+            "key_as_string": "1998-01-01",
+            "key": 883612800000,
+            "doc_count": 393
+          },
+          {
+            "key_as_string": "1999-01-01",
+            "key": 915148800000,
+            "doc_count": 140
+          },
+          {
+            "key_as_string": "2000-01-01",
+            "key": 946684800000,
+            "doc_count": 145
+          },
+          {
+            "key_as_string": "2001-01-01",
+            "key": 978307200000,
+            "doc_count": 103
+          },
+          {
+            "key_as_string": "2002-01-01",
+            "key": 1009843200000,
+            "doc_count": 172
+          },
+          {
+            "key_as_string": "2003-01-01",
+            "key": 1041379200000,
+            "doc_count": 137
+          },
+          {
+            "key_as_string": "2004-01-01",
+            "key": 1072915200000,
+            "doc_count": 146
+          },
+          {
+            "key_as_string": "2005-01-01",
+            "key": 1104537600000,
+            "doc_count": 202
+          },
+          {
+            "key_as_string": "2006-01-01",
+            "key": 1136073600000,
+            "doc_count": 224
+          },
+          {
+            "key_as_string": "2007-01-01",
+            "key": 1167609600000,
+            "doc_count": 119
+          },
+          {
+            "key_as_string": "2008-01-01",
+            "key": 1199145600000,
+            "doc_count": 125
+          },
+          {
+            "key_as_string": "2009-01-01",
+            "key": 1230768000000,
+            "doc_count": 90
+          },
+          {
+            "key_as_string": "2010-01-01",
+            "key": 1262304000000,
+            "doc_count": 51
+          },
+          {
+            "key_as_string": "2011-01-01",
+            "key": 1293840000000,
+            "doc_count": 60
+          },
+          {
+            "key_as_string": "2012-01-01",
+            "key": 1325376000000,
+            "doc_count": 50
+          },
+          {
+            "key_as_string": "2013-01-01",
+            "key": 1356998400000,
+            "doc_count": 74
+          },
+          {
+            "key_as_string": "2014-01-01",
+            "key": 1388534400000,
+            "doc_count": 19
+          },
+          {
+            "key_as_string": "2015-01-01",
+            "key": 1420070400000,
+            "doc_count": 22
+          }
+        ]
+      }
+    }
+  }
+}

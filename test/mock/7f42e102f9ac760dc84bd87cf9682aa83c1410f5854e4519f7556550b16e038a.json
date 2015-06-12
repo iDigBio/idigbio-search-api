@@ -1,0 +1,70 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 14.639353,
+    "hits": [
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "mediarecords",
+        "_id": "b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3",
+        "_score": 14.639353,
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "xpixels": 4095,
+          "uuid": "b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3",
+          "format": "image/jpeg",
+          "recordset": "e8c1413c-4e2e-46d7-9b6e-df0e416e3786",
+          "dqs": 1,
+          "rights": "BY-NC-SA",
+          "tag": "whole organism",
+          "modified": "2012-02-13T14:51:42+00:00",
+          "hasSpecimen": true,
+          "ypixels": 5119,
+          "records": [
+            "6bdf5bdd-fb0d-4f01-9bd5-58097cb4c25f"
+          ],
+          "etag": "191f0e472b2d51d08dc03bcac8d6aa4d993812ad",
+          "data": {
+            "xmpRights:WebStatement": "<a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/us/\" rel=\"license\"> <img src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png\" style=\"border-width: 0pt;\" alt=\"Creative Commons License\"/></a>",
+            "dc:type": "StillImage",
+            "ac:tag": "whole organism",
+            "exif:PixelYDimension": "4095",
+            "ac:provider": "http://www.morphbank.net/692367",
+            "photoshop:Credit": "Tall Timbers 2011",
+            "ac:licenseLogoURL": "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png",
+            "ac:providerManagedID": "http://www.morphbank.net/789279",
+            "ac:furtherInformationURL": "http://www.morphbank.net/789279",
+            "dc:creator": "Virginia Craig",
+            "ac:captureDevice": "Digital Camera",
+            "dc:format": "image/jpeg",
+            "dcterms:available": "2011-06-14",
+            "ac:metadataCreator": "morphbank.net",
+            "dc:rights": "by-nc-sa",
+            "coreid": "urn:uuid:4e7bcae4-069b-4a07-80be-14986ee4c15e",
+            "dcterms:identifier": "urn:uuid:5a610b37-ecd1-4dfa-8e9c-948ad864e769",
+            "ac:metadataProvider": "morphbank.net",
+            "dcterms:title": "image of Hirundo rustica",
+            "exif:PixelXDimension": "5119",
+            "ac:metadataLanguageLiteral": "en",
+            "ac:subjectPart": "whole organism",
+            "xmpRights:Owner": "Tall Timbers 2011",
+            "ac:variantLiteral": "best quality",
+            "ac:subjectOrientation": "Dorsal",
+            "ac:resourceCreationTechnique": "Unspecified",
+            "ac:accessURI": "http://www.morphbank.net?id=789279&imgType=jpeg",
+            "dcterms:modified": "2012-02-13 14:51:42.0"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "type": "stillimage",
+          "datemodified": "2014-09-18T13:51:06.154000+00:00"
+        }
+      }
+    ]
+  }
+}

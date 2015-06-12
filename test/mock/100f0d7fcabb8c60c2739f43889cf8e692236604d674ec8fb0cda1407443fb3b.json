@@ -1,0 +1,92 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 29342343,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-1.5.0",
+        "_type": "records",
+        "_id": "9b4738c5-6970-4cff-b6c2-c92a3a08624c",
+        "_score": 1,
+        "_source": {
+          "family": "atherinidae",
+          "recordset": "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194",
+          "dqs": 0.3090909090909091,
+          "stateprovince": "oklahoma",
+          "county": "osage",
+          "catalognumber": "13797",
+          "collector": "r.d. suttkus & b. branson",
+          "verbatimlocality": "trib. to arkansas river 7.4 mi. w skiatook on hwy. 20.",
+          "uuid": "9b4738c5-6970-4cff-b6c2-c92a3a08624c",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "tu",
+          "continent": "north america",
+          "datecollected": "1955-09-02",
+          "etag": "9a51aa105494b5f7097843f958880155408159ff",
+          "flags": [
+            "geopoint_datum_missing"
+          ],
+          "hasImage": false,
+          "scientificname": "labidesthes sicculus",
+          "data": {
+            "idigbio:version": 0,
+            "idigbio:createdBy": "872733a2-67a3-4c54-aa76-862735a5f334",
+            "idigbio:links": {
+              "recordset": [
+                "http://api.idigbio.org/v1/recordsets/bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194"
+              ]
+            },
+            "idigbio:uuid": "9b4738c5-6970-4cff-b6c2-c92a3a08624c",
+            "idigbio:data": {
+              "dwc:continent": "North America",
+              "dwc:stateProvince": "Oklahoma",
+              "dwc:month": "9",
+              "dwc:county": "Osage",
+              "dwc:recordedBy": "R.D. Suttkus & B. Branson",
+              "dwc:catalogNumber": "13797",
+              "dwc:fieldNumber": "RDS 2507",
+              "dwc:collectionCode": "Fish",
+              "dwc:verbatimLocality": "Trib. to Arkansas River 7.4 mi. W Skiatook on Hwy. 20.",
+              "dwc:individualCount": "1",
+              "dwc:decimalLatitude": "36.38694",
+              "dwc:occurrenceID": "urn:catalog:TU:Fish:13797",
+              "dwc:country": "United States of America",
+              "dwc:decimalLongitude": "-96.12444",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:institutionCode": "TU",
+              "dwc:verbatimEventDate": "2 September 1955",
+              "dwc:scientificName": "Labidesthes sicculus",
+              "dwc:day": "2",
+              "dwc:family": "Atherinidae",
+              "dwc:year": "1955"
+            },
+            "idigbio:etag": "9a51aa105494b5f7097843f958880155408159ff",
+            "idigbio:recordIds": [
+              "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194\\urn:catalog:tu:fish:13797"
+            ],
+            "idigbio:dateModified": "2014-10-07T11:03:10.217Z"
+          },
+          "datemodified": "2014-10-07",
+          "occurrenceid": "urn:catalog:tu:fish:13797",
+          "country": "united states of america",
+          "geopoint": {
+            "lat": 36.38694,
+            "lon": -96.12444
+          },
+          "collectioncode": "fish",
+          "fieldnumber": "rds 2507",
+          "verbatimeventdate": "2 september 1955",
+          "recordids": [
+            "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194\\urn:catalog:tu:fish:13797"
+          ]
+        }
+      }
+    ]
+  }
+}
