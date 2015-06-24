@@ -1,9 +1,10 @@
 var express = require('express');
 var cors = require('cors');
-
+var compress = require('compression');
 var bodyParser = require('body-parser');
 
 module.exports = function(app, config) {
+    app.use(compress());
     app.set('trust proxy', ['loopback', 'linklocal', 'uniquelocal'])
     app.use(cors());
     app.use(bodyParser.urlencoded({ extended: false }));
