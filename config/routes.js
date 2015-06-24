@@ -22,6 +22,12 @@ module.exports = function(app, config) {
         .get(home.v1);
     app.route('/v2')
         .get(home.v2);
+    app.route('/stats/:t/_search')
+        .get(home.searchProxy)
+        .post(home.searchProxyPost);
+    app.route('/stats/:t/_count')
+        .get(home.searchProxy)
+        .post(home.searchProxyPost);
     app.route('/idigbio/:t/_search')
         .get(home.searchProxy)
         .post(home.searchProxyPost);

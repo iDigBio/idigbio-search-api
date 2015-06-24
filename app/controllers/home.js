@@ -32,9 +32,13 @@ module.exports = function(app, config) {
         },
         searchProxy: function(req, res, next) {
             var pa = req.originalUrl.split("?")[0].split("/");
+            var i = pa[1];
             var t = pa[2];
             var op = pa[3];
-            searchShim("idigbio",t,op,req.query,function(err,body){
+
+            console.log(pa)
+
+            searchShim(i,t,op,req.query,function(err,body){
                 if(err) {
                     next(err)
                 } else {
@@ -45,9 +49,11 @@ module.exports = function(app, config) {
         },
         searchProxyPost: function(req, res, next) {
             var pa = req.originalUrl.split("?")[0].split("/");
+            var i = pa[1];
             var t = pa[2];
             var op = pa[3];
-            searchShim("idigbio",t,op,req.body,function(err,body){
+
+            searchShim(i,t,op,req.body,function(err,body){
                 if(err) {
                     next(err)
                 } else {
