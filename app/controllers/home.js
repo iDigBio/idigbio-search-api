@@ -36,8 +36,6 @@ module.exports = function(app, config) {
             var t = pa[2];
             var op = pa[3];
 
-            console.log(pa)
-
             searchShim(i,t,op,req.query,function(err,body){
                 if(err) {
                     next(err)

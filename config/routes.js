@@ -77,6 +77,9 @@ module.exports = function(app, config) {
     app.route('/v2/summary/count/recordset')
         .get(summary.count_recordset)
         .post(summary.count_recordset);
+    app.route('/v2/summary/count/recordsets')
+        .get(summary.count_recordset)
+        .post(summary.count_recordset);
     app.route('/v2/summary/modified/media')
         .get(summary.modified_media)
         .post(summary.modified_media);
