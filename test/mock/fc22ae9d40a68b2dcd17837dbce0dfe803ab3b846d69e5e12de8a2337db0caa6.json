@@ -114,6 +114,9 @@
                   "dwc:identifiedBy": {
                     "type": "string"
                   },
+                  "dwc:infraspecificEpithet": {
+                    "type": "string"
+                  },
                   "dwc:scientificName": {
                     "type": "string"
                   },
@@ -121,6 +124,9 @@
                     "type": "string"
                   },
                   "dwc:specificEpithet": {
+                    "type": "string"
+                  },
+                  "dwc:taxonRank": {
                     "type": "string"
                   },
                   "idigbio:recordId": {
@@ -927,6 +933,9 @@
           "specificepithet": {
             "type": "string",
             "analyzer": "keyword"
+          },
+          "startdayofyear": {
+            "type": "integer"
           },
           "stateprovince": {
             "type": "string",

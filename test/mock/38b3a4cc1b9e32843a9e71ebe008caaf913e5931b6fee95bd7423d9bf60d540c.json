@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 4836375,
+    "total": 5311441,
     "max_score": null,
     "hits": [
       {
@@ -609,6 +609,14 @@
           "doc_count": 401712
         },
         {
+          "key": "271a9ce9-c6d3-4b63-a722-cb0adc48863f",
+          "doc_count": 190386
+        },
+        {
+          "key": "53091d18-f173-4fc0-b9d9-20a1494e2466",
+          "doc_count": 180205
+        },
+        {
           "key": "7450a9e3-ef95-4f9e-8260-09b498d2c5e6",
           "doc_count": 179433
         },
@@ -754,7 +762,7 @@
         },
         {
           "key": "e39f6dee-f2cf-4eff-afc9-4600cafe660c",
-          "doc_count": 34142
+          "doc_count": 34354
         },
         {
           "key": "02fceae6-c71c-4db9-8b2f-e235ced6624a",
@@ -767,6 +775,10 @@
         {
           "key": "aced32f9-e511-48c7-8e9e-b625777bdf7f",
           "doc_count": 33085
+        },
+        {
+          "key": "ca46a6b1-3141-4881-a83e-0ac0fe079203",
+          "doc_count": 32351
         },
         {
           "key": "72019199-f449-48b4-a5bc-1aa892166d7a",
@@ -795,6 +807,10 @@
         {
           "key": "cf42855e-a54a-4488-a79e-beac086ba1d4",
           "doc_count": 29584
+        },
+        {
+          "key": "fc7b78d7-82d4-4648-8185-87a0ba209c20",
+          "doc_count": 29484
         },
         {
           "key": "09edf7d2-e68e-4a42-93da-762f86bb814f",
@@ -857,6 +873,10 @@
           "doc_count": 20310
         },
         {
+          "key": "be31dfd1-c721-4697-8ee0-f7043c070810",
+          "doc_count": 19391
+        },
+        {
           "key": "f630e3ea-697f-404a-8683-b86712c26c43",
           "doc_count": 19168
         },
@@ -867,10 +887,6 @@
         {
           "key": "c7158ac6-7e1d-446f-9801-b1af5e9cc1e3",
           "doc_count": 17718
-        },
-        {
-          "key": "be31dfd1-c721-4697-8ee0-f7043c070810",
-          "doc_count": 17670
         },
         {
           "key": "a062eb42-d5c6-4332-8c88-64b4ac1af892",
@@ -925,6 +941,10 @@
           "doc_count": 11518
         },
         {
+          "key": "e9b69a0a-497d-4201-b114-51519a4dfef9",
+          "doc_count": 11484
+        },
+        {
           "key": "4d89070b-5dea-4a12-8a09-3f65ba33dba1",
           "doc_count": 10966
         },
@@ -951,6 +971,10 @@
         {
           "key": "252a0a12-f114-4fb5-aa9a-678c523d6dcd",
           "doc_count": 9532
+        },
+        {
+          "key": "025a810b-28f6-427d-b342-16fdf5f74f4b",
+          "doc_count": 9226
         },
         {
           "key": "14f8f83f-7a0c-458c-b6d5-6da7dc8eaa0a",
@@ -1021,6 +1045,10 @@
           "doc_count": 5681
         },
         {
+          "key": "3e86e072-2597-4849-87d5-565afe40f988",
+          "doc_count": 5414
+        },
+        {
           "key": "c2b024fa-bcf2-4044-8cd0-53899cfbad28",
           "doc_count": 5374
         },
@@ -1029,16 +1057,16 @@
           "doc_count": 5227
         },
         {
+          "key": "c359c2e5-cd20-4057-9179-35a7a5b5da72",
+          "doc_count": 5110
+        },
+        {
           "key": "fd14095c-3658-4e00-8cec-729a89459e92",
           "doc_count": 5100
         },
         {
           "key": "6cab4420-11e4-4b55-85ac-6ecfdda70184",
           "doc_count": 5041
-        },
-        {
-          "key": "ca46a6b1-3141-4881-a83e-0ac0fe079203",
-          "doc_count": 4555
         },
         {
           "key": "fe04dab1-5a3d-4c28-a450-012658e982d8",
@@ -1093,6 +1121,14 @@
           "doc_count": 3050
         },
         {
+          "key": "c9bff84f-8de4-43e6-b195-f515f187a68a",
+          "doc_count": 3037
+        },
+        {
+          "key": "4f8c3594-d7b2-4985-8dd9-1ae77f9187d4",
+          "doc_count": 2971
+        },
+        {
           "key": "d81c6ad6-fb8f-4c31-bba3-f2b65f780893",
           "doc_count": 2960
         },
@@ -1141,16 +1177,16 @@
           "doc_count": 2487
         },
         {
+          "key": "ab4b6a2b-a90a-44ce-95a1-2c44c911fcc6",
+          "doc_count": 2465
+        },
+        {
           "key": "0072bf11-a354-4998-8730-c0cb4cfc9517",
           "doc_count": 2344
         },
         {
           "key": "63e77b2a-9b8b-4958-b9cc-e30364573c37",
           "doc_count": 2299
-        },
-        {
-          "key": "ab4b6a2b-a90a-44ce-95a1-2c44c911fcc6",
-          "doc_count": 2200
         },
         {
           "key": "d1b25dcd-472e-4902-b53c-3b164269e049",
@@ -1161,6 +1197,14 @@
           "doc_count": 1886
         },
         {
+          "key": "833306f7-91b6-4ff7-bc16-0e406334d991",
+          "doc_count": 1839
+        },
+        {
+          "key": "47ac1531-5213-4848-a32d-5bb396ab9348",
+          "doc_count": 1637
+        },
+        {
           "key": "69037495-438d-4dba-bf0f-4878073766f1",
           "doc_count": 1625
         },
@@ -1169,8 +1213,16 @@
           "doc_count": 1608
         },
         {
+          "key": "196c4f1c-53f9-480f-a012-dc0522629047",
+          "doc_count": 1432
+        },
+        {
           "key": "ff111763-e72d-4f24-8914-b5b2dd94908c",
           "doc_count": 1380
+        },
+        {
+          "key": "6b6c13d9-7789-4da0-99d7-6786322e2612",
+          "doc_count": 1222
         },
         {
           "key": "a4b888a2-94bf-4680-b912-84964a236c82",
@@ -1233,6 +1285,10 @@
           "doc_count": 636
         },
         {
+          "key": "82c60e09-2939-4896-9ce9-5c63fe19cac9",
+          "doc_count": 630
+        },
+        {
           "key": "5aac25d2-bcfb-4084-a700-584311ea539d",
           "doc_count": 625
         },
@@ -1277,6 +1333,10 @@
           "doc_count": 426
         },
         {
+          "key": "81dc7cdb-66be-4683-ae79-068a784378b1",
+          "doc_count": 411
+        },
+        {
           "key": "6aca6f67-a2e9-440d-a503-9501db6e6f36",
           "doc_count": 397
         },
@@ -1299,6 +1359,14 @@
         {
           "key": "b3d53973-5bac-432a-90d3-7956baa09c5d",
           "doc_count": 237
+        },
+        {
+          "key": "75e3aff5-b3d0-45c3-835c-5ffde192c63f",
+          "doc_count": 229
+        },
+        {
+          "key": "57b1a2a3-78ab-4e69-a77e-a8fd4394ee5a",
+          "doc_count": 221
         },
         {
           "key": "07c47dd3-a0a9-434a-b144-71c32996f278",
@@ -1349,6 +1417,10 @@
           "doc_count": 55
         },
         {
+          "key": "d3412433-4df9-4828-89e0-73956898f749",
+          "doc_count": 50
+        },
+        {
           "key": "00df4fe2-0025-45ec-814a-36777155e077",
           "doc_count": 49
         },
@@ -1365,8 +1437,20 @@
           "doc_count": 43
         },
         {
+          "key": "1d14acd1-20ef-4a55-8206-f04c8a75ea3e",
+          "doc_count": 32
+        },
+        {
+          "key": "b761d317-a36e-4a05-a5f4-bd3e3963daf6",
+          "doc_count": 30
+        },
+        {
           "key": "79be41bc-8142-485a-9d57-d6195f9a7c81",
           "doc_count": 25
+        },
+        {
+          "key": "08bfaeb8-abb4-4b33-b0e7-ed1242377bbd",
+          "doc_count": 15
         },
         {
           "key": "a8add96d-651c-488e-8ca3-ed3f85c7a117",
@@ -1405,6 +1489,10 @@
           "doc_count": 6
         },
         {
+          "key": "2e65e24b-b7e2-40a4-a40c-09edafc1e3f4",
+          "doc_count": 6
+        },
+        {
           "key": "6226705f-4867-464d-9fab-4e81ecee731f",
           "doc_count": 6
         },
@@ -1433,6 +1521,10 @@
           "doc_count": 1
         },
         {
+          "key": "74ba1d92-d9a5-486e-8e52-bb44d51e1788",
+          "doc_count": 1
+        },
+        {
           "key": "bfb53140-79c1-4625-81aa-3f37de7c0c2f",
           "doc_count": 1
         },
@@ -1443,8 +1535,8 @@
       ]
     },
     "max_dm": {
-      "value": 1433338156134,
-      "value_as_string": "2015-06-03T13:29:16.134Z"
+      "value": 1434947134429,
+      "value_as_string": "2015-06-22T04:25:34.429Z"
     }
   }
 }

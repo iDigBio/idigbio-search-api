@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 3838438,
+    "total": 3877479,
     "max_score": null,
     "hits": [
       {
@@ -286,7 +286,7 @@
         },
         {
           "key": "e39f6dee-f2cf-4eff-afc9-4600cafe660c",
-          "doc_count": 34142
+          "doc_count": 34354
         },
         {
           "key": "02fceae6-c71c-4db9-8b2f-e235ced6624a",
@@ -299,6 +299,10 @@
         {
           "key": "aced32f9-e511-48c7-8e9e-b625777bdf7f",
           "doc_count": 33085
+        },
+        {
+          "key": "ca46a6b1-3141-4881-a83e-0ac0fe079203",
+          "doc_count": 32351
         },
         {
           "key": "72019199-f449-48b4-a5bc-1aa892166d7a",
@@ -549,16 +553,16 @@
           "doc_count": 5227
         },
         {
+          "key": "c359c2e5-cd20-4057-9179-35a7a5b5da72",
+          "doc_count": 5110
+        },
+        {
           "key": "fd14095c-3658-4e00-8cec-729a89459e92",
           "doc_count": 5100
         },
         {
           "key": "6cab4420-11e4-4b55-85ac-6ecfdda70184",
           "doc_count": 5041
-        },
-        {
-          "key": "ca46a6b1-3141-4881-a83e-0ac0fe079203",
-          "doc_count": 4555
         },
         {
           "key": "fe04dab1-5a3d-4c28-a450-012658e982d8",
@@ -653,16 +657,16 @@
           "doc_count": 2487
         },
         {
+          "key": "ab4b6a2b-a90a-44ce-95a1-2c44c911fcc6",
+          "doc_count": 2407
+        },
+        {
           "key": "0072bf11-a354-4998-8730-c0cb4cfc9517",
           "doc_count": 2344
         },
         {
           "key": "63e77b2a-9b8b-4958-b9cc-e30364573c37",
           "doc_count": 2299
-        },
-        {
-          "key": "ab4b6a2b-a90a-44ce-95a1-2c44c911fcc6",
-          "doc_count": 2142
         },
         {
           "key": "d1b25dcd-472e-4902-b53c-3b164269e049",
@@ -673,12 +677,24 @@
           "doc_count": 1886
         },
         {
+          "key": "833306f7-91b6-4ff7-bc16-0e406334d991",
+          "doc_count": 1839
+        },
+        {
+          "key": "47ac1531-5213-4848-a32d-5bb396ab9348",
+          "doc_count": 1637
+        },
+        {
           "key": "69037495-438d-4dba-bf0f-4878073766f1",
           "doc_count": 1625
         },
         {
           "key": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
           "doc_count": 1608
+        },
+        {
+          "key": "196c4f1c-53f9-480f-a012-dc0522629047",
+          "doc_count": 1432
         },
         {
           "key": "ff111763-e72d-4f24-8914-b5b2dd94908c",
@@ -769,6 +785,10 @@
           "doc_count": 426
         },
         {
+          "key": "81dc7cdb-66be-4683-ae79-068a784378b1",
+          "doc_count": 411
+        },
+        {
           "key": "6aca6f67-a2e9-440d-a503-9501db6e6f36",
           "doc_count": 397
         },
@@ -791,6 +811,10 @@
         {
           "key": "b3d53973-5bac-432a-90d3-7956baa09c5d",
           "doc_count": 237
+        },
+        {
+          "key": "57b1a2a3-78ab-4e69-a77e-a8fd4394ee5a",
+          "doc_count": 221
         },
         {
           "key": "07c47dd3-a0a9-434a-b144-71c32996f278",
@@ -829,12 +853,24 @@
           "doc_count": 55
         },
         {
+          "key": "d3412433-4df9-4828-89e0-73956898f749",
+          "doc_count": 50
+        },
+        {
           "key": "00df4fe2-0025-45ec-814a-36777155e077",
           "doc_count": 49
         },
         {
           "key": "92dd8c8e-c048-4f0a-9b5d-2ee627d2f553",
           "doc_count": 49
+        },
+        {
+          "key": "1d14acd1-20ef-4a55-8206-f04c8a75ea3e",
+          "doc_count": 32
+        },
+        {
+          "key": "b761d317-a36e-4a05-a5f4-bd3e3963daf6",
+          "doc_count": 30
         },
         {
           "key": "79be41bc-8142-485a-9d57-d6195f9a7c81",
@@ -855,6 +891,10 @@
         {
           "key": "cb33cf97-2a7b-4b45-9b73-5aca568332a6",
           "doc_count": 7
+        },
+        {
+          "key": "2e65e24b-b7e2-40a4-a40c-09edafc1e3f4",
+          "doc_count": 6
         },
         {
           "key": "6226705f-4867-464d-9fab-4e81ecee731f",
@@ -891,8 +931,8 @@
       ]
     },
     "max_dm": {
-      "value": 1433338156134,
-      "value_as_string": "2015-06-03T13:29:16.134Z"
+      "value": 1434835995604,
+      "value_as_string": "2015-06-20T21:33:15.604Z"
     }
   }
 }

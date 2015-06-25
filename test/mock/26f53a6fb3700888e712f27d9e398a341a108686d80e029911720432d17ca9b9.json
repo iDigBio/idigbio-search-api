@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 141727,
+    "total": 141726,
     "max_score": null,
     "hits": [
       {
@@ -19,18 +19,6 @@
         },
         "sort": [
           0.48333332
-        ]
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "5ccf5494-ced7-4a05-a373-ad968afc6d05",
-        "_score": null,
-        "_source": {
-          "scientificname": "carex filifolia var. erostrata  kük."
-        },
-        "sort": [
-          0.46666667
         ]
       },
       {
@@ -52,6 +40,18 @@
         "_score": null,
         "_source": {
           "scientificname": "carex scirpoidea subsp. pseudoscirpoidea  (rydb.) dunlop"
+        },
+        "sort": [
+          0.46666667
+        ]
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "5ccf5494-ced7-4a05-a373-ad968afc6d05",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. erostrata  kük."
         },
         "sort": [
           0.46666667
@@ -162,7 +162,7 @@
         },
         {
           "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
-          "doc_count": 8472
+          "doc_count": 8471
         },
         {
           "key": "05c029de-734c-450a-a41a-56061b7ebb18",
@@ -315,8 +315,8 @@
       ]
     },
     "max_dm": {
-      "value": 1433287864529,
-      "value_as_string": "2015-06-02T23:31:04.529Z"
+      "value": 1434654355744,
+      "value_as_string": "2015-06-18T19:05:55.744Z"
     }
   }
 }

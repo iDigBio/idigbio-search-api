@@ -15,6 +15,12 @@
               "\"http://purl.org/dc/terms/identifier": {
                 "type": "string"
               },
+              "Iptc4xmpExt:CountryName": {
+                "type": "string"
+              },
+              "Iptc4xmpExt:CreditLine": {
+                "type": "string"
+              },
               "ac:accessURI": {
                 "type": "string"
               },
@@ -31,6 +37,9 @@
                 "type": "string"
               },
               "ac:bestQualityFormat": {
+                "type": "string"
+              },
+              "ac:bestQualityVariantDescription": {
                 "type": "string"
               },
               "ac:caption": {
@@ -114,6 +123,9 @@
               "dc:type": {
                 "type": "string"
               },
+              "dcterms:accessRights": {
+                "type": "string"
+              },
               "dcterms:available": {
                 "type": "string"
               },
@@ -172,6 +184,9 @@
                 "type": "string"
               },
               "exif:PixelYDimension": {
+                "type": "string"
+              },
+              "id": {
                 "type": "string"
               },
               "idigbio:associatedRecordReference": {
@@ -381,6 +396,9 @@
                   "dwc:identifiedBy": {
                     "type": "string"
                   },
+                  "dwc:infraspecificEpithet": {
+                    "type": "string"
+                  },
                   "dwc:scientificName": {
                     "type": "string"
                   },
@@ -388,6 +406,9 @@
                     "type": "string"
                   },
                   "dwc:specificEpithet": {
+                    "type": "string"
+                  },
+                  "dwc:taxonRank": {
                     "type": "string"
                   },
                   "idigbio:recordId": {
@@ -1194,6 +1215,9 @@
           "specificepithet": {
             "type": "string",
             "analyzer": "keyword"
+          },
+          "startdayofyear": {
+            "type": "integer"
           },
           "stateprovince": {
             "type": "string",
@@ -6180,6 +6204,50 @@
                       }
                     }
                   },
+                  "7b7d3eba-3a2e-4496-8e41-2773ed400854": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
                   "7f6dd0f7-9ed4-49c0-bb71-b2a9c7fed9f1": {
                     "properties": {
                       "collection_description": {
@@ -7610,6 +7678,50 @@
                         "type": "string"
                       },
                       "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "861e6afe-f762-11e1-a439-00145eb45e9a": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
                         "type": "string"
                       },
                       "update": {
@@ -12408,6 +12520,50 @@
                       }
                     }
                   },
+                  "ec93a739-1681-4b04-b62f-3a687127a17f": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
                   "ecca1a3e-3b7d-4229-8a7a-d106997e6d03": {
                     "properties": {
                       "collection_description": {
@@ -16742,6 +16898,50 @@
                       }
                     }
                   },
+                  "http://firuta.huh.harvard.edu/ipt/resource.do?id=huh_for_mycoportal": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
                   "http://gbifdata.eeb.uconn.edu:7001/ipt/resource.do?id=idigbio1": {
                     "properties": {
                       "collection_description": {
@@ -20863,6 +21063,47 @@
                       }
                     }
                   },
+                  "http://midwestherbaria.org/portal/webservices/dwc/530a6200-b385-4cbd-b184-d60dd25d37e2": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
                   "http://midwestherbaria.org/portal/webservices/dwc/5f887025-5ee0-453e-b25b-360c1f5e870a": {
                     "properties": {
                       "collection_description": {
@@ -20902,6 +21143,47 @@
                     }
                   },
                   "http://midwestherbaria.org/portal/webservices/dwc/611fe4d6-8e33-4b97-9d2a-ba1c34d20dda": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "http://midwestherbaria.org/portal/webservices/dwc/9798472c-c2da-40b9-a636-cec2c61d4589": {
                     "properties": {
                       "collection_description": {
                         "type": "string"
@@ -24740,6 +25022,47 @@
                       }
                     }
                   },
+                  "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/be43e4da-bd95-4cdb-a590-3129a4cef884": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
                   "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/c425cbc1-db60-4f45-be76-95358932734c": {
                     "properties": {
                       "collection_description": {
@@ -25725,13 +26048,29 @@
                       }
                     }
                   },
-                  "resource?id=herbarium": {
+                  "resource?id=amnh-fi": {
                     "properties": {
                       "collection_description": {
                         "type": "string"
                       },
                       "collection_name": {
                         "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
                       },
                       "data_rights": {
                         "type": "string"
@@ -25746,6 +26085,241 @@
                         "type": "string"
                       },
                       "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "resource?id=but_herb": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "resource?id=herbarium": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "resource?id=inhs-fish": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "resource?id=inhs-herp": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
+                        "type": "string"
+                      },
+                      "update": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "resource?id=usf_herb": {
+                    "properties": {
+                      "collection_description": {
+                        "type": "string"
+                      },
+                      "collection_name": {
+                        "type": "string"
+                      },
+                      "contacts": {
+                        "properties": {
+                          "email": {
+                            "type": "string"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "role": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "data_rights": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "ingest": {
+                        "type": "boolean"
+                      },
+                      "institution_web_address": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "string"
+                      },
+                      "logo_url": {
                         "type": "string"
                       },
                       "update": {

@@ -12,175 +12,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "cf8d7451-1047-4ffc-ad7a-d48030ce37b2",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.13988021373275,
-            "lat": 43.41114116376202
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "d2d73817-749a-4836-841b-71bd708cc2cb",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.11179819855458,
-            "lat": 43.99544689097539
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "6e31b349-b637-4a51-bc72-f4913d48257f",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.6631824,
-            "lat": 35.0785334
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7150de5b-f0be-4aee-9bf5-71c50977bd6a",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.5910931,
-            "lat": 36.37400298
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "51b51c4e-27ef-44b7-b363-5436834c47be",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -121.8254239359518,
-            "lat": 47.52872430971339
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "b0c1e7ce-f980-4e74-bd1e-aa48ee28f936",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.965763,
-            "lat": 31.3436806
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "5f887e06-66e6-4785-b9ab-b9442e6074b0",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.8342125,
-            "lat": 35.20982735
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "10a03b0a-c9ac-42bb-95b1-f0de80824452",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -116.833184435621,
-            "lat": 45.559278420541716
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "12459d9b-4215-49eb-b61c-2e4d51910e9b",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -124.27938276397384,
-            "lat": 48.07008076821374
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "37841b77-59a0-4bb3-82e1-577af7170014",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.7886392,
-            "lat": 33.86299525
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "bdaf32eb-1713-4390-a96a-1dca49671b34",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -117.32990210033245,
-            "lat": 45.68316898847583
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "48ecb6b4-a855-4608-a08d-906755be8390",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.8187677,
-            "lat": 34.0845659
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "0430b4cd-6357-4e20-9d52-b3d63468b03f",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.5786111,
-            "lat": 34.5086111
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "2e6fd1ff-ae17-4323-988e-49c00b0a740a",
         "_score": 1,
         "_source": {
@@ -207,7 +38,7 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "5d7d4976-42e4-4920-b058-52928bcae052",
+        "_id": "0430b4cd-6357-4e20-9d52-b3d63468b03f",
         "_score": 1,
         "_source": {
           "geopoint": {
@@ -226,32 +57,6 @@
           "geopoint": {
             "lon": -106.8841533,
             "lat": 36.38227872
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7ef58931-7a45-479d-a3ce-132d907e21f2",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.45699,
-            "lat": 31.84704
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "8bc6879f-8b6b-447a-b42b-a17c65daf64f",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -75.02184,
-            "lat": 44.479677
           },
           "scientificname": "puma concolor"
         }
@@ -285,12 +90,207 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "51b51c4e-27ef-44b7-b363-5436834c47be",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -121.8254239359518,
+            "lat": 47.52872430971339
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "b0c1e7ce-f980-4e74-bd1e-aa48ee28f936",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.965763,
+            "lat": 31.3436806
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "10a03b0a-c9ac-42bb-95b1-f0de80824452",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -116.833184435621,
+            "lat": 45.559278420541716
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "12459d9b-4215-49eb-b61c-2e4d51910e9b",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -124.27938276397384,
+            "lat": 48.07008076821374
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "5f887e06-66e6-4785-b9ab-b9442e6074b0",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.8342125,
+            "lat": 35.20982735
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "5d7d4976-42e4-4920-b058-52928bcae052",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -119.5786111,
+            "lat": 34.5086111
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "37841b77-59a0-4bb3-82e1-577af7170014",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.7886392,
+            "lat": 33.86299525
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "8bc6879f-8b6b-447a-b42b-a17c65daf64f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -75.02184,
+            "lat": 44.479677
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7ef58931-7a45-479d-a3ce-132d907e21f2",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.45699,
+            "lat": 31.84704
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6e31b349-b637-4a51-bc72-f4913d48257f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.6631824,
+            "lat": 35.0785334
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7150de5b-f0be-4aee-9bf5-71c50977bd6a",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.5910931,
+            "lat": 36.37400298
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "48ecb6b4-a855-4608-a08d-906755be8390",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.8187677,
+            "lat": 34.0845659
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "c1f3cb2f-aeec-47b7-b393-f7ac2f595e14",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -84.7482186,
             "lat": 49.2678238
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "cf8d7451-1047-4ffc-ad7a-d48030ce37b2",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.13988021373275,
+            "lat": 43.41114116376202
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "bdaf32eb-1713-4390-a96a-1dca49671b34",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -117.32990210033245,
+            "lat": 45.68316898847583
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d2d73817-749a-4836-841b-71bd708cc2cb",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.11179819855458,
+            "lat": 43.99544689097539
           },
           "scientificname": "puma concolor"
         }
@@ -454,6 +454,19 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "fdc862f8-a3e5-4378-84e6-136fd409b588",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.0600411,
+            "lat": 36.94805121
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "b219fa12-1e1d-46cb-be76-3894996b9cff",
         "_score": 1,
         "_source": {
@@ -610,90 +623,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "fdc862f8-a3e5-4378-84e6-136fd409b588",
+        "_id": "d1da45fe-f11a-420f-8437-ced462741fdf",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.0600411,
-            "lat": 36.94805121
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "bb625ef0-bd32-4348-8c66-e9d02274cd75",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.6631824,
-            "lat": 35.0785334
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7930e63f-5018-439c-a48e-c23115216aae",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.1153381,
-            "lat": 33.40545506
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7c6929fe-6fa5-4b08-aec2-354d0e300a55",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.9572222,
-            "lat": 34.5733333
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9fe7ef6d-2bfe-47ea-bad4-adaab55ca5e1",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.98991,
-            "lat": 32.1258
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "a1808fb8-7b8e-4317-9e8e-af11b59bb3fa",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.4553,
-            "lat": 48.1048
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "1d2a72bb-48d4-45d3-8c5c-e4e85aaa1f4d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.7228809,
-            "lat": 36.09342829
+            "lon": -104.8626892,
+            "lat": 32.0450028
           },
           "scientificname": "puma concolor"
         }
@@ -727,6 +662,19 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "1d2a72bb-48d4-45d3-8c5c-e4e85aaa1f4d",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.7228809,
+            "lat": 36.09342829
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "0ba260c5-5550-456c-aa6a-58cc5e268812",
         "_score": 1,
         "_source": {
@@ -753,12 +701,64 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "24fa75dc-5b96-46a4-bce5-d6582e56df4f",
+        "_id": "ac2ab6e1-6687-404a-9c7a-fe6fe6ba36d6",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -124.15659382280133,
-            "lat": 47.91674378775959
+            "lon": -119.82422348578524,
+            "lat": 34.4369250201946
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "51475d7d-1b73-4bb7-85ef-37ba0239e5f5",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -119.6922222,
+            "lat": 34.8977778
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "9fe7ef6d-2bfe-47ea-bad4-adaab55ca5e1",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.98991,
+            "lat": 32.1258
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "a1808fb8-7b8e-4317-9e8e-af11b59bb3fa",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.4553,
+            "lat": 48.1048
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "4c88ea5b-734c-4b27-bc99-f50b0a81c848",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.51527,
+            "lat": 32.45342
           },
           "scientificname": "puma concolor"
         }
@@ -792,58 +792,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "4c88ea5b-734c-4b27-bc99-f50b0a81c848",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.51527,
-            "lat": 32.45342
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "55a2fa38-4930-4294-b1fe-c14d850a585a",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -124.63633728889427,
-            "lat": 48.09590096712463
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "563c9d00-c1dd-4a7c-aef0-d507e275c833",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.8719146,
-            "lat": 35.86865783
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "51475d7d-1b73-4bb7-85ef-37ba0239e5f5",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.6922222,
-            "lat": 34.8977778
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "5e816ee9-309c-4812-b31e-4de409f4163b",
         "_score": 1,
         "_source": {
@@ -857,12 +805,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "ec58b1bb-65ab-4a24-be2b-7c5d79d08059",
+        "_id": "bb625ef0-bd32-4348-8c66-e9d02274cd75",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -120.0622222,
-            "lat": 34.5336111
+            "lon": -106.6631824,
+            "lat": 35.0785334
           },
           "scientificname": "puma concolor"
         }
@@ -870,12 +818,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "76f9957b-4b33-476a-afde-be4d7a667200",
+        "_id": "24fa75dc-5b96-46a4-bce5-d6582e56df4f",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.7232093,
-            "lat": 33.52234765
+            "lon": -124.15659382280133,
+            "lat": 47.91674378775959
           },
           "scientificname": "puma concolor"
         }
@@ -909,12 +857,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "ac2ab6e1-6687-404a-9c7a-fe6fe6ba36d6",
+        "_id": "55a2fa38-4930-4294-b1fe-c14d850a585a",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -119.82422348578524,
-            "lat": 34.4369250201946
+            "lon": -124.63633728889427,
+            "lat": 48.09590096712463
           },
           "scientificname": "puma concolor"
         }
@@ -922,12 +870,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "d1da45fe-f11a-420f-8437-ced462741fdf",
+        "_id": "563c9d00-c1dd-4a7c-aef0-d507e275c833",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -104.8626892,
-            "lat": 32.0450028
+            "lon": -106.8719146,
+            "lat": 35.86865783
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7c6929fe-6fa5-4b08-aec2-354d0e300a55",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -119.9572222,
+            "lat": 34.5733333
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "76f9957b-4b33-476a-afde-be4d7a667200",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.7232093,
+            "lat": 33.52234765
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7930e63f-5018-439c-a48e-c23115216aae",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.1153381,
+            "lat": 33.40545506
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "ec58b1bb-65ab-4a24-be2b-7c5d79d08059",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -120.0622222,
+            "lat": 34.5336111
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "ae0400ee-c11d-4fb3-ba2b-9729a4e15231",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.420118,
+            "lat": 32.58101222
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "1f98f351-1c1c-47ae-9d91-d58eb52d0390",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -116.1409677229924,
+            "lat": 45.54499147008322
           },
           "scientificname": "puma concolor"
         }
@@ -954,19 +980,6 @@
           "geopoint": {
             "lon": -103.94972,
             "lat": 19.44417
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "1f98f351-1c1c-47ae-9d91-d58eb52d0390",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -116.1409677229924,
-            "lat": 45.54499147008322
           },
           "scientificname": "puma concolor"
         }
@@ -1013,19 +1026,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "60f9e527-fd8f-4649-a643-451c47840cdb",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.0128286,
-            "lat": 32.1030676
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "36a97481-ce9e-46c5-984f-9403df4f9c73",
         "_score": 1,
         "_source": {
@@ -1045,32 +1045,6 @@
           "geopoint": {
             "lon": -106.3814233,
             "lat": 35.68598484
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "765b0291-33c2-4ea9-afe4-ca5468da6ebc",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.5370025,
-            "lat": 32.6563984
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "6d5997e9-96e9-4d83-b0f7-22162aef8e92",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.1753028,
-            "lat": 36.3858875
           },
           "scientificname": "puma concolor"
         }
@@ -1104,58 +1078,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "c94a83be-a3bd-455d-8cda-8f94f3a0124e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -103.7076477,
-            "lat": 36.99411221
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "aa8b3616-5ba6-480d-98a9-3c112ae1e948",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.2586840184471,
-            "lat": 43.38194045724927
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "ae0400ee-c11d-4fb3-ba2b-9729a4e15231",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.420118,
-            "lat": 32.58101222
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "d50522ec-b8f8-4916-a742-d9df230de319",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.55388,
-            "lat": 32.46175
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "8cbf4d51-d96e-4821-a6d6-c8b52c5e2b26",
         "_score": 1,
         "_source": {
@@ -1182,12 +1104,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "6d5997e9-96e9-4d83-b0f7-22162aef8e92",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.1753028,
+            "lat": 36.3858875
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "60f9e527-fd8f-4649-a643-451c47840cdb",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.0128286,
+            "lat": 32.1030676
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "f0b2e570-6208-4600-a9ab-7d58af6df1ff",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -117.92151000000001,
             "lat": 48.942913000000004
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "765b0291-33c2-4ea9-afe4-ca5468da6ebc",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.5370025,
+            "lat": 32.6563984
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "aa8b3616-5ba6-480d-98a9-3c112ae1e948",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.2586840184471,
+            "lat": 43.38194045724927
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d50522ec-b8f8-4916-a742-d9df230de319",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.55388,
+            "lat": 32.46175
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "c94a83be-a3bd-455d-8cda-8f94f3a0124e",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -103.7076477,
+            "lat": 36.99411221
           },
           "scientificname": "puma concolor"
         }
@@ -1208,12 +1208,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "1fefff6d-59b1-4c56-b83d-cd0b1ddda866",
+        "_id": "004fec34-b1eb-4f0c-b2ac-9d52c27cf4d2",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -104.843887,
-            "lat": 32.019165
+            "lon": -106.4889985,
+            "lat": 33.3007011
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "71bc48ee-d234-4141-8c1f-d6526a274499",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.4913888889,
+            "lat": 32.5752777778
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "63aefb24-c7b9-4a48-90bd-9eaca84bb428",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -118.40758376889995,
+            "lat": 35.510451198106274
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "771e63dc-030f-497e-b0c9-0f52d876b861",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.7276593,
+            "lat": 32.96823056
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "697043ad-c338-45f5-9e27-bc381893c5f6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.4191041,
+            "lat": 34.75376904
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "40cd7dd6-dd6e-4857-af1b-d5a64919ec47",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.2754062,
+            "lat": 33.40210799
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6f8df9b9-2282-4110-9fc1-cd7b164c5dba",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -116.70136792562936,
+            "lat": 33.18755451730115
           },
           "scientificname": "puma concolor"
         }
@@ -1227,6 +1305,58 @@
           "geopoint": {
             "lon": -105.5505582,
             "lat": 36.30810222
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "1fefff6d-59b1-4c56-b83d-cd0b1ddda866",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -104.843887,
+            "lat": 32.019165
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "450d74e2-ff09-4d3c-85a9-a84ded2fce00",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -118.24090689809088,
+            "lat": 34.04001250669102
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "47693a08-16d6-4850-ab3d-5a035e7e08b4",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.6913951,
+            "lat": 33.79823614
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "3ed608c3-791f-45bc-af70-c7c650dd9726",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.5951281,
+            "lat": 35.0441862
           },
           "scientificname": "puma concolor"
         }
@@ -1260,12 +1390,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "3ed608c3-791f-45bc-af70-c7c650dd9726",
+        "_id": "db7ae43e-0112-460b-964d-2a87a274cfec",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.5951281,
-            "lat": 35.0441862
+            "lon": -106.9114251,
+            "lat": 36.12945157
           },
           "scientificname": "puma concolor"
         }
@@ -1273,12 +1403,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "cbdd5b69-041d-49b4-a19c-9e65cf8fa8a0",
+        "_id": "4f35ba1b-6ea6-4ca9-a4c6-6e7877e38fc1",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.4320983,
-            "lat": 33.5285997
+            "lon": -107.5889628,
+            "lat": 33.32216539
           },
           "scientificname": "puma concolor"
         }
@@ -1286,12 +1416,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "7ab35e71-bf39-41d9-9f5f-b20fe84a07c2",
+        "_id": "4ffa167a-0ba4-49c5-8f50-cbe6948f261d",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -108.71766,
-            "lat": 32.74083
+            "lon": -104.9413313,
+            "lat": 32.0665106
           },
           "scientificname": "puma concolor"
         }
@@ -1338,181 +1468,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "004fec34-b1eb-4f0c-b2ac-9d52c27cf4d2",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4889985,
-            "lat": 33.3007011
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "db7ae43e-0112-460b-964d-2a87a274cfec",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.9114251,
-            "lat": 36.12945157
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "771e63dc-030f-497e-b0c9-0f52d876b861",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.7276593,
-            "lat": 32.96823056
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "87e529ab-8217-4a71-abfb-e2527fe0e3b8",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -106.6631824,
             "lat": 35.0785334
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "71bc48ee-d234-4141-8c1f-d6526a274499",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4913888889,
-            "lat": 32.5752777778
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "63aefb24-c7b9-4a48-90bd-9eaca84bb428",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -118.40758376889995,
-            "lat": 35.510451198106274
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "4f35ba1b-6ea6-4ca9-a4c6-6e7877e38fc1",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.5889628,
-            "lat": 33.32216539
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "4ffa167a-0ba4-49c5-8f50-cbe6948f261d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -104.9413313,
-            "lat": 32.0665106
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "697043ad-c338-45f5-9e27-bc381893c5f6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4191041,
-            "lat": 34.75376904
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "40cd7dd6-dd6e-4857-af1b-d5a64919ec47",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.2754062,
-            "lat": 33.40210799
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "450d74e2-ff09-4d3c-85a9-a84ded2fce00",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -118.24090689809088,
-            "lat": 34.04001250669102
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "47693a08-16d6-4850-ab3d-5a035e7e08b4",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.6913951,
-            "lat": 33.79823614
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9086b8b2-f948-489e-b5cd-875a403e6453",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.6844444,
-            "lat": 34.9469444
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "a9dbac70-6c05-45f9-9185-5bce17704193",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.2593363,
-            "lat": 37.01567083
           },
           "scientificname": "puma concolor"
         }
@@ -1546,12 +1507,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "6f8df9b9-2282-4110-9fc1-cd7b164c5dba",
+        "_id": "cbdd5b69-041d-49b4-a19c-9e65cf8fa8a0",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -116.70136792562936,
-            "lat": 33.18755451730115
+            "lon": -106.4320983,
+            "lat": 33.5285997
           },
           "scientificname": "puma concolor"
         }
@@ -1598,12 +1559,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "6cafd866-5e28-4925-823f-8c73e7d7ac14",
+        "_id": "9086b8b2-f948-489e-b5cd-875a403e6453",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.0336111111,
-            "lat": 34.4172222222
+            "lon": -119.6844444,
+            "lat": 34.9469444
           },
           "scientificname": "puma concolor"
         }
@@ -1611,12 +1572,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "59d85e3f-54fd-4a1d-ad64-fd6f1f36078b",
+        "_id": "a9dbac70-6c05-45f9-9185-5bce17704193",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.646393,
-            "lat": 33.080833
+            "lon": -107.2593363,
+            "lat": 37.01567083
           },
           "scientificname": "puma concolor"
         }
@@ -1624,51 +1585,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "560e5178-9dc1-4a36-932a-16a8818e7e47",
+        "_id": "7ab35e71-bf39-41d9-9f5f-b20fe84a07c2",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -122.33346043044479,
-            "lat": 44.03404611626266
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "5870c450-5a5f-460a-b954-58ee36e5dc3d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.414391,
-            "lat": 37.299671
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "588d3b52-ccc1-493d-844d-3fd8c37bded6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.3283995,
-            "lat": 33.711498
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "452d4333-3cc1-4eee-959d-f50a84ed6184",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -117.85494719366714,
-            "lat": 34.136005696895964
+            "lon": -108.71766,
+            "lat": 32.74083
           },
           "scientificname": "puma concolor"
         }
@@ -1715,12 +1637,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "785a4a17-0594-40ce-a3c0-f3bf965f372f",
+        "_id": "4d37c20c-ea82-442f-8eb6-17202b4fef15",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -108.3700028,
-            "lat": 31.4379009
+            "lon": -106.1381464,
+            "lat": 36.9235171
           },
           "scientificname": "puma concolor"
         }
@@ -1754,12 +1676,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "4d37c20c-ea82-442f-8eb6-17202b4fef15",
+        "_id": "560e5178-9dc1-4a36-932a-16a8818e7e47",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.1381464,
-            "lat": 36.9235171
+            "lon": -122.33346043044479,
+            "lat": 44.03404611626266
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "5870c450-5a5f-460a-b954-58ee36e5dc3d",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.414391,
+            "lat": 37.299671
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "588d3b52-ccc1-493d-844d-3fd8c37bded6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.3283995,
+            "lat": 33.711498
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "59d85e3f-54fd-4a1d-ad64-fd6f1f36078b",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.646393,
+            "lat": 33.080833
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "452d4333-3cc1-4eee-959d-f50a84ed6184",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -117.85494719366714,
+            "lat": 34.136005696895964
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "62e3e9aa-2e6f-4842-b45e-f530ac9d773c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.8451115,
+            "lat": 33.195911
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6cafd866-5e28-4925-823f-8c73e7d7ac14",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.0336111111,
+            "lat": 34.4172222222
           },
           "scientificname": "puma concolor"
         }
@@ -1793,38 +1793,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "62e3e9aa-2e6f-4842-b45e-f530ac9d773c",
+        "_id": "785a4a17-0594-40ce-a3c0-f3bf965f372f",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.8451115,
-            "lat": 33.195911
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "ec2fc924-218a-4355-a432-8eb0df93ef41",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -104.839157,
-            "lat": 32.064445
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "d903bc0e-a367-421a-a942-3f31f90e95a7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4320983,
-            "lat": 33.6151996
+            "lon": -108.3700028,
+            "lat": 31.4379009
           },
           "scientificname": "puma concolor"
         }
@@ -1864,6 +1838,32 @@
           "geopoint": {
             "lon": -108.98941,
             "lat": 31.78605
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d903bc0e-a367-421a-a942-3f31f90e95a7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.4320983,
+            "lat": 33.6151996
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "ec2fc924-218a-4355-a432-8eb0df93ef41",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -104.839157,
+            "lat": 32.064445
           },
           "scientificname": "puma concolor"
         }
@@ -1988,6 +1988,71 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "7781a4aa-1518-4bb5-9d41-b3786811b60a",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -91.6971257966153,
+            "lat": 33.22812018644003
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d6a0c232-ba09-45dc-8a8a-db354eced465",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.8343198,
+            "lat": 32.93148319
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d7a85ab2-6122-4912-a698-bf967913c622",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -117.71543345408801,
+            "lat": 45.52236586129238
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f8267c93-6c57-4d76-9027-fc9c5d600ef6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": 0,
+            "lat": 0
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f93cabea-c1c5-448c-9da7-580608a43903",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.3283995,
+            "lat": 33.711498
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "62c726f3-0772-4d38-b52d-0ce81b72ed89",
         "_score": 1,
         "_source": {
@@ -2046,19 +2111,6 @@
           "geopoint": {
             "lon": -106.7980283,
             "lat": 36.55532371
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7781a4aa-1518-4bb5-9d41-b3786811b60a",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -91.6971257966153,
-            "lat": 33.22812018644003
           },
           "scientificname": "puma concolor"
         }
@@ -2183,64 +2235,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "d6a0c232-ba09-45dc-8a8a-db354eced465",
+        "_id": "b6cc862c-5cd2-4772-be35-e0ee34caeb63",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.8343198,
-            "lat": 32.93148319
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "d7a85ab2-6122-4912-a698-bf967913c622",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -117.71543345408801,
-            "lat": 45.52236586129238
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "f8267c93-6c57-4d76-9027-fc9c5d600ef6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": 0,
-            "lat": 0
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "f93cabea-c1c5-448c-9da7-580608a43903",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.3283995,
-            "lat": 33.711498
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "40181ebf-e5e7-4fc2-a9f9-e30c6479eaff",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -121.399,
-            "lat": 47.3925
+            "lon": -105.8744464,
+            "lat": 34.78906528
           },
           "scientificname": "puma concolor"
         }
@@ -2274,207 +2274,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "12a0ac63-9743-4c06-8d66-511b5047d49a",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.3612304,
-            "lat": 31.6035623
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "16c5e8d3-ff27-4767-ba09-64f867bd71d1",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -117.9452072805286,
             "lat": 35.8427289587811
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "6e707b3c-21c4-4e62-bbb0-9b605d7f9c3b",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.8892102,
-            "lat": 36.12980468
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "269e1237-3add-46d1-827a-57e1d6ccb033",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.8752406,
-            "lat": 32.74177948
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "0048c521-16e5-4763-80e7-443c37f7a932",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.3903,
-            "lat": 42.1976
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "cce50188-4f20-4c3a-a1a3-c65d8a919fc5",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.3283997,
-            "lat": 33.7977993
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "0280484d-fb9b-4981-a0c2-5b30c2acf1c2",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -74.448633,
-            "lat": 42.057137
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "76e8632f-827e-41cf-bcc2-d0861dd1ac72",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -93.83618140903317,
-            "lat": 32.333157161279885
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "f3444ed1-c75e-44c3-a182-8302cdeb50c4",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.15468618203244,
-            "lat": 43.55354247983853
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "e7cbe74c-2e2f-427c-ac9d-20b4c72f3bd3",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.58529,
-            "lat": 32.78286
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "b6cc862c-5cd2-4772-be35-e0ee34caeb63",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.8744464,
-            "lat": 34.78906528
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "940d8217-a065-487a-9d41-7e13654c9e67",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -75.02184,
-            "lat": 44.479677
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "bcf62f2d-eca3-4e37-89dd-85d245173c54",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4894444444,
-            "lat": 32.5325
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "82ab2427-ef35-4266-a615-91e9d7b3f732",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.5520091,
-            "lat": 35.60248571
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9e463931-5040-4f9e-9fc5-b0dd18141878",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.487636,
-            "lat": 37.182958
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "b15bf8c8-979e-432e-bde8-0f9067051c69",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.13708944710858,
-            "lat": 43.646143262577944
           },
           "scientificname": "puma concolor"
         }
@@ -2508,6 +2313,19 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "f3444ed1-c75e-44c3-a182-8302cdeb50c4",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.15468618203244,
+            "lat": 43.55354247983853
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "fc27ad9e-4b8d-4c38-ba88-a249d9694bce",
         "_score": 1,
         "_source": {
@@ -2521,12 +2339,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "1c213379-4605-4483-a33f-d754322e131f",
+        "_id": "e7cbe74c-2e2f-427c-ac9d-20b4c72f3bd3",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.6450234,
-            "lat": 33.37458017
+            "lon": -106.58529,
+            "lat": 32.78286
           },
           "scientificname": "puma concolor"
         }
@@ -2534,12 +2352,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "4181ab0b-2d18-424a-a1ba-258eb4705294",
+        "_id": "269e1237-3add-46d1-827a-57e1d6ccb033",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -109.87143512551576,
-            "lat": 32.70176843296257
+            "lon": -105.8752406,
+            "lat": 32.74177948
           },
           "scientificname": "puma concolor"
         }
@@ -2547,12 +2365,155 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "1ec7dcc7-1e73-4bb2-a425-56c9013d5d5c",
+        "_id": "b15bf8c8-979e-432e-bde8-0f9067051c69",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -132.25,
-            "lat": 56.4166666667
+            "lon": -123.13708944710858,
+            "lat": 43.646143262577944
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "0048c521-16e5-4763-80e7-443c37f7a932",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.3903,
+            "lat": 42.1976
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "12a0ac63-9743-4c06-8d66-511b5047d49a",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.3612304,
+            "lat": 31.6035623
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "0280484d-fb9b-4981-a0c2-5b30c2acf1c2",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -74.448633,
+            "lat": 42.057137
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "76e8632f-827e-41cf-bcc2-d0861dd1ac72",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -93.83618140903317,
+            "lat": 32.333157161279885
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "940d8217-a065-487a-9d41-7e13654c9e67",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -75.02184,
+            "lat": 44.479677
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "40181ebf-e5e7-4fc2-a9f9-e30c6479eaff",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -121.399,
+            "lat": 47.3925
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6e707b3c-21c4-4e62-bbb0-9b605d7f9c3b",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.8892102,
+            "lat": 36.12980468
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "82ab2427-ef35-4266-a615-91e9d7b3f732",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.5520091,
+            "lat": 35.60248571
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "bcf62f2d-eca3-4e37-89dd-85d245173c54",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.4894444444,
+            "lat": 32.5325
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "cce50188-4f20-4c3a-a1a3-c65d8a919fc5",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.3283997,
+            "lat": 33.7977993
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "9e463931-5040-4f9e-9fc5-b0dd18141878",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.487636,
+            "lat": 37.182958
           },
           "scientificname": "puma concolor"
         }
@@ -2573,12 +2534,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "39d3bbd9-087d-4586-9a26-e421bd3fbfbb",
+        "_id": "f3714f3d-2ab8-4481-b9f2-2f15d80165c7",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.57670559226793,
-            "lat": 33.76922795495304
+            "lon": -107.7679437,
+            "lat": 33.60786187
           },
           "scientificname": "puma concolor"
         }
@@ -2586,12 +2547,25 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "7f44d2a8-dff0-407e-99ab-28043d1ecee6",
+        "_id": "1c213379-4605-4483-a33f-d754322e131f",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.5000214,
-            "lat": 36.93661798
+            "lon": -105.6450234,
+            "lat": 33.37458017
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "1ec7dcc7-1e73-4bb2-a425-56c9013d5d5c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -132.25,
+            "lat": 56.4166666667
           },
           "scientificname": "puma concolor"
         }
@@ -2612,6 +2586,19 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "39d3bbd9-087d-4586-9a26-e421bd3fbfbb",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.57670559226793,
+            "lat": 33.76922795495304
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "4b946c13-6589-4e37-b158-ddcab9694a85",
         "_score": 1,
         "_source": {
@@ -2625,12 +2612,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "f3714f3d-2ab8-4481-b9f2-2f15d80165c7",
+        "_id": "4181ab0b-2d18-424a-a1ba-258eb4705294",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.7679437,
-            "lat": 33.60786187
+            "lon": -109.87143512551576,
+            "lat": 32.70176843296257
           },
           "scientificname": "puma concolor"
         }
@@ -2703,51 +2690,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "7f91c416-9626-4a7f-98b6-548a32a81b95",
+        "_id": "7f44d2a8-dff0-407e-99ab-28043d1ecee6",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.52751,
-            "lat": 32.62054
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "81f65220-3347-4e17-978f-cb38d4454d7f",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.8980459,
-            "lat": 36.94990921
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "8338dbaf-a6f4-4e65-bb67-ea7811402fe7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.3496374,
-            "lat": 36.41656808
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7857b49c-cf03-44ad-86be-7543a602b883",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.8518749,
-            "lat": 35.99246858
+            "lon": -105.5000214,
+            "lat": 36.93661798
           },
           "scientificname": "puma concolor"
         }
@@ -2781,155 +2729,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "73aa0613-fe0c-4aec-9ea2-1479098b20d4",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.1163888889,
-            "lat": 33.3308333333
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "8b8a6649-0861-4dec-b617-94141d78e4ec",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -88.72792,
-            "lat": 17.9291
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "94878f43-b271-40d1-92e4-deb36aa7a4a5",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.8727938,
-            "lat": 36.37344375
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "b9b6523a-2b97-424f-9772-174100a01c9b",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.426067,
-            "lat": 37.277133
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "95c44fb1-379a-4444-96ba-44cc4d62540e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.19928210548302,
-            "lat": 43.39654086326469
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "ca8c675e-8679-4f52-859b-bfaf7eb36d05",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -107.70614,
             "lat": 32.91702
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "be86df96-79f3-4e61-b5ce-5fe58fb14165",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -120.12229190350196,
-            "lat": 48.36346725311151
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9e3d4374-d04b-4767-9ce6-02e2b05babfe",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.23888254404703,
-            "lat": 43.367340403987605
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "a3b50ba9-49e2-4ada-8be5-77167890b699",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.7230936,
-            "lat": 32.63665025
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "aaba3f9e-4f9f-47be-884a-8680d1faa900",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.6983398,
-            "lat": 33.32017397
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "b468f258-3d81-42a7-8cc1-c882a7d54be9",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -124.04923647761426,
-            "lat": 47.8079760191091
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "b834cd93-a2c9-4067-b31c-1cb010a5bb9c",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.7106238,
-            "lat": 33.50951381
           },
           "scientificname": "puma concolor"
         }
@@ -2950,12 +2755,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "b9b6523a-2b97-424f-9772-174100a01c9b",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.426067,
+            "lat": 37.277133
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "be86df96-79f3-4e61-b5ce-5fe58fb14165",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -120.12229190350196,
+            "lat": 48.36346725311151
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "d80ba8b1-ff63-4cd1-9785-3440016ecd5a",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -123.17948285317475,
             "lat": 43.44034140192582
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "73aa0613-fe0c-4aec-9ea2-1479098b20d4",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.1163888889,
+            "lat": 33.3308333333
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7857b49c-cf03-44ad-86be-7543a602b883",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.8518749,
+            "lat": 35.99246858
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "b468f258-3d81-42a7-8cc1-c882a7d54be9",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -124.04923647761426,
+            "lat": 47.8079760191091
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f4f66adb-ff07-41bf-ba3c-84777e007432",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -109.5287552,
+            "lat": 40.4555206
           },
           "scientificname": "puma concolor"
         }
@@ -2976,12 +2859,142 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "f4f66adb-ff07-41bf-ba3c-84777e007432",
+        "_id": "a3b50ba9-49e2-4ada-8be5-77167890b699",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -109.5287552,
-            "lat": 40.4555206
+            "lon": -107.7230936,
+            "lat": 32.63665025
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "b834cd93-a2c9-4067-b31c-1cb010a5bb9c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.7106238,
+            "lat": 33.50951381
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "94878f43-b271-40d1-92e4-deb36aa7a4a5",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.8727938,
+            "lat": 36.37344375
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7f91c416-9626-4a7f-98b6-548a32a81b95",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.52751,
+            "lat": 32.62054
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "8b8a6649-0861-4dec-b617-94141d78e4ec",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -88.72792,
+            "lat": 17.9291
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "81f65220-3347-4e17-978f-cb38d4454d7f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.8980459,
+            "lat": 36.94990921
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "8338dbaf-a6f4-4e65-bb67-ea7811402fe7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.3496374,
+            "lat": 36.41656808
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "95c44fb1-379a-4444-96ba-44cc4d62540e",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.19928210548302,
+            "lat": 43.39654086326469
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "aaba3f9e-4f9f-47be-884a-8680d1faa900",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.6983398,
+            "lat": 33.32017397
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "9e3d4374-d04b-4767-9ce6-02e2b05babfe",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.23888254404703,
+            "lat": 43.367340403987605
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "ea0ab062-2502-4a48-9172-acfdad7914a6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.17947548295876,
+            "lat": 43.20683946483794
           },
           "scientificname": "puma concolor"
         }
@@ -3301,19 +3314,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "ea0ab062-2502-4a48-9172-acfdad7914a6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.17947548295876,
-            "lat": 43.20683946483794
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "1ad25a3b-a633-4404-ae14-56c1e5b1c4b8",
         "_score": 1,
         "_source": {
@@ -3418,6 +3418,32 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "f3ca36a7-95c5-407b-9da5-095a9146c3c6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -118.6555556,
+            "lat": 34.2722222
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "e3293acf-eaaf-42f4-a330-1d95d40da5e6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -121.8998,
+            "lat": 47.337
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "56fce736-60da-4f42-ac72-ec3ab5a0ca10",
         "_score": 1,
         "_source": {
@@ -3496,12 +3522,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "e3293acf-eaaf-42f4-a330-1d95d40da5e6",
+        "_id": "aec30f49-9c68-438a-af7d-6004e49aa43c",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -121.8998,
-            "lat": 47.337
+            "lon": -125.583333,
+            "lat": 49.75
           },
           "scientificname": "puma concolor"
         }
@@ -3509,12 +3535,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "f3ca36a7-95c5-407b-9da5-095a9146c3c6",
+        "_id": "fe6e811c-3f52-4ee3-86ab-5203c3f495d6",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -118.6555556,
-            "lat": 34.2722222
+            "lon": -125.583333,
+            "lat": 49.75
           },
           "scientificname": "puma concolor"
         }
@@ -3522,12 +3548,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "8e5d46e3-3cf1-4ed9-8acb-8eafdb98e019",
+        "_id": "c1dd0b4b-6e27-4a28-b38b-89efa0bc4348",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -118.19463967646935,
-            "lat": 35.22880270194663
+            "lon": -104.839157,
+            "lat": 32.064445
           },
           "scientificname": "puma concolor"
         }
@@ -3535,38 +3561,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "678606cc-c4ec-4092-96c6-51a220efd507",
+        "_id": "19e9ae46-6b30-4ab8-ab6a-4ddadd2020df",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -110.73498213872537,
-            "lat": 39.54246590613516
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "67ba5a6e-0774-4324-9225-6d061e23fdff",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4606399,
-            "lat": 36.38821714
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "2afb120f-a2a2-43b6-a46f-328755694655",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.3283997,
-            "lat": 33.7977993
+            "lon": -117.63784296936625,
+            "lat": 48.262807255015076
           },
           "scientificname": "puma concolor"
         }
@@ -3600,6 +3600,19 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "2afb120f-a2a2-43b6-a46f-328755694655",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.3283997,
+            "lat": 33.7977993
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "24594de0-9913-4dad-bd25-f172c6b191b6",
         "_score": 1,
         "_source": {
@@ -3626,12 +3639,168 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "eea004c2-60b0-4e9d-a8f0-a4ffe3dfe7d7",
+        "_id": "00913971-0f25-4ed9-9120-03fe570db0e9",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.10468,
-            "lat": 33.42485
+            "lon": -106.5669444444,
+            "lat": 32.7830555556
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "4ef620b7-9035-4960-a529-04550b5cbe65",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.0530009,
+            "lat": 33.19238112
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "0fb6e543-3f0b-45a5-af1f-c0df39e9ebee",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.12018533753496,
+            "lat": 43.57174271115949
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "1004fe18-54cf-450e-8b5b-159a7a4bbc11",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.5370025,
+            "lat": 32.6563984
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "132fc73a-aecb-466e-b04e-8bbc91bea2cd",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.945894,
+            "lat": 33.97641368
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "36435d92-d906-4e1f-92d3-e3f0e54d94e0",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.646393,
+            "lat": 33.080833
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "36a2cbf1-8901-472a-a849-de288a93fc4d",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.5476967,
+            "lat": 33.02069445
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "56af5d09-fb9a-4b21-9897-b06c68577e37",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.6031162,
+            "lat": 33.40033066
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "021a81ef-12dc-4223-952a-cb4e6c780ca7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.646393,
+            "lat": 33.080833
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d1014ef2-be29-4441-9266-1235da06d63c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -118.67220666155946,
+            "lat": 46.03985667214344
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "d2ab1187-f1fe-40dd-adb8-7357be1d1090",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.0858494,
+            "lat": 33.08954897
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "678606cc-c4ec-4092-96c6-51a220efd507",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -110.73498213872537,
+            "lat": 39.54246590613516
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "67ba5a6e-0774-4324-9225-6d061e23fdff",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.4606399,
+            "lat": 36.38821714
           },
           "scientificname": "puma concolor"
         }
@@ -3652,12 +3821,25 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "00913971-0f25-4ed9-9120-03fe570db0e9",
+        "_id": "62b7d65e-add6-43b0-92e3-518b82e44bd2",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.5669444444,
-            "lat": 32.7830555556
+            "lon": -119.75478849209708,
+            "lat": 48.555150909659545
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "eea004c2-60b0-4e9d-a8f0-a4ffe3dfe7d7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.10468,
+            "lat": 33.42485
           },
           "scientificname": "puma concolor"
         }
@@ -3671,6 +3853,32 @@
           "geopoint": {
             "lon": -105.3327093,
             "lat": 35.96393964
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "f6b312d6-5999-4466-a37e-43ab53c7f33a",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -119.9711111,
+            "lat": 34.4455556
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "e1a533bb-e8cf-43fa-a160-7666b4f20a18",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.6197801,
+            "lat": 35.80051308
           },
           "scientificname": "puma concolor"
         }
@@ -3730,12 +3938,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "e1a533bb-e8cf-43fa-a160-7666b4f20a18",
+        "_id": "bb27672e-6418-4291-8ec9-05b0d82b16ca",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.6197801,
-            "lat": 35.80051308
+            "lon": -108.0995322,
+            "lat": 33.32427036
           },
           "scientificname": "puma concolor"
         }
@@ -3743,142 +3951,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "021a81ef-12dc-4223-952a-cb4e6c780ca7",
+        "_id": "8e5d46e3-3cf1-4ed9-8acb-8eafdb98e019",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.646393,
-            "lat": 33.080833
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "aec30f49-9c68-438a-af7d-6004e49aa43c",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -125.583333,
-            "lat": 49.75
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "4ef620b7-9035-4960-a529-04550b5cbe65",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.0530009,
-            "lat": 33.19238112
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "62b7d65e-add6-43b0-92e3-518b82e44bd2",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.75478849209708,
-            "lat": 48.555150909659545
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "36435d92-d906-4e1f-92d3-e3f0e54d94e0",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.646393,
-            "lat": 33.080833
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "36a2cbf1-8901-472a-a849-de288a93fc4d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.5476967,
-            "lat": 33.02069445
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "0fb6e543-3f0b-45a5-af1f-c0df39e9ebee",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.12018533753496,
-            "lat": 43.57174271115949
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "1004fe18-54cf-450e-8b5b-159a7a4bbc11",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.5370025,
-            "lat": 32.6563984
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "132fc73a-aecb-466e-b04e-8bbc91bea2cd",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.945894,
-            "lat": 33.97641368
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "19e9ae46-6b30-4ab8-ab6a-4ddadd2020df",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -117.63784296936625,
-            "lat": 48.262807255015076
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "56af5d09-fb9a-4b21-9897-b06c68577e37",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.6031162,
-            "lat": 33.40033066
+            "lon": -118.19463967646935,
+            "lat": 35.22880270194663
           },
           "scientificname": "puma concolor"
         }
@@ -3899,51 +3977,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "d1014ef2-be29-4441-9266-1235da06d63c",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -118.67220666155946,
-            "lat": 46.03985667214344
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "abdce68a-3043-4a42-95a0-70f17dea594d",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -106.5075561,
             "lat": 36.63003589
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "bb27672e-6418-4291-8ec9-05b0d82b16ca",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.0995322,
-            "lat": 33.32427036
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "d2ab1187-f1fe-40dd-adb8-7357be1d1090",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.0858494,
-            "lat": 33.08954897
           },
           "scientificname": "puma concolor"
         }
@@ -3964,51 +4003,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "c1dd0b4b-6e27-4a28-b38b-89efa0bc4348",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -104.839157,
-            "lat": 32.064445
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "ddef5fe3-969b-4f18-87c3-14d0adf8baa7",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -105.5022088,
             "lat": 36.58913748
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "f6b312d6-5999-4466-a37e-43ab53c7f33a",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.9711111,
-            "lat": 34.4455556
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "fe6e811c-3f52-4ee3-86ab-5203c3f495d6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -125.583333,
-            "lat": 49.75
           },
           "scientificname": "puma concolor"
         }
@@ -4048,6 +4048,19 @@
           "geopoint": {
             "lon": -112.39433536871483,
             "lat": 36.29748102582919
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "9ecc2f15-4178-4a7d-859e-ae8ca2138153",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -104.8590515,
+            "lat": 32.0150703
           },
           "scientificname": "puma concolor"
         }
@@ -4120,12 +4133,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "4691aba6-8f00-4e17-a83e-8ad1650a7a75",
+        "_id": "448b6f07-dd1e-402f-9598-4996d77c140b",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -91.5301184634637,
-            "lat": 31.32117132075479
+            "lon": -106.3940806,
+            "lat": 36.40704246
           },
           "scientificname": "puma concolor"
         }
@@ -4133,12 +4146,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "448b6f07-dd1e-402f-9598-4996d77c140b",
+        "_id": "4691aba6-8f00-4e17-a83e-8ad1650a7a75",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.3940806,
-            "lat": 36.40704246
+            "lon": -91.5301184634637,
+            "lat": 31.32117132075479
           },
           "scientificname": "puma concolor"
         }
@@ -4211,51 +4224,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "978a10c5-0f69-4aa4-aa7b-e6a0deddb768",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.996556,
-            "lat": 34.18074477
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "a68ad1c4-2333-4375-b0df-f2fdf49d802a",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -122.57187186944641,
             "lat": 51.43509548580547
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "c0a1ebfd-eabf-4a25-b5a4-d73b04bda913",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.10468,
-            "lat": 33.42485
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9ecc2f15-4178-4a7d-859e-ae8ca2138153",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -104.8590515,
-            "lat": 32.0150703
           },
           "scientificname": "puma concolor"
         }
@@ -4276,12 +4250,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "c0a1ebfd-eabf-4a25-b5a4-d73b04bda913",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.10468,
+            "lat": 33.42485
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "978a10c5-0f69-4aa4-aa7b-e6a0deddb768",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.996556,
+            "lat": 34.18074477
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "ea2aa0c8-9a33-40df-9840-6499c5874cc7",
         "_score": 1,
         "_source": {
           "geopoint": {
             "lon": -110.70534803117107,
             "lat": 32.430375237105956
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "a16d0f81-2c1c-4d55-8e76-3367bae392ff",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.5526297,
+            "lat": 35.69264625
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "28db33c5-ebb6-4542-b9c0-568f27f18e23",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -120.0191667,
+            "lat": 34.5883333
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "2b22e4da-cf9f-4f99-9844-71d48ed18dd0",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.70963,
+            "lat": 32.72195
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "153decf6-03ac-4588-bee1-d0e44bad9e94",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -104.8590515,
+            "lat": 32.0150703
           },
           "scientificname": "puma concolor"
         }
@@ -4328,175 +4380,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "153decf6-03ac-4588-bee1-d0e44bad9e94",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -104.8590515,
-            "lat": 32.0150703
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "28db33c5-ebb6-4542-b9c0-568f27f18e23",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -120.0191667,
-            "lat": 34.5883333
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "2b22e4da-cf9f-4f99-9844-71d48ed18dd0",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.70963,
-            "lat": 32.72195
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "278185c6-c3cb-47e5-b2f7-dd00d131673c",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.10188805170048,
-            "lat": 48.07951427965483
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "370b744e-5348-4c93-85fb-9ac5c30a3ab6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.7106238,
-            "lat": 33.50951381
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "10da513a-6075-45e5-b0f2-b39559c5854d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.13708944710858,
-            "lat": 43.646143262577944
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "55de6140-4789-4ba7-88f9-9773dde58235",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.646393,
-            "lat": 33.080833
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "59d731d9-287d-4b9c-b350-67ff64b85a83",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -120.038887,
-            "lat": 34.7777786
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "21337767-ad37-4c9c-9f3b-23f6c623e892",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -118.24090689809088,
-            "lat": 34.04001250669102
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "89093e24-4480-4f73-ac15-217b7d03b047",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.10468,
-            "lat": 33.42485
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "baf31429-45cd-40f6-9bf8-168a5fe68f08",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -107.5592865,
-            "lat": 33.77358509
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "a16d0f81-2c1c-4d55-8e76-3367bae392ff",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.5526297,
-            "lat": 35.69264625
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "93e8bb96-4a26-4822-a892-74340ce948f7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -117.94517417960488,
-            "lat": 35.842732158964004
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "e28df87c-ea40-45f7-8481-e24005e3047f",
         "_score": 1,
         "_source": {
@@ -4516,19 +4399,6 @@
           "geopoint": {
             "lon": -106.8738301,
             "lat": 36.87818886
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "ebffcd19-4c30-4f79-b160-2ff8d73d17bb",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -110.70534803117107,
-            "lat": 32.430375237105956
           },
           "scientificname": "puma concolor"
         }
@@ -4575,12 +4445,129 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "3c1d8f7c-c625-49e1-80cb-f1b4e73956b5",
+        "_id": "21337767-ad37-4c9c-9f3b-23f6c623e892",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.2987208,
-            "lat": 36.66342036
+            "lon": -118.24090689809088,
+            "lat": 34.04001250669102
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "370b744e-5348-4c93-85fb-9ac5c30a3ab6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.7106238,
+            "lat": 33.50951381
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "10da513a-6075-45e5-b0f2-b39559c5854d",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.13708944710858,
+            "lat": 43.646143262577944
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "55de6140-4789-4ba7-88f9-9773dde58235",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.646393,
+            "lat": 33.080833
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "baf31429-45cd-40f6-9bf8-168a5fe68f08",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.5592865,
+            "lat": 33.77358509
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "278185c6-c3cb-47e5-b2f7-dd00d131673c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.10188805170048,
+            "lat": 48.07951427965483
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "93e8bb96-4a26-4822-a892-74340ce948f7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -117.94517417960488,
+            "lat": 35.842732158964004
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "89093e24-4480-4f73-ac15-217b7d03b047",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.10468,
+            "lat": 33.42485
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "59d731d9-287d-4b9c-b350-67ff64b85a83",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -120.038887,
+            "lat": 34.7777786
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "ebffcd19-4c30-4f79-b160-2ff8d73d17bb",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -110.70534803117107,
+            "lat": 32.430375237105956
           },
           "scientificname": "puma concolor"
         }
@@ -4614,12 +4601,25 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "1351af03-e457-4c0d-b19d-44cca89176aa",
+        "_id": "0ac32d72-f63e-46bc-9e29-9e1f355284fd",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.3086111,
-            "lat": 35.46810594
+            "lon": -105.3306175,
+            "lat": 35.45903097
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "0be0aa0a-0d34-4d1f-a418-b2ea942d5bdd",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.4629567,
+            "lat": 36.68926527
           },
           "scientificname": "puma concolor"
         }
@@ -4666,25 +4666,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "0ac32d72-f63e-46bc-9e29-9e1f355284fd",
+        "_id": "3c1d8f7c-c625-49e1-80cb-f1b4e73956b5",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.3306175,
-            "lat": 35.45903097
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "0be0aa0a-0d34-4d1f-a418-b2ea942d5bdd",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.4629567,
-            "lat": 36.68926527
+            "lon": -107.2987208,
+            "lat": 36.66342036
           },
           "scientificname": "puma concolor"
         }
@@ -4705,12 +4692,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "39f7a18f-ad6e-4a82-8371-1d40d616488a",
+        "_id": "b43957de-fc8d-4774-93b7-942df1075fa0",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -122.04562288856549,
-            "lat": 47.10542458467989
+            "lon": -104.839157,
+            "lat": 32.064445
           },
           "scientificname": "puma concolor"
         }
@@ -4718,77 +4705,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "3a2e43d3-e25c-473d-8c18-510e4eda089f",
+        "_id": "d6c24f0e-3bc5-4e42-a53c-4e82ee326103",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.4043769,
-            "lat": 34.02822225
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "cb30ad90-632d-43a3-bd89-793a15769f34",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -124.23673000000001,
-            "lat": 47.88084
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "c1a29a6d-2471-4921-92d2-cc4f4a686476",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -105.8125992,
-            "lat": 32.89554585
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7fa079e4-5a95-4cf4-8e21-9f28fc592de9",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.5842,
-            "lat": 48.0619
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "ab635026-5351-4f65-8fc5-3e06299932a7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.2570373,
-            "lat": 36.44814835
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "799aabf3-75d9-44f2-aee5-13c99ac0b824",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.53927,
-            "lat": 32.62101
+            "lon": -105.4456449,
+            "lat": 36.32419911
           },
           "scientificname": "puma concolor"
         }
@@ -4822,12 +4744,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "b43957de-fc8d-4774-93b7-942df1075fa0",
+        "_id": "39f7a18f-ad6e-4a82-8371-1d40d616488a",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -104.839157,
-            "lat": 32.064445
+            "lon": -122.04562288856549,
+            "lat": 47.10542458467989
           },
           "scientificname": "puma concolor"
         }
@@ -4835,12 +4757,90 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "d6c24f0e-3bc5-4e42-a53c-4e82ee326103",
+        "_id": "3a2e43d3-e25c-473d-8c18-510e4eda089f",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -105.4456449,
-            "lat": 36.32419911
+            "lon": -107.4043769,
+            "lat": 34.02822225
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "1351af03-e457-4c0d-b19d-44cca89176aa",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.3086111,
+            "lat": 35.46810594
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7fa079e4-5a95-4cf4-8e21-9f28fc592de9",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -123.5842,
+            "lat": 48.0619
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "c1a29a6d-2471-4921-92d2-cc4f4a686476",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -105.8125992,
+            "lat": 32.89554585
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "ab635026-5351-4f65-8fc5-3e06299932a7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.2570373,
+            "lat": 36.44814835
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "cb30ad90-632d-43a3-bd89-793a15769f34",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -124.23673000000001,
+            "lat": 47.88084
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "799aabf3-75d9-44f2-aee5-13c99ac0b824",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.53927,
+            "lat": 32.62101
           },
           "scientificname": "puma concolor"
         }
@@ -5355,12 +5355,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "69fb80cd-ece3-4c3d-b03a-d04be29a14ba",
+        "_id": "ae060d7c-ea69-4430-ba09-6bb6d79f285f",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -119.69043585143505,
-            "lat": 34.41272378698258
+            "lon": -123.0449681724333,
+            "lat": 42.96324177126724
           },
           "scientificname": "puma concolor"
         }
@@ -5368,12 +5368,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "cabc54e7-2300-4b88-bdb3-c3d03f46b7f9",
+        "_id": "e9b28552-1945-4a61-a41b-c49341b8589d",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.371391,
-            "lat": 33.646389
+            "lon": -108.69464044233644,
+            "lat": 26.902984615965437
           },
           "scientificname": "puma concolor"
         }
@@ -5381,51 +5381,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "cae71985-f582-41b3-9e11-68a9d56d208f",
+        "_id": "c251e83c-cc03-4e43-aa4a-0792e8721b44",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -104.843887,
-            "lat": 32.019165
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "cc496b8c-5aa7-409a-b9b3-17173970c302",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.5059371,
-            "lat": 36.65544902
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9b668cfd-8fc8-4132-b049-929c437c6ff1",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -73.7834,
-            "lat": 44.328
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9b8b1779-211e-4fa9-a724-ba90a5e7d3f2",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.5951281,
-            "lat": 35.0441862
+            "lon": -119.75478849209708,
+            "lat": 48.555150909659545
           },
           "scientificname": "puma concolor"
         }
@@ -5537,6 +5498,97 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "69fb80cd-ece3-4c3d-b03a-d04be29a14ba",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -119.69043585143505,
+            "lat": 34.41272378698258
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "90cd8fbb-e98a-400f-a812-94e2597bbb30",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -107.1228508,
+            "lat": 34.46935551
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "91d51156-0763-4a0b-8f51-8c0a5ccf2cb2",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.5214699,
+            "lat": 36.47737501
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6e636695-8b0f-44da-a694-8a5cf4030fa9",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -104.839157,
+            "lat": 32.064445
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "8c8a5db4-1ea1-4759-a125-085b46a85850",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.6670405,
+            "lat": 36.13310831
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "afa71196-0f4e-46a2-bc04-d7fe8dca8fe3",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -109.00895,
+            "lat": 32.20008
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "b145cb45-ee52-44c2-8b03-b6a351538e27",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -125.24313398112328,
+            "lat": 50.0165233984326
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "751ea1ad-4ecd-4a79-855b-fc8482e8cc32",
         "_score": 1,
         "_source": {
@@ -5615,19 +5667,6 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "d3a6359a-2e23-4cee-b922-9811598a10b4",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -124.08640000000001,
-            "lat": 47.8163
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
         "_id": "dd0e0522-b527-49cc-a6c3-cd7949bab64d",
         "_score": 1,
         "_source": {
@@ -5641,12 +5680,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "90cd8fbb-e98a-400f-a812-94e2597bbb30",
+        "_id": "d3a6359a-2e23-4cee-b922-9811598a10b4",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -107.1228508,
-            "lat": 34.46935551
+            "lon": -124.08640000000001,
+            "lat": 47.8163
           },
           "scientificname": "puma concolor"
         }
@@ -5654,12 +5693,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "91d51156-0763-4a0b-8f51-8c0a5ccf2cb2",
+        "_id": "cabc54e7-2300-4b88-bdb3-c3d03f46b7f9",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.5214699,
-            "lat": 36.47737501
+            "lon": -106.371391,
+            "lat": 33.646389
           },
           "scientificname": "puma concolor"
         }
@@ -5667,12 +5706,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "ae060d7c-ea69-4430-ba09-6bb6d79f285f",
+        "_id": "cae71985-f582-41b3-9e11-68a9d56d208f",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -123.0449681724333,
-            "lat": 42.96324177126724
+            "lon": -104.843887,
+            "lat": 32.019165
           },
           "scientificname": "puma concolor"
         }
@@ -5680,25 +5719,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "6e636695-8b0f-44da-a694-8a5cf4030fa9",
+        "_id": "cc496b8c-5aa7-409a-b9b3-17173970c302",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -104.839157,
-            "lat": 32.064445
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "8c8a5db4-1ea1-4759-a125-085b46a85850",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -106.6670405,
-            "lat": 36.13310831
+            "lon": -106.5059371,
+            "lat": 36.65544902
           },
           "scientificname": "puma concolor"
         }
@@ -5719,6 +5745,32 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "9b668cfd-8fc8-4132-b049-929c437c6ff1",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -73.7834,
+            "lat": 44.328
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "9b8b1779-211e-4fa9-a724-ba90a5e7d3f2",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -106.5951281,
+            "lat": 35.0441862
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "6671f846-32ab-4afc-bdc5-d67ecd36b3c7",
         "_score": 1,
         "_source": {
@@ -5732,12 +5784,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "afa71196-0f4e-46a2-bc04-d7fe8dca8fe3",
+        "_id": "da8dbc78-a04e-4338-8d50-7cc68a95ad9d",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -109.00895,
-            "lat": 32.20008
+            "lon": -104.334944,
+            "lat": 35.92108499
           },
           "scientificname": "puma concolor"
         }
@@ -5745,155 +5797,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "b145cb45-ee52-44c2-8b03-b6a351538e27",
+        "_id": "dbaaf299-238a-49b8-8be5-bfca64ac7839",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -125.24313398112328,
-            "lat": 50.0165233984326
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "c251e83c-cc03-4e43-aa4a-0792e8721b44",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -119.75478849209708,
-            "lat": 48.555150909659545
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "e9b28552-1945-4a61-a41b-c49341b8589d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.69464044233644,
-            "lat": 26.902984615965437
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "2fe8912e-ce63-4895-afd4-5a170a1ff491",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -118.2027847093314,
-            "lat": 48.8660131460843
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "1a55469f-9f10-4bc4-9006-b5a240110c3e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.70963,
-            "lat": 32.72195
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "7372448f-ba5a-46dc-9af1-7235a7f11d58",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -104.4689569,
-            "lat": 36.89209616
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "6881e547-2c81-4281-b006-dcff8c6fc89e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -79.7,
-            "lat": 0.9833000000000001
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "6eb5b0eb-77d9-4f93-b5d9-aa5f71520afc",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -108.7086111111,
-            "lat": 32.7141666667
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "35765763-a99b-408d-a2b4-77d903821dd7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -110.70534803117107,
-            "lat": 32.430375237105956
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "a92d2805-4bfb-4ba6-9e0c-40ca950dca25",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -109.2432676797999,
-            "lat": 31.14081461087519
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9b82253b-f5db-4cf0-a3ff-21b14727b82e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -103.662,
-            "lat": 30.306
-          },
-          "scientificname": "puma concolor"
-        }
-      },
-      {
-        "_index": "idigbio-2.4.0",
-        "_type": "records",
-        "_id": "9c4b49ae-05a1-412b-965c-97abe0a76a3b",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -123.23389096620697,
-            "lat": 43.57534241535673
+            "lon": -106.8357727,
+            "lat": 36.22077975
           },
           "scientificname": "puma concolor"
         }
@@ -5927,6 +5836,97 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
+        "_id": "1a55469f-9f10-4bc4-9006-b5a240110c3e",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.70963,
+            "lat": 32.72195
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "2fe8912e-ce63-4895-afd4-5a170a1ff491",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -118.2027847093314,
+            "lat": 48.8660131460843
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "35765763-a99b-408d-a2b4-77d903821dd7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -110.70534803117107,
+            "lat": 32.430375237105956
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "7372448f-ba5a-46dc-9af1-7235a7f11d58",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -104.4689569,
+            "lat": 36.89209616
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "a92d2805-4bfb-4ba6-9e0c-40ca950dca25",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -109.2432676797999,
+            "lat": 31.14081461087519
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6881e547-2c81-4281-b006-dcff8c6fc89e",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -79.7,
+            "lat": 0.9833000000000001
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
+        "_id": "6eb5b0eb-77d9-4f93-b5d9-aa5f71520afc",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -108.7086111111,
+            "lat": 32.7141666667
+          },
+          "scientificname": "puma concolor"
+        }
+      },
+      {
+        "_index": "idigbio-2.4.0",
+        "_type": "records",
         "_id": "e5562e44-aa39-4fd6-ac6e-0ceb89d94e3a",
         "_score": 1,
         "_source": {
@@ -5940,12 +5940,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "da8dbc78-a04e-4338-8d50-7cc68a95ad9d",
+        "_id": "9b82253b-f5db-4cf0-a3ff-21b14727b82e",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -104.334944,
-            "lat": 35.92108499
+            "lon": -103.662,
+            "lat": 30.306
           },
           "scientificname": "puma concolor"
         }
@@ -5953,12 +5953,12 @@
       {
         "_index": "idigbio-2.4.0",
         "_type": "records",
-        "_id": "dbaaf299-238a-49b8-8be5-bfca64ac7839",
+        "_id": "9c4b49ae-05a1-412b-965c-97abe0a76a3b",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -106.8357727,
-            "lat": 36.22077975
+            "lon": -123.23389096620697,
+            "lat": 43.57534241535673
           },
           "scientificname": "puma concolor"
         }

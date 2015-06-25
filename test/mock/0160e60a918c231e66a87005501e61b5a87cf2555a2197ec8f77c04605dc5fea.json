@@ -15,6 +15,12 @@
               "\"http://purl.org/dc/terms/identifier": {
                 "type": "string"
               },
+              "Iptc4xmpExt:CountryName": {
+                "type": "string"
+              },
+              "Iptc4xmpExt:CreditLine": {
+                "type": "string"
+              },
               "ac:accessURI": {
                 "type": "string"
               },
@@ -31,6 +37,9 @@
                 "type": "string"
               },
               "ac:bestQualityFormat": {
+                "type": "string"
+              },
+              "ac:bestQualityVariantDescription": {
                 "type": "string"
               },
               "ac:caption": {
@@ -114,6 +123,9 @@
               "dc:type": {
                 "type": "string"
               },
+              "dcterms:accessRights": {
+                "type": "string"
+              },
               "dcterms:available": {
                 "type": "string"
               },
@@ -172,6 +184,9 @@
                 "type": "string"
               },
               "exif:PixelYDimension": {
+                "type": "string"
+              },
+              "id": {
                 "type": "string"
               },
               "idigbio:associatedRecordReference": {
