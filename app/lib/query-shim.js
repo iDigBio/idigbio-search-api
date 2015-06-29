@@ -63,6 +63,7 @@ module.exports = function(app,config) {
     function geoBoundingBox(k,shimK) {
         return typeWrapper(k,"geo_bounding_box",shimK);
     }
+
     function geoDistance(k,shimK){
         var qd = _.cloneDeep(shimK);
         delete qd["type"];
@@ -74,6 +75,15 @@ module.exports = function(app,config) {
         rv['geo_distance'] = r;
         return rv; 
     }
+
+    function geoShape(k,shimK){
+        return typeWrapper(k,"geo_shape",{"shape": shimK });
+    }
+
+    function geoPolygon(k,shimK){
+        return typeWrapper(k,"geo_polygon",{"points": shimK });
+    }
+
     function termFilter(k,shimK) {
         var term = {};
         if (_.isString(shimK)) {
@@ -119,6 +129,10 @@ module.exports = function(app,config) {
             return shimK["value"].toLowerCase();
         } else if (shimK["type"] === "prefix") {
             return prefixFilter(k,shimK);
+        } else if (shimK["type"] === "geo_shape") {
+            return geoShape(k,shimK);
+        } else if (shimK["type"] === "geo_polygon") {
+            return geoPolygon(k,shimK);
         } else {
             console.log(k + " " + shimK);
         }
