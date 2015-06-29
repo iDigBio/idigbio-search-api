@@ -39,6 +39,16 @@ if (process.env.NODE_ENV === "prod") {
 } else if (process.env.NODE_ENV === "beta") {
     config.redis.hostname = "idb-redis-search-beta";
     config.search.useEsClient = true;
+
+    config.elasticsearch.hosts = [
+        "c17node52.acis.ufl.edu:9200",
+        "c17node53.acis.ufl.edu:9200",
+        "c17node54.acis.ufl.edu:9200",
+        "c17node55.acis.ufl.edu:9200",
+        "c17node56.acis.ufl.edu:9200"
+    ];
+
+    config.search.index = "idigbio-2.5.0";
 }
 
 config.redis.client = redis.createClient(config.redis.port,config.redis.hostname)
