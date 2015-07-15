@@ -213,7 +213,7 @@ module.exports = function(app, config) {
             try {
                 var rsq = cp.query("rsq", req);
 
-                var query = qg.record_query(rsq,undefined,undefined,undefined,undefined);
+                var query = qg.bare_query(rsq,undefined,undefined,undefined,undefined);
 
                 delete query["aggs"];
 
