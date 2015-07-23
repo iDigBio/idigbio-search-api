@@ -3,8 +3,8 @@ var redis = require("redis")
 var config = {
     port: 19196,
     search: {
-        server: "http://c17node52.acis.ufl.edu:9200",
-        index: "idigbio-2.4.0",
+        server: "http://c18node2.acis.ufl.edu:9200",
+        index: "idigbio-2.5.0",
         statsIndex: "stats-2.5.0",
         useEsClient: true
     },
@@ -40,13 +40,13 @@ if (process.env.NODE_ENV === "prod") {
     config.redis.hostname = "idb-redis-search-beta";
     config.search.useEsClient = true;
 
-    config.elasticsearch.hosts = [
-        "c17node52.acis.ufl.edu:9200",
-        "c17node53.acis.ufl.edu:9200",
-        "c17node54.acis.ufl.edu:9200",
-        "c17node55.acis.ufl.edu:9200",
-        "c17node56.acis.ufl.edu:9200"
-    ];
+    // config.elasticsearch.hosts = [
+    //     "c17node52.acis.ufl.edu:9200",
+    //     "c17node53.acis.ufl.edu:9200",
+    //     "c17node54.acis.ufl.edu:9200",
+    //     "c17node55.acis.ufl.edu:9200",
+    //     "c17node56.acis.ufl.edu:9200"
+    // ];
 
     config.search.index = "idigbio-2.5.0";
 }
