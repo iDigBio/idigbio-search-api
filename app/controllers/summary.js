@@ -89,6 +89,35 @@ module.exports = function(app, config) {
             }
         },
 
+        top_recordsets: function(req, res, next) {
+            try {
+                var rq = cp.query("rsq", req);
+
+                var query = qg.bare_query(rq,[],[],0,0);
+
+                var top_fields = cp.top_fields(req);
+                if (!top_fields) {
+                    top_fields = ["publisher"]
+                }
+
+                var top_count = cp.top_count(req);
+
+                query.aggs = top_fields_agg(top_fields,top_count);
+
+                searchShim(config.search.index,"recordsets","_search",query,function(err,body){
+                    if(err) {
+                        next(err)
+                    } else {
+                        formatter.top_formatter(body, res, next);
+                    }
+                })
+            } catch (e) {
+                res.status(400).json(e);
+                next();
+                return;
+            }
+        },
+
         count_media: function(req, res, next) {
             try {
                 var mq = cp.query("mq", req);

@@ -65,6 +65,9 @@ module.exports = function(app, config) {
     app.route('/v2/summary/top/records')
         .get(summary.top_basic)
         .post(summary.top_basic);
+    app.route('/v2/summary/top/recordsets')
+        .get(summary.top_recordsets)
+        .post(summary.top_recordsets);
     app.route('/v2/summary/count/media')
         .get(summary.count_media)
         .post(summary.count_media);
