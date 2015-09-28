@@ -4,7 +4,7 @@ var config = {
     port: 19196,
     search: {
         server: "http://c18node2.acis.ufl.edu:9200",
-        index: "idigbio-2.8.0",
+        index: "idigbio-2.8.1",
         statsIndex: "stats-2.5.0",
         useEsClient: true
     },
