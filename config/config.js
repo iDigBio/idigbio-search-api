@@ -4,7 +4,7 @@ var config = {
     port: 19196,
     search: {
         server: "http://c18node2.acis.ufl.edu:9200",
-        index: "idigbio-2.8.1",
+        index: "idigbio-2.9.0",
         statsIndex: "stats-2.5.0",
         useEsClient: true
     },
@@ -48,7 +48,7 @@ if (process.env.NODE_ENV === "prod") {
     //     "c17node56.acis.ufl.edu:9200"
     // ];
 
-    config.search.index = "idigbio-2.9.0";
+    // config.search.index = "idigbio-2.9.0";
 }
 
 config.redis.client = redis.createClient(config.redis.port,config.redis.hostname)
