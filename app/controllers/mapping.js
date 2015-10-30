@@ -114,8 +114,19 @@ module.exports = function(app, config) {
         if (map_def.type == "geohash") {
             var max_bucket_value = 1;
             try {
-                max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
+                if (map_def.style.styleOn == "sd.value") {
+                    var gh_buckets = body.aggregations.ggh.f.gh.buckets;
+                    for (var i = 0; i < gh_buckets.length; i++) {
+                        if (max_bucket_value < gh_buckets[i].sd.value) {
+                            max_bucket_value = gh_buckets[i].sd.value;
+                        }
+                    }
+                } else {
+                    max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
+                }
             } catch (e) {}
+
+
 
             if (_.isArray(map_def.style.scale) && map_def.style.scale.length == 1){
                 default_color = map_def.style.scale[0];
@@ -249,9 +260,15 @@ module.exports = function(app, config) {
                         },
                         "properties": getGeohashProps(bucket)
                     }));
-                    csv_string += bucket.key + "," + bucket.doc_count + ",'" + f.geometry().toJSON({
-                        transform: trans
-                    }) + "'\n";
+                    if (map_def.style.styleOn == "sd.value") {
+                        csv_string += bucket.key + "," + bucket.sd.value + ",'" + f.geometry().toJSON({
+                            transform: trans
+                        }) + "'\n";
+                    } else {
+                        csv_string += bucket.key + "," + bucket.doc_count + ",'" + f.geometry().toJSON({
+                            transform: trans
+                        }) + "'\n";
+                    }
                 });
 
                 var ds = new mapnik.Datasource({
@@ -482,6 +499,13 @@ module.exports = function(app, config) {
                         "field": "geopoint",
                         "precision": gl,
                         "size": config.maxTileObjects
+                    },
+                    "aggs": {
+                        "sd": {
+                            "cardinality": {
+                                "field": "scientificname"
+                            }
+                        }
                     }
                 },
                 "ggh": {
@@ -497,6 +521,13 @@ module.exports = function(app, config) {
                                         "field": "geopoint",
                                         "precision": gl,
                                         "size": 1
+                                    },
+                                    "aggs": {
+                                        "sd": {
+                                            "cardinality": {
+                                                "field": "scientificname"
+                                            }
+                                        }
                                     }
                                 }
                             }
