@@ -503,7 +503,7 @@ module.exports = function(app, config) {
                     "aggs": {
                         "sd": {
                             "cardinality": {
-                                "field": "scientificname"
+                                "field": "specificepithet"
                             }
                         }
                     }
@@ -525,7 +525,7 @@ module.exports = function(app, config) {
                                     "aggs": {
                                         "sd": {
                                             "cardinality": {
-                                                "field": "scientificname"
+                                                "field": "specificepithet"
                                             }
                                         }
                                     }

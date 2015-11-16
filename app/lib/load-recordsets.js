@@ -14,8 +14,11 @@ module.exports = function(app,config) {
                         "description": hit._source.data.collection_description,
                         "logo": hit._source.data.logo_url,
                         "url": hit._source.data.institution_web_address,
+                        "emllink": hit._source.emllink,
+                        "archivelink": hit._source.archivelink,
                         "contacts": hit._source.data.contacts,
                         "data_rights": hit._source.data.data_rights,
+                        "publisher": hit._source.publisher,
                     };
                 });
             } catch(e) {}
