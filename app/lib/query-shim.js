@@ -77,11 +77,11 @@ module.exports = function(app,config) {
     }
 
     function geoShape(k,shimK){
-        return typeWrapper(k,"geo_shape",{"shape": shimK });
+        return typeWrapper(k,"geo_shape",{"shape": shimK["value"] });
     }
 
     function geoPolygon(k,shimK){
-        return typeWrapper(k,"geo_polygon",{"points": shimK });
+        return typeWrapper(k,"geo_polygon",{"points": shimK["value"] });
     }
 
     function termFilter(k,shimK) {
