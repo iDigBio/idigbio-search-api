@@ -17,13 +17,13 @@
     "mapnik": "^3.1.5",
     "ngeohash": "^0.6.0",
     "redis": "^0.12.1",
-    "request": "^2.45.0"
+    "request": "^2.45.0",
+    "segfault-handler": "^0.2.4"
   },
   "devDependencies": {
     "blanket": "*",
     "chai": "*",
     "mocha": "*",
-    "segfault-handler": "^0.2.4",
     "supertest": "*",
     "travis-cov": "*"
   },
