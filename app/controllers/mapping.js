@@ -149,6 +149,7 @@ module.exports = function(app, config) {
                 if (i >= clrs.length) {
                     i = clrs.length - 1;
                 }
+                domain = Math.floor(domain);
                 var fl = chroma(clrs[i]);
                 order.push(domain);
                 if (fl) {
