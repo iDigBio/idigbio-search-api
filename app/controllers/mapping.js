@@ -14,6 +14,8 @@ mapnik.Logger.setSeverity(mapnik.Logger.DEBUG)
 
 mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.input'));
 
+var INVERTED=false;
+
 module.exports = function(app, config) {
     var queryShim = require('../lib/query-shim.js')(app, config);
     var tileMath = require("../lib/tile-math.js")(app, config);
@@ -132,10 +134,22 @@ module.exports = function(app, config) {
                 default_color = map_def.style.scale[0];
             } 
 
-            var scale = chroma.scale(map_def.style.scale).domain([1, max_bucket_value], 10, 'log');
-            scale.domain().forEach(function(domain) {
-                domain = Math.ceil(domain);
-                var fl = scale.mode('lab')(domain);
+            var dom = [1, max_bucket_value]
+            var kls = chroma.limits(dom, 'l', 10);
+
+            var scale = chroma.scale(map_def.style.scale).mode('lab').domain(dom).classes(kls);
+
+            var clrs = scale.colors();
+
+            if (INVERTED) {
+                clrs.reverse();
+            }
+
+            kls.forEach(function(domain, i) {
+                if (i >= clrs.length) {
+                    i = clrs.length - 1;
+                }
+                var fl = chroma(clrs[i]);
                 order.push(domain);
                 if (fl) {
                     rv["colors"][domain] = {
@@ -288,6 +302,11 @@ module.exports = function(app, config) {
                     });
                 } else {
                     var im = new mapnik.Image(map.width, map.height);
+                    if (INVERTED) {
+                        var ks = Object.keys(sj["colors"]);
+			ks.sort()
+                        im.fillSync(new mapnik.Color(sj["colors"][ks[0]]["fill"]));
+                    }
                     map.render(im, function(err, im) {
                         cb(err, im.encodeSync('png'));
                     });
