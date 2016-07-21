@@ -8,7 +8,9 @@ module.exports = function(app, config) {
     app.use(compress());
     app.set('trust proxy', ['loopback', 'linklocal', 'uniquelocal'])
     app.use(cors());
-    app.use(morgan('combined'));
+    if (process.env.NODE_ENV != "test") {
+        app.use(morgan('combined'));
+    }
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json({
         type: function(req){

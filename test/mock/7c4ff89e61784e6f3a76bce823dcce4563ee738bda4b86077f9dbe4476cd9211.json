@@ -1,0 +1,411 @@
+{
+  "idigbio-2.9.3": {
+    "mappings": {
+      "mediarecords": {
+        "_parent": {
+          "type": "records"
+        },
+        "_routing": {
+          "required": true
+        },
+        "date_detection": false,
+        "properties": {
+          "accessuri": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "data": {
+            "properties": {
+              "Iptc4xmpExt:CountryCode": {
+                "type": "string"
+              },
+              "Iptc4xmpExt:CountryName": {
+                "type": "string"
+              },
+              "Iptc4xmpExt:ProvinceState": {
+                "type": "string"
+              },
+              "Iptc4xmpExt:WorldRegion": {
+                "type": "string"
+              },
+              "ac:accessURI": {
+                "type": "string"
+              },
+              "ac:associatedSpecimenReference": {
+                "type": "string"
+              },
+              "ac:attributionLogoURL": {
+                "type": "string"
+              },
+              "ac:bestQualityAccessURI": {
+                "type": "string"
+              },
+              "ac:bestQualityFormat": {
+                "type": "string"
+              },
+              "ac:caption": {
+                "type": "string"
+              },
+              "ac:captureDevice": {
+                "type": "string"
+              },
+              "ac:comments": {
+                "type": "string"
+              },
+              "ac:digitizationDate": {
+                "type": "string"
+              },
+              "ac:furtherInformationURL": {
+                "type": "string"
+              },
+              "ac:goodQualityAccessURI": {
+                "type": "string"
+              },
+              "ac:hashFunction": {
+                "type": "string"
+              },
+              "ac:hashValue": {
+                "type": "string"
+              },
+              "ac:licenseLogoURL": {
+                "type": "string"
+              },
+              "ac:metadataCreator": {
+                "type": "string"
+              },
+              "ac:metadataLanguage": {
+                "type": "string"
+              },
+              "ac:metadataLanguageLiteral": {
+                "type": "string"
+              },
+              "ac:metadataProvider": {
+                "type": "string"
+              },
+              "ac:metadataProviderLiteral": {
+                "type": "string"
+              },
+              "ac:provider": {
+                "type": "string"
+              },
+              "ac:providerLiteral": {
+                "type": "string"
+              },
+              "ac:providerManagedID": {
+                "type": "string"
+              },
+              "ac:resourceCreationTechnique": {
+                "type": "string"
+              },
+              "ac:serviceExpectation": {
+                "type": "string"
+              },
+              "ac:subjectOrientation": {
+                "type": "string"
+              },
+              "ac:subjectPart": {
+                "type": "string"
+              },
+              "ac:subtype": {
+                "type": "string"
+              },
+              "ac:subtypeLiteral": {
+                "type": "string"
+              },
+              "ac:tag": {
+                "type": "string"
+              },
+              "ac:thumbnailAccessURI": {
+                "type": "string"
+              },
+              "ac:variant": {
+                "type": "string"
+              },
+              "ac:variantLiteral": {
+                "type": "string"
+              },
+              "coreid": {
+                "type": "string"
+              },
+              "dc:creator": {
+                "type": "string"
+              },
+              "dc:format": {
+                "type": "string"
+              },
+              "dc:rights": {
+                "type": "string"
+              },
+              "dc:type": {
+                "type": "string"
+              },
+              "dcterms:accessRights": {
+                "type": "string"
+              },
+              "dcterms:available": {
+                "type": "string"
+              },
+              "dcterms:created": {
+                "type": "string"
+              },
+              "dcterms:creator": {
+                "type": "string"
+              },
+              "dcterms:description": {
+                "type": "string"
+              },
+              "dcterms:format": {
+                "type": "string"
+              },
+              "dcterms:identifier": {
+                "type": "string"
+              },
+              "dcterms:language": {
+                "type": "string"
+              },
+              "dcterms:license": {
+                "type": "string"
+              },
+              "dcterms:modified": {
+                "type": "string"
+              },
+              "dcterms:publisher": {
+                "type": "string"
+              },
+              "dcterms:references": {
+                "type": "string"
+              },
+              "dcterms:rights": {
+                "type": "string"
+              },
+              "dcterms:rightsHolder": {
+                "type": "string"
+              },
+              "dcterms:source": {
+                "type": "string"
+              },
+              "dcterms:title": {
+                "type": "string"
+              },
+              "dcterms:type": {
+                "type": "string"
+              },
+              "dwc:basisOfRecord": {
+                "type": "string"
+              },
+              "dwc:catalogNumber": {
+                "type": "string"
+              },
+              "dwc:collectionCode": {
+                "type": "string"
+              },
+              "dwc:collectionID": {
+                "type": "string"
+              },
+              "dwc:coordinateUncertaintyInMeters": {
+                "type": "string"
+              },
+              "dwc:country": {
+                "type": "string"
+              },
+              "dwc:county": {
+                "type": "string"
+              },
+              "dwc:day": {
+                "type": "string"
+              },
+              "dwc:decimalLatitude": {
+                "type": "string"
+              },
+              "dwc:decimalLongitude": {
+                "type": "string"
+              },
+              "dwc:eventDate": {
+                "type": "string"
+              },
+              "dwc:family": {
+                "type": "string"
+              },
+              "dwc:genus": {
+                "type": "string"
+              },
+              "dwc:geodeticDatum": {
+                "type": "string"
+              },
+              "dwc:georeferencedBy": {
+                "type": "string"
+              },
+              "dwc:habitat": {
+                "type": "string"
+              },
+              "dwc:institutionCode": {
+                "type": "string"
+              },
+              "dwc:kingdom": {
+                "type": "string"
+              },
+              "dwc:locality": {
+                "type": "string"
+              },
+              "dwc:month": {
+                "type": "string"
+              },
+              "dwc:municipality": {
+                "type": "string"
+              },
+              "dwc:occurrenceID": {
+                "type": "string"
+              },
+              "dwc:occurrenceRemarks": {
+                "type": "string"
+              },
+              "dwc:order": {
+                "type": "string"
+              },
+              "dwc:otherCatalogNumbers": {
+                "type": "string"
+              },
+              "dwc:phylum": {
+                "type": "string"
+              },
+              "dwc:recordedBy": {
+                "type": "string"
+              },
+              "dwc:scientificName": {
+                "type": "string"
+              },
+              "dwc:scientificNameAuthorship": {
+                "type": "string"
+              },
+              "dwc:specificEpithet": {
+                "type": "string"
+              },
+              "dwc:startDayOfYear": {
+                "type": "string"
+              },
+              "dwc:stateProvince": {
+                "type": "string"
+              },
+              "dwc:year": {
+                "type": "string"
+              },
+              "exif:PixelXDimension": {
+                "type": "string"
+              },
+              "exif:PixelYDimension": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "idigbio:associatedRecordReference": {
+                "type": "string"
+              },
+              "idigbio:associatedRecordsetReference": {
+                "type": "string"
+              },
+              "idigbio:recordId": {
+                "type": "string"
+              },
+              "photoshop:Credit": {
+                "type": "string"
+              },
+              "symbiota:recordEnteredBy": {
+                "type": "string"
+              },
+              "xmp:CreateDate": {
+                "type": "string"
+              },
+              "xmp:MetadataDate": {
+                "type": "string"
+              },
+              "xmpRights:Owner": {
+                "type": "string"
+              },
+              "xmpRights:UsageTerms": {
+                "type": "string"
+              },
+              "xmpRights:WebStatement": {
+                "type": "string"
+              }
+            }
+          },
+          "datemodified": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "dqs": {
+            "type": "float"
+          },
+          "etag": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "flags": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "format": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "hasSpecimen": {
+            "type": "boolean"
+          },
+          "licenselogourl": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "mediatype": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "modified": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "recordids": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "records": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "recordset": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "rights": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "tag": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "uuid": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "webstatement": {
+            "type": "string",
+            "analyzer": "keyword"
+          },
+          "xpixels": {
+            "type": "integer"
+          },
+          "ypixels": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

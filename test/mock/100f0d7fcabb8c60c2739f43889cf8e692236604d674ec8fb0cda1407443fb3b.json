@@ -6,85 +6,85 @@
     "failed": 0
   },
   "hits": {
-    "total": 31937653,
+    "total": 64015275,
     "max_score": 1,
     "hits": [
       {
-        "_index": "idigbio-1.5.0",
+        "_index": "idigbio-2.9.3",
         "_type": "records",
-        "_id": "9b4738c5-6970-4cff-b6c2-c92a3a08624c",
+        "_id": "508e1d7c-2ab8-4177-97a0-06701571c19c",
         "_score": 1,
         "_source": {
-          "family": "atherinidae",
-          "recordset": "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194",
-          "dqs": 0.3090909090909091,
-          "stateprovince": "oklahoma",
-          "county": "osage",
-          "catalognumber": "13797",
-          "collector": "r.d. suttkus & b. branson",
-          "verbatimlocality": "trib. to arkansas river 7.4 mi. w skiatook on hwy. 20.",
-          "uuid": "9b4738c5-6970-4cff-b6c2-c92a3a08624c",
+          "family": "staphylinidae",
+          "recordset": "568e209f-d072-4fd6-8b64-27954b0fd731",
+          "dqs": 0.31746031746031744,
+          "stateprovince": "bio-bio",
+          "phylum": "arthropoda",
+          "catalognumber": "730244",
+          "startdayofyear": 102,
+          "collector": "cekalovic, n",
+          "continent": "south america",
+          "uuid": "508e1d7c-2ab8-4177-97a0-06701571c19c",
+          "countrycode": "chl",
           "basisofrecord": "preservedspecimen",
-          "institutioncode": "tu",
-          "continent": "north america",
-          "datecollected": "1955-09-02",
-          "etag": "9a51aa105494b5f7097843f958880155408159ff",
-          "flags": [
-            "geopoint_datum_missing"
-          ],
+          "institutioncode": "ku",
+          "datemodified": "2016-06-05T22:27:34.662760+00:00",
+          "datecollected": "2003-04-12T00:00:00+00:00",
+          "etag": "09ff03b3fe5133518dcff5a640886c42e7fcd1aa",
+          "hasMedia": false,
           "hasImage": false,
-          "scientificname": "labidesthes sicculus",
+          "kingdom": "animalia",
+          "scientificname": "homalotrichus",
           "data": {
-            "idigbio:version": 0,
-            "idigbio:createdBy": "872733a2-67a3-4c54-aa76-862735a5f334",
-            "idigbio:links": {
-              "recordset": [
-                "http://api.idigbio.org/v1/recordsets/bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194"
-              ]
-            },
-            "idigbio:uuid": "9b4738c5-6970-4cff-b6c2-c92a3a08624c",
-            "idigbio:data": {
-              "dwc:continent": "North America",
-              "dwc:stateProvince": "Oklahoma",
-              "dwc:month": "9",
-              "dwc:county": "Osage",
-              "dwc:recordedBy": "R.D. Suttkus & B. Branson",
-              "dwc:catalogNumber": "13797",
-              "dwc:fieldNumber": "RDS 2507",
-              "dwc:collectionCode": "Fish",
-              "dwc:verbatimLocality": "Trib. to Arkansas River 7.4 mi. W Skiatook on Hwy. 20.",
-              "dwc:individualCount": "1",
-              "dwc:decimalLatitude": "36.38694",
-              "dwc:occurrenceID": "urn:catalog:TU:Fish:13797",
-              "dwc:country": "United States of America",
-              "dwc:decimalLongitude": "-96.12444",
-              "dwc:basisOfRecord": "PreservedSpecimen",
-              "dwc:institutionCode": "TU",
-              "dwc:verbatimEventDate": "2 September 1955",
-              "dwc:scientificName": "Labidesthes sicculus",
-              "dwc:day": "2",
-              "dwc:family": "Atherinidae",
-              "dwc:year": "1955"
-            },
-            "idigbio:etag": "9a51aa105494b5f7097843f958880155408159ff",
-            "idigbio:recordIds": [
-              "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194\\urn:catalog:tu:fish:13797"
-            ],
-            "idigbio:dateModified": "2014-10-07T11:03:10.217Z"
+            "dwc:kingdom": "Animalia",
+            "dwc:recordedBy": "Cekalovic, N",
+            "dwc:order": "Coleoptera",
+            "dcterms:accessRights": "http://biodiversity.ku.edu/research/university-kansas-biodiversity-institute-data-publication-and-use-norms",
+            "dwc:occurrenceID": "257229f4-1ed6-11e3-bfac-90b11c41863e",
+            "dwc:lifeStage": "adult",
+            "id": "257229f4-1ed6-11e3-bfac-90b11c41863e",
+            "dwc:stateProvince": "Bio-Bio",
+            "dwc:eventDate": "2003-04-12",
+            "dwc:country": "Chile",
+            "dwc:collectionCode": "SEMC",
+            "dwc:dateIdentified": "2007-11-30",
+            "dwc:family": "Staphylinidae",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Homalotrichus",
+            "dwc:continent": "Neotropical",
+            "dwc:preparations": "Pinned - 1",
+            "dwc:identifiedBy": "Falin, Zachary",
+            "dwc:phylum": "Arthropoda",
+            "dwc:locality": "Campanario, El Saltillo",
+            "dwc:institutionID": "http://grbio.org/cool/iakn-125z",
+            "dwc:institutionCode": "KU",
+            "dwc:class": "Insecta",
+            "dwc:catalogNumber": "730244",
+            "dwc:higherGeography": "Chile, Bio-Bio",
+            "dwc:month": "4",
+            "dwc:datasetName": "Snow Entomological Museum Collection",
+            "dcterms:rights": "http://creativecommons.org/licenses/by/4.0/deed.en_US",
+            "dcterms:modified": "2010-10-18 03:44:40.0",
+            "dwc:scientificName": "Homalotrichus",
+            "dwc:day": "12",
+            "dwc:year": "2003"
           },
-          "datemodified": "2014-10-07",
-          "occurrenceid": "urn:catalog:tu:fish:13797",
-          "country": "united states of america",
-          "geopoint": {
-            "lat": 36.38694,
-            "lon": -96.12444
-          },
-          "collectioncode": "fish",
-          "fieldnumber": "rds 2507",
-          "verbatimeventdate": "2 september 1955",
+          "class": "insecta",
+          "occurrenceid": "257229f4-1ed6-11e3-bfac-90b11c41863e",
+          "institutionid": "http://grbio.org/cool/iakn-125z",
+          "country": "chile",
+          "locality": "campanario, el saltillo",
+          "collectioncode": "semc",
+          "eventdate": "2003-04-12",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_replaced"
+          ],
           "recordids": [
-            "bc13ff8e-6f31-4f3d-b47a-38e3ce8a2194\\urn:catalog:tu:fish:13797"
-          ]
+            "568e209f-d072-4fd6-8b64-27954b0fd731\\257229f4-1ed6-11e3-bfac-90b11c41863e"
+          ],
+          "genus": "homalotrichus",
+          "order": "coleoptera"
         }
       }
     ]

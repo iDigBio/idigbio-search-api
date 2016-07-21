@@ -1,0 +1,494 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 6949,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "00d5cd62-cb83-4d8d-b308-38b6690083a9",
+        "_score": 1,
+        "_routing": "4d792ce1-ad85-4e46-bd47-d41bef714c17",
+        "_parent": "4d792ce1-ad85-4e46-bd47-d41bef714c17",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-nc/3.0/88x31.png",
+          "uuid": "00d5cd62-cb83-4d8d-b308-38b6690083a9",
+          "format": "image/jpeg",
+          "recordset": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "4d792ce1-ad85-4e46-bd47-d41bef714c17"
+          ],
+          "etag": "7eddc410f9f8bc1d95a832f9336eccc039cfc066",
+          "webstatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+          "recordids": [
+            "c569e530-7322-40b8-9b66-1e0ed96fefcb\\media\\http://hasbrouck.asu.edu/imglib/seinet/des/des00063/des00063419_lg.jpg",
+            "c569e530-7322-40b8-9b66-1e0ed96fefcb\\media\\http://symbiota.org/imglib/seinet/des/des00063/des00063419_lg.jpg",
+            "urn:uuid:6ea341e4-fb44-4dbc-add6-da54d0b39e74",
+            "c569e530-7322-40b8-9b66-1e0ed96fefcb\\media\\http://swbiodiversity.org/imglib/seinet/des/des00063/des00063419_lg.jpg"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:6ea341e4-fb44-4dbc-add6-da54d0b39e74",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://hasbrouck.asu.edu/imglib/seinet/DES/DES00063/DES00063419_tn.jpg",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://hasbrouck.asu.edu/imglib/seinet/DES/DES00063/DES00063419.jpg",
+            "coreid": "2067189",
+            "dcterms:identifier": "http://hasbrouck.asu.edu/imglib/seinet/DES/DES00063/DES00063419_lg.jpg",
+            "xmpRights:Owner": "Desert Botanical Garden Herbarium Collection (DES)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "ac:accessURI": "http://hasbrouck.asu.edu/imglib/seinet/DES/DES00063/DES00063419_lg.jpg",
+            "xmp:MetadataDate": "2011-12-22 19:44:25",
+            "ac:associatedSpecimenReference": "http://swbiodiversity.org/seinet/collections/individual/index.php?occid=2067189"
+          },
+          "datemodified": "2016-03-03T13:42:31.355989+00:00",
+          "accessuri": "http://hasbrouck.asu.edu/imglib/seinet/DES/DES00063/DES00063419_lg.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "024495b5-65f0-43d7-96ce-e138ad8eff75",
+        "_score": 1,
+        "_routing": "1c46e6c5-6703-4c13-8857-6865d9b39794",
+        "_parent": "1c46e6c5-6703-4c13-8857-6865d9b39794",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "024495b5-65f0-43d7-96ce-e138ad8eff75",
+          "format": "image/jpeg",
+          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "1c46e6c5-6703-4c13-8857-6865d9b39794"
+          ],
+          "etag": "3a0c1c7e353707413e9271235d73eca2e27e699e",
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078564"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "specimen image",
+            "ac:bestQualityFormat": "image/jpeg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
+            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078564.JPG",
+            "coreid": "urn:catalog:UConn:CONN:CONN00078564",
+            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078564",
+            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
+            "dcterms:rights": "© University of Connecticut",
+            "ac:metadataLanguage": "eng",
+            "dcterms:creator": "CONN"
+          },
+          "datemodified": "2014-09-09T05:15:56.984000+00:00",
+          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078564.JPG"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "028675f3-50ee-4ee9-8c98-3e527198449d",
+        "_score": 1,
+        "_routing": "738cd113-f2bc-4d24-9511-c35220aee776",
+        "_parent": "738cd113-f2bc-4d24-9511-c35220aee776",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "028675f3-50ee-4ee9-8c98-3e527198449d",
+          "rights": "BY-NC",
+          "recordset": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "738cd113-f2bc-4d24-9511-c35220aee776"
+          ],
+          "etag": "be019f64f5fcb8b1994d641287589daa36c575fb",
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\media\\http://herbarium.bio.fsu.edu/showimage.php?image=images/herbarium/jpegs/000002512.jpg"
+          ],
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:subtype": "SheetSpecimenImage",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:metadataLanguageLiteral": "English",
+            "ac:subjectPart": "Herbarium sheet",
+            "coreid": "urn:uuid:8e17f542-a2ee-412a-96d8-d1ba51c1aa53",
+            "dcterms:identifier": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002512.jpg",
+            "xmpRights:Owner": "Robert K. Godfrey Herbarium at Florida State University",
+            "ac:accessURI": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002512.jpg",
+            "dwc:scientificName": "Acer rubrum"
+          },
+          "datemodified": "2014-11-17T18:37:25.961000+00:00",
+          "accessuri": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002512.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "03b5c4df-544a-4c61-a5c7-df54ff0cdc48",
+        "_score": 1,
+        "_routing": "88801ab4-29fa-4a78-b22c-6ae81d29404e",
+        "_parent": "88801ab4-29fa-4a78-b22c-6ae81d29404e",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "03b5c4df-544a-4c61-a5c7-df54ff0cdc48",
+          "format": "image/jpeg",
+          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "88801ab4-29fa-4a78-b22c-6ae81d29404e"
+          ],
+          "etag": "f6f1236cbc4f3e64a52113140dec808df858f9fc",
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00068783"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "specimen image",
+            "ac:bestQualityFormat": "image/jpeg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
+            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00068783.JPG",
+            "coreid": "urn:catalog:UConn:CONN:CONN00068783",
+            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00068783",
+            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
+            "dcterms:rights": "© University of Connecticut",
+            "ac:metadataLanguage": "eng",
+            "dcterms:creator": "CONN"
+          },
+          "datemodified": "2014-09-09T01:55:48.724000+00:00",
+          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00068783.JPG"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "04a75807-9cb6-46a2-97c5-7b5fda0e98f9",
+        "_score": 1,
+        "_routing": "1f50cefd-efc0-4c1a-a1c9-32d6df874c52",
+        "_parent": "1f50cefd-efc0-4c1a-a1c9-32d6df874c52",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "04a75807-9cb6-46a2-97c5-7b5fda0e98f9",
+          "format": "image/jpeg",
+          "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+          "dqs": 0.5454545454545454,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "1f50cefd-efc0-4c1a-a1c9-32d6df874c52"
+          ],
+          "etag": "e59b678925a4fb79783bbe7c3cd223bf9a2c7027",
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "urn:uuid:dd467f9b-b4ea-4f04-b40e-2eb4650e35f5",
+            "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204977/format/3"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:dd467f9b-b4ea-4f04-b40e-2eb4650e35f5",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204977/format/1",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204977/format/3",
+            "coreid": "269783",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204977/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204977/format/3",
+            "xmp:MetadataDate": "2012-10-08 20:53:21",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=269783"
+          },
+          "datemodified": "2016-04-21T13:40:34.206773+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/204977/format/3"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "06155592-f333-4612-a841-c8b25e6249dd",
+        "_score": 1,
+        "_routing": "17c0326e-7984-4654-a6d8-1fd2568578fa",
+        "_parent": "17c0326e-7984-4654-a6d8-1fd2568578fa",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "06155592-f333-4612-a841-c8b25e6249dd",
+          "format": "image/jpeg",
+          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "17c0326e-7984-4654-a6d8-1fd2568578fa"
+          ],
+          "etag": "f0fb67b7cac772b30f43b0380209bfa556d05ddf",
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00032251"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "specimen image",
+            "ac:bestQualityFormat": "image/jpeg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
+            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00032251.JPG",
+            "coreid": "urn:catalog:UConn:CONN:CONN00032251",
+            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00032251",
+            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
+            "dcterms:rights": "© University of Connecticut",
+            "ac:metadataLanguage": "eng",
+            "dcterms:creator": "CONN"
+          },
+          "datemodified": "2014-09-09T01:38:49.314000+00:00",
+          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00032251.JPG"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "07a932fb-54da-49be-996b-dbfebda44ccf",
+        "_score": 1,
+        "_routing": "6b4f2230-f583-4cb3-8456-3c49bca1d063",
+        "_parent": "6b4f2230-f583-4cb3-8456-3c49bca1d063",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "07a932fb-54da-49be-996b-dbfebda44ccf",
+          "format": "image/jpeg",
+          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "6b4f2230-f583-4cb3-8456-3c49bca1d063"
+          ],
+          "etag": "9deb040af169c554af7bda05a82d6519a37fa23e",
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078624"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "specimen image",
+            "ac:bestQualityFormat": "image/jpeg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
+            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078624.JPG",
+            "coreid": "urn:catalog:UConn:CONN:CONN00078624",
+            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078624",
+            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
+            "dcterms:rights": "© University of Connecticut",
+            "ac:metadataLanguage": "eng",
+            "dcterms:creator": "CONN"
+          },
+          "datemodified": "2014-09-12T19:17:22.836000+00:00",
+          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078624.JPG"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "0ac7b8a5-4092-4c12-83df-7452e9a33d55",
+        "_score": 1,
+        "_routing": "fd819a08-2330-4ac7-b7f0-77c62294e444",
+        "_parent": "fd819a08-2330-4ac7-b7f0-77c62294e444",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "0ac7b8a5-4092-4c12-83df-7452e9a33d55",
+          "format": "image/jpeg",
+          "recordset": "215eeaf0-0a88-409e-a75d-aec98b7c41eb",
+          "dqs": 0.5454545454545454,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "fd819a08-2330-4ac7-b7f0-77c62294e444"
+          ],
+          "etag": "5367a0e7bc4786a1b39f1ae2bdcf4c0cb7e8d565",
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "urn:uuid:3a04f8a8-f586-4097-96d6-5e9ddc9b00ac",
+            "215eeaf0-0a88-409e-a75d-aec98b7c41eb\\media\\http://usuherbarium.usu.edu/utcimages/230/utc00227993_lg.jpg"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:3a04f8a8-f586-4097-96d6-5e9ddc9b00ac",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC0 1.0 (Public-domain)",
+            "ac:thumbnailAccessURI": "http://hasbrouck.asu.edu/imglib/seinet/UTC/UTC00227/UTC00227993_tn.jpg",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://usuherbarium.usu.edu/UTCimages/230/UTC00227993.jpg",
+            "coreid": "235968",
+            "dcterms:identifier": "http://usuherbarium.usu.edu/UTCimages/230/UTC00227993_lg.jpg",
+            "xmpRights:Owner": "Utah State University",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://usuherbarium.usu.edu/UTCimages/230/UTC00227993_lg.jpg",
+            "xmp:MetadataDate": "2014-07-25 03:06:43",
+            "ac:associatedSpecimenReference": "http://intermountainbiota.org/portal/collections/individual/index.php?occid=235968"
+          },
+          "datemodified": "2016-03-03T13:41:01.848589+00:00",
+          "accessuri": "http://usuherbarium.usu.edu/UTCimages/230/UTC00227993_lg.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "0ba3acab-16e2-4068-be4c-930152f91914",
+        "_score": 1,
+        "_routing": "d9c6049a-8c14-4764-98dc-e80a2d31f6c5",
+        "_parent": "d9c6049a-8c14-4764-98dc-e80a2d31f6c5",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "0ba3acab-16e2-4068-be4c-930152f91914",
+          "format": "image/jpeg",
+          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "d9c6049a-8c14-4764-98dc-e80a2d31f6c5"
+          ],
+          "etag": "5d74ce77507f77c81de45b005a63b9c355e1c29c",
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078516"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "specimen image",
+            "ac:bestQualityFormat": "image/jpeg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
+            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078516.JPG",
+            "coreid": "urn:catalog:UConn:CONN:CONN00078516",
+            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078516",
+            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
+            "dcterms:rights": "© University of Connecticut",
+            "ac:metadataLanguage": "eng",
+            "dcterms:creator": "CONN"
+          },
+          "datemodified": "2014-09-09T01:30:30.373000+00:00",
+          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078516.JPG"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "mediarecords",
+        "_id": "0ba60b8c-f1dd-40a0-a109-8b576488bf7d",
+        "_score": 1,
+        "_routing": "fbfc9a6d-e08e-433e-ae0e-254802ca4da5",
+        "_parent": "fbfc9a6d-e08e-433e-ae0e-254802ca4da5",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "0ba60b8c-f1dd-40a0-a109-8b576488bf7d",
+          "format": "image/jpeg",
+          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "fbfc9a6d-e08e-433e-ae0e-254802ca4da5"
+          ],
+          "etag": "9282263b898c041026297522cb6fd5783d10f0f4",
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00084410"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "dcterms:title": "specimen image",
+            "ac:bestQualityFormat": "image/jpeg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
+            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00084410.JPG",
+            "coreid": "urn:catalog:UConn:CONN:CONN00084410",
+            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00084410",
+            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
+            "dcterms:rights": "© University of Connecticut",
+            "ac:metadataLanguage": "eng",
+            "dcterms:creator": "CONN"
+          },
+          "datemodified": "2014-09-12T20:02:11.248000+00:00",
+          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00084410.JPG"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_recordset": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 1759,
+      "buckets": [
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 972
+        },
+        {
+          "key": "e2def7e2-1455-4856-9823-6d3738417d24",
+          "doc_count": 960
+        },
+        {
+          "key": "7644703a-ce24-4f7b-b800-66ddf8812f86",
+          "doc_count": 812
+        },
+        {
+          "key": "c49bc91d-0a50-497b-8b17-d77808745cf9",
+          "doc_count": 471
+        },
+        {
+          "key": "ba54ba45-caac-4708-a389-ac94642976f8",
+          "doc_count": 453
+        },
+        {
+          "key": "215eeaf0-0a88-409e-a75d-aec98b7c41eb",
+          "doc_count": 427
+        },
+        {
+          "key": "1527b668-b797-42be-94d3-0058e1393e94",
+          "doc_count": 308
+        },
+        {
+          "key": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+          "doc_count": 283
+        },
+        {
+          "key": "76fd34da-4892-4821-858d-98fe9e28ba8b",
+          "doc_count": 257
+        },
+        {
+          "key": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "doc_count": 247
+        }
+      ]
+    }
+  }
+}

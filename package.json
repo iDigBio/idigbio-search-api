@@ -1,7 +1,7 @@
 {
   "name": "idb-search-api",
   "description": "iDigBio Search API",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "dependencies": {
     "async": "^0.9.0",
@@ -9,20 +9,19 @@
     "chroma-js": "*",
     "compression": "^1.5.0",
     "cors": "^2.5.2",
-    "elasticsearch": "^4.0.2",
+    "elasticsearch": "^11.0.0",
     "express": "^4.12.2",
     "hashids": "^1.0.1",
-    "hiredis": "^0.1.17",
+    "hiredis": "^0.5.0",
     "lodash": "^2.4.1",
-    "mapnik": "^3.1.5",
+    "mapnik": "^3.5.13",
     "morgan": "^1.7.0",
     "ngeohash": "^0.6.0",
     "redis": "^0.12.1",
-    "request": "^2.45.0",
-    "segfault-handler": "^0.2.4"
+    "request": "^2.45.0"
   },
   "devDependencies": {
-    "blanket": "*",
+    "blanket": "1.1.9",
     "chai": "*",
     "mocha": "*",
     "supertest": "*",

@@ -41,11 +41,11 @@ describe('View', function(){
     })
     it('should have media aliased to mediarecords', function(done){
       request(app.server)
-        .get("/v2/view/media/b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3")
+        .get("/v2/view/media/00100314-3220-4107-87f3-43cfdfa0cf10")
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
-            response.body.uuid.should.equal("b12d5115-d3e6-42b9-b9ec-aca5fc1f0cb3"); 
+            response.body.uuid.should.equal("00100314-3220-4107-87f3-43cfdfa0cf10"); 
             done();
         })
     })    
