@@ -192,9 +192,13 @@ module.exports = function(app,config) {
                             }
                         }
                     })
-                    outer[dhb.key_as_string] = inner;
+                    if (Object.keys(inner).length > 0) {
+                        outer[dhb.key_as_string] = inner;
+                    }
                 })
-                rb.recordsets[b.key] = outer;
+                if (Object.keys(outer).length > 0) {
+                    rb.recordsets[b.key] = outer;
+                }
             })
         } else {
             var rb = { "dates": {} }
@@ -210,9 +214,13 @@ module.exports = function(app,config) {
                             }
                         }
                     })
-                    outer[rsb.key] = inner;
+                    if (Object.keys(inner).length > 0) {
+                        outer[rsb.key] = inner;
+                    }
                 })
-                rb.dates[b.key_as_string] = outer;
+                if (Object.keys(outer).length > 0) {
+                    rb.dates[b.key_as_string] = outer;
+                }
             })
         }
 

@@ -10,11 +10,11 @@ var config = {
     },
     elasticsearch: {
         hosts: [
-            "c18node2-crn.acis.ufl.edu:9200",
-            "c18node6-crn.acis.ufl.edu:9200"
-            // "c18node10.acis.ufl.edu:9200",
-            // "c18node12.acis.ufl.edu:9200",
-            // "c18node14.acis.ufl.edu:9200"
+            "c18node2.acis.ufl.edu:9200",
+            "c18node6.acis.ufl.edu:9200",
+            "c18node10.acis.ufl.edu:9200",
+            "c18node12.acis.ufl.edu:9200",
+            "c18node14.acis.ufl.edu:9200"   
         ],
         apiVersion: "2.3",
         sniffOnStart: false,
