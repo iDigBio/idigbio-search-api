@@ -1,4 +1,3 @@
- var cluster = require('cluster');
  var http = require('http');
   http.globalAgent.maxSockets = 100;  
 
@@ -24,8 +23,33 @@ function loadITDelay(){
     setTimeout(loadITDelay,1000*60*60);
 }
 
-if (process.env.NODE_ENV != "test") {
-    var numWorkers = 10;
+function startThisProcess() {
+  return app.listen(config.port, function() {
+    loadRSDelay();
+    loadITDelay();
+    console.log('Express server listening on port ' + server.address().port);
+  });
+}
+
+function registerGracefulShutdown(signal, server) {
+  process.on(signal, function() {
+    console.log("Received shutdown signal, attempt exit");
+    server.close(function () {
+      console.log( "app.close finished, exiting");
+      process.exit(0);
+    });
+  });
+}
+
+if (process.env.NODE_ENV == "test" || process.env.CLUSTER == 'false') {
+  server = startThisProcess();
+  registerGracefulShutdown('SIGTERM', server);
+  registerGracefulShutdown('SIGINT', server);
+}
+else {
+    var cluster = require('cluster');
+    var numWorkers = process.env.CLUSTER;
+    if (isNaN(numWorkers)) numWorkers = 10;
     if (cluster.isMaster) {
       // Fork workers.
       for (var i = 0; i < numWorkers; i++) {
@@ -45,26 +69,13 @@ if (process.env.NODE_ENV != "test") {
         console.log('worker '+newPID+' born.');
       });
     } else {
-        server = app.listen(config.port, function() {
-
-            loadRSDelay();
-            loadITDelay();
-
-            //console.log('Express server listening on port ' + server.address().port);
-        });
+      server = startThisProcess();
     }
-} else {
-    server = app.listen(config.port, function() {
-
-        loadRSDelay();
-        loadITDelay();
-
-        //console.log('Express server listening on port ' + server.address().port);
-    });
 }
+
 
 module.exports = {
     app: app,
     server: server,
     config: config
-}
+};
