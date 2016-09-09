@@ -1,8 +1,6 @@
 language: node_js
 node_js:
-- '0.10'
-- '0.12'
-- '4'
+- '6'
 - 'node'
 before_install:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test;
