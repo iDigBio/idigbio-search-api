@@ -21,7 +21,7 @@ function loadRSDelay(){
 
 function loadITDelay(){
     loadIndexTerms();
-    setTimeout(loadRSDelay,1000*60*60);
+    setTimeout(loadITDelay,1000*60*60);
 }
 
 if (process.env.NODE_ENV != "test") {
