@@ -34,10 +34,10 @@ var config = {
 }
 
 if (process.env.NODE_ENV === "prod") {
-    config.redis.hostname = "idb-redis-search-prod";
+    config.redis.hostname = "idb-redis-search-prod.acis.ufl.edu";
     config.search.useEsClient = true;
 } else if (process.env.NODE_ENV === "beta") {
-    config.redis.hostname = "idb-redis-search-beta";
+    config.redis.hostname = "idb-redis-search-beta.acis.ufl.edu";
     config.search.useEsClient = true;
 
     //config.elasticsearch.hosts = [
