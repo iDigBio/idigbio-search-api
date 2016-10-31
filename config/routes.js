@@ -1,6 +1,6 @@
 module.exports = function(app, config) {
 
-    //home route
+    // home route
     var home = require('../app/controllers/home')(app, config);
     var search = require('../app/controllers/search')(app, config);
     var mapping = require('../app/controllers/mapping')(app, config);

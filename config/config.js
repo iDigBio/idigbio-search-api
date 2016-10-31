@@ -1,4 +1,4 @@
-var redis = require("redis")
+var redis = require("redis");
 
 var config = {
     port: 19196,
@@ -30,8 +30,8 @@ var config = {
         port: 6379
     },
     maxTileObjects: 10000,
-    cacheTimeout: 60*60,
-}
+    cacheTimeout: 60*60
+};
 
 if (process.env.NODE_ENV === "prod") {
     config.redis.hostname = "idb-redis-search-prod.acis.ufl.edu";
@@ -51,6 +51,6 @@ if (process.env.NODE_ENV === "prod") {
     //config.search.index = "idigbio-2.10.3";
 }
 
-config.redis.client = redis.createClient(config.redis.port,config.redis.hostname)
+config.redis.client = redis.createClient(config.redis.port, config.redis.hostname);
 
 module.exports = config;

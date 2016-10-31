@@ -38,7 +38,7 @@ module.exports = function(app, config) {
 
             searchShim(i,t,op,req.query,function(err,body){
                 if(err) {
-                    next(err)
+                    next(err);
                 } else {
                     res.json(body);
                     next();
