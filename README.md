@@ -1,24 +1,31 @@
-idb-search-api
-==============
+# idb-search-api
 
-## iDigBio Search API
 
-### API Users
+The iDigBio search api is a nodejs that accepts search requests and
+translates those into backend search requests.
 
-Developers who are interested in using the public iDigBio Search API / iDigBio API v2 service should consult the wiki which includes a list of endpoints, parameters, and query format.
+## API Users
+
+Developers who are interested in using the public iDigBio Search API /
+iDigBio API v2 service should consult the wiki which includes a list
+of endpoints, parameters, and query format.
 
 https://github.com/idigbio/idigbio-search-api/wiki
 
-### API Code Developers
-
-The remainder of this document is for developers who are interested in the internals of the API code itself.
+## Development
 
 [![Build Status](https://travis-ci.org/iDigBio/idigbio-search-api.svg?branch=master)](https://travis-ci.org/iDigBio/idigbio-search-api)
 
-To install and run on Ubuntu:
+
+The remainder of this document is for developers who are interested in
+the internals of the API code itself.
+
+### Dependencies
+
+
+
+To install and run on *Ubuntu 14.04*:
 ```
-git clone https://github.com/idigbio/idigbio-search-api.git
-cd idigbio-search-api
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test;
 sudo apt-get update;
 sudo apt-get install gcc-4.8 g++-4.8;
@@ -31,4 +38,5 @@ npm install
 npm start
 ```
 
-
+On *Ubuntu 16.04* it may work directly, you'll still probably need
+`libjpeg-turbo8-dev libpng12-dev libgif-dev`.
