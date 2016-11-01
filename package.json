@@ -21,20 +21,15 @@
     "request": "^2.45.0"
   },
   "devDependencies": {
-    "blanket": "1.1.9",
     "chai": "*",
+    "istanbul": "^0.4.5",
     "mocha": "*",
+    "nyc": "^8.3.2",
     "supertest": "*",
-    "travis-cov": "*"
-  },
-  "config": {
-    "travis-cov": {
-      "threshold": 70
-    }
   },
   "scripts": {
     "start": "node app.js",
-    "test": "NODE_ENV=test node_modules/mocha/bin/mocha test/test.js && NODE_ENV=test node_modules/mocha/bin/mocha test/test.js -R travis-cov"
+    "test": "NODE_ENV=test nyc --check-coverage --lines 70 mocha"
   },
   "licenses": [
     {
