@@ -1,3 +1,7 @@
+'use strict';
+
+/* eslint no-process-env: 0 */
+
 var redis = require("redis");
 
 var config = {
