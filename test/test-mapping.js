@@ -12,7 +12,8 @@ describe('Mapping', function() {
     it('should return urls for tiles and points', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -32,7 +33,8 @@ describe('Mapping', function() {
     it('should return the same urls if called twice', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -40,7 +42,8 @@ describe('Mapping', function() {
             done(error1);
           } else {
             request(app.server)
-              .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+              .get("/v2/mapping/")
+              .query({rq: JSON.stringify(q)})
               .expect('Content-Type', /json/)
               .expect(200)
               .end(function(error2, response2) {
@@ -59,7 +62,8 @@ describe('Mapping', function() {
     it('should return the different urls if called twice with different queries', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -68,7 +72,8 @@ describe('Mapping', function() {
           } else {
             q = {"scientificname": "nullius nullium"};
             request(app.server)
-              .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+              .get("/v2/mapping/")
+              .query({rq: JSON.stringify(q)})
               .expect('Content-Type', /json/)
               .expect(200)
               .end(function(error2, response2) {
@@ -91,7 +96,8 @@ describe('Mapping', function() {
         stroke: 'rgba(255,0,0,.6)'
       };
       request(app.server)
-        .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -99,7 +105,9 @@ describe('Mapping', function() {
             done(error1);
           } else {
             request(app.server)
-              .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)) + "&style=" + encodeURIComponent(JSON.stringify(nonDefaultStyle)))
+              .get("/v2/mapping/")
+              .query({rq: JSON.stringify(q),
+                      style: JSON.stringify(nonDefaultStyle)})
               .expect('Content-Type', /json/)
               .expect(200)
               .end(function(error2, response2) {
@@ -118,7 +126,8 @@ describe('Mapping', function() {
     it('should return the different urls if called twice with different types', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -126,7 +135,8 @@ describe('Mapping', function() {
             done(error1);
           } else {
             request(app.server)
-              .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+              .get("/v2/mapping/")
+              .query({rq: JSON.stringify(q), type: "points"})
               .expect('Content-Type', /json/)
               .expect(200)
               .end(function(error2, response2) {
@@ -147,7 +157,8 @@ describe('Mapping', function() {
     it('should return the definition back when the short code url is called alone', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -176,7 +187,9 @@ describe('Mapping', function() {
     it('should return an png image for geohash maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q),
+                type: "geohash"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -201,7 +214,8 @@ describe('Mapping', function() {
     it('should return an png image for point maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "points"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -226,7 +240,8 @@ describe('Mapping', function() {
     it('should return an png image for auto maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=auto&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "auto"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -253,7 +268,8 @@ describe('Mapping', function() {
     it('should return geojson for geohash maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "geohash"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -280,7 +296,8 @@ describe('Mapping', function() {
     it('should return geojson for point maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "points"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -309,7 +326,8 @@ describe('Mapping', function() {
     it('should return utf8 grid for geohash maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "geohash"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -337,9 +355,10 @@ describe('Mapping', function() {
     it('should have values in data even if points are not styled', function(done) {
       var q = {"stateprovince": "florida","scientificname":{"type":"missing"}};
       request(app.server)
-          .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
-          .expect('Content-Type', /json/)
-          .expect(200)
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "geohash"})
+        .expect('Content-Type', /json/)
+        .expect(200)
         .end(function(error1, response1) {
           if(error1) {
             done(error1);
@@ -365,7 +384,8 @@ describe('Mapping', function() {
     it('should return utf8 grid for point maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "points"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -394,7 +414,8 @@ describe('Mapping', function() {
     it('should return data under normal conditions with bounding box data', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "geohash"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -421,7 +442,8 @@ describe('Mapping', function() {
     it('should return data under normal conditions with point radius data', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "points"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -448,7 +470,8 @@ describe('Mapping', function() {
     it('should return data for longitudes less than -180', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "geohash"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {
@@ -475,7 +498,8 @@ describe('Mapping', function() {
     it('should return data for longitudes greater than 180', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
-        .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/mapping/")
+        .query({rq: JSON.stringify(q), type: "geohash"})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error1, response1) {

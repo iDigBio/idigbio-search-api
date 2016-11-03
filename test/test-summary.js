@@ -13,7 +13,8 @@ describe('Summary', function() {
       var q = {"genus": "acer"};
       var fields = ["scientificname"];
       request(app.server)
-        .get("/v2/summary/top/records?rq=" + encodeURIComponent(JSON.stringify(q)) + "&top_fields=" + encodeURIComponent(JSON.stringify(fields)))
+        .get("/v2/summary/top/records")
+        .query({rq: JSON.stringify(q), top_fields: JSON.stringify(fields)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -32,7 +33,8 @@ describe('Summary', function() {
       var q = {"genus": "acer"};
       var fields = ["recordset"];
       request(app.server)
-        .get("/v2/summary/top/media?rq=" + encodeURIComponent(JSON.stringify(q)) + "&top_fields=" + encodeURIComponent(JSON.stringify(fields)))
+        .get("/v2/summary/top/media")
+        .query({rq: JSON.stringify(q), top_fields: JSON.stringify(fields)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -51,7 +53,8 @@ describe('Summary', function() {
       var q = {"genus": "acer"};
       var fields = ["scientificname"];
       request(app.server)
-        .get("/v2/summary/count/records?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/summary/count/records")
+        .query({rq: JSON.stringify(q), top_fields: JSON.stringify(fields)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -69,7 +72,8 @@ describe('Summary', function() {
     it('returns a valid count', function(done) {
       var q = {"genus": "acer"};
       request(app.server)
-        .get("/v2/summary/count/media?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/summary/count/media")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -87,7 +91,8 @@ describe('Summary', function() {
     it('returns a valid count', function(done) {
       var q = {};
       request(app.server)
-        .get("/v2/summary/count/recordset?rsq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/summary/count/recordset")
+        .query({rsq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -105,7 +110,8 @@ describe('Summary', function() {
     it('returns a valid histogram', function(done) {
       var q = {"genus": "acer"};
       request(app.server)
-        .get("/v2/summary/datehist?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/summary/datehist")
+        .query({rq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {

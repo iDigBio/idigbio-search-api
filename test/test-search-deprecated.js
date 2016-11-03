@@ -12,7 +12,8 @@ describe('Search Deprecated Endpoints', function() {
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done) {
       var q = {"scientificname": "nullius nullius"};
       request(app.server)
-        .get("/v2/search/?rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/")
+        .query({rq: JSON.stringify(q), limit: 10})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -28,7 +29,8 @@ describe('Search Deprecated Endpoints', function() {
     it('should not return an empty search for {}', function(done) {
       var q = {};
       request(app.server)
-        .get("/v2/search/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/")
+        .query({rq: JSON.stringify(q), limit: 10})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -44,7 +46,10 @@ describe('Search Deprecated Endpoints', function() {
     it('should be able to return a limited set of fields', function(done) {
       var q = {"scientificname": {"type": "exists"},"genus": "carex"};
       request(app.server)
-        .get("/v2/search/?limit=10&fields=[\"scientificname\"]&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/")
+        .query({rq: JSON.stringify(q),
+                fields: '["scientificname"]',
+                limit: 10})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -60,7 +65,8 @@ describe('Search Deprecated Endpoints', function() {
     it('should obey maxLimit', function(done) {
       var q = {};
       request(app.server)
-        .get("/v2/search/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/search/")
+        .query({rq: JSON.stringify(q), limit: 10000})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -201,7 +207,9 @@ describe('Search Deprecated Endpoints', function() {
     it('should return an empty search for {"type": "null"}', function(done) {
       var q = {"type": "null"};
       request(app.server)
-        .get("/v2/media/?rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/")
+        .query({mq: JSON.stringify(q),
+                rq: JSON.stringify({})})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -217,7 +225,10 @@ describe('Search Deprecated Endpoints', function() {
     it('should not return an empty search for {}', function(done) {
       var q = {};
       request(app.server)
-        .get("/v2/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/")
+        .query({mq: JSON.stringify(q),
+                rq: JSON.stringify({}),
+                limit: 10})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -233,7 +244,10 @@ describe('Search Deprecated Endpoints', function() {
     it('should be able to return a limited set of fields', function(done) {
       var q = { "data.ac:accessURI": {"type": "exists"} };
       request(app.server)
-        .get("/v2/media/?limit=10&fields=[\"data.ac:accessURI\"]&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/")
+        .query({fields: ["data.ac:accessURI"],
+                limit: 10,
+                mq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
@@ -249,7 +263,10 @@ describe('Search Deprecated Endpoints', function() {
     it('should obey maxLimit', function(done) {
       var q = {};
       request(app.server)
-        .get("/v2/media/?limit=10000&rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
+        .get("/v2/media/")
+        .query({mq: JSON.stringify(q),
+                rq: JSON.stringify({}),
+               limit: 10000})
         .expect('Content-Type', /json/)
         .expect(200)
         .end(function(error, response) {
