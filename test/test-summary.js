@@ -59,7 +59,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("itemCount");
-            response.body.itemCount.should.be.a.float
+            response.body.itemCount.should.be.a('Number');
             done();
           }
         });
@@ -77,7 +77,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("itemCount");
-            response.body.itemCount.should.be.a.float
+            response.body.itemCount.should.be.a('Number');
             done();
           }
         });
@@ -95,7 +95,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("itemCount");
-            response.body.itemCount.should.be.a.float
+            response.body.itemCount.should.be.a('Number');
             done();
           }
         });
@@ -113,7 +113,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("dates");
-            response.body.dates.should.be.a.Object
+            response.body.dates.should.be.a('Object');
             Object.keys(response.body.dates).length.should.not.equal(0);
             done();
           }
@@ -131,7 +131,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("dates");
-            response.body.dates.should.be.a.Object
+            response.body.dates.should.be.a('Object');
             Object.keys(response.body.dates).length.should.not.equal(0);
             done();
           }
@@ -147,7 +147,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("dates");
-            response.body.dates.should.be.a.Object
+            response.body.dates.should.be.a('Object');
             Object.keys(response.body.dates).length.should.not.equal(0);
             done();
           }
@@ -163,7 +163,7 @@ describe('Summary', function() {
             done(error);
           } else {
             response.body.should.have.property("dates");
-            response.body.dates.should.be.a.Object
+            response.body.dates.should.be.a('Object');
             Object.keys(response.body.dates).length.should.not.equal(0);
             done();
           }

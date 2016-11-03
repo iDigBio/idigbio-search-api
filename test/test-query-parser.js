@@ -43,7 +43,7 @@ describe('Query Shim', function() {
         "genus": ["acer","quercus"]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("genus");
-      parsed.query.filtered.filter.and[0].terms.genus.should.be.an.Array;
+      parsed.query.filtered.filter.and[0].terms.genus.should.be.an('Array');
       parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
       parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer","quercus"]);
       done();
@@ -53,7 +53,7 @@ describe('Query Shim', function() {
         "genus": ["Acer","Quercus"]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("genus");
-      parsed.query.filtered.filter.and[0].terms.genus.should.be.an.Array;
+      parsed.query.filtered.filter.and[0].terms.genus.should.be.an('Array');
       parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
       parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer","quercus"]);
       done();
@@ -63,7 +63,7 @@ describe('Query Shim', function() {
         "version": [2,3]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("version");
-      parsed.query.filtered.filter.and[0].terms.version.should.be.an.Array;
+      parsed.query.filtered.filter.and[0].terms.version.should.be.an('Array');
       parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
       done();
     });
@@ -72,7 +72,7 @@ describe('Query Shim', function() {
         "hasImage": [true,false]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("hasImage");
-      parsed.query.filtered.filter.and[0].terms.hasImage.should.be.an.Array;
+      parsed.query.filtered.filter.and[0].terms.hasImage.should.be.an('Array');
       parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
       done();
     });
