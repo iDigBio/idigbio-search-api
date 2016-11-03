@@ -1,14 +1,14 @@
 'use strict';
 
-var should = require('chai').should();
+var should = require('chai').should();  // eslint-disable-line no-unused-vars
 var request = require('supertest');
 
 var app = require('../app.js');
 
-describe('Home', function(){
+describe('Home', function() {
   this.timeout(30000);
-  describe('index', function(){
-    it('should contain v1', function(done){
+  describe('index', function() {
+    it('should contain v1', function(done) {
       request(app.server)
         .get("/")
         .expect('Content-Type', /json/)
@@ -22,7 +22,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should contain v2', function(done){
+    it('should contain v2', function(done) {
       request(app.server)
         .get("/")
         .expect('Content-Type', /json/)
@@ -37,8 +37,8 @@ describe('Home', function(){
         });
     });
   });
-  describe('v2', function(){
-    it('should contain view', function(done){
+  describe('v2', function() {
+    it('should contain view', function(done) {
       request(app.server)
         .get("/v2")
         .expect('Content-Type', /json/)
@@ -52,7 +52,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should contain search', function(done){
+    it('should contain search', function(done) {
       request(app.server)
         .get("/v2")
         .expect('Content-Type', /json/)
@@ -66,7 +66,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should contain mapping', function(done){
+    it('should contain mapping', function(done) {
       request(app.server)
         .get("/v2")
         .expect('Content-Type', /json/)
@@ -81,8 +81,8 @@ describe('Home', function(){
         });
     });
   });
-  describe('v1', function(){
-    it('should contain records', function(done){
+  describe('v1', function() {
+    it('should contain records', function(done) {
       request(app.server)
         .get("/v1")
         .expect('Content-Type', /json/)
@@ -96,7 +96,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should contain mediarecords', function(done){
+    it('should contain mediarecords', function(done) {
       request(app.server)
         .get("/v1")
         .expect('Content-Type', /json/)
@@ -110,7 +110,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should contain recordsets', function(done){
+    it('should contain recordsets', function(done) {
       request(app.server)
         .get("/v1")
         .expect('Content-Type', /json/)
@@ -124,7 +124,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should contain publishers', function(done){
+    it('should contain publishers', function(done) {
       request(app.server)
         .get("/v1")
         .expect('Content-Type', /json/)
@@ -139,9 +139,9 @@ describe('Home', function(){
         });
     });
   });
-  describe('search proxy', function(){
-    describe('search', function(){
-      it('should accept get', function(done){
+  describe('search proxy', function() {
+    describe('search', function() {
+      it('should accept get', function(done) {
         request(app.server)
           .get("/idigbio/records/_search?size=1")
           .expect('Content-Type', /json/)
@@ -155,7 +155,7 @@ describe('Home', function(){
             }
           });
       });
-      it('should accept post', function(done){
+      it('should accept post', function(done) {
         request(app.server)
           .post("/idigbio/records/_search")
           .send({"size":1})
@@ -171,8 +171,8 @@ describe('Home', function(){
           });
       });
     });
-    describe('count', function(){
-      it('should accept get', function(done){
+    describe('count', function() {
+      it('should accept get', function(done) {
         request(app.server)
           .get("/idigbio/records/_count")
           .expect('Content-Type', /json/)
@@ -186,7 +186,7 @@ describe('Home', function(){
             }
           });
       });
-      it('should accept post', function(done){
+      it('should accept post', function(done) {
         request(app.server)
           .post("/idigbio/records/_count")
           .send({})
@@ -203,8 +203,8 @@ describe('Home', function(){
       });
     });
   });
-  describe('meta fields', function(){
-    it('should not be blank for records', function(done){
+  describe('meta fields', function() {
+    it('should not be blank for records', function(done) {
       request(app.server)
         .get("/v2/meta/fields/records")
         .expect('Content-Type', /json/)
@@ -218,7 +218,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should not be blank for media records', function(done){
+    it('should not be blank for media records', function(done) {
       request(app.server)
         .get("/v2/meta/fields/mediarecords")
         .expect('Content-Type', /json/)
@@ -232,7 +232,7 @@ describe('Home', function(){
           }
         });
     });
-    it('should not be blank for media', function(done){
+    it('should not be blank for media', function(done) {
       request(app.server)
         .get("/v2/meta/fields/media")
         .expect('Content-Type', /json/)

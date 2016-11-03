@@ -13,14 +13,14 @@ require('./config/routes')(app, config);
 var loadRecordsets = require("./app/lib/load-recordsets.js")(app, config);
 var loadIndexTerms = require("./app/lib/load-index-terms.js")(app, config).loadIndexTerms;
 
-function loadRSDelay(){
+function loadRSDelay() {
     loadRecordsets();
-    setTimeout(loadRSDelay, 1000*60*60);
+    setTimeout(loadRSDelay, 1000 * 60 * 60);
 }
 
-function loadITDelay(){
+function loadITDelay() {
     loadIndexTerms();
-    setTimeout(loadITDelay, 1000*60*60);
+    setTimeout(loadITDelay, 1000 * 60 * 60);
 }
 
 function startThisProcess() {
@@ -45,8 +45,7 @@ if (process.env.NODE_ENV == "test" || process.env.CLUSTER == 'false') {
   server = startThisProcess();
   registerGracefulShutdown('SIGTERM', server);
   registerGracefulShutdown('SIGINT', server);
-}
-else {
+} else {
   var cluster = require('cluster');
   var numWorkers = process.env.CLUSTER;
   if (isNaN(numWorkers)) numWorkers = 10;

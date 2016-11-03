@@ -19,7 +19,7 @@ module.exports = function(app, config) {
         if (stats_info["type"] == "search") {
           var search_payload = {};
 
-          response.aggregations.rs.buckets.forEach(function(b){
+          response.aggregations.rs.buckets.forEach(function(b) {
             search_payload[b["key"]] = b["doc_count"];
           });
 

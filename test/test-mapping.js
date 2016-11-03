@@ -1,15 +1,15 @@
 "use strict";
 
-var should = require('chai').should();
+var should = require('chai').should();  // eslint-disable-line no-unused-vars
 var request = require('supertest');
 
 var app = require('../app.js');
 var config = app.config;
 
-describe('Mapping', function(){
+describe('Mapping', function() {
   this.timeout(30000);
-  describe('map creation', function(){
-    it('should return urls for tiles and points', function(done){
+  describe('map creation', function() {
+    it('should return urls for tiles and points', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -29,7 +29,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return the same urls if called twice', function(done){
+    it('should return the same urls if called twice', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -56,7 +56,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return the different urls if called twice with different queries', function(done){
+    it('should return the different urls if called twice with different queries', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -84,7 +84,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return the different urls if called twice with different styles', function(done){
+    it('should return the different urls if called twice with different styles', function(done) {
       var q = {"scientificname": "puma concolor"};
       var nonDefaultStyle = {
         fill: 'rgba(255,0,0,.4)',
@@ -115,7 +115,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return the different urls if called twice with different types', function(done){
+    it('should return the different urls if called twice with different types', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -143,8 +143,8 @@ describe('Mapping', function(){
         });
     });
   });
-  describe('map definition retrieval', function(){
-    it('should return the definition back when the short code url is called alone', function(done){
+  describe('map definition retrieval', function() {
+    it('should return the definition back when the short code url is called alone', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -172,8 +172,8 @@ describe('Mapping', function(){
         });
     });
   });
-  describe('png map tiles', function(){
-    it('should return an png image for geohash maps', function(done){
+  describe('png map tiles', function() {
+    it('should return an png image for geohash maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -198,7 +198,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return an png image for point maps', function(done){
+    it('should return an png image for point maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -223,7 +223,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return an png image for auto maps', function(done){
+    it('should return an png image for auto maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=auto&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -249,8 +249,8 @@ describe('Mapping', function(){
         });
     });
   });
-  describe('geojson map tiles', function(){
-    it('should return geojson for geohash maps', function(done){
+  describe('geojson map tiles', function() {
+    it('should return geojson for geohash maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -277,7 +277,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return geojson for point maps', function(done){
+    it('should return geojson for point maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -305,8 +305,8 @@ describe('Mapping', function(){
         });
     });
   });
-  describe('utf8 grid map tiles', function(){
-    it('should return utf8 grid for geohash maps', function(done){
+  describe('utf8 grid map tiles', function() {
+    it('should return utf8 grid for geohash maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -334,7 +334,7 @@ describe('Mapping', function(){
         });
 
     });
-    it('should have values in data even if points are not styled', function(done){
+    it('should have values in data even if points are not styled', function(done) {
       var q = {"stateprovince": "florida","scientificname":{"type":"missing"}};
       request(app.server)
           .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -362,7 +362,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return utf8 grid for point maps', function(done){
+    it('should return utf8 grid for point maps', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -390,8 +390,8 @@ describe('Mapping', function(){
         });
     });
   });
-  describe('retrieve map points', function(){
-    it('should return data under normal conditions with bounding box data', function(done){
+  describe('retrieve map points', function() {
+    it('should return data under normal conditions with bounding box data', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -418,7 +418,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return data under normal conditions with point radius data', function(done){
+    it('should return data under normal conditions with point radius data', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=points&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -445,7 +445,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return data for longitudes less than -180', function(done){
+    it('should return data for longitudes less than -180', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))
@@ -472,7 +472,7 @@ describe('Mapping', function(){
           }
         });
     });
-    it('should return data for longitudes greater than 180', function(done){
+    it('should return data for longitudes greater than 180', function(done) {
       var q = {"scientificname": "puma concolor"};
       request(app.server)
         .get("/v2/mapping/?type=geohash&rq=" + encodeURIComponent(JSON.stringify(q)))

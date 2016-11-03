@@ -1,16 +1,16 @@
 "use strict";
 
-var should = require('chai').should();
+var should = require('chai').should();  // eslint-disable-line no-unused-vars
 var request = require('supertest');
 
 var app = require('../app.js');
-var config = app.config
+var config = app.config;
 
-describe('Search', function(){
-  this.timeout(30000)
-  describe('basicGET', function(){
-    it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
-      var q = {"scientificname": "nullius nullius"}
+describe('Search', function() {
+  this.timeout(30000);
+  describe('basicGET', function() {
+    it('should return an empty search for {"scientificname": "nullius nullius"}', function(done) {
+      var q = {"scientificname": "nullius nullius"};
       request(app.server)
         .get("/v2/search/records/?rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -23,10 +23,10 @@ describe('Search', function(){
             response.body.items.length.should.equal(0);
             done();
           }
-        })
-    })
-    it('should not return an empty search for {}', function(done){
-      var q = {}
+        });
+    });
+    it('should not return an empty search for {}', function(done) {
+      var q = {};
       request(app.server)
         .get("/v2/search/records/?limit=10&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -39,10 +39,10 @@ describe('Search', function(){
             response.body.items.length.should.not.equal(0);
             done();
           }
-        })
-    })
-    it('should be able to return a limited set of fields', function(done){
-      var q = {"scientificname": {"type": "exists"},"genus": "carex"}
+        });
+    });
+    it('should be able to return a limited set of fields', function(done) {
+      var q = {"scientificname": {"type": "exists"},"genus": "carex"};
       request(app.server)
         .get("/v2/search/records/?limit=10&fields=[\"scientificname\"]&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -55,10 +55,10 @@ describe('Search', function(){
             Object.keys(response.body.items[0].indexTerms).length.should.equal(1);
             done();
           }
-        })
-    })
-    it('should obey maxLimit', function(done){
-      var q = {}
+        });
+    });
+    it('should obey maxLimit', function(done) {
+      var q = {};
       request(app.server)
         .get("/v2/search/records/?limit=10000&rq=" + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -70,16 +70,16 @@ describe('Search', function(){
             response.body.items.length.should.be.below(config.maxLimit+1);
             done();
           }
-        })
-    })
-  })
-  describe('basicPOST', function(){
+        });
+    });
+  });
+  describe('basicPOST', function() {
     it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
-      var q = {"scientificname": "nullius nullius"}
+      var q = {"scientificname": "nullius nullius"};
       request(app.server)
         .post("/v2/search/records/")
         .send({
-            rq: q,
+          rq: q,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -91,15 +91,15 @@ describe('Search', function(){
             response.body.items.length.should.equal(0);
             done();
           }
-        })
-    })
+        });
+    });
     it('should not return an empty search for {}', function(done){
-      var q = {}
+      var q = {};
       request(app.server)
         .post("/v2/search/records/")
         .send({
-            rq: q,
-            limit: 10,
+          rq: q,
+          limit: 10,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -111,16 +111,16 @@ describe('Search', function(){
             response.body.items.length.should.not.equal(0);
             done();
           }
-        })
-    })
+        });
+    });
     it('should be able to return a limited set of fields', function(done){
-      var q = {"scientificname": {"type": "exists"},"genus": "carex"}
+      var q = {"scientificname": {"type": "exists"},"genus": "carex"};
       request(app.server)
         .post("/v2/search/records/")
         .send({
-            rq: q,
-            limit: 10,
-            fields: ["scientificname"]
+          rq: q,
+          limit: 10,
+          fields: ["scientificname"]
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -132,15 +132,15 @@ describe('Search', function(){
             Object.keys(response.body.items[0].indexTerms).length.should.equal(1);
             done();
           }
-        })
-    })
+        });
+    });
     it('should obey maxLimit', function(done){
-      var q = {}
+      var q = {};
       request(app.server)
         .post("/v2/search/records/")
         .send({
-            rq: q,
-            limit: 10000,
+          rq: q,
+          limit: 10000,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -148,19 +148,19 @@ describe('Search', function(){
           if(error) {
             done(error);
           } else {
-            response.body.items.length.should.be.below(config.maxLimit+1);
+            response.body.items.length.should.be.below(config.maxLimit + 1);
             done();
           }
-        })
-    })
-    it('should support multiple field sorting with an array', function(done){
+        });
+    });
+    it('should support multiple field sorting with an array', function(done) {
       var q = {"family":"asteraceae"}, s = [{"genus":"desc"},{"specificepithet":"asc"}];
       request(app.server)
         .post("/v2/search/records/")
         .send({
-            rq: q,
-            sort: s,
-            limit: 10,
+          rq: q,
+          sort: s,
+          limit: 10,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -172,16 +172,16 @@ describe('Search', function(){
             response.body.items.length.should.not.equal(0);
             done();
           }
-        })      
+        });
     });
-    it('should support sorting with a single field name string', function(done){
+    it('should support sorting with a single field name string', function(done) {
       var q = {"family":"asteraceae"}, s = "genus";
       request(app.server)
         .post("/v2/search/records/")
         .send({
-            rq: q,
-            sort: s,
-            limit: 10,
+          rq: q,
+          sort: s,
+          limit: 10,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -193,13 +193,13 @@ describe('Search', function(){
             response.body.items.length.should.not.equal(0);
             done();
           }
-        })      
+        });
     });
-  })
+  });
 
-  describe('mediaGET', function(){
+  describe('mediaGET', function() {
     it('should return an empty search for {"type": "null"}', function(done){
-      var q = {"type": "null"}
+      var q = {"type": "null"};
       request(app.server)
         .get("/v2/search/media/?rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -212,10 +212,10 @@ describe('Search', function(){
             response.body.items.length.should.equal(0);
             done();
           }
-        })
-    })
+        });
+    });
     it('should not return an empty search for {}', function(done){
-      var q = {}
+      var q = {};
       request(app.server)
         .get("/v2/search/media/?limit=10&rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -228,10 +228,10 @@ describe('Search', function(){
             response.body.items.length.should.not.equal(0);
             done();
           }
-        })
-    })
-    it('should be able to return a limited set of fields', function(done){
-      var q = { "data.ac:accessURI": {"type": "exists"} }
+        });
+    });
+    it('should be able to return a limited set of fields', function(done) {
+      var q = { "data.ac:accessURI": {"type": "exists"} };
       request(app.server)
         .get("/v2/search/media/?limit=10&fields=[\"data.ac:accessURI\"]&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -244,10 +244,10 @@ describe('Search', function(){
             Object.keys(response.body.items[0].data).length.should.equal(1);
             done();
           }
-        })
-    })
+        });
+    });
     it('should obey maxLimit', function(done){
-      var q = {}
+      var q = {};
       request(app.server)
         .get("/v2/search/media/?limit=10000&rq=" + encodeURIComponent(JSON.stringify({})) + "&mq="  + encodeURIComponent(JSON.stringify(q)))
         .expect('Content-Type', /json/)
@@ -256,20 +256,20 @@ describe('Search', function(){
           if(error) {
             done(error);
           } else {
-            response.body.items.length.should.be.below(config.maxLimit+1);
+            response.body.items.length.should.be.below(config.maxLimit + 1);
             done();
           }
-        })
-    })
-  })
-  describe('mediaPOST', function(){
-    it('should return an empty search for {"type": "null"}', function(done){
-      var q = {"type": "null"}
+        });
+    });
+  });
+  describe('mediaPOST', function() {
+    it('should return an empty search for {"type": "null"}', function(done) {
+      var q = {"type": "null"};
       request(app.server)
         .post("/v2/search/media/")
         .send({
-            rq: {},
-            mq: q
+          rq: {},
+          mq: q
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -281,16 +281,16 @@ describe('Search', function(){
             response.body.items.length.should.equal(0);
             done();
           }
-        })
-    })
-    it('should not return an empty search for {}', function(done){
-      var q = {}
+        });
+    });
+    it('should not return an empty search for {}', function(done) {
+      var q = {};
       request(app.server)
         .post("/v2/search/media/")
         .send({
-            rq: {},
-            mq: q,
-            limit: 10,
+          rq: {},
+          mq: q,
+          limit: 10,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -302,16 +302,16 @@ describe('Search', function(){
             response.body.items.length.should.not.equal(0);
             done();
           }
-        })
-    })
-    it('should be able to return a limited set of fields', function(done){
-      var q = { "data.ac:accessURI": {"type": "exists"} }
+        });
+    });
+    it('should be able to return a limited set of fields', function(done) {
+      var q = { "data.ac:accessURI": {"type": "exists"} };
       request(app.server)
         .post("/v2/search/media/")
         .send({
-            mq: q,
-            limit: 10,
-            fields: ["data.ac:accessURI"]
+          mq: q,
+          limit: 10,
+          fields: ["data.ac:accessURI"]
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -323,16 +323,16 @@ describe('Search', function(){
             Object.keys(response.body.items[0].data).length.should.equal(1);
             done();
           }
-        })
-    })
+        });
+    });
     it('should obey maxLimit', function(done){
-      var q = {}
+      var q = {};
       request(app.server)
         .post("/v2/search/media/")
         .send({
-            rq: {},
-            mq: q,
-            limit: 10000,
+          rq: {},
+          mq: q,
+          limit: 10000,
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -343,7 +343,7 @@ describe('Search', function(){
             response.body.items.length.should.be.below(config.maxLimit+1);
             done();
           }
-        })
-    })
-  })
-})
+        });
+    });
+  });
+});

@@ -2,6 +2,8 @@
     "preset": "crockford",
     "fileExtensions": [".js", "jscs"],
     "requireParenthesesAroundIIFE": true,
+    "requireSpaceAfterKeywords": false,
+    "requireSpacesInAnonymousFunctionExpression": false,
     "maximumLineLength": 80,
     "validateLineBreaks": "LF",
     "validateIndentation": 2,
