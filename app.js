@@ -41,14 +41,13 @@ function registerGracefulShutdown(signal, server) {
   });
 }
 
-if (process.env.NODE_ENV == "test" || process.env.CLUSTER == 'false') {
+if (config.ENV === "test" || !config.CLUSTER) {
   server = startThisProcess();
   registerGracefulShutdown('SIGTERM', server);
   registerGracefulShutdown('SIGINT', server);
 } else {
   var cluster = require('cluster');
-  var numWorkers = process.env.CLUSTER;
-  if (isNaN(numWorkers)) numWorkers = 10;
+  var numWorkers = config.CLUSTER_WORKERS;
   if (cluster.isMaster) {
     // Fork workers.
     for (var i = 0; i < numWorkers; i++) {

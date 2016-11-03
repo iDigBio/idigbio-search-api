@@ -13,7 +13,7 @@ module.exports = function(app, config) {
   }
 
   function statsFromResponse(query, stats_info, response) {
-    if (process.env.NODE_ENV != "test") {
+    if (config.ENV !== "test") {
       try {
         var payload = {};
         if (stats_info["type"] == "search") {
@@ -155,9 +155,9 @@ module.exports = function(app, config) {
         // console.log(JSON.stringify(options,undefined,2));
 
         if (op == "_search") {
-          client.search(options, function(error,response){
-            if (process.env.GEN_MOCK == "true"){
-              writeMock(h,response);
+          client.search(options, function(error,response) {
+            if (config.GEN_MOCK) {
+              writeMock(h, response);
             }
             if (stats_info) {
               statsFromResponse(query_only.query,stats_info,response);
@@ -165,8 +165,8 @@ module.exports = function(app, config) {
             cb(error,response);
           });
         } else if (op == "_count") {
-          client.count(options, function(error,response){
-            if (process.env.GEN_MOCK == "true"){
+          client.count(options, function(error,response) {
+            if (config.GEN_MOCK) {
               writeMock(h,response);
             }
             cb(error, response);
@@ -176,7 +176,7 @@ module.exports = function(app, config) {
             index: index,
             type: type
           },function(error,response){
-            if (process.env.GEN_MOCK == "true"){
+            if (config.GEN_MOCK) {
               writeMock(h,response);
             }
             cb(error,response);
@@ -195,7 +195,7 @@ module.exports = function(app, config) {
             url: search_url
           },function (error, response, body) {
             var b = JSON.parse(body);
-            if (process.env.GEN_MOCK == "true"){
+            if (config.GEN_MOCK) {
               writeMock(h,b);
             }
             cb(error,b);
@@ -206,7 +206,7 @@ module.exports = function(app, config) {
             body: JSON.stringify(query)
           },function (error, response, body) {
             var b = JSON.parse(body);
-            if (process.env.GEN_MOCK == "true"){
+            if (config.GEN_MOCK) {
               writeMock(h,b);
             }
             if (stats_info) {

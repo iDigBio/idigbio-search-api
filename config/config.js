@@ -5,6 +5,10 @@
 var redis = require("redis");
 
 var config = {
+  ENV: process.env.NODE_ENV || "test",
+  GEN_MOCK: process.env.GEN_MOCK === "true",
+  CLUSTER: process.env.CLUSTER !== "false",
+  CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || 10,
   port: 19196,
   search: {
     server: "http://c18node2-crn.acis.ufl.edu:9200",
