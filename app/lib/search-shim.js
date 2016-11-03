@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(app, config) {
   var request = require("request");
   var fs = require("fs");
