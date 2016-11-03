@@ -1,12 +1,16 @@
+/* eslint vars-on-top: "off" */
+
 'use strict';
-var http = require('http');
+
+var _ = require('lodash'),
+    express = require('express'),
+    config = require('./config/config'),
+    http = require('http');
 http.globalAgent.maxSockets = 100;
 
-var express = require('express'),
-    config = require('./config/config');
+var app = express(),
+    server = null;
 
-var app = express();
-var server;
 
 require('./config/express')(app, config);
 require('./config/routes')(app, config);
@@ -49,11 +53,10 @@ if (config.ENV === "test" || !config.CLUSTER) {
 } else {
   var cluster = require('cluster');
   var numWorkers = config.CLUSTER_WORKERS;
+
   if (cluster.isMaster) {
     // Fork workers.
-    for (var i = 0; i < numWorkers; i++) {
-      cluster.fork();
-    }
+    _.times(numWorkers, function() { cluster.fork(); });
 
     cluster.on('exit', function(deadWorker, code, signal) {
       // Restart the worker
