@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /* eslint no-process-env: 0 */
 

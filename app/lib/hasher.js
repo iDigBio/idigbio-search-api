@@ -1,3 +1,5 @@
+"use strict";
+
 var crypto = require('crypto');
 var _ = require('lodash');
 var util = require('util');
