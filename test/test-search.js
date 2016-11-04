@@ -54,7 +54,7 @@ describe('Search', function() {
           if(error) {
             done(error);
           } else {
-            response.body.items[0].indexTerms.should.have.property["scientificname"];
+            response.body.items[0].indexTerms.should.have.property("scientificname");
             Object.keys(response.body.items[0].indexTerms).length.should.equal(1);
             done();
           }
@@ -130,7 +130,7 @@ describe('Search', function() {
           if(error) {
             done(error);
           } else {
-            response.body.items[0].indexTerms.should.have.property["scientificname"];
+            response.body.items[0].indexTerms.should.have.property("scientificname");
             Object.keys(response.body.items[0].indexTerms).length.should.equal(1);
             done();
           }
@@ -248,7 +248,7 @@ describe('Search', function() {
           if(error) {
             done(error);
           } else {
-            response.body.items[0].data.should.have.property["ac:accessURI"];
+            response.body.items[0].data.should.have.property("ac:accessURI");
             Object.keys(response.body.items[0].data).length.should.equal(1);
             done();
           }
@@ -330,7 +330,7 @@ describe('Search', function() {
           if(error) {
             done(error);
           } else {
-            response.body.items[0].data.should.have.property["ac:accessURI"];
+            response.body.items[0].data.should.have.property("ac:accessURI");
             Object.keys(response.body.items[0].data).length.should.equal(1);
             done();
           }
