@@ -1,5 +1,4 @@
 /* eslint vars-on-top: "off" */
-/* eslint global-require: "off" */
 /* eslint no-process-exit: "off" */
 
 'use strict';
@@ -41,7 +40,7 @@ function startThisProcess() {
 function registerGracefulShutdown(signal) {
   process.on(signal, function() {
     console.log("Received shutdown signal, attempt exit");
-    server.close(function () {
+    server.close(function() {
       console.log("app.close finished, exiting");
       process.exit(0);
     });

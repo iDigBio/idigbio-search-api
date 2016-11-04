@@ -44,7 +44,7 @@ describe('Search Deprecated Endpoints', function() {
         });
     });
     it('should be able to return a limited set of fields', function(done) {
-      var q = {"scientificname": {"type": "exists"},"genus": "carex"};
+      var q = {"scientificname": {"type": "exists"}, "genus": "carex"};
       request(app.server)
         .get("/v2/search/")
         .query({rq: JSON.stringify(q),
@@ -160,7 +160,7 @@ describe('Search Deprecated Endpoints', function() {
         });
     });
     it('should support multiple field sorting with an array', function(done) {
-      var q = {"family":"asteraceae"}, s = [{"genus":"desc"},{"specificepithet":"asc"}];
+      var q = {"family": "asteraceae"}, s = [{"genus": "desc"}, {"specificepithet": "asc"}];
       request(app.server)
         .post("/v2/search/")
         .send({
@@ -181,7 +181,7 @@ describe('Search Deprecated Endpoints', function() {
         });
     });
     it('should support sorting with a single field name string', function(done) {
-      var q = {"family":"asteraceae"}, s = "genus";
+      var q = {"family": "asteraceae"}, s = "genus";
       request(app.server)
         .post("/v2/search/")
         .send({

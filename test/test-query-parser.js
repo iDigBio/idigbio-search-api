@@ -5,7 +5,7 @@ var should = require('chai').should();  // eslint-disable-line no-unused-vars
 var app = require('../app.js');
 var config = app.config;
 
-var queryShim = require("../app/lib/query-shim.js")(app,config);
+var queryShim = require("../app/lib/query-shim.js")(app, config);
 
 describe('Query Shim', function() {
   describe('value support', function() {
@@ -40,27 +40,27 @@ describe('Query Shim', function() {
     });
     it('should support lists of strings', function(done) {
       var parsed = queryShim({
-        "genus": ["acer","quercus"]
+        "genus": ["acer", "quercus"]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("genus");
       parsed.query.filtered.filter.and[0].terms.genus.should.be.an('Array');
       parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
-      parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer","quercus"]);
+      parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer", "quercus"]);
       done();
     });
     it('should lowercase lists of strings', function(done) {
       var parsed = queryShim({
-        "genus": ["Acer","Quercus"]
+        "genus": ["Acer", "Quercus"]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("genus");
       parsed.query.filtered.filter.and[0].terms.genus.should.be.an('Array');
       parsed.query.filtered.filter.and[0].terms.execution.should.equal("or");
-      parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer","quercus"]);
+      parsed.query.filtered.filter.and[0].terms.genus.should.eql(["acer", "quercus"]);
       done();
     });
     it('should support list of numbers', function(done) {
       var parsed = queryShim({
-        "version": [2,3]
+        "version": [2, 3]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("version");
       parsed.query.filtered.filter.and[0].terms.version.should.be.an('Array');
@@ -69,7 +69,7 @@ describe('Query Shim', function() {
     });
     it('should support list of booleans', function(done) {
       var parsed = queryShim({
-        "hasImage": [true,false]
+        "hasImage": [true, false]
       });
       parsed.query.filtered.filter.and[0].terms.should.have.property("hasImage");
       parsed.query.filtered.filter.and[0].terms.hasImage.should.be.an('Array');

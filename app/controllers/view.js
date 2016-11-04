@@ -3,8 +3,8 @@
 var _ = require("lodash");
 
 module.exports = function(app, config) {
-  var loadRecordsets = require("../lib/load-recordsets.js")(app,config);
-  var searchShim = require("../lib/search-shim.js")(app,config);
+  var loadRecordsets = require("../lib/load-recordsets.js")(app, config);
+  var searchShim = require("../lib/search-shim.js")(app, config);
 
   return {
     // version:
@@ -15,7 +15,7 @@ module.exports = function(app, config) {
       var t = req.params.t || "_all";
       var uuid = req.params.uuid;
 
-      if (t == "media") {
+      if(t == "media") {
         t = "mediarecords";
       }
 
@@ -30,50 +30,48 @@ module.exports = function(app, config) {
       searchShim(config.search.index, t, "_search", query, function(err, body) {
         if(err) {
           next(err);
-        } else {
-          if(body.hits.hits.length > 0) {
-            body = body.hits.hits[0];
-            var indexterms = _.cloneDeep(body._source);
-            delete indexterms["data"];
-            var rb = {
-              "uuid": body._id,
-              "type": body._type,
-              "etag": body._source.etag,
-              "version": body._source.version,
-              "data": body._source.data,
-              "recordIds": body._source.recordIds,
-              "indexTerms": indexterms,
-              "attribution": {}
-            };
+        } else if(body.hits.hits.length > 0) {
+          body = body.hits.hits[0];
+          var indexterms = _.cloneDeep(body._source);
+          delete indexterms["data"];
+          var rb = {
+            "uuid": body._id,
+            "type": body._type,
+            "etag": body._source.etag,
+            "version": body._source.version,
+            "data": body._source.data,
+            "recordIds": body._source.recordIds,
+            "indexTerms": indexterms,
+            "attribution": {}
+          };
 
-            if (body._source.recordset){
-              var rs = {
-                "uuid": body._source.recordset
-              };
-              if (config.recordsets[body._source.recordset]) {
-                _.defaults(rs,config.recordsets[body._source.recordset]);
+          if(body._source.recordset) {
+            var rs = {
+              "uuid": body._source.recordset
+            };
+            if(config.recordsets[body._source.recordset]) {
+              _.defaults(rs, config.recordsets[body._source.recordset]);
+              rb.attribution = rs;
+              res.json(rb);
+              next();
+            } else {
+              loadRecordsets(function() {
+                _.defaults(rs, config.recordsets[body._source.recordset]);
                 rb.attribution = rs;
                 res.json(rb);
                 next();
-              } else {
-                loadRecordsets(function(){
-                  _.defaults(rs,config.recordsets[body._source.recordset]);
-                  rb.attribution = rs;
-                  res.json(rb);
-                  next();
-                });
-              }
-            } else {
-              res.json(rb);
-              next();
+              });
             }
           } else {
-            res.status(404).json({
-              "error": "Not Found",
-              "statusCode": 404
-            });
+            res.json(rb);
             next();
           }
+        } else {
+          res.status(404).json({
+            "error": "Not Found",
+            "statusCode": 404
+          });
+          next();
         }
       }, {
         type: "view",

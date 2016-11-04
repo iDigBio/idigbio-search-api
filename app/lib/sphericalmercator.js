@@ -41,23 +41,23 @@ var mercator = new mapnik.Projection(proj4);
  * for fast tile lookups
  */
 function SphericalMercator() {
-    var size = 256;
-    this.Bc = [];
-    this.Cc = [];
-    this.zc = [];
-    this.Ac = [];
-    this.DEG_TO_RAD = Math.PI / 180;
-    this.RAD_TO_DEG = 180 / Math.PI;
-    this.size = 256;
-    this.levels = 18;
-    this.proj4 = proj4;
-    for (var d = 0; d < this.levels; d++) {
-        this.Bc.push(size / 360);
-        this.Cc.push(size / (2 * Math.PI));
-        this.zc.push(size / 2);
-        this.Ac.push(size);
-        size *= 2;
-    }
+  var size = 256;
+  this.Bc = [];
+  this.Cc = [];
+  this.zc = [];
+  this.Ac = [];
+  this.DEG_TO_RAD = Math.PI / 180;
+  this.RAD_TO_DEG = 180 / Math.PI;
+  this.size = 256;
+  this.levels = 18;
+  this.proj4 = proj4;
+  for(var d = 0; d < this.levels; d++) {
+    this.Bc.push(size / 360);
+    this.Cc.push(size / (2 * Math.PI));
+    this.zc.push(size / 2);
+    this.Ac.push(size);
+    size *= 2;
+  }
 }
 
 /**
@@ -69,7 +69,7 @@ function SphericalMercator() {
  * @return {Number}
  */
 SphericalMercator.prototype.minmax = function(a, b, c) {
-    return Math.min(Math.max(a, b), c);
+  return Math.min(Math.max(a, b), c);
 };
 
 /**
@@ -79,11 +79,11 @@ SphericalMercator.prototype.minmax = function(a, b, c) {
  * @param {Number} zoom number of the zoom level.
  */
 SphericalMercator.prototype.ll_to_px = function(ll, zoom) {
-    var d = this.zc[zoom];
-    var f = this.minmax(Math.sin(this.DEG_TO_RAD * ll[1]), -0.9999, 0.9999);
-    var x = Math.round(d + ll[0] * this.Bc[zoom]);
-    var y = Math.round(d + 0.5 * Math.log((1 + f) / (1 - f)) * (-this.Cc[zoom]));
-    return [x, y];
+  var d = this.zc[zoom];
+  var f = this.minmax(Math.sin(this.DEG_TO_RAD * ll[1]), -0.9999, 0.9999);
+  var x = Math.round(d + ll[0] * this.Bc[zoom]);
+  var y = Math.round(d + 0.5 * Math.log((1 + f) / (1 - f)) * -this.Cc[zoom]);
+  return [x, y];
 };
 
 /**
@@ -93,11 +93,11 @@ SphericalMercator.prototype.ll_to_px = function(ll, zoom) {
  * @param {Number} zoom number of the zoom level.
  */
 SphericalMercator.prototype.px_to_ll = function(px, zoom) {
-    var zoom_denom = this.zc[zoom];
-    var g = (px[1] - zoom_denom) / (-this.Cc[zoom]);
-    var lat = (px[0] - zoom_denom) / this.Bc[zoom];
-    var lon = this.RAD_TO_DEG * (2 * Math.atan(Math.exp(g)) - 0.5 * Math.PI);
-    return [lat, lon];
+  var zoom_denom = this.zc[zoom];
+  var g = (px[1] - zoom_denom) / -this.Cc[zoom];
+  var lat = (px[0] - zoom_denom) / this.Bc[zoom];
+  var lon = this.RAD_TO_DEG * (2 * Math.atan(Math.exp(g)) - 0.5 * Math.PI);
+  return [lat, lon];
 };
 
 /**
@@ -110,13 +110,13 @@ SphericalMercator.prototype.px_to_ll = function(px, zoom) {
  * @return Object Mapnik envelope.
  */
 SphericalMercator.prototype.xyz_to_envelope = function(x, y, zoom, TMS_SCHEME) {
-    if (TMS_SCHEME) {
-        y = (Math.pow(2, zoom) - 1) - y;
-    }
-    var ll = [x * this.size, (y + 1) * this.size];
-    var ur = [(x + 1) * this.size, y * this.size];
-    var bbox = this.px_to_ll(ll, zoom).concat(this.px_to_ll(ur, zoom));
-    return mercator.forward(bbox);
+  if(TMS_SCHEME) {
+    y = (Math.pow(2, zoom) - 1) - y;
+  }
+  var ll = [x * this.size, (y + 1) * this.size];
+  var ur = [(x + 1) * this.size, y * this.size];
+  var bbox = this.px_to_ll(ll, zoom).concat(this.px_to_ll(ur, zoom));
+  return mercator.forward(bbox);
 };
 
 module.exports = new SphericalMercator();

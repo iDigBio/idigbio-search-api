@@ -4,7 +4,6 @@ var should = require('chai').should();  // eslint-disable-line no-unused-vars
 var request = require('supertest');
 
 var app = require('../app.js');
-var config = app.config;
 
 describe('Summary', function() {
   this.timeout(30000);
@@ -126,7 +125,7 @@ describe('Summary', function() {
         });
     });
   });
-  describe('stats', function(){
+  describe('stats', function() {
     it('returns a valid histogram for api', function(done) {
       request(app.server)
         .get("/v2/summary/stats/api")

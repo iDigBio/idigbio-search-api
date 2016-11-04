@@ -41,10 +41,10 @@ var config = {
   cacheTimeout: 60 * 60
 };
 
-if (process.env.NODE_ENV === "prod") {
+if(process.env.NODE_ENV === "prod") {
   config.redis.hostname = "idb-redis-search-prod.acis.ufl.edu";
   config.search.useEsClient = true;
-} else if (process.env.NODE_ENV === "beta") {
+} else if(process.env.NODE_ENV === "beta") {
   config.redis.hostname = "idb-redis-search-beta.acis.ufl.edu";
   config.search.useEsClient = true;
 

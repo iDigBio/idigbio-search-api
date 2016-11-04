@@ -71,14 +71,14 @@ describe('Search', function() {
           if(error) {
             done(error);
           } else {
-            response.body.items.length.should.be.below(config.maxLimit+1);
+            response.body.items.length.should.be.below(config.maxLimit + 1);
             done();
           }
         });
     });
   });
   describe('basicPOST', function() {
-    it('should return an empty search for {"scientificname": "nullius nullius"}', function(done){
+    it('should return an empty search for {"scientificname": "nullius nullius"}', function(done) {
       var q = {"scientificname": "nullius nullius"};
       request(app.server)
         .post("/v2/search/records/")
@@ -95,7 +95,7 @@ describe('Search', function() {
           }
         });
     });
-    it('should not return an empty search for {}', function(done){
+    it('should not return an empty search for {}', function(done) {
       var q = {};
       request(app.server)
         .post("/v2/search/records/")
@@ -115,8 +115,8 @@ describe('Search', function() {
           }
         });
     });
-    it('should be able to return a limited set of fields', function(done){
-      var q = {"scientificname": {"type": "exists"},"genus": "carex"};
+    it('should be able to return a limited set of fields', function(done) {
+      var q = {"scientificname": {"type": "exists"}, "genus": "carex"};
       request(app.server)
         .post("/v2/search/records/")
         .send({
@@ -136,7 +136,7 @@ describe('Search', function() {
           }
         });
     });
-    it('should obey maxLimit', function(done){
+    it('should obey maxLimit', function(done) {
       var q = {};
       request(app.server)
         .post("/v2/search/records/")
@@ -156,7 +156,7 @@ describe('Search', function() {
         });
     });
     it('should support multiple field sorting with an array', function(done) {
-      var q = {"family":"asteraceae"}, s = [{"genus":"desc"},{"specificepithet":"asc"}];
+      var q = {"family": "asteraceae"}, s = [{"genus": "desc"}, {"specificepithet": "asc"}];
       request(app.server)
         .post("/v2/search/records/")
         .send({
@@ -177,7 +177,7 @@ describe('Search', function() {
         });
     });
     it('should support sorting with a single field name string', function(done) {
-      var q = {"family":"asteraceae"}, s = "genus";
+      var q = {"family": "asteraceae"}, s = "genus";
       request(app.server)
         .post("/v2/search/records/")
         .send({
@@ -200,7 +200,7 @@ describe('Search', function() {
   });
 
   describe('mediaGET', function() {
-    it('should return an empty search for {"type": "null"}', function(done){
+    it('should return an empty search for {"type": "null"}', function(done) {
       var q = {"type": "null"};
       request(app.server)
         .get("/v2/search/media/")
@@ -218,7 +218,7 @@ describe('Search', function() {
           }
         });
     });
-    it('should not return an empty search for {}', function(done){
+    it('should not return an empty search for {}', function(done) {
       var q = {};
       request(app.server)
         .get("/v2/search/media/?limit=10")
@@ -239,7 +239,7 @@ describe('Search', function() {
       var q = { "data.ac:accessURI": {"type": "exists"} };
       request(app.server)
         .get("/v2/search/media/")
-        .query({limit:10})
+        .query({limit: 10})
         .query({fields: '["data.ac:accessURI"]'})
         .query({mq: JSON.stringify(q)})
         .expect('Content-Type', /json/)
@@ -254,7 +254,7 @@ describe('Search', function() {
           }
         });
     });
-    it('should obey maxLimit', function(done){
+    it('should obey maxLimit', function(done) {
       var q = {};
       request(app.server)
         .get("/v2/search/media/")
@@ -336,7 +336,7 @@ describe('Search', function() {
           }
         });
     });
-    it('should obey maxLimit', function(done){
+    it('should obey maxLimit', function(done) {
       var q = {};
       request(app.server)
         .post("/v2/search/media/")
@@ -351,7 +351,7 @@ describe('Search', function() {
           if(error) {
             done(error);
           } else {
-            response.body.items.length.should.be.below(config.maxLimit+1);
+            response.body.items.length.should.be.below(config.maxLimit + 1);
             done();
           }
         });

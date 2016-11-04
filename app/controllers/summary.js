@@ -2,24 +2,24 @@
 
 
 module.exports = function(app, config) {
-  var queryShim = require('../lib/query-shim.js')(app,config);
-  var formatter = require("../lib/formatter.js")(app,config);
-  var cp = require("../lib/common-params.js")(app,config);
-  var getParam = require("../lib/get-param.js")(app,config);
-  var qg = require("../lib/query-generators.js")(app,config);
-  var searchShim = require("../lib/search-shim.js")(app,config);
+  var queryShim = require('../lib/query-shim.js')(app, config);
+  var formatter = require("../lib/formatter.js")(app, config);
+  var cp = require("../lib/common-params.js")(app, config);
+  var getParam = require("../lib/get-param.js")(app, config);
+  var qg = require("../lib/query-generators.js")(app, config);
+  var searchShim = require("../lib/search-shim.js")(app, config);
 
   function top_fields_agg(top_fields, top_count) {
     var top_agg = {};
     top_fields.reverse().forEach(function(f) {
       var new_top_agg = {};
-      new_top_agg["top_"+f] = {
+      new_top_agg["top_" + f] = {
         "terms": {
           "field": f,
           "size": top_count
         }
       };
-      if (Object.keys(top_agg).length > 0) {
+      if(Object.keys(top_agg).length > 0) {
         new_top_agg["top_" + f]["aggs"] = top_agg;
       }
       top_agg = new_top_agg;
@@ -34,8 +34,8 @@ module.exports = function(app, config) {
         var rq = cp.query("rq", req);
         var query = qg.media_query(rq, mq, [], [], 0, 0);
 
-        var top_fields = cp.top_fields(req,"mediarecords");
-        if (!top_fields) {
+        var top_fields = cp.top_fields(req, "mediarecords");
+        if(!top_fields) {
           top_fields = ["flags"];
         }
 
@@ -53,7 +53,6 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
       }
     },
 
@@ -62,13 +61,13 @@ module.exports = function(app, config) {
         var rq = cp.query("rq", req);
         var query = qg.record_query(rq, [], [], 0, 0);
         var top_fields = cp.top_fields(req, "records");
-        if (!top_fields) {
+        if(!top_fields) {
           top_fields = ["scientificname"];
         }
 
         var top_count = cp.top_count(req);
 
-        query.aggs = top_fields_agg(top_fields,top_count);
+        query.aggs = top_fields_agg(top_fields, top_count);
 
         searchShim(config.search.index, "records", "_search", query, function(err, body) {
           if(err) {
@@ -80,7 +79,7 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
@@ -91,13 +90,13 @@ module.exports = function(app, config) {
         var query = qg.bare_query(rq, [], [], 0, 0);
 
         var top_fields = cp.top_fields(req);
-        if (!top_fields) {
+        if(!top_fields) {
           top_fields = ["publisher"];
         }
 
         var top_count = cp.top_count(req);
 
-        query.aggs = top_fields_agg(top_fields,top_count);
+        query.aggs = top_fields_agg(top_fields, top_count);
 
         searchShim(config.search.index, "recordsets", "_search", query, function(err, body) {
           if(err) {
@@ -109,7 +108,7 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
@@ -119,11 +118,11 @@ module.exports = function(app, config) {
 
         var rq = cp.query("rq", req);
 
-        var query = qg.media_query(rq,mq,undefined,undefined,undefined,undefined);
+        var query = qg.media_query(rq, mq, undefined, undefined, undefined, undefined);
 
         delete query["aggs"];
 
-        searchShim(config.search.index,"mediarecords","_count",query,function(err,body){
+        searchShim(config.search.index, "mediarecords", "_count", query, function(err, body) {
           if(err) {
             next(err);
           } else {
@@ -136,7 +135,7 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
@@ -144,11 +143,11 @@ module.exports = function(app, config) {
       try {
         var rq = cp.query("rq", req);
 
-        var query = qg.record_query(rq,undefined,undefined,undefined,undefined);
+        var query = qg.record_query(rq, undefined, undefined, undefined, undefined);
 
         delete query["aggs"];
 
-        searchShim(config.search.index, "records", "_count", query, function(err, body){
+        searchShim(config.search.index, "records", "_count", query, function(err, body) {
           if(err) {
             next(err);
           } else {
@@ -161,7 +160,7 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
@@ -169,7 +168,7 @@ module.exports = function(app, config) {
       try {
         var mq = cp.query("mq", req);
         var rq = cp.query("rq", req);
-        var query = qg.media_query(rq,mq,undefined,undefined,undefined,undefined);
+        var query = qg.media_query(rq, mq, undefined, undefined, undefined, undefined);
 
         query["size"] = 0;
         query["aggs"] = {
@@ -180,7 +179,7 @@ module.exports = function(app, config) {
           }
         };
 
-        searchShim(config.search.index,"mediarecords","_search",query,function(err,body){
+        searchShim(config.search.index, "mediarecords", "_search", query, function(err, body) {
           if(err) {
             next(err);
           } else {
@@ -194,14 +193,14 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
     modified_basic: function(req, res, next) {
       try {
         var rq = cp.query("rq", req);
-        var query = qg.record_query(rq,undefined,undefined,undefined,undefined);
+        var query = qg.record_query(rq, undefined, undefined, undefined, undefined);
 
         query["size"] = 0;
         query["aggs"] = {
@@ -212,7 +211,7 @@ module.exports = function(app, config) {
           }
         };
 
-        searchShim(config.search.index,"records","_search",query,function(err,body){
+        searchShim(config.search.index, "records", "_search", query, function(err, body) {
           if(err) {
             next(err);
           } else {
@@ -226,18 +225,18 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
     count_recordset: function(req, res, next) {
       try {
         var rsq = cp.query("rsq", req);
-        var query = qg.bare_query(rsq,undefined,undefined,undefined,undefined);
+        var query = qg.bare_query(rsq, undefined, undefined, undefined, undefined);
 
         delete query["aggs"];
 
-        searchShim(config.search.index,"recordsets","_count",query,function(err,body){
+        searchShim(config.search.index, "recordsets", "_count", query, function(err, body) {
           if(err) {
             next(err);
           } else {
@@ -250,7 +249,7 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
@@ -258,32 +257,32 @@ module.exports = function(app, config) {
       try {
         var rq = cp.query("rq", req);
 
-        var query = qg.record_query(rq,[],[],0,0);
+        var query = qg.record_query(rq, [], [], 0, 0);
 
-        var dateField = getParam(req,"dateField", function(p) {
+        var dateField = getParam(req, "dateField", function(p) {
           return p;
-        },"datecollected");
+        }, "datecollected");
 
-        var minDate = getParam(req,"minDate", function(p) {
+        var minDate = getParam(req, "minDate", function(p) {
           return p;
-        },"1700-01-01");
+        }, "1700-01-01");
 
-        var maxDate = getParam(req,"maxDate", function(p) {
+        var maxDate = getParam(req, "maxDate", function(p) {
           return p;
-        },"now");
+        }, "now");
 
-        var dateInterval = getParam(req,"dateInterval", function(p) {
+        var dateInterval = getParam(req, "dateInterval", function(p) {
           return p;
-        },"year");
+        }, "year");
 
-        var top_fields = cp.top_fields(req,"records");
-        if (!top_fields) {
+        var top_fields = cp.top_fields(req, "records");
+        if(!top_fields) {
           top_fields = [];
         }
 
         var top_count = cp.top_count(req);
 
-        var top_agg = top_fields_agg(top_fields,top_count);
+        var top_agg = top_fields_agg(top_fields, top_count);
 
         var rf = {};
         rf[dateField] = {
@@ -319,7 +318,7 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
+
       }
     },
 
@@ -331,23 +330,23 @@ module.exports = function(app, config) {
 
         var t = req.params.t;
 
-        var recordset = getParam(req,"recordset", function(p) {
+        var recordset = getParam(req, "recordset", function(p) {
           return p;
         }, undefined);
 
-        var minDate = getParam(req,"minDate", function(p) {
+        var minDate = getParam(req, "minDate", function(p) {
           return p;
         }, "2014-01-01");
 
-        var maxDate = getParam(req,"maxDate", function(p) {
+        var maxDate = getParam(req, "maxDate", function(p) {
           return p;
         }, "now");
 
-        var dateInterval = getParam(req,"dateInterval", function(p) {
+        var dateInterval = getParam(req, "dateInterval", function(p) {
           return p;
         }, "year");
 
-        var inverted = getParam(req,"inverted", function(p) {
+        var inverted = getParam(req, "inverted", function(p) {
           return p === "true";
         }, false);
 
@@ -361,7 +360,7 @@ module.exports = function(app, config) {
         var filt = {
           "range": rf
         };
-        if (recordset) {
+        if(recordset) {
           filt = {
             "and": [
               {
@@ -378,7 +377,7 @@ module.exports = function(app, config) {
 
         var internal_aggs;
 
-        if (t == "fields" || t == "search") {
+        if(t == "fields" || t == "search") {
           internal_aggs = {
             "seen": {
               "sum": {
@@ -406,7 +405,7 @@ module.exports = function(app, config) {
               }
             }
           };
-        } else if (t == "api" || t == "digest") {
+        } else if(t == "api" || t == "digest") {
           internal_aggs = {
             "records": {
               "max": {
@@ -427,7 +426,7 @@ module.exports = function(app, config) {
           return;
         }
 
-        if (inverted) {
+        if(inverted) {
           query.aggs = {
             "fdh": {
               "filter": filt,
@@ -489,7 +488,6 @@ module.exports = function(app, config) {
       } catch (e) {
         res.status(400).json(e);
         next();
-        return;
       }
     }
   };

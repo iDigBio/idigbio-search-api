@@ -158,7 +158,7 @@ describe('Home', function() {
       it('should accept post', function(done) {
         request(app.server)
           .post("/idigbio/records/_search")
-          .send({"size":1})
+          .send({"size": 1})
           .expect('Content-Type', /json/)
           .expect(200)
           .end(function(error, response) {

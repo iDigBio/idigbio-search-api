@@ -4,7 +4,7 @@ var should = require('chai').should();  // eslint-disable-line no-unused-vars
 var request = require('supertest');
 
 var app = require('../app.js');
-var config = app.config;
+
 
 describe('Mapping', function() {
   this.timeout(30000);
@@ -353,7 +353,7 @@ describe('Mapping', function() {
 
     });
     it('should have values in data even if points are not styled', function(done) {
-      var q = {"stateprovince": "florida","scientificname":{"type":"missing"}};
+      var q = {"stateprovince": "florida", "scientificname": {"type": "missing"}};
       request(app.server)
         .get("/v2/mapping/")
         .query({rq: JSON.stringify(q), type: "geohash"})
