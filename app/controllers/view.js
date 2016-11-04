@@ -15,7 +15,7 @@ module.exports = function(app, config) {
       var t = req.params.t || "_all";
       var uuid = req.params.uuid;
 
-      if(t == "media") {
+      if(t === "media") {
         t = "mediarecords";
       }
 

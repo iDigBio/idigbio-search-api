@@ -118,7 +118,7 @@ module.exports = function(app, config) {
     }
 
     Object.keys(b).forEach(function(k) {
-      if(k.slice(0, 4) == "top_") {
+      if(k.slice(0, 4) === "top_") {
         var ok = k.slice(4);
         bv[ok] = {};
         b[k].buckets.forEach(function(bk) {
@@ -184,7 +184,7 @@ module.exports = function(app, config) {
         b.dh.buckets.forEach(function(dhb) {
           var inner = {};
           Object.keys(dhb).forEach(function(f) {
-            if(f != "key" && f != "doc_count" && f != "key_as_string") {
+            if(f !== "key" && f !== "doc_count" && f !== "key_as_string") {
               inner[f] = dhb[f]["value"];
               if(inner[f] == null) {
                 inner[f] = 0;
@@ -206,7 +206,7 @@ module.exports = function(app, config) {
         b.rs.buckets.forEach(function(rsb) {
           var inner = {};
           Object.keys(rsb).forEach(function(f) {
-            if(f != "key" && f != "doc_count") {
+            if(f !== "key" && f !== "doc_count") {
               inner[f] = rsb[f]["value"];
               if(inner[f] == null) {
                 inner[f] = 0;

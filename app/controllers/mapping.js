@@ -113,10 +113,10 @@ module.exports = function(app, config) {
 
     var default_color = "black";
 
-    if(map_def.type == "geohash") {
+    if(map_def.type === "geohash") {
       var max_bucket_value = 1;
       try {
-        if(map_def.style.styleOn == "sd.value") {
+        if(map_def.style.styleOn === "sd.value") {
           var gh_buckets = body.aggregations.ggh.f.gh.buckets;
           for(var i = 0; i < gh_buckets.length; i++) {
             if(max_bucket_value < gh_buckets[i].sd.value) {
@@ -129,7 +129,7 @@ module.exports = function(app, config) {
       } catch (e) {}
 
 
-      if(_.isArray(map_def.style.scale) && map_def.style.scale.length == 1) {
+      if(_.isArray(map_def.style.scale) && map_def.style.scale.length === 1) {
         default_color = map_def.style.scale[0];
       }
 
@@ -170,7 +170,7 @@ module.exports = function(app, config) {
     } else {
       var colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
 
-      if(_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length == 1) {
+      if(_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1) {
         default_color = map_def.style.pointScale[0];
       }
 
@@ -274,7 +274,7 @@ module.exports = function(app, config) {
                          },
                          "properties": getGeohashProps(bucket)
                        }));
-                       if(map_def.style.styleOn == "sd.value") {
+                       if(map_def.style.styleOn === "sd.value") {
                          csv_string += bucket.key + "," + bucket.sd.value + ",'" + f.geometry().toJSON({
                            transform: trans
                          }) + "'\n";
@@ -636,7 +636,7 @@ module.exports = function(app, config) {
 
     var response_type = req.params.t;
 
-    if(req.params.y.slice(-5) == ".grid") {
+    if(req.params.y.slice(-5) === ".grid") {
       response_type = "grid." + response_type;
     }
 
@@ -828,7 +828,7 @@ module.exports = function(app, config) {
               "field": "geopoint",
             }
           });
-          if(type == 'points') {
+          if(type === 'points') {
             if(z < 4) {
               pdist = 10;
             } else if(z >= 4 && z < 7) {
@@ -894,7 +894,7 @@ module.exports = function(app, config) {
               next(err);
             } else {
               var links, extra;
-              if(type == 'points') {
+              if(type === 'points') {
                 extra = {
                   "radius": {
                     "lat": lat,

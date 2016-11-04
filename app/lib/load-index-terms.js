@@ -51,13 +51,13 @@ module.exports = function(app, config) {
         var root = config.indexterms[type];
 
         // Don't try to validate terms with wildcards.
-        if(term.indexOf("*") != -1) {
+        if(term.indexOf("*") !== -1) {
           var te = true;
         } else {
           // Use every instead of forEach to get early termination
           var te = term_parts.every(function(term_part, i) {
             if(root[term_part]) {
-              if(i == (term_parts.length - 1)) {
+              if(i === (term_parts.length - 1)) {
                 return true;
               } else {
                 root = root[term_part];

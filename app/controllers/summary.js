@@ -377,7 +377,7 @@ module.exports = function(app, config) {
 
         var internal_aggs;
 
-        if(t == "fields" || t == "search") {
+        if(t === "fields" || t === "search") {
           internal_aggs = {
             "seen": {
               "sum": {
@@ -405,7 +405,7 @@ module.exports = function(app, config) {
               }
             }
           };
-        } else if(t == "api" || t == "digest") {
+        } else if(t === "api" || t === "digest") {
           internal_aggs = {
             "records": {
               "max": {

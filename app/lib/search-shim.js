@@ -22,7 +22,7 @@ module.exports = function(app, config) {
         seen_payload = {};
     if(config.ENV !== "test") {
       try {
-        if(statsInfo["type"] == "search") {
+        if(statsInfo["type"] === "search") {
 
           response.aggregations.rs.buckets.forEach(function(b) {
             search_payload[b["key"]] = b["doc_count"];
@@ -34,11 +34,11 @@ module.exports = function(app, config) {
 
           payload["seen_payload"] = seen_payload;
           payload["search_payload"] = search_payload;
-        } else if(statsInfo["type"] == "mapping") {
+        } else if(statsInfo["type"] === "mapping") {
           response.aggregations.rs.buckets.forEach(function(b) {
             payload[b["key"]] = b["doc_count"];
           });
-        } else if(statsInfo["type"] == "view") {
+        } else if(statsInfo["type"] === "view") {
           if(response.hits.hits.length > 0) {
             query = "view";
             payload[response.hits.hits[0]._id] = response.hits.hits[0]._source.recordset;
@@ -94,8 +94,8 @@ module.exports = function(app, config) {
     return function(index, type, op, query, cb, statsInfo) {
       var h = hasher.hash("sha256", [index, type, op, query]);
 
-      if(op == "_count") {
-        if(_.keys(query).length == 0) {
+      if(op === "_count") {
+        if(_.keys(query).length === 0) {
           query = {
             query: {
               match_all: {}
@@ -123,7 +123,7 @@ module.exports = function(app, config) {
           body: query_only
         };
 
-        if(type == "_all") {
+        if(type === "_all") {
           delete options.type;
         }
 

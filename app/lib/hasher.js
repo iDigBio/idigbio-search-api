@@ -36,9 +36,9 @@ var hash = function(hash_type, data, options) {
     ks.forEach(function(k) {
       s += k + hash(hash_type, data[k], options);
     });
-  } else if(typeof data == "undefined") {
+  } else if(typeof data === "undefined") {
     s = "undefined";
-  } else if(typeof data == "boolean") {
+  } else if(typeof data === "boolean") {
     if(data) {
       s = "true";
     } else {

@@ -4,7 +4,6 @@ var request = require('request');
 
 module.exports = function(app, config) {
   var searchShim = require("../lib/search-shim.js")(app, config);
-
   var getSubKeys = require("../lib/load-index-terms.js")(app, config).getSubKeys;
 
   return {
@@ -63,7 +62,7 @@ module.exports = function(app, config) {
     indexFields: function(req, res, next) {
       var t = req.params.t;
 
-      if(t == "media") {
+      if(t === "media") {
         t = "mediarecords";
       }
 
