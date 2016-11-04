@@ -1,7 +1,6 @@
 "use strict";
 
 var _ = require('lodash');
-var async = require('async');
 
 module.exports = function(app, config) {
   var searchShim = require("../lib/search-shim.js")(app, config);
@@ -10,8 +9,8 @@ module.exports = function(app, config) {
     var rv = {};
     var props = mappingDict["properties"];
     Object.keys(props).forEach(function(key) {
-      if(props[key].type) {
-        var typ = props[key].type;
+      var typ = props[key].type;
+      if(typ) {
         // Can't decide if notifying of analyzer status is a good thing or not.
         // if (props[key].analyzer && props[key].analyzer === "keyword") {
         //     typ = "keyword";
@@ -30,45 +29,39 @@ module.exports = function(app, config) {
   return {
     getSubKeys: getSubKeys,
     loadIndexTerms: function(cb) {
-      searchShim(config.search.index, "_all", "_mapping", undefined, function(err, mapping) {
-        var resp = {};
+      searchShim(config.search.index, "_all", "_mapping", null, function(err, mapping) {
+        if(err) {
+          if(cb) { cb(err); }
+          return;
+        }
         _.keys(mapping).forEach(function(index) {
           _.keys(mapping[index]["mappings"]).forEach(function(t) {
             config.indexterms[t] = getSubKeys(mapping[index]["mappings"][t], "");
           });
         });
 
-        if(cb) {
-          cb();
-        }
+        if(cb) { cb(); }
       });
     },
     checkTerms: function(type, term_list, only_missing) {
       var results = {};
+      var root = config.indexterms[type];
 
       term_list.forEach(function(term) {
-        var term_parts = term.split(".");
-        var root = config.indexterms[type];
+        var termParts = term.split(".");
 
         // Don't try to validate terms with wildcards.
-        if(term.indexOf("*") !== -1) {
-          var te = true;
-        } else {
-          // Use every instead of forEach to get early termination
-          var te = term_parts.every(function(term_part, i) {
-            if(root[term_part]) {
-              if(i === (term_parts.length - 1)) {
-                return true;
-              } else {
-                root = root[term_part];
+        var te  = term.indexOf("*") !== -1 ||
+            termParts.every(function(termPart, i) {
+              if(root[termPart]) {
+                if(i === (termParts.length - 1)) {
+                  return true;
+                }
+                root = root[termPart];
                 return true;
               }
-            } else {
               return false;
-            }
-          });
-        }
-
+            });
         if(only_missing) {
           if(!te) {
             results[term] = te;
