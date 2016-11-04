@@ -2,7 +2,7 @@ var _ = require("lodash");
 
 module.exports = function(app, config) {
   return function(req, res, next) {
-    if(process.env.NODE_ENV == "test") {
+    if(config.ENV === "test") {
       next();
       return;
     }

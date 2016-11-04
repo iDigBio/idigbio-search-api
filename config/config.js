@@ -9,6 +9,8 @@ var config = {
   GEN_MOCK: process.env.GEN_MOCK === "true",
   CLUSTER: process.env.CLUSTER !== "false",
   CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || 10,
+  CI: process.env.CI === "true",
+
   port: 19196,
   search: {
     server: "http://c18node2-crn.acis.ufl.edu:9200",
@@ -41,10 +43,10 @@ var config = {
   cacheTimeout: 60 * 60
 };
 
-if(process.env.NODE_ENV === "prod") {
+if(config.ENV === "prod") {
   config.redis.hostname = "idb-redis-search-prod.acis.ufl.edu";
   config.search.useEsClient = true;
-} else if(process.env.NODE_ENV === "beta") {
+} else if(config.ENV === "beta") {
   config.redis.hostname = "idb-redis-search-beta.acis.ufl.edu";
   config.search.useEsClient = true;
 

@@ -10,7 +10,7 @@ module.exports = function(app, config) {
   app.use(compress());
   app.set('trust proxy', ['loopback', 'linklocal', 'uniquelocal']);
   app.use(cors());
-  if(process.env.NODE_ENV != "test") {
+  if(config.ENV !== "test") {
     app.use(morgan('combined'));
   }
   app.use(bodyParser.urlencoded({ extended: false }));

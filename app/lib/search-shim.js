@@ -51,7 +51,7 @@ module.exports = function(app, config) {
             record_type: statsInfo["recordtype"],
             ip: statsInfo["ip"],
             query: query,
-            source: "api-" + process.env.NODE_ENV,
+            source: "api-" + config.ENV,
             payload: payload
           };
 
@@ -70,7 +70,7 @@ module.exports = function(app, config) {
     }
   };
 
-  if(process.env.CI == "true") {
+  if(config.CI) {
     return function(index, type, op, query, cb, statsInfo) {
       var h = hasher.hash("sha256", [index, type, op, query]);
       try {
