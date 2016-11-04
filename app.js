@@ -1,4 +1,6 @@
 /* eslint vars-on-top: "off" */
+/* eslint global-require: "off" */
+/* eslint no-process-exit: "off" */
 
 'use strict';
 
@@ -36,7 +38,7 @@ function startThisProcess() {
   });
 }
 
-function registerGracefulShutdown(signal, server) {
+function registerGracefulShutdown(signal) {
   process.on(signal, function() {
     console.log("Received shutdown signal, attempt exit");
     server.close(function () {
@@ -48,15 +50,14 @@ function registerGracefulShutdown(signal, server) {
 
 if (config.ENV === "test" || !config.CLUSTER) {
   server = startThisProcess();
-  registerGracefulShutdown('SIGTERM', server);
-  registerGracefulShutdown('SIGINT', server);
+  registerGracefulShutdown('SIGTERM');
+  registerGracefulShutdown('SIGINT');
 } else {
   var cluster = require('cluster');
-  var numWorkers = config.CLUSTER_WORKERS;
 
   if (cluster.isMaster) {
     // Fork workers.
-    _.times(numWorkers, function() { cluster.fork(); });
+    _.times(config.CLUSTER_WORKERS, function() { cluster.fork(); });
 
     cluster.on('exit', function(deadWorker, code, signal) {
       // Restart the worker
@@ -70,8 +71,7 @@ if (config.ENV === "test" || !config.CLUSTER) {
       console.log('worker ' + oldPID + ' died.');
       console.log('worker ' + newPID + ' born.');
     });
-  }
-  else {
+  } else {
     server = startThisProcess();
   }
 }
