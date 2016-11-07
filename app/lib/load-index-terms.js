@@ -3,7 +3,7 @@
 var _ = require('lodash');
 
 module.exports = function(app, config) {
-  var searchShim = require("../lib/search-shim.js")(app, config);
+  var searchShimProm = require("../lib/search-shim-promise.js")(app, config);
 
   var getSubKeys = function(mappingDict, fnPrefix) {
     var rv = {};
@@ -26,51 +26,46 @@ module.exports = function(app, config) {
     return rv;
   };
 
-  return {
-    getSubKeys: getSubKeys,
-    loadIndexTerms: function(cb) {
-      searchShim(config.search.index, "_all", "_mapping", null, function(err, mapping) {
-        if(err) {
-          if(cb) { cb(err); }
-          return;
-        }
-        _.keys(mapping).forEach(function(index) {
-          _.keys(mapping[index]["mappings"]).forEach(function(t) {
-            config.indexterms[t] = getSubKeys(mapping[index]["mappings"][t], "");
+  var loadIndexTerms = function() {
+    return searchShimProm(config.search.index, "_all", "_mapping", null)
+      .then(function(mapping) {
+        _.forOwn(mapping, function(index, indexName) {
+          _.forOwn(index["mappings"], function(mappingDict, t) {
+            config.indexterms[t] = getSubKeys(mappingDict, "");
           });
         });
-
-        if(cb) { cb(); }
+        return config.indexterms;
       });
-    },
-    checkTerms: function(type, term_list, only_missing) {
-      var results = {};
-      var root = config.indexterms[type];
+  };
+  var checkTerms =function(type, term_list, only_missing) {
+    var results = {};
+    var root = config.indexterms[type];
 
-      term_list.forEach(function(term) {
-        var termParts = term.split(".");
+    term_list.forEach(function(term) {
+      var termParts = term.split(".");
 
-        // Don't try to validate terms with wildcards.
-        var te  = term.indexOf("*") !== -1 ||
-            termParts.every(function(termPart, i) {
-              if(root[termPart]) {
-                if(i === (termParts.length - 1)) {
-                  return true;
-                }
-                root = root[termPart];
+      // Don't try to validate terms with wildcards.
+      var te  = term.indexOf("*") !== -1 ||
+          termParts.every(function(termPart, i) {
+            if(root[termPart]) {
+              if(i === (termParts.length - 1)) {
                 return true;
               }
-              return false;
-            });
-        if(only_missing) {
-          if(!te) {
-            results[term] = te;
-          }
-        } else {
+              root = root[termPart];
+              return true;
+            }
+            return false;
+          });
+      if(only_missing) {
+        if(!te) {
           results[term] = te;
         }
-      });
-      return results;
-    }
+      } else {
+        results[term] = te;
+      }
+    });
+    return results;
   };
+
+  return {getSubKeys, loadIndexTerms, checkTerms};
 };
