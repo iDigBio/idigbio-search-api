@@ -6,7 +6,8 @@
 var _ = require('lodash'),
     express = require('express'),
     config = require('./config/config'),
-    http = require('http');
+    http = require('http'),
+    timer = require('./app/lib/timer');
 http.globalAgent.maxSockets = 100;
 
 var app = express(),
@@ -19,20 +20,27 @@ require('./config/routes')(app, config);
 var loadRecordsets = require("./app/lib/load-recordsets.js")(app, config);
 var loadIndexTerms = require("./app/lib/load-index-terms.js")(app, config).loadIndexTerms;
 
-function loadRSDelay() {
-    loadRecordsets();
-    setTimeout(loadRSDelay, 1000 * 60 * 60);
-}
+var jobs = [
+  {job: loadRecordsets, time: 1000 * 60 * 60},
+  {job: loadIndexTerms, time: 1000 * 60 * 60}
+];
 
-function loadITDelay() {
-    loadIndexTerms();
-    setTimeout(loadITDelay, 1000 * 60 * 60);
-}
+var startJobs = function() {
+  _.each(jobs, function(jobDesc) {
+    var job, time;
+    ({job, time} = jobDesc);
+    var repeater = function() {
+      timer(job)()
+        .then(() => setTimeout(repeater, time));
+    };
+    setImmediate(repeater);
+  });
+};
+
 
 function startThisProcess() {
   return app.listen(config.port, function() {
-    loadRSDelay();
-    loadITDelay();
+    startJobs();
     console.log('Express server listening on port ' + server.address().port);
   });
 }

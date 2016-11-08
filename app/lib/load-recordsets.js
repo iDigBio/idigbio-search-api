@@ -5,7 +5,7 @@ var request = require('request');
 module.exports = function(app, config) {
   var searchShim = require("../lib/search-shim.js")(app, config);
 
-  return function(cb) {
+  return function loadRecordsets(cb) {
     searchShim(config.search.index, "recordsets", "_search", {size: config.maxRecordsets}, function(err, body) {
       try {
         body.hits.hits.forEach(function(hit) {
