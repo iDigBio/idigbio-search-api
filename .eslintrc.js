@@ -227,7 +227,7 @@ module.exports = {
       "never"
     ],
     "valid-jsdoc": "error",
-    "vars-on-top": "error",
+    "vars-on-top": "off",
     "wrap-iife": "error",
     "wrap-regex": "error",
     "yield-star-spacing": "error",
