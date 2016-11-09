@@ -155,7 +155,7 @@ module.exports = {
     "no-script-url": "error",
     "no-self-compare": "error",
     "no-sequences": "error",
-    "no-shadow": "error",
+    "no-shadow": "warn",
     "no-shadow-restricted-names": "error",
     "no-spaced-func": "error",
     "no-sync": "error",
