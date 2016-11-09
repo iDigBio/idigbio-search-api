@@ -5,7 +5,7 @@ var _ = require('lodash');
 module.exports = function(app, config) {
   var searchShimProm = require("../lib/search-shim-promise.js")(app, config);
 
-  var getSubKeys = function(mappingDict, fnPrefix) {
+  function getSubKeys(mappingDict, fnPrefix) {
     var rv = {};
     var props = mappingDict["properties"];
     Object.keys(props).forEach(function(key) {
@@ -24,9 +24,9 @@ module.exports = function(app, config) {
       }
     });
     return rv;
-  };
+  }
 
-  var loadIndexTerms = function() {
+  function loadIndexTerms() {
     return searchShimProm(config.search.index, "_all", "_mapping", null)
       .then(function(mapping) {
         _.forOwn(mapping, function(index, indexName) {
@@ -36,8 +36,9 @@ module.exports = function(app, config) {
         });
         return config.indexterms;
       });
-  };
-  var checkTerms =function(type, term_list, only_missing) {
+  }
+
+  function checkTerms(type, term_list, only_missing) {
     var results = {};
     var root = config.indexterms[type];
 
@@ -65,7 +66,7 @@ module.exports = function(app, config) {
       }
     });
     return results;
-  };
+  }
 
   return {getSubKeys, loadIndexTerms, checkTerms};
 };
