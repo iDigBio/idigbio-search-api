@@ -4,7 +4,7 @@ var request = require('request');
 
 module.exports = function(app, config) {
   var searchShim = require("../lib/search-shim.js")(app, config);
-  var getSubKeys = require("../lib/load-index-terms.js")(app, config).getSubKeys;
+  var loadIndexTerms = require("../lib/load-index-terms.js")(app, config);
 
   return {
     index: function(req, res, next) {
@@ -69,7 +69,7 @@ module.exports = function(app, config) {
       searchShim(config.search.index, t, "_mapping", undefined, function(err, mapping) {
         var resp = {};
         Object.keys(mapping).forEach(function(index) {
-          resp = getSubKeys(mapping[index].mappings[t], "");
+          resp = loadIndexTerms.getSubKeys(mapping[index].mappings[t], "");
         });
         if(err) {
           next(err);
@@ -79,5 +79,6 @@ module.exports = function(app, config) {
         }
       });
     }
+
   };
 };

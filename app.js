@@ -17,7 +17,7 @@ var app = express(),
 require('./config/express')(app, config);
 require('./config/routes')(app, config);
 
-var loadRecordsets = require("./app/lib/load-recordsets.js")(app, config);
+var loadRecordsets = require("./app/lib/recordsets.js")(app, config).loadAll;
 var loadIndexTerms = require("./app/lib/load-index-terms.js")(app, config).loadIndexTerms;
 
 var jobs = [
@@ -27,11 +27,9 @@ var jobs = [
 
 var startJobs = function() {
   _.each(jobs, function(jobDesc) {
-    var job, time;
-    ({job, time} = jobDesc);
     var repeater = function() {
-      timer(job)()
-        .then(() => setTimeout(repeater, time));
+      timer(jobDesc.job)()
+        .then(() => setTimeout(repeater, jobDesc.time));
     };
     setImmediate(repeater);
   });
@@ -55,14 +53,14 @@ function registerGracefulShutdown(signal) {
   });
 }
 
-if (config.ENV === "test" || !config.CLUSTER) {
+if(config.ENV === "test" || !config.CLUSTER) {
   server = startThisProcess();
   registerGracefulShutdown('SIGTERM');
   registerGracefulShutdown('SIGINT');
 } else {
   var cluster = require('cluster');
 
-  if (cluster.isMaster) {
+  if(cluster.isMaster) {
     // Fork workers.
     _.times(config.CLUSTER_WORKERS, function() { cluster.fork(); });
 

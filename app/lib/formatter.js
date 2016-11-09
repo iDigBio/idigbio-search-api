@@ -4,23 +4,21 @@ var _ = require("lodash");
 var async = require("async");
 
 module.exports = function(app, config) {
-  var loadRecordsets = require("../lib/load-recordsets.js")(app, config);
+  var getRecordset = require("../lib/recordsets.js")(app, config).get;
 
   function attribution(rss, cb) {
     async.mapSeries(rss, function(bucket, acb) {
-      var rs = {
-        "uuid": bucket.key,
+      var rsid = bucket.key;
+      var rsd = {
+        "uuid": rsid,
         "itemCount": bucket.doc_count
       };
-      if(config.recordsets[bucket.key]) {
-        _.defaults(rs, config.recordsets[bucket.key]);
-        acb(null, rs);
-      } else {
-        loadRecordsets(function() {
-          _.defaults(rs, config.recordsets[bucket.key]);
-          acb(null, rs);
+      getRecordset(rsid)
+        .catch(function() { return null; })
+        .then(function(rs) {
+          _.defaults(rsd, rs);
+          acb(null, rsd);
         });
-      }
     }, function(err, results) {
       cb(results);
     });

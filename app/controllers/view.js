@@ -3,7 +3,7 @@
 var _ = require("lodash");
 
 module.exports = function(app, config) {
-  var loadRecordsets = require("../lib/load-recordsets.js")(app, config);
+  var getRecordset = require("../lib/recordsets.js")(app, config).get;
   var searchShim = require("../lib/search-shim.js")(app, config);
 
   return {
@@ -46,22 +46,18 @@ module.exports = function(app, config) {
           };
 
           if(body._source.recordset) {
-            var rs = {
-              "uuid": body._source.recordset
+            var rsid = body._source.recordset;
+            var rsd = {
+              "uuid": rsid
             };
-            if(config.recordsets[body._source.recordset]) {
-              _.defaults(rs, config.recordsets[body._source.recordset]);
-              rb.attribution = rs;
-              res.json(rb);
-              next();
-            } else {
-              loadRecordsets(function() {
-                _.defaults(rs, config.recordsets[body._source.recordset]);
+            getRecordset(rsid)
+              .catch(function() { return null; })
+              .then(function(rs) {
+                _.defaults(rsd, rs);
                 rb.attribution = rs;
                 res.json(rb);
                 next();
               });
-            }
           } else {
             res.json(rb);
             next();

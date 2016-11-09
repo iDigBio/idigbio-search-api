@@ -8,7 +8,7 @@ module.exports = function(app, config) {
   var mapping = require('../app/controllers/mapping')(app, config);
   var view = require('../app/controllers/view')(app, config);
   var summary = require('../app/controllers/summary')(app, config);
-
+  var manage = require('../app/controllers/manage')(app, config);
   var cache = require('../app/lib/cache.js')(app, config);
 
   // app.use(function(req, res, next){
@@ -114,6 +114,16 @@ module.exports = function(app, config) {
     .get(mapping.mapPoints);
   app.route('/v2/mapping/:s/:z/:x/:y.:t')
     .get(mapping.getMapTile);
+
+  app.route('/manage/recordsets/')
+    .get(manage.listRecordsets);
+  app.route('/manage/recordsets/reload')
+    .get(manage.reloadRecordsets);
+  app.route('/manage/indexterms/')
+    .get(manage.listIndexTerms);
+  app.route('/manage/indexterms/reload')
+    .get(manage.reloadIndexTerms);
+
 
   app.use(function(err, req, res, next) {
     if(err) {
