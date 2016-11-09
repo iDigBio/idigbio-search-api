@@ -20,7 +20,7 @@ var config = {
         sniffOnStart: false,
         sniffOnConnectionFault: true
     },
-    maxRecordsets: 1000,
+    maxRecordsets: 10000,
     defaultLimit: 100,
     maxLimit: 5000,
     recordsets: {},
