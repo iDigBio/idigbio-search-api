@@ -2,6 +2,10 @@ module.exports = {
   "env": {
     "node": true
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+  },
+
   "extends": "eslint:recommended",
   "rules": {
     "accessor-pairs": "error",
@@ -82,7 +86,7 @@ module.exports = {
     "max-params": "error",
     "max-statements": "warn",
     "max-statements-per-line": ["error", {"max": 2}],
-     //If it doesn't fit on one line easily, don't use a ternary
+    //If it doesn't fit on one line easily, don't use a ternary
     "multiline-ternary":  ["error", "never"],
     "new-cap": "error",
     "new-parens": "error",
@@ -100,7 +104,7 @@ module.exports = {
     "no-div-regex": "error",
     "no-duplicate-imports": "error",
     "no-else-return": "error",
-    "no-empty-function": "error",
+    "no-empty-function": "warn",
     "no-eq-null": "error",
     "no-eval": "error",
     "no-extend-native": "error",

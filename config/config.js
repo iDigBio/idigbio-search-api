@@ -16,7 +16,6 @@ var config = {
     server: "http://c18node2-crn.acis.ufl.edu:9200",
     index: "idigbio-2.10.3",
     statsIndex: "stats-2.5.0",
-    useEsClient: true
   },
   elasticsearch: {
     hosts: [
@@ -45,10 +44,8 @@ var config = {
 
 if(config.ENV === "prod") {
   config.redis.hostname = "idb-redis-search-prod.acis.ufl.edu";
-  config.search.useEsClient = true;
 } else if(config.ENV === "beta") {
   config.redis.hostname = "idb-redis-search-beta.acis.ufl.edu";
-  config.search.useEsClient = true;
 
   // config.elasticsearch.hosts = [
   //    "c17node52.acis.ufl.edu:9200",
