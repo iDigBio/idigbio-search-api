@@ -82,7 +82,8 @@ module.exports = {
     "max-params": "error",
     "max-statements": "warn",
     "max-statements-per-line": ["error", {"max": 2}],
-    "multiline-ternary": "error",
+     //If it doesn't fit on one line easily, don't use a ternary
+    "multiline-ternary":  ["error", "never"],
     "new-cap": "error",
     "new-parens": "error",
     "newline-after-var": "off",
@@ -156,7 +157,7 @@ module.exports = {
     "no-sync": "error",
     "no-tabs": "error",
     "no-template-curly-in-string": "error",
-    "no-ternary": "error",
+    "no-ternary": "off",
     "no-throw-literal": "error",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
