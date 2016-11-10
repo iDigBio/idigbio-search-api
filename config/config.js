@@ -30,7 +30,7 @@ var config = {
     sniffOnStart: false,
     sniffOnConnectionFault: true
   },
-  maxRecordsets: 1000,
+  maxRecordsets: 10000,
   defaultLimit: 100,
   maxLimit: 5000,
   recordsets: {},
@@ -57,7 +57,6 @@ if(config.ENV === "prod") {
   //    "c17node55.acis.ufl.edu:9200",
   //    "c17node56.acis.ufl.edu:9200"
   // ];
-
   // config.search.index = "idigbio-2.10.3";
 }
 
