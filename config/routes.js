@@ -104,7 +104,7 @@ module.exports = function(app, config) {
     .get(mapping.createMap)
     .post(mapping.createMap);
 
-  app.use('/v2/mapping/:s', cache);
+  app.use('/v2/mapping/:s', cache.middleware);
 
   app.route('/v2/mapping/:s')
     .get(mapping.getMap);

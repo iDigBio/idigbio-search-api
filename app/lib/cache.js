@@ -1,14 +1,9 @@
 "use strict";
 
-var _ = require("lodash");
+var bluebird = require("bluebird");
 
 module.exports = function(app, config) {
-  return function(req, res, next) {
-    if(config.ENV === "test") {
-      next();
-      return;
-    }
-
+  let middleware = function(req, res, next) {
     // console.log("CHECK CACHE " + req.originalUrl)
     config.redis.client.hgetall("map_cache_" + req.originalUrl, function(err, result) {
       if(result) {
@@ -38,5 +33,35 @@ module.exports = function(app, config) {
         next();
       }
     });
+  };
+
+  if(config.ENV === "test") {
+    middleware = (req, res, next) => next();
+  }
+
+  const aredis = {
+    keys: bluebird.promisify(config.redis.client.keys, {
+      context: config.redis.client
+    }),
+    del: bluebird.promisify(config.redis.client.del, {
+      context: config.redis.client
+    })
+  };
+
+  var flush = function() {
+    return aredis.keys("map_cache_*")
+      .then(function(results) {
+        console.log("Found", results.length, "keys to clear");
+        return bluebird
+          .each(results, function(key) {
+            return aredis.del(key).then(function() {
+              console.log("Deleted", key);
+            });
+          });
+      });
+  };
+
+  return {
+    flush, middleware
   };
 };

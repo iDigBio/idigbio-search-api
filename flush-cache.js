@@ -1,14 +1,14 @@
-var config = require("./config/config.js");
-var async = require("async");
+"use strict";
 
-config.redis.client.keys("map_cache_*", function(err, results) {
-    console.log(results);
-    async.each(results, function(key, cb) {
-        config.redis.client.del(key, function(err, results) {
-            console.log(key);
-            cb();
-        });
-    }, function() {
-      process.exit();  // eslint-disable-line no-process-exit
-    });
-});
+var config = require("./config/config.js");
+
+var cache = require("./app/lib/cache")(null, config);
+
+cache.flush()
+  .then(function() {
+    process.exit(0);  // eslint-disable-line no-process-exit
+  })
+  .catch(function(err) {
+    console.error("Failed clearing cache:", err);
+    process.exit(1);  // eslint-disable-line no-process-exit
+  });
