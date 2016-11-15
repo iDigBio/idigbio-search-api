@@ -10,7 +10,7 @@
     "chroma-js": "^1.1.1",
     "compression": "^1.5.0",
     "cors": "^2.5.2",
-    "elasticsearch": "^11.0.0",
+    "elasticsearch": "^12.0.1",
     "express": "^4.12.2",
     "hashids": "^1.0.1",
     "hiredis": "^0.5.0",

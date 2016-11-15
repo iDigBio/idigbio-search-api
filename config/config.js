@@ -25,7 +25,7 @@ var config = {
       "c18node12.acis.ufl.edu:9200",
       "c18node14.acis.ufl.edu:9200"
     ],
-    apiVersion: "2.3",
+    apiVersion: "2.4",
     sniffOnStart: false,
     sniffOnConnectionFault: true
   },
