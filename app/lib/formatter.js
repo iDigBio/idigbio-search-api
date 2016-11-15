@@ -169,6 +169,7 @@ module.exports = function(app, config) {
   }
 
   function stats_hist_formatter(body, res, next, inverted) {
+    var rb = null;
     if(body.status === 400) {
       res.status(400).json({
         "error": "Bad Request"
@@ -178,7 +179,7 @@ module.exports = function(app, config) {
     }
 
     if(inverted) {
-      var rb = { "recordsets": {} };
+      rb = { "recordsets": {} };
       body.aggregations.fdh.rs.buckets.forEach(function(b) {
         var outer = {};
         b.dh.buckets.forEach(function(dhb) {
@@ -200,7 +201,7 @@ module.exports = function(app, config) {
         }
       });
     } else {
-      var rb = { "dates": {} };
+      rb = { "dates": {} };
       body.aggregations.fdh.dh.buckets.forEach(function(b) {
         var outer = {};
         b.rs.buckets.forEach(function(rsb) {
