@@ -4,9 +4,11 @@ var Promise = require('bluebird');
 
 module.exports = function(app, config) {
   var searchShimProm = require("../lib/search-shim-promise.js")(app, config);
+  var loading = null;
 
   function loadAll() {
-    return searchShimProm(config.search.index, "recordsets", "_search", {size: config.maxRecordsets})
+    if(loading) { return loading; }
+    loading = searchShimProm(config.search.index, "recordsets", "_search", {size: config.maxRecordsets})
       .then(function(body) {
         body.hits.hits.forEach(function(hit) {
           config.recordsets[hit._id] = {
@@ -25,7 +27,11 @@ module.exports = function(app, config) {
       })
       .catch(function(err) {
         console.error("Failed fetching recordsets", err);
+      })
+      .finally(function() {
+        loading = null;
       });
+    return loading;
   }
 
   function get(id) {
@@ -42,7 +48,14 @@ module.exports = function(app, config) {
         throw new Error("Can't find recordset: " + id);
       });
   }
+
   function clearcache() {
+    if(loading) {
+      console.warn("Clearing recordset caches while loading is underway.");
+      loading.then(function() {
+        config.recordsets = {};
+      });
+    }
     config.recordsets = {};
   }
 

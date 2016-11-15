@@ -4,6 +4,8 @@ var _ = require('lodash');
 var expect = require('chai').expect,    // eslint-disable-line no-unused-vars
     should = require('chai').should();  // eslint-disable-line no-unused-vars
 
+var bluebird = require('bluebird');
+
 var app = require('../app.js');
 var config = app.config;
 var litmod = require('../app/lib/load-index-terms')(app, config);
@@ -23,7 +25,7 @@ describe('Background jobs', function() {
     });
   });
 
-  describe('load-recordsets', function() {
+  describe('recordsets', function() {
     it('should loadAll successfully', function(done) {
       rsmod.loadAll()
         .then(function(recordsets) {
@@ -49,6 +51,22 @@ describe('Background jobs', function() {
         })
         .then(function(rs) {
           expect(rs).to.be.an('object');
+        })
+        .finally(done);
+    });
+
+    it('should collapse two requests to one', function(done) {
+      rsmod.clearcache();
+      bluebird.all([
+        rsmod.get('d5c32031-231f-4213-b0f1-2dc4bbf711a0'),
+        rsmod.get('d5c32031-231f-4213-b0f1-2dc4bbf711a0')
+      ])
+        .spread(function(rs1, rs2) {
+          expect(rs1).to.be.an('object');
+          expect(rs2).to.be.an('object');
+          //these should be the same object if they came from the same loadall
+          rs1.sigil = true;
+          expect(rs2.sigil).to.be.true;
         })
         .finally(done);
     });
