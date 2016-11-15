@@ -1,27 +1,27 @@
 "use strict";
 
 var _ = require("lodash");
-var async = require("async");
+var bluebird = require("bluebird");
 
 module.exports = function(app, config) {
   var getRecordset = require("../lib/recordsets.js")(app, config).get;
 
   function attribution(rss, cb) {
-    async.mapSeries(rss, function(bucket, acb) {
-      var rsid = bucket.key;
-      var rsd = {
-        "uuid": rsid,
-        "itemCount": bucket.doc_count
-      };
-      getRecordset(rsid)
-        .catch(function() { return null; })
-        .then(function(rs) {
-          _.defaults(rsd, rs);
-          acb(null, rsd);
-        });
-    }, function(err, results) {
-      cb(results);
-    });
+    bluebird
+      .map(rss, function(bucket) {
+        var rsid = bucket.key;
+        return getRecordset(rsid)
+            .catch(function() { return null; })
+            .then(function(rs) {
+              return _.defaults({
+                "uuid": rsid,
+                "itemCount": bucket.doc_count
+              }, rs);
+            });
+      })
+      .then(function(results) {
+        cb(results);
+      });
   }
 
   function basic(body, res, next, extra) {

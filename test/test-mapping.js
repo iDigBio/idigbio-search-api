@@ -1,6 +1,7 @@
 "use strict";
 
-var should = require('chai').should();  // eslint-disable-line no-unused-vars
+var should = require('chai').should(),  // eslint-disable-line no-unused-vars
+    expect = require('chai').expect;    // eslint-disable-line no-unused-vars
 var request = require('supertest');
 
 var app = require('../app.js');
@@ -23,8 +24,8 @@ describe('Mapping', function() {
             response.body.should.have.property("shortCode");
             response.body.should.have.property("tiles");
             response.body.should.have.property("geojson");
-            response.body.should.have.property("points");
-            response.body.should.have.property("attribution");
+            expect(response.body.points).to.be.a('string');
+            expect(response.body.attribution).to.be.an('Array');
             response.body.should.have.property("mapDefinition");
             done();
           }
