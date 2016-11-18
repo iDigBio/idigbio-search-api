@@ -1,5 +1,3 @@
-"use strict";
-
 var crypto = require('crypto');
 var _ = require('lodash');
 var util = require('util');
@@ -37,7 +35,6 @@ var hash = function(hash_type, data, options) {
   } else if(typeof data === "boolean") {
     s = data ? "true" : "false";
   } else {
-    console.log(typeof data);
     s = JSON.stringify(data);
   }
 

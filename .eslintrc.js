@@ -3,7 +3,8 @@ module.exports = {
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
+    "sourceType": "module"
   },
 
   "extends": "eslint:recommended",
@@ -212,7 +213,7 @@ module.exports = {
     "rest-spread-spacing": "error",
     "semi": "error",
     "semi-spacing": "error",
-    "sort-imports": "error",
+    "sort-imports": "off",
     "sort-keys": "off",
     "sort-vars": "off",
     "space-before-blocks": ["error", "always"],

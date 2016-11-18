@@ -1,0 +1,1584 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2117278,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "bfd29604-c76c-4006-98ce-14c682e77d27",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fe51bced-93ce-45b2-b0c6-f7256719a07b",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "es",
+          "municipality": "linhares",
+          "phylum": "magnoliophyta",
+          "catalognumber": "14764",
+          "startdayofyear": 48,
+          "specificepithet": "?",
+          "continent": "américa do sul",
+          "uuid": "bfd29604-c76c-4006-98ce-14c682e77d27",
+          "basisofrecord": "preservedspecimen",
+          "collector": "biral, l.",
+          "institutioncode": "reserva natural vale (cvrd)",
+          "datemodified": "2016-05-12T21:21:08.159655+00:00",
+          "datecollected": "2014-02-17",
+          "etag": "1546f90499a239c834361a1bd91dd316ef14db2a",
+          "recordnumber": "943",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "scientificname": "? ?",
+          "hasMedia": false,
+          "data": {
+            "dwc:specificEpithet": "?",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Biral, L.",
+            "dwc:order": "Asterales",
+            "dwc:occurrenceID": "BRA:CVRD:CVRD:0000014764",
+            "dcterms:language": "pt",
+            "id": "BRA:CVRD:CVRD:0000014764",
+            "dwc:stateProvince": "ES",
+            "dwc:country": "BRASIL",
+            "dwc:collectionCode": "CVRD",
+            "dwc:verbatimLatitude": "19°08'06,7\"S",
+            "dcterms:rightsHolder": "CVRD - Herbário da Reserva Natural Vale",
+            "dwc:decimalLatitude": "-19.1351939999999985",
+            "dwc:occurrenceRemarks": "Entre o estacionamento e viveiro de mudas<ll>dwc_commonname:</ll>: Checar ?",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "?",
+            "dwc:continent": "América do Sul",
+            "dwc:family": "Asteraceae",
+            "dwc:municipality": "LINHARES",
+            "dwc:ownerInstitutionCode": "Reserva Natural Vale (CVRD)",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:institutionCode": "Reserva Natural Vale (CVRD)",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "14764",
+            "dcterms:type": "Collection",
+            "dwc:month": "02",
+            "dwc:decimalLongitude": "-40.0586669999999998",
+            "dwc:verbatimLongitude": "40°03'31,2\"W",
+            "dwc:datasetName": "CVRD - Herbário da Reserva Natural Vale",
+            "dwc:recordNumber": "943",
+            "dcterms:rights": "Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License.",
+            "dcterms:modified": "2016-04-29 15:50:05-03",
+            "dwc:scientificName": "? ?",
+            "dwc:day": "17",
+            "dwc:year": "2014"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "bra:cvrd:cvrd:0000014764",
+          "country": "brasil",
+          "geopoint": {
+            "lat": -19.135194,
+            "lon": -40.058667
+          },
+          "collectioncode": "cvrd",
+          "flags": [
+            "geopoint_datum_missing"
+          ],
+          "recordids": [
+            "fe51bced-93ce-45b2-b0c6-f7256719a07b\\bra:cvrd:cvrd:0000014764"
+          ],
+          "genus": "?",
+          "order": "asterales"
+        },
+        "sort": [
+          "?"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "6c80bd76-6651-41e8-b748-f0bc7ad0257d",
+        "_score": null,
+        "_source": {
+          "individualcount": 0,
+          "family": "asteraceae",
+          "recordset": "e7301984-8b46-4932-b670-21c231ae4c01",
+          "phylum": "magnoliophyta",
+          "catalognumber": "63994",
+          "collector": "pires, a.",
+          "uuid": "6c80bd76-6651-41e8-b748-f0bc7ad0257d",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "ufu",
+          "datemodified": "2015-10-20T13:30:06.505654+00:00",
+          "etag": "dbc855ff8f25fd98e20f739cbac9fa245b027a7d",
+          "recordnumber": "336",
+          "minelevation": 0,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "maxelevation": 0,
+          "scientificname": "?",
+          "hasMedia": false,
+          "data": {
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Pires, A.",
+            "dwc:individualCount": "0",
+            "dwc:occurrenceID": "BRA:UFU:HUFU:0000063994",
+            "dcterms:language": "pt",
+            "dcterms:rightsHolder": "HUFU - Herbarium Uberlandense",
+            "dwc:ownerInstitutionCode": "Universidade Federal de Uberlândia (UFU)",
+            "dwc:country": "?",
+            "dwc:collectionCode": "HUFU",
+            "id": "BRA:UFU:HUFU:0000063994",
+            "dwc:maximumElevationInMeters": "0",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "?",
+            "dwc:family": "Asteraceae",
+            "dwc:institutionCode": "UFU",
+            "dwc:catalogNumber": "63994",
+            "dcterms:type": "Collection",
+            "dwc:datasetName": "HUFU - Herbarium Uberlandense",
+            "dwc:recordNumber": "336",
+            "dcterms:rights": "Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License.",
+            "dwc:minimumElevationInMeters": "0",
+            "dcterms:modified": "2015-09-15 09:53:34-03",
+            "dwc:scientificName": "?"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "bra:ufu:hufu:0000063994",
+          "country": "?",
+          "dqs": 0.2222222222222222,
+          "collectioncode": "hufu",
+          "flags": [
+            "dwc_phylum_added",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "e7301984-8b46-4932-b670-21c231ae4c01\\bra:ufu:hufu:0000063994"
+          ],
+          "genus": "?",
+          "order": "asterales"
+        },
+        "sort": [
+          "?"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "d628a748-d8f7-4263-91f3-cb0f0282c47c",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fe51bced-93ce-45b2-b0c6-f7256719a07b",
+          "stateprovince": "es",
+          "municipality": "linhares",
+          "phylum": "magnoliophyta",
+          "catalognumber": "14480",
+          "startdayofyear": 220,
+          "specificepithet": "?",
+          "continent": "américa do sul",
+          "uuid": "d628a748-d8f7-4263-91f3-cb0f0282c47c",
+          "basisofrecord": "preservedspecimen",
+          "collector": "folli, d.a.",
+          "institutioncode": "reserva natural vale (cvrd)",
+          "datemodified": "2016-05-12T21:21:08.159655+00:00",
+          "datecollected": "2013-08-08",
+          "etag": "c6f63ab00d1e832ff7ef2726c70f95cf280857c4",
+          "recordnumber": "7096",
+          "minelevation": 15,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "maxelevation": 15,
+          "scientificname": "? ?",
+          "hasMedia": false,
+          "data": {
+            "dwc:specificEpithet": "?",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Folli, D.A.",
+            "dwc:order": "Asterales",
+            "dwc:occurrenceID": "BRA:CVRD:CVRD:0000014480",
+            "dcterms:language": "pt",
+            "id": "BRA:CVRD:CVRD:0000014480",
+            "dwc:stateProvince": "ES",
+            "dwc:country": "BRASIL",
+            "dwc:collectionCode": "CVRD",
+            "dcterms:rightsHolder": "CVRD - Herbário da Reserva Natural Vale",
+            "dwc:occurrenceRemarks": "Mata de aluvial na cabruca cacau.<ll>dwc_commonname:</ll>: Guaxumba doce",
+            "dwc:maximumElevationInMeters": "15",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "?",
+            "dwc:continent": "América do Sul",
+            "dwc:family": "Asteraceae",
+            "dwc:municipality": "LINHARES",
+            "dwc:ownerInstitutionCode": "Reserva Natural Vale (CVRD)",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:institutionCode": "Reserva Natural Vale (CVRD)",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "14480",
+            "dcterms:type": "Collection",
+            "dwc:month": "08",
+            "dwc:datasetName": "CVRD - Herbário da Reserva Natural Vale",
+            "dwc:recordNumber": "7096",
+            "dcterms:rights": "Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License.",
+            "dwc:minimumElevationInMeters": "15",
+            "dcterms:modified": "2016-04-29 15:50:05-03",
+            "dwc:scientificName": "? ?",
+            "dwc:day": "08",
+            "dwc:year": "2013"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "bra:cvrd:cvrd:0000014480",
+          "country": "brasil",
+          "dqs": 0.36507936507936506,
+          "collectioncode": "cvrd",
+          "recordids": [
+            "fe51bced-93ce-45b2-b0c6-f7256719a07b\\bra:cvrd:cvrd:0000014480"
+          ],
+          "genus": "?",
+          "order": "asterales"
+        },
+        "sort": [
+          "?"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "7f00b043-1b9e-464e-a4fe-2fc1afe144a1",
+        "_score": null,
+        "_source": {
+          "individualcount": 0,
+          "family": "asteraceae",
+          "recordset": "e7301984-8b46-4932-b670-21c231ae4c01",
+          "phylum": "magnoliophyta",
+          "catalognumber": "63775",
+          "collector": "morim, m.p.",
+          "uuid": "7f00b043-1b9e-464e-a4fe-2fc1afe144a1",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "ufu",
+          "datemodified": "2015-10-20T13:30:06.505654+00:00",
+          "etag": "9608f2a11be8f5debb40b102ce7e85e26df8de96",
+          "recordnumber": "525",
+          "minelevation": 0,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "maxelevation": 0,
+          "scientificname": "?",
+          "hasMedia": false,
+          "data": {
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Morim, M.P.",
+            "dwc:individualCount": "0",
+            "dwc:occurrenceID": "BRA:UFU:HUFU:0000063775",
+            "dcterms:language": "pt",
+            "dcterms:rightsHolder": "HUFU - Herbarium Uberlandense",
+            "dwc:ownerInstitutionCode": "Universidade Federal de Uberlândia (UFU)",
+            "dwc:country": "?",
+            "dwc:collectionCode": "HUFU",
+            "id": "BRA:UFU:HUFU:0000063775",
+            "dwc:maximumElevationInMeters": "0",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "?",
+            "dwc:family": "Asteraceae",
+            "dwc:institutionCode": "UFU",
+            "dwc:catalogNumber": "63775",
+            "dcterms:type": "Collection",
+            "dwc:datasetName": "HUFU - Herbarium Uberlandense",
+            "dwc:recordNumber": "525",
+            "dcterms:rights": "Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License.",
+            "dwc:minimumElevationInMeters": "0",
+            "dcterms:modified": "2015-09-15 09:53:34-03",
+            "dwc:scientificName": "?"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "bra:ufu:hufu:0000063775",
+          "country": "?",
+          "dqs": 0.2222222222222222,
+          "collectioncode": "hufu",
+          "flags": [
+            "dwc_phylum_added",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "e7301984-8b46-4932-b670-21c231ae4c01\\bra:ufu:hufu:0000063775"
+          ],
+          "genus": "?",
+          "order": "asterales"
+        },
+        "sort": [
+          "?"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "509be217-0af9-4f4b-b657-b249d54108a3",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.31746031746031744,
+          "stateprovince": "la paz",
+          "county": "larecaja",
+          "phylum": "magnoliophyta",
+          "catalognumber": "259224",
+          "specificepithet": "mandonii",
+          "continent": "south america",
+          "uuid": "509be217-0af9-4f4b-b657-b249d54108a3",
+          "countrycode": "bol",
+          "basisofrecord": "preservedspecimen",
+          "collector": "g. mandon",
+          "institutioncode": "ny",
+          "mediarecords": [
+            "b232f115-ad85-4999-9b22-3b15c9366ca1"
+          ],
+          "datemodified": "2015-11-21T21:27:38.694871+00:00",
+          "etag": "a0756c676757c9eece78c47b0ffcb905e03f0268",
+          "recordnumber": "1168",
+          "minelevation": 3400,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "maxelevation": 4400,
+          "scientificname": "aaronsohnia mandonii (rchb.f.) schltr.",
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "mandonii",
+            "dwc:county": "Larecaja",
+            "dwc:recordedBy": "G. Mandon",
+            "dwc:scientificNameAuthorship": "(Rchb.f.) Schltr.",
+            "dwc:occurrenceID": "1da269e7-c241-441e-9e3a-769b5cb58765",
+            "dwc:dateIdentified": "1998",
+            "dcterms:language": "en",
+            "id": "1da269e7-c241-441e-9e3a-769b5cb58765",
+            "dwc:stateProvince": "La Paz",
+            "dwc:eventDate": "1858-05-",
+            "dwc:country": "Bolivia",
+            "dcterms:rightsHolder": "The New York Botanical Garden",
+            "dwc:kingdom": "Plantae",
+            "dwc:maximumElevationInMeters": "4400",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Aaronsohnia",
+            "dwc:continent": "South America",
+            "dwc:family": "Asteraceae",
+            "dwc:identifiedBy": "C. A. Vargas",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Viciniis Sorata; Llachisam prope Vancuiré, cabezeros de Chilcuni Sra.",
+            "dwc:institutionCode": "NY",
+            "dwc:catalogNumber": "259224",
+            "dwc:nomenclaturalCode": "ICBN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:recordNumber": "1168",
+            "dwc:minimumElevationInMeters": "3400",
+            "dwc:scientificName": "Aaronsohnia mandonii (Rchb.f.) Schltr.",
+            "dwc:occurrenceDetails": "http://sweetgum.nybg.org/vh/specimen.php?irn=492328"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "1da269e7-c241-441e-9e3a-769b5cb58765",
+          "country": "bolivia",
+          "locality": "viciniis sorata; llachisam prope vancuiré, cabezeros de chilcuni sra.",
+          "eventdate": "1858-05-",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\1da269e7-c241-441e-9e3a-769b5cb58765"
+          ],
+          "genus": "aaronsohnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "aaronsohnia"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "0af8eb30-1b2f-4f20-9284-113bd4456da4",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "dqs": 0.38095238095238093,
+          "phylum": "magnoliophyta",
+          "catalognumber": "s07-10005",
+          "startdayofyear": 104,
+          "specificepithet": "pubescens",
+          "continent": "africa",
+          "datemodified": "2016-03-21T21:49:41.462748+00:00",
+          "uuid": "0af8eb30-1b2f-4f20-9284-113bd4456da4",
+          "countrycode": "mar",
+          "basisofrecord": "preservedspecimen",
+          "collector": "e. emanuelsson",
+          "institutioncode": "s",
+          "verbatimlocality": "flora of morocco. boumalne du dades. 0-4 km. south of town.",
+          "datecollected": "2006-04-14T00:00:00+00:00",
+          "etag": "09d9b2f05d7057baa641a5050decff1b118f1650",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_class_added"
+          ],
+          "recordnumber": "3350",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "highertaxon": "plantae;magnoliophyta;asterales;asteraceae;aaronsohnia",
+          "scientificname": "aaronsohnia pubescens (desf.) k. bremer & humphries",
+          "hasMedia": false,
+          "data": {
+            "dwc:specificEpithet": "pubescens",
+            "dwc:countryCode": "MA",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "E. Emanuelsson",
+            "dwc:fieldNumber": "3350",
+            "dwc:order": "Asterales",
+            "dwc:scientificNameAuthorship": "(Desf.) K. Bremer & Humphries",
+            "dwc:occurrenceID": "S:VascularPlants:S07-10005",
+            "id": "S:VascularPlants:S07-10005",
+            "dwc:eventDate": "2006-04-14",
+            "dwc:country": "Morocco",
+            "dwc:collectionCode": "VascularPlants",
+            "dwc:basisOfRecord": "preservedspecimen",
+            "dwc:genus": "Aaronsohnia",
+            "dwc:continent": "Africa",
+            "dwc:preparations": "dried on sheet",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Flora of Morocco. Boumalne du Dades. 0-4 km. south of town.",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:15668",
+            "dwc:institutionCode": "S",
+            "dwc:higherClassification": "Plantae;Magnoliophyta;Asterales;Asteraceae;Aaronsohnia",
+            "dwc:catalogNumber": "S07-10005",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "Africa; Morocco",
+            "dwc:verbatimLocality": "Flora of Morocco. Boumalne du Dades. 0-4 km. south of town.",
+            "dwc:recordNumber": "3350",
+            "dwc:family": "Asteraceae",
+            "dcterms:modified": "2015-04-11T12:30:04+02:00",
+            "dwc:scientificName": "Aaronsohnia pubescens (Desf.) K. Bremer & Humphries"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "s:vascularplants:s07-10005",
+          "institutionid": "urn:lsid:biocol.org:col:15668",
+          "country": "morocco",
+          "locality": "flora of morocco. boumalne du dades. 0-4 km. south of town.",
+          "collectioncode": "vascularplants",
+          "eventdate": "2006-04-14",
+          "fieldnumber": "3350",
+          "recordids": [
+            "fc014977-92f7-47fd-92d7-b609c39d8212\\s:vascularplants:s07-10005"
+          ],
+          "genus": "aaronsohnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "aaronsohnia"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "51fc2d54-4083-44fa-afd3-9643f1ec727c",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "dqs": 0.3333333333333333,
+          "phylum": "magnoliophyta",
+          "catalognumber": "s14-214",
+          "startdayofyear": 126,
+          "specificepithet": "factorovskyi",
+          "continent": "asia",
+          "datemodified": "2016-03-21T21:49:41.462748+00:00",
+          "uuid": "51fc2d54-4083-44fa-afd3-9643f1ec727c",
+          "basisofrecord": "preservedspecimen",
+          "collector": "adolf hafström",
+          "institutioncode": "s",
+          "verbatimlocality": "asien, palestina, något nedanför jerusalem vid vägen till jericho",
+          "datecollected": "1932-05-05T00:00:00+00:00",
+          "etag": "a57b19bcf5bc24b1cb56861b4e6afbe92008a427",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "highertaxon": "plantae;magnoliophyta;asterales;asteraceae;aaronsohnia",
+          "scientificname": "aaronsohnia factorovskyi warb. & eig",
+          "data": {
+            "dwc:specificEpithet": "factorovskyi",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Adolf Hafström",
+            "dwc:order": "Asterales",
+            "dwc:scientificNameAuthorship": "Warb. & Eig",
+            "dwc:occurrenceID": "S:VascularPlants:S14-214",
+            "id": "S:VascularPlants:S14-214",
+            "dwc:eventDate": "1932-05-05",
+            "dwc:collectionCode": "VascularPlants",
+            "dwc:occurrenceRemarks": "Rådman Adolf Hafströms herbarium. Skänkt till Naturhistoriska riksmuseet 11 maj 1941",
+            "dwc:basisOfRecord": "preservedspecimen",
+            "dwc:genus": "Aaronsohnia",
+            "dwc:continent": "Asia",
+            "dwc:preparations": "dried on sheet",
+            "dwc:previousIdentifications": "Aaronsohnia factorovskyi Eig.",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Asien, Palestina, något nedanför Jerusalem vid vägen till Jericho",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:15668",
+            "dwc:institutionCode": "S",
+            "dwc:higherClassification": "Plantae;Magnoliophyta;Asterales;Asteraceae;Aaronsohnia",
+            "dwc:catalogNumber": "S14-214",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "Asia; Israel - Palestine",
+            "dwc:verbatimLocality": "Asien, Palestina, något nedanför Jerusalem vid vägen till Jericho",
+            "dwc:family": "Asteraceae",
+            "dcterms:modified": "2015-04-11T15:59:29+02:00",
+            "dwc:scientificName": "Aaronsohnia factorovskyi Warb. & Eig"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "s:vascularplants:s14-214",
+          "institutionid": "urn:lsid:biocol.org:col:15668",
+          "locality": "asien, palestina, något nedanför jerusalem vid vägen till jericho",
+          "collectioncode": "vascularplants",
+          "eventdate": "1932-05-05",
+          "flags": [
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "fc014977-92f7-47fd-92d7-b609c39d8212\\s:vascularplants:s14-214"
+          ],
+          "genus": "aaronsohnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "aaronsohnia"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "3bc61a88-f365-4e81-812f-098c4a608f76",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "dqs": 0.38095238095238093,
+          "phylum": "magnoliophyta",
+          "catalognumber": "s-g-1",
+          "startdayofyear": 83,
+          "specificepithet": "factorovskyi",
+          "continent": "asia",
+          "datemodified": "2016-03-21T21:49:41.462748+00:00",
+          "uuid": "3bc61a88-f365-4e81-812f-098c4a608f76",
+          "basisofrecord": "preservedspecimen",
+          "collector": "a. eig",
+          "institutioncode": "s",
+          "verbatimlocality": "flora palestinae. env. of dead sea, wadi shukf to wadi sidar.",
+          "datecollected": "1926-03-24T00:00:00+00:00",
+          "etag": "4e5b47d82bc66b926c3f833aa9dcbc3b2bb46096",
+          "typestatus": "syntype, basionym: aaronsohnia factorovskyi warb. & eig",
+          "flags": [
+            "dwc_class_added"
+          ],
+          "recordnumber": "s.n.",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "highertaxon": "plantae;magnoliophyta;asterales;asteraceae;aaronsohnia",
+          "scientificname": "aaronsohnia factorovskyi warb. & eig",
+          "data": {
+            "dwc:specificEpithet": "factorovskyi",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "A. Eig",
+            "dwc:fieldNumber": "s.n.",
+            "dwc:order": "Asterales",
+            "dwc:scientificNameAuthorship": "Warb. & Eig",
+            "dwc:occurrenceID": "S:VascularPlants:S-G-1",
+            "id": "S:VascularPlants:S-G-1",
+            "dwc:eventDate": "1926-03-24",
+            "dwc:typeStatus": "syntype, basionym: Aaronsohnia factorovskyi Warb. & Eig",
+            "dwc:collectionCode": "VascularPlants",
+            "dwc:occurrenceRemarks": "Ex herb. univ. Hierosolym. [Original label in hebrew attached to the sheet.]",
+            "dwc:basisOfRecord": "preservedspecimen",
+            "dwc:genus": "Aaronsohnia",
+            "dwc:continent": "Asia",
+            "dwc:preparations": "dried on sheet",
+            "dwc:previousIdentifications": "Aaronsohnia factorovskyi Warb. & Eig.",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Flora Palestinae. Env. of Dead Sea, Wadi Shukf to Wadi Sidar.",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:15668",
+            "dwc:institutionCode": "S",
+            "dwc:higherClassification": "Plantae;Magnoliophyta;Asterales;Asteraceae;Aaronsohnia",
+            "dwc:catalogNumber": "S-G-1",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "Asia; Israel - Palestine",
+            "dwc:verbatimLocality": "Flora Palestinae. Env. of Dead Sea, Wadi Shukf to Wadi Sidar.",
+            "dwc:recordNumber": "s.n.",
+            "dwc:family": "Asteraceae",
+            "dcterms:modified": "2015-04-11T12:10:02+02:00",
+            "dwc:scientificName": "Aaronsohnia factorovskyi Warb. & Eig"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "s:vascularplants:s-g-1",
+          "institutionid": "urn:lsid:biocol.org:col:15668",
+          "hasMedia": false,
+          "locality": "flora palestinae. env. of dead sea, wadi shukf to wadi sidar.",
+          "collectioncode": "vascularplants",
+          "eventdate": "1926-03-24",
+          "fieldnumber": "s.n.",
+          "recordids": [
+            "fc014977-92f7-47fd-92d7-b609c39d8212\\s:vascularplants:s-g-1"
+          ],
+          "genus": "aaronsohnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "aaronsohnia"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "ad791e51-9a6d-40b1-bfa1-3ada1b323593",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "dqs": 0.38095238095238093,
+          "phylum": "magnoliophyta",
+          "catalognumber": "s-pl-19320",
+          "startdayofyear": 91,
+          "specificepithet": "factorovskyi",
+          "continent": "asia",
+          "datemodified": "2016-03-21T21:49:41.462748+00:00",
+          "uuid": "ad791e51-9a6d-40b1-bfa1-3ada1b323593",
+          "countrycode": "qat",
+          "basisofrecord": "preservedspecimen",
+          "collector": "batanouny",
+          "institutioncode": "s",
+          "verbatimlocality": "qatar: umm salal mohammed",
+          "datecollected": "1979-04-01T00:00:00+00:00",
+          "etag": "3a9534bb51cb1733eacce8f3cf41ce3e9d80c9d4",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_class_added"
+          ],
+          "recordnumber": "602",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "highertaxon": "plantae;magnoliophyta;asterales;asteraceae;aaronsohnia",
+          "scientificname": "aaronsohnia factorovskyi warb. & eig",
+          "hasMedia": false,
+          "data": {
+            "dwc:specificEpithet": "factorovskyi",
+            "dwc:countryCode": "QA",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Batanouny",
+            "dwc:fieldNumber": "602",
+            "dwc:order": "Asterales",
+            "dwc:scientificNameAuthorship": "Warb. & Eig",
+            "dwc:occurrenceID": "S:VascularPlants:S-PL-19320",
+            "id": "S:VascularPlants:S-PL-19320",
+            "dwc:eventDate": "1979-04-01",
+            "dwc:country": "Qatar",
+            "dwc:collectionCode": "VascularPlants",
+            "dwc:occurrenceRemarks": "Voucher in Herb: UQ",
+            "dwc:basisOfRecord": "preservedspecimen",
+            "dwc:genus": "Aaronsohnia",
+            "dwc:continent": "Asia",
+            "dwc:preparations": "microscope slide: pollen",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Qatar: Umm Salal Mohammed",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:15668",
+            "dwc:institutionCode": "S",
+            "dwc:higherClassification": "Plantae;Magnoliophyta;Asterales;Asteraceae;Aaronsohnia",
+            "dwc:catalogNumber": "S-PL-19320",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "Asia; Qatar",
+            "dwc:verbatimLocality": "Qatar: Umm Salal Mohammed",
+            "dwc:recordNumber": "602",
+            "dwc:family": "Asteraceae",
+            "dcterms:modified": "2015-04-11T14:27:12+02:00",
+            "dwc:scientificName": "Aaronsohnia factorovskyi Warb. & Eig"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "s:vascularplants:s-pl-19320",
+          "institutionid": "urn:lsid:biocol.org:col:15668",
+          "country": "qatar",
+          "locality": "qatar: umm salal mohammed",
+          "collectioncode": "vascularplants",
+          "eventdate": "1979-04-01",
+          "fieldnumber": "602",
+          "recordids": [
+            "fc014977-92f7-47fd-92d7-b609c39d8212\\s:vascularplants:s-pl-19320"
+          ],
+          "genus": "aaronsohnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "aaronsohnia"
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "77aef227-ea68-412d-9e34-fbb57aab40bf",
+        "_score": null,
+        "_source": {
+          "family": "asteraceae",
+          "recordset": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "dqs": 0.3333333333333333,
+          "phylum": "magnoliophyta",
+          "catalognumber": "s14-211",
+          "startdayofyear": 126,
+          "specificepithet": "factorovskyi",
+          "continent": "asia",
+          "datemodified": "2016-03-21T21:49:41.462748+00:00",
+          "uuid": "77aef227-ea68-412d-9e34-fbb57aab40bf",
+          "basisofrecord": "preservedspecimen",
+          "collector": "adolf hafström",
+          "institutioncode": "s",
+          "verbatimlocality": "asien, palestina, något nedanför jerusalem vid vägen till jericho",
+          "datecollected": "1932-05-05T00:00:00+00:00",
+          "etag": "1b5ecb20f0b25332165172eb5dd60d8be1e47ea7",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "highertaxon": "plantae;magnoliophyta;asterales;asteraceae;aaronsohnia",
+          "scientificname": "aaronsohnia factorovskyi warb. & eig",
+          "data": {
+            "dwc:specificEpithet": "factorovskyi",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Adolf Hafström",
+            "dwc:order": "Asterales",
+            "dwc:scientificNameAuthorship": "Warb. & Eig",
+            "dwc:occurrenceID": "S:VascularPlants:S14-211",
+            "id": "S:VascularPlants:S14-211",
+            "dwc:eventDate": "1932-05-05",
+            "dwc:collectionCode": "VascularPlants",
+            "dwc:occurrenceRemarks": "Rådman Adolf Hafströms herbarium. Skänkt till Naturhistoriska riksmuseet 11 maj 1941",
+            "dwc:basisOfRecord": "preservedspecimen",
+            "dwc:genus": "Aaronsohnia",
+            "dwc:continent": "Asia",
+            "dwc:preparations": "dried on sheet",
+            "dwc:previousIdentifications": "Aaronsohnia factorovskyi Eig.",
+            "dwc:phylum": "Magnoliophyta",
+            "dwc:locality": "Asien, Palestina, något nedanför Jerusalem vid vägen till Jericho",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:15668",
+            "dwc:institutionCode": "S",
+            "dwc:higherClassification": "Plantae;Magnoliophyta;Asterales;Asteraceae;Aaronsohnia",
+            "dwc:catalogNumber": "S14-211",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "Asia; Israel - Palestine",
+            "dwc:verbatimLocality": "Asien, Palestina, något nedanför Jerusalem vid vägen till Jericho",
+            "dwc:family": "Asteraceae",
+            "dcterms:modified": "2015-04-11T15:59:29+02:00",
+            "dwc:scientificName": "Aaronsohnia factorovskyi Warb. & Eig"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "s:vascularplants:s14-211",
+          "institutionid": "urn:lsid:biocol.org:col:15668",
+          "locality": "asien, palestina, något nedanför jerusalem vid vägen till jericho",
+          "collectioncode": "vascularplants",
+          "eventdate": "1932-05-05",
+          "flags": [
+            "dwc_class_added"
+          ],
+          "recordids": [
+            "fc014977-92f7-47fd-92d7-b609c39d8212\\s:vascularplants:s14-211"
+          ],
+          "genus": "aaronsohnia",
+          "order": "asterales"
+        },
+        "sort": [
+          "aaronsohnia"
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
+          "doc_count": 321394
+        },
+        {
+          "key": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "doc_count": 243882
+        },
+        {
+          "key": "5386d272-06c6-4027-b5d5-d588c2afe5e5",
+          "doc_count": 226425
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 176162
+        },
+        {
+          "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "doc_count": 86217
+        },
+        {
+          "key": "f778ecc0-8371-49d5-9ab1-9d75f0b76fad",
+          "doc_count": 73029
+        },
+        {
+          "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
+          "doc_count": 47795
+        },
+        {
+          "key": "953b0329-c3e4-4816-a038-7afbd2bb2547",
+          "doc_count": 42289
+        },
+        {
+          "key": "e6ccc2bd-9451-4802-8a51-8640d9f09793",
+          "doc_count": 41706
+        },
+        {
+          "key": "f0174bc9-0cca-450e-a941-655d80040139",
+          "doc_count": 40217
+        },
+        {
+          "key": "a2b36fdf-50bc-44ef-a6a4-ca6dc1dc148a",
+          "doc_count": 40101
+        },
+        {
+          "key": "7450a9e3-ef95-4f9e-8260-09b498d2c5e6",
+          "doc_count": 37917
+        },
+        {
+          "key": "9e5aede6-bee5-4a3d-a255-513771b20035",
+          "doc_count": 35571
+        },
+        {
+          "key": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
+          "doc_count": 30864
+        },
+        {
+          "key": "bf1fee2d-f760-4068-b8e6-d1db63ce434c",
+          "doc_count": 28408
+        },
+        {
+          "key": "205fa34c-2fcb-4492-b992-972b18560f6f",
+          "doc_count": 26122
+        },
+        {
+          "key": "6cc31636-c3e5-4887-bbee-2e56621771c4",
+          "doc_count": 25373
+        },
+        {
+          "key": "e2def7e2-1455-4856-9823-6d3738417d24",
+          "doc_count": 23392
+        },
+        {
+          "key": "96662fa9-ff60-495b-912a-284f3b98ed72",
+          "doc_count": 21762
+        },
+        {
+          "key": "215eeaf0-0a88-409e-a75d-aec98b7c41eb",
+          "doc_count": 19618
+        },
+        {
+          "key": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "doc_count": 17854
+        },
+        {
+          "key": "4523e216-ee13-4b15-a3f7-a6fd56431604",
+          "doc_count": 17312
+        },
+        {
+          "key": "a6e02b78-6fc6-4cb6-bb87-8d5a443f2c2a",
+          "doc_count": 17100
+        },
+        {
+          "key": "f8866892-56a0-4f46-9583-6719d42d81de",
+          "doc_count": 16844
+        },
+        {
+          "key": "62a36329-6b82-48bc-94d8-1cb9adb91ab5",
+          "doc_count": 16767
+        },
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 16245
+        },
+        {
+          "key": "207b6c64-7b58-4d6a-816d-bc759c27eafc",
+          "doc_count": 16040
+        },
+        {
+          "key": "b880344e-22b2-4540-a56a-1de5f5601a20",
+          "doc_count": 14241
+        },
+        {
+          "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
+          "doc_count": 13974
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 13497
+        },
+        {
+          "key": "d2217bca-3a93-4407-bb56-087afa000cbc",
+          "doc_count": 12624
+        },
+        {
+          "key": "e7301984-8b46-4932-b670-21c231ae4c01",
+          "doc_count": 12084
+        },
+        {
+          "key": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
+          "doc_count": 12060
+        },
+        {
+          "key": "703b5bdc-4581-47e3-b4b6-e6f32d0eec54",
+          "doc_count": 11825
+        },
+        {
+          "key": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "doc_count": 11727
+        },
+        {
+          "key": "253f90be-3b94-469c-820c-cb727b85bdd4",
+          "doc_count": 11471
+        },
+        {
+          "key": "f3ee2661-268a-48dc-b931-b9429d5674f4",
+          "doc_count": 11293
+        },
+        {
+          "key": "341da8fa-d049-46ee-9be8-463043f26fa7",
+          "doc_count": 8912
+        },
+        {
+          "key": "a7228b3f-982a-4518-a761-b19b00e14844",
+          "doc_count": 8905
+        },
+        {
+          "key": "5835f642-2560-4e3e-9c25-741a12cc3fe8",
+          "doc_count": 8567
+        },
+        {
+          "key": "05c029de-734c-450a-a41a-56061b7ebb18",
+          "doc_count": 8515
+        },
+        {
+          "key": "c5b7dae8-b483-4742-9954-d7f9226daa34",
+          "doc_count": 8347
+        },
+        {
+          "key": "0ed8a17e-149b-4cbe-8383-7676da92ea1c",
+          "doc_count": 8166
+        },
+        {
+          "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
+          "doc_count": 8122
+        },
+        {
+          "key": "948a3370-bdb4-46cb-a047-c777a76ae420",
+          "doc_count": 8080
+        },
+        {
+          "key": "364a24d9-d4a8-4e0b-8e50-07b90f844548",
+          "doc_count": 7935
+        },
+        {
+          "key": "3e5a9f79-297b-497d-84eb-97e0d1e5c2bf",
+          "doc_count": 7917
+        },
+        {
+          "key": "e4ff51ba-5007-4c40-9a86-e8c6f4db77b7",
+          "doc_count": 7852
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 7270
+        },
+        {
+          "key": "1527b668-b797-42be-94d3-0058e1393e94",
+          "doc_count": 7214
+        },
+        {
+          "key": "76fd34da-4892-4821-858d-98fe9e28ba8b",
+          "doc_count": 7074
+        },
+        {
+          "key": "7644703a-ce24-4f7b-b800-66ddf8812f86",
+          "doc_count": 6643
+        },
+        {
+          "key": "d06a16c6-f540-40a8-9e92-876ad1955d03",
+          "doc_count": 6601
+        },
+        {
+          "key": "5baa1d0c-cfc0-4c89-8e3e-7a49359b0caa",
+          "doc_count": 6290
+        },
+        {
+          "key": "be31dfd1-c721-4697-8ee0-f7043c070810",
+          "doc_count": 6257
+        },
+        {
+          "key": "09a3fcf2-55a1-488f-aa42-f103bdce0536",
+          "doc_count": 5848
+        },
+        {
+          "key": "82672123-feef-4b1c-9ee3-9a681204ae76",
+          "doc_count": 5836
+        },
+        {
+          "key": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+          "doc_count": 4937
+        },
+        {
+          "key": "17ff84d1-e3e9-43d1-a746-745ef8d339d0",
+          "doc_count": 4788
+        },
+        {
+          "key": "35830c1e-429e-4006-a153-78984a3e0ee2",
+          "doc_count": 4583
+        },
+        {
+          "key": "7311c4ac-7cf6-4160-a55c-4a4c7cd0cf89",
+          "doc_count": 4087
+        },
+        {
+          "key": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+          "doc_count": 4058
+        },
+        {
+          "key": "17fc477d-727e-4dde-99d6-ac440e937d14",
+          "doc_count": 3996
+        },
+        {
+          "key": "38db50bb-72f3-4416-aeb9-61457e655a6d",
+          "doc_count": 3901
+        },
+        {
+          "key": "9e89b6af-4bb5-45af-93d8-0112bd20a60d",
+          "doc_count": 3844
+        },
+        {
+          "key": "0c94911f-6f18-40a2-a0c3-95c845bc41d7",
+          "doc_count": 3823
+        },
+        {
+          "key": "5f513dff-ccd8-4578-ad0b-5e6cf035e4d1",
+          "doc_count": 3584
+        },
+        {
+          "key": "5ee6f92f-c65c-4888-98e3-f152b3ceb184",
+          "doc_count": 3468
+        },
+        {
+          "key": "97e4947d-fce9-4019-9f86-c0d94c820269",
+          "doc_count": 3426
+        },
+        {
+          "key": "c57817e7-034c-4796-ac47-2bc2191713b3",
+          "doc_count": 3262
+        },
+        {
+          "key": "91f4f1c9-37e3-430b-8020-f8d65af8e422",
+          "doc_count": 3115
+        },
+        {
+          "key": "ca4e7ee9-06f5-4f93-830c-507a6598ec25",
+          "doc_count": 3035
+        },
+        {
+          "key": "2e4ccf50-bb7d-43a6-9640-088b248c2c5a",
+          "doc_count": 2980
+        },
+        {
+          "key": "ba54ba45-caac-4708-a389-ac94642976f8",
+          "doc_count": 2816
+        },
+        {
+          "key": "e647814d-6975-4b34-b8c4-e79b7ca83085",
+          "doc_count": 2453
+        },
+        {
+          "key": "30733214-8eb0-4894-b19d-775fe8a617cf",
+          "doc_count": 2445
+        },
+        {
+          "key": "57a6bf5f-cda1-41fd-8c12-804c95f74841",
+          "doc_count": 2398
+        },
+        {
+          "key": "fd66cee6-5310-4201-9949-0ea04a05b72b",
+          "doc_count": 2364
+        },
+        {
+          "key": "e5f57bb0-07ec-4405-90b6-dc89647a1cb5",
+          "doc_count": 2330
+        },
+        {
+          "key": "05498053-5a06-45d5-bf6c-dbea1c42cb2b",
+          "doc_count": 2295
+        },
+        {
+          "key": "92e4e092-6dcb-46bc-85a0-dea8310aba45",
+          "doc_count": 2074
+        },
+        {
+          "key": "364b1f8d-5975-48d9-bba1-c97ab172986c",
+          "doc_count": 2064
+        },
+        {
+          "key": "67b5d248-4a1e-4861-bc2a-3ac7f379acde",
+          "doc_count": 1847
+        },
+        {
+          "key": "687efa84-c549-4743-a193-72d198d8e19c",
+          "doc_count": 1715
+        },
+        {
+          "key": "361efdf7-9845-411c-90bd-e51ec7991e87",
+          "doc_count": 1644
+        },
+        {
+          "key": "c5eeb223-0515-423a-a51a-151426c8f60d",
+          "doc_count": 1637
+        },
+        {
+          "key": "204fbebc-37cc-4331-a2be-11f38949561c",
+          "doc_count": 1553
+        },
+        {
+          "key": "c7821624-d246-43b8-9dfd-de470f9dc294",
+          "doc_count": 1524
+        },
+        {
+          "key": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+          "doc_count": 1502
+        },
+        {
+          "key": "06c35934-1b75-4196-838d-29d509951bf9",
+          "doc_count": 1476
+        },
+        {
+          "key": "d1f70494-b5d9-4c84-973d-e34445b7552b",
+          "doc_count": 1343
+        },
+        {
+          "key": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+          "doc_count": 1336
+        },
+        {
+          "key": "750a80fe-60b9-423b-aca1-dcc7937d2c84",
+          "doc_count": 1325
+        },
+        {
+          "key": "826420a8-3d4a-4cee-901c-f0f2ee9e00b4",
+          "doc_count": 1302
+        },
+        {
+          "key": "a89f64ab-8b3b-4267-b18a-3207d25a45ad",
+          "doc_count": 1271
+        },
+        {
+          "key": "c49bc91d-0a50-497b-8b17-d77808745cf9",
+          "doc_count": 1246
+        },
+        {
+          "key": "8096525f-6f67-4bd2-a160-48ed4bea8aa7",
+          "doc_count": 1228
+        },
+        {
+          "key": "b1549ab7-5fc7-4966-a210-0846484fb171",
+          "doc_count": 1145
+        },
+        {
+          "key": "b4cce5b5-6450-443c-8988-a279b9cefaab",
+          "doc_count": 1101
+        },
+        {
+          "key": "5e2f4c81-8c8a-45f3-a220-851f85f86b40",
+          "doc_count": 1081
+        },
+        {
+          "key": "b133b7cb-c0a1-4cd7-9775-cbc78fea50fc",
+          "doc_count": 1064
+        },
+        {
+          "key": "0bffd75c-2c42-4119-bae7-1ca6d8eb4d1a",
+          "doc_count": 1049
+        },
+        {
+          "key": "d07e7b8a-2222-477f-a7f3-f098bbfdaf54",
+          "doc_count": 952
+        },
+        {
+          "key": "cb33cf97-2a7b-4b45-9b73-5aca568332a6",
+          "doc_count": 876
+        },
+        {
+          "key": "2df867b1-89de-4539-8414-67c47a88f0c8",
+          "doc_count": 864
+        },
+        {
+          "key": "3fe3a250-0f48-4a9b-bb71-36d798694912",
+          "doc_count": 814
+        },
+        {
+          "key": "f39780bd-7108-4685-8e6a-b340ff5a5965",
+          "doc_count": 812
+        },
+        {
+          "key": "28a8561d-4699-4c90-823b-686d6207d675",
+          "doc_count": 802
+        },
+        {
+          "key": "e01f53f2-8e1b-41cb-9e5a-3dfb3ccf44d6",
+          "doc_count": 783
+        },
+        {
+          "key": "fd62a976-d195-492a-b6f0-f57fef8b6acc",
+          "doc_count": 773
+        },
+        {
+          "key": "4cd8e87c-93b6-41cc-9189-50585cdb0518",
+          "doc_count": 762
+        },
+        {
+          "key": "c8eeddef-b903-4aa3-a0fb-44344b8bf301",
+          "doc_count": 745
+        },
+        {
+          "key": "8b196eb7-1fbf-4eac-9f58-1fccae076f7f",
+          "doc_count": 726
+        },
+        {
+          "key": "bc93e4c6-fd85-4412-987f-52f6fa3bb67d",
+          "doc_count": 698
+        },
+        {
+          "key": "f0bb124f-5840-41ea-98ab-b8fd8802ea5f",
+          "doc_count": 669
+        },
+        {
+          "key": "b12b08da-3d05-4406-a051-0139a33ecf35",
+          "doc_count": 663
+        },
+        {
+          "key": "899855ee-4fd9-4e85-9033-880058303b5c",
+          "doc_count": 648
+        },
+        {
+          "key": "f08c31ea-0e90-4cc1-b471-dfd0584ae7cf",
+          "doc_count": 648
+        },
+        {
+          "key": "fdf98e60-9feb-4b86-a42e-ae6c7152d02c",
+          "doc_count": 648
+        },
+        {
+          "key": "b4154ce7-8145-4fd8-92ed-edd124d53730",
+          "doc_count": 616
+        },
+        {
+          "key": "bf5b0620-1ff0-45af-a2eb-96f3c739edf2",
+          "doc_count": 594
+        },
+        {
+          "key": "2c00c297-9ebd-498a-b701-d3ebde4b49f3",
+          "doc_count": 587
+        },
+        {
+          "key": "b6ebfa9d-fed3-4e0c-8877-47c1190f346c",
+          "doc_count": 552
+        },
+        {
+          "key": "e8c034d5-c2c7-4f23-8dc0-7f94f4116306",
+          "doc_count": 539
+        },
+        {
+          "key": "58afd7df-a696-4dd6-a765-540f8b31c07d",
+          "doc_count": 522
+        },
+        {
+          "key": "2d47501f-dbed-43ce-a9c3-9c8542648ce4",
+          "doc_count": 463
+        },
+        {
+          "key": "b58043bc-9e47-4a8f-9e4b-5d4c510ea0e1",
+          "doc_count": 462
+        },
+        {
+          "key": "fe04dab1-5a3d-4c28-a450-012658e982d8",
+          "doc_count": 454
+        },
+        {
+          "key": "5db52f01-8d71-43e5-b835-0ff7d33d715b",
+          "doc_count": 438
+        },
+        {
+          "key": "6d99bdeb-a96f-47bf-8e28-ce1093347335",
+          "doc_count": 404
+        },
+        {
+          "key": "431b56fc-d016-459a-97ab-1e9c8168a7f0",
+          "doc_count": 381
+        },
+        {
+          "key": "6226705f-4867-464d-9fab-4e81ecee731f",
+          "doc_count": 354
+        },
+        {
+          "key": "535d4a21-8650-41d0-b92f-b6c028db13e2",
+          "doc_count": 342
+        },
+        {
+          "key": "f1960cd5-e27a-40f0-b4bd-3ca7157e4bbb",
+          "doc_count": 321
+        },
+        {
+          "key": "fe51bced-93ce-45b2-b0c6-f7256719a07b",
+          "doc_count": 317
+        },
+        {
+          "key": "af4f13cd-f1e8-4e18-ac7a-b0aeee90c749",
+          "doc_count": 294
+        },
+        {
+          "key": "5e24c385-dab9-40a3-a2dd-2cf8758821b6",
+          "doc_count": 286
+        },
+        {
+          "key": "212dcc45-bf5b-43d8-a804-3351c04c2f7a",
+          "doc_count": 279
+        },
+        {
+          "key": "90e07356-df5d-4372-a2c4-34927db9a3ec",
+          "doc_count": 274
+        },
+        {
+          "key": "c892f8d1-108c-44f7-9458-0abb96633976",
+          "doc_count": 259
+        },
+        {
+          "key": "68abd0b8-cff1-4c84-a2d9-bd4ac6df4fa4",
+          "doc_count": 257
+        },
+        {
+          "key": "080aa588-2f4c-4d65-8a55-f0b83e8aa7e6",
+          "doc_count": 256
+        },
+        {
+          "key": "046a2685-be26-4d6e-80cc-d95e907922fa",
+          "doc_count": 234
+        },
+        {
+          "key": "a5b1b714-7470-4635-805d-a0cdcc6a6a4b",
+          "doc_count": 232
+        },
+        {
+          "key": "90739622-5232-4048-8121-9af9ec69604f",
+          "doc_count": 226
+        },
+        {
+          "key": "7b1f4ee4-7f50-4c82-9007-ba76528a84df",
+          "doc_count": 221
+        },
+        {
+          "key": "2b21081c-d5e9-49bd-b29a-0b6e4a551b78",
+          "doc_count": 213
+        },
+        {
+          "key": "c7ae0ade-c23e-4fe6-a3d4-79bd973374c2",
+          "doc_count": 199
+        },
+        {
+          "key": "bfb53140-79c1-4625-81aa-3f37de7c0c2f",
+          "doc_count": 189
+        },
+        {
+          "key": "5f6fcfc2-598c-42e8-abb3-50ca9c2446e2",
+          "doc_count": 180
+        },
+        {
+          "key": "92f0b5e8-27b5-48ae-be72-616657821f7b",
+          "doc_count": 169
+        },
+        {
+          "key": "5a9ae910-9e4b-488b-af8e-88074fabc3a4",
+          "doc_count": 145
+        },
+        {
+          "key": "b6d0f953-29b4-41da-a255-2ed07c83edf1",
+          "doc_count": 142
+        },
+        {
+          "key": "41800344-33b3-4201-b9d2-cabbbf564fbc",
+          "doc_count": 140
+        },
+        {
+          "key": "2bfc480c-e5b3-4a9b-9587-a92c22830ace",
+          "doc_count": 133
+        },
+        {
+          "key": "9a861ebe-f8d7-4eb1-a2c8-3006f07cfec2",
+          "doc_count": 131
+        },
+        {
+          "key": "cb2973af-0d5a-4fbf-80ab-ec96ede33ef0",
+          "doc_count": 127
+        },
+        {
+          "key": "0ed0b942-198e-4500-8fe0-1d1ef0785454",
+          "doc_count": 120
+        },
+        {
+          "key": "65d603ef-19be-4d6f-92dc-76c5e4220175",
+          "doc_count": 116
+        },
+        {
+          "key": "a9b8572c-ec86-4e6b-9ed9-03d939b7f363",
+          "doc_count": 114
+        },
+        {
+          "key": "7915973f-a3b0-4d2c-86e7-02d40647393c",
+          "doc_count": 110
+        },
+        {
+          "key": "78bb515d-4508-45d6-94e2-e53638ce2fe4",
+          "doc_count": 100
+        },
+        {
+          "key": "80daac2f-e496-4c65-b196-6be7a9c4c98e",
+          "doc_count": 89
+        },
+        {
+          "key": "2fe72860-9220-4acd-894b-81b4d98a5e24",
+          "doc_count": 79
+        },
+        {
+          "key": "f8e830e3-9b0d-4e5d-9f24-9f2ed3b465da",
+          "doc_count": 78
+        },
+        {
+          "key": "fb33ec4c-1bab-48f2-9faf-a5205a9a2c37",
+          "doc_count": 77
+        },
+        {
+          "key": "a6966178-9495-4093-9cb2-dfed4acddde6",
+          "doc_count": 70
+        },
+        {
+          "key": "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf",
+          "doc_count": 55
+        },
+        {
+          "key": "7f497d81-4c7e-4e06-b166-a459968b14e3",
+          "doc_count": 41
+        },
+        {
+          "key": "b3976394-a174-4ceb-8d64-3a435d66bde6",
+          "doc_count": 37
+        },
+        {
+          "key": "4b05f088-74a4-44a5-a161-8b1484efc240",
+          "doc_count": 36
+        },
+        {
+          "key": "e38af226-7109-4f99-a6f1-9fd3bec5638d",
+          "doc_count": 32
+        },
+        {
+          "key": "a1b2bdfd-00c7-4c31-8046-2c991ca777d0",
+          "doc_count": 31
+        },
+        {
+          "key": "fe52a17a-a7aa-4f95-a3ea-26fe640170fe",
+          "doc_count": 30
+        },
+        {
+          "key": "de41423b-7326-413a-880f-58176ef95ec7",
+          "doc_count": 29
+        },
+        {
+          "key": "b9d08bac-6b78-484b-9a96-da61552f53a5",
+          "doc_count": 24
+        },
+        {
+          "key": "1bc74afb-698f-43a7-90e6-352dba6c74da",
+          "doc_count": 22
+        },
+        {
+          "key": "3420d3d5-f142-4db6-951c-5d37cb72ce53",
+          "doc_count": 21
+        },
+        {
+          "key": "433d3c37-8dde-42e4-a344-2cb6605c5da2",
+          "doc_count": 15
+        },
+        {
+          "key": "5ab348ab-439a-4697-925c-d6abe0c09b92",
+          "doc_count": 15
+        },
+        {
+          "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
+          "doc_count": 15
+        },
+        {
+          "key": "dde625e8-cc2a-4877-9ec4-0b8a20dfded9",
+          "doc_count": 11
+        },
+        {
+          "key": "5626f61a-822e-4692-b432-51f53d053e4d",
+          "doc_count": 4
+        },
+        {
+          "key": "a83151ae-e1db-4166-9dde-438f6544dca9",
+          "doc_count": 4
+        },
+        {
+          "key": "ce98b978-4542-45c6-aecf-79cf3f6979ed",
+          "doc_count": 4
+        },
+        {
+          "key": "2cebadf7-6d52-49b2-b3a7-d4969a36aa12",
+          "doc_count": 3
+        },
+        {
+          "key": "58619649-7813-443d-9a99-3d4cfac8e0c4",
+          "doc_count": 3
+        },
+        {
+          "key": "8445ab25-ff89-44b0-90f8-bf0790f50afc",
+          "doc_count": 2
+        },
+        {
+          "key": "dbb14b3f-3a6b-4f3c-872d-9a5a28064a61",
+          "doc_count": 2
+        },
+        {
+          "key": "df22987f-d20d-41db-b8eb-8b5f5fca6df0",
+          "doc_count": 2
+        },
+        {
+          "key": "2ec3b31e-c86b-4ce9-b265-77c8c3f9643c",
+          "doc_count": 1
+        },
+        {
+          "key": "85e930bf-6e90-4700-85d1-4c3330efbafb",
+          "doc_count": 1
+        },
+        {
+          "key": "ccd17772-d220-4088-8fa3-df3729f14df4",
+          "doc_count": 1
+        },
+        {
+          "key": "d1b25dcd-472e-4902-b53c-3b164269e049",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1467038984733,
+      "value_as_string": "2016-06-27T14:49:44.733Z"
+    }
+  }
+}

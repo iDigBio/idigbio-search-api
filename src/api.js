@@ -1,9 +1,14 @@
 import KoaRouter from 'koa-router';
 
-const api = KoaRouter();
-export default api;
+import config from '../config';
 
-api.get('/healthz', function(ctx, next) {
-  ctx.body = "OK";
-  ctx.status = 200;
+const api = KoaRouter();
+
+api.get('/healthz', function(ctx) {
+  ctx.body = {
+    ENV: config.ENV,
+    path: ctx.originalUrl
+  };
 });
+
+export default api;

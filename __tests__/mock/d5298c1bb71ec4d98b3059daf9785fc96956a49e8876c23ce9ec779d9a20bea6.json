@@ -1,0 +1,702 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 629584,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "d21a62e1-c25a-4604-8c6a-d8e61f4a098e",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex danaensis   stacey"
+        },
+        "sort": [
+          0.47619048
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "183e7dee-eb04-426c-a06c-15a97ed9c11d",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. filifolia  nutt."
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "5c1fe10f-bfe6-41b9-806a-277f820c1032",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex obscura var. brachycarpa  j. d. hooker"
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "634331ac-16fc-41cb-8f11-8a3b336ce139",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. filifolia  nutt."
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "43a1be67-82c7-42a4-8282-ffee1f7a9590",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. erostrata  kük."
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "e488699e-73d6-412d-b4c2-fa6f19d5272c",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex campylocarpa subsp. affinis  maguire & a.h. holmgren"
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "93154522-206a-4393-8549-d7fc19192bc4",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. erostrata  kük."
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "0030b449-49cb-45a8-92bd-c962731433c7",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex lenticularis var. impressa  (l.h. bailey) l.a. standl."
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "f2fe92dd-61eb-4f6d-bfbd-d5165c49a553",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. erostrata  kük."
+        },
+        "sort": [
+          0.46031746
+        ]
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "333b006e-ad55-47c0-9f03-c61ec05e0af6",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex filifolia var. erostrata  kük."
+        },
+        "sort": [
+          0.46031746
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "e6ccc2bd-9451-4802-8a51-8640d9f09793",
+          "doc_count": 56047
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 54159
+        },
+        {
+          "key": "5386d272-06c6-4027-b5d5-d588c2afe5e5",
+          "doc_count": 51887
+        },
+        {
+          "key": "b880344e-22b2-4540-a56a-1de5f5601a20",
+          "doc_count": 47473
+        },
+        {
+          "key": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "doc_count": 39050
+        },
+        {
+          "key": "f778ecc0-8371-49d5-9ab1-9d75f0b76fad",
+          "doc_count": 38115
+        },
+        {
+          "key": "0b17c21a-f7e2-4967-bdf8-60cf9b06c721",
+          "doc_count": 34553
+        },
+        {
+          "key": "9e5aede6-bee5-4a3d-a255-513771b20035",
+          "doc_count": 30966
+        },
+        {
+          "key": "207b6c64-7b58-4d6a-816d-bc759c27eafc",
+          "doc_count": 24750
+        },
+        {
+          "key": "703b5bdc-4581-47e3-b4b6-e6f32d0eec54",
+          "doc_count": 19737
+        },
+        {
+          "key": "e2def7e2-1455-4856-9823-6d3738417d24",
+          "doc_count": 16532
+        },
+        {
+          "key": "d2217bca-3a93-4407-bb56-087afa000cbc",
+          "doc_count": 16110
+        },
+        {
+          "key": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "doc_count": 15948
+        },
+        {
+          "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "doc_count": 12626
+        },
+        {
+          "key": "f0174bc9-0cca-450e-a941-655d80040139",
+          "doc_count": 12394
+        },
+        {
+          "key": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+          "doc_count": 11460
+        },
+        {
+          "key": "205fa34c-2fcb-4492-b992-972b18560f6f",
+          "doc_count": 11333
+        },
+        {
+          "key": "62a36329-6b82-48bc-94d8-1cb9adb91ab5",
+          "doc_count": 9620
+        },
+        {
+          "key": "a2b36fdf-50bc-44ef-a6a4-ca6dc1dc148a",
+          "doc_count": 8928
+        },
+        {
+          "key": "1527b668-b797-42be-94d3-0058e1393e94",
+          "doc_count": 8792
+        },
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 8553
+        },
+        {
+          "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
+          "doc_count": 8549
+        },
+        {
+          "key": "4ac45d7e-c6e5-45ea-a0e0-aea6ebe2afcf",
+          "doc_count": 6663
+        },
+        {
+          "key": "7f497d81-4c7e-4e06-b166-a459968b14e3",
+          "doc_count": 6432
+        },
+        {
+          "key": "7644703a-ce24-4f7b-b800-66ddf8812f86",
+          "doc_count": 6052
+        },
+        {
+          "key": "05c029de-734c-450a-a41a-56061b7ebb18",
+          "doc_count": 5409
+        },
+        {
+          "key": "e5f57bb0-07ec-4405-90b6-dc89647a1cb5",
+          "doc_count": 4689
+        },
+        {
+          "key": "531537fc-6349-4a20-ae42-540d61797086",
+          "doc_count": 4628
+        },
+        {
+          "key": "ba54ba45-caac-4708-a389-ac94642976f8",
+          "doc_count": 4461
+        },
+        {
+          "key": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+          "doc_count": 3843
+        },
+        {
+          "key": "76fd34da-4892-4821-858d-98fe9e28ba8b",
+          "doc_count": 3652
+        },
+        {
+          "key": "4523e216-ee13-4b15-a3f7-a6fd56431604",
+          "doc_count": 2590
+        },
+        {
+          "key": "5835f642-2560-4e3e-9c25-741a12cc3fe8",
+          "doc_count": 2446
+        },
+        {
+          "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
+          "doc_count": 2374
+        },
+        {
+          "key": "215eeaf0-0a88-409e-a75d-aec98b7c41eb",
+          "doc_count": 2180
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 2176
+        },
+        {
+          "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
+          "doc_count": 2058
+        },
+        {
+          "key": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+          "doc_count": 2010
+        },
+        {
+          "key": "b9ab58cf-785e-44a7-a873-1966e14a6715",
+          "doc_count": 1927
+        },
+        {
+          "key": "5baa1d0c-cfc0-4c89-8e3e-7a49359b0caa",
+          "doc_count": 1738
+        },
+        {
+          "key": "a6e02b78-6fc6-4cb6-bb87-8d5a443f2c2a",
+          "doc_count": 1700
+        },
+        {
+          "key": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "doc_count": 1646
+        },
+        {
+          "key": "6cc31636-c3e5-4887-bbee-2e56621771c4",
+          "doc_count": 1406
+        },
+        {
+          "key": "96662fa9-ff60-495b-912a-284f3b98ed72",
+          "doc_count": 1389
+        },
+        {
+          "key": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
+          "doc_count": 1373
+        },
+        {
+          "key": "e6eba8cd-fa2c-4ba2-bec0-6841e7633695",
+          "doc_count": 1372
+        },
+        {
+          "key": "88595487-6d33-4980-ba54-bcf427c9466e",
+          "doc_count": 1299
+        },
+        {
+          "key": "c49bc91d-0a50-497b-8b17-d77808745cf9",
+          "doc_count": 1280
+        },
+        {
+          "key": "be31dfd1-c721-4697-8ee0-f7043c070810",
+          "doc_count": 1196
+        },
+        {
+          "key": "bf1fee2d-f760-4068-b8e6-d1db63ce434c",
+          "doc_count": 1164
+        },
+        {
+          "key": "364b1f8d-5975-48d9-bba1-c97ab172986c",
+          "doc_count": 947
+        },
+        {
+          "key": "364a24d9-d4a8-4e0b-8e50-07b90f844548",
+          "doc_count": 901
+        },
+        {
+          "key": "40250f4d-7aa6-4fcc-ac38-2868fa4846bd",
+          "doc_count": 898
+        },
+        {
+          "key": "58afd7df-a696-4dd6-a765-540f8b31c07d",
+          "doc_count": 814
+        },
+        {
+          "key": "f8866892-56a0-4f46-9583-6719d42d81de",
+          "doc_count": 759
+        },
+        {
+          "key": "f3ee2661-268a-48dc-b931-b9429d5674f4",
+          "doc_count": 750
+        },
+        {
+          "key": "953b0329-c3e4-4816-a038-7afbd2bb2547",
+          "doc_count": 702
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 691
+        },
+        {
+          "key": "c5b7dae8-b483-4742-9954-d7f9226daa34",
+          "doc_count": 576
+        },
+        {
+          "key": "204fbebc-37cc-4331-a2be-11f38949561c",
+          "doc_count": 572
+        },
+        {
+          "key": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+          "doc_count": 558
+        },
+        {
+          "key": "2cebadf7-6d52-49b2-b3a7-d4969a36aa12",
+          "doc_count": 520
+        },
+        {
+          "key": "cb33cf97-2a7b-4b45-9b73-5aca568332a6",
+          "doc_count": 519
+        },
+        {
+          "key": "c5eeb223-0515-423a-a51a-151426c8f60d",
+          "doc_count": 482
+        },
+        {
+          "key": "82672123-feef-4b1c-9ee3-9a681204ae76",
+          "doc_count": 346
+        },
+        {
+          "key": "d8862887-ff5c-4caa-9d61-f1958887ebc1",
+          "doc_count": 325
+        },
+        {
+          "key": "a0546df1-b727-402f-b9b8-570e65e58026",
+          "doc_count": 297
+        },
+        {
+          "key": "06c35934-1b75-4196-838d-29d509951bf9",
+          "doc_count": 228
+        },
+        {
+          "key": "92e4e092-6dcb-46bc-85a0-dea8310aba45",
+          "doc_count": 212
+        },
+        {
+          "key": "2e4ccf50-bb7d-43a6-9640-088b248c2c5a",
+          "doc_count": 200
+        },
+        {
+          "key": "7311c4ac-7cf6-4160-a55c-4a4c7cd0cf89",
+          "doc_count": 121
+        },
+        {
+          "key": "3e5a9f79-297b-497d-84eb-97e0d1e5c2bf",
+          "doc_count": 118
+        },
+        {
+          "key": "17fc477d-727e-4dde-99d6-ac440e937d14",
+          "doc_count": 112
+        },
+        {
+          "key": "5f513dff-ccd8-4578-ad0b-5e6cf035e4d1",
+          "doc_count": 92
+        },
+        {
+          "key": "ca4e7ee9-06f5-4f93-830c-507a6598ec25",
+          "doc_count": 87
+        },
+        {
+          "key": "91f4f1c9-37e3-430b-8020-f8d65af8e422",
+          "doc_count": 64
+        },
+        {
+          "key": "28a8561d-4699-4c90-823b-686d6207d675",
+          "doc_count": 58
+        },
+        {
+          "key": "bc93e4c6-fd85-4412-987f-52f6fa3bb67d",
+          "doc_count": 57
+        },
+        {
+          "key": "b6d0f953-29b4-41da-a255-2ed07c83edf1",
+          "doc_count": 52
+        },
+        {
+          "key": "9a861ebe-f8d7-4eb1-a2c8-3006f07cfec2",
+          "doc_count": 48
+        },
+        {
+          "key": "d06a16c6-f540-40a8-9e92-876ad1955d03",
+          "doc_count": 48
+        },
+        {
+          "key": "2c00c297-9ebd-498a-b701-d3ebde4b49f3",
+          "doc_count": 47
+        },
+        {
+          "key": "fdf98e60-9feb-4b86-a42e-ae6c7152d02c",
+          "doc_count": 43
+        },
+        {
+          "key": "5ee6f92f-c65c-4888-98e3-f152b3ceb184",
+          "doc_count": 41
+        },
+        {
+          "key": "b12b08da-3d05-4406-a051-0139a33ecf35",
+          "doc_count": 39
+        },
+        {
+          "key": "a7228b3f-982a-4518-a761-b19b00e14844",
+          "doc_count": 35
+        },
+        {
+          "key": "67b5d248-4a1e-4861-bc2a-3ac7f379acde",
+          "doc_count": 32
+        },
+        {
+          "key": "6226705f-4867-464d-9fab-4e81ecee731f",
+          "doc_count": 31
+        },
+        {
+          "key": "30733214-8eb0-4894-b19d-775fe8a617cf",
+          "doc_count": 27
+        },
+        {
+          "key": "41800344-33b3-4201-b9d2-cabbbf564fbc",
+          "doc_count": 25
+        },
+        {
+          "key": "e8c034d5-c2c7-4f23-8dc0-7f94f4116306",
+          "doc_count": 23
+        },
+        {
+          "key": "2df867b1-89de-4539-8414-67c47a88f0c8",
+          "doc_count": 21
+        },
+        {
+          "key": "fd66cee6-5310-4201-9949-0ea04a05b72b",
+          "doc_count": 20
+        },
+        {
+          "key": "e4ff51ba-5007-4c40-9a86-e8c6f4db77b7",
+          "doc_count": 18
+        },
+        {
+          "key": "341da8fa-d049-46ee-9be8-463043f26fa7",
+          "doc_count": 17
+        },
+        {
+          "key": "687efa84-c549-4743-a193-72d198d8e19c",
+          "doc_count": 17
+        },
+        {
+          "key": "948a3370-bdb4-46cb-a047-c777a76ae420",
+          "doc_count": 17
+        },
+        {
+          "key": "9e89b6af-4bb5-45af-93d8-0112bd20a60d",
+          "doc_count": 17
+        },
+        {
+          "key": "af4f13cd-f1e8-4e18-ac7a-b0aeee90c749",
+          "doc_count": 16
+        },
+        {
+          "key": "cb2973af-0d5a-4fbf-80ab-ec96ede33ef0",
+          "doc_count": 16
+        },
+        {
+          "key": "fe52a17a-a7aa-4f95-a3ea-26fe640170fe",
+          "doc_count": 15
+        },
+        {
+          "key": "35830c1e-429e-4006-a153-78984a3e0ee2",
+          "doc_count": 11
+        },
+        {
+          "key": "ce98b978-4542-45c6-aecf-79cf3f6979ed",
+          "doc_count": 11
+        },
+        {
+          "key": "fe04dab1-5a3d-4c28-a450-012658e982d8",
+          "doc_count": 11
+        },
+        {
+          "key": "0c94911f-6f18-40a2-a0c3-95c845bc41d7",
+          "doc_count": 10
+        },
+        {
+          "key": "f39780bd-7108-4685-8e6a-b340ff5a5965",
+          "doc_count": 10
+        },
+        {
+          "key": "17ff84d1-e3e9-43d1-a746-745ef8d339d0",
+          "doc_count": 9
+        },
+        {
+          "key": "90739622-5232-4048-8121-9af9ec69604f",
+          "doc_count": 9
+        },
+        {
+          "key": "253f90be-3b94-469c-820c-cb727b85bdd4",
+          "doc_count": 8
+        },
+        {
+          "key": "97e4947d-fce9-4019-9f86-c0d94c820269",
+          "doc_count": 8
+        },
+        {
+          "key": "bfb53140-79c1-4625-81aa-3f37de7c0c2f",
+          "doc_count": 8
+        },
+        {
+          "key": "0bffd75c-2c42-4119-bae7-1ca6d8eb4d1a",
+          "doc_count": 7
+        },
+        {
+          "key": "38db50bb-72f3-4416-aeb9-61457e655a6d",
+          "doc_count": 6
+        },
+        {
+          "key": "750a80fe-60b9-423b-aca1-dcc7937d2c84",
+          "doc_count": 6
+        },
+        {
+          "key": "3fe3a250-0f48-4a9b-bb71-36d798694912",
+          "doc_count": 5
+        },
+        {
+          "key": "c8eeddef-b903-4aa3-a0fb-44344b8bf301",
+          "doc_count": 5
+        },
+        {
+          "key": "36be338b-cfb2-47e4-a1fc-b3f7a1aaaf22",
+          "doc_count": 4
+        },
+        {
+          "key": "b1549ab7-5fc7-4966-a210-0846484fb171",
+          "doc_count": 4
+        },
+        {
+          "key": "d07e7b8a-2222-477f-a7f3-f098bbfdaf54",
+          "doc_count": 4
+        },
+        {
+          "key": "fd62a976-d195-492a-b6f0-f57fef8b6acc",
+          "doc_count": 4
+        },
+        {
+          "key": "3420d3d5-f142-4db6-951c-5d37cb72ce53",
+          "doc_count": 3
+        },
+        {
+          "key": "433d3c37-8dde-42e4-a344-2cb6605c5da2",
+          "doc_count": 3
+        },
+        {
+          "key": "5ab348ab-439a-4697-925c-d6abe0c09b92",
+          "doc_count": 3
+        },
+        {
+          "key": "b6ebfa9d-fed3-4e0c-8877-47c1190f346c",
+          "doc_count": 3
+        },
+        {
+          "key": "c57817e7-034c-4796-ac47-2bc2191713b3",
+          "doc_count": 3
+        },
+        {
+          "key": "c7821624-d246-43b8-9dfd-de470f9dc294",
+          "doc_count": 3
+        },
+        {
+          "key": "e647814d-6975-4b34-b8c4-e79b7ca83085",
+          "doc_count": 3
+        },
+        {
+          "key": "15e04168-22cc-4283-9042-247ab053c7ca",
+          "doc_count": 2
+        },
+        {
+          "key": "2d47501f-dbed-43ce-a9c3-9c8542648ce4",
+          "doc_count": 2
+        },
+        {
+          "key": "57a6bf5f-cda1-41fd-8c12-804c95f74841",
+          "doc_count": 2
+        },
+        {
+          "key": "68abd0b8-cff1-4c84-a2d9-bd4ac6df4fa4",
+          "doc_count": 2
+        },
+        {
+          "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
+          "doc_count": 2
+        },
+        {
+          "key": "212dcc45-bf5b-43d8-a804-3351c04c2f7a",
+          "doc_count": 1
+        },
+        {
+          "key": "41b166d5-ce08-4efe-99fc-6df77d8fe29e",
+          "doc_count": 1
+        },
+        {
+          "key": "a89f64ab-8b3b-4267-b18a-3207d25a45ad",
+          "doc_count": 1
+        },
+        {
+          "key": "b4154ce7-8145-4fd8-92ed-edd124d53730",
+          "doc_count": 1
+        },
+        {
+          "key": "df22987f-d20d-41db-b8eb-8b5f5fca6df0",
+          "doc_count": 1
+        },
+        {
+          "key": "e01f53f2-8e1b-41cb-9e5a-3dfb3ccf44d6",
+          "doc_count": 1
+        },
+        {
+          "key": "f1960cd5-e27a-40f0-b4bd-3ca7157e4bbb",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1467035197614,
+      "value_as_string": "2016-06-27T13:46:37.614Z"
+    }
+  }
+}

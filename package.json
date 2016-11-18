@@ -16,40 +16,55 @@
     "hiredis": "^0.5.0",
     "kcors": "^2.2.0",
     "koa": "^2.0.0-alpha.7",
+    "koa-adapter": "0.0.3",
     "koa-bodyparser": "^3.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-morgan": "^1.0.1",
+    "koa-proxy": "^0.6.0",
     "koa-router": "^7.0.1",
     "lodash": "^4.17.1",
     "mapnik": "^3.5.13",
     "morgan": "^1.7.0",
     "ngeohash": "^0.6.0",
     "redis": "^0.12.1",
-    "request": "^2.45.0"
+    "request": "^2.45.0",
+    "request-promise": "^4.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-jest": "^17.0.2",
+    "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-preset-node6": "^11.0.0",
     "babel-preset-stage-3": "^6.17.0",
     "babel-register": "^6.18.0",
-    "chai": "*",
+    "chai": "^3.5.0",
     "eslint": "^3.10.1",
     "istanbul": "^0.4.5",
+    "jest": "^17.0.3",
     "mocha": "*",
     "nodemon": "^1.11.0",
     "nyc": "^9.0.1",
-    "supertest": "*"
+    "supertest": "*",
+    "supertest-as-promised": "^4.0.2"
   },
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon --exec npm run start",
     "build": "babel src -d build",
-    "test": "npm run build; NODE_ENV=test BLUEBIRD_DEBUG=1 nyc --check-coverage --lines 70 mocha -- --require 'babel-polyfill' --compilers js:babel-register"
+    "test": "npm run build; NODE_ENV=test BLUEBIRD_DEBUG=1 jest"
   },
   "licenses": [
     {
       "type": "GPLv3",
       "url": "http://github.com/iDigBio/idigbio-search-api/raw/master/LICENSE.md"
     }
-  ]
+  ],
+  "jest": {
+    "testPathIgnorePatterns": [
+      ".eslintrc.js",
+      "/node_modules/"
+    ]
+  }
 }

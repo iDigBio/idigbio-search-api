@@ -2,9 +2,10 @@
 
 /* eslint no-process-env: 0 */
 
+var env = process.env.NODE_ENV || "development";
 
 var config = {
-  ENV: process.env.NODE_ENV || "development",
+  ENV: env,
   GEN_MOCK: process.env.GEN_MOCK === "true",
   CLUSTER: process.env.CLUSTER !== "false",
   CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || 10,
@@ -18,15 +19,15 @@ var config = {
   },
   elasticsearch: {
     hosts: [
-      "c18node2.acis.ufl.edu:9200",
-      "c18node6.acis.ufl.edu:9200",
-      "c18node10.acis.ufl.edu:9200",
-      "c18node12.acis.ufl.edu:9200",
-      "c18node14.acis.ufl.edu:9200"
+      "http://c18node2.acis.ufl.edu:9200",
+      "http://c18node6.acis.ufl.edu:9200",
+      "http://c18node10.acis.ufl.edu:9200",
+      "http://c18node12.acis.ufl.edu:9200",
+      "http://c18node14.acis.ufl.edu:9200"
     ],
     apiVersion: "2.4",
     sniffOnStart: false,
-    sniffOnConnectionFault: true
+    sniffOnConnectionFault: true,
   },
   maxRecordsets: 10000,
   defaultLimit: 100,
@@ -34,27 +35,14 @@ var config = {
   recordsets: {},
   indexterms: {},
   redis: {
-    hostname: "localhost",
+    hostname: {
+      prod: "idb-redis-search-prod.acis.ufl.edu",
+      beta: "idb-redis-search-beta.acis.ufl.edu",
+    }[env] || "localhost",
     port: 6379
   },
   maxTileObjects: 10000,
   cacheTimeout: 60 * 60
 };
-
-if(config.ENV === "prod") {
-  config.redis.hostname = "idb-redis-search-prod.acis.ufl.edu";
-} else if(config.ENV === "beta") {
-  config.redis.hostname = "idb-redis-search-beta.acis.ufl.edu";
-
-  // config.elasticsearch.hosts = [
-  //    "c17node52.acis.ufl.edu:9200",
-  //    "c17node53.acis.ufl.edu:9200",
-  //    "c17node54.acis.ufl.edu:9200",
-  //    "c17node55.acis.ufl.edu:9200",
-  //    "c17node56.acis.ufl.edu:9200"
-  // ];
-  // config.search.index = "idigbio-2.10.3";
-}
-
 
 module.exports = config;

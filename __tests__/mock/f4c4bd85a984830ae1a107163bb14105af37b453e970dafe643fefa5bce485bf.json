@@ -1,0 +1,1756 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 587,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "560e5178-9dc1-4a36-932a-16a8818e7e47",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 44.03404611626266,
+            "lon": -122.33346043044479
+          },
+          "family": "felidae",
+          "recordset": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+          "dqs": 0.4603174603174603,
+          "stateprovince": "oregon",
+          "county": "lane",
+          "phylum": "chordata",
+          "catalognumber": "35217",
+          "startdayofyear": 2,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "uuid": "560e5178-9dc1-4a36-932a-16a8818e7e47",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "odfw53-1983, ferry, greer",
+          "institutioncode": "uwbm",
+          "datemodified": "2015-03-10T09:22:45.542000+00:00",
+          "datecollected": "1983-01-02T00:00:00+00:00",
+          "etag": "f68d5de369705e8571f8d9624c5ad12a6cf5110b",
+          "verbatimlocality": "usa | oregon | lane |  | lat: 44.0342 long: -122.3323oregon: lane county; hehe mt., 1 mi e; buck creek drainage; t 18s, r 4e, sec 4",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia | chordata | mammalia | carnivora | felidae | felinae | puma",
+          "collectionid": "urn:lsid:biocol.org:col:34921",
+          "commonname": "cougar",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 1152,
+          "data": {
+            "dwc:startDayOfYear": "2",
+            "dwc:specificEpithet": "concolor",
+            "dwc:countryCode": "US",
+            "dwc:county": "Lane",
+            "dwc:recordedBy": "ODFW53-1983, Ferry, Greer",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://portal.vertnet.org/o/uwbm/mammal?id=35217",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "urn:catalog:UWBM:Mammal:35217",
+            "dwc:lifeStage": "unknown",
+            "dcterms:language": "en",
+            "dwc:occurrenceRemarks": "2089-818-305-102",
+            "id": "urn:catalog:UWBM:Mammal:35217",
+            "dwc:establishmentMeans": "native",
+            "dwc:stateProvince": "Oregon",
+            "dwc:eventDate": "1983-01-02",
+            "dwc:collectionID": "urn:lsid:biocol.org:col:34921",
+            "dwc:institutionCode": "UWBM",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal",
+            "dwc:occurrenceStatus": "present",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "44.0342",
+            "dwc:preparations": "body skel",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:dynamicProperties": "{\"totalLengthInMM\":\"2089\", \"tailLengthInMM\":\"818\", \"hindfootLengthInMM\":\"305\", \"earLengthInMM\":\"102\", \"weight\":\"72.7 kg\" }",
+            "dwc:higherClassification": "Animalia | Chordata | Mammalia | Carnivora | Felidae | Felinae | Puma",
+            "dwc:vernacularName": "Cougar",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "Lat: 44.0342 Long: -122.3323OREGON: Lane County; Hehe Mt., 1 mi E; Buck Creek Drainage; T 18S, R 4E, Sec 4",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34878",
+            "dwc:geodeticDatum": "NAD27",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "35217",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "| USA | Oregon | Lane |  |  |  |",
+            "dwc:month": "1",
+            "dwc:decimalLongitude": "-122.3323",
+            "dwc:coordinateUncertaintyInMeters": "1152",
+            "dwc:endDayOfYear": "2",
+            "dwc:verbatimLocality": "USA | Oregon | Lane |  | Lat: 44.0342 Long: -122.3323OREGON: Lane County; Hehe Mt., 1 mi E; Buck Creek Drainage; T 18S, R 4E, Sec 4",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "VertNet Georeferencing Guidelines",
+            "dcterms:modified": "2015-01-06",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "2",
+            "dwc:year": "1983"
+          },
+          "class": "mammalia",
+          "occurrenceid": "urn:catalog:uwbm:mammal:35217",
+          "institutionid": "urn:lsid:biocol.org:col:34878",
+          "country": "united states",
+          "locality": "lat: 44.0342 long: -122.3323oregon: lane county; hehe mt., 1 mi e; buck creek drainage; t 18s, r 4e, sec 4",
+          "collectioncode": "mammal",
+          "eventdate": "1983-01-02",
+          "flags": [
+            "idigbio_isocountrycode_added"
+          ],
+          "recordids": [
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:35217"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "1d898733-9d2e-4991-8e8e-015fb514b13a",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 34.13612141,
+            "lon": -107.3435895
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.4126984126984127,
+          "stateprovince": "new mexico",
+          "county": "lincoln county",
+          "phylum": "chordata",
+          "catalognumber": "262402",
+          "startdayofyear": 356,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2015-11-21T20:51:56.020402+00:00",
+          "uuid": "1d898733-9d2e-4991-8e8e-015fb514b13a",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish",
+          "institutioncode": "msb",
+          "verbatimlocality": "gallinas mountains",
+          "datecollected": "2011-12-22T00:00:00+00:00",
+          "etag": "cba09b947e7e5a17d60a27a5930162b1346a66b1",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia chordata mammalia carnivora felidae  (linnaeus, 1758)",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 3000,
+          "data": {
+            "dwc:georeferenceProtocol": "not recorded",
+            "dwc:specificEpithet": "concolor",
+            "dwc:individualID": "http://arctos.database.museum/guid/MSB:Mamm:262402",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Lincoln County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262402",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262402?seid=1918672",
+            "dwc:dateIdentified": "2013-02-12",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "34.13612141/-107.3435895",
+            "dwc:occurrenceRemarks": "Cause of death: sport hunted; GMU: 13; UTM Zone 13 Easting 283898 Northing 3779733",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262402?seid=1918672",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2011-12-22",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia Chordata Mammalia Carnivora Felidae  (Linnaeus, 1758)",
+            "dwc:decimalLatitude": "34.13612141",
+            "dwc:preparations": "tooth (frozen); muscle (dry)",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex: male",
+            "dwc:georeferenceSources": "not recorded",
+            "dwc:identificationQualifier": "A",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:locality": "Gallinas Mountains",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34495",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "262402",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Lincoln County",
+            "dwc:endDayOfYear": "356",
+            "dwc:decimalLongitude": "-107.3435895",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "dwc:month": "12",
+            "dwc:otherCatalogNumbers": "NK=227079; original identifier=NMDGF pelt tag #23559",
+            "dwc:verbatimLocality": "Gallinas Mountains",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:verbatimEventDate": "2011-12-22",
+            "dcterms:rights": "http://arctosdb.org/home/data/",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "http://arctos.database.museum/guid/MSB:Mamm:262402?seid=1918672",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "urn:occurrence:Arctos:MSB:Mamm:262402:1918672"
+              }
+            ],
+            "dcterms:modified": "2013-02-12 17:06:45.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "22",
+            "dwc:year": "2011"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:262402?seid=1918672",
+          "institutionid": "urn:lsid:biocol.org:col:34495",
+          "country": "united states",
+          "locality": "gallinas mountains",
+          "collectioncode": "mammal specimens",
+          "eventdate": "2011-12-22",
+          "flags": [
+            "geopoint_datum_error",
+            "idigbio_isocountrycode_added",
+            "dwc_kingdom_added"
+          ],
+          "verbatimeventdate": "2011-12-22",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262402?seid=1918672",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262402:1918672"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "22eb2dee-487f-4378-8437-bca5fd308007",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 36.12980468,
+            "lon": -106.8892102
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.4126984126984127,
+          "stateprovince": "new mexico",
+          "county": "sandoval county",
+          "phylum": "chordata",
+          "catalognumber": "262310",
+          "startdayofyear": 352,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2015-11-21T20:51:56.020402+00:00",
+          "uuid": "22eb2dee-487f-4378-8437-bca5fd308007",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish",
+          "institutioncode": "msb",
+          "verbatimlocality": "la jara canyon",
+          "datecollected": "2011-12-18T00:00:00+00:00",
+          "etag": "e6036bc0dde596b3f1f245026e211d57addc4428",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia chordata mammalia carnivora felidae  (linnaeus, 1758)",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 3000,
+          "data": {
+            "dwc:georeferenceProtocol": "not recorded",
+            "dwc:specificEpithet": "concolor",
+            "dwc:individualID": "http://arctos.database.museum/guid/MSB:Mamm:262310",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Sandoval County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262310",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262310?seid=1918580",
+            "dwc:dateIdentified": "2013-02-12",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "36.12980468/-106.8892102",
+            "dwc:occurrenceRemarks": "Cause of death: sport hunted; GMU: 6A; UTM Zone 13 Easting 330000 Northing 4000000",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262310?seid=1918580",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2011-12-18",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia Chordata Mammalia Carnivora Felidae  (Linnaeus, 1758)",
+            "dwc:decimalLatitude": "36.12980468",
+            "dwc:preparations": "tooth (frozen); muscle (dry)",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex: male",
+            "dwc:georeferenceSources": "not recorded",
+            "dwc:identificationQualifier": "A",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:locality": "La Jara Canyon",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34495",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "262310",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Sandoval County",
+            "dwc:endDayOfYear": "352",
+            "dwc:decimalLongitude": "-106.8892102",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "dwc:month": "12",
+            "dwc:otherCatalogNumbers": "NK=227021; original identifier=NMDGF pelt tag #24346",
+            "dwc:verbatimLocality": "La Jara Canyon",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:verbatimEventDate": "2011-12-18",
+            "dcterms:rights": "http://arctosdb.org/home/data/",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "http://arctos.database.museum/guid/MSB:Mamm:262310?seid=1918580",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "urn:occurrence:Arctos:MSB:Mamm:262310:1918580"
+              }
+            ],
+            "dcterms:modified": "2013-02-12 17:01:48.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "18",
+            "dwc:year": "2011"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:262310?seid=1918580",
+          "institutionid": "urn:lsid:biocol.org:col:34495",
+          "country": "united states",
+          "locality": "la jara canyon",
+          "collectioncode": "mammal specimens",
+          "eventdate": "2011-12-18",
+          "flags": [
+            "geopoint_datum_error",
+            "idigbio_isocountrycode_added",
+            "dwc_kingdom_added"
+          ],
+          "verbatimeventdate": "2011-12-18",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262310?seid=1918580",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262310:1918580"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "18426a8e-3932-4a08-b097-9c5aff4b21a6",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 32.72280989,
+            "lon": -108.5659798
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.4126984126984127,
+          "stateprovince": "new mexico",
+          "county": "grant county",
+          "phylum": "chordata",
+          "catalognumber": "262326",
+          "startdayofyear": 37,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2015-11-21T20:51:56.020402+00:00",
+          "uuid": "18426a8e-3932-4a08-b097-9c5aff4b21a6",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish",
+          "institutioncode": "msb",
+          "verbatimlocality": "head of bear canyon in burros",
+          "datecollected": "2012-02-06T00:00:00+00:00",
+          "etag": "674ef296c7cdfbdda83d55be7b432c235e58a1e1",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia chordata mammalia carnivora felidae  (linnaeus, 1758)",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 3000,
+          "data": {
+            "dwc:georeferenceProtocol": "not recorded",
+            "dwc:specificEpithet": "concolor",
+            "dwc:individualID": "http://arctos.database.museum/guid/MSB:Mamm:262326",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Grant County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262326",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262326?seid=1918596",
+            "dwc:dateIdentified": "2013-02-12",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "32.72280989/-108.5659798",
+            "dwc:occurrenceRemarks": "Cause of death: sport hunted; GMU: 23; UTM Zone 12 Easting 728113 Northing 3623182",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262326?seid=1918596",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2012-02-06",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia Chordata Mammalia Carnivora Felidae  (Linnaeus, 1758)",
+            "dwc:decimalLatitude": "32.72280989",
+            "dwc:preparations": "muscle (dry)",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex: female",
+            "dwc:georeferenceSources": "not recorded",
+            "dwc:identificationQualifier": "A",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:locality": "Head of bear canyon in Burros",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34495",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "262326",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Grant County",
+            "dwc:endDayOfYear": "37",
+            "dwc:decimalLongitude": "-108.5659798",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "dwc:month": "02",
+            "dwc:otherCatalogNumbers": "NK=227135; original identifier=NMDGF pelt tag #26133",
+            "dwc:verbatimLocality": "Head of bear canyon in Burros",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:verbatimEventDate": "2012-02-06",
+            "dcterms:rights": "http://arctosdb.org/home/data/",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "http://arctos.database.museum/guid/MSB:Mamm:262326?seid=1918596",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "urn:occurrence:Arctos:MSB:Mamm:262326:1918596"
+              }
+            ],
+            "dcterms:modified": "2013-02-12 17:02:40.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "06",
+            "dwc:year": "2012"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:262326?seid=1918596",
+          "institutionid": "urn:lsid:biocol.org:col:34495",
+          "country": "united states",
+          "locality": "head of bear canyon in burros",
+          "collectioncode": "mammal specimens",
+          "eventdate": "2012-02-06",
+          "flags": [
+            "geopoint_datum_error",
+            "idigbio_isocountrycode_added",
+            "dwc_kingdom_added"
+          ],
+          "verbatimeventdate": "2012-02-06",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262326?seid=1918596",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262326:1918596"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "0fb6e543-3f0b-45a5-af1f-c0df39e9ebee",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 43.57174271115949,
+            "lon": -123.12018533753496
+          },
+          "family": "felidae",
+          "recordset": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+          "dqs": 0.4603174603174603,
+          "stateprovince": "oregon",
+          "county": "douglas",
+          "phylum": "chordata",
+          "catalognumber": "51184",
+          "startdayofyear": 116,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "uuid": "0fb6e543-3f0b-45a5-af1f-c0df39e9ebee",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "j. jackson",
+          "institutioncode": "uwbm",
+          "datemodified": "2015-03-10T09:04:30.935000+00:00",
+          "datecollected": "1984-04-25T00:00:00+00:00",
+          "etag": "61b8bf47055db1d9ab38b72effbd183078549213",
+          "verbatimlocality": "usa | oregon | douglas |  | lat: 43.5719 long: -123.119oregon: douglas county; dickenson mountain; i-5, 3 mi e; t 23s, r 4w, sec 13",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia | chordata | mammalia | carnivora | felidae | felinae | puma",
+          "collectionid": "urn:lsid:biocol.org:col:34921",
+          "commonname": "cougar",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 1152,
+          "data": {
+            "dwc:startDayOfYear": "116",
+            "dwc:specificEpithet": "concolor",
+            "dwc:countryCode": "US",
+            "dwc:county": "Douglas",
+            "dwc:recordedBy": "J. Jackson",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://portal.vertnet.org/o/uwbm/mammal?id=51184",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "urn:catalog:UWBM:Mammal:51184",
+            "dwc:lifeStage": "unknown",
+            "dcterms:language": "en",
+            "dwc:occurrenceRemarks": "1397-x-x-x",
+            "id": "urn:catalog:UWBM:Mammal:51184",
+            "dwc:establishmentMeans": "native",
+            "dwc:stateProvince": "Oregon",
+            "dwc:eventDate": "1984-04-25",
+            "dwc:collectionID": "urn:lsid:biocol.org:col:34921",
+            "dwc:institutionCode": "UWBM",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal",
+            "dwc:occurrenceStatus": "present",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "43.5719",
+            "dwc:preparations": "skull",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:dynamicProperties": "{\"totalLengthInMM\":\"1397\", \"weight\":\"19.5 kg\" }",
+            "dwc:higherClassification": "Animalia | Chordata | Mammalia | Carnivora | Felidae | Felinae | Puma",
+            "dwc:vernacularName": "Cougar",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "Lat: 43.5719 Long: -123.119OREGON: Douglas County; Dickenson Mountain; I-5, 3 mi E; T 23S, R 4W, Sec 13",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34878",
+            "dwc:geodeticDatum": "NAD27",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "51184",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "| USA | Oregon | Douglas |  |  |  |",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-123.119",
+            "dwc:coordinateUncertaintyInMeters": "1152",
+            "dwc:endDayOfYear": "116",
+            "dwc:verbatimLocality": "USA | Oregon | Douglas |  | Lat: 43.5719 Long: -123.119OREGON: Douglas County; Dickenson Mountain; I-5, 3 mi E; T 23S, R 4W, Sec 13",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "VertNet Georeferencing Guidelines",
+            "dcterms:modified": "2015-01-06",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "25",
+            "dwc:year": "1984"
+          },
+          "class": "mammalia",
+          "occurrenceid": "urn:catalog:uwbm:mammal:51184",
+          "institutionid": "urn:lsid:biocol.org:col:34878",
+          "country": "united states",
+          "locality": "lat: 43.5719 long: -123.119oregon: douglas county; dickenson mountain; i-5, 3 mi e; t 23s, r 4w, sec 13",
+          "collectioncode": "mammal",
+          "eventdate": "1984-04-25",
+          "flags": [
+            "idigbio_isocountrycode_added"
+          ],
+          "recordids": [
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:51184"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "71c3d9ab-a253-4bab-ab70-adcdd5a964bd",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": -38.73333,
+            "lon": -72.6
+          },
+          "family": "felidae",
+          "recordset": "9dce915b-3de4-4a7d-a68d-e4c4c15809ce",
+          "dqs": 0.38095238095238093,
+          "phylum": "chordata",
+          "catalognumber": "mr.2299",
+          "startdayofyear": 200,
+          "specificepithet": "concolor",
+          "continent": "south america",
+          "datemodified": "2015-04-14T16:46:25.563000+00:00",
+          "uuid": "71c3d9ab-a253-4bab-ab70-adcdd5a964bd",
+          "countrycode": "chl",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector unknown",
+          "institutioncode": "msu",
+          "verbatimlocality": "south america | chile | temuco",
+          "datecollected": "1912-07-18",
+          "etag": "578d8d20b58585d936b574037674afc02ed9f933",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia | chordata | mammalia | carnivora | felidae | puma",
+          "collectionid": "http://grbio.org/cool/qxfg-723q",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 5683,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:countryCode": "CL",
+            "dwc:kingdom": "Animalia",
+            "dwc:recordedBy": "Collector Unknown",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://portal.vertnet.org/o/msu/mr?id=mr-2299",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:occurrenceID": "urn:catalog:MSU:MR:MR.2299",
+            "dcterms:language": "en",
+            "id": "urn:catalog:MSU:MR:MR.2299",
+            "dwc:establishmentMeans": "native",
+            "dwc:collectionID": "http://grbio.org/cool/qxfg-723q",
+            "dwc:institutionCode": "MSU",
+            "dwc:country": "Chile",
+            "dwc:collectionCode": "MR",
+            "dwc:occurrenceStatus": "present",
+            "dwc:decimalLatitude": "-38.73333",
+            "dwc:preparations": "skull",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Puma",
+            "dwc:continent": "South America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "unknown",
+            "dwc:higherClassification": "Animalia | Chordata | Mammalia | Carnivora | Felidae | Puma",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "Temuco",
+            "dwc:institutionID": "http://grbio.org/cool/53w1-8r3k",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "MR.2299",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "South America | Chile |  |  |  |  |  |",
+            "dwc:month": "7",
+            "dwc:decimalLongitude": "-72.6",
+            "dwc:coordinateUncertaintyInMeters": "5683",
+            "dwc:verbatimLocality": "South America | Chile | Temuco",
+            "dcterms:rights": "https://creativecommons.org/publicdomain/zero/1.0",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "VertNet Georeferencing Guidelines",
+            "dcterms:modified": "2015-04-09",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:year": "1912"
+          },
+          "class": "mammalia",
+          "occurrenceid": "urn:catalog:msu:mr:mr.2299",
+          "institutionid": "http://grbio.org/cool/53w1-8r3k",
+          "country": "chile",
+          "locality": "temuco",
+          "collectioncode": "mr",
+          "flags": [
+            "geopoint_low_precision",
+            "idigbio_isocountrycode_added"
+          ],
+          "recordids": [
+            "9dce915b-3de4-4a7d-a68d-e4c4c15809ce\\urn:catalog:msu:mr:mr.2299"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "4767686d-f005-483d-b508-e0fd86cce19b",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": 45.570352547466236,
+            "lon": -118.43607321682356
+          },
+          "family": "felidae",
+          "recordset": "e6d3c1da-a02f-43a2-a5ef-6a035298b933",
+          "dqs": 0.42857142857142855,
+          "stateprovince": "oregon",
+          "county": "umatilla",
+          "phylum": "chordata",
+          "catalognumber": "mammal-24926",
+          "startdayofyear": 278,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2016-05-31T11:08:51.373227+00:00",
+          "uuid": "4767686d-f005-483d-b508-e0fd86cce19b",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "furgason",
+          "institutioncode": "psm",
+          "verbatimlocality": "usa | oregon | umatilla | lagrande, 24 mi nw",
+          "datecollected": "1977-10-05T00:00:00+00:00",
+          "etag": "1e596aa47e1c24e6e037d38aeb5ee5411eed645d",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "mammalia | carnivora | felidae | puma",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 16783,
+          "data": {
+            "dwc:startDayOfYear": "278",
+            "dwc:specificEpithet": "concolor",
+            "dwc:countryCode": "US",
+            "dwc:county": "Umatilla",
+            "dwc:recordedBy": "Furgason",
+            "dwc:georeferencedDate": "7/1/2002",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://portal.vertnet.org/o/psm/mammal?id=mammal-24926",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:georeferenceRemarks": "decimal lat/longs are GNIS or calculated using GNIS & offsets",
+            "dwc:occurrenceID": "urn:catalog:PSM:Mammal:Mammal-24926",
+            "dcterms:language": "en",
+            "id": "urn:catalog:PSM:Mammal:Mammal-24926",
+            "dwc:establishmentMeans": "native",
+            "dwc:stateProvince": "Oregon",
+            "dwc:eventDate": "1977-10-05",
+            "dwc:institutionCode": "PSM",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal",
+            "dwc:occurrenceStatus": "present",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "45.5705",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "female",
+            "dwc:georeferenceSources": "GNIS downloaded Feb 2002",
+            "dwc:higherClassification": "Mammalia | Carnivora | Felidae | Puma",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "LaGrande, 24 mi NW",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34825",
+            "dwc:geodeticDatum": "NAD27",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "Mammal-24926",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "| USA | Oregon | Umatilla |  |  |  |",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-118.435",
+            "dwc:coordinateUncertaintyInMeters": "16783",
+            "dwc:endDayOfYear": "278",
+            "dwc:verbatimLocality": "USA | Oregon | Umatilla | LaGrande, 24 mi NW",
+            "dwc:georeferencedBy": "GW Shugart",
+            "dcterms:rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dcterms:modified": "2016-05-26",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "5",
+            "dwc:year": "1977"
+          },
+          "class": "mammalia",
+          "occurrenceid": "urn:catalog:psm:mammal:mammal-24926",
+          "institutionid": "urn:lsid:biocol.org:col:34825",
+          "country": "united states",
+          "locality": "lagrande, 24 mi nw",
+          "collectioncode": "mammal",
+          "eventdate": "1977-10-05",
+          "flags": [
+            "idigbio_isocountrycode_added"
+          ],
+          "recordids": [
+            "e6d3c1da-a02f-43a2-a5ef-6a035298b933\\urn:catalog:psm:mammal:mammal-24926"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "676d9915-5e04-4ec3-b70e-ee4f6a3bb715",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 31.59696,
+            "lon": -108.36983
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.42857142857142855,
+          "stateprovince": "new mexico",
+          "county": "hidalgo county",
+          "phylum": "chordata",
+          "catalognumber": "199465",
+          "startdayofyear": 94,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2015-11-21T20:51:56.020402+00:00",
+          "uuid": "676d9915-5e04-4ec3-b70e-ee4f6a3bb715",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): vance anglin, new mexico department of game and fish; preparator(s): erin m. jackson",
+          "institutioncode": "msb",
+          "verbatimlocality": "big hatchet mtns., 1 mile west of windmill in sheridan canyon.",
+          "datecollected": "2006-04-04T00:00:00+00:00",
+          "etag": "8149215df22a856957ac687790f4093e7b4c74e6",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia chordata mammalia carnivora felidae  (linnaeus, 1758)",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 2519,
+          "data": {
+            "dwc:georeferenceProtocol": "BioGeoMancer",
+            "dwc:specificEpithet": "concolor",
+            "dwc:individualID": "http://arctos.database.museum/guid/MSB:Mamm:199465",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Hidalgo County",
+            "dwc:recordedBy": "Collector(s): Vance Anglin, New Mexico Department of Game and Fish; Preparator(s): Erin M. Jackson",
+            "dwc:georeferencedDate": "13-04-10 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:199465",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:199465?seid=669525",
+            "dwc:dateIdentified": "2006-04-04",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "31.59696/-108.36983",
+            "dwc:occurrenceRemarks": "NMDGF pelt tag # 20157; UTM zone 12, E 3.50.3, N 749",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:199465?seid=669525",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2006-04-04",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia Chordata Mammalia Carnivora Felidae  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "31.59696",
+            "dwc:preparations": "skin; skull; postcranial skeleton (dry); muscle (frozen)",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "Vance Anglin",
+            "dwc:dynamicProperties": "sex: male",
+            "dwc:georeferenceSources": "Beogeomancer",
+            "dwc:identificationQualifier": "A",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jason L. Malaney",
+            "dwc:locality": "Big Hatchet Mtns., 1 mile West of Windmill in Sheridan Canyon.",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34495",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "199465",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Hidalgo County",
+            "dwc:endDayOfYear": "94",
+            "dwc:decimalLongitude": "-108.36983",
+            "dwc:coordinateUncertaintyInMeters": "2519",
+            "dwc:month": "04",
+            "dwc:otherCatalogNumbers": "NK=159583; original identifier=20157",
+            "dwc:verbatimLocality": "Big Hatchet Mtns., 1 mile West of Windmill in Sheridan Canyon.",
+            "dwc:georeferencedBy": "Jason L. Malaney",
+            "dwc:verbatimEventDate": "4 April 2006",
+            "dcterms:rights": "http://arctosdb.org/home/data/",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "http://arctos.database.museum/guid/MSB:Mamm:199465?seid=669525",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "urn:occurrence:Arctos:MSB:Mamm:199465:669525"
+              }
+            ],
+            "dcterms:modified": "2013-12-13 04:56:05.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "04",
+            "dwc:year": "2006"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:199465?seid=669525",
+          "institutionid": "urn:lsid:biocol.org:col:34495",
+          "country": "united states",
+          "locality": "big hatchet mtns., 1 mile west of windmill in sheridan canyon.",
+          "collectioncode": "mammal specimens",
+          "eventdate": "2006-04-04",
+          "flags": [
+            "geopoint_datum_error",
+            "idigbio_isocountrycode_added"
+          ],
+          "verbatimeventdate": "4 april 2006",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:199465?seid=669525",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:199465:669525"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "6d5997e9-96e9-4d83-b0f7-22162aef8e92",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 36.3858875,
+            "lon": -106.1753028
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.4126984126984127,
+          "stateprovince": "new mexico",
+          "county": "rio arriba county",
+          "phylum": "chordata",
+          "catalognumber": "262356",
+          "startdayofyear": 338,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2015-11-21T20:51:56.020402+00:00",
+          "uuid": "6d5997e9-96e9-4d83-b0f7-22162aef8e92",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish",
+          "institutioncode": "msb",
+          "verbatimlocality": "la jara mesa north of el rito",
+          "datecollected": "2011-12-04T00:00:00+00:00",
+          "etag": "569c2a4093ca0155a9bbcc6355a5994a56357afd",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia chordata mammalia carnivora felidae  (linnaeus, 1758)",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 3000,
+          "data": {
+            "dwc:georeferenceProtocol": "not recorded",
+            "dwc:specificEpithet": "concolor",
+            "dwc:individualID": "http://arctos.database.museum/guid/MSB:Mamm:262356",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Rio Arriba County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262356",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262356?seid=1918626",
+            "dwc:dateIdentified": "2013-02-12",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "36.3858875/-106.1753028",
+            "dwc:occurrenceRemarks": "Cause of death: sport hunted; GMU: 51; UTM Zone 13 Easting 394589 Northing 4027392",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262356?seid=1918626",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2011-12-04",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia Chordata Mammalia Carnivora Felidae  (Linnaeus, 1758)",
+            "dwc:decimalLatitude": "36.3858875",
+            "dwc:preparations": "tooth (frozen); muscle (dry)",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex: male",
+            "dwc:georeferenceSources": "not recorded",
+            "dwc:identificationQualifier": "A",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:locality": "La Jara Mesa North of El Rito",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34495",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "262356",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Rio Arriba County",
+            "dwc:endDayOfYear": "338",
+            "dwc:decimalLongitude": "-106.1753028",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "dwc:month": "12",
+            "dwc:otherCatalogNumbers": "NK=227151; original identifier=NMDGF pelt tag #24845",
+            "dwc:verbatimLocality": "La Jara Mesa North of El Rito",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:verbatimEventDate": "2011-12-04",
+            "dcterms:rights": "http://arctosdb.org/home/data/",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "http://arctos.database.museum/guid/MSB:Mamm:262356?seid=1918626",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "urn:occurrence:Arctos:MSB:Mamm:262356:1918626"
+              }
+            ],
+            "dcterms:modified": "2013-02-12 17:04:17.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "04",
+            "dwc:year": "2011"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:262356?seid=1918626",
+          "institutionid": "urn:lsid:biocol.org:col:34495",
+          "country": "united states",
+          "locality": "la jara mesa north of el rito",
+          "collectioncode": "mammal specimens",
+          "eventdate": "2011-12-04",
+          "flags": [
+            "geopoint_datum_error",
+            "idigbio_isocountrycode_added",
+            "dwc_kingdom_added"
+          ],
+          "verbatimeventdate": "2011-12-04",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262356?seid=1918626",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262356:1918626"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      },
+      {
+        "_index": "idigbio-2.9.3",
+        "_type": "records",
+        "_id": "278185c6-c3cb-47e5-b2f7-dd00d131673c",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 48.07951427965483,
+            "lon": -123.10188805170048
+          },
+          "family": "felidae",
+          "recordset": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+          "dqs": 0.4444444444444444,
+          "stateprovince": "washington",
+          "county": "clallam",
+          "phylum": "chordata",
+          "catalognumber": "6874",
+          "startdayofyear": 77,
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "uuid": "278185c6-c3cb-47e5-b2f7-dd00d131673c",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "h. f. norton co.",
+          "institutioncode": "uwbm",
+          "datemodified": "2015-03-10T09:04:03.458000+00:00",
+          "datecollected": "1923-03-18",
+          "etag": "c50ab25991aa3bbf997473a62b2290193ca48259",
+          "verbatimlocality": "usa | washington | clallam |  | lat: 48.0797 long: -123.1006washington: clallam county; sequim",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia | chordata | mammalia | carnivora | felidae | felinae | puma",
+          "collectionid": "urn:lsid:biocol.org:col:34921",
+          "commonname": "cougar",
+          "scientificname": "puma concolor",
+          "coordinateuncertainty": 2266,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:countryCode": "US",
+            "dwc:county": "Clallam",
+            "dwc:recordedBy": "H. F. Norton Co.",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://portal.vertnet.org/o/uwbm/mammal?id=6874",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "urn:catalog:UWBM:Mammal:6874",
+            "dwc:lifeStage": "unknown",
+            "dcterms:language": "en",
+            "id": "urn:catalog:UWBM:Mammal:6874",
+            "dwc:establishmentMeans": "native",
+            "dwc:stateProvince": "Washington",
+            "dwc:collectionID": "urn:lsid:biocol.org:col:34921",
+            "dwc:institutionCode": "UWBM",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Mammal",
+            "dwc:occurrenceStatus": "present",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "48.0797",
+            "dwc:preparations": "skin",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://www.vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "unknown",
+            "dwc:higherClassification": "Animalia | Chordata | Mammalia | Carnivora | Felidae | Felinae | Puma",
+            "dwc:vernacularName": "Cougar",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "Lat: 48.0797 Long: -123.1006WASHINGTON: Clallam County; Sequim",
+            "dwc:institutionID": "urn:lsid:biocol.org:col:34878",
+            "dwc:geodeticDatum": "NAD27",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "6874",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "| USA | Washington | Clallam |  |  |  |",
+            "dwc:month": "3",
+            "dwc:decimalLongitude": "-123.1006",
+            "dwc:coordinateUncertaintyInMeters": "2266",
+            "dwc:verbatimLocality": "USA | Washington | Clallam |  | Lat: 48.0797 Long: -123.1006WASHINGTON: Clallam County; Sequim",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "VertNet Georeferencing Guidelines",
+            "dcterms:modified": "2015-01-06",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:year": "1923"
+          },
+          "class": "mammalia",
+          "occurrenceid": "urn:catalog:uwbm:mammal:6874",
+          "institutionid": "urn:lsid:biocol.org:col:34878",
+          "country": "united states",
+          "locality": "lat: 48.0797 long: -123.1006washington: clallam county; sequim",
+          "collectioncode": "mammal",
+          "flags": [
+            "idigbio_isocountrycode_added"
+          ],
+          "recordids": [
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:6874"
+          ],
+          "genus": "puma",
+          "order": "carnivora"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "doc_count": 292
+        },
+        {
+          "key": "f9a33279-d6ba-41c7-a511-ef6adfcb6e20",
+          "doc_count": 44
+        },
+        {
+          "key": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+          "doc_count": 36
+        },
+        {
+          "key": "e6d3c1da-a02f-43a2-a5ef-6a035298b933",
+          "doc_count": 35
+        },
+        {
+          "key": "2d853a6d-50ec-4931-8e91-48fc2491fdee",
+          "doc_count": 31
+        },
+        {
+          "key": "9d8ced48-62c5-4ce0-99e7-a03550c674c0",
+          "doc_count": 25
+        },
+        {
+          "key": "ec359278-df8e-4766-a1d3-4b55fd822704",
+          "doc_count": 23
+        },
+        {
+          "key": "552ce2e5-b627-4d6d-b914-6b495d0a79e6",
+          "doc_count": 16
+        },
+        {
+          "key": "c6969e30-ca21-4576-954d-9c0e052bdde9",
+          "doc_count": 12
+        },
+        {
+          "key": "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba",
+          "doc_count": 9
+        },
+        {
+          "key": "e165b318-d5f7-40d5-a0d9-82ba3c31060f",
+          "doc_count": 8
+        },
+        {
+          "key": "5c861676-8285-4a04-b1c5-94ce73342320",
+          "doc_count": 7
+        },
+        {
+          "key": "50cfe20a-9100-4710-89f9-a97bc3aa53d7",
+          "doc_count": 6
+        },
+        {
+          "key": "9dce915b-3de4-4a7d-a68d-e4c4c15809ce",
+          "doc_count": 5
+        },
+        {
+          "key": "b4d4e884-a2ef-4967-b4cb-2072fc465eaf",
+          "doc_count": 5
+        },
+        {
+          "key": "48e1b8c1-91aa-4b87-8ca0-de1f81232eaf",
+          "doc_count": 4
+        },
+        {
+          "key": "62c35d43-f15c-451d-a8be-1b9c6928b8bd",
+          "doc_count": 4
+        },
+        {
+          "key": "c2dcb184-6c90-4aa3-9ebb-33b2d53837b9",
+          "doc_count": 4
+        },
+        {
+          "key": "311c3a01-c824-4a85-8771-fcc3f353619b",
+          "doc_count": 3
+        },
+        {
+          "key": "433646ab-571a-44f5-820e-25e0736b1113",
+          "doc_count": 3
+        },
+        {
+          "key": "f77daa20-545c-4fce-812c-cdb4d658dfa5",
+          "doc_count": 3
+        },
+        {
+          "key": "0a0f5c81-bf4d-492b-b459-08bd987a0c9a",
+          "doc_count": 2
+        },
+        {
+          "key": "0f3f26e2-cc13-47a3-a268-4c321b621586",
+          "doc_count": 2
+        },
+        {
+          "key": "d0105f1d-a9a0-4cd4-817d-aebfb5512923",
+          "doc_count": 2
+        },
+        {
+          "key": "da67ebd9-52de-444d-b114-e23c03111ac6",
+          "doc_count": 2
+        },
+        {
+          "key": "14a8f79f-eab7-48da-ad50-bda142703820",
+          "doc_count": 1
+        },
+        {
+          "key": "2ee6534e-46ab-4233-98c4-d13c4262ce2e",
+          "doc_count": 1
+        },
+        {
+          "key": "319636db-c2da-493c-beac-1194949e95b4",
+          "doc_count": 1
+        },
+        {
+          "key": "86b1f54d-ac01-4c5e-8ed8-09da2689c7a9",
+          "doc_count": 1
+        }
+      ]
+    },
+    "gh": {
+      "buckets": [
+        {
+          "key": "9tu",
+          "doc_count": 60
+        },
+        {
+          "key": "9wk",
+          "doc_count": 42
+        },
+        {
+          "key": "9tg",
+          "doc_count": 29
+        },
+        {
+          "key": "9q4",
+          "doc_count": 27
+        },
+        {
+          "key": "9td",
+          "doc_count": 24
+        },
+        {
+          "key": "9tf",
+          "doc_count": 21
+        },
+        {
+          "key": "9wh",
+          "doc_count": 20
+        },
+        {
+          "key": "9w5",
+          "doc_count": 19
+        },
+        {
+          "key": "djj",
+          "doc_count": 18
+        },
+        {
+          "key": "dhw",
+          "doc_count": 17
+        },
+        {
+          "key": "9tt",
+          "doc_count": 14
+        },
+        {
+          "key": "9r8",
+          "doc_count": 13
+        },
+        {
+          "key": "c0y",
+          "doc_count": 12
+        },
+        {
+          "key": "9ws",
+          "doc_count": 12
+        },
+        {
+          "key": "c23",
+          "doc_count": 11
+        },
+        {
+          "key": "9wm",
+          "doc_count": 11
+        },
+        {
+          "key": "d8t",
+          "doc_count": 10
+        },
+        {
+          "key": "9wt",
+          "doc_count": 9
+        },
+        {
+          "key": "c28",
+          "doc_count": 8
+        },
+        {
+          "key": "c0x",
+          "doc_count": 8
+        },
+        {
+          "key": "9we",
+          "doc_count": 8
+        },
+        {
+          "key": "9w7",
+          "doc_count": 8
+        },
+        {
+          "key": "9tc",
+          "doc_count": 8
+        },
+        {
+          "key": "9t9",
+          "doc_count": 8
+        },
+        {
+          "key": "djm",
+          "doc_count": 7
+        },
+        {
+          "key": "c2d",
+          "doc_count": 6
+        },
+        {
+          "key": "9tv",
+          "doc_count": 6
+        },
+        {
+          "key": "9wd",
+          "doc_count": 5
+        },
+        {
+          "key": "9w4",
+          "doc_count": 5
+        },
+        {
+          "key": "9q5",
+          "doc_count": 5
+        },
+        {
+          "key": "dhv",
+          "doc_count": 4
+        },
+        {
+          "key": "c2s",
+          "doc_count": 4
+        },
+        {
+          "key": "c2h",
+          "doc_count": 4
+        },
+        {
+          "key": "9w1",
+          "doc_count": 4
+        },
+        {
+          "key": "9rb",
+          "doc_count": 4
+        },
+        {
+          "key": "d9j",
+          "doc_count": 3
+        },
+        {
+          "key": "c2y",
+          "doc_count": 3
+        },
+        {
+          "key": "c29",
+          "doc_count": 3
+        },
+        {
+          "key": "c0v",
+          "doc_count": 3
+        },
+        {
+          "key": "9xy",
+          "doc_count": 3
+        },
+        {
+          "key": "9xj",
+          "doc_count": 3
+        },
+        {
+          "key": "9x4",
+          "doc_count": 3
+        },
+        {
+          "key": "9x1",
+          "doc_count": 3
+        },
+        {
+          "key": "9q7",
+          "doc_count": 3
+        },
+        {
+          "key": "6tn",
+          "doc_count": 3
+        },
+        {
+          "key": "s00",
+          "doc_count": 2
+        },
+        {
+          "key": "drf",
+          "doc_count": 2
+        },
+        {
+          "key": "d8m",
+          "doc_count": 2
+        },
+        {
+          "key": "d4c",
+          "doc_count": 2
+        },
+        {
+          "key": "c41",
+          "doc_count": 2
+        },
+        {
+          "key": "c33",
+          "doc_count": 2
+        },
+        {
+          "key": "c30",
+          "doc_count": 2
+        },
+        {
+          "key": "c2e",
+          "doc_count": 2
+        },
+        {
+          "key": "c25",
+          "doc_count": 2
+        },
+        {
+          "key": "9xd",
+          "doc_count": 2
+        },
+        {
+          "key": "9ww",
+          "doc_count": 2
+        },
+        {
+          "key": "9w2",
+          "doc_count": 2
+        },
+        {
+          "key": "9w0",
+          "doc_count": 2
+        },
+        {
+          "key": "9vw",
+          "doc_count": 2
+        },
+        {
+          "key": "9tq",
+          "doc_count": 2
+        },
+        {
+          "key": "9sf",
+          "doc_count": 2
+        },
+        {
+          "key": "9qk",
+          "doc_count": 2
+        },
+        {
+          "key": "9qb",
+          "doc_count": 2
+        },
+        {
+          "key": "9px",
+          "doc_count": 2
+        },
+        {
+          "key": "9gn",
+          "doc_count": 2
+        },
+        {
+          "key": "6mr",
+          "doc_count": 2
+        },
+        {
+          "key": "f2h",
+          "doc_count": 1
+        },
+        {
+          "key": "f0g",
+          "doc_count": 1
+        },
+        {
+          "key": "drg",
+          "doc_count": 1
+        },
+        {
+          "key": "dr7",
+          "doc_count": 1
+        },
+        {
+          "key": "djn",
+          "doc_count": 1
+        },
+        {
+          "key": "dhu",
+          "doc_count": 1
+        },
+        {
+          "key": "d50",
+          "doc_count": 1
+        },
+        {
+          "key": "d0p",
+          "doc_count": 1
+        },
+        {
+          "key": "c83",
+          "doc_count": 1
+        },
+        {
+          "key": "c2j",
+          "doc_count": 1
+        },
+        {
+          "key": "c2f",
+          "doc_count": 1
+        },
+        {
+          "key": "c26",
+          "doc_count": 1
+        },
+        {
+          "key": "c20",
+          "doc_count": 1
+        },
+        {
+          "key": "c0z",
+          "doc_count": 1
+        },
+        {
+          "key": "c0r",
+          "doc_count": 1
+        },
+        {
+          "key": "9xt",
+          "doc_count": 1
+        },
+        {
+          "key": "9xk",
+          "doc_count": 1
+        },
+        {
+          "key": "9xg",
+          "doc_count": 1
+        },
+        {
+          "key": "9xf",
+          "doc_count": 1
+        },
+        {
+          "key": "9x6",
+          "doc_count": 1
+        },
+        {
+          "key": "9x5",
+          "doc_count": 1
+        },
+        {
+          "key": "9wq",
+          "doc_count": 1
+        },
+        {
+          "key": "9vy",
+          "doc_count": 1
+        },
+        {
+          "key": "9vt",
+          "doc_count": 1
+        },
+        {
+          "key": "9vq",
+          "doc_count": 1
+        },
+        {
+          "key": "9u4",
+          "doc_count": 1
+        },
+        {
+          "key": "9tn",
+          "doc_count": 1
+        },
+        {
+          "key": "9tm",
+          "doc_count": 1
+        },
+        {
+          "key": "9t8",
+          "doc_count": 1
+        },
+        {
+          "key": "9ry",
+          "doc_count": 1
+        },
+        {
+          "key": "9rc",
+          "doc_count": 1
+        },
+        {
+          "key": "9qx",
+          "doc_count": 1
+        },
+        {
+          "key": "9qw",
+          "doc_count": 1
+        },
+        {
+          "key": "9qh",
+          "doc_count": 1
+        },
+        {
+          "key": "9qd",
+          "doc_count": 1
+        },
+        {
+          "key": "9q9",
+          "doc_count": 1
+        },
+        {
+          "key": "9mv",
+          "doc_count": 1
+        },
+        {
+          "key": "9gb",
+          "doc_count": 1
+        },
+        {
+          "key": "9eq",
+          "doc_count": 1
+        },
+        {
+          "key": "6w0",
+          "doc_count": 1
+        },
+        {
+          "key": "6ts",
+          "doc_count": 1
+        },
+        {
+          "key": "6q1",
+          "doc_count": 1
+        },
+        {
+          "key": "66x",
+          "doc_count": 1
+        },
+        {
+          "key": "63h",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1467035129600,
+      "value_as_string": "2016-06-27T13:45:29.600Z"
+    }
+  }
+}
