@@ -15,4 +15,4 @@ ADD . /opt/
 
 EXPOSE 19196
 
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
