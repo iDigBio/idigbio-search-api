@@ -6,6 +6,7 @@ import compress from 'koa-compress';
 
 import api from './api';
 import "./controllers/home";
+import "./controllers/view";
 // import config from './config';
 
 const compresser = compress({

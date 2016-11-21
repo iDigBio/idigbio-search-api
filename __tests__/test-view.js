@@ -1,3 +1,4 @@
+import _ from 'lodash';
 
 import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();

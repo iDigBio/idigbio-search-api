@@ -1,12 +1,12 @@
 /* eslint camelcase: "off", dot-notation: "off" */
 
-import bluebird from "bluebird";
 import _ from "lodash";
 
 import esclient from "./esclient.js";
 import config from "../config";
 import hash from "./lib/hasher";
 import statsFromResponse from "./lib/statsFromResponse";
+import {readMock, writeMock} from "./lib/searchMocks";
 
 if(config.env === "test") {
   statsFromResponse = null;
@@ -14,13 +14,11 @@ if(config.env === "test") {
 var shim = null;
 
 if(config.CI) {
-  shim = require('./search-mocks')(app, config).readMock;
+  shim = readMock;
 } else {
   const client = esclient();
-  const writeMock = config.GEN_MOCK && require('./search-mocks')(app, config).writeMock;
 
   shim = async function(index, type, op, query, statsInfo) {
-    var h = hash("sha256", [index, type, op, query]);
     var query_only = {};
 
     if(op === "_count") {
@@ -95,7 +93,8 @@ if(config.CI) {
     } else {
       throw new Error("unsupported op");
     }
-    if(writeMock) {
+    if(config.GEN_MOCK) {
+      var h = hash("sha256", [index, type, op, query]);
       writeMock(h, response);
     }
     return response;
