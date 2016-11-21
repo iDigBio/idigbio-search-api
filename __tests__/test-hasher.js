@@ -2,7 +2,7 @@ import _ from "lodash";
 import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();
 
-import hash from "../src/lib/hasher";
+import hash from "lib/hasher";
 
 
 describe("Hasher", function() {

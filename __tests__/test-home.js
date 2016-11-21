@@ -3,7 +3,7 @@ import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();
 import request from 'supertest-as-promised';
 
-import app from '../src/app';
+import app from 'app';
 
 
 describe('Home', function() {
