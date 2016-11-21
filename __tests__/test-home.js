@@ -69,33 +69,51 @@ describe('Home', function() {
         const response = await request(server)
               .get("/idigbio/records/_search")
               .query({size: 1})
-          .expect('Content-Type', /json/)
-          .expect(200);
+              .expect('Content-Type', /json/)
+              .expect(200);
         response.body.should.have.property("hits");
       });
       it('should accept post', async function() {
         const response = await request(server)
-          .post("/idigbio/records/_search")
-          .send({"size": 1})
-          .expect('Content-Type', /json/)
-          .expect(200);
+              .post("/idigbio/records/_search")
+              .send({"size": 1})
+              .expect('Content-Type', /json/)
+              .expect(200);
+        response.body.should.have.property("hits");
+      });
+      it('should accept post w/ urlencoding', async function() {
+        const response = await request(server)
+              .post("/idigbio/records/_search")
+              .type('form')
+              .send({"size": 1})
+              .expect('Content-Type', /json/)
+              .expect(200);
         response.body.should.have.property("hits");
       });
     });
     describe('count', function() {
       it('should accept get', async function() {
         const response = await request(server)
-          .get("/idigbio/records/_count")
-          .expect('Content-Type', /json/)
-          .expect(200);
+              .get("/idigbio/records/_count")
+              .expect('Content-Type', /json/)
+              .expect(200);
         response.body.should.have.property("count");
       });
       it('should accept post', async function() {
         const response = await request(server)
-          .post("/idigbio/records/_count")
-          .send({})
-          .expect('Content-Type', /json/)
-          .expect(200);
+              .post("/idigbio/records/_count")
+              .send({})
+              .expect('Content-Type', /json/)
+              .expect(200);
+        response.body.should.have.property("count");
+      });
+      it('should accept post w/ urlencoding', async function() {
+        const response = await request(server)
+              .post("/idigbio/records/_count")
+              .type('form')
+              .send({})
+              .expect('Content-Type', /json/)
+              .expect(200);
         response.body.should.have.property("count");
       });
     });
