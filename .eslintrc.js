@@ -6,7 +6,7 @@ module.exports = {
     "ecmaVersion": 8,
     "sourceType": "module"
   },
-
+  "plugins": ["import"],
   "extends": "eslint:recommended",
   "rules": {
     "accessor-pairs": "error",
@@ -173,6 +173,7 @@ module.exports = {
     "no-unused-vars": ["error", { "args": "none" }],
     "no-unused-expressions": "error",
     "no-unreachable": "error",
+    "import/no-unresolved": "error",
     "no-use-before-define": "error",
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
@@ -238,5 +239,10 @@ module.exports = {
     "wrap-regex": "error",
     "yield-star-spacing": "error",
     "yoda": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 };

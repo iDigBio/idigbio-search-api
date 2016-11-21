@@ -1,6 +1,13 @@
 {
-    "presets": [
-      "node6",
-      "stage-3"
-    ]
-  }
+  "presets": [
+    "node6",
+    "stage-3"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+      }
+    }]
+  ]
+}

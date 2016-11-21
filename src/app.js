@@ -4,9 +4,9 @@ import cors from 'kcors';
 import morgan from 'koa-morgan';
 import compress from 'koa-compress';
 
-import api from './api';
-import "./controllers/home";
-import "./controllers/view";
+import api from 'api';
+import "controllers/home";
+import "controllers/view";
 // import config from './config';
 
 const compresser = compress({
