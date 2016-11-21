@@ -2,7 +2,7 @@ import searchShim from "searchShim";
 import config from "config";
 
 var loading = null;
-var recordsets = {};
+export var recordsets = {};
 
 export async function loadAll() {
   if(loading) { return loading; }
