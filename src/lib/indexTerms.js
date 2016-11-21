@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
-import config from "../../config";
-import searchShim from "../searchShim";
+import config from "config";
+import searchShim from "searchShim";
 
 let indexterms = {};
 
@@ -35,7 +35,7 @@ export async function getMappingForType(type) {
     throw new Error("Unexpected response from ElasticSearch");
   }
   const mapping = _.values(indexMappings)[0].mappings[type];
-  return indexterms[type] = getSubKeys(mapping, "");
+  return (indexterms[type] = getSubKeys(mapping, ""));
 }
 
 

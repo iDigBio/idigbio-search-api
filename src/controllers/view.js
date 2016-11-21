@@ -1,10 +1,10 @@
 import adapt from 'koa-adapter';
 import _ from 'lodash';
 
-import config from "../../config";
-import api from "../api";
-import searchShim from "../searchShim.js";
-import recordsets from "../lib/recordsets";
+import config from "config";
+import api from "api";
+import searchShim from "searchShim.js";
+import recordsets from "lib/recordsets";
 
 // version:
 // http://idb-riak.acis.ufl.edu:8098/buckets/record_catalog/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45

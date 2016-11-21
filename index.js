@@ -3,8 +3,8 @@
 /* eslint vars-on-top: "off" */
 /* eslint no-process-exit: "off" */
 const _ = require('lodash');
-const config = require('./config');
-const src = config.ENV === 'production' ? './build/app' : './src/app';
+const config = require('./src/config');
+const appsrc = config.ENV === 'production' ? './build/app' : './src/app';
 const http = require('http');
 
 http.globalAgent.maxSockets = 100;
@@ -15,9 +15,9 @@ if(config.ENV === 'development') {
   // for development use babel/register for faster runtime compilation
   require('babel-register');
 }
+const app = require(appsrc).default;
 
 var server = null;
-const app = require(src).default;
 
 // var loadRecordsets = require("./app/lib/recordsets.js")(app, config).loadAll;
 // var loadIndexTerms = require("./app/lib/load-index-terms.js")(app, config).loadIndexTerms;

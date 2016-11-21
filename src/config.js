@@ -1,6 +1,8 @@
-"use strict";
+/* eslint no-process-env: 0, strict: 0 */
+// NB: This module needs to be requireable without babel
+//     translation. No advanced features. No imports.
 
-/* eslint no-process-env: 0 */
+"use strict";
 
 var env = process.env.NODE_ENV || "development";
 

@@ -1,6 +1,6 @@
 import KoaRouter from 'koa-router';
 
-import config from '../config';
+import config from 'config';
 
 const api = KoaRouter();
 

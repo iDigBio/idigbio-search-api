@@ -1,5 +1,6 @@
-import searchShim from "../searchShim";
-import config from "../../config";
+import searchShim from "searchShim";
+import config from "config";
+
 var loading = null;
 var recordsets = {};
 

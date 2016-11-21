@@ -2,7 +2,7 @@
 
 import request from "request";
 
-import config from "../../config";
+import config from "config";
 
 
 export default function(query, statsInfo, response) {

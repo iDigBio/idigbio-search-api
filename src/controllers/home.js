@@ -1,12 +1,9 @@
 import proxy from 'koa-proxy';
 import adapt from 'koa-adapter';
-import _ from 'lodash';
 
-import config from "../../config";
-import api from "../api";
-import searchShim from "../searchShim.js";
-
-import {getMappingForType} from "../lib/indexTerms.js";
+import api from "api";
+import searchShim from "searchShim.js";
+import {getMappingForType} from "lib/indexTerms.js";
 
 
 const index = async function(ctx, next) {
