@@ -6,8 +6,7 @@
   "plugins": [
     ["module-resolver", {
       "root": ["./src"],
-      "alias": {
-      }
+      "alias": { }
     }]
   ]
 }

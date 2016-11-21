@@ -4,7 +4,6 @@ should();
 
 import hash from "lib/hasher";
 
-
 describe("Hasher", function() {
   it("Should hash an object", function() {
     expect(hash('md5', ['a', 'b', 'c']))

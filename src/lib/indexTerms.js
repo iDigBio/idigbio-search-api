@@ -3,7 +3,15 @@ import _ from 'lodash';
 import config from "config";
 import searchShim from "searchShim";
 
-let indexterms = {};
+export const indexterms = {};
+
+export function clear() {
+  _(indexterms)
+    .keys()
+    .forEach(function(k) {
+    delete indexterms[k];
+  });
+}
 
 export function getSubKeys(mappingDict, fnPrefix) {
   var rv = {};
@@ -28,27 +36,27 @@ export function getSubKeys(mappingDict, fnPrefix) {
 }
 
 export async function getMappingForType(type) {
-  const indexMappings = await searchShim(config.search.index, type, "_mapping");
-  // There should be just one key in here, the index, but because of
-  // aliases it might not be the same one we passed in.
-  if(_.size(indexMappings) !== 1) {
-    throw new Error("Unexpected response from ElasticSearch");
+  if(!indexterms[type]) {
+    const indexMappings = await searchShim(config.search.index, type, "_mapping");
+    // There should be just one key in here, the index, but because of
+    // aliases it might not be the same one we passed in.
+    if(_.size(indexMappings) !== 1) {
+      throw new Error("Unexpected response from ElasticSearch");
+    }
+    const mapping = _.values(indexMappings)[0].mappings[type];
+    indexterms[type] = getSubKeys(mapping, "");
   }
-  const mapping = _.values(indexMappings)[0].mappings[type];
-  return (indexterms[type] = getSubKeys(mapping, ""));
+  return indexterms[type];
 }
 
-
-export function loadIndexTerms() {
-  return searchShim(config.search.index, "_all", "_mapping", null)
-    .then(function(mapping) {
-      _.forOwn(mapping, function(index, indexName) {
-        _.forOwn(index["mappings"], function(mappingDict, t) {
-          indexterms[t] = getSubKeys(mappingDict, "");
-        });
-      });
-      return indexterms;
+export async function loadIndexTerms() {
+  const mapping = await searchShim(config.search.index, "_all", "_mapping", null);
+  _.forOwn(mapping, function(index, indexName) {
+    _.forOwn(index["mappings"], function(mappingDict, t) {
+      indexterms[t] = getSubKeys(mappingDict, "");
     });
+  });
+  return indexterms;
 }
 
 export function checkTerms(type, term_list, only_missing) {
