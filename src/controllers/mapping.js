@@ -579,9 +579,7 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
 
 async function getMapDef(ctx) {
   const rv = await redisclient.get(ctx.params.s);
-  if(!rv) {
-    ctx.throw(404);
-  }
+  if(!rv) { ctx.throw(404); }
   var map_def = JSON.parse(rv);
   var count = 0;
   if(map_def.type === 'auto') {
