@@ -1,4 +1,5 @@
 dist: trusty
+sudo: false
 language: node_js
 node_js:
 - '6'
@@ -11,8 +12,7 @@ addons:
      - ubuntu-toolchain-r-test
     packages:
      - libstdc++-5-dev # upgrade libstdc++ on linux to support C++11
-services:
-- redis-server
+
 notifications:
   slack:
     secure: hBdS1mIVFVg8jTQwU2nXKyfLRPbUMYCQK0g+NEjkSvWl3hvAnZREGo2JBFgincdB2/wAJhuynBQXN7MSwxGm4jTjvTrs1SOPP7hssTr+xFrXuOs9tYDNLICcUmc8iIkt9oblw/jWCKHUDnphmcZ4sy3uJDuxuKGHdBjXYAq/eZw=

@@ -5,7 +5,10 @@ should();
 import request from 'supertest-as-promised';
 
 import config from "config";
-import app from 'app';
+
+import redisMock from "redis-mock";
+jest.mock('redis', () => redisMock);
+import app from "app";
 
 describe('Mapping', function() {
   const server = app.listen();

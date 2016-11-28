@@ -1,10 +1,33 @@
-import Promise from "bluebird";
-import predis from "promise-redis";
+import bluebird from "bluebird";
+import redis from "redis";
 
 import config from 'config';
 
-const redis = predis(function(resolver) {
-  return new Promise(resolver);
+// Most of this code comes from `promise-redis`, but:
+//  * Use bluebird and their promisify directly
+//  * guard against redis.Multi not being defined
+
+import {list as redisCmds} from "redis-commands";
+const clproto = redis.RedisClient.prototype;
+
+redisCmds.forEach(function(fullCommand) {
+  var cmd = fullCommand.split(' ')[0];
+  if(cmd !== 'multi' && clproto[cmd]) {
+    clproto[cmd] = bluebird.promisify(clproto[cmd]);
+    clproto[cmd.toUpperCase()] = clproto[cmd];
+  }
 });
 
-export default redis.createClient(config.redis.port, config.redis.hostname);
+
+if(redis.Multi) {
+  const mlproto = redis.Multi.prototype;
+  // For Multi only `exec` command returns promise.
+  mlproto.exec_transaction = bluebird.promisify(mlproto.exec_transaction);
+  mlproto.exec = mlproto.exec_transaction;
+  mlproto.EXEC = mlproto.exec;
+}
+
+
+const client = redis.createClient(config.redis.port, config.redis.hostname);
+process.on('exit', () => client.quit());
+export default client;
