@@ -26,6 +26,7 @@
     "mapnik": "^3.5.13",
     "morgan": "^1.7.0",
     "ngeohash": "^0.6.0",
+    "promise-redis": "0.0.5",
     "redis": "^2.6.3",
     "request": "^2.45.0",
     "request-promise": "^4.1.1"

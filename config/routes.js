@@ -73,23 +73,6 @@ module.exports = function(app, config) {
   app.route('/v2/summary/stats/:t')
     .get(summary.stats)
     .post(summary.stats);
-  // app.route('/v2/mapping/:t')
-  //     .get(mapping.basic)
-  //     .post(mapping.basic);
-  app.route('/v2/mapping/')
-    .get(mapping.createMap)
-    .post(mapping.createMap);
-
-  app.use('/v2/mapping/:s', cache.middleware);
-
-  app.route('/v2/mapping/:s')
-    .get(mapping.getMap);
-  app.route('/v2/mapping/:s/style/:z')
-    .get(mapping.getMapStyle);
-  app.route('/v2/mapping/:s/points')
-    .get(mapping.mapPoints);
-  app.route('/v2/mapping/:s/:z/:x/:y.:t')
-    .get(mapping.getMapTile);
 
 
   app.use(function(err, req, res, next) {

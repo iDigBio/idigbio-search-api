@@ -52,11 +52,7 @@ export async function basic(ctx, next) {
     }
     ctx.body = rb;
   } else {
-    ctx.body = {
-      "error": "Not Found",
-      "statusCode": 404
-    };
-    ctx.response.status = 404;
+    ctx.throw(404);
   }
 }
 

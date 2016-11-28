@@ -93,6 +93,10 @@ if(config.CI) {
     } else {
       throw new Error("unsupported op");
     }
+    if(response.status === 400) {
+      console.error("Bad ElasticSearch request: ", response["error"]);
+      throw new Error("Bad ElasticSearch request");
+    }
     if(config.GEN_MOCK) {
       var h = hash("sha256", [index, type, op, query]);
       writeMock(h, response);

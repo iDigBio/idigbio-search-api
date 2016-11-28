@@ -10,18 +10,18 @@ export default function(opts) {
   return async function jsonErrors(ctx, next) {
     try {
       await next();
+      if(!ctx.status || (ctx.status === 404 && !ctx.body)) {
+        ctx.throw(404);
+      }
     } catch (err) {
       // will only respond with JSON
-      ctx.status = err.statusCode || err.status || 500;
       ctx.body = {
         error: err.message
       };
-      throw err;
-    }
-    if(ctx.status === 404) {
-      ctx.body = {error: "Not Found"};
-      // Need to reset status after setting body.
-      ctx.status = 404;
+      ctx.status = err.statusCode || err.status || 500;
+      if(!err.expose && ctx.status >= 500) {
+        ctx.app.emit('error', err, ctx);
+      }
     }
   };
 }

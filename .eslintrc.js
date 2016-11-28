@@ -74,7 +74,7 @@ module.exports = {
       "for": { "after": false },
       "while": { "after": false }
     }}],
-    "line-comment-position": "error",
+    "line-comment-position": "off",
     "linebreak-style": [
       "error",
       "unix"
@@ -100,7 +100,7 @@ module.exports = {
     "no-bitwise": "error",
     "no-caller": "error",
     "no-catch-shadow": "error",
-    "no-confusing-arrow": "error",
+    "no-confusing-arrow": ["error",  {allowParens: true}],
     "no-console": "off",
     "no-continue": "error",
     "no-div-regex": "error",

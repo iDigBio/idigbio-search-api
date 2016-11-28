@@ -46,7 +46,6 @@ describe('View', function() {
                  .expect('Content-Type', /json/)
                  .expect(404);
                response.body.error.should.equal("Not Found");
-
              });
            }
           );

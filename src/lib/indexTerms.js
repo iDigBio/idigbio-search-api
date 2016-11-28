@@ -59,9 +59,10 @@ export async function loadIndexTerms() {
   return indexterms;
 }
 
-export function checkTerms(type, term_list, only_missing) {
+//TODO: checkTerms callsites for async
+export async function checkTerms(type, term_list, only_missing) {
   var results = {};
-  var root = indexterms[type];
+  var root = await getMappingForType(type);
 
   term_list.forEach(function(term) {
     var termParts = term.split(".");
