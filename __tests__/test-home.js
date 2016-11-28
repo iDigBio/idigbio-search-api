@@ -7,7 +7,9 @@ import app from 'app';
 
 
 describe('Home', function() {
-  const server = app.listen();
+  let server = null;
+  beforeAll(() => { server = app.listen(); });
+  afterAll(() => server.close());
 
   describe('index', function() {
     it('should contain v1', async function() {

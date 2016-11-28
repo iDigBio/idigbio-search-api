@@ -11,7 +11,9 @@ jest.mock('redis', () => redisMock);
 import app from "app";
 
 describe('Mapping', function() {
-  const server = app.listen();
+  let server = null;
+  beforeAll(() => { server = app.listen(); });
+  afterAll(() => server.close());
 
   describe('map creation', function() {
     it('should return urls for tiles and points', async function() {

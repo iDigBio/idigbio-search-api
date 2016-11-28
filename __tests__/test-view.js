@@ -8,7 +8,9 @@ import app from 'app';
 
 
 describe('View', function() {
-  const server = app.listen();
+  let server = null;
+  beforeAll(() => { server = app.listen(); });
+  afterAll(() => server.close());
 
   describe('basic', function() {
     it('should accept get', async function() {

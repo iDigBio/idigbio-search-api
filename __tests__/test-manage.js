@@ -4,7 +4,9 @@ import request from 'supertest-as-promised';
 import app from 'app';
 
 describe('Management routes', function() {
-  const server = app.listen();
+  let server = null;
+  beforeAll(() => { server = app.listen(); });
+  afterAll(() => server.close());
 
   it('should 404 on /manage', async function() {
     await request(server)
