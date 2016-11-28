@@ -3,10 +3,7 @@
 module.exports = function(app, config) {
 
   // home route
-  var search = require('../app/controllers/search')(app, config);
-  var mapping = require('../app/controllers/mapping')(app, config);
   var summary = require('../app/controllers/summary')(app, config);
-  var manage = require('../app/controllers/manage')(app, config);
   var cache = require('../app/lib/cache.js')(app, config);
 
   // app.use(function(req, res, next){
@@ -16,24 +13,6 @@ module.exports = function(app, config) {
   //     next();
   // })
 
-  app.route('/v2/search')
-    .get(search.basic)
-    .post(search.basic);
-  app.route('/v2/search/records')
-    .get(search.basic)
-    .post(search.basic);
-  app.route('/v2/media')
-    .get(search.media)
-    .post(search.media);
-  app.route('/v2/search/media')
-    .get(search.media)
-    .post(search.media);
-  app.route('/v2/search/recordsets')
-    .get(search.recordsets)
-    .post(search.recordsets);
-  app.route('/v2/search/publishers')
-    .get(search.publishers)
-    .post(search.publishers);
   app.route('/v2/summary/top/media')
     .get(summary.top_media)
     .post(summary.top_media);

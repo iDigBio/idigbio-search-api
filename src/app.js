@@ -13,6 +13,7 @@ import "controllers/home";
 import "controllers/view";
 import "controllers/manage";
 import "controllers/mapping";
+import "controllers/search";
 
 const compressionOpts = {
   filter: function(content_type) {
