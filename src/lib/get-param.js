@@ -10,7 +10,7 @@ export default function(req, params, munger, def) {
   }
 
   params.forEach(function(param) {
-    var mangle_param;
+    var mangle_param = null;
 
     // topFileds -> top_fields
     if(/.*[A-Z].*/.test(param)) {
