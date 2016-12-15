@@ -417,7 +417,6 @@ async function mapDef(s, map_url, map_def, stats_info) {
       "field": "geopoint",
     }
   });
-
   query["aggs"] = {
     "rs": {
       "terms": {
@@ -436,6 +435,26 @@ async function mapDef(s, map_url, map_def, stats_info) {
       "max": {
         "field": "datemodified"
       }
+    },
+    "max_lat": {
+      "max": {
+        "field": "geopoint.lat"
+      }
+    },
+    "max_lon": {
+      "max": {
+        "field": "geopoint.lon"
+      }
+    },
+    "min_lat": {
+      "min": {
+        "field": "geopoint.lat"
+      }
+    },
+    "min_lon": {
+      "min": {
+        "field": "geopoint.lon"
+      }
     }
   };
   query["size"] = 0;
@@ -448,6 +467,16 @@ async function mapDef(s, map_url, map_def, stats_info) {
     points: map_url + "/points",
     mapDefinition: map_def,
     itemCount: body.hits.total,
+    boundingBox: {
+        "top_left": {
+          "lat": body.aggregations.min_lat.value,
+          "lon": body.aggregations.max_lon.value,
+        },
+        "bottom_right": {
+          "lat": body.aggregations.max_lat.value,
+          "lon": body.aggregations.min_lon.value
+        }
+    },
     lastModified: new Date(body.aggregations.max_dm.value)
   };
 
