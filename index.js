@@ -4,7 +4,7 @@
 /* eslint no-process-exit: "off" */
 const _ = require('lodash');
 const config = require('./src/config');
-const appsrc = config.ENV === 'production' ? './build/app' : './src/app';
+const appsrc = config.ENV === 'prod' ? './build/app' : './src/app';
 const http = require('http');
 
 http.globalAgent.maxSockets = 100;
