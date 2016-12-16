@@ -24,7 +24,7 @@ const compressionOpts = {
   flush: require('zlib').Z_SYNC_FLUSH
 };
 
-const logOpts = config.ENV === 'production' ? 'combined' : 'dev';
+const logOpts = config.ENV === 'prod' ? 'combined' : 'dev';
 
 
 // TODO: Trust X-Forwarded-For proxy config
