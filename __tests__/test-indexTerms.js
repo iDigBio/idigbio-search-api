@@ -1,10 +1,6 @@
-import _ from "lodash";
-//import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
-//should();
 
 
 import * as indexTerms from "lib/indexTerms";
-const allTypes = ['publishers', 'recordsets', 'records', 'mediarecords'];
 
 describe('index terms', function() {
   it('should have been imported', function() {

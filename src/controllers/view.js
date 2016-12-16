@@ -1,4 +1,3 @@
-import adapt from 'koa-adapter';
 import _ from 'lodash';
 
 import config from "config";
@@ -6,9 +5,6 @@ import api from "api";
 import searchShim from "searchShim.js";
 import recordsets from "lib/recordsets";
 
-// version:
-// http://idb-riak.acis.ufl.edu:8098/buckets/record_catalog/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45
-// http://idb-riak.acis.ufl.edu:8098/buckets/record/keys/0000012b-9bb8-42f4-ad3b-c958cb22ae45-14cdaa01e6581b4af8b5d544c9eaa2750b2eb4cf
 export async function basic(ctx, next) {
   const uuid = ctx.params.uuid;
   let t = ctx.params.t || "_all";
@@ -21,11 +17,12 @@ export async function basic(ctx, next) {
       }
     }
   };
-  let body = await searchShim(config.search.index, t, "_search", query, {
+  const statsInfo = {
     type: "view",
     recordtype: t,
     ip: ctx.ip,
-  });
+  };
+  let body = await searchShim(config.search.index, t, "_search", query, statsInfo);
   if(body.hits.hits.length > 0) {
     body = body.hits.hits[0];
     var indexterms = _.cloneDeep(body._source);

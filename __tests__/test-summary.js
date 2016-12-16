@@ -12,8 +12,6 @@ describe('Summary', function() {
   beforeAll(() => { server = app.listen(); });
   afterAll(() => server.close());
 
-
-
   describe('record top', function() {
     it('uses `scientificname` as the default top_fields', async function() {
       var q = {"genus": "acer"};
