@@ -1,7 +1,14 @@
 import bluebird from "bluebird";
-import redis from "redis";
-
 import config from 'config';
+
+let redis = null;
+
+if(config.ENV === 'test') {
+  redis = require('redis-mock');
+} else {
+  redis = require('redis');
+}
+
 
 // Most of this code comes from `promise-redis`, but:
 //  * Use bluebird and their promisify directly
@@ -27,7 +34,7 @@ if(redis.Multi) {
   mlproto.EXEC = mlproto.exec;
 }
 
-
 const client = redis.createClient(config.redis.port, config.redis.hostname);
+
 process.on('exit', () => client.quit());
 export default client;

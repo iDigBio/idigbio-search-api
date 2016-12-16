@@ -2,11 +2,10 @@ import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();
 import request from 'supertest-as-promised';
 
+
+import app from "app";
 import config from "config";
 
-import redisMock from "redis-mock";
-jest.mock('redis', () => redisMock);
-import app from "app";
 
 describe('Search', function() {
   let server = null;
