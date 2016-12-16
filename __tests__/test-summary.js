@@ -70,7 +70,7 @@ describe('Summary', function() {
       Object.keys(response.body.publisher).length.should.not.equal(0);
     });
     it('returns the field specified', async function() {
-      var fields = ["email"];
+      var fields = ["data.contacts.email"];
       const response = await request(server)
             .get("/v2/summary/top/recordsets")
             .query({top_fields: JSON.stringify(fields)})
