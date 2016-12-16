@@ -27,6 +27,7 @@ describe('Mapping', function() {
       expect(response.body.points).to.be.a('string');
       expect(response.body.attribution).to.be.an('Array');
       response.body.should.have.property("mapDefinition");
+      response.body.should.have.property("boundingBox");
 
     });
     it('should return the same urls if called twice', async function() {
