@@ -5,12 +5,11 @@ import _ from "lodash";
 import esclient from "esclient.js";
 import config from "config";
 import hash from "lib/hasher";
-import statsFromResponse from "lib/statsFromResponse";
+import sfr from "lib/statsFromResponse";
 import {readMock, writeMock} from "lib/searchMocks";
 
-if(config.env === "test") {
-  statsFromResponse = null;
-}
+const statsFromResponse = config.ENV !== "production" && sfr;
+
 var shim = null;
 
 if(config.CI) {
