@@ -34,7 +34,4 @@ if(redis.Multi) {
   mlproto.EXEC = mlproto.exec;
 }
 
-const client = redis.createClient(config.redis.port, config.redis.hostname);
-
-process.on('exit', () => client.quit());
-export default client;
+export default () => redis.createClient(config.redis.port, config.redis.hostname);

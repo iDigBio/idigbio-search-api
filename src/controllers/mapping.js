@@ -607,7 +607,7 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
 }
 
 async function getMapDef(ctx) {
-  const rv = await redisclient.get(ctx.params.s);
+  const rv = await redisclient().get(ctx.params.s);
   if(!rv) { ctx.throw(404); }
   var map_def = JSON.parse(rv);
   var count = 0;
@@ -867,12 +867,10 @@ const createMap = async function(ctx) {
 
   var h = hasher("sha1", map_def);
 
-  //const map_exists = await redisclient.exists(h);
-  let s = await redisclient.get(h);
+  const rclient = redisclient();
+  let s = await rclient.get(h);
   if(s) {
     console.log("Found stored map s:", s);
-    // TODO: this gets ignored, why are we fetching it?
-    const stored_map_def = await redisclient.get(s);
     // TODO: use named route lookup
     const map_url = 'https://' + ctx.host + '/v2/mapping/' + s;
     ctx.body = await mapDef(s, map_url, map_def, {
@@ -881,10 +879,10 @@ const createMap = async function(ctx) {
       ip: ctx.ip,
     });
   } else {
-    const v = await redisclient.incr("queryid");
+    const v = await rclient.incr("queryid");
     s = hashids.encode(v);
-    await redisclient.set(s, JSON.stringify(map_def));
-    await redisclient.set(h, s);
+    await rclient.set(s, JSON.stringify(map_def));
+    await rclient.set(h, s);
     // TODO: use named route lookup
     const map_url = 'https://' + ctx.host + '/v2/mapping/' + s;
 
@@ -898,7 +896,7 @@ const createMap = async function(ctx) {
 
 const getMap = async function(ctx) {
   const s = ctx.params.s;
-  const rv = await redisclient.get(s);
+  const rv = await redisclient().get(s);
   if(!rv) {
     ctx.throw("Not Found", 404);
     return;
