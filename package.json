@@ -48,7 +48,7 @@
     "nodemon": "^1.11.0",
     "nyc": "^9.0.1",
     "redis-mock": "^0.16.0",
-    "supertest": "*",
+    "supertest": "^2.0.1",
     "supertest-as-promised": "^4.0.2"
   },
   "scripts": {
