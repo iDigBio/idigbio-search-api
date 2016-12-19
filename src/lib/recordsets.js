@@ -12,6 +12,7 @@ export async function loadAll() {
     recordsets = {};
     body.hits.hits.forEach(function(hit) {
       recordsets[hit._id] = {
+        "uuid": hit._id,
         "name": hit._source.data.collection_name,
         "description": hit._source.data.collection_description,
         "logo": hit._source.data.logo_url,

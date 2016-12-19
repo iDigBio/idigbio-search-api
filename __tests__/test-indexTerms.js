@@ -1,4 +1,4 @@
-
+import _ from "lodash";
 
 import * as indexTerms from "lib/indexTerms";
 
@@ -10,10 +10,12 @@ describe('index terms', function() {
   it('should load all terms', async function() {
     indexTerms.clear();
     const its = await indexTerms.loadIndexTerms();
-    expect(its.publishers).toBeDefined();
-    expect(its.recordsets).toBeDefined();
-    expect(its.records).toBeDefined();
-    expect(its.mediarecords).toBeDefined();
+    expect(its).toEqual({
+      publishers: expect.any(Object),
+      recordsets: expect.any(Object),
+      records: expect.any(Object),
+      mediarecords: expect.any(Object)
+    });
   });
 
   it('should load terms for a given type', async function() {
