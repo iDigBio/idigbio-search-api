@@ -16,6 +16,11 @@ import "controllers/mapping";
 import "controllers/search";
 import "controllers/summary";
 
+import startJobs from "jobs";
+if(config.ENV !== 'test') {
+  startJobs();
+}
+
 const compressionOpts = {
   filter: function(content_type) {
     return (/text/i).test(content_type);
@@ -35,7 +40,6 @@ const app = new Koa()
       .use(cors())
       .use(bodyParser())
       .use(api.routes())
-      .use(api.allowedMethods())
-;
+      .use(api.allowedMethods());
 
 export default app;

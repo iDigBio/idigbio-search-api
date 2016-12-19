@@ -19,29 +19,10 @@ const app = require(appsrc).default;
 
 var server = null;
 
-// var loadRecordsets = require("./app/lib/recordsets.js")(app, config).loadAll;
-// var loadIndexTerms = require("./app/lib/load-index-terms.js")(app, config).loadIndexTerms;
-
-// var jobs = [
-//   {job: loadRecordsets, time: 1000 * 60 * 60},
-//   {job: loadIndexTerms, time: 1000 * 60 * 60}
-// ];
-
-// var startJobs = function() {
-//   _.each(jobs, function(jobDesc) {
-//     var repeater = function() {
-//       timer(jobDesc.job)()
-//         .then(() => setTimeout(repeater, jobDesc.time));
-//     };
-//     setImmediate(repeater);
-//   });
-// };
-
 
 function startThisProcess() {
   return app.listen(config.port, function() {
-    // startJobs();  // TODO: start background jobs
-    console.log('Express server listening on port ' + server.address().port);
+    console.log('Server listening on port ', config.port);
   });
 }
 
