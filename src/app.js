@@ -32,7 +32,6 @@ const compressionOpts = {
 const logOpts = config.ENV === 'prod' ? 'combined' : 'dev';
 
 
-// TODO: Trust X-Forwarded-For proxy config
 const app = new Koa()
       .use(morgan(logOpts))
       .use(compress(compressionOpts))
@@ -41,5 +40,8 @@ const app = new Koa()
       .use(bodyParser())
       .use(api.routes())
       .use(api.allowedMethods());
+
+app.name = "iDigBio Search API";
+app.proxy = true;
 
 export default app;
