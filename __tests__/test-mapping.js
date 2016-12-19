@@ -7,6 +7,8 @@ import request from 'supertest-as-promised';
 import config from "config";
 import app from "app";
 
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
+
 describe('Mapping', function() {
   let server = null;
   beforeAll(() => { server = app.listen(); });

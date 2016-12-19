@@ -6,13 +6,12 @@ import request from 'supertest-as-promised';
 import app from "app";
 import config from "config";
 
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 describe('Search', function() {
   let server = null;
   beforeAll(() => { server = app.listen(); });
   afterAll(() => server.close());
-
-//  jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
   describe('basicGET', function() {
     it('should return an empty search for {"scientificname": "nullius nullius"}', async function() {

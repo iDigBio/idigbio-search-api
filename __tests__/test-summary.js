@@ -4,8 +4,7 @@ import request from 'supertest-as-promised';
 
 import app from "app";
 
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
-//global.Promise = require.requireActual('bluebird');
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 describe('Summary', function() {
   let server = null;
