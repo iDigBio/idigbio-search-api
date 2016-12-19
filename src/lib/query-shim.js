@@ -140,14 +140,13 @@ function objectType(k, shimK) {
 
 export default async function(shim, term_type) {
   if(term_type) {
-    var term_errors = await checkTerms(term_type, _.keys(shim), true);
-
+    const term_errors = await checkTerms(term_type, _.keys(shim), true);
     if(_.keys(term_errors).length > 0) {
       throw new TermNotFoundException("Some of the query terms supplied were not found in the index", term_errors);
     }
   }
 
-  var query = {
+  const query = {
     "query": {
       "filtered": {
         "filter": {}
@@ -155,8 +154,8 @@ export default async function(shim, term_type) {
     }
   };
 
-  var fulltext;
-  var and_array = [];
+  let fulltext = null;
+  const and_array = [];
 
   _.keys(shim).forEach(function(k) {
     if(_.isString(shim[k]) || _.isBoolean(shim[k]) || _.isNumber(shim[k])) {
@@ -164,7 +163,7 @@ export default async function(shim, term_type) {
     } else if(_.isArray(shim[k])) {
       and_array.push(termsFilter(k, shim[k]));
     } else if(shim[k]["type"]) {
-      var f = objectType(k, shim[k]);
+      const f = objectType(k, shim[k]);
       if(f) {
         if(_.isString(f)) {
           fulltext = f;
