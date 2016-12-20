@@ -3,7 +3,7 @@ export default function(wrappedFn, name) {
   name = name || wrappedFn.name;
   return async function(...args) {
     var t1 = new Date();
-    console.log("Starting", name);
+//    console.log("Starting", name);
     try {
       return await wrappedFn(...args);
     } finally {

@@ -5,7 +5,7 @@ export default function(req, params, munger, def) {
   if(!_.isArray(params)) {
     params = [params];
   }
-  if(_.isUndefined(munger)) {
+  if(!munger) {
     munger = (p) => p;
   }
 

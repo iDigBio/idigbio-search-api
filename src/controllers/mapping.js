@@ -12,11 +12,14 @@
 
 
 import _ from 'lodash';
+import { memoize } from 'lodash/function';
 import geohash from "ngeohash";
 import Hashids from "hashids";
 import chroma from "chroma-js";
 import path from "path";
-import bluebird from 'bluebird';
+import bluebird from "bluebird";
+import createError from "http-errors";
+import KoaRouter from "koa-router";
 
 import mapnik from "mapnik";
 mapnik.Logger.setSeverity(mapnik.Logger.DEBUG);
@@ -29,6 +32,7 @@ import redisclient from "redisclient";
 import searchShim from "searchShim.js";
 import mercator from "lib/sphericalmercator";
 import hasher from "lib/hasher";
+import timer from "lib/timer";
 import queryShim from "lib/query-shim.js";
 import * as tileMath from "lib/tile-math.js";
 import getParam from "lib/get-param.js";
@@ -606,28 +610,30 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   return query;
 }
 
-async function getMapDef(ctx) {
-  const rv = await redisclient().get(ctx.params.s);
-  if(!rv) { ctx.throw(404); }
-  var map_def = JSON.parse(rv);
-  var count = 0;
-  if(map_def.type === 'auto') {
-    var query = await makeBasicFilter(map_def);
-    const body  = await searchShim(config.search.index, "records", "_count", query);
-    count = body.count;
-
-    if(count > map_def.threshold) {
-      map_def.type = "geohash";
-    } else {
-      map_def.type = "points";
-    }
+const resolveauto = memoize(timer(async function(shortcode, map_def) {
+  const query = await makeBasicFilter(map_def);
+  const body = await searchShim(config.search.index, "records", "_count", query);
+  const type = body.count > map_def.threshold ? "geohash" : "points";
+  return _.assign({}, map_def, {type});
+}, "resolveauto"));
+const lookupShortcode  = memoize(timer(async function(shortcode) {
+  const rv = await redisclient().get(shortcode);
+  if(!rv) {
+    console.error(`Missing shortcode '${shortcode}'`);
+    throw new createError.NotFound();
+  }
+  return JSON.parse(rv);
+}, "lookupShortCode"));
+async function getMapDef(shortcode, opts = {resolveauto: true}) {
+  let map_def = await lookupShortcode(shortcode);
+  if(map_def.type === 'auto' && opts.resolveauto) {
+    map_def = await resolveauto(shortcode, map_def);
   }
   return map_def;
 }
 
-async function makeMapTile(ctx, map_def, count) {
-  // var s = ctx.params.s;
 
+async function makeMapTile(ctx, map_def, count) {
   const x = parseInt(ctx.params.x, 10),
         y = parseInt(ctx.params.y, 10),
         z = parseInt(ctx.params.z, 10);
@@ -673,10 +679,10 @@ async function makeMapTile(ctx, map_def, count) {
   }
 }
 
+
 const mapPoints = async function(ctx) {
   try {
-    const s = ctx.params.s,
-          limit = cp.limit(ctx.request),
+    const limit = cp.limit(ctx.request),
           offset = cp.offset(ctx.request),
           sort = cp.sort(ctx.request);
 
@@ -708,7 +714,7 @@ const mapPoints = async function(ctx) {
       }
     });
 
-    const map_def = await getMapDef(ctx);
+    const map_def = await getMapDef(ctx.params.shortcode);
 
     var query = await queryShim(map_def.rq);
     var type = map_def.type;
@@ -817,29 +823,24 @@ const mapPoints = async function(ctx) {
 };
 
 const getMapStyle = async function(ctx) {
-  const map_def = await getMapDef(ctx);
+  const map_def = await getMapDef(ctx.params.shortcode);
   var query = await makeTileQuery(map_def, ctx.params.z, 0, 0);
   const body = await searchShim(config.search.index, "records", "_search", query);
   ctx.body = styleJSON(map_def, body);
 };
 
 const getMapTile = async function(ctx) {
-  const map_def = await getMapDef(ctx);
+  const map_def = await getMapDef(ctx.params.shortcode);
   return makeMapTile(ctx, map_def);
 };
 
+const MAP_TYPES = ['points', 'auto', 'geohash'];
 const createMap = async function(ctx) {
   var rq = cp.query("rq", ctx.request);
-
-  var type = getParam(ctx.request, "type", function(p) {
-    if(p === "points") {
-      return "points";
-    } else if(p === "auto") {
-      return "auto";
-    } else {
-      return "geohash";
-    }
-  }, "geohash");
+  var type = getParam(ctx.request, "type", null, "geohash");
+  if(!_.includes(MAP_TYPES, type)) {
+    ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
+  }
 
   var threshold = getParam(ctx.request, "threshold", p => (_.isFinite(p) ? p : 5000), 5000);
   var default_style = {
@@ -864,64 +865,41 @@ const createMap = async function(ctx) {
     style: style,
     threshold: threshold
   };
-
   var h = hasher("sha1", map_def);
 
   const rclient = redisclient();
   let s = await rclient.get(h);
   if(s) {
     console.log("Found stored map s:", s);
-    // TODO: use named route lookup
-    const map_url = 'https://' + ctx.host + '/v2/mapping/' + s;
-    ctx.body = await mapDef(s, map_url, map_def, {
-      type: "mapping",
-      recordtype: "records",
-      ip: ctx.ip,
-    });
   } else {
     const v = await rclient.incr("queryid");
     s = hashids.encode(v);
     await rclient.set(s, JSON.stringify(map_def));
     await rclient.set(h, s);
-    // TODO: use named route lookup
-    const map_url = 'https://' + ctx.host + '/v2/mapping/' + s;
-
-    ctx.body = await mapDef(s, map_url, map_def, {
-      type: "mapping",
-      recordtype: "records",
-      ip: ctx.ip,
-    });
   }
+  const map_url = ctx.origin + '/v2/mapping/' + s;
+  ctx.redirect(map_url);
 };
 
 const getMap = async function(ctx) {
-  const s = ctx.params.s;
-  const rv = await redisclient().get(s);
-  if(!rv) {
-    ctx.throw("Not Found", 404);
-    return;
-  }
-
-  const map_def = JSON.parse(rv);
-  // TODO: use named route lookup
-  const map_url = 'https://' + ctx.host + '/v2/mapping/' + s;
-  try {
-    ctx.body = await mapDef(s, map_url, map_def, {
-      type: "mapping",
-      recordtype: "records",
-      ip: ctx.ip,
-    });
-  } catch (e) {
-    ctx.throw(e, 400);
-  }
+  const shortcode = ctx.params.shortcode;
+  const map_def = await getMapDef(shortcode, {resolveauto: false});
+  const map_url = ctx.origin + '/v2/mapping/' + shortcode;
+  ctx.body = await mapDef(shortcode, map_url, map_def, {
+    type: "mapping",
+    recordtype: "records",
+    ip: ctx.ip,
+  });
 };
 
 
-api.get('/v2/mapping/', createMap);
-api.post('/v2/mapping/', createMap);
+const maprouter = new KoaRouter();
+maprouter.get('/', createMap);
+maprouter.post('/', createMap);
 
-// TODO: app.use('/v2/mapping/:s', cache.middleware);
-api.get('/v2/mapping/:s', getMap);
-api.get('/v2/mapping/:s/style/:z', getMapStyle);
-api.get('/v2/mapping/:s/points', mapPoints);
-api.get('/v2/mapping/:s/:z/:x/:y.:t', getMapTile);
+// TODO: app.use('/:shortcode', cache.middleware);
+maprouter.get('/:shortcode', getMap);
+maprouter.get('/:shortcode/style/:z', getMapStyle);
+maprouter.get('/:shortcode/points', mapPoints);
+maprouter.get('/:shortcode/:z/:x/:y.:t', getMapTile);
+api.use('/v2/mapping', maprouter.routes(), maprouter.allowedMethods());
