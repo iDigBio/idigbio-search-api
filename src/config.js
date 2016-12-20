@@ -16,8 +16,8 @@ var config = {
   port: 19196,
   search: {
     server: "http://c18node2-crn.acis.ufl.edu:9200",
-    index: "idigbio",
-    statsIndex: "stats-2.5.0",
+    index: process.env.SEARCH_INDEX || "idigbio",
+    statsIndex: process.env.STATS_INDEX || "stats",
   },
   elasticsearch: {
     hosts: [
