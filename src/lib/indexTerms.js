@@ -37,24 +37,22 @@ export function getSubKeys(mappingDict, fnPrefix) {
 
 export async function getMappingForType(type) {
   if(!indexterms[type]) {
-    const indexMappings = await searchShim(config.search.index, type, "_mapping");
-    // There should be just one key in here, the index, but because of
-    // aliases it might not be the same one we passed in.
-    if(_.size(indexMappings) !== 1) {
-      throw new Error("Unexpected response from ElasticSearch");
-    }
-    const mapping = _.values(indexMappings)[0].mappings[type];
-    indexterms[type] = getSubKeys(mapping, "");
+    await loadIndexTerms(type);
   }
   return indexterms[type];
 }
 
-export async function loadIndexTerms() {
-  const mapping = await searchShim(config.search.index, "_all", "_mapping", null);
-  _.forOwn(mapping, function(index, indexName) {
-    _.forOwn(index["mappings"], function(mappingDict, t) {
-      indexterms[t] = getSubKeys(mappingDict, "");
-    });
+
+export async function loadIndexTerms(type) {
+  const indexMappings = await searchShim(config.search.index, type || "_all", "_mapping");
+  // There should be just one key in here, the index, but because of
+  // aliases it might not be the same one we passed in.
+  if(_.size(indexMappings) !== 1) {
+    throw new Error("Unexpected response from ElasticSearch");
+  }
+  const mappings = _.values(indexMappings)[0].mappings;
+  _.forOwn(mappings, function(mappingDict, t) {
+    indexterms[t] = getSubKeys(mappingDict, "");
   });
   return indexterms;
 }

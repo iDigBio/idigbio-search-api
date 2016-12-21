@@ -1,12 +1,14 @@
+import _ from "lodash";
 import Koa from 'koa';
+
 import bodyParser from 'koa-bodyparser';
 import cors from 'kcors';
 import morgan from 'koa-morgan';
 import compress from 'koa-compress';
-
+import koaCtxCacheControl from 'koa-ctx-cache-control';
 
 import jsonErrors from 'middleware/jsonErrors';
-
+import lastModified from 'middleware/lastModified';
 import config from "config";
 import api from 'api';
 import "controllers/home";
@@ -15,11 +17,6 @@ import "controllers/manage";
 import "controllers/mapping";
 import "controllers/search";
 import "controllers/summary";
-
-import startJobs from "jobs";
-if(config.ENV !== 'test') {
-  startJobs();
-}
 
 const compressionOpts = {
   filter: function(content_type) {
@@ -31,17 +28,46 @@ const compressionOpts = {
 
 const logOpts = config.ENV === 'prod' ? 'combined' : 'dev';
 
-
-const app = new Koa()
-      .use(morgan(logOpts))
-      .use(compress(compressionOpts))
-      .use(jsonErrors())
-      .use(cors())
-      .use(bodyParser())
-      .use(api.routes())
-      .use(api.allowedMethods());
-
+const app = new Koa();
 app.name = "iDigBio Search API";
 app.proxy = true;
+koaCtxCacheControl(app);
+app
+  .use(morgan(logOpts))
+  .use(lastModified({maxAge: '5 minutes'}))
+  .use(compress(compressionOpts))
+  .use(jsonErrors())
+  .use(cors())
+  .use(bodyParser())
+  .use(api.routes())
+  .use(api.allowedMethods());
 
 export default app;
+
+
+/**
+ * Keep things up to date with elasticsearch
+ */
+
+const randomDelay = function(minutes, extra = 0.2) {
+  return 60 * 1000 * minutes * (1 + (Math.random() * minutes * extra));
+};
+
+import { updateLastModified } from "lib/lastModified";
+
+const updateLastModifiedLoop = function() {
+  updateLastModified()
+    .then(function(diff) {
+      _.forOwn((lastModified, type) => app.emit('lastmodified', {type, lastModified}));
+      setTimeout(updateLastModifiedLoop, randomDelay(5));
+    });
+};
+updateLastModifiedLoop();
+
+
+import {loadIndexTerms}  from "lib/indexTerms";
+import {loadAll as loadRecordsets} from "lib/recordsets";
+app.on('lastmodified', (evt) => loadIndexTerms(evt.type));
+app.on('lastmodified', (evt) => {
+  if(evt.type === 'recordsets') { loadRecordsets(); }
+});

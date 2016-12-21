@@ -21,6 +21,7 @@ import {fromCallback} from "bluebird";
 import createError from "http-errors";
 import KoaRouter from "koa-router";
 
+
 import mapnik from "mapnik";
 mapnik.Logger.setSeverity(mapnik.Logger.DEBUG);
 mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.input'));
