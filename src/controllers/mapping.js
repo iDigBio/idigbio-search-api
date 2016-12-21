@@ -17,7 +17,7 @@ import geohash from "ngeohash";
 import Hashids from "hashids";
 import chroma from "chroma-js";
 import path from "path";
-import bluebird from "bluebird";
+import {fromCallback} from "bluebird";
 import createError from "http-errors";
 import KoaRouter from "koa-router";
 
@@ -250,11 +250,8 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   s += '</Map>';
 
   var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
-  const bpmfs = bluebird.promisify(map.fromString, {context: map});
-  map = await bpmfs(s, {
-    strict: true,
-    base: './'
-  });
+  const parseOpts = { strict: true, base: './' };
+  map = await fromCallback((cb) => map.fromString(s, parseOpts, cb));
 
   var csv_string = "id,count,geojson\n";
   var proj = new mapnik.Projection('+init=epsg:3857');
@@ -302,18 +299,18 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
 
   if(render_type === "grid.json") {
     var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
-    const bpmr = bluebird.promisify(map.render, {context: map});
-    const grid2 = await bpmr(grid, {layer: 0, "fields": ["count"]});
-    return grid2.encodeSync({"format": "utf"});
+    const mapOpts = {layer: 0, "fields": ["count"]};
+    const grid2 = await fromCallback((cb) => map.render(grid, mapOpts, cb));
+    return await fromCallback((cb) => grid2.encode({"format": "utf"}, cb));
   } else {
-    var im = new mapnik.Image(map.width, map.height);
+    var image = new mapnik.Image(map.width, map.height);
     if(INVERTED) {
       var ks = Object.keys(sj["colors"]);
       ks.sort();
-      im.fillSync(new mapnik.Color(sj["colors"][ks[0]]["fill"]));
+      image.fillSync(new mapnik.Color(sj["colors"][ks[0]]["fill"]));
     }
-    const bpmr = bluebird.promisify(map.render, {context: map});
-    return (await bpmr(im)).encodeSync('png');
+    image = await fromCallback((cb) => map.render(image, cb));
+    return await fromCallback((cb) => image.encode("png", cb));
   }
 }
 
@@ -341,11 +338,11 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   s += '</Map>';
 
   var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
-  const bpmfs = bluebird.promisify(map.fromString, {context: map});
-  map = await bpmfs(s, {
+  const mapOpts = {
     strict: true,
     base: './'
-    });
+  };
+  map = await fromCallback((cb) => map.fromString(s, mapOpts, cb));
 
   // looks like this isn't used
   // var options = {
@@ -386,14 +383,12 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   if(render_type === "grid.json") {
     const grid = new mapnik.Grid(map.width, map.height, {key: "id"});
     const options = {layer: 0, "fields": [map_def.style.styleOn, "lat", "lon"]};
-    const bpmr = bluebird.promisify(map.render, {context: map});
-    const grid2 = await bpmr(grid, options);
-    return grid2.encodeSync({"format": "utf"});
+    const grid2 = await fromCallback((cb) => map.render(grid, options, cb));
+    return await fromCallback((cb) => grid2.encode({"format": "utf"}, cb));
   } else {
-    let im = new mapnik.Image(map.width, map.height);
-    const bpmr = bluebird.promisify(map.render, {context: map});
-    im = await bpmr(im);
-    return im.encodeSync('png');
+    let image = new mapnik.Image(map.width, map.height);
+    image = await fromCallback((cb) => map.render(image, cb));
+    return await fromCallback((cb) => image.encode('png', cb));
   }
 }
 
@@ -616,14 +611,14 @@ const resolveauto = memoize(timer(async function(shortcode, map_def) {
   const type = body.count > map_def.threshold ? "geohash" : "points";
   return _.assign({}, map_def, {type});
 }, "resolveauto"));
-const lookupShortcode  = memoize(timer(async function(shortcode) {
+const lookupShortcode  = memoize(async function(shortcode) {
   const rv = await redisclient().get(shortcode);
   if(!rv) {
     console.error(`Missing shortcode '${shortcode}'`);
     throw new createError.NotFound();
   }
   return JSON.parse(rv);
-}, "lookupShortCode"));
+});
 async function getMapDef(shortcode, opts = {resolveauto: true}) {
   let map_def = await lookupShortcode(shortcode);
   if(map_def.type === 'auto' && opts.resolveauto) {
@@ -842,7 +837,7 @@ const createMap = async function(ctx) {
     ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
   }
 
-  var threshold = getParam(ctx.request, "threshold", p => (_.isFinite(p) ? p : 5000), 5000);
+  var threshold = getParam(ctx.request, "threshold", (p) => (_.isFinite(p) ? p : 5000), 5000);
   var default_style = {
     scale: 'YlOrRd',
     pointScale: 'Paired',
