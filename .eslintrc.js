@@ -2,6 +2,7 @@ module.exports = {
   "env": {
     "node": true,
     "jest": true,
+    "jasmine": true
   },
   "parserOptions": {
     "ecmaVersion": 8,
