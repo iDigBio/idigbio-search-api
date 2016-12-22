@@ -5,7 +5,7 @@ var config = {
     search: {
         server: "http://c18node2-crn.acis.ufl.edu:9200",
         index: "idigbio-2.10.4",
-        statsIndex: "stats-2.5.0",
+        statsIndex: "stats-2.6.0",
         useEsClient: true
     },
     elasticsearch: {
