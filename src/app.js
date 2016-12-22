@@ -1,4 +1,5 @@
 import _ from "lodash";
+import bluebird from "bluebird";
 import Koa from 'koa';
 
 import bodyParser from 'koa-bodyparser';
@@ -49,9 +50,7 @@ export default app;
  * Keep things up to date with elasticsearch
  */
 
-const randomDelay = function(minutes, extra = 0.2) {
-  return 60 * 1000 * minutes * (1 + (Math.random() * minutes * extra));
-};
+const repeatEvery = 5 * 60 * 1000;
 
 import { updateLastModified } from "lib/lastModified";
 
@@ -59,11 +58,12 @@ const updateLastModifiedLoop = function() {
   updateLastModified()
     .then(function(diff) {
       _.forOwn((lastModified, type) => app.emit('lastmodified', {type, lastModified}));
-      setTimeout(updateLastModifiedLoop, randomDelay(5));
+      setTimeout(updateLastModifiedLoop, repeatEvery);
     });
 };
-updateLastModifiedLoop();
-
+if(config.ENV !== 'test') {
+  updateLastModifiedLoop();
+}
 
 import {loadIndexTerms}  from "lib/indexTerms";
 import {loadAll as loadRecordsets} from "lib/recordsets";
@@ -71,3 +71,5 @@ app.on('lastmodified', (evt) => loadIndexTerms(evt.type));
 app.on('lastmodified', (evt) => {
   if(evt.type === 'recordsets') { loadRecordsets(); }
 });
+
+app.ready = bluebird.all([loadIndexTerms(), loadRecordsets()]);

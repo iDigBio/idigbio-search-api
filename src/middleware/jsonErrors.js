@@ -1,3 +1,4 @@
+import config from "config";
 
 /**
  * This is a middleware that will ensure that all errors and 404s end
@@ -14,14 +15,17 @@ export default function(opts) {
         ctx.throw(404);
       }
     } catch (err) {
+      // No cache errors
+      ctx.remove('Last-Modified');
       // will only respond with JSON
-      ctx.body = {
-        error: err.message
-      };
-      ctx.status = err.statusCode || err.status || 500;
-      if(!err.expose && ctx.status >= 500) {
+      if(err.expose || config.ENV !== "prod") {
+        ctx.body = err;
+        ctx.body = { error: err.message, properties: err.properties };
+      } else {
+        ctx.body = { error: "Internal Server Error" };
         ctx.app.emit('error', err, ctx);
       }
+      ctx.status = err.statusCode || err.status || 500;
     }
   };
 }

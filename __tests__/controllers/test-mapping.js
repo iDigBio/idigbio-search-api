@@ -12,7 +12,10 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 describe('Mapping', function() {
   let server = null;
-  beforeAll(() => { server = app.listen(); });
+    beforeAll(async function() {
+    server = app.listen();
+    return app.ready;
+  });
   afterAll(() => server.close());
 
   describe('map creation', function() {

@@ -5,10 +5,12 @@ import request from 'supertest-as-promised';
 
 import app from 'app';
 
-
 describe('Home', function() {
   let server = null;
-  beforeAll(() => { server = app.listen(); });
+  beforeAll(async function() {
+    server = app.listen();
+    return app.ready;
+  });
   afterAll(() => server.close());
 
   describe('index', function() {
