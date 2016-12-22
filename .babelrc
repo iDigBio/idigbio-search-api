@@ -6,7 +6,8 @@
   "plugins": [
     ["module-resolver", {
       "root": ["./src"],
-      "alias": { }
+      "alias": { },
+      "cwd": "babelrc"
     },
     "transform-promise-to-bluebird"]
   ]
