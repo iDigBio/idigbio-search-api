@@ -58,6 +58,15 @@ describe('Search', function() {
             .expect(200);
       response.body.items.length.should.be.below(config.maxLimit + 1);
     });
+
+    it("should error on invalid search terms", async function() {
+      var q = {};
+      const response = await request(server)
+            .get("/v2/search/records/")
+            .query({rq: JSON.stringify(q), limit: 10000, fields: ["scientificNam"]})
+            .expect('Content-Type', /json/)
+            .expect(400);
+    });
   });
   describe('basicPOST', function() {
     it('should return an empty search for {"scientificname": "nullius nullius"}', async function() {

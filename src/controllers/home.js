@@ -38,11 +38,7 @@ const searchProxy = async function(ctx, next) {
 };
 
 const indexFields = async function(ctx) {
-  let t = ctx.params.t;
-  if(t === "media") {
-    t = "mediarecords";
-  }
-  ctx.body = await getMappingForType(t);
+  ctx.body = getMappingForType(ctx.params.t);
 };
 
 

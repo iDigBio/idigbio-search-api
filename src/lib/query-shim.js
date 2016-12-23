@@ -140,7 +140,7 @@ function objectType(k, shimK) {
 
 export default async function(shim, term_type) {
   if(term_type) {
-    const term_errors = await checkTerms(term_type, _.keys(shim), true);
+    const term_errors = checkTerms(term_type, _.keys(shim), true);
     if(_.keys(term_errors).length > 0) {
       throw new TermNotFoundException("Some of the query terms supplied were not found in the index", term_errors);
     }

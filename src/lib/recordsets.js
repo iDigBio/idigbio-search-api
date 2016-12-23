@@ -46,8 +46,8 @@ export async function get(id) {
 }
 
 export async function clearcache() {
-  console.warn("Clearing recordset caches while loading is underway.");
   if(loading) {
+    console.warn("Clearing recordset caches while loading is underway.");
     await loading;
   }
   config.recordsets = {};

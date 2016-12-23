@@ -1,27 +1,57 @@
 import _ from "lodash";
 
-import * as indexTerms from "lib/indexTerms";
+import {loadIndexTerms, clear, getMappingForType, checkTerms} from "lib/indexTerms";
 
-describe('index terms', function() {
+describe('indexTerms', function() {
   it('should have been imported', function() {
-    expect(indexTerms.loadIndexTerms).toBeTruthy();
+    expect(loadIndexTerms).toBeTruthy();
   });
 
-  it('should load all terms', async function() {
-    indexTerms.clear();
-    const its = await indexTerms.loadIndexTerms();
-    expect(its).toEqual({
-      publishers: expect.any(Object),
-      recordsets: expect.any(Object),
-      records: expect.any(Object),
-      mediarecords: expect.any(Object)
+  describe(".loadIndexTerms", function() {
+    it('should load all terms', async function() {
+      clear();
+      const its = await loadIndexTerms();
+      expect(its).toEqual({
+        publishers: expect.any(Object),
+        recordsets: expect.any(Object),
+        records: expect.any(Object),
+        mediarecords: expect.any(Object)
+      });
     });
   });
 
-  it('should load terms for a given type', async function() {
-    indexTerms.clear();
-    const itt = await indexTerms.getMappingForType('records');
-    expect(itt).toBeDefined();
-    expect(indexTerms.indexterms.medirecords).toBeUndefined();
+
+  describe(".getMappingForType", function() {
+    it("Should error for an invalid type", async function() {
+      expect(() => getMappingForType("adsf")).toThrow();
+    });
+    it("Should return the mapping when loaded", async function() {
+      await loadIndexTerms();
+      expect(getMappingForType('records')).toEqual(jasmine.any(Object));
+    });
+  });
+
+  describe(".checkTerms", function() {
+    beforeAll(() => loadIndexTerms());
+
+    // function checkTerms(type, term_list, only_missing)
+
+    it("should error on bad types", function() {
+      expect(checkTerms.bind(null, "foobar", ["scientificName"], true)).toThrow();
+    });
+    it("Should return the valid terms", function() {
+      expect(checkTerms('records', ["scientificname"], false))
+        .toEqual({scientificname: true});
+    });
+    it("should return nothing on valid terms", function() {
+      expect(checkTerms('records', ["scientificname"], true)).toEqual({});
+      expect(checkTerms('records', ["data.dwc:scientificName"], true)).toEqual({});
+    });
+    it("should return the invalid terms", function() {
+      expect(checkTerms('records', ["foobar"], true)).toEqual({foobar: false});
+    });
+    it("should handle wildcards", async function() {
+      expect(checkTerms('records', ["data.dwc:*"], true)).toEqual({});
+    });
   });
 });

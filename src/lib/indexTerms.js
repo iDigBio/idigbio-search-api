@@ -1,4 +1,5 @@
-import _ from 'lodash';
+import _ from "lodash";
+import createError from "http-errors";
 
 import config from "config";
 import searchShim from "searchShim";
@@ -35,11 +36,15 @@ export function getSubKeys(mappingDict, fnPrefix) {
   return rv;
 }
 
-export async function getMappingForType(type) {
-  if(!indexterms[type]) {
-    await loadIndexTerms(type);
+export function getMappingForType(type) {
+  if(type === "media") {
+    type = "mediarecords";
   }
-  return indexterms[type];
+  const res = indexterms[type];
+  if(!res) {
+    throw createError(400, `Invalid type '${type}'`);
+  }
+  return res;
 }
 
 
@@ -57,10 +62,10 @@ export async function loadIndexTerms(type) {
   return indexterms;
 }
 
-//TODO: checkTerms callsites for async
-export async function checkTerms(type, term_list, only_missing) {
+
+export function checkTerms(type, term_list, only_missing) {
   var results = {};
-  var root = await getMappingForType(type);
+  var root = getMappingForType(type);
 
   term_list.forEach(function(term) {
     var termParts = term.split(".");

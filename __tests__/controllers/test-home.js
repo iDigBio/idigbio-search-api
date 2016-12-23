@@ -144,5 +144,12 @@ describe('Home', function() {
         .expect(200);
       Object.keys(response.body).length.should.not.equal(0);
     });
+    it("Should error on an illegal type", async function() {
+      return request(server)
+            .get("/v2/meta/fields/foobar")
+            .expect('Content-Type', /json/)
+            .expect(400);
+    });
+
   });
 });
