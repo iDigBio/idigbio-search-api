@@ -1,0 +1,626 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 16975446,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d8e4d472-5ca1-46fc-adb7-938ca8da120c",
+        "_score": 1,
+        "_routing": "1bff7854-9097-4296-8dbf-39e1ed34eb40",
+        "_parent": "1bff7854-9097-4296-8dbf-39e1ed34eb40",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "d8e4d472-5ca1-46fc-adb7-938ca8da120c",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "1bff7854-9097-4296-8dbf-39e1ed34eb40",
+            "21b1f320-69a2-46a7-8d81-21d6c46dbdc5"
+          ],
+          "etag": "6e529bba81741b27c422b0394984a9bced6d8376",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "d8e4d472-5ca1-46fc-adb7-938ca8da120c",
+            "idigbio:etag": "6e529bba81741b27c422b0394984a9bced6d8376",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03754097",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441347623031rbTRp9dPZSwT34M2",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441347623031rbtrp9dpzswt34m2"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "1bff7854-9097-4296-8dbf-39e1ed34eb40",
+                "21b1f320-69a2-46a7-8d81-21d6c46dbdc5"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441347623031rbtrp9dpzswt34m2"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03754097",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441347623031rbTRp9dPZSwT34M2"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441347623031rbTRp9dPZSwT34M2"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "8b659386-e9af-4383-be5e-611891c0c24f",
+        "_score": 1,
+        "_routing": "63183ce8-7b72-48c4-9bda-baa362dd5b4b",
+        "_parent": "63183ce8-7b72-48c4-9bda-baa362dd5b4b",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "8b659386-e9af-4383-be5e-611891c0c24f",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "63183ce8-7b72-48c4-9bda-baa362dd5b4b",
+            "d97103f0-f23e-4614-bb76-fafe2c233c99"
+          ],
+          "etag": "61b228a1a4fe3594fe7bada5fa53bd6872f486fe",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "8b659386-e9af-4383-be5e-611891c0c24f",
+            "idigbio:etag": "61b228a1a4fe3594fe7bada5fa53bd6872f486fe",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04176150",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441354771446GKjzWmbMuZTYmwC4",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441354771446gkjzwmbmuztymwc4"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "63183ce8-7b72-48c4-9bda-baa362dd5b4b",
+                "d97103f0-f23e-4614-bb76-fafe2c233c99"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441354771446gkjzwmbmuztymwc4"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04176150",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441354771446GKjzWmbMuZTYmwC4"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441354771446GKjzWmbMuZTYmwC4"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d2a10281-1733-49a3-bd55-bd0f3eda9e13",
+        "_score": 1,
+        "_routing": "04b2bc71-18c4-435c-b019-7ba88c89a37f",
+        "_parent": "04b2bc71-18c4-435c-b019-7ba88c89a37f",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "d2a10281-1733-49a3-bd55-bd0f3eda9e13",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "04b2bc71-18c4-435c-b019-7ba88c89a37f",
+            "7b5fcf4d-49f0-4bf3-9e35-52602c14f8eb"
+          ],
+          "etag": "8bceb59822edacec42a1fea0f62c49655fb11486",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "d2a10281-1733-49a3-bd55-bd0f3eda9e13",
+            "idigbio:etag": "8bceb59822edacec42a1fea0f62c49655fb11486",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05367839",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441386351326HrzniJ8dhfrBv8Gv",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441386351326hrznij8dhfrbv8gv"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "04b2bc71-18c4-435c-b019-7ba88c89a37f",
+                "7b5fcf4d-49f0-4bf3-9e35-52602c14f8eb"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441386351326hrznij8dhfrbv8gv"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05367839",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441386351326HrzniJ8dhfrBv8Gv"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441386351326HrzniJ8dhfrBv8Gv"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "a8ec0903-4698-4812-8e5f-658c2dc88756",
+        "_score": 1,
+        "_routing": "b07a4508-ce74-469e-90fe-5b4951fe6ea0",
+        "_parent": "b07a4508-ce74-469e-90fe-5b4951fe6ea0",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "a8ec0903-4698-4812-8e5f-658c2dc88756",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "b07a4508-ce74-469e-90fe-5b4951fe6ea0",
+            "6468697e-d751-4fb7-8906-ea02eafec5e1"
+          ],
+          "etag": "b803251a25e33ecaca46c00c372de8d87e0604e9",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "a8ec0903-4698-4812-8e5f-658c2dc88756",
+            "idigbio:etag": "b803251a25e33ecaca46c00c372de8d87e0604e9",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05207758",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441399856318quOmvhtvYyEoTeLk",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441399856318quomvhtvyyeotelk"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "b07a4508-ce74-469e-90fe-5b4951fe6ea0",
+                "6468697e-d751-4fb7-8906-ea02eafec5e1"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441399856318quomvhtvyyeotelk"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05207758",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441399856318quOmvhtvYyEoTeLk"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441399856318quOmvhtvYyEoTeLk"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "fdd9c4c1-f7e2-459c-81ad-847458f1f9e7",
+        "_score": 1,
+        "_routing": "f49142c5-116f-4d0d-99e9-3e89c86c3125",
+        "_parent": "f49142c5-116f-4d0d-99e9-3e89c86c3125",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "fdd9c4c1-f7e2-459c-81ad-847458f1f9e7",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "f49142c5-116f-4d0d-99e9-3e89c86c3125",
+            "2da2519a-7b57-4aa1-86eb-35f79be8ee8d"
+          ],
+          "etag": "8ff24287c8904387666594cd920f630cb16ee1e8",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "fdd9c4c1-f7e2-459c-81ad-847458f1f9e7",
+            "idigbio:etag": "8ff24287c8904387666594cd920f630cb16ee1e8",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04894010",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441436034486C11NdX4flYOe9qYg",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441436034486c11ndx4flyoe9qyg"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "f49142c5-116f-4d0d-99e9-3e89c86c3125",
+                "2da2519a-7b57-4aa1-86eb-35f79be8ee8d"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441436034486c11ndx4flyoe9qyg"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04894010",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441436034486C11NdX4flYOe9qYg"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441436034486C11NdX4flYOe9qYg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d06b48b1-4a83-4c46-8690-c0d967b155a1",
+        "_score": 1,
+        "_routing": "9bc4c3c0-e6e9-46da-a6f6-608538ef0dba",
+        "_parent": "9bc4c3c0-e6e9-46da-a6f6-608538ef0dba",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "d06b48b1-4a83-4c46-8690-c0d967b155a1",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "9bc4c3c0-e6e9-46da-a6f6-608538ef0dba",
+            "e60647d3-61c7-40dd-881d-5e1667e29c11"
+          ],
+          "etag": "bc1e23ec0cf1aa56ff709c4e287ab7d4831f0992",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "d06b48b1-4a83-4c46-8690-c0d967b155a1",
+            "idigbio:etag": "bc1e23ec0cf1aa56ff709c4e287ab7d4831f0992",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00337451",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1442473453446B6L5eXSw84OIVKs5",
+            "idigbio:siblings": {
+              "record": [
+                "9bc4c3c0-e6e9-46da-a6f6-608538ef0dba",
+                "e60647d3-61c7-40dd-881d-5e1667e29c11"
+              ]
+            },
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1442473453446b6l5exsw84oivks5"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "dcterms:creator": "Paul Postiau, Université de Mons-Hainaut"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1442473453446b6l5exsw84oivks5"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00337451",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1442473453446B6L5eXSw84OIVKs5",
+            "dcterms:creator": "Paul Postiau, Université de Mons-Hainaut"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1442473453446B6L5eXSw84OIVKs5"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "475197bb-2563-4cf5-b917-fd8d87ec43c4",
+        "_score": 1,
+        "_routing": "e925e923-6d2b-47d3-8f1d-c10f5873ae41",
+        "_parent": "e925e923-6d2b-47d3-8f1d-c10f5873ae41",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "475197bb-2563-4cf5-b917-fd8d87ec43c4",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "e925e923-6d2b-47d3-8f1d-c10f5873ae41",
+            "6c84e918-1948-47b2-a9ac-32fe7845720d"
+          ],
+          "etag": "a1bd0ee81d6709e7bfe63b2e8092e43c510c6a82",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "475197bb-2563-4cf5-b917-fd8d87ec43c4",
+            "idigbio:etag": "a1bd0ee81d6709e7bfe63b2e8092e43c510c6a82",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00509268",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1442513554582HfLnhqUuxKNhBacZ",
+            "idigbio:siblings": {
+              "record": [
+                "e925e923-6d2b-47d3-8f1d-c10f5873ae41",
+                "6c84e918-1948-47b2-a9ac-32fe7845720d"
+              ]
+            },
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1442513554582hflnhquuxknhbacz"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "dcterms:creator": "Paris, Museum National d'Histoire Naturelle, AA"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1442513554582hflnhquuxknhbacz"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00509268",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1442513554582HfLnhqUuxKNhBacZ",
+            "dcterms:creator": "Paris, Museum National d'Histoire Naturelle, AA"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1442513554582HfLnhqUuxKNhBacZ"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "bb635327-a2f4-4488-9ef9-e2e71e6ea6a3",
+        "_score": 1,
+        "_routing": "f126a696-dda1-4196-9783-2c739e87b82b",
+        "_parent": "f126a696-dda1-4196-9783-2c739e87b82b",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "bb635327-a2f4-4488-9ef9-e2e71e6ea6a3",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "f126a696-dda1-4196-9783-2c739e87b82b",
+            "268e17b0-13f8-4326-997d-0b09d777d085"
+          ],
+          "etag": "5ab10bcbc0d260f4578f0a06c7ce0a41b6103ca8",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "bb635327-a2f4-4488-9ef9-e2e71e6ea6a3",
+            "idigbio:etag": "5ab10bcbc0d260f4578f0a06c7ce0a41b6103ca8",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p01627457",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441295868355k3wZsaycapuyyFO1",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441295868355k3wzsaycapuyyfo1"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "f126a696-dda1-4196-9783-2c739e87b82b",
+                "268e17b0-13f8-4326-997d-0b09d777d085"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441295868355k3wzsaycapuyyfo1"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p01627457",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441295868355k3wZsaycapuyyFO1"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441295868355k3wZsaycapuyyFO1"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "e1b809c6-8a4c-42eb-95b6-67c7b6d50f2f",
+        "_score": 1,
+        "_routing": "9ce13726-8af1-47f9-9f6e-6518e1a2e6bd",
+        "_parent": "9ce13726-8af1-47f9-9f6e-6518e1a2e6bd",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "e1b809c6-8a4c-42eb-95b6-67c7b6d50f2f",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "9ce13726-8af1-47f9-9f6e-6518e1a2e6bd",
+            "d5d1a404-b386-4a23-a636-0b28ae76abf1"
+          ],
+          "etag": "5e88f98b6c598605a0a89e95f880c881b573f75d",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "e1b809c6-8a4c-42eb-95b6-67c7b6d50f2f",
+            "idigbio:etag": "5e88f98b6c598605a0a89e95f880c881b573f75d",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p01555576",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441300905536lhA4RDRKYpUWI7YD",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441300905536lha4rdrkypuwi7yd"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "9ce13726-8af1-47f9-9f6e-6518e1a2e6bd",
+                "d5d1a404-b386-4a23-a636-0b28ae76abf1"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441300905536lha4rdrkypuwi7yd"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p01555576",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441300905536lhA4RDRKYpUWI7YD"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441300905536lhA4RDRKYpUWI7YD"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "4a44203b-c5c8-42e9-9e00-5025816fe7b9",
+        "_score": 1,
+        "_routing": "4868f2b6-bd4c-4395-af52-290410ea9b4b",
+        "_parent": "4868f2b6-bd4c-4395-af52-290410ea9b4b",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "4a44203b-c5c8-42e9-9e00-5025816fe7b9",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "4868f2b6-bd4c-4395-af52-290410ea9b4b",
+            "8b18a1b0-17f2-4bef-94a1-65bdb1b6b991"
+          ],
+          "etag": "77738f8c774a47be844f4b3058c31995be8672fd",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "4a44203b-c5c8-42e9-9e00-5025816fe7b9",
+            "idigbio:etag": "77738f8c774a47be844f4b3058c31995be8672fd",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03533610",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441366344587agXg7JtJcRdwF2yf",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441366344587agxg7jtjcrdwf2yf"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "4868f2b6-bd4c-4395-af52-290410ea9b4b",
+                "8b18a1b0-17f2-4bef-94a1-65bdb1b6b991"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441366344587agxg7jtjcrdwf2yf"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p03533610",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441366344587agXg7JtJcRdwF2yf"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441366344587agXg7JtJcRdwF2yf"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_flags": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 1800741,
+      "buckets": [
+        {
+          "key": "dwc_datasetid_added",
+          "doc_count": 347731
+        },
+        {
+          "key": "dwc_parentnameusageid_added",
+          "doc_count": 347731
+        },
+        {
+          "key": "dwc_taxonid_added",
+          "doc_count": 347731
+        },
+        {
+          "key": "dwc_taxonomicstatus_added",
+          "doc_count": 347731
+        },
+        {
+          "key": "dwc_taxonrank_added",
+          "doc_count": 347731
+        },
+        {
+          "key": "gbif_canonicalname_added",
+          "doc_count": 347731
+        },
+        {
+          "key": "gbif_taxon_corrected",
+          "doc_count": 347731
+        },
+        {
+          "key": "dwc_kingdom_added",
+          "doc_count": 347730
+        },
+        {
+          "key": "dwc_genus_added",
+          "doc_count": 347728
+        },
+        {
+          "key": "dwc_phylum_added",
+          "doc_count": 347533
+        }
+      ]
+    }
+  }
+}

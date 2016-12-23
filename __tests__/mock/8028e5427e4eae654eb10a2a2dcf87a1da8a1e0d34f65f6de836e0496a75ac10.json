@@ -1,0 +1,766 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 91140048,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d7511622-aab4-41b1-9234-6a45b44e6932",
+        "_score": 1,
+        "_routing": "0",
+        "_parent": "0",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "d7511622-aab4-41b1-9234-6a45b44e6932",
+          "format": "image/jpeg",
+          "recordset": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+          "dqs": 0.7272727272727273,
+          "rights": "BY-NC",
+          "modified": "2014-12-02T18:47:11.361000+00:00",
+          "hasSpecimen": false,
+          "mediatype": "images",
+          "etag": "a921ed1b5fc364d8f594176d264b450fbd9fea97",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "83dcfd1aaacaa68502fc546c04652a3c",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_MIN_1035833.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/83dcfd1aaacaa68502fc546c04652a3c",
+            "dcterms:modified": "2014-12-02 18:47:11.361000"
+          },
+          "indexData": {
+            "idigbio:parent": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "83dcfd1aaacaa68502fc546c04652a3c",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_MIN_1035833.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "ttd_tcn_min_1035833.jpg"
+            ],
+            "idigbio:dateModified": "2014-12-03T19:16:18.426000",
+            "idigbio:etag": "a921ed1b5fc364d8f594176d264b450fbd9fea97",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/83dcfd1aaacaa68502fc546c04652a3c",
+            "dcterms:modified": "2014-12-02 18:47:11.361000",
+            "idigbio:uuid": "d7511622-aab4-41b1-9234-6a45b44e6932"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "ttd_tcn_min_1035833.jpg"
+          ],
+          "type": "stillimage",
+          "datemodified": "2014-12-03T19:16:18.426000+00:00",
+          "accessuri": "http://media.idigbio.org/lookup/images/83dcfd1aaacaa68502fc546c04652a3c"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d751247a-e707-4807-b6ca-176c19162916",
+        "_score": 1,
+        "_routing": "5f0471bc-c169-4ddf-bbce-7e9428ef2fa0",
+        "_parent": "5f0471bc-c169-4ddf-bbce-7e9428ef2fa0",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-nc/3.0/88x31.png",
+          "uuid": "d751247a-e707-4807-b6ca-176c19162916",
+          "format": "image/jpeg",
+          "recordset": "ab820732-0844-4323-ba14-c58c24f3fc7e",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "5f0471bc-c169-4ddf-bbce-7e9428ef2fa0"
+          ],
+          "etag": "c3cc5f3da9cfefa48e574c62ff49fb7ccceadfb4",
+          "indexData": {
+            "idigbio:parent": "ab820732-0844-4323-ba14-c58c24f3fc7e",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:6ff75f9e-8422-43f6-962c-3817c8f2e1e3",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2014-09-26 03:01:09",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/mich/bryophytes/00692/692894_tn.jpg",
+            "idigbio:etag": "c3cc5f3da9cfefa48e574c62ff49fb7ccceadfb4",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "urn:uuid:6ff75f9e-8422-43f6-962c-3817c8f2e1e3",
+              "ab820732-0844-4323-ba14-c58c24f3fc7e\\media\\http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg"
+            ],
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/mich/bryophytes/00692/692894.jpg",
+            "coreid": "2924771",
+            "dcterms:identifier": "http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg",
+            "xmpRights:Owner": "University of Michigan Herbarium (MICH)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "idigbio:siblings": {
+              "record": [
+                "5f0471bc-c169-4ddf-bbce-7e9428ef2fa0"
+              ]
+            },
+            "idigbio:dateModified": "2015-09-30T14:03:33.440250",
+            "ac:accessURI": "http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "d751247a-e707-4807-b6ca-176c19162916",
+            "ac:associatedSpecimenReference": "http://bryophyteportal.org/portal/collections/individual/index.php?occid=2924771"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+          "recordids": [
+            "urn:uuid:6ff75f9e-8422-43f6-962c-3817c8f2e1e3",
+            "ab820732-0844-4323-ba14-c58c24f3fc7e\\media\\http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:6ff75f9e-8422-43f6-962c-3817c8f2e1e3",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/mich/bryophytes/00692/692894_tn.jpg",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/mich/bryophytes/00692/692894.jpg",
+            "coreid": "2924771",
+            "dcterms:identifier": "http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg",
+            "xmpRights:Owner": "University of Michigan Herbarium (MICH)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "ac:accessURI": "http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg",
+            "xmp:MetadataDate": "2014-09-26 03:01:09",
+            "ac:associatedSpecimenReference": "http://bryophyteportal.org/portal/collections/individual/index.php?occid=2924771"
+          },
+          "datemodified": "2015-09-30T14:03:33.440250+00:00",
+          "accessuri": "http://storage.idigbio.org/mich/bryophytes/00692/692894_lg.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d7513d62-5717-4052-91a0-8770c07ad9ea",
+        "_score": 1,
+        "_routing": "5c547158-515d-493a-bc60-efd72daa1b54",
+        "_parent": "5c547158-515d-493a-bc60-efd72daa1b54",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "uuid": "d7513d62-5717-4052-91a0-8770c07ad9ea",
+          "format": "image/jpeg",
+          "recordset": "beecd160-a96c-46fc-bdce-7dcb7024d473",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "5c547158-515d-493a-bc60-efd72daa1b54"
+          ],
+          "etag": "14db22722ea3458ef34221a7b37c2bfcfc3a716a",
+          "indexData": {
+            "idigbio:parent": "beecd160-a96c-46fc-bdce-7dcb7024d473",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:ed9fd5ac-7021-47a8-b7d1-d1a8c403d1d2",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2014-10-06 02:31:43",
+            "xmpRights:UsageTerms": "CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)",
+            "idigbio:etag": "14db22722ea3458ef34221a7b37c2bfcfc3a716a",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "5c547158-515d-493a-bc60-efd72daa1b54"
+              ]
+            },
+            "coreid": "2352910",
+            "idigbio:recordIds": [
+              "urn:uuid:ed9fd5ac-7021-47a8-b7d1-d1a8c403d1d2"
+            ],
+            "xmpRights:Owner": "University of Washington Herbarium (WTU)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "idigbio:dateModified": "2014-11-09T13:56:03.902000",
+            "ac:accessURI": "http://storage.idigbio.org/wtu/mycology/WTU-F-063/WTU-F-063288_L01_lg.jpg",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "d7513d62-5717-4052-91a0-8770c07ad9ea",
+            "ac:associatedSpecimenReference": "http://mycoportal.org/portal/collections/individual/index.php?occid=2352910"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "urn:uuid:ed9fd5ac-7021-47a8-b7d1-d1a8c403d1d2"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:ed9fd5ac-7021-47a8-b7d1-d1a8c403d1d2",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)",
+            "dcterms:format": "image/jpeg",
+            "coreid": "2352910",
+            "xmpRights:Owner": "University of Washington Herbarium (WTU)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "ac:accessURI": "http://storage.idigbio.org/wtu/mycology/WTU-F-063/WTU-F-063288_L01_lg.jpg",
+            "xmp:MetadataDate": "2014-10-06 02:31:43",
+            "ac:associatedSpecimenReference": "http://mycoportal.org/portal/collections/individual/index.php?occid=2352910"
+          },
+          "datemodified": "2014-11-09T13:56:03.902000+00:00",
+          "accessuri": "http://storage.idigbio.org/wtu/mycology/WTU-F-063/WTU-F-063288_L01_lg.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d7515489-4a1a-44d9-a673-8c906fae7993",
+        "_score": 1,
+        "_routing": "0",
+        "_parent": "0",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "d7515489-4a1a-44d9-a673-8c906fae7993",
+          "format": "image/jpeg",
+          "recordset": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+          "dqs": 0.7272727272727273,
+          "rights": "BY-NC",
+          "modified": "2014-09-10T07:52:00.056000+00:00",
+          "hasSpecimen": false,
+          "mediatype": "images",
+          "etag": "394ad5cb5ddd9e6caf36d5c7e0648e5ae0a6f7a1",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "60e063ad78e4aff6bd3e35d57f5c4b55",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_MICH_1370573.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/60e063ad78e4aff6bd3e35d57f5c4b55",
+            "dcterms:modified": "2014-09-10 07:52:00.056000"
+          },
+          "indexData": {
+            "idigbio:parent": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "60e063ad78e4aff6bd3e35d57f5c4b55",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_MICH_1370573.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "ttd_tcn_mich_1370573.jpg"
+            ],
+            "idigbio:dateModified": "2014-12-03T23:16:21.532000",
+            "idigbio:etag": "394ad5cb5ddd9e6caf36d5c7e0648e5ae0a6f7a1",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/60e063ad78e4aff6bd3e35d57f5c4b55",
+            "dcterms:modified": "2014-09-10 07:52:00.056000",
+            "idigbio:uuid": "d7515489-4a1a-44d9-a673-8c906fae7993"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "ttd_tcn_mich_1370573.jpg"
+          ],
+          "type": "stillimage",
+          "datemodified": "2014-12-03T23:16:21.532000+00:00",
+          "accessuri": "http://media.idigbio.org/lookup/images/60e063ad78e4aff6bd3e35d57f5c4b55"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d75159ef-9c5f-4d76-b631-b1fd0d72fec7",
+        "_score": 1,
+        "_routing": "f6a30f0b-40d8-4907-8486-a0c810b791f6",
+        "_parent": "f6a30f0b-40d8-4907-8486-a0c810b791f6",
+        "_source": {
+          "data": {
+            "xmpRights:WebStatement": "<a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/us/\" rel=\"license\"><img src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png\" style=\"border-width: 0pt;\" alt=\"Creative Commons License\"/></a>",
+            "dc:type": "StillImage",
+            "ac:tag": "Plant body",
+            "exif:PixelYDimension": "3912",
+            "ac:provider": "http://www.morphbank.net/691554",
+            "photoshop:Credit": "Auburn University Herbarium",
+            "ac:licenseLogoURL": "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png",
+            "ac:providerManagedID": "http://www.morphbank.net/716233",
+            "ac:furtherInformationURL": "http://www.morphbank.net/716233",
+            "ac:captureDevice": "Reflected light, macrophotography",
+            "dc:format": "image/jpeg",
+            "dcterms:available": "2012-09-01",
+            "ac:metadataCreator": "morphbank.net",
+            "dc:rights": "by-nc-sa",
+            "coreid": "urn:uuid:308618c5-ba44-4ca4-a34a-6f4978baaccd",
+            "dcterms:identifier": "urn:uuid:06a7263b-e1f4-4392-bce3-0737879944c9",
+            "ac:metadataProvider": "morphbank.net",
+            "dcterms:title": "image of Helenium autumnale",
+            "exif:PixelXDimension": "3264",
+            "ac:metadataLanguageLiteral": "en",
+            "ac:subjectPart": "Plant body",
+            "xmpRights:Owner": "Auburn University Herbarium",
+            "ac:variantLiteral": "best quality",
+            "ac:subjectOrientation": "Herbarium Specimen",
+            "ac:resourceCreationTechnique": "No preparation",
+            "ac:accessURI": "http://www.morphbank.net?id=716233&imgType=jpeg",
+            "dcterms:modified": "2011-09-27 11:04:35.0"
+          },
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "xpixels": 3912,
+          "uuid": "d75159ef-9c5f-4d76-b631-b1fd0d72fec7",
+          "format": "image/jpeg",
+          "recordset": "364a24d9-d4a8-4e0b-8e50-07b90f844548",
+          "dqs": 1,
+          "rights": "BY-NC-SA",
+          "tag": "plant body",
+          "modified": "2011-09-27T11:04:35+00:00",
+          "hasSpecimen": true,
+          "mediatype": "images",
+          "records": [
+            "f6a30f0b-40d8-4907-8486-a0c810b791f6"
+          ],
+          "etag": "a71602789aea8696d347702c565a7a56bed48fa8",
+          "ypixels": 3264,
+          "indexData": {
+            "xmpRights:WebStatement": "<a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/us/\" rel=\"license\"><img src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png\" style=\"border-width: 0pt;\" alt=\"Creative Commons License\"/></a>",
+            "dc:type": "StillImage",
+            "ac:licenseLogoURL": "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png",
+            "idigbio:uuid": "d75159ef-9c5f-4d76-b631-b1fd0d72fec7",
+            "exif:PixelYDimension": "3912",
+            "ac:provider": "http://www.morphbank.net/691554",
+            "idigbio:recordIds": [
+              "http://www.morphbank.net/716233"
+            ],
+            "photoshop:Credit": "Auburn University Herbarium",
+            "idigbio:parent": "364a24d9-d4a8-4e0b-8e50-07b90f844548",
+            "ac:providerManagedID": "http://www.morphbank.net/716233",
+            "ac:furtherInformationURL": "http://www.morphbank.net/716233",
+            "idigbio:etag": "a71602789aea8696d347702c565a7a56bed48fa8",
+            "xmpRights:Owner": "Auburn University Herbarium",
+            "dc:format": "image/jpeg",
+            "ac:tag": "Plant body",
+            "dcterms:available": "2012-09-01",
+            "ac:metadataCreator": "morphbank.net",
+            "dc:rights": "by-nc-sa",
+            "idigbio:siblings": {
+              "record": [
+                "f6a30f0b-40d8-4907-8486-a0c810b791f6"
+              ]
+            },
+            "coreid": "urn:uuid:308618c5-ba44-4ca4-a34a-6f4978baaccd",
+            "dcterms:identifier": "urn:uuid:06a7263b-e1f4-4392-bce3-0737879944c9",
+            "idigbio:dateModified": "2014-09-18T14:27:30.791000",
+            "ac:metadataProvider": "morphbank.net",
+            "dcterms:title": "image of Helenium autumnale",
+            "exif:PixelXDimension": "3264",
+            "ac:metadataLanguageLiteral": "en",
+            "ac:subjectPart": "Plant body",
+            "ac:captureDevice": "Reflected light, macrophotography",
+            "ac:variantLiteral": "best quality",
+            "ac:subjectOrientation": "Herbarium Specimen",
+            "ac:resourceCreationTechnique": "No preparation",
+            "ac:accessURI": "http://www.morphbank.net?id=716233&imgType=jpeg",
+            "dcterms:modified": "2011-09-27 11:04:35.0"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "recordids": [
+            "http://www.morphbank.net/716233"
+          ],
+          "type": "stillimage",
+          "datemodified": "2014-09-18T14:27:30.791000+00:00",
+          "accessuri": "http://www.morphbank.net?id=716233&imgType=jpeg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d75165ef-ff95-49f4-b804-bcd25ae7c485",
+        "_score": 1,
+        "_routing": "39f333ba-8372-4259-bc44-5412d2791292",
+        "_parent": "39f333ba-8372-4259-bc44-5412d2791292",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-nc/3.0/88x31.png",
+          "uuid": "d75165ef-ff95-49f4-b804-bcd25ae7c485",
+          "format": "image/jpeg",
+          "recordset": "62254613-2696-4834-8c58-5c465f70df56",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "39f333ba-8372-4259-bc44-5412d2791292"
+          ],
+          "etag": "5f469e5d7ee0882779325b917bba35b18b287eca",
+          "indexData": {
+            "idigbio:parent": "62254613-2696-4834-8c58-5c465f70df56",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:d2c09333-9eab-43fd-a18a-c20dc2b24b38",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2013-12-10 01:35:26",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_tn.jpg",
+            "idigbio:etag": "5f469e5d7ee0882779325b917bba35b18b287eca",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "62254613-2696-4834-8c58-5c465f70df56\\media\\http://storage.idigbio.org/wis/bryophytes/wis-b-0022/wis-b-0022719_lg.jpg",
+              "urn:uuid:d2c09333-9eab-43fd-a18a-c20dc2b24b38"
+            ],
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719.JPG",
+            "coreid": "2477419",
+            "dcterms:identifier": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_lg.jpg",
+            "xmpRights:Owner": "University of Wisconsin - Madison (WIS)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "idigbio:siblings": {
+              "record": [
+                "39f333ba-8372-4259-bc44-5412d2791292"
+              ]
+            },
+            "idigbio:dateModified": "2015-09-30T14:08:36.548354",
+            "ac:accessURI": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_lg.jpg",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "d75165ef-ff95-49f4-b804-bcd25ae7c485",
+            "ac:associatedSpecimenReference": "http://bryophyteportal.org/portal/collections/individual/index.php?occid=2477419"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+          "recordids": [
+            "62254613-2696-4834-8c58-5c465f70df56\\media\\http://storage.idigbio.org/wis/bryophytes/wis-b-0022/wis-b-0022719_lg.jpg",
+            "urn:uuid:d2c09333-9eab-43fd-a18a-c20dc2b24b38"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:d2c09333-9eab-43fd-a18a-c20dc2b24b38",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_tn.jpg",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719.JPG",
+            "coreid": "2477419",
+            "dcterms:identifier": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_lg.jpg",
+            "xmpRights:Owner": "University of Wisconsin - Madison (WIS)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "ac:accessURI": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_lg.jpg",
+            "xmp:MetadataDate": "2013-12-10 01:35:26",
+            "ac:associatedSpecimenReference": "http://bryophyteportal.org/portal/collections/individual/index.php?occid=2477419"
+          },
+          "datemodified": "2015-09-30T14:08:36.548354+00:00",
+          "accessuri": "http://storage.idigbio.org/wis/bryophytes/WIS-B-0022/WIS-B-0022719_lg.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d7519929-1112-47d6-892e-23996e032e88",
+        "_score": 1,
+        "_routing": "0",
+        "_parent": "0",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "d7519929-1112-47d6-892e-23996e032e88",
+          "format": "image/jpeg",
+          "recordset": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+          "dqs": 0.7272727272727273,
+          "rights": "BY-NC",
+          "modified": "2014-11-15T22:17:14.064000+00:00",
+          "hasSpecimen": false,
+          "mediatype": "images",
+          "etag": "6590036a52af43a3081f2e7035aadb1c6d6ea8f2",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "2b4da517a332bf30e08ed098b8f706ae",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_MIN_1047566.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/2b4da517a332bf30e08ed098b8f706ae",
+            "dcterms:modified": "2014-11-15 22:17:14.064000"
+          },
+          "indexData": {
+            "idigbio:parent": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "2b4da517a332bf30e08ed098b8f706ae",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_MIN_1047566.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "ttd_tcn_min_1047566.jpg"
+            ],
+            "idigbio:dateModified": "2014-12-04T01:01:02.548000",
+            "idigbio:etag": "6590036a52af43a3081f2e7035aadb1c6d6ea8f2",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/2b4da517a332bf30e08ed098b8f706ae",
+            "dcterms:modified": "2014-11-15 22:17:14.064000",
+            "idigbio:uuid": "d7519929-1112-47d6-892e-23996e032e88"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "ttd_tcn_min_1047566.jpg"
+          ],
+          "type": "stillimage",
+          "datemodified": "2014-12-04T01:01:02.548000+00:00",
+          "accessuri": "http://media.idigbio.org/lookup/images/2b4da517a332bf30e08ed098b8f706ae"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d751aaed-ed5d-42bd-9471-4b49c1024370",
+        "_score": 1,
+        "_routing": "0",
+        "_parent": "0",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-nc/3.0/88x31.png",
+          "uuid": "d751aaed-ed5d-42bd-9471-4b49c1024370",
+          "format": "image/jpeg",
+          "recordset": "d29b9265-07e6-4e73-8f72-fc42d3d83fb1",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC",
+          "mediatype": "images",
+          "hasSpecimen": false,
+          "etag": "c08ccae0722fd3e650f524180885a53b6e0912bb",
+          "indexData": {
+            "idigbio:parent": "d29b9265-07e6-4e73-8f72-fc42d3d83fb1",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:8670afdd-a1a2-4f31-beb0-f6921f3beb38",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2013-01-25 02:05:17",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_tn.jpg",
+            "idigbio:etag": "c08ccae0722fd3e650f524180885a53b6e0912bb",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "urn:uuid:8670afdd-a1a2-4f31-beb0-f6921f3beb38",
+              "d29b9265-07e6-4e73-8f72-fc42d3d83fb1\\media\\http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg"
+            ],
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/duke/lichens/00222/0222127_1.jpg",
+            "coreid": "1074676",
+            "dcterms:identifier": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg",
+            "xmpRights:Owner": "Duke University Herbarium (DUKE)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "idigbio:siblings": {},
+            "idigbio:dateModified": "2016-03-24T09:35:36.147849",
+            "ac:accessURI": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "d751aaed-ed5d-42bd-9471-4b49c1024370",
+            "ac:associatedSpecimenReference": "http://lichenportal.org/portal/collections/individual/index.php?occid=1074676"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+          "recordids": [
+            "urn:uuid:8670afdd-a1a2-4f31-beb0-f6921f3beb38",
+            "d29b9265-07e6-4e73-8f72-fc42d3d83fb1\\media\\http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:8670afdd-a1a2-4f31-beb0-f6921f3beb38",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_tn.jpg",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/duke/lichens/00222/0222127_1.jpg",
+            "coreid": "1074676",
+            "dcterms:identifier": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg",
+            "xmpRights:Owner": "Duke University Herbarium (DUKE)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "ac:accessURI": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg",
+            "xmp:MetadataDate": "2013-01-25 02:05:17",
+            "ac:associatedSpecimenReference": "http://lichenportal.org/portal/collections/individual/index.php?occid=1074676"
+          },
+          "datemodified": "2016-03-24T09:35:36.147849+00:00",
+          "accessuri": "http://storage.idigbio.org/duke/lichens/00222/0222127_1_lg.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d751b38c-a5f7-49c4-8aa9-505c73ae8969",
+        "_score": 1,
+        "_routing": "0",
+        "_parent": "0",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "d751b38c-a5f7-49c4-8aa9-505c73ae8969",
+          "format": "image/jpeg",
+          "recordset": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+          "dqs": 0.7272727272727273,
+          "rights": "BY-NC",
+          "modified": "2014-09-16T23:47:01.388000+00:00",
+          "hasSpecimen": false,
+          "mediatype": "images",
+          "etag": "a60a9214a6c551d93006d5d132f3b90cd158b508",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "d3edd17e8e06aca34ef653279da8828c",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_ILLS00027247.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/d3edd17e8e06aca34ef653279da8828c",
+            "dcterms:modified": "2014-09-16 23:47:01.388000"
+          },
+          "indexData": {
+            "idigbio:parent": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:hashValue": "d3edd17e8e06aca34ef653279da8828c",
+            "dc:type": "StillImage",
+            "idigbio:associatedRecordsetReference": "285a4be0-5cfe-4d4f-9c8b-b0f0f3571079",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "idigbio:recordId": "TTD_TCN_ILLS00027247.jpg",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:hashFunction": "MD5",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "ttd_tcn_ills00027247.jpg"
+            ],
+            "idigbio:dateModified": "2014-12-03T18:10:48.789000",
+            "idigbio:etag": "a60a9214a6c551d93006d5d132f3b90cd158b508",
+            "ac:accessURI": "http://media.idigbio.org/lookup/images/d3edd17e8e06aca34ef653279da8828c",
+            "dcterms:modified": "2014-09-16 23:47:01.388000",
+            "idigbio:uuid": "d751b38c-a5f7-49c4-8aa9-505c73ae8969"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "ttd_tcn_ills00027247.jpg"
+          ],
+          "type": "stillimage",
+          "datemodified": "2014-12-03T18:10:48.789000+00:00",
+          "accessuri": "http://media.idigbio.org/lookup/images/d3edd17e8e06aca34ef653279da8828c"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.4",
+        "_type": "mediarecords",
+        "_id": "d751fae5-a255-4f32-8d04-85ac55495abc",
+        "_score": 1,
+        "_routing": "78bda610-3d44-4843-bae7-6ad708f1cdbc",
+        "_parent": "78bda610-3d44-4843-bae7-6ad708f1cdbc",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-nc/3.0/88x31.png",
+          "uuid": "d751fae5-a255-4f32-8d04-85ac55495abc",
+          "format": "image/jpeg",
+          "recordset": "1e6c8187-1521-4501-b205-ac8f513d5e04",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "78bda610-3d44-4843-bae7-6ad708f1cdbc"
+          ],
+          "etag": "4bbb7523f6101793a1096b8c496102794f0fb666",
+          "indexData": {
+            "idigbio:parent": "1e6c8187-1521-4501-b205-ac8f513d5e04",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:b83e0426-72ab-4b9c-9313-a3675dcba22c",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2014-11-09 04:00:04",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_tn.jpg",
+            "idigbio:etag": "4bbb7523f6101793a1096b8c496102794f0fb666",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "urn:uuid:b83e0426-72ab-4b9c-9313-a3675dcba22c",
+              "1e6c8187-1521-4501-b205-ac8f513d5e04\\media\\http://storage.idigbio.org/mich/macroalgae/00668/mich_668328_lg.jpg"
+            ],
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328.jpg",
+            "coreid": "460780",
+            "dcterms:identifier": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_lg.jpg",
+            "xmpRights:Owner": "University of Michigan (MICH)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "idigbio:siblings": {
+              "record": [
+                "78bda610-3d44-4843-bae7-6ad708f1cdbc"
+              ]
+            },
+            "idigbio:dateModified": "2015-07-23T15:30:14.417619",
+            "ac:accessURI": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_lg.jpg",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "d751fae5-a255-4f32-8d04-85ac55495abc",
+            "ac:associatedSpecimenReference": "http://macroalgae.org/portal/collections/individual/index.php?occid=460780"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+          "recordids": [
+            "urn:uuid:b83e0426-72ab-4b9c-9313-a3675dcba22c",
+            "1e6c8187-1521-4501-b205-ac8f513d5e04\\media\\http://storage.idigbio.org/mich/macroalgae/00668/mich_668328_lg.jpg"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:b83e0426-72ab-4b9c-9313-a3675dcba22c",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC (Attribution-Non-Commercial)",
+            "ac:thumbnailAccessURI": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_tn.jpg",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328.jpg",
+            "coreid": "460780",
+            "dcterms:identifier": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_lg.jpg",
+            "xmpRights:Owner": "University of Michigan (MICH)",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "ac:accessURI": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_lg.jpg",
+            "xmp:MetadataDate": "2014-11-09 04:00:04",
+            "ac:associatedSpecimenReference": "http://macroalgae.org/portal/collections/individual/index.php?occid=460780"
+          },
+          "datemodified": "2015-07-23T15:30:14.417619+00:00",
+          "accessuri": "http://storage.idigbio.org/mich/macroalgae/00668/MICH_668328_lg.jpg"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "type": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "records",
+          "doc_count": 74163497,
+          "lastModified": {
+            "value": 1481212706225,
+            "value_as_string": "2016-12-08T15:58:26.225Z"
+          }
+        },
+        {
+          "key": "mediarecords",
+          "doc_count": 16975446,
+          "lastModified": {
+            "value": 1481212706225,
+            "value_as_string": "2016-12-08T15:58:26.225Z"
+          }
+        },
+        {
+          "key": "recordsets",
+          "doc_count": 1038,
+          "lastModified": {
+            "value": 1481800247076,
+            "value_as_string": "2016-12-15T11:10:47.076Z"
+          }
+        },
+        {
+          "key": "publishers",
+          "doc_count": 67,
+          "lastModified": {
+            "value": 1478770768810,
+            "value_as_string": "2016-11-10T09:39:28.810Z"
+          }
+        }
+      ]
+    }
+  }
+}

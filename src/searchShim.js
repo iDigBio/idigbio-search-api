@@ -6,7 +6,7 @@ import esclient from "esclient.js";
 import config from "config";
 import hash from "lib/hasher";
 import sfr from "lib/statsFromResponse";
-import {readMock, writeMock} from "lib/searchMocks";
+import {readMock, writeMockWrapper} from "lib/searchMocks";
 
 const statsFromResponse = config.ENV !== "production" && sfr;
 
@@ -86,9 +86,7 @@ if(config.CI) {
     } else if(op === "_count") {
       response = await client.count(options);
     } else if(op === "_mapping") {
-      response = await client.indices.getMapping(
-        { index: index, type: type });
-
+      response = await client.indices.getMapping({ index, type });
     } else {
       throw new Error("unsupported op");
     }
@@ -96,12 +94,12 @@ if(config.CI) {
       console.error("Bad ElasticSearch request: ", response["error"]);
       throw new Error("Bad ElasticSearch request");
     }
-    if(config.GEN_MOCK) {
-      var h = hash("sha256", [index, type, op, query]);
-      writeMock(h, response);
-    }
     return response;
   };
+  if(config.GEN_MOCK) {
+    shim = writeMockWrapper(shim);
+  }
+
 }
 
 export default shim;
