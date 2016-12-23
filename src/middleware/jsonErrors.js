@@ -1,3 +1,4 @@
+import _ from "lodash";
 import config from "config";
 
 /**
@@ -19,8 +20,9 @@ export default function(opts) {
       ctx.remove('Last-Modified');
       // will only respond with JSON
       if(err.expose || config.ENV !== "prod") {
-        ctx.body = err;
-        ctx.body = { error: err.message, properties: err.properties };
+        ctx.body = _.assign({ error: err.message, statusCode: err.statusCode || err.status }, err);
+        delete ctx.body.expose;
+        delete ctx.body.message;
       } else {
         ctx.body = { error: "Internal Server Error" };
         ctx.app.emit('error', err, ctx);

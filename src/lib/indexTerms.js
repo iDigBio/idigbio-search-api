@@ -1,9 +1,8 @@
 import _ from "lodash";
-import createError from "http-errors";
 
 import config from "config";
 import searchShim from "searchShim";
-
+import {InvalidTypeError} from "lib/exceptions";
 export const indexterms = {};
 
 export function clear() {
@@ -42,7 +41,7 @@ export function getMappingForType(type) {
   }
   const res = indexterms[type];
   if(!res) {
-    throw createError(400, `Invalid type '${type}'`);
+    throw new InvalidTypeError(type);
   }
   return res;
 }

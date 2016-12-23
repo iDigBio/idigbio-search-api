@@ -5,19 +5,8 @@ import _ from "lodash";
 import config from "config";
 import getParam from "lib/get-param";
 import {checkTerms} from "lib/indexTerms";
+import {ParameterParseError, TermNotFoundError} from "lib/exceptions";
 
-
-function ParameterParseException(message, context) {
-  this.error = message;
-  this.param = context;
-  this.name = "ParameterParseException";
-}
-
-function TermNotFoundException(message, context) {
-  this.error = message;
-  this.context = context;
-  this.name = "TermNotFoundException";
-}
 
 
 export function sort(req) {
@@ -57,7 +46,7 @@ export function limit(req) {
   return getParam(req, "limit", function(p) {
     var pp = parseInt(p);
     if(isNaN(pp)) {
-      throw new ParameterParseException("numeric paramter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
     } else {
       return Math.min(pp, config.maxLimit);
     }
@@ -68,7 +57,7 @@ export function offset(req) {
   return getParam(req, "offset", function(p) {
     var pp = parseInt(p);
     if(isNaN(pp)) {
-      throw new ParameterParseException("numeric paramter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
     } else {
       return pp;
     }
@@ -79,7 +68,7 @@ export function top_count(req) {
   return getParam(req, "count", function(p) {
     var pp = parseInt(p, 10000);
     if(isNaN(pp)) {
-      throw new ParameterParseException("numeric paramter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
     } else {
       return Math.min(pp, config.maxLimit);
     }
@@ -94,7 +83,7 @@ export function query(n, req) {
       }
       return p;
     } catch (e) {
-      throw new ParameterParseException("unable to parse parameter", n);
+      throw new ParameterParseError("unable to parse parameter", n);
     }
   }, {});
 }
@@ -110,14 +99,14 @@ export function top_fields(req, term_type) {
         p = [p];
       }
     } catch (e) {
-      throw new ParameterParseException("unable to parse parameter", "top_fields");
+      throw new ParameterParseError("unable to parse parameter", "top_fields");
     }
 
     if(term_type) {
       var term_errors = checkTerms(term_type, p, true);
 
       if(_.keys(term_errors).length > 0) {
-        throw new TermNotFoundException("Some of the top_fields terms supplied were not found in the index", term_errors);
+        throw new TermNotFoundError("Some of the top_fields terms supplied were not found in the index", term_errors);
       }
     }
 
@@ -137,14 +126,16 @@ export function fields(req, term_type) {
       }
 
     } catch (e) {
-      throw new ParameterParseException("unable to parse parameter", "fields");
+      throw new ParameterParseError("Unable to parse parameter", "fields");
     }
 
     if(term_type) {
       var term_errors = checkTerms(term_type, p, true);
 
       if(_.keys(term_errors).length > 0) {
-        throw new TermNotFoundException("Some of the fields terms supplied were not found in the index", term_errors);
+        throw new TermNotFoundError(
+          "Some of the fields terms supplied were not found in the index",
+          _.keys(term_errors));
       }
     }
 
@@ -163,14 +154,14 @@ export function fields_exclude(req, term_type) {
         p = [p];
       }
     } catch (e) {
-      throw new ParameterParseException("unable to parse parameter", "fields_exclude");
+      throw new ParameterParseError("unable to parse parameter", "fields_exclude");
     }
 
     if(term_type) {
       var term_errors = checkTerms(term_type, p, true);
 
       if(_.keys(term_errors).length > 0) {
-        throw new TermNotFoundException("Some of the fields_exclude terms supplied were not found in the index", term_errors);
+        throw new TermNotFoundError("Some of the fields_exclude terms supplied were not found in the index", term_errors);
       }
     }
 

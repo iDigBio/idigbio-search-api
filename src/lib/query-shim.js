@@ -1,21 +1,7 @@
 
 import _ from "lodash";
 import {checkTerms} from "lib/indexTerms";
-
-
-
-function QueryParseException(message, context) {
-  this.error = message;
-  this.context = context;
-  this.name = "QueryParseException";
-}
-
-function TermNotFoundException(message, context) {
-  this.error = message;
-  this.context = context;
-  this.name = "TermNotFoundException";
-}
-
+import {QueryParseError, TermNotFoundError} from "lib/exceptions";
 
 
 function existFilter(k) {
@@ -142,7 +128,8 @@ export default async function(shim, term_type) {
   if(term_type) {
     const term_errors = checkTerms(term_type, _.keys(shim), true);
     if(_.keys(term_errors).length > 0) {
-      throw new TermNotFoundException("Some of the query terms supplied were not found in the index", term_errors);
+      throw new TermNotFoundError(
+        "Some of the query terms supplied were not found in the index", _.keys(term_errors));
     }
   }
 
@@ -171,10 +158,10 @@ export default async function(shim, term_type) {
           and_array.push(f);
         }
       } else {
-        throw new QueryParseException("unable to parse type", shim[k]);
+        throw new QueryParseError("unable to parse type", shim[k]);
       }
     } else {
-      throw new QueryParseException("unable to get type", shim[k]);
+      throw new QueryParseError("unable to get type", shim[k]);
     }
   });
 
