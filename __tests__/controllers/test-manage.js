@@ -1,5 +1,5 @@
 import _ from "lodash";
-import request from 'supertest-as-promised';
+import request from 'supertest';
 
 import app from 'app';
 

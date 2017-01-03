@@ -20,7 +20,7 @@
     "koa-compress": "^2.0.0",
     "koa-ctx-cache-control": "^1.0.0",
     "koa-morgan": "^1.0.1",
-    "koa-proxy": "^0.6.0",
+    "koa-proxy": "^0.7.0",
     "koa-router": "^7.0.1",
     "lodash": "^4.17.1",
     "mapnik": "^3.5.13",
@@ -46,8 +46,7 @@
     "jest": "^18.0.0",
     "nodemon": "^1.11.0",
     "redis-mock": "^0.16.0",
-    "supertest": "^2.0.1",
-    "supertest-as-promised": "^4.0.2"
+    "supertest": "^2.0.1"
   },
   "scripts": {
     "start": "node index.js",

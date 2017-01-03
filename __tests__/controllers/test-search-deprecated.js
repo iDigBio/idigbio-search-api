@@ -1,6 +1,6 @@
 import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();
-import request from 'supertest-as-promised';
+import request from 'supertest';
 
 import config from "config";
 import app from "app";
