@@ -1,6 +1,7 @@
 # This doesn't work because `node:6` is based on Debian 8 which
-# doesn't have a recent enough version of libstdc++5 (and libstdc++6
-# doesn't fullfill that!)
+# doesn't have a recent enough version of libstdc++5-dev, we need
+# node6 for other features though and in order for mapnik to work on
+# node6 we need the recent C++.
 #FROM node:6
 
 FROM ubuntu:xenial
