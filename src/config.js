@@ -10,7 +10,7 @@ var config = {
   ENV: env,
   GEN_MOCK: process.env.GEN_MOCK === "true",
   CLUSTER: process.env.CLUSTER !== "false",
-  CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || 10,
+  CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || require('os').cpus().length,
   CI: process.env.CI === "true",
 
   port: 19196,
