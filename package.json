@@ -51,7 +51,7 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon --exec npm run start",
-    "build": "npm run clean; babel src -d build",
+    "build": "npm run clean; babel -d ./build ./src/",
     "clean": "rm -rf build/",
     "test": "NODE_ENV=test BLUEBIRD_DEBUG=1 jest"
   },

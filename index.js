@@ -1,46 +1,48 @@
-"use strict";
-
 /* eslint vars-on-top: "off" */
 /* eslint no-process-exit: "off" */
-const _ = require('lodash');
-const config = require('./src/config');
-const appsrc = config.ENV === 'prod' ? './build/app' : './src/app';
-const http = require('http');
+/* eslint strict: "off" */
 
+"use strict";
+
+const _ = require("lodash");
+const http = require("http");
 http.globalAgent.maxSockets = 100;
 
-require('babel-polyfill');
 
-if(config.ENV === 'development') {
-  // for development use babel/register for faster runtime compilation
+const config = require('./src/config');
+let appsrc = null;
+if(config.ENV === 'prod') {
+  appsrc = './build/app';
+} else {
+  appsrc = './src/app';
   require('babel-register');
 }
-const app = require(appsrc).default;
-
-var server = null;
 
 
-function startThisProcess() {
-  return app.listen(config.port, function() {
-    console.log('Server listening on port ', config.port);
-  });
-}
-
-function registerGracefulShutdown(signal) {
+function registerGracefulShutdown(signal, server, id) {
   process.on(signal, function() {
-    console.log("Received shutdown signal, attempt exit");
+    console.log(`Server(${id}) received signal ${signal}, attempt exit`);
     server.close(function() {
-      console.log("app.close finished, exiting");
+      console.log(`Server(${id}) finished closing, exiting`);
       process.exit(0);
     });
   });
 }
 
+function startThisProcess(id) {
+  id = id || 'main';
+  const app = require(appsrc).default;
+  const server = app.listen(config.port, function() {
+    console.log(`Server(${id}) listening on port ${config.port}`);
+  });
+  registerGracefulShutdown('SIGTERM', server, id);
+  registerGracefulShutdown('SIGINT', server, id);
+  return server;
+}
+
 
 if(config.ENV === "test" || config.ENV === "development" || !config.CLUSTER) {
-  server = startThisProcess();
-  registerGracefulShutdown('SIGTERM');
-  registerGracefulShutdown('SIGINT');
+  startThisProcess();
 } else {
   var cluster = require('cluster');
 
@@ -49,18 +51,11 @@ if(config.ENV === "test" || config.ENV === "development" || !config.CLUSTER) {
     _.times(config.CLUSTER_WORKERS, function() { cluster.fork(); });
 
     cluster.on('exit', function(deadWorker, code, signal) {
+      console.log(`Server(${deadWorker.process.pid}) died.`);
       // Restart the worker
-      var worker = cluster.fork();
-
-      // Note the process IDs
-      var newPID = worker.process.pid;
-      var oldPID = deadWorker.process.pid;
-
-      // Log the event
-      console.log('worker ' + oldPID + ' died.');
-      console.log('worker ' + newPID + ' born.');
+      cluster.fork();
     });
   } else {
-    server = startThisProcess();
+    startThisProcess(cluster.worker.process.pid);
   }
 }

@@ -32,6 +32,7 @@ const logOpts = config.ENV === 'prod' ? 'combined' : 'dev';
 const app = new Koa();
 app.name = "iDigBio Search API";
 app.proxy = true;
+app.port = config.port;
 koaCtxCacheControl(app);
 app
   .use(morgan(logOpts))
