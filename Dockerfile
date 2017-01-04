@@ -8,14 +8,13 @@ FROM ubuntu:xenial
 RUN apt-get update; apt-get install -y wget build-essential python
 RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
 RUN apt-get install -y nodejs
-RUN npm -g install babel-cli
 
 WORKDIR /opt/
 ADD package.json /opt/package.json
 RUN npm install
 ADD . /opt/
-RUN babel src -d build
+RUN cd /opt/ && npm run build
 
 EXPOSE 19196
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
