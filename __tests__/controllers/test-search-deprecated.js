@@ -60,6 +60,7 @@ describe('Search Deprecated Endpoints', function() {
       response.body.items.length.should.be.below(config.maxLimit + 1);
     });
   });
+
   describe('basicPOST', function() {
     it('should return an empty search for {"scientificname": "nullius nullius"}', async function() {
       var q = {"scientificname": "nullius nullius"};
@@ -191,6 +192,7 @@ describe('Search Deprecated Endpoints', function() {
       response.body.items.length.should.be.below(config.maxLimit + 1);
     });
   });
+
   describe('mediaPOST', function() {
     it('should return an empty search for {"type": "null"}', async function() {
       var q = {"type": "null"};
