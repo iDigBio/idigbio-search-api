@@ -27,7 +27,11 @@ const compressionOpts = {
   flush: require('zlib').Z_SYNC_FLUSH
 };
 
-const logOpts = config.ENV === 'prod' ? 'combined' : 'dev';
+const logOpts = {
+  'prod': 'combined',
+  'beta': 'combined'
+}[config.ENV] || 'dev';
+
 
 const app = new Koa();
 app.name = "iDigBio Search API";
