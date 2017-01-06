@@ -4,12 +4,12 @@ import Koa from 'koa';
 
 import bodyParser from 'koa-bodyparser';
 import cors from 'kcors';
-import morgan from 'koa-morgan';
 import compress from 'koa-compress';
 import koaCtxCacheControl from 'koa-ctx-cache-control';
 
 import jsonErrors from 'middleware/jsonErrors';
 import lastModified from 'middleware/lastModified';
+import logging from "middleware/logging";
 import config from "config";
 import api from 'api';
 import "controllers/home";
@@ -27,10 +27,6 @@ const compressionOpts = {
   flush: require('zlib').Z_SYNC_FLUSH
 };
 
-const logOpts = {
-  'prod': 'combined',
-  'beta': 'combined'
-}[config.ENV] || 'dev';
 
 
 const app = new Koa();
@@ -39,7 +35,7 @@ app.proxy = true;
 app.port = config.port;
 koaCtxCacheControl(app);
 app
-  .use(morgan(logOpts))
+  .use(logging())
   .use(lastModified({maxAge: '5 minutes'}))
   .use(compress(compressionOpts))
   .use(jsonErrors())
