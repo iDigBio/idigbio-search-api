@@ -606,12 +606,12 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   return query;
 }
 
-const resolveauto = memoize(timer(async function(shortcode, map_def) {
+const resolveAutoType = memoize(timer(async function(shortcode, map_def) {
   const query = await makeBasicFilter(map_def);
   const body = await searchShim(config.search.index, "records", "_count", query);
   const type = body.count > map_def.threshold ? "geohash" : "points";
   return _.assign({}, map_def, {type});
-}, "resolveauto"));
+}, "resolveAutoType"));
 const lookupShortcode  = memoize(async function(shortcode) {
   const rv = await redisclient().get(shortcode);
   if(!rv) {
@@ -620,10 +620,10 @@ const lookupShortcode  = memoize(async function(shortcode) {
   }
   return JSON.parse(rv);
 });
-async function getMapDef(shortcode, opts = {resolveauto: true}) {
+async function getMapDef(shortcode, opts = {resolveAutoType: true}) {
   let map_def = await lookupShortcode(shortcode);
-  if(map_def.type === 'auto' && opts.resolveauto) {
-    map_def = await resolveauto(shortcode, map_def);
+  if(map_def.type === 'auto' && opts.resolveAutoType) {
+    map_def = await resolveAutoType(shortcode, map_def);
   }
   return map_def;
 }
@@ -879,7 +879,7 @@ const createMap = async function(ctx) {
 
 const getMap = async function(ctx) {
   const shortcode = ctx.params.shortcode;
-  const map_def = await getMapDef(shortcode, {resolveauto: false});
+  const map_def = await getMapDef(shortcode, {resolveAutoType: false});
   const map_url = ctx.origin + '/v2/mapping/' + shortcode;
   ctx.body = await mapDef(shortcode, map_url, map_def, {
     type: "mapping",
