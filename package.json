@@ -1,7 +1,7 @@
 {
   "name": "idb-search-api",
   "description": "iDigBio Search API",
-  "version": "0.10.0",
+  "version": "1.0.0-beta1",
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.16.0",
@@ -65,5 +65,16 @@
       ".eslintrc.js",
       "/node_modules/"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iDigBio/idigbio-search-api.git"
+  },
+  "keywords": [
+    "idigbio"
+  ],
+  "bugs": {
+    "url": "https://github.com/iDigBio/idigbio-search-api/issues"
+  },
+  "homepage": "https://github.com/iDigBio/idigbio-search-api#readme"
 }
