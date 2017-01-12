@@ -8,12 +8,13 @@ FROM ubuntu:xenial
 RUN apt-get update; apt-get install -y wget build-essential python
 RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
 RUN apt-get install -y nodejs
-
-WORKDIR /opt/
-ADD package.json /opt/package.json
-RUN npm install
-ADD . /opt/
-RUN cd /opt/ && npm run build
+RUN mkdir -p /var/www; chown www-data:www-data /var/www
+USER www-data
+WORKDIR /var/www
+ADD package.json /var/www/package.json
+RUN npm install; npm cache clean
+ADD . /var/www
+RUN npm run build
 
 EXPOSE 19196
 

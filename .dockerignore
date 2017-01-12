@@ -1,3 +1,10 @@
-node_modules
+node_modules/
+npm-debug.log
+stacktrace*
+coverage/
+.nyc_output/
+build/
+
 .git
 __tests__/mock/
+.travis.yml
