@@ -7,22 +7,19 @@ import {checkTerms} from "lib/indexTerms";
 import {ParameterParseError, TermNotFoundError} from "lib/exceptions";
 
 
-
 export function sort(req) {
   return getParam(req, "sort", function(p) {
-    var order = [], param, s;
+    const order = [], s = {};
+    let param = p;
     try {
       param = JSON.parse(p);
-    } catch (e) {
-      param = p;
-    }
+    } catch (e) {}
+
     if(_.isString(param)) {
-      s = {};
       s[param] = {"order": "asc"};
       order.push(s);
     } else if(_.isArray(param)) {
       param.forEach(function(item) {
-        s = {};
         if(_.isString(item)) {
           s[item] = {"order": "asc"};
         } else {
@@ -43,7 +40,7 @@ export function sort(req) {
 
 export function limit(req) {
   return getParam(req, "limit", function(p) {
-    var pp = parseInt(p, 10);
+    const pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
     } else {
@@ -54,7 +51,7 @@ export function limit(req) {
 
 export function offset(req) {
   return getParam(req, "offset", function(p) {
-    var pp = parseInt(p, 10);
+    const pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
     } else {
@@ -65,7 +62,7 @@ export function offset(req) {
 
 export function top_count(req) {
   return getParam(req, "count", function(p) {
-    var pp = parseInt(p, 10);
+    const pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
     } else {
@@ -75,7 +72,7 @@ export function top_count(req) {
 }
 
 export function query(n, req) {
-  return  getParam(req, n, function(p) {
+  return getParam(req, n, function(p) {
     try {
       if(_.isString(p)) {
         p = JSON.parse(p);
@@ -102,8 +99,7 @@ export function top_fields(req, term_type) {
     }
 
     if(term_type) {
-      var term_errors = checkTerms(term_type, p, true);
-
+      const term_errors = checkTerms(term_type, p, true);
       if(_.keys(term_errors).length > 0) {
         throw new TermNotFoundError("Some of the top_fields terms supplied were not found in the index", term_errors);
       }
@@ -129,8 +125,7 @@ export function fields(req, term_type) {
     }
 
     if(term_type) {
-      var term_errors = checkTerms(term_type, p, true);
-
+      const term_errors = checkTerms(term_type, p, true);
       if(_.keys(term_errors).length > 0) {
         throw new TermNotFoundError(
           "Some of the fields terms supplied were not found in the index",
@@ -157,8 +152,7 @@ export function fields_exclude(req, term_type) {
     }
 
     if(term_type) {
-      var term_errors = checkTerms(term_type, p, true);
-
+      const term_errors = checkTerms(term_type, p, true);
       if(_.keys(term_errors).length > 0) {
         throw new TermNotFoundError("Some of the fields_exclude terms supplied were not found in the index", term_errors);
       }
