@@ -53,7 +53,7 @@ export function offset(req) {
   return getParam(req, "offset", function(p) {
     const pp = parseInt(p, 10);
     if(isNaN(pp)) {
-      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "offset");
     } else {
       return pp;
     }
@@ -64,7 +64,7 @@ export function top_count(req) {
   return getParam(req, "count", function(p) {
     const pp = parseInt(p, 10);
     if(isNaN(pp)) {
-      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "count");
     } else {
       return Math.min(pp, config.maxLimit);
     }
