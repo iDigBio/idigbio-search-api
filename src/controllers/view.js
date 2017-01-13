@@ -3,7 +3,7 @@ import _ from 'lodash';
 import config from "config";
 import api from "api";
 import searchShim from "searchShim.js";
-import recordsets from "lib/recordsets";
+import {get as getRecordset} from "lib/recordsets";
 
 export async function basic(ctx, next) {
   const uuid = ctx.params.uuid;
@@ -39,13 +39,12 @@ export async function basic(ctx, next) {
     };
     const rsid = body._source.recordset;
     if(rsid) {
-      let rs = null;
       try {
-        rs =  await recordsets.get(rsid);
+        rb.attribution = await getRecordset(rsid);
       } catch (e) {
-        rs = { "uuid": rsid };
+        console.error("Failed finding recordset", e);
+        rb.attribution = { "uuid": rsid };
       }
-      rb.attribution = rs;
     }
     ctx.body = rb;
   } else {

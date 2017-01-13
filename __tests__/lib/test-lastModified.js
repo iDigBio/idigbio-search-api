@@ -31,11 +31,11 @@ describe("Last Modified dates", function() {
 
   it("should return the date", async function() {
     await lastModified.updateLastModified();
-    expect(lastModified.default()).toEqual(jasmine.any(Date));
-    expect(lastModified.default("publishers")).toEqual(jasmine.any(Date));
-    expect(lastModified.default("recordsets")).toEqual(jasmine.any(Date));
-    expect(lastModified.default("records")).toEqual(jasmine.any(Date));
-    expect(lastModified.default("mediarecords")).toEqual(jasmine.any(Date));
-    expect(lastModified.default(["records", "mediarecords"])).toEqual(jasmine.any(Date));
+    expect(lastModified.getLastModified()).toEqual(jasmine.any(Date));
+    expect(lastModified.getLastModified("publishers")).toEqual(jasmine.any(Date));
+    expect(lastModified.getLastModified("recordsets")).toEqual(jasmine.any(Date));
+    expect(lastModified.getLastModified("records")).toEqual(jasmine.any(Date));
+    expect(lastModified.getLastModified("mediarecords")).toEqual(jasmine.any(Date));
+    expect(lastModified.getLastModified(["records", "mediarecords"])).toEqual(jasmine.any(Date));
   });
 });

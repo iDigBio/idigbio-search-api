@@ -34,8 +34,10 @@ app.name = "iDigBio Search API";
 app.proxy = true;
 app.port = config.port;
 koaCtxCacheControl(app);
+
 app
   .use(logging())
+  .use(async (ctx, next) => { await ctx.app.ready; return next(); })
   .use(lastModified({maxAge: '5 minutes'}))
   .use(compress(compressionOpts))
   .use(jsonErrors())
@@ -53,24 +55,30 @@ export default app;
 
 const repeatEvery = 5 * 60 * 1000;
 
-import { updateLastModified } from "lib/lastModified";
+import { updateLastModified, getLastModified } from "lib/lastModified";
+import {loadIndexTerms}  from "lib/indexTerms";
+import {loadAll as loadRecordsets} from "lib/recordsets";
 
 const updateLastModifiedLoop = function() {
   updateLastModified()
-    .then(function(diff) {
-      _.forOwn((lastModified, type) => app.emit('lastmodified', {type, lastModified}));
+    .then(async function(diff) {
+      const jobs = [];
+      const keys = _.keys(diff);
+      if(keys.length) {
+        jobs.push(loadIndexTerms());
+      }
+      if(_.includes(keys, 'recordsets')) {
+        jobs.push(loadRecordsets());
+      }
+      await bluebird.all(jobs);
+      app.lastModified = getLastModified();
       setTimeout(updateLastModifiedLoop, repeatEvery);
-    });
+    })
+    .catch(console.err);
 };
-if(config.ENV !== 'test') {
-  updateLastModifiedLoop();
+
+if(config.ENV === 'test') {
+  app.ready = bluebird.all([loadRecordsets(), loadIndexTerms()]);
+} else {
+  app.ready = updateLastModifiedLoop();
 }
-
-import {loadIndexTerms}  from "lib/indexTerms";
-import {loadAll as loadRecordsets} from "lib/recordsets";
-app.on('lastmodified', (evt) => loadIndexTerms(evt.type));
-app.on('lastmodified', (evt) => {
-  if(evt.type === 'recordsets') { loadRecordsets(); }
-});
-
-app.ready = bluebird.all([loadIndexTerms(), loadRecordsets()]);

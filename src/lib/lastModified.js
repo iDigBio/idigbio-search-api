@@ -7,7 +7,7 @@ import timer from "lib/timer";
 var lastModified = null;
 var lastModifiedByType = {};
 
-export default function getLastModified(type) {
+export function getLastModified(type) {
   if(_.isArray(type)) {
     return _(type).map((t) => lastModifiedByType[t]).max();
   }

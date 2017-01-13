@@ -7,7 +7,6 @@ describe('Management routes', function() {
   let server = null;
   beforeAll(async function() {
     server = app.listen();
-    return app.ready;
   });
   afterAll(() => server.close());
 
