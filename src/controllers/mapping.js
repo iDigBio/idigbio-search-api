@@ -122,20 +122,15 @@ function styleJSON(map_def, body) {
   var rv = {
     "colors": {}
   };
-  var order = [];
+  const order = [];
   var default_color = "black";
 
   if(map_def.type === "geohash") {
     var max_bucket_value = 1;
     try {
       if(map_def.style.styleOn === "sd.value") {
-        var gh_buckets = body.aggregations.ggh.f.gh.buckets;
-        // TODO: use _.mapBy
-        for(let i = 0; i < gh_buckets.length; i++) {
-          if(max_bucket_value < gh_buckets[i].sd.value) {
-            max_bucket_value = gh_buckets[i].sd.value;
-          }
-        }
+        const gh_buckets = body.aggregations.ggh.f.gh.buckets;
+        max_bucket_value = _(gh_buckets).map((ghb) => ghb.sd.value).max();
       } else {
         max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
       }
@@ -893,7 +888,6 @@ const maprouter = new KoaRouter();
 maprouter.get('/', createMap);
 maprouter.post('/', createMap);
 
-// TODO: app.use('/:shortcode', cache.middleware);
 maprouter.get('/:shortcode', getMap);
 maprouter.get('/:shortcode/style/:z', getMapStyle);
 maprouter.get('/:shortcode/points', mapPoints);

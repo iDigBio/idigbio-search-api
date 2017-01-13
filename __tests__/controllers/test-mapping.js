@@ -384,9 +384,35 @@ describe('Mapping', function() {
   // corectness assements. Testing the PNGs for corectness is hard.
   describe('complex styles', function() {
     it('should support complex styles for geohash doc counts', async function() {
-      var q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
-      var geohash_style = {"fill": "rgba(255,0,0,.4)",
+      const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
+      const geohash_style = {"fill": "rgba(255,0,0,.4)",
                            "stroke": "rgba(255,0,0,.6)",
+                           "doc_count": [
+                             {"fill": "rgba(255,0,0,.4)", "stroke": "rgba(255,0,0,.6)"},
+                             {"fill": "rgba(0,255,0,.4)", "stroke": "rgba(0,255,0,.6)"},
+                             {"fill": "rgba(0,0,255,.4)", "stroke": "rgba(0,0,255,.6)"}
+                           ]};
+      const response1 = await request(server)
+            .get("/v2/mapping/")
+            .query({type: 'geohash',
+                    rq: JSON.stringify(q),
+                    style: JSON.stringify(geohash_style)})
+            .redirects(1)
+            .expect('Content-Type', /json/)
+            .expect(200);
+      const shortCode = response1.body.shortCode;
+      expect(shortCode).to.be.a("string");
+      const response = await request(server)
+            .get("/v2/mapping/" + shortCode + "/1/0/0.png")
+            .expect('Content-Type', /png/)
+            .expect(200);
+      response.body.length.should.not.equal(0);
+    });
+    it("should styleon sd.value", async function() {
+      const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
+      const geohash_style = {"fill": "rgba(255,0,0,.4)",
+                           "stroke": "rgba(255,0,0,.6)",
+                           "styleOn": "sd.value",
                            "doc_count": [
                              {"fill": "rgba(255,0,0,.4)", "stroke": "rgba(255,0,0,.6)"},
                              {"fill": "rgba(0,255,0,.4)", "stroke": "rgba(0,255,0,.6)"},
