@@ -11,7 +11,7 @@ addons:
      - ubuntu-toolchain-r-test
     packages:
      - libstdc++-5-dev # upgrade libstdc++ on linux to support C++11
-
+script: npm test -- -i
 notifications:
   slack:
     secure: hBdS1mIVFVg8jTQwU2nXKyfLRPbUMYCQK0g+NEjkSvWl3hvAnZREGo2JBFgincdB2/wAJhuynBQXN7MSwxGm4jTjvTrs1SOPP7hssTr+xFrXuOs9tYDNLICcUmc8iIkt9oblw/jWCKHUDnphmcZ4sy3uJDuxuKGHdBjXYAq/eZw=
