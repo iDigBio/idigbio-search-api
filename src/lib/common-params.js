@@ -45,7 +45,7 @@ export function limit(req) {
   return getParam(req, "limit", function(p) {
     var pp = parseInt(p, 10);
     if(isNaN(pp)) {
-      throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
     } else {
       return Math.min(pp, config.maxLimit);
     }
@@ -56,7 +56,7 @@ export function offset(req) {
   return getParam(req, "offset", function(p) {
     var pp = parseInt(p, 10);
     if(isNaN(pp)) {
-      throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
     } else {
       return pp;
     }
@@ -67,7 +67,7 @@ export function top_count(req) {
   return getParam(req, "count", function(p) {
     var pp = parseInt(p, 10);
     if(isNaN(pp)) {
-      throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
     } else {
       return Math.min(pp, config.maxLimit);
     }
