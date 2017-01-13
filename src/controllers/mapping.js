@@ -833,7 +833,6 @@ const createMap = async function(ctx) {
     ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
   }
 
-  var threshold = getParam(ctx.request, "threshold", (p) => (_.isFinite(p) ? p : 5000), 5000);
   var default_style = {
     scale: 'YlOrRd',
     pointScale: 'Paired',
@@ -854,7 +853,7 @@ const createMap = async function(ctx) {
     rq: rq,
     type: type,
     style: style,
-    threshold: threshold
+    threshold: cp.threshold(ctx.request, 5000)
   };
   var h = hasher("sha1", map_def);
 

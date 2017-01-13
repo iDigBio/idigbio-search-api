@@ -142,6 +142,30 @@ describe('Mapping', function() {
     });
   });
 
+  describe("auto maps", function() {
+    it("should have a default threshhold", async function() {
+      var q = {"scientificname": "puma concolor"};
+      const response = await request(server)
+            .get("/v2/mapping/")
+            .query({rq: JSON.stringify(q), type: "auto"})
+            .redirects(1)
+            .expect('Content-Type', /json/)
+            .expect(200);
+      response.body.mapDefinition.should.have.property('threshold');
+    });
+
+    it('should use the threshold specified', async function() {
+      var q = {"scientificname": "puma concolor"};
+      const response = await request(server)
+            .get("/v2/mapping/")
+            .query({rq: JSON.stringify(q), type: "auto", threshold: 42})
+            .redirects(1)
+            .expect('Content-Type', /json/)
+            .expect(200);
+      response.body.mapDefinition.threshold.should.equal(42);
+    });
+  });
+
   describe('png map tiles', function() {
     it('should return an png image for geohash maps', async function() {
       var q = {"scientificname": "puma concolor"};
@@ -383,6 +407,27 @@ describe('Mapping', function() {
   // These are more of "dont crash" tests for coverage, rather than
   // corectness assements. Testing the PNGs for corectness is hard.
   describe('complex styles', function() {
+    it("should report the style it is using", async function() {
+      const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
+      const response1 = await request(server)
+            .get("/v2/mapping/")
+            .query({type: 'geohash',
+                    rq: JSON.stringify(q)})
+            .redirects(1)
+            .expect('Content-Type', /json/)
+            .expect(200);
+      const shortCode = response1.body.shortCode;
+      expect(shortCode).to.be.a("string");
+      const response = await request(server)
+            .get("/v2/mapping/" + shortCode + "/style/1")
+            .expect('Content-Type', /json/)
+            .expect(200);
+      response.body.should.have.property("colors");
+      response.body.should.have.property("default");
+      response.body.should.have.property("order");
+    });
+
+
     it('should support complex styles for geohash doc counts', async function() {
       const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
       const geohash_style = {"fill": "rgba(255,0,0,.4)",
@@ -407,6 +452,7 @@ describe('Mapping', function() {
             .expect('Content-Type', /png/)
             .expect(200);
       response.body.length.should.not.equal(0);
+
     });
     it("should styleon sd.value", async function() {
       const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};

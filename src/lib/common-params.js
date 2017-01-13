@@ -71,6 +71,17 @@ export function top_count(req) {
   }, 10);
 }
 
+export function threshold(req, def) {
+  return getParam(req, "threshold", function(p) {
+    const pp = parseInt(p, 10);
+    if(isNaN(pp)) {
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "threshold");
+    }
+    return pp;
+  }, def);
+}
+
+
 export function query(n, req) {
   return getParam(req, n, function(p) {
     try {
@@ -108,6 +119,7 @@ export function top_fields(req, term_type) {
     return p;
   });
 }
+
 
 export function fields(req, term_type) {
   return getParam(req, "fields", function(p) {
