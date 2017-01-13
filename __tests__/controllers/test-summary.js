@@ -25,6 +25,16 @@ describe('Summary', function() {
       expect(response.body.scientificname).to.be.an("Object");
       Object.keys(response.body.scientificname).length.should.not.equal(0);
     });
+    it("should accept a count parameter`", async function() {
+      var q = {"genus": "acer"};
+      const response = await request(server)
+            .post("/v2/summary/top/basic")
+            .send({"rq": q, "count": 5})
+            .expect('Content-Type', /json/)
+            .expect(200);
+      expect(response.body.scientificname).to.be.an("Object");
+      Object.keys(response.body.scientificname).length.should.not.equal(0);
+    });
 
     it('returns the field specified', async function() {
       var q = {"order": "myrtales"};

@@ -1,4 +1,3 @@
-/* eslint radix: "off" */
 
 import _ from "lodash";
 
@@ -44,7 +43,7 @@ export function sort(req) {
 
 export function limit(req) {
   return getParam(req, "limit", function(p) {
-    var pp = parseInt(p);
+    var pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
     } else {
@@ -55,7 +54,7 @@ export function limit(req) {
 
 export function offset(req) {
   return getParam(req, "offset", function(p) {
-    var pp = parseInt(p);
+    var pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
     } else {
@@ -66,7 +65,7 @@ export function offset(req) {
 
 export function top_count(req) {
   return getParam(req, "count", function(p) {
-    var pp = parseInt(p, 10000);
+    var pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric paramter expected, parsing did not return a number", "limit");
     } else {
