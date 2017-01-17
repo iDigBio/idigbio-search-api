@@ -4,3 +4,4 @@ stacktrace*
 coverage/
 .nyc_output/
 build/
+.projectile
