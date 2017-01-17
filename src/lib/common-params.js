@@ -8,18 +8,20 @@ import {ParameterParseError, TermNotFoundError} from "lib/exceptions";
 
 
 export function sort(req) {
+  const defsort = [{"dqs": {"order": "desc"}}];
   return getParam(req, "sort", function(p) {
-    const order = [], s = {};
     let param = p;
     try {
       param = JSON.parse(p);
     } catch (e) {}
 
     if(_.isString(param)) {
+      const s = {};
       s[param] = {"order": "asc"};
-      order.push(s);
+      return [s];
     } else if(_.isArray(param)) {
-      param.forEach(function(item) {
+      return _.map(param, function(item) {
+        const s = {};
         if(_.isString(item)) {
           s[item] = {"order": "asc"};
         } else {
@@ -31,11 +33,12 @@ export function sort(req) {
             }
           });
         }
-        order.push(s);
+        return s;
       });
+    } else {
+      throw new ParameterParseError("Unable to parse", "sort");
     }
-    return order;
-  }, [{"dqs": {"order": "desc"}}]);
+  }, defsort);
 }
 
 export function limit(req) {
@@ -175,5 +178,9 @@ export function fields_exclude(req, term_type) {
 }
 
 export function noattr(req) {
-  return getParam(req, "no_attribution");
+  return getParam(req, "no_attribution", function(arg) {
+    if(_.isBoolean(arg)) return arg;
+    arg = arg.toLowerCase();
+    return arg === "true" || arg === "yes" || arg === "1"
+  }, false);
 }
