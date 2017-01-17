@@ -38,13 +38,15 @@ koaCtxCacheControl(app);
 app
   .use(logging())
   .use((ctx, next) => ctx.app.ready.then(next))
-  .use(lastModified({maxAge: '5 minutes'}))
   .use(compress(compressionOpts))
   .use(jsonErrors())
   .use(cors())
-  .use(bodyParser())
-  .use(api.routes())
-  .use(api.allowedMethods());
+  .use(bodyParser());
+
+
+api.use('/v2/', lastModified({maxAge: '5 minutes'}));
+app.use(api.routes())
+   .use(api.allowedMethods());
 
 export default app;
 

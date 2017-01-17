@@ -4,7 +4,7 @@ import searchShim from "searchShim";
 
 import timer from "lib/timer";
 
-var lastModified = null;
+var lastModified = new Date();
 var lastModifiedByType = {};
 
 export function getLastModified(type) {
@@ -19,7 +19,7 @@ export function getLastModified(type) {
 
 export function clear() {
   lastModifiedByType = {};
-  lastModified = null;
+  lastModified = new Date();
 }
 
 const QUERY = {
@@ -51,7 +51,9 @@ export const updateLastModified = timer(async function() {
     });
     console.log("Found updates to lastModified:", diff);
     _.assign(lastModifiedByType, diff);
-    lastModified = _.max(_.values(lastModifiedByType));
+    const dates = _.values(lastModifiedByType);
+    dates.push(lastModified);
+    lastModified = _.max(dates);
     return diff;
   } catch (e) {
     console.error("Failed updating last modified", e);

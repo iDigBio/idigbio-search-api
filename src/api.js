@@ -7,6 +7,7 @@ import config from 'config';
 const api = KoaRouter();
 
 api.get('/healthz', function(ctx) {
+  ctx.cacheControl(0);
   ctx.body = {
     ENV: config.ENV,
     path: ctx.originalUrl,
