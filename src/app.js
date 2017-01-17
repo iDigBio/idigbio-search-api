@@ -37,7 +37,7 @@ koaCtxCacheControl(app);
 
 app
   .use(logging())
-  .use(async (ctx, next) => { await ctx.app.ready; return next(); })
+  .use((ctx, next) => ctx.app.ready.then(next))
   .use(lastModified({maxAge: '5 minutes'}))
   .use(compress(compressionOpts))
   .use(jsonErrors())
@@ -59,26 +59,27 @@ import { updateLastModified, getLastModified } from "lib/lastModified";
 import {loadIndexTerms}  from "lib/indexTerms";
 import {loadAll as loadRecordsets} from "lib/recordsets";
 
-const updateLastModifiedLoop = function() {
-  updateLastModified()
-    .then(async function(diff) {
-      const jobs = [];
-      const keys = _.keys(diff);
-      if(keys.length) {
-        jobs.push(loadIndexTerms());
-      }
-      if(_.includes(keys, 'recordsets')) {
-        jobs.push(loadRecordsets());
-      }
-      await bluebird.all(jobs);
-      app.lastModified = getLastModified();
-      setTimeout(updateLastModifiedLoop, repeatEvery);
-    })
-    .catch(console.err);
+const updateLastModifiedLoop = async function() {
+  try {
+    const diff = await updateLastModified();
+    const jobs = [];
+    const keys = _.keys(diff);
+    if(keys.length) {
+      jobs.push(loadIndexTerms());
+    }
+    if(_.includes(keys, 'recordsets')) {
+      jobs.push(loadRecordsets());
+    }
+    await bluebird.all(jobs);
+    app.lastModified = getLastModified();
+    setTimeout(updateLastModifiedLoop, repeatEvery);
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 if(config.ENV === 'test') {
   app.ready = bluebird.all([loadRecordsets(), loadIndexTerms()]);
 } else {
-  app.ready = updateLastModifiedLoop();
+  app.ready = updateLastModifiedLoop().then(() => console.log("App startup finished; ready to serve"));
 }
