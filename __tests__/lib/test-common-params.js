@@ -121,7 +121,7 @@ describe("common parameters", function() {
     });
     it("should error on an invalid fieldname", function() {
       const req = makeMockReq({top_fields: ["foobar"]});
-      expect(() => cp.top_fields(req, 'records')).toThrow(/top_fields/);
+      expect(() => cp.top_fields(req, 'records')).toThrow(/Terms not found/);
     });
   });
 
@@ -145,7 +145,7 @@ describe("common parameters", function() {
     });
     it("should error on an invalid fieldname", function() {
       const req = makeMockReq({fields: ["foobar"]});
-      expect(() => cp.fields(req, 'records')).toThrow(/fields/);
+      expect(() => cp.fields(req, 'records')).toThrow(/Terms not found/);
     });
   });
 
@@ -169,7 +169,7 @@ describe("common parameters", function() {
     });
     it("should error on an invalid fieldname", function() {
       const req = makeMockReq({fields_exclude: ["foobar"]});
-      expect(() => cp.fields_exclude(req, 'records')).toThrow(/fields_exclude/);
+      expect(() => cp.fields_exclude(req, 'records')).toThrow(/Terms not found/);
     });
   });
 

@@ -2,7 +2,8 @@ import _ from "lodash";
 
 import config from "config";
 import searchShim from "searchShim";
-import {InvalidTypeError} from "lib/exceptions";
+import getDictPath from "lib/getDictPath";
+import {InvalidTypeError, TermNotFoundError} from "lib/exceptions";
 export const indexterms = {};
 
 export function clear() {
@@ -17,7 +18,7 @@ export function getSubKeys(mappingDict, fnPrefix) {
   var rv = {};
   var properties = mappingDict["properties"];
   _.forOwn(properties, function(prop, key) {
-    let typ = prop.type;
+    const typ = prop.type;
     if(typ) {
       // Can't decide if notifying of analyzer status is a good thing or not.
       // if (prop.analyzer && prop.analyzer === "keyword") {
@@ -62,32 +63,14 @@ export async function loadIndexTerms(type) {
 }
 
 
-export function checkTerms(type, term_list, only_missing) {
-  var results = {};
-  var root = getMappingForType(type);
+export function checkTerms(type, termList, only_missing) {
+  const root = getMappingForType(type);
 
-  term_list.forEach(function(term) {
-    var termParts = term.split(".");
-
-    // Don't try to validate terms with wildcards.
-    var te  = term.indexOf("*") !== -1 ||
-      termParts.every(function(termPart, i) {
-        if(root[termPart]) {
-          if(i === (termParts.length - 1)) {
-            return true;
-          }
-          root = root[termPart];
-          return true;
-        }
-        return false;
-      });
-    if(only_missing) {
-      if(!te) {
-        results[term] = te;
-      }
-    } else {
-      results[term] = te;
-    }
+  const missingTerms = _.filter(termList, function(term) {
+    if(term.indexOf("*") !== -1) { return false; }
+    return _.isEmpty(getDictPath(root, term.split('.')));
   });
-  return results;
+  if(missingTerms.length) {
+    throw new TermNotFoundError(`Terms not found in index for type ${type}`, missingTerms);
+  }
 }

@@ -110,10 +110,7 @@ export function top_fields(req, term_type) {
     }
 
     if(term_type) {
-      const term_errors = checkTerms(term_type, p, true);
-      if(_.keys(term_errors).length > 0) {
-        throw new TermNotFoundError("Some of the top_fields terms supplied were not found in the index", term_errors);
-      }
+      checkTerms(term_type, p);
     }
 
     return p;
@@ -137,12 +134,7 @@ export function fields(req, term_type) {
     }
 
     if(term_type) {
-      const term_errors = checkTerms(term_type, p, true);
-      if(_.keys(term_errors).length > 0) {
-        throw new TermNotFoundError(
-          "Some of the fields terms supplied were not found in the index",
-          _.keys(term_errors));
-      }
+      checkTerms(term_type, p);
     }
 
     return p;
@@ -164,10 +156,7 @@ export function fields_exclude(req, term_type) {
     }
 
     if(term_type) {
-      const term_errors = checkTerms(term_type, p, true);
-      if(_.keys(term_errors).length > 0) {
-        throw new TermNotFoundError("Some of the fields_exclude terms supplied were not found in the index", term_errors);
-      }
+      checkTerms(term_type, p);
     }
 
     return p;

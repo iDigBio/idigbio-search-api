@@ -126,11 +126,7 @@ function objectType(k, shimK) {
 
 export default function queryShim(shim, term_type) {
   if(term_type) {
-    const term_errors = checkTerms(term_type, _.keys(shim), true);
-    if(_.keys(term_errors).length > 0) {
-      throw new TermNotFoundError(
-        "Some of the query terms supplied were not found in the index", _.keys(term_errors));
-    }
+    checkTerms(term_type, _.keys(shim));
   }
 
   const query = {

@@ -5,27 +5,11 @@ import _ from "lodash";
 
 import config from "config";
 import queryShim from "lib/query-shim.js";
+import getDictPath from "lib/getDictPath";
 
-
-function isKeyDefined(path, wd) {
-  var rv = true;
-  path.forEach(function(k) {
-    if(!wd[k]) {
-      rv = false;
-    }
-    wd = wd[k];
-  });
-  return rv;
-}
 
 function hasTerms(path, d) {
-  if(isKeyDefined(path, d)) {
-    path.forEach(function(k) {
-      d = d[k];
-    });
-    return Object.keys(d).length > 0;
-  }
-  return false;
+  return !_.isEmpty(getDictPath(d, path));
 }
 
 export function bare_query(q, fields, sort, limit, offset, fields_exclude, term_type) {

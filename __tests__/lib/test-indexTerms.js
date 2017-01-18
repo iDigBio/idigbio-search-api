@@ -1,5 +1,6 @@
 import _ from "lodash";
 
+import {TermNotFoundError, InvalidTypeError} from "lib/exceptions";
 import {loadIndexTerms, clear, getMappingForType, checkTerms} from "lib/indexTerms";
 
 describe('indexTerms', function() {
@@ -37,21 +38,25 @@ describe('indexTerms', function() {
     // function checkTerms(type, term_list, only_missing)
 
     it("should error on bad types", function() {
-      expect(checkTerms.bind(null, "foobar", ["scientificName"], true)).toThrow();
+      expect(() => checkTerms("foobar", ["scientificName"])).toThrowError(InvalidTypeError);
     });
-    it("Should return the valid terms", function() {
-      expect(checkTerms('records', ["scientificname"], false))
-        .toEqual({scientificname: true});
+    it("should not throw on valid terms", function() {
+      expect(checkTerms('records', ["scientificname", "genus"])).toBeUndefined();
+      expect(checkTerms('records', ["data.dwc:scientificName", "data.coreid"])).toBeUndefined();
     });
-    it("should return nothing on valid terms", function() {
-      expect(checkTerms('records', ["scientificname"], true)).toEqual({});
-      expect(checkTerms('records', ["data.dwc:scientificName"], true)).toEqual({});
+    it("should throw on invalid terms", function() {
+      const fncall = () => checkTerms('records', ["foobar"]);
+      expect(fncall).toThrow(TermNotFoundError);
     });
-    it("should return the invalid terms", function() {
-      expect(checkTerms('records', ["foobar"], true)).toEqual({foobar: false});
+    it("Should be looking for the term on the right type", function() {
+      const fncall = (t) => checkTerms(t, ["accessuri"]);
+      expect(() => fncall('records')).toThrow(TermNotFoundError);
+      expect(fncall('mediarecords')).toBeUndefined();
     });
     it("should handle wildcards", async function() {
-      expect(checkTerms('records', ["data.dwc:*"], true)).toEqual({});
+      checkTerms('records', ["data.dwc:*"]);
+      // We don't currently support verifying these
+      checkTerms('records', ["data.foobar:*"]);
     });
   });
 });
