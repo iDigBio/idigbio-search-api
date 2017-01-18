@@ -1,0 +1,735 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 19579,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "ab1886e0-3478-4d2e-b08b-f969c22808ee",
+        "_score": 1,
+        "_routing": "5e0ec54c-e622-43f9-bbc4-1ff36bf23f91",
+        "_parent": "5e0ec54c-e622-43f9-bbc4-1ff36bf23f91",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "ab1886e0-3478-4d2e-b08b-f969c22808ee",
+          "format": "image/jpeg",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.36363636363636365,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "mediatype": "images",
+          "records": [
+            "5e0ec54c-e622-43f9-bbc4-1ff36bf23f91"
+          ],
+          "etag": "b4e50b5e8999d8dc7aae94a942c2a9f56f7f3fa7",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10052097",
+            "dcterms:title": "ALA 1230: <i>Acer glabrum</i> Torr.",
+            "idigbio:uuid": "ab1886e0-3478-4d2e-b08b-f969c22808ee",
+            "idigbio:etag": "b4e50b5e8999d8dc7aae94a942c2a9f56f7f3fa7",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:187546?seid=166568",
+            "dcterms:identifier": "http://arctos.database.museum/media/10052097",
+            "idigbio:siblings": {
+              "record": [
+                "5e0ec54c-e622-43f9-bbc4-1ff36bf23f91"
+              ]
+            },
+            "dcterms:source": "http://arctos.database.museum/media/10044764",
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "ALA 1230: <i>Acer glabrum</i> Torr.",
+            "ac:accessURI": "http://arctos.database.museum/media/10052097?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10052097"
+            ],
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10052097"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10052097",
+            "dcterms:title": "ALA 1230: <i>Acer glabrum</i> Torr.",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:187546?seid=166568",
+            "dcterms:identifier": "http://arctos.database.museum/media/10052097",
+            "dcterms:source": "http://arctos.database.museum/media/10044764",
+            "dcterms:description": "ALA 1230: <i>Acer glabrum</i> Torr.",
+            "ac:accessURI": "http://arctos.database.museum/media/10052097?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10052097?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "1900df62-6b9d-4aaa-bff9-edef91b53e03",
+        "_score": 1,
+        "_routing": "529dd433-fa5d-42c3-9416-52dba5791668",
+        "_parent": "529dd433-fa5d-42c3-9416-52dba5791668",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "1900df62-6b9d-4aaa-bff9-edef91b53e03",
+          "format": "image/dng",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.2727272727272727,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "records": [
+            "529dd433-fa5d-42c3-9416-52dba5791668"
+          ],
+          "etag": "380f082ca71f5e58b7ba3278e9df22a75ee307b8",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10150364",
+            "dcterms:title": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "idigbio:uuid": "1900df62-6b9d-4aaa-bff9-edef91b53e03",
+            "idigbio:etag": "380f082ca71f5e58b7ba3278e9df22a75ee307b8",
+            "dcterms:format": "image/dng",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195115?seid=473176",
+            "dcterms:identifier": "http://arctos.database.museum/media/10150364",
+            "idigbio:siblings": {
+              "record": [
+                "529dd433-fa5d-42c3-9416-52dba5791668"
+              ]
+            },
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10150364"
+            ],
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10150364?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10150364"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10150364",
+            "dcterms:title": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "dcterms:format": "image/dng",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195115?seid=473176",
+            "dcterms:identifier": "http://arctos.database.museum/media/10150364",
+            "dcterms:description": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10150364?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10150364?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "bade8498-e3d8-4003-8973-fca153416392",
+        "_score": 1,
+        "_routing": "7340e9dd-8c2a-45bf-a217-63250a9e144c",
+        "_parent": "7340e9dd-8c2a-45bf-a217-63250a9e144c",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "bade8498-e3d8-4003-8973-fca153416392",
+          "format": "image/dng",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.2727272727272727,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "records": [
+            "7340e9dd-8c2a-45bf-a217-63250a9e144c"
+          ],
+          "etag": "34f730d278c76a0a97ec9de50287a5d12a922364",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10150365",
+            "dcterms:title": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "idigbio:uuid": "bade8498-e3d8-4003-8973-fca153416392",
+            "idigbio:etag": "34f730d278c76a0a97ec9de50287a5d12a922364",
+            "dcterms:format": "image/dng",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195114?seid=975513",
+            "dcterms:identifier": "http://arctos.database.museum/media/10150365",
+            "idigbio:siblings": {
+              "record": [
+                "7340e9dd-8c2a-45bf-a217-63250a9e144c"
+              ]
+            },
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10150365"
+            ],
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10150365?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10150365"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10150365",
+            "dcterms:title": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "dcterms:format": "image/dng",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195114?seid=975513",
+            "dcterms:identifier": "http://arctos.database.museum/media/10150365",
+            "dcterms:description": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10150365?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10150365?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "140398db-adee-46c8-9c69-3dea8627edc2",
+        "_score": 1,
+        "_routing": "39500de3-9ca5-41e0-8db3-74de4e77e3a1",
+        "_parent": "39500de3-9ca5-41e0-8db3-74de4e77e3a1",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "140398db-adee-46c8-9c69-3dea8627edc2",
+          "format": "image/dng",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.2727272727272727,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "records": [
+            "39500de3-9ca5-41e0-8db3-74de4e77e3a1"
+          ],
+          "etag": "84abfb1183d74bd8f98131c12ea0482310baa46b",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10150373",
+            "dcterms:title": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "idigbio:uuid": "140398db-adee-46c8-9c69-3dea8627edc2",
+            "idigbio:etag": "84abfb1183d74bd8f98131c12ea0482310baa46b",
+            "dcterms:format": "image/dng",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:233837?seid=644368",
+            "dcterms:identifier": "http://arctos.database.museum/media/10150373",
+            "idigbio:siblings": {
+              "record": [
+                "39500de3-9ca5-41e0-8db3-74de4e77e3a1"
+              ]
+            },
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10150373"
+            ],
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10150373?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10150373"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10150373",
+            "dcterms:title": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "dcterms:format": "image/dng",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:233837?seid=644368",
+            "dcterms:identifier": "http://arctos.database.museum/media/10150373",
+            "dcterms:description": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10150373?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10150373?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "d718457f-9bfd-4049-90f2-160fe3746c00",
+        "_score": 1,
+        "_routing": "529dd433-fa5d-42c3-9416-52dba5791668",
+        "_parent": "529dd433-fa5d-42c3-9416-52dba5791668",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "d718457f-9bfd-4049-90f2-160fe3746c00",
+          "format": "image/jpeg",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.36363636363636365,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "mediatype": "images",
+          "records": [
+            "529dd433-fa5d-42c3-9416-52dba5791668"
+          ],
+          "etag": "d3c04032c052e33f1b006c72e44454820dc20f77",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10168342",
+            "dcterms:title": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "idigbio:uuid": "d718457f-9bfd-4049-90f2-160fe3746c00",
+            "idigbio:etag": "d3c04032c052e33f1b006c72e44454820dc20f77",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195115?seid=473176",
+            "dcterms:identifier": "http://arctos.database.museum/media/10168342",
+            "idigbio:siblings": {
+              "record": [
+                "529dd433-fa5d-42c3-9416-52dba5791668"
+              ]
+            },
+            "dcterms:source": "http://arctos.database.museum/media/10150364",
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10168342?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10168342"
+            ],
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10168342"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10168342",
+            "dcterms:title": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195115?seid=473176",
+            "dcterms:identifier": "http://arctos.database.museum/media/10168342",
+            "dcterms:source": "http://arctos.database.museum/media/10150364",
+            "dcterms:description": "UAM:Herb:195115 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10168342?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10168342?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "9b63e4dd-e1ea-4945-a720-ea914469e15b",
+        "_score": 1,
+        "_routing": "7340e9dd-8c2a-45bf-a217-63250a9e144c",
+        "_parent": "7340e9dd-8c2a-45bf-a217-63250a9e144c",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "9b63e4dd-e1ea-4945-a720-ea914469e15b",
+          "format": "image/jpeg",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.36363636363636365,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "mediatype": "images",
+          "records": [
+            "7340e9dd-8c2a-45bf-a217-63250a9e144c"
+          ],
+          "etag": "61b20c7ec80571e6f5a38a46af70e8cdb659eb73",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10168343",
+            "dcterms:title": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "idigbio:uuid": "9b63e4dd-e1ea-4945-a720-ea914469e15b",
+            "idigbio:etag": "61b20c7ec80571e6f5a38a46af70e8cdb659eb73",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195114?seid=975513",
+            "dcterms:identifier": "http://arctos.database.museum/media/10168343",
+            "idigbio:siblings": {
+              "record": [
+                "7340e9dd-8c2a-45bf-a217-63250a9e144c"
+              ]
+            },
+            "dcterms:source": "http://arctos.database.museum/media/10150365",
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10168343?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10168343"
+            ],
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10168343"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10168343",
+            "dcterms:title": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:195114?seid=975513",
+            "dcterms:identifier": "http://arctos.database.museum/media/10168343",
+            "dcterms:source": "http://arctos.database.museum/media/10150365",
+            "dcterms:description": "UAM:Herb:195114 (ALA): <i>Acer glabrum</i> (Hook.) Dippel var. <i>douglasii</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10168343?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10168343?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "e5fbdca4-f24a-4fbf-aa0a-a2bc9734b713",
+        "_score": 1,
+        "_routing": "39500de3-9ca5-41e0-8db3-74de4e77e3a1",
+        "_parent": "39500de3-9ca5-41e0-8db3-74de4e77e3a1",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "e5fbdca4-f24a-4fbf-aa0a-a2bc9734b713",
+          "format": "image/jpeg",
+          "recordset": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+          "dqs": 0.36363636363636365,
+          "modified": "2016-10-04T13:30:04+00:00",
+          "mediatype": "images",
+          "records": [
+            "39500de3-9ca5-41e0-8db3-74de4e77e3a1"
+          ],
+          "etag": "f45c6b55dc2030a96010d83bf7afd9d3e93b7e99",
+          "indexData": {
+            "idigbio:parent": "b6ec6203-09db-4d6e-8cba-ee4bebd2934c",
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10179577",
+            "dcterms:title": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "idigbio:uuid": "e5fbdca4-f24a-4fbf-aa0a-a2bc9734b713",
+            "idigbio:etag": "f45c6b55dc2030a96010d83bf7afd9d3e93b7e99",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:233837?seid=644368",
+            "dcterms:identifier": "http://arctos.database.museum/media/10179577",
+            "idigbio:siblings": {
+              "record": [
+                "39500de3-9ca5-41e0-8db3-74de4e77e3a1"
+              ]
+            },
+            "dcterms:source": "http://arctos.database.museum/media/10150373",
+            "idigbio:dateModified": "2016-11-10T16:30:06.735951",
+            "dcterms:description": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10179577?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "idigbio:recordIds": [
+              "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10179577"
+            ],
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "recordids": [
+            "b6ec6203-09db-4d6e-8cba-ee4bebd2934c\\media\\http://arctos.database.museum/media/10179577"
+          ],
+          "data": {
+            "dcterms:type": "image",
+            "ac:furtherInformationURL": "http://arctos.database.museum/media/10179577",
+            "dcterms:title": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://arctos.database.museum/guid/UAM:Herb:233837?seid=644368",
+            "dcterms:identifier": "http://arctos.database.museum/media/10179577",
+            "dcterms:source": "http://arctos.database.museum/media/10150373",
+            "dcterms:description": "UAM:Herb:233837 (ALA): <i>Acer</i>",
+            "ac:accessURI": "http://arctos.database.museum/media/10179577?open",
+            "dcterms:modified": "2016-10-04 13:30:04.0",
+            "dcterms:creator": "ALA Imaging Project"
+          },
+          "datemodified": "2016-11-10T16:30:06.735951+00:00",
+          "accessuri": "http://arctos.database.museum/media/10179577?open"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "455b8a19-a190-4d03-b916-1368169a6b17",
+        "_score": 1,
+        "_routing": "fccd6138-2856-487e-80fd-c9c6b6184bf2",
+        "_parent": "fccd6138-2856-487e-80fd-c9c6b6184bf2",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-sa/3.0/88x31.png",
+          "uuid": "455b8a19-a190-4d03-b916-1368169a6b17",
+          "format": "image/jpeg",
+          "recordset": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "fccd6138-2856-487e-80fd-c9c6b6184bf2"
+          ],
+          "etag": "d219b997395d97b1083ebd951b445ffe4776bfb4",
+          "indexData": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "idigbio:parent": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+            "xmpRights:UsageTerms": "© 2015 Keene State College",
+            "ac:thumbnailAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN?thumbnail=225,225",
+            "ac:goodQualityAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN?resize=1250&format=jpeg",
+            "coreid": "1056468",
+            "dcterms:identifier": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN",
+            "idigbio:recordIds": [
+              "urn:uuid:e617ec4e-db68-47b6-b0eb-b62b099d3a01",
+              "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-jga3sbsgxtns3sxrdlkvrn"
+            ],
+            "idigbio:dateModified": "2016-04-21T13:32:00.006785",
+            "ac:metadataLanguage": "en",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=1056468",
+            "xmpRights:Owner": "Keene State College",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:e617ec4e-db68-47b6-b0eb-b62b099d3a01",
+            "ac:subtype": "Photograph",
+            "idigbio:etag": "d219b997395d97b1083ebd951b445ffe4776bfb4",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "fccd6138-2856-487e-80fd-c9c6b6184bf2"
+              ]
+            },
+            "ac:caption": "KESC KESC07760",
+            "ac:accessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN",
+            "xmp:MetadataDate": "2015-09-24 10:09:45",
+            "idigbio:uuid": "455b8a19-a190-4d03-b916-1368169a6b17"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "recordids": [
+            "urn:uuid:e617ec4e-db68-47b6-b0eb-b62b099d3a01",
+            "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-jga3sbsgxtns3sxrdlkvrn"
+          ],
+          "data": {
+            "xmpRights:Owner": "Keene State College",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:e617ec4e-db68-47b6-b0eb-b62b099d3a01",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "© 2015 Keene State College",
+            "ac:thumbnailAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN?thumbnail=225,225",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN?resize=1250&format=jpeg",
+            "coreid": "1056468",
+            "dcterms:identifier": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN",
+            "ac:caption": "KESC KESC07760",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "ac:accessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN",
+            "xmp:MetadataDate": "2015-09-24 10:09:45",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=1056468"
+          },
+          "datemodified": "2016-04-21T13:32:00.006785+00:00",
+          "accessuri": "http://bovary.iplantcollaborative.org/image_service/image/00-jga3SBsgXtns3SxRdLKVRN"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "6e04e453-3478-4fb2-b5c9-ce8096b85cb4",
+        "_score": 1,
+        "_routing": "56743f7b-f308-4968-9352-06efbf10f7b4",
+        "_parent": "56743f7b-f308-4968-9352-06efbf10f7b4",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-sa/3.0/88x31.png",
+          "uuid": "6e04e453-3478-4fb2-b5c9-ce8096b85cb4",
+          "format": "image/jpeg",
+          "recordset": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "56743f7b-f308-4968-9352-06efbf10f7b4"
+          ],
+          "etag": "163f904c82222412c5ff61b095a1476de0d746c7",
+          "indexData": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "idigbio:parent": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+            "xmpRights:UsageTerms": "© 2015 Keene State College",
+            "ac:thumbnailAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX?thumbnail=225,225",
+            "ac:goodQualityAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX?resize=1250&format=jpeg",
+            "coreid": "1056472",
+            "dcterms:identifier": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX",
+            "idigbio:recordIds": [
+              "urn:uuid:1927d425-a425-43dd-bbdf-21a56245b9fa",
+              "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-kreqwqlfvwxwf4dwfkaebx"
+            ],
+            "idigbio:dateModified": "2016-04-21T13:32:00.006785",
+            "ac:metadataLanguage": "en",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=1056472",
+            "xmpRights:Owner": "Keene State College",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:1927d425-a425-43dd-bbdf-21a56245b9fa",
+            "ac:subtype": "Photograph",
+            "idigbio:etag": "163f904c82222412c5ff61b095a1476de0d746c7",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "56743f7b-f308-4968-9352-06efbf10f7b4"
+              ]
+            },
+            "ac:caption": "KESC KESC07764",
+            "ac:accessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX",
+            "xmp:MetadataDate": "2015-09-24 10:09:45",
+            "idigbio:uuid": "6e04e453-3478-4fb2-b5c9-ce8096b85cb4"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "recordids": [
+            "urn:uuid:1927d425-a425-43dd-bbdf-21a56245b9fa",
+            "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-kreqwqlfvwxwf4dwfkaebx"
+          ],
+          "data": {
+            "xmpRights:Owner": "Keene State College",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:1927d425-a425-43dd-bbdf-21a56245b9fa",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "© 2015 Keene State College",
+            "ac:thumbnailAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX?thumbnail=225,225",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX?resize=1250&format=jpeg",
+            "coreid": "1056472",
+            "dcterms:identifier": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX",
+            "ac:caption": "KESC KESC07764",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "ac:accessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX",
+            "xmp:MetadataDate": "2015-09-24 10:09:45",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=1056472"
+          },
+          "datemodified": "2016-04-21T13:32:00.006785+00:00",
+          "accessuri": "http://bovary.iplantcollaborative.org/image_service/image/00-KreqWqLFvwxwF4dWFKaEbX"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.5",
+        "_type": "mediarecords",
+        "_id": "8ad29555-357c-40a3-9161-231807514170",
+        "_score": 1,
+        "_routing": "8fbc2d1e-673b-4f0d-b0e9-5eb7b406228b",
+        "_parent": "8fbc2d1e-673b-4f0d-b0e9-5eb7b406228b",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/l/by-sa/3.0/88x31.png",
+          "uuid": "8ad29555-357c-40a3-9161-231807514170",
+          "format": "image/jpeg",
+          "recordset": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-SA",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "8fbc2d1e-673b-4f0d-b0e9-5eb7b406228b"
+          ],
+          "etag": "564124de43ec5390302a7547aa3dd279ea753682",
+          "indexData": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "idigbio:parent": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+            "xmpRights:UsageTerms": "© 2015 Keene State College",
+            "ac:thumbnailAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL?thumbnail=225,225",
+            "ac:goodQualityAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL?resize=1250&format=jpeg",
+            "coreid": "1056473",
+            "dcterms:identifier": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL",
+            "idigbio:recordIds": [
+              "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-mfof2dawclltji7bkgnbpl",
+              "urn:uuid:da5cb2d6-c782-4344-b2d9-2b62ff9e1969"
+            ],
+            "idigbio:dateModified": "2016-04-21T13:32:00.006785",
+            "ac:metadataLanguage": "en",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=1056473",
+            "xmpRights:Owner": "Keene State College",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:da5cb2d6-c782-4344-b2d9-2b62ff9e1969",
+            "ac:subtype": "Photograph",
+            "idigbio:etag": "564124de43ec5390302a7547aa3dd279ea753682",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "8fbc2d1e-673b-4f0d-b0e9-5eb7b406228b"
+              ]
+            },
+            "ac:caption": "KESC KESC07765",
+            "ac:accessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL",
+            "xmp:MetadataDate": "2015-09-24 10:09:45",
+            "idigbio:uuid": "8ad29555-357c-40a3-9161-231807514170"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "recordids": [
+            "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-mfof2dawclltji7bkgnbpl",
+            "urn:uuid:da5cb2d6-c782-4344-b2d9-2b62ff9e1969"
+          ],
+          "data": {
+            "xmpRights:Owner": "Keene State College",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:da5cb2d6-c782-4344-b2d9-2b62ff9e1969",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "© 2015 Keene State College",
+            "ac:thumbnailAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL?thumbnail=225,225",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL?resize=1250&format=jpeg",
+            "coreid": "1056473",
+            "dcterms:identifier": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL",
+            "ac:caption": "KESC KESC07765",
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-sa/3.0/",
+            "ac:accessURI": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL",
+            "xmp:MetadataDate": "2015-09-24 10:09:45",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=1056473"
+          },
+          "datemodified": "2016-04-21T13:32:00.006785+00:00",
+          "accessuri": "http://bovary.iplantcollaborative.org/image_service/image/00-MfoF2DaWcLLtji7BkGnbpL"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_recordset": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 8061,
+      "buckets": [
+        {
+          "key": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "doc_count": 5639
+        },
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 972
+        },
+        {
+          "key": "e2def7e2-1455-4856-9823-6d3738417d24",
+          "doc_count": 960
+        },
+        {
+          "key": "7644703a-ce24-4f7b-b800-66ddf8812f86",
+          "doc_count": 813
+        },
+        {
+          "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
+          "doc_count": 728
+        },
+        {
+          "key": "0fd6e726-6828-4f62-ba8d-6ec316fe0b52",
+          "doc_count": 541
+        },
+        {
+          "key": "beab5209-9628-4d4d-851e-2bc9bb1a0105",
+          "doc_count": 492
+        },
+        {
+          "key": "c49bc91d-0a50-497b-8b17-d77808745cf9",
+          "doc_count": 471
+        },
+        {
+          "key": "ba54ba45-caac-4708-a389-ac94642976f8",
+          "doc_count": 454
+        },
+        {
+          "key": "cb33cf97-2a7b-4b45-9b73-5aca568332a6",
+          "doc_count": 448
+        }
+      ]
+    }
+  }
+}

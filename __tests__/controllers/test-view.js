@@ -16,6 +16,7 @@ const test404 = "00000000-0000-0000-0000-000000000000";
 describe('View', function() {
   let server = null;
   beforeAll(async function() {
+    app.ready;
     server = app.listen();
   });
   afterAll(() => server.close());

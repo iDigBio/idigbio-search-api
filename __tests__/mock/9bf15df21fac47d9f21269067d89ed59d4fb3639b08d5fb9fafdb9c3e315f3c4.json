@@ -6,11 +6,11 @@
     "failed": 0
   },
   "hits": {
-    "total": 1038,
+    "total": 1054,
     "max_score": 1,
     "hits": [
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "82541f90-fe8e-4d66-84d8-4fe515dc5533",
         "_score": 1,
@@ -96,7 +96,7 @@
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "cb65cf5e-07b8-4d53-a91a-7dce9b8ccf80",
         "_score": 1,
@@ -178,7 +178,7 @@
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "da1ef9b1-761b-4bc3-8ac0-b9a109101f5f",
         "_score": 1,
@@ -272,7 +272,7 @@
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "623a6f8e-794b-44e6-b0f2-1cbf2e58ef5c",
         "_score": 1,
@@ -369,7 +369,7 @@
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "0f19f6d6-79a4-434e-ba0b-a4f49f334078",
         "_score": 1,
@@ -378,7 +378,7 @@
           "uuid": "0f19f6d6-79a4-434e-ba0b-a4f49f334078",
           "dqs": 0,
           "archivelink": "http://portal.neherbaria.org/portal/collections/datasets/dwc/universityofmaine-maine_dwc-a.zip",
-          "rights": "cc3 by-sa",
+          "rights": "no license, assume public domain",
           "contacts": [
             {
               "email": "patrick.sweeney@yale.edu"
@@ -402,26 +402,28 @@
             ],
             "collection_name": "University of Maine Herbaria",
             "idigbio:uuid": "0f19f6d6-79a4-434e-ba0b-a4f49f334078",
-            "idigbio:etag": "a3a9694396412f2f9fbd515956a7e103f7694d54",
-            "update": "2016-07-06T06:26:03",
+            "idigbio:etag": "b46d481e1e782a2017f4735af0c636c5f8ee5d75",
+            "update": "2016-12-15T09:23:55",
             "ingest": true,
             "institution_web_address": "http://herbaria.umaine.edu",
             "idigbio:siblings": {},
             "idigbio:recordIds": [
+              "26b01cdd-db0e-4785-a86d-42175cf558ff",
               "http://portal.neherbaria.org/portal/webservices/dwc/26b01cdd-db0e-4785-a86d-42175cf558ff"
             ],
             "link": "http://portal.neherbaria.org/portal/collections/datasets/dwc/UniversityofMaine-MAINE_DwC-A.zip",
-            "idigbio:dateModified": "2016-08-01T14:30:18.544611",
+            "idigbio:dateModified": "2016-12-15T12:14:53.492134",
             "collection_description": "The University of Maine Herbaria are organized, identified collections of authentic specimens of primarily Maine plants and fungi.",
             "id": "http://portal.neherbaria.org/portal/webservices/dwc/26b01cdd-db0e-4785-a86d-42175cf558ff",
             "other_guids": [],
             "logo_url": "http://portal.neherbaria.org/portal/images/collicons/MAINE_crest2C_4c.png",
-            "data_rights": "CC3 BY-SA"
+            "data_rights": "No license, assume Public Domain"
           },
-          "etag": "a3a9694396412f2f9fbd515956a7e103f7694d54",
+          "etag": "b46d481e1e782a2017f4735af0c636c5f8ee5d75",
           "emllink": "http://portal.neherbaria.org/portal/collections/datasets/dwc/universityofmaine-maine_dwc-a.eml",
           "logourl": "http://portal.neherbaria.org/portal/images/collicons/maine_crest2c_4c.png",
           "recordids": [
+            "26b01cdd-db0e-4785-a86d-42175cf558ff",
             "http://portal.neherbaria.org/portal/webservices/dwc/26b01cdd-db0e-4785-a86d-42175cf558ff"
           ],
           "data": {
@@ -436,9 +438,9 @@
               }
             ],
             "collection_name": "University of Maine Herbaria",
-            "update": "2016-07-06T06:26:03",
+            "update": "2016-12-15T09:23:55",
             "ingest": true,
-            "data_rights": "CC3 BY-SA",
+            "data_rights": "No license, assume Public Domain",
             "link": "http://portal.neherbaria.org/portal/collections/datasets/dwc/UniversityofMaine-MAINE_DwC-A.zip",
             "collection_description": "The University of Maine Herbaria are organized, identified collections of authentic specimens of primarily Maine plants and fungi.",
             "institution_web_address": "http://herbaria.umaine.edu",
@@ -446,12 +448,12 @@
             "logo_url": "http://portal.neherbaria.org/portal/images/collicons/MAINE_crest2C_4c.png",
             "id": "http://portal.neherbaria.org/portal/webservices/dwc/26b01cdd-db0e-4785-a86d-42175cf558ff"
           },
-          "datemodified": "2016-08-01T14:30:18.544611+00:00",
+          "datemodified": "2016-12-15T12:14:53.492134+00:00",
           "name": "university of maine herbaria"
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
         "_score": 1,
@@ -533,7 +535,7 @@
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "2c00c297-9ebd-498a-b701-d3ebde4b49f3",
         "_score": 1,
@@ -615,7 +617,7 @@
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "48e1b8c1-91aa-4b87-8ca0-de1f81232eaf",
         "_score": 1,
@@ -670,8 +672,8 @@
             ],
             "collection_name": "UF Florida Museum of Natural History Mammals",
             "idigbio:uuid": "48e1b8c1-91aa-4b87-8ca0-de1f81232eaf",
-            "idigbio:etag": "31243ae76903168fbb1920c67a0809afbb326913",
-            "update": "2016-11-19T20:25:19",
+            "idigbio:etag": "1f9918b13973baeceefbc003288012c79c3411b3",
+            "update": "2016-12-19T20:25:38",
             "ingest": true,
             "institution_web_address": "",
             "idigbio:siblings": {},
@@ -679,13 +681,13 @@
               "832a5f06-f762-11e1-a439-00145eb45e9a"
             ],
             "link": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=mammals",
-            "idigbio:dateModified": "2016-11-22T15:52:40.879249",
+            "idigbio:dateModified": "2016-12-19T20:42:20.674479",
             "collection_description": "UF Florida Museum of Natural History Mammals",
             "id": "832a5f06-f762-11e1-a439-00145eb45e9a",
             "other_guids": [],
             "data_rights": "CC4 BY-NC"
           },
-          "etag": "31243ae76903168fbb1920c67a0809afbb326913",
+          "etag": "1f9918b13973baeceefbc003288012c79c3411b3",
           "emllink": "http://ipt.flmnh.ufl.edu:8080/ipt/eml.do?r=mammals",
           "recordids": [
             "832a5f06-f762-11e1-a439-00145eb45e9a"
@@ -713,7 +715,7 @@
               }
             ],
             "collection_name": "UF Florida Museum of Natural History Mammals",
-            "update": "2016-11-19T20:25:19",
+            "update": "2016-12-19T20:25:38",
             "ingest": true,
             "data_rights": "CC4 BY-NC",
             "link": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=mammals",
@@ -722,12 +724,12 @@
             "institution_web_address": "",
             "id": "832a5f06-f762-11e1-a439-00145eb45e9a"
           },
-          "datemodified": "2016-11-22T15:52:40.879249+00:00",
+          "datemodified": "2016-12-19T20:42:20.674479+00:00",
           "name": "uf florida museum of natural history mammals"
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
         "_score": 1,
@@ -770,8 +772,8 @@
             ],
             "collection_name": "University of Florida Invertebrate Paleontology",
             "idigbio:uuid": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
-            "idigbio:etag": "7f939146d3b39aa2b070aca2f86c356f60d6f84d",
-            "update": "2016-12-13T14:55:57",
+            "idigbio:etag": "d9ab4aa0666090ac523b06dfa922d9d26f359ce8",
+            "update": "2017-01-10T14:58:20",
             "ingest": true,
             "institution_web_address": "",
             "idigbio:siblings": {},
@@ -779,13 +781,13 @@
               "989f6285-841c-47a4-991b-3d3396427f02"
             ],
             "link": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=uf-ip",
-            "idigbio:dateModified": "2016-12-13T14:57:43.469203",
+            "idigbio:dateModified": "2017-01-10T15:14:40.198988",
             "collection_description": "The Florida Museum of Natural History’s (FLMNH) Invertebrate Paleontology Collection (IP) is composed of Mollusca (78%), Arthropoda (8%), Echinodermata (6%), Cnidaria (4%), Bryozoa (2%), and combined Brachiopoda, Porifera, Annelida, Ichnofossils and others (2%) largely from the Cenozoic Era (last 65 million years).  Approximately 83% of the collection consists of specimens from the southeastern U.S., 15% from the circum-Caribbean and 2% from elsewhere (e.g., Antarctica).  Of the Florida fossils 70% are of Pliocene and Pleistocene age representing the richly fossiliferous late Neogene (e.g., Tamiami Formation (including Pinecrest Beds) and the Jackson Bluff, Intracoastal, Caloosahatchee, and Nashua formations). Eocene material collected in central to northern Florida (e.g., Avon Park Formation and Ocala Limestone) and Oligocene and Miocene fossils from around the state (e.g., Marianna and Suwannee limestones, Parachucla, Peace River, Arcadia, Chipola, and Shoal River formations) are well represented. \n\nThe collection is composed of five main parts: Systematic Collection (TX), Stratigraphic Collection (ST), Teaching Collection (TE), Micropaleontology Collection (MS), and Type and Figured Collection (TP).   The largest component is the Systematic Collection, where specimens are housed in phylogenetic order by family, then alphabetically by genus, then species.  The Stratigraphic Collection consist of fossils collected in situ.  The collection is organized by location, then formation and beds/horizons.  The Teaching Collection contains material from the Mesozoic and Paleozoic Eras. It serves as a resource to educators demonstrating life’s diversity throughout the ages.  The Micropaleontology Collection contains primarily foraminifera and ostracods; both highly valuable for use in stratigraphy and paleoecology.  The type and figured collection contains specimens cited in scientific publications and is organized alphabetically beginning with species.\n  \nThe strength and significance of our IP Collection resides in the extensive amount of material collected within the last 50 years from over 6,000 sites. Our collections are unique in that they represent many localities no longer accessible due to rapid regional land development. They are also a significant national research resource that serves as the basis, for an active and productive IP Research Program.  The entire IP collection (fully cataloged and uncataloged) consists of over 500,000 specimen lots.  A conservative estimate would place the total number of specimens in the IP Collection at about 6.0 million with over 2.6 million fully curated, computer cataloged, and available online.  As indicated, the number of uncataloged specimens outnumber the cataloged specimens. This reflects both continuous acquisition of material over long periods prior to 1986 when little curation occurred, an active IP field program that began in 1986, and the arrival of numerous, sizable donations (e.g., University of Alabama's Maxwell Smith Collection, Florida State University's Geology Department Collection, Rollins College's Beal-Maltbie Collection, the Florida Geological Survey Collection, Tulane University's E. & H. Vokes Collection, and the collections of Paul and Thomas McGinty, Muriel Hunter and Joe Banks, Victor Zullo, Ernest and Evelyn Bradley, Howard and Miriam Schriner, Jules DuBar, Richard Petit, Sue Stephens, Mary Palmer, Lyle Campbell, Joe Carter, and William Lyons).",
             "id": "989f6285-841c-47a4-991b-3d3396427f02",
             "other_guids": [],
             "data_rights": "CC4 BY-NC"
           },
-          "etag": "7f939146d3b39aa2b070aca2f86c356f60d6f84d",
+          "etag": "d9ab4aa0666090ac523b06dfa922d9d26f359ce8",
           "emllink": "http://ipt.flmnh.ufl.edu:8080/ipt/eml.do?r=uf-ip",
           "recordids": [
             "989f6285-841c-47a4-991b-3d3396427f02"
@@ -807,7 +809,7 @@
               }
             ],
             "collection_name": "University of Florida Invertebrate Paleontology",
-            "update": "2016-12-13T14:55:57",
+            "update": "2017-01-10T14:58:20",
             "ingest": true,
             "data_rights": "CC4 BY-NC",
             "link": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=uf-ip",
@@ -816,12 +818,12 @@
             "institution_web_address": "",
             "id": "989f6285-841c-47a4-991b-3d3396427f02"
           },
-          "datemodified": "2016-12-13T14:57:43.469203+00:00",
+          "datemodified": "2017-01-10T15:14:40.198988+00:00",
           "name": "university of florida invertebrate paleontology"
         }
       },
       {
-        "_index": "idigbio-2.10.4",
+        "_index": "idigbio-2.10.5",
         "_type": "recordsets",
         "_id": "85ae9fb4-de87-41ce-abb3-44fda2fb24a8",
         "_score": 1,
@@ -864,8 +866,8 @@
             ],
             "collection_name": "Vascular Plant Collection, Evergreen State College Herbarium",
             "idigbio:uuid": "85ae9fb4-de87-41ce-abb3-44fda2fb24a8",
-            "idigbio:etag": "9a416a9dea5ef9de614aee6d9a8ca586d4574fe9",
-            "update": "2016-11-27T09:00:02",
+            "idigbio:etag": "e2863d9fcdc1c4287917e1efe318acc9bef116c6",
+            "update": "2017-01-05T09:15:33",
             "ingest": true,
             "institution_web_address": "http://wikis.evergreen.edu/pugetprairieplants/index.php/Main_Page",
             "idigbio:siblings": {},
@@ -873,14 +875,14 @@
               "96338a08-a263-446b-b961-e2cc47e6dfa8"
             ],
             "link": "http://www.pnwherbaria.org/data/getdataset.php?File=EVE_Vascular_DwCA.zip",
-            "idigbio:dateModified": "2016-11-27T09:17:41.798877",
+            "idigbio:dateModified": "2017-01-05T09:28:18.919397",
             "collection_description": "Small herbarium inside the Evergreen Natural History Collections in Lab I room 1060. Contains approximately 3,000 vascular plant, 600 bryophyte, 800 fungi, 600 lichens and 20 algae specimens. A portion of the collections are in a Specify 5 database.",
             "id": "96338a08-a263-446b-b961-e2cc47e6dfa8",
             "other_guids": [],
             "logo_url": "http://www.pnwherbaria.org/logos/EVE_Vascular_92px.png",
             "data_rights": "CC0"
           },
-          "etag": "9a416a9dea5ef9de614aee6d9a8ca586d4574fe9",
+          "etag": "e2863d9fcdc1c4287917e1efe318acc9bef116c6",
           "emllink": "http://www.pnwherbaria.org/data/dwca/eve_vascular.xml",
           "logourl": "http://www.pnwherbaria.org/logos/eve_vascular_92px.png",
           "recordids": [
@@ -903,7 +905,7 @@
               }
             ],
             "collection_name": "Vascular Plant Collection, Evergreen State College Herbarium",
-            "update": "2016-11-27T09:00:02",
+            "update": "2017-01-05T09:15:33",
             "ingest": true,
             "data_rights": "CC0",
             "link": "http://www.pnwherbaria.org/data/getdataset.php?File=EVE_Vascular_DwCA.zip",
@@ -913,7 +915,7 @@
             "logo_url": "http://www.pnwherbaria.org/logos/EVE_Vascular_92px.png",
             "id": "96338a08-a263-446b-b961-e2cc47e6dfa8"
           },
-          "datemodified": "2016-11-27T09:17:41.798877+00:00",
+          "datemodified": "2017-01-05T09:28:18.919397+00:00",
           "name": "vascular plant collection, evergreen state college herbarium"
         }
       }
@@ -922,23 +924,23 @@
   "aggregations": {
     "top_data.contacts.email": {
       "doc_count_error_upper_bound": 10,
-      "sum_other_doc_count": 2105,
+      "sum_other_doc_count": 2140,
       "buckets": [
         {
           "key": "asu.edu",
-          "doc_count": 169
+          "doc_count": 173
         },
         {
           "key": "gmail.com",
-          "doc_count": 118
-        },
-        {
-          "key": "cnalhadmin",
-          "doc_count": 71
+          "doc_count": 119
         },
         {
           "key": "egbot",
-          "doc_count": 68
+          "doc_count": 73
+        },
+        {
+          "key": "cnalhadmin",
+          "doc_count": 70
         },
         {
           "key": "nau.edu",
@@ -949,19 +951,19 @@
           "doc_count": 37
         },
         {
-          "key": "chris.neefus",
+          "key": "herrick.brown",
           "doc_count": 30
         },
         {
-          "key": "mycoportal.contact",
+          "key": "chris.neefus",
           "doc_count": 29
+        },
+        {
+          "key": "mycoportal.contact",
+          "doc_count": 28
         },
         {
           "key": "unh.edu",
-          "doc_count": 29
-        },
-        {
-          "key": "herrick.brown",
           "doc_count": 28
         }
       ]

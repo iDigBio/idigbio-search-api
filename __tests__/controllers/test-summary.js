@@ -9,6 +9,7 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 describe('Summary', function() {
   let server = null;
   beforeAll(async function() {
+    await app.ready;
     server = app.listen();
   });
   afterAll(() => server.close());

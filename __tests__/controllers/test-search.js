@@ -11,6 +11,7 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 describe('Search', function() {
   let server = null;
   beforeAll(async function() {
+    await app.ready;
     server = app.listen();
   });
   afterAll(() => server.close());

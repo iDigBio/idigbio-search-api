@@ -9,6 +9,7 @@ describe('Home', function() {
   let server = null;
   beforeAll(async function() {
     server = app.listen();
+    await app.ready;
   });
   afterAll(() => server.close());
 
