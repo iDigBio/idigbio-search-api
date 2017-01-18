@@ -101,8 +101,10 @@ describe('Summary', function() {
             .query({rq: JSON.stringify(q), top_fields: JSON.stringify(fields)})
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.should.have.property("itemCount");
-      response.body.itemCount.should.be.a('Number');
+      expect(response.body).to.have.property('itemCount');
+      expect(response.body.itemCount).to.be.a('Number');
+      //not all records; but should be plenty big enough for the forseeable future to not trigger falsly
+      expect(response.body.itemCount).to.be.below(50000000);
     });
   });
 

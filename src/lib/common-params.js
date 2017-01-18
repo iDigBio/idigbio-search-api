@@ -88,10 +88,7 @@ export function threshold(req, def) {
 export function query(n, req) {
   return getParam(req, n, function(p) {
     try {
-      if(_.isString(p)) {
-        p = JSON.parse(p);
-      }
-      return p;
+      return _.isString(p) ? JSON.parse(p) : p;
     } catch (e) {
       throw new ParameterParseError("unable to parse parameter", n);
     }

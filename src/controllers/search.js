@@ -39,7 +39,7 @@ const media = async function(ctx) {
   const no_attribution = cp.noattr(ctx.request);
   const extra = no_attribution ? { attribution: {} } : {};
 
-  const query = await media_query(rq, mq, fields, sort, limit, offset, fields_exclude);
+  const query = media_query(rq, mq, fields, sort, limit, offset, fields_exclude);
 
   const body = await searchShim(config.search.index, "mediarecords", "_search", query, {
     type: "search",
@@ -64,7 +64,7 @@ const basic = async function(ctx) {
   const no_attribution = cp.noattr(ctx.request);
   const extra = no_attribution ? { attribution: {} } : {};
 
-  const query = await record_query(rq, fields, sort, limit, offset, fields_exclude);
+  const query = record_query(rq, fields, sort, limit, offset, fields_exclude);
   const body = await searchShim(config.search.index, "records", "_search", query, {
     type: "search",
     recordtype: "records",
@@ -85,7 +85,7 @@ const recordsets = async function(ctx) {
 
   const fields_exclude = cp.fields_exclude(ctx.request, "recordsets");
 
-  const query = await bare_query(rsq, fields, sort, limit, offset, fields_exclude);
+  const query = bare_query(rsq, fields, sort, limit, offset, fields_exclude);
   const body = await searchShim(config.search.index, "recordsets", "_search", query);
   ctx.body = await formatter.basicNoAttr(body);
 };
@@ -102,7 +102,7 @@ const publishers = async function(ctx) {
 
   const fields_exclude = cp.fields_exclude(ctx.request, "publishers");
 
-  const query = await bare_query(pq, fields, sort, limit, offset, fields_exclude);
+  const query = bare_query(pq, fields, sort, limit, offset, fields_exclude);
   const body = await searchShim(config.search.index, "publishers", "_search", query);
   ctx.body = await formatter.basicNoAttr(body);
 };

@@ -85,6 +85,21 @@ describe("common parameters", function() {
     testNumericParam('threshold', 'threshold');
   });
 
+  describe("query", function() {
+    it("should default to empty", async function() {
+      expect(cp.query('rq', makeMockReq())).toEqual({});
+    });
+    it("should return the given object", function() {
+      const req = makeMockReq({rq: {"genus": "acer"}});
+      expect(cp.query('rq', req)).toEqual({"genus": "acer"});
+    });
+    it("should parse a json string too", async function() {
+      const req = makeMockReq({rq: JSON.stringify({"genus": "acer"})});
+      expect(cp.query('rq', req)).toEqual({"genus": "acer"});
+    });
+
+  });
+
 
   describe("top_fields", function() {
     it("Should not have a default", function() {

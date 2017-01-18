@@ -28,8 +28,8 @@ function hasTerms(path, d) {
   return false;
 }
 
-export async function bare_query(q, fields, sort, limit, offset, fields_exclude, term_type) {
-  var query = await queryShim(q, term_type);
+export function bare_query(q, fields, sort, limit, offset, fields_exclude, term_type) {
+  var query = queryShim(q, term_type);
   query["from"] = offset;
   query["size"] = limit;
   query["sort"] = sort;
@@ -51,9 +51,9 @@ export async function bare_query(q, fields, sort, limit, offset, fields_exclude,
   return query;
 }
 
-export async function media_query(rq, mq, fields, sort, limit, offset, fields_exclude) {
-  var rquery = await queryShim(rq, "records");
-  var query = await bare_query(mq, fields, sort, limit, offset, fields_exclude, "mediarecords");
+export function media_query(rq, mq, fields, sort, limit, offset, fields_exclude) {
+  var rquery = queryShim(rq, "records");
+  var query = bare_query(mq, fields, sort, limit, offset, fields_exclude, "mediarecords");
 
   var recordQuery = null;
 
@@ -103,8 +103,8 @@ export async function media_query(rq, mq, fields, sort, limit, offset, fields_ex
   return query;
 }
 
-export async function record_query(rq, fields, sort, limit, offset, fields_exclude) {
-  var query = await bare_query(rq, fields, sort, limit, offset, fields_exclude, "records");
+export function record_query(rq, fields, sort, limit, offset, fields_exclude) {
+  var query = bare_query(rq, fields, sort, limit, offset, fields_exclude, "records");
   query["aggs"] = {
     "rs": {
       "terms": {
