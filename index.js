@@ -30,14 +30,18 @@ function registerGracefulShutdown(signal, server, id) {
 }
 
 function startThisProcess(id) {
-  id = id || 'main';
-  const app = require(appsrc).default;
-  const server = app.listen(config.port, function() {
-    console.log(`Server(${id}) listening on port ${config.port}`);
+  return new Promise(function(resolve, reject) {
+    id = id || 'main';
+    const app = require(appsrc).default;
+    return app.ready.then(function() {
+      const server = app.listen(config.port, function() {
+        console.log(`Server(${id}) listening on port ${config.port}`);
+      });
+      registerGracefulShutdown('SIGTERM', server, id);
+      registerGracefulShutdown('SIGINT', server, id);
+      resolve(server);
+    });
   });
-  registerGracefulShutdown('SIGTERM', server, id);
-  registerGracefulShutdown('SIGINT', server, id);
-  return server;
 }
 
 

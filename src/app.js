@@ -37,7 +37,6 @@ koaCtxCacheControl(app);
 
 app
   .use(logging())
-  .use((ctx, next) => ctx.app.ready.then(next))
   .use(compress(compressionOpts))
   .use(jsonErrors())
   .use(cors())
