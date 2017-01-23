@@ -11,7 +11,8 @@ api.get('/healthz', function(ctx) {
   ctx.body = {
     ENV: config.ENV,
     path: ctx.originalUrl,
-    version: process.env.npm_package_version
+    version: process.env.npm_package_version,
+    index: config.search.index
   };
 });
 
