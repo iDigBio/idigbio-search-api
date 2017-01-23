@@ -49,11 +49,13 @@ export const updateLastModified = timer(async function() {
         diff[type] = lm;
       }
     });
-    console.log("Found updates to lastModified:", diff);
-    _.assign(lastModifiedByType, diff);
-    const dates = _.values(lastModifiedByType);
-    dates.push(lastModified);
-    lastModified = _.max(dates);
+    if(!_.isEmpty(diff)) {
+      _.assign(lastModifiedByType, diff);
+      console.log("Found updates to lastModified:", diff);
+      const dates = _.values(lastModifiedByType);
+      dates.push(lastModified);
+      lastModified = _.max(dates);
+    }
     return diff;
   } catch (e) {
     console.error("Failed updating last modified", e);
