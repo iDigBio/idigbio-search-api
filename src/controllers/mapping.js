@@ -184,7 +184,7 @@ function styleJSON(map_def, body) {
     for(let i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
       var b = body.aggregations.gstyle.f.style.buckets[i];
       order.push(b.key);
-      let fl = scale.mode('lab')(colorCount - i);
+      let fl = scale.mode('lab')(i);
       if(fl) {
         rv["colors"][b.key] = {
           "fill": fl.alpha(0.7).css(),
