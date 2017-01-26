@@ -28,6 +28,7 @@ mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.i
 
 
 import config from "config";
+import logger from "logging";
 import api from "api";
 import redisclient from "redisclient";
 import searchShim from "searchShim.js";
@@ -601,12 +602,12 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   return query;
 }
 
-const resolveAutoType = memoize(timer(async function(shortcode, map_def) {
+const resolveAutoType = memoize(timer(async function resolveAutoType(shortcode, map_def) {
   const query = await makeBasicFilter(map_def);
   const body = await searchShim(config.search.index, "records", "_count", query);
   const type = body.count > map_def.threshold ? "geohash" : "points";
   return _.assign({}, map_def, {type});
-}, "resolveAutoType"));
+}));
 const lookupShortcode  = memoize(async function(shortcode) {
   const rv = await redisclient().get(shortcode);
   if(!rv) {
@@ -684,7 +685,6 @@ const mapPoints = async function(ctx) {
 
     const z = getParam(ctx.request, "zoom", parseInt, 0);
     var pdist = 10;  // point layer radius
-    // console.log(z);
     var gl = tileMath.zoom_to_geohash_len(z, false);
 
     var gh = geohash.encode(lat, lon, gl);
@@ -860,7 +860,7 @@ const createMap = async function(ctx) {
   const rclient = redisclient();
   let s = await rclient.get(h);
   if(s) {
-    console.log("Found stored map s:", s);
+    logger.debug("Found stored map: %s", s);
   } else {
     const v = await rclient.incr("queryid");
     s = hashids.encode(v);

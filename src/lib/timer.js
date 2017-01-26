@@ -1,14 +1,22 @@
+import logger from "logging";
 
-export default function(wrappedFn, name) {
-  name = name || wrappedFn.name;
+export default function timer(...args) {
+  let name = null;
+  let fn = null;
+  if (args.length === 1) {
+    fn = args[0];
+    name = fn.name;
+  } else if (args.length === 2) {
+    [name, fn] = args;
+  } else {
+    throw new Error("Incorrect number of arguments to timer.");
+  }
   return async function(...args) {
-    var t1 = new Date();
-//    console.log("Starting", name);
+    logger.profile(name);
     try {
-      return await wrappedFn(...args);
+      return await fn(...args);
     } finally {
-        var t2 = new Date();
-        console.log("Finished", name, "in", t2 - t1);
+      logger.profile(name);
     }
   };
 }

@@ -23,4 +23,11 @@ describe("Function timer", function() {
       expect(e.message).toEqual('Bad fn, no cookie.');
     }
   });
+  it("Should take a name as first arg", async function() {
+    var testfn = async function(a, b) {
+      return a + b;
+    };
+    const val = await timer("foo", testfn)(1, 2);
+    expect(val).toBe(3);
+  });
 });

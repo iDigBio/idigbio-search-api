@@ -10,20 +10,22 @@ http.globalAgent.maxSockets = 100;
 
 
 const config = require('./src/config');
-let appsrc = null;
+let srcdir = null;
 if(config.ENV === 'prod') {
-  appsrc = './build/app';
+  srcdir = './build';
 } else {
-  appsrc = './src/app';
+  srcdir = './src';
   require('babel-register');
 }
+
+const logger = require(`${srcdir}/logging`).default;
 
 
 function registerGracefulShutdown(signal, server, id) {
   process.on(signal, function() {
-    console.log(`Server(${id}) received signal ${signal}, attempt exit`);
+    logger.info(`Server(${id}) received signal ${signal}, attempt exit`);
     server.close(function() {
-      console.log(`Server(${id}) finished closing, exiting`);
+      logger.info(`Server(${id}) finished closing, exiting`);
       process.exit(0);
     });
   });
@@ -32,10 +34,10 @@ function registerGracefulShutdown(signal, server, id) {
 function startThisProcess(id) {
   return new Promise(function(resolve, reject) {
     id = id || 'main';
-    const app = require(appsrc).default;
+    const app = require(`${srcdir}/app`).default;
     return app.ready.then(function() {
       const server = app.listen(config.port, function() {
-        console.log(`Server(${id}) listening on port ${config.port}`);
+        logger.info(`Server(${id}) listening on port ${config.port}`);
       });
       registerGracefulShutdown('SIGTERM', server, id);
       registerGracefulShutdown('SIGINT', server, id);
@@ -55,7 +57,7 @@ if(config.ENV === "test" || config.ENV === "development" || !config.CLUSTER) {
     _.times(config.CLUSTER_WORKERS, function() { cluster.fork(); });
 
     cluster.on('exit', function(deadWorker, code, signal) {
-      console.log(`Server(${deadWorker.process.pid}) died.`);
+      logger.warn(`Server(${deadWorker.process.pid}) died.`);
       // Restart the worker
       cluster.fork();
     });

@@ -4,6 +4,7 @@ import bluebird from "bluebird";
 import fsOrig from "fs";
 const fs = bluebird.promisifyAll(fsOrig);
 
+import logger from "logging";
 import hash from "./hasher";
 
 const mockdir = '__tests__/mock/';
@@ -18,15 +19,15 @@ export function writeMockWrapper(fn) {
       delete b.took;
       fs.writeFileAsync(filename, JSON.stringify(b, null, 2), {flag: 'wx'})
         .then(function() {
-          console.log(`Writing new result mock for '/${index}/${type}/${op}?${query && JSON.stringify(query) || ''}`);
+          logger.debug('Writing new result mock for "/%s/%s/%s? %j', index, type, op, query);
         })
         .catch(function(err) {
           if(err.code !== "EEXIST") {
-            console.error("Failed writing mock to", filename, err);
+            logger.error("Failed writing mock to %s", filename, err);
           }
         });
     } catch (err) {
-      console.error("Error scheduling write", err);
+      logger.error("Error scheduling write", err);
     }
     return result;
   };

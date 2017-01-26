@@ -1,7 +1,7 @@
 /* eslint camelcase: "off", dot-notation: "off" */
 
 import request from "request";
-
+import logger from "logging";
 import config from "config";
 
 
@@ -47,10 +47,12 @@ export default function(query, statsInfo, response) {
         url: "http://idb-redis-stats.acis.ufl.edu:3000",
         body: JSON.stringify(stats)
       }, function(error, response, body) {
-        // console.log(error,body);
+        if(error) {
+          logger.error("Failed posting stats", error);
+        }
       });
     }
   } catch (e) {
-    console.log("Stats error:", e);
+    logger.error("Stats error:", e);
   }
 }

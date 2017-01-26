@@ -76,7 +76,6 @@ if(config.CI) {
       }
     });
 
-    // console.log(JSON.stringify(options,undefined,2));
     let response = null;
     if(op === "_search") {
       response = await client.search(options);

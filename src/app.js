@@ -9,6 +9,7 @@ import koaCtxCacheControl from 'koa-ctx-cache-control';
 
 import jsonErrors from 'middleware/jsonErrors';
 import lastModified from 'middleware/lastModified';
+import logger from "logging";
 import logging from "middleware/logging";
 import config from "config";
 import api from 'api';
@@ -82,5 +83,5 @@ const updateLastModifiedLoop = async function() {
 if(config.ENV === 'test') {
   app.ready = bluebird.all([loadRecordsets(), loadIndexTerms()]);
 } else {
-  app.ready = updateLastModifiedLoop().then(() => console.log("App startup finished; ready to serve"));
+  app.ready = updateLastModifiedLoop().then(() => logger.info("App warmup finished"));
 }

@@ -1,5 +1,7 @@
 
 import _ from "lodash";
+
+import logger from "logging";
 import {checkTerms} from "lib/indexTerms";
 import {QueryParseError, TermNotFoundError} from "lib/exceptions";
 
@@ -120,7 +122,7 @@ function objectType(k, shimK) {
   } else if(shimK["type"] === "geo_polygon") {
     return geoPolygon(k, shimK);
   } else {
-    console.log(k + " " + shimK);
+    logger.warn("Unknown objectType: %s, %j", k, shimK);
   }
 }
 

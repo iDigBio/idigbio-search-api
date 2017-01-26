@@ -2,6 +2,7 @@ import _ from "lodash";
 import config from "config";
 import searchShim from "searchShim";
 
+import logger from "logging";
 import timer from "lib/timer";
 
 var lastModified = new Date();
@@ -36,10 +37,9 @@ const QUERY = {
   }
 };
 
-export const updateLastModified = timer(async function() {
+export const updateLastModified = timer(async function updateLastModified() {
   try {
     const response = await searchShim(config.search.index, "_all", "_search", QUERY);
-    console.log("Updating lastmodified, ES query took: ", response.took);
     const buckets = response['aggregations']['type']['buckets'];
     const diff = {};
     _.each(buckets, function(bucket) {
@@ -51,17 +51,17 @@ export const updateLastModified = timer(async function() {
     });
     if(!_.isEmpty(diff)) {
       _.assign(lastModifiedByType, diff);
-      console.log("Found updates to lastModified:", diff);
+      logger.info("Found updates to lastModified: %j", diff);
       const dates = _.values(lastModifiedByType);
       dates.push(lastModified);
       lastModified = _.max(dates);
     }
     return diff;
   } catch (e) {
-    console.error("Failed updating last modified", e);
+    logger.error("Failed udating last modified", e);
     return {};
   }
-}, "update-last-modified");
+});
 
 
 // Example bucket response:
