@@ -7,9 +7,10 @@ import cors from 'kcors';
 import compress from 'koa-compress';
 import koaCtxCacheControl from 'koa-ctx-cache-control';
 
-import jsonErrors from 'middleware/jsonErrors';
-import lastModified from 'middleware/lastModified';
 import logger from "logging";
+import jsonErrors from "middleware/jsonErrors";
+import lastModified from "middleware/lastModified";
+import prefixed from "middleware/prefixed";
 import logging from "middleware/logging";
 import config from "config";
 import api from 'api';
@@ -29,7 +30,6 @@ const compressionOpts = {
 };
 
 
-
 const app = new Koa();
 app.name = "iDigBio Search API";
 app.proxy = true;
@@ -44,7 +44,7 @@ app
   .use(bodyParser());
 
 
-api.use('/v2/', lastModified({maxAge: '5 minutes'}));
+app.use(prefixed({prefix: '/v2/'}, lastModified({maxAge: '5 minutes'})));
 app.use(api.routes())
    .use(api.allowedMethods());
 

@@ -883,12 +883,10 @@ const getMap = async function(ctx) {
 };
 
 
-const maprouter = new KoaRouter();
-maprouter.get('/', createMap);
-maprouter.post('/', createMap);
+api.get('/v2/mapping', createMap);
+api.post('/v2/mapping', createMap);
 
-maprouter.get('/:shortcode', getMap);
-maprouter.get('/:shortcode/style/:z', getMapStyle);
-maprouter.get('/:shortcode/points', mapPoints);
-maprouter.get('/:shortcode/:z/:x/:y.:t', getMapTile);
-api.use('/v2/mapping', maprouter.routes(), maprouter.allowedMethods());
+api.get('/v2/mapping/:shortcode', getMap);
+api.get('/v2/mapping/:shortcode/style/:z', getMapStyle);
+api.get('/v2/mapping/:shortcode/points', mapPoints);
+api.get('/v2/mapping/:shortcode/:z/:x/:y.:t', getMapTile);
