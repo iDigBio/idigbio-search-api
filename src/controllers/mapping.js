@@ -868,6 +868,7 @@ const createMap = async function(ctx) {
     await rclient.set(h, s);
   }
   const map_url = ctx.origin + '/v2/mapping/' + s;
+  ctx.status = 303;
   ctx.redirect(map_url);
 };
 
