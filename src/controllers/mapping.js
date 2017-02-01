@@ -57,166 +57,154 @@ function getPointProps(hit) {
 }
 
 function getGeohashProps(bucket) {
-  var props = {
+  return {
     "geohash": bucket.key,
     "itemCount": bucket.doc_count,
   };
-  return props;
 }
 
-
 async function geoJsonPoints(body) {
-  const rb = {
-    "itemCount": body.hits.total,
-    "type": "FeatureCollection",
-    "features": [],
-    "attribution": []
-  };
-
-  body.hits.hits.forEach(function(hit) {
-    rb.features.push({
+  const features = _.map(body.hits.hits, function(hit) {
+    return {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [hit._source.geopoint.lon, hit._source.geopoint.lat]
       },
       "properties": getPointProps(hit)
-    });
+    };
   });
-  rb.attribution = await formatter.attribution(body.aggregations.rs.buckets);
-  return rb;
+  return {
+    "itemCount": body.hits.total,
+    "type": "FeatureCollection",
+    "features": features,
+    "attribution": await formatter.attribution(body.aggregations.rs.buckets)
+  };
 }
 
 async function geoJsonGeohash(body) {
-  const rb = {
-    "itemCount": body.hits.total,
-    "type": "FeatureCollection",
-    "features": [],
-    "attribution": []
-  };
-
-  body.aggregations.geohash.buckets.forEach(function(bucket) {
-    var gh_bbox = geohash.decode_bbox(bucket.key);
-    var poly = [
-      [gh_bbox[1], gh_bbox[0]],
-      [gh_bbox[3], gh_bbox[0]],
-      [gh_bbox[3], gh_bbox[2]],
-      [gh_bbox[1], gh_bbox[2]],
-      [gh_bbox[1], gh_bbox[0]],
-    ];
-    rb.features.push({
+  const features = _.map(body.aggregations.geohash.buckets, function(bucket) {
+    const gh_bbox = geohash.decode_bbox(bucket.key),
+          poly = [
+            [gh_bbox[1], gh_bbox[0]],
+            [gh_bbox[3], gh_bbox[0]],
+            [gh_bbox[3], gh_bbox[2]],
+            [gh_bbox[1], gh_bbox[2]],
+            [gh_bbox[1], gh_bbox[0]],
+          ];
+    return {
       "type": "Feature",
       "geometry": {
         "type": "Polygon",
         "coordinates": [poly]
       },
       "properties": getGeohashProps(bucket)
-    });
+    };
   });
-
-  rb.attribution = await formatter.attribution(body.aggregations.rs.buckets);
-  return rb;
+  return {
+    "itemCount": body.hits.total,
+    "type": "FeatureCollection",
+    "features": features,
+    "attribution": await formatter.attribution(body.aggregations.rs.buckets)
+  };
 }
 
-function styleJSON(map_def, body) {
-  var rv = {
-    "colors": {}
-  };
-  const order = [];
-  var default_color = "black";
 
-  if(map_def.type === "geohash") {
-    let max_bucket_value = 1;
-    try {
-      if(map_def.style.styleOn === "sd.value") {
-        const gh_buckets = body.aggregations.ggh.f.gh.buckets;
-        max_bucket_value = _(gh_buckets).map((ghb) => ghb.sd.value).max();
-      } else {
-        max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
-      }
-    } catch (e) {}
-
-
-    if(_.isArray(map_def.style.scale) && map_def.style.scale.length === 1) {
-      default_color = map_def.style.scale[0];
+function styleJSONGeohash(map_def, body) {
+  let default_color = "black";
+  let max_bucket_value = 1;
+  try {
+    if(map_def.style.styleOn === "sd.value") {
+      const gh_buckets = body.aggregations.ggh.f.gh.buckets;
+      max_bucket_value = _(gh_buckets).map((ghb) => ghb.sd.value).max();
+    } else {
+      max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
     }
+  } catch (e) {}
 
-    var dom = [1, max_bucket_value];
-    var kls = chroma.limits(dom, 'l', 10);
-    const scale = chroma.scale(map_def.style.scale).mode('lab').domain(dom).classes(kls);
-    var clrs = scale.colors();
+  if(_.isArray(map_def.style.scale) && map_def.style.scale.length === 1) {
+    default_color = map_def.style.scale[0];
+  }
 
-    if(INVERTED) {
-      clrs.reverse();
+  const dom = [1, max_bucket_value];
+  const kls = chroma.limits(dom, 'l', 10);
+  const scale = chroma.scale(map_def.style.scale).mode('lab').domain(dom).classes(kls);
+  const clrs = scale.colors();
+
+  if(INVERTED) {
+    clrs.reverse();
+  }
+  const colors = {};
+  const order = _.map(kls, function(domain, i) {
+    domain = Math.floor(domain);
+    var fl = chroma(clrs[Math.min(i, clrs.length - 1)]);
+    if(fl) {
+      colors[domain] = {
+        "fill": fl.alpha(0.7).css(),
+        "stroke": fl.darker(0.2).alpha(0.7).css()
+      };
+    } else {
+      colors[domain] = {
+        "fill": default_color,
+        "stroke": default_color
+      };
     }
-
-    kls.forEach(function(domain, i) {
-      if(i >= clrs.length) {
-        i = clrs.length - 1;
-      }
-      domain = Math.floor(domain);
-      var fl = chroma(clrs[i]);
-      order.push(domain);
-      if(fl) {
-        rv["colors"][domain] = {
-          "fill": fl.alpha(0.7).css(),
-          "stroke": fl.darker(0.2).alpha(0.7).css()
-        };
-      } else {
-        rv["colors"][domain] = {
-          "fill": default_color,
-          "stroke": default_color
-        };
-      }
-    });
-    rv["default"] = {
+    return domain;
+  });
+  return {
+    "colors": colors,
+    "itemCount": body.hits.total,
+    "order": order,
+    "default": {
       "fill": default_color,
       "stroke": default_color
-    };
-  } else {
-    const colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
-
-    if(_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1) {
-      default_color = map_def.style.pointScale[0];
     }
+  };
+}
 
-    const scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
-    for(let i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
-      var b = body.aggregations.gstyle.f.style.buckets[i];
-      order.push(b.key);
-      let fl = scale.mode('lab')(i);
-      if(fl) {
-        rv["colors"][b.key] = {
-          "fill": fl.alpha(0.7).css(),
-          "stroke": chroma("black").alpha(0.7).css(),
-          "itemCount": b["doc_count"]
-        };
-      } else {
-        fl = chroma(default_color);
-        rv["colors"][b.key] = {
-          "fill": fl.alpha(0.7).css(),
-          "stroke": chroma("black").alpha(0.7).css()
-        };
-      }
-    }
-    var fl = scale.mode('lab')(colorCount);
+function styleJSONPoints(map_def, body) {
+  let default_color = "black";
+  const colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
+  if(_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1) {
+    default_color = map_def.style.pointScale[0];
+  }
+  const colors = {};
+  const scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
+  const order = _.map(body.aggregations.gstyle.f.style.buckets, function(b, i) {
+    let fl = scale.mode('lab')(i);
     if(fl) {
-      rv["default"] = {
+      colors[b.key] = {
         "fill": fl.alpha(0.7).css(),
-        "stroke": chroma("black").alpha(0.7).css()
+        "stroke": chroma("black").alpha(0.7).css(),
+        "itemCount": b["doc_count"]
       };
     } else {
       fl = chroma(default_color);
-      rv["default"] = {
+      colors[b.key] = {
         "fill": fl.alpha(0.7).css(),
         "stroke": chroma("black").alpha(0.7).css()
       };
     }
-  }
-  rv["order"] = order;
-  rv["itemCount"] = body.hits.total;
+    return b.key;
+  });
+  const fl = scale.mode('lab')(colorCount) || chroma(default_color);
+  return {
+    "colors": colors,
+    "default": {
+      "fill": fl.alpha(0.7).css(),
+      "stroke": chroma("black").alpha(0.7).css()
+    },
+    "order": order,
+    "itemCount": body.hits.total
+  };
+}
 
-  return rv;
+function styleJSON(map_def, body) {
+  if(map_def.type === "geohash") {
+    return styleJSONGeohash(map_def, body);
+  } else {
+    return styleJSONPoints(map_def, body);
+  }
 }
 
 var styleOnRule = _.template("<Rule>\n<Filter>[<%= field %>] = '<%= key %>'</Filter>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
