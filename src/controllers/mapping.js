@@ -388,8 +388,8 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   }
 }
 
-function makeKeyDefined(path, wd) {
-  path.forEach(function(k) {
+function makeKeyDefined(keypath, wd) {
+  keypath.forEach(function(k) {
     if(!wd[k]) {
       wd[k] = {};
     }
