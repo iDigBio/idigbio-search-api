@@ -19,7 +19,6 @@ import chroma from "chroma-js";
 import path from "path";
 import {fromCallback} from "bluebird";
 import createError from "http-errors";
-import KoaRouter from "koa-router";
 
 
 import mapnik from "mapnik";
