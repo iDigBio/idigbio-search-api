@@ -601,7 +601,7 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   return query;
 }
 
-const resolveAutoType = memoize(timer(async function resolveAutoType(shortcode, map_def) {
+const resolveAutoType = memoize(timer('resolveAutoType', async function(shortcode, map_def) {
   const query = await makeBasicFilter(map_def);
   const body = await searchShim(config.search.index, "records", "_count", query);
   const type = body.count > map_def.threshold ? "geohash" : "points";
