@@ -874,8 +874,10 @@ const createMap = async function(ctx) {
   } else {
     const v = await rclient.incr("queryid");
     s = hashids.encode(v);
-    await rclient.set(s, JSON.stringify(map_def));
-    await rclient.set(h, s);
+    await Promise.all([
+      rclient.set(s, JSON.stringify(map_def)),
+      rclient.set(h, s)
+    ]);
   }
   ctx.params.shortcode = s;
   return getMap(ctx);
