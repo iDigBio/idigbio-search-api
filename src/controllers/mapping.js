@@ -66,7 +66,7 @@ function getGeohashProps(bucket) {
 
 
 async function geoJsonPoints(body) {
-  var rb = {
+  const rb = {
     "itemCount": body.hits.total,
     "type": "FeatureCollection",
     "features": [],
@@ -88,7 +88,7 @@ async function geoJsonPoints(body) {
 }
 
 async function geoJsonGeohash(body) {
-  var rb = {
+  const rb = {
     "itemCount": body.hits.total,
     "type": "FeatureCollection",
     "features": [],
@@ -126,7 +126,7 @@ function styleJSON(map_def, body) {
   var default_color = "black";
 
   if(map_def.type === "geohash") {
-    var max_bucket_value = 1;
+    let max_bucket_value = 1;
     try {
       if(map_def.style.styleOn === "sd.value") {
         const gh_buckets = body.aggregations.ggh.f.gh.buckets;
@@ -143,7 +143,7 @@ function styleJSON(map_def, body) {
 
     var dom = [1, max_bucket_value];
     var kls = chroma.limits(dom, 'l', 10);
-    var scale = chroma.scale(map_def.style.scale).mode('lab').domain(dom).classes(kls);
+    const scale = chroma.scale(map_def.style.scale).mode('lab').domain(dom).classes(kls);
     var clrs = scale.colors();
 
     if(INVERTED) {
@@ -174,13 +174,13 @@ function styleJSON(map_def, body) {
       "stroke": default_color
     };
   } else {
-    var colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
+    const colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
 
     if(_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1) {
       default_color = map_def.style.pointScale[0];
     }
 
-    var scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
+    const scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
     for(let i = 0; i < body.aggregations.gstyle.f.style.buckets.length; i++) {
       var b = body.aggregations.gstyle.f.style.buckets[i];
       order.push(b.key);
