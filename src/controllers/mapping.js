@@ -825,6 +825,17 @@ const getMapTile = async function(ctx) {
   return makeMapTile(ctx, map_def);
 };
 
+const getMap = async function(ctx) {
+  const shortcode = ctx.params.shortcode;
+  const map_def = await getMapDef(shortcode, {resolveAutoType: false});
+  const map_url = ctx.origin + '/v2/mapping/' + shortcode;
+  ctx.body = await mapDef(shortcode, map_url, map_def, {
+    type: "mapping",
+    recordtype: "records",
+    ip: ctx.ip,
+  });
+};
+
 const MAP_TYPES = ['points', 'auto', 'geohash'];
 const createMap = async function(ctx) {
   var rq = cp.query("rq", ctx.request);
@@ -867,20 +878,8 @@ const createMap = async function(ctx) {
     await rclient.set(s, JSON.stringify(map_def));
     await rclient.set(h, s);
   }
-  const map_url = ctx.origin + '/v2/mapping/' + s;
-  ctx.status = 303;
-  ctx.redirect(map_url);
-};
-
-const getMap = async function(ctx) {
-  const shortcode = ctx.params.shortcode;
-  const map_def = await getMapDef(shortcode, {resolveAutoType: false});
-  const map_url = ctx.origin + '/v2/mapping/' + shortcode;
-  ctx.body = await mapDef(shortcode, map_url, map_def, {
-    type: "mapping",
-    recordtype: "records",
-    ip: ctx.ip,
-  });
+  ctx.params.shortcode = s;
+  return getMap(ctx);
 };
 
 

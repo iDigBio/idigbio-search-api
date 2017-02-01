@@ -24,7 +24,6 @@ describe('Mapping', function() {
       const response = await request(server)
             .get('/v2/mapping/')
             .query({rq: JSON.stringify(q)})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       response.body.should.have.property("shortCode");
@@ -41,13 +40,13 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302);
+            .expect(200);
 
       const response2 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302)
-            .expect('Location', response1.header.location);
+            .expect(200);
+      expect(response1.body.shortCode).to.equal(response2.body.shortCode);
 
     });
     it('should return the different urls if called twice with different queries', async function() {
@@ -55,14 +54,14 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302);
+            .expect(200);
 
       q = {"scientificname": "nullius nullium"};
       const response2 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302);
-      expect(response1.header.location).to.not.equal(response2.header.location);
+            .expect(200);
+      expect(response1.body.shortCode).to.not.equal(response2.body.shortCode);
     });
     it('should return the different urls if called twice with different styles', async function() {
       var q = {"scientificname": "puma concolor"};
@@ -73,27 +72,27 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302);
+            .expect(200);
 
       const response2 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q),
                     style: JSON.stringify(nonDefaultStyle)})
-            .expect(302);
-      expect(response1.header.location).to.not.equal(response2.header.location);
+            .expect(200);
+      expect(response1.body.shortCode).to.not.equal(response2.body.shortCode);
     });
     it('should return different urls if called twice with different types', async function() {
       var q = {"scientificname": "puma concolor"};
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302);
+            .expect(200);
 
       const response2 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "points"})
-            .expect(302);
-      expect(response1.header.location).to.not.equal(response2.header.location);
+            .expect(200);
+      expect(response1.body.shortCode).to.not.equal(response2.body.shortCode);
     });
 
     it('should create with POST/GET the same', async function() {
@@ -101,12 +100,12 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .expect(302);
+            .expect(200);
       const response2 = await request(server)
             .post("/v2/mapping/")
             .send({rq: JSON.stringify(q)})
-            .expect(302);
-      expect(response1.header.location).to.equal(response2.header.location);
+            .expect(200);
+      expect(response1.body.shortCode).to.equal(response2.body.shortCode);
     });
 
     it('should err on illegal map type', async function() {
@@ -125,7 +124,6 @@ describe('Mapping', function() {
       const response = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q)})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response.body.shortCode;
@@ -148,7 +146,6 @@ describe('Mapping', function() {
       const response = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "auto"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       response.body.mapDefinition.should.have.property('threshold');
@@ -159,7 +156,6 @@ describe('Mapping', function() {
       const response = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "auto", threshold: 42})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       response.body.mapDefinition.threshold.should.equal(42);
@@ -173,7 +169,6 @@ describe('Mapping', function() {
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q),
                     type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -190,7 +185,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "points"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -208,7 +202,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "auto"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -227,7 +220,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -246,7 +238,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "points"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -268,7 +259,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -288,7 +278,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -309,7 +298,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "points"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -331,7 +319,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -350,7 +337,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "points"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -369,7 +355,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -388,7 +373,6 @@ describe('Mapping', function() {
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q), type: "geohash"})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -413,7 +397,6 @@ describe('Mapping', function() {
             .get("/v2/mapping/")
             .query({type: 'geohash',
                     rq: JSON.stringify(q)})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -442,7 +425,6 @@ describe('Mapping', function() {
             .query({type: 'geohash',
                     rq: JSON.stringify(q),
                     style: JSON.stringify(geohash_style)})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -469,7 +451,6 @@ describe('Mapping', function() {
             .query({type: 'geohash',
                     rq: JSON.stringify(q),
                     style: JSON.stringify(geohash_style)})
-            .redirects(1)
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -496,7 +477,6 @@ describe('Mapping', function() {
                     rq: JSON.stringify(q),
                     style: JSON.stringify(property_style)})
             .expect('Content-Type', /json/)
-            .redirects(1)
             .expect(200);
       const shortCode = response1.body.shortCode;
       expect(shortCode).to.be.a("string");
