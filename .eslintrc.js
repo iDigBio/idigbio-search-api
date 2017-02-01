@@ -2,7 +2,8 @@ module.exports = {
   "env": {
     "node": true,
     "jest": true,
-    "jasmine": true
+    "jasmine": true,
+    "es6": true
   },
   "parserOptions": {
     "ecmaVersion": 8,
