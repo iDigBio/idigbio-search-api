@@ -574,6 +574,7 @@ const resolveAutoType = memoize(timer('resolveAutoType', async function(shortcod
   const type = body.count > map_def.threshold ? "geohash" : "points";
   return _.assign({}, map_def, {type});
 }));
+
 const lookupShortcode  = memoize(async function(shortcode) {
   const rv = await redisclient().get(shortcode);
   if(!rv) {
@@ -582,6 +583,7 @@ const lookupShortcode  = memoize(async function(shortcode) {
   }
   return JSON.parse(rv);
 });
+
 async function getMapDef(shortcode, opts = {resolveAutoType: true}) {
   let map_def = await lookupShortcode(shortcode);
   if(map_def.type === 'auto' && opts.resolveAutoType) {
@@ -657,18 +659,10 @@ const mapPoints = async function(ctx) {
     var meta_bbox = geohash.decode_bbox(gh);
     geohash.neighbors(gh).forEach(function(n) {
       var nbb = geohash.decode_bbox(n);
-      if(nbb[0] < meta_bbox[0]) {
-        meta_bbox[0] = nbb[0];
-      }
-      if(nbb[1] < meta_bbox[1]) {
-        meta_bbox[1] = nbb[1];
-      }
-      if(nbb[2] > meta_bbox[2]) {
-        meta_bbox[2] = nbb[2];
-      }
-      if(nbb[3] > meta_bbox[3]) {
-        meta_bbox[3] = nbb[3];
-      }
+      if(nbb[0] < meta_bbox[0]) { meta_bbox[0] = nbb[0]; }
+      if(nbb[1] < meta_bbox[1]) { meta_bbox[1] = nbb[1]; }
+      if(nbb[2] > meta_bbox[2]) { meta_bbox[2] = nbb[2]; }
+      if(nbb[3] > meta_bbox[3]) { meta_bbox[3] = nbb[3]; }
     });
 
     const map_def = await getMapDef(ctx.params.shortcode);
