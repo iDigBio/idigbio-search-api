@@ -623,21 +623,15 @@ const mapPoints = async function(ctx) {
   try {
     const limit = cp.limit(ctx.request),
           offset = cp.offset(ctx.request),
-          sort = cp.sort(ctx.request);
-
-    var lat = getParam(ctx.request, "lat", parseFloat, 0),
-        lon = getParam(ctx.request, "lon", parseFloat, 0);
-    while(lon > 180) { lon -= 360; }
-    while(lon < -180) { lon += 360; }
-
-    const z = getParam(ctx.request, "zoom", parseInt, 0);
-    var pdist = 10;  // point layer radius
-    var gl = tileMath.zoom_to_geohash_len(z, false);
-
-    var gh = geohash.encode(lat, lon, gl);
-    var meta_bbox = geohash.decode_bbox(gh);
-    geohash.neighbors(gh).forEach(function(n) {
-      var nbb = geohash.decode_bbox(n);
+          sort = cp.sort(ctx.request),
+          lat = cp.lat(ctx.request),
+          lon = cp.lon(ctx.request),
+          z = cp.zoom(ctx.request);
+    const gl = tileMath.zoom_to_geohash_len(z, false);
+    const gh = geohash.encode(lat, lon, gl);
+    const meta_bbox = geohash.decode_bbox(gh);
+    _.forEach(geohash.neighbors(gh), function(n) {
+      const nbb = geohash.decode_bbox(n);
       if(nbb[0] < meta_bbox[0]) { meta_bbox[0] = nbb[0]; }
       if(nbb[1] < meta_bbox[1]) { meta_bbox[1] = nbb[1]; }
       if(nbb[2] > meta_bbox[2]) { meta_bbox[2] = nbb[2]; }
@@ -645,21 +639,17 @@ const mapPoints = async function(ctx) {
     });
 
     const map_def = await getMapDef(ctx.params.shortcode);
+    const query = await queryShim(map_def.rq);
+    query["from"] = offset;
+    query["size"] = limit;
+    query["sort"] = sort;
 
-    var query = await queryShim(map_def.rq);
-    var type = map_def.type;
+    _.update(query, "query.filtered.filter.and", (v) => v || []);
+    const filters = query["query"]["filtered"]["filter"]["and"];
+    filters.push({ "exists": { "field": "geopoint" } });
 
-    makeKeyDefined(["query", "filtered", "filter"], query);
-
-    if(!query["query"]["filtered"]["filter"]["and"]) {
-      query["query"]["filtered"]["filter"]["and"] = [];
-    }
-    query["query"]["filtered"]["filter"]["and"].push({
-      "exists": {
-        "field": "geopoint",
-      }
-    });
-    if(type === 'points') {
+    let pdist = 10;  // point layer radius
+    if(map_def.type === 'points') {
       if(z < 4) {
         pdist = 10;
       } else if(z >= 4 && z < 7) {
@@ -669,7 +659,7 @@ const mapPoints = async function(ctx) {
       } else if(z >= 10) {
         pdist = 0.25;
       }
-      query["query"]["filtered"]["filter"]["and"].push({
+      filters.push({
         "geo_distance": {
           "geopoint": {
             "lat": lat,
@@ -679,8 +669,7 @@ const mapPoints = async function(ctx) {
         }
       });
     } else {
-      query["query"]["filtered"]["filter"]["and"].push({
-
+      filters.push({
         /* "geohash_cell": {
            "geopoint": {
            "lat": lat,
@@ -716,14 +705,11 @@ const mapPoints = async function(ctx) {
         }
       }
     };
-    query["from"] = offset;
-    query["size"] = limit;
-    query["sort"] = sort;
 
     const body = await searchShim(config.search.index, "records", "_search", query);
 
     let extra = null;
-    if(type === 'points') {
+    if(map_def.type === 'points') {
       extra = {
         "radius": {
           "lat": lat,

@@ -73,6 +73,7 @@ describe("common parameters", function() {
 
   describe("Numeric Parameters", function() {
     function testNumericParam(paramName, funcName) {
+      funcName = funcName || paramName;
       describe(funcName, function() {
         it("should have a default",  function() {
           const res = cp.limit(makeMockReq());
@@ -93,10 +94,13 @@ describe("common parameters", function() {
         });
       });
     }
-    testNumericParam('limit', 'limit');
-    testNumericParam('offset', 'offset');
+    testNumericParam('limit');
+    testNumericParam('offset');
     testNumericParam('count', 'top_count');
-    testNumericParam('threshold', 'threshold');
+    testNumericParam('threshold');
+    testNumericParam('lat');
+    testNumericParam('lon');
+    testNumericParam('zoom');
   });
 
   describe("query", function() {

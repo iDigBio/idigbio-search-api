@@ -60,6 +60,32 @@ export function offset(req) {
   }, 0);
 }
 
+export const lat = (req) => getParam(req, "lat", function(p) {
+  const pp = parseFloat(p);
+  if(isNaN(pp)) {
+    throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "lat");
+  }
+  return pp;
+}, 0);
+
+export const lon = (req) => getParam(req, "lon", function(p) {
+  let pp = parseFloat(p);
+  if(isNaN(pp)) {
+    throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "lon");
+  }
+  while(pp > 180) { pp -= 360; }
+  while(pp < -180) { pp += 360; }
+  return pp;
+}, 0);
+
+export const zoom = (req) => getParam(req, "zoom", function(p) {
+  const pp = parseInt(p, 10);
+  if(isNaN(pp)) {
+    throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "zoom");
+  }
+  return pp;
+}, 0);
+
 export function top_count(req) {
   return getParam(req, "count", function(p) {
     const pp = parseInt(p, 10);
