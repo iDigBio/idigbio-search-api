@@ -31,6 +31,7 @@ import logger from "logging";
 import api from "api";
 import redisclient from "redisclient";
 import searchShim from "searchShim.js";
+import {ParameterParseError} from "lib/exceptions";
 import mercator from "lib/sphericalmercator";
 import hasher from "lib/hasher";
 import timer from "lib/timer";
@@ -762,50 +763,52 @@ const getMap = async function(ctx) {
 };
 
 const MAP_TYPES = ['points', 'auto', 'geohash'];
-const createMap = async function(ctx) {
-  var rq = cp.query("rq", ctx.request);
-  var type = getParam(ctx.request, "type", null, "geohash");
-  if(!_.includes(MAP_TYPES, type)) {
-    ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
-  }
-
-  var default_style = {
+const DEFAULT_STYLE = {
     scale: 'YlOrRd',
     pointScale: 'Paired',
     styleOn: "scientificname"
-  };
+};
 
-  var style = getParam(ctx.request, "style", function(p) {
+const getTypeParam = (ctx) => getParam(ctx.request, "type", function(type) {
+  if(!_.includes(MAP_TYPES, type)) {
+    ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
+  }
+  return type;
+}, "geohash");
+
+const getStyleParam = (ctx) => _.defaults(
+  getParam(ctx.request, "style", function(p) {
     try {
       return JSON.parse(p);
     } catch (e) {
-      return p;
+      throw new ParameterParseError("Invalid json", "style");
     }
-  }, default_style);
+  }),
+  DEFAULT_STYLE
+);
 
-  _.defaults(style, default_style);
 
-  var map_def = {
+const createMap = async function(ctx) {
+  const rq = cp.query("rq", ctx.request);
+  const map_def = {
     rq: rq,
-    type: type,
-    style: style,
+    type: getTypeParam(ctx),
+    style: getStyleParam(ctx),
     threshold: cp.threshold(ctx.request, 5000)
   };
-  var h = hasher("sha1", map_def);
-
+  const queryHash = hasher("sha1", map_def);
   const rclient = redisclient();
-  let s = await rclient.get(h);
-  if(s) {
-    logger.debug("Found stored map: %s", s);
+  let shortcode = await rclient.get(queryHash);
+  if(shortcode) {
+    logger.debug("Found stored map: %s", shortcode);
   } else {
-    const v = await rclient.incr("queryid");
-    s = hashids.encode(v);
+    shortcode = hashids.encode(await rclient.incr("queryid"));
     await Promise.all([
-      rclient.set(s, JSON.stringify(map_def)),
-      rclient.set(h, s)
+      rclient.set(shortcode, JSON.stringify(map_def)),
+      rclient.set(queryHash, shortcode)
     ]);
   }
-  ctx.params.shortcode = s;
+  ctx.params.shortcode = shortcode;
   return getMap(ctx);
 };
 
