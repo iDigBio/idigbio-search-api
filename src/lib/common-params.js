@@ -35,9 +35,8 @@ export function sort(req) {
         }
         return s;
       });
-    } else {
-      throw new ParameterParseError("Unable to parse", "sort");
     }
+    throw new ParameterParseError("Unable to parse", "sort");
   }, defsort);
 }
 
@@ -46,9 +45,8 @@ export function limit(req) {
     const pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
-    } else {
-      return Math.min(pp, config.maxLimit);
     }
+    return Math.min(pp, config.maxLimit);
   }, config.defaultLimit);
 }
 
@@ -57,9 +55,8 @@ export function offset(req) {
     const pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "offset");
-    } else {
-      return pp;
     }
+    return pp;
   }, 0);
 }
 
@@ -68,9 +65,8 @@ export function top_count(req) {
     const pp = parseInt(p, 10);
     if(isNaN(pp)) {
       throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "count");
-    } else {
-      return Math.min(pp, config.maxLimit);
     }
+    return Math.min(pp, config.maxLimit);
   }, 10);
 }
 
