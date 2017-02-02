@@ -217,14 +217,10 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   var sj = styleJSON(map_def, body);
   var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
   s += '  <Style name="style" filter-mode="first">\n';
-
-  sj.order.forEach(function(key) {
-    s += countRule({
-      key: key,
-      fill: sj["colors"][key]["fill"],
-      stroke: sj["colors"][key]["stroke"],
-    });
-  });
+  s += _(sj.order)
+    .map((key) => { const {fill, stroke} =  sj["colors"][key]; return {key, fill, stroke}; })
+    .map(countRule)
+    .join("");
   s += geohashElseRule({
     fill: sj["default"]["fill"],
     stroke: sj["default"]["stroke"],
@@ -237,46 +233,40 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   map = await fromCallback((cb) => map.fromString(s, parseOpts, cb));
 
   var csv_string = "id,count,geojson\n";
-  var proj = new mapnik.Projection('+init=epsg:3857');
-  var wgs84 = new mapnik.Projection('+init=epsg:4326');
-  var trans = new mapnik.ProjTransform(wgs84, proj);
+  const proj = new mapnik.Projection('+init=epsg:3857'),
+        wgs84 = new mapnik.Projection('+init=epsg:4326'),
+        trans = {transform: new mapnik.ProjTransform(wgs84, proj)};
 
-  body.aggregations.geohash.buckets.forEach(function(bucket) {
-    var gh_bbox = geohash.decode_bbox(bucket.key);
-    var poly = [
-      [gh_bbox[1], gh_bbox[0]],
-      [gh_bbox[3], gh_bbox[0]],
-      [gh_bbox[3], gh_bbox[2]],
-      [gh_bbox[1], gh_bbox[2]],
-      [gh_bbox[1], gh_bbox[0]],
-    ];
-    var f = new mapnik.Feature.fromJSON(JSON.stringify({
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [poly]
-      },
-      "properties": getGeohashProps(bucket)
-    }));
-    if(map_def.style.styleOn === "sd.value") {
-      csv_string += bucket.key + "," + bucket.sd.value + ",'" + f.geometry().toJSON({
-        transform: trans
-      }) + "'\n";
-    } else {
-      csv_string += bucket.key + "," + bucket.doc_count + ",'" + f.geometry().toJSON({
-        transform: trans
-      }) + "'\n";
-    }
-  });
+  csv_string += _(body.aggregations.geohash.buckets)
+    .map(function(bucket) {
+      var gh_bbox = geohash.decode_bbox(bucket.key);
+      var poly = [
+        [gh_bbox[1], gh_bbox[0]],
+        [gh_bbox[3], gh_bbox[0]],
+        [gh_bbox[3], gh_bbox[2]],
+        [gh_bbox[1], gh_bbox[2]],
+        [gh_bbox[1], gh_bbox[0]],
+      ];
+      const feat = new mapnik.Feature.fromJSON(JSON.stringify({
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [poly]
+        },
+        "properties": getGeohashProps(bucket)
+      }));
+      const val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
+      return bucket.key + "," + val + ",'" + feat.geometry().toJSON(trans) + "'\n";
+    })
+    .join("");
 
-  var ds = new mapnik.Datasource({
+  const l = new mapnik.Layer('test');
+  l.srs = map.srs;
+  l.styles = ['style'];
+  l.datasource = new mapnik.Datasource({
     type: 'csv',
     'inline': csv_string
   });
-  var l = new mapnik.Layer('test');
-  l.srs = map.srs;
-  l.styles = ['style'];
-  l.datasource = ds;
   map.add_layer(l);
   map.extent = bbox;
 
@@ -304,19 +294,18 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
   s += '  <Style name="style" filter-mode="first">\n';
 
-  sj.order.forEach(function(key) {
-    s += styleOnRule({
+  s += _(sj.order)
+    .map((key) => styleOnRule({
       field: map_def.style.styleOn,
       key: key,
       fill: sj["colors"][key]["fill"],
       stroke: sj["colors"][key]["stroke"],
-    });
-  });
+    }))
+    .join("");
   s += pointElseRule({
     fill: sj["default"]["fill"],
     stroke: sj["default"]["stroke"],
   });
-
   s += '  </Style>\n';
   s += '</Map>';
 
@@ -335,10 +324,9 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   var mem_ds = new mapnik.MemoryDatasource({});
   var proj = new mapnik.Projection('+init=epsg:3857');
 
-  body.hits.hits.forEach(function(hit) {
-    var xy = proj.forward([hit._source.geopoint.lon, hit._source.geopoint.lat]);
-
-    var f = {
+  _.forEach(body.hits.hits, function(hit) {
+    const xy = proj.forward([hit._source.geopoint.lon, hit._source.geopoint.lat]);
+    const f = {
       'x': xy[0],
       'y': xy[1],
       'properties': {
@@ -347,13 +335,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
         'lon': hit._source.geopoint.lon
       }
     };
-    if(hit._source[map_def.style.styleOn]) {
-      f["properties"][map_def.style.styleOn] = hit._source[map_def.style.styleOn];
-    } else {
-      f["properties"][map_def.style.styleOn] = "";
-    }
-
-
+    f["properties"][map_def.style.styleOn] = hit._source[map_def.style.styleOn] || "";
     mem_ds.add(f);
   });
 
