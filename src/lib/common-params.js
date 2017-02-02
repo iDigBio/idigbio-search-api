@@ -161,8 +161,8 @@ export function fields_exclude(req, term_type) {
 
 export function noattr(req) {
   return getParam(req, "no_attribution", function(arg) {
-    if(_.isBoolean(arg)) return arg;
+    if(_.isBoolean(arg)) { return arg; }
     arg = arg.toLowerCase();
-    return arg === "true" || arg === "yes" || arg === "1"
+    return arg === "true" || arg === "yes" || arg === "1";
   }, false);
 }
