@@ -1,18 +1,32 @@
 import _ from "lodash";
 
 import {loadIndexTerms} from "lib/indexTerms";
+import getParam from "lib/get-param";
 import * as cp from "lib/common-params.js";
 
 //NB: this module using jest/jasmine's expect
+
+function makeMockReq(query = {}, body = {}) {
+  return {query, body};
+}
+
+describe("getParam", function() {
+  it("should return false with default true", function() {
+    const req = makeMockReq({ noattr: false });
+    expect(getParam(req, "noattr"))
+      .toEqual(false);
+    expect(getParam(req, "noattr", null, true))
+      .toEqual(false);
+    expect(getParam(req, "noattr", (p) => p, true))
+      .toEqual(false);
+  });
+});
 
 describe("common parameters", function() {
   beforeAll(async function() {
     await loadIndexTerms();
   });
 
-  function makeMockReq(query = {}, body = {}) {
-    return {query, body};
-  }
 
   describe("sort", function() {
     function checkSortShape(sortresult) {

@@ -5,9 +5,7 @@ export default function(req, params, munger, def) {
   if(!_.isArray(params)) {
     params = [params];
   }
-  if(!munger) {
-    munger = (p) => p;
-  }
+  munger = munger || _.identity;
 
   params.forEach(function(param) {
     var mangle_param = null;
@@ -46,9 +44,9 @@ export default function(req, params, munger, def) {
 
   for(var i = 0; i < params.length; i++) {
     var p = params[i];
-    if(req.body[p]) {
+    if(!_.isUndefined(req.body[p])) {
       return munger(req.body[p]);
-    } else if(req.query[p]) {
+    } else if(!_.isUndefined(req.query[p])) {
       return munger(req.query[p]);
     }
   }
