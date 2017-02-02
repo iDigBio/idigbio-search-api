@@ -603,39 +603,18 @@ async function makeMapTile(ctx, map_def, count) {
     response_type = "grid." + response_type;
   }
 
-  var query = await makeTileQuery(map_def, z, x, y, response_type);
-
-  var typeGeohash = async function(body, response_type) {
-    ctx.body = await tileGeohash(z, x, y, map_def, body, response_type);
-    if(response_type !== "grid.json") {
-      ctx.type = 'image/png';
-    }
-  };
-
-  var typePoints = async function(body, response_type) {
-    ctx.body = await tilePoints(z, x, y, map_def, body, response_type);
-    if(response_type !== "grid.json") {
-      ctx.type = 'image/png';
-    }
-  };
-
+  const query = await makeTileQuery(map_def, z, x, y, response_type);
   const body = await searchShim(config.search.index, "records", "_search", query);
+
+
   if(response_type === "json") {
-    if(map_def.type === "geohash") {
-      ctx.body = await geoJsonGeohash(body);
-    } else {
-      ctx.body = await geoJsonPoints(body);
-    }
-  } else if(response_type === "grid.json") {
-    if(map_def.type === "geohash") {
-      await typeGeohash(body, response_type);
-    } else {
-      await typePoints(body, response_type);
-    }
-  } else if(map_def.type === "geohash") {
-    await typeGeohash(body);
+    ctx.body = await (map_def.type === "geohash" ? geoJsonGeohash(body) : geoJsonPoints(body));
   } else {
-    await typePoints(body);
+    const tileFn = map_def.type === "geohash" ? tileGeohash : tilePoints;
+    ctx.body = await tileFn(z, x, y, map_def, body, response_type);
+    if(response_type !== "grid.json") {
+      ctx.type = 'image/png';
+    }
   }
 }
 
