@@ -109,7 +109,6 @@ async function geoJsonGeohash(body) {
   };
 }
 
-
 function styleJSONGeohash(map_def, body) {
   let default_color = "black";
   let max_bucket_value = 1;
@@ -137,7 +136,7 @@ function styleJSONGeohash(map_def, body) {
   const colors = {};
   const order = _.map(kls, function(domain, i) {
     domain = Math.floor(domain);
-    var fl = chroma(clrs[Math.min(i, clrs.length - 1)]);
+    const fl = chroma(clrs[Math.min(i, clrs.length - 1)]);
     if(fl) {
       colors[domain] = {
         "fill": fl.alpha(0.7).css(),
@@ -207,10 +206,10 @@ function styleJSON(map_def, body) {
   }
 }
 
-var styleOnRule = _.template("<Rule>\n<Filter>[<%= field %>] = '<%= key %>'</Filter>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
-var pointElseRule = _.template("<Rule>\n<ElseFilter/>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
-var countRule = _.template("<Rule>\n<Filter>[count] &lt;= <%= key %></Filter>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
-var geohashElseRule = _.template("<Rule>\n<ElseFilter/>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
+const styleOnRule = _.template("<Rule>\n<Filter>[<%= field %>] = '<%= key %>'</Filter>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
+const pointElseRule = _.template("<Rule>\n<ElseFilter/>\n<MarkersSymbolizer marker-type=\"ellipse\" fill=\"<%= fill %>\" stroke=\"<%= stroke %>\" stroke-width=\".5\" width=\"7\" allow-overlap=\"true\" placement=\"point\"/>\n</Rule>\n");
+const countRule = _.template("<Rule>\n<Filter>[count] &lt;= <%= key %></Filter>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
+const geohashElseRule = _.template("<Rule>\n<ElseFilter/>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
 
 
 async function tileGeohash(zoom, x, y, map_def, body, render_type) {
@@ -233,7 +232,7 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   s += '  </Style>\n';
   s += '</Map>';
 
-  var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
+  const bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
   const parseOpts = { strict: true, base: './' };
   map = await fromCallback((cb) => map.fromString(s, parseOpts, cb));
 
@@ -282,14 +281,14 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   map.extent = bbox;
 
   if(render_type === "grid.json") {
-    var grid = new mapnik.Grid(map.width, map.height, {key: "id"});
+    const grid = new mapnik.Grid(map.width, map.height, {key: "id"});
     const mapOpts = {layer: 0, "fields": ["count"]};
     const grid2 = await fromCallback((cb) => map.render(grid, mapOpts, cb));
     return await fromCallback((cb) => grid2.encode({"format": "utf"}, cb));
   } else {
-    var image = new mapnik.Image(map.width, map.height);
+    let image = new mapnik.Image(map.width, map.height);
     if(INVERTED) {
-      var ks = Object.keys(sj["colors"]);
+      const ks = Object.keys(sj["colors"]);
       ks.sort();
       image.fillSync(new mapnik.Color(sj["colors"][ks[0]]["fill"]));
     }
@@ -300,8 +299,8 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
 
 
 async function tilePoints(zoom, x, y, map_def, body, render_type) {
-  var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
-  var sj = styleJSON(map_def, body);
+  let map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
+  const sj = styleJSON(map_def, body);
   var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
   s += '  <Style name="style" filter-mode="first">\n';
 
@@ -321,7 +320,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   s += '  </Style>\n';
   s += '</Map>';
 
-  var bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
+  const bbox = mercator.xyz_to_envelope(parseInt(x), parseInt(y), parseInt(zoom), false);
   const mapOpts = {
     strict: true,
     base: './'
@@ -358,7 +357,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
     mem_ds.add(f);
   });
 
-  var l = new mapnik.Layer('test');
+  const l = new mapnik.Layer('test');
   l.srs = map.srs;
   l.styles = ['style'];
   l.datasource = mem_ds;
@@ -387,7 +386,7 @@ function makeKeyDefined(keypath, wd) {
 
 
 async function mapDef(s, map_url, map_def, stats_info) {
-  var query = await queryShim(map_def.rq, "records");
+  const query = await queryShim(map_def.rq, "records");
 
   makeKeyDefined(["query", "filtered", "filter"], query);
 
@@ -442,7 +441,8 @@ async function mapDef(s, map_url, map_def, stats_info) {
   };
   query["size"] = 0;
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
-  var rb = {
+  const attribution = await formatter.attribution(body.aggregations.rs.buckets);
+  return {
     shortCode: s,
     tiles: map_url + "/{z}/{x}/{y}.png",
     geojson: map_url + "/{z}/{x}/{y}.json",
@@ -460,11 +460,9 @@ async function mapDef(s, map_url, map_def, stats_info) {
           "lon": body.aggregations.min_lon.value
         }
     },
-    lastModified: new Date(body.aggregations.max_dm.value)
+    lastModified: new Date(body.aggregations.max_dm.value),
+    attribution: attribution
   };
-
-  rb.attribution = await formatter.attribution(body.aggregations.rs.buckets);
-  return rb;
 }
 
 async function makeBasicFilter(map_def) {
@@ -485,13 +483,12 @@ async function makeBasicFilter(map_def) {
 }
 
 async function makeTileQuery(map_def, z, x, y, response_type) {
-  var query = await makeBasicFilter(map_def);
-  var unboxed_query = _.cloneDeep(query.query);
-  var gl = tileMath.zoom_to_geohash_len(z, false);
-  var g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
-  var padding_size = 3;
-
-  var tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
+  const query = await makeBasicFilter(map_def);
+  const unboxed_query = _.cloneDeep(query.query);
+  const gl = tileMath.zoom_to_geohash_len(z, false);
+  const g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
+  const padding_size = 3;
+  const tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
   query["query"]["filtered"]["filter"]["and"].push({
     "geo_bounding_box": {
       "geopoint": {
