@@ -358,30 +358,19 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   }
 }
 
-function makeKeyDefined(keypath, wd) {
-  keypath.forEach(function(k) {
-    if(!wd[k]) {
-      wd[k] = {};
-    }
-    wd = wd[k];
+async function makeBasicFilter(map_def, termType) {
+  var query = await queryShim(map_def.rq, termType);
+  _.update(query, "query.filtered.filter.and", function(v) {
+    if(_.isUndefined(v)) { v = []; }
+    v.push({ "exists": {"field": "geopoint"}});
+    return v;
   });
+  return query;
 }
 
 
 async function mapDef(s, map_url, map_def, stats_info) {
-  const query = await queryShim(map_def.rq, "records");
-
-  makeKeyDefined(["query", "filtered", "filter"], query);
-
-  if(!query["query"]["filtered"]["filter"]["and"]) {
-    query["query"]["filtered"]["filter"]["and"] = [];
-  }
-
-  query["query"]["filtered"]["filter"]["and"].push({
-    "exists": {
-      "field": "geopoint",
-    }
-  });
+  const query = await makeBasicFilter(map_def, "records");
   query["aggs"] = {
     "rs": {
       "terms": {
@@ -446,23 +435,6 @@ async function mapDef(s, map_url, map_def, stats_info) {
     lastModified: new Date(body.aggregations.max_dm.value),
     attribution: attribution
   };
-}
-
-async function makeBasicFilter(map_def) {
-  var query = await queryShim(map_def.rq);
-
-  makeKeyDefined(["query", "filtered", "filter"], query);
-
-  if(!query["query"]["filtered"]["filter"]["and"]) {
-    query["query"]["filtered"]["filter"]["and"] = [];
-  }
-
-  query["query"]["filtered"]["filter"]["and"].push({
-    "exists": {
-      "field": "geopoint",
-    }
-  });
-  return query;
 }
 
 async function makeTileQuery(map_def, z, x, y, response_type) {
@@ -557,13 +529,12 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   }
 
   if(response_type === "json") {
-    makeKeyDefined(["aggs"], query);
-    query["aggs"]["rs"] = {
+    _.set(query, "aggs.rs", {
       "terms": {
         "field": "recordset",
         "size": config.maxRecordsets
       }
-    };
+    });
   }
 
   return query;
@@ -640,14 +611,10 @@ const mapPoints = async function(ctx) {
     });
 
     const map_def = await getMapDef(ctx.params.shortcode);
-    const query = await queryShim(map_def.rq);
+    const query = await makeBasicFilter(map_def);
     query["from"] = offset;
     query["size"] = limit;
     query["sort"] = sort;
-
-    _.update(query, "query.filtered.filter.and", (v) => v || []);
-    const filters = query["query"]["filtered"]["filter"]["and"];
-    filters.push({ "exists": { "field": "geopoint" } });
 
     let pdist = 10;  // point layer radius
     if(map_def.type === 'points') {
@@ -660,7 +627,7 @@ const mapPoints = async function(ctx) {
       } else if(z >= 10) {
         pdist = 0.25;
       }
-      filters.push({
+      query["query"]["filtered"]["filter"]["and"].push({
         "geo_distance": {
           "geopoint": {
             "lat": lat,
@@ -670,7 +637,8 @@ const mapPoints = async function(ctx) {
         }
       });
     } else {
-      filters.push({
+      query["query"]["filtered"]["filter"]["and"].push({
+
         /* "geohash_cell": {
            "geopoint": {
            "lat": lat,
