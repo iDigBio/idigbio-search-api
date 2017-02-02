@@ -169,14 +169,14 @@ describe('Mapping', function() {
             .get("/v2/mapping/")
             .query({rq: JSON.stringify(q),
                     type: "geohash"})
-            .expect('Content-Type', /json/)
-            .expect(200);
+            .expect(200)
+            .expect('Content-Type', /json/);
       const shortCode = response1.body.shortCode;
       expect(shortCode).to.be.a("string");
       const response = await request(server)
             .get("/v2/mapping/" + shortCode + "/1/0/0.png")
-            .expect('Content-Type', /png/)
-            .expect(200);
+            .expect(200)
+            .expect('Content-Type', /png/);
       response.body.length.should.not.equal(0);
     });
 
@@ -191,8 +191,8 @@ describe('Mapping', function() {
       expect(shortCode).to.be.a("string");
       const response = await request(server)
             .get("/v2/mapping/" + shortCode + "/1/0/0.png")
-            .expect('Content-Type', /png/)
-            .expect(200);
+            .expect(200)
+            .expect('Content-Type', /png/);
 
       response.body.length.should.not.equal(0);
     });
