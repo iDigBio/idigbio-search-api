@@ -1,36 +1,40 @@
 import searchShim from "searchShim";
 import config from "config";
-
-var loading = null;
+import logger from "logging";
+import cache from "cache";
 export var recordsets = {};
 
-export async function loadAll() {
-  if(loading) { return loading; }
-  loading = searchShim(config.search.index, "recordsets", "_search", {size: config.maxRecordsets});
-  try {
-    let body = await loading;
-    recordsets = {};
-    body.hits.hits.forEach(function(hit) {
-      recordsets[hit._id] = {
-        "uuid": hit._id,
-        "name": hit._source.data.collection_name,
-        "description": hit._source.data.collection_description,
-        "logo": hit._source.data.logo_url,
-        "url": hit._source.data.institution_web_address,
-        "emllink": hit._source.emllink,
-        "archivelink": hit._source.archivelink,
-        "contacts": hit._source.data.contacts,
-        "data_rights": hit._source.data.data_rights,
-        "publisher": hit._source.publisher,
-      };
-    });
-
-  } catch (err) {
-    console.error("Failed fetching recordsets", err);
-  }
-  loading = null;
-  return recordsets;
+async function _loadAll() {
+  logger.debug("Requerying recordsets list");
+  const body = await searchShim(config.search.index, "recordsets", "_search", {size: config.maxRecordsets});
+  const res = {};
+  body.hits.hits.forEach(function(hit) {
+    const id = hit._id,
+          source = hit._source;
+    res[id] = {
+      "uuid": id,
+      "name": source.data.collection_name,
+      "description": source.data.collection_description,
+      "logo": source.data.logo_url,
+      "url": source.data.institution_web_address,
+      "emllink": source.emllink,
+      "archivelink": source.archivelink,
+      "contacts": source.data.contacts,
+      "data_rights": source.data.data_rights,
+      "publisher": source.publisher,
+    };
+  });
+  return res;
 }
+
+export async function loadAll() {
+  try {
+    recordsets = await cache.wrap(cache.improveKey("recordsets"), _loadAll);
+  } catch (e) {
+    logger.error("Failed loading recordsets, %s", e);
+  }
+}
+
 
 export async function get(id) {
   var rs = recordsets[id];
@@ -46,9 +50,5 @@ export async function get(id) {
 }
 
 export async function clearcache() {
-  if(loading) {
-    console.warn("Clearing recordset caches while loading is underway.");
-    await loading;
-  }
-  config.recordsets = {};
+  recordsets = {};
 }

@@ -5,7 +5,7 @@ import searchShim from "searchShim";
 import logger from "logging";
 import timer from "lib/timer";
 
-var lastModified = new Date();
+var lastModified = null;
 var lastModifiedByType = {};
 
 export function getLastModified(type) {

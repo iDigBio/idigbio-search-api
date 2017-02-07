@@ -10,8 +10,8 @@ const test404 = '00000000-0000-0000-0000-000000000000';
 
 describe('recordsets', function() {
     it('should loadAll successfully', async function() {
-      const recordsets = await rsmod.loadAll();
-      expect(_.keys(recordsets).length).toBeGreaterThan(10);
+      await rsmod.loadAll();
+      expect(_.keys(rsmod.recordsets).length).toBeGreaterThan(10);
     });
 
     it('should return a recordset', async function() {

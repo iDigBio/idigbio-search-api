@@ -28,6 +28,7 @@ mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.i
 
 import config from "config";
 import logger from "logging";
+import cache from "cache";
 import api from "api";
 import redisclient from "redisclient";
 import searchShim from "searchShim.js";
@@ -540,17 +541,20 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   return query;
 }
 
-const resolveAutoType = memoize(timer('resolveAutoType', async function(shortcode, map_def) {
-  const query = await makeBasicFilter(map_def);
-  const body = await searchShim(config.search.index, "records", "_count", query);
-  const type = body.count > map_def.threshold ? "geohash" : "points";
-  return _.assign({}, map_def, {type});
-}));
+const resolveAutoType = async function(shortcode, map_def) {
+  const key = cache.improveKey(`resolveAutoType:${shortcode}`);
+  return cache.wrap(key, async function() {
+    logger.debug("Figuring out map type for auto map %s", shortcode);
+    const query = await makeBasicFilter(map_def);
+    const body = await searchShim(config.search.index, "records", "_count", query);
+    return body.count > map_def.threshold ? "geohash" : "points";
+  });
+};
 
 const lookupShortcode  = memoize(async function(shortcode) {
   const rv = await redisclient.get(shortcode);
   if(!rv) {
-    console.error(`Missing shortcode '${shortcode}'`);
+    logger.error('Missing shortcode %s', shortcode);
     throw new createError.NotFound();
   }
   return JSON.parse(rv);
@@ -559,7 +563,8 @@ const lookupShortcode  = memoize(async function(shortcode) {
 async function getMapDef(shortcode, opts = {resolveAutoType: true}) {
   let map_def = await lookupShortcode(shortcode);
   if(map_def.type === 'auto' && opts.resolveAutoType) {
-    map_def = await resolveAutoType(shortcode, map_def);
+    map_def = _.clone(map_def);
+    map_def.type = await resolveAutoType(shortcode, map_def);
   }
   return map_def;
 }
@@ -702,7 +707,7 @@ const mapPoints = async function(ctx) {
     }
     ctx.body = await formatter.basic(body, extra);
   } catch (e) {
-    console.error("Error constructing mappoints:", e);
+    logger.error("Error constructing mappoints:", e);
     ctx.throw(e, 400);
   }
 };
