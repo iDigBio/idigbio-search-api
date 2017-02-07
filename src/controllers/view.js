@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 import config from "config";
+import logger from "logging";
 import api from "api";
 import searchShim from "searchShim.js";
 import {get as getRecordset} from "lib/recordsets";
@@ -42,7 +43,7 @@ export async function basic(ctx, next) {
       try {
         rb.attribution = await getRecordset(rsid);
       } catch (e) {
-        console.error("Failed finding recordset", e);
+        logger.error("Failed finding recordset", e);
         rb.attribution = { "uuid": rsid };
       }
     }

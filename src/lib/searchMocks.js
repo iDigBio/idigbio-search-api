@@ -40,7 +40,7 @@ export async function readMock(index, type, op, query, statsInfo) {
     return JSON.parse(await fs.readFileAsync(filename));
   } catch (err) {
     const msg = "No json mock for " + h;
-    console.error(msg);
+    logger.error(msg);
     throw new Error(msg);
   }
 }

@@ -76,7 +76,7 @@ const updateLastModifiedLoop = async function() {
     app.lastModified = getLastModified();
     setTimeout(updateLastModifiedLoop, repeatEvery);
   } catch (err) {
-    console.error(err);
+    logger.error(err);
   }
 };
 
