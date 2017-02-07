@@ -11,14 +11,19 @@ const memoryCache = cacheManager.caching({
   ttl: 600
 });
 
-const redisCache = cacheManager.caching(_.defaults({
-  store: redisStore,
-  db: 1,
-  ttl: 3600,
-  compress: true
-}, config.redis));
-
-const cache = cacheManager.multiCaching([memoryCache, redisCache]);
+let cache = null;
+if(config.ENV !== 'test') {
+  const redisCache = cacheManager.caching(_.defaults({
+    store: redisStore,
+    db: 1,
+    ttl: 3600,
+    compress: true
+  }, config.redis));
+  cache = cacheManager.multiCaching([memoryCache, redisCache]);
+}
+else {
+  cache = memoryCache;
+}
 
 const version = process.env.npm_package_version; /* eslint no-process-env: 0 */
 cache.improveKey = function(k) {
