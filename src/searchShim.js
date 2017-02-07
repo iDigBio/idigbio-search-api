@@ -8,7 +8,7 @@ import hash from "lib/hasher";
 import sfr from "lib/statsFromResponse";
 import {readMock, writeMockWrapper} from "lib/searchMocks";
 
-const statsFromResponse = config.ENV !== "production" && sfr;
+const statsFromResponse = config.ENV === "production" && sfr;
 
 var shim = null;
 
