@@ -548,7 +548,7 @@ const resolveAutoType = memoize(timer('resolveAutoType', async function(shortcod
 }));
 
 const lookupShortcode  = memoize(async function(shortcode) {
-  const rv = await redisclient().get(shortcode);
+  const rv = await redisclient.get(shortcode);
   if(!rv) {
     console.error(`Missing shortcode '${shortcode}'`);
     throw new createError.NotFound();
@@ -765,15 +765,15 @@ const createMap = async function(ctx) {
     threshold: cp.threshold(ctx.request, 5000)
   };
   const queryHash = hasher("sha1", map_def);
-  const rclient = redisclient();
-  let shortcode = await rclient.get(queryHash);
+
+  let shortcode = await redisclient.get(queryHash);
   if(shortcode) {
     logger.debug("Found stored map: %s", shortcode);
   } else {
-    shortcode = hashids.encode(await rclient.incr("queryid"));
+    shortcode = hashids.encode(await redisclient.incr("queryid"));
     await Promise.all([
-      rclient.set(shortcode, JSON.stringify(map_def)),
-      rclient.set(queryHash, shortcode)
+      redisclient.set(shortcode, JSON.stringify(map_def)),
+      redisclient.set(queryHash, shortcode)
     ]);
   }
   ctx.params.shortcode = shortcode;

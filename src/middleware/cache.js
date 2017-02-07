@@ -8,10 +8,9 @@ import redisclient from "redisclient";
 import config from "config";
 
 export default async function cache(ctx, next) {
-  const rclient = redisclient();
   // console.log("CHECK CACHE " + req.originalUrl)
   try {
-    const result = await rclient.hgetall("map_cache_" + ctx.originalUrl);
+    const result = await redisclient.hgetall("map_cache_" + ctx.originalUrl);
     if(result) {
       ctx.type = result.type;
       ctx.status = result.status;
@@ -33,8 +32,8 @@ export default async function cache(ctx, next) {
   to_cache.status = ctx.statusCode;
   to_cache.body = new Buffer(ctx.body).toString("base64");
   to_cache.type = ctx.type;
-  rclient.hmset("map_cache_" + ctx.originalUrl, to_cache);
-  rclient.expire("map_cache_" + ctx.originalUrl, config.cacheTimeout);
+  redisclient.hmset("map_cache_" + ctx.originalUrl, to_cache);
+  redisclient.expire("map_cache_" + ctx.originalUrl, config.cacheTimeout);
 
   // console.log("CACHE " + req.originalUrl)
   // console.log(to_cache.status,to_cache.type);

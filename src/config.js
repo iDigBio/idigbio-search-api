@@ -37,7 +37,7 @@ var config = {
   recordsets: {},
   indexterms: {},
   redis: {
-    hostname: {
+    host: {
       prod: "idb-redis-search-prod.acis.ufl.edu",
       beta: "idb-redis-search-beta.acis.ufl.edu",
     }[env] || "localhost",
