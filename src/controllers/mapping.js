@@ -542,7 +542,7 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
 }
 
 const resolveAutoType = async function(shortcode, map_def) {
-  const key = cache.improveKey(`resolveAutoType:${shortcode}`);
+  const key = `resolveAutoType:${shortcode}`;
   return cache.wrap(key, async function() {
     logger.debug("Figuring out map type for auto map %s", shortcode);
     const query = await makeBasicFilter(map_def);

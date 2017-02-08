@@ -29,7 +29,7 @@ async function _loadAll() {
 
 export async function loadAll() {
   try {
-    recordsets = await cache.wrap(cache.improveKey("recordsets"), _loadAll);
+    recordsets = await cache.wrap("recordsets", _loadAll);
   } catch (e) {
     logger.error("Failed loading recordsets, %s", e);
   }

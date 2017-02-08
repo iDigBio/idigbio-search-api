@@ -12,6 +12,7 @@ const memoryCache = cacheManager.caching({
 });
 
 let cache = null;
+
 if(config.ENV !== 'test') {
   const redisCache = cacheManager.caching(_.defaults({
     store: redisStore,
@@ -20,17 +21,27 @@ if(config.ENV !== 'test') {
     compress: true
   }, config.redis));
   cache = cacheManager.multiCaching([memoryCache, redisCache]);
-}
-else {
+} else {
   cache = memoryCache;
 }
 
 const version = process.env.npm_package_version; /* eslint no-process-env: 0 */
-cache.improveKey = function(k) {
+
+/**
+ * call this with a base key and it will improve it with the current
+ * software version and lastmodified date for better cache busting.
+ */
+function improveKey(k) {
   k += ":" + version;
   const lm = getLastModified();
   if(lm) { k += ":" + lm.getTime(); }
   return k;
-};
+}
 
-export default cache;
+export default {
+  cache,
+  improveKey,
+
+  wrap(k, ...args) { return this.cache.wrap(this.improveKey(k), ...args); },
+
+};
