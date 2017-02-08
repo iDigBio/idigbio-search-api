@@ -370,74 +370,6 @@ async function makeBasicFilter(map_def, termType) {
 }
 
 
-async function mapDef(s, map_url, map_def, stats_info) {
-  const query = await makeBasicFilter(map_def, "records");
-  query["aggs"] = {
-    "rs": {
-      "terms": {
-        "field": "recordset",
-        "size": config.maxRecordsets
-      }
-    },
-    "gh": {
-      "geohash_grid": {
-        "field": "geopoint",
-        "precision": 3,
-        "size": "500", // > (5*precision)^2
-      }
-    },
-    "max_dm": {
-      "max": {
-        "field": "datemodified"
-      }
-    },
-    "max_lat": {
-      "max": {
-        "field": "geopoint.lat"
-      }
-    },
-    "max_lon": {
-      "max": {
-        "field": "geopoint.lon"
-      }
-    },
-    "min_lat": {
-      "min": {
-        "field": "geopoint.lat"
-      }
-    },
-    "min_lon": {
-      "min": {
-        "field": "geopoint.lon"
-      }
-    }
-  };
-  query["size"] = 0;
-  const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
-  const attribution = await formatter.attribution(body.aggregations.rs.buckets);
-  return {
-    shortCode: s,
-    tiles: map_url + "/{z}/{x}/{y}.png",
-    geojson: map_url + "/{z}/{x}/{y}.json",
-    utf8grid: map_url + "/{z}/{x}/{y}.grid.json",
-    points: map_url + "/points",
-    mapDefinition: map_def,
-    itemCount: body.hits.total,
-    boundingBox: {
-        "top_left": {
-          "lat": body.aggregations.min_lat.value,
-          "lon": body.aggregations.max_lon.value,
-        },
-        "bottom_right": {
-          "lat": body.aggregations.max_lat.value,
-          "lon": body.aggregations.min_lon.value
-        }
-    },
-    lastModified: new Date(body.aggregations.max_dm.value),
-    attribution: attribution
-  };
-}
-
 async function makeTileQuery(map_def, z, x, y, response_type) {
   const query = await makeBasicFilter(map_def);
   const unboxed_query = _.cloneDeep(query.query);
@@ -541,30 +473,30 @@ async function makeTileQuery(map_def, z, x, y, response_type) {
   return query;
 }
 
-const resolveAutoType = async function(shortcode, map_def) {
-  const key = `resolveAutoType:${shortcode}`;
+const resolveAutoType = async function(shortCode, map_def) {
+  const key = `resolveAutoType:${shortCode}`;
   return cache.wrap(key, async function() {
-    logger.debug("Figuring out map type for auto map %s", shortcode);
+    logger.debug("Figuring out map type for auto map %s", shortCode);
     const query = await makeBasicFilter(map_def);
     const body = await searchShim(config.search.index, "records", "_count", query);
     return body.count > map_def.threshold ? "geohash" : "points";
   });
 };
 
-const lookupShortcode  = memoize(async function(shortcode) {
-  const rv = await redisclient.get(shortcode);
+const lookupShortCode  = memoize(async function(shortCode) {
+  const rv = await redisclient.get(shortCode);
   if(!rv) {
-    logger.error('Missing shortcode %s', shortcode);
+    logger.error('Missing shortCode %s', shortCode);
     throw new createError.NotFound();
   }
   return JSON.parse(rv);
 });
 
-async function getMapDef(shortcode, opts = {resolveAutoType: true}) {
-  let map_def = await lookupShortcode(shortcode);
+async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
+  let map_def = await lookupShortCode(shortCode);
   if(map_def.type === 'auto' && opts.resolveAutoType) {
     map_def = _.clone(map_def);
-    map_def.type = await resolveAutoType(shortcode, map_def);
+    map_def.type = await resolveAutoType(shortCode, map_def);
   }
   return map_def;
 }
@@ -615,7 +547,7 @@ const mapPoints = async function(ctx) {
       if(nbb[3] > meta_bbox[3]) { meta_bbox[3] = nbb[3]; }
     });
 
-    const map_def = await getMapDef(ctx.params.shortcode);
+    const map_def = await getMapDef(ctx.params.shortCode);
     const query = await makeBasicFilter(map_def);
     query["from"] = offset;
     query["size"] = limit;
@@ -713,26 +645,91 @@ const mapPoints = async function(ctx) {
 };
 
 const getMapStyle = async function(ctx) {
-  const map_def = await getMapDef(ctx.params.shortcode);
+  const map_def = await getMapDef(ctx.params.shortCode);
   var query = await makeTileQuery(map_def, ctx.params.z, 0, 0);
   const body = await searchShim(config.search.index, "records", "_search", query);
   ctx.body = styleJSON(map_def, body);
 };
 
 const getMapTile = async function(ctx) {
-  const map_def = await getMapDef(ctx.params.shortcode);
+  const map_def = await getMapDef(ctx.params.shortCode);
   return makeMapTile(ctx, map_def);
 };
 
 const getMap = async function(ctx) {
-  const shortcode = ctx.params.shortcode;
-  const map_def = await getMapDef(shortcode, {resolveAutoType: false});
-  const map_url = ctx.origin + '/v2/mapping/' + shortcode;
-  ctx.body = await mapDef(shortcode, map_url, map_def, {
+  const shortCode = ctx.params.shortCode;
+  const map_def = await getMapDef(shortCode, {resolveAutoType: false});
+  const map_url = ctx.origin + '/v2/mapping/' + shortCode;
+  const query = await makeBasicFilter(map_def, "records");
+  query["aggs"] = {
+    "rs": {
+      "terms": {
+        "field": "recordset",
+        "size": config.maxRecordsets
+      }
+    },
+    "gh": {
+      "geohash_grid": {
+        "field": "geopoint",
+        "precision": 3,
+        "size": "500", // > (5*precision)^2
+      }
+    },
+    "max_dm": {
+      "max": {
+        "field": "datemodified"
+      }
+    },
+    "max_lat": {
+      "max": {
+        "field": "geopoint.lat"
+      }
+    },
+    "max_lon": {
+      "max": {
+        "field": "geopoint.lon"
+      }
+    },
+    "min_lat": {
+      "min": {
+        "field": "geopoint.lat"
+      }
+    },
+    "min_lon": {
+      "min": {
+        "field": "geopoint.lon"
+      }
+    }
+  };
+  query["size"] = 0;
+  const stats_info = {
     type: "mapping",
     recordtype: "records",
     ip: ctx.ip,
-  });
+  };
+  const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
+  const attribution = await formatter.attribution(body.aggregations.rs.buckets);
+  ctx.body = {
+    shortCode: shortCode,
+    tiles: map_url + "/{z}/{x}/{y}.png",
+    geojson: map_url + "/{z}/{x}/{y}.json",
+    utf8grid: map_url + "/{z}/{x}/{y}.grid.json",
+    points: map_url + "/points",
+    mapDefinition: map_def,
+    itemCount: body.hits.total,
+    boundingBox: {
+      "top_left": {
+        "lat": body.aggregations.min_lat.value,
+        "lon": body.aggregations.max_lon.value,
+      },
+      "bottom_right": {
+        "lat": body.aggregations.max_lat.value,
+        "lon": body.aggregations.min_lon.value
+      }
+    },
+    lastModified: new Date(body.aggregations.max_dm.value),
+    attribution: attribution
+  };
 };
 
 const MAP_TYPES = ['points', 'auto', 'geohash'];
@@ -762,26 +759,24 @@ const getStyleParam = (ctx) => _.defaults(
 
 
 const createMap = async function(ctx) {
-  const rq = cp.query("rq", ctx.request);
   const map_def = {
-    rq: rq,
+    rq: cp.query("rq", ctx.request),
     type: getTypeParam(ctx),
     style: getStyleParam(ctx),
     threshold: cp.threshold(ctx.request, 5000)
   };
   const queryHash = hasher("sha1", map_def);
-
-  let shortcode = await redisclient.get(queryHash);
-  if(shortcode) {
-    logger.debug("Found stored map: %s", shortcode);
+  let shortCode = await redisclient.get(queryHash);
+  if(shortCode) {
+    logger.debug("Found stored map: %s", shortCode);
   } else {
-    shortcode = hashids.encode(await redisclient.incr("queryid"));
+    shortCode = hashids.encode(await redisclient.incr("queryid"));
     await Promise.all([
-      redisclient.set(shortcode, JSON.stringify(map_def)),
-      redisclient.set(queryHash, shortcode)
+      redisclient.set(shortCode, JSON.stringify(map_def)),
+      redisclient.set(queryHash, shortCode)
     ]);
   }
-  ctx.params.shortcode = shortcode;
+  ctx.params.shortCode = shortCode;
   return getMap(ctx);
 };
 
@@ -789,7 +784,7 @@ const createMap = async function(ctx) {
 api.get('/v2/mapping', createMap);
 api.post('/v2/mapping', createMap);
 
-api.get('/v2/mapping/:shortcode', getMap);
-api.get('/v2/mapping/:shortcode/style/:z', getMapStyle);
-api.get('/v2/mapping/:shortcode/points', mapPoints);
-api.get('/v2/mapping/:shortcode/:z/:x/:y.:t', getMapTile);
+api.get('/v2/mapping/:shortCode', getMap);
+api.get('/v2/mapping/:shortCode/style/:z', getMapStyle);
+api.get('/v2/mapping/:shortCode/points', mapPoints);
+api.get('/v2/mapping/:shortCode/:z/:x/:y.:t', getMapTile);
