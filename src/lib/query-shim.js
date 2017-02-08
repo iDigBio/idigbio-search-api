@@ -121,9 +121,9 @@ function objectType(k, shimK) {
     return geoShape(k, shimK);
   } else if(shimK["type"] === "geo_polygon") {
     return geoPolygon(k, shimK);
-  } else {
-    logger.warn("Unknown objectType: %s, %j", k, shimK);
   }
+  logger.warn("Unknown objectType: %s, %j", k, shimK);
+  return null;
 }
 
 export default function queryShim(shim, term_type) {
