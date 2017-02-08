@@ -4,6 +4,7 @@ import redisStore from "cache-manager-redis";
 
 import config from "config";
 import {getLastModified} from "lib/lastModified";
+import hash from "lib/hasher";
 
 const memoryCache = cacheManager.caching({
   store: 'memory',
@@ -13,7 +14,9 @@ const memoryCache = cacheManager.caching({
 
 let cache = null;
 
-if(config.ENV !== 'test') {
+if(config.ENV === 'test') {
+  cache = memoryCache;
+} else {
   const redisCache = cacheManager.caching(_.defaults({
     store: redisStore,
     db: 1,
@@ -21,8 +24,6 @@ if(config.ENV !== 'test') {
     compress: true
   }, config.redis));
   cache = cacheManager.multiCaching([memoryCache, redisCache]);
-} else {
-  cache = memoryCache;
 }
 
 const version = process.env.npm_package_version; /* eslint no-process-env: 0 */
@@ -32,10 +33,18 @@ const version = process.env.npm_package_version; /* eslint no-process-env: 0 */
  * software version and lastmodified date for better cache busting.
  */
 function improveKey(k) {
-  k += ":" + version;
+  if(!_.isArray(k)) {
+    k = [k];
+  }
+  k.push(version);
   const lm = getLastModified();
-  if(lm) { k += ":" + lm.getTime(); }
-  return k;
+  if(lm) { k.push(lm.getTime()); }
+
+  // convert to array of strings, and then join it; this way the key
+  // is still moderately readable in redis
+  return _(k)
+    .map((kp) => (_.isString(kp) ? kp : hash(kp)))
+    .join("-");
 }
 
 export default {
