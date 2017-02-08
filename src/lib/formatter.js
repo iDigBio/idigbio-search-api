@@ -24,16 +24,7 @@ export async function basic(body, extra) {
     throw new Error("Bad Request");
   }
 
-  var lm_date = new Date(body.aggregations.max_dm.value);
-
-  var rb = {
-    "itemCount": body.hits.total,
-    "lastModified": lm_date,
-    "items": [],
-    "attribution": []
-  };
-
-  body.hits.hits.forEach(function(hit) {
+  const items  = _.map(body.hits.hits, function(hit) {
     var indexterms = _.cloneDeep(hit._source);
     if(indexterms["data"]) {
       delete indexterms["data"];
@@ -42,8 +33,7 @@ export async function basic(body, extra) {
     if(!hit._source.data) {
       hit._source.data = {};
     }
-
-    rb.items.push({
+    return {
       "uuid": hit._id,
       "type": hit._type,
       "etag": hit._source.etag,
@@ -51,15 +41,15 @@ export async function basic(body, extra) {
       "data": hit._source.data,
       "recordIds": hit._source.recordIds,
       "indexTerms": indexterms,
-    });
+    };
   });
-
-  const results = await attribution(body.aggregations.rs.buckets);
-  rb.attribution = results;
-  if(extra) {
-    _.merge(rb, extra);
-  }
-  return rb;
+  const rb = {
+    "itemCount": body.hits.total,
+    "lastModified": new Date(body.aggregations.max_dm.value),
+    "items": items,
+    "attribution": await attribution(body.aggregations.rs.buckets)
+  };
+  return _.merge(rb, extra);
 }
 
 
@@ -68,15 +58,10 @@ export async function basicNoAttr(body, extra) {
     throw new Error("Bad Request");
   }
 
-  var rb = {
-    "itemCount": body.hits.total,
-    "items": []
-  };
-
-  body.hits.hits.forEach(function(hit) {
+  const items = _.map(body.hits.hits, function(hit) {
     var indexterms = _.cloneDeep(hit._source);
     delete indexterms["data"];
-    rb.items.push({
+    return {
       "uuid": hit._id,
       "type": hit._type,
       "etag": hit._source.etag,
@@ -84,15 +69,17 @@ export async function basicNoAttr(body, extra) {
       "data": hit._source.data,
       "recordIds": hit._source.recordIds,
       "indexTerms": indexterms,
-    });
+    };
   });
-  return rb;
+  return {
+    "itemCount": body.hits.total,
+    "items": items
+  };
 }
 
 
 export function top_aggs(b) {
-  var bv = {};
-
+  const bv = {};
   if(b.doc_count) {
     bv["itemCount"] = b.doc_count;
   }
@@ -110,19 +97,20 @@ export function top_aggs(b) {
 }
 
 export async function top_formatter(body) {
-  var rb = top_aggs(body.aggregations);
+  const rb = top_aggs(body.aggregations);
   rb["itemCount"] = body.hits.total;
   return rb;
 }
 
 export async function date_hist_formatter(body) {
-  var rb = { "dates": {} };
+  const rb = {
+    "dates": {},
+    "itemCount": body.hits.total,
+    "rangeCount": body.aggregations.fdh.doc_count
+  };
   body.aggregations.fdh.dh.buckets.forEach(function(b) {
     rb.dates[b.key_as_string] = top_aggs(b);
   });
-
-  rb["itemCount"] = body.hits.total;
-  rb["rangeCount"] = body.aggregations.fdh.doc_count;
   return rb;
 }
 

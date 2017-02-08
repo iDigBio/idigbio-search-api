@@ -31,7 +31,6 @@ export function bare_query(q, fields, sort, limit, offset, fields_exclude, term_
       "exclude": fields_exclude
     };
   }
-
   return query;
 }
 
