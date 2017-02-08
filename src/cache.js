@@ -43,8 +43,8 @@ function improveKey(k) {
   // convert to array of strings, and then join it; this way the key
   // is still moderately readable in redis
   return _(k)
-    .map((kp) => (_.isString(kp) ? kp : hash(kp)))
-    .join("-");
+    .map((kp) => (_.isString(kp) ? kp : hash('md5', kp)))
+    .join(":");
 }
 
 export default {
@@ -53,4 +53,10 @@ export default {
 
   wrap(k, ...args) { return this.cache.wrap(this.improveKey(k), ...args); },
 
+  memoize(k, fn) {
+    const wrap = this.wrap.bind(this);
+    return function(...args) {
+      return wrap([k, ...args], () => fn(...args));
+    };
+  }
 };

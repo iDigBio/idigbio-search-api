@@ -501,32 +501,33 @@ async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
   return map_def;
 }
 
+const makeMapTile = cache.memoize("makeMapTile", async function(map_def, zoom, x, y, response_type) {
+  const query = makeTileQuery(map_def, zoom, x, y, response_type);
+  const body = await searchShim(config.search.index, "records", "_search", query);
 
-async function makeMapTile(ctx, map_def, count) {
+  if(response_type === "json") {
+    return await (map_def.type === "geohash" ? geoJsonGeohash(body) : geoJsonPoints(body));
+  } else {
+    const tileFn = map_def.type === "geohash" ? tileGeohash : tilePoints;
+    return await tileFn(zoom, x, y, map_def, body, response_type);
+  }
+});
+
+
+const getMapTile = async function(ctx) {
+  const map_def = await getMapDef(ctx.params.shortCode);
   const x = parseInt(ctx.params.x, 10),
         y = parseInt(ctx.params.y, 10),
         z = parseInt(ctx.params.z, 10);
-
   var response_type = ctx.params.t;
+  if(response_type  !== "json") {
+    ctx.type = 'image/png';
+  }
   if(ctx.params.y.slice(-5) === ".grid") {
     response_type = "grid." + response_type;
   }
-
-  const query = makeTileQuery(map_def, z, x, y, response_type);
-  const body = await searchShim(config.search.index, "records", "_search", query);
-
-
-  if(response_type === "json") {
-    ctx.body = await (map_def.type === "geohash" ? geoJsonGeohash(body) : geoJsonPoints(body));
-  } else {
-    const tileFn = map_def.type === "geohash" ? tileGeohash : tilePoints;
-    ctx.body = await tileFn(z, x, y, map_def, body, response_type);
-    if(response_type !== "grid.json") {
-      ctx.type = 'image/png';
-    }
-  }
-}
-
+  ctx.body = await makeMapTile(map_def, z, x, y, response_type);
+};
 
 const mapPoints = async function(ctx) {
   try {
@@ -646,15 +647,11 @@ const mapPoints = async function(ctx) {
 
 const getMapStyle = async function(ctx) {
   const map_def = await getMapDef(ctx.params.shortCode);
-  var query = makeTileQuery(map_def, ctx.params.z, 0, 0);
+  const query = makeTileQuery(map_def, ctx.params.z, 0, 0);
   const body = await searchShim(config.search.index, "records", "_search", query);
   ctx.body = styleJSON(map_def, body);
 };
 
-const getMapTile = async function(ctx) {
-  const map_def = await getMapDef(ctx.params.shortCode);
-  return makeMapTile(ctx, map_def);
-};
 
 const getMap = async function(ctx) {
   const shortCode = ctx.params.shortCode;
