@@ -359,8 +359,8 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   }
 }
 
-async function makeBasicFilter(map_def, termType) {
-  var query = await queryShim(map_def.rq, termType);
+function makeBasicFilter(map_def, termType) {
+  var query = queryShim(map_def.rq, termType);
   _.update(query, "query.filtered.filter.and", function(v) {
     if(_.isUndefined(v)) { v = []; }
     v.push({ "exists": {"field": "geopoint"}});
@@ -370,8 +370,8 @@ async function makeBasicFilter(map_def, termType) {
 }
 
 
-async function makeTileQuery(map_def, z, x, y, response_type) {
-  const query = await makeBasicFilter(map_def);
+function makeTileQuery(map_def, z, x, y, response_type) {
+  const query = makeBasicFilter(map_def);
   const unboxed_query = _.cloneDeep(query.query);
   const gl = tileMath.zoom_to_geohash_len(z, false);
   const g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
@@ -477,7 +477,7 @@ const resolveAutoType = async function(shortCode, map_def) {
   const key = `resolveAutoType:${shortCode}`;
   return cache.wrap(key, async function() {
     logger.debug("Figuring out map type for auto map %s", shortCode);
-    const query = await makeBasicFilter(map_def);
+    const query = makeBasicFilter(map_def);
     const body = await searchShim(config.search.index, "records", "_count", query);
     return body.count > map_def.threshold ? "geohash" : "points";
   });
@@ -512,7 +512,7 @@ async function makeMapTile(ctx, map_def, count) {
     response_type = "grid." + response_type;
   }
 
-  const query = await makeTileQuery(map_def, z, x, y, response_type);
+  const query = makeTileQuery(map_def, z, x, y, response_type);
   const body = await searchShim(config.search.index, "records", "_search", query);
 
 
@@ -548,7 +548,7 @@ const mapPoints = async function(ctx) {
     });
 
     const map_def = await getMapDef(ctx.params.shortCode);
-    const query = await makeBasicFilter(map_def);
+    const query = makeBasicFilter(map_def);
     query["from"] = offset;
     query["size"] = limit;
     query["sort"] = sort;
@@ -646,7 +646,7 @@ const mapPoints = async function(ctx) {
 
 const getMapStyle = async function(ctx) {
   const map_def = await getMapDef(ctx.params.shortCode);
-  var query = await makeTileQuery(map_def, ctx.params.z, 0, 0);
+  var query = makeTileQuery(map_def, ctx.params.z, 0, 0);
   const body = await searchShim(config.search.index, "records", "_search", query);
   ctx.body = styleJSON(map_def, body);
 };
@@ -660,7 +660,7 @@ const getMap = async function(ctx) {
   const shortCode = ctx.params.shortCode;
   const map_def = await getMapDef(shortCode, {resolveAutoType: false});
   const map_url = ctx.origin + '/v2/mapping/' + shortCode;
-  const query = await makeBasicFilter(map_def, "records");
+  const query = makeBasicFilter(map_def, "records");
   query["aggs"] = {
     "rs": {
       "terms": {
