@@ -1,11 +1,12 @@
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
+jest.mock("redisclient");
+
 import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();
 import request from 'supertest';
 
 import config from "config";
 import app from "app";
-
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 describe('Search Deprecated Endpoints', function() {
   let server = null;

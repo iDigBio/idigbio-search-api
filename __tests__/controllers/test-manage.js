@@ -1,3 +1,6 @@
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
+jest.mock("redisclient");
+
 import _ from "lodash";
 import request from 'supertest';
 

@@ -1,3 +1,6 @@
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
+jest.mock("redisclient");
+
 import _ from 'lodash';
 
 import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
@@ -16,7 +19,7 @@ const test404 = "00000000-0000-0000-0000-000000000000";
 describe('View', function() {
   let server = null;
   beforeAll(async function() {
-    app.ready;
+    await app.ready;
     server = app.listen();
   });
   afterAll(() => server.close());

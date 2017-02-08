@@ -1,3 +1,5 @@
+jest.mock("redisclient");
+
 import _ from "lodash";
 
 import {TermNotFoundError, InvalidTypeError} from "lib/exceptions";

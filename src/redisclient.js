@@ -3,7 +3,9 @@ import _ from "lodash";
 
 import config from "config";
 import logger from "logging";
-
+import redis from "redis";
+import redisPool from "sol-redis-pool";
+import {list as redisCmds} from "redis-commands";
 
 const rconf = _.pick(config.redis, ['host', 'port', 'db']),
       poolSettings = {
@@ -11,22 +13,10 @@ const rconf = _.pick(config.redis, ['host', 'port', 'db']),
         min: 2
       };
 
-let redis = null, pool = null;
-if(true || config.ENV === 'test') {
-  redis = require('redis-mock');
-  let rc = redis.createClient();
-  pool = { acquire(cb) { return cb(null, rc); },
-           release() { } };
-} else {
-  redis = require('redis');
-  const redisPool = require("sol-redis-pool");
-  pool = redisPool(rconf, poolSettings);
-}
+const pool = redisPool(rconf, poolSettings);
 
-import {list as redisCmds} from "redis-commands";
 
 const clproto = redis.RedisClient.prototype;
-
 
 /**
  * A factory for redis methods that will:
