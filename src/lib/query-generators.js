@@ -5,12 +5,8 @@ import _ from "lodash";
 
 import config from "config";
 import queryShim from "lib/query-shim.js";
-import getDictPath from "lib/getDictPath";
 
-
-function hasTerms(path, d) {
-  return !_.isEmpty(getDictPath(d, path));
-}
+const hasTerms = (d, path) => !_.isEmpty(_.get(d, path));
 
 export function bare_query(q, fields, sort, limit, offset, fields_exclude, term_type) {
   var query = queryShim(q, term_type);
@@ -40,7 +36,7 @@ export function media_query(rq, mq, fields, sort, limit, offset, fields_exclude)
 
   var recordQuery = null;
 
-  if(hasTerms(["query", "filtered", "filter"], rquery) || hasTerms(["query", "filtered", "query"], rquery)) {
+  if(hasTerms(rquery, "query.filtered.filter") || hasTerms(rquery, "query.filtered.query")) {
     recordQuery = {
       "has_parent": {
         "parent_type": "records",
@@ -50,7 +46,7 @@ export function media_query(rq, mq, fields, sort, limit, offset, fields_exclude)
   }
 
   if(recordQuery) {
-    if(hasTerms(["query", "filtered", "query"], query)) {
+    if(hasTerms(query, "query.filtered.query")) {
       query["query"]["filtered"]["query"] = {
         "bool": {
           "must": [
@@ -65,7 +61,7 @@ export function media_query(rq, mq, fields, sort, limit, offset, fields_exclude)
   }
 
 
-  if(!hasTerms(["query", "filtered", "query"], query)) {
+  if(!hasTerms(query, "query.filtered.query")) {
     delete query["query"]["filtered"]["query"];
   }
 

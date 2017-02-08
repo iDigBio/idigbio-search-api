@@ -2,7 +2,7 @@ import _ from "lodash";
 
 import config from "config";
 import searchShim from "searchShim";
-import getDictPath from "lib/getDictPath";
+
 import {InvalidTypeError, TermNotFoundError} from "lib/exceptions";
 export const indexterms = {};
 
@@ -63,13 +63,13 @@ export async function loadIndexTerms(type) {
 }
 
 
-export function checkTerms(type, termList, only_missing) {
+export function checkTerms(type, termList) {
   const root = getMappingForType(type);
 
-  const missingTerms = _.filter(termList, function(term) {
-    if(term.indexOf("*") !== -1) { return false; }
-    return _.isEmpty(getDictPath(root, term.split('.')));
-  });
+  const missingTerms = _(termList)
+        .filter((t) => !_.includes(t, "*"))
+        .filter((t) => _.isEmpty(_.get(root, t)))
+        .value();
   if(missingTerms.length) {
     throw new TermNotFoundError(`Terms not found in index for type ${type}`, missingTerms);
   }
