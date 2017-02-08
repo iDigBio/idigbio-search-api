@@ -1,25 +1,27 @@
 import bluebird from "bluebird";
 import _ from "lodash";
-import redisPool from "sol-redis-pool";
 
 import config from "config";
 import logger from "logging";
 
-let redis = null;
-
-if(config.ENV === 'test') {
-  redis = require('redis-mock');
-} else {
-  redis = require('redis');
-}
 
 const rconf = _.pick(config.redis, ['host', 'port', 'db']),
       poolSettings = {
         max: 10,
         min: 2
       };
-const pool = redisPool(rconf, poolSettings);
 
+let redis = null, pool = null;
+if(true || config.ENV === 'test') {
+  redis = require('redis-mock');
+  let rc = redis.createClient();
+  pool = { acquire(cb) { return cb(null, rc); },
+           release() { } };
+} else {
+  redis = require('redis');
+  const redisPool = require("sol-redis-pool");
+  pool = redisPool(rconf, poolSettings);
+}
 
 import {list as redisCmds} from "redis-commands";
 
