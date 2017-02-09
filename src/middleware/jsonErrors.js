@@ -1,5 +1,6 @@
 import _ from "lodash";
 import config from "config";
+import logger from "logging";
 
 /**
  * This is a middleware that will ensure that all errors and 404s end
@@ -16,6 +17,7 @@ export default function(opts) {
         ctx.throw(404);
       }
     } catch (err) {
+      if(ctx.status !== 404) { logger.error("Request error(%d): %j", ctx.status, err); }
       // No cache errors
       ctx.remove('Last-Modified');
       // will only respond with JSON
