@@ -35,7 +35,6 @@ import searchShim from "searchShim.js";
 import {ParameterParseError} from "lib/exceptions";
 import mercator from "lib/sphericalmercator";
 import hasher from "lib/hasher";
-import timer from "lib/timer";
 import queryShim from "lib/query-shim.js";
 import * as tileMath from "lib/tile-math.js";
 import getParam from "lib/get-param.js";
