@@ -127,7 +127,7 @@ function styleJSONGeohash(map_def, body) {
   }
 
   const dom = [1, max_bucket_value];
-  const kls = chroma.limits(dom, 'l', 10);
+  const kls = chroma.limits(dom, 'l', 10);  // l is undocumented for `log`
   const scale = chroma.scale(map_def.style.scale).mode('lab').domain(dom).classes(kls);
   const clrs = scale.colors();
 
