@@ -730,12 +730,6 @@ const getMap = async function(ctx) {
 };
 
 const MAP_TYPES = ['points', 'auto', 'geohash'];
-const DEFAULT_STYLE = {
-    scale: 'YlOrRd',
-    pointScale: 'Paired',
-    styleOn: "scientificname"
-};
-
 const getTypeParam = (ctx) => getParam(ctx.request, "type", function(type) {
   if(!_.includes(MAP_TYPES, type)) {
     ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
@@ -743,12 +737,17 @@ const getTypeParam = (ctx) => getParam(ctx.request, "type", function(type) {
   return type;
 }, "geohash");
 
+const DEFAULT_STYLE = {
+    scale: 'YlOrRd',
+    pointScale: 'Paired',
+    styleOn: "scientificname"
+};
 const getStyleParam = (ctx) => _.defaults(
   getParam(ctx.request, "style", function(p) {
     try {
-      return JSON.parse(p);
+      return _.isString(p) ? JSON.parse(p) : p;
     } catch (e) {
-      throw new ParameterParseError("Invalid json", "style");
+      throw new ParameterParseError("Invalid style", "style");
     }
   }),
   DEFAULT_STYLE

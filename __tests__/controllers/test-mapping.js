@@ -35,15 +35,15 @@ describe('Mapping', function() {
 
     });
     it('should return the same urls if called twice', async function() {
-      var q = {"scientificname": "puma concolor"};
+      var rq = {"scientificname": "puma concolor"};
       const response1 = await request(server)
             .get("/v2/mapping/")
-            .query({rq: JSON.stringify(q)})
+            .query({rq: JSON.stringify(rq)})
             .expect(200);
 
       const response2 = await request(server)
-            .get("/v2/mapping/")
-            .query({rq: JSON.stringify(q)})
+            .post("/v2/mapping/")
+            .send({rq})
             .expect(200);
       expect(response1.body.shortCode).to.equal(response2.body.shortCode);
 
@@ -407,6 +407,27 @@ describe('Mapping', function() {
       response.body.should.have.property("colors");
       response.body.should.have.property("default");
       response.body.should.have.property("order");
+    });
+
+    it("should work whether the style param is json encoded or not", async function() {
+      const rq = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
+      const style = {"fill": "#f33", "stroke": "rgb(229,245,249,.8)"};
+      await request(server)
+            .post("/v2/mapping/")
+            .send({"type": "auto",
+                   "threshold": 100000,
+                   "rq": rq,
+                   "style": style})
+            .expect('Content-Type', /json/)
+            .expect(200);
+      await request(server)
+            .post("/v2/mapping/")
+            .send({"type": "auto",
+                   "threshold": 100000,
+                   "rq": JSON.stringify(rq),
+                   "style": JSON.stringify(style)})
+            .expect('Content-Type', /json/)
+            .expect(200);
     });
 
 

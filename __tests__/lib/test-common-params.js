@@ -115,7 +115,6 @@ describe("common parameters", function() {
       const req = makeMockReq({rq: JSON.stringify({"genus": "acer"})});
       expect(cp.query('rq', req)).toEqual({"genus": "acer"});
     });
-
   });
 
 
