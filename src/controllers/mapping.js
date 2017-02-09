@@ -494,6 +494,7 @@ const lookupShortCode  = memoize(async function(shortCode) {
 
 async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
   let map_def = await lookupShortCode(shortCode);
+  map_def.style = _.defaults(map_def.style, config.defaultStyle);
   if(map_def.type === 'auto' && opts.resolveAutoType) {
     map_def = _.clone(map_def);
     map_def.type = await resolveAutoType(shortCode, map_def);
