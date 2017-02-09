@@ -90,8 +90,7 @@ module.exports = {
     "max-params": "error",
     "max-statements": "warn",
     "max-statements-per-line": ["error", {"max": 2}],
-    //If it doesn't fit on one line easily, don't use a ternary
-    "multiline-ternary":  ["error", "never"],
+    "multiline-ternary":  "off",
     "new-cap": "error",
     "new-parens": "error",
     "newline-after-var": "off",
