@@ -502,7 +502,7 @@ async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
   return map_def;
 }
 
-const makeMapTile = cache.memoize("makeMapTile", async function(map_def, zoom, x, y, response_type) {
+const makeMapTile = async function(map_def, zoom, x, y, response_type) {
   const query = makeTileQuery(map_def, zoom, x, y, response_type);
   const body = await searchShim(config.search.index, "records", "_search", query);
 
@@ -512,7 +512,7 @@ const makeMapTile = cache.memoize("makeMapTile", async function(map_def, zoom, x
     const tileFn = map_def.type === "geohash" ? tileGeohash : tilePoints;
     return await tileFn(zoom, x, y, map_def, body, response_type);
   }
-});
+};
 
 
 const getMapTile = async function(ctx) {
@@ -527,6 +527,7 @@ const getMapTile = async function(ctx) {
   if(ctx.params.y.slice(-5) === ".grid") {
     response_type = "grid." + response_type;
   }
+  ctx.cacheControl(3600);
   ctx.body = await makeMapTile(map_def, z, x, y, response_type);
 };
 
