@@ -44,8 +44,15 @@ var config = {
     port: 6379
   },
   maxTileObjects: 10000,
+  defaultStyle: {
+    scale: 'YlOrRd',
+    pointScale: 'Dark2',
+    styleOn: 'scientificname',
+    styleBuckets: 5
+  },
+
   cacheTimeout: 14 * 24 * 60 * 60
 };
-// Cache Timeout of 14 days
+
 
 module.exports = config;

@@ -163,14 +163,15 @@ function styleJSONGeohash(map_def, body) {
 }
 
 function styleJSONPoints(map_def, body) {
-  let default_color = "black";
-  const colorCount = body.aggregations.gstyle.f.style.buckets.length + 1;
-  if(_.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1) {
-    default_color = map_def.style.pointScale[0];
-  }
+  const default_color =
+        _.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1
+        ? map_def.style.pointScale[0]
+        : "black";
+  const styleBuckets = body.aggregations.gstyle.f.style.buckets;
+  const colorCount = styleBuckets.length + 1;
   const colors = {};
   const scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
-  const order = _.map(body.aggregations.gstyle.f.style.buckets, function(b, i) {
+  const order = _.map(styleBuckets, function(b, i) {
     let fl = scale.mode('lab')(i);
     if(fl) {
       colors[b.key] = {
@@ -450,7 +451,7 @@ function makeTileQuery(map_def, z, x, y, response_type) {
               "style": {
                 "terms": {
                   "field": map_def.style.styleOn,
-                  "size": 10
+                  "size": map_def.style.styleBuckets
                 }
               }
             }
@@ -736,11 +737,6 @@ const getTypeParam = (ctx) => getParam(ctx.request, "type", function(type) {
   return type;
 }, "geohash");
 
-const DEFAULT_STYLE = {
-    scale: 'YlOrRd',
-    pointScale: 'Paired',
-    styleOn: "scientificname"
-};
 const getStyleParam = (ctx) => _.defaults(
   getParam(ctx.request, "style", function(p) {
     try {
@@ -749,9 +745,8 @@ const getStyleParam = (ctx) => _.defaults(
       throw new ParameterParseError("Invalid style", "style");
     }
   }),
-  DEFAULT_STYLE
+  config.defaultStyle
 );
-
 
 const createMap = async function(ctx) {
   const map_def = {
