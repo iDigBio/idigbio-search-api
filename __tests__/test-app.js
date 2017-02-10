@@ -1,3 +1,4 @@
+jest.mock('redisclient');
 
 describe('app', function() {
   it("should be importable", function() {
