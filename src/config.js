@@ -48,7 +48,7 @@ var config = {
     scale: 'YlOrRd',
     pointScale: 'Dark2',
     styleOn: 'scientificname',
-    styleBuckets: 5
+    styleBuckets: 6
   },
 
   cacheTimeout: 14 * 24 * 60 * 60

@@ -163,38 +163,29 @@ function styleJSONGeohash(map_def, body) {
 }
 
 function styleJSONPoints(map_def, body) {
-  const default_color =
-        _.isArray(map_def.style.pointScale) && map_def.style.pointScale.length === 1
-        ? map_def.style.pointScale[0]
-        : "black";
-  const styleBuckets = body.aggregations.gstyle.f.style.buckets;
-  const colorCount = styleBuckets.length + 1;
+  const styleBuckets = body.aggregations.gstyle.f.style.buckets,
+        style = map_def.style,
+        alpha = style.alpha || 1.0,
+        pointScale = style.pointScale,
+        stroke = chroma(style.stroke || "black").alpha(alpha).css(),
+        palette = _.isArray(pointScale) ? pointScale : chroma.brewer[pointScale];
+  let fill = style.fill ? chroma(style.fill).alpha(alpha).css() : null;
+  if(!palette && !fill) {
+    throw new Error("Unknown pointScale definition: " + pointScale);
+  }
   const colors = {};
-  const scale = chroma.scale(map_def.style.pointScale).domain([0, colorCount], colorCount);
   const order = _.map(styleBuckets, function(b, i) {
-    let fl = scale.mode('lab')(i);
-    if(fl) {
-      colors[b.key] = {
-        "fill": fl.alpha(0.7).css(),
-        "stroke": chroma("black").alpha(0.7).css(),
-        "itemCount": b["doc_count"]
-      };
-    } else {
-      fl = chroma(default_color);
-      colors[b.key] = {
-        "fill": fl.alpha(0.7).css(),
-        "stroke": chroma("black").alpha(0.7).css()
-      };
-    }
+    colors[b.key] = {
+      "fill": fill || chroma(palette[_.clamp(i, 0, palette.length - 1)]).alpha(alpha).css(),
+      "stroke": stroke,
+      "itemCount": b["doc_count"]
+    };
     return b.key;
   });
-  const fl = scale.mode('lab')(colorCount) || chroma(default_color);
+  fill = fill || chroma(_.last(palette)).alpha(alpha).css();
   return {
     "colors": colors,
-    "default": {
-      "fill": fl.alpha(0.7).css(),
-      "stroke": chroma("black").alpha(0.7).css()
-    },
+    "default": { fill, stroke },
     "order": order,
     "itemCount": body.hits.total
   };
@@ -293,21 +284,19 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
 async function tilePoints(zoom, x, y, map_def, body, render_type) {
   let map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
   const sj = styleJSON(map_def, body);
+  const styleOn = map_def.style.styleOn;
   var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
   s += '  <Style name="style" filter-mode="first">\n';
 
   s += _(sj.order)
     .map((key) => styleOnRule({
-      field: map_def.style.styleOn,
+      field: styleOn,
       key: key,
       fill: sj["colors"][key]["fill"],
       stroke: sj["colors"][key]["stroke"],
     }))
     .join("");
-  s += pointElseRule({
-    fill: sj["default"]["fill"],
-    stroke: sj["default"]["stroke"],
-  });
+  s += pointElseRule(sj["default"]);
   s += '  </Style>\n';
   s += '</Map>';
 
@@ -337,7 +326,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
         'lon': hit._source.geopoint.lon
       }
     };
-    f["properties"][map_def.style.styleOn] = hit._source[map_def.style.styleOn] || "";
+    f["properties"][styleOn] = hit._source[styleOn] || "";
     mem_ds.add(f);
   });
 
@@ -349,7 +338,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   map.extent = bbox;
   if(render_type === "grid.json") {
     const grid = new mapnik.Grid(map.width, map.height, {key: "id"});
-    const options = {layer: 0, "fields": [map_def.style.styleOn, "lat", "lon"]};
+    const options = {layer: 0, "fields": [styleOn, "lat", "lon"]};
     const grid2 = await fromCallback((cb) => map.render(grid, options, cb));
     return await fromCallback((cb) => grid2.encode({"format": "utf"}, cb));
   } else {

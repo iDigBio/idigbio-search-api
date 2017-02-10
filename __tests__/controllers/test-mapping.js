@@ -8,7 +8,6 @@ import request from 'supertest';
 
 import app from "app";
 
-
 describe('Mapping', function() {
   let server = null;
   beforeAll(async function() {
@@ -46,7 +45,6 @@ describe('Mapping', function() {
             .send({rq})
             .expect(200);
       expect(response1.body.shortCode).to.equal(response2.body.shortCode);
-
     });
     it('should return the different urls if called twice with different queries', async function() {
       var q = {"scientificname": "puma concolor"};
@@ -65,8 +63,8 @@ describe('Mapping', function() {
     it('should return the different urls if called twice with different styles', async function() {
       var q = {"scientificname": "puma concolor"};
       var nonDefaultStyle = {
-        fill: 'rgba(255,0,0,.4)',
-        stroke: 'rgba(255,0,0,.6)'
+        fill: '#FED',
+        stroke: '#123'
       };
       const response1 = await request(server)
             .get("/v2/mapping/")
@@ -133,9 +131,9 @@ describe('Mapping', function() {
     });
     it('should 404 on an invalid shortcode', async function() {
       return request(server)
-            .get("/v2/mapping/invalid/")
-            .expect('Content-Type', /json/)
-            .expect(404);
+        .get("/v2/mapping/invalid/")
+        .expect('Content-Type', /json/)
+        .expect(404);
     });
   });
 
@@ -180,10 +178,10 @@ describe('Mapping', function() {
     });
 
     it('should return an png image for point maps', async function() {
-      var q = {"scientificname": "puma concolor"};
+      const rq = {"scientificname": "puma concolor"};
       const response1 = await request(server)
             .get("/v2/mapping/")
-            .query({rq: JSON.stringify(q), type: "points"})
+            .query({rq: JSON.stringify(rq), type: "points"})
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -197,10 +195,10 @@ describe('Mapping', function() {
     });
 
     it('should return an png image for auto maps', async function() {
-      var q = {"scientificname": "puma concolor"};
+      var rq = {"scientificname": "puma concolor"};
       const response1 = await request(server)
             .get("/v2/mapping/")
-            .query({rq: JSON.stringify(q), type: "auto"})
+            .query({rq: JSON.stringify(rq), type: "auto"})
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
@@ -242,9 +240,9 @@ describe('Mapping', function() {
       const shortCode = response1.body.shortCode;
       expect(shortCode).to.be.a("string");
       const response = await request(server)
-        .get("/v2/mapping/" + shortCode + "/1/0/0.json")
-        .expect('Content-Type', /json/)
-        .expect(200);
+            .get("/v2/mapping/" + shortCode + "/1/0/0.json")
+            .expect('Content-Type', /json/)
+            .expect(200);
 
       response.body.itemCount.should.not.equal(0);
       response.body.type.should.equal("FeatureCollection");
@@ -391,64 +389,65 @@ describe('Mapping', function() {
   // corectness assements. Testing the PNGs for corectness is hard.
   describe('complex styles', function() {
     it("should report the style it is using", async function() {
-      const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
-      const response1 = await request(server)
-            .get("/v2/mapping/")
-            .query({type: 'geohash',
-                    rq: JSON.stringify(q)})
-            .expect('Content-Type', /json/)
-            .expect(200);
-      const shortCode = response1.body.shortCode;
+      const rq = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
+      const createBody = (await request(server)
+                          .get("/v2/mapping/")
+                          .query({rq: JSON.stringify(rq), type: "geohash"})
+                          .expect('Content-Type', /json/)
+                          .expect(200)).body;
+      const shortCode = createBody.shortCode;
       expect(shortCode).to.be.a("string");
-      const response = await request(server)
-            .get("/v2/mapping/" + shortCode + "/style/1")
-            .expect('Content-Type', /json/)
-            .expect(200);
-      response.body.should.have.property("colors");
-      response.body.should.have.property("default");
-      response.body.should.have.property("order");
+      expect(createBody.mapDefinition.style).to.contain.keys('pointScale', 'styleOn', 'scale');
+      const stylebody = (await request(server)
+                         .get("/v2/mapping/" + shortCode + "/style/1")
+                         .expect('Content-Type', /json/)
+                         .expect(200)).body;
+      expect(stylebody).to.contain.keys('colors', 'default', 'order');
     });
 
     it("should work whether the style param is json encoded or not", async function() {
       const rq = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
-      const style = {"fill": "#f33", "stroke": "rgb(229,245,249,.8)"};
-      await request(server)
-            .post("/v2/mapping/")
-            .send({"type": "auto",
-                   "threshold": 100000,
-                   "rq": rq,
-                   "style": style})
-            .expect('Content-Type', /json/)
-            .expect(200);
-      await request(server)
-            .post("/v2/mapping/")
-            .send({"type": "auto",
-                   "threshold": 100000,
-                   "rq": JSON.stringify(rq),
-                   "style": JSON.stringify(style)})
-            .expect('Content-Type', /json/)
-            .expect(200);
+      const style = {"fill": "#f33", "stroke": "#FED"};
+      const r1b = (await request(server)
+                   .post("/v2/mapping/")
+                   .send({"type": "auto",
+                          "threshold": 100000,
+                          "rq": rq,
+                          "style": style})
+                   .expect('Content-Type', /json/)
+                   .expect(200)).body;
+      expect(r1b.mapDefinition.style).to.have.property('fill', '#f33');
+
+      const r2b = (await request(server)
+                   .post("/v2/mapping/")
+                   .send({"type": "auto",
+                          "threshold": 100000,
+                          "rq": JSON.stringify(rq),
+                          "style": JSON.stringify(style)})
+                   .expect('Content-Type', /json/)
+                   .expect(200)).body;
+      expect(r2b.mapDefinition.style).to.have.property('fill', '#f33');
+      expect(r1b.shortCode).to.equal(r2b.shortCode);
     });
 
 
     it('should support complex styles for geohash doc counts', async function() {
-      const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
-      const geohash_style = {"fill": "rgba(255,0,0,.4)",
-                           "stroke": "rgba(255,0,0,.6)",
-                           "doc_count": [
-                             {"fill": "rgba(255,0,0,.4)", "stroke": "rgba(255,0,0,.6)"},
-                             {"fill": "rgba(0,255,0,.4)", "stroke": "rgba(0,255,0,.6)"},
-                             {"fill": "rgba(0,0,255,.4)", "stroke": "rgba(0,0,255,.6)"}
-                           ]};
-      const response1 = await request(server)
-            .get("/v2/mapping/")
-            .query({type: 'geohash',
-                    rq: JSON.stringify(q),
-                    style: JSON.stringify(geohash_style)})
-            .expect('Content-Type', /json/)
-            .expect(200);
-      const shortCode = response1.body.shortCode;
+      const rq = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]},
+            type = "geohash",
+            style = {"fill": "#F00",
+                     "stroke": "#F00",
+                     "alpha": 0.4};
+      const createBody = (await request(server)
+                          .post("/v2/mapping/")
+                          .send({type, rq, style})
+                          .expect('Content-Type', /json/)
+                          .expect(200)).body;
+      const shortCode = createBody.shortCode;
       expect(shortCode).to.be.a("string");
+      expect(createBody).to.have.deep.property('mapDefinition.style.fill', "#F00");
+      expect(createBody).to.have.deep.property('mapDefinition.style.stroke', "#F00");
+      expect(createBody).to.have.deep.property('mapDefinition.style.alpha', 0.4);
+
       const response = await request(server)
             .get("/v2/mapping/" + shortCode + "/1/0/0.png")
             .expect('Content-Type', /png/)
@@ -458,14 +457,9 @@ describe('Mapping', function() {
     });
     it("should styleon sd.value", async function() {
       const q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
-      const geohash_style = {"fill": "rgba(255,0,0,.4)",
-                           "stroke": "rgba(255,0,0,.6)",
-                           "styleOn": "sd.value",
-                           "doc_count": [
-                             {"fill": "rgba(255,0,0,.4)", "stroke": "rgba(255,0,0,.6)"},
-                             {"fill": "rgba(0,255,0,.4)", "stroke": "rgba(0,255,0,.6)"},
-                             {"fill": "rgba(0,0,255,.4)", "stroke": "rgba(0,0,255,.6)"}
-                           ]};
+      const geohash_style = {"fill": "#F00",
+                             "stroke": "#f00",
+                             "styleOn": "sd.value"};
       const response1 = await request(server)
             .get("/v2/mapping/")
             .query({type: 'geohash',
@@ -475,6 +469,7 @@ describe('Mapping', function() {
             .expect(200);
       const shortCode = response1.body.shortCode;
       expect(shortCode).to.be.a("string");
+      expect(response1.body.mapDefinition.style).to.have.property('styleOn', 'sd.value');
       const response = await request(server)
             .get("/v2/mapping/" + shortCode + "/1/0/0.png")
             .expect('Content-Type', /png/)
@@ -505,6 +500,14 @@ describe('Mapping', function() {
             .expect('Content-Type', /png/)
             .expect(200);
       response.body.length.should.not.equal(0);
+
+      const stylebody = (await request(server)
+                         .get("/v2/mapping/" + shortCode + "/style/1")
+                         .expect('Content-Type', /json/)
+                         .expect(200)).body;
+      expect(stylebody).to.contain.keys('colors', 'default', 'order');
     });
   });
+  ;
+
 });
