@@ -165,7 +165,7 @@ function styleJSONGeohash(map_def, body) {
 function styleJSONPoints(map_def, body) {
   const styleBuckets = body.aggregations.gstyle.f.style.buckets,
         style = map_def.style,
-        alpha = style.alpha || 1.0,
+        alpha = style.alpha || 0.7,
         pointScale = style.pointScale,
         stroke = chroma(style.stroke || "black").alpha(alpha).css(),
         palette = _.isArray(pointScale) ? pointScale : chroma.brewer[pointScale];
