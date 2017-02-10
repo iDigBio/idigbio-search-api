@@ -721,20 +721,28 @@ const getMap = async function(ctx) {
 };
 
 const MAP_TYPES = ['points', 'auto', 'geohash'];
-const getTypeParam = (ctx) => getParam(ctx.request, "type", function(type) {
+const getTypeParam = (req) => getParam(req, "type", function(type) {
   if(!_.includes(MAP_TYPES, type)) {
-    ctx.throw(400, `Illegal map type '${type}', must be one of {${MAP_TYPES}}`);
+    throw new ParameterParseError(
+      `Illegal map type '${type}', must be one of {${MAP_TYPES}}`, 'type');
   }
   return type;
 }, "geohash");
 
-const getStyleParam = (ctx) => _.defaults(
-  getParam(ctx.request, "style", function(p) {
-    try {
-      return _.isString(p) ? JSON.parse(p) : p;
-    } catch (e) {
-      throw new ParameterParseError("Invalid style", "style");
+const getStyleParam = (req) => _.defaults(
+  getParam(req, "style", function(p) {
+    if(_.isString(p)) {
+      try {
+        p = JSON.parse(p);
+      } catch (e) {
+        throw new ParameterParseError("Invalid style", "style");
+      }
     }
+    logger.info("style.pointScale", p);
+    if(_.isString(p.pointScale) && _.isUndefined(chroma.brewer[p.pointScale])) {
+      throw new ParameterParseError("Unknown style.pointScale", "style");
+    }
+    return p;
   }),
   config.defaultStyle
 );
@@ -742,8 +750,8 @@ const getStyleParam = (ctx) => _.defaults(
 const createMap = async function(ctx) {
   const map_def = {
     rq: cp.query("rq", ctx.request),
-    type: getTypeParam(ctx),
-    style: getStyleParam(ctx),
+    type: getTypeParam(ctx.request),
+    style: getStyleParam(ctx.request),
     threshold: cp.threshold(ctx.request, 5000)
   };
   const queryHash = hasher("sha1", map_def);

@@ -106,12 +106,22 @@ describe('Mapping', function() {
     });
 
     it('should err on illegal map type', async function() {
-      var q = {"scientificname": "puma concolor"};
+      const rq = JSON.stringify({"scientificname": "puma concolor"}),
+            type = "foobar";
       return request(server)
-            .get("/v2/mapping/")
-            .query({rq: JSON.stringify(q), type: "foobar"})
-            .expect('Content-Type', /json/)
-            .expect(400);
+        .get("/v2/mapping/")
+        .query({rq, type})
+        .expect('Content-Type', /json/)
+        .expect(400);
+    });
+    it("should err on illegal pointScale", async function() {
+      const rq = JSON.stringify({"scientificname": "puma concolor"});
+      const style = JSON.stringify({ "pointScale": "foobar" });
+      return await request(server)
+        .get("/v2/mapping/")
+        .query({rq, style})
+        .expect('Content-Type', /json/)
+        .expect(400);
     });
   });
 
@@ -477,20 +487,13 @@ describe('Mapping', function() {
       response.body.length.should.not.equal(0);
     });
 
-    it('should support complex styles for point properties', async function() {
-      var q = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
-      var property_style = {"fill": "rgba(255,0,0,.4)",
-                            "stroke": "rgba(255,0,0,.6)",
-                            "institutioncode": {
-                              "flas": {"fill": "rgba(255,0,0,.4)", "stroke": "rgba(255,0,0,.6)"},
-                              "uf": {"fill": "rgba(0,255,0,.4)", "stroke": "rgba(0,255,0,.6)"},
-                              "flmnh": {"fill": "rgba(0,0,255,.4)", "stroke": "rgba(0,0,255,.6)"}
-                            }};
+    it('should support styles for point maps', async function() {
+      const type = "points";
+      const rq = {"genus": "carex", "institutioncode": ["uf", "flas", "flmnh"]};
+      const style = { "fill": "#f00", "stroke": "#F04", "alpha": 0.5 };
       const response1 = await request(server)
-            .get("/v2/mapping/")
-            .query({type: 'points',
-                    rq: JSON.stringify(q),
-                    style: JSON.stringify(property_style)})
+            .post("/v2/mapping/")
+            .send({type, rq, style})
             .expect('Content-Type', /json/)
             .expect(200);
       const shortCode = response1.body.shortCode;
