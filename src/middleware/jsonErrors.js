@@ -17,7 +17,8 @@ export default function(opts) {
         ctx.throw(404);
       }
     } catch (err) {
-      if(ctx.status !== 404) { logger.error("Request error(%d): %j", ctx.status, err); }
+      ctx.status = err.statusCode || err.status || 500;
+      if(ctx.status !== 404) { logger.error("Request error", err); }
       // No cache errors
       ctx.remove('Last-Modified');
       // will only respond with JSON
@@ -29,7 +30,6 @@ export default function(opts) {
         ctx.body = { error: "Internal Server Error" };
         ctx.app.emit('error', err, ctx);
       }
-      ctx.status = err.statusCode || err.status || 500;
     }
   };
 }
