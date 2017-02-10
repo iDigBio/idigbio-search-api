@@ -5,6 +5,7 @@ import redisStore from "cache-manager-redis";
 import config from "config";
 import {getLastModified} from "lib/lastModified";
 import hash from "lib/hasher";
+import timer from "lib/timer";
 
 const memoryCache = cacheManager.caching({
   store: 'memory',
@@ -51,7 +52,10 @@ export default {
   cache,
   improveKey,
 
-  wrap(k, ...args) { return this.cache.wrap(this.improveKey(k), ...args); },
+  wrap(k, fn, ...args) {
+    k = this.improveKey(k);
+    return this.cache.wrap(k, timer(k, fn), ...args);
+  },
 
   memoize(k, fn) {
     const wrap = this.wrap.bind(this);
