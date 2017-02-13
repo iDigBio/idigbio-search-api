@@ -51,14 +51,15 @@ describe('Search Deprecated Endpoints', function() {
       Object.keys(response.body.items[0].indexTerms).length.should.equal(1);
     });
     it('should obey maxLimit', async function() {
+      const bigLimit = 10000;
+      expect(config.maxLimit).to.be.below(bigLimit);
       var q = {};
       const response = await request(server)
             .get("/v2/search/")
-            .query({rq: JSON.stringify(q), limit: 10000})
+            .query({rq: JSON.stringify(q), limit: bigLimit, fields: '["uuid"]'})
             .expect('Content-Type', /json/)
             .expect(200);
-
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.equal(config.maxLimit);
     });
   });
 
