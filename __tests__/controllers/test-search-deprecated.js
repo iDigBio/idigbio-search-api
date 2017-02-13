@@ -64,12 +64,10 @@ describe('Search Deprecated Endpoints', function() {
 
   describe('basicPOST', function() {
     it('should return an empty search for {"scientificname": "nullius nullius"}', async function() {
-      var q = {"scientificname": "nullius nullius"};
+      var rq = {"scientificname": "nullius nullius"};
       const response = await request(server)
             .post("/v2/search/")
-            .send({
-              rq: q
-            })
+            .send({rq})
             .expect('Content-Type', /json/)
             .expect(200);
 
