@@ -1,3 +1,6 @@
+jest.mock('redisclient');
+jest.mock('esclient');
+
 import _ from "lodash";
 import bluebird from "bluebird";
 
