@@ -519,7 +519,7 @@ const getMapTile = async function(ctx) {
   if(ctx.params.y.slice(-5) === ".grid") {
     response_type = "grid." + response_type;
   }
-  ctx.cacheControl = {maxAge: 3600};
+  ctx.cacheControl('10 minutes');
   ctx.body = await makeMapTile(map_def, z, x, y, response_type);
 };
 
