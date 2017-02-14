@@ -86,11 +86,11 @@ describe("common parameters", function() {
 
   describe("Numeric Parameters", function() {
     describe("int", function() {
-      it("should pass through an int", async function() {
+      it("should pass through an int", function() {
         const res = cp.int(makeMockReq({x: 10}), "x");
         expect(res).toEqual(10);
       });
-      it("should parse an int", async function() {
+      it("should parse an int", function() {
         const res = cp.int(makeMockReq({x: "10"}), "x");
         expect(res).toEqual(10);
       });
@@ -138,14 +138,14 @@ describe("common parameters", function() {
   });
 
   describe("query", function() {
-    it("should default to empty", async function() {
+    it("should default to empty", function() {
       expect(cp.query('rq', makeMockReq())).toEqual({});
     });
     it("should return the given object", function() {
       const req = makeMockReq({rq: {"genus": "acer"}});
       expect(cp.query('rq', req)).toEqual({"genus": "acer"});
     });
-    it("should parse a json string too", async function() {
+    it("should parse a json string too", function() {
       const req = makeMockReq({rq: JSON.stringify({"genus": "acer"})});
       expect(cp.query('rq', req)).toEqual({"genus": "acer"});
     });
