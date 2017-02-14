@@ -58,7 +58,7 @@ export const updateLastModified = timer(async function updateLastModified() {
     }
     return diff;
   } catch (e) {
-    logger.error("Failed udating last modified", e);
+    logger.error("Failed updating last modified", e);
     return {};
   }
 });
