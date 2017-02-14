@@ -1,0 +1,1265 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 100876186,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "mediarecords",
+        "_id": "eb35abc0-4b87-49a2-a960-f8cf6a528998",
+        "_score": 1,
+        "_routing": "35c8222a-45ec-4a7a-8b6d-e21785efc0d3",
+        "_parent": "35c8222a-45ec-4a7a-8b6d-e21785efc0d3",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "eb35abc0-4b87-49a2-a960-f8cf6a528998",
+          "format": "image/jpeg",
+          "recordset": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+          "dqs": 0.6363636363636364,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "ac:providerManagedID": "urn:uuid:3d7b1d54-524a-4517-97bf-0edad28e1e47",
+            "dc:type": "StillImage",
+            "dcterms:title": "Protocardia subquadrata (YPM IPV0 593645). Digital Image: Yale Peabody Museum of Natural History",
+            "ac:comments": "irn:511709",
+            "ac:digitizationDate": "2016",
+            "dc:format": "image/jpeg",
+            "coreid": "urn:uuid:1d2b1cde-a1a1-4c4e-a90a-b9a81169dba1",
+            "dcterms:identifier": "urn:uuid:3d7b1d54-524a-4517-97bf-0edad28e1e47",
+            "ac:metadataLanguage": "eng",
+            "xmpRights:WebStatement": "http://hdl.handle.net/10079/8931zq/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/511709/format/2",
+            "xmp:MetadataDate": "2016-12-15T16:23:57Z"
+          },
+          "records": [
+            "35c8222a-45ec-4a7a-8b6d-e21785efc0d3"
+          ],
+          "etag": "e4052b323156531033f9d84ca5198e32d1af2a91",
+          "indexData": {
+            "xmp:MetadataDate": "2016-12-15T16:23:57Z",
+            "ac:providerManagedID": "urn:uuid:3d7b1d54-524a-4517-97bf-0edad28e1e47",
+            "idigbio:recordIds": [
+              "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\media\\urn:uuid:3d7b1d54-524a-4517-97bf-0edad28e1e47"
+            ],
+            "idigbio:parent": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+            "dc:type": "StillImage",
+            "dcterms:title": "Protocardia subquadrata (YPM IPV0 593645). Digital Image: Yale Peabody Museum of Natural History",
+            "idigbio:uuid": "eb35abc0-4b87-49a2-a960-f8cf6a528998",
+            "ac:comments": "irn:511709",
+            "ac:digitizationDate": "2016",
+            "dc:format": "image/jpeg",
+            "coreid": "urn:uuid:1d2b1cde-a1a1-4c4e-a90a-b9a81169dba1",
+            "dcterms:identifier": "urn:uuid:3d7b1d54-524a-4517-97bf-0edad28e1e47",
+            "xmpRights:WebStatement": "http://hdl.handle.net/10079/8931zq/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2017-01-12T16:11:05.011415",
+            "idigbio:etag": "e4052b323156531033f9d84ca5198e32d1af2a91",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/511709/format/2",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "35c8222a-45ec-4a7a-8b6d-e21785efc0d3"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\media\\urn:uuid:3d7b1d54-524a-4517-97bf-0edad28e1e47"
+          ],
+          "type": "stillimage",
+          "datemodified": "2017-01-12T16:11:05.011415+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/511709/format/2"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "mediarecords",
+        "_id": "1abfa7ad-858e-469a-9de8-9b22760bd61a",
+        "_score": 1,
+        "_routing": "31782547-ffce-4294-acf4-c197101347d0",
+        "_parent": "31782547-ffce-4294-acf4-c197101347d0",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "1abfa7ad-858e-469a-9de8-9b22760bd61a",
+          "format": "image/jpeg",
+          "recordset": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+          "dqs": 0.6363636363636364,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "ac:providerManagedID": "urn:uuid:a5d77398-f3da-42f2-9471-0898c01aeed3",
+            "dc:type": "StillImage",
+            "dcterms:title": "Protocardia subquadrata (YPM IPV0 593665). Digital Image: Yale Peabody Museum of Natural History",
+            "ac:comments": "irn:511694",
+            "ac:digitizationDate": "2016",
+            "dc:format": "image/jpeg",
+            "coreid": "urn:uuid:4104b69a-d90d-437d-9224-c1da28b0f46c",
+            "dcterms:identifier": "urn:uuid:a5d77398-f3da-42f2-9471-0898c01aeed3",
+            "ac:metadataLanguage": "eng",
+            "xmpRights:WebStatement": "http://hdl.handle.net/10079/8931zq/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/511694/format/2",
+            "xmp:MetadataDate": "2016-12-15T16:24:07Z"
+          },
+          "records": [
+            "31782547-ffce-4294-acf4-c197101347d0"
+          ],
+          "etag": "085eed76292479726eae748ef6da4aaf5a404f9e",
+          "indexData": {
+            "xmp:MetadataDate": "2016-12-15T16:24:07Z",
+            "ac:providerManagedID": "urn:uuid:a5d77398-f3da-42f2-9471-0898c01aeed3",
+            "idigbio:recordIds": [
+              "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\media\\urn:uuid:a5d77398-f3da-42f2-9471-0898c01aeed3"
+            ],
+            "idigbio:parent": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+            "dc:type": "StillImage",
+            "dcterms:title": "Protocardia subquadrata (YPM IPV0 593665). Digital Image: Yale Peabody Museum of Natural History",
+            "idigbio:uuid": "1abfa7ad-858e-469a-9de8-9b22760bd61a",
+            "ac:comments": "irn:511694",
+            "ac:digitizationDate": "2016",
+            "dc:format": "image/jpeg",
+            "coreid": "urn:uuid:4104b69a-d90d-437d-9224-c1da28b0f46c",
+            "dcterms:identifier": "urn:uuid:a5d77398-f3da-42f2-9471-0898c01aeed3",
+            "xmpRights:WebStatement": "http://hdl.handle.net/10079/8931zq/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2017-01-12T16:11:05.011415",
+            "idigbio:etag": "085eed76292479726eae748ef6da4aaf5a404f9e",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/511694/format/2",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "31782547-ffce-4294-acf4-c197101347d0"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\media\\urn:uuid:a5d77398-f3da-42f2-9471-0898c01aeed3"
+          ],
+          "type": "stillimage",
+          "datemodified": "2017-01-12T16:11:05.011415+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/511694/format/2"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "mediarecords",
+        "_id": "ecfe9ead-3ffd-4dfe-8486-cb68fc590ab6",
+        "_score": 1,
+        "_routing": "c7106b57-48f4-4644-8b48-222ccba4c7cf",
+        "_parent": "c7106b57-48f4-4644-8b48-222ccba4c7cf",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "ecfe9ead-3ffd-4dfe-8486-cb68fc590ab6",
+          "format": "image/jpeg",
+          "recordset": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+          "dqs": 0.6363636363636364,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "ac:providerManagedID": "urn:uuid:48d6aa52-d628-4c24-97cf-bbbbaae7219c",
+            "dc:type": "StillImage",
+            "dcterms:title": "Protocardia subquadrata (YPM IPV0 593681). Digital Image: Yale Peabody Museum of Natural History",
+            "ac:comments": "irn:511719",
+            "ac:digitizationDate": "2016",
+            "dc:format": "image/jpeg",
+            "coreid": "urn:uuid:a0500070-48c0-45a1-bb28-6a48dec7acc2",
+            "dcterms:identifier": "urn:uuid:48d6aa52-d628-4c24-97cf-bbbbaae7219c",
+            "ac:metadataLanguage": "eng",
+            "xmpRights:WebStatement": "http://hdl.handle.net/10079/8931zq/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/511719/format/8",
+            "xmp:MetadataDate": "2016-12-15T16:23:51Z"
+          },
+          "records": [
+            "c7106b57-48f4-4644-8b48-222ccba4c7cf"
+          ],
+          "etag": "05c5f5a050c21ef44df866bf7753ec53da5ef0ac",
+          "indexData": {
+            "xmp:MetadataDate": "2016-12-15T16:23:51Z",
+            "ac:providerManagedID": "urn:uuid:48d6aa52-d628-4c24-97cf-bbbbaae7219c",
+            "idigbio:recordIds": [
+              "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\media\\urn:uuid:48d6aa52-d628-4c24-97cf-bbbbaae7219c"
+            ],
+            "idigbio:parent": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+            "dc:type": "StillImage",
+            "dcterms:title": "Protocardia subquadrata (YPM IPV0 593681). Digital Image: Yale Peabody Museum of Natural History",
+            "idigbio:uuid": "ecfe9ead-3ffd-4dfe-8486-cb68fc590ab6",
+            "ac:comments": "irn:511719",
+            "ac:digitizationDate": "2016",
+            "dc:format": "image/jpeg",
+            "coreid": "urn:uuid:a0500070-48c0-45a1-bb28-6a48dec7acc2",
+            "dcterms:identifier": "urn:uuid:48d6aa52-d628-4c24-97cf-bbbbaae7219c",
+            "xmpRights:WebStatement": "http://hdl.handle.net/10079/8931zq/",
+            "dcterms:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2017-01-12T16:11:05.011415",
+            "idigbio:etag": "05c5f5a050c21ef44df866bf7753ec53da5ef0ac",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/511719/format/8",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "c7106b57-48f4-4644-8b48-222ccba4c7cf"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "137ed4cd-5172-45a5-acdb-8e1de9a64e32\\media\\urn:uuid:48d6aa52-d628-4c24-97cf-bbbbaae7219c"
+          ],
+          "type": "stillimage",
+          "datemodified": "2017-01-12T16:11:05.011415+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/511719/format/8"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "mediarecords",
+        "_id": "690458a5-5b2f-488c-b7b9-adae07cf066b",
+        "_score": 1,
+        "_routing": "c1d7a265-3c5e-45c3-b6bc-b9c0f06de690",
+        "_parent": "c1d7a265-3c5e-45c3-b6bc-b9c0f06de690",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "690458a5-5b2f-488c-b7b9-adae07cf066b",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "c1d7a265-3c5e-45c3-b6bc-b9c0f06de690"
+          ],
+          "etag": "97fa1fcd00dad7c49b12a86317585704d1c8e057",
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "690458a5-5b2f-488c-b7b9-adae07cf066b",
+            "idigbio:etag": "97fa1fcd00dad7c49b12a86317585704d1c8e057",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00819733",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1453248695611zkEvdTAqLE4t4B42",
+            "idigbio:siblings": {
+              "record": [
+                "c1d7a265-3c5e-45c3-b6bc-b9c0f06de690"
+              ]
+            },
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1453248695611zkevdtaqle4t4b42"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "dcterms:creator": "Picturae"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1453248695611zkevdtaqle4t4b42"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00819733",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1453248695611zkEvdTAqLE4t4B42",
+            "dcterms:creator": "Picturae"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1453248695611zkEvdTAqLE4t4B42"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "mediarecords",
+        "_id": "18be9c70-49c3-4703-9ef3-7c3bf28d9023",
+        "_score": 1,
+        "_routing": "26f1cbba-6d4f-4317-b435-23d99ef04975",
+        "_parent": "26f1cbba-6d4f-4317-b435-23d99ef04975",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png",
+          "uuid": "18be9c70-49c3-4703-9ef3-7c3bf28d9023",
+          "format": "image/jpeg",
+          "recordset": "f062cb7d-c03e-4762-b1c4-49118fee1a56",
+          "dqs": 0.5454545454545454,
+          "rights": "BY-NC-ND",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "26f1cbba-6d4f-4317-b435-23d99ef04975"
+          ],
+          "etag": "4c28cc65856bfacae5b22a6629be85ca1390478f",
+          "indexData": {
+            "idigbio:parent": "f062cb7d-c03e-4762-b1c4-49118fee1a56",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by-nc-nd",
+            "idigbio:uuid": "18be9c70-49c3-4703-9ef3-7c3bf28d9023",
+            "idigbio:etag": "4c28cc65856bfacae5b22a6629be85ca1390478f",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/f/a26266",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1406898590744IN4FjLpfmcejsh9D",
+            "idigbio:siblings": {
+              "record": [
+                "26f1cbba-6d4f-4317-b435-23d99ef04975"
+              ]
+            },
+            "idigbio:recordIds": [
+              "f062cb7d-c03e-4762-b1c4-49118fee1a56\\media\\http://mediaphoto.mnhn.fr/media/1406898590744in4fjlpfmcejsh9d"
+            ],
+            "idigbio:dateModified": "2015-06-26T12:07:06.197000",
+            "dcterms:creator": "Jocelyn FALCONNET"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "recordids": [
+            "f062cb7d-c03e-4762-b1c4-49118fee1a56\\media\\http://mediaphoto.mnhn.fr/media/1406898590744in4fjlpfmcejsh9d"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by-nc-nd",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/f/a26266",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1406898590744IN4FjLpfmcejsh9D",
+            "dcterms:creator": "Jocelyn FALCONNET"
+          },
+          "datemodified": "2015-06-26T12:07:06.197000+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1406898590744IN4FjLpfmcejsh9D"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "records",
+        "_id": "c1d57ffd-8750-4e39-b14d-dd56c93e8a58",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": -26.998149,
+            "lon": -48.62172
+          },
+          "family": "phyllophoraceae",
+          "recordset": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "dqs": 0.22388059701492538,
+          "phylum": "rhodophyta",
+          "catalognumber": "usf-a09541",
+          "startdayofyear": 42,
+          "taxonrank": "species",
+          "specificepithet": "griffithsiae",
+          "continent": "south america",
+          "uuid": "c1d57ffd-8750-4e39-b14d-dd56c93e8a58",
+          "countrycode": "bra",
+          "basisofrecord": "preservedspecimen",
+          "collector": "m. c. marino; c. s. p. zocchio, and i. p. sazima",
+          "institutioncode": "usf",
+          "mediarecords": [
+            "f684efc3-dfca-4727-968a-7f3661189e71"
+          ],
+          "datemodified": "2016-11-10T16:07:59.813104+00:00",
+          "datecollected": "1971-02-11T00:00:00+00:00",
+          "etag": "11baf0f4304c75e156f81c2383605b558f38dbe2",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+          "taxonid": "2667139",
+          "scientificname": "gymnogongrus griffithsiae",
+          "indexData": {
+            "dwc:startDayOfYear": "42",
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "griffithsiae",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "M. C. Marino; C. S. P. Zocchio, and I. P. Sazima",
+            "idigbio:uuid": "c1d57ffd-8750-4e39-b14d-dd56c93e8a58",
+            "dwc:locality": "Camboriu, Santa Catarina, Brazil",
+            "dwc:order": "Gigartinales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698661",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "(Turner) Martius",
+            "idigbio:recordIds": [
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\49db06e1-1456-400a-b96a-ad1002cefb3a",
+              "urn:uuid:49db06e1-1456-400a-b96a-ad1002cefb3a",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\698661"
+            ],
+            "dwc:occurrenceID": "49db06e1-1456-400a-b96a-ad1002cefb3a",
+            "flag_gbif_canonicalname_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "2667139",
+                "dcterms:language": "nl",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "vorkjeswier"
+              }
+            ],
+            "flag_dwc_taxonomicstatus_added": true,
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+            "dwc:datasetid": "2d59e5db-57ad-41ff-97d6-11f5fb264527",
+            "dwc:eventDate": "1971-02-11",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "Brazil",
+            "idigbio:recordId": "urn:uuid:49db06e1-1456-400a-b96a-ad1002cefb3a",
+            "idigbio:etag": "11baf0f4304c75e156f81c2383605b558f38dbe2",
+            "id": "698661",
+            "dwc:decimalLatitude": "-26.998149",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Gymnogongrus",
+            "dwc:continent": "south america",
+            "dwc:family": "Phyllophoraceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "f684efc3-dfca-4727-968a-7f3661189e71"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "gymnogongrus griffithsiae (turner) martius, 1833",
+            "dwc:phylum": "Rhodophyta",
+            "idigbio:dateModified": "2016-11-10T16:07:59.813104",
+            "dwc:georeferenceSources": "georef batch tool 2016-03-27; GeoLocate",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "USF",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2667111",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09541",
+            "dwc:taxonid": "2667139",
+            "dwc:taxonrank": "species",
+            "dwc:month": "2",
+            "dwc:decimalLongitude": "-48.62172",
+            "dwc:scientificName": "Gymnogongrus griffithsiae",
+            "dwc:otherCatalogNumbers": "128343",
+            "dwc:georeferencedBy": "rpf1 (2016-03-27 15:34:15)",
+            "gbif:reference": [
+              {
+                "coreid": "2667139",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "algaebase"
+              },
+              {
+                "coreid": "2667139",
+                "dcterms:source": "brazilian flora checklist -  brazilian flora 2020 project - projeto flora do brasil 2020",
+                "dcterms:bibliographiccitation": "bol. inst. bot. (são paulo),17: 143-194,2006"
+              },
+              {
+                "coreid": "2667139",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "fredericq, s., t. o. cho, s. a. earle, c. f. gurgel, d. m. krayesky, l. e. mateo-cid, a. c. mendoza-gonzález, j. n. norris, and a. m. suárez. 2009. seaweeds of the gulf of mexico, pp. 187–259 in felder, d.l. and d.k. camp (eds.), gulf of mexico–origins, waters, and biota. i.  biodiversity, pp. 187-259. texas a&m univ. press."
+              },
+              {
+                "coreid": "2667139",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "guiry, m.d. (2001). macroalgae of rhodophycota, phaeophycota, chlorophycota, and two genera of xanthophycota, <b><i>in</i></b>: costello, m.j. <i>et al.</i> (ed.) (2001). <i>european register of marine species: a check-list of the marine species in europe and a bibliography of guides to their identification. collection patrimoines naturels,</i> 50: pp. 20-38"
+              },
+              {
+                "coreid": "2667139",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "muller, y. (2004). faune et flore du littoral du nord, du pas-de-calais et de la belgique: inventaire. [coastal fauna and flora of the nord, pas-de-calais and belgium: inventory]. <em>commission régionale de biologie région nord pas-de-calais: france.</em> 307 pp."
+              }
+            ],
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "bra",
+            "dcterms:modified": "2016-03-27 18:34:15",
+            "dwc:coordinateUncertaintyInMeters": "4187",
+            "dwc:day": "11",
+            "dwc:year": "1971"
+          },
+          "coordinateuncertainty": 4187,
+          "data": {
+            "dwc:startDayOfYear": "42",
+            "dwc:specificEpithet": "griffithsiae",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "M. C. Marino; C. S. P. Zocchio, and I. P. Sazima",
+            "dwc:georeferenceSources": "georef batch tool 2016-03-27; GeoLocate",
+            "dwc:order": "Gigartinales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698661",
+            "dwc:scientificNameAuthorship": "(Turner) Martius",
+            "dwc:occurrenceID": "49db06e1-1456-400a-b96a-ad1002cefb3a",
+            "id": "698661",
+            "dwc:eventDate": "1971-02-11",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "Brazil",
+            "idigbio:recordId": "urn:uuid:49db06e1-1456-400a-b96a-ad1002cefb3a",
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "dwc:decimalLatitude": "-26.998149",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Gymnogongrus",
+            "dwc:family": "Phyllophoraceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:phylum": "Rhodophyta",
+            "dwc:locality": "Camboriu, Santa Catarina, Brazil",
+            "dwc:institutionCode": "USF",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09541",
+            "dwc:month": "2",
+            "dwc:decimalLongitude": "-48.62172",
+            "dwc:coordinateUncertaintyInMeters": "4187",
+            "dwc:otherCatalogNumbers": "128343",
+            "dwc:georeferencedBy": "rpf1 (2016-03-27 15:34:15)",
+            "dcterms:modified": "2016-03-27 18:34:15",
+            "dwc:scientificName": "Gymnogongrus griffithsiae",
+            "dwc:day": "11",
+            "dwc:year": "1971"
+          },
+          "class": "florideophyceae",
+          "occurrenceid": "49db06e1-1456-400a-b96a-ad1002cefb3a",
+          "country": "brazil",
+          "locality": "camboriu, santa catarina, brazil",
+          "canonicalname": "gymnogongrus griffithsiae (turner) martius, 1833",
+          "eventdate": "1971-02-11",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_taxonrank_replaced",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_continent_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\49db06e1-1456-400a-b96a-ad1002cefb3a",
+            "urn:uuid:49db06e1-1456-400a-b96a-ad1002cefb3a",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\698661"
+          ],
+          "genus": "gymnogongrus",
+          "order": "gigartinales"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "records",
+        "_id": "0a24f516-5c82-4132-84ce-6ec763e45c8a",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": -33.917233,
+            "lon": 18.385103
+          },
+          "family": "phyllophoraceae",
+          "recordset": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "dqs": 0.22388059701492538,
+          "phylum": "rhodophyta",
+          "catalognumber": "usf-a09542",
+          "startdayofyear": 231,
+          "taxonrank": "genus",
+          "collector": "j. lawrence",
+          "continent": "africa",
+          "uuid": "0a24f516-5c82-4132-84ce-6ec763e45c8a",
+          "countrycode": "zaf",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usf",
+          "mediarecords": [
+            "628c58b0-120c-4b56-b4c4-de0c8bf4509b"
+          ],
+          "datemodified": "2016-11-10T16:07:59.813104+00:00",
+          "datecollected": "1967-08-19T00:00:00+00:00",
+          "etag": "b25a75dcb48ded1a8e0401b1dbd3e2ab932763ca",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+          "taxonid": "2667111",
+          "scientificname": "gymnogongrus",
+          "indexData": {
+            "dwc:startDayOfYear": "231",
+            "flag_dwc_taxonrank_added": true,
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "J. Lawrence",
+            "idigbio:uuid": "0a24f516-5c82-4132-84ce-6ec763e45c8a",
+            "dwc:locality": "Sea Point, 4 miles south of Cape Town, South Africa",
+            "dwc:order": "Gigartinales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698662",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "Martius, 1833",
+            "idigbio:recordIds": [
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\698662",
+              "urn:uuid:9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\9f4e40e3-f0f4-42ae-b5b2-5570727f4431"
+            ],
+            "dwc:occurrenceID": "9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+            "dwc:eventDate": "1967-08-19",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "South Africa",
+            "idigbio:recordId": "urn:uuid:9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+            "idigbio:etag": "b25a75dcb48ded1a8e0401b1dbd3e2ab932763ca",
+            "id": "698662",
+            "dwc:decimalLatitude": "-33.917233",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Gymnogongrus",
+            "dwc:continent": "africa",
+            "dwc:family": "Phyllophoraceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:isocountrycode": "zaf",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "628c58b0-120c-4b56-b4c4-de0c8bf4509b"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "gymnogongrus martius, 1833",
+            "dwc:phylum": "Rhodophyta",
+            "idigbio:dateModified": "2016-11-10T16:07:59.813104",
+            "dwc:georeferenceSources": "georef batch tool 2016-03-25; GeoLocate",
+            "dwc:institutionCode": "USF",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "4941",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09542",
+            "dwc:taxonid": "2667111",
+            "dwc:taxonrank": "genus",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "18.385103",
+            "dwc:scientificName": "Gymnogongrus",
+            "dwc:otherCatalogNumbers": "148628",
+            "dwc:georeferencedBy": "rpf1 (2016-03-25 16:49:07)",
+            "gbif:reference": [
+              {
+                "coreid": "2667111",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "algaebase"
+              },
+              {
+                "coreid": "2667111",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "guiry, m.d. (2001). macroalgae of rhodophycota, phaeophycota, chlorophycota, and two genera of xanthophycota, <b><i>in</i></b>: costello, m.j. <i>et al.</i> (ed.) (2001). <i>european register of marine species: a check-list of the marine species in europe and a bibliography of guides to their identification. collection patrimoines naturels,</i> 50: pp. 20-38"
+              },
+              {
+                "coreid": "2667111",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "silva, c., p. basson & r. moe (1996). catalogue of the benthic marine algae of the indian ocean. volume 79 of university of california publications in botany (isbn 0-520-09810-2)."
+              }
+            ],
+            "flag_dwc_continent_added": true,
+            "dwc:datasetid": "2d59e5db-57ad-41ff-97d6-11f5fb264527",
+            "dcterms:modified": "2016-03-25 19:49:07",
+            "dwc:coordinateUncertaintyInMeters": "1943",
+            "dwc:day": "19",
+            "dwc:year": "1967"
+          },
+          "coordinateuncertainty": 1943,
+          "data": {
+            "dwc:startDayOfYear": "231",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "J. Lawrence",
+            "dwc:georeferenceSources": "georef batch tool 2016-03-25; GeoLocate",
+            "dwc:order": "Gigartinales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698662",
+            "dwc:scientificNameAuthorship": "Martius, 1833",
+            "dwc:occurrenceID": "9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+            "id": "698662",
+            "dwc:eventDate": "1967-08-19",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "South Africa",
+            "idigbio:recordId": "urn:uuid:9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "dwc:decimalLatitude": "-33.917233",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Gymnogongrus",
+            "dwc:family": "Phyllophoraceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:phylum": "Rhodophyta",
+            "dwc:locality": "Sea Point, 4 miles south of Cape Town, South Africa",
+            "dwc:institutionCode": "USF",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09542",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "18.385103",
+            "dwc:coordinateUncertaintyInMeters": "1943",
+            "dwc:otherCatalogNumbers": "148628",
+            "dwc:georeferencedBy": "rpf1 (2016-03-25 16:49:07)",
+            "dcterms:modified": "2016-03-25 19:49:07",
+            "dwc:scientificName": "Gymnogongrus",
+            "dwc:day": "19",
+            "dwc:year": "1967"
+          },
+          "class": "florideophyceae",
+          "occurrenceid": "9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+          "country": "south africa",
+          "locality": "sea point, 4 miles south of cape town, south africa",
+          "canonicalname": "gymnogongrus martius, 1833",
+          "eventdate": "1967-08-19",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_taxonrank_replaced",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_taxon_corrected",
+            "dwc_continent_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\698662",
+            "urn:uuid:9f4e40e3-f0f4-42ae-b5b2-5570727f4431",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\9f4e40e3-f0f4-42ae-b5b2-5570727f4431"
+          ],
+          "genus": "gymnogongrus",
+          "order": "gigartinales"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "records",
+        "_id": "0b661405-291c-4351-a9ad-eb2146283b3d",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": -37.059475,
+            "lon": 139.740277
+          },
+          "family": "kallymeniaceae",
+          "recordset": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "dqs": 0.22388059701492538,
+          "stateprovince": "south australia",
+          "phylum": "rhodophyta",
+          "catalognumber": "usf-a09545",
+          "startdayofyear": 365,
+          "taxonrank": "genus",
+          "collector": "c. j. dawes",
+          "continent": "australia",
+          "uuid": "0b661405-291c-4351-a9ad-eb2146283b3d",
+          "countrycode": "aus",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usf",
+          "mediarecords": [
+            "99b3a37f-f8da-4e8d-ad14-4cc5bce59759"
+          ],
+          "datemodified": "2016-11-10T16:07:59.813104+00:00",
+          "datecollected": "1963-12-31T00:00:00+00:00",
+          "etag": "93691f0591a7c9843253ab17222c26e104c18fc3",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+          "taxonid": "2666556",
+          "scientificname": "callophyllis",
+          "indexData": {
+            "dwc:startDayOfYear": "365",
+            "flag_dwc_taxonrank_added": true,
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "C. J. Dawes",
+            "idigbio:uuid": "0b661405-291c-4351-a9ad-eb2146283b3d",
+            "dwc:locality": "Cape Thomas, AU",
+            "dwc:order": "Gigartinales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698665",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "Ktzing, 1843",
+            "idigbio:recordIds": [
+              "urn:uuid:6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\698665"
+            ],
+            "dwc:occurrenceID": "6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+            "dwc:stateProvince": "South Australia",
+            "dwc:eventDate": "1963-12-31",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "Australia",
+            "idigbio:recordId": "urn:uuid:6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+            "idigbio:etag": "93691f0591a7c9843253ab17222c26e104c18fc3",
+            "id": "698665",
+            "dwc:decimalLatitude": "-37.059475",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Callophyllis",
+            "dwc:continent": "australia",
+            "dwc:family": "Kallymeniaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:isocountrycode": "aus",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "99b3a37f-f8da-4e8d-ad14-4cc5bce59759"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "callophyllis kützing, 1843",
+            "dwc:phylum": "Rhodophyta",
+            "idigbio:dateModified": "2016-11-10T16:07:59.813104",
+            "dwc:georeferenceSources": "georef batch tool 2015-11-26; GeoLocate",
+            "dwc:institutionCode": "USF",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "4936",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09545",
+            "dwc:taxonid": "2666556",
+            "dwc:taxonrank": "genus",
+            "dwc:month": "12",
+            "dwc:decimalLongitude": "139.740277",
+            "dwc:scientificName": "Callophyllis",
+            "dwc:otherCatalogNumbers": "70203",
+            "dwc:georeferencedBy": "jaa389 (2015-11-26 11:53:42)",
+            "gbif:reference": [
+              {
+                "coreid": "2666556",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "algaebase"
+              },
+              {
+                "coreid": "2666556",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "guiry, m.d. (2001). macroalgae of rhodophycota, phaeophycota, chlorophycota, and two genera of xanthophycota, <b><i>in</i></b>: costello, m.j. <i>et al.</i> (ed.) (2001). <i>european register of marine species: a check-list of the marine species in europe and a bibliography of guides to their identification. collection patrimoines naturels,</i> 50: pp. 20-38"
+              },
+              {
+                "coreid": "2666556",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "silva, c., p. basson & r. moe (1996). catalogue of the benthic marine algae of the indian ocean. volume 79 of university of california publications in botany (isbn 0-520-09810-2)."
+              }
+            ],
+            "flag_dwc_continent_added": true,
+            "dwc:datasetid": "2d59e5db-57ad-41ff-97d6-11f5fb264527",
+            "dcterms:modified": "2015-11-26 13:53:42",
+            "dwc:coordinateUncertaintyInMeters": "14",
+            "dwc:day": "31",
+            "dwc:year": "1963"
+          },
+          "coordinateuncertainty": 14,
+          "data": {
+            "dwc:startDayOfYear": "365",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "C. J. Dawes",
+            "dwc:georeferenceSources": "georef batch tool 2015-11-26; GeoLocate",
+            "dwc:order": "Gigartinales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698665",
+            "dwc:scientificNameAuthorship": "Ktzing, 1843",
+            "dwc:occurrenceID": "6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+            "id": "698665",
+            "dwc:stateProvince": "South Australia",
+            "dwc:eventDate": "1963-12-31",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "Australia",
+            "idigbio:recordId": "urn:uuid:6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "dwc:decimalLatitude": "-37.059475",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Callophyllis",
+            "dwc:family": "Kallymeniaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:phylum": "Rhodophyta",
+            "dwc:locality": "Cape Thomas, AU",
+            "dwc:institutionCode": "USF",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09545",
+            "dwc:month": "12",
+            "dwc:decimalLongitude": "139.740277",
+            "dwc:coordinateUncertaintyInMeters": "14",
+            "dwc:otherCatalogNumbers": "70203",
+            "dwc:georeferencedBy": "jaa389 (2015-11-26 11:53:42)",
+            "dcterms:modified": "2015-11-26 13:53:42",
+            "dwc:scientificName": "Callophyllis",
+            "dwc:day": "31",
+            "dwc:year": "1963"
+          },
+          "class": "florideophyceae",
+          "occurrenceid": "6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+          "country": "australia",
+          "locality": "cape thomas, au",
+          "canonicalname": "callophyllis kützing, 1843",
+          "eventdate": "1963-12-31",
+          "flags": [
+            "rev_geocode_eez",
+            "geopoint_datum_missing",
+            "dwc_taxonrank_replaced",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_taxon_corrected",
+            "dwc_continent_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "urn:uuid:6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\6d2fa82b-159e-44bf-b588-20a7d95d69a1",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\698665"
+          ],
+          "genus": "callophyllis",
+          "order": "gigartinales"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "records",
+        "_id": "1a4b2014-76ff-4380-8cfe-fa758d18a155",
+        "_score": 1,
+        "_source": {
+          "recordset": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "dqs": 0.208955223880597,
+          "catalognumber": "usf-a09549",
+          "startdayofyear": 274,
+          "collector": "w. f. prudhomme van reine",
+          "continent": "europe",
+          "uuid": "1a4b2014-76ff-4380-8cfe-fa758d18a155",
+          "countrycode": "nld",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usf",
+          "mediarecords": [
+            "cbce63e9-cfe2-4668-b578-b810980df693"
+          ],
+          "datecollected": "1976-09-30T00:00:00+00:00",
+          "etag": "78c880c8768e8ddbc95601c3321f6d989cb4f6c8",
+          "hasMedia": true,
+          "hasImage": true,
+          "collectionid": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+          "scientificname": "callithamnion oorymbosum",
+          "locality": "zeeland, zuid-beveland, sas van goes, holland, netherlands",
+          "coordinateuncertainty": 3036,
+          "data": {
+            "dwc:startDayOfYear": "274",
+            "dwc:recordedBy": "W. F. Prudhomme van Reine",
+            "dwc:georeferenceSources": "georef batch tool 2016-03-09; GeoLocate",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698669",
+            "dwc:occurrenceID": "1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+            "id": "698669",
+            "dwc:eventDate": "1976-09-30",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "Netherlands",
+            "idigbio:recordId": "urn:uuid:1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "dwc:decimalLatitude": "51.533333",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:locality": "Zeeland, Zuid-Beveland, Sas van Goes, Holland, Netherlands",
+            "dwc:institutionCode": "USF",
+            "dwc:catalogNumber": "USF-A09549",
+            "dwc:month": "9",
+            "dwc:decimalLongitude": "3.933333",
+            "dwc:coordinateUncertaintyInMeters": "3036",
+            "dwc:otherCatalogNumbers": "135926",
+            "dwc:georeferencedBy": "rpf1 (2016-03-09 21:53:27)",
+            "dcterms:modified": "2016-03-09 23:53:27",
+            "dwc:scientificName": "Callithamnion oorymbosum",
+            "dwc:day": "30",
+            "dwc:year": "1976"
+          },
+          "datemodified": "2016-11-10T16:07:59.813104+00:00",
+          "occurrenceid": "1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+          "country": "netherlands",
+          "geopoint": {
+            "lat": 51.533333,
+            "lon": 3.933333
+          },
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "urn:uuid:1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\698669",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\1047efb3-2b9a-4ce0-b0f8-548db7010b8b"
+          ],
+          "eventdate": "1976-09-30",
+          "indexData": {
+            "dwc:startDayOfYear": "274",
+            "dwc:recordedBy": "W. F. Prudhomme van Reine",
+            "idigbio:uuid": "1a4b2014-76ff-4380-8cfe-fa758d18a155",
+            "dwc:locality": "Zeeland, Zuid-Beveland, Sas van Goes, Holland, Netherlands",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698669",
+            "idigbio:recordIds": [
+              "urn:uuid:1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\698669",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\1047efb3-2b9a-4ce0-b0f8-548db7010b8b"
+            ],
+            "dwc:occurrenceID": "1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "idigbio:parent": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+            "dwc:eventDate": "1976-09-30",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "Netherlands",
+            "idigbio:recordId": "urn:uuid:1047efb3-2b9a-4ce0-b0f8-548db7010b8b",
+            "idigbio:etag": "78c880c8768e8ddbc95601c3321f6d989cb4f6c8",
+            "id": "698669",
+            "dwc:decimalLatitude": "51.533333",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "europe",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "cbce63e9-cfe2-4668-b578-b810980df693"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2016-11-10T16:07:59.813104",
+            "dwc:georeferenceSources": "georef batch tool 2016-03-09; GeoLocate",
+            "dwc:institutionCode": "USF",
+            "dwc:catalogNumber": "USF-A09549",
+            "dwc:month": "9",
+            "dwc:decimalLongitude": "3.933333",
+            "dwc:scientificName": "Callithamnion oorymbosum",
+            "dwc:otherCatalogNumbers": "135926",
+            "dwc:georeferencedBy": "rpf1 (2016-03-09 21:53:27)",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "nld",
+            "dcterms:modified": "2016-03-09 23:53:27",
+            "dwc:coordinateUncertaintyInMeters": "3036",
+            "dwc:day": "30",
+            "dwc:year": "1976"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "records",
+        "_id": "a3a98594-a329-4d0d-bd35-63eccd1ea47f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": 27.37,
+            "lon": -83.07
+          },
+          "family": "callithamniaceae",
+          "recordset": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "dqs": 0.19402985074626866,
+          "stateprovince": "florida",
+          "phylum": "rhodophyta",
+          "catalognumber": "usf-a09552",
+          "taxonrank": "species",
+          "specificepithet": "halliae",
+          "continent": "north america",
+          "uuid": "a3a98594-a329-4d0d-bd35-63eccd1ea47f",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "trynet",
+          "institutioncode": "usf",
+          "mediarecords": [
+            "5d537af2-d8d5-4d7f-9d81-d5b2e76c0274"
+          ],
+          "datemodified": "2016-11-10T16:07:59.813104+00:00",
+          "etag": "b66f4fb935f138f908fc4ec34b2217f3bae51532",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+          "taxonid": "6453038",
+          "scientificname": "callithamnion halliae",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "halliae",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Trynet",
+            "idigbio:uuid": "a3a98594-a329-4d0d-bd35-63eccd1ea47f",
+            "dwc:locality": "27.37N 83.07W Hourglass 45, Station B, FL",
+            "dwc:order": "Ceramiales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698672",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "F.S.Collins",
+            "idigbio:recordIds": [
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\076434f7-7586-4665-8a85-36735c60945c",
+              "urn:uuid:076434f7-7586-4665-8a85-36735c60945c",
+              "837d99c6-3045-4ba3-8951-643ddb3d6676\\698672"
+            ],
+            "dwc:occurrenceID": "076434f7-7586-4665-8a85-36735c60945c",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+            "dwc:stateProvince": "Florida",
+            "dwc:datasetid": "2d59e5db-57ad-41ff-97d6-11f5fb264527",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:076434f7-7586-4665-8a85-36735c60945c",
+            "idigbio:etag": "b66f4fb935f138f908fc4ec34b2217f3bae51532",
+            "id": "698672",
+            "dwc:decimalLatitude": "27.37",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Callithamnion",
+            "dwc:continent": "north america",
+            "dwc:family": "Callithamniaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "5d537af2-d8d5-4d7f-9d81-d5b2e76c0274"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "callithamnion pinastroides",
+            "dwc:phylum": "Rhodophyta",
+            "idigbio:dateModified": "2016-11-10T16:07:59.813104",
+            "dwc:georeferenceSources": "georef batch tool 2015-12-27; GeoLocate",
+            "dwc:institutionCode": "USF",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2658493",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09552",
+            "dwc:taxonid": "6453038",
+            "dwc:taxonrank": "species",
+            "dwc:decimalLongitude": "-83.07",
+            "dwc:scientificName": "Callithamnion halliae",
+            "dwc:otherCatalogNumbers": "147512",
+            "dwc:georeferencedBy": "rpf1 (2015-12-27 11:40:10)",
+            "dwc:verbatimEventDate": "November 1967",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2015-12-27 13:40:10",
+            "dwc:coordinateUncertaintyInMeters": "1000",
+            "gbif:reference": [
+              {
+                "coreid": "6453038",
+                "dcterms:source": "world register of marine species",
+                "dcterms:bibliographiccitation": "algaebase"
+              }
+            ]
+          },
+          "coordinateuncertainty": 1000,
+          "data": {
+            "dwc:specificEpithet": "halliae",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "Trynet",
+            "dwc:georeferenceSources": "georef batch tool 2015-12-27; GeoLocate",
+            "dwc:order": "Ceramiales",
+            "dcterms:references": "http://macroalgae.org/portal/collections/individual/index.php?occid=698672",
+            "dwc:scientificNameAuthorship": "F.S.Collins",
+            "dwc:occurrenceID": "076434f7-7586-4665-8a85-36735c60945c",
+            "id": "698672",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "d032925d-2181-4c19-abc7-dd9bee3597ee",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:076434f7-7586-4665-8a85-36735c60945c",
+            "symbiota:recordEnteredBy": "Ryan Frazier",
+            "dwc:decimalLatitude": "27.37",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Callithamnion",
+            "dwc:family": "Callithamniaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:phylum": "Rhodophyta",
+            "dwc:locality": "27.37N 83.07W Hourglass 45, Station B, FL",
+            "dwc:institutionCode": "USF",
+            "dwc:class": "Florideophyceae",
+            "dwc:catalogNumber": "USF-A09552",
+            "dwc:decimalLongitude": "-83.07",
+            "dwc:coordinateUncertaintyInMeters": "1000",
+            "dwc:otherCatalogNumbers": "147512",
+            "dwc:georeferencedBy": "rpf1 (2015-12-27 11:40:10)",
+            "dwc:verbatimEventDate": "November 1967",
+            "dcterms:modified": "2015-12-27 13:40:10",
+            "dwc:scientificName": "Callithamnion halliae"
+          },
+          "class": "florideophyceae",
+          "occurrenceid": "076434f7-7586-4665-8a85-36735c60945c",
+          "country": "united states",
+          "locality": "27.37n 83.07w hourglass 45, station b, fl",
+          "canonicalname": "callithamnion pinastroides",
+          "flags": [
+            "dwc_taxonrank_replaced",
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "geopoint_low_precision",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_taxon_corrected",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "november 1967",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\076434f7-7586-4665-8a85-36735c60945c",
+            "urn:uuid:076434f7-7586-4665-8a85-36735c60945c",
+            "837d99c6-3045-4ba3-8951-643ddb3d6676\\698672"
+          ],
+          "genus": "callithamnion",
+          "order": "ceramiales"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "type": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "records",
+          "doc_count": 82398080,
+          "lastModified": {
+            "value": 1486740076356,
+            "value_as_string": "2017-02-10T15:21:16.356Z"
+          }
+        },
+        {
+          "key": "mediarecords",
+          "doc_count": 18476941,
+          "lastModified": {
+            "value": 1486740168498,
+            "value_as_string": "2017-02-10T15:22:48.498Z"
+          }
+        },
+        {
+          "key": "recordsets",
+          "doc_count": 1096,
+          "lastModified": {
+            "value": 1486823650060,
+            "value_as_string": "2017-02-11T14:34:10.060Z"
+          }
+        },
+        {
+          "key": "publishers",
+          "doc_count": 69,
+          "lastModified": {
+            "value": 1484732596090,
+            "value_as_string": "2017-01-18T09:43:16.090Z"
+          }
+        }
+      ]
+    }
+  }
+}
