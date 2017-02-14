@@ -6,47 +6,25 @@ export default function(req, params, munger, def) {
     params = [params];
   }
   munger = munger || _.identity;
-
-  params.forEach(function(param) {
-    var mangle_param = null;
-
-    // topFileds -> top_fields
-    if(/.*[A-Z].*/.test(param)) {
-      mangle_param = "";
-      param.split(/([A-Z])/).forEach(function(part) {
-        if(/[A-Z]/.test(part)) {
-          mangle_param += "_" + part.toLowerCase();
-        } else {
-          mangle_param += part;
-        }
-      });
-      if(mangle_param != param) {
-        params.push(mangle_param);
+  const possibleNames = function*() {
+    for(const param of params) {
+      yield param;
+      // topFields -> top_fields
+      if(/.*[A-Z].*/.test(param)) {
+        yield _.snakeCase(param);
+      }
+      // top_fields -> topFields
+      if(/.*_.*/.test(param)) {
+        yield _.camelCase(param);
       }
     }
+  };
 
-    // top_fields -> topFields
-    if(/.*_.*/.test(param)) {
-      mangle_param = "";
-      param.split("_").forEach(function(part) {
-        if(mangle_param == "") {
-          mangle_param += part;
-        } else {
-          mangle_param += part[0].toUpperCase() + part.substr(1);
-        }
-      });
-      if(mangle_param != param) {
-        params.push(mangle_param);
-      }
-    }
-  });
-
-
-  for(var i = 0; i < params.length; i++) {
-    var p = params[i];
+  for(const p of possibleNames()) {
     if(!_.isUndefined(req.body[p])) {
       return munger(req.body[p]);
-    } else if(!_.isUndefined(req.query[p])) {
+    }
+    if(!_.isUndefined(req.query[p])) {
       return munger(req.query[p]);
     }
   }

@@ -40,70 +40,60 @@ export function sort(req) {
   }, defsort);
 }
 
-export function limit(req) {
-  return getParam(req, "limit", function(p) {
-    const pp = parseInt(p, 10);
+export function int(req, paramName, dflt) {
+  return getParam(req, paramName, function(paramVal) {
+    const pp = parseInt(paramVal, 10);
     if(isNaN(pp)) {
-      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "limit");
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", paramName);
     }
-    return Math.min(pp, config.maxLimit);
-  }, config.defaultLimit);
+    return pp;
+  }, dflt);
+}
+
+export function float(req, paramName, dflt) {
+  return getParam(req, paramName, function(paramVal) {
+    const pp = parseFloat(paramVal, 10);
+    if(isNaN(pp)) {
+      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", paramName);
+    }
+    return pp;
+  }, dflt);
+}
+
+export function bool(req, paramName, dflt) {
+  return getParam(req, paramName, function(arg) {
+    if(_.isBoolean(arg)) { return arg; }
+    arg = arg.toLowerCase();
+    return arg === "true" || arg === "yes" || arg === "1";
+  }, dflt);
+}
+
+export function limit(req) {
+  return Math.min(config.maxLimit, int(req, "limit", config.defaultLimit));
 }
 
 export function offset(req) {
-  return getParam(req, "offset", function(p) {
-    const pp = parseInt(p, 10);
-    if(isNaN(pp)) {
-      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "offset");
-    }
-    return pp;
-  }, 0);
+  return int(req, "offset", 0);
 }
 
-export const lat = (req) => getParam(req, "lat", function(p) {
-  const pp = parseFloat(p);
-  if(isNaN(pp)) {
-    throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "lat");
-  }
-  return pp;
-}, 0);
-
-export const lon = (req) => getParam(req, "lon", function(p) {
-  let pp = parseFloat(p);
-  if(isNaN(pp)) {
-    throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "lon");
-  }
+export function lat(req) {
+  return float(req, "lat", 0);
+}
+export function lon(req) {
+  let pp = float(req, "lon", 0);
   while(pp > 180) { pp -= 360; }
   while(pp < -180) { pp += 360; }
   return pp;
-}, 0);
+}
 
-export const zoom = (req) => getParam(req, "zoom", function(p) {
-  const pp = parseInt(p, 10);
-  if(isNaN(pp)) {
-    throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "zoom");
-  }
-  return pp;
-}, 0);
+export function zoom(req) { return int(req, "zoom", 0); }
 
 export function top_count(req) {
-  return getParam(req, "count", function(p) {
-    const pp = parseInt(p, 10);
-    if(isNaN(pp)) {
-      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "count");
-    }
-    return Math.min(pp, config.maxLimit);
-  }, 10);
+  return Math.min(int(req, "count", 10), config.maxLimit);
 }
 
 export function threshold(req, def) {
-  return getParam(req, "threshold", function(p) {
-    const pp = parseInt(p, 10);
-    if(isNaN(pp)) {
-      throw new ParameterParseError("numeric parameter expected, parsing did not return a number", "threshold");
-    }
-    return pp;
-  }, def);
+  return int(req, "threshold", def);
 }
 
 
@@ -186,9 +176,5 @@ export function fields_exclude(req, term_type) {
 }
 
 export function noattr(req) {
-  return getParam(req, "no_attribution", function(arg) {
-    if(_.isBoolean(arg)) { return arg; }
-    arg = arg.toLowerCase();
-    return arg === "true" || arg === "yes" || arg === "1";
-  }, false);
+  return bool(req, "no_attribution", false);
 }

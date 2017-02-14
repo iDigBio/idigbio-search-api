@@ -207,7 +207,7 @@ const stats = async function(ctx) {
   const minDate = getParam(ctx.request, "minDate", null, "2014-01-01");
   const maxDate = getParam(ctx.request, "maxDate", null, "now");
   const dateInterval = getParam(ctx.request, "dateInterval", null, "year");
-  const inverted = getParam(ctx.request, "inverted", (p) =>  p === "true", false);
+  const inverted = cp.bool(ctx.request, "inverted", false);
 
   const rf = {
     "harvest_date": {

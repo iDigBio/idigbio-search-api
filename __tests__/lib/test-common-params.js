@@ -20,6 +20,19 @@ describe("getParam", function() {
     expect(getParam(req, "noattr", (p) => p, true))
       .toEqual(false);
   });
+
+  it("Should handle underscores when requesting camelcase", function() {
+    const req = makeMockReq({topFields: "foo"});
+    expect(getParam(req, "top_fields")).toEqual("foo");
+    expect(getParam(req, "topFields")).toEqual("foo");
+  });
+
+  it("should handle camelcase when requesting underscores", function() {
+    const req = makeMockReq({top_fields: "foo"});
+    expect(getParam(req, "top_fields")).toEqual("foo");
+    expect(getParam(req, "topFields")).toEqual("foo");
+  });
+
 });
 
 describe("common parameters", function() {
@@ -72,6 +85,27 @@ describe("common parameters", function() {
   });
 
   describe("Numeric Parameters", function() {
+    describe("int", function() {
+      it("should pass through an int", async function() {
+        const res = cp.int(makeMockReq({x: 10}), "x");
+        expect(res).toEqual(10);
+      });
+      it("should parse an int", async function() {
+        const res = cp.int(makeMockReq({x: "10"}), "x");
+        expect(res).toEqual(10);
+      });
+      it("should return default if none specified", function() {
+        const res = cp.int(makeMockReq({}), "x", 14);
+        expect(res).toEqual(14);
+      });
+      it("Should throw on invalid value", function() {
+        const req = makeMockReq({x: "{x}"});
+        expect(() => cp.int(req, "x")).toThrow(/numeric/);
+        expect(() => cp.int(req, "x", 10)).toThrow(/numeric/);
+      });
+    });
+
+
     function testNumericParam(paramName, funcName) {
       funcName = funcName || paramName;
       describe(funcName, function() {
