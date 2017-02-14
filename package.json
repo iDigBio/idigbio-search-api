@@ -66,8 +66,10 @@
   "jest": {
     "testPathIgnorePatterns": [
       ".eslintrc.js",
-      "/node_modules/"
-    ]
+      "/node_modules/",
+      "init.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/init"
   },
   "repository": {
     "type": "git",

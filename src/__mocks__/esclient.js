@@ -55,7 +55,7 @@ function wrap(name) {
     return result;
   };
 }
-logger.debug("esclient", esclient);
+
 const client = {};
 _.forEach(["search", "count", "indices.getMapping"], function(name) {
   _.set(client, name, wrap(name));
