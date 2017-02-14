@@ -14,6 +14,7 @@ describe('Search Deprecated Endpoints', function() {
   beforeAll(async function() {
     await app.ready;
     server = app.listen();
+    config.maxLimit = 47;
   });
   afterAll(() => server.close());
 
@@ -110,6 +111,7 @@ describe('Search Deprecated Endpoints', function() {
             .send({
               rq: q,
               limit: 10000,
+              fields: ["uuid"]
             })
             .expect('Content-Type', /json/)
             .expect(200);
@@ -182,11 +184,11 @@ describe('Search Deprecated Endpoints', function() {
       Object.keys(response.body.items[0].data).length.should.equal(1);
     });
     it('should obey maxLimit', async function() {
-      var q = {};
       const response = await request(server)
             .get("/v2/media/")
-            .query({mq: JSON.stringify(q),
+            .query({mq: JSON.stringify({}),
                     rq: JSON.stringify({}),
+                    fields: JSON.stringify(["uuid"]),
                     limit: 10000})
             .expect('Content-Type', /json/)
             .expect(200);
@@ -244,6 +246,7 @@ describe('Search Deprecated Endpoints', function() {
               rq: {},
               mq: q,
               limit: 10000,
+              fields: ["uuid"]
             })
             .expect('Content-Type', /json/)
             .expect(200);

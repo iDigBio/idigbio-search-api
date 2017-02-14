@@ -6,13 +6,15 @@ import {expect, should} from 'chai';  // eslint-disable-line no-unused-vars
 should();
 import request from 'supertest';
 
-import app from 'app';
+import app from "app";
+import config from "config";
 
 describe('Home', function() {
   let server = null;
   beforeAll(async function() {
     server = app.listen();
     await app.ready;
+    config.maxLimit = 47;
   });
   afterAll(() => server.close());
 

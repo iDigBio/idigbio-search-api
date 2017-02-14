@@ -14,6 +14,7 @@ describe('Search', function() {
   beforeAll(async function() {
     await app.ready;
     server = app.listen();
+    config.maxLimit = 47;
   });
   afterAll(() => server.close());
 
@@ -187,10 +188,14 @@ describe('Search', function() {
       Object.keys(response.body.items[0].data).length.should.equal(1);
     });
     it('should obey maxLimit', async function() {
-      var q = {};
       const response = await request(server)
             .get("/v2/search/media/")
-            .query({limit: 10000, rq: JSON.stringify({}), mq: JSON.stringify(q), fields: ["uuid"]})
+            .query({
+              limit: 10000,
+              rq: JSON.stringify({}),
+              mq: JSON.stringify({}),
+              fields: ["uuid"]
+            })
             .expect('Content-Type', /json/)
             .expect(200);
       response.body.items.length.should.be.below(config.maxLimit + 1);
