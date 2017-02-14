@@ -4,7 +4,6 @@ stacktrace*
 coverage/
 .nyc_output/
 build/
-
 .git
 __tests__/mock/
 .travis.yml
