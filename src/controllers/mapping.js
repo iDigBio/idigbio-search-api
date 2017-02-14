@@ -506,9 +506,12 @@ const makeMapTile = async function(map_def, zoom, x, y, response_type) {
 
 const getMapTile = async function(ctx) {
   const map_def = await getMapDef(ctx.params.shortCode);
-  const x = parseInt(ctx.params.x, 10),
-        y = parseInt(ctx.params.y, 10),
-        z = parseInt(ctx.params.z, 10);
+  const z = parseInt(ctx.params.z, 10),
+        x = parseInt(ctx.params.x, 10),
+        y = parseInt(ctx.params.y, 10);
+  if(_([x, y, z]).some(_.isNaN)) {
+    ctx.throw(400, "Must provide numeric values for {shortcode}/{z}/{x}/{y}");
+  }
   var response_type = ctx.params.t;
   if(response_type  !== "json") {
     ctx.type = 'image/png';
