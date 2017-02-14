@@ -1,0 +1,168 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 82398080,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "records",
+        "_id": "876fc54f-cca8-498e-ae2b-38e71f7bb07e",
+        "_score": 1,
+        "_source": {
+          "family": "melastomataceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.26865671641791045,
+          "county": "st elie",
+          "phylum": "tracheophyta",
+          "catalognumber": "p00373179",
+          "startdayofyear": 328,
+          "collector": "poncy, o.",
+          "verbatimlocality": "réserve naturelle de la trinité",
+          "uuid": "876fc54f-cca8-498e-ae2b-38e71f7bb07e",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "datemodified": "2017-01-26T09:48:37.666049+00:00",
+          "datecollected": "2013-11-24T00:00:00+00:00",
+          "etag": "7b74d3e8bf8795352b7085e51713b94df9a170f1",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_phylum_added",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "hasMedia": false,
+          "minelevation": 200,
+          "hasImage": false,
+          "kingdom": "plantae",
+          "scientificname": "aciotis sp.",
+          "indexData": {
+            "dwc:countryCode": "gf",
+            "dwc:county": "St Elie",
+            "dwc:recordedBy": "Poncy, O.",
+            "idigbio:uuid": "876fc54f-cca8-498e-ae2b-38e71f7bb07e",
+            "dwc:fieldNumber": "2759",
+            "dwc:order": "myrtales",
+            "flag_dwc_phylum_added": true,
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:eventDate": "2013-11-24",
+            "dwc:country": "guyane française",
+            "idigbio:etag": "7b74d3e8bf8795352b7085e51713b94df9a170f1",
+            "dwc:collectionCode": "P",
+            "dwc:kingdom": "plantae",
+            "dwc:decimalLatitude": "5.01667",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Aciotis",
+            "dwc:preparations": "hb",
+            "dwc:identifiedBy": "Poncy",
+            "idigbio:siblings": {},
+            "dwc:phylum": "tracheophyta",
+            "idigbio:dateModified": "2017-01-26T09:48:37.666049",
+            "dwc:fieldNotes": "Herbacée dressée, 80 cm, tige fragile très cassante, quadrangulaire ailée, tige et ailes membraneuses vertes, glabres. Feuilles glabres, violet dessous parfois mixé de vert, pétiole ailé, nervure rouge. Inflo panicule terminale 18cm, axes et calices verts, corolle blanche 6 mm non ouverte",
+            "dwc:institutionCode": "MNHN",
+            "dwc:locationRemarks": "Savane Roche 'roche Bénitier'",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P00373179",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|80768",
+                "dwc:identifiedBy": "Poncy",
+                "dwc:specificEpithet": "sp.",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+                "dwc:identificationID": "SONNERAT|8378804",
+                "dwc:dateIdentified": "2013",
+                "dwc:genus": "Aciotis",
+                "dwc:scientificName": "Aciotis sp.",
+                "dwc:higherClassification": "Aciotis;Melastomataceae",
+                "dwc:family": "Melastomataceae"
+              }
+            ],
+            "dwc:month": "11",
+            "dwc:decimalLongitude": "-53.66667",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Réserve naturelle de la Trinité",
+            "dwc:family": "Melastomataceae",
+            "flag_dwc_class_added": true,
+            "dwc:minimumElevationInMeters": "200",
+            "dcterms:modified": "2003-07-18 18:43:09.0",
+            "dwc:scientificName": "Aciotis sp.",
+            "dwc:day": "24",
+            "flag_dwc_kingdom_added": true,
+            "dwc:year": "2013"
+          },
+          "data": {
+            "dwc:countryCode": "gf",
+            "dwc:county": "St Elie",
+            "dwc:recordedBy": "Poncy, O.",
+            "dwc:fieldNumber": "2759",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+            "dwc:eventDate": "2013-11-24",
+            "dwc:country": "guyane française",
+            "dwc:collectionCode": "P",
+            "dwc:decimalLatitude": "5.01667",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Aciotis",
+            "dwc:preparations": "hb",
+            "dwc:identifiedBy": "Poncy",
+            "dwc:fieldNotes": "Herbacée dressée, 80 cm, tige fragile très cassante, quadrangulaire ailée, tige et ailes membraneuses vertes, glabres. Feuilles glabres, violet dessous parfois mixé de vert, pétiole ailé, nervure rouge. Inflo panicule terminale 18cm, axes et calices verts, corolle blanche 6 mm non ouverte",
+            "dwc:institutionCode": "MNHN",
+            "dwc:locationRemarks": "Savane Roche 'roche Bénitier'",
+            "dwc:catalogNumber": "P00373179",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|80768",
+                "dwc:identifiedBy": "Poncy",
+                "dwc:specificEpithet": "sp.",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+                "dwc:identificationID": "SONNERAT|8378804",
+                "dwc:dateIdentified": "2013",
+                "dwc:genus": "Aciotis",
+                "dwc:scientificName": "Aciotis sp.",
+                "dwc:higherClassification": "Aciotis;Melastomataceae",
+                "dwc:family": "Melastomataceae"
+              }
+            ],
+            "dwc:month": "11",
+            "dwc:decimalLongitude": "-53.66667",
+            "dwc:verbatimLocality": "Réserve naturelle de la Trinité",
+            "dwc:family": "Melastomataceae",
+            "dwc:minimumElevationInMeters": "200",
+            "dcterms:modified": "2003-07-18 18:43:09.0",
+            "dwc:scientificName": "Aciotis sp.",
+            "dwc:day": "24",
+            "dwc:year": "2013"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179",
+          "country": "guyane française",
+          "geopoint": {
+            "lat": 5.01667,
+            "lon": -53.66667
+          },
+          "collectioncode": "p",
+          "eventdate": "2013-11-24",
+          "fieldnumber": "2759",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p00373179"
+          ],
+          "genus": "aciotis",
+          "order": "myrtales"
+        }
+      }
+    ]
+  }
+}

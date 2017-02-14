@@ -1,0 +1,936 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1096,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
+        "_score": 1,
+        "_source": {
+          "publisher": "350857a8-4940-4d02-ad42-49557f8006f1",
+          "uuid": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
+          "dqs": 0,
+          "archivelink": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=uf-ip",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "first_name": "Roger",
+              "last_name": "Portell",
+              "role": "Collection Manager",
+              "email": "portell@flmnh.ufl.edu"
+            },
+            {
+              "first_name": "Roger",
+              "last_name": "Portell",
+              "role": "Collection Manager",
+              "email": "portell@flmnh.ufl.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "350857a8-4940-4d02-ad42-49557f8006f1",
+            "eml_link": "http://ipt.flmnh.ufl.edu:8080/ipt/eml.do?r=uf-ip",
+            "contacts": [
+              {
+                "first_name": "Roger",
+                "last_name": "Portell",
+                "role": "Collection Manager",
+                "email": "portell@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "Roger",
+                "last_name": "Portell",
+                "role": "Collection Manager",
+                "email": "portell@flmnh.ufl.edu"
+              }
+            ],
+            "collection_name": "University of Florida Invertebrate Paleontology",
+            "idigbio:uuid": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
+            "idigbio:etag": "e509375a042fe799863f69e855c9f4f33210815f",
+            "update": "2017-02-07T15:00:57",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "989f6285-841c-47a4-991b-3d3396427f02"
+            ],
+            "link": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=uf-ip",
+            "idigbio:dateModified": "2017-02-07T15:09:01.653915",
+            "collection_description": "The Florida Museum of Natural History’s (FLMNH) Invertebrate Paleontology Collection (IP) is composed of Mollusca (78%), Arthropoda (8%), Echinodermata (6%), Cnidaria (4%), Bryozoa (2%), and combined Brachiopoda, Porifera, Annelida, Ichnofossils and others (2%) largely from the Cenozoic Era (last 65 million years).  Approximately 83% of the collection consists of specimens from the southeastern U.S., 15% from the circum-Caribbean and 2% from elsewhere (e.g., Antarctica).  Of the Florida fossils 70% are of Pliocene and Pleistocene age representing the richly fossiliferous late Neogene (e.g., Tamiami Formation (including Pinecrest Beds) and the Jackson Bluff, Intracoastal, Caloosahatchee, and Nashua formations). Eocene material collected in central to northern Florida (e.g., Avon Park Formation and Ocala Limestone) and Oligocene and Miocene fossils from around the state (e.g., Marianna and Suwannee limestones, Parachucla, Peace River, Arcadia, Chipola, and Shoal River formations) are well represented. \n\nThe collection is composed of five main parts: Systematic Collection (TX), Stratigraphic Collection (ST), Teaching Collection (TE), Micropaleontology Collection (MS), and Type and Figured Collection (TP).   The largest component is the Systematic Collection, where specimens are housed in phylogenetic order by family, then alphabetically by genus, then species.  The Stratigraphic Collection consist of fossils collected in situ.  The collection is organized by location, then formation and beds/horizons.  The Teaching Collection contains material from the Mesozoic and Paleozoic Eras. It serves as a resource to educators demonstrating life’s diversity throughout the ages.  The Micropaleontology Collection contains primarily foraminifera and ostracods; both highly valuable for use in stratigraphy and paleoecology.  The type and figured collection contains specimens cited in scientific publications and is organized alphabetically beginning with species.\n  \nThe strength and significance of our IP Collection resides in the extensive amount of material collected within the last 50 years from over 6,000 sites. Our collections are unique in that they represent many localities no longer accessible due to rapid regional land development. They are also a significant national research resource that serves as the basis, for an active and productive IP Research Program.  The entire IP collection (fully cataloged and uncataloged) consists of over 500,000 specimen lots.  A conservative estimate would place the total number of specimens in the IP Collection at about 6.0 million with over 2.6 million fully curated, computer cataloged, and available online.  As indicated, the number of uncataloged specimens outnumber the cataloged specimens. This reflects both continuous acquisition of material over long periods prior to 1986 when little curation occurred, an active IP field program that began in 1986, and the arrival of numerous, sizable donations (e.g., University of Alabama's Maxwell Smith Collection, Florida State University's Geology Department Collection, Rollins College's Beal-Maltbie Collection, the Florida Geological Survey Collection, Tulane University's E. & H. Vokes Collection, and the collections of Paul and Thomas McGinty, Muriel Hunter and Joe Banks, Victor Zullo, Ernest and Evelyn Bradley, Howard and Miriam Schriner, Jules DuBar, Richard Petit, Sue Stephens, Mary Palmer, Lyle Campbell, Joe Carter, and William Lyons).",
+            "id": "989f6285-841c-47a4-991b-3d3396427f02",
+            "other_guids": [],
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "e509375a042fe799863f69e855c9f4f33210815f",
+          "emllink": "http://ipt.flmnh.ufl.edu:8080/ipt/eml.do?r=uf-ip",
+          "recordids": [
+            "989f6285-841c-47a4-991b-3d3396427f02"
+          ],
+          "data": {
+            "eml_link": "http://ipt.flmnh.ufl.edu:8080/ipt/eml.do?r=uf-ip",
+            "contacts": [
+              {
+                "first_name": "Roger",
+                "last_name": "Portell",
+                "role": "Collection Manager",
+                "email": "portell@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "Roger",
+                "last_name": "Portell",
+                "role": "Collection Manager",
+                "email": "portell@flmnh.ufl.edu"
+              }
+            ],
+            "collection_name": "University of Florida Invertebrate Paleontology",
+            "update": "2017-02-07T15:00:57",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "http://ipt.flmnh.ufl.edu:8080/ipt/archive.do?r=uf-ip",
+            "collection_description": "The Florida Museum of Natural History’s (FLMNH) Invertebrate Paleontology Collection (IP) is composed of Mollusca (78%), Arthropoda (8%), Echinodermata (6%), Cnidaria (4%), Bryozoa (2%), and combined Brachiopoda, Porifera, Annelida, Ichnofossils and others (2%) largely from the Cenozoic Era (last 65 million years).  Approximately 83% of the collection consists of specimens from the southeastern U.S., 15% from the circum-Caribbean and 2% from elsewhere (e.g., Antarctica).  Of the Florida fossils 70% are of Pliocene and Pleistocene age representing the richly fossiliferous late Neogene (e.g., Tamiami Formation (including Pinecrest Beds) and the Jackson Bluff, Intracoastal, Caloosahatchee, and Nashua formations). Eocene material collected in central to northern Florida (e.g., Avon Park Formation and Ocala Limestone) and Oligocene and Miocene fossils from around the state (e.g., Marianna and Suwannee limestones, Parachucla, Peace River, Arcadia, Chipola, and Shoal River formations) are well represented. \n\nThe collection is composed of five main parts: Systematic Collection (TX), Stratigraphic Collection (ST), Teaching Collection (TE), Micropaleontology Collection (MS), and Type and Figured Collection (TP).   The largest component is the Systematic Collection, where specimens are housed in phylogenetic order by family, then alphabetically by genus, then species.  The Stratigraphic Collection consist of fossils collected in situ.  The collection is organized by location, then formation and beds/horizons.  The Teaching Collection contains material from the Mesozoic and Paleozoic Eras. It serves as a resource to educators demonstrating life’s diversity throughout the ages.  The Micropaleontology Collection contains primarily foraminifera and ostracods; both highly valuable for use in stratigraphy and paleoecology.  The type and figured collection contains specimens cited in scientific publications and is organized alphabetically beginning with species.\n  \nThe strength and significance of our IP Collection resides in the extensive amount of material collected within the last 50 years from over 6,000 sites. Our collections are unique in that they represent many localities no longer accessible due to rapid regional land development. They are also a significant national research resource that serves as the basis, for an active and productive IP Research Program.  The entire IP collection (fully cataloged and uncataloged) consists of over 500,000 specimen lots.  A conservative estimate would place the total number of specimens in the IP Collection at about 6.0 million with over 2.6 million fully curated, computer cataloged, and available online.  As indicated, the number of uncataloged specimens outnumber the cataloged specimens. This reflects both continuous acquisition of material over long periods prior to 1986 when little curation occurred, an active IP field program that began in 1986, and the arrival of numerous, sizable donations (e.g., University of Alabama's Maxwell Smith Collection, Florida State University's Geology Department Collection, Rollins College's Beal-Maltbie Collection, the Florida Geological Survey Collection, Tulane University's E. & H. Vokes Collection, and the collections of Paul and Thomas McGinty, Muriel Hunter and Joe Banks, Victor Zullo, Ernest and Evelyn Bradley, Howard and Miriam Schriner, Jules DuBar, Richard Petit, Sue Stephens, Mary Palmer, Lyle Campbell, Joe Carter, and William Lyons).",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "989f6285-841c-47a4-991b-3d3396427f02"
+          },
+          "datemodified": "2017-02-07T15:09:01.653915+00:00",
+          "name": "university of florida invertebrate paleontology"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "c9bff84f-8de4-43e6-b195-f515f187a68a",
+        "_score": 1,
+        "_source": {
+          "publisher": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+          "uuid": "c9bff84f-8de4-43e6-b195-f515f187a68a",
+          "dqs": 0,
+          "archivelink": "http://collections.mnhn.fr/ipt/archive.do?r=mnhn-ra",
+          "rights": "no license, assume public domain",
+          "contacts": [
+            {
+              "last_name": "MNHN",
+              "role": "Provider"
+            },
+            {
+              "first_name": "Laure",
+              "last_name": "Pierre",
+              "role": "Correspondant"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+            "eml_link": "http://collections.mnhn.fr/ipt/eml.do?r=mnhn-ra",
+            "contacts": [
+              {
+                "last_name": "MNHN",
+                "role": "Provider"
+              },
+              {
+                "first_name": "Laure",
+                "last_name": "Pierre",
+                "role": "Correspondant"
+              }
+            ],
+            "collection_name": "The reptiles and amphibians collection (RA) of the Muséum national d'Histoire Naturelle (MNHN - Paris)",
+            "idigbio:uuid": "c9bff84f-8de4-43e6-b195-f515f187a68a",
+            "idigbio:etag": "9c5458c52745d210fc85a9fe71433473283a797d",
+            "update": "2017-02-08T16:44:01",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "217b0d4f-c87e-4063-b6c5-78277e40e866"
+            ],
+            "link": "http://collections.mnhn.fr/ipt/archive.do?r=mnhn-ra",
+            "idigbio:dateModified": "2017-02-08T16:55:40.044431",
+            "collection_description": "The collection of Reptiles and Amphibians of the Muséum National d'Histoire Naturelle started in the early 19th century and has handwritten catalogues that date from 1864. The records in the Reptile and Amphiphibian database were transcribed from these catalogues. Most entries have not yet been checked for errors or verified against the collections. Thus there is a great heterogeneity in taxonomy and in geographical information. Beside the individual labelling system, the collection uses numbers to store specimens according to their specific name. This allows attaching to this number various historical names and the valid one. Locality names are written usually in French transliteration. Our curators and collection managers can help users concerning these issues.\nSearch results will give only part of the information available on the database. They help the researchers to learn about the holdings of the collection and the gross geographical origin. More detailed information can be obtained by writing to the curators. The results should not be used as primary data without check back to the specimens. The issue of the database is to prepare loan requests or visits to the collection. For any request contact: http://colhelper.mnhn.fr/",
+            "id": "217b0d4f-c87e-4063-b6c5-78277e40e866",
+            "other_guids": [],
+            "data_rights": "No license, assume Public Domain"
+          },
+          "etag": "9c5458c52745d210fc85a9fe71433473283a797d",
+          "emllink": "http://collections.mnhn.fr/ipt/eml.do?r=mnhn-ra",
+          "recordids": [
+            "217b0d4f-c87e-4063-b6c5-78277e40e866"
+          ],
+          "data": {
+            "eml_link": "http://collections.mnhn.fr/ipt/eml.do?r=mnhn-ra",
+            "contacts": [
+              {
+                "last_name": "MNHN",
+                "role": "Provider"
+              },
+              {
+                "first_name": "Laure",
+                "last_name": "Pierre",
+                "role": "Correspondant"
+              }
+            ],
+            "collection_name": "The reptiles and amphibians collection (RA) of the Muséum national d'Histoire Naturelle (MNHN - Paris)",
+            "update": "2017-02-08T16:44:01",
+            "ingest": true,
+            "data_rights": "No license, assume Public Domain",
+            "link": "http://collections.mnhn.fr/ipt/archive.do?r=mnhn-ra",
+            "collection_description": "The collection of Reptiles and Amphibians of the Muséum National d'Histoire Naturelle started in the early 19th century and has handwritten catalogues that date from 1864. The records in the Reptile and Amphiphibian database were transcribed from these catalogues. Most entries have not yet been checked for errors or verified against the collections. Thus there is a great heterogeneity in taxonomy and in geographical information. Beside the individual labelling system, the collection uses numbers to store specimens according to their specific name. This allows attaching to this number various historical names and the valid one. Locality names are written usually in French transliteration. Our curators and collection managers can help users concerning these issues.\nSearch results will give only part of the information available on the database. They help the researchers to learn about the holdings of the collection and the gross geographical origin. More detailed information can be obtained by writing to the curators. The results should not be used as primary data without check back to the specimens. The issue of the database is to prepare loan requests or visits to the collection. For any request contact: http://colhelper.mnhn.fr/",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "217b0d4f-c87e-4063-b6c5-78277e40e866"
+          },
+          "datemodified": "2017-02-08T16:55:40.044431+00:00",
+          "name": "the reptiles and amphibians collection (ra) of the muséum national d'histoire naturelle (mnhn - paris)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "4f8c3594-d7b2-4985-8dd9-1ae77f9187d4",
+        "_score": 1,
+        "_source": {
+          "publisher": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+          "uuid": "4f8c3594-d7b2-4985-8dd9-1ae77f9187d4",
+          "dqs": 0,
+          "archivelink": "http://collections.mnhn.fr/ipt/archive.do?r=mnhn-ed",
+          "rights": "no license, assume public domain",
+          "contacts": [
+            {
+              "last_name": "MNHN",
+              "role": "Provider"
+            },
+            {
+              "first_name": "Laurent",
+              "last_name": "Albenga",
+              "role": "Correspondant"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+            "eml_link": "http://collections.mnhn.fr/ipt/eml.do?r=mnhn-ed",
+            "contacts": [
+              {
+                "last_name": "MNHN",
+                "role": "Provider"
+              },
+              {
+                "first_name": "Laurent",
+                "last_name": "Albenga",
+                "role": "Correspondant"
+              }
+            ],
+            "collection_name": "The Diptera collection (ED) of the Muséum national d'Histoire naturelle (MNHN - Paris)",
+            "idigbio:uuid": "4f8c3594-d7b2-4985-8dd9-1ae77f9187d4",
+            "idigbio:etag": "c416672d1313b76c570f157ae3ba8b7045ce3e01",
+            "update": "2017-02-08T16:35:18",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "5d6d5aa7-2df9-4a3d-9a96-5fc7a988ab5f"
+            ],
+            "link": "http://collections.mnhn.fr/ipt/archive.do?r=mnhn-ed",
+            "idigbio:dateModified": "2017-02-08T16:55:37.897577",
+            "collection_description": "This dataset is the databased part of the Diptera from the entomological collections of the Muséum National d'Histoire Naturelle (Paris).\n\t\t\t\t\n\t\t\t\tThe Diptera collection of MNHN is divided into a general collection, classified into families, and separate nominal collections. The heart of the collection is composed of two historical nominal collections: Meigen and Macquart, both dating from the nineteenth century;  they contain about 5,000 holotypes. In total the collection contains 2.5 million specimens, 8000 holotypes and about 30,000 species or 20% of the described Diptera. All biogeographic regions are represented.",
+            "id": "5d6d5aa7-2df9-4a3d-9a96-5fc7a988ab5f",
+            "other_guids": [],
+            "data_rights": "No license, assume Public Domain"
+          },
+          "etag": "c416672d1313b76c570f157ae3ba8b7045ce3e01",
+          "emllink": "http://collections.mnhn.fr/ipt/eml.do?r=mnhn-ed",
+          "recordids": [
+            "5d6d5aa7-2df9-4a3d-9a96-5fc7a988ab5f"
+          ],
+          "data": {
+            "eml_link": "http://collections.mnhn.fr/ipt/eml.do?r=mnhn-ed",
+            "contacts": [
+              {
+                "last_name": "MNHN",
+                "role": "Provider"
+              },
+              {
+                "first_name": "Laurent",
+                "last_name": "Albenga",
+                "role": "Correspondant"
+              }
+            ],
+            "collection_name": "The Diptera collection (ED) of the Muséum national d'Histoire naturelle (MNHN - Paris)",
+            "update": "2017-02-08T16:35:18",
+            "ingest": true,
+            "data_rights": "No license, assume Public Domain",
+            "link": "http://collections.mnhn.fr/ipt/archive.do?r=mnhn-ed",
+            "collection_description": "This dataset is the databased part of the Diptera from the entomological collections of the Muséum National d'Histoire Naturelle (Paris).\n\t\t\t\t\n\t\t\t\tThe Diptera collection of MNHN is divided into a general collection, classified into families, and separate nominal collections. The heart of the collection is composed of two historical nominal collections: Meigen and Macquart, both dating from the nineteenth century;  they contain about 5,000 holotypes. In total the collection contains 2.5 million specimens, 8000 holotypes and about 30,000 species or 20% of the described Diptera. All biogeographic regions are represented.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "5d6d5aa7-2df9-4a3d-9a96-5fc7a988ab5f"
+          },
+          "datemodified": "2017-02-08T16:55:37.897577+00:00",
+          "name": "the diptera collection (ed) of the muséum national d'histoire naturelle (mnhn - paris)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "dddf9315-7819-4289-b587-6be72e4894d2",
+        "_score": 1,
+        "_source": {
+          "publisher": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+          "uuid": "dddf9315-7819-4289-b587-6be72e4894d2",
+          "dqs": 0,
+          "archivelink": "https://data.gbif.no/ipt/archive.do?r=trh_b",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Kristian",
+              "last_name": "Hassel",
+              "email": "kristian.hassel@ntnu.no"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+            "eml_link": "https://data.gbif.no/ipt/eml.do?r=trh_b",
+            "contacts": [
+              {
+                "first_name": "Kristian",
+                "last_name": "Hassel",
+                "email": "kristian.hassel@ntnu.no"
+              }
+            ],
+            "collection_name": "Bryophyte herbarium, NTNU University Museum",
+            "idigbio:uuid": "dddf9315-7819-4289-b587-6be72e4894d2",
+            "idigbio:etag": "eaa4ad3668559b704020a7aafbe4133c795eb780",
+            "update": "2017-02-11T01:37:53",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "6728c42d-c4b6-4fda-a211-5ad1bb59cda4"
+            ],
+            "link": "https://data.gbif.no/ipt/archive.do?r=trh_b",
+            "idigbio:dateModified": "2017-02-11T02:00:09.131215",
+            "collection_description": "The Norwegian and Nordic bryophyte herbarium contains more than 100 000 specimens, most of which have been digitized. Collections from the late 1800s and early 1900s comprise the foundation of this collection, primarily through the work of Ingebrigt Severin Hagen who worked at the NTNU University Museum from 1907 until his death in 1917.",
+            "id": "6728c42d-c4b6-4fda-a211-5ad1bb59cda4",
+            "other_guids": [],
+            "logo_url": "http://data.gbif.no/ipt/logo.do?r=trh_b",
+            "data_rights": "CC4 BY"
+          },
+          "etag": "eaa4ad3668559b704020a7aafbe4133c795eb780",
+          "emllink": "https://data.gbif.no/ipt/eml.do?r=trh_b",
+          "logourl": "http://data.gbif.no/ipt/logo.do?r=trh_b",
+          "recordids": [
+            "6728c42d-c4b6-4fda-a211-5ad1bb59cda4"
+          ],
+          "data": {
+            "eml_link": "https://data.gbif.no/ipt/eml.do?r=trh_b",
+            "contacts": [
+              {
+                "first_name": "Kristian",
+                "last_name": "Hassel",
+                "email": "kristian.hassel@ntnu.no"
+              }
+            ],
+            "collection_name": "Bryophyte herbarium, NTNU University Museum",
+            "update": "2017-02-11T01:37:53",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "https://data.gbif.no/ipt/archive.do?r=trh_b",
+            "collection_description": "The Norwegian and Nordic bryophyte herbarium contains more than 100 000 specimens, most of which have been digitized. Collections from the late 1800s and early 1900s comprise the foundation of this collection, primarily through the work of Ingebrigt Severin Hagen who worked at the NTNU University Museum from 1907 until his death in 1917.",
+            "institution_web_address": "",
+            "other_guids": [],
+            "logo_url": "http://data.gbif.no/ipt/logo.do?r=trh_b",
+            "id": "6728c42d-c4b6-4fda-a211-5ad1bb59cda4"
+          },
+          "datemodified": "2017-02-11T02:00:09.131215+00:00",
+          "name": "bryophyte herbarium, ntnu university museum"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "e6ccc2bd-9451-4802-8a51-8640d9f09793",
+        "_score": 1,
+        "_source": {
+          "publisher": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+          "uuid": "e6ccc2bd-9451-4802-8a51-8640d9f09793",
+          "dqs": 0,
+          "archivelink": "https://data.gbif.no/ipt/archive.do?r=o_vascular",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Reidar",
+              "last_name": "Elven",
+              "email": "reidar.elven@nhm.uio.no"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+            "eml_link": "https://data.gbif.no/ipt/eml.do?r=o_vascular",
+            "contacts": [
+              {
+                "first_name": "Reidar",
+                "last_name": "Elven",
+                "email": "reidar.elven@nhm.uio.no"
+              }
+            ],
+            "collection_name": "Vascular Plant Herbarium, Oslo (O)",
+            "idigbio:uuid": "e6ccc2bd-9451-4802-8a51-8640d9f09793",
+            "idigbio:etag": "0113539de8904c625f09ab14c9d48cf258a2b9cb",
+            "update": "2017-02-11T11:18:30",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "e45c7d91-81c6-4455-86e3-2965a5739b1f"
+            ],
+            "link": "https://data.gbif.no/ipt/archive.do?r=o_vascular",
+            "idigbio:dateModified": "2017-02-11T11:26:20.906912",
+            "collection_description": "Natural History Museum, University of Oslo.\nVascular plant collection.",
+            "id": "e45c7d91-81c6-4455-86e3-2965a5739b1f",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "0113539de8904c625f09ab14c9d48cf258a2b9cb",
+          "emllink": "https://data.gbif.no/ipt/eml.do?r=o_vascular",
+          "recordids": [
+            "e45c7d91-81c6-4455-86e3-2965a5739b1f"
+          ],
+          "data": {
+            "eml_link": "https://data.gbif.no/ipt/eml.do?r=o_vascular",
+            "contacts": [
+              {
+                "first_name": "Reidar",
+                "last_name": "Elven",
+                "email": "reidar.elven@nhm.uio.no"
+              }
+            ],
+            "collection_name": "Vascular Plant Herbarium, Oslo (O)",
+            "update": "2017-02-11T11:18:30",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "https://data.gbif.no/ipt/archive.do?r=o_vascular",
+            "collection_description": "Natural History Museum, University of Oslo.\nVascular plant collection.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "e45c7d91-81c6-4455-86e3-2965a5739b1f"
+          },
+          "datemodified": "2017-02-11T11:26:20.906912+00:00",
+          "name": "vascular plant herbarium, oslo (o)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "fe51bced-93ce-45b2-b0c6-f7256719a07b",
+        "_score": 1,
+        "_source": {
+          "publisher": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "uuid": "fe51bced-93ce-45b2-b0c6-f7256719a07b",
+          "dqs": 0,
+          "archivelink": "http://ipt1.cria.org.br/ipt/archive.do?r=cvrd",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "first_name": "Geovane",
+              "last_name": "Souza Siqueira",
+              "role": "Curador",
+              "email": "geovane.siqueira@vale.com"
+            },
+            {
+              "first_name": "Geovane",
+              "last_name": "Souza Siqueira",
+              "role": "Curador",
+              "email": "geovane.siqueira@vale.com"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+            "eml_link": "http://ipt1.cria.org.br/ipt/eml.do?r=cvrd",
+            "contacts": [
+              {
+                "first_name": "Geovane",
+                "last_name": "Souza Siqueira",
+                "role": "Curador",
+                "email": "geovane.siqueira@vale.com"
+              },
+              {
+                "first_name": "Geovane",
+                "last_name": "Souza Siqueira",
+                "role": "Curador",
+                "email": "geovane.siqueira@vale.com"
+              }
+            ],
+            "collection_name": "CVRD - Herbário da Reserva Natural Vale",
+            "idigbio:uuid": "fe51bced-93ce-45b2-b0c6-f7256719a07b",
+            "idigbio:etag": "2f0243727146ef56d89ea806b6094dbe0794549d",
+            "update": "2017-02-07T11:28:29",
+            "ingest": true,
+            "institution_web_address": "http://splink.cria.org.br/manager/detail?resource=CVRD",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "86894738-457d-4d25-89ca-d05231a02d46"
+            ],
+            "link": "http://ipt1.cria.org.br/ipt/archive.do?r=cvrd",
+            "idigbio:dateModified": "2017-02-07T12:43:37.051899",
+            "collection_description": "O Herbário da Reserva Natural Vale foi registrado em 1979, no Index Herbariorum, e publicado no The Herbaria of the World, em 1981, sendo reconhecido internacionalmente como Herbário CVRD. As coletas botânicas na Reserva iniciaram-se em 1963 e se tornaram uma atividade sistematizada a partir de 1978, quando foram intensificadas as pesquisas com flora realizadas na área. Desde então, o conhecimento sobre a flora local continua aumentando, incluindo a descoberta de novas espécies.",
+            "id": "86894738-457d-4d25-89ca-d05231a02d46",
+            "other_guids": [],
+            "logo_url": "http://ipt1.cria.org.br/ipt/logo.do?r=cvrd",
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "2f0243727146ef56d89ea806b6094dbe0794549d",
+          "emllink": "http://ipt1.cria.org.br/ipt/eml.do?r=cvrd",
+          "logourl": "http://ipt1.cria.org.br/ipt/logo.do?r=cvrd",
+          "recordids": [
+            "86894738-457d-4d25-89ca-d05231a02d46"
+          ],
+          "data": {
+            "eml_link": "http://ipt1.cria.org.br/ipt/eml.do?r=cvrd",
+            "contacts": [
+              {
+                "first_name": "Geovane",
+                "last_name": "Souza Siqueira",
+                "role": "Curador",
+                "email": "geovane.siqueira@vale.com"
+              },
+              {
+                "first_name": "Geovane",
+                "last_name": "Souza Siqueira",
+                "role": "Curador",
+                "email": "geovane.siqueira@vale.com"
+              }
+            ],
+            "collection_name": "CVRD - Herbário da Reserva Natural Vale",
+            "update": "2017-02-07T11:28:29",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "http://ipt1.cria.org.br/ipt/archive.do?r=cvrd",
+            "collection_description": "O Herbário da Reserva Natural Vale foi registrado em 1979, no Index Herbariorum, e publicado no The Herbaria of the World, em 1981, sendo reconhecido internacionalmente como Herbário CVRD. As coletas botânicas na Reserva iniciaram-se em 1963 e se tornaram uma atividade sistematizada a partir de 1978, quando foram intensificadas as pesquisas com flora realizadas na área. Desde então, o conhecimento sobre a flora local continua aumentando, incluindo a descoberta de novas espécies.",
+            "institution_web_address": "http://splink.cria.org.br/manager/detail?resource=CVRD",
+            "other_guids": [],
+            "logo_url": "http://ipt1.cria.org.br/ipt/logo.do?r=cvrd",
+            "id": "86894738-457d-4d25-89ca-d05231a02d46"
+          },
+          "datemodified": "2017-02-07T12:43:37.051899+00:00",
+          "name": "cvrd - herbário da reserva natural vale"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "8096525f-6f67-4bd2-a160-48ed4bea8aa7",
+        "_score": 1,
+        "_source": {
+          "publisher": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "uuid": "8096525f-6f67-4bd2-a160-48ed4bea8aa7",
+          "dqs": 0,
+          "archivelink": "http://ipt1.cria.org.br/ipt/archive.do?r=bhzb",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "first_name": "Inês",
+              "last_name": "Ribeiro de Andrade",
+              "role": "Curador",
+              "email": "inribeiro@hotmail.com"
+            },
+            {
+              "first_name": "Inês",
+              "last_name": "Ribeiro de Andrade",
+              "role": "Curador",
+              "email": "inribeiro@hotmail.com"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+            "eml_link": "http://ipt1.cria.org.br/ipt/eml.do?r=bhzb",
+            "contacts": [
+              {
+                "first_name": "Inês",
+                "last_name": "Ribeiro de Andrade",
+                "role": "Curador",
+                "email": "inribeiro@hotmail.com"
+              },
+              {
+                "first_name": "Inês",
+                "last_name": "Ribeiro de Andrade",
+                "role": "Curador",
+                "email": "inribeiro@hotmail.com"
+              }
+            ],
+            "collection_name": "BHZB - Herbário do Jardim Botânico da Fundação Zoo-Botânica de Belo Horizonte",
+            "idigbio:uuid": "8096525f-6f67-4bd2-a160-48ed4bea8aa7",
+            "idigbio:etag": "afc60bccd664feb8b7b76a53cc5ee762de3c2834",
+            "update": "2017-02-07T11:28:17",
+            "ingest": true,
+            "institution_web_address": "http://splink.cria.org.br/manager/detail?resource=BHZB",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "fd99455d-f6e9-4421-930a-5d8e23ac8895"
+            ],
+            "link": "http://ipt1.cria.org.br/ipt/archive.do?r=bhzb",
+            "idigbio:dateModified": "2017-02-07T12:43:37.375410",
+            "collection_description": "O Herbário BHZB do Jardim Botânico da Fundação Zoo-Botânica foi criado em 1993. Tem como objetivo catalogar as espécies existentes nas suas coleções vivas e reservas, além daquelas obtidas por coletas feitas em Minas Gerais. Atualmente, o acervo possui 10426 espécimens catalogados e registrados. Suas coleções mais importantes são as RPPN Brumas do Espinhaço, da Serra da Moeda, Serra do Caraça, Reserva da Fundação Zôo-Botânica de BH, Flora do Norte e Nordeste de MG, Parque Estadual do Rio Doce e outras coletas importantes coletas aleatórias no município de Belo Horizonte. Encontra-se no acervo 155 espécies ameaçadas, em diferentes categorias de ameaça. Esta inscrito no Index Herbariorum desde 2013.",
+            "id": "fd99455d-f6e9-4421-930a-5d8e23ac8895",
+            "other_guids": [],
+            "logo_url": "http://ipt1.cria.org.br/ipt/logo.do?r=bhzb",
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "afc60bccd664feb8b7b76a53cc5ee762de3c2834",
+          "emllink": "http://ipt1.cria.org.br/ipt/eml.do?r=bhzb",
+          "logourl": "http://ipt1.cria.org.br/ipt/logo.do?r=bhzb",
+          "recordids": [
+            "fd99455d-f6e9-4421-930a-5d8e23ac8895"
+          ],
+          "data": {
+            "eml_link": "http://ipt1.cria.org.br/ipt/eml.do?r=bhzb",
+            "contacts": [
+              {
+                "first_name": "Inês",
+                "last_name": "Ribeiro de Andrade",
+                "role": "Curador",
+                "email": "inribeiro@hotmail.com"
+              },
+              {
+                "first_name": "Inês",
+                "last_name": "Ribeiro de Andrade",
+                "role": "Curador",
+                "email": "inribeiro@hotmail.com"
+              }
+            ],
+            "collection_name": "BHZB - Herbário do Jardim Botânico da Fundação Zoo-Botânica de Belo Horizonte",
+            "update": "2017-02-07T11:28:17",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "http://ipt1.cria.org.br/ipt/archive.do?r=bhzb",
+            "collection_description": "O Herbário BHZB do Jardim Botânico da Fundação Zoo-Botânica foi criado em 1993. Tem como objetivo catalogar as espécies existentes nas suas coleções vivas e reservas, além daquelas obtidas por coletas feitas em Minas Gerais. Atualmente, o acervo possui 10426 espécimens catalogados e registrados. Suas coleções mais importantes são as RPPN Brumas do Espinhaço, da Serra da Moeda, Serra do Caraça, Reserva da Fundação Zôo-Botânica de BH, Flora do Norte e Nordeste de MG, Parque Estadual do Rio Doce e outras coletas importantes coletas aleatórias no município de Belo Horizonte. Encontra-se no acervo 155 espécies ameaçadas, em diferentes categorias de ameaça. Esta inscrito no Index Herbariorum desde 2013.",
+            "institution_web_address": "http://splink.cria.org.br/manager/detail?resource=BHZB",
+            "other_guids": [],
+            "logo_url": "http://ipt1.cria.org.br/ipt/logo.do?r=bhzb",
+            "id": "fd99455d-f6e9-4421-930a-5d8e23ac8895"
+          },
+          "datemodified": "2017-02-07T12:43:37.375410+00:00",
+          "name": "bhzb - herbário do jardim botânico da fundação zoo-botânica de belo horizonte"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "0ed8a17e-149b-4cbe-8383-7676da92ea1c",
+        "_score": 1,
+        "_source": {
+          "publisher": "438d109c-983d-4c32-be8c-05946efffb79",
+          "uuid": "0ed8a17e-149b-4cbe-8383-7676da92ea1c",
+          "dqs": 0,
+          "archivelink": "http://web.macs.ualberta.ca:8088/ipt/archive.do?r=uofa_vascular_plants_herbarium",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "last_name": "University of Alberta Museums",
+              "email": "museums@ualberta.ca"
+            },
+            {
+              "first_name": "Jocelyn",
+              "last_name": "Hall",
+              "role": "Curator",
+              "email": "jocelyn.hall@ualberta.ca"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "438d109c-983d-4c32-be8c-05946efffb79",
+            "eml_link": "http://web.macs.ualberta.ca:8088/ipt/eml.do?r=uofa_vascular_plants_herbarium",
+            "contacts": [
+              {
+                "last_name": "University of Alberta Museums",
+                "email": "museums@ualberta.ca"
+              },
+              {
+                "first_name": "Jocelyn",
+                "last_name": "Hall",
+                "role": "Curator",
+                "email": "jocelyn.hall@ualberta.ca"
+              }
+            ],
+            "collection_name": "University of Alberta Vascular Plant Herbarium (ALTA-VP)",
+            "idigbio:uuid": "0ed8a17e-149b-4cbe-8383-7676da92ea1c",
+            "idigbio:etag": "8883184a2867c27714a7030f812838705afbb10f",
+            "update": "2017-02-11T03:49:30",
+            "ingest": true,
+            "institution_web_address": "http://www.biology.museums.ualberta.ca/VascularPlantHerbarium.aspx",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "2429287b-ef65-4cfd-afcc-11cc3ba95cca"
+            ],
+            "link": "http://web.macs.ualberta.ca:8088/ipt/archive.do?r=uofa_vascular_plants_herbarium",
+            "idigbio:dateModified": "2017-02-11T04:05:22.170406",
+            "collection_description": "The Vascular Plant Herbarium is a research and teaching resource for the study of evolution, diversity, distribution and ecology of cordilleran, prairie, arctic and alpine plants. It is the largest herbarium of its kind in Alberta, and the third largest in Western Canada. Founded in 1912, the herbarium holds more than 120,000 specimens dating from 1835 to the present and is built upon the collecting activities of faculty members and students, as well as the acquisition of outstanding amateur collections. Though global in scope, the strength of the collection lies in plants of Alberta and northern Canada.",
+            "id": "2429287b-ef65-4cfd-afcc-11cc3ba95cca",
+            "other_guids": [],
+            "data_rights": "CC0"
+          },
+          "etag": "8883184a2867c27714a7030f812838705afbb10f",
+          "emllink": "http://web.macs.ualberta.ca:8088/ipt/eml.do?r=uofa_vascular_plants_herbarium",
+          "recordids": [
+            "2429287b-ef65-4cfd-afcc-11cc3ba95cca"
+          ],
+          "data": {
+            "eml_link": "http://web.macs.ualberta.ca:8088/ipt/eml.do?r=uofa_vascular_plants_herbarium",
+            "contacts": [
+              {
+                "last_name": "University of Alberta Museums",
+                "email": "museums@ualberta.ca"
+              },
+              {
+                "first_name": "Jocelyn",
+                "last_name": "Hall",
+                "role": "Curator",
+                "email": "jocelyn.hall@ualberta.ca"
+              }
+            ],
+            "collection_name": "University of Alberta Vascular Plant Herbarium (ALTA-VP)",
+            "update": "2017-02-11T03:49:30",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://web.macs.ualberta.ca:8088/ipt/archive.do?r=uofa_vascular_plants_herbarium",
+            "collection_description": "The Vascular Plant Herbarium is a research and teaching resource for the study of evolution, diversity, distribution and ecology of cordilleran, prairie, arctic and alpine plants. It is the largest herbarium of its kind in Alberta, and the third largest in Western Canada. Founded in 1912, the herbarium holds more than 120,000 specimens dating from 1835 to the present and is built upon the collecting activities of faculty members and students, as well as the acquisition of outstanding amateur collections. Though global in scope, the strength of the collection lies in plants of Alberta and northern Canada.",
+            "other_guids": [],
+            "institution_web_address": "http://www.biology.museums.ualberta.ca/VascularPlantHerbarium.aspx",
+            "id": "2429287b-ef65-4cfd-afcc-11cc3ba95cca"
+          },
+          "datemodified": "2017-02-11T04:05:22.170406+00:00",
+          "name": "university of alberta vascular plant herbarium (alta-vp)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "147f3f52-4399-474b-b43d-8379c680d67b",
+        "_score": 1,
+        "_source": {
+          "publisher": "438d109c-983d-4c32-be8c-05946efffb79",
+          "uuid": "147f3f52-4399-474b-b43d-8379c680d67b",
+          "dqs": 0,
+          "archivelink": "http://web.macs.ualberta.ca:8088/ipt/archive.do?r=uamz-herpetology",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "last_name": "University of Alberta Museums",
+              "email": "museums@ualberta.ca"
+            },
+            {
+              "first_name": "Cindy",
+              "last_name": "Paszkowski",
+              "role": "Curator",
+              "email": "cindy.paszkowski@ualberta.ca"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "438d109c-983d-4c32-be8c-05946efffb79",
+            "eml_link": "http://web.macs.ualberta.ca:8088/ipt/eml.do?r=uamz-herpetology",
+            "contacts": [
+              {
+                "last_name": "University of Alberta Museums",
+                "email": "museums@ualberta.ca"
+              },
+              {
+                "first_name": "Cindy",
+                "last_name": "Paszkowski",
+                "role": "Curator",
+                "email": "cindy.paszkowski@ualberta.ca"
+              }
+            ],
+            "collection_name": "University of Alberta Museum of Zoology Amphibian and Reptile Collection (UAMZ)",
+            "idigbio:uuid": "147f3f52-4399-474b-b43d-8379c680d67b",
+            "idigbio:etag": "8854c06da223ede5fa54d5b410afb38c68044ec5",
+            "update": "2017-02-09T19:03:22",
+            "ingest": true,
+            "institution_web_address": "http://www.biology.museums.ualberta.ca/MuseumOfZoology.aspx",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "88d7437e-f762-11e1-a439-00145eb45e9a"
+            ],
+            "link": "http://web.macs.ualberta.ca:8088/ipt/archive.do?r=uamz-herpetology",
+            "idigbio:dateModified": "2017-02-09T19:21:14.698338",
+            "collection_description": "The Amphibian and Reptile Collection is an active teaching and research resource containing approximately 4,000 specimens. It holds the largest collection of preserved reptiles and amphibians from Alberta, as well as many exotic specimens from North America and around the world. The collection has been instrumental in monitoring various reptile and amphibian populations, and has helped University of Alberta researchers take action on the declining Northern Leopard Frogs and Canadian Toad populations.",
+            "id": "88d7437e-f762-11e1-a439-00145eb45e9a",
+            "other_guids": [],
+            "data_rights": "CC0"
+          },
+          "etag": "8854c06da223ede5fa54d5b410afb38c68044ec5",
+          "emllink": "http://web.macs.ualberta.ca:8088/ipt/eml.do?r=uamz-herpetology",
+          "recordids": [
+            "88d7437e-f762-11e1-a439-00145eb45e9a"
+          ],
+          "data": {
+            "eml_link": "http://web.macs.ualberta.ca:8088/ipt/eml.do?r=uamz-herpetology",
+            "contacts": [
+              {
+                "last_name": "University of Alberta Museums",
+                "email": "museums@ualberta.ca"
+              },
+              {
+                "first_name": "Cindy",
+                "last_name": "Paszkowski",
+                "role": "Curator",
+                "email": "cindy.paszkowski@ualberta.ca"
+              }
+            ],
+            "collection_name": "University of Alberta Museum of Zoology Amphibian and Reptile Collection (UAMZ)",
+            "update": "2017-02-09T19:03:22",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://web.macs.ualberta.ca:8088/ipt/archive.do?r=uamz-herpetology",
+            "collection_description": "The Amphibian and Reptile Collection is an active teaching and research resource containing approximately 4,000 specimens. It holds the largest collection of preserved reptiles and amphibians from Alberta, as well as many exotic specimens from North America and around the world. The collection has been instrumental in monitoring various reptile and amphibian populations, and has helped University of Alberta researchers take action on the declining Northern Leopard Frogs and Canadian Toad populations.",
+            "other_guids": [],
+            "institution_web_address": "http://www.biology.museums.ualberta.ca/MuseumOfZoology.aspx",
+            "id": "88d7437e-f762-11e1-a439-00145eb45e9a"
+          },
+          "datemodified": "2017-02-09T19:21:14.698338+00:00",
+          "name": "university of alberta museum of zoology amphibian and reptile collection (uamz)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.6",
+        "_type": "recordsets",
+        "_id": "01dfe0f4-24fe-447e-9f8f-1db7f8394b89",
+        "_score": 1,
+        "_source": {
+          "publisher": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+          "uuid": "01dfe0f4-24fe-447e-9f8f-1db7f8394b89",
+          "dqs": 0,
+          "archivelink": "http://www.gbif.se/ipt/archive.do?r=mzlu-insects",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "first_name": "Christoffer",
+              "last_name": "Fägerström",
+              "email": "christoffer.fagerstrom@biol.lu.se"
+            },
+            {
+              "first_name": "Anders",
+              "last_name": "Telenius",
+              "role": "Node Manager",
+              "email": "anders.telenius@nrm.se"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+            "eml_link": "http://www.gbif.se/ipt/eml.do?r=mzlu-insects",
+            "contacts": [
+              {
+                "first_name": "Christoffer",
+                "last_name": "Fägerström",
+                "email": "christoffer.fagerstrom@biol.lu.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node Manager",
+                "email": "anders.telenius@nrm.se"
+              }
+            ],
+            "collection_name": "Lund Museum of Zoology - Insect collections (MZLU)",
+            "idigbio:uuid": "01dfe0f4-24fe-447e-9f8f-1db7f8394b89",
+            "idigbio:etag": "a2d651dfa24bdf9b0c15695517e5f4710ce1c131",
+            "update": "2017-02-11T12:16:57",
+            "ingest": true,
+            "institution_web_address": "http://130.235.149.99/Entomology.html",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "2356f899-6244-4bbb-aa33-50e29132e86a"
+            ],
+            "link": "http://www.gbif.se/ipt/archive.do?r=mzlu-insects",
+            "idigbio:dateModified": "2017-02-11T12:29:24.363254",
+            "collection_description": "This database contains information on insects from the Museum of Zoology of Lund, Sweden.",
+            "id": "2356f899-6244-4bbb-aa33-50e29132e86a",
+            "other_guids": [],
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "a2d651dfa24bdf9b0c15695517e5f4710ce1c131",
+          "emllink": "http://www.gbif.se/ipt/eml.do?r=mzlu-insects",
+          "recordids": [
+            "2356f899-6244-4bbb-aa33-50e29132e86a"
+          ],
+          "data": {
+            "eml_link": "http://www.gbif.se/ipt/eml.do?r=mzlu-insects",
+            "contacts": [
+              {
+                "first_name": "Christoffer",
+                "last_name": "Fägerström",
+                "email": "christoffer.fagerstrom@biol.lu.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node Manager",
+                "email": "anders.telenius@nrm.se"
+              }
+            ],
+            "collection_name": "Lund Museum of Zoology - Insect collections (MZLU)",
+            "update": "2017-02-11T12:16:57",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "http://www.gbif.se/ipt/archive.do?r=mzlu-insects",
+            "collection_description": "This database contains information on insects from the Museum of Zoology of Lund, Sweden.",
+            "other_guids": [],
+            "institution_web_address": "http://130.235.149.99/Entomology.html",
+            "id": "2356f899-6244-4bbb-aa33-50e29132e86a"
+          },
+          "datemodified": "2017-02-11T12:29:24.363254+00:00",
+          "name": "lund museum of zoology - insect collections (mzlu)"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_publisher": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 374,
+      "buckets": [
+        {
+          "key": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "doc_count": 167
+        },
+        {
+          "key": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "doc_count": 128
+        },
+        {
+          "key": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "doc_count": 119
+        },
+        {
+          "key": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "doc_count": 70
+        },
+        {
+          "key": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "doc_count": 64
+        },
+        {
+          "key": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+          "doc_count": 39
+        },
+        {
+          "key": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "doc_count": 38
+        },
+        {
+          "key": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+          "doc_count": 36
+        },
+        {
+          "key": "376fa211-e1b1-436c-937e-316a9d6bbd85",
+          "doc_count": 31
+        },
+        {
+          "key": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "doc_count": 30
+        }
+      ]
+    }
+  }
+}
