@@ -9,6 +9,7 @@ export function ParameterParseError(message, parameter) {
   this.message = message;
   this.parameter = parameter;
 }
+inherits(ParameterParseError, Error);
 
 export function TermNotFoundError(message, terms) {
   Error.captureStackTrace(this, this.constructor);
@@ -18,6 +19,7 @@ export function TermNotFoundError(message, terms) {
   this.message = message;
   this.terms = terms;
 }
+inherits(TermNotFoundError, Error);
 
 
 export function InvalidTypeError(type) {
@@ -28,6 +30,7 @@ export function InvalidTypeError(type) {
   this.message = "Invalid type";
   this.type = type;
 }
+inherits(InvalidTypeError, Error);
 
 function QueryParseError(message, context) {
   Error.captureStackTrace(this, this.constructor);
@@ -36,5 +39,5 @@ function QueryParseError(message, context) {
   this.expose = true;
   this.error = message;
   this.context = context;
-
 }
+inherits(QueryParseError, Error);

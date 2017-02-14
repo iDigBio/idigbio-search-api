@@ -28,8 +28,8 @@ export default function(opts) {
         delete ctx.body.message;
       } else {
         ctx.body = { error: "Internal Server Error" };
-        ctx.app.emit('error', err, ctx);
       }
+      ctx.app.emit('error', err, ctx);
     }
   };
 }
