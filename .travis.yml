@@ -22,8 +22,6 @@ env:
   global:
   - DOCKER_IMAGE=idigbio/idigbio-search-api
   - BUILDING=$DOCKER_IMAGE:$TRAVIS_COMMIT
-  - secure: YKiua5KZjZ1djH756BCFhE+MAU+IHH+qZysluRCziBcUI4Eaa5J4KcbIAMHC6EU6hv0xtgZV2Bu6jQMe+16pPj+nvVbGYLc6ctr1zwwHEfZTRgLTyvUwlE/PQGFM7sIkAJ0m0JycIK6PrGqCIQJSfx5PmiMMBehUEAby4EOUbHY=
-  - secure: eaCSyzhFtOo37BHnIXzrHj5nCKasSrZQCPjJ/9PchRj4ocquTizEiA50n+4BFyNpolmSjWXtb49Cd2wn6uxB+io740OBC2Fp6MxSKJ7hnh9Jan6VYnYeHyJFHQSVhPlWXkmGlPTe6aCq/AG55QZRt+4WFVDWoj5+WB04nOjtt1w=
 notifications:
   slack:
     secure: hBdS1mIVFVg8jTQwU2nXKyfLRPbUMYCQK0g+NEjkSvWl3hvAnZREGo2JBFgincdB2/wAJhuynBQXN7MSwxGm4jTjvTrs1SOPP7hssTr+xFrXuOs9tYDNLICcUmc8iIkt9oblw/jWCKHUDnphmcZ4sy3uJDuxuKGHdBjXYAq/eZw=
