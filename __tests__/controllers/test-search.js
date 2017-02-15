@@ -58,7 +58,7 @@ describe('Search', function() {
             .query({rq: JSON.stringify(q), limit: 10000, fields: ["uuid"]})
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
 
     it("should error on invalid search terms", async function() {
@@ -121,7 +121,7 @@ describe('Search', function() {
             })
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
     it('should support multiple field sorting with an array', async function() {
       var q = {"family": "asteraceae"}, s = [{"genus": "desc"}, {"specificepithet": "asc"}];
@@ -198,7 +198,7 @@ describe('Search', function() {
             })
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
   });
   describe('mediaPOST', function() {
@@ -255,7 +255,7 @@ describe('Search', function() {
             })
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
   });
 });

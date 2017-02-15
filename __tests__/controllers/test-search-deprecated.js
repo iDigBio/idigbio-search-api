@@ -61,7 +61,7 @@ describe('Search Deprecated Endpoints', function() {
             .query({rq: JSON.stringify(q), limit: bigLimit, fields: '["uuid"]'})
             .expect('Content-Type', /json/)
             .expect(200);
-      expect(response.body.items.length).to.equal(config.maxLimit);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
   });
 
@@ -115,7 +115,7 @@ describe('Search Deprecated Endpoints', function() {
             })
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
     it('should support multiple field sorting with an array', async function() {
       var q = {"family": "asteraceae"}, s = [{"genus": "desc"}, {"specificepithet": "asc"}];
@@ -192,7 +192,7 @@ describe('Search Deprecated Endpoints', function() {
                     limit: 10000})
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
   });
 
@@ -250,7 +250,7 @@ describe('Search Deprecated Endpoints', function() {
             })
             .expect('Content-Type', /json/)
             .expect(200);
-      response.body.items.length.should.be.below(config.maxLimit + 1);
+      expect(response.body.items.length).to.be.within(1, config.maxLimit);
     });
   });
 });
