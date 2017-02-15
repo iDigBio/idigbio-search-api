@@ -1,17 +1,29 @@
-dist: trusty
-sudo: false
-language: node_js
-node_js:
-- '6'
+sudo: required
+services:
+- docker
+install:
+- docker build -t $BUILDING .
+script:
+- docker run -v $TRAVIS_BUILD_DIR/__tests__/mock:/var/www/__tests__/mock/:ro --rm
+  -it $BUILDING npm test
+after_success:
+- docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
+- |
+  if [ -n "$TRAVIS_TAG" ]; then
+    docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_TAG;
+    docker push $DOCKER_IMAGE:$TRAVIS_TAG;
+  fi
+- |
+  if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+    docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_BRANCH;
+    docker push $DOCKER_IMAGE:$TRAVIS_BRANCH;
+  fi
 env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-     - ubuntu-toolchain-r-test
-    packages:
-     - libstdc++-5-dev # upgrade libstdc++ on linux to support C++11
-script: npm test -- -i
+  global:
+  - DOCKER_IMAGE=idigbio/idigbio-search-api
+  - BUILDING=$DOCKER_IMAGE:$TRAVIS_COMMIT
+  - secure: IW4gG7EZeAn+rrlmTc+rn5DHm/31OBVjFfw/apgkFBuvZhswqAyNxpIkqkHHqgNicOvp85TFbbGQRqv2qDTvDZzQGn4Tefm1EvEty0t0wkpA6fvmsqGLX6g97gtMuhYJb4royRMN1yTxg5VwINbePOV0FZCgTxvPpmRL0+E5guU=
+  - secure: TMQmfJjrglUEUMBlxGCczvj5mzGNivWZrdjYRw+R5Fl+8puxKIlDNddW73KPIjD2D+FjKDkM7RhlxBSU3v8xzZwMjLv9K73BN/DGj5dzFTVth3lTQ0eLE2ysU22oJKBZPRSLjFWwRkA3bTtmKsIVg8300ow2lK220smQxwShcsI=
 notifications:
   slack:
     secure: hBdS1mIVFVg8jTQwU2nXKyfLRPbUMYCQK0g+NEjkSvWl3hvAnZREGo2JBFgincdB2/wAJhuynBQXN7MSwxGm4jTjvTrs1SOPP7hssTr+xFrXuOs9tYDNLICcUmc8iIkt9oblw/jWCKHUDnphmcZ4sy3uJDuxuKGHdBjXYAq/eZw=
