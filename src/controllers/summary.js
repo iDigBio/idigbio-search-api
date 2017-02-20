@@ -20,6 +20,7 @@ import * as cp from "lib/common-params.js";
 import searchShim from "searchShim.js";
 import {media_query, record_query, bare_query} from "lib/query-generators.js";
 import getParam from "lib/get-param.js";
+import {checkTerms} from "lib/indexTerms";
 
 
 function top_fields_agg(top_fields, top_count) {
@@ -46,6 +47,7 @@ const top_media = async function(ctx) {
   const query = media_query(rq, mq, [], [], 0, 0);
   const top_fields = cp.top_fields(ctx.request, "mediarecords") || ["flags"];
   const top_count = cp.top_count(ctx.request);
+  checkTerms('mediarecords', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
 
   const body = await searchShim(config.search.index, "mediarecords", "_search", query);
@@ -57,6 +59,7 @@ const top_basic = async function(ctx) {
   const query = record_query(rq, [], [], 0, 0);
   const top_fields = cp.top_fields(ctx.request, "records") || ["scientificname"];
   const top_count = cp.top_count(ctx.request);
+  checkTerms('records', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
 
   const body = await searchShim(config.search.index, "records", "_search", query);
@@ -68,6 +71,7 @@ const top_recordsets = async function(ctx) {
   const query = bare_query(rq, [], [], 0, 0);
   const top_fields = cp.top_fields(ctx.request) || ["publisher"];
   const top_count = cp.top_count(ctx.request);
+  checkTerms('recordsets', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
 
   const body = await searchShim(config.search.index, "recordsets", "_search", query);
