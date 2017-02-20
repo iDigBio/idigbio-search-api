@@ -14,6 +14,7 @@ import _ from 'lodash';
 
 import config from "config";
 import api from "api";
+import cache from "cache";
 
 import * as formatter from "lib/formatter.js";
 import * as cp from "lib/common-params.js";
@@ -49,9 +50,11 @@ const top_media = async function(ctx) {
   const top_count = cp.top_count(ctx.request);
   checkTerms('mediarecords', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
-
-  const body = await searchShim(config.search.index, "mediarecords", "_search", query);
-  ctx.body = await formatter.top_formatter(body);
+  const key = ['top_media', query];
+  ctx.body = await cache.wrap(key, async function() {
+    const body = await searchShim(config.search.index, "mediarecords", "_search", query);
+    return await formatter.top_formatter(body);
+  });
 };
 
 const top_basic = async function(ctx) {
@@ -61,9 +64,11 @@ const top_basic = async function(ctx) {
   const top_count = cp.top_count(ctx.request);
   checkTerms('records', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
-
-  const body = await searchShim(config.search.index, "records", "_search", query);
-  ctx.body = await formatter.top_formatter(body);
+  const key = ['top_basic', query];
+  ctx.body = await cache.wrap(key, async function() {
+    return searchShim(config.search.index, "records", "_search", query)
+      .then(formatter.top_formatter);
+  });
 };
 
 const top_recordsets = async function(ctx) {
@@ -73,10 +78,10 @@ const top_recordsets = async function(ctx) {
   const top_count = cp.top_count(ctx.request);
   checkTerms('recordsets', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
-
-  const body = await searchShim(config.search.index, "recordsets", "_search", query);
-  ctx.body = await formatter.top_formatter(body);
-
+  ctx.body = await cache.wrap(['top_recordsets', query], async function() {
+    const body = await searchShim(config.search.index, "recordsets", "_search", query);
+    return formatter.top_formatter(body);
+  });
 };
 
 const count_media = async function(ctx) {
