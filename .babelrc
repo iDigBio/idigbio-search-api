@@ -1,13 +1,13 @@
 {
-  "presets": [
-    "node6",
-    "stage-3"
-  ],
-  "plugins": [
-    ["module-resolver", {
-      "root": ["./src"],
-      "alias": { }
-    },
-     "transform-promise-to-bluebird"]
-  ]
+    "presets": [
+        "node6",
+        "stage-3"
+    ],
+    "plugins": [
+        ["module-resolver", {
+            "root": ["./src"],
+            "alias": { }
+        }],
+        "transform-promise-to-bluebird"
+    ]
 }
