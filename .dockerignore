@@ -7,3 +7,4 @@ build/
 .git
 __tests__/mock/
 .travis.yml
+Dockerfile
