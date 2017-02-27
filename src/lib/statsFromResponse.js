@@ -6,11 +6,11 @@ import config from "config";
 
 
 export default function(query, statsInfo, response) {
-  var payload = {},
-      search_payload = {},
-      seen_payload = {};
+  const payload = {};
   try {
     if(statsInfo["type"] === "search") {
+      const search_payload = {},
+            seen_payload = {};
 
       response.aggregations.rs.buckets.forEach(function(b) {
         search_payload[b["key"]] = b["doc_count"];

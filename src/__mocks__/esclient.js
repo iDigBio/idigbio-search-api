@@ -57,7 +57,7 @@ function wrap(name) {
 }
 
 const client = {};
-_.forEach(["search", "count", "indices.getMapping"], function(name) {
+_.forEach(["get", "search", "count", "indices.getMapping"], function(name) {
   _.set(client, name, wrap(name));
 });
 
