@@ -1,7 +1,7 @@
 {
   "name": "idb-search-api",
   "description": "iDigBio Search API",
-  "version": "1.0.0-beta.20",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.16.0",
