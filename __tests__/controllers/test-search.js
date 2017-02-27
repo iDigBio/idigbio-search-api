@@ -145,6 +145,21 @@ describe('Search', function() {
               rq: q,
               sort: s,
               limit: 10,
+              fields: ["_id"],
+            })
+            .expect('Content-Type', /json/)
+            .expect(200);
+      response.body.itemCount.should.not.equal(0);
+      response.body.items.length.should.not.equal(0);
+    });
+    it('should support sorting by _id', async function() {
+      const response = await request(server)
+            .post("/v2/search/records/")
+            .send({
+              rq: {"family": "asteraceae"},
+              sort: "_id",
+              fields: ["_id"],
+              limit: 10,
             })
             .expect('Content-Type', /json/)
             .expect(200);
@@ -194,7 +209,7 @@ describe('Search', function() {
               limit: 10000,
               rq: JSON.stringify({}),
               mq: JSON.stringify({}),
-              fields: ["uuid"]
+              fields: ["_id"]
             })
             .expect('Content-Type', /json/)
             .expect(200);

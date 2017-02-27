@@ -69,6 +69,7 @@ export function checkTerms(type, termList) {
   const missingTerms = _(termList)
         .filter((t) => !_.includes(t, "*"))
         .filter((t) => _.isEmpty(_.get(root, t)))
+        .without("_id")
         .value();
   if(missingTerms.length) {
     throw new TermNotFoundError(`Terms not found in index for type ${type}`, missingTerms);
