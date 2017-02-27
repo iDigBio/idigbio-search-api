@@ -6,18 +6,21 @@ install:
 script:
 - docker run -v $TRAVIS_BUILD_DIR/__tests__/mock:/var/www/__tests__/mock/:ro --rm
   -it $BUILDING npm test
-after_success:
-- docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
-- |
-  if [ -n "$TRAVIS_TAG" ]; then
-    docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_TAG;
-    docker push $DOCKER_IMAGE:$TRAVIS_TAG;
-  fi
-- |
-  if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-    docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_BRANCH;
-    docker push $DOCKER_IMAGE:$TRAVIS_BRANCH;
-  fi
+deploy:
+  provider: script
+  script:
+    - docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
+    - |
+      if [ -n "$TRAVIS_TAG" ]; then
+        docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_TAG;
+        docker push $DOCKER_IMAGE:$TRAVIS_TAG;
+      fi
+    - docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_BRANCH
+    - docker push $DOCKER_IMAGE:$TRAVIS_BRANCH
+  on:
+    tags: true
+    all_branches: true
+
 env:
   global:
   - DOCKER_IMAGE=idigbio/idigbio-search-api
