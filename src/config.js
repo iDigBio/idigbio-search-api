@@ -38,9 +38,10 @@ var config = {
   indexterms: {},
   redis: {
     host: {
-      prod: "idb-redis-search-prod.acis.ufl.edu",
-      beta: "idb-redis-search-beta.acis.ufl.edu",
+      prod: "idb-redis10-prod.acis.ufl.edu",
+      beta: "idb-redis10-beta.acis.ufl.edu",
     }[env] || "localhost",
+    db: 0,
     port: 6379
   },
   maxTileObjects: 10000,

@@ -20,7 +20,6 @@ if(config.ENV === 'test') {
 } else {
   const redisCache = cacheManager.caching(_.defaults({
     store: redisStore,
-    db: 1,
     ttl: 3600,
     compress: true
   }, config.redis));
