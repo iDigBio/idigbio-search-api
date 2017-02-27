@@ -27,8 +27,6 @@ const basic = async function(ctx, next) {
   }
 
   body = body.hits.hits[0];
-  var indexterms = _.cloneDeep(body._source);
-  delete indexterms["data"];
   const rb = ctx.body = {
     "uuid": body._id,
     "type": body._type,
@@ -36,7 +34,7 @@ const basic = async function(ctx, next) {
     "version": body._source.version,
     "data": body._source.data,
     "recordIds": body._source.recordIds,
-    "indexTerms": indexterms,
+    "indexTerms": _.omit(body._source, "data"),
     "attribution": {}
   };
   const rsid = body._source.recordset;
