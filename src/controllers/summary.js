@@ -47,7 +47,7 @@ const top_media = async function(ctx) {
   const rq = cp.query("rq", ctx.request);
   const query = media_query(rq, mq, [], [], 0, 0);
   const top_fields = cp.top_fields(ctx.request, "mediarecords") || ["flags"];
-  const top_count = cp.top_count(ctx.request);
+  const top_count = cp.top_count(ctx.request, top_fields.length);
   checkTerms('mediarecords', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
   const key = ['top_media', query];
@@ -61,7 +61,7 @@ const top_basic = async function(ctx) {
   const rq = cp.query("rq", ctx.request);
   const query = record_query(rq, [], [], 0, 0);
   const top_fields = cp.top_fields(ctx.request, "records") || ["scientificname"];
-  const top_count = cp.top_count(ctx.request);
+  const top_count = cp.top_count(ctx.request, top_fields.length);
   checkTerms('records', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
   const key = ['top_basic', query];
@@ -75,7 +75,7 @@ const top_recordsets = async function(ctx) {
   const rq = cp.query("rsq", ctx.request);
   const query = bare_query(rq, [], [], 0, 0);
   const top_fields = cp.top_fields(ctx.request) || ["publisher"];
-  const top_count = cp.top_count(ctx.request);
+  const top_count = cp.top_count(ctx.request, top_fields.length);
   checkTerms('recordsets', top_fields);
   query.aggs = top_fields_agg(top_fields, top_count);
   ctx.body = await cache.wrap(['top_recordsets', query], async function() {
@@ -176,7 +176,7 @@ const date_hist = async function(ctx) {
     top_fields = [];
   }
 
-  const top_count = cp.top_count(ctx.request);
+  const top_count = cp.top_count(ctx.request, top_fields.length);
 
   const top_agg = top_fields_agg(top_fields, top_count);
 

@@ -88,8 +88,12 @@ export function lon(req) {
 
 export function zoom(req) { return int(req, "zoom", 0); }
 
-export function top_count(req) {
-  return Math.min(int(req, "count", 10), config.maxLimit);
+export function top_count(req, numFields) {
+  if(typeof(numFields) === "undefined") {
+    numFields = 1;
+  }
+  let maxLimit = Math.min(Math.pow(10, (4 - numFields)), 1) * config.maxLimit;
+  return Math.min(int(req, "count", 10), maxLimit);
 }
 
 export function threshold(req, def) {
