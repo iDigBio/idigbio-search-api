@@ -5,8 +5,9 @@ import _ from "lodash";
 import esclient from "esclient.js";
 import config from "config";
 import sfr from "lib/statsFromResponse";
+import logger from "logging";
 
-const statsFromResponse = config.ENV === "production" && sfr;
+const statsFromResponse = config.ENV === "prod" && sfr;
 
 export default async function searchShim(index, type, op, query, statsInfo) {
   const client = esclient();
