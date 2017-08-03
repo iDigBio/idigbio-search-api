@@ -39,7 +39,7 @@ export default function(query, statsInfo, response) {
         record_type: statsInfo["recordtype"],
         ip: statsInfo["ip"],
         query: query,
-        source: "api-" + config.ENV,
+        source: statsInfo["source"] || "api-" + config.ENV,
         payload: payload
       };
 

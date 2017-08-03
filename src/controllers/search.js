@@ -45,6 +45,7 @@ const media = async function(ctx) {
     type: "search",
     recordtype: "mediarecords",
     ip: ctx.ip,
+    source: ctx.query.source,
   });
   // TODO: can this use basicNoAttr?
   ctx.body = await formatter.basic(body, extra);
@@ -69,6 +70,7 @@ const basic = async function(ctx) {
     type: "search",
     recordtype: "records",
     ip: ctx.ip,
+    source: ctx.query.source,
   });
   ctx.body = await formatter.basic(body, extra);
 };

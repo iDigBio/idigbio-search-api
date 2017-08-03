@@ -697,6 +697,7 @@ const getMap = async function(ctx) {
     type: "mapping",
     recordtype: "records",
     ip: ctx.ip,
+    source: ctx.query.source,
   };
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
   const attribution = await formatter.attribution(body.aggregations.rs.buckets);

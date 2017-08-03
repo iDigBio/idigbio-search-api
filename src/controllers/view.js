@@ -20,6 +20,7 @@ const basic = async function(ctx, next) {
     type: "view",
     recordtype: t,
     ip: ctx.ip,
+    source: ctx.query.source,
   };
   let body = await searchShim(config.search.index, t, "_search", query, statsInfo);
   if(body.hits.hits.length === 0) {
