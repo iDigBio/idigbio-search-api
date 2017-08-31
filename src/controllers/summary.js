@@ -271,6 +271,21 @@ const stats = async function(ctx) {
         "sum": {
           "field": "mediarecords.view.total"
         }
+      },
+      "seen_count": {
+        "sum": {
+          "field": "records.seen.count"
+        }
+      },
+      "search_count": {
+        "sum": {
+          "field": "records.search.count"
+        }
+      },
+      "download_count": {
+        "sum": {
+          "field": "records.download.count"
+        }
       }
     };
   } else if(t === "api" || t === "digest") {
