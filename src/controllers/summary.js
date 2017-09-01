@@ -272,11 +272,6 @@ const stats = async function(ctx) {
           "field": "mediarecords.view.total"
         }
       },
-      "seen_count": {
-        "sum": {
-          "field": "records.seen.count"
-        }
-      },
       "search_count": {
         "sum": {
           "field": "records.search.count"
