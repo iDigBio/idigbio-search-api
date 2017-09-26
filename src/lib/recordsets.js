@@ -7,7 +7,7 @@ export var recordsets = {};
 async function _loadAll() {
   logger.debug("Querying recordsets list");
   const body = await searchShim(config.search.index, "recordsets", "_search", {size: config.maxRecordsets});
-  const res = {};
+  var res = {};
   body.hits.hits.forEach(function(hit) {
     const id = hit._id,
           source = hit._source;
@@ -24,6 +24,15 @@ async function _loadAll() {
       "publisher": source.publisher,
     };
   });
+  const sizes = await searchShim(config.search.index, "records", "_search", {"query":{"match_all":{}},"size":0,"aggs":{"recordset_counts":{"terms":{"field":"recordset","size":config.maxRecordsets}}}});
+  sizes.aggregations.recordset_counts.buckets.forEach(function(b) {
+    if(res[b.key]) {
+      res[b.key]["totalCount"] = b.doc_count;
+    } else {
+      res[b.key] = {"totalCount": b.doc_count};
+    }
+  });
+  console.log(Object.keys(res).length)
   return res;
 }
 

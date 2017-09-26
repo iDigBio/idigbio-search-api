@@ -11,10 +11,14 @@ export async function attribution(rss) {
       return recordsets.get(rsid)
         .catch(function() { return null; })
         .then(function(rs) {
-          return _.defaults({
+          var rv = _.defaults({
             "uuid": rsid,
             "itemCount": bucket.doc_count
           }, rs);
+          if(rv.itemCount && rv.totalCount) {
+            rv["hitRatio"] = rv.itemCount / rv.totalCount;
+          }
+          return rv;
         });
     });
 }
