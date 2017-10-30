@@ -48,6 +48,10 @@ const getEsStatus = async function(ctx) {
   const client = esclient();
   const info = await client.info();
   _.extend(info, config.search);
+  info.index_alias = info.index;
+  delete info.index;
+  const idx = await client.indices.get({index: config.search.index});
+  info.index = _.keys(idx)[0];
   delete info.name;
   delete info.server;
   ctx.body = info;
