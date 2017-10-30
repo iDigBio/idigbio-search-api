@@ -1,8 +1,11 @@
 import proxy from 'koa-proxy';
 import adapt from 'koa-adapter';
 
+import _ from 'lodash';
+import config from "config";
 import api from "api";
 import searchShim from "searchShim.js";
+import esclient from "esclient.js";
 import {getMappingForType} from "lib/indexTerms.js";
 
 
@@ -41,6 +44,15 @@ const indexFields = async function(ctx) {
   ctx.body = getMappingForType(ctx.params.t);
 };
 
+const getEsStatus = async function(ctx) {
+  const client = esclient();
+  const info = await client.info();
+  _.extend(info, config.search);
+  delete info.name;
+  delete info.server;
+  ctx.body = info;
+};
+
 
 api.get('/', index);
 api.get('/v1*', v1);
@@ -48,3 +60,4 @@ api.get('/v2', v2);
 api.get('/:index(stats|idigbio)/:t/:op(_search|_count)', searchProxy);
 api.post('/:index(stats|idigbio)/:t/:op(_search|_count)', searchProxy);
 api.get('/v2/meta/fields/:t', indexFields);
+api.get('/v2/meta/status', getEsStatus);

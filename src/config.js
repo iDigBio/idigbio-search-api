@@ -6,6 +6,11 @@
 
 var env = process.env.NODE_ENV || "development";
 
+var indexAlias = "idigbio";
+if(env === "beta") {
+  indexAlias = "beta";
+}
+
 var config = {
   ENV: env,
   GEN_MOCK: process.env.GEN_MOCK === "true",
@@ -16,7 +21,7 @@ var config = {
   port: 19196,
   search: {
     server: "http://c18node2.acis.ufl.edu:9200",
-    index: process.env.SEARCH_INDEX || "idigbio",
+    index: process.env.SEARCH_INDEX || indexAlias,
     statsIndex: process.env.STATS_INDEX || "stats",
   },
   elasticsearch: {
