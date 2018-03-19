@@ -20,7 +20,14 @@ https://github.com/idigbio/idigbio-search-api/wiki
 The remainder of this document is for developers who are interested in
 the internals of the API code itself.
 
+Please contact the iDigBio Technical Team (idigbio@acis.ufl.edu) if you need assistance installing, running, or developing code from this repository.
+
+**The following information is deprecated (most likely it will not work as-is).**
+
 ### Dependencies
+
+
+**The following information is deprecated (most likely it will not work as-is).**
 
 
 
