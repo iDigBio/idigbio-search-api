@@ -4,8 +4,8 @@ services:
 install:
 - docker build -t $BUILDING .
 script:
-- docker run -v $TRAVIS_BUILD_DIR/__tests__/mock:/var/www/__tests__/mock/:ro --rm
-  -it $BUILDING npm test
+- docker run -v $TRAVIS_BUILD_DIR/__tests__/mock:/var/www/__tests__/mock/:ro -it $BUILDING
+  bash -c "yarn test;npm ls --depth 0 " --rm
 after_success:
 - docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
 deploy:
