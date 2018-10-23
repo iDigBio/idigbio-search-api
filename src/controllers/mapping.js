@@ -41,6 +41,8 @@ import getParam from "lib/get-param.js";
 import * as cp from "lib/common-params.js";
 import * as formatter from "lib/formatter.js";
 
+// SAMPLE debug line
+// logger.debug("Here is some info for my peeps - %s", myvar);
 
 const INVERTED = false;
 const hashids = new Hashids("idigbio", 8);
@@ -75,6 +77,7 @@ async function geoJsonPoints(body) {
       "properties": getPointProps(hit)
     };
   });
+
   return {
     "itemCount": body.hits.total,
     "type": "FeatureCollection",
@@ -482,16 +485,19 @@ const lookupShortCode  = memoize(async function(shortCode) {
 });
 
 async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
+  logger.debug("** in function getMapDef - shortCode = %s", shortCode);
   let map_def = await lookupShortCode(shortCode);
   map_def.style = _.defaults(map_def.style, config.defaultStyle);
   if(map_def.type === 'auto' && opts.resolveAutoType) {
     map_def = _.clone(map_def);
     map_def.type = await resolveAutoType(shortCode, map_def);
   }
+  logger.debug("** in function getMapDef - ready to return map_def");
   return map_def;
 }
 
 const makeMapTile = async function(map_def, zoom, x, y, response_type) {
+  logger.debug("** in function makeMapTile");
   const query = makeTileQuery(map_def, zoom, x, y, response_type);
   const body = await searchShim(config.search.index, "records", "_search", query);
 
@@ -505,6 +511,7 @@ const makeMapTile = async function(map_def, zoom, x, y, response_type) {
 
 
 const getMapTile = async function(ctx) {
+  logger.debug("** in function getMapTile");
   const map_def = await getMapDef(ctx.params.shortCode);
   const z = parseInt(ctx.params.z, 10),
         x = parseInt(ctx.params.x, 10),
@@ -520,6 +527,7 @@ const getMapTile = async function(ctx) {
     response_type = "grid." + response_type;
   }
   ctx.cacheControl('10 minutes');
+    logger.debug("** in function getMapTile - ready to makeMapTile - %s/%s/%s/%s", ctx.params.shortCode, z, x, y);
   ctx.body = await makeMapTile(map_def, z, x, y, response_type);
 };
 
@@ -648,6 +656,7 @@ const getMapStyle = async function(ctx) {
 
 
 const getMap = async function(ctx) {
+  logger.debug("** in function getMap - %s", ctx.params.shortCode);
   const shortCode = ctx.params.shortCode;
   const map_def = await getMapDef(shortCode, {resolveAutoType: false});
   const map_url = ctx.origin + '/v2/mapping/' + shortCode;
@@ -699,7 +708,9 @@ const getMap = async function(ctx) {
     ip: ctx.ip,
     source: ctx.query.source,
   };
+  logger.debug("** in function getMap, ready to searchShim - %s", ctx.params.shortCode);
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
+  logger.debug("** in function getMap, ready to formatter.attribution - %s", ctx.params.shortCode);
   const attribution = await formatter.attribution(body.aggregations.rs.buckets);
   ctx.body = {
     shortCode: shortCode,
@@ -770,6 +781,7 @@ const createMap = async function(ctx) {
     ]);
   }
   ctx.params.shortCode = shortCode;
+  logger.debug("** in function createMap, ready to getMap - %s", ctx.params.shortCode);
   return getMap(ctx);
 };
 
