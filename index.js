@@ -20,6 +20,8 @@ if(config.ENV === 'prod') {
 
 const logger = require(`${srcdir}/logging`).default;
 
+logger.info("BEGIN LOGGING");
+logger.info("Current environment: %s", config.ENV)
 
 function registerGracefulShutdown(signal, server, id) {
   process.on(signal, function() {
