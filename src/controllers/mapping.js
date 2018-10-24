@@ -209,6 +209,7 @@ const geohashElseRule = _.template("<Rule>\n<ElseFilter/>\n<PolygonSymbolizer fi
 
 
 async function tileGeohash(zoom, x, y, map_def, body, render_type) {
+  logger.debug("** in function tileGeohash - (zoom/x/y) %s/%s/%s", zoom, x, y);
   var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
   var sj = styleJSON(map_def, body);
   var s = '<Map srs="' + mercator.proj4 + '" buffer-size="128">\n';
@@ -267,11 +268,13 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   map.extent = bbox;
 
   if(render_type === "grid.json") {
+    logger.debug("** rendering grid (json)");
     const grid = new mapnik.Grid(map.width, map.height, {key: "id"});
     const mapOpts = {layer: 0, "fields": ["count"]};
     const grid2 = await fromCallback((cb) => map.render(grid, mapOpts, cb));
     return await fromCallback((cb) => grid2.encode({"format": "utf"}, cb));
   } else {
+    logger.debug("** rendering image (png)");
     let image = new mapnik.Image(map.width, map.height);
     if(INVERTED) {
       const ks = Object.keys(sj["colors"]);
@@ -285,6 +288,7 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
 
 
 async function tilePoints(zoom, x, y, map_def, body, render_type) {
+  logger.debug("** in function tilePoints - (zoom/x/y) %s/%s/%s", zoom, x, y);
   let map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
   const sj = styleJSON(map_def, body);
   const styleOn = map_def.style.styleOn;
@@ -315,6 +319,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   //  extent: '-20037508.342789,-8283343.693883,20037508.342789,18365151.363070'
   // };
 
+  logger.debug("** make a mapnik MemoryDatasource");
   var mem_ds = new mapnik.MemoryDatasource({});
   var proj = new mapnik.Projection('+init=epsg:3857');
 
@@ -332,6 +337,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
     f["properties"][styleOn] = hit._source[styleOn] || "";
     mem_ds.add(f);
   });
+  logger.debug("** added all hits to mapnik MemoryDatasource");
 
   const l = new mapnik.Layer('test');
   l.srs = map.srs;
@@ -340,11 +346,13 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   map.add_layer(l);
   map.extent = bbox;
   if(render_type === "grid.json") {
+    logger.debug("** rendering grid (json)");
     const grid = new mapnik.Grid(map.width, map.height, {key: "id"});
     const options = {layer: 0, "fields": [styleOn, "lat", "lon"]};
     const grid2 = await fromCallback((cb) => map.render(grid, options, cb));
     return await fromCallback((cb) => grid2.encode({"format": "utf"}, cb));
   } else {
+    logger.debug("** rendering image (png)");
     let image = new mapnik.Image(map.width, map.height);
     image = await fromCallback((cb) => map.render(image, cb));
     return await fromCallback((cb) => image.encode('png', cb));
@@ -485,19 +493,19 @@ const lookupShortCode  = memoize(async function(shortCode) {
 });
 
 async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
-  logger.debug("** in function getMapDef - shortCode = %s", shortCode);
+  logger.debug("%s ** in function getMapDef - ready to lookupShortCode", shortCode);
   let map_def = await lookupShortCode(shortCode);
   map_def.style = _.defaults(map_def.style, config.defaultStyle);
   if(map_def.type === 'auto' && opts.resolveAutoType) {
     map_def = _.clone(map_def);
     map_def.type = await resolveAutoType(shortCode, map_def);
   }
-  logger.debug("** in function getMapDef - ready to return map_def");
+  // logger.debug("** in function getMapDef - ready to return map_def");
   return map_def;
 }
 
 const makeMapTile = async function(map_def, zoom, x, y, response_type) {
-  logger.debug("** in function makeMapTile");
+    logger.debug("** in function makeMapTile - (zoom/x/y) %s/%s/%s", zoom, x, y);
   const query = makeTileQuery(map_def, zoom, x, y, response_type);
   const body = await searchShim(config.search.index, "records", "_search", query);
 
@@ -511,7 +519,7 @@ const makeMapTile = async function(map_def, zoom, x, y, response_type) {
 
 
 const getMapTile = async function(ctx) {
-  logger.debug("** in function getMapTile");
+  logger.debug("%s ** in function getMapTile", ctx.params.shortCode);
   const map_def = await getMapDef(ctx.params.shortCode);
   const z = parseInt(ctx.params.z, 10),
         x = parseInt(ctx.params.x, 10),
@@ -527,7 +535,8 @@ const getMapTile = async function(ctx) {
     response_type = "grid." + response_type;
   }
   ctx.cacheControl('10 minutes');
-    logger.debug("** in function getMapTile - ready to makeMapTile - %s/%s/%s/%s", ctx.params.shortCode, z, x, y);
+    logger.debug("%s ** in function getMapTile - ready to makeMapTile - %s/%s/%s/%s", 
+		 ctx.params.shortCode, ctx.params.shortCode, z, x, y);
   ctx.body = await makeMapTile(map_def, z, x, y, response_type);
 };
 
@@ -656,7 +665,7 @@ const getMapStyle = async function(ctx) {
 
 
 const getMap = async function(ctx) {
-  logger.debug("** in function getMap - %s", ctx.params.shortCode);
+  logger.debug("%s ** in function getMap", ctx.params.shortCode);
   const shortCode = ctx.params.shortCode;
   const map_def = await getMapDef(shortCode, {resolveAutoType: false});
   const map_url = ctx.origin + '/v2/mapping/' + shortCode;
@@ -708,9 +717,9 @@ const getMap = async function(ctx) {
     ip: ctx.ip,
     source: ctx.query.source,
   };
-  logger.debug("** in function getMap, ready to searchShim - %s", ctx.params.shortCode);
+  logger.debug("%s ** in function getMap, ready to searchShim", ctx.params.shortCode);
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
-  logger.debug("** in function getMap, ready to formatter.attribution - %s", ctx.params.shortCode);
+  logger.debug("%s ** in function getMap, ready to formatter.attribution", ctx.params.shortCode);
   const attribution = await formatter.attribution(body.aggregations.rs.buckets);
   ctx.body = {
     shortCode: shortCode,
@@ -781,7 +790,7 @@ const createMap = async function(ctx) {
     ]);
   }
   ctx.params.shortCode = shortCode;
-  logger.debug("** in function createMap, ready to getMap - %s", ctx.params.shortCode);
+  logger.debug("%s ** in function createMap, ready to getMap", ctx.params.shortCode);
   return getMap(ctx);
 };
 
