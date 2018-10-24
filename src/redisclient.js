@@ -13,6 +13,8 @@ const rconf = _.pick(config.redis, ['host', 'port', 'db']),
         min: 2
       };
 
+logger.info("Using redis server: %s", rconf.host);
+
 const pool = redisPool(rconf, poolSettings);
 
 
