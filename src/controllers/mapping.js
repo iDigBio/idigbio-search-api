@@ -476,7 +476,7 @@ function makeTileQuery(map_def, z, x, y, response_type) {
 const resolveAutoType = async function(shortCode, map_def) {
   const key = `resolveAutoType:${shortCode}`;
   return cache.wrap(key, async function() {
-    logger.debug("Figuring out map type for auto map %s", shortCode);
+    logger.debug("%s ** in function resolveAutoType, Figuring out map type for auto map", shortCode);
     const query = makeBasicFilter(map_def);
     const body = await searchShim(config.search.index, "records", "_count", query);
     return body.count > map_def.threshold ? "geohash" : "points";
@@ -486,7 +486,7 @@ const resolveAutoType = async function(shortCode, map_def) {
 const lookupShortCode  = memoize(async function(shortCode) {
   const rv = await redisclient.get(shortCode);
   if(!rv) {
-    logger.error('Missing shortCode %s', shortCode);
+    logger.error('%s ** in function lookupShortCode, shortCode not found in redis', shortCode);
     throw new createError.NotFound();
   }
   return JSON.parse(rv);
@@ -781,8 +781,9 @@ const createMap = async function(ctx) {
   const queryHash = hasher("sha1", map_def);
   let shortCode = await redisclient.get(queryHash);
   if(shortCode) {
-    logger.debug("Found stored map: %s", shortCode);
+    logger.debug("%s ** in function createMap, found existing stored map shortCode.", shortCode);
   } else {
+    logger.debug("%s ** in function createMap, did not find existing stored map shortCode.", shortCode);
     shortCode = hashids.encode(await redisclient.incr("queryid"));
     await Promise.all([
       redisclient.set(shortCode, JSON.stringify(map_def)),
