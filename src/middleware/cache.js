@@ -9,6 +9,7 @@ import config from "config";
 
 export default async function cache(ctx, next) {
   // console.log("CHECK CACHE " + req.originalUrl)
+  //logger.debug("CHECK CACHE " + req.originalUrl)
   try {
     const result = await redisclient.hgetall("map_cache_" + ctx.originalUrl);
     if(result) {

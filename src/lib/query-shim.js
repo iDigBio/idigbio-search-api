@@ -1,7 +1,9 @@
 
 import _ from "lodash";
 
-import logger from "logging";
+// import logger from "logging";
+var logger=require('winston');
+
 import {checkTerms} from "lib/indexTerms";
 import {QueryParseError, TermNotFoundError} from "lib/exceptions";
 

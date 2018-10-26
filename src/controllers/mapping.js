@@ -27,7 +27,8 @@ mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.i
 
 
 import config from "config";
-import logger from "logging";
+// import logger from "logging";
+var logger=require('winston');
 import cache from "cache";
 import api from "api";
 import redisclient from "redisclient";

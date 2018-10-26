@@ -2,7 +2,9 @@ var _ = require("lodash");
 var bluebird = require("bluebird");
 
 import * as recordsets from "lib/recordsets";
-import logger from "logging";
+
+// import logger from "logging";
+var logger=require('winston');
 
 export async function attribution(rss) {
   logger.debug("** in function 'attribution'");
