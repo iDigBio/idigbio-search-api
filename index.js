@@ -20,7 +20,7 @@ if(config.ENV === 'prod') {
 
 const logger = require(`${srcdir}/logging`).default;
 
-logger.info("BEGIN LOGGING");
+logger.info("BEGIN LOGGING - SEVERITY = %s", config.LOGGER_LEVEL);
 logger.info("Current environment: %s", config.ENV)
 
 function registerGracefulShutdown(signal, server, id) {

@@ -12,8 +12,15 @@ if(env === "beta") {
   indexAlias = "beta";
 }
 
+// default to debug logging when in development or test environment
+var logger_level
+if((env === "development") || (env === "test")) {
+    logger_level = "debug";
+}
+
 var config = {
   ENV: env,
+  LOGGER_LEVEL: process.env.LOGGER_LEVEL || logger_level,
   GEN_MOCK: process.env.GEN_MOCK === "true",
   CLUSTER: process.env.CLUSTER !== "false",
   CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || require('os').cpus().length,

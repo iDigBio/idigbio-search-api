@@ -16,7 +16,8 @@ api.get('/healthz', function(ctx) {
       maxRecordsets: config.maxRecordsets,
       defaultLimit: config.defaultLimit,
       maxLimit: config.maxLimit,
-      maxTileObjects: config.maxTileObjects
+      maxTileObjects: config.maxTileObjects,
+      logging_severity: config.LOGGER_LEVEL
   };
 });
 
