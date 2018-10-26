@@ -22,7 +22,46 @@ the internals of the API code itself.
 
 Please contact the iDigBio Technical Team (idigbio@acis.ufl.edu) if you need assistance installing, running, or developing code from this repository.
 
-**The following information is deprecated (most likely it will not work as-is).**
+### Installing for Development
+
+TBD
+
+### Getting Started
+
+**NODE_ENV**
+
+Default value is "development".
+
+NODE_ENV is used to control certain aspects (such as whether to connect
+to a local redis use a prod server).
+Known possible values are "prod", "development", "test", and "beta".
+
+"development" requires redis to be running locally (at localhost:6379)
+
+"prod" uses production redis server.
+
+**CLUSTER_WORKERS**
+
+Default value is auto-calculated (related to number of CPU cores).
+
+Use CLUSTER_WORKERS to specify number of processes.  e.g. for easier debugging
+of "prod" environment on a developer workstation, set to 1.
+
+**LOGGER_LEVEL**
+
+Default value is aligned to NODE_ENV, so "development" will log at debug
+level, "prod" will log at info lovel.
+
+Use LOGGER_LEVEL to specify the severity of events that go into log outputs.
+Common values are "info" or "debug".
+
+Example to run the "prod" code for debugging purposes:
+
+```$ CLUSTER_WORKERS=1 LOGGER_LEVEL=debug NODE_ENV=prod npm start```
+
+
+
+**The following information may not work as-is.**
 
 ### Dependencies
 
@@ -39,11 +78,13 @@ sudo apt-get install gcc-4.8 g++-4.8;
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 20;
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 20;
 sudo g++ --version;
-sudo apt-get update -qq;
-sudo apt-get install -qq libjpeg8-dev libjpeg-turbo8-dev libpng12-dev libcairo-dev libgif-dev libmapnik2.2 libmapnik2-dev
+sudo apt-get update ;
+sudo apt-get install libjpeg8-dev libjpeg-turbo8-dev libpng12-dev libcairo-dev libgif-dev libmapnik2.2 libmapnik2-dev
 npm install
 npm start
 ```
 
 On *Ubuntu 16.04* it may work directly, you'll still probably need
 `libjpeg-turbo8-dev libpng12-dev libgif-dev`.
+
+On *Ubuntu 18.04* ... TBD
