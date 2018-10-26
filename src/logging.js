@@ -6,7 +6,7 @@ const logger = new winston.Logger({
   transports: [
     new winston.transports.Console({
       timestamp: true,
-      level: 'debug',
+      level: 'info',
       handleExceptions: true,
       json: false,
       colorize: true
