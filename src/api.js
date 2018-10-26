@@ -6,6 +6,8 @@ import config from 'config';
 
 const api = KoaRouter();
 
+var os = require("os");
+
 api.get('/healthz', function(ctx) {
   ctx.cacheControl(0);
   ctx.body = {
@@ -17,7 +19,8 @@ api.get('/healthz', function(ctx) {
       defaultLimit: config.defaultLimit,
       maxLimit: config.maxLimit,
       maxTileObjects: config.maxTileObjects,
-      logging_severity: config.LOGGER_LEVEL
+      logging_severity: config.LOGGER_LEVEL,
+      hostname: os.hostname().split(".")[0]
   };
 });
 
