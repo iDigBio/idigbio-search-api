@@ -5,7 +5,7 @@ import cache from "cache";
 export var recordsets = {};
 
 async function _loadAll() {
-  logger.debug("Querying recordsets list");
+  logger.info("Querying recordsets list");
   const body = await searchShim(config.search.index, "recordsets", "_search", {size: config.maxRecordsets});
   var res = {};
   body.hits.hits.forEach(function(hit) {

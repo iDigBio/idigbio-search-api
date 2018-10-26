@@ -1,10 +1,11 @@
-
 var _ = require("lodash");
 var bluebird = require("bluebird");
 
 import * as recordsets from "lib/recordsets";
+import logger from "logging";
 
 export async function attribution(rss) {
+  logger.debug("** in function 'attribution'");
   return await bluebird
     .map(rss, function(bucket) {
       var rsid = bucket.key;
