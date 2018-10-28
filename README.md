@@ -65,8 +65,11 @@ Example to run the "prod" code for debugging purposes:
 
 ### Dependencies
 
+Development requires a redis server at localhost.
 
-**The following information is deprecated (most likely it will not work as-is).**
+```
+sudo apt install redis-server
+```
 
 
 
@@ -84,7 +87,7 @@ npm install
 npm start
 ```
 
-On *Ubuntu 16.04* it may work directly, you'll still probably need
+On *Ubuntu 16.04* it may work with fewer steps (TBD), you will still need:
 `libjpeg-turbo8-dev libpng12-dev libgif-dev`.
 
 On *Ubuntu 18.04* ... TBD
