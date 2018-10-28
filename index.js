@@ -10,6 +10,7 @@ http.globalAgent.maxSockets = 100;
 
 
 const config = require('./src/config');
+
 let srcdir = null;
 if(config.ENV === 'prod') {
   srcdir = './build';
@@ -21,7 +22,9 @@ if(config.ENV === 'prod') {
 const logger = require(`${srcdir}/logging`).default;
 
 logger.info("BEGIN LOGGING - SEVERITY = %s", config.LOGGER_LEVEL);
-logger.info("Current environment: %s", config.ENV)
+logger.info("logger configured loglevel = %s", logger.level);
+logger.info("Current environment: %s", config.ENV);
+
 
 function registerGracefulShutdown(signal, server, id) {
   process.on(signal, function() {

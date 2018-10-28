@@ -26,9 +26,11 @@ mapnik.Logger.setSeverity(mapnik.Logger.DEBUG);
 mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.input'));
 
 
-import config from "config";
+//import config from "config";
 // import logger from "logging";
-var logger=require('winston');
+// var logger=require('winston');
+import logger from "logging";
+
 import cache from "cache";
 import api from "api";
 import redisclient from "redisclient";
@@ -795,7 +797,6 @@ const createMap = async function(ctx) {
   logger.debug("%s ** in function createMap, ready to getMap", ctx.params.shortCode);
   return getMap(ctx);
 };
-
 
 api.get('/v2/mapping', createMap);
 api.post('/v2/mapping', createMap);
