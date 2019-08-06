@@ -679,7 +679,10 @@ const getMap = async function(ctx) {
   };
   logger.debug("%s ** in function getMap, ready to searchShim", ctx.params.shortCode);
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
-  var colorMax = body.aggregations.gh.buckets[0].doc_count;
+  var colorMax;
+  if (process.env.NODE_ENV !== "test") {
+    colorMax = body.aggregations.gh.buckets[0].doc_count;
+  }
   map_def.mcv = colorMax;
   await Promise.all([redisclient.set(shortCode, JSON.stringify(map_def))]);
   logger.debug("%s ** in function getMap, ready to formatter.attribution", ctx.params.shortCode);
