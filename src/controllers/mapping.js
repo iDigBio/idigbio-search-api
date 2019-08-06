@@ -20,7 +20,6 @@ import path from "path";
 import {fromCallback} from "bluebird";
 import createError from "http-errors";
 
-
 import mapnik from "mapnik";
 mapnik.Logger.setSeverity(mapnik.Logger.DEBUG);
 mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.input'));
@@ -116,16 +115,7 @@ async function geoJsonGeohash(body) {
 
 function styleJSONGeohash(map_def, body) {
   let default_color = "black";
-  let max_bucket_value = 1;
-  try {
-    if(map_def.style.styleOn === "sd.value") {
-      const gh_buckets = body.aggregations.ggh.f.gh.buckets;
-      max_bucket_value = _(gh_buckets).map((ghb) => ghb.sd.value).max();
-    } else {
-      max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
-    }
-  } catch (e) {}
-
+  let max_bucket_value = map_def.mcv;
   if(_.isArray(map_def.style.scale) && map_def.style.scale.length === 1) {
     default_color = map_def.style.scale[0];
   }
@@ -139,6 +129,7 @@ function styleJSONGeohash(map_def, body) {
     clrs.reverse();
   }
   const colors = {};
+
   const order = _.map(kls, function(domain, i) {
     domain = Math.floor(domain);
     const fl = chroma(clrs[Math.min(i, clrs.length - 1)]);
@@ -155,6 +146,7 @@ function styleJSONGeohash(map_def, body) {
     }
     return domain;
   });
+
   return {
     "colors": colors,
     "itemCount": body.hits.total,
@@ -401,39 +393,6 @@ function makeTileQuery(map_def, z, x, y, response_type) {
           "field": "geopoint",
           "precision": gl,
           "size": config.maxTileObjects
-        },
-        "aggs": {
-          "sd": {
-            "cardinality": {
-              "field": "specificepithet"
-            }
-          }
-        }
-      },
-      "ggh": {
-        "global": {},
-        "aggs": {
-          "f": {
-            "filter": {
-              "query": unboxed_query,
-            },
-            "aggs": {
-              "gh": {
-                "geohash_grid": {
-                  "field": "geopoint",
-                  "precision": gl,
-                  "size": 1
-                },
-                "aggs": {
-                  "sd": {
-                    "cardinality": {
-                      "field": "specificepithet"
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
     };
@@ -501,13 +460,13 @@ async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
     map_def = _.clone(map_def);
     map_def.type = await resolveAutoType(shortCode, map_def);
   }
-  // logger.debug("** in function getMapDef - ready to return map_def");
   return map_def;
 }
 
 const makeMapTile = async function(map_def, zoom, x, y, response_type) {
     logger.debug("** in function makeMapTile - (zoom/x/y) %s/%s/%s", zoom, x, y);
   const query = makeTileQuery(map_def, zoom, x, y, response_type);
+  
   const body = await searchShim(config.search.index, "records", "_search", query);
 
   if(response_type === "json") {
@@ -720,6 +679,9 @@ const getMap = async function(ctx) {
   };
   logger.debug("%s ** in function getMap, ready to searchShim", ctx.params.shortCode);
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
+  var colorMax = body.aggregations.gh.buckets[0].doc_count;
+  map_def.mcv = colorMax;
+  await Promise.all([redisclient.set(shortCode, JSON.stringify(map_def))]);
   logger.debug("%s ** in function getMap, ready to formatter.attribution", ctx.params.shortCode);
   const attribution = await formatter.attribution(body.aggregations.rs.buckets);
   ctx.body = {
@@ -740,6 +702,7 @@ const getMap = async function(ctx) {
         "lon": body.aggregations.min_lon.value
       }
     },
+    colorMax: colorMax,
     lastModified: new Date(body.aggregations.max_dm.value),
     attribution: attribution
   };
