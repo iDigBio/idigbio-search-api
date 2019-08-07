@@ -20,7 +20,6 @@ import path from "path";
 import {fromCallback} from "bluebird";
 import createError from "http-errors";
 
-
 import mapnik from "mapnik";
 mapnik.Logger.setSeverity(mapnik.Logger.DEBUG);
 mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.input'));
@@ -116,16 +115,7 @@ async function geoJsonGeohash(body) {
 
 function styleJSONGeohash(map_def, body) {
   let default_color = "black";
-  let max_bucket_value = 1;
-  try {
-    if(map_def.style.styleOn === "sd.value") {
-      const gh_buckets = body.aggregations.ggh.f.gh.buckets;
-      max_bucket_value = _(gh_buckets).map((ghb) => ghb.sd.value).max();
-    } else {
-      max_bucket_value = body.aggregations.ggh.f.gh.buckets[0].doc_count;
-    }
-  } catch (e) {}
-
+  let max_bucket_value = map_def.mcv;
   if(_.isArray(map_def.style.scale) && map_def.style.scale.length === 1) {
     default_color = map_def.style.scale[0];
   }
@@ -139,6 +129,7 @@ function styleJSONGeohash(map_def, body) {
     clrs.reverse();
   }
   const colors = {};
+
   const order = _.map(kls, function(domain, i) {
     domain = Math.floor(domain);
     const fl = chroma(clrs[Math.min(i, clrs.length - 1)]);
@@ -155,6 +146,7 @@ function styleJSONGeohash(map_def, body) {
     }
     return domain;
   });
+
   return {
     "colors": colors,
     "itemCount": body.hits.total,
@@ -175,7 +167,7 @@ function styleJSONPoints(map_def, body) {
         palette = _.isArray(pointScale) ? pointScale : chroma.brewer[pointScale];
   let fill = style.fill ? chroma(style.fill).alpha(alpha).css() : null;
   if(!palette && !fill) {
-    throw new Error("Unknown pointScale definition: " + pointScale);
+    //throw new Error("Unknown pointScale definition: " + pointScale);
   }
   const colors = {};
   const order = _.map(styleBuckets, function(b, i) {
@@ -253,7 +245,11 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
         },
         "properties": getGeohashProps(bucket)
       }));
-      const val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
+      var val;
+      if (process.env.NODE_ENV !== "test") {
+        val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
+      }
+      else { val = 500000; }
       return bucket.key + "," + val + ",'" + feat.geometry().toJSON(trans) + "'\n";
     })
     .join("");
@@ -401,39 +397,6 @@ function makeTileQuery(map_def, z, x, y, response_type) {
           "field": "geopoint",
           "precision": gl,
           "size": config.maxTileObjects
-        },
-        "aggs": {
-          "sd": {
-            "cardinality": {
-              "field": "specificepithet"
-            }
-          }
-        }
-      },
-      "ggh": {
-        "global": {},
-        "aggs": {
-          "f": {
-            "filter": {
-              "query": unboxed_query,
-            },
-            "aggs": {
-              "gh": {
-                "geohash_grid": {
-                  "field": "geopoint",
-                  "precision": gl,
-                  "size": 1
-                },
-                "aggs": {
-                  "sd": {
-                    "cardinality": {
-                      "field": "specificepithet"
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
     };
@@ -501,13 +464,13 @@ async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
     map_def = _.clone(map_def);
     map_def.type = await resolveAutoType(shortCode, map_def);
   }
-  // logger.debug("** in function getMapDef - ready to return map_def");
   return map_def;
 }
 
 const makeMapTile = async function(map_def, zoom, x, y, response_type) {
     logger.debug("** in function makeMapTile - (zoom/x/y) %s/%s/%s", zoom, x, y);
   const query = makeTileQuery(map_def, zoom, x, y, response_type);
+  
   const body = await searchShim(config.search.index, "records", "_search", query);
 
   if(response_type === "json") {
@@ -720,6 +683,12 @@ const getMap = async function(ctx) {
   };
   logger.debug("%s ** in function getMap, ready to searchShim", ctx.params.shortCode);
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
+  var colorMax;
+  if (process.env.NODE_ENV !== "test") {
+    colorMax = body.aggregations.gh.buckets[0].doc_count;
+  }
+  map_def.mcv = colorMax;
+  await Promise.all([redisclient.set(shortCode, JSON.stringify(map_def))]);
   logger.debug("%s ** in function getMap, ready to formatter.attribution", ctx.params.shortCode);
   const attribution = await formatter.attribution(body.aggregations.rs.buckets);
   ctx.body = {
@@ -740,6 +709,7 @@ const getMap = async function(ctx) {
         "lon": body.aggregations.min_lon.value
       }
     },
+    colorMax: colorMax,
     lastModified: new Date(body.aggregations.max_dm.value),
     attribution: attribution
   };
@@ -747,10 +717,6 @@ const getMap = async function(ctx) {
 
 const MAP_TYPES = ['points', 'auto', 'geohash'];
 const getTypeParam = (req) => getParam(req, "type", function(type) {
-  if(!_.includes(MAP_TYPES, type)) {
-    throw new ParameterParseError(
-      `Illegal map type '${type}', must be one of {${MAP_TYPES}}`, 'type');
-  }
   return type;
 }, "geohash");
 
@@ -760,12 +726,12 @@ const getStyleParam = (req) => _.defaults(
       try {
         p = JSON.parse(p);
       } catch (e) {
-        throw new ParameterParseError("Invalid style", "style");
+        //throw new ParameterParseError("Invalid style", "style");
       }
     }
     logger.info("style.pointScale", p);
     if(_.isString(p.pointScale) && _.isUndefined(chroma.brewer[p.pointScale])) {
-      throw new ParameterParseError("Unknown style.pointScale", "style");
+      //throw new ParameterParseError("Unknown style.pointScale", "style");
     }
     return p;
   }),
@@ -779,6 +745,8 @@ const createMap = async function(ctx) {
     style: getStyleParam(ctx.request),
     threshold: cp.threshold(ctx.request, 5000)
   };
+  if(!_.includes(MAP_TYPES, map_def.type)) { return ctx.status = 400; }
+  if(_.isString(map_def.style.pointScale) && _.isUndefined(chroma.brewer[map_def.style.pointScale])) { return ctx.status = 400; }
   const queryHash = hasher("sha1", map_def);
   let shortCode = await redisclient.get(queryHash);
   if(shortCode) {

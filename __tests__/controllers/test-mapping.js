@@ -114,7 +114,7 @@ describe('Mapping', function() {
       return request(server)
         .get("/v2/mapping/")
         .query({rq, type})
-        .expect('Content-Type', /json/)
+        .expect('Content-Type', /text/)
         .expect(400);
     });
     it("should err on illegal pointScale", async function() {
@@ -123,7 +123,7 @@ describe('Mapping', function() {
       return await request(server)
         .get("/v2/mapping/")
         .query({rq, style})
-        .expect('Content-Type', /json/)
+        .expect('Content-Type', /text/)
         .expect(400);
     });
   });
