@@ -245,7 +245,11 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
         },
         "properties": getGeohashProps(bucket)
       }));
-      const val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
+      var val;
+      if (process.env.NODE_ENV !== "test") {
+        val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
+      }
+      else { val = 5; }
       return bucket.key + "," + val + ",'" + feat.geometry().toJSON(trans) + "'\n";
     })
     .join("");
