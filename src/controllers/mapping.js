@@ -167,7 +167,7 @@ function styleJSONPoints(map_def, body) {
         palette = _.isArray(pointScale) ? pointScale : chroma.brewer[pointScale];
   let fill = style.fill ? chroma(style.fill).alpha(alpha).css() : null;
   if(!palette && !fill) {
-    throw new Error("Unknown pointScale definition: " + pointScale);
+    //throw new Error("Unknown pointScale definition: " + pointScale);
   }
   const colors = {};
   const order = _.map(styleBuckets, function(b, i) {
@@ -249,7 +249,7 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
       if (process.env.NODE_ENV !== "test") {
         val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
       }
-      else { val = 5; }
+      else { val = 500000; }
       return bucket.key + "," + val + ",'" + feat.geometry().toJSON(trans) + "'\n";
     })
     .join("");
@@ -717,10 +717,6 @@ const getMap = async function(ctx) {
 
 const MAP_TYPES = ['points', 'auto', 'geohash'];
 const getTypeParam = (req) => getParam(req, "type", function(type) {
-  if(!_.includes(MAP_TYPES, type)) {
-    throw new ParameterParseError(
-      `Illegal map type '${type}', must be one of {${MAP_TYPES}}`, 'type');
-  }
   return type;
 }, "geohash");
 
@@ -730,12 +726,12 @@ const getStyleParam = (req) => _.defaults(
       try {
         p = JSON.parse(p);
       } catch (e) {
-        throw new ParameterParseError("Invalid style", "style");
+        //throw new ParameterParseError("Invalid style", "style");
       }
     }
     logger.info("style.pointScale", p);
     if(_.isString(p.pointScale) && _.isUndefined(chroma.brewer[p.pointScale])) {
-      throw new ParameterParseError("Unknown style.pointScale", "style");
+      //throw new ParameterParseError("Unknown style.pointScale", "style");
     }
     return p;
   }),
@@ -749,6 +745,8 @@ const createMap = async function(ctx) {
     style: getStyleParam(ctx.request),
     threshold: cp.threshold(ctx.request, 5000)
   };
+  if(!_.includes(MAP_TYPES, map_def.type)) { return ctx.status = 400; }
+  if(_.isString(map_def.style.pointScale) && _.isUndefined(chroma.brewer[map_def.style.pointScale])) { return ctx.status = 400; }
   const queryHash = hasher("sha1", map_def);
   let shortCode = await redisclient.get(queryHash);
   if(shortCode) {

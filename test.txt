@@ -1,0 +1,651 @@
+yarn run v1.17.3
+$ NODE_ENV=test BLUEBIRD_DEBUG=1 jest
+jest-haste-map: duplicate manual mock found:
+  Module name: redisclient
+  Duplicate Mock path: /home/chris/source/idigbio-search-api/src/__mocks__/redisclient.js
+This warning is caused by two manual mock files with the same file name.
+Jest will use the mock file found in: 
+/home/chris/source/idigbio-search-api/src/__mocks__/redisclient.js
+ Please delete one of the following two files: 
+ /home/chris/source/idigbio-search-api/build/__mocks__/redisclient.js
+/home/chris/source/idigbio-search-api/src/__mocks__/redisclient.js
+
+
+jest-haste-map: duplicate manual mock found:
+  Module name: searchShim
+  Duplicate Mock path: /home/chris/source/idigbio-search-api/src/__mocks__/searchShim.js
+This warning is caused by two manual mock files with the same file name.
+Jest will use the mock file found in: 
+/home/chris/source/idigbio-search-api/src/__mocks__/searchShim.js
+ Please delete one of the following two files: 
+ /home/chris/source/idigbio-search-api/build/__mocks__/searchShim.js
+/home/chris/source/idigbio-search-api/src/__mocks__/searchShim.js
+
+
+jest-haste-map: duplicate manual mock found:
+  Module name: esclient
+  Duplicate Mock path: /home/chris/source/idigbio-search-api/src/__mocks__/esclient.js
+This warning is caused by two manual mock files with the same file name.
+Jest will use the mock file found in: 
+/home/chris/source/idigbio-search-api/src/__mocks__/esclient.js
+ Please delete one of the following two files: 
+ /home/chris/source/idigbio-search-api/build/__mocks__/esclient.js
+/home/chris/source/idigbio-search-api/src/__mocks__/esclient.js
+
+
+
+ RUNS  ...test-mapping.js
+[K[1A[K[1A
+ RUNS  ...test-mapping.js
+[K[1A[K[1A2019-08-07T14:13:52.045Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:52.310Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:52.336Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-mapping.js
+[K[1A[K[1A
+ RUNS  ...test-mapping.js
+[K[1A[K[1A2019-08-07T14:13:52.396Z - [32minfo[39m: recordsets:1.0.5 durationMs=60
+2019-08-07T14:13:52.420Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 14.107 ms
+
+2019-08-07T14:13:52.432Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 5.251 ms
+
+2019-08-07T14:13:52.448Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/mapping/ HTTP/1.1" 200 38052 - 13.371 ms
+
+2019-08-07T14:13:52.455Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 5.472 ms
+
+2019-08-07T14:13:52.459Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22nullius%20nullium%22%7D HTTP/1.1" 200 653 - 2.049 ms
+
+2019-08-07T14:13:52.470Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 4.811 ms
+
+info: style.pointScale fill=#FED, stroke=#123
+2019-08-07T14:13:52.476Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&style=%7B%22fill%22%3A%22%23FED%22%2C%22stroke%22%3A%22%23123%22%7D HTTP/1.1" 200 38082 - 5.097 ms
+
+2019-08-07T14:13:52.483Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 4.560 ms
+
+2019-08-07T14:13:52.489Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=points HTTP/1.1" 200 38051 - 4.899 ms
+
+2019-08-07T14:13:52.495Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 4.582 ms
+
+
+ RUNS  ...test-mapping.js
+[K[1A[K[1Aerror: invalid ** in function lookupShortCode, shortCode not found in redis
+
+ RUNS  ...test-mapping.js
+WARNING: MemoryDatasource is deprecated and will be removed in node-mapnik >= 3.7.x
+WARNING: MemoryDatasource is deprecated and will be removed in node-mapnik >= 3.7.x
+[K[1A[K[1A2019-08-07T14:13:52.502Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/mapping/ HTTP/1.1" 200 38052 - 4.683 ms
+
+2019-08-07T14:13:52.504Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=foobar HTTP/1.1" 400 11 - 0.515 ms
+
+info: style.pointScale pointScale=foobar
+2019-08-07T14:13:52.506Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&style=%7B%22pointScale%22%3A%22foobar%22%7D HTTP/1.1" 400 11 - 0.459 ms
+
+2019-08-07T14:13:52.512Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D HTTP/1.1" 200 38052 - 4.650 ms
+
+2019-08-07T14:13:52.516Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/invalid/ HTTP/1.1" 404 38 - 2.445 ms
+
+2019-08-07T14:13:52.522Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=auto HTTP/1.1" 200 38049 - 4.903 ms
+
+2019-08-07T14:13:52.531Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=auto&threshold=42 HTTP/1.1" 200 38047 - 6.696 ms
+
+2019-08-07T14:13:52.537Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=geohash HTTP/1.1" 200 38052 - 4.372 ms
+
+2019-08-07T14:13:52.555Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qzD3Z1Rr/1/0/0.png HTTP/1.1" 200 1870 - 16.741 ms
+
+2019-08-07T14:13:52.562Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=points HTTP/1.1" 200 38051 - 5.214 ms
+
+2019-08-07T14:13:52.581Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/rqD0K1ym/1/0/0.png HTTP/1.1" 200 6653 - 17.808 ms
+
+2019-08-07T14:13:52.588Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=auto HTTP/1.1" 200 38049 - 4.734 ms
+
+2019-08-07T14:13:52.590Z - [32minfo[39m: resolveAutoType:nyNLYbAx:1.0.5 durationMs=0
+
+ RUNS  ...test-mapping.js
+WARNING: MemoryDatasource is deprecated and will be removed in node-mapnik >= 3.7.x
+[K[1A[K[1A2019-08-07T14:13:52.607Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/nyNLYbAx/1/0/0.png HTTP/1.1" 200 6653 - 17.930 ms
+
+2019-08-07T14:13:52.613Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=geohash HTTP/1.1" 200 38052 - 4.527 ms
+
+2019-08-07T14:13:52.622Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qzD3Z1Rr/1/0/0.json HTTP/1.1" 200 61583 - 7.690 ms
+
+2019-08-07T14:13:52.629Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=points HTTP/1.1" 200 38051 - 4.803 ms
+
+2019-08-07T14:13:52.638Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/rqD0K1ym/1/0/0.json HTTP/1.1" 200 135303 - 5.428 ms
+
+2019-08-07T14:13:52.646Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=geohash HTTP/1.1" 200 38052 - 4.423 ms
+
+2019-08-07T14:13:52.657Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qzD3Z1Rr/1/0/0.grid.json HTTP/1.1" 200 6494 - 9.529 ms
+
+2019-08-07T14:13:52.664Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22stateprovince%22%3A%22florida%22%2C%22scientificname%22%3A%7B%22type%22%3A%22missing%22%7D%7D&type=geohash HTTP/1.1" 200 62163 - 4.827 ms
+
+2019-08-07T14:13:52.673Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/8n1xwbB2/1/0/0.grid.json HTTP/1.1" 200 5537 - 7.802 ms
+
+2019-08-07T14:13:52.680Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=points HTTP/1.1" 200 38051 - 4.574 ms
+
+2019-08-07T14:13:52.697Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/rqD0K1ym/1/0/0.grid.json HTTP/1.1" 200 13653 - 15.672 ms
+
+2019-08-07T14:13:52.703Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=geohash HTTP/1.1" 200 38052 - 4.690 ms
+
+
+ RUNS  ...test-mapping.js
+[K[1A[K[1A2019-08-07T14:13:52.793Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qzD3Z1Rr/points?lat=35&lon=-106&zoom=1 HTTP/1.1" 200 654255 - 86.390 ms
+
+2019-08-07T14:13:52.808Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=points HTTP/1.1" 200 38051 - 5.745 ms
+
+2019-08-07T14:13:52.816Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/rqD0K1ym/points?lat=32.7141666667&lon=-108.7086111111&zoom=1 HTTP/1.1" 200 139822 - 6.110 ms
+
+2019-08-07T14:13:52.824Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=geohash HTTP/1.1" 200 38052 - 4.499 ms
+
+2019-08-07T14:13:52.850Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qzD3Z1Rr/points?lat=35&lon=-466&zoom=1 HTTP/1.1" 200 654255 - 22.834 ms
+
+2019-08-07T14:13:52.865Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22scientificname%22%3A%22puma%20concolor%22%7D&type=geohash HTTP/1.1" 200 38052 - 5.035 ms
+
+2019-08-07T14:13:52.889Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qzD3Z1Rr/points?lat=35&lon=254&zoom=1 HTTP/1.1" 200 654255 - 20.599 ms
+
+
+ RUNS  ...test-mapping.js
+WARNING: MemoryDatasource is deprecated and will be removed in node-mapnik >= 3.7.x
+[K[1A[K[1A PASS  __tests__/controllers/test-mapping.js
+
+ RUNS  ...test-mapping.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-mapping.js
+[K[1A[K[1A
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A2019-08-07T14:13:52.901Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?rq=%7B%22genus%22%3A%22carex%22%2C%22institutioncode%22%3A%5B%22uf%22%2C%22flas%22%2C%22flmnh%22%5D%7D&type=geohash HTTP/1.1" 200 2854 - 3.225 ms
+
+2019-08-07T14:13:52.906Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/rPbB2bzM/style/1 HTTP/1.1" 200 164 - 3.356 ms
+
+info: style.pointScale fill=#f33, stroke=#FED
+2019-08-07T14:13:52.912Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/mapping/ HTTP/1.1" 200 2883 - 3.076 ms
+
+info: style.pointScale fill=#f33, stroke=#FED
+2019-08-07T14:13:52.916Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/mapping/ HTTP/1.1" 200 2883 - 2.735 ms
+
+info: style.pointScale fill=#F00, stroke=#F00, alpha=0.4
+2019-08-07T14:13:52.920Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/mapping/ HTTP/1.1" 200 2896 - 2.896 ms
+
+2019-08-07T14:13:52.929Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/gqNOLboX/1/0/0.png HTTP/1.1" 200 865 - 7.520 ms
+
+info: style.pointScale fill=#F00, stroke=#f00, styleOn=sd.value
+2019-08-07T14:13:52.934Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/?type=geohash&rq=%7B%22genus%22%3A%22carex%22%2C%22institutioncode%22%3A%5B%22uf%22%2C%22flas%22%2C%22flmnh%22%5D%7D&style=%7B%22fill%22%3A%22%23F00%22%2C%22stroke%22%3A%22%23f00%22%2C%22styleOn%22%3A%22sd.value%22%7D HTTP/1.1" 200 2878 - 3.158 ms
+
+2019-08-07T14:13:52.941Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/3EDQWbxj/1/0/0.png HTTP/1.1" 200 865 - 6.178 ms
+
+info: style.pointScale fill=#f00, stroke=#F04, alpha=0.5
+2019-08-07T14:13:52.946Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/mapping/ HTTP/1.1" 200 2895 - 2.948 ms
+
+2019-08-07T14:13:52.954Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qvNMO1Bp/1/0/0.png HTTP/1.1" 200 2292 - 7.551 ms
+
+2019-08-07T14:13:52.957Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/mapping/qvNMO1Bp/style/1 HTTP/1.1" 200 674 - 1.668 ms
+
+2019-08-07T14:13:53.180Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:53.247Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:53.254Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A2019-08-07T14:13:53.382Z - [32minfo[39m: recordsets:1.0.5 durationMs=128
+2019-08-07T14:13:53.388Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/?rq=%7B%22scientificname%22%3A%22nullius%20nullius%22%7D&limit=10 HTTP/1.1" 200 85 - 3.164 ms
+
+2019-08-07T14:13:53.441Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/?rq=%7B%7D&limit=10 HTTP/1.1" 200 1209088 - 47.514 ms
+
+2019-08-07T14:13:53.470Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/?rq=%7B%22scientificname%22%3A%7B%22type%22%3A%22exists%22%7D%2C%22genus%22%3A%22carex%22%7D&fields=%5B%22scientificname%22%5D&limit=10 HTTP/1.1" 200 279559 - 12.173 ms
+
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A2019-08-07T14:13:53.522Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/?rq=%7B%7D&limit=10000&fields=%5B%22uuid%22%5D HTTP/1.1" 200 1148630 - 43.380 ms
+
+2019-08-07T14:13:53.538Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/ HTTP/1.1" 200 85 - 3.096 ms
+
+2019-08-07T14:13:53.588Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/ HTTP/1.1" 200 1209088 - 45.216 ms
+
+2019-08-07T14:13:53.613Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/ HTTP/1.1" 200 279559 - 10.356 ms
+
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A2019-08-07T14:13:53.660Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/ HTTP/1.1" 200 1148630 - 38.055 ms
+
+2019-08-07T14:13:53.697Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/ HTTP/1.1" 200 628559 - 23.158 ms
+
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A2019-08-07T14:13:53.787Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/ HTTP/1.1" 200 621242 - 25.033 ms
+
+2019-08-07T14:13:53.796Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/media/?mq=%7B%22type%22%3A%22null%22%7D&rq=%7B%7D HTTP/1.1" 200 85 - 1.517 ms
+
+2019-08-07T14:13:53.818Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/media/?mq=%7B%7D&rq=%7B%7D&limit=10 HTTP/1.1" 200 511481 - 18.038 ms
+
+2019-08-07T14:13:53.843Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/media/?fields=data.ac%3AaccessURI&limit=10&mq=%7B%22data.ac%3AaccessURI%22%3A%7B%22type%22%3A%22exists%22%7D%7D HTTP/1.1" 200 424750 - 17.467 ms
+
+2019-08-07T14:13:53.868Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/media/?mq=%7B%7D&rq=%7B%7D&fields=%5B%22uuid%22%5D&limit=10000 HTTP/1.1" 200 478317 - 17.931 ms
+
+2019-08-07T14:13:53.876Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/media/ HTTP/1.1" 200 85 - 1.221 ms
+
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A PASS  __tests__/controllers/test-search-deprecated.js
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-search-deprecated.js
+[K[1A[K[1A
+ RUNS  ...test-search.js
+[K[1A[K[1A2019-08-07T14:13:53.898Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/media/ HTTP/1.1" 200 511481 - 19.847 ms
+
+2019-08-07T14:13:53.923Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/media/ HTTP/1.1" 200 424750 - 16.835 ms
+
+2019-08-07T14:13:53.950Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/media/ HTTP/1.1" 200 478317 - 19.078 ms
+
+2019-08-07T14:13:54.133Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:54.211Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:54.219Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-search.js
+[K[1A[K[1A
+ RUNS  ...test-search.js
+[K[1A[K[1A2019-08-07T14:13:54.369Z - [32minfo[39m: recordsets:1.0.5 durationMs=149
+2019-08-07T14:13:54.375Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/records/?rq=%7B%22scientificname%22%3A%22nullius%20nullius%22%7D HTTP/1.1" 200 85 - 2.762 ms
+
+2019-08-07T14:13:54.429Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/records/?rq=%7B%7D&limit=10 HTTP/1.1" 200 1209088 - 47.265 ms
+
+2019-08-07T14:13:54.458Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/records/?limit=10&fields=scientificname&rq=%7B%22scientificname%22%3A%7B%22type%22%3A%22exists%22%7D%2C%22genus%22%3A%22carex%22%7D HTTP/1.1" 200 279559 - 12.263 ms
+
+
+ RUNS  ...test-search.js
+[K[1A[K[1A
+ RUNS  ...test-search.js
+[K[1A[K[1A2019-08-07T14:13:54.523Z - [31merror[39m: Request error message=Terms not found in index for type records, stack=TermNotFoundError: Terms not found in index for type records
+    at checkTerms (/home/chris/source/idigbio-search-api/src/lib/indexTerms.js:75:11)
+    at /home/chris/source/idigbio-search-api/src/lib/common-params.js:184:377
+    at Object.<anonymous>.exports.default (/home/chris/source/idigbio-search-api/src/lib/get-param.js:28:14)
+    at Object.fields (/home/chris/source/idigbio-search-api/src/lib/common-params.js:183:554)
+    at /home/chris/source/idigbio-search-api/src/controllers/search.js:59:23
+    at Generator.next (<anonymous>)
+    at step (/home/chris/source/idigbio-search-api/src/controllers/search.js:21:659)
+    at /home/chris/source/idigbio-search-api/src/controllers/search.js:21:896
+    at /home/chris/source/idigbio-search-api/src/controllers/search.js:21:559
+    at basic (/home/chris/source/idigbio-search-api/src/controllers/search.js:76:47)
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/chris/source/idigbio-search-api/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-compose/index.js:42:32)
+    at /home/chris/source/idigbio-search-api/src/middleware/lastModified.js:17:12
+    at /home/chris/source/idigbio-search-api/src/middleware/prefixed.js:15:14
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-compose/index.js:42:32)
+    at parseBody.then.body (/home/chris/source/idigbio-search-api/node_modules/koa-bodyparser/index.js:74:14)
+    at <anonymous>, name=TermNotFoundError, statusCode=400, expose=true, terms=[scientificNam], __stackCleaned__=true
+
+ RUNS  ...test-search.js
+[K[1A[K[1A2019-08-07T14:13:54.510Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/records/?rq=%7B%7D&limit=10000&fields=uuid HTTP/1.1" 200 1148630 - 43.491 ms
+
+2019-08-07T14:13:54.524Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/records/?rq=%7B%7D&limit=10000&fields=scientificNam HTTP/1.1" 400 123 - 1.628 ms
+
+2019-08-07T14:13:54.528Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 85 - 2.984 ms
+
+2019-08-07T14:13:54.579Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 1209088 - 45.190 ms
+
+2019-08-07T14:13:54.603Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 279559 - 10.085 ms
+
+
+ RUNS  ...test-search.js
+[K[1A[K[1A2019-08-07T14:13:54.655Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 1148630 - 44.079 ms
+
+2019-08-07T14:13:54.694Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 628559 - 24.149 ms
+
+2019-08-07T14:13:54.720Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 418371 - 16.932 ms
+
+2019-08-07T14:13:54.743Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 200 418371 - 16.569 ms
+
+2019-08-07T14:13:54.750Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/media/?rq=%7B%7D&mq=%7B%22type%22%3A%22null%22%7D HTTP/1.1" 200 85 - 1.193 ms
+
+
+ RUNS  ...test-search.js
+[K[1A[K[1A2019-08-07T14:13:54.771Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/media/?limit=10&limit=10&rq=%7B%7D&mq=%7B%7D HTTP/1.1" 200 511481 - 18.154 ms
+
+2019-08-07T14:13:54.796Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/media/?limit=10&fields=%5B%22data.ac%3AaccessURI%22%5D&mq=%7B%22data.ac%3AaccessURI%22%3A%7B%22type%22%3A%22exists%22%7D%7D HTTP/1.1" 200 424750 - 16.402 ms
+
+2019-08-07T14:13:54.823Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/search/media/?limit=10000&rq=%7B%7D&mq=%7B%7D&fields=_id HTTP/1.1" 200 478030 - 20.741 ms
+
+2019-08-07T14:13:54.831Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/media/ HTTP/1.1" 200 85 - 1.232 ms
+
+2019-08-07T14:13:54.853Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/media/ HTTP/1.1" 200 511481 - 18.303 ms
+
+
+ RUNS  ...test-search.js
+[K[1A[K[1A PASS  __tests__/controllers/test-search.js
+
+ RUNS  ...test-search.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-search.js
+[K[1A[K[1A
+ RUNS  ...test-manage.js
+[K[1A[K[1A2019-08-07T14:13:54.880Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/media/ HTTP/1.1" 200 424750 - 19.238 ms
+
+2019-08-07T14:13:54.905Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/search/media/ HTTP/1.1" 200 479208 - 18.250 ms
+
+2019-08-07T14:13:55.082Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:55.169Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:55.180Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-manage.js
+[K[1A[K[1A
+ RUNS  ...test-manage.js
+[K[1A[K[1A PASS  __tests__/controllers/test-manage.js
+
+ RUNS  ...test-manage.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-manage.js
+[K[1A[K[1A
+ RUNS  ...test-summary.js
+[K[1A[K[1A2019-08-07T14:13:55.340Z - [32minfo[39m: recordsets:1.0.5 durationMs=160
+2019-08-07T14:13:55.343Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /manage/ HTTP/1.1" 404 38 - 1.366 ms
+
+2019-08-07T14:13:55.346Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /manage/indexterms HTTP/1.1" 200 82886 - 1.033 ms
+
+2019-08-07T14:13:55.352Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /manage/indexterms/reload HTTP/1.1" 302 67 - 3.670 ms
+
+2019-08-07T14:13:55.365Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /manage/recordsets HTTP/1.1" 200 1270574 - 7.894 ms
+
+2019-08-07T14:13:55.381Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /manage/recordsets/reload HTTP/1.1" 302 67 - 0.790 ms
+
+2019-08-07T14:13:55.562Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:55.641Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:55.650Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-summary.js
+[K[1A[K[1A
+ RUNS  ...test-summary.js
+[K[1A[K[1A PASS  __tests__/controllers/test-summary.js
+
+ RUNS  ...test-summary.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-summary.js
+[K[1A[K[1A
+ RUNS  ...test-view.js
+[K[1A[K[1A2019-08-07T14:13:55.821Z - [32minfo[39m: recordsets:1.0.5 durationMs=171
+2019-08-07T14:13:55.829Z - [32minfo[39m: top_basic:685a6a5be2a79e8507ae9233aad6522d:1.0.5 durationMs=3
+2019-08-07T14:13:55.829Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/top/records?rq=%7B%22genus%22%3A%22acer%22%7D HTTP/1.1" 200 406 - 5.584 ms
+
+2019-08-07T14:13:55.838Z - [32minfo[39m: top_basic:d17d36ae2ea10cc99290bff37876ddc2:1.0.5 durationMs=3
+2019-08-07T14:13:55.839Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /v2/summary/top/basic HTTP/1.1" 200 218 - 6.488 ms
+
+2019-08-07T14:13:55.843Z - [32minfo[39m: top_basic:6af36c87714f11bdd71b71d0d5a95c3a:1.0.5 durationMs=2
+2019-08-07T14:13:55.843Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/top/records?rq=%7B%22order%22%3A%22myrtales%22%7D&top_fields=%5B%22genus%22%5D HTTP/1.1" 200 344 - 2.769 ms
+
+2019-08-07T14:13:55.847Z - [32minfo[39m: top_media:9405bf334a30990ca950aed2bd28b128:1.0.5 durationMs=1
+2019-08-07T14:13:55.847Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/top/media?rq=%7B%22genus%22%3A%22acer%22%7D HTTP/1.1" 200 421 - 2.277 ms
+
+2019-08-07T14:13:55.850Z - [32minfo[39m: top_media:a057df0619c24b496b18026b666fe406:1.0.5 durationMs=1
+2019-08-07T14:13:55.850Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/top/media?rq=%7B%22genus%22%3A%22acer%22%7D&top_fields=%5B%22recordset%22%5D HTTP/1.1" 200 604 - 2.012 ms
+
+2019-08-07T14:13:55.853Z - [32minfo[39m: top_recordsets:be6cbb9fa5fddb17afdfebe4d176c0c7:1.0.5 durationMs=1
+2019-08-07T14:13:55.854Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/top/recordsets HTTP/1.1" 200 595 - 1.880 ms
+
+2019-08-07T14:13:55.856Z - [32minfo[39m: top_recordsets:85e132c7ec387cf748c77a5964fccb8f:1.0.5 durationMs=1
+2019-08-07T14:13:55.856Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/top/recordsets?top_fields=%5B%22data.contacts.email%22%5D HTTP/1.1" 200 347 - 1.372 ms
+
+2019-08-07T14:13:55.858Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/count/records?rq=%7B%22genus%22%3A%22acer%22%7D&top_fields=%5B%22scientificname%22%5D HTTP/1.1" 200 19 - 0.844 ms
+
+2019-08-07T14:13:55.861Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/count/media?rq=%7B%22genus%22%3A%22acer%22%7D HTTP/1.1" 200 19 - 0.945 ms
+
+2019-08-07T14:13:55.863Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/count/recordset?rsq=%7B%7D HTTP/1.1" 200 18 - 0.751 ms
+
+2019-08-07T14:13:55.867Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/datehist?rq=%7B%22genus%22%3A%22acer%22%7D&minDate=2014-01-01&maxDate=2014-12-31 HTTP/1.1" 200 77 - 3.348 ms
+
+2019-08-07T14:13:55.871Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/stats/api?minDate=2014-01-01&maxDate=2014-12-31 HTTP/1.1" 200 26316 - 2.853 ms
+
+2019-08-07T14:13:55.876Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/stats/digest?minDate=2014-01-01&maxDate=2014-12-30 HTTP/1.1" 200 27018 - 2.372 ms
+
+2019-08-07T14:13:55.890Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/summary/stats/search?minDate=2014-01-01&maxDate=2015-12-31 HTTP/1.1" 200 118107 - 11.527 ms
+
+2019-08-07T14:13:56.067Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:56.146Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:56.154Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-view.js
+[K[1A[K[1A
+ RUNS  ...test-view.js
+[K[1A[K[1A PASS  __tests__/controllers/test-view.js
+
+ RUNS  ...test-view.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-view.js
+[K[1A[K[1A
+ RUNS  ...test-home.js
+[K[1A[K[1A2019-08-07T14:13:56.216Z - [32minfo[39m: recordsets:1.0.5 durationMs=63
+2019-08-07T14:13:56.221Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/records/0000012b-9bb8-42f4-ad3b-c958cb22ae45 HTTP/1.1" 200 7174 - 2.519 ms
+
+2019-08-07T14:13:56.223Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/recordsets/6bb853ab-e8ea-43b1-bd83-47318fc4c345 HTTP/1.1" 200 3294 - 0.937 ms
+
+2019-08-07T14:13:56.226Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/publishers/076c0ff6-65e9-48a5-8e4b-2447936f9a1c HTTP/1.1" 200 1583 - 0.776 ms
+
+2019-08-07T14:13:56.228Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/publishers/00000000-0000-0000-0000-000000000000 HTTP/1.1" 404 38 - 1.278 ms
+
+2019-08-07T14:13:56.230Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/recordsets/00000000-0000-0000-0000-000000000000 HTTP/1.1" 404 38 - 0.981 ms
+
+2019-08-07T14:13:56.232Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/records/00000000-0000-0000-0000-000000000000 HTTP/1.1" 404 38 - 0.899 ms
+
+2019-08-07T14:13:56.234Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/mediarecords/00000000-0000-0000-0000-000000000000 HTTP/1.1" 404 38 - 0.913 ms
+
+2019-08-07T14:13:56.236Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/view/media/00100314-3220-4107-87f3-43cfdfa0cf10 HTTP/1.1" 200 4747 - 0.876 ms
+
+2019-08-07T14:13:56.420Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:56.500Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:56.508Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-home.js
+[K[1A[K[1A
+ RUNS  ...test-home.js
+[K[1A[K[1A
+ RUNS  ...test-home.js
+[K[1A[K[1A2019-08-07T14:13:56.767Z - [31merror[39m: Request error message=Invalid type, stack=InvalidTypeError: Invalid type
+    at getMappingForType (/home/chris/source/idigbio-search-api/src/lib/indexTerms.js:70:277)
+    at /home/chris/source/idigbio-search-api/src/controllers/home.js:44:129
+    at Generator.next (<anonymous>)
+    at step (/home/chris/source/idigbio-search-api/src/controllers/home.js:9:392)
+    at /home/chris/source/idigbio-search-api/src/controllers/home.js:9:629
+    at /home/chris/source/idigbio-search-api/src/controllers/home.js:9:292
+    at indexFields (/home/chris/source/idigbio-search-api/src/controllers/home.js:45:53)
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /home/chris/source/idigbio-search-api/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /home/chris/source/idigbio-search-api/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-compose/index.js:42:32)
+    at /home/chris/source/idigbio-search-api/src/middleware/lastModified.js:17:12
+    at /home/chris/source/idigbio-search-api/src/middleware/prefixed.js:15:14
+    at dispatch (/home/chris/source/idigbio-search-api/node_modules/koa-compose/index.js:42:32)
+    at parseBody.then.body (/home/chris/source/idigbio-search-api/node_modules/koa-bodyparser/index.js:74:14)
+    at <anonymous>, name=InvalidTypeError, statusCode=400, expose=true, type=foobar, __stackCleaned__=true
+
+ RUNS  ...test-home.js
+[K[1A[K[1A PASS  __tests__/controllers/test-home.js
+
+ RUNS  ...test-home.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-home.js
+[K[1A[K[1A
+ RUNS  ...test-common-params.js
+[K[1A[K[1A2019-08-07T14:13:56.715Z - [32minfo[39m: recordsets:1.0.5 durationMs=208
+2019-08-07T14:13:56.719Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET / HTTP/1.1" 200 67 - 1.118 ms
+
+2019-08-07T14:13:56.721Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET / HTTP/1.1" 200 67 - 0.562 ms
+
+2019-08-07T14:13:56.736Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v1 HTTP/1.1" 200 228 - 12.864 ms
+
+2019-08-07T14:13:56.738Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2 HTTP/1.1" 200 131 - 0.504 ms
+
+2019-08-07T14:13:56.741Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2 HTTP/1.1" 200 131 - 0.353 ms
+
+2019-08-07T14:13:56.742Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2 HTTP/1.1" 200 131 - 0.315 ms
+
+2019-08-07T14:13:56.745Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /idigbio/records/_search?size=1 HTTP/1.1" 200 5175 - 1.197 ms
+
+2019-08-07T14:13:56.749Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /idigbio/records/_search HTTP/1.1" 200 5175 - 2.952 ms
+
+2019-08-07T14:13:56.752Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /idigbio/records/_search HTTP/1.1" 200 5175 - 1.664 ms
+
+2019-08-07T14:13:56.754Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /idigbio/records/_count HTTP/1.1" 200 68 - 0.659 ms
+
+2019-08-07T14:13:56.756Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /idigbio/records/_count HTTP/1.1" 200 68 - 0.758 ms
+
+2019-08-07T14:13:56.758Z - [32minfo[39m: ::ffff:127.0.0.1 - "POST /idigbio/records/_count HTTP/1.1" 200 68 - 0.738 ms
+
+2019-08-07T14:13:56.760Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/meta/fields/records HTTP/1.1" 200 54177 - 0.744 ms
+
+2019-08-07T14:13:56.762Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/meta/fields/mediarecords HTTP/1.1" 200 23832 - 0.491 ms
+
+2019-08-07T14:13:56.765Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/meta/fields/media HTTP/1.1" 200 23832 - 0.440 ms
+
+2019-08-07T14:13:56.767Z - [32minfo[39m: ::ffff:127.0.0.1 - "GET /v2/meta/fields/foobar HTTP/1.1" 400 83 - 0.855 ms
+
+2019-08-07T14:13:56.908Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+
+ RUNS  ...test-common-params.js
+[K[1A[K[1A
+ RUNS  ...test-common-params.js
+[K[1A[K[1A PASS  __tests__/lib/test-common-params.js
+
+ RUNS  ...test-common-params.js
+[K[1A[K[1A
+ RUNS  ...test-app.js
+[K[1A[K[1A
+ RUNS  ...test-app.js
+[K[1A[K[1A PASS  __tests__/test-app.js
+
+ RUNS  ...test-app.js
+[K[1A[K[1A
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A2019-08-07T14:13:57.132Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:57.208Z - [32minfo[39m: Using fake redis-mock connection
+2019-08-07T14:13:57.214Z - [32minfo[39m: Querying recordsets list
+2019-08-07T14:13:57.347Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:57.417Z - [32minfo[39m: Querying recordsets list
+
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A2019-08-07T14:13:57.517Z - [32minfo[39m: recordsets:1.0.5 durationMs=100
+2019-08-07T14:13:57.716Z - [32minfo[39m: recordsets:1.0.5 durationMs=502
+
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A PASS  __tests__/lib/test-recordsets.js
+
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A  ● Console
+
+    console.log src/lib/recordsets.js:35
+      1800
+
+
+ RUNS  ...test-recordsets.js
+[K[1A[K[1A
+ RUNS  ...test-indexTerms.js
+[K[1A[K[1A(node:12856) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 uncaughtException listeners added. Use emitter.setMaxListeners() to increase limit
+
+ RUNS  ...test-indexTerms.js
+[K[1A[K[1A
+ RUNS  ...test-indexTerms.js
+[K[1A[K[1A PASS  __tests__/lib/test-indexTerms.js
+
+ RUNS  ...test-indexTerms.js
+[K[1A[K[1A
+ RUNS  ...test-lastModified.js
+[K[1A[K[1A2019-08-07T14:13:57.847Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+2019-08-07T14:13:58.011Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+
+ RUNS  ...test-lastModified.js
+[K[1A[K[1A
+ RUNS  ...test-lastModified.js
+[K[1A[K[1A PASS  __tests__/lib/test-lastModified.js
+
+ RUNS  ...test-lastModified.js
+[K[1A[K[1A
+ RUNS  ...test-query-parser.js
+[K[1A[K[1A2019-08-07T14:13:58.048Z - [32minfo[39m: Found updates to lastModified: {"records":"2017-02-10T15:21:16.356Z","mediarecords":"2017-02-10T15:22:48.498Z","recordsets":"2017-02-11T14:34:10.060Z","publishers":"2017-01-18T09:43:16.090Z"}
+2019-08-07T14:13:58.049Z - [32minfo[39m: updateLastModified durationMs=2
+2019-08-07T14:13:58.050Z - [32minfo[39m: Found updates to lastModified: {"records":"2017-02-10T15:21:16.356Z","mediarecords":"2017-02-10T15:22:48.498Z","recordsets":"2017-02-11T14:34:10.060Z","publishers":"2017-01-18T09:43:16.090Z"}
+2019-08-07T14:13:58.050Z - [32minfo[39m: updateLastModified durationMs=1
+2019-08-07T14:13:58.051Z - [32minfo[39m: updateLastModified durationMs=1
+2019-08-07T14:13:58.053Z - [32minfo[39m: Found updates to lastModified: {"records":"2017-02-10T15:21:16.356Z","mediarecords":"2017-02-10T15:22:48.498Z","recordsets":"2017-02-11T14:34:10.060Z","publishers":"2017-01-18T09:43:16.090Z"}
+2019-08-07T14:13:58.053Z - [32minfo[39m: updateLastModified durationMs=1
+2019-08-07T14:13:58.175Z - [32minfo[39m: Using mocks from /home/chris/source/idigbio-search-api/__tests__/mock
+
+ RUNS  ...test-query-parser.js
+[K[1A[K[1A
+ RUNS  ...test-query-parser.js
+[K[1A[K[1A PASS  __tests__/lib/test-query-parser.js
+
+ RUNS  ...test-query-parser.js
+[K[1A[K[1A
+ RUNS  ...test-stats.js
+[K[1A[K[1A
+ RUNS  ...test-stats.js
+[K[1A[K[1A PASS  __tests__/lib/test-stats.js
+
+ RUNS  ...test-stats.js
+[K[1A[K[1A
+ RUNS  ...test-timer.js
+[K[1A[K[1A PASS  __tests__/lib/test-timer.js
+
+ RUNS  ...test-timer.js
+[K[1A[K[1A
+ RUNS  ...test-hasher.js
+[K[1A[K[1A PASS  __tests__/lib/test-hasher.js
+
+ RUNS  ...test-hasher.js
+[K[1A[K[1A
+Test Suites: 16 passed, 16 total
+Tests:       209 passed, 209 total
+Snapshots:   0 total
+Time:        7.855s
+Ran all test suites.
+2019-08-07T14:13:58.373Z - [32minfo[39m: testfn durationMs=1
+2019-08-07T14:13:58.375Z - [32minfo[39m: testErrFn durationMs=2
+2019-08-07T14:13:58.375Z - [32minfo[39m: foo durationMs=0
+Done in 8.74s.
