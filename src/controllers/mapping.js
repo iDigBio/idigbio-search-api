@@ -116,6 +116,13 @@ async function geoJsonGeohash(body) {
 function styleJSONGeohash(map_def, body) {
   let default_color = "black";
   let max_bucket_value = map_def.mcv;
+  try {
+    if(map_def.style.styleOn === "sd.value") {
+      const gh_buckets = body.aggregations.geohash.buckets;
+      max_bucket_value = _(gh_buckets).map((ghb) => ghb.sd.value).max();
+    }
+  } catch (e) {}
+
   if(_.isArray(map_def.style.scale) && map_def.style.scale.length === 1) {
     default_color = map_def.style.scale[0];
   }
@@ -245,11 +252,8 @@ async function tileGeohash(zoom, x, y, map_def, body, render_type) {
         },
         "properties": getGeohashProps(bucket)
       }));
-      var val;
-      if (process.env.NODE_ENV !== "test") {
-        val = map_def.style.styleOn === "sd.value" ? bucket.sd.value : bucket.doc_count;
-      }
-      else { val = 500000; }
+      // sd appears to be an attempt to aggregate the number of unique species within each geohash. 
+      const val = map_def.style.styleOn === "sd.value" ? 5 : bucket.doc_count;
       return bucket.key + "," + val + ",'" + feat.geometry().toJSON(trans) + "'\n";
     })
     .join("");
@@ -683,11 +687,10 @@ const getMap = async function(ctx) {
   };
   logger.debug("%s ** in function getMap, ready to searchShim", ctx.params.shortCode);
   const body = await searchShim(config.search.index, "records", "_search", query, stats_info);
-  var colorMax;
-  if (process.env.NODE_ENV !== "test") {
-    colorMax = body.aggregations.gh.buckets[0].doc_count;
+  if (typeof body.aggregations.gh.buckets[0] !== 'undefined') {
+    map_def.mcv = body.aggregations.gh.buckets[0].doc_count;
   }
-  map_def.mcv = colorMax;
+  var colorMax = map_def.mcv;
   await Promise.all([redisclient.set(shortCode, JSON.stringify(map_def))]);
   logger.debug("%s ** in function getMap, ready to formatter.attribution", ctx.params.shortCode);
   const attribution = await formatter.attribution(body.aggregations.rs.buckets);
