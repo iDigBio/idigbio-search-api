@@ -51,6 +51,12 @@ function prefixFilter(k, shimK) {
 }
 
 function geoBoundingBox(k, shimK) {
+  //Don't allow invalid coordinates to be passed to ES
+  if (shimK.top_left.lat < shimK.bottom_right.lat) {
+    var temp = shimK.top_left.lat;
+    shimK.top_left.lat = shimK.bottom_right.lat;
+    shimK.bottom_right.lat = temp;
+  }
   return typeWrapper(k, "geo_bounding_box", shimK);
 }
 
