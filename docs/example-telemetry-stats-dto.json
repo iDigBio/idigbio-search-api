@@ -1,0 +1,10 @@
+{
+    "ip": "127.0.0.1",
+    "payload": {
+        "<record_uuid>": "<recordset_uuid>" 
+    },
+    "query": "view",
+    "record_type": "records",
+    "source": "api-test",
+    "type": "view" 
+}

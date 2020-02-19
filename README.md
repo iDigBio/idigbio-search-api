@@ -24,7 +24,70 @@ Please contact the iDigBio Technical Team (idigbio@acis.ufl.edu) if you need ass
 
 ### Installing for Development
 
-TBD
+Development requires a redis server at localhost.
+
+
+#### ubuntu 18.04 (bionic)
+
+The following directions are still incomplete but can get tests to run successfully. Do the following as root.
+
+Redis v4 worked for running tests: `apt install redis-server`
+
+Use the DOCKERFILE as a guide:
+
+* wget https://deb.nodesource.com/setup_6.x
+* inspect the script
+* run it
+
+Note that after you run it, before you try to install node, you need to update the apt priorities or your system will likely still try to use the distribution package:
+
+```
+# create+edit the file:
+nano /etc/apt/preferences.d/nodejs
+
+# copy this into it
+Package: nodejs
+Pin: origin deb.nodesource.com
+Pin-Priority: 1001
+```
+
+then install nodejs:
+
+```
+sudo apt-get install -y nodejs
+```
+
+
+Now, as your normal user:
+
+```
+# clone the repo
+git clone https://github.com/iDigBio/idigbio-search-api.git
+
+# install packages
+npm install
+
+```
+
+Run tests: 
+
+```
+npm test
+
+[...]
+Test Suites: 16 passed, 16 total
+Tests:       209 passed, 209 total
+Snapshots:   1 passed, 1 total
+Time:        12.73s
+Ran all test suites.
+```
+
+to run a single test, call it with the path to the test file:
+
+```
+npm test __tests__/lib/<somefile>.js
+```
+
 
 ### Getting Started
 
@@ -65,14 +128,6 @@ Example to run the "prod" code for debugging purposes:
 
 ### Dependencies
 
-Development requires a redis server at localhost.
-
-```
-sudo apt install redis-server
-```
-
-
-
 To install and run on *Ubuntu 14.04*:
 ```
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test;
@@ -90,4 +145,6 @@ npm start
 On *Ubuntu 16.04* it may work with fewer steps (TBD), you will still need:
 `libjpeg-turbo8-dev libpng12-dev libgif-dev`.
 
-On *Ubuntu 18.04* ... TBD
+## Statistics
+
+See: [docs](https://github.com/iDigBio/idigbio-search-api/blob/master/src/docs/)
