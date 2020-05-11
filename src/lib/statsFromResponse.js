@@ -44,7 +44,7 @@ export default function(query, statsInfo, response) {
       };
 
       request.post({
-        url: "http://idb-redis-stats.acis.ufl.edu:3000",
+        url: "http://idb-portal-telemetry-collector:3000",
         body: JSON.stringify(stats)
       }, function(error, response, body) {
         if(error) {
