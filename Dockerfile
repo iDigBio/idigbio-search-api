@@ -19,4 +19,8 @@ RUN yarn build
 
 EXPOSE 19196
 
+RUN apt-get update && apt install ca-certificates
+RUN sed 's|mozilla\/AddTrust_External_Root.crt|#mozilla\/AddTrust_External_Root.crt|g' -i /etc/ca-certificates.conf
+RUN update-ca-certificates -f -v
+
 CMD ["npm", "start"]
