@@ -28,26 +28,19 @@ var config = {
 
   port: 19196,
   search: {
-    server: "http://c18node2.acis.ufl.edu:9200",
+    server: "http://localhost:9200",
     index: process.env.SEARCH_INDEX || indexAlias,
     statsIndex: process.env.STATS_INDEX || "stats",
   },
   elasticsearch: {
     hosts: [
-      "http://c20node1.acis.ufl.edu:9200",
-      "http://c20node2.acis.ufl.edu:9200",
-      "http://c20node3.acis.ufl.edu:9200",
-      "http://c20node4.acis.ufl.edu:9200",
-      "http://c20node5.acis.ufl.edu:9200",
-      "http://c20node6.acis.ufl.edu:9200",
-      "http://c20node7.acis.ufl.edu:9200",
-      "http://c20node8.acis.ufl.edu:9200",
-      "http://c20node9.acis.ufl.edu:9200",
-      "http://c20node10.acis.ufl.edu:9200",
-      "http://c20node11.acis.ufl.edu:9200",
-      "http://c20node12.acis.ufl.edu:9200"
+      "http://c18node2.acis.ufl.edu:9200",
+      "http://c18node6.acis.ufl.edu:9200",
+      "http://c18node10.acis.ufl.edu:9200",
+      "http://c18node12.acis.ufl.edu:9200",
+      "http://c18node14.acis.ufl.edu:9200"
     ],
-    apiVersion: "2.4",
+    apiVersion: "5.x",
     sniffOnStart: false,
     sniffOnConnectionFault: true,
   },

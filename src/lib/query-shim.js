@@ -1,4 +1,3 @@
-
 import _ from "lodash";
 
 // import logger from "logging";
@@ -102,7 +101,7 @@ function termsFilter(k, shimK) {
     }
   });
   var term = {
-    "execution": "or"
+//    "execution": "or"
   };
   term[k] = or_array;
   return {
@@ -141,14 +140,17 @@ export default function queryShim(shim, term_type) {
 
   const query = {
     "query": {
-      "filtered": {
-        "filter": {}
+      "bool": {
+        "filter": [],
+        "must": [],
+        "must_not": []
       }
     }
   };
 
   let fulltext = null;
   const and_array = [];
+  const not_array = [];
 
   _.keys(shim).forEach(function(k) {
     if(_.isString(shim[k]) || _.isBoolean(shim[k]) || _.isNumber(shim[k])) {
@@ -161,7 +163,13 @@ export default function queryShim(shim, term_type) {
         if(_.isString(f)) {
           fulltext = f;
         } else {
-          and_array.push(f);
+          if (typeof f.missing != "undefined") {
+            var t = { exists: { field: f.missing.field } };
+            not_array.push(t);
+          }
+          else {
+            and_array.push(f);
+          }
         }
       } else {
         throw new QueryParseError("unable to parse type", shim[k]);
@@ -172,7 +180,7 @@ export default function queryShim(shim, term_type) {
   });
 
   if(fulltext) {
-    query["query"]["filtered"]["query"] = {
+    query["query"]["bool"]["must"] = {
       "match": {
         "_all": {
           "query": fulltext,
@@ -183,7 +191,11 @@ export default function queryShim(shim, term_type) {
   }
 
   if(and_array.length > 0) {
-    query["query"]["filtered"]["filter"]["and"] = and_array;
+    query["query"]["bool"]["must"] = and_array;
+  }
+
+  if(not_array.length > 0) {
+    query["query"]["bool"]["must_not"] = not_array;
   }
 
   return query;

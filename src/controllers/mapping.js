@@ -362,9 +362,9 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
 
 function makeBasicFilter(map_def, termType) {
   var query = queryShim(map_def.rq, termType);
-  _.update(query, "query.filtered.filter.and", function(v) {
+  _.update(query, "query.bool.filter", function(v) {
     if(_.isUndefined(v)) { v = []; }
-    v.push({ "exists": {"field": "geopoint"}});
+    v.push({ "exists": {"field": "geopoint"} });
     return v;
   });
   return query;
@@ -373,12 +373,12 @@ function makeBasicFilter(map_def, termType) {
 
 function makeTileQuery(map_def, z, x, y, response_type) {
   const query = makeBasicFilter(map_def);
-  const unboxed_query = _.cloneDeep(query.query);
+  const filter = _.cloneDeep(query.query);
   const gl = tileMath.zoom_to_geohash_len(z, false);
   const g_bbox_size = tileMath.geohash_len_to_bbox_size(gl);
   const padding_size = 3;
   const tile_bbox = tileMath.zoom_xy_to_nw_se_bbox(z, x, y);
-  query["query"]["filtered"]["filter"]["and"].push({
+  query["query"]["bool"]["filter"].push({
     "geo_bounding_box": {
       "geopoint": {
         "top_left": {
@@ -407,14 +407,13 @@ function makeTileQuery(map_def, z, x, y, response_type) {
   } else if(map_def.type === "points") {
     query["size"] = config.maxTileObjects;
     query["_source"] = ["geopoint", map_def.style.styleOn];
+
     query["aggs"] = {
       "gstyle": {
         "global": {},
         "aggs": {
           "f": {
-            "filter": {
-              "query": unboxed_query,
-            },
+            filter,
             "aggs": {
               "style": {
                 "terms": {
@@ -427,6 +426,7 @@ function makeTileQuery(map_def, z, x, y, response_type) {
         }
       }
     };
+
   }
 
   if(response_type === "json") {
@@ -544,7 +544,7 @@ const mapPoints = async function(ctx) {
       } else if(z >= 10) {
         pdist = 0.25;
       }
-      query["query"]["filtered"]["filter"]["and"].push({
+      query["query"]["bool"]["filter"].push({
         "geo_distance": {
           "geopoint": {
             "lat": lat,
@@ -554,7 +554,7 @@ const mapPoints = async function(ctx) {
         }
       });
     } else {
-      query["query"]["filtered"]["filter"]["and"].push({
+      query["query"]["bool"]["filter"].push({
 
         /* "geohash_cell": {
            "geopoint": {

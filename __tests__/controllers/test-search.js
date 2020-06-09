@@ -152,12 +152,12 @@ describe('Search', function() {
       response.body.itemCount.should.not.equal(0);
       response.body.items.length.should.not.equal(0);
     });
-    it('should support sorting by _id', async function() {
+    it('should support sorting by _uid', async function() {
       const response = await request(server)
             .post("/v2/search/records/")
             .send({
               rq: {"family": "asteraceae"},
-              sort: "_id",
+              sort: "_uid",
               fields: ["_id"],
               limit: 10,
             })

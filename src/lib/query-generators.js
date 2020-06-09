@@ -36,7 +36,7 @@ export function media_query(rq, mq, fields, sort, limit, offset, fields_exclude)
 
   var recordQuery = null;
 
-  if(hasTerms(rquery, "query.filtered.filter") || hasTerms(rquery, "query.filtered.query")) {
+  if(hasTerms(rquery, "query.bool.filter") || hasTerms(rquery, "query.bool.must.query") || hasTerms(rquery, "query.bool.must_not.query")) {
     recordQuery = {
       "has_parent": {
         "parent_type": "records",
@@ -46,23 +46,24 @@ export function media_query(rq, mq, fields, sort, limit, offset, fields_exclude)
   }
 
   if(recordQuery) {
-    if(hasTerms(query, "query.filtered.query")) {
-      query["query"]["filtered"]["query"] = {
+    if(hasTerms(query, "query.bool.must.query")) {
+      query["query"]["bool"]["must"]["query"] = {
         "bool": {
           "must": [
             recordQuery,
-            query["query"]["filtered"]["query"]
+            query["query"]["bool"]["must"]["query"]
           ]
         }
       };
-    } else {
-      query["query"]["filtered"]["query"] = recordQuery;
+    }
+    else {
+      query["query"]["bool"]["must"]["query"] = recordQuery;
     }
   }
 
 
-  if(!hasTerms(query, "query.filtered.query")) {
-    delete query["query"]["filtered"]["query"];
+  if(!hasTerms(query, "query.bool.must.query")) {
+    //delete query["query"]["bool"]["must"]["query"];
   }
 
   query["aggs"] = {
