@@ -1,0 +1,4329 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 837,
+    "max_score": 11.255404,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "ecde599a-329f-4304-9482-335354f954e7",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 32.48072005,
+            "lon": -108.4628365
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "new mexico",
+          "county": "grant county",
+          "phylum": "chordata",
+          "catalognumber": "msb:mamm:262369",
+          "startdayofyear": 120,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-22T22:22:44.223534+00:00",
+          "uuid": "ecde599a-329f-4304-9482-335354f954e7",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish",
+          "institutioncode": "msb",
+          "verbatimlocality": "walking x canyon",
+          "datecollected": "2011-04-30T00:00:00+00:00",
+          "etag": "4d36e656d86843b2ccc0d394ef0cba96ef55256a",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "14",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "Grant County",
+            "dwc:georeferenceSources": "not recorded",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "09b18522-5643-478f-86e9-d2e34440d43e",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:occurrenceRemarks": "Cause of death: depredation; GMU: 23; UTM Zone 12 Easting 738423 Northing 3596562",
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262369",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2013-02-12",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "sex=female",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2013-02-12; method: field",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "MSB",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "Walking X Canyon",
+            "dwc:day": "30",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:verbatimCoordinates": "32.48072005/-108.4628365",
+            "idigbio:dateModified": "2019-09-22T22:22:44.223534",
+            "idigbio:uuid": "ecde599a-329f-4304-9482-335354f954e7",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262369?seid=1918639",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "4d36e656d86843b2ccc0d394ef0cba96ef55256a",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLatitude": "32.48072005",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "field",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "Walking X Canyon",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "MSB:Mamm:262369",
+            "dwc:higherGeography": "North America, United States, New Mexico, Grant County",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:decimalLongitude": "-108.4628365",
+            "dwc:month": "04",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "muscle (dry)",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262369?seid=1918639",
+              "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262369:1918639"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262369?seid=1918639",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2011-04-30",
+            "dwc:collectionID": "14",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:262369",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:institutionID": "MSB",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:endDayOfYear": "120",
+            "dwc:otherCatalogNumbers": "NK=227157; original identifier=NMDGF pelt tag #26279",
+            "dwc:verbatimEventDate": "2011-04-30",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-23 01:12:55.0",
+            "dwc:year": "2011"
+          },
+          "coordinateuncertainty": 3000,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Grant County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262369",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262369?seid=1918639",
+            "dwc:dateIdentified": "2013-02-12",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "32.48072005/-108.4628365",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262369?seid=1918639",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:eventDate": "2011-04-30",
+            "dwc:collectionID": "14",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2013-02-12; method: field",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "32.48072005",
+            "dwc:occurrenceRemarks": "Cause of death: depredation; GMU: 23; UTM Zone 12 Easting 738423 Northing 3596562",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex=female",
+            "dwc:georeferenceSources": "not recorded",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:262369",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:locality": "Walking X Canyon",
+            "dwc:institutionID": "MSB",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "MSB:Mamm:262369",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Grant County",
+            "dwc:month": "04",
+            "dwc:decimalLongitude": "-108.4628365",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "dwc:endDayOfYear": "120",
+            "dwc:otherCatalogNumbers": "NK=227157; original identifier=NMDGF pelt tag #26279",
+            "dwc:verbatimLocality": "Walking X Canyon",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:verbatimEventDate": "2011-04-30",
+            "dwc:preparations": "muscle (dry)",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-23 01:12:55.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "30",
+            "dwc:year": "2011"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:262369?seid=1918639",
+          "institutionid": "msb",
+          "country": "united states",
+          "locality": "walking x canyon",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "2011-04-30",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "2011-04-30",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262369?seid=1918639",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262369:1918639"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "636287755082106239",
+          "h3-p14": "640791354709476687",
+          "h3-p15": "645294954336847180",
+          "h3-p10": "622776956200026111",
+          "h3-p1": "582248581512036351",
+          "h3-p11": "627280555827367935",
+          "h3-p0": "577762574070710271",
+          "h3-p12": "631784155454735871",
+          "h3-p3": "591251795037126655",
+          "h3-p2": "586748332848709631",
+          "h3-p5": "600258958858387455",
+          "h3-p4": "595755360304758783",
+          "h3-p7": "609266157324599295",
+          "h3-p6": "604762557814669311",
+          "h3-p9": "618273356572786687",
+          "h3-p8": "613769756945678335"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "8d901366-eb51-4505-b9b8-18f8e9282b5b",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "recordset": "a4c4e0ee-38dd-47fd-9b06-ce4cc011e111",
+          "dqs": 0.2608695652173913,
+          "stateprovince": "alberta (prov.)",
+          "catalognumber": "cmnma 19578",
+          "taxonrank": "species",
+          "collector": "fuller",
+          "continent": "north america",
+          "uuid": "8d901366-eb51-4505-b9b8-18f8e9282b5b",
+          "countrycode": "can",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "cmn",
+          "etag": "3e020dfd441d35df36e9ea2fe4272daf916e618d",
+          "hasMedia": false,
+          "hasImage": false,
+          "highertaxon": "animalia; chordata; vertebrata; mammalia; carnivora; feliformia; felidae; puma",
+          "collectionid": "http://grbio.org/cool/q3jh-b1xk",
+          "scientificname": "puma concolor",
+          "locality": "jasper national park",
+          "data": {
+            "dwc:recordedBy": "Fuller",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "af71a108-25de-5de4-d8ad-d758c2a3e4b0",
+            "dcterms:language": "eng",
+            "id": "af71a108-25de-5de4-d8ad-d758c2a3e4b0",
+            "dwc:stateProvince": "Alberta (Prov.)",
+            "dcterms:bibliographicCitation": "Puma concolor (CMNMA 19578)",
+            "dwc:eventDate": "1949-02",
+            "dwc:collectionID": "http://grbio.org/cool/q3jh-b1xk",
+            "dwc:country": "Canada",
+            "dwc:collectionCode": "CMNMA",
+            "dwc:verbatimLatitude": "52° 53' N",
+            "dcterms:rightsHolder": "Canadian Museum of Nature",
+            "dwc:decimalLatitude": "52.883333",
+            "dwc:locationID": "CMNMA 19578",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:preparations": "study skin, skeleton, skull-complete",
+            "dcterms:license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+            "dwc:locality": "Jasper National Park",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34935",
+            "dwc:institutionCode": "CMN",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Vertebrata; Mammalia; Carnivora; Feliformia; Felidae; Puma",
+            "dwc:catalogNumber": "CMNMA 19578",
+            "dcterms:type": "PhysicalObject",
+            "dwc:decimalLongitude": "-118.083333",
+            "dwc:verbatimLongitude": "118° 5' W",
+            "dwc:datasetName": "Mammal",
+            "dwc:verbatimEventDate": "1949-02",
+            "dcterms:modified": "2017-11-20 17:15:23.0",
+            "dwc:scientificName": "Puma concolor"
+          },
+          "datemodified": "2019-08-29T21:51:31.199209+00:00",
+          "occurrenceid": "af71a108-25de-5de4-d8ad-d758c2a3e4b0",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34935",
+          "country": "canada",
+          "geopoint": {
+            "lat": 52.883333,
+            "lon": -118.083333
+          },
+          "collectioncode": "cmnma",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "verbatimeventdate": "1949-02",
+          "recordids": [
+            "a4c4e0ee-38dd-47fd-9b06-ce4cc011e111\\af71a108-25de-5de4-d8ad-d758c2a3e4b0"
+          ],
+          "eventdate": "1949-02",
+          "indexData": {
+            "dwc:recordedBy": "Fuller",
+            "idigbio:uuid": "8d901366-eb51-4505-b9b8-18f8e9282b5b",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "a4c4e0ee-38dd-47fd-9b06-ce4cc011e111\\af71a108-25de-5de4-d8ad-d758c2a3e4b0"
+            ],
+            "dwc:occurrenceID": "af71a108-25de-5de4-d8ad-d758c2a3e4b0",
+            "dcterms:language": "eng",
+            "dcterms:rightsHolder": "Canadian Museum of Nature",
+            "idigbio:parent": "a4c4e0ee-38dd-47fd-9b06-ce4cc011e111",
+            "dwc:stateProvince": "Alberta (Prov.)",
+            "dcterms:bibliographicCitation": "Puma concolor (CMNMA 19578)",
+            "dwc:eventDate": "1949-02",
+            "dwc:collectionID": "http://grbio.org/cool/q3jh-b1xk",
+            "dwc:country": "Canada",
+            "idigbio:etag": "3e020dfd441d35df36e9ea2fe4272daf916e618d",
+            "dwc:collectionCode": "CMNMA",
+            "dwc:verbatimLatitude": "52° 53' N",
+            "id": "af71a108-25de-5de4-d8ad-d758c2a3e4b0",
+            "dwc:decimalLatitude": "52.883333",
+            "dwc:locationID": "CMNMA 19578",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dwc:preparations": "study skin, skeleton, skull-complete",
+            "flag_dwc_continent_added": true,
+            "dcterms:license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2019-08-29T21:51:31.199209",
+            "dwc:locality": "Jasper National Park",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34935",
+            "dwc:institutionCode": "CMN",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Vertebrata; Mammalia; Carnivora; Feliformia; Felidae; Puma",
+            "dwc:catalogNumber": "CMNMA 19578",
+            "dcterms:type": "PhysicalObject",
+            "dwc:decimalLongitude": "-118.083333",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:datasetName": "Mammal",
+            "dwc:verbatimEventDate": "1949-02",
+            "idigbio:isocountrycode": "can",
+            "dcterms:modified": "2017-11-20 17:15:23.0",
+            "dwc:verbatimLongitude": "118° 5' W"
+          },
+          "h3-p13": "635340782979919103",
+          "h3-p14": "639844382607289575",
+          "h3-p15": "644347982234660070",
+          "h3-p10": "621829984097828863",
+          "h3-p1": "581298603465637887",
+          "h3-p11": "626333583725178879",
+          "h3-p0": "576812596024311807",
+          "h3-p12": "630837183352548863",
+          "h3-p3": "590304840647704575",
+          "h3-p2": "585801653337194495",
+          "h3-p5": "599311986215354367",
+          "h3-p4": "594808388735467519",
+          "h3-p7": "608319185218437119",
+          "h3-p6": "603815585708507135",
+          "h3-p9": "617326384470556671",
+          "h3-p8": "612822784843710463"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "2235ed3a-bb72-4ebc-944d-6fbd2997ba72",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 31.60105,
+            "lon": -108.3252
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "new mexico",
+          "county": "hidalgo county",
+          "phylum": "chordata",
+          "catalognumber": "msb:mamm:199468",
+          "startdayofyear": 9,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-22T22:22:44.223534+00:00",
+          "uuid": "2235ed3a-bb72-4ebc-944d-6fbd2997ba72",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish; preparator(s): erin m. jackson",
+          "institutioncode": "msb",
+          "verbatimlocality": "big hatchet, sheriden canyon",
+          "datecollected": "2003-01-09T00:00:00+00:00",
+          "etag": "831659ef3cb2c0826e061949ca97ee8d33e3e355",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "14",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "Hidalgo County",
+            "dwc:georeferenceSources": "Beogeomancer",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "09b18522-5643-478f-86e9-d2e34440d43e",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:occurrenceRemarks": "NMDGF pelt tag # 18050;",
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:coordinateUncertaintyInMeters": "2519",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish; Preparator(s): Erin M. Jackson",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:199468",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2005-03-24",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "sex=female",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2005-03-24; method: field",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "MSB",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "Big Hatchet, Sheriden Canyon",
+            "dwc:day": "09",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:verbatimCoordinates": "31.60105/-108.3252",
+            "idigbio:dateModified": "2019-09-22T22:22:44.223534",
+            "idigbio:uuid": "2235ed3a-bb72-4ebc-944d-6fbd2997ba72",
+            "dwc:georeferencedDate": "13-04-10 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:199468?seid=107820",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "831659ef3cb2c0826e061949ca97ee8d33e3e355",
+            "dwc:decimalLatitude": "31.60105",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "field",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "Big Hatchet, Sheriden Canyon.",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "MSB:Mamm:199468",
+            "dwc:higherGeography": "North America, United States, New Mexico, Hidalgo County",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLongitude": "-108.3252",
+            "dwc:month": "01",
+            "dwc:georeferencedBy": "Jason L. Malaney",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "skin; skull; skeleton, postcranial (dry); muscle (frozen)",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:199468?seid=107820",
+              "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:199468:107820"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:199468?seid=107820",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2003-01-09",
+            "dwc:collectionID": "14",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:199468",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "Jason L. Malaney",
+            "dwc:institutionID": "MSB",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:endDayOfYear": "9",
+            "dwc:otherCatalogNumbers": "NK=159591; original identifier=pelt tag #18050/17107",
+            "dwc:verbatimEventDate": "9 Jan 03",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "BioGeoMancer",
+            "dcterms:modified": "2019-09-17 16:44:15.0",
+            "dwc:year": "2003"
+          },
+          "coordinateuncertainty": 2519,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Hidalgo County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish; Preparator(s): Erin M. Jackson",
+            "dwc:georeferencedDate": "13-04-10 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:199468",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:199468?seid=107820",
+            "dwc:dateIdentified": "2005-03-24",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "31.60105/-108.3252",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:199468?seid=107820",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2003-01-09",
+            "dwc:collectionID": "14",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2005-03-24; method: field",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "31.60105",
+            "dwc:occurrenceRemarks": "NMDGF pelt tag # 18050;",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex=female",
+            "dwc:georeferenceSources": "Beogeomancer",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:199468",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jason L. Malaney",
+            "dwc:locality": "Big Hatchet, Sheriden Canyon.",
+            "dwc:institutionID": "MSB",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "MSB:Mamm:199468",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Hidalgo County",
+            "dwc:month": "01",
+            "dwc:decimalLongitude": "-108.3252",
+            "dwc:coordinateUncertaintyInMeters": "2519",
+            "dwc:endDayOfYear": "9",
+            "dwc:otherCatalogNumbers": "NK=159591; original identifier=pelt tag #18050/17107",
+            "dwc:verbatimLocality": "Big Hatchet, Sheriden Canyon",
+            "dwc:georeferencedBy": "Jason L. Malaney",
+            "dwc:verbatimEventDate": "9 Jan 03",
+            "dwc:preparations": "skin; skull; skeleton, postcranial (dry); muscle (frozen)",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "BioGeoMancer",
+            "dcterms:modified": "2019-09-17 16:44:15.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "09",
+            "dwc:year": "2003"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:199468?seid=107820",
+          "institutionid": "msb",
+          "country": "united states",
+          "locality": "big hatchet, sheriden canyon.",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "2003-01-09",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "idigbio_isocountrycode_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "9 jan 03",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:199468?seid=107820",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:199468:107820"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "636287700793856127",
+          "h3-p14": "640791300421226607",
+          "h3-p15": "645294900048597100",
+          "h3-p10": "622776901911773183",
+          "h3-p1": "582248581512036351",
+          "h3-p11": "627280501539119103",
+          "h3-p0": "577762574070710271",
+          "h3-p12": "631784101166486015",
+          "h3-p3": "591251726317649919",
+          "h3-p2": "586748332848709631",
+          "h3-p5": "600258904097554431",
+          "h3-p4": "595755308765151231",
+          "h3-p7": "609266103033528319",
+          "h3-p6": "604762503456489471",
+          "h3-p9": "618273302272802815",
+          "h3-p8": "613769702646218751"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "cbe21117-51eb-48b1-b50e-c51b13a5aabe",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 34.145057,
+            "lon": -106.97402602
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.3188405797101449,
+          "stateprovince": "new mexico",
+          "county": "socorro county",
+          "phylum": "chordata",
+          "catalognumber": "msb:mamm:324103",
+          "startdayofyear": 110,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-22T22:22:44.223534+00:00",
+          "uuid": "cbe21117-51eb-48b1-b50e-c51b13a5aabe",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish; preparator(s): msb division of mammals staff (2013 - 2014)",
+          "institutioncode": "msb",
+          "verbatimlocality": "us/lemitar canyon",
+          "datecollected": "2013-04-20T00:00:00+00:00",
+          "etag": "cc6ea385edf30f8bbff48c1abee50e38aa46c4f0",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "14",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "Socorro County",
+            "dwc:georeferenceSources": "unknown",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "09b18522-5643-478f-86e9-d2e34440d43e",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:occurrenceRemarks": "70 or 90 lbs. (GMU)# 13.",
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "unknown",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish; Preparator(s): MSB Division of Mammals Staff (2013 - 2014)",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:324103",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2013-04-20",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "sex=female ; ectoparasite examination=no ; endoparasite examination=no",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2013-04-20; method: expert",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "MSB",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "US/Lemitar Canyon",
+            "dwc:day": "20",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:verbatimCoordinates": "34.145057/-106.97402602",
+            "idigbio:dateModified": "2019-09-22T22:22:44.223534",
+            "idigbio:uuid": "cbe21117-51eb-48b1-b50e-c51b13a5aabe",
+            "dwc:georeferencedDate": "2013-04-20 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:324103?seid=4112123",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "cc6ea385edf30f8bbff48c1abee50e38aa46c4f0",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLatitude": "34.145057",
+            "dwc:preparations": "tongue (frozen); muscle (frozen)",
+            "dwc:identificationVerificationStatus": "expert",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "Ladrones Mountains, Lemitar Canyon",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "MSB:Mamm:324103",
+            "dwc:higherGeography": "North America, United States, New Mexico, Socorro County",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:decimalLongitude": "-106.97402602",
+            "dwc:month": "04",
+            "dwc:georeferencedBy": "MSB Division of Mammals Staff (2013 - 2014)",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:324103:4112123",
+              "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:324103?seid=4112123"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:324103?seid=4112123",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2013-04-20",
+            "dwc:collectionID": "14",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:324103",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "MSB Division of Mammals Staff (2013 - 2014)",
+            "dwc:institutionID": "MSB",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:locationRemarks": "UTM 318000E 3780000N",
+            "dwc:endDayOfYear": "110",
+            "dwc:otherCatalogNumbers": "NK=216160; original identifier=Pelt Tag #0025703",
+            "dwc:verbatimEventDate": "20 April 2013",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-09-17 08:53:11.0",
+            "dwc:year": "2013"
+          },
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "expert",
+            "dwc:county": "Socorro County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish; Preparator(s): MSB Division of Mammals Staff (2013 - 2014)",
+            "dwc:georeferencedDate": "2013-04-20 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:324103",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:324103?seid=4112123",
+            "dwc:dateIdentified": "2013-04-20",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "34.145057/-106.97402602",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:324103?seid=4112123",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:locationRemarks": "UTM 318000E 3780000N",
+            "dwc:eventDate": "2013-04-20",
+            "dwc:collectionID": "14",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2013-04-20; method: expert",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "34.145057",
+            "dwc:occurrenceRemarks": "70 or 90 lbs. (GMU)# 13.",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex=female ; ectoparasite examination=no ; endoparasite examination=no",
+            "dwc:georeferenceSources": "unknown",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:324103",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "MSB Division of Mammals Staff (2013 - 2014)",
+            "dwc:locality": "Ladrones Mountains, Lemitar Canyon",
+            "dwc:institutionID": "MSB",
+            "dwc:geodeticDatum": "unknown",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "MSB:Mamm:324103",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Socorro County",
+            "dwc:month": "04",
+            "dwc:decimalLongitude": "-106.97402602",
+            "dwc:endDayOfYear": "110",
+            "dwc:otherCatalogNumbers": "NK=216160; original identifier=Pelt Tag #0025703",
+            "dwc:verbatimLocality": "US/Lemitar Canyon",
+            "dwc:georeferencedBy": "MSB Division of Mammals Staff (2013 - 2014)",
+            "dwc:verbatimEventDate": "20 April 2013",
+            "dwc:preparations": "tongue (frozen); muscle (frozen)",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-09-17 08:53:11.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "20",
+            "dwc:year": "2013"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:324103?seid=4112123",
+          "institutionid": "msb",
+          "country": "united states",
+          "locality": "ladrones mountains, lemitar canyon",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "2013-04-20",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "20 april 2013",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:324103:4112123",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:324103?seid=4112123"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "636289352331760575",
+          "h3-p14": "640792951959131063",
+          "h3-p15": "645296551586501557",
+          "h3-p10": "622778553449676799",
+          "h3-p1": "582248581512036351",
+          "h3-p11": "627282153077022719",
+          "h3-p0": "577762574070710271",
+          "h3-p12": "631785752704390143",
+          "h3-p3": "591253375585091583",
+          "h3-p2": "586749982116151295",
+          "h3-p5": "600260555512479743",
+          "h3-p4": "595756958032592895",
+          "h3-p7": "609267754582671359",
+          "h3-p6": "604764155005632511",
+          "h3-p9": "618274953822470143",
+          "h3-p8": "613771354195361791"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "d3a5fb18-f6a4-4cb3-aceb-0c60379c8b88",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 47.52371,
+            "lon": -122.1932
+          },
+          "family": "felidae",
+          "recordset": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+          "dqs": 0.3188405797101449,
+          "stateprovince": "washington",
+          "county": "king county",
+          "phylum": "chordata",
+          "catalognumber": "uwbm:mamm:34228",
+          "startdayofyear": 295,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-23T00:02:41.820072+00:00",
+          "uuid": "d3a5fb18-f6a4-4cb3-aceb-0c60379c8b88",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "uwbm",
+          "verbatimlocality": "usa | washington | king | renton, kennydale hill; g. jackson property, 1909 ne 36th; t24n r5e sec 32",
+          "datecollected": "1985-10-22T00:00:00+00:00",
+          "etag": "4cc5bbf53cf32bcec336883aff881126b8dc1d2c",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "128",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "King County",
+            "dwc:georeferenceSources": "unknown",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:coordinateUncertaintyInMeters": "13",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/UWBM:Mamm:34228",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2017-07-11",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "ear from notch=99 mm; hind foot with claw=285 mm; tail length=685 mm; total length=1830 mm; weight=40.23 kg; verbatim collector=G. Jackson ; verbatim collector=C. S. Wood 2162, M. L. Johnson 6803 ; sex=male",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by unknown on 2017-07-11; method: legacy",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "UWBM",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "USA | Washington | King | Renton, Kennydale Hill; G. Jackson property, 1909 NE 36th; T24N R5E Sec 32",
+            "dwc:day": "22",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:verbatimCoordinates": "47.52371/-122.1932",
+            "idigbio:dateModified": "2019-09-23T00:02:41.820072",
+            "idigbio:uuid": "d3a5fb18-f6a4-4cb3-aceb-0c60379c8b88",
+            "dwc:georeferencedDate": "2017-07-11 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/UWBM:Mamm:34228?seid=3663866",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "4cc5bbf53cf32bcec336883aff881126b8dc1d2c",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLatitude": "47.52371",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "legacy",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:eventRemarks": "native; injury: tuberocity reaction in R tibia from porcupine quills, quills in situ; killed by law enforcement, includes article in Seattle Times, animal had killed 3 sheep; heart: 181 g, lungs: 427 g",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "Renton, Kennydale Hill; G. Jackson property, 1909 NE 36th; T24N R5E Sec 32",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "UWBM:Mamm:34228",
+            "dwc:higherGeography": "North America, United States, Washington, King County",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:decimalLongitude": "-122.1932",
+            "dwc:month": "10",
+            "dwc:georeferencedBy": "unknown",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "skeleton; skin, study",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:uwbm:mamm:34228",
+              "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\http://arctos.database.museum/guid/uwbm:mamm:34228?seid=3663866",
+              "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:34228"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/UWBM:Mamm:34228?seid=3663866",
+            "dwc:stateProvince": "Washington",
+            "dwc:eventDate": "1985-10-22",
+            "dwc:collectionID": "128",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "unknown",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/UWBM:Mamm:34228",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "unknown",
+            "dwc:institutionID": "UWBM",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:locationRemarks": "; VERBATIMCOORDINATESYSTEM: decimal degrees; GEOREFERENCEDBY: Jasmine Gallaher (UWBM); GEOREFERENCEDDATE: 8 Apr 1999; GEOREFERENCESOURCES: Topo USA 4.0; GEOREFERENCEVERIFICATIONSTATUS: requires verification",
+            "dwc:endDayOfYear": "295",
+            "dwc:verbatimEventDate": "before 2017-07-11",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-25 10:31:49.0",
+            "dwc:year": "1985"
+          },
+          "coordinateuncertainty": 13,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "legacy",
+            "dwc:county": "King County",
+            "dwc:georeferencedDate": "2017-07-11 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/UWBM:Mamm:34228",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/UWBM:Mamm:34228?seid=3663866",
+            "dwc:dateIdentified": "2017-07-11",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "47.52371/-122.1932",
+            "id": "http://arctos.database.museum/guid/UWBM:Mamm:34228?seid=3663866",
+            "dwc:stateProvince": "Washington",
+            "dwc:locationRemarks": "; VERBATIMCOORDINATESYSTEM: decimal degrees; GEOREFERENCEDBY: Jasmine Gallaher (UWBM); GEOREFERENCEDDATE: 8 Apr 1999; GEOREFERENCESOURCES: Topo USA 4.0; GEOREFERENCEVERIFICATIONSTATUS: requires verification",
+            "dwc:eventDate": "1985-10-22",
+            "dwc:collectionID": "128",
+            "dwc:institutionCode": "UWBM",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by unknown on 2017-07-11; method: legacy",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "47.52371",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "unknown",
+            "dwc:dynamicProperties": "ear from notch=99 mm; hind foot with claw=285 mm; tail length=685 mm; total length=1830 mm; weight=40.23 kg; verbatim collector=G. Jackson ; verbatim collector=C. S. Wood 2162, M. L. Johnson 6803 ; sex=male",
+            "dwc:georeferenceSources": "unknown",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:eventRemarks": "native; injury: tuberocity reaction in R tibia from porcupine quills, quills in situ; killed by law enforcement, includes article in Seattle Times, animal had killed 3 sheep; heart: 181 g, lungs: 427 g",
+            "dwc:organismID": "http://arctos.database.museum/guid/UWBM:Mamm:34228",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "unknown",
+            "dwc:locality": "Renton, Kennydale Hill; G. Jackson property, 1909 NE 36th; T24N R5E Sec 32",
+            "dwc:institutionID": "UWBM",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "UWBM:Mamm:34228",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, Washington, King County",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-122.1932",
+            "dwc:coordinateUncertaintyInMeters": "13",
+            "dwc:endDayOfYear": "295",
+            "dwc:verbatimLocality": "USA | Washington | King | Renton, Kennydale Hill; G. Jackson property, 1909 NE 36th; T24N R5E Sec 32",
+            "dwc:georeferencedBy": "unknown",
+            "dwc:verbatimEventDate": "before 2017-07-11",
+            "dwc:preparations": "skeleton; skin, study",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-25 10:31:49.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "22",
+            "dwc:year": "1985"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/uwbm:mamm:34228?seid=3663866",
+          "institutionid": "uwbm",
+          "country": "united states",
+          "locality": "renton, kennydale hill; g. jackson property, 1909 ne 36th; t24n r5e sec 32",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "1985-10-22",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "before 2017-07-11",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:uwbm:mamm:34228",
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\http://arctos.database.museum/guid/uwbm:mamm:34228?seid=3663866",
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:34228"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "635725893979400255",
+          "h3-p14": "640229493606770743",
+          "h3-p15": "644733093234141236",
+          "h3-p10": "622215095097294847",
+          "h3-p1": "581685631558615039",
+          "h3-p11": "626718694724661247",
+          "h3-p0": "577199624117288959",
+          "h3-p12": "631222294352030207",
+          "h3-p3": "590689944595333119",
+          "h3-p2": "586186482406916095",
+          "h3-p5": "599697097679175679",
+          "h3-p4": "595193501273030655",
+          "h3-p7": "608704296229273599",
+          "h3-p6": "604200696635457535",
+          "h3-p9": "617711495470120959",
+          "h3-p8": "613207895844061183"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "1f836b44-7c3d-48d0-b879-042134a495c0",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 25.61,
+            "lon": -80.31
+          },
+          "family": "felidae",
+          "recordset": "f9a33279-d6ba-41c7-a511-ef6adfcb6e20",
+          "dqs": 0.2608695652173913,
+          "stateprovince": "florida",
+          "earliestepochorlowestseries": "pleistocene, late",
+          "county": "dade",
+          "earliestperiodorlowestsystem": "quaternary",
+          "phylum": "chordata",
+          "catalognumber": "124383",
+          "startdayofyear": 142,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "uuid": "1f836b44-7c3d-48d0-b879-042134a495c0",
+          "countrycode": "usa",
+          "basisofrecord": "fossilspecimen",
+          "collector": "metro-dade archaeology crew; robert carr; others",
+          "institutioncode": "uf",
+          "datemodified": "2018-05-09T09:01:42.892945+00:00",
+          "datecollected": "1986-05-22T00:00:00+00:00",
+          "etag": "0c589eeed7c5767ea8d100257933314da3b63e1e",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "lowestbiostratigraphiczone": "rancholabrean",
+          "earliesteraorlowesterathem": "cenozoic",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "concolor",
+            "idigbio:dateModified": "2018-05-09T09:01:42.892945",
+            "dwc:county": "Dade",
+            "dwc:recordedBy": "METRO-DADE ARCHAEOLOGY CREW; Robert Carr; others",
+            "idigbio:uuid": "1f836b44-7c3d-48d0-b879-042134a495c0",
+            "flag_dwc_multimedia_added": true,
+            "dwc:order": "carnivora",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_gbif_reference_added": true,
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "f9a33279-d6ba-41c7-a511-ef6adfcb6e20\\d6e4f462-92f5-44fc-90c3-c134bb78f217"
+            ],
+            "dwc:occurrenceID": "D6E4F462-92F5-44FC-90C3-C134BB78F217",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "D6E4F462-92F5-44FC-90C3-C134BB78F217",
+            "flag_dwc_datasetid_added": true,
+            "flag_dwc_order_replaced": true,
+            "dwc:stateProvince": "Florida",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:eventDate": "1986-05-22",
+            "dwc:country": "united states",
+            "dwc:earliestPeriodOrLowestSystem": "Quaternary",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "0c589eeed7c5767ea8d100257933314da3b63e1e",
+            "dwc:collectionCode": "UF",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "25.61",
+            "dwc:locationID": "DA004",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:preparations": "default - 1",
+            "idigbio:isocountrycode": "usa",
+            "flag_dwc_country_replaced": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:parent": "f9a33279-d6ba-41c7-a511-ef6adfcb6e20",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:lowestBiostratigraphicZone": "Rancholabrean",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "puma concolor",
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locality": "CUTLER HAMMOCK",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "UF",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "124383",
+            "dwc:taxonid": "2435099",
+            "dwc:taxonrank": "species",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.31",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:earliestEpochOrLowestSeries": "Pleistocene, late",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:family": "Felidae",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:earliestEraOrLowestErathem": "Cenozoic",
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:coordinateUncertaintyInMeters": "100",
+            "dwc:day": "22",
+            "dwc:year": "1986"
+          },
+          "coordinateuncertainty": 100,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:county": "Dade",
+            "dwc:recordedBy": "METRO-DADE ARCHAEOLOGY CREW; Robert Carr; others",
+            "dwc:order": "Ferae",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "D6E4F462-92F5-44FC-90C3-C134BB78F217",
+            "id": "D6E4F462-92F5-44FC-90C3-C134BB78F217",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1986-05-22",
+            "dwc:institutionCode": "UF",
+            "dwc:country": "USA",
+            "dwc:earliestPeriodOrLowestSystem": "Quaternary",
+            "dwc:collectionCode": "UF",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "25.61",
+            "dwc:locationID": "DA004",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:preparations": "default - 1",
+            "dwc:lowestBiostratigraphicZone": "Rancholabrean",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "CUTLER HAMMOCK",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "124383",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.31",
+            "dwc:coordinateUncertaintyInMeters": "100",
+            "dwc:earliestEpochOrLowestSeries": "Pleistocene, late",
+            "dwc:family": "Felidae",
+            "dwc:earliestEraOrLowestErathem": "Cenozoic",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "22",
+            "dwc:year": "1986"
+          },
+          "class": "mammalia",
+          "occurrenceid": "d6e4f462-92f5-44fc-90c3-c134bb78f217",
+          "country": "united states",
+          "locality": "cutler hammock",
+          "collectioncode": "uf",
+          "canonicalname": "puma concolor",
+          "eventdate": "1986-05-22",
+          "flags": [
+            "rev_geocode_eez",
+            "geopoint_low_precision",
+            "dwc_taxonrank_added",
+            "dwc_multimedia_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_order_replaced",
+            "dwc_originalnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_scientificnameauthorship_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_parentnameusageid_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "f9a33279-d6ba-41c7-a511-ef6adfcb6e20\\d6e4f462-92f5-44fc-90c3-c134bb78f217"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "636214914796565247",
+          "h3-p14": "640718514423935719",
+          "h3-p15": "645222114051306211",
+          "h3-p10": "622704115914473471",
+          "h3-p1": "582173814721347583",
+          "h3-p11": "627207715541827583",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631711315169195007",
+          "h3-p3": "591178952391786495",
+          "h3-p2": "586675765081276415",
+          "h3-p5": "600186118360530943",
+          "h3-p4": "595682526249353215",
+          "h3-p7": "609193317044846591",
+          "h3-p6": "604689717451030527",
+          "h3-p9": "618200516287266815",
+          "h3-p8": "613696916661731327"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "cde4fb79-acfa-4f66-b54e-9016e569f5a2",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 38.25271,
+            "lon": -108.49399
+          },
+          "family": "felidae",
+          "recordset": "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba",
+          "dqs": 0.37681159420289856,
+          "stateprovince": "colorado",
+          "county": "montrose county",
+          "phylum": "chordata",
+          "catalognumber": "dmns:mamm:18943",
+          "startdayofyear": 308,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-22T22:27:51.939033+00:00",
+          "uuid": "cde4fb79-acfa-4f66-b54e-9016e569f5a2",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): kenneth a. logan, linda l. sweanor",
+          "institutioncode": "dmns",
+          "verbatimlocality": "san miguel canyon",
+          "datecollected": "2013-11-04T00:00:00+00:00",
+          "etag": "a3a41c990f0992171c49aeca340943ab388e76cc",
+          "recordnumber": "coup-f140",
+          "minelevation": 1794,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "maxelevation": 1794,
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "45",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "Montrose County",
+            "dwc:georeferenceSources": "Google Earth and confirmed via pictomety ortho",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:occurrenceRemarks": "Birth Date: 08/20/2010: Mother: poss F28; Father: unknown; Siblings: unknown; Progeny: unknown; Capture Date: 01/02/2011; Age at Capture: 5 months; Capture Location: San Miguel Canyon (38.26871, -108.4399; WGS84); Age at Death: 39 months; Adult age at death: 3-4 years",
+            "dwc:maximumElevationInMeters": "1794",
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:coordinateUncertaintyInMeters": "5",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:recordedBy": "Collector(s): Kenneth A. Logan, Linda L. Sweanor",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/DMNS:Mamm:18943",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2013-11-04",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "sex=female ; age=3-4 years",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by Kenneth A. Logan on 2013-11-04; method: expert",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "DMNS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "San Miguel Canyon",
+            "dwc:day": "04",
+            "dwc:minimumElevationInMeters": "1794",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:samplingProtocol": "salvage",
+            "dwc:verbatimCoordinates": "38.25271/-108.49399",
+            "idigbio:dateModified": "2019-09-22T22:27:51.939033",
+            "idigbio:uuid": "cde4fb79-acfa-4f66-b54e-9016e569f5a2",
+            "dwc:georeferencedDate": "2018-05-09 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/DMNS:Mamm:18943?seid=4044147",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "a3a41c990f0992171c49aeca340943ab388e76cc",
+            "dwc:decimalLatitude": "38.25271",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "expert",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/3.0",
+            "dwc:eventRemarks": "dehydrated, possible virus or bacterial infection?",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "San Miguel Canyon",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "DMNS:Mamm:18943",
+            "dwc:higherGeography": "North America, United States, Colorado, Montrose County",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLongitude": "-108.49399",
+            "dwc:month": "11",
+            "dwc:georeferencedBy": "Andrew Charles Doll",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "skull",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba\\http://arctos.database.museum/guid/dmns:mamm:18943?seid=4044147",
+              "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba\\urn:occurrence:arctos:dmns:mamm:18943:4044147"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/DMNS:Mamm:18943?seid=4044147",
+            "dwc:stateProvince": "Colorado",
+            "dwc:eventDate": "2013-11-04",
+            "dwc:collectionID": "45",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "Kenneth A. Logan",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/DMNS:Mamm:18943",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "Andrew Charles Doll",
+            "dwc:institutionID": "DMNS",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:endDayOfYear": "308",
+            "dwc:otherCatalogNumbers": "collector number=COUP-F140",
+            "dwc:verbatimEventDate": "11/4/2013",
+            "dwc:recordNumber": "COUP-F140",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "Google automated georeference",
+            "dcterms:modified": "2019-09-04 10:41:20.0",
+            "dwc:year": "2013"
+          },
+          "hasMedia": false,
+          "coordinateuncertainty": 5,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "expert",
+            "dwc:county": "Montrose County",
+            "dwc:recordedBy": "Collector(s): Kenneth A. Logan, Linda L. Sweanor",
+            "dwc:georeferencedDate": "2018-05-09 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/DMNS:Mamm:18943",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/DMNS:Mamm:18943?seid=4044147",
+            "dwc:dateIdentified": "2013-11-04",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "38.25271/-108.49399",
+            "dwc:verbatimEventDate": "11/4/2013",
+            "id": "http://arctos.database.museum/guid/DMNS:Mamm:18943?seid=4044147",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:minimumElevationInMeters": "1794",
+            "dwc:stateProvince": "Colorado",
+            "dwc:eventDate": "2013-11-04",
+            "dwc:collectionID": "45",
+            "dwc:institutionCode": "DMNS",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by Kenneth A. Logan on 2013-11-04; method: expert",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "38.25271",
+            "dwc:occurrenceRemarks": "Birth Date: 08/20/2010: Mother: poss F28; Father: unknown; Siblings: unknown; Progeny: unknown; Capture Date: 01/02/2011; Age at Capture: 5 months; Capture Location: San Miguel Canyon (38.26871, -108.4399; WGS84); Age at Death: 39 months; Adult age at death: 3-4 years",
+            "dwc:maximumElevationInMeters": "1794",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "female",
+            "dwc:identifiedBy": "Kenneth A. Logan",
+            "dwc:dynamicProperties": "sex=female ; age=3-4 years",
+            "dwc:georeferenceSources": "Google Earth and confirmed via pictomety ortho",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/3.0",
+            "dwc:eventRemarks": "dehydrated, possible virus or bacterial infection?",
+            "dwc:organismID": "http://arctos.database.museum/guid/DMNS:Mamm:18943",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Andrew Charles Doll",
+            "dwc:locality": "San Miguel Canyon",
+            "dwc:institutionID": "DMNS",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "DMNS:Mamm:18943",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, Colorado, Montrose County",
+            "dwc:month": "11",
+            "dwc:decimalLongitude": "-108.49399",
+            "dwc:coordinateUncertaintyInMeters": "5",
+            "dwc:endDayOfYear": "308",
+            "dwc:otherCatalogNumbers": "collector number=COUP-F140",
+            "dwc:verbatimLocality": "San Miguel Canyon",
+            "dwc:georeferencedBy": "Andrew Charles Doll",
+            "dwc:samplingProtocol": "salvage",
+            "dwc:recordNumber": "COUP-F140",
+            "dwc:preparations": "skull",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "Google automated georeference",
+            "dcterms:modified": "2019-09-04 10:41:20.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "04",
+            "dwc:year": "2013"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/dmns:mamm:18943?seid=4044147",
+          "institutionid": "dmns",
+          "country": "united states",
+          "locality": "san miguel canyon",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "2013-11-04",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "idigbio_isocountrycode_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "11/4/2013",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba\\http://arctos.database.museum/guid/dmns:mamm:18943?seid=4044147",
+            "0e2f3962-e905-48f2-a1c6-19d16e2bd5ba\\urn:occurrence:arctos:dmns:mamm:18943:4044147"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "635686533047561343",
+          "h3-p14": "640190132674931807",
+          "h3-p15": "644693732302302298",
+          "h3-p10": "622175734165471231",
+          "h3-p1": "581646049140015103",
+          "h3-p11": "626679333792821247",
+          "h3-p0": "577164439745200127",
+          "h3-p12": "631182933420191231",
+          "h3-p3": "590650568335163391",
+          "h3-p2": "586147449744130047",
+          "h3-p5": "599657736451391487",
+          "h3-p4": "595154142192730111",
+          "h3-p7": "608664935286702079",
+          "h3-p6": "604161335676108799",
+          "h3-p9": "617672134538297343",
+          "h3-p8": "613168534911975423"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "51b51c4e-27ef-44b7-b363-5436834c47be",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 47.5289,
+            "lon": -121.8242
+          },
+          "family": "felidae",
+          "recordset": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+          "dqs": 0.3188405797101449,
+          "stateprovince": "washington",
+          "county": "king county",
+          "phylum": "chordata",
+          "catalognumber": "uwbm:mamm:51181",
+          "startdayofyear": 173,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-23T00:02:41.820072+00:00",
+          "uuid": "51b51c4e-27ef-44b7-b363-5436834c47be",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "uwbm",
+          "verbatimlocality": "usa | washington | king | snoqualmie",
+          "datecollected": "1979-06-22T00:00:00+00:00",
+          "etag": "785c5c032d06731112126f32d4d90ac3a9f5819e",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "128",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "King County",
+            "dwc:georeferenceSources": "unknown",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "North American Datum 1927",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:coordinateUncertaintyInMeters": "7094",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/UWBM:Mamm:51181",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2017-07-11",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "verbatim collector=R. H. Taylor ; verbatim collector=M. L. Johnson 6147 ; sex=unknown",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by unknown on 2017-07-11; method: legacy",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "UWBM",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "USA | Washington | King | Snoqualmie",
+            "dwc:day": "22",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:verbatimCoordinates": "47.5289/-121.8242",
+            "idigbio:dateModified": "2019-09-23T00:02:41.820072",
+            "idigbio:uuid": "51b51c4e-27ef-44b7-b363-5436834c47be",
+            "dwc:georeferencedDate": "2017-07-11 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/UWBM:Mamm:51181?seid=3622322",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "785c5c032d06731112126f32d4d90ac3a9f5819e",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLatitude": "47.5289",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "legacy",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:eventRemarks": "native",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "Snoqualmie",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "UWBM:Mamm:51181",
+            "dwc:higherGeography": "North America, United States, Washington, King County",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:decimalLongitude": "-121.8242",
+            "dwc:month": "06",
+            "dwc:georeferencedBy": "unknown",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "skeleton, postcranial",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:uwbm:mamm:51181",
+              "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\http://arctos.database.museum/guid/uwbm:mamm:51181?seid=3622322",
+              "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:51181"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/UWBM:Mamm:51181?seid=3622322",
+            "dwc:stateProvince": "Washington",
+            "dwc:eventDate": "1979-06-22",
+            "dwc:collectionID": "128",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "unknown",
+            "dwc:identifiedBy": "unknown",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/UWBM:Mamm:51181",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "unknown",
+            "dwc:institutionID": "UWBM",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:locationRemarks": "; VERBATIMCOORDINATESYSTEM: decimal degrees; GEOREFERENCEDBY: Jasmine Gallaher (UWBM); GEOREFERENCEDDATE: 7 Apr 1999; GEOREFERENCESOURCES: GNIS; GEOREFERENCEVERIFICATIONSTATUS: requires verification",
+            "dwc:endDayOfYear": "173",
+            "dwc:verbatimEventDate": "before 2017-07-11",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-25 11:27:46.0",
+            "dwc:year": "1979"
+          },
+          "coordinateuncertainty": 7094,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "legacy",
+            "dwc:county": "King County",
+            "dwc:georeferencedDate": "2017-07-11 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/UWBM:Mamm:51181",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/UWBM:Mamm:51181?seid=3622322",
+            "dwc:dateIdentified": "2017-07-11",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "47.5289/-121.8242",
+            "id": "http://arctos.database.museum/guid/UWBM:Mamm:51181?seid=3622322",
+            "dwc:stateProvince": "Washington",
+            "dwc:locationRemarks": "; VERBATIMCOORDINATESYSTEM: decimal degrees; GEOREFERENCEDBY: Jasmine Gallaher (UWBM); GEOREFERENCEDDATE: 7 Apr 1999; GEOREFERENCESOURCES: GNIS; GEOREFERENCEVERIFICATIONSTATUS: requires verification",
+            "dwc:eventDate": "1979-06-22",
+            "dwc:collectionID": "128",
+            "dwc:institutionCode": "UWBM",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by unknown on 2017-07-11; method: legacy",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "47.5289",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "unknown",
+            "dwc:identifiedBy": "unknown",
+            "dwc:dynamicProperties": "verbatim collector=R. H. Taylor ; verbatim collector=M. L. Johnson 6147 ; sex=unknown",
+            "dwc:georeferenceSources": "unknown",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:eventRemarks": "native",
+            "dwc:organismID": "http://arctos.database.museum/guid/UWBM:Mamm:51181",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "unknown",
+            "dwc:locality": "Snoqualmie",
+            "dwc:institutionID": "UWBM",
+            "dwc:geodeticDatum": "North American Datum 1927",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "UWBM:Mamm:51181",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, Washington, King County",
+            "dwc:month": "06",
+            "dwc:decimalLongitude": "-121.8242",
+            "dwc:coordinateUncertaintyInMeters": "7094",
+            "dwc:endDayOfYear": "173",
+            "dwc:verbatimLocality": "USA | Washington | King | Snoqualmie",
+            "dwc:georeferencedBy": "unknown",
+            "dwc:verbatimEventDate": "before 2017-07-11",
+            "dwc:preparations": "skeleton, postcranial",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-25 11:27:46.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "22",
+            "dwc:year": "1979"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/uwbm:mamm:51181?seid=3622322",
+          "institutionid": "uwbm",
+          "country": "united states",
+          "locality": "snoqualmie",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "1979-06-22",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "before 2017-07-11",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:uwbm:mamm:51181",
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\http://arctos.database.museum/guid/uwbm:mamm:51181?seid=3622322",
+            "21ea1ef6-4a2a-4ff2-a18b-5c0f297fc1cf\\urn:catalog:uwbm:mammal:51181"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "635725815355626175",
+          "h3-p14": "640229414982996623",
+          "h3-p15": "644733014610367114",
+          "h3-p10": "622215016473526271",
+          "h3-p1": "581685631558615039",
+          "h3-p11": "626718616100888575",
+          "h3-p0": "577199624117288959",
+          "h3-p12": "631222215728255999",
+          "h3-p3": "590689875875856383",
+          "h3-p2": "586186482406916095",
+          "h3-p5": "599697019296022527",
+          "h3-p4": "595193423963619327",
+          "h3-p7": "608704217594462207",
+          "h3-p6": "604200618789175295",
+          "h3-p9": "617711416846319615",
+          "h3-p8": "613207817219735551"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "c94a83be-a3bd-455d-8cda-8f94f3a0124e",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 36.99411221,
+            "lon": -103.7076477
+          },
+          "family": "felidae",
+          "recordset": "09b18522-5643-478f-86e9-d2e34440d43e",
+          "dqs": 0.3333333333333333,
+          "stateprovince": "new mexico",
+          "county": "union county",
+          "phylum": "chordata",
+          "catalognumber": "msb:mamm:262366",
+          "startdayofyear": 82,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-22T22:22:44.223534+00:00",
+          "uuid": "c94a83be-a3bd-455d-8cda-8f94f3a0124e",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): new mexico department of game and fish",
+          "institutioncode": "msb",
+          "verbatimlocality": "long canyon",
+          "datecollected": "2012-03-22T00:00:00+00:00",
+          "etag": "cb40948190421deb7a252ddb24a856517e13026e",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "14",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "Union County",
+            "dwc:georeferenceSources": "not recorded",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "09b18522-5643-478f-86e9-d2e34440d43e",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:occurrenceRemarks": "Cause of death: sport hunted; GMU: 58; UTM Zone 13 Easting 615000 Northing 4095000",
+            "dwc:family": "Felidae",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262366",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "2013-02-12",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:dynamicProperties": "sex=male",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2013-02-12; method: field",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "MSB",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "Long Canyon",
+            "dwc:day": "22",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:verbatimCoordinates": "36.99411221/-103.7076477",
+            "idigbio:dateModified": "2019-09-22T22:22:44.223534",
+            "idigbio:uuid": "c94a83be-a3bd-455d-8cda-8f94f3a0124e",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262366?seid=1918636",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "cb40948190421deb7a252ddb24a856517e13026e",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLatitude": "36.99411221",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "field",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "Long Canyon",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "MSB:Mamm:262366",
+            "dwc:higherGeography": "North America, United States, New Mexico, Union County",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:decimalLongitude": "-103.7076477",
+            "dwc:month": "03",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "muscle (dry)",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262366?seid=1918636",
+              "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262366:1918636"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262366?seid=1918636",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "2012-03-22",
+            "dwc:collectionID": "14",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:262366",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:institutionID": "MSB",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:endDayOfYear": "82",
+            "dwc:otherCatalogNumbers": "NK=227154; original identifier=NMDGF pelt tag #24738",
+            "dwc:verbatimEventDate": "2012-03-22",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-23 01:12:54.0",
+            "dwc:year": "2012"
+          },
+          "coordinateuncertainty": 3000,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:identificationVerificationStatus": "field",
+            "dwc:county": "Union County",
+            "dwc:recordedBy": "Collector(s): New Mexico Department of Game and Fish",
+            "dwc:georeferencedDate": "2013-02-12 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/MSB:Mamm:262366",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/MSB:Mamm:262366?seid=1918636",
+            "dwc:dateIdentified": "2013-02-12",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": "36.99411221/-103.7076477",
+            "id": "http://arctos.database.museum/guid/MSB:Mamm:262366?seid=1918636",
+            "dwc:establishmentMeans": "wild caught",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:locationRemarks": "error based on uncertainly of original UTM data",
+            "dwc:eventDate": "2012-03-22",
+            "dwc:collectionID": "14",
+            "dwc:institutionCode": "MSB",
+            "dwc:country": "United States",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by New Mexico Department of Game and Fish on 2013-02-12; method: field",
+            "dwc:collectionCode": "Mammal specimens",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "36.99411221",
+            "dwc:occurrenceRemarks": "Cause of death: sport hunted; GMU: 58; UTM Zone 13 Easting 615000 Northing 4095000",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:sex": "male",
+            "dwc:identifiedBy": "New Mexico Department of Game and Fish",
+            "dwc:dynamicProperties": "sex=male",
+            "dwc:georeferenceSources": "not recorded",
+            "dwc:identificationQualifier": "A",
+            "dcterms:license": "http://arctosdb.org/home/data/",
+            "dwc:organismID": "http://arctos.database.museum/guid/MSB:Mamm:262366",
+            "dwc:phylum": "Chordata",
+            "dwc:locationAccordingTo": "Jonathan L. Dunnum",
+            "dwc:locality": "Long Canyon",
+            "dwc:institutionID": "MSB",
+            "dwc:geodeticDatum": "World Geodetic System 1984",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "MSB:Mamm:262366",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Union County",
+            "dwc:month": "03",
+            "dwc:decimalLongitude": "-103.7076477",
+            "dwc:coordinateUncertaintyInMeters": "3000",
+            "dwc:endDayOfYear": "82",
+            "dwc:otherCatalogNumbers": "NK=227154; original identifier=NMDGF pelt tag #24738",
+            "dwc:verbatimLocality": "Long Canyon",
+            "dwc:georeferencedBy": "Jonathan L. Dunnum",
+            "dwc:verbatimEventDate": "2012-03-22",
+            "dwc:preparations": "muscle (dry)",
+            "dwc:verbatimCoordinateSystem": "decimal degrees",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-23 01:12:54.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "22",
+            "dwc:year": "2012"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/msb:mamm:262366?seid=1918636",
+          "institutionid": "msb",
+          "country": "united states",
+          "locality": "long canyon",
+          "collectioncode": "mammal specimens",
+          "canonicalname": "puma concolor",
+          "eventdate": "2012-03-22",
+          "flags": [
+            "geopoint_datum_error",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "2012-03-22",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "09b18522-5643-478f-86e9-d2e34440d43e\\http://arctos.database.museum/guid/msb:mamm:262366?seid=1918636",
+            "09b18522-5643-478f-86e9-d2e34440d43e\\urn:occurrence:arctos:msb:mamm:262366:1918636"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "635685494116723455",
+          "h3-p14": "640189093744093927",
+          "h3-p15": "644692693371464422",
+          "h3-p10": "622174695234633727",
+          "h3-p1": "581650447186526207",
+          "h3-p11": "626678294861983743",
+          "h3-p0": "577164439745200127",
+          "h3-p12": "631181894489353215",
+          "h3-p3": "590654828942721023",
+          "h3-p2": "586146350232502271",
+          "h3-p5": "599656698143047679",
+          "h3-p4": "595153102810644479",
+          "h3-p7": "608663896357601279",
+          "h3-p6": "604160296830894079",
+          "h3-p9": "617671095607361535",
+          "h3-p8": "613167495980777471"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "a5b6c91b-fcde-4246-9291-21fa5f5c1f92",
+        "_score": 11.255404,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 31.474494,
+            "lon": -108.433644
+          },
+          "family": "felidae",
+          "recordset": "b7a79601-c07b-46d5-bd09-d4472b0d9431",
+          "dqs": 0.43478260869565216,
+          "stateprovince": "new mexico",
+          "earliestepochorlowestseries": "pleistocene",
+          "county": "hidalgo county",
+          "earliestperiodorlowestsystem": "quaternary",
+          "phylum": "chordata",
+          "catalognumber": "utep:es:5689-162.027",
+          "startdayofyear": 181,
+          "taxonrank": "species",
+          "specificepithet": "concolor",
+          "continent": "north america",
+          "datemodified": "2019-09-23T00:06:08.990031+00:00",
+          "uuid": "a5b6c91b-fcde-4246-9291-21fa5f5c1f92",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "collector(s): arthur h. harris",
+          "institutioncode": "utep",
+          "verbatimlocality": "usa, new mexico, hidalgo, u-bar cave, la 5689, internal - playas valley, 31.474494 lat, -108.433644 lon, sec 35 se 1/4 se 1/4 r16w t32s, elev. 1545 m, strat: h-232-3 0.4 to 0.3 m",
+          "datecollected": "1987-06-30T00:00:00+00:00",
+          "etag": "fcdf665356dc388fe26d4f03c4309b95957a0186",
+          "recordnumber": "5946",
+          "minelevation": 1545,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "maxelevation": 1545,
+          "highertaxon": "animalia; chordata; mammalia; carnivora; felidae;  (linnaeus, 1758)",
+          "collectionid": "118",
+          "earliesteraorlowesterathem": "cenozoic",
+          "taxonid": "2435099",
+          "scientificname": "puma concolor",
+          "indexData": {
+            "dwc:county": "Hidalgo County",
+            "dwc:georeferenceSources": "collector",
+            "dwc:earliestEonOrLowestEonothem": "Phanerozoic",
+            "flag_gbif_reference_added": true,
+            "flag_gbif_genericname_added": true,
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "b7a79601-c07b-46d5-bd09-d4472b0d9431",
+            "dwc:country": "United States",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:occurrenceRemarks": "Specimen Age Range Estimate - minimum date: 13000, maximum date: 14000",
+            "dwc:maximumElevationInMeters": "1545",
+            "dwc:family": "Felidae",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:earliestEpochOrLowestSeries": "Pleistocene",
+            "dwc:coordinateUncertaintyInMeters": "1000",
+            "gbif:reference": [
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) database, comisión nacional para el conocimiento y uso de la biodiversidad"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "(2001) website, u. s. fish and wildlife service endangered species program-03/01"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:identifier": "10.1016/j.ympev.2005.04.025",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "isabelle delisle and curtis strobeck a phylogeny of the caniformia (order carnivora) based on 12 complete protein-coding mitochondrial genes. molecular phylogenetics and evolution 2005-10-01;37(1):192-201 doi:10.1016/j.ympev.2005.04.025"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (1992) mammal species of the world: a taxonomic and geographic reference, 2nd ed., 3rd printing"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and deeann m. reeder, eds. (2005) mammal species of the world: a taxonomic and geographic reference, 3rd ed., vols. 1 & 2"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and f. russell cole (2000) common names of mammals of the world"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wilson, don e., and sue ruff, eds. (1999) the smithsonian book of north american mammals"
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "english wikipedia - species pages",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "mammal species of the world",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "mountain lion"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "puma",
+                "coreid": "2435099",
+                "dcterms:source": "taxon list of animals with german names (worldwide) compiled at the smns",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "the paleobiology database",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "yanayacu natural history research group",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "es",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "puma"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:language": "en",
+                "dcterms:source": "phthiraptera.info",
+                "dwc:vernacularname": "puma, mountain lion, cougar"
+              },
+              {
+                "coreid": "2435099",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "puma"
+              }
+            ],
+            "dwc:recordedBy": "Collector(s): Arthur H. Harris",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027",
+            "dwc:individualCount": "1",
+            "dwc:dateIdentified": "1987-07-17",
+            "flag_dwc_taxonomicstatus_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:identificationQualifier": "A",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by Arthur H. Harris on 1987-07-17; method: expert",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionCode": "UTEP",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2435098",
+            "dwc:class": "Mammalia",
+            "dwc:taxonid": "2435099",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:verbatimLocality": "USA, New Mexico, Hidalgo, U-Bar Cave, LA 5689, Internal - Playas Valley, 31.474494 Lat, -108.433644 Lon, SEC 35 SE 1/4 SE 1/4 R16W T32S, Elev. 1545 M, Strat: H-232-3 0.4 to 0.3 M",
+            "dwc:day": "30",
+            "dwc:minimumElevationInMeters": "1545",
+            "dwc:scientificName": "Puma concolor",
+            "idigbio:dateModified": "2019-09-23T00:06:08.990031",
+            "idigbio:uuid": "a5b6c91b-fcde-4246-9291-21fa5f5c1f92",
+            "dwc:georeferencedDate": "1987-06-30 00:00:00.0",
+            "gbif:canonicalname": "puma concolor",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027?seid=3378474",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:earliestPeriodOrLowestSystem": "Quaternary",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "puma (puma concolor)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cmm_mountainlion.jpg",
+                "coreid": "2435099",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2e/cmm_mountainlion.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "puma concolor shot at the arizona-sonora desert museum",
+                "dcterms:creator": "cm0rris0n",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "fcdf665356dc388fe26d4f03c4309b95957a0186",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:decimalLatitude": "31.474494",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:identificationVerificationStatus": "expert",
+            "dcterms:license": "http://creativecommons.org/licenses/by/3.0/",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:scientificnameauthorship": "(linnaeus, 1771)",
+            "dwc:locality": "U-Bar Cave",
+            "dwc:taxonRank": "species",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:catalogNumber": "UTEP:ES:5689-162.027",
+            "dwc:higherGeography": "North America, United States, New Mexico, Hidalgo County",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:decimalLongitude": "-108.433644",
+            "dwc:month": "06",
+            "dwc:georeferencedBy": "Arthur H. Harris",
+            "dwc:originalnameusageid": "2435104",
+            "dwc:preparations": "phalanx",
+            "dwc:specificEpithet": "concolor",
+            "dwc:kingdom": "Animalia",
+            "idigbio:recordIds": [
+              "b7a79601-c07b-46d5-bd09-d4472b0d9431\\http://arctos.database.museum/guid/utep:es:5689-162.027?seid=3378474"
+            ],
+            "dcterms:language": "en",
+            "id": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027?seid=3378474",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:eventDate": "1987-06-30",
+            "dwc:collectionID": "118",
+            "dwc:collectionCode": "Earth Science",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:identifiedBy": "Arthur H. Harris",
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {},
+            "dwc:organismID": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "puma",
+            "dwc:locationAccordingTo": "Arthur H. Harris",
+            "dwc:institutionID": "UTEP",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:locationRemarks": "Internal - Playas Valley, SEC 35 SE 1/4 SE 1/4 R16W T32S",
+            "dwc:endDayOfYear": "181",
+            "dwc:otherCatalogNumbers": "collector number=5946",
+            "dwc:verbatimEventDate": "1987-06-30",
+            "dwc:recordNumber": "5946",
+            "idigbio:isocountrycode": "usa",
+            "dwc:earliestEraOrLowestErathem": "Cenozoic",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-25 05:04:18.0",
+            "dwc:year": "1987"
+          },
+          "hasMedia": false,
+          "coordinateuncertainty": 1000,
+          "data": {
+            "dwc:specificEpithet": "concolor",
+            "dwc:county": "Hidalgo County",
+            "dwc:recordedBy": "Collector(s): Arthur H. Harris",
+            "dwc:georeferencedDate": "1987-06-30 00:00:00.0",
+            "dwc:order": "Carnivora",
+            "dcterms:references": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027?seid=3378474",
+            "dwc:dateIdentified": "1987-07-17",
+            "dcterms:language": "en",
+            "dwc:earliestEpochOrLowestSeries": "Pleistocene",
+            "id": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027?seid=3378474",
+            "dwc:minimumElevationInMeters": "1545",
+            "dwc:stateProvince": "New Mexico",
+            "dwc:locationRemarks": "Internal - Playas Valley, SEC 35 SE 1/4 SE 1/4 R16W T32S",
+            "dwc:eventDate": "1987-06-30",
+            "dwc:collectionID": "118",
+            "dwc:country": "United States",
+            "dwc:earliestPeriodOrLowestSystem": "Quaternary",
+            "dwc:collectionCode": "Earth Science",
+            "dwc:higherClassification": "Animalia; Chordata; Mammalia; Carnivora; Felidae;  (Linnaeus, 1758)",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "31.474494",
+            "dwc:occurrenceRemarks": "Specimen Age Range Estimate - minimum date: 13000, maximum date: 14000",
+            "dwc:maximumElevationInMeters": "1545",
+            "dwc:georeferenceVerificationStatus": "unverified",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:genus": "Puma",
+            "dwc:continent": "North America",
+            "dwc:family": "Felidae",
+            "dwc:identificationQualifier": "A",
+            "dwc:identifiedBy": "Arthur H. Harris",
+            "dwc:identificationVerificationStatus": "expert",
+            "dwc:georeferenceSources": "collector",
+            "dwc:previousIdentifications": "<i>Puma concolor</i> (accepted ID) identified by Arthur H. Harris on 1987-07-17; method: expert",
+            "dcterms:license": "http://creativecommons.org/licenses/by/3.0/",
+            "dwc:organismID": "http://arctos.database.museum/guid/UTEP:ES:5689-162.027",
+            "dwc:phylum": "Chordata",
+            "dwc:earliestEonOrLowestEonothem": "Phanerozoic",
+            "dwc:locationAccordingTo": "Arthur H. Harris",
+            "dwc:locality": "U-Bar Cave",
+            "dwc:institutionID": "UTEP",
+            "dwc:institutionCode": "UTEP",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Mammalia",
+            "dwc:catalogNumber": "UTEP:ES:5689-162.027",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America, United States, New Mexico, Hidalgo County",
+            "dwc:month": "06",
+            "dwc:decimalLongitude": "-108.433644",
+            "dwc:coordinateUncertaintyInMeters": "1000",
+            "dwc:endDayOfYear": "181",
+            "dwc:otherCatalogNumbers": "collector number=5946",
+            "dwc:verbatimLocality": "USA, New Mexico, Hidalgo, U-Bar Cave, LA 5689, Internal - Playas Valley, 31.474494 Lat, -108.433644 Lon, SEC 35 SE 1/4 SE 1/4 R16W T32S, Elev. 1545 M, Strat: H-232-3 0.4 to 0.3 M",
+            "dwc:georeferencedBy": "Arthur H. Harris",
+            "dwc:verbatimEventDate": "1987-06-30",
+            "dwc:recordNumber": "5946",
+            "dwc:preparations": "phalanx",
+            "dwc:earliestEraOrLowestErathem": "Cenozoic",
+            "dwc:georeferenceProtocol": "not recorded",
+            "dcterms:modified": "2019-08-25 05:04:18.0",
+            "dwc:scientificName": "Puma concolor",
+            "dwc:day": "30",
+            "dwc:year": "1987"
+          },
+          "class": "mammalia",
+          "occurrenceid": "http://arctos.database.museum/guid/utep:es:5689-162.027?seid=3378474",
+          "earliesteonorlowesteonothem": "phanerozoic",
+          "institutionid": "utep",
+          "country": "united states",
+          "locality": "u-bar cave",
+          "collectioncode": "earth science",
+          "canonicalname": "puma concolor",
+          "eventdate": "1987-06-30",
+          "flags": [
+            "geopoint_datum_missing",
+            "gbif_reference_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "verbatimeventdate": "1987-06-30",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "b7a79601-c07b-46d5-bd09-d4472b0d9431\\http://arctos.database.museum/guid/utep:es:5689-162.027?seid=3378474"
+          ],
+          "genus": "puma",
+          "order": "carnivora",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+          "h3-p13": "636287702617297471",
+          "h3-p14": "640791302244668191",
+          "h3-p15": "645294901872038683",
+          "h3-p10": "622776903735214079",
+          "h3-p1": "582248581512036351",
+          "h3-p11": "627280503362559999",
+          "h3-p0": "577762574070710271",
+          "h3-p12": "631784102989927423",
+          "h3-p3": "591251726317649919",
+          "h3-p2": "586748332848709631",
+          "h3-p5": "600258906245038079",
+          "h3-p4": "595755308765151231",
+          "h3-p7": "609266104862244863",
+          "h3-p6": "604762505335537663",
+          "h3-p9": "618273304108072959",
+          "h3-p8": "613769704481226751"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "geohash": {
+      "buckets": [
+        {
+          "key": "9tu",
+          "doc_count": 69
+        },
+        {
+          "key": "9td",
+          "doc_count": 59
+        },
+        {
+          "key": "9w5",
+          "doc_count": 53
+        },
+        {
+          "key": "9wk",
+          "doc_count": 44
+        },
+        {
+          "key": "9wh",
+          "doc_count": 42
+        },
+        {
+          "key": "9tg",
+          "doc_count": 42
+        },
+        {
+          "key": "9wg",
+          "doc_count": 40
+        },
+        {
+          "key": "9tf",
+          "doc_count": 34
+        },
+        {
+          "key": "9q4",
+          "doc_count": 27
+        },
+        {
+          "key": "9tt",
+          "doc_count": 22
+        },
+        {
+          "key": "djj",
+          "doc_count": 18
+        },
+        {
+          "key": "dhw",
+          "doc_count": 18
+        },
+        {
+          "key": "c23",
+          "doc_count": 17
+        },
+        {
+          "key": "9tv",
+          "doc_count": 15
+        },
+        {
+          "key": "9r8",
+          "doc_count": 13
+        },
+        {
+          "key": "c0y",
+          "doc_count": 12
+        },
+        {
+          "key": "9ws",
+          "doc_count": 12
+        },
+        {
+          "key": "9wm",
+          "doc_count": 11
+        },
+        {
+          "key": "9wf",
+          "doc_count": 11
+        },
+        {
+          "key": "d8t",
+          "doc_count": 10
+        },
+        {
+          "key": "9wt",
+          "doc_count": 10
+        },
+        {
+          "key": "9we",
+          "doc_count": 9
+        },
+        {
+          "key": "c3k",
+          "doc_count": 8
+        },
+        {
+          "key": "c28",
+          "doc_count": 8
+        },
+        {
+          "key": "c26",
+          "doc_count": 8
+        },
+        {
+          "key": "c0x",
+          "doc_count": 8
+        },
+        {
+          "key": "9w7",
+          "doc_count": 8
+        },
+        {
+          "key": "9tc",
+          "doc_count": 8
+        },
+        {
+          "key": "9t9",
+          "doc_count": 8
+        },
+        {
+          "key": "9fz",
+          "doc_count": 8
+        },
+        {
+          "key": "djm",
+          "doc_count": 7
+        },
+        {
+          "key": "9xj",
+          "doc_count": 7
+        },
+        {
+          "key": "9w4",
+          "doc_count": 7
+        },
+        {
+          "key": "c2d",
+          "doc_count": 6
+        },
+        {
+          "key": "9q5",
+          "doc_count": 5
+        },
+        {
+          "key": "9fv",
+          "doc_count": 5
+        },
+        {
+          "key": "dhv",
+          "doc_count": 4
+        },
+        {
+          "key": "c2s",
+          "doc_count": 4
+        },
+        {
+          "key": "c2h",
+          "doc_count": 4
+        },
+        {
+          "key": "9wd",
+          "doc_count": 4
+        },
+        {
+          "key": "9w1",
+          "doc_count": 4
+        },
+        {
+          "key": "9tn",
+          "doc_count": 4
+        },
+        {
+          "key": "9rb",
+          "doc_count": 4
+        },
+        {
+          "key": "9eq",
+          "doc_count": 4
+        },
+        {
+          "key": "d9j",
+          "doc_count": 3
+        },
+        {
+          "key": "c33",
+          "doc_count": 3
+        },
+        {
+          "key": "c2y",
+          "doc_count": 3
+        },
+        {
+          "key": "c29",
+          "doc_count": 3
+        },
+        {
+          "key": "c0v",
+          "doc_count": 3
+        },
+        {
+          "key": "9xy",
+          "doc_count": 3
+        },
+        {
+          "key": "9x4",
+          "doc_count": 3
+        },
+        {
+          "key": "9x1",
+          "doc_count": 3
+        },
+        {
+          "key": "9ww",
+          "doc_count": 3
+        },
+        {
+          "key": "9q7",
+          "doc_count": 3
+        },
+        {
+          "key": "s00",
+          "doc_count": 2
+        },
+        {
+          "key": "drf",
+          "doc_count": 2
+        },
+        {
+          "key": "d8m",
+          "doc_count": 2
+        },
+        {
+          "key": "d4c",
+          "doc_count": 2
+        },
+        {
+          "key": "c41",
+          "doc_count": 2
+        },
+        {
+          "key": "c37",
+          "doc_count": 2
+        },
+        {
+          "key": "c30",
+          "doc_count": 2
+        },
+        {
+          "key": "c2e",
+          "doc_count": 2
+        },
+        {
+          "key": "c25",
+          "doc_count": 2
+        },
+        {
+          "key": "9xd",
+          "doc_count": 2
+        },
+        {
+          "key": "9w2",
+          "doc_count": 2
+        },
+        {
+          "key": "9w0",
+          "doc_count": 2
+        },
+        {
+          "key": "9vw",
+          "doc_count": 2
+        },
+        {
+          "key": "9tq",
+          "doc_count": 2
+        },
+        {
+          "key": "9sv",
+          "doc_count": 2
+        },
+        {
+          "key": "9sf",
+          "doc_count": 2
+        },
+        {
+          "key": "9rr",
+          "doc_count": 2
+        },
+        {
+          "key": "9qk",
+          "doc_count": 2
+        },
+        {
+          "key": "9qb",
+          "doc_count": 2
+        },
+        {
+          "key": "9px",
+          "doc_count": 2
+        },
+        {
+          "key": "9gn",
+          "doc_count": 2
+        },
+        {
+          "key": "f2h",
+          "doc_count": 1
+        },
+        {
+          "key": "f0g",
+          "doc_count": 1
+        },
+        {
+          "key": "drg",
+          "doc_count": 1
+        },
+        {
+          "key": "dr7",
+          "doc_count": 1
+        },
+        {
+          "key": "djn",
+          "doc_count": 1
+        },
+        {
+          "key": "dhu",
+          "doc_count": 1
+        },
+        {
+          "key": "d50",
+          "doc_count": 1
+        },
+        {
+          "key": "d21",
+          "doc_count": 1
+        },
+        {
+          "key": "d0p",
+          "doc_count": 1
+        },
+        {
+          "key": "c83",
+          "doc_count": 1
+        },
+        {
+          "key": "c2j",
+          "doc_count": 1
+        },
+        {
+          "key": "c2f",
+          "doc_count": 1
+        },
+        {
+          "key": "c27",
+          "doc_count": 1
+        },
+        {
+          "key": "c20",
+          "doc_count": 1
+        },
+        {
+          "key": "c0z",
+          "doc_count": 1
+        },
+        {
+          "key": "c0r",
+          "doc_count": 1
+        },
+        {
+          "key": "9xt",
+          "doc_count": 1
+        },
+        {
+          "key": "9xk",
+          "doc_count": 1
+        },
+        {
+          "key": "9xg",
+          "doc_count": 1
+        },
+        {
+          "key": "9xf",
+          "doc_count": 1
+        },
+        {
+          "key": "9x6",
+          "doc_count": 1
+        },
+        {
+          "key": "9x5",
+          "doc_count": 1
+        },
+        {
+          "key": "9wv",
+          "doc_count": 1
+        },
+        {
+          "key": "9wq",
+          "doc_count": 1
+        },
+        {
+          "key": "9w6",
+          "doc_count": 1
+        },
+        {
+          "key": "9vy",
+          "doc_count": 1
+        },
+        {
+          "key": "9vt",
+          "doc_count": 1
+        },
+        {
+          "key": "9vq",
+          "doc_count": 1
+        },
+        {
+          "key": "9ub",
+          "doc_count": 1
+        },
+        {
+          "key": "9u4",
+          "doc_count": 1
+        },
+        {
+          "key": "9ts",
+          "doc_count": 1
+        },
+        {
+          "key": "9tm",
+          "doc_count": 1
+        },
+        {
+          "key": "9t8",
+          "doc_count": 1
+        },
+        {
+          "key": "9ry",
+          "doc_count": 1
+        },
+        {
+          "key": "9rc",
+          "doc_count": 1
+        },
+        {
+          "key": "9r9",
+          "doc_count": 1
+        },
+        {
+          "key": "9qx",
+          "doc_count": 1
+        },
+        {
+          "key": "9qw",
+          "doc_count": 1
+        },
+        {
+          "key": "9qh",
+          "doc_count": 1
+        },
+        {
+          "key": "9qd",
+          "doc_count": 1
+        },
+        {
+          "key": "9q9",
+          "doc_count": 1
+        },
+        {
+          "key": "9mv",
+          "doc_count": 1
+        },
+        {
+          "key": "9gb",
+          "doc_count": 1
+        },
+        {
+          "key": "98g",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}

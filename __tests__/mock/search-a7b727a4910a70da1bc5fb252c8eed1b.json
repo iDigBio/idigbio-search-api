@@ -1,0 +1,984 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1832,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "d2e46893-099f-45eb-9a76-d2a66f43bec8",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "d2e46893-099f-45eb-9a76-d2a66f43bec8",
+          "dqs": -1,
+          "archivelink": "http://www.snib.mx/iptconabio/archive.do?r=snib-hc022",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Francisco Xavier",
+              "last_name": "González Cózatl",
+              "role": "Responsable",
+              "email": "xavier@uaem.mx"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Sonia Alejandra",
+              "last_name": "Careaga Olvera",
+              "role": "Subcoordinadora en Información y Análisis",
+              "email": "scareaga@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-HC022",
+            "contacts": [
+              {
+                "first_name": "Francisco Xavier",
+                "last_name": "González Cózatl",
+                "role": "Responsable",
+                "email": "xavier@uaem.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Computarización de la colección de mamíferos del Centro de Educación Ambiental e Investigación Sierra de Huautla (CEAMISH) de la Universidad Autónoma del Estado de Morelos (UAEM)",
+            "idigbio:uuid": "d2e46893-099f-45eb-9a76-d2a66f43bec8",
+            "idigbio:etag": "95c4063ac177c6857b50949b400ca13e1cb5e110",
+            "update": "2018-08-21T01:03:39",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=HC&Numero=22",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "f0d7eb48-a312-4643-a1bb-1ba9370497ec"
+            ],
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-HC022",
+            "idigbio:dateModified": "2018-08-21T01:33:45.082050",
+            "collection_description": "La Colección de Mamíferos del CEAMISH (CMC) se inició en el año 2000 con la incorporación de ejemplares colectados en proyectos financiados por el CONACYT, la Universidad Autónoma del Estado de Morelos y tres instituciones extranjeras.  La CMC fue formalmente registrada ante la SEMARNAT en el año del 2005.  Cuenta con 2,424 ejemplares pertenecientes a 7 ordenes, 17 familias, 48 géneros y 81 especies, principalmente del orden Rodentia.  La mayoría de los ejemplares provienen de localidades de bosque mesófilo y selva baja caducifolia de México.  Actualmente, 1,166 ejemplares están catalogados formalmente con identificaciones hasta el nivel de especie,  353 ejemplares están en proceso de identificación y 35 más acaban de ingresar y están en el proceso de catalogación.  Afortunadamente, cerca del 95% de los ejemplares están referenciados con coordenadas geográficas.  Para más del 75% de estos ejemplares se preserva muestras de tejido congelado o en alcohol para estudios moleculares.  Además, se cuenta con muestras de sangre de 45% de los ejemplares para determinar la presencia de virus tales como el arenavirus y el hantavirus.  Sin embargo, debido a que la CMC ha tenido limitaciones de financiamiento, infraestructura, y ha carecido de personal de apoyo de tiempo competo asociado a la misma, aún falta computarizar mucha de la información asociada a los ejemplares.  Además, es necesario completar el proceso de curación de más del 50% de los ejemplares que integran la CMC.  En este sentido, la presente propuesta tiene como objetivo solicitar recursos para computarizar la información asociada a los ejemplares de la CMC, y  completar el proceso de curación del material biológico depositado en la CMC, procurando que éste quede resguardado en gabinetes adecuados para su protección. Reino: 1\nFilo: 1\nClase: 1\nOrden: 7\nFamilia: 17\nGénero: 49\nEspecie: 99",
+            "id": "f0d7eb48-a312-4643-a1bb-1ba9370497ec",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "95c4063ac177c6857b50949b400ca13e1cb5e110",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://www.snib.mx/iptconabio/eml.do?r=snib-hc022",
+          "recordids": [
+            "f0d7eb48-a312-4643-a1bb-1ba9370497ec"
+          ],
+          "data": {
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-HC022",
+            "contacts": [
+              {
+                "first_name": "Francisco Xavier",
+                "last_name": "González Cózatl",
+                "role": "Responsable",
+                "email": "xavier@uaem.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Computarización de la colección de mamíferos del Centro de Educación Ambiental e Investigación Sierra de Huautla (CEAMISH) de la Universidad Autónoma del Estado de Morelos (UAEM)",
+            "update": "2018-08-21T01:03:39",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-HC022",
+            "collection_description": "La Colección de Mamíferos del CEAMISH (CMC) se inició en el año 2000 con la incorporación de ejemplares colectados en proyectos financiados por el CONACYT, la Universidad Autónoma del Estado de Morelos y tres instituciones extranjeras.  La CMC fue formalmente registrada ante la SEMARNAT en el año del 2005.  Cuenta con 2,424 ejemplares pertenecientes a 7 ordenes, 17 familias, 48 géneros y 81 especies, principalmente del orden Rodentia.  La mayoría de los ejemplares provienen de localidades de bosque mesófilo y selva baja caducifolia de México.  Actualmente, 1,166 ejemplares están catalogados formalmente con identificaciones hasta el nivel de especie,  353 ejemplares están en proceso de identificación y 35 más acaban de ingresar y están en el proceso de catalogación.  Afortunadamente, cerca del 95% de los ejemplares están referenciados con coordenadas geográficas.  Para más del 75% de estos ejemplares se preserva muestras de tejido congelado o en alcohol para estudios moleculares.  Además, se cuenta con muestras de sangre de 45% de los ejemplares para determinar la presencia de virus tales como el arenavirus y el hantavirus.  Sin embargo, debido a que la CMC ha tenido limitaciones de financiamiento, infraestructura, y ha carecido de personal de apoyo de tiempo competo asociado a la misma, aún falta computarizar mucha de la información asociada a los ejemplares.  Además, es necesario completar el proceso de curación de más del 50% de los ejemplares que integran la CMC.  En este sentido, la presente propuesta tiene como objetivo solicitar recursos para computarizar la información asociada a los ejemplares de la CMC, y  completar el proceso de curación del material biológico depositado en la CMC, procurando que éste quede resguardado en gabinetes adecuados para su protección. Reino: 1\nFilo: 1\nClase: 1\nOrden: 7\nFamilia: 17\nGénero: 49\nEspecie: 99",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=HC&Numero=22",
+            "id": "f0d7eb48-a312-4643-a1bb-1ba9370497ec"
+          },
+          "datemodified": "2018-08-21T01:33:45.082050+00:00",
+          "name": "computarización de la colección de mamíferos del centro de educación ambiental e investigación sierra de huautla (ceamish) de la universidad autónoma del estado de morelos (uaem)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "3cf3933f-c230-4e48-bc48-aa8ab47dc388",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "3cf3933f-c230-4e48-bc48-aa8ab47dc388",
+          "dqs": -1,
+          "archivelink": "http://www.snib.mx/iptconabio/archive.do?r=snib-h128",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Manuel",
+              "last_name": "Castillo Rivera",
+              "role": "Responsable",
+              "email": "crma@xanum.uam.mx"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Sonia Alejandra",
+              "last_name": "Careaga Olvera",
+              "role": "Subcoordinadora en Información y Análisis",
+              "email": "scareaga@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-H128",
+            "contacts": [
+              {
+                "first_name": "Manuel",
+                "last_name": "Castillo Rivera",
+                "role": "Responsable",
+                "email": "crma@xanum.uam.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Diversidad de peces de las lagunas costeras de Pueblo Viejo y el Mango, Veracruz",
+            "idigbio:uuid": "3cf3933f-c230-4e48-bc48-aa8ab47dc388",
+            "idigbio:etag": "229c0ba18288c956ea2f7e9f499f26cd239aa430",
+            "update": "2018-08-21T01:09:50",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=H&Numero=128",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "80540bc4-f762-11e1-a439-00145eb45e9a"
+            ],
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-H128",
+            "idigbio:dateModified": "2018-08-21T01:33:03.207042",
+            "collection_description": "Durante el desarrollo del proyecto, se estudiaron las ictiofaunas de la laguna de Pueblo Viejo y el Mango, en el norte del estado de Veracruz. Por su ubicación en la República Mexicana, ambas lagunas presentan un enorme interés zoogeográfico, dado que se encuentran cercanas al límite entre la provincia carolineana (Región Templada del Atlántico Norteamericano) y la caribeña (Región Tropical del Atlántico Occidental). El estudio comprendió muestreos diurnos mensuales durante 19 meses y muestreos bimestrales en ciclos de 24 horas en ambientes con vegetación sumergida, durante un año más. En la laguna El Mango, se capturaron un total de 23 especies correspondiendo a 20 géneros, 13 familias y 7 órdenes. En esta laguna las familias mejor representadas  fueron, Sciaenidae, Gerreidae, Clupeidae y Ariidae. Las familias restantes tuvieron un género y una sola especie. En la laguna de Pueblo Viejo, se capturaron un total de 76 especies, correspondiendo a  61 géneros, 35 familias y 14 órdenes. Las familias mejor representadas fueron, Sciaenidae, Gobiidae, Carangidae, Eleotridae y Gerreidae. Las familias menos representadas fueron Dasyatidae, Elopidae, Characidae, Hemirhamphidae, Cyprinodontidae, Poeciliidae, Serranidae, Lutjanidae, Ephippidae, Cichlidae, Blenniidae, Trichiuridae, Scombridae, Stromateidae, Bothidae, Soleidae y Tetraodontidae, las cuales tuvieron un género y una sola especie. En algunos casos, se discuten problemas de determinación taxonómica y sinonimias. Con relación a los principales componentes ecológicos, se encontraron los tres más importantes, el dulceacuícola (Characidae, Cyprinodontidae, Poeciliidae y Cichlidae), el estuarino (Ariidae y Gerreidae) y el marino (Serranidae, Bothidae y Soleidae). Asimismo, en las lagunas existen representantes típicos tanto de zonas cálido templadas (Sparidae, Sciaenidae y Haemulidae), como tropicales (Gobiidae). Adicionalmente se presentan un \"Análisis zoogeográfico y análisis del comportamiento espacio-temporal de la diversidad de las ictiofaunas estudiadas\". En estos análisis, se puede apreciar que el ambiente físico presenta poca influencia directa sobre los parámetros de la comunidad de peces. Espacialmente, la riqueza y diversidad de especies, fueron  mayores en las zonas con R. marítima y cercanas a la boca de la laguna, y bajo condiciones de estabilidad ambiental. Estos parámetros permanecieron relativamente estables estacionalmente, influenciándolos ligeramente la temperatura, precipitación, procesos productivos y estabilidad ambiental. Así, la composición de especies, tendió a ser más estable estacionalmente y a mostrar mayores variaciones espacialmente, lo que indica que los factores que principalmente influyen a la comunidad espacialmente (como la vegetación sumergida), juegan un papel mas importante en la determinación de la estructura de la comunidad, que aquellos que tienen una incidencia estacional. Reino: 1\nFilo: 1\nClase: 2\nOrden: 23\nFamilia: 35\nGénero: 61\nEspecie: 73",
+            "id": "80540bc4-f762-11e1-a439-00145eb45e9a",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "229c0ba18288c956ea2f7e9f499f26cd239aa430",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://www.snib.mx/iptconabio/eml.do?r=snib-h128",
+          "recordids": [
+            "80540bc4-f762-11e1-a439-00145eb45e9a"
+          ],
+          "data": {
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-H128",
+            "contacts": [
+              {
+                "first_name": "Manuel",
+                "last_name": "Castillo Rivera",
+                "role": "Responsable",
+                "email": "crma@xanum.uam.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Diversidad de peces de las lagunas costeras de Pueblo Viejo y el Mango, Veracruz",
+            "update": "2018-08-21T01:09:50",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-H128",
+            "collection_description": "Durante el desarrollo del proyecto, se estudiaron las ictiofaunas de la laguna de Pueblo Viejo y el Mango, en el norte del estado de Veracruz. Por su ubicación en la República Mexicana, ambas lagunas presentan un enorme interés zoogeográfico, dado que se encuentran cercanas al límite entre la provincia carolineana (Región Templada del Atlántico Norteamericano) y la caribeña (Región Tropical del Atlántico Occidental). El estudio comprendió muestreos diurnos mensuales durante 19 meses y muestreos bimestrales en ciclos de 24 horas en ambientes con vegetación sumergida, durante un año más. En la laguna El Mango, se capturaron un total de 23 especies correspondiendo a 20 géneros, 13 familias y 7 órdenes. En esta laguna las familias mejor representadas  fueron, Sciaenidae, Gerreidae, Clupeidae y Ariidae. Las familias restantes tuvieron un género y una sola especie. En la laguna de Pueblo Viejo, se capturaron un total de 76 especies, correspondiendo a  61 géneros, 35 familias y 14 órdenes. Las familias mejor representadas fueron, Sciaenidae, Gobiidae, Carangidae, Eleotridae y Gerreidae. Las familias menos representadas fueron Dasyatidae, Elopidae, Characidae, Hemirhamphidae, Cyprinodontidae, Poeciliidae, Serranidae, Lutjanidae, Ephippidae, Cichlidae, Blenniidae, Trichiuridae, Scombridae, Stromateidae, Bothidae, Soleidae y Tetraodontidae, las cuales tuvieron un género y una sola especie. En algunos casos, se discuten problemas de determinación taxonómica y sinonimias. Con relación a los principales componentes ecológicos, se encontraron los tres más importantes, el dulceacuícola (Characidae, Cyprinodontidae, Poeciliidae y Cichlidae), el estuarino (Ariidae y Gerreidae) y el marino (Serranidae, Bothidae y Soleidae). Asimismo, en las lagunas existen representantes típicos tanto de zonas cálido templadas (Sparidae, Sciaenidae y Haemulidae), como tropicales (Gobiidae). Adicionalmente se presentan un \"Análisis zoogeográfico y análisis del comportamiento espacio-temporal de la diversidad de las ictiofaunas estudiadas\". En estos análisis, se puede apreciar que el ambiente físico presenta poca influencia directa sobre los parámetros de la comunidad de peces. Espacialmente, la riqueza y diversidad de especies, fueron  mayores en las zonas con R. marítima y cercanas a la boca de la laguna, y bajo condiciones de estabilidad ambiental. Estos parámetros permanecieron relativamente estables estacionalmente, influenciándolos ligeramente la temperatura, precipitación, procesos productivos y estabilidad ambiental. Así, la composición de especies, tendió a ser más estable estacionalmente y a mostrar mayores variaciones espacialmente, lo que indica que los factores que principalmente influyen a la comunidad espacialmente (como la vegetación sumergida), juegan un papel mas importante en la determinación de la estructura de la comunidad, que aquellos que tienen una incidencia estacional. Reino: 1\nFilo: 1\nClase: 2\nOrden: 23\nFamilia: 35\nGénero: 61\nEspecie: 73",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=H&Numero=128",
+            "id": "80540bc4-f762-11e1-a439-00145eb45e9a"
+          },
+          "datemodified": "2018-08-21T01:33:03.207042+00:00",
+          "name": "diversidad de peces de las lagunas costeras de pueblo viejo y el mango, veracruz"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "176d536a-2691-47c4-95c1-c0d47d3abd48",
+        "_score": 1,
+        "_source": {
+          "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "uuid": "176d536a-2691-47c4-95c1-c0d47d3abd48",
+          "dqs": -1,
+          "archivelink": "http://lichenportal.org/cnalh/content/dwca/umfk_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "CNALHadmin@asu.edu"
+            },
+            {
+              "email": "CNALHadmin@asu.edu"
+            },
+            {
+              "first_name": "Steven Selva, Director",
+              "email": "sselva@maine.edu"
+            },
+            {
+              "first_name": "Steven Selva, Director",
+              "email": "sselva@maine.edu"
+            },
+            {
+              "first_name": "Steven Selva, Director",
+              "email": "sselva@maine.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "eml_link": "http://lichenportal.org/cnalh/content/dwca/UMFK_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Steven Selva, Director",
+                "email": "sselva@maine.edu"
+              },
+              {
+                "first_name": "Steven Selva, Director",
+                "email": "sselva@maine.edu"
+              },
+              {
+                "first_name": "Steven Selva, Director",
+                "email": "sselva@maine.edu"
+              }
+            ],
+            "collection_name": "University of Maine at Fort Kent",
+            "idigbio:uuid": "176d536a-2691-47c4-95c1-c0d47d3abd48",
+            "idigbio:etag": "27e37434848e9f95fc2dfd100b7fe56c30a39e40",
+            "update": "2019-07-02T18:18:29",
+            "ingest": true,
+            "institution_web_address": "http://csdept.umfk.maine.edu/LichensWebsite/home.asp",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "9ccdb313-8601-475b-9979-84246f5acacd",
+              "http://lichenportal.org/portal/webservices/dwc/9ccdb313-8601-475b-9979-84246f5acacd"
+            ],
+            "link": "http://lichenportal.org/cnalh/content/dwca/UMFK_DwC-A.zip",
+            "idigbio:dateModified": "2019-07-02T21:59:06.990861",
+            "collection_description": "Since coming to Maine in 1976, Steve Selva, Professor of Biology and Environmental Studies at the University of Maine at Fort Kent, has established an active research program in lichenology that has focused on Using Lichens to Assess Ecological Continuity in Northeastern Forests and the taxonomy and ecology of Calicioid Lichens and Fungi in Northern New England and Maritime Canada. Steve's contributions to the field of lichenology have been documented in a series of research reports and publications, and have been cited by others in a number of related studies. He has also prepared a photo gallery of Stubble Lichens Under the Microscope and bibliographies of The Lichen Literature of Maine and The Lichen Literature of New Hampshire. The University of Maine at Fort Kent's Lichen Herbarium (UMFK) houses the largest collection of lichens in Maine. It includes the largest collection of calicioid lichens and fungi in northeastern North America as well as the world's largest assemblage of lichens from the old-growth forests of northeastern North America's Acadian Forest Ecoregion. Field data for the entire collection is currently being downloaded into a comprehensive Lichen Database designed and implemented by Steve's colleague, Raymond Albert, Associate Professor of Computer Science at the University of Maine at Fort Kent. Visitors may search the database online using several user-friendly interfaces.",
+            "id": "http://lichenportal.org/portal/webservices/dwc/9ccdb313-8601-475b-9979-84246f5acacd",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/content/collicon/UMFK.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "27e37434848e9f95fc2dfd100b7fe56c30a39e40",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://lichenportal.org/cnalh/content/dwca/umfk_dwc-a.eml",
+          "logourl": "http://lichenportal.org/portal/content/collicon/umfk.jpg",
+          "recordids": [
+            "9ccdb313-8601-475b-9979-84246f5acacd",
+            "http://lichenportal.org/portal/webservices/dwc/9ccdb313-8601-475b-9979-84246f5acacd"
+          ],
+          "data": {
+            "eml_link": "http://lichenportal.org/cnalh/content/dwca/UMFK_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Steven Selva, Director",
+                "email": "sselva@maine.edu"
+              },
+              {
+                "first_name": "Steven Selva, Director",
+                "email": "sselva@maine.edu"
+              },
+              {
+                "first_name": "Steven Selva, Director",
+                "email": "sselva@maine.edu"
+              }
+            ],
+            "collection_name": "University of Maine at Fort Kent",
+            "update": "2019-07-02T18:18:29",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://lichenportal.org/cnalh/content/dwca/UMFK_DwC-A.zip",
+            "collection_description": "Since coming to Maine in 1976, Steve Selva, Professor of Biology and Environmental Studies at the University of Maine at Fort Kent, has established an active research program in lichenology that has focused on Using Lichens to Assess Ecological Continuity in Northeastern Forests and the taxonomy and ecology of Calicioid Lichens and Fungi in Northern New England and Maritime Canada. Steve's contributions to the field of lichenology have been documented in a series of research reports and publications, and have been cited by others in a number of related studies. He has also prepared a photo gallery of Stubble Lichens Under the Microscope and bibliographies of The Lichen Literature of Maine and The Lichen Literature of New Hampshire. The University of Maine at Fort Kent's Lichen Herbarium (UMFK) houses the largest collection of lichens in Maine. It includes the largest collection of calicioid lichens and fungi in northeastern North America as well as the world's largest assemblage of lichens from the old-growth forests of northeastern North America's Acadian Forest Ecoregion. Field data for the entire collection is currently being downloaded into a comprehensive Lichen Database designed and implemented by Steve's colleague, Raymond Albert, Associate Professor of Computer Science at the University of Maine at Fort Kent. Visitors may search the database online using several user-friendly interfaces.",
+            "institution_web_address": "http://csdept.umfk.maine.edu/LichensWebsite/home.asp",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/content/collicon/UMFK.jpg",
+            "id": "http://lichenportal.org/portal/webservices/dwc/9ccdb313-8601-475b-9979-84246f5acacd"
+          },
+          "datemodified": "2019-07-02T21:59:06.990861+00:00",
+          "name": "university of maine at fort kent"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "77b762ba-7cda-4617-97d7-e78df7f6dfab",
+        "_score": 1,
+        "_source": {
+          "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "uuid": "77b762ba-7cda-4617-97d7-e78df7f6dfab",
+          "dqs": -1,
+          "archivelink": "http://bryophyteportal.org/portal/content/dwca/bing_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "CNABHadmin@asu.edu"
+            },
+            {
+              "email": "CNABHadmin@asu.edu"
+            },
+            {
+              "first_name": "Richard Andrus, Director",
+              "email": "randrus@binghamton.edu"
+            },
+            {
+              "first_name": "Richard Andrus, Director",
+              "email": "randrus@binghamton.edu"
+            },
+            {
+              "first_name": "Richard Andrus, Director",
+              "email": "randrus@binghamton.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "eml_link": "http://bryophyteportal.org/portal/content/dwca/BING_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNABHadmin@asu.edu"
+              },
+              {
+                "email": "CNABHadmin@asu.edu"
+              },
+              {
+                "first_name": "Richard Andrus, Director",
+                "email": "randrus@binghamton.edu"
+              },
+              {
+                "first_name": "Richard Andrus, Director",
+                "email": "randrus@binghamton.edu"
+              },
+              {
+                "first_name": "Richard Andrus, Director",
+                "email": "randrus@binghamton.edu"
+              }
+            ],
+            "collection_name": "State University of New York - Binghamton",
+            "idigbio:uuid": "77b762ba-7cda-4617-97d7-e78df7f6dfab",
+            "idigbio:etag": "dfcc48cdbdbbc0598afe6f7d431e2c196602584a",
+            "update": "2019-06-25T11:58:06",
+            "ingest": true,
+            "institution_web_address": null,
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "6fffd3a8-860d-4851-962f-db6e53556b7f",
+              "http://bryophyteportal.org/portal/webservices/dwc/6fffd3a8-860d-4851-962f-db6e53556b7f",
+              "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=17"
+            ],
+            "link": "http://bryophyteportal.org/portal/content/dwca/BING_DwC-A.zip",
+            "idigbio:dateModified": "2019-09-03T01:37:17.048749",
+            "collection_description": "<B>Specialty:</b> Sphagnum, especially of New York; Pacific Northwest; Alaska; New Zealand.<br/> <b>Date Founded:</b> 1956.",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/6fffd3a8-860d-4851-962f-db6e53556b7f",
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/content/collicon/Bing.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "dfcc48cdbdbbc0598afe6f7d431e2c196602584a",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://bryophyteportal.org/portal/content/dwca/bing_dwc-a.eml",
+          "logourl": "http://bryophyteportal.org/portal/content/collicon/bing.jpg",
+          "recordids": [
+            "6fffd3a8-860d-4851-962f-db6e53556b7f",
+            "http://bryophyteportal.org/portal/webservices/dwc/6fffd3a8-860d-4851-962f-db6e53556b7f",
+            "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=17"
+          ],
+          "data": {
+            "eml_link": "http://bryophyteportal.org/portal/content/dwca/BING_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNABHadmin@asu.edu"
+              },
+              {
+                "email": "CNABHadmin@asu.edu"
+              },
+              {
+                "first_name": "Richard Andrus, Director",
+                "email": "randrus@binghamton.edu"
+              },
+              {
+                "first_name": "Richard Andrus, Director",
+                "email": "randrus@binghamton.edu"
+              },
+              {
+                "first_name": "Richard Andrus, Director",
+                "email": "randrus@binghamton.edu"
+              }
+            ],
+            "collection_name": "State University of New York - Binghamton",
+            "update": "2019-06-25T11:58:06",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://bryophyteportal.org/portal/content/dwca/BING_DwC-A.zip",
+            "collection_description": "<B>Specialty:</b> Sphagnum, especially of New York; Pacific Northwest; Alaska; New Zealand.<br/> <b>Date Founded:</b> 1956.",
+            "institution_web_address": null,
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/content/collicon/Bing.jpg",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/6fffd3a8-860d-4851-962f-db6e53556b7f"
+          },
+          "datemodified": "2019-09-03T01:37:17.048749+00:00",
+          "name": "state university of new york - binghamton"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "aeed0286-ffe4-45b8-a7b9-bcee18361433",
+        "_score": 1,
+        "_source": {
+          "publisher": "a9dfa037-425b-442b-8974-94487c29114e",
+          "uuid": "aeed0286-ffe4-45b8-a7b9-bcee18361433",
+          "dqs": -1,
+          "archivelink": "http://swbiodiversity.org/seinet/content/dwca/nps-band_dwc-a.zip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "email": "seinetadmin@asu.edu"
+            },
+            {
+              "email": "seinetadmin@asu.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "a9dfa037-425b-442b-8974-94487c29114e",
+            "eml_link": "http://swbiodiversity.org/seinet/content/dwca/NPS-BAND_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "seinetadmin@asu.edu"
+              },
+              {
+                "email": "seinetadmin@asu.edu"
+              }
+            ],
+            "collection_name": "Bandelier National Monument",
+            "idigbio:uuid": "aeed0286-ffe4-45b8-a7b9-bcee18361433",
+            "idigbio:etag": "919d2d357497425d9745c242f12324cc218e36d7",
+            "update": "2018-08-19T10:55:32",
+            "ingest": true,
+            "institution_web_address": "http://www.nps.gov/band/index.htm",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "0a253541-84bc-434c-b550-0a1b00856be2"
+            ],
+            "link": "http://swbiodiversity.org/seinet/content/dwca/NPS-BAND_DwC-A.zip",
+            "idigbio:dateModified": "2018-08-19T14:01:08.778218",
+            "collection_description": "The flora of Bandelier is now one of the best documented, and most current, vascular plant inventories available for any unit in the National Park Service. The completion of a Revised Checklist of the Vascular Plants of Bandelier National Monument (Jacobs 2012) represents the first significant update to the flora of the monument in the 20 years since completion of the initial Flora of Bandelier project (Jacobs, 1989). Over 50 additional taxa are documented for the monument, bringing the total from around 746 species in 1989 to 800+ in 2012. <br/><br/> The relatively high diversity of vascular plants (800+ taxa documented for 33,000 acre area) reflects the complex topography and wide range of climatic settings available across a nearly 5000-foot elevation range from the Rio Grande at 5300-feet to the summit of Cerro Grande at 10100-feet. However over 15% of the flora is non-native reflecting the legacy of historic landuse and modern disturbances. The monuments herbarium serves the dual purpose of documenting the monuments flora, while also providing a key botanical reference in support of research and monitoring efforts.",
+            "id": "0a253541-84bc-434c-b550-0a1b00856be2",
+            "other_guids": [],
+            "logo_url": "http://swbiodiversity.org/seinet/content/collicon/nps.jpg",
+            "data_rights": "CC0"
+          },
+          "etag": "919d2d357497425d9745c242f12324cc218e36d7",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://swbiodiversity.org/seinet/content/dwca/nps-band_dwc-a.eml",
+          "logourl": "http://swbiodiversity.org/seinet/content/collicon/nps.jpg",
+          "recordids": [
+            "0a253541-84bc-434c-b550-0a1b00856be2"
+          ],
+          "data": {
+            "eml_link": "http://swbiodiversity.org/seinet/content/dwca/NPS-BAND_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "seinetadmin@asu.edu"
+              },
+              {
+                "email": "seinetadmin@asu.edu"
+              }
+            ],
+            "collection_name": "Bandelier National Monument",
+            "update": "2018-08-19T10:55:32",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://swbiodiversity.org/seinet/content/dwca/NPS-BAND_DwC-A.zip",
+            "collection_description": "The flora of Bandelier is now one of the best documented, and most current, vascular plant inventories available for any unit in the National Park Service. The completion of a Revised Checklist of the Vascular Plants of Bandelier National Monument (Jacobs 2012) represents the first significant update to the flora of the monument in the 20 years since completion of the initial Flora of Bandelier project (Jacobs, 1989). Over 50 additional taxa are documented for the monument, bringing the total from around 746 species in 1989 to 800+ in 2012. <br/><br/> The relatively high diversity of vascular plants (800+ taxa documented for 33,000 acre area) reflects the complex topography and wide range of climatic settings available across a nearly 5000-foot elevation range from the Rio Grande at 5300-feet to the summit of Cerro Grande at 10100-feet. However over 15% of the flora is non-native reflecting the legacy of historic landuse and modern disturbances. The monuments herbarium serves the dual purpose of documenting the monuments flora, while also providing a key botanical reference in support of research and monitoring efforts.",
+            "institution_web_address": "http://www.nps.gov/band/index.htm",
+            "other_guids": [],
+            "logo_url": "http://swbiodiversity.org/seinet/content/collicon/nps.jpg",
+            "id": "0a253541-84bc-434c-b550-0a1b00856be2"
+          },
+          "datemodified": "2018-08-19T14:01:08.778218+00:00",
+          "name": "bandelier national monument"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "87b32db7-7b5c-47eb-9d51-5d35ebbe81f4",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "87b32db7-7b5c-47eb-9d51-5d35ebbe81f4",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/87b32db7-7b5c-47eb-9d51-5d35ebbe81f4"
+            ],
+            "idigbio:dateModified": "2016-09-09T13:15:20.806450",
+            "idigbio:uuid": "87b32db7-7b5c-47eb-9d51-5d35ebbe81f4",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/87b32db7-7b5c-47eb-9d51-5d35ebbe81f4"
+          ],
+          "data": {},
+          "datemodified": "2016-09-09T13:15:20.806450+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "623a6f8e-794b-44e6-b0f2-1cbf2e58ef5c",
+        "_score": 1,
+        "_source": {
+          "publisher": "1182c4eb-8e63-498a-9bc0-05aef51e8763",
+          "uuid": "623a6f8e-794b-44e6-b0f2-1cbf2e58ef5c",
+          "dqs": -1,
+          "archivelink": "http://ipt.museu-goeldi.br/ipt/archive.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+          "rights": "unknown license, assume public domain",
+          "contacts": [
+            {
+              "first_name": "Alexandre",
+              "last_name": "Aleixo",
+              "role": "Curator",
+              "email": "aleixo@museu-goeldi.br"
+            },
+            {
+              "first_name": "Alexandre",
+              "last_name": "Aleixo",
+              "role": "Curator",
+              "email": "aleixo@museu-goeldi.br"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "1182c4eb-8e63-498a-9bc0-05aef51e8763",
+            "eml_link": "http://ipt.museu-goeldi.br/ipt/eml.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+            "contacts": [
+              {
+                "first_name": "Alexandre",
+                "last_name": "Aleixo",
+                "role": "Curator",
+                "email": "aleixo@museu-goeldi.br"
+              },
+              {
+                "first_name": "Alexandre",
+                "last_name": "Aleixo",
+                "role": "Curator",
+                "email": "aleixo@museu-goeldi.br"
+              }
+            ],
+            "collection_name": "Museu Paraense Emilio Goeldi - Ornithology Collection - Skin",
+            "idigbio:uuid": "623a6f8e-794b-44e6-b0f2-1cbf2e58ef5c",
+            "idigbio:etag": "ae333979bdfefedeff1ec900e6e92b6f71c249f7",
+            "update": "2016-09-20T20:50:31",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "72116eb4-ca86-48a6-a280-232a3eebcb1d"
+            ],
+            "link": "http://ipt.museu-goeldi.br/ipt/archive.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+            "idigbio:dateModified": "2016-09-20T22:25:57.800123",
+            "collection_description": "The Goeldi Museum ornithological collection is the second largest in Brazil and the largest bird collection in the world for Amazonian birds, with a good representation of all Amazonian areas of endemism, and also the Caatinga and Cerrado biomes in northeastern and central Brazil, respectively.",
+            "id": "72116eb4-ca86-48a6-a280-232a3eebcb1d",
+            "other_guids": [],
+            "logo_url": "http://ipt.museu-goeldi.br/ipt/logo.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+            "data_rights": "Unknown License, assume Public Domain"
+          },
+          "etag": "ae333979bdfefedeff1ec900e6e92b6f71c249f7",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://ipt.museu-goeldi.br/ipt/eml.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+          "logourl": "http://ipt.museu-goeldi.br/ipt/logo.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+          "recordids": [
+            "72116eb4-ca86-48a6-a280-232a3eebcb1d"
+          ],
+          "data": {
+            "eml_link": "http://ipt.museu-goeldi.br/ipt/eml.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+            "contacts": [
+              {
+                "first_name": "Alexandre",
+                "last_name": "Aleixo",
+                "role": "Curator",
+                "email": "aleixo@museu-goeldi.br"
+              },
+              {
+                "first_name": "Alexandre",
+                "last_name": "Aleixo",
+                "role": "Curator",
+                "email": "aleixo@museu-goeldi.br"
+              }
+            ],
+            "collection_name": "Museu Paraense Emilio Goeldi - Ornithology Collection - Skin",
+            "update": "2016-09-20T20:50:31",
+            "ingest": true,
+            "data_rights": "Unknown License, assume Public Domain",
+            "link": "http://ipt.museu-goeldi.br/ipt/archive.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+            "collection_description": "The Goeldi Museum ornithological collection is the second largest in Brazil and the largest bird collection in the world for Amazonian birds, with a good representation of all Amazonian areas of endemism, and also the Caatinga and Cerrado biomes in northeastern and central Brazil, respectively.",
+            "institution_web_address": "",
+            "other_guids": [],
+            "logo_url": "http://ipt.museu-goeldi.br/ipt/logo.do?r=museu_paraense_emilio_goeldi_ornithology_collection",
+            "id": "72116eb4-ca86-48a6-a280-232a3eebcb1d"
+          },
+          "datemodified": "2016-09-20T22:25:57.800123+00:00",
+          "name": "museu paraense emilio goeldi - ornithology collection - skin"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "5e7f8e62-b696-4015-aa09-2acc935d748e",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "5e7f8e62-b696-4015-aa09-2acc935d748e",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/5e7f8e62-b696-4015-aa09-2acc935d748e"
+            ],
+            "idigbio:dateModified": "2016-03-08T16:39:41.472244",
+            "idigbio:uuid": "5e7f8e62-b696-4015-aa09-2acc935d748e",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/5e7f8e62-b696-4015-aa09-2acc935d748e"
+          ],
+          "data": {},
+          "datemodified": "2016-03-08T16:39:41.472244+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+        "_score": 1,
+        "_source": {
+          "publisher": "1c29be70-24e7-480b-aab1-61224ded0f34",
+          "uuid": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+          "dqs": -1,
+          "archivelink": "http://portal.neherbaria.org/portal/collections/datasets/dwc/keenestatecollege-kesc_dwc-a.zip",
+          "rights": "cc3 by-sa",
+          "contacts": [
+            {
+              "email": "patrick.sweeney@yale.edu"
+            },
+            {
+              "email": "patrick.sweeney@yale.edu"
+            },
+            {
+              "first_name": "Kristen Porter-Utley",
+              "email": "kporterutley@keene.edu"
+            },
+            {
+              "first_name": "Benjamin"
+            },
+            {
+              "first_name": "Kristen Porter-Utley",
+              "role": "Collection Manager",
+              "email": "kporterutley@keene.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "1c29be70-24e7-480b-aab1-61224ded0f34",
+            "eml_link": "http://portal.neherbaria.org/portal/collections/datasets/dwc/KeeneStateCollege-KESC_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "patrick.sweeney@yale.edu"
+              },
+              {
+                "email": "patrick.sweeney@yale.edu"
+              },
+              {
+                "first_name": "Kristen Porter-Utley",
+                "email": "kporterutley@keene.edu"
+              },
+              {
+                "first_name": "Benjamin"
+              },
+              {
+                "first_name": "Kristen Porter-Utley",
+                "role": "Collection Manager",
+                "email": "kporterutley@keene.edu"
+              }
+            ],
+            "collection_name": "Keene State College Herbarium",
+            "idigbio:uuid": "93e97f6c-0ab6-41a7-9b58-7e230a80ec1e",
+            "idigbio:etag": "edf55300f37f7de30ca307103740c54950633388",
+            "update": "2016-03-30T05:13:56",
+            "ingest": true,
+            "institution_web_address": null,
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "c40a8890-2536-4a68-81aa-4f4f15a6f034",
+              "http://portal.neherbaria.org/portal/webservices/dwc/c40a8890-2536-4a68-81aa-4f4f15a6f034"
+            ],
+            "link": "http://portal.neherbaria.org/portal/collections/datasets/dwc/KeeneStateCollege-KESC_DwC-A.zip",
+            "idigbio:dateModified": "2017-04-19T15:30:57.197467",
+            "collection_description": "Specialty: Mainly New England. Date Founded: 1969.",
+            "id": "http://portal.neherbaria.org/portal/webservices/dwc/c40a8890-2536-4a68-81aa-4f4f15a6f034",
+            "other_guids": [],
+            "logo_url": "http://portal.neherbaria.org/portal/images/collicons/kesc_150.png",
+            "data_rights": "CC3 BY-SA"
+          },
+          "etag": "edf55300f37f7de30ca307103740c54950633388",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://portal.neherbaria.org/portal/collections/datasets/dwc/keenestatecollege-kesc_dwc-a.eml",
+          "logourl": "http://portal.neherbaria.org/portal/images/collicons/kesc_150.png",
+          "recordids": [
+            "c40a8890-2536-4a68-81aa-4f4f15a6f034",
+            "http://portal.neherbaria.org/portal/webservices/dwc/c40a8890-2536-4a68-81aa-4f4f15a6f034"
+          ],
+          "data": {
+            "eml_link": "http://portal.neherbaria.org/portal/collections/datasets/dwc/KeeneStateCollege-KESC_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "patrick.sweeney@yale.edu"
+              },
+              {
+                "email": "patrick.sweeney@yale.edu"
+              },
+              {
+                "first_name": "Kristen Porter-Utley",
+                "email": "kporterutley@keene.edu"
+              },
+              {
+                "first_name": "Benjamin"
+              },
+              {
+                "first_name": "Kristen Porter-Utley",
+                "role": "Collection Manager",
+                "email": "kporterutley@keene.edu"
+              }
+            ],
+            "collection_name": "Keene State College Herbarium",
+            "update": "2016-03-30T05:13:56",
+            "ingest": true,
+            "data_rights": "CC3 BY-SA",
+            "link": "http://portal.neherbaria.org/portal/collections/datasets/dwc/KeeneStateCollege-KESC_DwC-A.zip",
+            "collection_description": "Specialty: Mainly New England. Date Founded: 1969.",
+            "institution_web_address": null,
+            "other_guids": [],
+            "logo_url": "http://portal.neherbaria.org/portal/images/collicons/kesc_150.png",
+            "id": "http://portal.neherbaria.org/portal/webservices/dwc/c40a8890-2536-4a68-81aa-4f4f15a6f034"
+          },
+          "datemodified": "2017-04-19T15:30:57.197467+00:00",
+          "name": "keene state college herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "recordsets",
+        "_id": "b5e5c781-765f-4981-af2a-c19c250e2cf0",
+        "_score": 1,
+        "_source": {
+          "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "uuid": "b5e5c781-765f-4981-af2a-c19c250e2cf0",
+          "dqs": -1,
+          "archivelink": "http://lichenportal.org/portal/collections/datasets/dwc/flas_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "CNALHadmin@asu.edu"
+            },
+            {
+              "first_name": "Kent Perkins, Collection Manager",
+              "email": "herb@flmnh.ufl.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/FLAS_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Kent Perkins, Collection Manager",
+                "email": "herb@flmnh.ufl.edu"
+              }
+            ],
+            "collection_name": "University of Florida Herbarium",
+            "idigbio:uuid": "b5e5c781-765f-4981-af2a-c19c250e2cf0",
+            "idigbio:etag": "8124d8d21c9941bcf62a95aed503c133b551d236",
+            "update": "2015-09-28T21:55:43",
+            "ingest": true,
+            "institution_web_address": "http://www.flmnh.ufl.edu/herbarium/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=35",
+              "http://lichenportal.org/portal/webservices/dwc/2a40ef36-3117-4295-8c11-a672db19b4a0"
+            ],
+            "link": "http://lichenportal.org/portal/collections/datasets/dwc/FLAS_DwC-A.zip",
+            "idigbio:dateModified": "2015-09-29T01:21:28.837308",
+            "collection_description": "The University of Florida Herbarium is a unit of the Department of Natural History of the Florida Museum of Natural History. The herbarium is affiliated with the Institute of Food and Agricultural Sciences, Florida Agricultural Experiment Station, Florida Cooperative Extension Service, Department of Biology and the Department of Plant Pathology. The FLAS acronym is the standard international abbreviation for the University of Florida Herbarium. It is derived from the herbarium's early association with the Florida Agricultural Experiment Station. Our mission focuses in plant collections acquisition and care, research based on the collections, education and public service.",
+            "id": "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=35",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/images/collicons/flas.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "8124d8d21c9941bcf62a95aed503c133b551d236",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://lichenportal.org/portal/collections/datasets/dwc/flas_dwc-a.eml",
+          "logourl": "http://lichenportal.org/portal/images/collicons/flas.jpg",
+          "recordids": [
+            "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=35",
+            "http://lichenportal.org/portal/webservices/dwc/2a40ef36-3117-4295-8c11-a672db19b4a0"
+          ],
+          "data": {
+            "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/FLAS_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Kent Perkins, Collection Manager",
+                "email": "herb@flmnh.ufl.edu"
+              }
+            ],
+            "collection_name": "University of Florida Herbarium",
+            "update": "2015-09-28T21:55:43",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://lichenportal.org/portal/collections/datasets/dwc/FLAS_DwC-A.zip",
+            "collection_description": "The University of Florida Herbarium is a unit of the Department of Natural History of the Florida Museum of Natural History. The herbarium is affiliated with the Institute of Food and Agricultural Sciences, Florida Agricultural Experiment Station, Florida Cooperative Extension Service, Department of Biology and the Department of Plant Pathology. The FLAS acronym is the standard international abbreviation for the University of Florida Herbarium. It is derived from the herbarium's early association with the Florida Agricultural Experiment Station. Our mission focuses in plant collections acquisition and care, research based on the collections, education and public service.",
+            "institution_web_address": "http://www.flmnh.ufl.edu/herbarium/",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/images/collicons/flas.jpg",
+            "id": "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=35"
+          },
+          "datemodified": "2015-09-29T01:21:28.837308+00:00",
+          "name": "university of florida herbarium"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_data.contacts.email": {
+      "doc_count_error_upper_bound": 50,
+      "sum_other_doc_count": 2609,
+      "buckets": [
+        {
+          "key": "scareaga@conabio.gob.mx",
+          "doc_count": 414
+        },
+        {
+          "key": "patricia.ramos@conabio.gob.mx",
+          "doc_count": 396
+        },
+        {
+          "key": "dbloom@vertnet.org",
+          "doc_count": 119
+        },
+        {
+          "key": "tuco@berkeley.edu",
+          "doc_count": 110
+        },
+        {
+          "key": "splink@cria.org.br",
+          "doc_count": 109
+        },
+        {
+          "key": "larussell@vertnet.org",
+          "doc_count": 76
+        },
+        {
+          "key": "CNALHadmin@asu.edu",
+          "doc_count": 68
+        },
+        {
+          "key": "Neil.Cobb@nau.edu",
+          "doc_count": 57
+        },
+        {
+          "key": "dlmcdonald@alaska.edu",
+          "doc_count": 55
+        },
+        {
+          "key": "egbot@asu.edu",
+          "doc_count": 53
+        }
+      ]
+    }
+  }
+}

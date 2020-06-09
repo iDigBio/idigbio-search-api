@@ -1,0 +1,2067 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 33891,
+    "max_score": 3.420383,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "0aa93d60-1306-4a41-b7a7-507d1f4412b0",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 5,
+          "geopoint": {
+            "lat": 29.4,
+            "lon": -85.7006
+          },
+          "family": "hesionidae",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.30434782608695654,
+          "stateprovince": "florida",
+          "phylum": "annelida",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "1226371",
+          "startdayofyear": 225,
+          "continent": "north america",
+          "uuid": "0aa93d60-1306-4a41-b7a7-507d1f4412b0",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1977-08-13",
+          "etag": "ed0254f8b9d19335a3cef7a1c51a526d06cb32cc",
+          "mindepth": 38,
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "geopoint_low_precision",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, annelida, polychaeta, errantia, phyllodocida, nereidiformia, hesionidae",
+          "indexData": {
+            "dwc:startDayOfYear": "225",
+            "dwc:kingdom": "Animalia",
+            "idigbio:uuid": "0aa93d60-1306-4a41-b7a7-507d1f4412b0",
+            "dwc:fieldNumber": "MMS-MAFLA/DMI:2854",
+            "dwc:order": "Phyllodocida",
+            "dwc:individualCount": "5",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39",
+            "id": "http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "38",
+            "idigbio:etag": "ed0254f8b9d19335a3cef7a1c51a526d06cb32cc",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Polychaeta",
+            "dwc:decimalLatitude": "29.4",
+            "dwc:locationID": "2854",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Annelida",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Apalachicola Bay",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Errantia, Phyllodocida, Nereidiformia, Hesionidae",
+            "dwc:catalogNumber": "1226371",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-85.7006",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "252",
+            "dwc:minimumDepthInMeters": "38",
+            "dwc:family": "Hesionidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "idigbio:isocountrycode": "usa",
+            "dwc:day": "13",
+            "dwc:year": "1977"
+          },
+          "data": {
+            "dwc:startDayOfYear": "225",
+            "dwc:kingdom": "Animalia",
+            "dwc:fieldNumber": "MMS-MAFLA/DMI:2854",
+            "dwc:order": "Phyllodocida",
+            "dwc:individualCount": "5",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39",
+            "id": "http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "38",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Errantia, Phyllodocida, Nereidiformia, Hesionidae",
+            "dwc:decimalLatitude": "29.4",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "2854",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:phylum": "Annelida",
+            "dwc:locality": "off Apalachicola Bay",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Polychaeta",
+            "dwc:catalogNumber": "1226371",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-85.7006",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "252",
+            "dwc:minimumDepthInMeters": "38",
+            "dwc:family": "Hesionidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "dwc:day": "13",
+            "dwc:year": "1977"
+          },
+          "class": "polychaeta",
+          "occurrenceid": "http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "locality": "off apalachicola bay",
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-mafla/dmi:2854",
+          "maxdepth": 38,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3f8926d8b-2dc1-4714-a458-0a2c13823d39"
+          ],
+          "order": "phyllodocida",
+          "h3-p13": "636219527716479423",
+          "h3-p14": "640723127343849879",
+          "h3-p15": "645226726971220368",
+          "h3-p10": "622708728834392063",
+          "h3-p1": "582165018628325375",
+          "h3-p11": "627212328461742079",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631715928089108991",
+          "h3-p3": "591183556596727807",
+          "h3-p2": "586680163127787519",
+          "h3-p5": "600190735450374143",
+          "h3-p4": "595687139044229119",
+          "h3-p7": "609197929957163007",
+          "h3-p6": "604694330380124159",
+          "h3-p9": "618205129205874687",
+          "h3-p8": "613701529580339199"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "aaba7441-b781-408e-8c7d-98b37a6b410c",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 1,
+          "mindepth": 68,
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.2898550724637681,
+          "stateprovince": "florida",
+          "phylum": "echinodermata",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "1117975",
+          "startdayofyear": 136,
+          "continent": "north america",
+          "uuid": "aaba7441-b781-408e-8c7d-98b37a6b410c",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1974-05-16",
+          "etag": "b2f96648253d3a793f9afe56cee5e4acea585060",
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, echinodermata, ophiuroidea",
+          "locality": "off panama city",
+          "data": {
+            "dwc:startDayOfYear": "136",
+            "dwc:kingdom": "Animalia",
+            "dwc:fieldNumber": "MMS-MAFLA/02:2533",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3",
+            "id": "http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "68",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Echinodermata, Ophiuroidea",
+            "dwc:decimalLatitude": "29.7167",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "2533",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:phylum": "Echinodermata",
+            "dwc:locality": "off Panama City",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Ophiuroidea",
+            "dwc:catalogNumber": "1117975",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-86.258",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "167",
+            "dwc:minimumDepthInMeters": "68",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "dwc:day": "16",
+            "dwc:year": "1974"
+          },
+          "class": "ophiuroidea",
+          "occurrenceid": "http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.7167,
+            "lon": -86.258
+          },
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-mafla/02:2533",
+          "maxdepth": 68,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3"
+          ],
+          "indexData": {
+            "dwc:startDayOfYear": "136",
+            "dwc:kingdom": "Animalia",
+            "idigbio:uuid": "aaba7441-b781-408e-8c7d-98b37a6b410c",
+            "dwc:fieldNumber": "MMS-MAFLA/02:2533",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3",
+            "id": "http://n2t.net/ark:/65665/3faf63634-c21e-4fb4-b3cf-b53085adbdf3",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "68",
+            "idigbio:etag": "b2f96648253d3a793f9afe56cee5e4acea585060",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Ophiuroidea",
+            "dwc:decimalLatitude": "29.7167",
+            "dwc:locationID": "2533",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Echinodermata",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Panama City",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Echinodermata, Ophiuroidea",
+            "dwc:catalogNumber": "1117975",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-86.258",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "167",
+            "dwc:minimumDepthInMeters": "68",
+            "idigbio:isocountrycode": "usa",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "dwc:day": "16",
+            "dwc:year": "1974"
+          },
+          "h3-p13": "636219591832635839",
+          "h3-p14": "640723191460006295",
+          "h3-p15": "645226791087376788",
+          "h3-p10": "622708792950554623",
+          "h3-p1": "582178212767858687",
+          "h3-p11": "627212392577896447",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631715992205265407",
+          "h3-p3": "591183625316204543",
+          "h3-p2": "586680163127787519",
+          "h3-p5": "600190797727399935",
+          "h3-p4": "595687199173771263",
+          "h3-p7": "609197994079682559",
+          "h3-p6": "604694394536198143",
+          "h3-p9": "618205193323413503",
+          "h3-p8": "613701593696567295"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "4a9b9e8c-efbc-4b80-8a7e-bebd36546c77",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 1,
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.2753623188405797,
+          "stateprovince": "florida",
+          "phylum": "annelida",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "1439938",
+          "startdayofyear": 149,
+          "collector": "h. kritzler, d. savelle & d. garlick",
+          "continent": "north america",
+          "uuid": "4a9b9e8c-efbc-4b80-8a7e-bebd36546c77",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1975-05-29",
+          "etag": "9cf2fd76b7da5be8b0de785c9cef620c8b03d2ae",
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, annelida, polychaeta",
+          "locality": "off charlotte harbor",
+          "data": {
+            "dwc:startDayOfYear": "149",
+            "dwc:kingdom": "Animalia",
+            "dwc:recordedBy": "H. Kritzler, D. Savelle & D. Garlick",
+            "dwc:fieldNumber": "MMS-MAFLA/Jar 088:2105",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe",
+            "id": "http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:verbatimLatitude": "26 24.98 N",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta",
+            "dwc:decimalLatitude": "26.4164",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "2105",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:phylum": "Annelida",
+            "dwc:locality": "off Charlotte Harbor",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Polychaeta",
+            "dwc:catalogNumber": "1439938",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-83.8331",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "149",
+            "dwc:verbatimLongitude": "83 49.98 W",
+            "dwc:day": "29",
+            "dwc:year": "1975"
+          },
+          "class": "polychaeta",
+          "occurrenceid": "http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "geopoint": {
+            "lat": 26.4164,
+            "lon": -83.8331
+          },
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-mafla/jar 088:2105",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe"
+          ],
+          "indexData": {
+            "dwc:startDayOfYear": "149",
+            "dwc:kingdom": "Animalia",
+            "dwc:recordedBy": "H. Kritzler, D. Savelle & D. Garlick",
+            "idigbio:uuid": "4a9b9e8c-efbc-4b80-8a7e-bebd36546c77",
+            "dwc:fieldNumber": "MMS-MAFLA/Jar 088:2105",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe",
+            "id": "http://n2t.net/ark:/65665/3b902bdd3-6bf8-4a85-ad30-4baffaede1fe",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "idigbio:etag": "9cf2fd76b7da5be8b0de785c9cef620c8b03d2ae",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:verbatimLatitude": "26 24.98 N",
+            "dwc:class": "Polychaeta",
+            "dwc:decimalLatitude": "26.4164",
+            "dwc:locationID": "2105",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Annelida",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Charlotte Harbor",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta",
+            "dwc:catalogNumber": "1439938",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-83.8331",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "149",
+            "idigbio:isocountrycode": "usa",
+            "dwc:verbatimLongitude": "83 49.98 W",
+            "dwc:day": "29",
+            "dwc:year": "1975"
+          },
+          "h3-p13": "636205797914364287",
+          "h3-p14": "640709397541734775",
+          "h3-p15": "645212997169105269",
+          "h3-p10": "622694999031644159",
+          "h3-p1": "582165018628325375",
+          "h3-p11": "627198598659624959",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631702198286993919",
+          "h3-p3": "591169812701380607",
+          "h3-p2": "586666419232440319",
+          "h3-p5": "600177001218703359",
+          "h3-p4": "595673386558947327",
+          "h3-p7": "609184200154677247",
+          "h3-p6": "604680600577638399",
+          "h3-p9": "618191399404961791",
+          "h3-p8": "613687799777853439"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "022b43fe-1be9-4878-9ae3-6104c6337635",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 5,
+          "geopoint": {
+            "lat": 29.3334,
+            "lon": -84.7339
+          },
+          "family": "polynoidae",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.3188405797101449,
+          "stateprovince": "florida",
+          "phylum": "annelida",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "1133487",
+          "startdayofyear": 225,
+          "continent": "north america",
+          "uuid": "022b43fe-1be9-4878-9ae3-6104c6337635",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1977-08-13",
+          "etag": "10834c233992776c1a867f235b30dc227b31cbfb",
+          "mindepth": 30,
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, annelida, polychaeta, errantia, phyllodocida, aphroditiformia, polynoidae",
+          "indexData": {
+            "dwc:startDayOfYear": "225",
+            "dwc:kingdom": "Animalia",
+            "idigbio:uuid": "022b43fe-1be9-4878-9ae3-6104c6337635",
+            "dwc:fieldNumber": "MMS-MAFLA/DMI:2423",
+            "dwc:order": "Phyllodocida",
+            "dwc:individualCount": "5",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c",
+            "id": "http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "30",
+            "idigbio:etag": "10834c233992776c1a867f235b30dc227b31cbfb",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Polychaeta",
+            "dwc:decimalLatitude": "29.3334",
+            "dwc:locationID": "2423",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Annelida",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Apalachee Bay",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Errantia, Phyllodocida, Aphroditiformia, Polynoidae",
+            "dwc:catalogNumber": "1133487",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-84.7339",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "252",
+            "dwc:minimumDepthInMeters": "30",
+            "dwc:family": "Polynoidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "idigbio:isocountrycode": "usa",
+            "dwc:day": "13",
+            "dwc:year": "1977"
+          },
+          "data": {
+            "dwc:startDayOfYear": "225",
+            "dwc:kingdom": "Animalia",
+            "dwc:fieldNumber": "MMS-MAFLA/DMI:2423",
+            "dwc:order": "Phyllodocida",
+            "dwc:individualCount": "5",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c",
+            "id": "http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "30",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Errantia, Phyllodocida, Aphroditiformia, Polynoidae",
+            "dwc:decimalLatitude": "29.3334",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "2423",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:phylum": "Annelida",
+            "dwc:locality": "off Apalachee Bay",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Polychaeta",
+            "dwc:catalogNumber": "1133487",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-84.7339",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "252",
+            "dwc:minimumDepthInMeters": "30",
+            "dwc:family": "Polynoidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "dwc:day": "13",
+            "dwc:year": "1977"
+          },
+          "class": "polychaeta",
+          "occurrenceid": "http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "locality": "off apalachee bay",
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-mafla/dmi:2423",
+          "maxdepth": 30,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/313079bd7-b63b-42b7-8f2e-2fecf494ed2c"
+          ],
+          "order": "phyllodocida",
+          "h3-p13": "636219506069230719",
+          "h3-p14": "640723105696601207",
+          "h3-p15": "645226705323971700",
+          "h3-p10": "622708707187130367",
+          "h3-p1": "582165018628325375",
+          "h3-p11": "627212306814492671",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631715906441860607",
+          "h3-p3": "591183556596727807",
+          "h3-p2": "586680163127787519",
+          "h3-p5": "600190709680570367",
+          "h3-p4": "595687113274425343",
+          "h3-p7": "609197908314554367",
+          "h3-p6": "604694308771069951",
+          "h3-p9": "618205107559858175",
+          "h3-p8": "613701507933536255"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "5d2c3e57-b91a-4460-bf70-cd7afa485ae7",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 1,
+          "recordset": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "florida",
+          "catalognumber": "sd581440000",
+          "startdayofyear": 125,
+          "collector": "j. humphrey",
+          "continent": "north america",
+          "uuid": "5d2c3e57-b91a-4460-bf70-cd7afa485ae7",
+          "countrycode": "usa",
+          "basisofrecord": "fossilspecimen",
+          "institutioncode": "usnm",
+          "datecollected": "1999-05-05",
+          "etag": "d0a8e731f344663e89010e129d31b139ec99c906",
+          "hasMedia": false,
+          "hasImage": false,
+          "locality": "approaches to jacksonville",
+          "data": {
+            "dwc:startDayOfYear": "125",
+            "dwc:recordedBy": "J. Humphrey",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e",
+            "id": "http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Paleobiology",
+            "dwc:decimalLatitude": "30.485",
+            "dwc:locationID": "45192",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:locality": "Approaches To Jacksonville",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:catalogNumber": "SD581440000",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-81.2017",
+            "dwc:datasetName": "NMNH Paleobiology",
+            "dwc:endDayOfYear": "125",
+            "dwc:verbatimEventDate": "05 MAY 1999",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:day": "5",
+            "dwc:year": "1999"
+          },
+          "datemodified": "2018-04-12T14:39:01.314271+00:00",
+          "occurrenceid": "http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.485,
+            "lon": -81.2017
+          },
+          "collectioncode": "paleobiology",
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "verbatimeventdate": "05 may 1999",
+          "recordids": [
+            "6c6f34ed-58a4-4ba2-b9c7-34524f79a349\\http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e"
+          ],
+          "indexData": {
+            "dwc:startDayOfYear": "125",
+            "dwc:recordedBy": "J. Humphrey",
+            "idigbio:uuid": "5d2c3e57-b91a-4460-bf70-cd7afa485ae7",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "6c6f34ed-58a4-4ba2-b9c7-34524f79a349\\http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e",
+            "id": "http://n2t.net/ark:/65665/3fec73f38-1247-48c9-8f6c-d1930f0d3c5e",
+            "idigbio:parent": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "idigbio:etag": "d0a8e731f344663e89010e129d31b139ec99c906",
+            "dwc:collectionCode": "Paleobiology",
+            "dwc:decimalLatitude": "30.485",
+            "dwc:locationID": "45192",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:continent": "north america",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2018-04-12T14:39:01.314271",
+            "dwc:locality": "Approaches To Jacksonville",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:catalogNumber": "SD581440000",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-81.2017",
+            "dwc:datasetName": "NMNH Paleobiology",
+            "dwc:endDayOfYear": "125",
+            "dwc:verbatimEventDate": "05 MAY 1999",
+            "idigbio:isocountrycode": "usa",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:day": "5",
+            "dwc:year": "1999"
+          },
+          "h3-p13": "636220493890939455",
+          "h3-p14": "640724093518309935",
+          "h3-p15": "645227693145680425",
+          "h3-p10": "622709695008833535",
+          "h3-p1": "582178212767858687",
+          "h3-p11": "627213294636199935",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631716894263569407",
+          "h3-p3": "591184518669402111",
+          "h3-p2": "586681262639415295",
+          "h3-p5": "600191697523048447",
+          "h3-p4": "595688101116903423",
+          "h3-p7": "609198896140255231",
+          "h3-p6": "604695296613548031",
+          "h3-p9": "618206095381626879",
+          "h3-p8": "613702495755042815"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "098c961d-e8f5-4ad6-9d08-6fdeeb2e5d0b",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 1,
+          "geopoint": {
+            "lat": 26.4167,
+            "lon": -82.2525
+          },
+          "family": "hesionidae",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.3188405797101449,
+          "stateprovince": "florida",
+          "phylum": "annelida",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "1226218",
+          "startdayofyear": 175,
+          "continent": "north america",
+          "uuid": "098c961d-e8f5-4ad6-9d08-6fdeeb2e5d0b",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1976-06-23",
+          "etag": "56c20ad369a12b266cc0b53e753de13714ee6539",
+          "mindepth": 10,
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, annelida, polychaeta, errantia, phyllodocida, nereidiformia, hesionidae",
+          "indexData": {
+            "dwc:startDayOfYear": "175",
+            "dwc:kingdom": "Animalia",
+            "idigbio:uuid": "098c961d-e8f5-4ad6-9d08-6fdeeb2e5d0b",
+            "dwc:fieldNumber": "MMS-MAFLA/39:2101",
+            "dwc:order": "Phyllodocida",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380",
+            "id": "http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "10",
+            "idigbio:etag": "56c20ad369a12b266cc0b53e753de13714ee6539",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Polychaeta",
+            "dwc:decimalLatitude": "26.4167",
+            "dwc:locationID": "2101",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Annelida",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Charlotte Harbor",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Errantia, Phyllodocida, Nereidiformia, Hesionidae",
+            "dwc:catalogNumber": "1226218",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-82.2525",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "191",
+            "dwc:minimumDepthInMeters": "10",
+            "dwc:family": "Hesionidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "idigbio:isocountrycode": "usa",
+            "dwc:day": "23",
+            "dwc:year": "1976"
+          },
+          "data": {
+            "dwc:startDayOfYear": "175",
+            "dwc:kingdom": "Animalia",
+            "dwc:fieldNumber": "MMS-MAFLA/39:2101",
+            "dwc:order": "Phyllodocida",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380",
+            "id": "http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "10",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Errantia, Phyllodocida, Nereidiformia, Hesionidae",
+            "dwc:decimalLatitude": "26.4167",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "2101",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:phylum": "Annelida",
+            "dwc:locality": "off Charlotte Harbor",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Polychaeta",
+            "dwc:catalogNumber": "1226218",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-82.2525",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "191",
+            "dwc:minimumDepthInMeters": "10",
+            "dwc:family": "Hesionidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "dwc:day": "23",
+            "dwc:year": "1976"
+          },
+          "class": "polychaeta",
+          "occurrenceid": "http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "locality": "off charlotte harbor",
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-mafla/39:2101",
+          "maxdepth": 10,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3fadfb7f9-071d-4528-ad17-fc1a3c74b380"
+          ],
+          "order": "phyllodocida",
+          "h3-p13": "636205165039761279",
+          "h3-p14": "640708764667131719",
+          "h3-p15": "645212364294502210",
+          "h3-p10": "622694366157668351",
+          "h3-p1": "582165018628325375",
+          "h3-p11": "627197965785022463",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631701565412390911",
+          "h3-p3": "591169194226089983",
+          "h3-p2": "586665869476626431",
+          "h3-p5": "600176370932252671",
+          "h3-p4": "595672776673591295",
+          "h3-p7": "609183567284535295",
+          "h3-p6": "604679967741050879",
+          "h3-p9": "618190766530363391",
+          "h3-p8": "613687166903517183"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "67234f57-fdaa-4117-a8a9-dba8ebb7ab9f",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 3,
+          "mindepth": 20,
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.3188405797101449,
+          "stateprovince": "florida",
+          "phylum": "arthropoda",
+          "waterbody": "north atlantic ocean",
+          "catalognumber": "293695",
+          "startdayofyear": 141,
+          "collector": "texas instruments for blm / mms",
+          "continent": "north america",
+          "uuid": "67234f57-fdaa-4117-a8a9-dba8ebb7ab9f",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1977-05-21",
+          "etag": "2f801c40e34e14db7867294fdb528b84f6f3ae7e",
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, arthropoda, crustacea, maxillopoda, copepoda, siphonostomatoida",
+          "locality": "off florida",
+          "data": {
+            "dwc:startDayOfYear": "141",
+            "dwc:kingdom": "Animalia",
+            "dwc:recordedBy": "Texas Instruments For BLM / MMS",
+            "dwc:fieldNumber": "MMS-SABP/0552-4",
+            "dwc:order": "Siphonostomatoida",
+            "dwc:individualCount": "3",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd",
+            "id": "http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "20",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Arthropoda, Crustacea, Maxillopoda, Copepoda, Siphonostomatoida",
+            "dwc:decimalLatitude": "29.4664",
+            "dwc:waterBody": "North Atlantic Ocean",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "7B",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:identifiedBy": "Walter, T. Chad, (IZ), Smithsonian Institution - National Museum of Natural History (UNITED STATES)",
+            "dwc:phylum": "Arthropoda",
+            "dwc:locality": "off Florida",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Maxillopoda",
+            "dwc:catalogNumber": "293695",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.9525",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "141",
+            "dwc:minimumDepthInMeters": "20",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:georeferenceProtocol": "unknown, from legacy",
+            "dwc:day": "21",
+            "dwc:year": "1977"
+          },
+          "class": "maxillopoda",
+          "occurrenceid": "http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.4664,
+            "lon": -80.9525
+          },
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-sabp/0552-4",
+          "maxdepth": 20,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd"
+          ],
+          "order": "siphonostomatoida",
+          "indexData": {
+            "dwc:startDayOfYear": "141",
+            "dwc:kingdom": "Animalia",
+            "dwc:recordedBy": "Texas Instruments For BLM / MMS",
+            "idigbio:uuid": "67234f57-fdaa-4117-a8a9-dba8ebb7ab9f",
+            "dwc:fieldNumber": "MMS-SABP/0552-4",
+            "dwc:order": "Siphonostomatoida",
+            "dwc:individualCount": "3",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd",
+            "id": "http://n2t.net/ark:/65665/30460c29b-ba6d-4d0d-bf48-0e15d09c70dd",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "20",
+            "idigbio:etag": "2f801c40e34e14db7867294fdb528b84f6f3ae7e",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Maxillopoda",
+            "dwc:decimalLatitude": "29.4664",
+            "dwc:locationID": "7B",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "dwc:identifiedBy": "Walter, T. Chad, (IZ), Smithsonian Institution - National Museum of Natural History (UNITED STATES)",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Arthropoda",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Florida",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Arthropoda, Crustacea, Maxillopoda, Copepoda, Siphonostomatoida",
+            "dwc:catalogNumber": "293695",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, United States, Florida",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.9525",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "141",
+            "dwc:minimumDepthInMeters": "20",
+            "idigbio:isocountrycode": "usa",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:georeferenceProtocol": "unknown, from legacy",
+            "dwc:day": "21",
+            "dwc:year": "1977"
+          },
+          "h3-p13": "636220727736197887",
+          "h3-p14": "640724327363568359",
+          "h3-p15": "645227926990938853",
+          "h3-p10": "622709928854093823",
+          "h3-p1": "582173814721347583",
+          "h3-p11": "627213528481460223",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631717128108827647",
+          "h3-p3": "591184793547309055",
+          "h3-p2": "586681262639415295",
+          "h3-p5": "600191931598766079",
+          "h3-p4": "595688333045137407",
+          "h3-p7": "609199129981091839",
+          "h3-p6": "604695530420830207",
+          "h3-p9": "618206329226919935",
+          "h3-p8": "613702729600073727"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "c0d77247-7baf-4b3c-aa30-a66b57e4425d",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 1,
+          "recordset": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "florida",
+          "catalognumber": "sd194030000",
+          "startdayofyear": 96,
+          "collector": "g. lloyd",
+          "continent": "north america",
+          "uuid": "c0d77247-7baf-4b3c-aa30-a66b57e4425d",
+          "countrycode": "usa",
+          "basisofrecord": "fossilspecimen",
+          "institutioncode": "usnm",
+          "datecollected": "1978-04-06",
+          "etag": "fb6407d9d7431a5b515ae856f6b587e9aaa9827f",
+          "hasMedia": false,
+          "hasImage": false,
+          "locality": "cape san blas",
+          "data": {
+            "dwc:startDayOfYear": "96",
+            "dwc:recordedBy": "G. Lloyd",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2",
+            "id": "http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Paleobiology",
+            "dwc:decimalLatitude": "29.8575",
+            "dwc:locationID": "9042",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:locality": "Cape San Blas",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:catalogNumber": "SD194030000",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "United States, Florida",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-85.5403",
+            "dwc:datasetName": "NMNH Paleobiology",
+            "dwc:endDayOfYear": "96",
+            "dwc:verbatimEventDate": "06 APR 1978",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:day": "6",
+            "dwc:year": "1978"
+          },
+          "datemodified": "2018-04-12T14:39:01.314271+00:00",
+          "occurrenceid": "http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.8575,
+            "lon": -85.5403
+          },
+          "collectioncode": "paleobiology",
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "verbatimeventdate": "06 apr 1978",
+          "recordids": [
+            "6c6f34ed-58a4-4ba2-b9c7-34524f79a349\\http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2"
+          ],
+          "indexData": {
+            "dwc:startDayOfYear": "96",
+            "dwc:recordedBy": "G. Lloyd",
+            "idigbio:uuid": "c0d77247-7baf-4b3c-aa30-a66b57e4425d",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "6c6f34ed-58a4-4ba2-b9c7-34524f79a349\\http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2",
+            "id": "http://n2t.net/ark:/65665/3ee1e80b2-abe1-48ae-b0bb-9453189107a2",
+            "idigbio:parent": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "idigbio:etag": "fb6407d9d7431a5b515ae856f6b587e9aaa9827f",
+            "dwc:collectionCode": "Paleobiology",
+            "dwc:decimalLatitude": "29.8575",
+            "dwc:locationID": "9042",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:continent": "north america",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2018-04-12T14:39:01.314271",
+            "dwc:locality": "Cape San Blas",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:catalogNumber": "SD194030000",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "United States, Florida",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-85.5403",
+            "dwc:datasetName": "NMNH Paleobiology",
+            "dwc:endDayOfYear": "96",
+            "dwc:verbatimEventDate": "06 APR 1978",
+            "idigbio:isocountrycode": "usa",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:day": "6",
+            "dwc:year": "1978"
+          },
+          "h3-p13": "636219498565099967",
+          "h3-p14": "640723098192470423",
+          "h3-p15": "645226697819840926",
+          "h3-p10": "622708699682996223",
+          "h3-p1": "582178212767858687",
+          "h3-p11": "627212299310362623",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631715898937729535",
+          "h3-p3": "591183556596727807",
+          "h3-p2": "586680163127787519",
+          "h3-p5": "600190697869410303",
+          "h3-p4": "595687104684490751",
+          "h3-p7": "609197900815138815",
+          "h3-p6": "604694301254877183",
+          "h3-p9": "618205100055724031",
+          "h3-p8": "613701500429926399"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "b3c509ad-0be5-481e-827d-ee6b998ed4e2",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 5,
+          "geopoint": {
+            "lat": 27.58,
+            "lon": -82.75
+          },
+          "family": "veneridae",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "phylum": "mollusca",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "822475",
+          "continent": "north america",
+          "uuid": "b3c509ad-0be5-481e-827d-ee6b998ed4e2",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "etag": "51987ac86b8b40fa4d12e97e49db2906b2664606",
+          "mindepth": 34,
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, mollusca, bivalvia, veneridae",
+          "indexData": {
+            "dwc:kingdom": "Animalia",
+            "idigbio:uuid": "b3c509ad-0be5-481e-827d-ee6b998ed4e2",
+            "dwc:individualCount": "5",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b",
+            "id": "http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "34",
+            "idigbio:etag": "51987ac86b8b40fa4d12e97e49db2906b2664606",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Bivalvia",
+            "dwc:decimalLatitude": "27.58",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Dry",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Mollusca",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "Egmont Key, West",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Mollusca, Bivalvia, Veneridae",
+            "dwc:catalogNumber": "822475",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:decimalLongitude": "-82.75",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:minimumDepthInMeters": "34",
+            "dwc:family": "Veneridae",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:georeferenceProtocol": "unknown, from legacy",
+            "idigbio:isocountrycode": "usa"
+          },
+          "data": {
+            "dwc:kingdom": "Animalia",
+            "dwc:individualCount": "5",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b",
+            "id": "http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "34",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Mollusca, Bivalvia, Veneridae",
+            "dwc:decimalLatitude": "27.58",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:preparations": "Dry",
+            "dwc:phylum": "Mollusca",
+            "dwc:locality": "Egmont Key, West",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Bivalvia",
+            "dwc:catalogNumber": "822475",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:decimalLongitude": "-82.75",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:minimumDepthInMeters": "34",
+            "dwc:family": "Veneridae",
+            "dwc:verbatimCoordinateSystem": "Degrees Minutes Seconds",
+            "dwc:georeferenceProtocol": "unknown, from legacy"
+          },
+          "class": "bivalvia",
+          "occurrenceid": "http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "locality": "egmont key, west",
+          "collectioncode": "invertebrate zoology",
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "geopoint_low_precision",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "maxdepth": 34,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/3f9e28f70-8bdc-4f87-9231-4c0cb28e191b"
+          ],
+          "h3-p13": "636205888680563263",
+          "h3-p14": "640709488307934039",
+          "h3-p15": "645213087935304530",
+          "h3-p10": "622695089798479871",
+          "h3-p1": "582165018628325375",
+          "h3-p11": "627198689425825791",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631702289053193215",
+          "h3-p3": "591169950140334079",
+          "h3-p2": "586666419232440319",
+          "h3-p5": "600177092486758399",
+          "h3-p4": "595673498228097023",
+          "h3-p7": "609184290919415807",
+          "h3-p6": "604680691174604799",
+          "h3-p9": "618191490171273215",
+          "h3-p8": "613687890544689151"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.19",
+        "_type": "records",
+        "_id": "1cf81aa4-2c46-4f39-a9b8-01d840e088b1",
+        "_score": 3.420383,
+        "_source": {
+          "individualcount": 2,
+          "geopoint": {
+            "lat": 29.9163,
+            "lon": -86.0829
+          },
+          "family": "maldanidae",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.30434782608695654,
+          "stateprovince": "florida",
+          "phylum": "annelida",
+          "waterbody": "north atlantic ocean, gulf of mexico",
+          "catalognumber": "1228499",
+          "startdayofyear": 294,
+          "continent": "north america",
+          "uuid": "1cf81aa4-2c46-4f39-a9b8-01d840e088b1",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "usnm",
+          "datemodified": "2018-04-12T14:40:34.943694+00:00",
+          "datecollected": "1977-10-21",
+          "etag": "29e7d387ae8ae1c71f9c2c7c195a910113b96a0d",
+          "mindepth": 39,
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia, annelida, polychaeta, sedentaria, scolecida, maldanidae",
+          "indexData": {
+            "dwc:startDayOfYear": "294",
+            "dwc:kingdom": "Animalia",
+            "idigbio:uuid": "1cf81aa4-2c46-4f39-a9b8-01d840e088b1",
+            "dwc:fieldNumber": "MMS-MAFLA/DMII:2528",
+            "dwc:individualCount": "2",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8"
+            ],
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8",
+            "id": "http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "39",
+            "idigbio:etag": "29e7d387ae8ae1c71f9c2c7c195a910113b96a0d",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:class": "Polychaeta",
+            "dwc:decimalLatitude": "29.9163",
+            "dwc:locationID": "2528",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Annelida",
+            "idigbio:dateModified": "2018-04-12T14:40:34.943694",
+            "dwc:locality": "off Panama City",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Sedentaria, Scolecida, Maldanidae",
+            "dwc:catalogNumber": "1228499",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-86.0829",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "322",
+            "dwc:minimumDepthInMeters": "39",
+            "dwc:family": "Maldanidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "idigbio:isocountrycode": "usa",
+            "dwc:day": "21",
+            "dwc:year": "1977"
+          },
+          "data": {
+            "dwc:startDayOfYear": "294",
+            "dwc:kingdom": "Animalia",
+            "dwc:fieldNumber": "MMS-MAFLA/DMII:2528",
+            "dwc:individualCount": "2",
+            "dwc:occurrenceID": "http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8",
+            "id": "http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8",
+            "dwc:stateProvince": "Florida",
+            "dwc:country": "United States",
+            "dwc:maximumDepthInMeters": "39",
+            "dwc:collectionCode": "Invertebrate Zoology",
+            "dwc:higherClassification": "Animalia, Annelida, Polychaeta, Sedentaria, Scolecida, Maldanidae",
+            "dwc:decimalLatitude": "29.9163",
+            "dwc:waterBody": "North Atlantic Ocean, Gulf of Mexico",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:locationID": "2528",
+            "dwc:preparations": "Alcohol (Ethanol)",
+            "dwc:phylum": "Annelida",
+            "dwc:locality": "off Panama City",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+            "dwc:institutionCode": "USNM",
+            "dwc:class": "Polychaeta",
+            "dwc:catalogNumber": "1228499",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North Atlantic Ocean, Gulf of Mexico, United States, Florida",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-86.0829",
+            "dwc:datasetName": "NMNH Extant Biology",
+            "dwc:endDayOfYear": "322",
+            "dwc:minimumDepthInMeters": "39",
+            "dwc:family": "Maldanidae",
+            "dwc:verbatimCoordinateSystem": "Decimal degrees",
+            "dwc:day": "21",
+            "dwc:year": "1977"
+          },
+          "class": "polychaeta",
+          "occurrenceid": "http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:34871",
+          "country": "united states",
+          "locality": "off panama city",
+          "collectioncode": "invertebrate zoology",
+          "fieldnumber": "mms-mafla/dmii:2528",
+          "maxdepth": 39,
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\http://n2t.net/ark:/65665/324587889-a251-4926-ae78-010adc3e7ba8"
+          ],
+          "h3-p13": "636219589653806207",
+          "h3-p14": "640723189281176647",
+          "h3-p15": "645226788908547137",
+          "h3-p10": "622708790771711999",
+          "h3-p1": "582178212767858687",
+          "h3-p11": "627212390399066111",
+          "h3-p0": "577692205326532607",
+          "h3-p12": "631715990026436095",
+          "h3-p3": "591183625316204543",
+          "h3-p2": "586680163127787519",
+          "h3-p5": "600190793432432639",
+          "h3-p4": "595687216353640447",
+          "h3-p7": "609197991898644479",
+          "h3-p6": "604694392388714495",
+          "h3-p9": "618205191144472575",
+          "h3-p8": "613701591517626367"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "min_lon": {
+      "value": null
+    },
+    "max_lat": {
+      "value": null
+    },
+    "gh": {
+      "buckets": [
+        {
+          "key": "djq",
+          "doc_count": 4235
+        },
+        {
+          "key": "dj6",
+          "doc_count": 4229
+        },
+        {
+          "key": "djn",
+          "doc_count": 2469
+        },
+        {
+          "key": "dj5",
+          "doc_count": 2029
+        },
+        {
+          "key": "dhs",
+          "doc_count": 1717
+        },
+        {
+          "key": "dht",
+          "doc_count": 1598
+        },
+        {
+          "key": "dj7",
+          "doc_count": 1548
+        },
+        {
+          "key": "dhu",
+          "doc_count": 1539
+        },
+        {
+          "key": "djk",
+          "doc_count": 1498
+        },
+        {
+          "key": "dhz",
+          "doc_count": 1453
+        },
+        {
+          "key": "dj4",
+          "doc_count": 1450
+        },
+        {
+          "key": "dhv",
+          "doc_count": 1344
+        },
+        {
+          "key": "dhy",
+          "doc_count": 1266
+        },
+        {
+          "key": "djh",
+          "doc_count": 1092
+        },
+        {
+          "key": "djj",
+          "doc_count": 944
+        },
+        {
+          "key": "dhq",
+          "doc_count": 937
+        },
+        {
+          "key": "dj3",
+          "doc_count": 856
+        },
+        {
+          "key": "dhm",
+          "doc_count": 582
+        },
+        {
+          "key": "dhw",
+          "doc_count": 526
+        },
+        {
+          "key": "djm",
+          "doc_count": 455
+        },
+        {
+          "key": "dhx",
+          "doc_count": 407
+        },
+        {
+          "key": "dhf",
+          "doc_count": 395
+        },
+        {
+          "key": "dhk",
+          "doc_count": 224
+        },
+        {
+          "key": "djr",
+          "doc_count": 217
+        },
+        {
+          "key": "dhg",
+          "doc_count": 158
+        },
+        {
+          "key": "f07",
+          "doc_count": 139
+        },
+        {
+          "key": "djp",
+          "doc_count": 126
+        },
+        {
+          "key": "dhe",
+          "doc_count": 67
+        },
+        {
+          "key": "dhr",
+          "doc_count": 46
+        },
+        {
+          "key": "6sf",
+          "doc_count": 45
+        },
+        {
+          "key": "dqd",
+          "doc_count": 39
+        },
+        {
+          "key": "c40",
+          "doc_count": 39
+        },
+        {
+          "key": "c41",
+          "doc_count": 36
+        },
+        {
+          "key": "djw",
+          "doc_count": 27
+        },
+        {
+          "key": "djx",
+          "doc_count": 26
+        },
+        {
+          "key": "dh7",
+          "doc_count": 21
+        },
+        {
+          "key": "dmd",
+          "doc_count": 10
+        },
+        {
+          "key": "dj1",
+          "doc_count": 10
+        },
+        {
+          "key": "dhp",
+          "doc_count": 6
+        },
+        {
+          "key": "9uv",
+          "doc_count": 6
+        },
+        {
+          "key": "dm2",
+          "doc_count": 5
+        },
+        {
+          "key": "dm0",
+          "doc_count": 5
+        },
+        {
+          "key": "dj2",
+          "doc_count": 5
+        },
+        {
+          "key": "dm5",
+          "doc_count": 4
+        },
+        {
+          "key": "dm1",
+          "doc_count": 4
+        },
+        {
+          "key": "djd",
+          "doc_count": 4
+        },
+        {
+          "key": "d5z",
+          "doc_count": 4
+        },
+        {
+          "key": "dkf",
+          "doc_count": 3
+        },
+        {
+          "key": "dj9",
+          "doc_count": 3
+        },
+        {
+          "key": "dhd",
+          "doc_count": 3
+        },
+        {
+          "key": "d4v",
+          "doc_count": 3
+        },
+        {
+          "key": "f0k",
+          "doc_count": 2
+        },
+        {
+          "key": "dtq",
+          "doc_count": 2
+        },
+        {
+          "key": "dqc",
+          "doc_count": 2
+        },
+        {
+          "key": "dkb",
+          "doc_count": 2
+        },
+        {
+          "key": "dh5",
+          "doc_count": 2
+        },
+        {
+          "key": "eug",
+          "doc_count": 1
+        },
+        {
+          "key": "eud",
+          "doc_count": 1
+        },
+        {
+          "key": "eu6",
+          "doc_count": 1
+        },
+        {
+          "key": "eu3",
+          "doc_count": 1
+        },
+        {
+          "key": "eku",
+          "doc_count": 1
+        },
+        {
+          "key": "ejm",
+          "doc_count": 1
+        },
+        {
+          "key": "dv2",
+          "doc_count": 1
+        },
+        {
+          "key": "dtc",
+          "doc_count": 1
+        },
+        {
+          "key": "dpn",
+          "doc_count": 1
+        },
+        {
+          "key": "dp5",
+          "doc_count": 1
+        },
+        {
+          "key": "dp4",
+          "doc_count": 1
+        },
+        {
+          "key": "dnw",
+          "doc_count": 1
+        },
+        {
+          "key": "dnu",
+          "doc_count": 1
+        },
+        {
+          "key": "dn7",
+          "doc_count": 1
+        },
+        {
+          "key": "dmn",
+          "doc_count": 1
+        },
+        {
+          "key": "dmm",
+          "doc_count": 1
+        },
+        {
+          "key": "dmk",
+          "doc_count": 1
+        },
+        {
+          "key": "dm8",
+          "doc_count": 1
+        },
+        {
+          "key": "dje",
+          "doc_count": 1
+        },
+        {
+          "key": "dj0",
+          "doc_count": 1
+        },
+        {
+          "key": "dhn",
+          "doc_count": 1
+        },
+        {
+          "key": "dhj",
+          "doc_count": 1
+        },
+        {
+          "key": "dhb",
+          "doc_count": 1
+        },
+        {
+          "key": "dh9",
+          "doc_count": 1
+        },
+        {
+          "key": "d5y",
+          "doc_count": 1
+        },
+        {
+          "key": "d5x",
+          "doc_count": 1
+        },
+        {
+          "key": "9gw",
+          "doc_count": 1
+        }
+      ]
+    },
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 21999
+        },
+        {
+          "key": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+          "doc_count": 7042
+        },
+        {
+          "key": "32d433aa-9e2b-4ff9-bc55-5c3e30112207",
+          "doc_count": 1494
+        },
+        {
+          "key": "9ff03c57-ba5a-4127-9439-4bf3e838c4df",
+          "doc_count": 739
+        },
+        {
+          "key": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "doc_count": 659
+        },
+        {
+          "key": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+          "doc_count": 460
+        },
+        {
+          "key": "c38b867b-05f3-4733-802e-d8d2d3324f84",
+          "doc_count": 383
+        },
+        {
+          "key": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "doc_count": 207
+        },
+        {
+          "key": "5e893602-84ca-4c8c-bac1-99111c777582",
+          "doc_count": 186
+        },
+        {
+          "key": "cb65cf5e-07b8-4d53-a91a-7dce9b8ccf80",
+          "doc_count": 179
+        },
+        {
+          "key": "387ae47b-8641-4e3c-ae66-d1e20d93cf32",
+          "doc_count": 136
+        },
+        {
+          "key": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "doc_count": 48
+        },
+        {
+          "key": "7b0809fb-fd62-4733-8f40-74ceb04cbcac",
+          "doc_count": 45
+        },
+        {
+          "key": "774a153b-e556-47f6-95d1-bab49e61cc58",
+          "doc_count": 27
+        },
+        {
+          "key": "d315c4a3-0bee-49d1-8d03-726358937cde",
+          "doc_count": 22
+        },
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 22
+        },
+        {
+          "key": "a68df423-aae9-4f4b-8a42-a36124627a53",
+          "doc_count": 20
+        },
+        {
+          "key": "b3b89632-0a22-4532-a05b-6830d07542f7",
+          "doc_count": 20
+        },
+        {
+          "key": "3056112e-97c6-4d0d-b6c2-3c0a9adaca24",
+          "doc_count": 19
+        },
+        {
+          "key": "5975bbda-cd92-4084-8a09-ce1e28e6164f",
+          "doc_count": 19
+        },
+        {
+          "key": "f9a33279-d6ba-41c7-a511-ef6adfcb6e20",
+          "doc_count": 19
+        },
+        {
+          "key": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
+          "doc_count": 16
+        },
+        {
+          "key": "b293a647-5fb8-4b82-bf5b-571e7d6fad03",
+          "doc_count": 15
+        },
+        {
+          "key": "667c2736-bcd3-4a6a-abf4-db5d2dc815c4",
+          "doc_count": 12
+        },
+        {
+          "key": "bd61c458-b865-4b05-9f1f-735c49066e55",
+          "doc_count": 10
+        },
+        {
+          "key": "bd7cfd55-bf55-46fc-878d-e6e11f574ccd",
+          "doc_count": 10
+        },
+        {
+          "key": "e5b0c46a-5eb6-4b94-9d4c-fb1000f534b0",
+          "doc_count": 8
+        },
+        {
+          "key": "d90e8316-2649-475e-a8c0-80130dab1fd2",
+          "doc_count": 5
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 4
+        },
+        {
+          "key": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+          "doc_count": 4
+        },
+        {
+          "key": "ca4e7ee9-06f5-4f93-830c-507a6598ec25",
+          "doc_count": 4
+        },
+        {
+          "key": "de56670c-2032-4833-9a89-46f7d6a037c7",
+          "doc_count": 4
+        },
+        {
+          "key": "07c47dd3-a0a9-434a-b144-71c32996f278",
+          "doc_count": 3
+        },
+        {
+          "key": "1c8ec291-8067-4b48-848b-410c2c768420",
+          "doc_count": 3
+        },
+        {
+          "key": "4bec11d1-f8c3-43a7-9e70-ee0256fcedaf",
+          "doc_count": 3
+        },
+        {
+          "key": "879d475f-4b76-4d18-8cf6-a7e5a6d44926",
+          "doc_count": 3
+        },
+        {
+          "key": "d29b9265-07e6-4e73-8f72-fc42d3d83fb1",
+          "doc_count": 3
+        },
+        {
+          "key": "dde625e8-cc2a-4877-9ec4-0b8a20dfded9",
+          "doc_count": 3
+        },
+        {
+          "key": "e85a9948-9c9e-451d-9485-b2b4cb7b73d5",
+          "doc_count": 3
+        },
+        {
+          "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "doc_count": 3
+        },
+        {
+          "key": "1eca069b-09e0-406d-9625-cb9c52e1e5cc",
+          "doc_count": 2
+        },
+        {
+          "key": "205fa34c-2fcb-4492-b992-972b18560f6f",
+          "doc_count": 2
+        },
+        {
+          "key": "40987883-03cf-494a-a5cf-7c77c7aadb79",
+          "doc_count": 2
+        },
+        {
+          "key": "4f436daa-01d5-4be6-b5c3-fdd255677536",
+          "doc_count": 2
+        },
+        {
+          "key": "5ab348ab-439a-4697-925c-d6abe0c09b92",
+          "doc_count": 2
+        },
+        {
+          "key": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
+          "doc_count": 2
+        },
+        {
+          "key": "fccc3c1d-d9df-4ffd-b7e1-1b9eb11f95b1",
+          "doc_count": 2
+        },
+        {
+          "key": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
+          "doc_count": 1
+        },
+        {
+          "key": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
+          "doc_count": 1
+        },
+        {
+          "key": "2d853a6d-50ec-4931-8e91-48fc2491fdee",
+          "doc_count": 1
+        },
+        {
+          "key": "34cad268-8226-4280-b637-dde38c82a29e",
+          "doc_count": 1
+        },
+        {
+          "key": "5aef068f-efd3-4851-a623-f542e97350cd",
+          "doc_count": 1
+        },
+        {
+          "key": "6bb853ab-e8ea-43b1-bd83-47318fc4c345",
+          "doc_count": 1
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 1
+        },
+        {
+          "key": "9368e302-f8e7-4714-aed4-db2faa861e5c",
+          "doc_count": 1
+        },
+        {
+          "key": "9c1d51f2-067e-452b-a52b-ea7b03e50e25",
+          "doc_count": 1
+        },
+        {
+          "key": "9c5fea92-a28b-4b6e-94b5-9c939f7369a2",
+          "doc_count": 1
+        },
+        {
+          "key": "b3d38693-5f9b-484d-aca3-6cefcc5b08e0",
+          "doc_count": 1
+        },
+        {
+          "key": "d5b27393-7d3f-4b91-aebe-9066f9b1562d",
+          "doc_count": 1
+        },
+        {
+          "key": "d601bd5e-4f4c-4637-9196-4bd821dbd2e2",
+          "doc_count": 1
+        },
+        {
+          "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
+          "doc_count": 1
+        },
+        {
+          "key": "db6c3db9-1e6d-4def-af29-33aa0339bfa9",
+          "doc_count": 1
+        },
+        {
+          "key": "ec248223-f277-4c02-b1fa-60056b5a689a",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_lon": {
+      "value": null
+    },
+    "max_dm": {
+      "value": 1569197027171,
+      "value_as_string": "2019-09-23T00:03:47.171Z"
+    },
+    "min_lat": {
+      "value": null
+    }
+  }
+}
