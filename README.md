@@ -90,4 +90,30 @@ npm start
 On *Ubuntu 16.04* it may work with fewer steps (TBD), you will still need:
 `libjpeg-turbo8-dev libpng12-dev libgif-dev`.
 
-On *Ubuntu 18.04* ... TBD
+On *Ubuntu 18.04* 
+
+```
+# wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
+
+ nano /etc/apt/preferences.d/nodejs
+
+--- put this contents in there to ensure ubuntu uses the new repository---
+Package: nodejs
+Pin: origin deb.nodesource.com
+Pin-Priority: 1001
+----
+
+apt-get install -y wget build-essential python
+apt-get install -y nodejs
+npm install -g yarn
+
+docker pull redis:3.2.12-alpine
+docker run -d --name redis -p 6379:6379 redis:3.2.12-alpine
+
+[cd to directory with search-pi]
+[run the below as a normal user]
+
+npm install
+CLUSTER_WORKERS=1 LOGGER_LEVEL=debug NODE_ENV=development npm start
+```
+
