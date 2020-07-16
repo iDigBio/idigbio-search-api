@@ -22,7 +22,7 @@
     "koa-ctx-cache-control": "^1.0.0",
     "koa-proxy": "^0.8.0",
     "koa-router": "^7.0.1",
-    "lodash": "^4.17.1",
+    "lodash": "^4.17.19",
     "mapnik": "^3.7.1",
     "morgan": "^1.7.0",
     "ngeohash": "^0.6.0",
