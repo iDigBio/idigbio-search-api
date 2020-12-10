@@ -14,7 +14,7 @@ https://github.com/idigbio/idigbio-search-api/wiki
 
 ## Development
 
-[![Build Status](https://travis-ci.org/iDigBio/idigbio-search-api.svg?branch=master)](https://travis-ci.org/iDigBio/idigbio-search-api)
+[![Build Status](https://travis-ci.com/iDigBio/idigbio-search-api.svg?branch=master)](https://travis-ci.com/iDigBio/idigbio-search-api)
 
 
 The remainder of this document is for developers who are interested in
