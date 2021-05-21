@@ -59,7 +59,7 @@ var config = {
   redis: {
     host: {
       prod: "idb-redis10-prod.acis.ufl.edu",
-      beta: "idb-redis10-beta.acis.ufl.edu",
+      beta: "idb-redis11-beta.acis.ufl.edu",
     }[env] || "localhost",
     db: 0,
     port: 6379
