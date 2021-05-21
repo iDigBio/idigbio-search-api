@@ -44,8 +44,7 @@ var config = {
       "http://c20node8.acis.ufl.edu:9200",
       "http://c20node9.acis.ufl.edu:9200",
       "http://c20node10.acis.ufl.edu:9200",
-      "http://c20node11.acis.ufl.edu:9200",
-      "http://c20node12.acis.ufl.edu:9200"
+      "http://c20node11.acis.ufl.edu:9200"
     ],
     apiVersion: "2.4",
     sniffOnStart: false,
