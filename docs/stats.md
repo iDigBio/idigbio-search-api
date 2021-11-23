@@ -4,7 +4,7 @@ The search api sends interaction telemetry data back for reporting purposes.
 
 see `example-telemetry-stats-dto.json` for a minimal example of this structure.  You can also look in the `tests/mocks` folder for more examples.
 
-This action takes place [in searchShim.js](https://github.com/iDigBio/idigbio-search-api/blob/master/src/searchShim.js#L74).  There is a partial config for stats in HAproxy, but note that only the backend is declared and there's no frontend for routing it.  The host is hardcoded in this project code ([statsFromResponse.js](https://github.com/iDigBio/idigbio-search-api/blob/master/src/lib/statsFromResponse.js#L46)) and goes directly to the server running the [receiving api](https://github.com/iDigBio/telemetry-collector-api).
+This action takes place [in searchShim.js](https://github.com/iDigBio/idigbio-search-api/blob/master/src/searchShim.js#L74).  As of mid 2021 this is now backed by Haproxy. The host is still hardcoded in this project code ([statsFromResponse.js](https://github.com/iDigBio/idigbio-search-api/blob/master/src/lib/statsFromResponse.js#L46)) pending additional work and points to the haproxy frontend which will then send the traffic to the [receiving api](https://github.com/iDigBio/telemetry-collector-api).
 
 # telemetry and record/collection/etc stats (loading)
 
