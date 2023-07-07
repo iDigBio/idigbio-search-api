@@ -17,6 +17,8 @@ WORKDIR /var/www
 ADD package.json /var/www/package.json
 RUN npm install
 RUN yarn install; yarn cache clean
+RUN npm install body-parser@1.20.1
+RUN npm install koa@2.14.1
 ADD . /var/www
 RUN yarn build
 
