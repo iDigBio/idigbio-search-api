@@ -4,7 +4,7 @@
 # node6 we need the recent C++.
 #FROM node:6
 
-FROM ubuntu:xenial
+FROM ubuntu:focal
 RUN apt-get update; apt-get install -y wget build-essential python
 #RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
 RUN apt-get install -y nodejs npm
@@ -15,7 +15,7 @@ RUN mkdir -p /var/www; chown www-data:www-data /var/www
 USER www-data
 WORKDIR /var/www
 ADD package.json /var/www/package.json
-#RUN npm install
+RUN npm install
 RUN yarn install; yarn cache clean
 ADD . /var/www
 RUN yarn build
