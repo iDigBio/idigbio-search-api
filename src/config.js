@@ -28,24 +28,15 @@ var config = {
 
   port: 19196,
   search: {
-    server: "http://c18node2.acis.ufl.edu:9200",
+    server: "http://10.13.45.186:9200",
     index: process.env.SEARCH_INDEX || indexAlias,
     statsIndex: process.env.STATS_INDEX || "stats",
   },
   elasticsearch: {
     hosts: [
-      "http://c20node1.acis.ufl.edu:9200",
-      "http://c20node2.acis.ufl.edu:9200",
-      "http://c20node3.acis.ufl.edu:9200",
-      "http://c20node4.acis.ufl.edu:9200",
-      "http://c20node5.acis.ufl.edu:9200",
-      "http://c20node6.acis.ufl.edu:9200",
-      "http://c20node7.acis.ufl.edu:9200",
-      "http://c20node8.acis.ufl.edu:9200",
-      "http://c20node9.acis.ufl.edu:9200",
-      "http://c20node10.acis.ufl.edu:9200",
-      "http://c20node11.acis.ufl.edu:9200",
-      "http://c20node12.acis.ufl.edu:9200"
+      "http://10.13.45.186:9200",
+      "http://10.13.45.191:9200",
+      "http://10.13.45.192:9200"
     ],
     apiVersion: "2.4",
     sniffOnStart: false,
@@ -58,8 +49,8 @@ var config = {
   indexterms: {},
   redis: {
     host: {
-      prod: "idb-redis10-prod.acis.ufl.edu",
-      beta: "idb-redis10-beta.acis.ufl.edu",
+      prod: "10.13.45.208",
+      beta: "10.13.45.208",
     }[env] || "localhost",
     db: 0,
     port: 6379

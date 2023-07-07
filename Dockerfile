@@ -6,8 +6,10 @@
 
 FROM ubuntu:xenial
 RUN apt-get update; apt-get install -y wget build-essential python
-RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
-RUN apt-get install -y nodejs
+#RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
+RUN apt-get install -y nodejs npm
+RUN npm install -g n
+RUN n 8.17.0
 RUN npm install -g yarn
 RUN mkdir -p /var/www; chown www-data:www-data /var/www
 USER www-data

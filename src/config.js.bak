@@ -1,0 +1,160 @@
+/* eslint no-process-env: 0, strict: 0 */
+// NB: This module needs to be requireable without babel
+//     translation. No advanced features. No imports.
+
+"use strict";
+
+// Use a system environment variable named NODE_ENV, default to "development" if unset.
+var env = process.env.NODE_ENV || "development";
+
+var indexAlias = "idigbio";
+if(env === "beta") {
+  indexAlias = "beta";
+}
+
+// default to debug logging when in development or test environment
+var logger_level
+if((env === "development") || (env === "test")) {
+    logger_level = "debug";
+}
+
+var config = {
+  ENV: env,
+  LOGGER_LEVEL: process.env.LOGGER_LEVEL || logger_level,
+  GEN_MOCK: process.env.GEN_MOCK === "true",
+  CLUSTER: process.env.CLUSTER !== "false",
+  CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || require('os').cpus().length,
+  CI: process.env.CI === "true",
+
+  port: 19196,
+  search: {
+    server: "http://10.13.45.100:9200",
+    index: process.env.SEARCH_INDEX || indexAlias,
+    statsIndex: process.env.STATS_INDEX || "stats",
+  },
+  elasticsearch: {
+    hosts: [
+      "http://10.13.45.100:9200",
+      "http://10.13.45.101:9200",
+      "http://10.13.45.102:9200",
+      "http://10.13.45.103:9200",
+      "http://10.13.45.104:9200",
+      "http://10.13.45.105:9200",
+      "http://10.13.45.106:9200",
+      "http://10.13.45.107:9200",
+      "http://10.13.45.108:9200",
+      "http://10.13.45.109:9200",
+      "http://10.13.45.110:9200",
+      "http://10.13.45.111:9200",
+      "http://10.13.45.112:9200",
+      "http://10.13.45.113:9200",
+      "http://10.13.45.114:9200",
+      "http://10.13.45.115:9200",
+      "http://10.13.45.116:9200",
+      "http://10.13.45.117:9200",
+      "http://10.13.45.118:9200",
+      "http://10.13.45.119:9200",
+      "http://10.13.45.120:9200",
+      "http://10.13.45.121:9200",
+      "http://10.13.45.122:9200",
+      "http://10.13.45.123:9200",
+      "http://10.13.45.124:9200",
+      "http://10.13.45.125:9200",
+      "http://10.13.45.126:9200",
+      "http://10.13.45.127:9200",
+      "http://10.13.45.128:9200",
+      "http://10.13.45.129:9200",
+      "http://10.13.45.130:9200",
+      "http://10.13.45.131:9200",
+      "http://10.13.45.132:9200",
+      "http://10.13.45.133:9200",
+      "http://10.13.45.134:9200",
+      "http://10.13.45.135:9200",
+      "http://10.13.45.136:9200",
+      "http://10.13.45.137:9200",
+      "http://10.13.45.138:9200",
+      "http://10.13.45.139:9200",
+      "http://10.13.45.140:9200",
+      "http://10.13.45.141:9200",
+      "http://10.13.45.142:9200",
+      "http://10.13.45.143:9200",
+      "http://10.13.45.144:9200",
+      "http://10.13.45.145:9200",
+      "http://10.13.45.146:9200",
+      "http://10.13.45.147:9200",
+      "http://10.13.45.148:9200",
+      "http://10.13.45.149:9200",
+      "http://10.13.45.150:9200",
+      "http://10.13.45.151:9200",
+      "http://10.13.45.152:9200",
+      "http://10.13.45.153:9200",
+      "http://10.13.45.154:9200",
+      "http://10.13.45.155:9200",
+      "http://10.13.45.156:9200",
+      "http://10.13.45.157:9200",
+      "http://10.13.45.158:9200",
+      "http://10.13.45.159:9200",
+      "http://10.13.45.160:9200",
+      "http://10.13.45.161:9200",
+      "http://10.13.45.162:9200",
+      "http://10.13.45.163:9200",
+      "http://10.13.45.164:9200",
+      "http://10.13.45.165:9200",
+      "http://10.13.45.166:9200",
+      "http://10.13.45.167:9200",
+      "http://10.13.45.168:9200",
+      "http://10.13.45.169:9200",
+      "http://10.13.45.170:9200",
+      "http://10.13.45.171:9200",
+      "http://10.13.45.172:9200",
+      "http://10.13.45.173:9200",
+      "http://10.13.45.174:9200",
+      "http://10.13.45.175:9200",
+      "http://10.13.45.176:9200",
+      "http://10.13.45.177:9200",
+      "http://10.13.45.178:9200",
+      "http://10.13.45.179:9200",
+      "http://10.13.45.180:9200",
+      "http://10.13.45.181:9200",
+      "http://10.13.45.182:9200",
+      "http://10.13.45.183:9200",
+      "http://10.13.45.184:9200",
+      "http://10.13.45.91:9200",
+      "http://10.13.45.92:9200",
+      "http://10.13.45.93:9200",
+      "http://10.13.45.94:9200",
+      "http://10.13.45.95:9200",
+      "http://10.13.45.98:9200",
+      "http://10.13.45.99:9200"
+    ],
+    apiVersion: "2.4",
+    sniffOnStart: false,
+    sniffOnConnectionFault: true,
+  },
+  maxRecordsets: 10000,
+  defaultLimit: 100,
+  maxLimit: 5000,
+  recordsets: {},
+  indexterms: {},
+  redis: {
+    host: {
+      prod: "10.13.45.187",
+      beta: "10.13.45.187",
+    }[env] || "localhost",
+    db: 0,
+    port: 6379
+  },
+  maxTileObjects: 10000,
+  defaultStyle: {
+    scale: 'YlOrRd',
+    pointScale: 'Dark2',
+    // pointScale: ["#FFF", "#000", "#FAB"],
+    styleOn: 'scientificname',
+    styleBuckets: 5
+  },
+
+  cacheTimeout: 14 * 24 * 60 * 60
+};
+
+
+module.exports = config;
