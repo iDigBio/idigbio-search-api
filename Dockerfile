@@ -4,7 +4,7 @@
 # node6 we need the recent C++.
 #FROM node:6
 
-FROM dist:focal
+FROM ubuntu:focal
 RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York"; apt-get install -y tzdata wget build-essential python
 #RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
 RUN apt-get install -y nodejs npm
