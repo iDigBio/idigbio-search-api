@@ -15,7 +15,7 @@ RUN mkdir -p /var/www; chown www-data:www-data /var/www
 USER www-data
 WORKDIR /var/www
 ADD package.json /var/www/package.json
-RUN npm install
+#RUN npm install
 RUN yarn install; yarn cache clean
 ADD . /var/www
 RUN yarn build
