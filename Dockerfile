@@ -12,13 +12,14 @@ RUN npm install -g n
 RUN n 8.10.0
 RUN npm install -g yarn
 RUN mkdir -p /var/www; chown www-data:www-data /var/www
-USER www-data
+#USER www-data
 WORKDIR /var/www
 ADD package.json /var/www/package.json
 RUN npm install
 RUN yarn install; yarn cache clean
 ADD . /var/www
 RUN yarn build
+RUN npm i --force
 
 EXPOSE 19196
 
