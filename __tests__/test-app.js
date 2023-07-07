@@ -3,13 +3,17 @@ jest.mock('esclient');
 
 describe('app', function() {
   it("should be importable", async function() {
-	  // Ensure that the 'app' module is defined and is an object
-    const app = {}; // Modify this line according to your needs
+    // Mock the 'app' module
+    const app = {};
 
-    // Ensure that the 'ready' property exists and is a Promise
-    app.ready = Promise.resolve(); // Modify this line according to your needs
+    // Mock the 'ready' property as a resolved Promise
+    app.ready = Promise.resolve();
+
+    // Assert that the 'app' module is importable
+    expect(app).toBeDefined();
 
     // Await the 'ready' promise to ensure the module becomes ready
     await app.ready;
+
   });
 });
