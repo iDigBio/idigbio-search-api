@@ -8,7 +8,7 @@ script:
 - docker run -v $TRAVIS_BUILD_DIR/__tests__/mock:/var/www/__tests__/mock/:ro -it $BUILDING
   bash -c "yarn test && npm ls --depth 0 && node --version && nodejs --version " --rm
 after_success:
-- docker login --username="$DOCKER_USERNAME" --password="$DOCKER_PASSWORD"
+- docker login --username="${DOCKER_USERNAME}" --password="${DOCKER_PASSWORD}"
 deploy:
   - provider: script
     script: docker tag $BUILDING $DOCKER_IMAGE:$TRAVIS_TAG; docker push $DOCKER_IMAGE:$TRAVIS_TAG
