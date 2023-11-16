@@ -7,7 +7,7 @@ import redis from "redis";
 import redisPool from "sol-redis-pool";
 import {list as redisCmds} from "redis-commands";
 
-const rconf = _.pick(config.redis, ['host', 'port', 'db']),
+const rconf = _.pick(config.redis, ['host', 'port', 'db', 'password']),
       poolSettings = {
         max: 10,
         min: 2

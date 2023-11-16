@@ -53,7 +53,8 @@ var config = {
       beta: "10.13.45.208",
     }[env] || "localhost",
     db: 0,
-    port: 6379
+    port: 6379,
+    password: process.env.IDB_REDIS_AUTH
   },
   maxTileObjects: 10000,
   defaultStyle: {
