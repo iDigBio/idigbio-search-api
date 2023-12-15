@@ -23,7 +23,8 @@ import "controllers/summary";
 
 const compressionOpts = {
   filter: function(content_type) {
-    return (/text/i).test(content_type);
+    // returns true for text or json content types
+    return /text|json/i.test(content_type);
   },
   threshold: 2048,
   flush: require('zlib').Z_SYNC_FLUSH
