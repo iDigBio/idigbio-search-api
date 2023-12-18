@@ -9,12 +9,13 @@ RUN apt-get update; DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-g
 #RUN wget -O /tmp/nodesource_setup.sh https://deb.nodesource.com/setup_6.x; bash /tmp/nodesource_setup.sh
 RUN apt-get install -y nodejs npm
 RUN npm install -g n
-RUN n 8.10.0
+RUN n 10.24.1
 RUN npm install -g yarn
 RUN mkdir -p /var/www; chown www-data:www-data /var/www
 USER www-data
 WORKDIR /var/www
 ADD package.json /var/www/package.json
+RUN npm install mapnik@4.0.0
 RUN npm install
 RUN yarn install; yarn cache clean
 ADD . /var/www
