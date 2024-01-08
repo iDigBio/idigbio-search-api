@@ -28,15 +28,28 @@ var config = {
 
   port: 19196,
   search: {
-    server: "http://10.13.45.186:9200",
+    server: process.env.NODE_ENV ==='beta' ? "http://c20node1.acis.ufl.edu:9200" : "http://10.13.45.186:9200",
     index: process.env.SEARCH_INDEX || indexAlias,
     statsIndex: process.env.STATS_INDEX || "stats",
   },
   elasticsearch: {
-    hosts: [
+    hosts: process.env.NODE_ENV ==='prod' ? [
       "http://10.13.45.186:9200",
       "http://10.13.45.191:9200",
       "http://10.13.45.192:9200"
+    ] : [
+      "http://10.13.44.161:9200",
+      "http://10.13.44.162:9200",
+      "http://10.13.44.163:9200",
+      "http://10.13.44.164:9200",
+      "http://10.13.44.165:9200",
+      "http://10.13.44.166:9200",
+      "http://10.13.44.167:9200",
+      "http://10.13.44.168:9200",
+      "http://10.13.44.169:9200",
+      "http://10.13.44.170:9200",
+      "http://10.13.44.171:9200",
+      "http://10.13.44.172:9200",
     ],
     apiVersion: "2.4",
     sniffOnStart: false,
