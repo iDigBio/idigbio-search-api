@@ -43,18 +43,23 @@ export default async function searchShim(index, type, op, query, statsInfo) {
     delete options.type;
   }
 
+  /* Since _source might contain a large number of fields,
+   * insert into HTTP request body, NOT as a URL parameter.
+   * Otherwise, a 300-field search request can result in a ~11000-character
+   * URL, which might not be transmittable.
+   */
   if(query._source) {
     var source_object = false;
     if(query._source.exclude) {
-      options._sourceExclude = query._source.exclude;
+      options.body["_sourceExclude"] = query._source.exclude;
       source_object = true;
     }
     if(query._source.include) {
-      options._sourceInclude = query._source.include;
+      options.body["_sourceInclude"] = query._source.include;
       source_object = true;
     }
 
-    if(!source_object) { options._source = query._source; }
+    if(!source_object) { options.body["_source"] = query._source; }
   }
 
   if(query.sort) {
