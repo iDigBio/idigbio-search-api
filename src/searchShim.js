@@ -48,18 +48,24 @@ export default async function searchShim(index, type, op, query, statsInfo) {
    * Otherwise, a 300-field search request can result in a ~11000-character
    * URL, which might not be transmittable.
    */
-  if(query._source) {
-    var source_object = false;
-    if(query._source.exclude) {
-      options.body["_sourceExclude"] = query._source.exclude;
-      source_object = true;
-    }
-    if(query._source.include) {
-      options.body["_sourceInclude"] = query._source.include;
-      source_object = true;
-    }
+  if (query._source) {
+    let source_object = {};
 
-    if(!source_object) { options.body["_source"] = query._source; }
+    // Directly assign exclude/include to the _source object if they exist
+    if (query._source.exclude || query._source.include) {
+      source_object['_source'] = {};
+      if (query._source.exclude) {
+        source_object['_source'].exclude = query._source.exclude;
+      }
+      if (query._source.include) {
+        source_object['_source'].include = query._source.include;
+      }
+      // Merge the constructed source_object with options.body
+      options.body = { ...options.body, ...source_object };
+    } else {
+      // If there's no exclude or include, directly assign _source
+      options.body["_source"] = query._source;
+    }
   }
 
   if(query.sort) {
