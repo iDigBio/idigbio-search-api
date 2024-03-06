@@ -23,6 +23,7 @@ import createError from "http-errors";
 import mapnik from "mapnik";
 mapnik.Logger.setSeverity(mapnik.Logger.DEBUG);
 mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'csv.input'));
+mapnik.register_datasource(path.join(mapnik.settings.paths.input_plugins, 'geojson.input'));
 
 
 import config from "config";
@@ -320,30 +321,49 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   //  extent: '-20037508.342789,-8283343.693883,20037508.342789,18365151.363070'
   // };
 
-  logger.debug("** make a mapnik MemoryDatasource");
-  var mem_ds = new mapnik.MemoryDatasource({});
-  var proj = new mapnik.Projection('+init=epsg:3857');
+  // Create an empty GeoJSON object to store features
+var geojson = {
+  'type': 'FeatureCollection',
+  'features': []
+};
 
-  _.forEach(body.hits.hits, function(hit) {
-    const xy = proj.forward([hit._source.geopoint.lon, hit._source.geopoint.lat]);
-    const f = {
-      'x': xy[0],
-      'y': xy[1],
-      'properties': {
-        'id': hit._id,
-        'lat': hit._source.geopoint.lat,
-        'lon': hit._source.geopoint.lon
-      }
-    };
-    f["properties"][styleOn] = hit._source[styleOn] || "";
-    mem_ds.add(f);
-  });
-  logger.debug("** added all hits to mapnik MemoryDatasource");
+// Initialize the projection
+var proj = new mapnik.Projection('+init=epsg:3857');
+
+// Iterate over hits and add them as GeoJSON features
+_.forEach(body.hits.hits, function(hit) {
+  const xy = proj.forward([hit._source.geopoint.lon, hit._source.geopoint.lat]);
+  const feature = {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'Point',
+      'coordinates': [xy[0], xy[1]]
+    },
+    'properties': {
+      'id': hit._id,
+      'lat': hit._source.geopoint.lat,
+      'lon': hit._source.geopoint.lon
+      // Add other properties as needed
+    }
+  };
+  feature.properties[styleOn] = hit._source[styleOn] || "";
+  geojson.features.push(feature);
+});
+
+// Convert the GeoJSON object to a string
+var geojsonStr = JSON.stringify(geojson);
+
+// Create a GeoJSON datasource using the inline GeoJSON string
+var ds = new mapnik.Datasource({
+  type: 'geojson',
+  inline: geojsonStr
+});
+
 
   const l = new mapnik.Layer('test');
   l.srs = map.srs;
   l.styles = ['style'];
-  l.datasource = mem_ds;
+  l.datasource = ds;
   map.add_layer(l);
   map.extent = bbox;
   if(render_type === "grid.json") {
