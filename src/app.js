@@ -12,6 +12,7 @@ import jsonErrors from "middleware/jsonErrors";
 import lastModified from "middleware/lastModified";
 import prefixed from "middleware/prefixed";
 import logging from "middleware/logging";
+import { validateConfigAsync as validateEsConfigAsync } from "./esclient";
 import config from "config";
 import api from 'api';
 import "controllers/home";
@@ -50,6 +51,14 @@ app.use(api.routes())
    .use(api.allowedMethods());
 
 export default app;
+
+/**
+ * @returns {Promise<boolean>} Should resolve as `true`, if all prerequisites passed
+ * @throws Will reject with an error from the first failed prerequisite
+ */
+export async function checkAppPrerequisitesAsync() {
+  return await validateEsConfigAsync();
+}
 
 
 /**
