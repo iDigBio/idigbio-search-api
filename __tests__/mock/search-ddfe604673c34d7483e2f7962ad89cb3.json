@@ -1,0 +1,2808 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 3994,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "3233ba82-9129-444e-91bc-48fc005290ad",
+        "_score": null,
+        "_source": {
+          "family": "verrucariaceae",
+          "recordset": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+          "dqs": 0.42028985507246375,
+          "stateprovince": "north carolina",
+          "county": "swain",
+          "phylum": "ascomycota",
+          "catalognumber": "colo-l-0050350",
+          "startdayofyear": 269,
+          "taxonrank": "species",
+          "specificepithet": "papillata",
+          "continent": "north america",
+          "uuid": "3233ba82-9129-444e-91bc-48fc005290ad",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "erin tripp; james lendemer & jessi allen",
+          "institutioncode": "colo",
+          "mediarecords": [
+            "e118d018-4f3d-44f3-b6b5-988ab4c0692f"
+          ],
+          "datemodified": "2023-01-11T04:12:29.202929+00:00",
+          "datecollected": "2014-09-26T00:00:00+00:00",
+          "etag": "44b4bdce20209fde0d1ef9ceeea3a2ce3db99c2b",
+          "recordnumber": "5001",
+          "minelevation": 725,
+          "hasImage": true,
+          "kingdom": "fungi",
+          "highertaxon": "fungi|dikarya|ascomycota|pezizomycotina|eurotiomycetes|chaetothyriomycetidae|verrucariales|verrucariaceae|flakea",
+          "collectionid": "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+          "taxonid": "125182",
+          "scientificname": "flakea papillata",
+          "indexData": {
+            "dwc:startDayOfYear": "269",
+            "dwc:specificEpithet": "papillata",
+            "dwc:county": "Swain",
+            "dwc:recordedBy": "Erin Tripp; James Lendemer & Jessi Allen",
+            "idigbio:uuid": "3233ba82-9129-444e-91bc-48fc005290ad",
+            "dwc:order": "Verrucariales",
+            "dwc:habitat": "Mature acid hardwood forest; saxicolous, underneath rock overhang",
+            "dwc:scientificNameAuthorship": "O. E. Erikss.",
+            "idigbio:recordIds": [
+              "urn:uuid:1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+              "995cc7f1-69c3-4317-ab77-28fd48f1e535\\2419391",
+              "995cc7f1-69c3-4317-ab77-28fd48f1e535\\1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e"
+            ],
+            "dwc:occurrenceID": "1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+            "dwc:dateIdentified": "10 Feb 2015",
+            "dwc:verbatimElevation": "2380 ft. to 3296 ft.",
+            "id": "2419391",
+            "dwc:taxonID": "125182",
+            "idigbio:parent": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2014-09-26",
+            "dwc:collectionID": "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+            "dwc:country": "United States",
+            "idigbio:etag": "44b4bdce20209fde0d1ef9ceeea3a2ce3db99c2b",
+            "dwc:collectionCode": "L",
+            "dwc:class": "Eurotiomycetes",
+            "dwc:kingdom": "Fungi",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Flakea",
+            "dwc:continent": "north america",
+            "dwc:family": "Verrucariaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "E. Tripp",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "e118d018-4f3d-44f3-b6b5-988ab4c0692f"
+              ]
+            },
+            "symbiota:recordID": "1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Ascomycota",
+            "dcterms:references": "https://lichenportal.org/cnalh/collections/individual/index.php?occid=2419391",
+            "idigbio:dateModified": "2023-01-11T04:12:29.202929",
+            "dwc:locality": "Great Smoky Mountains National Park, junction of Forney Creek trail to Springhouse Branch Trail along Forney Ridge Trail",
+            "dwc:institutionCode": "COLO",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Fungi|Dikarya|Ascomycota|Pezizomycotina|Eurotiomycetes|Chaetothyriomycetidae|Verrucariales|Verrucariaceae|Flakea",
+            "dwc:catalogNumber": "COLO-L-0050350",
+            "dwc:month": "9",
+            "dwc:associatedTaxa": "Quercus rubra, Quercus prinus, Magnolia acuminata, Robinia pseudacacia, Carya sp., Kalmia latifolia, Epigaea repens, Galax aphylla",
+            "dwc:otherCatalogNumbers": "L-96276",
+            "dwc:verbatimEventDate": "26 September 2014",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "5001",
+            "idigbio:isocountrycode": "usa",
+            "flag_taxon_match_failed": true,
+            "dwc:minimumElevationInMeters": "725",
+            "dcterms:modified": "2018-04-25 21:11:58",
+            "dwc:scientificName": "Flakea papillata",
+            "dwc:day": "26",
+            "dwc:year": "2014"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:startDayOfYear": "269",
+            "dwc:specificEpithet": "papillata",
+            "dwc:county": "Swain",
+            "dwc:recordedBy": "Erin Tripp; James Lendemer & Jessi Allen",
+            "dwc:order": "Verrucariales",
+            "dwc:habitat": "Mature acid hardwood forest; saxicolous, underneath rock overhang",
+            "dwc:scientificNameAuthorship": "O. E. Erikss.",
+            "dwc:occurrenceID": "1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+            "dwc:dateIdentified": "10 Feb 2015",
+            "dwc:verbatimElevation": "2380 ft. to 3296 ft.",
+            "id": "2419391",
+            "dwc:taxonID": "125182",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2014-09-26",
+            "dwc:collectionID": "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "L",
+            "dwc:higherClassification": "Fungi|Dikarya|Ascomycota|Pezizomycotina|Eurotiomycetes|Chaetothyriomycetidae|Verrucariales|Verrucariaceae|Flakea",
+            "dwc:kingdom": "Fungi",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Flakea",
+            "dwc:family": "Verrucariaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "E. Tripp",
+            "symbiota:recordID": "1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+            "dwc:phylum": "Ascomycota",
+            "dcterms:references": "https://lichenportal.org/cnalh/collections/individual/index.php?occid=2419391",
+            "dwc:locality": "Great Smoky Mountains National Park, junction of Forney Creek trail to Springhouse Branch Trail along Forney Ridge Trail",
+            "dwc:institutionCode": "COLO",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Eurotiomycetes",
+            "dwc:catalogNumber": "COLO-L-0050350",
+            "dwc:month": "9",
+            "dwc:scientificName": "Flakea papillata",
+            "dwc:otherCatalogNumbers": "L-96276",
+            "dwc:verbatimEventDate": "26 September 2014",
+            "dwc:recordNumber": "5001",
+            "dwc:minimumElevationInMeters": "725",
+            "dcterms:modified": "2018-04-25 21:11:58",
+            "dwc:associatedTaxa": "Quercus rubra, Quercus prinus, Magnolia acuminata, Robinia pseudacacia, Carya sp., Kalmia latifolia, Epigaea repens, Galax aphylla",
+            "dwc:day": "26",
+            "dwc:year": "2014"
+          },
+          "class": "eurotiomycetes",
+          "occurrenceid": "1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+          "country": "united states",
+          "locality": "great smoky mountains national park, junction of forney creek trail to springhouse branch trail along forney ridge trail",
+          "collectioncode": "l",
+          "eventdate": "2014-09-26",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "26 september 2014",
+          "recordids": [
+            "urn:uuid:1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e",
+            "995cc7f1-69c3-4317-ab77-28fd48f1e535\\2419391",
+            "995cc7f1-69c3-4317-ab77-28fd48f1e535\\1bdd7da3-b1b8-42cd-a539-c24c5e1d5c2e"
+          ],
+          "genus": "flakea",
+          "order": "verrucariales"
+        },
+        "sort": [
+          0.42028984
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "c8d2896f-f8bf-4995-964a-350543548e6c",
+        "_score": null,
+        "_source": {
+          "family": "lobariaceae",
+          "recordset": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+          "dqs": 0.42028985507246375,
+          "stateprovince": "north carolina",
+          "county": "swain",
+          "phylum": "ascomycota",
+          "catalognumber": "colo-l-0050348",
+          "startdayofyear": 269,
+          "taxonrank": "species",
+          "specificepithet": "aurata",
+          "continent": "north america",
+          "uuid": "c8d2896f-f8bf-4995-964a-350543548e6c",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "erin tripp; james lendemer & jessi allen",
+          "institutioncode": "colo",
+          "mediarecords": [
+            "4ef291cb-417b-4c50-90d1-e3e4498b70a4"
+          ],
+          "datemodified": "2023-01-11T04:12:29.202929+00:00",
+          "datecollected": "2014-09-26T00:00:00+00:00",
+          "etag": "10be9f6a6f2ce75d3507e7669af7802f465c2357",
+          "recordnumber": "5005",
+          "minelevation": 725,
+          "hasImage": true,
+          "kingdom": "fungi",
+          "highertaxon": "fungi|dikarya|ascomycota|pezizomycotina|lecanoromycetes|lecanoromycetidae|peltigerales|peltigerineae|peltigeraceae|lobarioideae|crocodia",
+          "collectionid": "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+          "taxonid": "199193",
+          "scientificname": "crocodia aurata",
+          "indexData": {
+            "dwc:startDayOfYear": "269",
+            "dwc:specificEpithet": "aurata",
+            "dwc:county": "Swain",
+            "dwc:recordedBy": "Erin Tripp; James Lendemer & Jessi Allen",
+            "idigbio:uuid": "c8d2896f-f8bf-4995-964a-350543548e6c",
+            "dwc:order": "Peltigerales",
+            "dwc:habitat": "Mature acid hardwood forest; corticolous on Acer saccharum",
+            "dwc:scientificNameAuthorship": "(Ach.) Link",
+            "idigbio:recordIds": [
+              "urn:uuid:d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+              "995cc7f1-69c3-4317-ab77-28fd48f1e535\\2419395",
+              "995cc7f1-69c3-4317-ab77-28fd48f1e535\\d9efb569-193a-403f-9fe4-1fdb324e6c3c"
+            ],
+            "dwc:occurrenceID": "d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+            "dwc:dateIdentified": "10 Feb 2015",
+            "dwc:verbatimElevation": "2380 ft. to 3296 ft.",
+            "id": "2419395",
+            "dwc:taxonID": "199193",
+            "idigbio:parent": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2014-09-26",
+            "dwc:collectionID": "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+            "dwc:country": "United States",
+            "idigbio:etag": "10be9f6a6f2ce75d3507e7669af7802f465c2357",
+            "dwc:collectionCode": "L",
+            "dwc:class": "Lecanoromycetes",
+            "dwc:kingdom": "Fungi",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Crocodia",
+            "dwc:continent": "north america",
+            "dwc:family": "Lobariaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "E. Tripp",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "4ef291cb-417b-4c50-90d1-e3e4498b70a4"
+              ]
+            },
+            "symbiota:recordID": "d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Ascomycota",
+            "dcterms:references": "https://lichenportal.org/cnalh/collections/individual/index.php?occid=2419395",
+            "idigbio:dateModified": "2023-01-11T04:12:29.202929",
+            "dwc:locality": "Great Smoky Mountains National Park, junction of Forney Creek trail to Springhouse Branch Trail along Forney Ridge Trail",
+            "dwc:institutionCode": "COLO",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Fungi|Dikarya|Ascomycota|Pezizomycotina|Lecanoromycetes|Lecanoromycetidae|Peltigerales|Peltigerineae|Peltigeraceae|Lobarioideae|Crocodia",
+            "dwc:catalogNumber": "COLO-L-0050348",
+            "dwc:Identification": [
+              {
+                "dwc:identifiedBy": "E. Tripp",
+                "idigbio:recordID": "urn:uuid:95afec1a-2522-4e3a-9385-1a1b80410c8c",
+                "coreid": "2419395",
+                "dwc:scientificNameAuthorship": "(Ach.) Vain.",
+                "dwc:dateIdentified": "10 Feb 2015",
+                "dcterms:modified": "2019-01-16 12:45:35",
+                "dwc:scientificName": "Pseudocyphellaria aurata"
+              },
+              {
+                "dwc:identifiedBy": "Nomenclatural Adjustment",
+                "idigbio:recordID": "urn:uuid:d1ed6633-46eb-41f3-b5c8-b2bceedbc4f7",
+                "coreid": "2419395",
+                "dwc:scientificNameAuthorship": "(Ach.) Link",
+                "dwc:dateIdentified": "2019-01-16",
+                "dcterms:modified": "2019-01-16 12:45:35",
+                "dwc:scientificName": "Crocodia aurata"
+              }
+            ],
+            "dwc:month": "9",
+            "dwc:associatedTaxa": "Quercus rubra, Quercus prinus, Magnolia acuminata, Robinia pseudacacia, Carya sp., Kalmia latifolia, Epigaea repens, Galax aphylla",
+            "dwc:otherCatalogNumbers": "L-96274",
+            "dwc:verbatimEventDate": "26 September 2014",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "5005",
+            "idigbio:isocountrycode": "usa",
+            "flag_taxon_match_failed": true,
+            "dwc:minimumElevationInMeters": "725",
+            "dcterms:modified": "2019-01-16 12:45:35",
+            "dwc:scientificName": "Crocodia aurata",
+            "dwc:day": "26",
+            "dwc:year": "2014"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:startDayOfYear": "269",
+            "dwc:specificEpithet": "aurata",
+            "dwc:county": "Swain",
+            "dwc:recordedBy": "Erin Tripp; James Lendemer & Jessi Allen",
+            "dwc:order": "Peltigerales",
+            "dwc:habitat": "Mature acid hardwood forest; corticolous on Acer saccharum",
+            "dwc:scientificNameAuthorship": "(Ach.) Link",
+            "dwc:occurrenceID": "d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+            "dwc:dateIdentified": "10 Feb 2015",
+            "dwc:verbatimElevation": "2380 ft. to 3296 ft.",
+            "id": "2419395",
+            "dwc:taxonID": "199193",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2014-09-26",
+            "dwc:collectionID": "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "L",
+            "dwc:higherClassification": "Fungi|Dikarya|Ascomycota|Pezizomycotina|Lecanoromycetes|Lecanoromycetidae|Peltigerales|Peltigerineae|Peltigeraceae|Lobarioideae|Crocodia",
+            "dwc:kingdom": "Fungi",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Crocodia",
+            "dwc:family": "Lobariaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "E. Tripp",
+            "symbiota:recordID": "d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+            "dwc:phylum": "Ascomycota",
+            "dcterms:references": "https://lichenportal.org/cnalh/collections/individual/index.php?occid=2419395",
+            "dwc:locality": "Great Smoky Mountains National Park, junction of Forney Creek trail to Springhouse Branch Trail along Forney Ridge Trail",
+            "dwc:institutionCode": "COLO",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Lecanoromycetes",
+            "dwc:catalogNumber": "COLO-L-0050348",
+            "dwc:Identification": [
+              {
+                "dwc:identifiedBy": "E. Tripp",
+                "idigbio:recordID": "urn:uuid:95afec1a-2522-4e3a-9385-1a1b80410c8c",
+                "coreid": "2419395",
+                "dwc:scientificNameAuthorship": "(Ach.) Vain.",
+                "dwc:dateIdentified": "10 Feb 2015",
+                "dcterms:modified": "2019-01-16 12:45:35",
+                "dwc:scientificName": "Pseudocyphellaria aurata"
+              },
+              {
+                "dwc:identifiedBy": "Nomenclatural Adjustment",
+                "idigbio:recordID": "urn:uuid:d1ed6633-46eb-41f3-b5c8-b2bceedbc4f7",
+                "coreid": "2419395",
+                "dwc:scientificNameAuthorship": "(Ach.) Link",
+                "dwc:dateIdentified": "2019-01-16",
+                "dcterms:modified": "2019-01-16 12:45:35",
+                "dwc:scientificName": "Crocodia aurata"
+              }
+            ],
+            "dwc:month": "9",
+            "dwc:scientificName": "Crocodia aurata",
+            "dwc:otherCatalogNumbers": "L-96274",
+            "dwc:verbatimEventDate": "26 September 2014",
+            "dwc:recordNumber": "5005",
+            "dwc:minimumElevationInMeters": "725",
+            "dcterms:modified": "2019-01-16 12:45:35",
+            "dwc:associatedTaxa": "Quercus rubra, Quercus prinus, Magnolia acuminata, Robinia pseudacacia, Carya sp., Kalmia latifolia, Epigaea repens, Galax aphylla",
+            "dwc:day": "26",
+            "dwc:year": "2014"
+          },
+          "class": "lecanoromycetes",
+          "occurrenceid": "d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+          "country": "united states",
+          "locality": "great smoky mountains national park, junction of forney creek trail to springhouse branch trail along forney ridge trail",
+          "collectioncode": "l",
+          "eventdate": "2014-09-26",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "26 september 2014",
+          "recordids": [
+            "urn:uuid:d9efb569-193a-403f-9fe4-1fdb324e6c3c",
+            "995cc7f1-69c3-4317-ab77-28fd48f1e535\\2419395",
+            "995cc7f1-69c3-4317-ab77-28fd48f1e535\\d9efb569-193a-403f-9fe4-1fdb324e6c3c"
+          ],
+          "genus": "crocodia",
+          "order": "peltigerales"
+        },
+        "sort": [
+          0.42028984
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "35e9cbd0-06df-4c8f-b186-77b767da90d9",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 35.662327,
+            "lon": -83.464098
+          },
+          "family": "ericaceae",
+          "recordset": "9e5aede6-bee5-4a3d-a255-513771b20035",
+          "dqs": 0.42028985507246375,
+          "stateprovince": "tennessee",
+          "county": "sevier",
+          "phylum": "magnoliophyta",
+          "catalognumber": "v0407339wis",
+          "startdayofyear": 114,
+          "taxonrank": "species",
+          "specificepithet": "repens",
+          "continent": "north america",
+          "uuid": "35e9cbd0-06df-4c8f-b186-77b767da90d9",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "hugh h. iltis; shoichi kawans",
+          "institutioncode": "wis",
+          "mediarecords": [
+            "8863345f-103f-4e12-aba3-14b11a2d5ad1"
+          ],
+          "datecollected": "1962-04-24T00:00:00+00:00",
+          "etag": "da463a576d51450cf5c85424f3208cf558c43046",
+          "recordnumber": "20085",
+          "minelevation": 1524,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "highertaxon": "plantae|magnoliophyta|eudicots|core eudicots|asterids|ericales|ericaceae|epigaea",
+          "collectionid": "b20b8d91-3255-4926-93e6-af9c6ad60faf",
+          "taxonid": "50565",
+          "scientificname": "epigaea repens",
+          "indexData": {
+            "dwc:startDayOfYear": "114",
+            "dwc:specificEpithet": "repens",
+            "dwc:county": "Sevier",
+            "dwc:recordedBy": "Hugh H. Iltis; Shoichi Kawans",
+            "idigbio:uuid": "35e9cbd0-06df-4c8f-b186-77b767da90d9",
+            "dwc:locality": "Rainbow Falls trail through Heath Bald.",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "Peat",
+            "dwc:scientificNameAuthorship": "L.",
+            "idigbio:recordIds": [
+              "9e5aede6-bee5-4a3d-a255-513771b20035\\21395116",
+              "urn:uuid:c6bda140-c094-493a-b7f2-9da37f9416eb",
+              "9e5aede6-bee5-4a3d-a255-513771b20035\\c6bda140-c094-493a-b7f2-9da37f9416eb"
+            ],
+            "dwc:occurrenceID": "c6bda140-c094-493a-b7f2-9da37f9416eb",
+            "dcterms:language": "en",
+            "dwc:verbatimElevation": "5000'",
+            "symbiota:recordEnteredBy": "mmbarker2",
+            "dwc:taxonID": "50565",
+            "idigbio:parent": "9e5aede6-bee5-4a3d-a255-513771b20035",
+            "dwc:stateProvince": "Tennessee",
+            "dwc:eventDate": "1962-04-24",
+            "dwc:collectionID": "b20b8d91-3255-4926-93e6-af9c6ad60faf",
+            "dwc:country": "United States",
+            "idigbio:etag": "da463a576d51450cf5c85424f3208cf558c43046",
+            "id": "21395116",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "35.662327",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Epigaea",
+            "dwc:continent": "north america",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:associatedTaxa": "Rhododendron catawbiense, Galax aphylla, Leucothoe etc.",
+            "dwc:geodeticDatum": "WGS84",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "8863345f-103f-4e12-aba3-14b11a2d5ad1"
+              ]
+            },
+            "symbiota:recordID": "urn:uuid:c6bda140-c094-493a-b7f2-9da37f9416eb",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://midwestherbaria.org/portal/collections/individual/index.php?occid=21395116",
+            "idigbio:dateModified": "2021-12-17T13:34:40.361646",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dwc:institutionCode": "WIS",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Ericaceae|Epigaea",
+            "dwc:catalogNumber": "v0407339WIS",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-83.464098",
+            "dwc:scientificName": "Epigaea repens",
+            "dwc:verbatimEventDate": "April 24, 1962",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "20085",
+            "idigbio:isocountrycode": "usa",
+            "flag_taxon_match_failed": true,
+            "dwc:minimumElevationInMeters": "1524",
+            "dcterms:modified": "2020-06-23 07:56:22",
+            "dwc:coordinateUncertaintyInMeters": "301",
+            "dwc:day": "24",
+            "dwc:year": "1962"
+          },
+          "hasMedia": true,
+          "coordinateuncertainty": 301,
+          "data": {
+            "dwc:startDayOfYear": "114",
+            "dwc:specificEpithet": "repens",
+            "dwc:county": "Sevier",
+            "dwc:recordedBy": "Hugh H. Iltis; Shoichi Kawans",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "Peat",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:occurrenceID": "c6bda140-c094-493a-b7f2-9da37f9416eb",
+            "dcterms:language": "en",
+            "dwc:verbatimElevation": "5000'",
+            "id": "21395116",
+            "dwc:taxonID": "50565",
+            "dwc:stateProvince": "Tennessee",
+            "dwc:eventDate": "1962-04-24",
+            "dwc:collectionID": "b20b8d91-3255-4926-93e6-af9c6ad60faf",
+            "dwc:institutionCode": "WIS",
+            "dwc:country": "United States",
+            "symbiota:recordEnteredBy": "mmbarker2",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "35.662327",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Epigaea",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:coordinateUncertaintyInMeters": "301",
+            "symbiota:recordID": "urn:uuid:c6bda140-c094-493a-b7f2-9da37f9416eb",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://midwestherbaria.org/portal/collections/individual/index.php?occid=21395116",
+            "dwc:locality": "Rainbow Falls trail through Heath Bald.",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Ericaceae|Epigaea",
+            "dwc:catalogNumber": "v0407339WIS",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-83.464098",
+            "dwc:scientificName": "Epigaea repens",
+            "dwc:verbatimEventDate": "April 24, 1962",
+            "dwc:recordNumber": "20085",
+            "dwc:minimumElevationInMeters": "1524",
+            "dcterms:modified": "2020-06-23 07:56:22",
+            "dwc:associatedTaxa": "Rhododendron catawbiense, Galax aphylla, Leucothoe etc.",
+            "dwc:day": "24",
+            "dwc:year": "1962"
+          },
+          "datemodified": "2021-12-17T13:34:40.361646+00:00",
+          "occurrenceid": "c6bda140-c094-493a-b7f2-9da37f9416eb",
+          "country": "united states",
+          "locality": "rainbow falls trail through heath bald.",
+          "eventdate": "1962-04-24",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "april 24, 1962",
+          "recordids": [
+            "9e5aede6-bee5-4a3d-a255-513771b20035\\21395116",
+            "urn:uuid:c6bda140-c094-493a-b7f2-9da37f9416eb",
+            "9e5aede6-bee5-4a3d-a255-513771b20035\\c6bda140-c094-493a-b7f2-9da37f9416eb"
+          ],
+          "genus": "epigaea",
+          "order": "ericales"
+        },
+        "sort": [
+          0.42028984
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "e0e244c4-29bf-4a16-870e-5da0d7616497",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 36.643931,
+            "lon": -80.981631
+          },
+          "family": "styracaceae",
+          "recordset": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "dqs": 0.42028985507246375,
+          "stateprovince": "virginia",
+          "county": "grayson",
+          "phylum": "magnoliophyta",
+          "catalognumber": "ncu00332405",
+          "startdayofyear": 130,
+          "taxonrank": "species",
+          "specificepithet": "carolina",
+          "continent": "north america",
+          "uuid": "e0e244c4-29bf-4a16-870e-5da0d7616497",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "wieboldt, t. f.; stevens, c. e.",
+          "institutioncode": "ncu",
+          "mediarecords": [
+            "7f26d830-c138-49ce-9cd3-ff6bab1e7da5"
+          ],
+          "datecollected": "1976-05-09T00:00:00+00:00",
+          "etag": "4cfdc6452ba438da9ef46dff6ac9304f67d1fe45",
+          "recordnumber": "2419",
+          "minelevation": 677,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "highertaxon": "plantae|magnoliophyta|eudicots|core eudicots|asterids|ericales|styracaceae|halesia",
+          "collectionid": "17f2d0fa-39a6-4465-8055-1d6fc12eeda2",
+          "taxonid": "112563",
+          "scientificname": "halesia carolina",
+          "indexData": {
+            "dwc:startDayOfYear": "130",
+            "dwc:specificEpithet": "carolina",
+            "dwc:county": "Grayson",
+            "dwc:recordedBy": "Wieboldt, T. F.; Stevens, C. E.",
+            "idigbio:uuid": "e0e244c4-29bf-4a16-870e-5da0d7616497",
+            "dwc:locality": "along New River 2.5 mi W along Hwy 58 of Galax Corp. limits.",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "Rich alluvium at base of a steep NW-facing slope",
+            "dwc:scientificNameAuthorship": "L.",
+            "idigbio:recordIds": [
+              "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\d9657d86-e1d7-45dd-858d-40c2295149c6",
+              "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\20542789",
+              "urn:uuid:d9657d86-e1d7-45dd-858d-40c2295149c6"
+            ],
+            "dwc:occurrenceID": "d9657d86-e1d7-45dd-858d-40c2295149c6",
+            "dwc:dateIdentified": "1997",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": ",",
+            "dwc:verbatimElevation": "2220'",
+            "symbiota:recordEnteredBy": "Greg Sollom",
+            "dwc:taxonID": "112563",
+            "idigbio:parent": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+            "dwc:stateProvince": "Virginia",
+            "dwc:eventDate": "1976-05-09",
+            "dwc:collectionID": "17f2d0fa-39a6-4465-8055-1d6fc12eeda2",
+            "dwc:country": "United States",
+            "idigbio:etag": "4cfdc6452ba438da9ef46dff6ac9304f67d1fe45",
+            "dwc:collectionCode": "Vascular Plants",
+            "id": "20542789",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "36.643931",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Halesia",
+            "dwc:continent": "north america",
+            "dwc:family": "Styracaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "Fritsch, Peter W.",
+            "dwc:geodeticDatum": "WGS84",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "7f26d830-c138-49ce-9cd3-ff6bab1e7da5"
+              ]
+            },
+            "symbiota:recordID": "d9657d86-e1d7-45dd-858d-40c2295149c6",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=20542789",
+            "idigbio:dateModified": "2022-12-06T22:59:35.242146",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dwc:institutionCode": "NCU",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Styracaceae|Halesia",
+            "dwc:catalogNumber": "NCU00332405",
+            "dwc:Identification": [
+              {
+                "dwc:identifiedBy": "unknown",
+                "idigbio:recordID": "urn:uuid:392f4216-571b-48ab-85f4-4d677c20e96c",
+                "coreid": "20542789",
+                "dwc:scientificNameAuthorship": "L.",
+                "dwc:dateIdentified": "1976",
+                "dcterms:modified": "2022-01-08 14:16:03",
+                "dwc:scientificName": "Halesia carolina"
+              },
+              {
+                "dwc:identifiedBy": "Fritsch, Peter W.",
+                "idigbio:recordID": "urn:uuid:bfe38597-e1e4-45a5-b4db-0bbe95bf75d5",
+                "coreid": "20542789",
+                "dwc:scientificNameAuthorship": "L.",
+                "dwc:dateIdentified": "1997",
+                "dcterms:modified": "2022-01-08 14:16:03",
+                "dwc:scientificName": "Halesia carolina"
+              }
+            ],
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.981631",
+            "dwc:scientificName": "Halesia carolina",
+            "dwc:otherCatalogNumbers": "NCU Accession #: 487963",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "2419",
+            "idigbio:isocountrycode": "usa",
+            "flag_taxon_match_failed": true,
+            "dwc:minimumElevationInMeters": "677",
+            "dcterms:modified": "2022-03-07 14:36:30",
+            "dwc:coordinateUncertaintyInMeters": "874",
+            "dwc:day": "9",
+            "dwc:year": "1976"
+          },
+          "hasMedia": true,
+          "coordinateuncertainty": 874,
+          "data": {
+            "dwc:startDayOfYear": "130",
+            "dwc:specificEpithet": "carolina",
+            "dwc:county": "Grayson",
+            "dwc:recordedBy": "Wieboldt, T. F.; Stevens, C. E.",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "Rich alluvium at base of a steep NW-facing slope",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:occurrenceID": "d9657d86-e1d7-45dd-858d-40c2295149c6",
+            "dwc:dateIdentified": "1997",
+            "dcterms:language": "en",
+            "dwc:verbatimCoordinates": ",",
+            "dwc:verbatimElevation": "2220'",
+            "id": "20542789",
+            "dwc:taxonID": "112563",
+            "dwc:stateProvince": "Virginia",
+            "dwc:eventDate": "1976-05-09",
+            "dwc:collectionID": "17f2d0fa-39a6-4465-8055-1d6fc12eeda2",
+            "dwc:institutionCode": "NCU",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Vascular Plants",
+            "symbiota:recordEnteredBy": "Greg Sollom",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "36.643931",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Halesia",
+            "dwc:family": "Styracaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "Fritsch, Peter W.",
+            "symbiota:recordID": "d9657d86-e1d7-45dd-858d-40c2295149c6",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=20542789",
+            "dwc:locality": "along New River 2.5 mi W along Hwy 58 of Galax Corp. limits.",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Styracaceae|Halesia",
+            "dwc:catalogNumber": "NCU00332405",
+            "dwc:Identification": [
+              {
+                "dwc:identifiedBy": "unknown",
+                "idigbio:recordID": "urn:uuid:392f4216-571b-48ab-85f4-4d677c20e96c",
+                "coreid": "20542789",
+                "dwc:scientificNameAuthorship": "L.",
+                "dwc:dateIdentified": "1976",
+                "dcterms:modified": "2022-01-08 14:16:03",
+                "dwc:scientificName": "Halesia carolina"
+              },
+              {
+                "dwc:identifiedBy": "Fritsch, Peter W.",
+                "idigbio:recordID": "urn:uuid:bfe38597-e1e4-45a5-b4db-0bbe95bf75d5",
+                "coreid": "20542789",
+                "dwc:scientificNameAuthorship": "L.",
+                "dwc:dateIdentified": "1997",
+                "dcterms:modified": "2022-01-08 14:16:03",
+                "dwc:scientificName": "Halesia carolina"
+              }
+            ],
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.981631",
+            "dwc:coordinateUncertaintyInMeters": "874",
+            "dwc:otherCatalogNumbers": "NCU Accession #: 487963",
+            "dwc:recordNumber": "2419",
+            "dwc:minimumElevationInMeters": "677",
+            "dcterms:modified": "2022-03-07 14:36:30",
+            "dwc:scientificName": "Halesia carolina",
+            "dwc:day": "9",
+            "dwc:year": "1976"
+          },
+          "datemodified": "2022-12-06T22:59:35.242146+00:00",
+          "occurrenceid": "d9657d86-e1d7-45dd-858d-40c2295149c6",
+          "country": "united states",
+          "locality": "along new river 2.5 mi w along hwy 58 of galax corp. limits.",
+          "collectioncode": "vascular plants",
+          "eventdate": "1976-05-09",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "recordids": [
+            "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\d9657d86-e1d7-45dd-858d-40c2295149c6",
+            "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\20542789",
+            "urn:uuid:d9657d86-e1d7-45dd-858d-40c2295149c6"
+          ],
+          "genus": "halesia",
+          "order": "ericales"
+        },
+        "sort": [
+          0.42028984
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "91cd0b54-aa85-40a8-b015-6090a38f8092",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 35.56895,
+            "lon": -81.089883
+          },
+          "family": "ericaceae",
+          "recordset": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "dqs": 0.4057971014492754,
+          "stateprovince": "north carolina",
+          "county": "catawba",
+          "phylum": "magnoliophyta",
+          "catalognumber": "ncu00113015",
+          "startdayofyear": 94,
+          "taxonrank": "species",
+          "specificepithet": "repens",
+          "continent": "north america",
+          "uuid": "91cd0b54-aa85-40a8-b015-6090a38f8092",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "holdsclaw, terry",
+          "institutioncode": "ncu",
+          "mediarecords": [
+            "3e7a451f-8425-4abc-b189-a90bfc70e5e0"
+          ],
+          "datecollected": "2010-04-04T00:00:00+00:00",
+          "etag": "e4c7feabd4df118e2c335b88c1d69cdfe05040e1",
+          "recordnumber": "049",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "highertaxon": "plantae|magnoliophyta|eudicots|core eudicots|asterids|ericales|ericaceae|epigaea",
+          "collectionid": "17f2d0fa-39a6-4465-8055-1d6fc12eeda2",
+          "taxonid": "50565",
+          "scientificname": "epigaea repens",
+          "indexData": {
+            "dwc:startDayOfYear": "94",
+            "dwc:specificEpithet": "repens",
+            "dwc:county": "Catawba",
+            "dwc:recordedBy": "Holdsclaw, Terry",
+            "idigbio:uuid": "91cd0b54-aa85-40a8-b015-6090a38f8092",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "On a small bank along an old road in the woods.",
+            "dwc:scientificNameAuthorship": "L.",
+            "idigbio:recordIds": [
+              "urn:uuid:2534d579-41e8-431f-9199-0808478aad54",
+              "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\17009116",
+              "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\2534d579-41e8-431f-9199-0808478aad54"
+            ],
+            "dwc:occurrenceID": "2534d579-41e8-431f-9199-0808478aad54",
+            "dwc:dateIdentified": "2010-04-04",
+            "dwc:verbatimCoordinates": "35° 34.137' N 81° 05.393' W",
+            "dwc:decimalLatitude": "35.56895",
+            "id": "17009116",
+            "dwc:taxonID": "50565",
+            "idigbio:parent": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2010-04-04",
+            "dwc:collectionID": "17f2d0fa-39a6-4465-8055-1d6fc12eeda2",
+            "dwc:country": "United States",
+            "idigbio:etag": "e4c7feabd4df118e2c335b88c1d69cdfe05040e1",
+            "dwc:collectionCode": "Vascular Plants",
+            "dwc:kingdom": "Plantae",
+            "dwc:georeferenceRemarks": "[Lat/ Long on original label]",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Epigaea",
+            "dwc:continent": "north america",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "Holdsclaw, Terry",
+            "dwc:associatedTaxa": "Quercus prinus, Pinus pungens, Oxydendrum arboreum, Kalmia latifolia, Vaccinium arboreum, Galax aphylla.",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "3e7a451f-8425-4abc-b189-a90bfc70e5e0"
+              ]
+            },
+            "symbiota:recordID": "2534d579-41e8-431f-9199-0808478aad54",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=17009116",
+            "idigbio:dateModified": "2022-12-06T22:59:35.242146",
+            "dwc:locality": "North slope of Anderson Mountain, 1/10 mile from Tower Rd.",
+            "dwc:institutionCode": "NCU",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Ericaceae|Epigaea",
+            "dwc:catalogNumber": "NCU00113015",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-81.089883",
+            "dwc:scientificName": "Epigaea repens",
+            "dwc:otherCatalogNumbers": "NCU Accession #: 592574",
+            "dwc:verbatimEventDate": "April 4, 2010",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "049",
+            "idigbio:isocountrycode": "usa",
+            "flag_taxon_match_failed": true,
+            "dcterms:modified": "2022-03-07 14:36:24",
+            "dwc:coordinateUncertaintyInMeters": "100",
+            "dwc:day": "4",
+            "dwc:year": "2010"
+          },
+          "hasMedia": true,
+          "coordinateuncertainty": 100,
+          "data": {
+            "dwc:startDayOfYear": "94",
+            "dwc:specificEpithet": "repens",
+            "dwc:county": "Catawba",
+            "dwc:recordedBy": "Holdsclaw, Terry",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "On a small bank along an old road in the woods.",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:georeferenceRemarks": "[Lat/ Long on original label]",
+            "dwc:occurrenceID": "2534d579-41e8-431f-9199-0808478aad54",
+            "dwc:dateIdentified": "2010-04-04",
+            "dwc:verbatimCoordinates": "35° 34.137' N 81° 05.393' W",
+            "id": "17009116",
+            "dwc:taxonID": "50565",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2010-04-04",
+            "dwc:collectionID": "17f2d0fa-39a6-4465-8055-1d6fc12eeda2",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "Vascular Plants",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "35.56895",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Epigaea",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:identifiedBy": "Holdsclaw, Terry",
+            "dwc:coordinateUncertaintyInMeters": "100",
+            "symbiota:recordID": "2534d579-41e8-431f-9199-0808478aad54",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=17009116",
+            "dwc:locality": "North slope of Anderson Mountain, 1/10 mile from Tower Rd.",
+            "dwc:institutionCode": "NCU",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Ericaceae|Epigaea",
+            "dwc:catalogNumber": "NCU00113015",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-81.089883",
+            "dwc:scientificName": "Epigaea repens",
+            "dwc:otherCatalogNumbers": "NCU Accession #: 592574",
+            "dwc:verbatimEventDate": "April 4, 2010",
+            "dwc:recordNumber": "049",
+            "dcterms:modified": "2022-03-07 14:36:24",
+            "dwc:associatedTaxa": "Quercus prinus, Pinus pungens, Oxydendrum arboreum, Kalmia latifolia, Vaccinium arboreum, Galax aphylla.",
+            "dwc:day": "4",
+            "dwc:year": "2010"
+          },
+          "datemodified": "2022-12-06T22:59:35.242146+00:00",
+          "occurrenceid": "2534d579-41e8-431f-9199-0808478aad54",
+          "country": "united states",
+          "locality": "north slope of anderson mountain, 1/10 mile from tower rd.",
+          "collectioncode": "vascular plants",
+          "eventdate": "2010-04-04",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "april 4, 2010",
+          "recordids": [
+            "urn:uuid:2534d579-41e8-431f-9199-0808478aad54",
+            "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\17009116",
+            "4e3043a6-d48a-4a35-b5fb-f67d50cbc158\\2534d579-41e8-431f-9199-0808478aad54"
+          ],
+          "genus": "epigaea",
+          "order": "ericales"
+        },
+        "sort": [
+          0.4057971
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "9904b70a-6db9-4e09-a5c5-0657b6d6520c",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 36.67139,
+            "lon": -81.02917
+          },
+          "family": "cyprinidae",
+          "recordset": "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf",
+          "dqs": 0.4057971014492754,
+          "stateprovince": "virginia",
+          "county": "grayson",
+          "phylum": "chordata",
+          "catalognumber": "25812",
+          "startdayofyear": 240,
+          "taxonrank": "species",
+          "specificepithet": "platyrhynchus",
+          "continent": "north america",
+          "datemodified": "2018-07-27T09:51:04.825535+00:00",
+          "uuid": "9904b70a-6db9-4e09-a5c5-0657b6d6520c",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "robert gibbs;  p. caswell",
+          "institutioncode": "cumv",
+          "verbatimlocality": "north america | united states | virginia | grayson county | mouth of elk cr., 7 mi. w of galax on us 58",
+          "datecollected": "1953-08-28T00:00:00+00:00",
+          "etag": "a8702360af831b93813e6afb0befddcde33859b6",
+          "typestatus": "paratype",
+          "flags": [
+            "gbif_reference_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_taxon_corrected",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_vernacularname_added",
+            "gbif_canonicalname_added",
+            "dwc_scientificnameauthorship_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia | chordata | actinopterygii | cypriniformes | cyprinidae | nocomis",
+          "collectionid": "http://grbio.org/cool/99jy-5cxe",
+          "taxonid": "2365437",
+          "scientificname": "nocomis platyrhynchus",
+          "indexData": {
+            "dwc:startDayOfYear": "240",
+            "dwc:specificEpithet": "platyrhynchus",
+            "idigbio:dateModified": "2018-07-27T09:51:04.825535",
+            "dwc:countryCode": "US",
+            "dwc:county": "Grayson",
+            "dwc:recordedBy": "Robert Gibbs;  P. Caswell",
+            "idigbio:uuid": "9904b70a-6db9-4e09-a5c5-0657b6d6520c",
+            "dwc:georeferencedDate": "2013-11-20",
+            "dwc:fieldNumber": "RHG 419",
+            "dwc:order": "Cypriniformes",
+            "dcterms:references": "http://portal.vertnet.org/o/cumv/fish?id=3a644889-f472-11e6-8713-0050569523c7",
+            "flag_gbif_reference_added": true,
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:locality": "Mouth of Elk Cr., 7 mi. W of Galax on US 58",
+            "idigbio:recordIds": [
+              "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf\\urn:occurrence:arctos:cumv:fish:25812:2129913",
+              "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf\\http://arctos.database.museum/guid/cumv:fish:25812?seid=2129913",
+              "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf\\3a644889-f472-11e6-8713-0050569523c7"
+            ],
+            "dwc:occurrenceID": "3a644889-f472-11e6-8713-0050569523c7",
+            "idigbio:etag": "a8702360af831b93813e6afb0befddcde33859b6",
+            "dcterms:language": "en",
+            "gbif:vernacularname": [
+              {
+                "coreid": "2365437",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "bigmouth chub"
+              },
+              {
+                "dwc:countrycode": "us",
+                "dwc:country": "united states",
+                "dwc:vernacularname": "bigmouth chub",
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:language": "en"
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:source": "ncbi taxonomy",
+                "dwc:vernacularname": "bigmouth chub"
+              },
+              {
+                "dwc:countrycode": "ee",
+                "dwc:country": "estonia",
+                "dwc:vernacularname": "laikoon-nokoomis",
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:language": "et"
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:language": "cs",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "nokomis širokorypý"
+              },
+              {
+                "coreid": "2365437",
+                "dwc:country": "china",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "大口美鱥",
+                "dwc:countrycode": "cn"
+              }
+            ],
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "3a644889-f472-11e6-8713-0050569523c7",
+            "dwc:establishmentMeans": "native",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf",
+            "dwc:stateProvince": "Virginia",
+            "dwc:taxonRank": "species",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:eventDate": "1953-08-28",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:collectionID": "http://grbio.org/cool/99jy-5cxe",
+            "dwc:country": "United States",
+            "dwc:typeStatus": "paratype",
+            "dwc:collectionCode": "Fish",
+            "dwc:occurrenceStatus": "present",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "36.67139",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "gbif:reference": [
+              {
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "eelurikkus (2015) eelurikkus koondab ühte portaali eesti eluslooduse andmed.: http://elurikkus.ut.ee/"
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "hanel, l. and j. novák (2002) ceské názvy zivocichu v. ryby a ryboviti obratlovci (pisces) 3., maloústí (gonorhynchiformes) - máloostní (cypriniformes).: národní muzeum (zoologické oddelení), praha."
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:identifier": "10.1073/pnas.1016437108",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "j. april, r. l. mayden, r. h. hanner and l. bernatchez genetic calibration of species diversity among north america's  freshwater fishes proceedings of the national academy of sciences 2011-06-13;108(26):10602-10607 doi:10.1073/pnas.1016437108"
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:identifier": "10.1371/journal.pone.0070296",
+                "dcterms:source": "international barcode of life project (ibol) barcode index numbers (bins)",
+                "dcterms:bibliographiccitation": "julien april, robert h. hanner, richard l. mayden and louis bernatchez metabolic rate and climatic fluctuations shape continental wide pattern of genetic divergence and biodiversity in fishes plos one 2013-06-21;8(7):e70296 doi:10.1371/journal.pone.0070296"
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "nelson, j.s., e.j. crossman, h. espinosa-pérez, l.t. findley, c.r. gilbert, r.n. lea and j.d. williams (2004) common and scientific names of fishes from the united states, canada, and mexico.: american fisheries society, special publication 29, bethesda, maryland. ix, 386 p. + 1 cd."
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "robins, c.r., r.m. bailey, c.e. bond, j.r. brooker, e.a. lachner, r.n. lea and w.b. scott (1991) common and scientific names of fishes from the united states and canada.: am. fish. soc. spec. pub. (20):183 p."
+              },
+              {
+                "coreid": "2365437",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "wu, h.l., k.-t. shao and c.f. lai (eds.) (1999) latin-chinese dictionary of fishes names.: the sueichan press, taiwan. 1028 p."
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Nocomis",
+            "dwc:continent": "North America",
+            "dwc:family": "Cyprinidae",
+            "idigbio:isocountrycode": "usa",
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:taxonid": "2365437",
+            "dwc:class": "Actinopterygii",
+            "flag_dwc_taxonid_added": true,
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "nocomis platyrhynchus",
+            "dwc:scientificnameauthorship": "lachner & jenkins, 1971",
+            "dwc:phylum": "Chordata",
+            "gbif:genericname": "nocomis",
+            "dwc:georeferenceSources": "Fishnet2",
+            "dwc:institutionID": "http://grbio.org/cool/i64g-wjcr",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "CUMV",
+            "dcterms:bibliographicCitation": "3a644889-f472-11e6-8713-0050569523c7.",
+            "dwc:parentnameusageid": "2365436",
+            "dwc:higherClassification": "Animalia | Chordata | Actinopterygii | Cypriniformes | Cyprinidae | Nocomis",
+            "dwc:catalogNumber": "25812",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "3a644889-f472-11e6-8713-0050569523c7",
+                "dwc:relatedResourceID": "http://arctos.database.museum/guid/CUMV:Fish:25812?seid=2129913",
+                "dwc:relationshipOfResource": "sameAs"
+              }
+            ],
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:higherGeography": "North America | United States | Virginia | Grayson County |  |  |  |",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-81.02917",
+            "dwc:scientificName": "Nocomis platyrhynchus",
+            "dwc:endDayOfYear": "240",
+            "dwc:verbatimLocality": "North America | United States | Virginia | Grayson County | Mouth of Elk Cr., 7 mi. W of Galax on US 58",
+            "dwc:georeferencedBy": "Michelle Vanderwel",
+            "dwc:verbatimEventDate": "28/8/1953",
+            "dwc:preparations": "whole organism (isopropanol) - 140",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:georeferenceProtocol": "VertNet Georeferencing Guidelines",
+            "dcterms:modified": "2018-03-01",
+            "dwc:coordinateUncertaintyInMeters": "210",
+            "dwc:day": "28",
+            "flag_dwc_scientificnameauthorship_added": true,
+            "dwc:year": "1953"
+          },
+          "coordinateuncertainty": 210,
+          "data": {
+            "dwc:startDayOfYear": "240",
+            "dwc:georeferenceProtocol": "VertNet Georeferencing Guidelines",
+            "dwc:specificEpithet": "platyrhynchus",
+            "dwc:countryCode": "US",
+            "dwc:county": "Grayson",
+            "dwc:recordedBy": "Robert Gibbs;  P. Caswell",
+            "dwc:georeferencedDate": "2013-11-20",
+            "dwc:fieldNumber": "RHG 419",
+            "dwc:order": "Cypriniformes",
+            "dcterms:references": "http://portal.vertnet.org/o/cumv/fish?id=3a644889-f472-11e6-8713-0050569523c7",
+            "dcterms:accessRights": "http://vertnet.org/resources/norms.html",
+            "dwc:occurrenceID": "3a644889-f472-11e6-8713-0050569523c7",
+            "dcterms:language": "en",
+            "id": "3a644889-f472-11e6-8713-0050569523c7",
+            "dwc:establishmentMeans": "native",
+            "dwc:stateProvince": "Virginia",
+            "dcterms:bibliographicCitation": "3a644889-f472-11e6-8713-0050569523c7.",
+            "dwc:eventDate": "1953-08-28",
+            "dwc:collectionID": "http://grbio.org/cool/99jy-5cxe",
+            "dwc:institutionCode": "CUMV",
+            "dwc:country": "United States",
+            "dwc:typeStatus": "paratype",
+            "dwc:collectionCode": "Fish",
+            "dwc:occurrenceStatus": "present",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "36.67139",
+            "dwc:georeferenceVerificationStatus": "requires verification",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Nocomis",
+            "dwc:continent": "North America",
+            "dwc:family": "Cyprinidae",
+            "dwc:georeferenceSources": "Fishnet2",
+            "dwc:higherClassification": "Animalia | Chordata | Actinopterygii | Cypriniformes | Cyprinidae | Nocomis",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:phylum": "Chordata",
+            "dwc:locality": "Mouth of Elk Cr., 7 mi. W of Galax on US 58",
+            "dwc:institutionID": "http://grbio.org/cool/i64g-wjcr",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "species",
+            "dwc:class": "Actinopterygii",
+            "dwc:catalogNumber": "25812",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:higherGeography": "North America | United States | Virginia | Grayson County |  |  |  |",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-81.02917",
+            "dwc:coordinateUncertaintyInMeters": "210",
+            "dwc:endDayOfYear": "240",
+            "dwc:verbatimLocality": "North America | United States | Virginia | Grayson County | Mouth of Elk Cr., 7 mi. W of Galax on US 58",
+            "dwc:georeferencedBy": "Michelle Vanderwel",
+            "dwc:verbatimEventDate": "28/8/1953",
+            "dwc:preparations": "whole organism (isopropanol) - 140",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "3a644889-f472-11e6-8713-0050569523c7",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "http://arctos.database.museum/guid/CUMV:Fish:25812?seid=2129913"
+              }
+            ],
+            "dcterms:modified": "2018-03-01",
+            "dwc:scientificName": "Nocomis platyrhynchus",
+            "dwc:day": "28",
+            "dwc:year": "1953"
+          },
+          "class": "actinopterygii",
+          "occurrenceid": "3a644889-f472-11e6-8713-0050569523c7",
+          "institutionid": "http://grbio.org/cool/i64g-wjcr",
+          "country": "united states",
+          "locality": "mouth of elk cr., 7 mi. w of galax on us 58",
+          "collectioncode": "fish",
+          "canonicalname": "nocomis platyrhynchus",
+          "eventdate": "1953-08-28",
+          "fieldnumber": "rhg 419",
+          "verbatimeventdate": "28/8/1953",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf\\urn:occurrence:arctos:cumv:fish:25812:2129913",
+            "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf\\http://arctos.database.museum/guid/cumv:fish:25812?seid=2129913",
+            "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf\\3a644889-f472-11e6-8713-0050569523c7"
+          ],
+          "genus": "nocomis",
+          "order": "cypriniformes",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        },
+        "sort": [
+          0.4057971
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "5ceb0710-2a4c-4a6a-8628-e88e533c57ea",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 35.4894,
+            "lon": -83.5608
+          },
+          "family": "pannariaceae",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.4057971014492754,
+          "stateprovince": "north carolina",
+          "county": "swain co.",
+          "phylum": "ascomycota",
+          "catalognumber": "2359947",
+          "startdayofyear": 269,
+          "taxonrank": "species",
+          "specificepithet": "crossophylla",
+          "continent": "north america",
+          "uuid": "5ceb0710-2a4c-4a6a-8628-e88e533c57ea",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "e. a. tripp",
+          "institutioncode": "ny",
+          "datemodified": "2023-01-11T05:22:15.568523+00:00",
+          "datecollected": "2014-09-26T00:00:00+00:00",
+          "etag": "cee1b6374728d6d133dc13e8ebb402cdf4f12e56",
+          "recordnumber": "5003",
+          "hasImage": false,
+          "kingdom": "fungi",
+          "collectionid": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+          "scientificname": "rockefellera crossophylla (tuck.) lendemer & e.tripp",
+          "indexData": {
+            "dwc:startDayOfYear": "269",
+            "dwc:specificEpithet": "crossophylla",
+            "dwc:county": "Swain Co.",
+            "dwc:recordedBy": "E. A. Tripp",
+            "idigbio:uuid": "5ceb0710-2a4c-4a6a-8628-e88e533c57ea",
+            "dwc:order": "Peltigerales",
+            "dwc:habitat": "Mature acid hardwood forest, Quercus rubra, Quercus prinus, Magnolia acuminata, Robinia pseudacacia, Carya sp., Kalmia latifolia, Epigaea repens, Galax aphylla",
+            "dwc:scientificNameAuthorship": "(Tuck.) Lendemer & E.Tripp",
+            "idigbio:recordIds": [
+              "36d35b23-113e-4633-90ec-19d265a3b5f6\\3977bb3a-4ca2-499f-8df4-4b714b794112"
+            ],
+            "dwc:occurrenceID": "3977bb3a-4ca2-499f-8df4-4b714b794112",
+            "dcterms:language": "en",
+            "dwc:verbatimElevation": "2380-3296 ft",
+            "dcterms:rightsHolder": "The New York Botanical Garden",
+            "idigbio:parent": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2014-09-26",
+            "dwc:collectionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:country": "united states",
+            "idigbio:etag": "cee1b6374728d6d133dc13e8ebb402cdf4f12e56",
+            "dwc:collectionCode": "NY",
+            "id": "3977bb3a-4ca2-499f-8df4-4b714b794112",
+            "dwc:kingdom": "Fungi",
+            "dwc:decimalLatitude": "35.4894",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Rockefellera",
+            "dwc:continent": "North America",
+            "dwc:family": "Pannariaceae",
+            "idigbio:isocountrycode": "usa",
+            "flag_dwc_country_replaced": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Ascomycota",
+            "dcterms:references": "http://sweetgum.nybg.org/science/vh/specimen_details.php?irn=2634445",
+            "idigbio:dateModified": "2023-01-11T05:22:15.568523",
+            "dwc:locality": "Great Smoky Mountains National Park, junction of Forney Creek Trail to Springhouse Branch Trail along Forney Ridge Trail",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:institutionCode": "NY",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Lecanoromycetes",
+            "dwc:catalogNumber": "2359947",
+            "dwc:nomenclaturalCode": "ICN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:endDayOfYear": "269",
+            "dwc:decimalLongitude": "-83.5608",
+            "dwc:datasetName": "Lichens",
+            "dwc:verbatimEventDate": "26 Sep 2014",
+            "dwc:recordNumber": "5003",
+            "dwc:preparations": "packeted",
+            "dcterms:modified": "T10:52+0400",
+            "dwc:scientificName": "Rockefellera crossophylla (Tuck.) Lendemer & E.Tripp"
+          },
+          "hasMedia": false,
+          "data": {
+            "dwc:startDayOfYear": "269",
+            "dwc:specificEpithet": "crossophylla",
+            "dwc:county": "Swain Co.",
+            "dwc:recordedBy": "E. A. Tripp",
+            "dwc:order": "Peltigerales",
+            "dwc:habitat": "Mature acid hardwood forest, Quercus rubra, Quercus prinus, Magnolia acuminata, Robinia pseudacacia, Carya sp., Kalmia latifolia, Epigaea repens, Galax aphylla",
+            "dwc:scientificNameAuthorship": "(Tuck.) Lendemer & E.Tripp",
+            "dwc:occurrenceID": "3977bb3a-4ca2-499f-8df4-4b714b794112",
+            "dcterms:language": "en",
+            "dwc:verbatimElevation": "2380-3296 ft",
+            "id": "3977bb3a-4ca2-499f-8df4-4b714b794112",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "2014-09-26",
+            "dwc:collectionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:country": "United States of America",
+            "dwc:collectionCode": "NY",
+            "dcterms:rightsHolder": "The New York Botanical Garden",
+            "dwc:kingdom": "Fungi",
+            "dwc:decimalLatitude": "35.4894",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Rockefellera",
+            "dwc:continent": "North America",
+            "dwc:family": "Pannariaceae",
+            "dwc:phylum": "Ascomycota",
+            "dcterms:references": "http://sweetgum.nybg.org/science/vh/specimen_details.php?irn=2634445",
+            "dwc:locality": "Great Smoky Mountains National Park, junction of Forney Creek Trail to Springhouse Branch Trail along Forney Ridge Trail",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:institutionCode": "NY",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Lecanoromycetes",
+            "dwc:catalogNumber": "2359947",
+            "dwc:nomenclaturalCode": "ICN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:endDayOfYear": "269",
+            "dwc:decimalLongitude": "-83.5608",
+            "dwc:datasetName": "Lichens",
+            "dwc:verbatimEventDate": "26 Sep 2014",
+            "dwc:recordNumber": "5003",
+            "dwc:preparations": "packeted",
+            "dcterms:modified": "T10:52+0400",
+            "dwc:scientificName": "Rockefellera crossophylla (Tuck.) Lendemer & E.Tripp"
+          },
+          "class": "lecanoromycetes",
+          "occurrenceid": "3977bb3a-4ca2-499f-8df4-4b714b794112",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+          "country": "united states",
+          "locality": "great smoky mountains national park, junction of forney creek trail to springhouse branch trail along forney ridge trail",
+          "collectioncode": "ny",
+          "eventdate": "2014-09-26",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added"
+          ],
+          "verbatimeventdate": "26 sep 2014",
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\3977bb3a-4ca2-499f-8df4-4b714b794112"
+          ],
+          "genus": "rockefellera",
+          "order": "peltigerales"
+        },
+        "sort": [
+          0.4057971
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "b4fe51d7-37e5-42a8-90cf-a68506dce139",
+        "_score": null,
+        "_source": {
+          "individualcount": 2,
+          "geopoint": {
+            "lat": 36.66124,
+            "lon": -80.92397
+          },
+          "family": "erebidae",
+          "recordset": "6b5e29d3-b462-44d8-ba38-d68af5088067",
+          "dqs": 0.4057971014492754,
+          "stateprovince": "virginia",
+          "institutioncode": "ypm",
+          "county": "grayson county",
+          "phylum": "arthropoda",
+          "catalognumber": "ypm ent 446196",
+          "startdayofyear": 178,
+          "taxonrank": "species",
+          "specificepithet": "lecontei",
+          "continent": "north america",
+          "uuid": "b4fe51d7-37e5-42a8-90cf-a68506dce139",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "pardon s. remington",
+          "commonnames": [
+            "butterflies and moths; winged insects; insects; hexapods; arthropods; animals"
+          ],
+          "datemodified": "2022-12-07T01:18:52.358259+00:00",
+          "datecollected": "1952-06-26T00:00:00+00:00",
+          "etag": "5f146285943c01b4d2a09c3a69388298e7a7784e",
+          "hasMedia": false,
+          "hasImage": false,
+          "kingdom": "animalia",
+          "highertaxon": "animalia; arthropoda; hexapoda; insecta; pterygota; endopterygota; lepidoptera; ditrysia; noctuoidea; erebidae; arctiinae",
+          "commonname": "butterflies and moths; winged insects; insects; hexapods; arthropods; animals",
+          "scientificname": "haploa lecontei",
+          "indexData": {
+            "dwc:specificEpithet": "lecontei",
+            "dwc:county": "Grayson County",
+            "dwc:recordedBy": "Pardon S. Remington",
+            "idigbio:uuid": "b4fe51d7-37e5-42a8-90cf-a68506dce139",
+            "dwc:georeferencedDate": "2018",
+            "dwc:order": "Lepidoptera",
+            "dcterms:references": "http://collections.peabody.yale.edu/search/Record/YPM-ENT-446196",
+            "dwc:scientificNameAuthorship": "(Guer.-Men.)",
+            "dwc:locality": "Galax",
+            "idigbio:recordIds": [
+              "6b5e29d3-b462-44d8-ba38-d68af5088067\\urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04"
+            ],
+            "dwc:occurrenceID": "urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04",
+            "dwc:decimalLatitude": "36.66124",
+            "dcterms:rightsHolder": "Yale Peabody Museum",
+            "idigbio:parent": "6b5e29d3-b462-44d8-ba38-d68af5088067",
+            "dwc:stateProvince": "Virginia",
+            "dwc:taxonRank": "Species",
+            "dwc:eventDate": "1952-06-26",
+            "dwc:country": "united states",
+            "idigbio:etag": "5f146285943c01b4d2a09c3a69388298e7a7784e",
+            "dwc:collectionCode": "ENT",
+            "id": "urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04",
+            "dwc:kingdom": "Animalia",
+            "dwc:georeferenceRemarks": "Confidence: High, Score: 80, String: GALAX, automated process by N. Rios and L. Gall",
+            "dwc:occurrenceRemarks": "ENT number 446196; lot count 2",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+            "dwc:genus": "Haploa",
+            "dwc:continent": "North America",
+            "dwc:family": "Erebidae",
+            "flag_dwc_country_replaced": true,
+            "dwc:dynamicProperties": "{ \"irn\": \"1469647\", \"solr_long_lat\": \"-80.92397,36.66124\" }",
+            "dwc:class": "Insecta",
+            "dwc:disposition": "in collection",
+            "dwc:previousIdentifications": "Haploa lecontei",
+            "dcterms:license": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "dwc:ownerInstitutionCode": "YPM",
+            "dwc:vernacularName": "butterflies and moths; winged insects; insects; hexapods; arthropods; animals",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Arthropoda",
+            "idigbio:dateModified": "2022-12-07T01:18:52.358259",
+            "dwc:georeferenceSources": "GEOLocate",
+            "dwc:institutionCode": "YPM",
+            "dcterms:bibliographicCitation": "Haploa lecontei (YPM ENT 446196)",
+            "dwc:higherClassification": "Animalia; Arthropoda; Hexapoda; Insecta; Pterygota; Endopterygota; Lepidoptera; Ditrysia; Noctuoidea; Erebidae; Arctiinae",
+            "dwc:catalogNumber": "YPM ENT 446196",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dwc:taxonRemarks": "Animals and Plants: Invertebrates - Insects",
+            "dwc:higherGeography": "North America; USA; Virginia; Grayson County",
+            "dwc:individualCount": "2",
+            "dwc:decimalLongitude": "-80.92397",
+            "dwc:scientificName": "Haploa lecontei",
+            "dwc:month": "6",
+            "idigbio:isocountrycode": "usa",
+            "dwc:geodeticDatum": "WGS84",
+            "flag_taxon_match_failed": true,
+            "dwc:georeferenceProtocol": "digital resource",
+            "dcterms:modified": "2020-09-25T23:20:20.000Z",
+            "dwc:coordinateUncertaintyInMeters": "3036",
+            "dwc:day": "26",
+            "dwc:datasetID": "0",
+            "dwc:year": "1952"
+          },
+          "coordinateuncertainty": 3036,
+          "data": {
+            "dwc:specificEpithet": "lecontei",
+            "dwc:county": "Grayson County",
+            "dwc:recordedBy": "Pardon S. Remington",
+            "dwc:georeferencedDate": "2018",
+            "dwc:order": "Lepidoptera",
+            "dcterms:references": "http://collections.peabody.yale.edu/search/Record/YPM-ENT-446196",
+            "dwc:individualCount": "2",
+            "dwc:georeferenceRemarks": "Confidence: High, Score: 80, String: GALAX, automated process by N. Rios and L. Gall",
+            "dwc:occurrenceID": "urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04",
+            "dwc:scientificNameAuthorship": "(Guer.-Men.)",
+            "id": "urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04",
+            "dwc:stateProvince": "Virginia",
+            "dcterms:bibliographicCitation": "Haploa lecontei (YPM ENT 446196)",
+            "dwc:eventDate": "1952-06-26",
+            "dwc:institutionCode": "YPM",
+            "dwc:country": "USA",
+            "dwc:collectionCode": "ENT",
+            "dcterms:rightsHolder": "Yale Peabody Museum",
+            "dwc:kingdom": "Animalia",
+            "dwc:decimalLatitude": "36.66124",
+            "dwc:occurrenceRemarks": "ENT number 446196; lot count 2",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+            "dwc:genus": "Haploa",
+            "dwc:continent": "North America",
+            "dwc:family": "Erebidae",
+            "dwc:dynamicProperties": "{ \"irn\": \"1469647\", \"solr_long_lat\": \"-80.92397,36.66124\" }",
+            "dwc:georeferenceSources": "GEOLocate",
+            "dwc:disposition": "in collection",
+            "dwc:previousIdentifications": "Haploa lecontei",
+            "dcterms:license": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:ownerInstitutionCode": "YPM",
+            "dwc:vernacularName": "butterflies and moths; winged insects; insects; hexapods; arthropods; animals",
+            "dwc:higherClassification": "Animalia; Arthropoda; Hexapoda; Insecta; Pterygota; Endopterygota; Lepidoptera; Ditrysia; Noctuoidea; Erebidae; Arctiinae",
+            "dwc:phylum": "Arthropoda",
+            "dwc:locality": "Galax",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Insecta",
+            "dwc:catalogNumber": "YPM ENT 446196",
+            "dwc:nomenclaturalCode": "ICZN",
+            "dwc:taxonRemarks": "Animals and Plants: Invertebrates - Insects",
+            "dwc:higherGeography": "North America; USA; Virginia; Grayson County",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-80.92397",
+            "dwc:coordinateUncertaintyInMeters": "3036",
+            "dwc:georeferenceProtocol": "digital resource",
+            "dcterms:modified": "2020-09-25T23:20:20.000Z",
+            "dwc:scientificName": "Haploa lecontei",
+            "dwc:day": "26",
+            "dwc:datasetID": "0",
+            "dwc:year": "1952"
+          },
+          "class": "insecta",
+          "occurrenceid": "urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04",
+          "country": "united states",
+          "locality": "galax",
+          "collectioncode": "ent",
+          "eventdate": "1952-06-26",
+          "flags": [
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "taxon_match_failed"
+          ],
+          "recordids": [
+            "6b5e29d3-b462-44d8-ba38-d68af5088067\\urn:uuid:32219a52-fabb-408d-99a8-f4870e47df04"
+          ],
+          "genus": "haploa",
+          "order": "lepidoptera",
+          "datasetid": "0"
+        },
+        "sort": [
+          0.4057971
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "c1497f7b-ff82-4a48-8270-497ad483aa1f",
+        "_score": null,
+        "_source": {
+          "geopoint": {
+            "lat": 35.75,
+            "lon": -82.25
+          },
+          "family": "ericaceae",
+          "recordset": "3027c437-cdb3-4072-9410-5a46ec3b1fd5",
+          "dqs": 0.4057971014492754,
+          "stateprovince": "north carolina",
+          "county": "yancey",
+          "phylum": "magnoliophyta",
+          "catalognumber": "uvmvt261268",
+          "startdayofyear": 115,
+          "taxonrank": "species",
+          "specificepithet": "recurva",
+          "continent": "north america",
+          "uuid": "c1497f7b-ff82-4a48-8270-497ad483aa1f",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "hill, s. r.",
+          "institutioncode": "vt",
+          "mediarecords": [
+            "a1b7dff8-d124-4dbf-9edd-8fd9aae48909"
+          ],
+          "datecollected": "1986-04-25T00:00:00+00:00",
+          "etag": "ed04d8f7e0ceb00ca223d79e317ee9f5ff4efb41",
+          "recordnumber": "16671",
+          "minelevation": 945,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "highertaxon": "plantae|magnoliophyta|eudicots|core eudicots|asterids|ericales|ericaceae|leucothoe",
+          "collectionid": "58ab88f3-0034-461c-9c44-9e525c4d360f",
+          "taxonid": "89249",
+          "scientificname": "leucothoe recurva",
+          "indexData": {
+            "dwc:startDayOfYear": "115",
+            "dwc:specificEpithet": "recurva",
+            "dwc:county": "Yancey",
+            "dwc:recordedBy": "Hill, S. R.",
+            "idigbio:uuid": "c1497f7b-ff82-4a48-8270-497ad483aa1f",
+            "dwc:locality": "Carolina Hemlock Recreation Area, Rte. 80, Pisgah National Forest, between Celo and Busick, w of eastern continental divide",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "forest, under hemlocks, e side of road",
+            "dwc:scientificNameAuthorship": "(Buckley) A. Gray",
+            "idigbio:recordIds": [
+              "3027c437-cdb3-4072-9410-5a46ec3b1fd5\\16633715",
+              "urn:uuid:ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+              "3027c437-cdb3-4072-9410-5a46ec3b1fd5\\ed155dc6-4234-4e1d-88b9-e4bea78d0f5a"
+            ],
+            "dwc:occurrenceID": "ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+            "id": "16633715",
+            "dwc:verbatimElevation": "3100 ft",
+            "symbiota:recordEnteredBy": "Kerwien, L.",
+            "dwc:taxonID": "89249",
+            "idigbio:parent": "3027c437-cdb3-4072-9410-5a46ec3b1fd5",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "1986-04-25",
+            "dwc:collectionID": "58ab88f3-0034-461c-9c44-9e525c4d360f",
+            "dwc:country": "United States",
+            "idigbio:etag": "ed04d8f7e0ceb00ca223d79e317ee9f5ff4efb41",
+            "dcterms:rightsHolder": "University of Vermont",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "35.75",
+            "dwc:occurrenceRemarks": "Infrequent; Flowers white, pendulous, slightly fragrant, shrub 2 m tall",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Leucothoe",
+            "dwc:continent": "north america",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:associatedTaxa": "Hemlocks (both species), rhododendron, Galax",
+            "dwc:geodeticDatum": "WGS84",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "a1b7dff8-d124-4dbf-9edd-8fd9aae48909"
+              ]
+            },
+            "symbiota:recordID": "ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://nansh.org/portal/collections/individual/index.php?occid=16633715",
+            "idigbio:dateModified": "2022-12-06T22:54:37.592850",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dwc:institutionCode": "VT",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Ericaceae|Leucothoe",
+            "dwc:catalogNumber": "UVMVT261268",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.25",
+            "dwc:scientificName": "Leucothoe recurva",
+            "dwc:verbatimEventDate": "25 April 1986",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "16671",
+            "idigbio:isocountrycode": "usa",
+            "flag_taxon_match_failed": true,
+            "dwc:minimumElevationInMeters": "945",
+            "dcterms:modified": "2022-02-19 16:14:54",
+            "dwc:coordinateUncertaintyInMeters": "1204",
+            "dwc:day": "25",
+            "dwc:year": "1986"
+          },
+          "hasMedia": true,
+          "coordinateuncertainty": 1204,
+          "data": {
+            "dwc:startDayOfYear": "115",
+            "dwc:specificEpithet": "recurva",
+            "dwc:county": "Yancey",
+            "dwc:recordedBy": "Hill, S. R.",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "forest, under hemlocks, e side of road",
+            "dwc:scientificNameAuthorship": "(Buckley) A. Gray",
+            "dwc:occurrenceID": "ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+            "dwc:verbatimElevation": "3100 ft",
+            "id": "16633715",
+            "dwc:taxonID": "89249",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "1986-04-25",
+            "symbiota:recordEnteredBy": "Kerwien, L.",
+            "dwc:collectionID": "58ab88f3-0034-461c-9c44-9e525c4d360f",
+            "dwc:institutionCode": "VT",
+            "dwc:country": "United States",
+            "dcterms:rightsHolder": "University of Vermont",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "35.75",
+            "dwc:occurrenceRemarks": "Infrequent; Flowers white, pendulous, slightly fragrant, shrub 2 m tall",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Leucothoe",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:coordinateUncertaintyInMeters": "1204",
+            "symbiota:recordID": "ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "https://nansh.org/portal/collections/individual/index.php?occid=16633715",
+            "dwc:locality": "Carolina Hemlock Recreation Area, Rte. 80, Pisgah National Forest, between Celo and Busick, w of eastern continental divide",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Plantae|Magnoliophyta|Eudicots|Core Eudicots|Asterids|Ericales|Ericaceae|Leucothoe",
+            "dwc:catalogNumber": "UVMVT261268",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.25",
+            "dwc:scientificName": "Leucothoe recurva",
+            "dwc:verbatimEventDate": "25 April 1986",
+            "dwc:recordNumber": "16671",
+            "dwc:minimumElevationInMeters": "945",
+            "dcterms:modified": "2022-02-19 16:14:54",
+            "dwc:associatedTaxa": "Hemlocks (both species), rhododendron, Galax",
+            "dwc:day": "25",
+            "dwc:year": "1986"
+          },
+          "datemodified": "2022-12-06T22:54:37.592850+00:00",
+          "occurrenceid": "ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+          "country": "united states",
+          "locality": "carolina hemlock recreation area, rte. 80, pisgah national forest, between celo and busick, w of eastern continental divide",
+          "eventdate": "1986-04-25",
+          "flags": [
+            "geopoint_low_precision",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "25 april 1986",
+          "recordids": [
+            "3027c437-cdb3-4072-9410-5a46ec3b1fd5\\16633715",
+            "urn:uuid:ed155dc6-4234-4e1d-88b9-e4bea78d0f5a",
+            "3027c437-cdb3-4072-9410-5a46ec3b1fd5\\ed155dc6-4234-4e1d-88b9-e4bea78d0f5a"
+          ],
+          "genus": "leucothoe",
+          "order": "ericales"
+        },
+        "sort": [
+          0.4057971
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "d73ac8f9-69d0-44ac-abfe-4314249f83ff",
+        "_score": null,
+        "_source": {
+          "family": "ericaceae",
+          "recordset": "a4e6033a-d1eb-46d3-869d-7c0328f09aa7",
+          "dqs": 0.4057971014492754,
+          "stateprovince": "north carolina",
+          "county": "surry",
+          "phylum": "tracheophyta",
+          "catalognumber": "rsa0170684",
+          "startdayofyear": 222,
+          "taxonrank": "species",
+          "specificepithet": "recurva",
+          "continent": "north america",
+          "uuid": "d73ac8f9-69d0-44ac-abfe-4314249f83ff",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "f. r. fosberg",
+          "institutioncode": "rsa",
+          "mediarecords": [
+            "95553283-ddf1-467b-a506-6ae314427e27"
+          ],
+          "datemodified": "2022-12-06T22:13:54.132629+00:00",
+          "datecollected": "1948-08-09T00:00:00+00:00",
+          "etag": "6d72f44178c6f8082e0d4ea6c39f72baf36983a4",
+          "recordnumber": "29986",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "highertaxon": "organism|plantae|viridiplantae|streptophyta|embryophyta|tracheophyta|spermatophytina|magnoliopsida|asteranae|ericales|ericaceae|leucothoe",
+          "collectionid": "3818e1d3-b6a4-11e8-b408-001a64db2964",
+          "taxonid": "71397",
+          "scientificname": "leucothoe recurva",
+          "indexData": {
+            "dwc:startDayOfYear": "222",
+            "dwc:specificEpithet": "recurva",
+            "dwc:county": "Surry",
+            "dwc:recordedBy": "F. R. Fosberg",
+            "idigbio:uuid": "d73ac8f9-69d0-44ac-abfe-4314249f83ff",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "Occasional in undergrowth of rather sparce oak forest. Galax very abundant.",
+            "dwc:scientificNameAuthorship": "(Buckley) A. Gray",
+            "idigbio:recordIds": [
+              "urn:uuid:0010321e-be0d-448f-965f-9c560f0f153b",
+              "a4e6033a-d1eb-46d3-869d-7c0328f09aa7\\3839279",
+              "a4e6033a-d1eb-46d3-869d-7c0328f09aa7\\b951c7d4-23ef-453f-9860-6e30a0f5b8bf",
+              "urn:uuid:a4c24acd-6881-45a9-b51d-598f77b5929d",
+              "a4e6033a-d1eb-46d3-869d-7c0328f09aa7\\25251144"
+            ],
+            "dwc:occurrenceID": "b951c7d4-23ef-453f-9860-6e30a0f5b8bf",
+            "symbiota:recordEnteredBy": "Brittany Burgard; cataloged date: 2019-07-16",
+            "dwc:taxonID": "71397",
+            "idigbio:parent": "a4e6033a-d1eb-46d3-869d-7c0328f09aa7",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "1948-08-09",
+            "dwc:collectionID": "3818e1d3-b6a4-11e8-b408-001a64db2964",
+            "dwc:country": "United States",
+            "idigbio:etag": "6d72f44178c6f8082e0d4ea6c39f72baf36983a4",
+            "dwc:collectionCode": "POM",
+            "id": "3839279",
+            "dwc:kingdom": "Plantae",
+            "dwc:occurrenceRemarks": "Shrub 1.5 m tall.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Leucothoe",
+            "dwc:continent": "north america",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:class": "Magnoliopsida",
+            "idigbio:isocountrycode": "usa",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "95553283-ddf1-467b-a506-6ae314427e27"
+              ]
+            },
+            "symbiota:recordID": "0010321e-be0d-448f-965f-9c560f0f153b",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:phylum": "Tracheophyta",
+            "dcterms:references": "https://cch2.org/portal/collections/individual/index.php?occid=3839279",
+            "idigbio:dateModified": "2022-12-06T22:13:54.132629",
+            "dwc:locality": "Blue Ridge Parkway just south of Virginia boundary.",
+            "dwc:institutionCode": "RSA",
+            "dwc:taxonRank": "Species",
+            "dwc:higherClassification": "Organism|Plantae|Viridiplantae|Streptophyta|Embryophyta|Tracheophyta|Spermatophytina|Magnoliopsida|Asteranae|Ericales|Ericaceae|Leucothoe",
+            "dwc:catalogNumber": "RSA0170684",
+            "dwc:month": "8",
+            "dwc:associatedTaxa": "Nyssa",
+            "dwc:otherCatalogNumbers": "POM accession: 336899",
+            "dwc:verbatimEventDate": "Aug 9 1948",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "29986",
+            "dwc:preparations": "herbarium sheet",
+            "flag_taxon_match_failed": true,
+            "dcterms:modified": "2022-03-04 14:33:47",
+            "dwc:scientificName": "Leucothoe recurva",
+            "dwc:day": "9",
+            "dwc:year": "1948"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:startDayOfYear": "222",
+            "dwc:specificEpithet": "recurva",
+            "dwc:county": "Surry",
+            "dwc:recordedBy": "F. R. Fosberg",
+            "dwc:order": "Ericales",
+            "dwc:habitat": "Occasional in undergrowth of rather sparce oak forest. Galax very abundant.",
+            "dwc:scientificNameAuthorship": "(Buckley) A. Gray",
+            "dwc:occurrenceID": "b951c7d4-23ef-453f-9860-6e30a0f5b8bf",
+            "id": "3839279",
+            "dwc:taxonID": "71397",
+            "dwc:stateProvince": "North Carolina",
+            "dwc:eventDate": "1948-08-09",
+            "symbiota:recordEnteredBy": "Brittany Burgard; cataloged date: 2019-07-16",
+            "dwc:collectionID": "3818e1d3-b6a4-11e8-b408-001a64db2964",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "POM",
+            "dwc:higherClassification": "Organism|Plantae|Viridiplantae|Streptophyta|Embryophyta|Tracheophyta|Spermatophytina|Magnoliopsida|Asteranae|Ericales|Ericaceae|Leucothoe",
+            "dwc:kingdom": "Plantae",
+            "dwc:occurrenceRemarks": "Shrub 1.5 m tall.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Leucothoe",
+            "dwc:family": "Ericaceae",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "symbiota:recordID": "0010321e-be0d-448f-965f-9c560f0f153b",
+            "dwc:phylum": "Tracheophyta",
+            "dcterms:references": "https://cch2.org/portal/collections/individual/index.php?occid=3839279",
+            "dwc:locality": "Blue Ridge Parkway just south of Virginia boundary.",
+            "dwc:institutionCode": "RSA",
+            "dwc:taxonRank": "Species",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "RSA0170684",
+            "dwc:month": "8",
+            "dwc:scientificName": "Leucothoe recurva",
+            "dwc:otherCatalogNumbers": "POM accession: 336899",
+            "dwc:verbatimEventDate": "Aug 9 1948",
+            "dwc:recordNumber": "29986",
+            "dwc:preparations": "herbarium sheet",
+            "dcterms:modified": "2022-03-04 14:33:47",
+            "dwc:associatedTaxa": "Nyssa",
+            "dwc:day": "9",
+            "dwc:year": "1948"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "b951c7d4-23ef-453f-9860-6e30a0f5b8bf",
+          "country": "united states",
+          "locality": "blue ridge parkway just south of virginia boundary.",
+          "collectioncode": "pom",
+          "eventdate": "1948-08-09",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "aug 9 1948",
+          "recordids": [
+            "urn:uuid:0010321e-be0d-448f-965f-9c560f0f153b",
+            "a4e6033a-d1eb-46d3-869d-7c0328f09aa7\\3839279",
+            "a4e6033a-d1eb-46d3-869d-7c0328f09aa7\\b951c7d4-23ef-453f-9860-6e30a0f5b8bf",
+            "urn:uuid:a4c24acd-6881-45a9-b51d-598f77b5929d",
+            "a4e6033a-d1eb-46d3-869d-7c0328f09aa7\\25251144"
+          ],
+          "genus": "leucothoe",
+          "order": "ericales"
+        },
+        "sort": [
+          0.4057971
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "doc_count": 420
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 371
+        },
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 319
+        },
+        {
+          "key": "beab5209-9628-4d4d-851e-2bc9bb1a0105",
+          "doc_count": 143
+        },
+        {
+          "key": "d53132e6-7997-4850-8607-4fec5a3f9c3f",
+          "doc_count": 140
+        },
+        {
+          "key": "72d4c3c7-3413-4588-a803-e1a63e0d7c6c",
+          "doc_count": 128
+        },
+        {
+          "key": "4523e216-ee13-4b15-a3f7-a6fd56431604",
+          "doc_count": 114
+        },
+        {
+          "key": "471835cc-feb6-4d05-a8d1-62ce71399326",
+          "doc_count": 107
+        },
+        {
+          "key": "6258d160-a7aa-4937-bce3-3538eebd374f",
+          "doc_count": 101
+        },
+        {
+          "key": "83ad8494-136b-485a-87d4-8ce01dd6a8de",
+          "doc_count": 94
+        },
+        {
+          "key": "ff89320d-e232-4edd-9cdd-4b6acc672ad3",
+          "doc_count": 87
+        },
+        {
+          "key": "e95396c4-1cac-4c9b-b461-5f21cd978fc6",
+          "doc_count": 84
+        },
+        {
+          "key": "a16dc8d8-ff4a-4d62-a684-2937fb292b8d",
+          "doc_count": 80
+        },
+        {
+          "key": "e23109b4-e143-437c-b329-3dff7cb35488",
+          "doc_count": 78
+        },
+        {
+          "key": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+          "doc_count": 76
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 73
+        },
+        {
+          "key": "70abba3e-5f2a-4276-87f3-261706e24453",
+          "doc_count": 71
+        },
+        {
+          "key": "db6c3db9-1e6d-4def-af29-33aa0339bfa9",
+          "doc_count": 64
+        },
+        {
+          "key": "570dcca6-a84f-43aa-8053-1a2ac60d9ead",
+          "doc_count": 60
+        },
+        {
+          "key": "aca26f37-3ec8-4e9e-b927-50b4944a0096",
+          "doc_count": 56
+        },
+        {
+          "key": "120d557c-c5be-474d-98f0-1ba00ae16b40",
+          "doc_count": 53
+        },
+        {
+          "key": "ddef79ec-043c-4027-9876-c4a298feff6d",
+          "doc_count": 48
+        },
+        {
+          "key": "21b563bc-70c2-46d5-bce8-2489db2db3d8",
+          "doc_count": 45
+        },
+        {
+          "key": "f0174bc9-0cca-450e-a941-655d80040139",
+          "doc_count": 39
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 38
+        },
+        {
+          "key": "20360fae-574a-4d63-b9f6-47b1cc07fd22",
+          "doc_count": 36
+        },
+        {
+          "key": "5386d272-06c6-4027-b5d5-d588c2afe5e5",
+          "doc_count": 32
+        },
+        {
+          "key": "e794b292-4a94-471e-ab84-6aaef1fea1b3",
+          "doc_count": 31
+        },
+        {
+          "key": "3027c437-cdb3-4072-9410-5a46ec3b1fd5",
+          "doc_count": 30
+        },
+        {
+          "key": "ce0c9488-97f0-432a-a0fa-d204230366be",
+          "doc_count": 30
+        },
+        {
+          "key": "76fd34da-4892-4821-858d-98fe9e28ba8b",
+          "doc_count": 26
+        },
+        {
+          "key": "fabcdc12-9d29-4bd2-912b-176e71818144",
+          "doc_count": 26
+        },
+        {
+          "key": "45544aa4-8762-4bf0-bfc6-890d08dc6ead",
+          "doc_count": 25
+        },
+        {
+          "key": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "doc_count": 23
+        },
+        {
+          "key": "0038ce2e-43bb-4f70-8dd6-dca34efd3fca",
+          "doc_count": 22
+        },
+        {
+          "key": "56879e73-bf9d-4bd9-a7a4-4f2f940d0f62",
+          "doc_count": 21
+        },
+        {
+          "key": "b764863c-de93-4d7c-b0cf-1bb57166141d",
+          "doc_count": 21
+        },
+        {
+          "key": "1aee98c2-6623-49ae-b4af-c8afcf08150f",
+          "doc_count": 20
+        },
+        {
+          "key": "1e798b2d-7f97-49b0-a864-79c968af91d3",
+          "doc_count": 20
+        },
+        {
+          "key": "4fecde59-9f59-44eb-ab6f-4a50b4ed85cf",
+          "doc_count": 20
+        },
+        {
+          "key": "8f689b8b-5b65-4638-9555-f2a5d237a624",
+          "doc_count": 20
+        },
+        {
+          "key": "46c11153-2154-495d-89d2-7cdef6425cdb",
+          "doc_count": 16
+        },
+        {
+          "key": "2941b767-e90b-41b9-9627-6e589e0c0c85",
+          "doc_count": 15
+        },
+        {
+          "key": "3056112e-97c6-4d0d-b6c2-3c0a9adaca24",
+          "doc_count": 14
+        },
+        {
+          "key": "348f4784-4786-45be-8d0f-85f2b189eba8",
+          "doc_count": 14
+        },
+        {
+          "key": "65536dcd-7bb2-44e5-af3f-4a13f08e53d0",
+          "doc_count": 13
+        },
+        {
+          "key": "aac5fd7f-8043-4aa8-811f-e50de70d96f3",
+          "doc_count": 13
+        },
+        {
+          "key": "de67ccab-7d04-43b9-8083-81e45f628505",
+          "doc_count": 13
+        },
+        {
+          "key": "042dbdba-a449-4291-8777-577a5a4045de",
+          "doc_count": 12
+        },
+        {
+          "key": "0583609b-202f-40d0-8021-4c019635d4c9",
+          "doc_count": 12
+        },
+        {
+          "key": "0fd6e726-6828-4f62-ba8d-6ec316fe0b52",
+          "doc_count": 12
+        },
+        {
+          "key": "6b5e29d3-b462-44d8-ba38-d68af5088067",
+          "doc_count": 12
+        },
+        {
+          "key": "9cecfba6-6501-401c-9043-e95ba70164f3",
+          "doc_count": 12
+        },
+        {
+          "key": "1bb2a80e-271f-46a8-bbfc-ba56d3e6292a",
+          "doc_count": 11
+        },
+        {
+          "key": "0dab1fc7-ca99-456b-9985-76edbac003e0",
+          "doc_count": 10
+        },
+        {
+          "key": "5e29dbcc-ce45-4f05-9bb0-212baffa8932",
+          "doc_count": 10
+        },
+        {
+          "key": "92dd8c8e-c048-4f0a-9b5d-2ee627d2f553",
+          "doc_count": 10
+        },
+        {
+          "key": "98ece30d-bf85-4122-b872-7786031b457f",
+          "doc_count": 10
+        },
+        {
+          "key": "b30a7dd2-d974-4073-bdd0-cb4ea5402bae",
+          "doc_count": 10
+        },
+        {
+          "key": "e36691ec-c4f8-4bec-b331-b48ffa82ff49",
+          "doc_count": 10
+        },
+        {
+          "key": "e5f57bb0-07ec-4405-90b6-dc89647a1cb5",
+          "doc_count": 10
+        },
+        {
+          "key": "37213da3-a1c7-4644-917e-8f8440e1c4d4",
+          "doc_count": 9
+        },
+        {
+          "key": "5486b66d-2082-433d-9223-bd789ebca29c",
+          "doc_count": 9
+        },
+        {
+          "key": "71bf994a-3af5-484d-983b-b146aa1512d1",
+          "doc_count": 9
+        },
+        {
+          "key": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+          "doc_count": 9
+        },
+        {
+          "key": "9e1958fb-1dc4-4375-ae35-67ba7f9c7afe",
+          "doc_count": 9
+        },
+        {
+          "key": "a4babe52-5740-44e4-9ea2-acef4797f127",
+          "doc_count": 9
+        },
+        {
+          "key": "e34cf41b-196c-4199-85d5-4d2ca5954b09",
+          "doc_count": 9
+        },
+        {
+          "key": "f5d395b8-c3c9-43df-b4ff-63d65c6a971e",
+          "doc_count": 9
+        },
+        {
+          "key": "62f951c1-b6a8-430c-8652-5691f079152c",
+          "doc_count": 8
+        },
+        {
+          "key": "6b2c3ca9-69ad-4316-a2d1-33399e9f547e",
+          "doc_count": 8
+        },
+        {
+          "key": "7450a9e3-ef95-4f9e-8260-09b498d2c5e6",
+          "doc_count": 8
+        },
+        {
+          "key": "a2b36fdf-50bc-44ef-a6a4-ca6dc1dc148a",
+          "doc_count": 8
+        },
+        {
+          "key": "c38b867b-05f3-4733-802e-d8d2d3324f84",
+          "doc_count": 8
+        },
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 8
+        },
+        {
+          "key": "1d17fdad-d338-4ae0-9232-dbf18eaf9f66",
+          "doc_count": 7
+        },
+        {
+          "key": "1f5a1b81-e361-4d65-ab1c-6fb7e30c9910",
+          "doc_count": 7
+        },
+        {
+          "key": "ad4e4ea0-2ac9-4030-b4bd-bf4206e79bcc",
+          "doc_count": 7
+        },
+        {
+          "key": "c55ac6d0-180d-41be-829a-e82898c5ca54",
+          "doc_count": 7
+        },
+        {
+          "key": "cb65cf5e-07b8-4d53-a91a-7dce9b8ccf80",
+          "doc_count": 7
+        },
+        {
+          "key": "ef59f7cc-ed42-45fc-9abc-5edfb2c8caec",
+          "doc_count": 7
+        },
+        {
+          "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "doc_count": 7
+        },
+        {
+          "key": "215eeaf0-0a88-409e-a75d-aec98b7c41eb",
+          "doc_count": 6
+        },
+        {
+          "key": "40d35f62-cf89-488a-bad3-66e66d38c10c",
+          "doc_count": 6
+        },
+        {
+          "key": "765aa536-b79e-4794-a0d2-40a160233922",
+          "doc_count": 6
+        },
+        {
+          "key": "9e5aede6-bee5-4a3d-a255-513771b20035",
+          "doc_count": 6
+        },
+        {
+          "key": "c2767dde-1315-4d78-abf9-8e098dd588ab",
+          "doc_count": 6
+        },
+        {
+          "key": "c569e530-7322-40b8-9b66-1e0ed96fefcb",
+          "doc_count": 6
+        },
+        {
+          "key": "4830ffb8-669a-4717-bec8-2f2374f52120",
+          "doc_count": 5
+        },
+        {
+          "key": "538bdd33-b616-4825-8542-7033cc8a185f",
+          "doc_count": 5
+        },
+        {
+          "key": "5835f642-2560-4e3e-9c25-741a12cc3fe8",
+          "doc_count": 5
+        },
+        {
+          "key": "664bd710-8791-4dba-a3b6-000a1b140951",
+          "doc_count": 5
+        },
+        {
+          "key": "667a12e7-c6d8-4de0-933f-ce2f07cb7a92",
+          "doc_count": 5
+        },
+        {
+          "key": "7026b70a-7245-42bd-8162-81ae9a6cfbcb",
+          "doc_count": 5
+        },
+        {
+          "key": "774a153b-e556-47f6-95d1-bab49e61cc58",
+          "doc_count": 5
+        },
+        {
+          "key": "7e4aacd3-0a24-49ab-b019-518b7069b682",
+          "doc_count": 5
+        },
+        {
+          "key": "8f3b62fb-56ec-49e8-9f8f-bb257348291f",
+          "doc_count": 5
+        },
+        {
+          "key": "97058091-eb35-401b-b286-18465761f832",
+          "doc_count": 5
+        },
+        {
+          "key": "c3134980-bf5c-49b8-a289-790d45f02c86",
+          "doc_count": 5
+        },
+        {
+          "key": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+          "doc_count": 4
+        },
+        {
+          "key": "33bac15d-b1d0-42a1-8801-86149887eeef",
+          "doc_count": 4
+        },
+        {
+          "key": "3c9420c9-c4a8-47dc-88b7-b5638ca5e716",
+          "doc_count": 4
+        },
+        {
+          "key": "459bd81e-63b9-47d2-9818-dceb6657bea0",
+          "doc_count": 4
+        },
+        {
+          "key": "4c9d08ce-71c1-47b8-a572-2d40e5984c49",
+          "doc_count": 4
+        },
+        {
+          "key": "5626f61a-822e-4692-b432-51f53d053e4d",
+          "doc_count": 4
+        },
+        {
+          "key": "8ec76c75-a673-4682-bfde-00a18bc12794",
+          "doc_count": 4
+        },
+        {
+          "key": "a0ec3ce6-fc8a-48b7-9105-cecf27602e37",
+          "doc_count": 4
+        },
+        {
+          "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
+          "doc_count": 4
+        },
+        {
+          "key": "bf1fee2d-f760-4068-b8e6-d1db63ce434c",
+          "doc_count": 4
+        },
+        {
+          "key": "cd5bc13d-ee5c-4b68-a550-37edb3e7899d",
+          "doc_count": 4
+        },
+        {
+          "key": "d82fa49b-915e-4aa8-acc6-51df3d431884",
+          "doc_count": 4
+        },
+        {
+          "key": "dde625e8-cc2a-4877-9ec4-0b8a20dfded9",
+          "doc_count": 4
+        },
+        {
+          "key": "e6eba8cd-fa2c-4ba2-bec0-6841e7633695",
+          "doc_count": 4
+        },
+        {
+          "key": "f0599190-e5b7-42ed-bec8-810905f50c34",
+          "doc_count": 4
+        },
+        {
+          "key": "f4bec217-9676-4fc0-be90-856b4b89d4d1",
+          "doc_count": 4
+        },
+        {
+          "key": "fc014977-92f7-47fd-92d7-b609c39d8212",
+          "doc_count": 4
+        },
+        {
+          "key": "2d7910d9-7f63-4bde-918a-9e0265f1c245",
+          "doc_count": 3
+        },
+        {
+          "key": "341611f4-8b65-4655-b244-9be91a1109cd",
+          "doc_count": 3
+        },
+        {
+          "key": "43aa1339-67e4-4298-b7c5-3d0f201266ef",
+          "doc_count": 3
+        },
+        {
+          "key": "677f57a9-9a0d-4e69-8622-96aa1e6392c2",
+          "doc_count": 3
+        },
+        {
+          "key": "69d150df-eba4-4ab3-9156-71cb0db41830",
+          "doc_count": 3
+        },
+        {
+          "key": "6bb853ab-e8ea-43b1-bd83-47318fc4c345",
+          "doc_count": 3
+        },
+        {
+          "key": "86b2bfc9-ca99-4250-b93a-f86f3777236d",
+          "doc_count": 3
+        },
+        {
+          "key": "910eadc8-8131-428c-b28a-91d0e2890f1d",
+          "doc_count": 3
+        },
+        {
+          "key": "cb2973af-0d5a-4fbf-80ab-ec96ede33ef0",
+          "doc_count": 3
+        },
+        {
+          "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
+          "doc_count": 3
+        },
+        {
+          "key": "e7016bd5-cb10-45b9-8959-0f5750f7a5db",
+          "doc_count": 3
+        },
+        {
+          "key": "ea44c7c9-9cca-4fae-9a0a-84f1b95f21cf",
+          "doc_count": 3
+        },
+        {
+          "key": "ec135c9b-ff89-4f28-aa18-88b16d932d94",
+          "doc_count": 3
+        },
+        {
+          "key": "f3327705-8d69-4d9c-88b7-584a08c74653",
+          "doc_count": 3
+        },
+        {
+          "key": "02fceae6-c71c-4db9-8b2f-e235ced6624a",
+          "doc_count": 2
+        },
+        {
+          "key": "06c35934-1b75-4196-838d-29d509951bf9",
+          "doc_count": 2
+        },
+        {
+          "key": "1f2b44b8-8556-4d6e-8247-4611689551cf",
+          "doc_count": 2
+        },
+        {
+          "key": "22436fe4-5049-4266-9849-335dd3f161aa",
+          "doc_count": 2
+        },
+        {
+          "key": "271a9ce9-c6d3-4b63-a722-cb0adc48863f",
+          "doc_count": 2
+        },
+        {
+          "key": "50ca2a08-0e76-4f56-9976-d344dd201a9b",
+          "doc_count": 2
+        },
+        {
+          "key": "59efaf7d-60b5-4295-abb3-27ba42eb5231",
+          "doc_count": 2
+        },
+        {
+          "key": "67893f3c-c409-41c6-a8f2-47956739a911",
+          "doc_count": 2
+        },
+        {
+          "key": "6d09cfc1-a17c-4067-b1a0-557b8e5334ea",
+          "doc_count": 2
+        },
+        {
+          "key": "75c7a013-8dab-4f9c-ae6d-3a7cc24b67ce",
+          "doc_count": 2
+        },
+        {
+          "key": "7a31ab80-1cc0-4456-9dea-61c2e9031a6f",
+          "doc_count": 2
+        },
+        {
+          "key": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
+          "doc_count": 2
+        },
+        {
+          "key": "9151bc4c-8505-4b22-a16b-9dbf337535fa",
+          "doc_count": 2
+        },
+        {
+          "key": "953b0329-c3e4-4816-a038-7afbd2bb2547",
+          "doc_count": 2
+        },
+        {
+          "key": "a4e6033a-d1eb-46d3-869d-7c0328f09aa7",
+          "doc_count": 2
+        },
+        {
+          "key": "a5fdee09-34c4-48bc-99ff-a503c93a9d7e",
+          "doc_count": 2
+        },
+        {
+          "key": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "doc_count": 2
+        },
+        {
+          "key": "b5b79eb9-c270-4427-9cd6-43bd6c4b73ab",
+          "doc_count": 2
+        },
+        {
+          "key": "b667cef4-96fe-42e8-a9fa-6298aa80bb14",
+          "doc_count": 2
+        },
+        {
+          "key": "c5b7dae8-b483-4742-9954-d7f9226daa34",
+          "doc_count": 2
+        },
+        {
+          "key": "c9dad611-5e60-4456-934e-75b0e0842ddd",
+          "doc_count": 2
+        },
+        {
+          "key": "cf641fbf-fa31-481a-993b-9204f2ee1884",
+          "doc_count": 2
+        },
+        {
+          "key": "dd232f5c-7f53-48ec-9bb7-7205702c3dc8",
+          "doc_count": 2
+        },
+        {
+          "key": "ded380b5-1ba2-4089-8e0c-0aa1b4140785",
+          "doc_count": 2
+        },
+        {
+          "key": "e5b0c46a-5eb6-4b94-9d4c-fb1000f534b0",
+          "doc_count": 2
+        },
+        {
+          "key": "e60301d9-9b40-483f-92de-065769b9d3dd",
+          "doc_count": 2
+        },
+        {
+          "key": "02266d50-00a1-4933-bfa3-97abbdb4870a",
+          "doc_count": 1
+        },
+        {
+          "key": "045aa661-f985-4203-80ff-98daafdfe377",
+          "doc_count": 1
+        },
+        {
+          "key": "04d9b721-259c-4d6b-b48f-2e23edf66c9f",
+          "doc_count": 1
+        },
+        {
+          "key": "0bc60df1-a162-4173-9a73-c51e09031843",
+          "doc_count": 1
+        },
+        {
+          "key": "0ed8a17e-149b-4cbe-8383-7676da92ea1c",
+          "doc_count": 1
+        },
+        {
+          "key": "0fb53db0-a7a4-4ac4-8ad3-bc4648b411e0",
+          "doc_count": 1
+        },
+        {
+          "key": "1527b668-b797-42be-94d3-0058e1393e94",
+          "doc_count": 1
+        },
+        {
+          "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "doc_count": 1
+        },
+        {
+          "key": "2c00c297-9ebd-498a-b701-d3ebde4b49f3",
+          "doc_count": 1
+        },
+        {
+          "key": "2ee6534e-46ab-4233-98c4-d13c4262ce2e",
+          "doc_count": 1
+        },
+        {
+          "key": "361efdf7-9845-411c-90bd-e51ec7991e87",
+          "doc_count": 1
+        },
+        {
+          "key": "43c69d2a-0fd2-4d34-a1ef-50d0f9c01353",
+          "doc_count": 1
+        },
+        {
+          "key": "4f436daa-01d5-4be6-b5c3-fdd255677536",
+          "doc_count": 1
+        },
+        {
+          "key": "4fed055b-3c46-4ec4-b76d-84d43df9258b",
+          "doc_count": 1
+        },
+        {
+          "key": "58402fe3-37c1-4d15-9e07-0ff1c4c9fb11",
+          "doc_count": 1
+        },
+        {
+          "key": "5975bbda-cd92-4084-8a09-ce1e28e6164f",
+          "doc_count": 1
+        },
+        {
+          "key": "5ffc8bc6-e366-4157-b1ba-00859f1048a4",
+          "doc_count": 1
+        },
+        {
+          "key": "6cc31636-c3e5-4887-bbee-2e56621771c4",
+          "doc_count": 1
+        },
+        {
+          "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
+          "doc_count": 1
+        },
+        {
+          "key": "886f3b02-e2f2-4c49-9ace-df25bf5d091a",
+          "doc_count": 1
+        },
+        {
+          "key": "8a54c5fa-2900-4859-a2d6-1b7faedafac4",
+          "doc_count": 1
+        },
+        {
+          "key": "9c5fea92-a28b-4b6e-94b5-9c939f7369a2",
+          "doc_count": 1
+        },
+        {
+          "key": "a2105c9c-b869-4637-8850-eb51ea6b1066",
+          "doc_count": 1
+        },
+        {
+          "key": "a4378725-7967-47bc-aada-0220e02e1f96",
+          "doc_count": 1
+        },
+        {
+          "key": "ac8c109d-b69c-4359-87f4-8714f8c8a65d",
+          "doc_count": 1
+        },
+        {
+          "key": "b88033dd-5dbb-4377-b374-2210f32ece16",
+          "doc_count": 1
+        },
+        {
+          "key": "ba042ffa-8175-4a47-8eb1-08b4d6319ccf",
+          "doc_count": 1
+        },
+        {
+          "key": "c481fbc6-4bd7-4c50-8537-ba1993d4eb88",
+          "doc_count": 1
+        },
+        {
+          "key": "cd7b335e-6f5c-4259-ba45-5e334a719464",
+          "doc_count": 1
+        },
+        {
+          "key": "d14d21fe-da24-47e5-81fb-4bfe962ce828",
+          "doc_count": 1
+        },
+        {
+          "key": "d2c71720-e156-4943-8182-0a7bbe477a37",
+          "doc_count": 1
+        },
+        {
+          "key": "d3920b32-8de2-4c92-a787-71497171595d",
+          "doc_count": 1
+        },
+        {
+          "key": "dfd53a42-8f63-4040-93a5-3f1347ce7686",
+          "doc_count": 1
+        },
+        {
+          "key": "e1b03497-7632-4ba4-a9e0-dd230d06638c",
+          "doc_count": 1
+        },
+        {
+          "key": "e2a12ef3-cf03-4ce4-8aff-802ccf2aec1d",
+          "doc_count": 1
+        },
+        {
+          "key": "e2def7e2-1455-4856-9823-6d3738417d24",
+          "doc_count": 1
+        },
+        {
+          "key": "e506c5e0-99b6-4e97-b7b4-4536cb80209b",
+          "doc_count": 1
+        },
+        {
+          "key": "ec248223-f277-4c02-b1fa-60056b5a689a",
+          "doc_count": 1
+        },
+        {
+          "key": "ee9d38ef-c1db-44de-b8f2-62acb7049370",
+          "doc_count": 1
+        },
+        {
+          "key": "f33e9494-7b3c-4ac6-a735-59693b5a9638",
+          "doc_count": 1
+        },
+        {
+          "key": "f778ecc0-8371-49d5-9ab1-9d75f0b76fad",
+          "doc_count": 1
+        }
+      ]
+    },
+    "unique_scientific_names": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 2042,
+      "buckets": [
+        {
+          "key": "galax",
+          "doc_count": 2045
+        },
+        {
+          "key": "aphylla",
+          "doc_count": 1754
+        },
+        {
+          "key": "nemophila",
+          "doc_count": 1018
+        },
+        {
+          "key": "urceolata",
+          "doc_count": 888
+        },
+        {
+          "key": "l",
+          "doc_count": 323
+        },
+        {
+          "key": "microcalyx",
+          "doc_count": 308
+        },
+        {
+          "key": "nutt",
+          "doc_count": 70
+        },
+        {
+          "key": "brummitt",
+          "doc_count": 68
+        },
+        {
+          "key": "fisch",
+          "doc_count": 67
+        },
+        {
+          "key": "c.a.mey",
+          "doc_count": 66
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1674653744868,
+      "value_as_string": "2023-01-25T13:35:44.868Z"
+    }
+  }
+}

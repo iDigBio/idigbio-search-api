@@ -1,0 +1,972 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 203,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "cc0222b3-7a4e-4860-ba0f-5aa1f5048bf2",
+        "_score": null,
+        "_routing": "c58cdb87-034c-40a6-b7bf-3d401412c882",
+        "_parent": "c58cdb87-034c-40a6-b7bf-3d401412c882",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 9046,
+          "uuid": "cc0222b3-7a4e-4860-ba0f-5aa1f5048bf2",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6838,
+          "records": [
+            "c58cdb87-034c-40a6-b7bf-3d401412c882"
+          ],
+          "etag": "e0880cba04ad71ddf5a4c4ad6fde22e0b98e035f",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6838",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107747.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/36a1c3b11-ad78-48bd-9f78-0d54569d5165",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13276404",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107747",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3a2b3615c-f01f-43c1-a4b5-f8eeb72e5203",
+            "exif:PixelYDimension": "9046",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "9046",
+            "coreid": "http://n2t.net/ark:/65665/36a1c3b11-ad78-48bd-9f78-0d54569d5165",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13276404",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13276404"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107747",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107747.tif",
+            "exif:PixelXDimension": "6838",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "c58cdb87-034c-40a6-b7bf-3d401412c882"
+              ]
+            },
+            "idigbio:etag": "e0880cba04ad71ddf5a4c4ad6fde22e0b98e035f",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3a2b3615c-f01f-43c1-a4b5-f8eeb72e5203",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "cc0222b3-7a4e-4860-ba0f-5aa1f5048bf2",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13276404"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m3a2b3615c-f01f-43c1-a4b5-f8eeb72e5203"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "da3a2dac-6651-4d46-a105-a74d5a486457",
+        "_score": null,
+        "_routing": "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89",
+        "_parent": "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 9033,
+          "uuid": "da3a2dac-6651-4d46-a105-a74d5a486457",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6856,
+          "records": [
+            "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89"
+          ],
+          "etag": "a0c0a412eb68ae6df3ea8ad91b69ad0d301f1af4",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6856",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107793.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3b77184a5-20a6-409f-b171-03dbc422eaf9",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13282741",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107793",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3f0435426-16cc-4a5a-a52d-d9e86f33434a",
+            "exif:PixelYDimension": "9033",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "9033",
+            "coreid": "http://n2t.net/ark:/65665/3b77184a5-20a6-409f-b171-03dbc422eaf9",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13282741",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13282741"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107793",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107793.tif",
+            "exif:PixelXDimension": "6856",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89"
+              ]
+            },
+            "idigbio:etag": "a0c0a412eb68ae6df3ea8ad91b69ad0d301f1af4",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3f0435426-16cc-4a5a-a52d-d9e86f33434a",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "da3a2dac-6651-4d46-a105-a74d5a486457",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13282741"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m3f0435426-16cc-4a5a-a52d-d9e86f33434a"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e8397a56-0e7c-4b0b-9182-358ebfa5bd63",
+        "_score": null,
+        "_routing": "5ef01e09-6994-4e35-96fc-6d9d820aa855",
+        "_parent": "5ef01e09-6994-4e35-96fc-6d9d820aa855",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 9062,
+          "uuid": "e8397a56-0e7c-4b0b-9182-358ebfa5bd63",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6767,
+          "records": [
+            "5ef01e09-6994-4e35-96fc-6d9d820aa855"
+          ],
+          "etag": "2c75c8a8c13114878b02fb255234318d5665ebbf",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6767",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107719.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3b55a20c4-59d0-45b0-849f-25975b29f337",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13279078",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107719",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m32ae1ce87-c4d5-405a-a01a-74c0686f90d8",
+            "exif:PixelYDimension": "9062",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "9062",
+            "coreid": "http://n2t.net/ark:/65665/3b55a20c4-59d0-45b0-849f-25975b29f337",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13279078",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13279078"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107719",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107719.tif",
+            "exif:PixelXDimension": "6767",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "5ef01e09-6994-4e35-96fc-6d9d820aa855"
+              ]
+            },
+            "idigbio:etag": "2c75c8a8c13114878b02fb255234318d5665ebbf",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m32ae1ce87-c4d5-405a-a01a-74c0686f90d8",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "e8397a56-0e7c-4b0b-9182-358ebfa5bd63",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13279078"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m32ae1ce87-c4d5-405a-a01a-74c0686f90d8"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "294ae8c6-4112-4e28-9b3d-4adfd08b4dc3",
+        "_score": null,
+        "_routing": "fcb928ba-a835-43e0-a660-62969145edff",
+        "_parent": "fcb928ba-a835-43e0-a660-62969145edff",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8973,
+          "uuid": "294ae8c6-4112-4e28-9b3d-4adfd08b4dc3",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6843,
+          "records": [
+            "fcb928ba-a835-43e0-a660-62969145edff"
+          ],
+          "etag": "249331188059a6b9d9c84cb55104e650e4dc2ef6",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6843",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107776.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3359e7e94-9171-4a69-ac0e-f5998ed28cfe",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13279006",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107776",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m30c8d6d5b-27f0-43e0-875e-fda85351b9b7",
+            "exif:PixelYDimension": "8973",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8973",
+            "coreid": "http://n2t.net/ark:/65665/3359e7e94-9171-4a69-ac0e-f5998ed28cfe",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13279006",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13279006"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107776",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107776.tif",
+            "exif:PixelXDimension": "6843",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "fcb928ba-a835-43e0-a660-62969145edff"
+              ]
+            },
+            "idigbio:etag": "249331188059a6b9d9c84cb55104e650e4dc2ef6",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m30c8d6d5b-27f0-43e0-875e-fda85351b9b7",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "294ae8c6-4112-4e28-9b3d-4adfd08b4dc3",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13279006"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m30c8d6d5b-27f0-43e0-875e-fda85351b9b7"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a6b71467-8670-41b5-a9b4-e7985885544c",
+        "_score": null,
+        "_routing": "64f8280e-07f2-40c4-8ec6-82bf8329489d",
+        "_parent": "64f8280e-07f2-40c4-8ec6-82bf8329489d",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8951,
+          "uuid": "a6b71467-8670-41b5-a9b4-e7985885544c",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6929,
+          "records": [
+            "64f8280e-07f2-40c4-8ec6-82bf8329489d"
+          ],
+          "etag": "2fee1303824cf1260c813366e35e8915b8dbd745",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6929",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107740.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/32b6b853c-8f69-483d-af8b-638b26e331d3",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13293379",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107740",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3af908aff-2aad-4d18-83c4-efaf6a91d40d",
+            "exif:PixelYDimension": "8951",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8951",
+            "coreid": "http://n2t.net/ark:/65665/32b6b853c-8f69-483d-af8b-638b26e331d3",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13293379",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13293379"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107740",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107740.tif",
+            "exif:PixelXDimension": "6929",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "64f8280e-07f2-40c4-8ec6-82bf8329489d"
+              ]
+            },
+            "idigbio:etag": "2fee1303824cf1260c813366e35e8915b8dbd745",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3af908aff-2aad-4d18-83c4-efaf6a91d40d",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "a6b71467-8670-41b5-a9b4-e7985885544c",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13293379"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m3af908aff-2aad-4d18-83c4-efaf6a91d40d"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ff712e53-aca2-466b-bea7-04fc94579881",
+        "_score": null,
+        "_routing": "3feaa980-2c3a-4a1a-9161-ce39179c5321",
+        "_parent": "3feaa980-2c3a-4a1a-9161-ce39179c5321",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8933,
+          "uuid": "ff712e53-aca2-466b-bea7-04fc94579881",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6879,
+          "records": [
+            "3feaa980-2c3a-4a1a-9161-ce39179c5321"
+          ],
+          "etag": "96118183ad85356d553ec0ec0ef1fbb6fa54df23",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6879",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107657.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/338b17f65-3b84-4c1c-9921-e3bcbc6870b9",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13279307",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107657",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m34125fe66-7456-41e3-a563-d21967c8b908",
+            "exif:PixelYDimension": "8933",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8933",
+            "coreid": "http://n2t.net/ark:/65665/338b17f65-3b84-4c1c-9921-e3bcbc6870b9",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13279307",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13279307"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107657",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107657.tif",
+            "exif:PixelXDimension": "6879",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "3feaa980-2c3a-4a1a-9161-ce39179c5321"
+              ]
+            },
+            "idigbio:etag": "96118183ad85356d553ec0ec0ef1fbb6fa54df23",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m34125fe66-7456-41e3-a563-d21967c8b908",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "ff712e53-aca2-466b-bea7-04fc94579881",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13279307"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m34125fe66-7456-41e3-a563-d21967c8b908"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "d61e1353-41a8-4f60-81a0-e079a0e9694e",
+        "_score": null,
+        "_routing": "b61e1f98-3e1d-4165-8b14-218ee6045c50",
+        "_parent": "b61e1f98-3e1d-4165-8b14-218ee6045c50",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8963,
+          "uuid": "d61e1353-41a8-4f60-81a0-e079a0e9694e",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6871,
+          "records": [
+            "b61e1f98-3e1d-4165-8b14-218ee6045c50"
+          ],
+          "etag": "e0ba57845a9a030c1d3b7fa3b46ff34beddab1ba",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6871",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107718.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3c73f560d-b09a-465b-8e0f-69b59f7f1bf4",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13286296",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107718",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3df694d6d-cf07-46d4-9454-4a34cc6e0f8c",
+            "exif:PixelYDimension": "8963",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8963",
+            "coreid": "http://n2t.net/ark:/65665/3c73f560d-b09a-465b-8e0f-69b59f7f1bf4",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13286296",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13286296"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107718",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107718.tif",
+            "exif:PixelXDimension": "6871",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "b61e1f98-3e1d-4165-8b14-218ee6045c50"
+              ]
+            },
+            "idigbio:etag": "e0ba57845a9a030c1d3b7fa3b46ff34beddab1ba",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3df694d6d-cf07-46d4-9454-4a34cc6e0f8c",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "d61e1353-41a8-4f60-81a0-e079a0e9694e",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13286296"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m3df694d6d-cf07-46d4-9454-4a34cc6e0f8c"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a6dec1d0-db03-447e-b064-e642c18a884c",
+        "_score": null,
+        "_routing": "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70",
+        "_parent": "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8942,
+          "uuid": "a6dec1d0-db03-447e-b064-e642c18a884c",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6752,
+          "records": [
+            "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70"
+          ],
+          "etag": "35dfa83f642eb6110c41a6e3c8c3cec38d27054c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6752",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107824.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3fc966e2c-1e6a-49a6-b80b-4c6a02c160b0",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13277373",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107824",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m375f50412-1100-47ea-9866-31a67794c440",
+            "exif:PixelYDimension": "8942",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8942",
+            "coreid": "http://n2t.net/ark:/65665/3fc966e2c-1e6a-49a6-b80b-4c6a02c160b0",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13277373",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13277373"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107824",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107824.tif",
+            "exif:PixelXDimension": "6752",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70"
+              ]
+            },
+            "idigbio:etag": "35dfa83f642eb6110c41a6e3c8c3cec38d27054c",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m375f50412-1100-47ea-9866-31a67794c440",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "a6dec1d0-db03-447e-b064-e642c18a884c",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13277373"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m375f50412-1100-47ea-9866-31a67794c440"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ac629e14-4de4-49aa-9efd-17d53e02ad2b",
+        "_score": null,
+        "_routing": "965c8e09-4f96-4964-8cb7-5ca4f3c256f1",
+        "_parent": "965c8e09-4f96-4964-8cb7-5ca4f3c256f1",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8938,
+          "uuid": "ac629e14-4de4-49aa-9efd-17d53e02ad2b",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6957,
+          "records": [
+            "965c8e09-4f96-4964-8cb7-5ca4f3c256f1"
+          ],
+          "etag": "828f0c7bd84eb74ce8045a26b3679c894c710cff",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6957",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107659.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3678ba3d6-0094-47e7-8fe3-53495f920e13",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13282732",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107659",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m38199a98b-9eb1-4ed9-a835-bfa065385668",
+            "exif:PixelYDimension": "8938",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8938",
+            "coreid": "http://n2t.net/ark:/65665/3678ba3d6-0094-47e7-8fe3-53495f920e13",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13282732",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13282732"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107659",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107659.tif",
+            "exif:PixelXDimension": "6957",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "965c8e09-4f96-4964-8cb7-5ca4f3c256f1"
+              ]
+            },
+            "idigbio:etag": "828f0c7bd84eb74ce8045a26b3679c894c710cff",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m38199a98b-9eb1-4ed9-a835-bfa065385668",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "ac629e14-4de4-49aa-9efd-17d53e02ad2b",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13282732"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m38199a98b-9eb1-4ed9-a835-bfa065385668"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "17ccda00-0fcb-4301-9f78-ddc7bc63a22b",
+        "_score": null,
+        "_routing": "c7b6ed41-b14b-44e1-9dc0-3506071c2705",
+        "_parent": "c7b6ed41-b14b-44e1-9dc0-3506071c2705",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "xpixels": 8886,
+          "uuid": "17ccda00-0fcb-4301-9f78-ddc7bc63a22b",
+          "format": "image/jpeg",
+          "recordset": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "dqs": 0.7272727272727273,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "ypixels": 6735,
+          "records": [
+            "c7b6ed41-b14b-44e1-9dc0-3506071c2705"
+          ],
+          "etag": "844ecba60af3ffdf336d0c6a02f52f0fbca8ab69",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "data": {
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "exif:PixelXDimension": "6735",
+            "dc:creator": "Conveyor Belt",
+            "dc:type": "image",
+            "dcterms:title": "03107828.tif",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "dc:format": "image/jpeg",
+            "coreid": "http://n2t.net/ark:/65665/3f4dd7feb-29c2-4aca-a579-256225815a85",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13278800",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "dcterms:rights": "CC0",
+            "dcterms:description": "Barcode 03107828",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m38aaccbd6-624f-495c-9721-190c0c17f071",
+            "exif:PixelYDimension": "8886",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dwc:scientificName": "Galax aphylla",
+            "dc:rights": "CC0"
+          },
+          "indexData": {
+            "xmpRights:WebStatement": "https://naturalhistory.si.edu/research/nmnh-collections/museum-collections-policies",
+            "idigbio:parent": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "dc:type": "image",
+            "ac:licenseLogoURL": "https://www.si.edu/sites/default/files/icons/cc0.svg",
+            "xmpRights:UsageTerms": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "exif:PixelYDimension": "8886",
+            "coreid": "http://n2t.net/ark:/65665/3f4dd7feb-29c2-4aca-a579-256225815a85",
+            "dcterms:identifier": "https://collections.nmnh.si.edu/media/?i=13278800",
+            "ac:subjectCategoryVocabulary": "Specimen/Object",
+            "idigbio:recordIds": [
+              "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13278800"
+            ],
+            "idigbio:dateModified": "2022-04-27T13:37:19.029763",
+            "dcterms:description": "Barcode 03107828",
+            "ac:providerLiteral": "Smithsonian Institution, NMNH, Botany",
+            "dc:source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "dc:creator": "Conveyor Belt",
+            "dcterms:title": "03107828.tif",
+            "exif:PixelXDimension": "6735",
+            "dc:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "c7b6ed41-b14b-44e1-9dc0-3506071c2705"
+              ]
+            },
+            "idigbio:etag": "844ecba60af3ffdf336d0c6a02f52f0fbca8ab69",
+            "dcterms:rights": "CC0",
+            "ac:accessURI": "http://n2t.net/ark:/65665/m38aaccbd6-624f-495c-9721-190c0c17f071",
+            "dwc:scientificName": "Galax aphylla",
+            "idigbio:uuid": "17ccda00-0fcb-4301-9f78-ddc7bc63a22b",
+            "dc:rights": "CC0"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "a6eee223-cf3b-4079-8bb2-b77dad8cae9d\\media\\https://collections.nmnh.si.edu/media/?i=13278800"
+          ],
+          "type": "image",
+          "datemodified": "2022-04-27T13:37:19.029763+00:00",
+          "accessuri": "http://n2t.net/ark:/65665/m38aaccbd6-624f-495c-9721-190c0c17f071"
+        },
+        "sort": [
+          0.72727275
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 143
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 34
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 11
+        },
+        {
+          "key": "e5f57bb0-07ec-4405-90b6-dc89647a1cb5",
+          "doc_count": 6
+        },
+        {
+          "key": "0fd6e726-6828-4f62-ba8d-6ec316fe0b52",
+          "doc_count": 3
+        },
+        {
+          "key": "6d09cfc1-a17c-4067-b1a0-557b8e5334ea",
+          "doc_count": 2
+        },
+        {
+          "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "doc_count": 2
+        },
+        {
+          "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
+          "doc_count": 1
+        },
+        {
+          "key": "dd232f5c-7f53-48ec-9bb7-7205702c3dc8",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1670361603800,
+      "value_as_string": "2022-12-06T21:20:03.800Z"
+    }
+  }
+}

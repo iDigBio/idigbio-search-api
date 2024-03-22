@@ -80,9 +80,9 @@ function geoPolygon(k, shimK) {
   return typeWrapper(k, "geo_polygon", {"points": shimK["value"] });
 }
 
-function termFilter(k, shimK) {
+function termFilter(k, shimK, query) {
   var term = {};
-  if(_.isString(shimK)) {
+  if (_.isString(shimK)) {
     term[k] = shimK.toLowerCase();
   } else {
     term[k] = shimK;
@@ -110,11 +110,25 @@ function termsFilter(k, shimK) {
   };
 }
 
+function exactFilter(k, shimK) {
+  let term = {}
+  if (_.isString(shimK)) {
+    term[k] = shimK.toLowerCase();
+  } else {
+    term[k + '.exact'] = shimK['text'];
+  }
+  return {
+    "term": term
+  }
+}
+
 function objectType(k, shimK) {
   if(shimK["type"] === "exists") {
     return existFilter(k);
   } else if(shimK["type"] === "missing") {
     return missingFilter(k);
+  } else if (shimK["type"] === "exact") {
+    return exactFilter(k, shimK)
   } else if(shimK["type"] === "range") {
     return rangeFilter(k, shimK);
   } else if(shimK["type"] === "geo_bounding_box") {
@@ -152,7 +166,36 @@ export default function queryShim(shim, term_type) {
 
   _.keys(shim).forEach(function(k) {
     if(_.isString(shim[k]) || _.isBoolean(shim[k]) || _.isNumber(shim[k])) {
-      and_array.push(termFilter(k, shim[k]));
+      if (k==='collector') {
+        query["query"]["filtered"]["query"] = {
+          "match": {
+            "_all": {
+              "query": shim[k],
+              "operator": "and"
+            }
+          }
+        };
+      } else if (k==='scientificname') {
+        query["query"]["filtered"]["query"] = {
+          "match": {
+            "scientificname": {
+              "query": shim[k],
+              "operator": "and",
+              "fuzziness": "AUTO"
+            }
+          }
+        };
+        query["size"] = 10
+        query["aggs"] = {
+          "unique_scientific_names": {
+            "terms": {
+              "field": "scientificname",
+              "size": 10
+            }
+          }
+        }
+      }
+      else {and_array.push(termFilter(k, shim[k], query));}
     } else if(_.isArray(shim[k])) {
       and_array.push(termsFilter(k, shim[k]));
     } else if(shim[k]["type"]) {

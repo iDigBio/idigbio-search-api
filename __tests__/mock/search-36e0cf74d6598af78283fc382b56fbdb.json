@@ -1,0 +1,720 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 203,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "cc0222b3-7a4e-4860-ba0f-5aa1f5048bf2",
+        "_score": null,
+        "_routing": "c58cdb87-034c-40a6-b7bf-3d401412c882",
+        "_parent": "c58cdb87-034c-40a6-b7bf-3d401412c882",
+        "_source": {
+          "uuid": "cc0222b3-7a4e-4860-ba0f-5aa1f5048bf2"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "da3a2dac-6651-4d46-a105-a74d5a486457",
+        "_score": null,
+        "_routing": "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89",
+        "_parent": "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89",
+        "_source": {
+          "uuid": "da3a2dac-6651-4d46-a105-a74d5a486457"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e8397a56-0e7c-4b0b-9182-358ebfa5bd63",
+        "_score": null,
+        "_routing": "5ef01e09-6994-4e35-96fc-6d9d820aa855",
+        "_parent": "5ef01e09-6994-4e35-96fc-6d9d820aa855",
+        "_source": {
+          "uuid": "e8397a56-0e7c-4b0b-9182-358ebfa5bd63"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "294ae8c6-4112-4e28-9b3d-4adfd08b4dc3",
+        "_score": null,
+        "_routing": "fcb928ba-a835-43e0-a660-62969145edff",
+        "_parent": "fcb928ba-a835-43e0-a660-62969145edff",
+        "_source": {
+          "uuid": "294ae8c6-4112-4e28-9b3d-4adfd08b4dc3"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a6b71467-8670-41b5-a9b4-e7985885544c",
+        "_score": null,
+        "_routing": "64f8280e-07f2-40c4-8ec6-82bf8329489d",
+        "_parent": "64f8280e-07f2-40c4-8ec6-82bf8329489d",
+        "_source": {
+          "uuid": "a6b71467-8670-41b5-a9b4-e7985885544c"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ff712e53-aca2-466b-bea7-04fc94579881",
+        "_score": null,
+        "_routing": "3feaa980-2c3a-4a1a-9161-ce39179c5321",
+        "_parent": "3feaa980-2c3a-4a1a-9161-ce39179c5321",
+        "_source": {
+          "uuid": "ff712e53-aca2-466b-bea7-04fc94579881"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "d61e1353-41a8-4f60-81a0-e079a0e9694e",
+        "_score": null,
+        "_routing": "b61e1f98-3e1d-4165-8b14-218ee6045c50",
+        "_parent": "b61e1f98-3e1d-4165-8b14-218ee6045c50",
+        "_source": {
+          "uuid": "d61e1353-41a8-4f60-81a0-e079a0e9694e"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a6dec1d0-db03-447e-b064-e642c18a884c",
+        "_score": null,
+        "_routing": "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70",
+        "_parent": "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70",
+        "_source": {
+          "uuid": "a6dec1d0-db03-447e-b064-e642c18a884c"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ac629e14-4de4-49aa-9efd-17d53e02ad2b",
+        "_score": null,
+        "_routing": "965c8e09-4f96-4964-8cb7-5ca4f3c256f1",
+        "_parent": "965c8e09-4f96-4964-8cb7-5ca4f3c256f1",
+        "_source": {
+          "uuid": "ac629e14-4de4-49aa-9efd-17d53e02ad2b"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "17ccda00-0fcb-4301-9f78-ddc7bc63a22b",
+        "_score": null,
+        "_routing": "c7b6ed41-b14b-44e1-9dc0-3506071c2705",
+        "_parent": "c7b6ed41-b14b-44e1-9dc0-3506071c2705",
+        "_source": {
+          "uuid": "17ccda00-0fcb-4301-9f78-ddc7bc63a22b"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "edbe7cd9-fbbb-4b02-afa4-4ef0b4275110",
+        "_score": null,
+        "_routing": "38f5ec52-6e0d-4ad9-8e87-29e8a45fa2f2",
+        "_parent": "38f5ec52-6e0d-4ad9-8e87-29e8a45fa2f2",
+        "_source": {
+          "uuid": "edbe7cd9-fbbb-4b02-afa4-4ef0b4275110"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "bb187b5b-12dc-487f-8330-7b2059230934",
+        "_score": null,
+        "_routing": "d5a0bf09-e50f-419f-bccf-cc49990ac82b",
+        "_parent": "d5a0bf09-e50f-419f-bccf-cc49990ac82b",
+        "_source": {
+          "uuid": "bb187b5b-12dc-487f-8330-7b2059230934"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ec5373c0-09a3-4c19-a6ef-fa9c47d1d3cc",
+        "_score": null,
+        "_routing": "ea7d8146-5429-4900-8ba2-5165ba89835c",
+        "_parent": "ea7d8146-5429-4900-8ba2-5165ba89835c",
+        "_source": {
+          "uuid": "ec5373c0-09a3-4c19-a6ef-fa9c47d1d3cc"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "74771ff4-e342-45e2-a977-2b55cd3d812f",
+        "_score": null,
+        "_routing": "51bc52b9-0174-4291-81f5-104dbfb5b586",
+        "_parent": "51bc52b9-0174-4291-81f5-104dbfb5b586",
+        "_source": {
+          "uuid": "74771ff4-e342-45e2-a977-2b55cd3d812f"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "27af8e8a-e186-4387-aa44-5ed3d17dc05d",
+        "_score": null,
+        "_routing": "42b724cb-b91c-40ff-8cef-7c30bad54d7f",
+        "_parent": "42b724cb-b91c-40ff-8cef-7c30bad54d7f",
+        "_source": {
+          "uuid": "27af8e8a-e186-4387-aa44-5ed3d17dc05d"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "f2615c55-663f-4836-a20a-4ef18cc229e5",
+        "_score": null,
+        "_routing": "b051d917-e0ff-4dc3-8c05-4457dba36f32",
+        "_parent": "b051d917-e0ff-4dc3-8c05-4457dba36f32",
+        "_source": {
+          "uuid": "f2615c55-663f-4836-a20a-4ef18cc229e5"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "905acf68-0feb-4101-9f43-67870c567dd6",
+        "_score": null,
+        "_routing": "739692cd-4894-4bb8-aa33-51ed4afbf99a",
+        "_parent": "739692cd-4894-4bb8-aa33-51ed4afbf99a",
+        "_source": {
+          "uuid": "905acf68-0feb-4101-9f43-67870c567dd6"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "37f9cfe5-7f55-46c3-9a98-877101415777",
+        "_score": null,
+        "_routing": "fd9e7cb3-20bd-4912-9151-022af277e8c6",
+        "_parent": "fd9e7cb3-20bd-4912-9151-022af277e8c6",
+        "_source": {
+          "uuid": "37f9cfe5-7f55-46c3-9a98-877101415777"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "757002fa-49a0-4d36-9eb6-fff026aa50f6",
+        "_score": null,
+        "_routing": "ba0561a7-1da9-430e-8c3e-ac662e0292ab",
+        "_parent": "ba0561a7-1da9-430e-8c3e-ac662e0292ab",
+        "_source": {
+          "uuid": "757002fa-49a0-4d36-9eb6-fff026aa50f6"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "922a348a-a417-4e75-8520-746f4901880d",
+        "_score": null,
+        "_routing": "c8b134a1-5d05-47b3-b4b5-9700106533ed",
+        "_parent": "c8b134a1-5d05-47b3-b4b5-9700106533ed",
+        "_source": {
+          "uuid": "922a348a-a417-4e75-8520-746f4901880d"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "16f5b93a-f2f1-416a-ba09-5d9a893c4060",
+        "_score": null,
+        "_routing": "faf54144-93d9-4769-b727-91d7ad922096",
+        "_parent": "faf54144-93d9-4769-b727-91d7ad922096",
+        "_source": {
+          "uuid": "16f5b93a-f2f1-416a-ba09-5d9a893c4060"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "64832121-80a1-4dad-9103-1fc2b022dfdc",
+        "_score": null,
+        "_routing": "0ca6a22c-4526-4988-bbe0-6afffcdd01b3",
+        "_parent": "0ca6a22c-4526-4988-bbe0-6afffcdd01b3",
+        "_source": {
+          "uuid": "64832121-80a1-4dad-9103-1fc2b022dfdc"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "9f2fd1aa-836a-490a-a22a-c1311a3f2600",
+        "_score": null,
+        "_routing": "7f4cb0e6-14e1-44ad-a23e-84f5aa4e082b",
+        "_parent": "7f4cb0e6-14e1-44ad-a23e-84f5aa4e082b",
+        "_source": {
+          "uuid": "9f2fd1aa-836a-490a-a22a-c1311a3f2600"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "f8d84370-535d-4881-83f0-fa95f7e42813",
+        "_score": null,
+        "_routing": "70985445-9c3b-47ad-9b85-112e8ebfeb46",
+        "_parent": "70985445-9c3b-47ad-9b85-112e8ebfeb46",
+        "_source": {
+          "uuid": "f8d84370-535d-4881-83f0-fa95f7e42813"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "d700a9e5-a912-4d20-8541-3f6c2720cfa7",
+        "_score": null,
+        "_routing": "c7273ba5-777d-4747-b471-2a9fbe15a5b6",
+        "_parent": "c7273ba5-777d-4747-b471-2a9fbe15a5b6",
+        "_source": {
+          "uuid": "d700a9e5-a912-4d20-8541-3f6c2720cfa7"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "65837d5e-6937-4565-8020-2fb90f105eb9",
+        "_score": null,
+        "_routing": "25265332-79d7-4a34-9fe0-fb7c9c7811c6",
+        "_parent": "25265332-79d7-4a34-9fe0-fb7c9c7811c6",
+        "_source": {
+          "uuid": "65837d5e-6937-4565-8020-2fb90f105eb9"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "2d5ce6bf-56f1-4740-9a78-ff1828875df4",
+        "_score": null,
+        "_routing": "6691a6d3-37b3-42c3-9376-2a4dbbe16896",
+        "_parent": "6691a6d3-37b3-42c3-9376-2a4dbbe16896",
+        "_source": {
+          "uuid": "2d5ce6bf-56f1-4740-9a78-ff1828875df4"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "639906ed-f9dc-4c92-be16-29123d410881",
+        "_score": null,
+        "_routing": "32162041-42b7-4d0a-bcb7-13b1a6a15ed9",
+        "_parent": "32162041-42b7-4d0a-bcb7-13b1a6a15ed9",
+        "_source": {
+          "uuid": "639906ed-f9dc-4c92-be16-29123d410881"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "7308a489-a450-41f8-9fa9-170143c3c33e",
+        "_score": null,
+        "_routing": "870f083e-2ed8-43c0-ae8d-750f364f39d2",
+        "_parent": "870f083e-2ed8-43c0-ae8d-750f364f39d2",
+        "_source": {
+          "uuid": "7308a489-a450-41f8-9fa9-170143c3c33e"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e8a5ade0-fe9a-4d33-af73-bb142fd38ea6",
+        "_score": null,
+        "_routing": "3a05d072-70c1-45a2-b46f-576c01d09957",
+        "_parent": "3a05d072-70c1-45a2-b46f-576c01d09957",
+        "_source": {
+          "uuid": "e8a5ade0-fe9a-4d33-af73-bb142fd38ea6"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "04d2c8ab-86ee-4665-96f3-cd5093fadbe3",
+        "_score": null,
+        "_routing": "3cdedf4a-4ae4-4282-8d97-71bca046f3c7",
+        "_parent": "3cdedf4a-4ae4-4282-8d97-71bca046f3c7",
+        "_source": {
+          "uuid": "04d2c8ab-86ee-4665-96f3-cd5093fadbe3"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "735f9e13-d2d3-43f6-b503-0356d1cb9eb1",
+        "_score": null,
+        "_routing": "b824d857-c01b-4610-8ff5-e471ad784c72",
+        "_parent": "b824d857-c01b-4610-8ff5-e471ad784c72",
+        "_source": {
+          "uuid": "735f9e13-d2d3-43f6-b503-0356d1cb9eb1"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e6ae5406-5018-47b1-a8f4-453e0e21b732",
+        "_score": null,
+        "_routing": "d6ad2b73-6574-43b0-b737-1d868d12df10",
+        "_parent": "d6ad2b73-6574-43b0-b737-1d868d12df10",
+        "_source": {
+          "uuid": "e6ae5406-5018-47b1-a8f4-453e0e21b732"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "42e796f6-df77-4188-bdde-b5ee93c19e20",
+        "_score": null,
+        "_routing": "18e68073-f13d-4e5c-b5f7-826ed1255b8a",
+        "_parent": "18e68073-f13d-4e5c-b5f7-826ed1255b8a",
+        "_source": {
+          "uuid": "42e796f6-df77-4188-bdde-b5ee93c19e20"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e5ea6bce-a666-4600-bda2-6632dde61d62",
+        "_score": null,
+        "_routing": "5c73d129-a43d-4283-acbb-73115ba05506",
+        "_parent": "5c73d129-a43d-4283-acbb-73115ba05506",
+        "_source": {
+          "uuid": "e5ea6bce-a666-4600-bda2-6632dde61d62"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "d4726285-df39-4952-a08c-de3568dbbe2c",
+        "_score": null,
+        "_routing": "58bcd344-6f57-42d2-936e-e47aaaae9f5a",
+        "_parent": "58bcd344-6f57-42d2-936e-e47aaaae9f5a",
+        "_source": {
+          "uuid": "d4726285-df39-4952-a08c-de3568dbbe2c"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "082533bf-d9bd-4af1-9958-d5f48d72a295",
+        "_score": null,
+        "_routing": "48ded2c1-49b6-4a62-86ba-d87101903429",
+        "_parent": "48ded2c1-49b6-4a62-86ba-d87101903429",
+        "_source": {
+          "uuid": "082533bf-d9bd-4af1-9958-d5f48d72a295"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "c0958616-cdcd-4d48-98d0-dd28860375b7",
+        "_score": null,
+        "_routing": "c6387ffd-58b1-4863-94cb-514e18cc16b0",
+        "_parent": "c6387ffd-58b1-4863-94cb-514e18cc16b0",
+        "_source": {
+          "uuid": "c0958616-cdcd-4d48-98d0-dd28860375b7"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "55987d29-fa0a-4a0f-8009-2c2de3f9b41e",
+        "_score": null,
+        "_routing": "eb28951e-64ad-42c8-905f-c029f0bbaf71",
+        "_parent": "eb28951e-64ad-42c8-905f-c029f0bbaf71",
+        "_source": {
+          "uuid": "55987d29-fa0a-4a0f-8009-2c2de3f9b41e"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "5197a704-12fb-4627-a650-22e8eabeb9a7",
+        "_score": null,
+        "_routing": "9a6f01c4-c224-4737-95dc-7162f0162250",
+        "_parent": "9a6f01c4-c224-4737-95dc-7162f0162250",
+        "_source": {
+          "uuid": "5197a704-12fb-4627-a650-22e8eabeb9a7"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "b7d5d44e-4579-4375-90dd-ef8c3e250705",
+        "_score": null,
+        "_routing": "61f695be-5e74-4e99-9618-bb066305695d",
+        "_parent": "61f695be-5e74-4e99-9618-bb066305695d",
+        "_source": {
+          "uuid": "b7d5d44e-4579-4375-90dd-ef8c3e250705"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "5c13ae8c-9762-4e5d-8b0f-8b202b2c95ea",
+        "_score": null,
+        "_routing": "a0e80afd-8f4d-46ba-9a6a-3a8664ae33b0",
+        "_parent": "a0e80afd-8f4d-46ba-9a6a-3a8664ae33b0",
+        "_source": {
+          "uuid": "5c13ae8c-9762-4e5d-8b0f-8b202b2c95ea"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e21a6e80-aaac-4568-a51c-a5d0db165f91",
+        "_score": null,
+        "_routing": "6a6155cc-5499-414a-992d-c9622a4e4972",
+        "_parent": "6a6155cc-5499-414a-992d-c9622a4e4972",
+        "_source": {
+          "uuid": "e21a6e80-aaac-4568-a51c-a5d0db165f91"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "6978f9c9-4e33-40df-9681-9f37f7751515",
+        "_score": null,
+        "_routing": "a1e10b06-9402-45eb-8d66-dfac4c8413c8",
+        "_parent": "a1e10b06-9402-45eb-8d66-dfac4c8413c8",
+        "_source": {
+          "uuid": "6978f9c9-4e33-40df-9681-9f37f7751515"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "1dfd46b4-b9be-49fd-b493-1a48fef163d9",
+        "_score": null,
+        "_routing": "716f7038-33dd-40a9-98d8-f7d405bdb597",
+        "_parent": "716f7038-33dd-40a9-98d8-f7d405bdb597",
+        "_source": {
+          "uuid": "1dfd46b4-b9be-49fd-b493-1a48fef163d9"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a59fa385-3d0b-44ac-bd89-526818846f8c",
+        "_score": null,
+        "_routing": "5ca3d9c7-85dd-40cf-898c-7596eef492ff",
+        "_parent": "5ca3d9c7-85dd-40cf-898c-7596eef492ff",
+        "_source": {
+          "uuid": "a59fa385-3d0b-44ac-bd89-526818846f8c"
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "105b90d2-c63a-4ae3-b154-fd6c39285100",
+        "_score": null,
+        "_routing": "b728860f-9168-474c-a505-23c41dcadd9c",
+        "_parent": "b728860f-9168-474c-a505-23c41dcadd9c",
+        "_source": {
+          "uuid": "105b90d2-c63a-4ae3-b154-fd6c39285100"
+        },
+        "sort": [
+          0.72727275
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 143
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 34
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 11
+        },
+        {
+          "key": "e5f57bb0-07ec-4405-90b6-dc89647a1cb5",
+          "doc_count": 6
+        },
+        {
+          "key": "0fd6e726-6828-4f62-ba8d-6ec316fe0b52",
+          "doc_count": 3
+        },
+        {
+          "key": "6d09cfc1-a17c-4067-b1a0-557b8e5334ea",
+          "doc_count": 2
+        },
+        {
+          "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "doc_count": 2
+        },
+        {
+          "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
+          "doc_count": 1
+        },
+        {
+          "key": "dd232f5c-7f53-48ec-9bb7-7205702c3dc8",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1670361603800,
+      "value_as_string": "2022-12-06T21:20:03.800Z"
+    }
+  }
+}

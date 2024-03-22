@@ -1,0 +1,222 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 203,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "cc0222b3-7a4e-4860-ba0f-5aa1f5048bf2",
+        "_score": null,
+        "_routing": "c58cdb87-034c-40a6-b7bf-3d401412c882",
+        "_parent": "c58cdb87-034c-40a6-b7bf-3d401412c882",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3a2b3615c-f01f-43c1-a4b5-f8eeb72e5203"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "da3a2dac-6651-4d46-a105-a74d5a486457",
+        "_score": null,
+        "_routing": "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89",
+        "_parent": "9f27b5bf-b4d2-49ec-aadd-59cadb3f6d89",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3f0435426-16cc-4a5a-a52d-d9e86f33434a"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "e8397a56-0e7c-4b0b-9182-358ebfa5bd63",
+        "_score": null,
+        "_routing": "5ef01e09-6994-4e35-96fc-6d9d820aa855",
+        "_parent": "5ef01e09-6994-4e35-96fc-6d9d820aa855",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m32ae1ce87-c4d5-405a-a01a-74c0686f90d8"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "294ae8c6-4112-4e28-9b3d-4adfd08b4dc3",
+        "_score": null,
+        "_routing": "fcb928ba-a835-43e0-a660-62969145edff",
+        "_parent": "fcb928ba-a835-43e0-a660-62969145edff",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m30c8d6d5b-27f0-43e0-875e-fda85351b9b7"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a6b71467-8670-41b5-a9b4-e7985885544c",
+        "_score": null,
+        "_routing": "64f8280e-07f2-40c4-8ec6-82bf8329489d",
+        "_parent": "64f8280e-07f2-40c4-8ec6-82bf8329489d",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3af908aff-2aad-4d18-83c4-efaf6a91d40d"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ff712e53-aca2-466b-bea7-04fc94579881",
+        "_score": null,
+        "_routing": "3feaa980-2c3a-4a1a-9161-ce39179c5321",
+        "_parent": "3feaa980-2c3a-4a1a-9161-ce39179c5321",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m34125fe66-7456-41e3-a563-d21967c8b908"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "d61e1353-41a8-4f60-81a0-e079a0e9694e",
+        "_score": null,
+        "_routing": "b61e1f98-3e1d-4165-8b14-218ee6045c50",
+        "_parent": "b61e1f98-3e1d-4165-8b14-218ee6045c50",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m3df694d6d-cf07-46d4-9454-4a34cc6e0f8c"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "a6dec1d0-db03-447e-b064-e642c18a884c",
+        "_score": null,
+        "_routing": "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70",
+        "_parent": "ddba3940-2dbf-46c9-a8ad-9d8ab1204b70",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m375f50412-1100-47ea-9866-31a67794c440"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "ac629e14-4de4-49aa-9efd-17d53e02ad2b",
+        "_score": null,
+        "_routing": "965c8e09-4f96-4964-8cb7-5ca4f3c256f1",
+        "_parent": "965c8e09-4f96-4964-8cb7-5ca4f3c256f1",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m38199a98b-9eb1-4ed9-a835-bfa065385668"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "mediarecords",
+        "_id": "17ccda00-0fcb-4301-9f78-ddc7bc63a22b",
+        "_score": null,
+        "_routing": "c7b6ed41-b14b-44e1-9dc0-3506071c2705",
+        "_parent": "c7b6ed41-b14b-44e1-9dc0-3506071c2705",
+        "_source": {
+          "data": {
+            "ac:accessURI": "http://n2t.net/ark:/65665/m38aaccbd6-624f-495c-9721-190c0c17f071"
+          }
+        },
+        "sort": [
+          0.72727275
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 143
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 34
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 11
+        },
+        {
+          "key": "e5f57bb0-07ec-4405-90b6-dc89647a1cb5",
+          "doc_count": 6
+        },
+        {
+          "key": "0fd6e726-6828-4f62-ba8d-6ec316fe0b52",
+          "doc_count": 3
+        },
+        {
+          "key": "6d09cfc1-a17c-4067-b1a0-557b8e5334ea",
+          "doc_count": 2
+        },
+        {
+          "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "doc_count": 2
+        },
+        {
+          "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
+          "doc_count": 1
+        },
+        {
+          "key": "dd232f5c-7f53-48ec-9bb7-7205702c3dc8",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1670361603800,
+      "value_as_string": "2022-12-06T21:20:03.800Z"
+    }
+  }
+}

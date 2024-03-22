@@ -1,0 +1,26 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 0,
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "gstyle": {
+      "doc_count": 3994,
+      "f": {
+        "doc_count": 0,
+        "style": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": []
+        }
+      }
+    }
+  }
+}

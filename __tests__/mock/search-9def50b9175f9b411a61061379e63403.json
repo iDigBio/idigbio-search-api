@@ -1,0 +1,228 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 20,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "0b40fe2a-af44-4d25-a0db-fc36ddb5a02f",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex misera"
+        },
+        "sort": [
+          0.28985506
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "6936874a-98bb-4365-9325-296ddb185bd1",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex intumescens"
+        },
+        "sort": [
+          0.28985506
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "31d3ef42-017a-4f82-9436-6ee8c5af3705",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex debilis var. rudgei"
+        },
+        "sort": [
+          0.28985506
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "ab38e47d-4ef7-4586-80e0-b4e2d286d6ff",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex intumescens"
+        },
+        "sort": [
+          0.28985506
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "414560d1-5462-423e-9872-22e61aae9258",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex hirtifolia"
+        },
+        "sort": [
+          0.26086956
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "fb203a90-01f6-46df-aca2-5258bb497e7b",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex intumescens var. fernaldii"
+        },
+        "sort": [
+          0.26086956
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "703ec36e-160b-4af9-b068-d0bb58261d20",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex misera"
+        },
+        "sort": [
+          0.26086956
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "36c9faab-6afb-4fb2-a308-c9a850ae4fdd",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex allegheniensis"
+        },
+        "sort": [
+          0.26086956
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "2a15b721-7a18-4d87-bcdf-4ce839706b2d",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex laxiflora var. serrulata"
+        },
+        "sort": [
+          0.24637681
+        ]
+      },
+      {
+        "_index": "fuzzy_withexact",
+        "_type": "records",
+        "_id": "223aa4d3-382d-4def-8539-66addae962ae",
+        "_score": null,
+        "_source": {
+          "scientificname": "carex hirtifolia"
+        },
+        "sort": [
+          0.24637681
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "doc_count": 6
+        },
+        {
+          "key": "ff89320d-e232-4edd-9cdd-4b6acc672ad3",
+          "doc_count": 5
+        },
+        {
+          "key": "e23109b4-e143-437c-b329-3dff7cb35488",
+          "doc_count": 2
+        },
+        {
+          "key": "e794b292-4a94-471e-ab84-6aaef1fea1b3",
+          "doc_count": 2
+        },
+        {
+          "key": "0583609b-202f-40d0-8021-4c019635d4c9",
+          "doc_count": 1
+        },
+        {
+          "key": "1e798b2d-7f97-49b0-a864-79c968af91d3",
+          "doc_count": 1
+        },
+        {
+          "key": "361efdf7-9845-411c-90bd-e51ec7991e87",
+          "doc_count": 1
+        },
+        {
+          "key": "71bf994a-3af5-484d-983b-b146aa1512d1",
+          "doc_count": 1
+        },
+        {
+          "key": "db6c3db9-1e6d-4def-af29-33aa0339bfa9",
+          "doc_count": 1
+        }
+      ]
+    },
+    "unique_scientific_names": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 10,
+      "buckets": [
+        {
+          "key": "carex",
+          "doc_count": 20
+        },
+        {
+          "key": "intumescens",
+          "doc_count": 3
+        },
+        {
+          "key": "misera",
+          "doc_count": 3
+        },
+        {
+          "key": "var",
+          "doc_count": 3
+        },
+        {
+          "key": "debilis",
+          "doc_count": 2
+        },
+        {
+          "key": "hirtifolia",
+          "doc_count": 2
+        },
+        {
+          "key": "allegheniensis",
+          "doc_count": 1
+        },
+        {
+          "key": "deflexa",
+          "doc_count": 1
+        },
+        {
+          "key": "fernaldii",
+          "doc_count": 1
+        },
+        {
+          "key": "laxiflora",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1673412114920,
+      "value_as_string": "2023-01-11T04:41:54.920Z"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 0,
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "fdh": {
+      "doc_count": 0,
+      "dh": {
+        "buckets": []
+      }
+    }
+  }
+}
