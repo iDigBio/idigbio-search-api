@@ -110,15 +110,20 @@ function termsFilter(k, shimK) {
   };
 }
 
-function exactFilter(k, shimK) {
+function exactFilter(k, shimK) { // handler for "exact" toggle on portal UI.
   let term = {}
-  if (_.isString(shimK)) {
-    term[k] = shimK.toLowerCase();
+  term[k+'.exact'] = shimK['text']
+
+  if (_.isArray(shimK['text'])) {
+    term[k+'.exact'].map(str => str.toLowerCase())
+    return {
+      "terms": term  // use "terms" plural when passing an array of terms.
+    }
   } else {
-    term[k + '.exact'] = shimK['text'];
-  }
-  return {
-    "term": term
+    term[k+'.exact'] = term[k+'.exact'].toLowerCase()
+    return {
+      "term": term
+    }
   }
 }
 
