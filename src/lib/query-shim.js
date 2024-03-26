@@ -152,11 +152,10 @@ function fuzzyFilter(k, shimK) {
       }
     };
   } else { // single term
-    queryParam = queryParam.toLowerCase()
     esQuery = {
       "match": {
         "scientificname": {
-          "query": queryParam,
+          "query": shimK,
           "operator": "and",
           "fuzziness": fuzziness
         }
@@ -212,23 +211,26 @@ export default function queryShim(shim, term_type) {
 
   _.keys(shim).forEach(function(k) {
     if(_.isString(shim[k]) || _.isBoolean(shim[k]) || _.isNumber(shim[k])) {
-    if (k==='scientificname') { // TODO: Add support for other fields, store a map containing their keys
-      and_array.push(fuzzyFilter(k, shim[k]))
-      }
-      else {and_array.push(termFilter(k, shim[k]));}
-    } else if(_.isArray(shim[k])) {
-      and_array.push(termsFilter(k, shim[k]));
-    } else if(shim[k]["type"]) {
-      const f = objectType(k, shim[k]);
-      if(f) {
-        if(_.isString(f)) {
-          fulltext = f;
-        } else {
-          and_array.push(f);
+      if (k==='scientificname') { // TODO: Add support for other fields, store a map containing their keys
+          and_array.push(fuzzyFilter(k, shim[k]))
         }
-      } else {
-        throw new QueryParseError("unable to parse type", shim[k]);
-      }
+        else {and_array.push(termFilter(k, shim[k]));}
+    } else if(_.isArray(shim[k])) {
+        if (k==='scientificname') {
+          and_array.push(fuzzyFilter(k, shim[k]))
+        }
+        else {and_array.push(termsFilter(k, shim[k]));}
+    } else if(shim[k]["type"]) {
+        const f = objectType(k, shim[k]);
+        if(f) {
+          if(_.isString(f)) {
+            fulltext = f;
+          } else {
+            and_array.push(f);
+          }
+        } else {
+          throw new QueryParseError("unable to parse type", shim[k]);
+        }
     } else {
       throw new QueryParseError("unable to get type", shim[k]);
     }
