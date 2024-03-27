@@ -1,0 +1,220 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 24,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "aa7d94b4-08c1-4b04-99cc-ac704f955806",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "antennaria"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "e0d91e74-aed8-4b4e-9a57-68005ec0da30",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "bidens"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "ea01401d-2f3a-44b4-ada3-641909141509",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "bidens"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "89f8b3a1-38f5-4cdb-a752-12909094201c",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "calais"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "d0b840af-3760-426a-9899-f8c9c3e4d8f8",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "chrysopsis"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "1d727bdc-6b2e-4cfe-863a-267f221c5bf0",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "erigeron"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "dda892bd-3463-4e1a-b719-86c806042921",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "erigeron"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "55b3f3c6-fc85-4202-9930-e3377a97d08e",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "heliopsis"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "507263fa-8ded-41bd-ab92-fa84c5a0c98e",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "hieracium"
+        ]
+      },
+      {
+        "_index": "fuzzy_with_keyword",
+        "_type": "records",
+        "_id": "328a3306-5af1-4e99-b9cf-56f55cd64f8d",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "liatris"
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "f0174bc9-0cca-450e-a941-655d80040139",
+          "doc_count": 7
+        },
+        {
+          "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "doc_count": 5
+        },
+        {
+          "key": "471835cc-feb6-4d05-a8d1-62ce71399326",
+          "doc_count": 3
+        },
+        {
+          "key": "0038ce2e-43bb-4f70-8dd6-dca34efd3fca",
+          "doc_count": 1
+        },
+        {
+          "key": "0fd6e726-6828-4f62-ba8d-6ec316fe0b52",
+          "doc_count": 1
+        },
+        {
+          "key": "21b563bc-70c2-46d5-bce8-2489db2db3d8",
+          "doc_count": 1
+        },
+        {
+          "key": "570dcca6-a84f-43aa-8053-1a2ac60d9ead",
+          "doc_count": 1
+        },
+        {
+          "key": "65536dcd-7bb2-44e5-af3f-4a13f08e53d0",
+          "doc_count": 1
+        },
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 1
+        },
+        {
+          "key": "de67ccab-7d04-43b9-8083-81e45f628505",
+          "doc_count": 1
+        },
+        {
+          "key": "f0599190-e5b7-42ed-bec8-810905f50c34",
+          "doc_count": 1
+        },
+        {
+          "key": "ff89320d-e232-4edd-9cdd-4b6acc672ad3",
+          "doc_count": 1
+        }
+      ]
+    },
+    "unique_scientific_names": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 7,
+      "buckets": [
+        {
+          "key": "solidago puberula",
+          "doc_count": 5
+        },
+        {
+          "key": "erigeron pulchellus",
+          "doc_count": 2
+        },
+        {
+          "key": "liatris helleri",
+          "doc_count": 2
+        },
+        {
+          "key": "solidago odora",
+          "doc_count": 2
+        },
+        {
+          "key": "antennaria solitaria",
+          "doc_count": 1
+        },
+        {
+          "key": "bidens frondosa",
+          "doc_count": 1
+        },
+        {
+          "key": "bidens tripartita",
+          "doc_count": 1
+        },
+        {
+          "key": "chrysopsis mariana",
+          "doc_count": 1
+        },
+        {
+          "key": "heliopsis helianthoides",
+          "doc_count": 1
+        },
+        {
+          "key": "hieracium venosum",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_dm": {
+      "value": 1673405589347,
+      "value_as_string": "2023-01-11T02:53:09.347Z"
+    }
+  }
+}
