@@ -136,7 +136,7 @@ function fuzzyFilter(k, shimK) {
     const matchQueries = queryParam.map((param) => {
       return {
         "match": {
-          "scientificname": {
+          [k]: {
             "query": param.toLowerCase(),
             "operator": "and",
             "fuzziness": fuzziness
@@ -151,11 +151,30 @@ function fuzzyFilter(k, shimK) {
         }
       }
     };
+  } else if (_.isArray(shimK)) {
+      const matchQueries = shimK.map((param) => {
+        return {
+          "match": {
+            [k]: {
+              "query": param.toLowerCase(),
+              "operator": "and",
+              "fuzziness": fuzziness
+            }
+          }
+        }
+      })
+    esQuery = {
+      "query": {
+        "bool": {
+          "should": matchQueries // should will OR the contents of the array to determine hits
+        }
+      }
+    };
   } else { // single term
     esQuery = {
       "match": {
-        "scientificname": {
-          "query": shimK,
+        [k]: {
+          "query": queryParam ? queryParam : shimK,
           "operator": "and",
           "fuzziness": fuzziness
         }
