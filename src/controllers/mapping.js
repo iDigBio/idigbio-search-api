@@ -324,7 +324,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   // Create an empty GeoJSON object to store features
 var geojson = {
   'type': 'FeatureCollection',
-  'features': []
+  'features': [{"type": "Feature", "properties": null, "geometry": {"type":"Point","coordinates":[1.0,1.0]}}]
 };
 
 // Initialize the projection
@@ -356,6 +356,7 @@ var geojsonStr = JSON.stringify(geojson);
 // Create a GeoJSON datasource using the inline GeoJSON string
 var ds = new mapnik.Datasource({
   type: 'geojson',
+  cache_features: true,
   inline: geojsonStr
 });
 
