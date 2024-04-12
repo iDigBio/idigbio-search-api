@@ -208,7 +208,6 @@ const pointElseRule = _.template("<Rule>\n<ElseFilter/>\n<MarkersSymbolizer mark
 const countRule = _.template("<Rule>\n<Filter>[count] &lt;= <%= key %></Filter>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
 const geohashElseRule = _.template("<Rule>\n<ElseFilter/>\n<PolygonSymbolizer fill=\"<%= fill %>\" clip=\"true\" />\n<LineSymbolizer stroke=\"<%= stroke %>\" stroke-width=\".5\" clip=\"true\" />\n</Rule>\n");
 
-
 async function tileGeohash(zoom, x, y, map_def, body, render_type) {
   logger.debug("** in function tileGeohash - (zoom/x/y) %s/%s/%s", zoom, x, y);
   var map = new mapnik.Map(tileMath.TILE_SIZE, tileMath.TILE_SIZE);
@@ -324,7 +323,7 @@ async function tilePoints(zoom, x, y, map_def, body, render_type) {
   // Create an empty GeoJSON object to store features
 var geojson = {
   'type': 'FeatureCollection',
-  'features': [{"type": "Feature", "properties": null, "geometry": {"type":"Point","coordinates":[1.0,1.0]}}]
+  'features': [{"type": "Feature", "properties": null, "geometry": null}]
 };
 
 // Initialize the projection
@@ -356,7 +355,6 @@ var geojsonStr = JSON.stringify(geojson);
 // Create a GeoJSON datasource using the inline GeoJSON string
 var ds = new mapnik.Datasource({
   type: 'geojson',
-  cache_features: true,
   inline: geojsonStr
 });
 
