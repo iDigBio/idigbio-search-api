@@ -12,7 +12,7 @@ export function sort(req) {
   return getParam(req, "sort", function(p) {
     let param = p;
     try {
-      param = JSON.parse(p);
+      param = Array.isArray(p) ? p : JSON.parse(p);
     } catch (e) {}
 
     if(_.isString(param)) {
