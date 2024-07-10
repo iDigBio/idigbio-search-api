@@ -131,7 +131,9 @@ function fuzzyFilter(k, shimK) {
   let queryParam = shimK['text']
   let esQuery = {}
   let fuzziness = shimK['type'] ? "AUTO" : 0 // type is only present when fuzzy is toggled to true
-
+  if (fuzziness == "AUTO") {
+    k += ".fuzzy"
+  }
   if (_.isArray(shimK['text'])) { // combine multiple terms into a bool query
     const matchQueries = queryParam.map((param) => {
       return {
