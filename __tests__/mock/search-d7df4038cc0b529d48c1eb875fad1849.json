@@ -1,38 +1,2013 @@
 {
   "timed_out": false,
   "_shards": {
-    "total": 48,
-    "successful": 48,
+    "total": 28,
+    "successful": 28,
     "failed": 0
   },
   "hits": {
-    "total": 0,
-    "max_score": null,
-    "hits": []
+    "total": 43327,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "a23b22bd-10b0-459a-a9f2-5447c939823e",
+        "_score": 1,
+        "_source": {
+          "recordset": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "municipality": "eustis",
+          "county": "lake",
+          "catalognumber": "msc0218787",
+          "collector": "geo. v. nash.",
+          "continent": "north america",
+          "uuid": "a23b22bd-10b0-459a-a9f2-5447c939823e",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "msc",
+          "mediarecords": [
+            "a5b1c471-adf7-41c7-8c26-ce4916813ea9"
+          ],
+          "etag": "d89cb9026956cb62c1b19864e0447a25d4e21422",
+          "recordnumber": "1817",
+          "hasImage": true,
+          "collectionid": "9f240f3c-0ebe-463a-b610-4fa9beea74b7",
+          "indexData": {
+            "dwc:county": "Lake",
+            "dwc:recordedBy": "Geo. V. Nash.",
+            "idigbio:uuid": "a23b22bd-10b0-459a-a9f2-5447c939823e",
+            "dcterms:references": "https://www.mycoportal.org/portal/collections/individual/index.php?occid=4473066",
+            "idigbio:recordIds": [
+              "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\msc0218787",
+              "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\4473066",
+              "urn:uuid:ab762b2b-0e72-4802-8d52-a545fd3fba63"
+            ],
+            "dwc:occurrenceID": "MSC0218787",
+            "dwc:institutionCode": "MSC",
+            "idigbio:parent": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1895-00-00",
+            "dwc:collectionID": "9f240f3c-0ebe-463a-b610-4fa9beea74b7",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:ab762b2b-0e72-4802-8d52-a545fd3fba63",
+            "idigbio:etag": "d89cb9026956cb62c1b19864e0447a25d4e21422",
+            "id": "4473066",
+            "dwc:decimalLatitude": "28.84662",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:municipality": "Eustis",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "a5b1c471-adf7-41c7-8c26-ce4916813ea9"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "on Leucothoe racemosa",
+            "idigbio:dateModified": "2022-12-06T21:16:33.320324",
+            "dwc:georeferenceSources": "georef batch tool 2017-11-01; GeoLocate",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:catalogNumber": "MSC0218787",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.72718",
+            "dwc:associatedTaxa": "host: Leucothoe racemosa",
+            "dwc:otherCatalogNumbers": "110219",
+            "dwc:georeferencedBy": "MichaellaMcB (2017-11-01 16:48:05)",
+            "dwc:verbatimEventDate": "May 28- June 15 1895",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "1817",
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2021-04-13 02:19:54",
+            "dwc:coordinateUncertaintyInMeters": "1500",
+            "dwc:day": "0",
+            "dwc:year": "1895"
+          },
+          "hasMedia": true,
+          "coordinateuncertainty": 1500,
+          "data": {
+            "dwc:county": "Lake",
+            "dwc:recordedBy": "Geo. V. Nash.",
+            "dcterms:references": "https://www.mycoportal.org/portal/collections/individual/index.php?occid=4473066",
+            "dwc:occurrenceID": "MSC0218787",
+            "id": "4473066",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1895-00-00",
+            "dwc:collectionID": "9f240f3c-0ebe-463a-b610-4fa9beea74b7",
+            "dwc:institutionCode": "MSC",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:ab762b2b-0e72-4802-8d52-a545fd3fba63",
+            "dwc:decimalLatitude": "28.84662",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:municipality": "Eustis",
+            "dwc:habitat": "on Leucothoe racemosa",
+            "dwc:georeferenceSources": "georef batch tool 2017-11-01; GeoLocate",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:catalogNumber": "MSC0218787",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.72718",
+            "dwc:coordinateUncertaintyInMeters": "1500",
+            "dwc:otherCatalogNumbers": "110219",
+            "dwc:georeferencedBy": "MichaellaMcB (2017-11-01 16:48:05)",
+            "dwc:verbatimEventDate": "May 28- June 15 1895",
+            "dwc:recordNumber": "1817",
+            "dcterms:modified": "2021-04-13 02:19:54",
+            "dwc:associatedTaxa": "host: Leucothoe racemosa",
+            "dwc:day": "0",
+            "dwc:year": "1895"
+          },
+          "datemodified": "2022-12-06T21:16:33.320324+00:00",
+          "occurrenceid": "msc0218787",
+          "country": "united states",
+          "geopoint": {
+            "lat": 28.84662,
+            "lon": -81.72718
+          },
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "may 28- june 15 1895",
+          "recordids": [
+            "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\msc0218787",
+            "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\4473066",
+            "urn:uuid:ab762b2b-0e72-4802-8d52-a545fd3fba63"
+          ],
+          "eventdate": "1895-00-00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "765125ac-1172-4016-9e3d-62d00d6ae048",
+        "_score": 1,
+        "_source": {
+          "individualcount": 100,
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00020097",
+          "startdayofyear": 226,
+          "collector": "alex may, heather otte, mark deyrup",
+          "continent": "north america",
+          "uuid": "765125ac-1172-4016-9e3d-62d00d6ae048",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "datecollected": "2009-08-14T00:00:00+00:00",
+          "etag": "7f2a1ac55346ba01dd5cdaafd0b870330b65c36c",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "highland park estates: hpe 1",
+          "data": {
+            "dwc:startDayOfYear": "226",
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Alex May, Heather Otte, Mark Deyrup",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=35374847",
+            "dwc:individualCount": "100",
+            "dwc:occurrenceID": "c8824c74-1226-4054-bd96-4681cfe2f0f4",
+            "id": "35374847",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2009-08-14",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:f6385ca5-7267-45df-ba1d-d9e8b09342e4",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.33668",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:locality": "Highland Park Estates: HPE 1",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00020097",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-81.35187",
+            "dwc:verbatimEventDate": "8/14/2009",
+            "dcterms:modified": "2018-07-26 14:03:35",
+            "dwc:day": "14",
+            "dwc:year": "2009"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "c8824c74-1226-4054-bd96-4681cfe2f0f4",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.33668,
+            "lon": -81.35187
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "8/14/2009",
+          "recordids": [
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\35374847",
+            "urn:uuid:f6385ca5-7267-45df-ba1d-d9e8b09342e4",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\c8824c74-1226-4054-bd96-4681cfe2f0f4"
+          ],
+          "eventdate": "2009-08-14",
+          "indexData": {
+            "dwc:startDayOfYear": "226",
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Alex May, Heather Otte, Mark Deyrup",
+            "idigbio:uuid": "765125ac-1172-4016-9e3d-62d00d6ae048",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=35374847",
+            "dwc:individualCount": "100",
+            "idigbio:recordIds": [
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\35374847",
+              "urn:uuid:f6385ca5-7267-45df-ba1d-d9e8b09342e4",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\c8824c74-1226-4054-bd96-4681cfe2f0f4"
+            ],
+            "dwc:occurrenceID": "c8824c74-1226-4054-bd96-4681cfe2f0f4",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2009-08-14",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:f6385ca5-7267-45df-ba1d-d9e8b09342e4",
+            "idigbio:etag": "7f2a1ac55346ba01dd5cdaafd0b870330b65c36c",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "35374847",
+            "dwc:decimalLatitude": "27.33668",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Highland Park Estates: HPE 1",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00020097",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-81.35187",
+            "dwc:verbatimEventDate": "8/14/2009",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2018-07-26 14:03:35",
+            "dwc:day": "14",
+            "dwc:year": "2009"
+          }
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "c7a047c0-75a4-44a8-88a3-5ba8ef6cb0e2",
+        "_score": 1,
+        "_source": {
+          "individualcount": 1,
+          "recordset": "5e893602-84ca-4c8c-bac1-99111c777582",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "leon",
+          "catalognumber": "ttu-z_037125",
+          "collector": "m houck",
+          "continent": "north america",
+          "uuid": "c7a047c0-75a4-44a8-88a3-5ba8ef6cb0e2",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "ttu",
+          "etag": "1e9b0f6a405faf630772ef913bfdbe9b0621c3d0",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "d4e788b4-5d52-47a3-873e-227c6df49c7b",
+          "locality": "tallahassee",
+          "coordinateuncertainty": 17651,
+          "data": {
+            "dwc:county": "Leon",
+            "dwc:recordedBy": "M Houck",
+            "dwc:georeferenceSources": "georef batch tool 2016-04-20; GeoLocate",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=12870199",
+            "dwc:individualCount": "1",
+            "dwc:occurrenceID": "4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+            "dwc:lifeStage": "adult",
+            "dwc:geodeticDatum": "WGS84",
+            "symbiota:recordEnteredBy": "Cokendolpher, et al.",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "d4e788b4-5d52-47a3-873e-227c6df49c7b",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+            "dwc:collectionCode": "TTU-Z",
+            "id": "12870199",
+            "dwc:decimalLatitude": "30.438256",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:preparations": "pinned",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:locality": "Tallahassee",
+            "dwc:institutionCode": "TTU",
+            "dwc:catalogNumber": "TTU-Z_037125",
+            "dcterms:accessRights": "CC BY-NC (Attribution-Non-Commercial)",
+            "dwc:decimalLongitude": "-84.280733",
+            "dwc:otherCatalogNumbers": "TTU1997-058",
+            "dwc:georeferencedBy": "alex.gregg (2016-04-20 11:11:40)",
+            "dcterms:rightsHolder": "Museum of Texas Tech University",
+            "dcterms:modified": "2015-01-08 00:00:00",
+            "dwc:coordinateUncertaintyInMeters": "17651"
+          },
+          "datemodified": "2022-04-27T12:02:14.641991+00:00",
+          "occurrenceid": "4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.438256,
+            "lon": -84.280733
+          },
+          "collectioncode": "ttu-z",
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "5e893602-84ca-4c8c-bac1-99111c777582\\4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+            "urn:uuid:4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+            "5e893602-84ca-4c8c-bac1-99111c777582\\12870199",
+            "5e893602-84ca-4c8c-bac1-99111c777582\\ttu-z_037125"
+          ],
+          "indexData": {
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:county": "Leon",
+            "dwc:recordedBy": "M Houck",
+            "idigbio:uuid": "c7a047c0-75a4-44a8-88a3-5ba8ef6cb0e2",
+            "dwc:georeferenceSources": "georef batch tool 2016-04-20; GeoLocate",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=12870199",
+            "dwc:individualCount": "1",
+            "idigbio:recordIds": [
+              "5e893602-84ca-4c8c-bac1-99111c777582\\4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+              "urn:uuid:4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+              "5e893602-84ca-4c8c-bac1-99111c777582\\12870199",
+              "5e893602-84ca-4c8c-bac1-99111c777582\\ttu-z_037125"
+            ],
+            "dwc:occurrenceID": "4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+            "dwc:lifeStage": "adult",
+            "id": "12870199",
+            "idigbio:parent": "5e893602-84ca-4c8c-bac1-99111c777582",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "d4e788b4-5d52-47a3-873e-227c6df49c7b",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:4438413c-c835-4ca7-ac7e-bcf5e7ace286",
+            "idigbio:etag": "1e9b0f6a405faf630772ef913bfdbe9b0621c3d0",
+            "dwc:collectionCode": "TTU-Z",
+            "symbiota:recordEnteredBy": "Cokendolpher, et al.",
+            "dwc:decimalLatitude": "30.438256",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dwc:preparations": "pinned",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2022-04-27T12:02:14.641991",
+            "dwc:locality": "Tallahassee",
+            "dwc:institutionCode": "TTU",
+            "dwc:catalogNumber": "TTU-Z_037125",
+            "dcterms:accessRights": "CC BY-NC (Attribution-Non-Commercial)",
+            "dwc:decimalLongitude": "-84.280733",
+            "dwc:otherCatalogNumbers": "TTU1997-058",
+            "dwc:georeferencedBy": "alex.gregg (2016-04-20 11:11:40)",
+            "dcterms:rightsHolder": "Museum of Texas Tech University",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2015-01-08 00:00:00",
+            "dwc:coordinateUncertaintyInMeters": "17651"
+          }
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "94d09ba3-2d0a-43fa-9fa7-658e50dba6b2",
+        "_score": 1,
+        "_source": {
+          "mindepth": 440,
+          "family": "scorpaenidae",
+          "recordset": "c38b867b-05f3-4733-802e-d8d2d3324f84",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "catalognumber": "101644",
+          "startdayofyear": 236,
+          "collector": "r/v gerda",
+          "continent": "atlantic ocean",
+          "uuid": "94d09ba3-2d0a-43fa-9fa7-658e50dba6b2",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "uf",
+          "class": "actinopterygii",
+          "datecollected": "1964-08-23T00:00:00+00:00",
+          "etag": "ae4a72843cf0a3eb2532fe07d2c27fafbb874c72",
+          "geopoint": {
+            "lat": 25.6,
+            "lon": -79.6333333
+          },
+          "flags": [
+            "geopoint_datum_missing",
+            "rev_geocode_eez",
+            "rev_geocode_mismatch",
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_replaced"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "indexData": {
+            "dwc:recordedBy": "R/V Gerda",
+            "idigbio:uuid": "94d09ba3-2d0a-43fa-9fa7-658e50dba6b2",
+            "dwc:fieldNumber": "GRD352",
+            "dwc:order": "Scorpaeniformes",
+            "idigbio:recordIds": [
+              "c38b867b-05f3-4733-802e-d8d2d3324f84\\04fc0929-af07-46ea-848a-6ebdabc507c5"
+            ],
+            "dwc:occurrenceID": "04FC0929-AF07-46EA-848A-6EBDABC507C5",
+            "id": "04FC0929-AF07-46EA-848A-6EBDABC507C5",
+            "idigbio:parent": "c38b867b-05f3-4733-802e-d8d2d3324f84",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1964-08-23",
+            "dwc:country": "united states",
+            "dwc:maximumDepthInMeters": "0",
+            "idigbio:etag": "ae4a72843cf0a3eb2532fe07d2c27fafbb874c72",
+            "dwc:collectionCode": "Fish",
+            "dwc:decimalLatitude": "25.6000000",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "atlantic ocean",
+            "dwc:preparations": "IsOH - 1",
+            "idigbio:isocountrycode": "usa",
+            "flag_dwc_country_replaced": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2020-10-14T13:20:17.445966",
+            "dwc:locality": "E of Biscayne National Park",
+            "dwc:institutionCode": "UF",
+            "dwc:class": "Actinopterygii",
+            "dwc:catalogNumber": "101644",
+            "dwc:higherGeography": "Florida, USA, Atlantic Ocean",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-79.6333333",
+            "dwc:minimumDepthInMeters": "440 fm",
+            "dwc:family": "Scorpaenidae",
+            "dwc:georeferenceProtocol": "GPS_loran",
+            "dcterms:modified": "1996-04-03 14:02:39",
+            "flag_dwc_continent_replaced": true,
+            "dwc:day": "23",
+            "dwc:year": "1964"
+          },
+          "data": {
+            "dwc:recordedBy": "R/V Gerda",
+            "dwc:fieldNumber": "GRD352",
+            "dwc:order": "Scorpaeniformes",
+            "dwc:occurrenceID": "04FC0929-AF07-46EA-848A-6EBDABC507C5",
+            "id": "04FC0929-AF07-46EA-848A-6EBDABC507C5",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1964-08-23",
+            "dwc:country": "USA",
+            "dwc:maximumDepthInMeters": "0",
+            "dwc:collectionCode": "Fish",
+            "dwc:decimalLatitude": "25.6000000",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "Atlantic Ocean",
+            "dwc:preparations": "IsOH - 1",
+            "dwc:locality": "E of Biscayne National Park",
+            "dwc:institutionCode": "UF",
+            "dwc:class": "Actinopterygii",
+            "dwc:catalogNumber": "101644",
+            "dwc:higherGeography": "Florida, USA, Atlantic Ocean",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-79.6333333",
+            "dwc:minimumDepthInMeters": "440 fm",
+            "dwc:family": "Scorpaenidae",
+            "dwc:georeferenceProtocol": "GPS_loran",
+            "dcterms:modified": "1996-04-03 14:02:39",
+            "dwc:day": "23",
+            "dwc:year": "1964"
+          },
+          "datemodified": "2020-10-14T13:20:17.445966+00:00",
+          "occurrenceid": "04fc0929-af07-46ea-848a-6ebdabc507c5",
+          "country": "united states",
+          "locality": "e of biscayne national park",
+          "collectioncode": "fish",
+          "eventdate": "1964-08-23",
+          "fieldnumber": "grd352",
+          "maxdepth": 0,
+          "recordids": [
+            "c38b867b-05f3-4733-802e-d8d2d3324f84\\04fc0929-af07-46ea-848a-6ebdabc507c5"
+          ],
+          "order": "scorpaeniformes"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "e26cd270-7743-4fc4-a901-f6bbea61e96c",
+        "_score": 1,
+        "_source": {
+          "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "florida",
+          "county": "okeechobee",
+          "startdayofyear": 220,
+          "collector": "h. d. thiers",
+          "continent": "north america",
+          "uuid": "e26cd270-7743-4fc4-a901-f6bbea61e96c",
+          "countrycode": "usa",
+          "locality": "bassinger",
+          "institutioncode": "sfsu",
+          "datecollected": "1958-08-08T00:00:00+00:00",
+          "etag": "1cffa5f4a18d6309311ca73b26ba98e8ee267f2a",
+          "recordnumber": "5127",
+          "hasImage": false,
+          "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+          "indexData": {
+            "dwc:startDayOfYear": "220",
+            "dwc:county": "Okeechobee",
+            "dwc:recordedBy": "H. D. Thiers",
+            "idigbio:uuid": "e26cd270-7743-4fc4-a901-f6bbea61e96c",
+            "dwc:georeferenceSources": "Google Maps",
+            "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031240",
+            "idigbio:recordIds": [
+              "urn:uuid:69eebbcb-8394-4dd6-a07f-5836c81cac26",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031240",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\69eebbcb-8394-4dd6-a07f-5836c81cac26"
+            ],
+            "dwc:occurrenceID": "69eebbcb-8394-4dd6-a07f-5836c81cac26",
+            "symbiota:recordEnteredBy": "bthiers",
+            "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1958-08-08",
+            "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+            "dwc:institutionCode": "SFSU",
+            "dwc:country": "united states",
+            "idigbio:recordId": "urn:uuid:69eebbcb-8394-4dd6-a07f-5836c81cac26",
+            "idigbio:etag": "1cffa5f4a18d6309311ca73b26ba98e8ee267f2a",
+            "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+            "id": "1031240",
+            "dwc:decimalLatitude": "27.400319",
+            "dwc:georeferenceVerificationStatus": "high confidence",
+            "dwc:basisOfRecord": "FieldBook",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "flag_dwc_country_replaced": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+            "dwc:locality": "Bassinger",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-81.016454",
+            "dwc:georeferencedBy": "B. Thiers",
+            "dwc:verbatimEventDate": "8-Aug-58",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "5127",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "GBIF Best Practices",
+            "dcterms:modified": "2015-01-08 13:04:45",
+            "dwc:coordinateUncertaintyInMeters": "1000",
+            "dwc:day": "8",
+            "dwc:year": "1958"
+          },
+          "hasMedia": false,
+          "coordinateuncertainty": 1000,
+          "data": {
+            "dwc:startDayOfYear": "220",
+            "dwc:county": "Okeechobee",
+            "dwc:recordedBy": "H. D. Thiers",
+            "dwc:georeferenceSources": "Google Maps",
+            "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031240",
+            "dwc:occurrenceID": "69eebbcb-8394-4dd6-a07f-5836c81cac26",
+            "id": "1031240",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1958-08-08",
+            "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+            "dwc:institutionCode": "SFSU",
+            "dwc:country": "USA",
+            "idigbio:recordId": "urn:uuid:69eebbcb-8394-4dd6-a07f-5836c81cac26",
+            "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+            "symbiota:recordEnteredBy": "bthiers",
+            "dwc:decimalLatitude": "27.400319",
+            "dwc:georeferenceVerificationStatus": "high confidence",
+            "dwc:basisOfRecord": "FieldBook",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:locality": "Bassinger",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-81.016454",
+            "dwc:georeferencedBy": "B. Thiers",
+            "dwc:verbatimEventDate": "8-Aug-58",
+            "dwc:recordNumber": "5127",
+            "dwc:georeferenceProtocol": "GBIF Best Practices",
+            "dcterms:modified": "2015-01-08 13:04:45",
+            "dwc:coordinateUncertaintyInMeters": "1000",
+            "dwc:day": "8",
+            "dwc:year": "1958"
+          },
+          "datemodified": "2021-04-19T22:45:11.573256+00:00",
+          "occurrenceid": "69eebbcb-8394-4dd6-a07f-5836c81cac26",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.400319,
+            "lon": -81.016454
+          },
+          "flags": [
+            "dwc_basisofrecord_removed",
+            "dwc_basisofrecord_invalid",
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "8-aug-58",
+          "recordids": [
+            "urn:uuid:69eebbcb-8394-4dd6-a07f-5836c81cac26",
+            "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031240",
+            "46374ee7-7c70-48d8-bf16-2e6c1626565e\\69eebbcb-8394-4dd6-a07f-5836c81cac26"
+          ],
+          "eventdate": "1958-08-08"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "5ba9efbe-89a8-4bc9-84a6-abd5ec2b6c23",
+        "_score": 1,
+        "_source": {
+          "recordset": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "county": "leon co.",
+          "catalognumber": "mem 74349",
+          "startdayofyear": 213,
+          "collector": "brown, r.l., plotkin, d.",
+          "continent": "north america",
+          "uuid": "5ba9efbe-89a8-4bc9-84a6-abd5ec2b6c23",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "missa",
+          "datecollected": "2011-08-01T00:00:00+00:00",
+          "etag": "014744707ed7d7b8555998a89a5729c6abdaeb08",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+          "locality": "tall timbers research station",
+          "data": {
+            "dwc:startDayOfYear": "213",
+            "dwc:verbatimCoordinates": "303937N 841231W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Brown, R.L., Plotkin, D.",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606107",
+            "dwc:occurrenceID": "eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+            "id": "23606107",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2011-08-01",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+            "dwc:collectionCode": "MEM",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:decimalLatitude": "30.660278",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:habitat": "Live oak/pine forest",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74349",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-84.208611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:43)",
+            "dwc:verbatimEventDate": "1/Aug/2011 to 5/Aug/2011",
+            "dcterms:modified": "2016-11-08 07:41:43",
+            "dwc:day": "1",
+            "dwc:year": "2011"
+          },
+          "datemodified": "2021-01-01T08:16:54.092375+00:00",
+          "occurrenceid": "eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.660278,
+            "lon": -84.208611
+          },
+          "collectioncode": "mem",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "1/aug/2011 to 5/aug/2011",
+          "recordids": [
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606107",
+            "urn:uuid:eca0dd8c-ec6f-495a-845e-58c601ff18a6"
+          ],
+          "eventdate": "2011-08-01",
+          "indexData": {
+            "dwc:startDayOfYear": "213",
+            "dwc:verbatimCoordinates": "303937N 841231W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Brown, R.L., Plotkin, D.",
+            "idigbio:uuid": "5ba9efbe-89a8-4bc9-84a6-abd5ec2b6c23",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dwc:habitat": "Live oak/pine forest",
+            "idigbio:recordIds": [
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606107",
+              "urn:uuid:eca0dd8c-ec6f-495a-845e-58c601ff18a6"
+            ],
+            "dwc:occurrenceID": "eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "idigbio:parent": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2011-08-01",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:eca0dd8c-ec6f-495a-845e-58c601ff18a6",
+            "idigbio:etag": "014744707ed7d7b8555998a89a5729c6abdaeb08",
+            "dwc:collectionCode": "MEM",
+            "id": "23606107",
+            "dwc:decimalLatitude": "30.660278",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606107",
+            "idigbio:dateModified": "2021-01-01T08:16:54.092375",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74349",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-84.208611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:43)",
+            "dwc:verbatimEventDate": "1/Aug/2011 to 5/Aug/2011",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2016-11-08 07:41:43",
+            "dwc:day": "1",
+            "dwc:year": "2011"
+          }
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "6d06f793-ee5d-409e-8bff-6e9f02b58ab9",
+        "_score": 1,
+        "_source": {
+          "recordset": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "dqs": 0.18840579710144928,
+          "stateprovince": "florida",
+          "county": "leon co.",
+          "catalognumber": "mem 74556",
+          "collector": "lee, s.",
+          "continent": "north america",
+          "uuid": "6d06f793-ee5d-409e-8bff-6e9f02b58ab9",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "missa",
+          "etag": "054ff3151add8e9e47fb4d6fd620874ddecb98f6",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+          "locality": "tall timbers research station",
+          "data": {
+            "dwc:verbatimCoordinates": "303928N 841307W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606256",
+            "dwc:occurrenceID": "3320d79e-fda8-4109-b26c-d48599d3a22a",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:3320d79e-fda8-4109-b26c-d48599d3a22a",
+            "dwc:collectionCode": "MEM",
+            "id": "23606256",
+            "dwc:decimalLatitude": "30.657778",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:habitat": "Longleaf pine savannah",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74556",
+            "dwc:decimalLongitude": "-84.218611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:02)",
+            "dcterms:modified": "2016-11-08 07:41:02"
+          },
+          "datemodified": "2021-01-01T08:16:54.092375+00:00",
+          "occurrenceid": "3320d79e-fda8-4109-b26c-d48599d3a22a",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.657778,
+            "lon": -84.218611
+          },
+          "collectioncode": "mem",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606256",
+            "urn:uuid:3320d79e-fda8-4109-b26c-d48599d3a22a",
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\3320d79e-fda8-4109-b26c-d48599d3a22a"
+          ],
+          "indexData": {
+            "dwc:verbatimCoordinates": "303928N 841307W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "idigbio:uuid": "6d06f793-ee5d-409e-8bff-6e9f02b58ab9",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dwc:habitat": "Longleaf pine savannah",
+            "idigbio:recordIds": [
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606256",
+              "urn:uuid:3320d79e-fda8-4109-b26c-d48599d3a22a",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\3320d79e-fda8-4109-b26c-d48599d3a22a"
+            ],
+            "dwc:occurrenceID": "3320d79e-fda8-4109-b26c-d48599d3a22a",
+            "id": "23606256",
+            "idigbio:parent": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:3320d79e-fda8-4109-b26c-d48599d3a22a",
+            "idigbio:etag": "054ff3151add8e9e47fb4d6fd620874ddecb98f6",
+            "dwc:collectionCode": "MEM",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:decimalLatitude": "30.657778",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606256",
+            "idigbio:dateModified": "2021-01-01T08:16:54.092375",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74556",
+            "dwc:decimalLongitude": "-84.218611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:02)",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2016-11-08 07:41:02"
+          }
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "5605b250-f3ab-43af-9809-c473736a5118",
+        "_score": 1,
+        "_source": {
+          "recordset": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "dqs": 0.18840579710144928,
+          "stateprovince": "florida",
+          "county": "leon co.",
+          "catalognumber": "mem 74614",
+          "collector": "lee, s.",
+          "continent": "north america",
+          "uuid": "5605b250-f3ab-43af-9809-c473736a5118",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "missa",
+          "etag": "705b9f6b06f6ceef405ab9955f58b7f78ffa2392",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+          "locality": "tall timbers research station",
+          "data": {
+            "dwc:verbatimCoordinates": "303928N 841307W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606314",
+            "dwc:occurrenceID": "e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+            "dwc:collectionCode": "MEM",
+            "id": "23606314",
+            "dwc:decimalLatitude": "30.657778",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:habitat": "Longleaf pine savannah",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74614",
+            "dwc:decimalLongitude": "-84.218611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:02)",
+            "dcterms:modified": "2016-11-08 07:41:02"
+          },
+          "datemodified": "2021-01-01T08:16:54.092375+00:00",
+          "occurrenceid": "e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.657778,
+            "lon": -84.218611
+          },
+          "collectioncode": "mem",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606314",
+            "urn:uuid:e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\e2fda316-ffe2-46ff-a410-32d6cdac1a45"
+          ],
+          "indexData": {
+            "dwc:verbatimCoordinates": "303928N 841307W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "idigbio:uuid": "5605b250-f3ab-43af-9809-c473736a5118",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dwc:habitat": "Longleaf pine savannah",
+            "idigbio:recordIds": [
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606314",
+              "urn:uuid:e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\e2fda316-ffe2-46ff-a410-32d6cdac1a45"
+            ],
+            "dwc:occurrenceID": "e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+            "id": "23606314",
+            "idigbio:parent": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:e2fda316-ffe2-46ff-a410-32d6cdac1a45",
+            "idigbio:etag": "705b9f6b06f6ceef405ab9955f58b7f78ffa2392",
+            "dwc:collectionCode": "MEM",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:decimalLatitude": "30.657778",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606314",
+            "idigbio:dateModified": "2021-01-01T08:16:54.092375",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74614",
+            "dwc:decimalLongitude": "-84.218611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:02)",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2016-11-08 07:41:02"
+          }
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "dc98b456-5593-441d-aa96-39977a7ab4a3",
+        "_score": 1,
+        "_source": {
+          "recordset": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "dqs": 0.18840579710144928,
+          "stateprovince": "florida",
+          "county": "leon co.",
+          "catalognumber": "mem 74756",
+          "collector": "lee, s.",
+          "continent": "north america",
+          "uuid": "dc98b456-5593-441d-aa96-39977a7ab4a3",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "missa",
+          "etag": "c16024c8e2af5234f87b5830a48f2e04b5f9a3ec",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+          "locality": "tall timbers research station",
+          "data": {
+            "dwc:verbatimCoordinates": "304015N 841408W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606856",
+            "dwc:occurrenceID": "8db4c218-7789-4f18-af6a-60cab1cac41d",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:8db4c218-7789-4f18-af6a-60cab1cac41d",
+            "dwc:collectionCode": "MEM",
+            "id": "23606856",
+            "dwc:decimalLatitude": "30.670833",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:habitat": "oak-pine scrub",
+            "dwc:georeferenceSources": "georef batch tool 2016-10-28",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74756",
+            "dwc:decimalLongitude": "-84.235556",
+            "dwc:georeferencedBy": "whitehouse (2016-10-28 14:00:50)",
+            "dcterms:modified": "2016-10-28 14:00:50"
+          },
+          "datemodified": "2021-01-01T08:16:54.092375+00:00",
+          "occurrenceid": "8db4c218-7789-4f18-af6a-60cab1cac41d",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.670833,
+            "lon": -84.235556
+          },
+          "collectioncode": "mem",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "urn:uuid:8db4c218-7789-4f18-af6a-60cab1cac41d",
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\8db4c218-7789-4f18-af6a-60cab1cac41d",
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606856"
+          ],
+          "indexData": {
+            "dwc:verbatimCoordinates": "304015N 841408W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "idigbio:uuid": "dc98b456-5593-441d-aa96-39977a7ab4a3",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dwc:habitat": "oak-pine scrub",
+            "idigbio:recordIds": [
+              "urn:uuid:8db4c218-7789-4f18-af6a-60cab1cac41d",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\8db4c218-7789-4f18-af6a-60cab1cac41d",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606856"
+            ],
+            "dwc:occurrenceID": "8db4c218-7789-4f18-af6a-60cab1cac41d",
+            "id": "23606856",
+            "idigbio:parent": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:8db4c218-7789-4f18-af6a-60cab1cac41d",
+            "idigbio:etag": "c16024c8e2af5234f87b5830a48f2e04b5f9a3ec",
+            "dwc:collectionCode": "MEM",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:decimalLatitude": "30.670833",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606856",
+            "idigbio:dateModified": "2021-01-01T08:16:54.092375",
+            "dwc:georeferenceSources": "georef batch tool 2016-10-28",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74756",
+            "dwc:decimalLongitude": "-84.235556",
+            "dwc:georeferencedBy": "whitehouse (2016-10-28 14:00:50)",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2016-10-28 14:00:50"
+          }
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "04ec5468-de1e-4f75-b75d-5538c7c92383",
+        "_score": 1,
+        "_source": {
+          "recordset": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "dqs": 0.18840579710144928,
+          "stateprovince": "florida",
+          "county": "leon co.",
+          "catalognumber": "mem 74632",
+          "collector": "lee, s.",
+          "continent": "north america",
+          "uuid": "04ec5468-de1e-4f75-b75d-5538c7c92383",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "missa",
+          "etag": "747123ffcf77ee5e8706defecf6528fdf235f475",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+          "locality": "tall timbers research station",
+          "data": {
+            "dwc:verbatimCoordinates": "303928N 841307W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606332",
+            "dwc:occurrenceID": "14bde848-ee95-467a-94cc-1e943f4cfafb",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:14bde848-ee95-467a-94cc-1e943f4cfafb",
+            "dwc:collectionCode": "MEM",
+            "id": "23606332",
+            "dwc:decimalLatitude": "30.657778",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:habitat": "Longleaf pine savannah",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74632",
+            "dwc:decimalLongitude": "-84.218611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:02)",
+            "dcterms:modified": "2016-11-08 07:41:02"
+          },
+          "datemodified": "2021-01-01T08:16:54.092375+00:00",
+          "occurrenceid": "14bde848-ee95-467a-94cc-1e943f4cfafb",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.657778,
+            "lon": -84.218611
+          },
+          "collectioncode": "mem",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "recordids": [
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606332",
+            "urn:uuid:14bde848-ee95-467a-94cc-1e943f4cfafb",
+            "8eabbc48-2b30-419d-bd8f-eece9185eca1\\14bde848-ee95-467a-94cc-1e943f4cfafb"
+          ],
+          "indexData": {
+            "dwc:verbatimCoordinates": "303928N 841307W",
+            "dwc:county": "Leon Co.",
+            "dwc:recordedBy": "Lee, S.",
+            "idigbio:uuid": "04ec5468-de1e-4f75-b75d-5538c7c92383",
+            "dwc:locality": "Tall Timbers Research Station",
+            "dwc:habitat": "Longleaf pine savannah",
+            "idigbio:recordIds": [
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23606332",
+              "urn:uuid:14bde848-ee95-467a-94cc-1e943f4cfafb",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\14bde848-ee95-467a-94cc-1e943f4cfafb"
+            ],
+            "dwc:occurrenceID": "14bde848-ee95-467a-94cc-1e943f4cfafb",
+            "id": "23606332",
+            "idigbio:parent": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "dwc:stateProvince": "Florida",
+            "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:14bde848-ee95-467a-94cc-1e943f4cfafb",
+            "idigbio:etag": "747123ffcf77ee5e8706defecf6528fdf235f475",
+            "dwc:collectionCode": "MEM",
+            "dcterms:rightsHolder": "Mississippi Entomological Museum",
+            "dwc:decimalLatitude": "30.657778",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23606332",
+            "idigbio:dateModified": "2021-01-01T08:16:54.092375",
+            "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+            "dwc:institutionCode": "MISSA",
+            "dwc:catalogNumber": "MEM 74632",
+            "dwc:decimalLongitude": "-84.218611",
+            "dwc:georeferencedBy": "whitehouse (2016-11-08 07:41:02)",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2016-11-08 07:41:02"
+          }
+        }
+      }
+    ]
   },
   "aggregations": {
     "min_lon": {
-      "value": null
+      "value": -133.77
     },
     "rs": {
       "doc_count_error_upper_bound": 0,
       "sum_other_doc_count": 0,
-      "buckets": []
+      "buckets": [
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 28572
+        },
+        {
+          "key": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+          "doc_count": 7332
+        },
+        {
+          "key": "6075f4b7-4242-4886-be7d-391614fffe41",
+          "doc_count": 1477
+        },
+        {
+          "key": "97e7aa9c-806e-4ac1-bde7-f24657c36b48",
+          "doc_count": 1477
+        },
+        {
+          "key": "9ff03c57-ba5a-4127-9439-4bf3e838c4df",
+          "doc_count": 739
+        },
+        {
+          "key": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+          "doc_count": 653
+        },
+        {
+          "key": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+          "doc_count": 460
+        },
+        {
+          "key": "c38b867b-05f3-4733-802e-d8d2d3324f84",
+          "doc_count": 383
+        },
+        {
+          "key": "1320a827-d62a-45b1-9d26-c0aa4790a422",
+          "doc_count": 246
+        },
+        {
+          "key": "5e893602-84ca-4c8c-bac1-99111c777582",
+          "doc_count": 214
+        },
+        {
+          "key": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "doc_count": 202
+        },
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 193
+        },
+        {
+          "key": "b8fa8ac9-a1b0-4b73-8dfb-69b5e93139c6",
+          "doc_count": 181
+        },
+        {
+          "key": "387ae47b-8641-4e3c-ae66-d1e20d93cf32",
+          "doc_count": 150
+        },
+        {
+          "key": "97058091-eb35-401b-b286-18465761f832",
+          "doc_count": 111
+        },
+        {
+          "key": "32d433aa-9e2b-4ff9-bc55-5c3e30112207",
+          "doc_count": 109
+        },
+        {
+          "key": "91c5eec8-0cdc-4be2-9a99-a15ae5ec3edc",
+          "doc_count": 69
+        },
+        {
+          "key": "7b0809fb-fd62-4733-8f40-74ceb04cbcac",
+          "doc_count": 48
+        },
+        {
+          "key": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+          "doc_count": 48
+        },
+        {
+          "key": "7232e59b-b0e1-49cd-9632-b8ae1f49f828",
+          "doc_count": 46
+        },
+        {
+          "key": "a68df423-aae9-4f4b-8a42-a36124627a53",
+          "doc_count": 40
+        },
+        {
+          "key": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+          "doc_count": 32
+        },
+        {
+          "key": "664bd710-8791-4dba-a3b6-000a1b140951",
+          "doc_count": 29
+        },
+        {
+          "key": "774a153b-e556-47f6-95d1-bab49e61cc58",
+          "doc_count": 27
+        },
+        {
+          "key": "cb65cf5e-07b8-4d53-a91a-7dce9b8ccf80",
+          "doc_count": 27
+        },
+        {
+          "key": "d315c4a3-0bee-49d1-8d03-726358937cde",
+          "doc_count": 22
+        },
+        {
+          "key": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "doc_count": 22
+        },
+        {
+          "key": "f1cf8457-237e-487a-9d13-5de7d81b9de4",
+          "doc_count": 22
+        },
+        {
+          "key": "f00b6a32-5337-406b-a850-17f5d78470ad",
+          "doc_count": 21
+        },
+        {
+          "key": "b3b89632-0a22-4532-a05b-6830d07542f7",
+          "doc_count": 20
+        },
+        {
+          "key": "5975bbda-cd92-4084-8a09-ce1e28e6164f",
+          "doc_count": 19
+        },
+        {
+          "key": "f9a33279-d6ba-41c7-a511-ef6adfcb6e20",
+          "doc_count": 19
+        },
+        {
+          "key": "3056112e-97c6-4d0d-b6c2-3c0a9adaca24",
+          "doc_count": 18
+        },
+        {
+          "key": "5386d272-06c6-4027-b5d5-d588c2afe5e5",
+          "doc_count": 18
+        },
+        {
+          "key": "b293a647-5fb8-4b82-bf5b-571e7d6fad03",
+          "doc_count": 15
+        },
+        {
+          "key": "50e36e9a-99eb-42ed-b2b2-08a835b44723",
+          "doc_count": 14
+        },
+        {
+          "key": "a47eacbb-22d0-4a8b-8853-989b26fd8290",
+          "doc_count": 14
+        },
+        {
+          "key": "0e162e0a-bf3e-4710-9357-44258ca12abb",
+          "doc_count": 12
+        },
+        {
+          "key": "667c2736-bcd3-4a6a-abf4-db5d2dc815c4",
+          "doc_count": 12
+        },
+        {
+          "key": "dde625e8-cc2a-4877-9ec4-0b8a20dfded9",
+          "doc_count": 11
+        },
+        {
+          "key": "bd7cfd55-bf55-46fc-878d-e6e11f574ccd",
+          "doc_count": 10
+        },
+        {
+          "key": "53feaa83-e3b6-4ad3-8597-293b153e7548",
+          "doc_count": 9
+        },
+        {
+          "key": "b5b79eb9-c270-4427-9cd6-43bd6c4b73ab",
+          "doc_count": 9
+        },
+        {
+          "key": "e5b0c46a-5eb6-4b94-9d4c-fb1000f534b0",
+          "doc_count": 9
+        },
+        {
+          "key": "667a12e7-c6d8-4de0-933f-ce2f07cb7a92",
+          "doc_count": 8
+        },
+        {
+          "key": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+          "doc_count": 7
+        },
+        {
+          "key": "89cf504a-1749-4619-8055-d1b4f54289e8",
+          "doc_count": 7
+        },
+        {
+          "key": "fccc3c1d-d9df-4ffd-b7e1-1b9eb11f95b1",
+          "doc_count": 7
+        },
+        {
+          "key": "3d3b2cfd-65f7-4d62-8135-06341b5c3f2a",
+          "doc_count": 6
+        },
+        {
+          "key": "ccd17772-d220-4088-8fa3-df3729f14df4",
+          "doc_count": 6
+        },
+        {
+          "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "doc_count": 6
+        },
+        {
+          "key": "d90e8316-2649-475e-a8c0-80130dab1fd2",
+          "doc_count": 5
+        },
+        {
+          "key": "07c47dd3-a0a9-434a-b144-71c32996f278",
+          "doc_count": 4
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 4
+        },
+        {
+          "key": "46c11153-2154-495d-89d2-7cdef6425cdb",
+          "doc_count": 4
+        },
+        {
+          "key": "482990c6-da88-4d99-8cf4-ccd27ee82f44",
+          "doc_count": 4
+        },
+        {
+          "key": "4f436daa-01d5-4be6-b5c3-fdd255677536",
+          "doc_count": 4
+        },
+        {
+          "key": "65536dcd-7bb2-44e5-af3f-4a13f08e53d0",
+          "doc_count": 4
+        },
+        {
+          "key": "a8a21f60-ce05-4abc-b17a-a81f8d0c15d0",
+          "doc_count": 4
+        },
+        {
+          "key": "ca4e7ee9-06f5-4f93-830c-507a6598ec25",
+          "doc_count": 4
+        },
+        {
+          "key": "de56670c-2032-4833-9a89-46f7d6a037c7",
+          "doc_count": 4
+        },
+        {
+          "key": "1c8ec291-8067-4b48-848b-410c2c768420",
+          "doc_count": 3
+        },
+        {
+          "key": "4bec11d1-f8c3-43a7-9e70-ee0256fcedaf",
+          "doc_count": 3
+        },
+        {
+          "key": "5e29dbcc-ce45-4f05-9bb0-212baffa8932",
+          "doc_count": 3
+        },
+        {
+          "key": "879d475f-4b76-4d18-8cf6-a7e5a6d44926",
+          "doc_count": 3
+        },
+        {
+          "key": "988ac5c5-8b44-47cb-b3cb-93abd267dab1",
+          "doc_count": 3
+        },
+        {
+          "key": "ab8ebf72-3c12-4151-9caa-a5cee73341af",
+          "doc_count": 3
+        },
+        {
+          "key": "e85a9948-9c9e-451d-9485-b2b4cb7b73d5",
+          "doc_count": 3
+        },
+        {
+          "key": "edf395ee-e4ec-4b31-82cf-d57066b1159f",
+          "doc_count": 3
+        },
+        {
+          "key": "f4666aa7-93f0-41f7-83c2-497af7a06887",
+          "doc_count": 3
+        },
+        {
+          "key": "11d3ad3b-38de-4709-8544-ec3c26d96607",
+          "doc_count": 2
+        },
+        {
+          "key": "1ad40bde-8a2a-46bb-9252-0cdc53df5683",
+          "doc_count": 2
+        },
+        {
+          "key": "1eca069b-09e0-406d-9625-cb9c52e1e5cc",
+          "doc_count": 2
+        },
+        {
+          "key": "33b015c8-455c-438a-89dc-c936bf3af0e1",
+          "doc_count": 2
+        },
+        {
+          "key": "40987883-03cf-494a-a5cf-7c77c7aadb79",
+          "doc_count": 2
+        },
+        {
+          "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "doc_count": 2
+        },
+        {
+          "key": "5ab348ab-439a-4697-925c-d6abe0c09b92",
+          "doc_count": 2
+        },
+        {
+          "key": "5aef068f-efd3-4851-a623-f542e97350cd",
+          "doc_count": 2
+        },
+        {
+          "key": "6649f781-fc4a-410f-a366-208e16241942",
+          "doc_count": 2
+        },
+        {
+          "key": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
+          "doc_count": 2
+        },
+        {
+          "key": "9c5fea92-a28b-4b6e-94b5-9c939f7369a2",
+          "doc_count": 2
+        },
+        {
+          "key": "d29b9265-07e6-4e73-8f72-fc42d3d83fb1",
+          "doc_count": 2
+        },
+        {
+          "key": "d83e31ec-22f0-4b35-a9eb-d9ac96287aa2",
+          "doc_count": 2
+        },
+        {
+          "key": "0dabd609-2505-4492-8b7a-3f8301d8d5e1",
+          "doc_count": 1
+        },
+        {
+          "key": "12059dc0-aed1-4fea-a465-50b9d1a8ec25",
+          "doc_count": 1
+        },
+        {
+          "key": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
+          "doc_count": 1
+        },
+        {
+          "key": "205fa34c-2fcb-4492-b992-972b18560f6f",
+          "doc_count": 1
+        },
+        {
+          "key": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
+          "doc_count": 1
+        },
+        {
+          "key": "2f484dca-4e55-4d29-ad96-56c96573444f",
+          "doc_count": 1
+        },
+        {
+          "key": "34cad268-8226-4280-b637-dde38c82a29e",
+          "doc_count": 1
+        },
+        {
+          "key": "3c9420c9-c4a8-47dc-88b7-b5638ca5e716",
+          "doc_count": 1
+        },
+        {
+          "key": "5626f61a-822e-4692-b432-51f53d053e4d",
+          "doc_count": 1
+        },
+        {
+          "key": "65007e62-740c-4302-ba20-260fe68da291",
+          "doc_count": 1
+        },
+        {
+          "key": "6539877e-82dc-485c-ad3d-038f383d5431",
+          "doc_count": 1
+        },
+        {
+          "key": "6d9d4f55-4cb4-4c8f-acc7-b465eb5f703c",
+          "doc_count": 1
+        },
+        {
+          "key": "83ad8494-136b-485a-87d4-8ce01dd6a8de",
+          "doc_count": 1
+        },
+        {
+          "key": "9368e302-f8e7-4714-aed4-db2faa861e5c",
+          "doc_count": 1
+        },
+        {
+          "key": "9c1d51f2-067e-452b-a52b-ea7b03e50e25",
+          "doc_count": 1
+        },
+        {
+          "key": "ad4e4ea0-2ac9-4030-b4bd-bf4206e79bcc",
+          "doc_count": 1
+        },
+        {
+          "key": "b3d38693-5f9b-484d-aca3-6cefcc5b08e0",
+          "doc_count": 1
+        },
+        {
+          "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
+          "doc_count": 1
+        },
+        {
+          "key": "c3134980-bf5c-49b8-a289-790d45f02c86",
+          "doc_count": 1
+        },
+        {
+          "key": "d0769c31-e4f1-42b1-a21f-cd6bf2257edb",
+          "doc_count": 1
+        },
+        {
+          "key": "d5b27393-7d3f-4b91-aebe-9066f9b1562d",
+          "doc_count": 1
+        },
+        {
+          "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
+          "doc_count": 1
+        },
+        {
+          "key": "db6c3db9-1e6d-4def-af29-33aa0339bfa9",
+          "doc_count": 1
+        },
+        {
+          "key": "ea8f632f-3fe7-40f2-8a10-a7c2970c6752",
+          "doc_count": 1
+        },
+        {
+          "key": "f3ee2661-268a-48dc-b931-b9429d5674f4",
+          "doc_count": 1
+        }
+      ]
     },
     "gh": {
-      "buckets": []
+      "buckets": [
+        {
+          "key": "dj6",
+          "doc_count": 4700
+        },
+        {
+          "key": "djq",
+          "doc_count": 4401
+        },
+        {
+          "key": "djn",
+          "doc_count": 3189
+        },
+        {
+          "key": "dhx",
+          "doc_count": 2884
+        },
+        {
+          "key": "djm",
+          "doc_count": 2212
+        },
+        {
+          "key": "dj5",
+          "doc_count": 2117
+        },
+        {
+          "key": "dhy",
+          "doc_count": 2100
+        },
+        {
+          "key": "dhv",
+          "doc_count": 2088
+        },
+        {
+          "key": "dht",
+          "doc_count": 1818
+        },
+        {
+          "key": "dj7",
+          "doc_count": 1762
+        },
+        {
+          "key": "dhs",
+          "doc_count": 1741
+        },
+        {
+          "key": "dhu",
+          "doc_count": 1610
+        },
+        {
+          "key": "dj4",
+          "doc_count": 1585
+        },
+        {
+          "key": "djk",
+          "doc_count": 1559
+        },
+        {
+          "key": "dhm",
+          "doc_count": 1264
+        },
+        {
+          "key": "djj",
+          "doc_count": 1245
+        },
+        {
+          "key": "dhz",
+          "doc_count": 1197
+        },
+        {
+          "key": "djh",
+          "doc_count": 1087
+        },
+        {
+          "key": "dj3",
+          "doc_count": 967
+        },
+        {
+          "key": "dhq",
+          "doc_count": 957
+        },
+        {
+          "key": "dhw",
+          "doc_count": 954
+        },
+        {
+          "key": "dhf",
+          "doc_count": 406
+        },
+        {
+          "key": "djr",
+          "doc_count": 255
+        },
+        {
+          "key": "dhk",
+          "doc_count": 240
+        },
+        {
+          "key": "dhg",
+          "doc_count": 165
+        },
+        {
+          "key": "djp",
+          "doc_count": 161
+        },
+        {
+          "key": "f07",
+          "doc_count": 139
+        },
+        {
+          "key": "dhe",
+          "doc_count": 62
+        },
+        {
+          "key": "dj9",
+          "doc_count": 54
+        },
+        {
+          "key": "dhr",
+          "doc_count": 49
+        },
+        {
+          "key": "dqd",
+          "doc_count": 39
+        },
+        {
+          "key": "c40",
+          "doc_count": 39
+        },
+        {
+          "key": "c41",
+          "doc_count": 36
+        },
+        {
+          "key": "dph",
+          "doc_count": 27
+        },
+        {
+          "key": "djw",
+          "doc_count": 27
+        },
+        {
+          "key": "djx",
+          "doc_count": 26
+        },
+        {
+          "key": "dh7",
+          "doc_count": 21
+        },
+        {
+          "key": "dmd",
+          "doc_count": 10
+        },
+        {
+          "key": "d7f",
+          "doc_count": 10
+        },
+        {
+          "key": "dm0",
+          "doc_count": 9
+        },
+        {
+          "key": "dj1",
+          "doc_count": 9
+        },
+        {
+          "key": "6sf",
+          "doc_count": 9
+        },
+        {
+          "key": "dhp",
+          "doc_count": 6
+        },
+        {
+          "key": "dm2",
+          "doc_count": 5
+        },
+        {
+          "key": "dm1",
+          "doc_count": 5
+        },
+        {
+          "key": "dj2",
+          "doc_count": 5
+        },
+        {
+          "key": "dm5",
+          "doc_count": 4
+        },
+        {
+          "key": "djd",
+          "doc_count": 4
+        },
+        {
+          "key": "d5z",
+          "doc_count": 4
+        },
+        {
+          "key": "d5w",
+          "doc_count": 4
+        },
+        {
+          "key": "dkf",
+          "doc_count": 3
+        },
+        {
+          "key": "dhj",
+          "doc_count": 3
+        },
+        {
+          "key": "dhd",
+          "doc_count": 3
+        },
+        {
+          "key": "d4v",
+          "doc_count": 3
+        },
+        {
+          "key": "f0k",
+          "doc_count": 2
+        },
+        {
+          "key": "dtq",
+          "doc_count": 2
+        },
+        {
+          "key": "dqc",
+          "doc_count": 2
+        },
+        {
+          "key": "dm4",
+          "doc_count": 2
+        },
+        {
+          "key": "dkb",
+          "doc_count": 2
+        },
+        {
+          "key": "dje",
+          "doc_count": 2
+        },
+        {
+          "key": "dhn",
+          "doc_count": 2
+        },
+        {
+          "key": "dhb",
+          "doc_count": 2
+        },
+        {
+          "key": "dh5",
+          "doc_count": 2
+        },
+        {
+          "key": "d5x",
+          "doc_count": 2
+        },
+        {
+          "key": "9vs",
+          "doc_count": 2
+        },
+        {
+          "key": "eug",
+          "doc_count": 1
+        },
+        {
+          "key": "eud",
+          "doc_count": 1
+        },
+        {
+          "key": "eu3",
+          "doc_count": 1
+        },
+        {
+          "key": "eku",
+          "doc_count": 1
+        },
+        {
+          "key": "ejm",
+          "doc_count": 1
+        },
+        {
+          "key": "dv2",
+          "doc_count": 1
+        },
+        {
+          "key": "dtc",
+          "doc_count": 1
+        },
+        {
+          "key": "dpn",
+          "doc_count": 1
+        },
+        {
+          "key": "dp5",
+          "doc_count": 1
+        },
+        {
+          "key": "dp4",
+          "doc_count": 1
+        },
+        {
+          "key": "dnw",
+          "doc_count": 1
+        },
+        {
+          "key": "dnu",
+          "doc_count": 1
+        },
+        {
+          "key": "dn7",
+          "doc_count": 1
+        },
+        {
+          "key": "dmn",
+          "doc_count": 1
+        },
+        {
+          "key": "dmm",
+          "doc_count": 1
+        },
+        {
+          "key": "dmk",
+          "doc_count": 1
+        },
+        {
+          "key": "dm8",
+          "doc_count": 1
+        },
+        {
+          "key": "dk9",
+          "doc_count": 1
+        },
+        {
+          "key": "dj0",
+          "doc_count": 1
+        },
+        {
+          "key": "dhh",
+          "doc_count": 1
+        },
+        {
+          "key": "dh9",
+          "doc_count": 1
+        },
+        {
+          "key": "ddk",
+          "doc_count": 1
+        },
+        {
+          "key": "d5y",
+          "doc_count": 1
+        },
+        {
+          "key": "9uy",
+          "doc_count": 1
+        },
+        {
+          "key": "9gw",
+          "doc_count": 1
+        },
+        {
+          "key": "5se",
+          "doc_count": 1
+        }
+      ]
     },
     "max_lat": {
-      "value": null
+      "value": 57.3153
     },
     "max_lon": {
-      "value": null
+      "value": -6.9
     },
     "max_dm": {
-      "value": null
+      "value": 1718212874562,
+      "value_as_string": "2024-06-12T17:21:14.562Z"
     },
     "min_lat": {
-      "value": null
+      "value": -63.9413889
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "timed_out": false,
   "_shards": {
-    "total": 48,
-    "successful": 48,
+    "total": 28,
+    "successful": 28,
     "failed": 0
   },
   "hits": {
@@ -16,8 +16,13 @@
       "sum_other_doc_count": 0,
       "buckets": []
     },
-    "geohash": {
+    "unique_scientific_names": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
       "buckets": []
+    },
+    "max_dm": {
+      "value": null
     }
   }
 }

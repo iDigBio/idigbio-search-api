@@ -63,6 +63,7 @@ describe('View', function() {
           );
 
     it('should have media aliased to mediarecords', async function() {
+      console.log(server)
       const response = await request(server)
         .get("/v2/view/media/" + testMediarecord)
         .expect('Content-Type', /json/)

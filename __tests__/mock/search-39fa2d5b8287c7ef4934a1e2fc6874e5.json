@@ -1,8 +1,8 @@
 {
   "timed_out": false,
   "_shards": {
-    "total": 48,
-    "successful": 48,
+    "total": 28,
+    "successful": 28,
     "failed": 0
   },
   "hits": {

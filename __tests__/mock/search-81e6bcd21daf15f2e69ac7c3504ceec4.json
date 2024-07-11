@@ -1,285 +1,285 @@
 {
   "timed_out": false,
   "_shards": {
-    "total": 10,
-    "successful": 10,
+    "total": 6,
+    "successful": 6,
     "failed": 0
   },
   "hits": {
-    "total": 96854,
+    "total": 236003,
     "max_score": 1,
     "hits": [
       {
         "_index": "stats-2.6.0",
         "_type": "digest",
-        "_id": "AVNYOe8WlO6Vu1qXjayQ",
+        "_id": "AVR4bPlxlQD8Y7sOkwbS",
         "_score": 1,
         "_source": {
-          "csv_line_count": 7000,
+          "csv_line_count": 76081,
           "datafile_ok": true,
           "no_recordid_count": 0,
-          "records_count": 7000,
+          "records_count": 76081,
           "dublicate_occurence_ids": 0,
           "mediarecords_delete": 0,
           "records_update": 0,
-          "filemd5": "5b78bf7b66d9b491fc6ace9b54d625d0",
-          "filename": "191206d2-a389-471c-9f9d-c0b8b00c35f8",
+          "filemd5": "501a28d09f86f431525f625a05f8e93a",
+          "filename": "f145327c-e4aa-4a00-9b2f-8cec8416e605",
           "records_delete": 0,
           "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-08T16:55:01.327021",
+          "harvest_date": "2016-05-03T17:00:51.536832",
           "commited": false,
           "mediarecords_create": 0,
           "records_create": 0,
           "mediarecords_count": 0,
           "mediarecords_update": 0,
-          "recordset_id": "191206d2-a389-471c-9f9d-c0b8b00c35f8"
+          "recordset_id": "f145327c-e4aa-4a00-9b2f-8cec8416e605"
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "digest",
-        "_id": "AVNYP2IzlQD8Y7sOhwNM",
+        "_id": "AVR5NHLf_QVYLaGowBY7",
         "_score": 1,
         "_source": {
-          "csv_line_count": 9681,
+          "csv_line_count": 159527,
           "datafile_ok": true,
           "no_recordid_count": 0,
-          "records_count": 9673,
+          "records_count": 77339,
+          "dublicate_occurence_ids": 0,
+          "mediarecords_delete": 0,
+          "records_update": 77167,
+          "filemd5": "49795d3b3295a2f268f8970c38c2b742",
+          "filename": "cd46dc32-5e36-414b-a8d7-dea9df1f9106",
+          "records_delete": 154,
+          "duplicate_occurence_count": 0,
+          "harvest_date": "2016-05-03T20:37:44.532952",
+          "commited": false,
+          "mediarecords_create": 93,
+          "records_create": 172,
+          "mediarecords_count": 338,
+          "mediarecords_update": 0,
+          "recordset_id": "cd46dc32-5e36-414b-a8d7-dea9df1f9106"
+        }
+      },
+      {
+        "_index": "stats-2.6.0",
+        "_type": "digest",
+        "_id": "AVUHW7H6rcIUZ2bUKyaO",
+        "_score": 1,
+        "_source": {
+          "csv_line_count": 30703,
+          "datafile_ok": true,
+          "no_recordid_count": 0,
+          "records_count": 30703,
           "dublicate_occurence_ids": 0,
           "mediarecords_delete": 0,
           "records_update": 0,
-          "filemd5": "cce4f38484fe8171454de9176c34d5d5",
-          "filename": "cf641fbf-fa31-481a-993b-9204f2ee1884",
+          "filemd5": "3792d6c245015bad5813197fa4ebdd77",
+          "filename": "14a8f79f-eab7-48da-ad50-bda142703820",
           "records_delete": 0,
           "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-08T17:00:58.839957",
-          "commited": false,
+          "harvest_date": "2016-05-31T11:08:03.421975",
+          "commited": true,
           "mediarecords_create": 0,
-          "records_create": 0,
-          "mediarecords_count": 6,
-          "mediarecords_update": 0,
-          "recordset_id": "cf641fbf-fa31-481a-993b-9204f2ee1884"
-        }
-      },
-      {
-        "_index": "stats-2.6.0",
-        "_type": "digest",
-        "_id": "AVNY05mFlQD8Y7sOhwm-",
-        "_score": 1,
-        "_source": {
-          "csv_line_count": 25745,
-          "datafile_ok": true,
-          "no_recordid_count": 0,
-          "records_count": 25745,
-          "dublicate_occurence_ids": 0,
-          "mediarecords_delete": 0,
-          "records_update": 15773,
-          "filemd5": "83f8b3d9ccc03d733331e8bb6acdf5fe",
-          "filename": "57a6bf5f-cda1-41fd-8c12-804c95f74841",
-          "records_delete": 25,
-          "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-08T19:42:48.401228",
-          "commited": false,
-          "mediarecords_create": 0,
-          "records_create": 96,
+          "records_create": 11,
           "mediarecords_count": 0,
           "mediarecords_update": 0,
-          "recordset_id": "57a6bf5f-cda1-41fd-8c12-804c95f74841"
+          "recordset_id": "14a8f79f-eab7-48da-ad50-bda142703820"
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "digest",
-        "_id": "AVOlTEnLIs3MzIbbM693",
+        "_id": "AVR75QCMIs3MzIbbPLC5",
         "_score": 1,
         "_source": {
-          "csv_line_count": 4685,
+          "csv_line_count": 78234,
           "datafile_ok": true,
           "no_recordid_count": 0,
-          "records_count": 4685,
+          "records_count": 78234,
           "dublicate_occurence_ids": 0,
           "mediarecords_delete": 0,
           "records_update": 0,
-          "filemd5": "8184219d2751e41d29a84119404505c7",
-          "filename": "c892f8d1-108c-44f7-9458-0abb96633976",
+          "filemd5": "2716de2321c74d1a404a3b74d3241f32",
+          "filename": "71b8ffab-444e-43f9-9a9c-5c42b0eaa5eb",
           "records_delete": 0,
           "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-23T17:05:51.536146",
-          "commited": false,
-          "mediarecords_create": 0,
-          "records_create": 0,
-          "mediarecords_count": 0,
-          "mediarecords_update": 0,
-          "recordset_id": "c892f8d1-108c-44f7-9458-0abb96633976"
-        }
-      },
-      {
-        "_index": "stats-2.6.0",
-        "_type": "digest",
-        "_id": "AVOlUbAXlO6Vu1qXkNVd",
-        "_score": 1,
-        "_source": {
-          "csv_line_count": 5748,
-          "datafile_ok": true,
-          "no_recordid_count": 0,
-          "records_count": 5748,
-          "dublicate_occurence_ids": 0,
-          "mediarecords_delete": 0,
-          "records_update": 0,
-          "filemd5": "9aaa2062b901141f2fdb6c3c3789498e",
-          "filename": "6ca3402b-f015-4953-92b7-b1bdc1c36478",
-          "records_delete": 0,
-          "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-23T17:11:45.254251",
-          "commited": false,
-          "mediarecords_create": 0,
-          "records_create": 0,
-          "mediarecords_count": 0,
-          "mediarecords_update": 0,
-          "recordset_id": "6ca3402b-f015-4953-92b7-b1bdc1c36478"
-        }
-      },
-      {
-        "_index": "stats-2.6.0",
-        "_type": "digest",
-        "_id": "AVMzJw_o_QVYLaGosoYg",
-        "_score": 1,
-        "_source": {
-          "csv_line_count": 20069,
-          "datafile_ok": true,
-          "no_recordid_count": 0,
-          "records_count": 9959,
-          "dublicate_occurence_ids": 0,
-          "mediarecords_delete": 0,
-          "records_update": 162,
-          "filemd5": "5aea70a7d7510969b731e4610412aa7b",
-          "filename": "e7bc6545-f14f-4fc4-9902-1aa38040f184",
-          "records_delete": 0,
-          "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-01T12:08:19.635266",
-          "commited": false,
-          "mediarecords_create": 0,
-          "records_create": 0,
-          "mediarecords_count": 151,
-          "mediarecords_update": 0,
-          "recordset_id": "e7bc6545-f14f-4fc4-9902-1aa38040f184"
-        }
-      },
-      {
-        "_index": "stats-2.6.0",
-        "_type": "digest",
-        "_id": "AVMyh3QilQD8Y7sOhXh3",
-        "_score": 1,
-        "_source": {
-          "csv_line_count": 5850,
-          "datafile_ok": true,
-          "no_recordid_count": 0,
-          "records_count": 5850,
-          "dublicate_occurence_ids": 0,
-          "mediarecords_delete": 0,
-          "records_update": 0,
-          "filemd5": "7eebbe14977bcdb5d5c96dafc25c72a2",
-          "filename": "55d60f69-eee9-4386-952a-805dfb71830a",
-          "records_delete": 0,
-          "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-01T09:14:08.115164",
-          "commited": false,
-          "mediarecords_create": 0,
-          "records_create": 0,
-          "mediarecords_count": 0,
-          "mediarecords_update": 0,
-          "recordset_id": "55d60f69-eee9-4386-952a-805dfb71830a"
-        }
-      },
-      {
-        "_index": "stats-2.6.0",
-        "_type": "digest",
-        "_id": "AVOb8Xr_Is3MzIbbM0wM",
-        "_score": 1,
-        "_source": {
-          "csv_line_count": 763,
-          "datafile_ok": true,
-          "no_recordid_count": 0,
-          "records_count": 759,
-          "dublicate_occurence_ids": 0,
-          "mediarecords_delete": 0,
-          "records_update": 0,
-          "filemd5": "f6e345e566ca3d83ed548cd8790d5ba7",
-          "filename": "538bdd33-b616-4825-8542-7033cc8a185f",
-          "records_delete": 0,
-          "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-21T21:30:06.426012",
+          "harvest_date": "2016-05-04T09:11:00.869730",
           "commited": true,
           "mediarecords_create": 0,
           "records_create": 0,
           "mediarecords_count": 0,
           "mediarecords_update": 0,
-          "recordset_id": "538bdd33-b616-4825-8542-7033cc8a185f"
+          "recordset_id": "71b8ffab-444e-43f9-9a9c-5c42b0eaa5eb"
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "digest",
-        "_id": "AVOb75EcIs3MzIbbM0v7",
+        "_id": "AVR75oeY_QVYLaGowDP8",
         "_score": 1,
         "_source": {
-          "csv_line_count": 1617,
+          "csv_line_count": 46129,
           "datafile_ok": true,
           "no_recordid_count": 0,
-          "records_count": 817,
+          "records_count": 17020,
           "dublicate_occurence_ids": 0,
           "mediarecords_delete": 0,
           "records_update": 0,
-          "filemd5": "653367dd38eba62732d846627476b2e6",
-          "filename": "41350373-fc6f-4dd9-b908-27805fff9155",
+          "filemd5": "b9751c4310425b145208b5ac148a942a",
+          "filename": "645bcd10-a74f-4207-a375-0254b954b7ad",
           "records_delete": 0,
           "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-21T21:28:00.030818",
+          "harvest_date": "2016-05-04T09:12:20.332153",
           "commited": true,
           "mediarecords_create": 0,
           "records_create": 0,
-          "mediarecords_count": 800,
+          "mediarecords_count": 28253,
           "mediarecords_update": 0,
-          "recordset_id": "41350373-fc6f-4dd9-b908-27805fff9155"
+          "recordset_id": "645bcd10-a74f-4207-a375-0254b954b7ad"
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "digest",
-        "_id": "AVMykfHhIs3MzIbbLvxw",
+        "_id": "AVR8ACYzlQD8Y7sOky7Q",
         "_score": 1,
         "_source": {
-          "csv_line_count": 197469,
+          "csv_line_count": 2834,
           "datafile_ok": true,
           "no_recordid_count": 0,
-          "records_count": 197469,
+          "records_count": 1417,
           "dublicate_occurence_ids": 0,
           "mediarecords_delete": 0,
           "records_update": 0,
-          "filemd5": "d1da188526d0df773968c88f8a7e33fa",
-          "filename": "348f4784-4786-45be-8d0f-85f2b189eba8",
+          "filemd5": "ee456bb314e8cab1d4f712666cb2a2a0",
+          "filename": "3d2b5be0-7c1d-4693-9226-94bc0061123b",
           "records_delete": 0,
           "duplicate_occurence_count": 0,
-          "harvest_date": "2016-03-01T09:24:19.352247",
+          "harvest_date": "2016-05-04T09:40:11.324030",
+          "commited": true,
+          "mediarecords_create": 1417,
+          "records_create": 1417,
+          "mediarecords_count": 1417,
+          "mediarecords_update": 0,
+          "recordset_id": "3d2b5be0-7c1d-4693-9226-94bc0061123b"
+        }
+      },
+      {
+        "_index": "stats-2.6.0",
+        "_type": "digest",
+        "_id": "AVR423xGFCwaOGifnM1T",
+        "_score": 1,
+        "_source": {
+          "csv_line_count": 2917,
+          "datafile_ok": true,
+          "no_recordid_count": 0,
+          "records_count": 2917,
+          "dublicate_occurence_ids": 0,
+          "mediarecords_delete": 0,
+          "records_update": 0,
+          "filemd5": "a2e84a1189d6d464aecc0e0d98fbd74d",
+          "filename": "9354db6c-4019-4351-a822-cb87b1b73a44",
+          "records_delete": 0,
+          "duplicate_occurence_count": 0,
+          "harvest_date": "2016-05-03T19:02:09.351841",
           "commited": false,
           "mediarecords_create": 0,
           "records_create": 0,
           "mediarecords_count": 0,
           "mediarecords_update": 0,
-          "recordset_id": "348f4784-4786-45be-8d0f-85f2b189eba8"
+          "recordset_id": "9354db6c-4019-4351-a822-cb87b1b73a44"
+        }
+      },
+      {
+        "_index": "stats-2.6.0",
+        "_type": "digest",
+        "_id": "AVTo7sf0FCwaOGifoZ_N",
+        "_score": 1,
+        "_source": {
+          "csv_line_count": 4400,
+          "datafile_ok": true,
+          "no_recordid_count": 0,
+          "records_count": 4400,
+          "dublicate_occurence_ids": 0,
+          "mediarecords_delete": 0,
+          "records_update": 0,
+          "filemd5": "7d7c0bf3bd01e3b5f7aca15ed3d56200",
+          "filename": "9ab47b07-99a9-4509-884b-be9383908b28",
+          "records_delete": 0,
+          "duplicate_occurence_count": 0,
+          "harvest_date": "2016-05-25T13:20:40.607373",
+          "commited": false,
+          "mediarecords_create": 0,
+          "records_create": 0,
+          "mediarecords_count": 0,
+          "mediarecords_update": 0,
+          "recordset_id": "9ab47b07-99a9-4509-884b-be9383908b28"
+        }
+      },
+      {
+        "_index": "stats-2.6.0",
+        "_type": "digest",
+        "_id": "AVTFtPTvlO6Vu1qXnQMc",
+        "_score": 1,
+        "_source": {
+          "csv_line_count": 46980,
+          "datafile_ok": true,
+          "no_recordid_count": 0,
+          "records_count": 23159,
+          "dublicate_occurence_ids": 1,
+          "mediarecords_delete": 0,
+          "records_update": 0,
+          "filemd5": "a8c5955eb846468a63ce653da55c187c",
+          "filename": "fccc3c1d-d9df-4ffd-b7e1-1b9eb11f95b1",
+          "records_delete": 0,
+          "duplicate_occurence_count": 0,
+          "harvest_date": "2016-05-18T17:10:38.928353",
+          "commited": false,
+          "mediarecords_create": 0,
+          "records_create": 0,
+          "mediarecords_count": 23820,
+          "mediarecords_update": 0,
+          "recordset_id": "fccc3c1d-d9df-4ffd-b7e1-1b9eb11f95b1"
+        }
+      },
+      {
+        "_index": "stats-2.6.0",
+        "_type": "digest",
+        "_id": "AVR40Z7NIs3MzIbbPI6v",
+        "_score": 1,
+        "_source": {
+          "csv_line_count": 718,
+          "datafile_ok": true,
+          "no_recordid_count": 0,
+          "records_count": 718,
+          "dublicate_occurence_ids": 0,
+          "mediarecords_delete": 0,
+          "records_update": 0,
+          "filemd5": "c6865875cb5704ac3fbb555ba0d68180",
+          "filename": "c4f0b43b-1a43-43bc-b302-2aecd37d8054",
+          "records_delete": 0,
+          "duplicate_occurence_count": 0,
+          "harvest_date": "2016-05-03T18:51:23.368498",
+          "commited": false,
+          "mediarecords_create": 0,
+          "records_create": 0,
+          "mediarecords_count": 0,
+          "mediarecords_update": 0,
+          "recordset_id": "c4f0b43b-1a43-43bc-b302-2aecd37d8054"
         }
       }
     ]
   },
   "aggregations": {
     "fdh": {
-      "doc_count": 2131,
+      "doc_count": 2122,
       "dh": {
         "buckets": [
           {
             "key_as_string": "2014-01-01",
             "key": 1388534400000,
-            "doc_count": 2131,
+            "doc_count": 2122,
             "rs": {
               "doc_count_error_upper_bound": 0,
               "sum_other_doc_count": 0,
@@ -376,9 +376,9 @@
                 },
                 {
                   "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-                  "doc_count": 25,
+                  "doc_count": 24,
                   "records": {
-                    "value": 437810
+                    "value": 437645
                   },
                   "mediarecords": {
                     "value": 0
@@ -395,26 +395,6 @@
                   }
                 },
                 {
-                  "key": "b8cbed64-5126-46bd-97aa-43627743aba7",
-                  "doc_count": 23,
-                  "records": {
-                    "value": 97412
-                  },
-                  "mediarecords": {
-                    "value": 0
-                  }
-                },
-                {
-                  "key": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
-                  "doc_count": 23,
-                  "records": {
-                    "value": 201465
-                  },
-                  "mediarecords": {
-                    "value": 0
-                  }
-                },
-                {
                   "key": "c38b867b-05f3-4733-802e-d8d2d3324f84",
                   "doc_count": 23,
                   "records": {
@@ -425,10 +405,20 @@
                   }
                 },
                 {
-                  "key": "14a8f79f-eab7-48da-ad50-bda142703820",
-                  "doc_count": 21,
+                  "key": "b8cbed64-5126-46bd-97aa-43627743aba7",
+                  "doc_count": 22,
                   "records": {
-                    "value": 30353
+                    "value": 97412
+                  },
+                  "mediarecords": {
+                    "value": 0
+                  }
+                },
+                {
+                  "key": "beb74dc2-22ea-49e4-b1e3-bedb8e06e8f2",
+                  "doc_count": 22,
+                  "records": {
+                    "value": 201464
                   },
                   "mediarecords": {
                     "value": 0
@@ -442,6 +432,16 @@
                   },
                   "mediarecords": {
                     "value": 25
+                  }
+                },
+                {
+                  "key": "14a8f79f-eab7-48da-ad50-bda142703820",
+                  "doc_count": 20,
+                  "records": {
+                    "value": 30353
+                  },
+                  "mediarecords": {
+                    "value": 0
                   }
                 },
                 {
@@ -875,16 +875,6 @@
                   }
                 },
                 {
-                  "key": "2e746628-f895-4367-ae31-62e81e0b6b98",
-                  "doc_count": 7,
-                  "records": {
-                    "value": 3509
-                  },
-                  "mediarecords": {
-                    "value": 70
-                  }
-                },
-                {
                   "key": "31c140bc-e6f1-4acc-beaf-b825cf288ad9",
                   "doc_count": 7,
                   "records": {
@@ -1072,6 +1062,16 @@
                   },
                   "mediarecords": {
                     "value": 1055
+                  }
+                },
+                {
+                  "key": "2e746628-f895-4367-ae31-62e81e0b6b98",
+                  "doc_count": 6,
+                  "records": {
+                    "value": 3509
+                  },
+                  "mediarecords": {
+                    "value": 70
                   }
                 },
                 {
@@ -1625,16 +1625,6 @@
                   }
                 },
                 {
-                  "key": "bcbae485-1286-4452-bbc9-bcb38c6c3573",
-                  "doc_count": 5,
-                  "records": {
-                    "value": 42791
-                  },
-                  "mediarecords": {
-                    "value": 56
-                  }
-                },
-                {
                   "key": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
                   "doc_count": 5,
                   "records": {
@@ -1699,16 +1689,6 @@
                   "doc_count": 5,
                   "records": {
                     "value": 660046
-                  },
-                  "mediarecords": {
-                    "value": 0
-                  }
-                },
-                {
-                  "key": "e165b318-d5f7-40d5-a0d9-82ba3c31060f",
-                  "doc_count": 5,
-                  "records": {
-                    "value": 2174
                   },
                   "mediarecords": {
                     "value": 0
@@ -2122,16 +2102,6 @@
                   },
                   "mediarecords": {
                     "value": 111250
-                  }
-                },
-                {
-                  "key": "58619649-7813-443d-9a99-3d4cfac8e0c4",
-                  "doc_count": 4,
-                  "records": {
-                    "value": 7529
-                  },
-                  "mediarecords": {
-                    "value": 0
                   }
                 },
                 {
@@ -2555,6 +2525,16 @@
                   }
                 },
                 {
+                  "key": "bcbae485-1286-4452-bbc9-bcb38c6c3573",
+                  "doc_count": 4,
+                  "records": {
+                    "value": 42791
+                  },
+                  "mediarecords": {
+                    "value": 56
+                  }
+                },
+                {
                   "key": "bd61c458-b865-4b05-9f1f-735c49066e55",
                   "doc_count": 4,
                   "records": {
@@ -2582,16 +2562,6 @@
                   },
                   "mediarecords": {
                     "value": 57389
-                  }
-                },
-                {
-                  "key": "c2e06358-1f9f-463c-843f-446c0a37fbd0",
-                  "doc_count": 4,
-                  "records": {
-                    "value": 62370
-                  },
-                  "mediarecords": {
-                    "value": 0
                   }
                 },
                 {
@@ -2752,6 +2722,16 @@
                   },
                   "mediarecords": {
                     "value": 30686
+                  }
+                },
+                {
+                  "key": "e165b318-d5f7-40d5-a0d9-82ba3c31060f",
+                  "doc_count": 4,
+                  "records": {
+                    "value": 2174
+                  },
+                  "mediarecords": {
+                    "value": 0
                   }
                 },
                 {
@@ -3085,6 +3065,16 @@
                   }
                 },
                 {
+                  "key": "58619649-7813-443d-9a99-3d4cfac8e0c4",
+                  "doc_count": 3,
+                  "records": {
+                    "value": 7529
+                  },
+                  "mediarecords": {
+                    "value": 0
+                  }
+                },
+                {
                   "key": "5a0d649f-a64f-4e20-a37c-2fe7f9e37bad",
                   "doc_count": 3,
                   "records": {
@@ -3382,6 +3372,16 @@
                   },
                   "mediarecords": {
                     "value": 313
+                  }
+                },
+                {
+                  "key": "c2e06358-1f9f-463c-843f-446c0a37fbd0",
+                  "doc_count": 3,
+                  "records": {
+                    "value": 62369
+                  },
+                  "mediarecords": {
+                    "value": 0
                   }
                 },
                 {

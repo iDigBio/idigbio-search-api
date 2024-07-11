@@ -1,132 +1,132 @@
 {
   "timed_out": false,
   "_shards": {
-    "total": 10,
-    "successful": 10,
+    "total": 6,
+    "successful": 6,
     "failed": 0
   },
   "hits": {
-    "total": 564884,
+    "total": 4997923,
     "max_score": 1,
     "hits": [
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ1hPk_WZ-Hk5L3y",
+        "_id": "AV2lnG5f1fyM_d2sR5rx",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-05-26T00:00:00.000Z",
-          "records_count": 76425
+          "recordset_id": "042dbdba-a449-4291-8777-577a5a4045de",
+          "mediarecords_count": 6402,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 11922
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ3kYM5EvHbuVx1a",
+        "_id": "AV2lnHAAEUjM8AL__FpN",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-06-04T00:00:00.000Z",
-          "records_count": 76425
+          "recordset_id": "9ef17d55-0498-44cf-9da4-dde3e3acb570",
+          "mediarecords_count": 60217,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 60152
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ8mOYngG3diuU4n",
+        "_id": "AV2lnF9V1fyM_d2sR5rL",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-06-26T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "1599bdcc-9eec-4d68-a2c4-83e2c2e7d9c6",
+          "mediarecords_count": 0,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 625
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ9NVfvT5VMvmBAO",
+        "_id": "AV2lnGCGyFuRrIl8AJQf",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-06-28T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "a89f64ab-8b3b-4267-b18a-3207d25a45ad",
+          "mediarecords_count": 0,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 8819
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ97OYngG3diuU4o",
+        "_id": "AV2lnE1wQ1EfwysnGynX",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-07-01T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "199dc2c5-b3fb-40e4-bbbb-0b5ef2bbf777",
+          "mediarecords_count": 0,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 120
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ-hVfvT5VMvmBAP",
+        "_id": "AV2lnE6YQ1EfwysnGyna",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-07-03T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "b0e9fd61-1e0f-408f-b035-d7952614d7f3",
+          "mediarecords_count": 0,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 6103
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ_eOYngG3diuU4p",
+        "_id": "AV2lnE95yFuRrIl8AJPy",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-07-06T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "1231ff3f-734b-4b97-aaad-07a750b02776",
+          "mediarecords_count": 0,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 2029
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZQ_x_daFw96tY3JM",
+        "_id": "AV2lnFYG1fyM_d2sR5qx",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-07-07T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "e4c75279-33d3-48f1-9b4f-667135aab8f2",
+          "mediarecords_count": 0,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 7078
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZRAtPk_WZ-Hk5L37",
+        "_id": "AV2lnFZNQ1EfwysnGynt",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-07-10T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "mediarecords_count": 5419924,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 5432040
         }
       },
       {
         "_index": "stats-2.6.0",
         "_type": "api",
-        "_id": "AVkZZRBnVfvT5VMvmBAR",
+        "_id": "AV2lnFaxEUjM8AL__FoK",
         "_score": 1,
         "_source": {
-          "recordset_id": "ff111763-e72d-4f24-8914-b5b2dd94908c",
-          "mediarecords_count": 1500,
-          "harvest_date": "2016-07-13T00:00:00.000Z",
-          "records_count": 80362
+          "recordset_id": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "mediarecords_count": 166689,
+          "harvest_date": "2017-08-03T01:00:05.706200",
+          "records_count": 172098
         }
       }
     ]

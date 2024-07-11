@@ -1,13 +1,120 @@
 {
   "timed_out": false,
   "_shards": {
-    "total": 48,
-    "successful": 48,
+    "total": 28,
+    "successful": 28,
     "failed": 0
   },
   "hits": {
-    "total": 0,
-    "max_score": null,
-    "hits": []
+    "total": 1,
+    "max_score": 16.073458,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "00100314-3220-4107-87f3-43cfdfa0cf10",
+        "_score": 16.073458,
+        "_routing": "16890fbf-5a49-4e8a-9357-b612b4a0ee62",
+        "_parent": "16890fbf-5a49-4e8a-9357-b612b4a0ee62",
+        "_source": {
+          "accessuri": "http://www.morphbank.net?id=745764&imgType=jpeg",
+          "recordset": "364a24d9-d4a8-4e0b-8e50-07b90f844548",
+          "ypixels": 3250,
+          "tag": "plant body",
+          "xpixels": 3900,
+          "uuid": "00100314-3220-4107-87f3-43cfdfa0cf10",
+          "dqs": 0.9090909090909091,
+          "etag": "bff3636c7c0b7072d99520783b5ec95972d43748",
+          "type": "stillimage",
+          "hasSpecimen": true,
+          "format": "image/jpeg",
+          "mediatype": "images",
+          "records": [
+            "16890fbf-5a49-4e8a-9357-b612b4a0ee62"
+          ],
+          "indexData": {
+            "xmpRights:WebStatement": "<a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/us/\" rel=\"license\"><img src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png\" style=\"border-width: 0pt;\" alt=\"Creative Commons License\"/></a>",
+            "dc:type": "StillImage",
+            "ac:licenseLogoURL": "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png",
+            "idigbio:uuid": "00100314-3220-4107-87f3-43cfdfa0cf10",
+            "exif:PixelYDimension": "3900",
+            "ac:provider": "http://www.morphbank.net/691554",
+            "idigbio:recordIds": [
+              "http://www.morphbank.net/745764"
+            ],
+            "photoshop:Credit": "Auburn University Herbarium",
+            "idigbio:parent": "364a24d9-d4a8-4e0b-8e50-07b90f844548",
+            "ac:providerManagedID": "http://www.morphbank.net/745764",
+            "ac:furtherInformationURL": "http://www.morphbank.net/745764",
+            "idigbio:etag": "bff3636c7c0b7072d99520783b5ec95972d43748",
+            "xmpRights:Owner": "Auburn University Herbarium",
+            "dc:format": "image/jpeg",
+            "ac:tag": "Plant body",
+            "dcterms:available": "2012-09-01",
+            "ac:metadataCreator": "morphbank.net",
+            "dc:rights": "by-nc-sa",
+            "idigbio:siblings": {
+              "record": [
+                "16890fbf-5a49-4e8a-9357-b612b4a0ee62"
+              ]
+            },
+            "coreid": "urn:uuid:17aef0ea-e842-4d3b-b0de-f25173b4e357",
+            "dcterms:identifier": "urn:uuid:1baf31ff-e923-4d3e-966c-7cfa0bd69219",
+            "idigbio:dateModified": "2014-09-18T14:24:16.673000",
+            "ac:metadataProvider": "morphbank.net",
+            "dcterms:title": "image of Axonopus fissifolius",
+            "exif:PixelXDimension": "3250",
+            "ac:metadataLanguageLiteral": "en",
+            "ac:subjectPart": "Plant body",
+            "ac:captureDevice": "Reflected light, macrophotography",
+            "ac:variantLiteral": "best quality",
+            "ac:subjectOrientation": "Herbarium Specimen",
+            "ac:resourceCreationTechnique": "No preparation",
+            "ac:accessURI": "http://www.morphbank.net?id=745764&imgType=jpeg",
+            "dcterms:modified": "2011-09-29 10:27:55.0"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "data": {
+            "xmpRights:WebStatement": "<a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/us/\" rel=\"license\"><img src=\"http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png\" style=\"border-width: 0pt;\" alt=\"Creative Commons License\"/></a>",
+            "dc:type": "StillImage",
+            "ac:tag": "Plant body",
+            "exif:PixelYDimension": "3900",
+            "ac:provider": "http://www.morphbank.net/691554",
+            "photoshop:Credit": "Auburn University Herbarium",
+            "ac:licenseLogoURL": "http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png",
+            "ac:providerManagedID": "http://www.morphbank.net/745764",
+            "ac:furtherInformationURL": "http://www.morphbank.net/745764",
+            "ac:captureDevice": "Reflected light, macrophotography",
+            "dc:format": "image/jpeg",
+            "dcterms:available": "2012-09-01",
+            "ac:metadataCreator": "morphbank.net",
+            "dc:rights": "by-nc-sa",
+            "coreid": "urn:uuid:17aef0ea-e842-4d3b-b0de-f25173b4e357",
+            "dcterms:identifier": "urn:uuid:1baf31ff-e923-4d3e-966c-7cfa0bd69219",
+            "ac:metadataProvider": "morphbank.net",
+            "dcterms:title": "image of Axonopus fissifolius",
+            "exif:PixelXDimension": "3250",
+            "ac:metadataLanguageLiteral": "en",
+            "ac:subjectPart": "Plant body",
+            "xmpRights:Owner": "Auburn University Herbarium",
+            "ac:variantLiteral": "best quality",
+            "ac:subjectOrientation": "Herbarium Specimen",
+            "ac:resourceCreationTechnique": "No preparation",
+            "ac:accessURI": "http://www.morphbank.net?id=745764&imgType=jpeg",
+            "dcterms:modified": "2011-09-29 10:27:55.0"
+          },
+          "datemodified": "2014-09-18T14:24:16.673000+00:00",
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
+          "rights": "BY-NC-SA",
+          "modified": "2011-09-29T10:27:55+00:00",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "recordids": [
+            "http://www.morphbank.net/745764"
+          ]
+        }
+      }
+    ]
   }
 }
