@@ -98,7 +98,7 @@ export function record_query(rq, fields, sort, limit, offset, fields_exclude) {
     },
     "unique_scientific_names": {
       "terms": {
-        "field": "scientificname.exact",
+        "field": "scientificname",
         "size": 10
       }
     }
