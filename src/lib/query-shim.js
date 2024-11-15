@@ -176,7 +176,7 @@ function fuzzyFilter(k, shimK) {
     esQuery = {
       "match": {
         [k]: {
-          "query": queryParam ? queryParam : shimK,
+          "query": queryParam ? queryParam.toLowerCase() : shimK.toLowerCase(),
           "operator": "and",
           "fuzziness": fuzziness
         }
@@ -235,7 +235,9 @@ export default function queryShim(shim, term_type) {
       if (k==='scientificname') { // TODO: Add support for other fields, store a map containing their keys
           and_array.push(fuzzyFilter(k, shim[k]))
         }
-        else {and_array.push(termFilter(k, shim[k]));}
+        else {
+          and_array.push(termFilter(k, shim[k]));
+        }
     } else if(_.isArray(shim[k])) {
         if (k==='scientificname') {
           and_array.push(fuzzyFilter(k, shim[k]))
