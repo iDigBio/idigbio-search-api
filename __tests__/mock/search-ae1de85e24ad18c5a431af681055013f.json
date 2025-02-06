@@ -1,0 +1,811 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 28,
+    "successful": 28,
+    "failed": 0
+  },
+  "hits": {
+    "total": 88663,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "906bf93a-a8a7-49d7-9fd5-f040fb4c5f06",
+        "_score": 1,
+        "_routing": "199cf9fc-3ecf-4551-83b2-7000a3837f9e",
+        "_parent": "199cf9fc-3ecf-4551-83b2-7000a3837f9e",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "906bf93a-a8a7-49d7-9fd5-f040fb4c5f06",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "199cf9fc-3ecf-4551-83b2-7000a3837f9e",
+            "e1f6e47e-c6df-4d10-9490-26c7f3ed200a"
+          ],
+          "etag": "30368ead3ebf1a37138da395d67a474d26623dad",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "906bf93a-a8a7-49d7-9fd5-f040fb4c5f06",
+            "idigbio:etag": "30368ead3ebf1a37138da395d67a474d26623dad",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p06601845",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441393173876hkq6kmjnxfUlRr9K",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441393173876hkq6kmjnxfulrr9k"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "199cf9fc-3ecf-4551-83b2-7000a3837f9e",
+                "e1f6e47e-c6df-4d10-9490-26c7f3ed200a"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441393173876hkq6kmjnxfulrr9k"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p06601845",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441393173876hkq6kmjnxfUlRr9K"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441393173876hkq6kmjnxfUlRr9K"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "25a2334d-28c6-4119-94cf-1f89afb2105e",
+        "_score": 1,
+        "_routing": "0868c24a-aa74-4cd6-9cac-9f6ccd7e232e",
+        "_parent": "0868c24a-aa74-4cd6-9cac-9f6ccd7e232e",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "25a2334d-28c6-4119-94cf-1f89afb2105e",
+          "rights": "BY-NC",
+          "recordset": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "dqs": -1.3636363636363635,
+          "hasSpecimen": true,
+          "records": [
+            "0868c24a-aa74-4cd6-9cac-9f6ccd7e232e"
+          ],
+          "etag": "2b30d206ec84ba848752ed58ca022a9d1b9158e0",
+          "flags": [
+            "dwc_basisofrecord_invalid",
+            "dwc_taxonrank_added",
+            "dwc_phylum_added",
+            "dwc_scientificnameauthorship_added",
+            "taxon_match_failed",
+            "dwc_specificepithet_added",
+            "dwc_datasetid_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_taxonremarks_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:dateModified": "2014-11-17T19:03:21.408000",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "25a2334d-28c6-4119-94cf-1f89afb2105e",
+            "dwc:order": "sapindales",
+            "flag_dwc_phylum_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\media\\http://herbarium.bio.fsu.edu/showimage.php?image=images/herbarium/jpegs/000002498.jpg"
+            ],
+            "flag_taxon_match_failed": true,
+            "flag_dwc_specificepithet_added": true,
+            "dwc:taxonremarks": "possible variant of acer rubrum l.",
+            "ac:metadataLanguage": "en",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:subtype": "SheetSpecimenImage",
+            "flag_gbif_genericname_added": true,
+            "idigbio:etag": "2b30d206ec84ba848752ed58ca022a9d1b9158e0",
+            "dwc:genus": "acer",
+            "dwc:taxonomicstatus": "doubtful",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "0868c24a-aa74-4cd6-9cac-9f6ccd7e232e"
+              ]
+            },
+            "dwc:datasetid": "046bbc50-cae2-47ff-aa43-729fbf53f7c5",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "gbif:canonicalname": "acer rubrum",
+            "coreid": "urn:uuid:d604724b-e991-4f67-8b67-daa4e3ae6b6b",
+            "dcterms:identifier": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002498.jpg",
+            "dwc:phylum": "tracheophyta",
+            "gbif:genericname": "acer",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "dwc:taxonid": "7585041",
+            "dwc:scientificnameauthorship": "p.watson",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "rubrum",
+            "flag_dwc_order_added": true,
+            "flag_dwc_taxonremarks_added": true,
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:metadataLanguageLiteral": "English",
+            "ac:subjectPart": "Herbarium sheet",
+            "xmpRights:Owner": "Robert K. Godfrey Herbarium at Florida State University",
+            "dwc:family": "sapindaceae",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002498.jpg",
+            "dwc:scientificName": "Acer rubrum",
+            "flag_dwc_kingdom_added": true
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\media\\http://herbarium.bio.fsu.edu/showimage.php?image=images/herbarium/jpegs/000002498.jpg"
+          ],
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:subtype": "SheetSpecimenImage",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:metadataLanguageLiteral": "English",
+            "ac:subjectPart": "Herbarium sheet",
+            "coreid": "urn:uuid:d604724b-e991-4f67-8b67-daa4e3ae6b6b",
+            "dcterms:identifier": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002498.jpg",
+            "xmpRights:Owner": "Robert K. Godfrey Herbarium at Florida State University",
+            "ac:accessURI": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002498.jpg",
+            "dwc:scientificName": "Acer rubrum"
+          },
+          "datemodified": "2014-11-17T19:03:21.408000+00:00",
+          "accessuri": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000002498.jpg"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "3e2489a9-21d3-4c02-9611-cac623f82697",
+        "_score": 1,
+        "_routing": "3d98f60c-6b15-4d97-afb7-4e9ab5fca5d9",
+        "_parent": "3d98f60c-6b15-4d97-afb7-4e9ab5fca5d9",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "3e2489a9-21d3-4c02-9611-cac623f82697",
+          "format": "image/jp2",
+          "recordset": "be31dfd1-c721-4697-8ee0-f7043c070810",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "dcterms:type": "http://purl.org/dc/dcmitype/StillImage",
+            "dc:creator": "Butler University, Friesner Herbarium",
+            "dc:type": "StillImage",
+            "dcterms:title": "Specimen: Accession No. 38197, Friesner Herbarium",
+            "dcterms:format": "image/jp2",
+            "dc:format": "image/jp2",
+            "coreid": "6B83EA9F-98A5-4D77-B91F-15D0861EEC16",
+            "dcterms:identifier": "http://cdm15705.contentdm.oclc.org/utils/getdownloaditem/collection/herbarium4/id/27393/type/singleitem/filename/27288.jp2",
+            "dcterms:rights": "http://creativecommons.org/licenses/by/4.0/"
+          },
+          "records": [
+            "3d98f60c-6b15-4d97-afb7-4e9ab5fca5d9"
+          ],
+          "etag": "82f6cd9097fc24993c8a7611a126f9137c1dc0a9",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "be31dfd1-c721-4697-8ee0-f7043c070810",
+            "dcterms:type": "http://purl.org/dc/dcmitype/StillImage",
+            "dc:creator": "Butler University, Friesner Herbarium",
+            "dc:type": "StillImage",
+            "dcterms:title": "Specimen: Accession No. 38197, Friesner Herbarium",
+            "idigbio:uuid": "3e2489a9-21d3-4c02-9611-cac623f82697",
+            "idigbio:etag": "82f6cd9097fc24993c8a7611a126f9137c1dc0a9",
+            "dcterms:format": "image/jp2",
+            "dc:format": "image/jp2",
+            "coreid": "6B83EA9F-98A5-4D77-B91F-15D0861EEC16",
+            "dcterms:identifier": "http://cdm15705.contentdm.oclc.org/utils/getdownloaditem/collection/herbarium4/id/27393/type/singleitem/filename/27288.jp2",
+            "idigbio:recordIds": [
+              "be31dfd1-c721-4697-8ee0-f7043c070810\\media\\http://cdm15705.contentdm.oclc.org/utils/getdownloaditem/collection/herbarium4/id/27393/type/singleitem/filename/27288.jp2"
+            ],
+            "dcterms:rights": "http://creativecommons.org/licenses/by/4.0/",
+            "idigbio:dateModified": "2018-07-27T09:33:02.839857",
+            "idigbio:siblings": {
+              "record": [
+                "3d98f60c-6b15-4d97-afb7-4e9ab5fca5d9"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "be31dfd1-c721-4697-8ee0-f7043c070810\\media\\http://cdm15705.contentdm.oclc.org/utils/getdownloaditem/collection/herbarium4/id/27393/type/singleitem/filename/27288.jp2"
+          ],
+          "type": "stillimage",
+          "datemodified": "2018-07-27T09:33:02.839857+00:00",
+          "accessuri": "http://cdm15705.contentdm.oclc.org/utils/getdownloaditem/collection/herbarium4/id/27393/type/singleitem/filename/27288.jp2"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "9155c95c-5c34-412b-9fb4-2ab4be8de947",
+        "_score": 1,
+        "_routing": "b9858a09-a7ee-4765-a9f0-056d419df41a",
+        "_parent": "b9858a09-a7ee-4765-a9f0-056d419df41a",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "9155c95c-5c34-412b-9fb4-2ab4be8de947",
+          "format": "image/jpeg",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "coreid": "12399a57-d152-484b-b62c-9a908150273f",
+            "dcterms:identifier": "49b8e0f9-9c4a-4581-bf5a-27763aa7ea40",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1746/841/02484916.jpg",
+            "ac:metadataLanguage": "eng"
+          },
+          "records": [
+            "b9858a09-a7ee-4765-a9f0-056d419df41a"
+          ],
+          "etag": "d18e6e57a0c708b7a9231dfbb42a7ee98bad8652",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "idigbio:uuid": "9155c95c-5c34-412b-9fb4-2ab4be8de947",
+            "idigbio:etag": "d18e6e57a0c708b7a9231dfbb42a7ee98bad8652",
+            "dcterms:format": "image/jpeg",
+            "coreid": "12399a57-d152-484b-b62c-9a908150273f",
+            "dcterms:identifier": "49b8e0f9-9c4a-4581-bf5a-27763aa7ea40",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "idigbio:recordIds": [
+              "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\49b8e0f9-9c4a-4581-bf5a-27763aa7ea40"
+            ],
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "idigbio:dateModified": "2018-11-18T07:11:17.012240",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1746/841/02484916.jpg",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "b9858a09-a7ee-4765-a9f0-056d419df41a"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\49b8e0f9-9c4a-4581-bf5a-27763aa7ea40"
+          ],
+          "type": "stillimage",
+          "datemodified": "2018-11-18T07:11:17.012240+00:00",
+          "accessuri": "http://sweetgum.nybg.org/images3/1746/841/02484916.jpg"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "67c68895-dc7e-45de-b105-8c45c6ecef8c",
+        "_score": 1,
+        "_routing": "974be363-028d-46aa-8fbd-397d1e5b2024",
+        "_parent": "974be363-028d-46aa-8fbd-397d1e5b2024",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+          "uuid": "67c68895-dc7e-45de-b105-8c45c6ecef8c",
+          "rights": "BY-NC",
+          "recordset": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "dqs": -1.3636363636363635,
+          "hasSpecimen": true,
+          "records": [
+            "974be363-028d-46aa-8fbd-397d1e5b2024"
+          ],
+          "etag": "fb470d46ea247440de781196a097b1d3ec7c7389",
+          "flags": [
+            "dwc_basisofrecord_invalid",
+            "dwc_taxonrank_added",
+            "dwc_phylum_added",
+            "dwc_scientificnameauthorship_added",
+            "taxon_match_failed",
+            "dwc_specificepithet_added",
+            "dwc_datasetid_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_taxonremarks_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:dateModified": "2014-11-17T19:02:02.918000",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "67c68895-dc7e-45de-b105-8c45c6ecef8c",
+            "dwc:order": "sapindales",
+            "flag_dwc_phylum_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\media\\http://herbarium.bio.fsu.edu/showimage.php?image=images/herbarium/jpegs/000020945.jpg"
+            ],
+            "flag_taxon_match_failed": true,
+            "flag_dwc_specificepithet_added": true,
+            "dwc:taxonremarks": "possible variant of acer rubrum l.",
+            "ac:metadataLanguage": "en",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:subtype": "SheetSpecimenImage",
+            "flag_gbif_genericname_added": true,
+            "idigbio:etag": "fb470d46ea247440de781196a097b1d3ec7c7389",
+            "dwc:genus": "acer",
+            "dwc:taxonomicstatus": "doubtful",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "974be363-028d-46aa-8fbd-397d1e5b2024"
+              ]
+            },
+            "dwc:datasetid": "046bbc50-cae2-47ff-aa43-729fbf53f7c5",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "gbif:canonicalname": "acer rubrum",
+            "coreid": "urn:uuid:38d360d0-892e-43ee-bf72-e729ff8de27f",
+            "dcterms:identifier": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000020945.jpg",
+            "dwc:phylum": "tracheophyta",
+            "gbif:genericname": "acer",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "dwc:taxonid": "7585041",
+            "dwc:scientificnameauthorship": "p.watson",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "rubrum",
+            "flag_dwc_order_added": true,
+            "flag_dwc_taxonremarks_added": true,
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:metadataLanguageLiteral": "English",
+            "ac:subjectPart": "Herbarium sheet",
+            "xmpRights:Owner": "Robert K. Godfrey Herbarium at Florida State University",
+            "dwc:family": "sapindaceae",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000020945.jpg",
+            "dwc:scientificName": "Acer rubrum",
+            "flag_dwc_kingdom_added": true
+          },
+          "webstatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "recordids": [
+            "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\media\\http://herbarium.bio.fsu.edu/showimage.php?image=images/herbarium/jpegs/000020945.jpg"
+          ],
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "ac:subtype": "SheetSpecimenImage",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "CC BY-NC",
+            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc.png",
+            "ac:metadataLanguageLiteral": "English",
+            "ac:subjectPart": "Herbarium sheet",
+            "coreid": "urn:uuid:38d360d0-892e-43ee-bf72-e729ff8de27f",
+            "dcterms:identifier": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000020945.jpg",
+            "xmpRights:Owner": "Robert K. Godfrey Herbarium at Florida State University",
+            "ac:accessURI": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000020945.jpg",
+            "dwc:scientificName": "Acer rubrum"
+          },
+          "datemodified": "2014-11-17T19:02:02.918000+00:00",
+          "accessuri": "http://herbarium.bio.fsu.edu/showimage.php?Image=images/herbarium/jpegs/000020945.jpg"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "165e011f-a38f-4faa-a7fc-22b3a5bc1768",
+        "_score": 1,
+        "_routing": "945e2ed4-7cbc-499a-b8f6-22d88d9e5b86",
+        "_parent": "945e2ed4-7cbc-499a-b8f6-22d88d9e5b86",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "165e011f-a38f-4faa-a7fc-22b3a5bc1768",
+          "format": "image/jpeg",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "coreid": "3ed8b73c-f8aa-49e9-b0a8-01f02bf4b744",
+            "dcterms:identifier": "32712c0e-5a61-40ac-8e99-1f281a0397c7",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1762/965/02147526.jpg",
+            "ac:metadataLanguage": "eng"
+          },
+          "records": [
+            "945e2ed4-7cbc-499a-b8f6-22d88d9e5b86"
+          ],
+          "etag": "9b21bb45182d2622fee8bd40eae35d8503afd867",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "idigbio:uuid": "165e011f-a38f-4faa-a7fc-22b3a5bc1768",
+            "idigbio:etag": "9b21bb45182d2622fee8bd40eae35d8503afd867",
+            "dcterms:format": "image/jpeg",
+            "coreid": "3ed8b73c-f8aa-49e9-b0a8-01f02bf4b744",
+            "dcterms:identifier": "32712c0e-5a61-40ac-8e99-1f281a0397c7",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "idigbio:recordIds": [
+              "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\32712c0e-5a61-40ac-8e99-1f281a0397c7"
+            ],
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "idigbio:dateModified": "2018-11-18T07:11:17.012240",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1762/965/02147526.jpg",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "945e2ed4-7cbc-499a-b8f6-22d88d9e5b86"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\32712c0e-5a61-40ac-8e99-1f281a0397c7"
+          ],
+          "type": "stillimage",
+          "datemodified": "2018-11-18T07:11:17.012240+00:00",
+          "accessuri": "http://sweetgum.nybg.org/images3/1762/965/02147526.jpg"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "eb063704-03b1-4840-9864-ee5e2013a10b",
+        "_score": 1,
+        "_routing": "db08ab53-f0f7-4ecd-ad98-0aab9e1d6cd0",
+        "_parent": "db08ab53-f0f7-4ecd-ad98-0aab9e1d6cd0",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "eb063704-03b1-4840-9864-ee5e2013a10b",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "db08ab53-f0f7-4ecd-ad98-0aab9e1d6cd0",
+            "3f35ba2e-be5c-4f57-8d76-7d10f7c7c88a"
+          ],
+          "etag": "0a2e3aaf70b98cfe6199300619dd452728efc6ba",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "eb063704-03b1-4840-9864-ee5e2013a10b",
+            "idigbio:etag": "0a2e3aaf70b98cfe6199300619dd452728efc6ba",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04795386",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441432958455rbhUJW9hGfNhJkiR",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441432958455rbhujw9hgfnhjkir"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "db08ab53-f0f7-4ecd-ad98-0aab9e1d6cd0",
+                "3f35ba2e-be5c-4f57-8d76-7d10f7c7c88a"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441432958455rbhujw9hgfnhjkir"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04795386",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441432958455rbhUJW9hGfNhJkiR"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441432958455rbhUJW9hGfNhJkiR"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "0e1deb39-3711-425e-ae5f-2b3a5907c540",
+        "_score": 1,
+        "_routing": "addb6aee-e637-44a4-a55b-52d570de1969",
+        "_parent": "addb6aee-e637-44a4-a55b-52d570de1969",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "0e1deb39-3711-425e-ae5f-2b3a5907c540",
+          "format": "image/jpeg",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "coreid": "c5d0b6ad-899b-48a6-ab0b-cda73fd9b082",
+            "dcterms:identifier": "39f655a6-9f8c-4a28-a696-e0c450929f64",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1478/014/02349941.jpg",
+            "ac:metadataLanguage": "eng"
+          },
+          "records": [
+            "addb6aee-e637-44a4-a55b-52d570de1969"
+          ],
+          "etag": "40e9985d12c473cb3c2a15d80d41e220d58b4dfb",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "idigbio:uuid": "0e1deb39-3711-425e-ae5f-2b3a5907c540",
+            "idigbio:etag": "40e9985d12c473cb3c2a15d80d41e220d58b4dfb",
+            "dcterms:format": "image/jpeg",
+            "coreid": "c5d0b6ad-899b-48a6-ab0b-cda73fd9b082",
+            "dcterms:identifier": "39f655a6-9f8c-4a28-a696-e0c450929f64",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "idigbio:recordIds": [
+              "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\39f655a6-9f8c-4a28-a696-e0c450929f64"
+            ],
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "idigbio:dateModified": "2018-11-18T07:11:17.012240",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1478/014/02349941.jpg",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "addb6aee-e637-44a4-a55b-52d570de1969"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\39f655a6-9f8c-4a28-a696-e0c450929f64"
+          ],
+          "type": "stillimage",
+          "datemodified": "2018-11-18T07:11:17.012240+00:00",
+          "accessuri": "http://sweetgum.nybg.org/images3/1478/014/02349941.jpg"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "4bfe578c-d53f-434d-ae11-4c759c1bdfe2",
+        "_score": 1,
+        "_routing": "efa6b1ee-b33c-4b16-a4f0-7da7aa5408b6",
+        "_parent": "efa6b1ee-b33c-4b16-a4f0-7da7aa5408b6",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "4bfe578c-d53f-434d-ae11-4c759c1bdfe2",
+          "format": "image/jpeg",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.5454545454545454,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "data": {
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "coreid": "5921bfe2-d86d-4c93-b1f9-d1be8913aecb",
+            "dcterms:identifier": "38ec7d2f-a785-4aba-aa9e-795da20bc51f",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1742/332/02483805.jpg",
+            "ac:metadataLanguage": "eng"
+          },
+          "records": [
+            "efa6b1ee-b33c-4b16-a4f0-7da7aa5408b6"
+          ],
+          "etag": "7ac33d5ede1d4c32353f0911f3f99bf60c1ffd2c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "dc:creator": "The New York Botanical Garden",
+            "dc:type": "StillImage",
+            "idigbio:uuid": "4bfe578c-d53f-434d-ae11-4c759c1bdfe2",
+            "idigbio:etag": "7ac33d5ede1d4c32353f0911f3f99bf60c1ffd2c",
+            "dcterms:format": "image/jpeg",
+            "coreid": "5921bfe2-d86d-4c93-b1f9-d1be8913aecb",
+            "dcterms:identifier": "38ec7d2f-a785-4aba-aa9e-795da20bc51f",
+            "xmpRights:Owner": "The New York Botanical Garden",
+            "idigbio:recordIds": [
+              "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\38ec7d2f-a785-4aba-aa9e-795da20bc51f"
+            ],
+            "dcterms:rights": "https://creativecommons.org/licenses/by/4.0/",
+            "idigbio:dateModified": "2018-11-18T07:11:17.012240",
+            "ac:accessURI": "http://sweetgum.nybg.org/images3/1742/332/02483805.jpg",
+            "ac:metadataLanguage": "eng",
+            "idigbio:siblings": {
+              "record": [
+                "efa6b1ee-b33c-4b16-a4f0-7da7aa5408b6"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\media\\38ec7d2f-a785-4aba-aa9e-795da20bc51f"
+          ],
+          "type": "stillimage",
+          "datemodified": "2018-11-18T07:11:17.012240+00:00",
+          "accessuri": "http://sweetgum.nybg.org/images3/1742/332/02483805.jpg"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "mediarecords",
+        "_id": "e37806e4-b952-4c2d-a806-9e2bb9d5b444",
+        "_score": 1,
+        "_routing": "90738f8f-b64e-4b84-bbbe-0582e62122f5",
+        "_parent": "90738f8f-b64e-4b84-bbbe-0582e62122f5",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "e37806e4-b952-4c2d-a806-9e2bb9d5b444",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "90738f8f-b64e-4b84-bbbe-0582e62122f5",
+            "1d46ee66-1d42-44f3-82eb-025b6d273b5e"
+          ],
+          "etag": "53e7064449fc2af672cd932700f2161a45b44f17",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "e37806e4-b952-4c2d-a806-9e2bb9d5b444",
+            "idigbio:etag": "53e7064449fc2af672cd932700f2161a45b44f17",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05187449",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441393554893pO4GjoQWtWd23QzG",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441393554893po4gjoqwtwd23qzg"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "90738f8f-b64e-4b84-bbbe-0582e62122f5",
+                "1d46ee66-1d42-44f3-82eb-025b6d273b5e"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441393554893po4gjoqwtwd23qzg"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05187449",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441393554893pO4GjoQWtWd23QzG"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441393554893pO4GjoQWtWd23QzG"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_flags": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 36322,
+      "buckets": [
+        {
+          "key": "dwc_basisofrecord_invalid",
+          "doc_count": 46317
+        },
+        {
+          "key": "dwc_class_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_datasetid_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_family_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_genus_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_kingdom_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_order_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_parentnameusageid_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_phylum_added",
+          "doc_count": 3723
+        },
+        {
+          "key": "dwc_taxonid_added",
+          "doc_count": 3723
+        }
+      ]
+    }
+  }
+}

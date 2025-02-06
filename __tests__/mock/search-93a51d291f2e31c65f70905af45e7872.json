@@ -1,0 +1,1116 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 28,
+    "successful": 28,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2063,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "f2696243-01cd-4b91-9c13-1b30c8a85898",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "f2696243-01cd-4b91-9c13-1b30c8a85898",
+          "dqs": -1,
+          "archivelink": "http://www.snib.mx/iptconabio/archive.do?r=snib-be023",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Alejandro",
+              "last_name": "Novelo Retana",
+              "role": "Responsable"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Sonia Alejandra",
+              "last_name": "Careaga Olvera",
+              "role": "Subcoordinadora en Información y Análisis",
+              "email": "scareaga@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-BE023",
+            "contacts": [
+              {
+                "first_name": "Alejandro",
+                "last_name": "Novelo Retana",
+                "role": "Responsable"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Computarización de la Colección de plantas acuáticas mexicanas del Herbario Nacional (MEXU), 3a Etapa",
+            "idigbio:uuid": "f2696243-01cd-4b91-9c13-1b30c8a85898",
+            "idigbio:etag": "51208479b93bf2e04315aaf59542cdae088dbdab",
+            "update": "2020-05-30T15:56:06",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=BE&Numero=23",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "cb5cd6d7-1743-4d41-a5c0-43992b336c9c"
+            ],
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-BE023",
+            "idigbio:dateModified": "2020-07-23T14:09:35.145213",
+            "collection_description": "El grupo de las plantas acuáticas es muy amplio y se desarrolla en una gran diversidad de hábitats tanto marinos, salobres y dulceacuícolas. El Instituto de Biología de la UNAM, donde se encuentra ubicado el Herbario Nacional, ha tenido una gran tradición en la formación de especialistas que han estado interesados en la colecta y estudio de las plantas acuáticas de nuestro país. Destacan en sus primeros registros, especialistas reconocidos como Débora Ramírez Cantú, Teófilo Herrera, Eizi Matuda y aunque parezca raro, aún la Dra. Helia Bravo especialista en cactáceas, sus primeras experiencias botánicas fueron con el grupo de las plantas acuáticas, en particular las de la familia Lemnaceae. Posteriormente, a partir de la década de los 60's, se han interesado de manera más formal varias personas en la investigación de las plantas acuáticas. Actualmente, el Instituto de Biología cuenta con dos investigadores titulares de tiempo completo en el estudio de las plantas acuáticas. También numerosas tesis de licenciatura, maestría y doctorado se han realizado con el apoyo del Instituto de Biología en diversas regiones del país y que han abordado las plantas acuáticas de diversas maneras, pero más directamente en estudios florísticos. Por otro lado, estudiantes de provincia interesados en las plantas acuáticas han realizado varias estancias de entrenamiento en el Instituto de Biología y actualmente se mantienen excelentes relaciones de intercambio (incluyendo ejemplares de herbario) con dichos investigadores, en particular los que residen en Tamaulipas, Querétaro, Michoacán y Morelos.\nPor todo lo anterior, el Herbario Nacional ubicado en el Instituto de Biología, es considerado como el depositario de la colección más extensa de plantas acuáticas de México. De manera colateral, la presencia de especialistas de plantas acuáticas en el Herbario Nacional, permiten que la colección se mantenga con altos estándares en la actualización de nombres científicos.\nEn cuanto a la captura y sistematización de la información provenientes de los ejemplares de herbario, existen experiencias de cuatro proyectos apoyados por la CONABIO al Dr. Alejandro Novelo. Uno tuvo que ver con el inventario de la vegetación acuática vascular de la Reserva de la Biósfera Pantanos de Centla, el segundo con el inventario de la vegetación acuática vascular de cuatro regiones hidrológicas prioritarias del Centro de México y más reciente las dos primeras etapas de este mismo proyecto que tiene que ver con la computarización de las plantas acuáticas mexicanas del Herbario Nacional (MEXU). A continuación se presenta un cuadro comparativo donde se puede apreciar lo que ya se tiene capturado y lo que faltaría por capturar. Reino: 1\nFilo: 1\nClase: 2\nOrden: 27\nFamilia: 57\nGénero: 114\nSubgénero: 2\nEspecie: 236\nEpitetoinfraespecifico: 30",
+            "id": "cb5cd6d7-1743-4d41-a5c0-43992b336c9c",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "51208479b93bf2e04315aaf59542cdae088dbdab",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://www.snib.mx/iptconabio/eml.do?r=snib-be023",
+          "recordids": [
+            "cb5cd6d7-1743-4d41-a5c0-43992b336c9c"
+          ],
+          "data": {
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-BE023",
+            "contacts": [
+              {
+                "first_name": "Alejandro",
+                "last_name": "Novelo Retana",
+                "role": "Responsable"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Computarización de la Colección de plantas acuáticas mexicanas del Herbario Nacional (MEXU), 3a Etapa",
+            "update": "2020-05-30T15:56:06",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-BE023",
+            "collection_description": "El grupo de las plantas acuáticas es muy amplio y se desarrolla en una gran diversidad de hábitats tanto marinos, salobres y dulceacuícolas. El Instituto de Biología de la UNAM, donde se encuentra ubicado el Herbario Nacional, ha tenido una gran tradición en la formación de especialistas que han estado interesados en la colecta y estudio de las plantas acuáticas de nuestro país. Destacan en sus primeros registros, especialistas reconocidos como Débora Ramírez Cantú, Teófilo Herrera, Eizi Matuda y aunque parezca raro, aún la Dra. Helia Bravo especialista en cactáceas, sus primeras experiencias botánicas fueron con el grupo de las plantas acuáticas, en particular las de la familia Lemnaceae. Posteriormente, a partir de la década de los 60's, se han interesado de manera más formal varias personas en la investigación de las plantas acuáticas. Actualmente, el Instituto de Biología cuenta con dos investigadores titulares de tiempo completo en el estudio de las plantas acuáticas. También numerosas tesis de licenciatura, maestría y doctorado se han realizado con el apoyo del Instituto de Biología en diversas regiones del país y que han abordado las plantas acuáticas de diversas maneras, pero más directamente en estudios florísticos. Por otro lado, estudiantes de provincia interesados en las plantas acuáticas han realizado varias estancias de entrenamiento en el Instituto de Biología y actualmente se mantienen excelentes relaciones de intercambio (incluyendo ejemplares de herbario) con dichos investigadores, en particular los que residen en Tamaulipas, Querétaro, Michoacán y Morelos.\nPor todo lo anterior, el Herbario Nacional ubicado en el Instituto de Biología, es considerado como el depositario de la colección más extensa de plantas acuáticas de México. De manera colateral, la presencia de especialistas de plantas acuáticas en el Herbario Nacional, permiten que la colección se mantenga con altos estándares en la actualización de nombres científicos.\nEn cuanto a la captura y sistematización de la información provenientes de los ejemplares de herbario, existen experiencias de cuatro proyectos apoyados por la CONABIO al Dr. Alejandro Novelo. Uno tuvo que ver con el inventario de la vegetación acuática vascular de la Reserva de la Biósfera Pantanos de Centla, el segundo con el inventario de la vegetación acuática vascular de cuatro regiones hidrológicas prioritarias del Centro de México y más reciente las dos primeras etapas de este mismo proyecto que tiene que ver con la computarización de las plantas acuáticas mexicanas del Herbario Nacional (MEXU). A continuación se presenta un cuadro comparativo donde se puede apreciar lo que ya se tiene capturado y lo que faltaría por capturar. Reino: 1\nFilo: 1\nClase: 2\nOrden: 27\nFamilia: 57\nGénero: 114\nSubgénero: 2\nEspecie: 236\nEpitetoinfraespecifico: 30",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=BE&Numero=23",
+            "id": "cb5cd6d7-1743-4d41-a5c0-43992b336c9c"
+          },
+          "datemodified": "2020-07-23T14:09:35.145213+00:00",
+          "name": "computarización de la colección de plantas acuáticas mexicanas del herbario nacional (mexu), 3a etapa"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "2af72a37-04f1-4208-a50b-c05e84f47f1f",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "2af72a37-04f1-4208-a50b-c05e84f47f1f",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/2af72a37-04f1-4208-a50b-c05e84f47f1f"
+            ],
+            "idigbio:dateModified": "2016-01-21T16:20:09.103766",
+            "idigbio:uuid": "2af72a37-04f1-4208-a50b-c05e84f47f1f",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/2af72a37-04f1-4208-a50b-c05e84f47f1f"
+          ],
+          "data": {},
+          "datemodified": "2016-01-21T16:20:09.103766+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "81316846-80cb-4913-8941-b31537761eb0",
+        "_score": 1,
+        "_source": {
+          "publisher": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "uuid": "81316846-80cb-4913-8941-b31537761eb0",
+          "dqs": -1,
+          "archivelink": "http://ipt.vertnet.org:8080/ipt/archive.do?r=ncsm_vertpaleo",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "first_name": "Ben",
+              "last_name": "Norton",
+              "role": "Head of Technology",
+              "email": "ben.norton@naturalsciences.org"
+            },
+            {
+              "first_name": "Ben",
+              "last_name": "Norton",
+              "role": "Head of Technology",
+              "email": "ben.norton@naturalsciences.org"
+            },
+            {
+              "first_name": "Laura",
+              "last_name": "Russell",
+              "role": "VertNet Programmer",
+              "email": "larussell@vertnet.org"
+            },
+            {
+              "first_name": "David",
+              "last_name": "Bloom",
+              "role": "VertNet Coordinator",
+              "email": "dbloom@vertnet.org"
+            },
+            {
+              "first_name": "John",
+              "last_name": "Wieczorek",
+              "role": "Information Architect",
+              "email": "tuco@berkeley.edu"
+            },
+            {
+              "first_name": "Christian",
+              "last_name": "Kammerer",
+              "role": "Research Curator, Paleontology",
+              "email": "christian.kammerer@naturalsciences.org"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+            "eml_link": "http://ipt.vertnet.org:8080/ipt/eml.do?r=ncsm_vertpaleo",
+            "contacts": [
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Laura",
+                "last_name": "Russell",
+                "role": "VertNet Programmer",
+                "email": "larussell@vertnet.org"
+              },
+              {
+                "first_name": "David",
+                "last_name": "Bloom",
+                "role": "VertNet Coordinator",
+                "email": "dbloom@vertnet.org"
+              },
+              {
+                "first_name": "John",
+                "last_name": "Wieczorek",
+                "role": "Information Architect",
+                "email": "tuco@berkeley.edu"
+              },
+              {
+                "first_name": "Christian",
+                "last_name": "Kammerer",
+                "role": "Research Curator, Paleontology",
+                "email": "christian.kammerer@naturalsciences.org"
+              }
+            ],
+            "collection_name": "NCSM Vertebrate Paleontology Collection",
+            "idigbio:uuid": "81316846-80cb-4913-8941-b31537761eb0",
+            "idigbio:etag": "5a1eee96a70af0ddffc45f88ee3e69c65ace20a2",
+            "update": "2019-10-04T17:05:37",
+            "ingest": true,
+            "institution_web_address": "https://collections.naturalsciences.org/search/paleontology",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b"
+            ],
+            "link": "http://ipt.vertnet.org:8080/ipt/archive.do?r=ncsm_vertpaleo",
+            "idigbio:dateModified": "2019-10-04T17:41:57.554004",
+            "collection_description": "The North Carolina Museum of Natural Sciences' Vertebrate Paleontology collections contains approximately 63,000 specimens. Founded in the early 1900s, this collection consists of approximately 89% North Carolina material, although 31 states, 21 countries, and more than 405 genera are represented. The Vertebrate Paleontology Collection contains eight holotypes and twelve paratypes. The type collections include several different fish and sharks and one bird specimen. The most published on specimens in this collection are an Acrocanthosaurus atokensis which has been used in numerous phylogenetic studies of therapods and a Thescelosaurus specimen. The significant holding includes Late Triassic collections from North Carolina and Arizona, marine Cenozoic collections from North Carolina, and Cretaceous collections from North Carolina, Montana and Utah.",
+            "id": "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b",
+            "other_guids": [],
+            "data_rights": "CC0"
+          },
+          "etag": "5a1eee96a70af0ddffc45f88ee3e69c65ace20a2",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://ipt.vertnet.org:8080/ipt/eml.do?r=ncsm_vertpaleo",
+          "recordids": [
+            "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b"
+          ],
+          "data": {
+            "eml_link": "http://ipt.vertnet.org:8080/ipt/eml.do?r=ncsm_vertpaleo",
+            "contacts": [
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Laura",
+                "last_name": "Russell",
+                "role": "VertNet Programmer",
+                "email": "larussell@vertnet.org"
+              },
+              {
+                "first_name": "David",
+                "last_name": "Bloom",
+                "role": "VertNet Coordinator",
+                "email": "dbloom@vertnet.org"
+              },
+              {
+                "first_name": "John",
+                "last_name": "Wieczorek",
+                "role": "Information Architect",
+                "email": "tuco@berkeley.edu"
+              },
+              {
+                "first_name": "Christian",
+                "last_name": "Kammerer",
+                "role": "Research Curator, Paleontology",
+                "email": "christian.kammerer@naturalsciences.org"
+              }
+            ],
+            "collection_name": "NCSM Vertebrate Paleontology Collection",
+            "update": "2019-10-04T17:05:37",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://ipt.vertnet.org:8080/ipt/archive.do?r=ncsm_vertpaleo",
+            "collection_description": "The North Carolina Museum of Natural Sciences' Vertebrate Paleontology collections contains approximately 63,000 specimens. Founded in the early 1900s, this collection consists of approximately 89% North Carolina material, although 31 states, 21 countries, and more than 405 genera are represented. The Vertebrate Paleontology Collection contains eight holotypes and twelve paratypes. The type collections include several different fish and sharks and one bird specimen. The most published on specimens in this collection are an Acrocanthosaurus atokensis which has been used in numerous phylogenetic studies of therapods and a Thescelosaurus specimen. The significant holding includes Late Triassic collections from North Carolina and Arizona, marine Cenozoic collections from North Carolina, and Cretaceous collections from North Carolina, Montana and Utah.",
+            "other_guids": [],
+            "institution_web_address": "https://collections.naturalsciences.org/search/paleontology",
+            "id": "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b"
+          },
+          "datemodified": "2019-10-04T17:41:57.554004+00:00",
+          "name": "ncsm vertebrate paleontology collection"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "1c813b16-2c8b-466c-897f-883288cfef41",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "1c813b16-2c8b-466c-897f-883288cfef41",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/1c813b16-2c8b-466c-897f-883288cfef41"
+            ],
+            "idigbio:dateModified": "2016-03-08T16:39:41.882428",
+            "idigbio:uuid": "1c813b16-2c8b-466c-897f-883288cfef41",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/1c813b16-2c8b-466c-897f-883288cfef41"
+          ],
+          "data": {},
+          "datemodified": "2016-03-08T16:39:41.882428+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "97bc50fd-b67d-44cb-9cd0-b716e250c9cf",
+        "_score": 1,
+        "_source": {
+          "publisher": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+          "uuid": "97bc50fd-b67d-44cb-9cd0-b716e250c9cf",
+          "dqs": -1,
+          "archivelink": "http://data.canadensys.net/ipt/archive.do?r=ucalgaryherb",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "first_name": "Bonnie",
+              "last_name": "Smith",
+              "role": "Herbarium Technician",
+              "email": "smib@ucalgary.ca"
+            },
+            {
+              "first_name": "Jana",
+              "last_name": "Vamosi",
+              "role": "Associate Professor",
+              "email": "jvamosi@ucalgary.ca"
+            },
+            {
+              "first_name": "Jana",
+              "last_name": "Vamosi",
+              "role": "Associate Professor",
+              "email": "jvamosi@ucalgary.ca"
+            },
+            {
+              "first_name": "Elizabeth",
+              "last_name": "Dickson",
+              "role": "Adjunct Professor",
+              "email": "eedickso@ucalgary.ca"
+            },
+            {
+              "first_name": "Jillian",
+              "last_name": "Sick",
+              "role": "Student"
+            },
+            {
+              "first_name": "Michael",
+              "last_name": "Gavin",
+              "role": "Processor",
+              "email": "mpgavin@ucalgary.ca"
+            },
+            {
+              "first_name": "Ryan",
+              "last_name": "Taylor",
+              "role": "Student",
+              "email": "rtaylor@ucalgary.ca"
+            },
+            {
+              "first_name": "Dana",
+              "last_name": "Poscente",
+              "role": "Student"
+            },
+            {
+              "first_name": "Sonya",
+              "last_name": "Pastran",
+              "role": "Student",
+              "email": "sapastra@ucalgary.ca"
+            },
+            {
+              "first_name": "Haley",
+              "last_name": "Glass",
+              "role": "Graduate Student Teaching Assistant",
+              "email": "haley.glass@ucalgary.ca"
+            },
+            {
+              "first_name": "Morgan",
+              "last_name": "Cotroneo",
+              "role": "Student",
+              "email": "mbcotron@ucalgary.ca"
+            },
+            {
+              "first_name": "Hilary",
+              "last_name": "Goble",
+              "role": "Student",
+              "email": "hmgoble@ucalgary.ca"
+            },
+            {
+              "first_name": "Ashley",
+              "last_name": "Twarog",
+              "role": "Student",
+              "email": "actwarog@ucalgary.ca"
+            },
+            {
+              "first_name": "Lucille",
+              "last_name": "Fisher",
+              "role": "Student",
+              "email": "l.c.fisher@hotmail.ca"
+            },
+            {
+              "first_name": "Gary",
+              "last_name": "Thai",
+              "role": "Student",
+              "email": "gthai@ucalgary.ca"
+            },
+            {
+              "first_name": "Rachel",
+              "last_name": "Swart",
+              "role": "Student",
+              "email": "rrswart@ucalgary.ca"
+            },
+            {
+              "first_name": "Nicolette",
+              "last_name": "Bell",
+              "role": "Student",
+              "email": "nicolette.a.bell@gmail.com"
+            },
+            {
+              "first_name": "Caitlin",
+              "last_name": "Tomaszewski",
+              "role": "Student",
+              "email": "tomaszcat@hotmail.com"
+            },
+            {
+              "first_name": "Renae",
+              "last_name": "Hemsing",
+              "role": "Student",
+              "email": "rdhemsin@ucalgary.ca"
+            },
+            {
+              "first_name": "Janessa",
+              "last_name": "Bretner",
+              "role": "Student",
+              "email": "ja.bretner@gmail.com"
+            },
+            {
+              "first_name": "Amie",
+              "last_name": "Le",
+              "role": "Student",
+              "email": "amie.le@msn.com"
+            },
+            {
+              "first_name": "Himasara",
+              "last_name": "Marasinghe",
+              "role": "Student",
+              "email": "dhmarasi@ucalgary.ca"
+            },
+            {
+              "first_name": "Curtis",
+              "last_name": "Polowick",
+              "role": "Student",
+              "email": "capolowi@ucalgary.ca"
+            },
+            {
+              "first_name": "Ryan",
+              "last_name": "Taylor",
+              "role": "Student",
+              "email": "rtaylor@ucalgary.ca"
+            },
+            {
+              "first_name": "Jana",
+              "last_name": "Vamosi",
+              "role": "Associate Professor",
+              "email": "jvamosi@ucalgary.ca"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+            "eml_link": "http://data.canadensys.net/ipt/eml.do?r=ucalgaryherb",
+            "contacts": [
+              {
+                "first_name": "Bonnie",
+                "last_name": "Smith",
+                "role": "Herbarium Technician",
+                "email": "smib@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Elizabeth",
+                "last_name": "Dickson",
+                "role": "Adjunct Professor",
+                "email": "eedickso@ucalgary.ca"
+              },
+              {
+                "first_name": "Jillian",
+                "last_name": "Sick",
+                "role": "Student"
+              },
+              {
+                "first_name": "Michael",
+                "last_name": "Gavin",
+                "role": "Processor",
+                "email": "mpgavin@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Dana",
+                "last_name": "Poscente",
+                "role": "Student"
+              },
+              {
+                "first_name": "Sonya",
+                "last_name": "Pastran",
+                "role": "Student",
+                "email": "sapastra@ucalgary.ca"
+              },
+              {
+                "first_name": "Haley",
+                "last_name": "Glass",
+                "role": "Graduate Student Teaching Assistant",
+                "email": "haley.glass@ucalgary.ca"
+              },
+              {
+                "first_name": "Morgan",
+                "last_name": "Cotroneo",
+                "role": "Student",
+                "email": "mbcotron@ucalgary.ca"
+              },
+              {
+                "first_name": "Hilary",
+                "last_name": "Goble",
+                "role": "Student",
+                "email": "hmgoble@ucalgary.ca"
+              },
+              {
+                "first_name": "Ashley",
+                "last_name": "Twarog",
+                "role": "Student",
+                "email": "actwarog@ucalgary.ca"
+              },
+              {
+                "first_name": "Lucille",
+                "last_name": "Fisher",
+                "role": "Student",
+                "email": "l.c.fisher@hotmail.ca"
+              },
+              {
+                "first_name": "Gary",
+                "last_name": "Thai",
+                "role": "Student",
+                "email": "gthai@ucalgary.ca"
+              },
+              {
+                "first_name": "Rachel",
+                "last_name": "Swart",
+                "role": "Student",
+                "email": "rrswart@ucalgary.ca"
+              },
+              {
+                "first_name": "Nicolette",
+                "last_name": "Bell",
+                "role": "Student",
+                "email": "nicolette.a.bell@gmail.com"
+              },
+              {
+                "first_name": "Caitlin",
+                "last_name": "Tomaszewski",
+                "role": "Student",
+                "email": "tomaszcat@hotmail.com"
+              },
+              {
+                "first_name": "Renae",
+                "last_name": "Hemsing",
+                "role": "Student",
+                "email": "rdhemsin@ucalgary.ca"
+              },
+              {
+                "first_name": "Janessa",
+                "last_name": "Bretner",
+                "role": "Student",
+                "email": "ja.bretner@gmail.com"
+              },
+              {
+                "first_name": "Amie",
+                "last_name": "Le",
+                "role": "Student",
+                "email": "amie.le@msn.com"
+              },
+              {
+                "first_name": "Himasara",
+                "last_name": "Marasinghe",
+                "role": "Student",
+                "email": "dhmarasi@ucalgary.ca"
+              },
+              {
+                "first_name": "Curtis",
+                "last_name": "Polowick",
+                "role": "Student",
+                "email": "capolowi@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              }
+            ],
+            "collection_name": "University of Calgary Herbarium - Lycophytes and Monilophytes",
+            "idigbio:uuid": "97bc50fd-b67d-44cb-9cd0-b716e250c9cf",
+            "idigbio:etag": "479d662e57b83e53ada9be7b31dfa435914812aa",
+            "update": "2018-09-19T02:34:06",
+            "ingest": true,
+            "institution_web_address": "http://www.ucalgary.ca/herbarium/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "05bf3655-ef2e-46ba-8732-60517beb3567"
+            ],
+            "link": "http://data.canadensys.net/ipt/archive.do?r=ucalgaryherb",
+            "idigbio:dateModified": "2018-09-19T02:57:47.731472",
+            "collection_description": "The University of Calgary Herbarium (UAC) includes an extensive collection of land plants from Alberta, Canada and around the world (~90,000 specimens). The current dataset includes records of the Lycophytes and Monilophytes in the collection.",
+            "id": "05bf3655-ef2e-46ba-8732-60517beb3567",
+            "other_guids": [],
+            "logo_url": "http://data.canadensys.net/ipt/logo.do?r=ucalgaryherb",
+            "data_rights": "CC0"
+          },
+          "etag": "479d662e57b83e53ada9be7b31dfa435914812aa",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://data.canadensys.net/ipt/eml.do?r=ucalgaryherb",
+          "logourl": "http://data.canadensys.net/ipt/logo.do?r=ucalgaryherb",
+          "recordids": [
+            "05bf3655-ef2e-46ba-8732-60517beb3567"
+          ],
+          "data": {
+            "eml_link": "http://data.canadensys.net/ipt/eml.do?r=ucalgaryherb",
+            "contacts": [
+              {
+                "first_name": "Bonnie",
+                "last_name": "Smith",
+                "role": "Herbarium Technician",
+                "email": "smib@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Elizabeth",
+                "last_name": "Dickson",
+                "role": "Adjunct Professor",
+                "email": "eedickso@ucalgary.ca"
+              },
+              {
+                "first_name": "Jillian",
+                "last_name": "Sick",
+                "role": "Student"
+              },
+              {
+                "first_name": "Michael",
+                "last_name": "Gavin",
+                "role": "Processor",
+                "email": "mpgavin@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Dana",
+                "last_name": "Poscente",
+                "role": "Student"
+              },
+              {
+                "first_name": "Sonya",
+                "last_name": "Pastran",
+                "role": "Student",
+                "email": "sapastra@ucalgary.ca"
+              },
+              {
+                "first_name": "Haley",
+                "last_name": "Glass",
+                "role": "Graduate Student Teaching Assistant",
+                "email": "haley.glass@ucalgary.ca"
+              },
+              {
+                "first_name": "Morgan",
+                "last_name": "Cotroneo",
+                "role": "Student",
+                "email": "mbcotron@ucalgary.ca"
+              },
+              {
+                "first_name": "Hilary",
+                "last_name": "Goble",
+                "role": "Student",
+                "email": "hmgoble@ucalgary.ca"
+              },
+              {
+                "first_name": "Ashley",
+                "last_name": "Twarog",
+                "role": "Student",
+                "email": "actwarog@ucalgary.ca"
+              },
+              {
+                "first_name": "Lucille",
+                "last_name": "Fisher",
+                "role": "Student",
+                "email": "l.c.fisher@hotmail.ca"
+              },
+              {
+                "first_name": "Gary",
+                "last_name": "Thai",
+                "role": "Student",
+                "email": "gthai@ucalgary.ca"
+              },
+              {
+                "first_name": "Rachel",
+                "last_name": "Swart",
+                "role": "Student",
+                "email": "rrswart@ucalgary.ca"
+              },
+              {
+                "first_name": "Nicolette",
+                "last_name": "Bell",
+                "role": "Student",
+                "email": "nicolette.a.bell@gmail.com"
+              },
+              {
+                "first_name": "Caitlin",
+                "last_name": "Tomaszewski",
+                "role": "Student",
+                "email": "tomaszcat@hotmail.com"
+              },
+              {
+                "first_name": "Renae",
+                "last_name": "Hemsing",
+                "role": "Student",
+                "email": "rdhemsin@ucalgary.ca"
+              },
+              {
+                "first_name": "Janessa",
+                "last_name": "Bretner",
+                "role": "Student",
+                "email": "ja.bretner@gmail.com"
+              },
+              {
+                "first_name": "Amie",
+                "last_name": "Le",
+                "role": "Student",
+                "email": "amie.le@msn.com"
+              },
+              {
+                "first_name": "Himasara",
+                "last_name": "Marasinghe",
+                "role": "Student",
+                "email": "dhmarasi@ucalgary.ca"
+              },
+              {
+                "first_name": "Curtis",
+                "last_name": "Polowick",
+                "role": "Student",
+                "email": "capolowi@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              }
+            ],
+            "collection_name": "University of Calgary Herbarium - Lycophytes and Monilophytes",
+            "update": "2018-09-19T02:34:06",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://data.canadensys.net/ipt/archive.do?r=ucalgaryherb",
+            "collection_description": "The University of Calgary Herbarium (UAC) includes an extensive collection of land plants from Alberta, Canada and around the world (~90,000 specimens). The current dataset includes records of the Lycophytes and Monilophytes in the collection.",
+            "institution_web_address": "http://www.ucalgary.ca/herbarium/",
+            "other_guids": [],
+            "logo_url": "http://data.canadensys.net/ipt/logo.do?r=ucalgaryherb",
+            "id": "05bf3655-ef2e-46ba-8732-60517beb3567"
+          },
+          "datemodified": "2018-09-19T02:57:47.731472+00:00",
+          "name": "university of calgary herbarium - lycophytes and monilophytes"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "361943a1-c123-4057-b065-7de641428c99",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "361943a1-c123-4057-b065-7de641428c99",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/361943a1-c123-4057-b065-7de641428c99"
+            ],
+            "idigbio:dateModified": "2016-03-08T16:39:40.849808",
+            "idigbio:uuid": "361943a1-c123-4057-b065-7de641428c99",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/361943a1-c123-4057-b065-7de641428c99"
+          ],
+          "data": {},
+          "datemodified": "2016-03-08T16:39:40.849808+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "4520451d-bd3b-4095-b777-24a420d442c1",
+        "_score": 1,
+        "_source": {
+          "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "uuid": "4520451d-bd3b-4095-b777-24a420d442c1",
+          "dqs": -1,
+          "archivelink": "http://bryophyteportal.org/portal/collections/datasets/dwc/ledlie_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "egbot@asu.edu"
+            },
+            {
+              "first_name": "Pat Ledlie",
+              "email": "ledlie@ledlie.com"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/LEDLIE_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Pat Ledlie",
+                "email": "ledlie@ledlie.com"
+              }
+            ],
+            "collection_name": "Patricia Ledlie Herbarium",
+            "idigbio:uuid": "4520451d-bd3b-4095-b777-24a420d442c1",
+            "idigbio:etag": "4bc9253bc67a52a925f9ce96e2b89e95171d51d6",
+            "update": "2016-04-28T13:14:23",
+            "ingest": true,
+            "institution_web_address": null,
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://bryophyteportal.org/portal/webservices/dwc/2e97339a-ccb0-4974-b945-86177644f729"
+            ],
+            "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/LEDLIE_DwC-A.zip",
+            "idigbio:dateModified": "2016-04-28T16:21:08.473780",
+            "collection_description": "",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/2e97339a-ccb0-4974-b945-86177644f729",
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/images/collicons/ledlie.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "4bc9253bc67a52a925f9ce96e2b89e95171d51d6",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://bryophyteportal.org/portal/collections/datasets/dwc/ledlie_dwc-a.eml",
+          "logourl": "http://bryophyteportal.org/portal/images/collicons/ledlie.jpg",
+          "recordids": [
+            "http://bryophyteportal.org/portal/webservices/dwc/2e97339a-ccb0-4974-b945-86177644f729"
+          ],
+          "data": {
+            "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/LEDLIE_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Pat Ledlie",
+                "email": "ledlie@ledlie.com"
+              }
+            ],
+            "collection_name": "Patricia Ledlie Herbarium",
+            "update": "2016-04-28T13:14:23",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/LEDLIE_DwC-A.zip",
+            "collection_description": "",
+            "institution_web_address": null,
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/images/collicons/ledlie.jpg",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/2e97339a-ccb0-4974-b945-86177644f729"
+          },
+          "datemodified": "2016-04-28T16:21:08.473780+00:00",
+          "name": "patricia ledlie herbarium"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "e71dec61-e7c0-4510-97ac-022da8b0daf9",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "e71dec61-e7c0-4510-97ac-022da8b0daf9",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/e71dec61-e7c0-4510-97ac-022da8b0daf9"
+            ],
+            "idigbio:dateModified": "2017-08-29T16:27:00.496064",
+            "idigbio:uuid": "e71dec61-e7c0-4510-97ac-022da8b0daf9",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/e71dec61-e7c0-4510-97ac-022da8b0daf9"
+          ],
+          "data": {},
+          "datemodified": "2017-08-29T16:27:00.496064+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "f0a9bca8-4767-4513-ab62-3f7374e469bb",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "f0a9bca8-4767-4513-ab62-3f7374e469bb",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/f0a9bca8-4767-4513-ab62-3f7374e469bb"
+            ],
+            "idigbio:dateModified": "2016-03-08T16:39:40.601949",
+            "idigbio:uuid": "f0a9bca8-4767-4513-ab62-3f7374e469bb",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/f0a9bca8-4767-4513-ab62-3f7374e469bb"
+          ],
+          "data": {},
+          "datemodified": "2016-03-08T16:39:40.601949+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "44a1d06c-7a0d-4673-9759-d21a486a0772",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "44a1d06c-7a0d-4673-9759-d21a486a0772",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/44a1d06c-7a0d-4673-9759-d21a486a0772"
+            ],
+            "idigbio:dateModified": "2016-10-26T11:51:59.362184",
+            "idigbio:uuid": "44a1d06c-7a0d-4673-9759-d21a486a0772",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/44a1d06c-7a0d-4673-9759-d21a486a0772"
+          ],
+          "data": {},
+          "datemodified": "2016-10-26T11:51:59.362184+00:00"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_publisher": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 716,
+      "buckets": [
+        {
+          "key": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "doc_count": 415
+        },
+        {
+          "key": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "doc_count": 264
+        },
+        {
+          "key": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "doc_count": 203
+        },
+        {
+          "key": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "doc_count": 119
+        },
+        {
+          "key": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "doc_count": 71
+        },
+        {
+          "key": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "doc_count": 69
+        },
+        {
+          "key": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "doc_count": 63
+        },
+        {
+          "key": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "doc_count": 57
+        },
+        {
+          "key": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+          "doc_count": 45
+        },
+        {
+          "key": "ab5bdf3a-6283-41c7-ac16-9ba46381aa24",
+          "doc_count": 41
+        }
+      ]
+    }
+  }
+}

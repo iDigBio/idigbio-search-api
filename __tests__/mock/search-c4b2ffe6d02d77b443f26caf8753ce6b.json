@@ -1,0 +1,2800 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 28,
+    "successful": 28,
+    "failed": 0
+  },
+  "hits": {
+    "total": 406,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "b5657a33-70d0-4b5a-942d-b8bec3f90261",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "florida",
+          "county": "levy county",
+          "phylum": "tracheophyta",
+          "catalognumber": "235226",
+          "startdayofyear": 120,
+          "taxonrank": "genus",
+          "specificepithet": "alata",
+          "verbatimlocality": "ca. 8 km sw of otter creek along hwy. 24w,",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "b5657a33-70d0-4b5a-942d-b8bec3f90261",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "lucas c. majure",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "8bafdaab-405c-44aa-9705-72a5d89d1bda"
+          ],
+          "continent": "north america",
+          "datecollected": "2009-04-30T00:00:00+00:00",
+          "etag": "90043619ca952ffa2e478397d8b35380360309f5",
+          "recordnumber": "3716",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2721893",
+          "scientificname": "carex alata",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "alata",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Levy County",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "idigbio:uuid": "b5657a33-70d0-4b5a-942d-b8bec3f90261",
+            "gbif:canonicalname": "carex",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=235226",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "l.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4"
+            ],
+            "dwc:occurrenceID": "2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Florida",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:parentnameusageid": "7708",
+            "dwc:eventDate": "2009-04-30",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "90043619ca952ffa2e478397d8b35380360309f5",
+            "id": "2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.2875300",
+            "gbif:reference": [
+              {
+                "coreid": "2721893",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex alata Torr.",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "8bafdaab-405c-44aa-9705-72a5d89d1bda"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Flower",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "235226",
+            "dwc:taxonid": "2721893",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "genus",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.8401600",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Ca. 8 km SW of Otter Creek along Hwy. 24W,",
+            "dwc:verbatimEventDate": "30 Apr 2009",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "3716",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "flag_taxon_match_failed": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "2721893",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "carex"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "fr",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "laÃ®ches"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "fr",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "rouches"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "sedge"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "sedge"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "sedges"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "sedge species"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "segge",
+                "coreid": "2721893",
+                "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "seggen"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "sv",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "starrar"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "nb",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "starrslekta"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "nn",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "storrslekta"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "uk",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "Осока"
+              }
+            ],
+            "dwc:scientificName": "Carex alata",
+            "dwc:day": "30",
+            "dwc:year": "2009"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "alata",
+            "dwc:county": "Levy County",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=235226",
+            "dwc:scientificNameAuthorship": "Torr.",
+            "dwc:occurrenceID": "2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2009-04-30",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.2875300",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex alata Torr.",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:reproductiveCondition": "Flower",
+            "dwc:catalogNumber": "235226",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.8401600",
+            "dwc:verbatimLocality": "Ca. 8 km SW of Otter Creek along Hwy. 24W,",
+            "dwc:verbatimEventDate": "30 Apr 2009",
+            "dwc:recordNumber": "3716",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex alata",
+            "dwc:day": "30",
+            "dwc:year": "2009"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.28753,
+            "lon": -82.84016
+          },
+          "canonicalname": "carex",
+          "eventdate": "2009-04-30",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "30 apr 2009",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\2d5f89cd-23bc-4856-bbd4-a6752e8ab0a4"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "d06a2e92-167e-454a-8fa9-f35642abc627",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "florida",
+          "county": "marion county",
+          "phylum": "tracheophyta",
+          "catalognumber": "229639",
+          "startdayofyear": 101,
+          "taxonrank": "genus",
+          "specificepithet": "debilis",
+          "verbatimlocality": "silver springs: silver river state park.",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "d06a2e92-167e-454a-8fa9-f35642abc627",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "jeffery hubbard",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "4f65d1e8-dc50-4383-8ade-aa660f28589f"
+          ],
+          "continent": "north america",
+          "datecollected": "2006-04-11T00:00:00+00:00",
+          "etag": "a73483161f5baa6a9aa03195c351b1f66fcde3f7",
+          "recordnumber": "414",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2721893",
+          "scientificname": "carex debilis",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "debilis",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Marion County",
+            "dwc:recordedBy": "Jeffery Hubbard",
+            "idigbio:uuid": "d06a2e92-167e-454a-8fa9-f35642abc627",
+            "gbif:canonicalname": "carex",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=229639",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "l.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\714c116c-2271-449a-a7fb-c31a19dd6a19"
+            ],
+            "dwc:occurrenceID": "714c116c-2271-449a-a7fb-c31a19dd6a19",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Florida",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "7708",
+            "dwc:eventDate": "2006-04-11",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "a73483161f5baa6a9aa03195c351b1f66fcde3f7",
+            "id": "714c116c-2271-449a-a7fb-c31a19dd6a19",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.2182000",
+            "dwc:occurrenceRemarks": "Voucher for: Hubbard, Jeffery. Floristic Inventory of Silver River State Park. University of Florida, Gainesville, FL.",
+            "gbif:reference": [
+              {
+                "coreid": "2721893",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex debilis Michx.",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "4f65d1e8-dc50-4383-8ade-aa660f28589f"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "dwc:locationRemarks": "Silver River State Park",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "229639",
+            "dwc:taxonid": "2721893",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "genus",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.0397000",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Silver Springs: Silver River State Park.",
+            "dwc:verbatimEventDate": "11 April, 2006",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "414",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "flag_taxon_match_failed": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "2721893",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "carex"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "fr",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "laÃ®ches"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "fr",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "rouches"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "sedge"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "sedge"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "sedges"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "sedge species"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "segge",
+                "coreid": "2721893",
+                "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "seggen"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "sv",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "starrar"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "nb",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "starrslekta"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "nn",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "storrslekta"
+              },
+              {
+                "coreid": "2721893",
+                "dcterms:language": "uk",
+                "dcterms:source": "world register of marine species",
+                "dwc:vernacularname": "Осока"
+              }
+            ],
+            "dwc:scientificName": "Carex debilis",
+            "dwc:day": "11",
+            "dwc:year": "2006"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "debilis",
+            "dwc:county": "Marion County",
+            "dwc:recordedBy": "Jeffery Hubbard",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=229639",
+            "dwc:scientificNameAuthorship": "Michx.",
+            "dwc:occurrenceID": "714c116c-2271-449a-a7fb-c31a19dd6a19",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "714c116c-2271-449a-a7fb-c31a19dd6a19",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2006-04-11",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.2182000",
+            "dwc:occurrenceRemarks": "Voucher for: Hubbard, Jeffery. Floristic Inventory of Silver River State Park. University of Florida, Gainesville, FL.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex debilis Michx.",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:locationRemarks": "Silver River State Park",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:catalogNumber": "229639",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.0397000",
+            "dwc:verbatimLocality": "Silver Springs: Silver River State Park.",
+            "dwc:verbatimEventDate": "11 April, 2006",
+            "dwc:recordNumber": "414",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex debilis",
+            "dwc:day": "11",
+            "dwc:year": "2006"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "714c116c-2271-449a-a7fb-c31a19dd6a19",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.2182,
+            "lon": -82.0397
+          },
+          "canonicalname": "carex",
+          "eventdate": "2006-04-11",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_taxon_corrected",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_order_added",
+            "dwc_class_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "11 april, 2006",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\714c116c-2271-449a-a7fb-c31a19dd6a19"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "ed59f55e-b53f-4b6a-a38d-451866350792",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "georgia",
+          "county": "grady",
+          "phylum": "tracheophyta",
+          "catalognumber": "231266",
+          "startdayofyear": 305,
+          "taxonrank": "species",
+          "specificepithet": "gigantea",
+          "verbatimlocality": "private property. pebble hill quail plantation. about 7 miles sw of thomasville, georgia, just west of hwy 319.",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "ed59f55e-b53f-4b6a-a38d-451866350792",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "susan c. carr",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "5d6eaf00-1300-4594-93e7-ab64a2bd7299"
+          ],
+          "continent": "north america",
+          "datecollected": "2002-11-01T00:00:00+00:00",
+          "etag": "fe35049965e1d00d47f2093ac518a63e65da0734",
+          "recordnumber": "5666",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2728850",
+          "scientificname": "carex gigantea",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "gigantea",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Grady",
+            "dwc:recordedBy": "Susan C. Carr",
+            "idigbio:uuid": "ed59f55e-b53f-4b6a-a38d-451866350792",
+            "gbif:canonicalname": "carex gigantea",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=231266",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "rudge",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\9afa471d-5357-4fb9-8e54-d00bec062546"
+            ],
+            "dwc:occurrenceID": "9afa471d-5357-4fb9-8e54-d00bec062546",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Georgia",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2002-11-01",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "fe35049965e1d00d47f2093ac518a63e65da0734",
+            "id": "9afa471d-5357-4fb9-8e54-d00bec062546",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "30.7653000",
+            "dwc:occurrenceRemarks": "Fire-adapted Pineland Vegetation of Florida: FL Nongame Program project NG98-016. Plot FL227.",
+            "gbif:reference": [
+              {
+                "coreid": "2728850",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "rudge (1804) in: trans. linn. soc. london 7: 99"
+              },
+              {
+                "coreid": "2728850",
+                "dcterms:source": "the plant list with literature",
+                "dcterms:bibliographiccitation": "rudge e (1804) ix. descriptions of some species of carex from north america. transactions of the linnean society of london 7(1): 96-100. doi: 10.1111/j.1096-3642.1804.tb00284.x."
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex gigantea Rudge    [Det.:] S.C.C.",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "5d6eaf00-1300-4594-93e7-ab64a2bd7299"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "231266",
+            "dwc:taxonid": "2728850",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "11",
+            "dwc:decimalLongitude": "-84.0870167",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Private property. Pebble Hill quail plantation. About 7 miles SW of Thomasville, Georgia, just west of Hwy 319.",
+            "dwc:verbatimEventDate": "01 November 2002",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "5666",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "gbif:vernacularname": [
+              {
+                "coreid": "2728850",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "giant sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex gigantea",
+            "dwc:day": "1",
+            "dwc:year": "2002"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "gigantea",
+            "dwc:county": "Grady",
+            "dwc:recordedBy": "Susan C. Carr",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=231266",
+            "dwc:scientificNameAuthorship": "Rudge",
+            "dwc:occurrenceID": "9afa471d-5357-4fb9-8e54-d00bec062546",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "9afa471d-5357-4fb9-8e54-d00bec062546",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Georgia",
+            "dwc:eventDate": "2002-11-01",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "30.7653000",
+            "dwc:occurrenceRemarks": "Fire-adapted Pineland Vegetation of Florida: FL Nongame Program project NG98-016. Plot FL227.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex gigantea Rudge    [Det.:] S.C.C.",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:catalogNumber": "231266",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "11",
+            "dwc:decimalLongitude": "-84.0870167",
+            "dwc:verbatimLocality": "Private property. Pebble Hill quail plantation. About 7 miles SW of Thomasville, Georgia, just west of Hwy 319.",
+            "dwc:verbatimEventDate": "01 November 2002",
+            "dwc:recordNumber": "5666",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex gigantea",
+            "dwc:day": "1",
+            "dwc:year": "2002"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "9afa471d-5357-4fb9-8e54-d00bec062546",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.7653,
+            "lon": -84.0870167
+          },
+          "canonicalname": "carex gigantea",
+          "eventdate": "2002-11-01",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "01 november 2002",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\9afa471d-5357-4fb9-8e54-d00bec062546"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "4b009d3e-7e69-45c2-955a-d0c7f65158aa",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "south carolina",
+          "county": "beaufort",
+          "phylum": "tracheophyta",
+          "catalognumber": "223234",
+          "startdayofyear": 134,
+          "taxonrank": "species",
+          "specificepithet": "lonchocarpa",
+          "verbatimlocality": "great swamp.",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "4b009d3e-7e69-45c2-955a-d0c7f65158aa",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "sky notestein",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "f708aa45-1e8a-480d-87fd-ed70c4bd0335"
+          ],
+          "continent": "north america",
+          "datecollected": "2008-05-13T00:00:00+00:00",
+          "etag": "f02aa388f2dbe8c1d3332ddfb21da0e424f873e3",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "7910933",
+          "scientificname": "carex lonchocarpa",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "lonchocarpa",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Beaufort",
+            "dwc:recordedBy": "Sky Notestein",
+            "idigbio:uuid": "4b009d3e-7e69-45c2-955a-d0c7f65158aa",
+            "gbif:canonicalname": "carex lonchocarpa",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=223234",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "willd.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\b4299dab-8ab2-4de9-b51e-c76fd5d3f03d"
+            ],
+            "dwc:occurrenceID": "b4299dab-8ab2-4de9-b51e-c76fd5d3f03d",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "South Carolina",
+            "dwc:datasetid": "9ca92552-f23a-41a8-a140-01abaa31c931",
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2008-05-13",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "f02aa388f2dbe8c1d3332ddfb21da0e424f873e3",
+            "id": "b4299dab-8ab2-4de9-b51e-c76fd5d3f03d",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "32.3152000",
+            "dwc:occurrenceRemarks": "Received for plant id from Sky Notestein, Wetland Solutions Inc.",
+            "gbif:reference": [
+              {
+                "coreid": "2721893",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "doubtful",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex lonchocarpa Willd. ex Spreng. [Det.:] S.B. Davis",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "f708aa45-1e8a-480d-87fd-ed70c4bd0335"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Flower",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "223234",
+            "dwc:taxonid": "7910933",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.9793700",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Great Swamp.",
+            "dwc:verbatimEventDate": "13 May 2008",
+            "dwc:phylum": "tracheophyta",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "gbif:vernacularname": [
+              {
+                "coreid": "7910933",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "southern long sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex lonchocarpa",
+            "dwc:day": "13",
+            "dwc:year": "2008"
+          },
+          "data": {
+            "dwc:specificEpithet": "lonchocarpa",
+            "dwc:county": "Beaufort",
+            "dwc:recordedBy": "Sky Notestein",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=223234",
+            "dwc:scientificNameAuthorship": "Willd. ex Spreng.",
+            "dwc:occurrenceID": "b4299dab-8ab2-4de9-b51e-c76fd5d3f03d",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "b4299dab-8ab2-4de9-b51e-c76fd5d3f03d",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "South Carolina",
+            "dwc:eventDate": "2008-05-13",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "32.3152000",
+            "dwc:occurrenceRemarks": "Received for plant id from Sky Notestein, Wetland Solutions Inc.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex lonchocarpa Willd. ex Spreng. [Det.:] S.B. Davis",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:reproductiveCondition": "Flower",
+            "dwc:catalogNumber": "223234",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-80.9793700",
+            "dwc:verbatimLocality": "Great Swamp.",
+            "dwc:verbatimEventDate": "13 May 2008",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex lonchocarpa",
+            "dwc:day": "13",
+            "dwc:year": "2008"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "b4299dab-8ab2-4de9-b51e-c76fd5d3f03d",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 32.3152,
+            "lon": -80.97937
+          },
+          "canonicalname": "carex lonchocarpa",
+          "eventdate": "2008-05-13",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "13 may 2008",
+          "taxonomicstatus": "doubtful",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\b4299dab-8ab2-4de9-b51e-c76fd5d3f03d"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "9ca92552-f23a-41a8-a140-01abaa31c931"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "a6a52873-8234-4e18-a987-05a4b47dac60",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "wisconsin",
+          "county": "waushara",
+          "phylum": "tracheophyta",
+          "catalognumber": "235239",
+          "startdayofyear": 159,
+          "taxonrank": "species",
+          "specificepithet": "duriuscula",
+          "verbatimlocality": "off of cypress rd., from hwy. jj se of coloma from hwy. 21,",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "a6a52873-8234-4e18-a987-05a4b47dac60",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "lucas c. majure",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "c8310d74-ba01-4895-90ac-5f06d710ce29"
+          ],
+          "continent": "north america",
+          "datecollected": "2008-06-07T00:00:00+00:00",
+          "etag": "9ce985e5d03d3602082c5ac8f85a2170f77fd8bb",
+          "recordnumber": "3271",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2728038",
+          "scientificname": "carex duriuscula",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "duriuscula",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Waushara",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "idigbio:uuid": "a6a52873-8234-4e18-a987-05a4b47dac60",
+            "gbif:canonicalname": "carex duriuscula",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=235239",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "c.a.mey.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\c10b49e9-254b-4cfa-813b-684798c521e5"
+            ],
+            "dwc:occurrenceID": "c10b49e9-254b-4cfa-813b-684798c521e5",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Wisconsin",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2008-06-07",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "9ce985e5d03d3602082c5ac8f85a2170f77fd8bb",
+            "id": "c10b49e9-254b-4cfa-813b-684798c521e5",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "44.0048100",
+            "gbif:reference": [
+              {
+                "coreid": "2728038",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "c.a.mey. (1831) in: mém. sav. Étr. acad. st. pétersbourg 1: 214"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex duriuscula C.A. Meyer",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "c8310d74-ba01-4895-90ac-5f06d710ce29"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "235239",
+            "dwc:taxonid": "2728038",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-89.4618600",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "off of Cypress Rd., from Hwy. JJ SE of Coloma from Hwy. 21,",
+            "dwc:verbatimEventDate": "7 Jun 2008",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "3271",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "gbif:vernacularname": [
+              {
+                "coreid": "2728038",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "carex duret"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "involute-leaved sedge"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:source": "korean peninsula flora",
+                "dwc:vernacularname": "들사초"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "low sedge"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "narrow-leaved sedge"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "needleleaf sedge"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "needle-leaved sedge"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "spikerush sedge"
+              },
+              {
+                "coreid": "2728038",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "spike-rush sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex duriuscula",
+            "dwc:day": "7",
+            "dwc:year": "2008"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "duriuscula",
+            "dwc:county": "Waushara",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=235239",
+            "dwc:scientificNameAuthorship": "C.A.Mey.",
+            "dwc:occurrenceID": "c10b49e9-254b-4cfa-813b-684798c521e5",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "c10b49e9-254b-4cfa-813b-684798c521e5",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Wisconsin",
+            "dwc:eventDate": "2008-06-07",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "44.0048100",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex duriuscula C.A. Meyer",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:catalogNumber": "235239",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-89.4618600",
+            "dwc:verbatimLocality": "off of Cypress Rd., from Hwy. JJ SE of Coloma from Hwy. 21,",
+            "dwc:verbatimEventDate": "7 Jun 2008",
+            "dwc:recordNumber": "3271",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex duriuscula",
+            "dwc:day": "7",
+            "dwc:year": "2008"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "c10b49e9-254b-4cfa-813b-684798c521e5",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 44.00481,
+            "lon": -89.46186
+          },
+          "canonicalname": "carex duriuscula",
+          "eventdate": "2008-06-07",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "7 jun 2008",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\c10b49e9-254b-4cfa-813b-684798c521e5"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "a93027b1-2d6c-48e2-9912-2b7fbc8868ef",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.17391304347826086,
+          "stateprovince": "florida",
+          "county": "alachua county",
+          "phylum": "tracheophyta",
+          "catalognumber": "280845",
+          "startdayofyear": 111,
+          "taxonrank": "species",
+          "specificepithet": "basiantha",
+          "verbatimlocality": "gainesville, university of florida campus, unnamed natural area on uf campus (named by ag as \"the retreat at 34th st.\"), at the corner of radio rd. and sw 34th st. just s of the golf course woods",
+          "datemodified": "2023-01-25T12:49:00.947410+00:00",
+          "uuid": "a93027b1-2d6c-48e2-9912-2b7fbc8868ef",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "flas",
+          "continent": "north america",
+          "datecollected": "2019-04-21T00:00:00+00:00",
+          "etag": "a51c0a1f3518d545434a75643adfc5997936c365",
+          "recordnumber": "7726",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "taxonid": "2725588",
+          "scientificname": "carex basiantha",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "basiantha",
+            "idigbio:dateModified": "2023-01-25T12:49:00.947410",
+            "dwc:county": "Alachua County",
+            "idigbio:uuid": "a93027b1-2d6c-48e2-9912-2b7fbc8868ef",
+            "gbif:canonicalname": "carex basiantha",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=280845",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "steud.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\f4a8d3f1-b952-4a38-81fe-4cd36a346912"
+            ],
+            "dwc:occurrenceID": "f4a8d3f1-b952-4a38-81fe-4cd36a346912",
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Florida",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:eventDate": "2019-04-21",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "a51c0a1f3518d545434a75643adfc5997936c365",
+            "id": "f4a8d3f1-b952-4a38-81fe-4cd36a346912",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.6436",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {},
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2721893",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "280845",
+            "dwc:taxonid": "2725588",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.3717",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Gainesville, University of Florida Campus, Unnamed natural area on UF campus (named by AG as \"The Retreat at 34th St.\"), at the corner of Radio Rd. and SW 34th St. just S of the Golf Course Woods",
+            "gbif:reference": [
+              {
+                "coreid": "2725588",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "steud. (1855) in: syn. pl. glumac. 2: 232"
+              }
+            ],
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "7726",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "2725588",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "willdenow's sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex basiantha",
+            "dwc:day": "21",
+            "dwc:year": "2019"
+          },
+          "hasMedia": false,
+          "data": {
+            "dwc:specificEpithet": "basiantha",
+            "dwc:county": "Alachua County",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=280845",
+            "dwc:scientificNameAuthorship": "Steud.",
+            "dwc:occurrenceID": "f4a8d3f1-b952-4a38-81fe-4cd36a346912",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "f4a8d3f1-b952-4a38-81fe-4cd36a346912",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2019-04-21",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.6436",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:institutionCode": "FLAS",
+            "dwc:catalogNumber": "280845",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "4",
+            "dwc:decimalLongitude": "-82.3717",
+            "dwc:verbatimLocality": "Gainesville, University of Florida Campus, Unnamed natural area on UF campus (named by AG as \"The Retreat at 34th St.\"), at the corner of Radio Rd. and SW 34th St. just S of the Golf Course Woods",
+            "dwc:recordNumber": "7726",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex basiantha",
+            "dwc:day": "21",
+            "dwc:year": "2019"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "f4a8d3f1-b952-4a38-81fe-4cd36a346912",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.6436,
+            "lon": -82.3717
+          },
+          "canonicalname": "carex basiantha",
+          "eventdate": "2019-04-21",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "gbif_canonicalname_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\f4a8d3f1-b952-4a38-81fe-4cd36a346912"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "f742e6ab-32f0-4325-a4a1-28b095dc72cd",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "florida",
+          "county": "alachua county",
+          "phylum": "tracheophyta",
+          "catalognumber": "223937",
+          "startdayofyear": 135,
+          "taxonrank": "species",
+          "specificepithet": "chapmanii",
+          "verbatimlocality": "university gardens: gainesville, university of florida, just s of museum rd. and w of lake alice field;",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "f742e6ab-32f0-4325-a4a1-28b095dc72cd",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "lucas c. majure",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "b55bb713-e9ae-4f9e-9d29-fa4be8c49609"
+          ],
+          "continent": "north america",
+          "datecollected": "2008-05-14T00:00:00+00:00",
+          "etag": "4cf206a9f6e8086c86d4a5f56bd40bb88c86f7ef",
+          "recordnumber": "3291",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2726587",
+          "scientificname": "carex chapmannii",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "chapmanii",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Alachua County",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "idigbio:uuid": "f742e6ab-32f0-4325-a4a1-28b095dc72cd",
+            "flag_dwc_specificepithet_replaced": true,
+            "gbif:canonicalname": "carex chapmanii",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=223937",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "steud.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\84a1fa4a-2955-4db1-a47f-a72466ec755b"
+            ],
+            "dwc:occurrenceID": "84a1fa4a-2955-4db1-a47f-a72466ec755b",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Florida",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2008-05-14",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "4cf206a9f6e8086c86d4a5f56bd40bb88c86f7ef",
+            "id": "84a1fa4a-2955-4db1-a47f-a72466ec755b",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.6446000",
+            "gbif:reference": [
+              {
+                "coreid": "2726587",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "steud. (1855) in: syn. pl. glumac. 2: 222"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex chapmannii Steudel [Det.:] L.C. Majure [Det. date:] 14 May 2008",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "b55bb713-e9ae-4f9e-9d29-fa4be8c49609"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "dwc:locationRemarks": "Gainesville: University of Florida campus: University Gardens",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "223937",
+            "dwc:taxonid": "2726587",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-82.3587000",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "University Gardens: Gainesville, University of Florida, just S of Museum Rd. and W of Lake Alice Field;",
+            "dwc:verbatimEventDate": "14 May 2008",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "3291",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "gbif:vernacularname": [
+              {
+                "coreid": "2726587",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "chapman's sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex chapmannii",
+            "dwc:day": "14",
+            "dwc:year": "2008"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "chapmannii",
+            "dwc:county": "Alachua County",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=223937",
+            "dwc:scientificNameAuthorship": "Steud.",
+            "dwc:occurrenceID": "84a1fa4a-2955-4db1-a47f-a72466ec755b",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "84a1fa4a-2955-4db1-a47f-a72466ec755b",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2008-05-14",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "29.6446000",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex chapmannii Steudel [Det.:] L.C. Majure [Det. date:] 14 May 2008",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:locationRemarks": "Gainesville: University of Florida campus: University Gardens",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:catalogNumber": "223937",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-82.3587000",
+            "dwc:verbatimLocality": "University Gardens: Gainesville, University of Florida, just S of Museum Rd. and W of Lake Alice Field;",
+            "dwc:verbatimEventDate": "14 May 2008",
+            "dwc:recordNumber": "3291",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex chapmannii",
+            "dwc:day": "14",
+            "dwc:year": "2008"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "84a1fa4a-2955-4db1-a47f-a72466ec755b",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.6446,
+            "lon": -82.3587
+          },
+          "canonicalname": "carex chapmanii",
+          "eventdate": "2008-05-14",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_specificepithet_replaced",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_taxon_corrected",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "14 may 2008",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\84a1fa4a-2955-4db1-a47f-a72466ec755b"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "b3f32aa0-754f-44cd-8c90-ac8c4ba6c093",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "virginia",
+          "county": "prince william",
+          "phylum": "tracheophyta",
+          "catalognumber": "241440",
+          "startdayofyear": 161,
+          "taxonrank": "species",
+          "specificepithet": "albolutescens",
+          "verbatimlocality": "independent hill, george hellwig memorial park, ca. 0.9 mi. w jct. of hwy va 234 and va 619, then s of hwy va 619; ca. 8 mi. w of dumfries (",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "b3f32aa0-754f-44cd-8c90-ac8c4ba6c093",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "charles t. bryson",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "1132b1f0-5400-4b96-97ca-87e0a8af2a4e"
+          ],
+          "continent": "north america",
+          "datecollected": "2006-06-10T00:00:00+00:00",
+          "etag": "4fe87b99625bbd237bb1f772b267aedc7ad1a4cd",
+          "recordnumber": "21711",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2723628",
+          "scientificname": "carex albolutescens",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "albolutescens",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Prince William",
+            "dwc:recordedBy": "Charles T. Bryson",
+            "idigbio:uuid": "b3f32aa0-754f-44cd-8c90-ac8c4ba6c093",
+            "gbif:canonicalname": "carex albolutescens",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=241440",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "schwein.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\93cc792d-db57-4329-a5f7-810c599d87ee"
+            ],
+            "dwc:occurrenceID": "93cc792d-db57-4329-a5f7-810c599d87ee",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Virginia",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2006-06-10",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "4fe87b99625bbd237bb1f772b267aedc7ad1a4cd",
+            "dwc:taxonrank": "species",
+            "id": "93cc792d-db57-4329-a5f7-810c599d87ee",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "38.6372833",
+            "gbif:reference": [
+              {
+                "coreid": "2723628",
+                "dcterms:source": "brazilian flora 2020 project - projeto flora do brasil 2020",
+                "dcterms:bibliographiccitation": "an. lyceum nat. hist. new york,1:66,1828"
+              },
+              {
+                "coreid": "2723628",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "schwein. (1828) in: ann. lyceum nat. hist. new york 1: 66"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:taxonRemarks": "Bryson 21711 & O'Brien",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Ann.:] Carex albolutescens Schweinitz [Dup. det.] Paul E. Rothrock [Det. date:] 2006 [Note:] Bryson 21711 & O'Brien ; [Orig. id.:] Carex albolutescens Schweinitz",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "1132b1f0-5400-4b96-97ca-87e0a8af2a4e"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Flower",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "241440",
+            "dwc:taxonid": "2723628",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:genus": "Carex",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-77.4446000",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Independent Hill, George Hellwig Memorial Park, ca. 0.9 mi. W jct. of Hwy VA 234 and VA 619, then S of Hwy VA 619; ca. 8 mi. W of Dumfries (",
+            "dwc:verbatimEventDate": "June 10, 2006",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "21711",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "2723628",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "greenwhite sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex albolutescens",
+            "dwc:day": "10",
+            "dwc:year": "2006"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "albolutescens",
+            "dwc:county": "Prince William",
+            "dwc:recordedBy": "Charles T. Bryson",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=241440",
+            "dwc:scientificNameAuthorship": "Schwein.",
+            "dwc:occurrenceID": "93cc792d-db57-4329-a5f7-810c599d87ee",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "93cc792d-db57-4329-a5f7-810c599d87ee",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Virginia",
+            "dwc:eventDate": "2006-06-10",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "38.6372833",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonRemarks": "Bryson 21711 & O'Brien",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Ann.:] Carex albolutescens Schweinitz [Dup. det.] Paul E. Rothrock [Det. date:] 2006 [Note:] Bryson 21711 & O'Brien ; [Orig. id.:] Carex albolutescens Schweinitz",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:institutionCode": "FLAS",
+            "dwc:reproductiveCondition": "Flower",
+            "dwc:catalogNumber": "241440",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:genus": "Carex",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-77.4446000",
+            "dwc:verbatimLocality": "Independent Hill, George Hellwig Memorial Park, ca. 0.9 mi. W jct. of Hwy VA 234 and VA 619, then S of Hwy VA 619; ca. 8 mi. W of Dumfries (",
+            "dwc:verbatimEventDate": "June 10, 2006",
+            "dwc:recordNumber": "21711",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex albolutescens",
+            "dwc:day": "10",
+            "dwc:year": "2006"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "93cc792d-db57-4329-a5f7-810c599d87ee",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 38.6372833,
+            "lon": -77.4446
+          },
+          "canonicalname": "carex albolutescens",
+          "eventdate": "2006-06-10",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "june 10, 2006",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\93cc792d-db57-4329-a5f7-810c599d87ee"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "ec8dfe26-2fed-403a-b41a-bdfb995af9b1",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.2028985507246377,
+          "stateprovince": "mississippi",
+          "county": "newton",
+          "phylum": "tracheophyta",
+          "catalognumber": "235238",
+          "startdayofyear": 133,
+          "taxonrank": "species",
+          "specificepithet": "gracillima",
+          "verbatimlocality": "muse property, chunky creek, ca. 3 mi se of town of decatur off of chapel hill rd., 5 mile trail beside waterfall,",
+          "datemodified": "2023-01-11T01:03:15.324480+00:00",
+          "uuid": "ec8dfe26-2fed-403a-b41a-bdfb995af9b1",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "lucas c. majure",
+          "institutioncode": "flas",
+          "mediarecords": [
+            "30eb68d9-192e-4deb-a037-b9332cb926c3"
+          ],
+          "continent": "north america",
+          "datecollected": "2009-05-13T00:00:00+00:00",
+          "etag": "ba1c088e152f2eefef094ea4f444935b743d4e00",
+          "recordnumber": "3765",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "2724492",
+          "scientificname": "carex digitalis",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "gracillima",
+            "idigbio:dateModified": "2023-01-11T01:03:15.324480",
+            "dwc:county": "Newton",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "idigbio:uuid": "ec8dfe26-2fed-403a-b41a-bdfb995af9b1",
+            "flag_dwc_specificepithet_replaced": true,
+            "gbif:canonicalname": "carex gracillima",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=235238",
+            "flag_gbif_reference_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificNameAuthorship": "schwein.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\14b4e118-e49a-494f-b132-d3da6cd9ec6d"
+            ],
+            "dwc:occurrenceID": "14b4e118-e49a-494f-b132-d3da6cd9ec6d",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:establishmentMeans": "0",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "Mississippi",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2009-05-13",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "ba1c088e152f2eefef094ea4f444935b743d4e00",
+            "id": "14b4e118-e49a-494f-b132-d3da6cd9ec6d",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "32.4207600",
+            "gbif:reference": [
+              {
+                "coreid": "2724492",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "schwein. (1824) in: ann. lyceum nat. hist. new york 1: 66"
+              }
+            ],
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex digitalis Willd. var. macropoda Fernald",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "30eb68d9-192e-4deb-a037-b9332cb926c3"
+              ]
+            },
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "235238",
+            "dwc:taxonid": "2724492",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-89.0448600",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Muse Property, Chunky Creek, ca. 3 mi SE of town of Decatur off of Chapel Hill Rd., 5 mile trail beside Waterfall,",
+            "dwc:verbatimEventDate": "13 May 2009",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "3765",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "gbif:vernacularname": [
+              {
+                "coreid": "2724492",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "carex filiforme"
+              },
+              {
+                "coreid": "2724492",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "graceful sedge"
+              },
+              {
+                "coreid": "2724492",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "graceful sedge"
+              },
+              {
+                "coreid": "2724492",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "purple-sheathed graceful sedge"
+              }
+            ],
+            "dwc:scientificName": "Carex digitalis",
+            "dwc:day": "13",
+            "dwc:year": "2009"
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "digitalis",
+            "dwc:county": "Newton",
+            "dwc:recordedBy": "Lucas C. Majure",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=235238",
+            "dwc:scientificNameAuthorship": "Willd.",
+            "dwc:occurrenceID": "14b4e118-e49a-494f-b132-d3da6cd9ec6d",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "14b4e118-e49a-494f-b132-d3da6cd9ec6d",
+            "dwc:establishmentMeans": "0",
+            "dwc:stateProvince": "Mississippi",
+            "dwc:eventDate": "2009-05-13",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "32.4207600",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dwc:previousIdentifications": "[Orig. id.:] Carex digitalis Willd. var. macropoda Fernald",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:reproductiveCondition": "Fruit (mature)",
+            "dwc:catalogNumber": "235238",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "5",
+            "dwc:decimalLongitude": "-89.0448600",
+            "dwc:verbatimLocality": "Muse Property, Chunky Creek, ca. 3 mi SE of town of Decatur off of Chapel Hill Rd., 5 mile trail beside Waterfall,",
+            "dwc:verbatimEventDate": "13 May 2009",
+            "dwc:recordNumber": "3765",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex digitalis",
+            "dwc:day": "13",
+            "dwc:year": "2009"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "14b4e118-e49a-494f-b132-d3da6cd9ec6d",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 32.42076,
+            "lon": -89.04486
+          },
+          "canonicalname": "carex gracillima",
+          "eventdate": "2009-05-13",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_specificepithet_replaced",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added"
+          ],
+          "verbatimeventdate": "13 may 2009",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\14b4e118-e49a-494f-b132-d3da6cd9ec6d"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "fa441a4c-fba6-41e5-aa22-6996334f9d0b",
+        "_score": 1,
+        "_source": {
+          "family": "cyperaceae",
+          "recordset": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "dqs": 0.15942028985507245,
+          "stateprovince": "new york",
+          "county": "bronx county",
+          "phylum": "tracheophyta",
+          "catalognumber": "276543",
+          "startdayofyear": 175,
+          "taxonrank": "species",
+          "specificepithet": "secalina",
+          "verbatimlocality": "along road paralleling w side of i-678, 0.8 mi n of whitestone bridge, 0.1 mi nw of toll booths for bridge.",
+          "datemodified": "2023-05-05T10:24:14.261979+00:00",
+          "uuid": "fa441a4c-fba6-41e5-aa22-6996334f9d0b",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "flas",
+          "continent": "north america",
+          "datecollected": "2009-06-24T00:00:00+00:00",
+          "etag": "170edc29e3622c27fe32b02e77e52e067a4dc9d0",
+          "recordnumber": "21514",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "taxonid": "2727875",
+          "scientificname": "carex secalina",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "secalina",
+            "idigbio:dateModified": "2023-05-05T10:24:14.261979",
+            "dwc:county": "Bronx County",
+            "idigbio:uuid": "fa441a4c-fba6-41e5-aa22-6996334f9d0b",
+            "gbif:canonicalname": "carex secalina",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=276543",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "willd. ex wahlenb.",
+            "idigbio:recordIds": [
+              "781fd581-7b93-471e-a025-413e4bcd8491\\ff1be677-e7ce-44ec-9f77-2d090265c632"
+            ],
+            "dwc:occurrenceID": "ff1be677-e7ce-44ec-9f77-2d090265c632",
+            "flag_idigbio_isocountrycode_added": true,
+            "flag_gbif_canonicalname_added": true,
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "University of Florida",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "781fd581-7b93-471e-a025-413e4bcd8491",
+            "dwc:stateProvince": "New York",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:parentnameusageid": "2721893",
+            "dwc:eventDate": "2009-06-24",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "united states",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "carex halleriana",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carex_halleriana.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/carex_halleriana.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "schlank-segge (carex acuta)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:carexacuta.jpg",
+                "coreid": "2721893",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b3/carexacuta.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "english: the sedge carex acuta (formerly carex gracilis) at the banks of a pond. deutsch: bestand der schlanksegge (carex acuta) an einem gewässerufer.",
+                "dcterms:creator": "christian fischer",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "170edc29e3622c27fe32b02e77e52e067a4dc9d0",
+            "id": "ff1be677-e7ce-44ec-9f77-2d090265c632",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "40.8161111",
+            "dwc:occurrenceRemarks": "Material removed for DNA analysis. J. Richard Abbott (NY) & Kurt M. Neubig (SIU), 2015.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Carex",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_country_replaced": true,
+            "dwc:disposition": "FLASCAT",
+            "idigbio:isocountrycode": "usa",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "idigbio:siblings": {},
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:order": "poales",
+            "flag_dwc_taxonid_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "carex",
+            "flag_dwc_multimedia_added": true,
+            "dwc:institutionID": "University of Florida Herbarium",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FLAS",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "Fertile",
+            "dwc:class": "liliopsida",
+            "dwc:catalogNumber": "276543",
+            "dwc:taxonid": "2727875",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:taxonrank": "species",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-73.8369444",
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Along road paralleling W side of I-678, 0.8 mi N of Whitestone Bridge, 0.1 mi NW of toll booths for bridge.",
+            "gbif:reference": [
+              {
+                "coreid": "2727875",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "willd. ex wahlenb. (1803) in: kongl. vetensk. acad. nya handl. 1803: 151"
+              }
+            ],
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "21514",
+            "dwc:family": "Cyperaceae",
+            "flag_dwc_class_added": true,
+            "dwc:geodeticDatum": "WGS84",
+            "flag_taxon_match_failed": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "2727875",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "roggen-segge"
+              },
+              {
+                "coreid": "2727875",
+                "dcterms:language": "de",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "roggen-segge"
+              },
+              {
+                "coreid": "2727875",
+                "dcterms:language": "pl",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "turzyca zytowata"
+              }
+            ],
+            "dwc:scientificName": "Carex secalina",
+            "dwc:day": "24",
+            "dwc:year": "2009"
+          },
+          "hasMedia": false,
+          "data": {
+            "dwc:specificEpithet": "secalina",
+            "dwc:county": "Bronx County",
+            "dcterms:references": "https://www.floridamuseum.ufl.edu/herbarium/cat/search.asp?accno=276543",
+            "dwc:scientificNameAuthorship": "Wahlenb.",
+            "dwc:occurrenceID": "ff1be677-e7ce-44ec-9f77-2d090265c632",
+            "dwc:informationWithheld": "location information not given for endangered species",
+            "id": "ff1be677-e7ce-44ec-9f77-2d090265c632",
+            "dwc:stateProvince": "New York",
+            "dwc:eventDate": "2009-06-24",
+            "dwc:institutionCode": "FLAS",
+            "dwc:country": "United States of America",
+            "dcterms:rightsHolder": "University of Florida",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "40.8161111",
+            "dwc:occurrenceRemarks": "Material removed for DNA analysis. J. Richard Abbott (NY) & Kurt M. Neubig (SIU), 2015.",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Carex",
+            "dwc:preparations": "Preserved herbarium specimen",
+            "dwc:disposition": "FLASCAT",
+            "dcterms:license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "dwc:ownerInstitutionCode": "FLAS",
+            "dwc:institutionID": "University of Florida Herbarium",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:reproductiveCondition": "Fertile",
+            "dwc:catalogNumber": "276543",
+            "dwc:nomenclaturalCode": "ICN",
+            "dwc:month": "6",
+            "dwc:decimalLongitude": "-73.8369444",
+            "dwc:verbatimLocality": "Along road paralleling W side of I-678, 0.8 mi N of Whitestone Bridge, 0.1 mi NW of toll booths for bridge.",
+            "dwc:recordNumber": "21514",
+            "dwc:family": "Cyperaceae",
+            "dwc:scientificName": "Carex secalina",
+            "dwc:day": "24",
+            "dwc:year": "2009"
+          },
+          "class": "liliopsida",
+          "occurrenceid": "ff1be677-e7ce-44ec-9f77-2d090265c632",
+          "institutionid": "university of florida herbarium",
+          "country": "united states",
+          "geopoint": {
+            "lat": 40.8161111,
+            "lon": -73.8369444
+          },
+          "canonicalname": "carex secalina",
+          "eventdate": "2009-06-24",
+          "flags": [
+            "rev_geocode_eez",
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_country_replaced",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "taxon_match_failed"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "781fd581-7b93-471e-a025-413e4bcd8491\\ff1be677-e7ce-44ec-9f77-2d090265c632"
+          ],
+          "genus": "carex",
+          "order": "poales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "min_lon": {
+      "value": -111.649568
+    },
+    "rs": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "781fd581-7b93-471e-a025-413e4bcd8491",
+          "doc_count": 404
+        },
+        {
+          "key": "0e162e0a-bf3e-4710-9357-44258ca12abb",
+          "doc_count": 2
+        }
+      ]
+    },
+    "gh": {
+      "buckets": [
+        {
+          "key": "djm",
+          "doc_count": 105
+        },
+        {
+          "key": "djj",
+          "doc_count": 65
+        },
+        {
+          "key": "djb",
+          "doc_count": 41
+        },
+        {
+          "key": "dj7",
+          "doc_count": 25
+        },
+        {
+          "key": "dqf",
+          "doc_count": 19
+        },
+        {
+          "key": "djn",
+          "doc_count": 16
+        },
+        {
+          "key": "djk",
+          "doc_count": 16
+        },
+        {
+          "key": "djc",
+          "doc_count": 9
+        },
+        {
+          "key": "dj6",
+          "doc_count": 8
+        },
+        {
+          "key": "drg",
+          "doc_count": 6
+        },
+        {
+          "key": "dpd",
+          "doc_count": 6
+        },
+        {
+          "key": "drs",
+          "doc_count": 5
+        },
+        {
+          "key": "dj8",
+          "doc_count": 5
+        },
+        {
+          "key": "w94",
+          "doc_count": 4
+        },
+        {
+          "key": "drv",
+          "doc_count": 4
+        },
+        {
+          "key": "dr8",
+          "doc_count": 4
+        },
+        {
+          "key": "dr7",
+          "doc_count": 4
+        },
+        {
+          "key": "dnw",
+          "doc_count": 4
+        },
+        {
+          "key": "dnh",
+          "doc_count": 4
+        },
+        {
+          "key": "djq",
+          "doc_count": 4
+        },
+        {
+          "key": "dr4",
+          "doc_count": 3
+        },
+        {
+          "key": "dhy",
+          "doc_count": 3
+        },
+        {
+          "key": "9vx",
+          "doc_count": 3
+        },
+        {
+          "key": "dre",
+          "doc_count": 2
+        },
+        {
+          "key": "dqb",
+          "doc_count": 2
+        },
+        {
+          "key": "dpb",
+          "doc_count": 2
+        },
+        {
+          "key": "dnt",
+          "doc_count": 2
+        },
+        {
+          "key": "dn7",
+          "doc_count": 2
+        },
+        {
+          "key": "dn6",
+          "doc_count": 2
+        },
+        {
+          "key": "dn3",
+          "doc_count": 2
+        },
+        {
+          "key": "djw",
+          "doc_count": 2
+        },
+        {
+          "key": "dj9",
+          "doc_count": 2
+        },
+        {
+          "key": "dj3",
+          "doc_count": 2
+        },
+        {
+          "key": "9zr",
+          "doc_count": 2
+        },
+        {
+          "key": "9yz",
+          "doc_count": 2
+        },
+        {
+          "key": "f2g",
+          "doc_count": 1
+        },
+        {
+          "key": "f05",
+          "doc_count": 1
+        },
+        {
+          "key": "drt",
+          "doc_count": 1
+        },
+        {
+          "key": "dqc",
+          "doc_count": 1
+        },
+        {
+          "key": "dnu",
+          "doc_count": 1
+        },
+        {
+          "key": "dnp",
+          "doc_count": 1
+        },
+        {
+          "key": "dnn",
+          "doc_count": 1
+        },
+        {
+          "key": "dn0",
+          "doc_count": 1
+        },
+        {
+          "key": "djz",
+          "doc_count": 1
+        },
+        {
+          "key": "dje",
+          "doc_count": 1
+        },
+        {
+          "key": "djd",
+          "doc_count": 1
+        },
+        {
+          "key": "dhv",
+          "doc_count": 1
+        },
+        {
+          "key": "dht",
+          "doc_count": 1
+        },
+        {
+          "key": "d7m",
+          "doc_count": 1
+        },
+        {
+          "key": "d7k",
+          "doc_count": 1
+        },
+        {
+          "key": "d77",
+          "doc_count": 1
+        },
+        {
+          "key": "9zk",
+          "doc_count": 1
+        },
+        {
+          "key": "9x0",
+          "doc_count": 1
+        },
+        {
+          "key": "9vz",
+          "doc_count": 1
+        }
+      ]
+    },
+    "max_lat": {
+      "value": 49.2333333
+    },
+    "max_lon": {
+      "value": 116.554167
+    },
+    "max_dm": {
+      "value": 1683282254261,
+      "value_as_string": "2023-05-05T10:24:14.261Z"
+    },
+    "min_lat": {
+      "value": 6.0166667
+    }
+  }
+}

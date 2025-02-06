@@ -54,7 +54,8 @@ export async function basic(body, extra) {
     "itemCount": body.hits.total,
     "lastModified": new Date(body.aggregations.max_dm.value),
     "items": items,
-    "attribution": await attribution(body.aggregations.rs.buckets)
+    "attribution": await attribution(body.aggregations.rs.buckets),
+    "aggs": body.aggregations
   };
   return _.merge(rb, extra);
 }

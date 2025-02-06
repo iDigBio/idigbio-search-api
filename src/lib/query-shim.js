@@ -82,7 +82,7 @@ function geoPolygon(k, shimK) {
 
 function termFilter(k, shimK) {
   var term = {};
-  if(_.isString(shimK)) {
+  if (_.isString(shimK)) {
     term[k] = shimK.toLowerCase();
   } else {
     term[k] = shimK;
@@ -110,11 +110,91 @@ function termsFilter(k, shimK) {
   };
 }
 
+function exactFilter(k, shimK) { // handler for "exact" toggle on portal UI.
+  let term = {}
+  term[k+'.exact'] = shimK['text']
+
+  if (_.isArray(shimK['text'])) {
+    term[k+'.exact'].map(str => str.toLowerCase())
+    return {
+      "terms": term  // use "terms" plural when passing an array of terms.
+    }
+  } else {
+    term[k+'.exact'] = term[k+'.exact'].toLowerCase()
+    return {
+      "term": term
+    }
+  }
+}
+
+function fuzzyFilter(k, shimK) {
+  let queryParam = shimK['text']
+  let esQuery = {}
+  let fuzziness = shimK['type'] ? "AUTO" : 0 // type is only present when fuzzy is toggled to true
+  if (fuzziness == "AUTO") {
+    k += ".fuzzy"
+  }
+  if (_.isArray(shimK['text'])) { // combine multiple terms into a bool query
+    const matchQueries = queryParam.map((param) => {
+      return {
+        "match": {
+          [k]: {
+            "query": param.toLowerCase(),
+            "operator": "and",
+            "fuzziness": fuzziness
+          }
+        }
+      }
+    })
+    esQuery = {
+      "query": {
+        "bool": {
+          "should": matchQueries // should will OR the contents of the array to determine hits
+        }
+      }
+    };
+  } else if (_.isArray(shimK)) {
+      const matchQueries = shimK.map((param) => {
+        return {
+          "match": {
+            [k]: {
+              "query": param.toLowerCase(),
+              "operator": "and",
+              "fuzziness": fuzziness
+            }
+          }
+        }
+      })
+    esQuery = {
+      "query": {
+        "bool": {
+          "should": matchQueries // should will OR the contents of the array to determine hits
+        }
+      }
+    };
+  } else { // single term
+    esQuery = {
+      "match": {
+        [k]: {
+          "query": queryParam ? queryParam.toLowerCase() : shimK.toLowerCase(),
+          "operator": "and",
+          "fuzziness": fuzziness
+        }
+      }
+    }
+  }
+  return esQuery
+}
+
 function objectType(k, shimK) {
   if(shimK["type"] === "exists") {
     return existFilter(k);
   } else if(shimK["type"] === "missing") {
     return missingFilter(k);
+  } else if (shimK["type"] === "exact") {
+    return exactFilter(k, shimK)
+  } else if (shimK["type"] === "fuzzy") {
+    return fuzzyFilter(k, shimK)
   } else if(shimK["type"] === "range") {
     return rangeFilter(k, shimK);
   } else if(shimK["type"] === "geo_bounding_box") {
@@ -152,20 +232,28 @@ export default function queryShim(shim, term_type) {
 
   _.keys(shim).forEach(function(k) {
     if(_.isString(shim[k]) || _.isBoolean(shim[k]) || _.isNumber(shim[k])) {
-      and_array.push(termFilter(k, shim[k]));
-    } else if(_.isArray(shim[k])) {
-      and_array.push(termsFilter(k, shim[k]));
-    } else if(shim[k]["type"]) {
-      const f = objectType(k, shim[k]);
-      if(f) {
-        if(_.isString(f)) {
-          fulltext = f;
-        } else {
-          and_array.push(f);
+      if (k==='scientificname') { // TODO: Add support for other fields, store a map containing their keys
+          and_array.push(fuzzyFilter(k, shim[k]))
         }
-      } else {
-        throw new QueryParseError("unable to parse type", shim[k]);
-      }
+        else {
+          and_array.push(termFilter(k, shim[k]));
+        }
+    } else if(_.isArray(shim[k])) {
+        if (k==='scientificname') {
+          and_array.push(fuzzyFilter(k, shim[k]))
+        }
+        else {and_array.push(termsFilter(k, shim[k]));}
+    } else if(shim[k]["type"]) {
+        const f = objectType(k, shim[k]);
+        if(f) {
+          if(_.isString(f)) {
+            fulltext = f;
+          } else {
+            and_array.push(f);
+          }
+        } else {
+          throw new QueryParseError("unable to parse type", shim[k]);
+        }
     } else {
       throw new QueryParseError("unable to get type", shim[k]);
     }

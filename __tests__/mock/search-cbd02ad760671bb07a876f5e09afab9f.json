@@ -1,0 +1,2696 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 28,
+    "successful": 28,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1833295,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "7764cd7b-3efe-4f8e-b303-4a5c6a9b8f94",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lat": 30.3051535579,
+            "lon": -85.6255312669
+          },
+          "family": "onagraceae",
+          "recordset": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "bay",
+          "phylum": "tracheophyta",
+          "catalognumber": "000015997",
+          "startdayofyear": 268,
+          "taxonrank": "species",
+          "specificepithet": "filipes",
+          "continent": "north america",
+          "uuid": "7764cd7b-3efe-4f8e-b303-4a5c6a9b8f94",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "robert k. godfrey",
+          "institutioncode": "fsu",
+          "mediarecords": [
+            "cd0a0f4c-69b7-47ba-9134-a6737a515c60"
+          ],
+          "datemodified": "2016-03-21T21:44:32.563368+00:00",
+          "datecollected": "1960-09-24T00:00:00+00:00",
+          "etag": "76e95774855dfb06a639b272a0e2fae649e3f604",
+          "recordnumber": "60327",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "3666626",
+          "scientificname": "oenothera filipes",
+          "indexData": {
+            "dwc:order": "myrtales",
+            "flag_dwc_taxonrank_added": true,
+            "dwc:specificEpithet": "filipes",
+            "idigbio:dateModified": "2016-03-21T21:44:32.563368",
+            "dwc:county": "Bay",
+            "dwc:recordedBy": "Robert K. Godfrey",
+            "idigbio:uuid": "7764cd7b-3efe-4f8e-b303-4a5c6a9b8f94",
+            "flag_dwc_multimedia_added": true,
+            "dwc:coordinatePrecision": "762.299 square miles",
+            "dwc:habitat": "none.",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "w.l.wagner & hoch (spach)",
+            "idigbio:recordIds": [
+              "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314"
+            ],
+            "dwc:occurrenceID": "urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314",
+            "dcterms:language": "en",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "Robert K. Godfrey Herbarium at Florida State University",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "b2b294ed-1742-4479-b0c8-a8891fccd7eb",
+            "dwc:stateProvince": "Florida",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:eventDate": "1960-09-24",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "United States",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "oenothera biennis",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_rubricaulis_2014_g1.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/0d/oenothera_rubricaulis_2014_g1.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: rred-stalked evening primrose (oenothera biennis, syn. oenothera rubricaulis), flowers. ukraine. français : fleurs d'onagre vespérale à pétioles rouges (oenothera rubricaulis), ukraine. Русский: Ослинник красностебельный, энотера красностебельная (oenothera rubricaulis). Украина.",
+                "dcterms:creator": "george chernilevsky",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oenothera macrocarpa",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_macrocarpa_a1.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/1/17/oenothera_macrocarpa_a1.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "oenothera macrocarpa",
+                "dcterms:creator": "jerzy opioła",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution 3.0 unported",
+                "dcterms:title": "oenothera stricta ssp. stricta",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:starr_051004-4684_oenothera_stricta_subsp._stricta.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/4/42/starr_051004-4684_oenothera_stricta_subsp._stricta.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: oenothera stricta subsp. stricta (habit). location: maui, puu maile haleakala national park",
+                "dcterms:creator": "forest & kim starr",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "oenothera sp. opening",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:primrose-brighter.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/5/5f/primrose-brighter.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: an evening primrose opening at night. i took these pictures in sewickley, pa on july 8th, 2005 at around 9pm. the exposures are each 0.25 seconds, with about 2 seconds between shots. the images have been brightened. originals and larger versions may be viewed at http://ctho.ath.cx/pics/new/2005-07-08/",
+                "dcterms:creator": "original uploader was ctho at en.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "oenothera clelandii",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oclelandii.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/oclelandii.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: oenothera clelandii",
+                "dcterms:creator": "aarongunnar",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "public domain mark 1.0",
+                "dcterms:title": "gemeine nachtkerze (oenothera biennis), illustration",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:illustration_oenothera_biennis0.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/ed/illustration_oenothera_biennis0.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oenothera caespitosa var. marginata",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_caespitosa_var_marginata_4.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/f9/oenothera_caespitosa_var_marginata_4.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "oenothera caespitosa var. marginata near the road in lower kyle canyon, spring mountains, southern nevada (elev. about 1600 m)",
+                "dcterms:creator": "stan shebs",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "oenothera rosea",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_rosea.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/fb/oenothera_rosea.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: oenothera rosea, inflorescence",
+                "dcterms:creator": "kirisame",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "76e95774855dfb06a639b272a0e2fae649e3f604",
+            "dwc:collectionCode": "FSU",
+            "id": "urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "30.3051535579",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Oenothera",
+            "dwc:continent": "north america",
+            "dwc:family": "Onagraceae",
+            "flag_dwc_continent_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "dwc:dynamicProperties": "flowerbudPresent=true; flowerPresent=true; fruitPresent=true; fertile=false",
+            "flag_dwc_taxonid_added": true,
+            "dwc:geodeticDatum": "Nad83",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "cd0a0f4c-69b7-47ba-9134-a6737a515c60"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "oenothera filipes",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "oenothera",
+            "dwc:locality": "none.",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15666",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:institutionCode": "FSU",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3188799",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "000015997",
+            "dwc:taxonid": "3666626",
+            "dcterms:type": "PhysicalObject",
+            "dwc:taxonrank": "species",
+            "flag_dwc_order_added": true,
+            "dwc:decimalLongitude": "-85.6255312669",
+            "dwc:originalnameusageid": "3189239",
+            "dwc:phylum": "tracheophyta",
+            "dwc:recordNumber": "60327",
+            "dcterms:rights": "http://creativecommons.org/licenses/by/4.0/",
+            "flag_dwc_originalnameusageid_added": true,
+            "flag_dwc_class_added": true,
+            "dwc:georeferenceProtocol": "County centroid",
+            "idigbio:isocountrycode": "usa",
+            "dwc:scientificName": "Oenothera filipes",
+            "gbif:reference": [
+              {
+                "coreid": "3666626",
+                "dcterms:source": "the plant list with literature",
+                "dcterms:bibliographiccitation": "wagner wl, hoch pc, raven ph (2007) revised classification of the onagraceae. systematic botany monographs 83: 1-240. retrieved from http://www.jstor.org/stable/25027969"
+              },
+              {
+                "coreid": "3666626",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "w.l.wagner & hoch (2007) in: syst. bot. monogr. 83: 212 (2007), nom. nov."
+              }
+            ],
+            "gbif:vernacularname": [
+              {
+                "coreid": "3666626",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "slenderstalk beeblossom"
+              }
+            ]
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:specificEpithet": "filipes",
+            "dwc:county": "Bay",
+            "dwc:recordedBy": "Robert K. Godfrey",
+            "dwc:coordinatePrecision": "762.299 square miles",
+            "dwc:habitat": "none.",
+            "dwc:scientificNameAuthorship": "(Spach) W.L. Wagner & Hoch",
+            "dwc:occurrenceID": "urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314",
+            "dcterms:language": "en",
+            "id": "urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1960-09-24",
+            "dwc:institutionCode": "FSU",
+            "dwc:country": "United States",
+            "dwc:collectionCode": "FSU",
+            "dcterms:rightsHolder": "Robert K. Godfrey Herbarium at Florida State University",
+            "dwc:kingdom": "Plantae",
+            "dwc:decimalLatitude": "30.3051535579",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Oenothera",
+            "dwc:family": "Onagraceae",
+            "dwc:dynamicProperties": "flowerbudPresent=true; flowerPresent=true; fruitPresent=true; fertile=false",
+            "dwc:locality": "none.",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15666",
+            "dwc:geodeticDatum": "Nad83",
+            "dwc:catalogNumber": "000015997",
+            "dcterms:type": "PhysicalObject",
+            "dwc:decimalLongitude": "-85.6255312669",
+            "dwc:recordNumber": "60327",
+            "dcterms:rights": "http://creativecommons.org/licenses/by/4.0/",
+            "dwc:georeferenceProtocol": "County centroid",
+            "dwc:scientificName": "Oenothera filipes"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:15666",
+          "country": "united states",
+          "locality": "none.",
+          "collectioncode": "fsu",
+          "canonicalname": "oenothera filipes",
+          "eventdate": "1960-09-24",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_multimedia_added",
+            "gbif_reference_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_phylum_added",
+            "gbif_vernacularname_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_originalnameusageid_added",
+            "dwc_class_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "b2b294ed-1742-4479-b0c8-a8891fccd7eb\\urn:uuid:c4865e10-3df0-4b7a-90c6-445824871314"
+          ],
+          "genus": "oenothera",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "52f5086a-929a-40a3-a1a8-be00f3d07684",
+        "_score": 1,
+        "_source": {
+          "family": "myrtaceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p00258459",
+          "startdayofyear": 281,
+          "taxonrank": "species",
+          "specificepithet": "glaziovianum",
+          "verbatimlocality": "serra do inficionado (minas)",
+          "uuid": "52f5086a-929a-40a3-a1a8-be00f3d07684",
+          "basisofrecord": "preservedspecimen",
+          "collector": "glaziou, a.",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "ee44b52f-a40e-4389-a658-e1674e89c7a1",
+            "5353ec30-7a10-40a3-b800-b8927b2a757c"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "datecollected": "1882-10-08T00:00:00+00:00",
+          "etag": "f1122eea2f5f31f750946872980e95aa64e54fc4",
+          "typestatus": "isosyntype",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_taxonremarks_added",
+            "gbif_reference_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_canonicalname_added",
+            "dwc_phylum_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "taxon_match_failed",
+            "dwc_kingdom_added"
+          ],
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "8747555",
+          "scientificname": "psidium glaziovianum kiaersk.",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "flag_dwc_taxonremarks_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:countryCode": "br",
+            "dwc:kingdom": "plantae",
+            "dwc:recordedBy": "Glaziou, A.",
+            "idigbio:uuid": "52f5086a-929a-40a3-a1a8-be00f3d07684",
+            "dwc:fieldNumber": "13870",
+            "gbif:canonicalname": "psidium glaziovianum",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "kaersk.",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+            "idigbio:etag": "f1122eea2f5f31f750946872980e95aa64e54fc4",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "6cfd67d6-4f9b-400b-8549-1933ac27936f",
+            "dwc:eventDate": "1882-10-8",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:country": "Brésil",
+            "dwc:typeStatus": "isosyntype",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "doubtful",
+            "dwc:genus": "Psidium",
+            "dwc:family": "Myrtaceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "ee44b52f-a40e-4389-a658-e1674e89c7a1",
+                "5353ec30-7a10-40a3-b800-b8927b2a757c"
+              ]
+            },
+            "dwc:taxonremarks": "possible variant of psidium glaziovianum kiaersk.",
+            "dwc:order": "myrtales",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "psidium",
+            "dwc:specificepithet": "glaziovianum",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3187232",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P00258459",
+            "dwc:taxonid": "8747555",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+                "dcterms:identifier": "92B2EDE6ECDD4CB2A6A836D980A17275",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|52329",
+                "dwc:identificationRemarks": "OK, Landrum L.R., 2010",
+                "dwc:specificEpithet": "glaziovianum",
+                "dwc:identificationID": "SONNERAT|294429",
+                "dwc:identificationVerificationStatus": "1",
+                "dwc:typeStatus": "isosyntype",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+                "dwc:scientificNameAuthorship": "Kiaersk.",
+                "dwc:genus": "Psidium",
+                "dwc:scientificName": "Psidium glaziovianum Kiaersk.",
+                "dwc:higherClassification": "Psidium;Myrtaceae",
+                "dwc:family": "Myrtaceae"
+              }
+            ],
+            "dwc:month": "10",
+            "gbif:vernacularname": [
+              {
+                "coreid": "5420469",
+                "dcterms:language": "pt",
+                "dcterms:source": "brazilian flora 2020 project - projeto flora do brasil 2020",
+                "dwc:vernacularname": "camboim"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "dwc:verbatimLocality": "Serra do Inficionado (Minas)",
+            "gbif:reference": [
+              {
+                "coreid": "5420469",
+                "dcterms:source": "brazilian flora 2020 project - projeto flora do brasil 2020",
+                "dcterms:bibliographiccitation": "enum. myrt. bras.,: 33,1893"
+              },
+              {
+                "coreid": "5420469",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "kiaersk. (1893) in: enum. myrt. bras. : 33"
+              }
+            ],
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "flag_taxon_match_failed": true,
+            "dcterms:modified": "2017-06-23 10:49:26.0",
+            "dwc:scientificName": "Psidium glaziovianum Kiaersk.",
+            "dwc:day": "8",
+            "flag_dwc_kingdom_added": true,
+            "dwc:year": "1882"
+          },
+          "data": {
+            "dwc:countryCode": "br",
+            "dwc:recordedBy": "Glaziou, A.",
+            "dwc:fieldNumber": "13870",
+            "dwc:scientificNameAuthorship": "Kiaersk.",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+            "dwc:eventDate": "1882-10-8",
+            "dwc:country": "Brésil",
+            "dwc:typeStatus": "isosyntype",
+            "dwc:collectionCode": "P",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Psidium",
+            "dwc:preparations": "hb",
+            "dwc:institutionCode": "MNHN",
+            "dwc:catalogNumber": "P00258459",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+                "dcterms:identifier": "92B2EDE6ECDD4CB2A6A836D980A17275",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|52329",
+                "dwc:identificationRemarks": "OK, Landrum L.R., 2010",
+                "dwc:specificEpithet": "glaziovianum",
+                "dwc:scientificNameAuthorship": "Kiaersk.",
+                "dwc:typeStatus": "isosyntype",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+                "dwc:identificationID": "SONNERAT|294429",
+                "dwc:genus": "Psidium",
+                "dwc:scientificName": "Psidium glaziovianum Kiaersk.",
+                "dwc:higherClassification": "Psidium;Myrtaceae",
+                "dwc:family": "Myrtaceae"
+              }
+            ],
+            "dwc:month": "10",
+            "dwc:verbatimLocality": "Serra do Inficionado (Minas)",
+            "dwc:family": "Myrtaceae",
+            "dcterms:modified": "2017-06-23 10:49:26.0",
+            "dwc:scientificName": "Psidium glaziovianum Kiaersk.",
+            "dwc:day": "8",
+            "dwc:year": "1882"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459",
+          "country": "brésil",
+          "dqs": 0.14492753623188406,
+          "collectioncode": "p",
+          "canonicalname": "psidium glaziovianum",
+          "eventdate": "1882-10-8",
+          "fieldnumber": "13870",
+          "taxonomicstatus": "doubtful",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p00258459"
+          ],
+          "genus": "psidium",
+          "order": "myrtales",
+          "datasetid": "6cfd67d6-4f9b-400b-8549-1933ac27936f"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "aafcd067-c135-4a26-aa6a-6f1ef9d8c471",
+        "_score": 1,
+        "_source": {
+          "family": "onagraceae",
+          "recordset": "c5b7dae8-b483-4742-9954-d7f9226daa34",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "texas",
+          "collectioncode": "ll",
+          "county": "randall",
+          "phylum": "tracheophyta",
+          "catalognumber": "ll00027012",
+          "startdayofyear": 185,
+          "taxonrank": "subspecies",
+          "specificepithet": "hartwegii",
+          "continent": "north america",
+          "uuid": "aafcd067-c135-4a26-aa6a-6f1ef9d8c471",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "collector": "d. s. correll & h. b. correll",
+          "institutioncode": "prc",
+          "datemodified": "2016-02-19T10:59:28.494837+00:00",
+          "datecollected": "1946-07-04T00:00:00+00:00",
+          "etag": "5bdb131ce3e9d0f1c3c9901ee35f31aba4b18f57",
+          "recordnumber": "13042",
+          "hasImage": false,
+          "kingdom": "plantae",
+          "collectionid": "74c32fab-cac2-4d1a-9d44-8a32d8400f76",
+          "taxonid": "3665703",
+          "scientificname": "oenothera greggii",
+          "indexData": {
+            "dwc:startDayOfYear": "185",
+            "flag_dwc_taxonrank_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "oenothera biennis",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_rubricaulis_2014_g1.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/0d/oenothera_rubricaulis_2014_g1.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: rred-stalked evening primrose (oenothera biennis, syn. oenothera rubricaulis), flowers. ukraine. français : fleurs d'onagre vespérale à pétioles rouges (oenothera rubricaulis), ukraine. Русский: Ослинник красностебельный, энотера красностебельная (oenothera rubricaulis). Украина.",
+                "dcterms:creator": "george chernilevsky",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oenothera macrocarpa",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_macrocarpa_a1.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/1/17/oenothera_macrocarpa_a1.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "oenothera macrocarpa",
+                "dcterms:creator": "jerzy opioła",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution 3.0 unported",
+                "dcterms:title": "oenothera stricta ssp. stricta",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:starr_051004-4684_oenothera_stricta_subsp._stricta.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/4/42/starr_051004-4684_oenothera_stricta_subsp._stricta.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: oenothera stricta subsp. stricta (habit). location: maui, puu maile haleakala national park",
+                "dcterms:creator": "forest & kim starr",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "oenothera sp. opening",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:primrose-brighter.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/5/5f/primrose-brighter.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: an evening primrose opening at night. i took these pictures in sewickley, pa on july 8th, 2005 at around 9pm. the exposures are each 0.25 seconds, with about 2 seconds between shots. the images have been brightened. originals and larger versions may be viewed at http://ctho.ath.cx/pics/new/2005-07-08/",
+                "dcterms:creator": "original uploader was ctho at en.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "oenothera clelandii",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oclelandii.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a8/oclelandii.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: oenothera clelandii",
+                "dcterms:creator": "aarongunnar",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "public domain mark 1.0",
+                "dcterms:title": "gemeine nachtkerze (oenothera biennis), illustration",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:illustration_oenothera_biennis0.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/ed/illustration_oenothera_biennis0.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oenothera caespitosa var. marginata",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_caespitosa_var_marginata_4.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/f9/oenothera_caespitosa_var_marginata_4.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "oenothera caespitosa var. marginata near the road in lower kyle canyon, spring mountains, southern nevada (elev. about 1600 m)",
+                "dcterms:creator": "stan shebs",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                "dcterms:title": "oenothera rosea",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:oenothera_rosea.jpg",
+                "coreid": "3188799",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/fb/oenothera_rosea.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: oenothera rosea, inflorescence",
+                "dcterms:creator": "kirisame",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "dwc:specificEpithet": "hartwegii",
+            "idigbio:dateModified": "2016-02-19T10:59:28.494837",
+            "dwc:county": "RANDALL",
+            "dwc:recordedBy": "D. S. Correll & H. B. Correll",
+            "idigbio:uuid": "aafcd067-c135-4a26-aa6a-6f1ef9d8c471",
+            "flag_dwc_multimedia_added": true,
+            "dwc:order": "Myrtales",
+            "dwc:habitat": "Fls. yellow.",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "w.l.wagner & hoch (a.gray)",
+            "idigbio:recordIds": [
+              "c5b7dae8-b483-4742-9954-d7f9226daa34\\urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+              "c5b7dae8-b483-4742-9954-d7f9226daa34\\1368233",
+              "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb"
+            ],
+            "dwc:occurrenceID": "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "1368233",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "c5b7dae8-b483-4742-9954-d7f9226daa34",
+            "dwc:stateProvince": "Texas",
+            "flag_dwc_originalnameusageid_added": true,
+            "dwc:parentnameusageid": "6428151",
+            "dwc:eventDate": "1946-07-04",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:collectionID": "74c32fab-cac2-4d1a-9d44-8a32d8400f76",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+            "idigbio:etag": "5bdb131ce3e9d0f1c3c9901ee35f31aba4b18f57",
+            "dwc:collectionCode": "LL",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:kingdom": "Plantae",
+            "dwc:originalnameusageid": "3665882",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Oenothera",
+            "flag_dwc_specificepithet_replaced": true,
+            "dwc:continent": "north america",
+            "dwc:family": "Onagraceae",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:identifiedBy": "B. L. Turner, 2011",
+            "flag_dwc_phylum_replaced": true,
+            "flag_dwc_infraspecificepithet_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:isocountrycode": "usa",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "oenothera hartwegii pubescens",
+            "dwc:phylum": "tracheophyta",
+            "dcterms:references": "http://prc-symbiota.tacc.utexas.edu/collections/individual/index.php?occid=1368233",
+            "gbif:genericname": "oenothera",
+            "dwc:locality": "On rim of Palo Duro Canyon, Palo Duro State Park.",
+            "dwc:institutionCode": "PRC",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:reproductiveCondition": "flowering + fruting=mid",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "LL00027012",
+            "dwc:taxonid": "3665703",
+            "dwc:taxonrank": "subspecies",
+            "dwc:Identification": [
+              {
+                "coreid": "1368233",
+                "dwc:identifiedBy": "Unknown",
+                "idigbio:recordId": "urn:uuid:a95f5241-6587-4fa3-92cf-0b5af30538cb",
+                "dwc:scientificName": "Calylophus hartwegii var. pubescens",
+                "dwc:dateIdentified": "Unknown"
+              },
+              {
+                "coreid": "1368233",
+                "dwc:identifiedBy": "Unknown",
+                "idigbio:recordId": "urn:uuid:42dd8658-2cc5-45c1-aa2a-d9686b1d4af4",
+                "dwc:scientificName": "Calylophus greggii",
+                "dwc:dateIdentified": "Unknown"
+              }
+            ],
+            "dwc:month": "7",
+            "gbif:vernacularname": [
+              {
+                "coreid": "3665703",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "hartweg's sundrops"
+              }
+            ],
+            "dwc:infraspecificepithet": "pubescens",
+            "gbif:reference": [
+              {
+                "coreid": "3665703",
+                "dcterms:source": "the plant list with literature",
+                "dcterms:bibliographiccitation": "wagner wl, hoch pc, raven ph (2007) revised classification of the onagraceae. systematic botany monographs 83: 1-240. retrieved from http://www.jstor.org/stable/25027969"
+              },
+              {
+                "coreid": "3665703",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "w.l.wagner & hoch (2007) in: syst. bot. monogr. 83: 212"
+              }
+            ],
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "13042",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_parentnameusageid_added": true,
+            "dcterms:modified": "2015-08-10 10:09:02",
+            "dwc:scientificName": "Oenothera greggii",
+            "dwc:day": "4",
+            "dwc:year": "1946"
+          },
+          "hasMedia": false,
+          "data": {
+            "dwc:startDayOfYear": "185",
+            "dwc:specificEpithet": "greggii",
+            "dwc:county": "RANDALL",
+            "dwc:recordedBy": "D. S. Correll & H. B. Correll",
+            "dwc:order": "Myrtales",
+            "dwc:habitat": "Fls. yellow.",
+            "dwc:scientificNameAuthorship": "A. Gray",
+            "dwc:occurrenceID": "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+            "id": "1368233",
+            "dwc:stateProvince": "Texas",
+            "dwc:eventDate": "1946-07-04",
+            "dwc:collectionID": "74c32fab-cac2-4d1a-9d44-8a32d8400f76",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+            "dwc:collectionCode": "LL",
+            "dwc:kingdom": "Plantae",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Oenothera",
+            "dwc:family": "Onagraceae",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:identifiedBy": "B. L. Turner, 2011",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://prc-symbiota.tacc.utexas.edu/collections/individual/index.php?occid=1368233",
+            "dwc:locality": "On rim of Palo Duro Canyon, Palo Duro State Park.",
+            "dwc:institutionCode": "PRC",
+            "dwc:reproductiveCondition": "flowering + fruting=mid",
+            "dwc:class": "Magnoliopsida",
+            "dwc:catalogNumber": "LL00027012",
+            "dwc:Identification": [
+              {
+                "coreid": "1368233",
+                "dwc:identifiedBy": "Unknown",
+                "idigbio:recordId": "urn:uuid:a95f5241-6587-4fa3-92cf-0b5af30538cb",
+                "dwc:scientificName": "Calylophus hartwegii var. pubescens",
+                "dwc:dateIdentified": "Unknown"
+              },
+              {
+                "coreid": "1368233",
+                "dwc:identifiedBy": "Unknown",
+                "idigbio:recordId": "urn:uuid:42dd8658-2cc5-45c1-aa2a-d9686b1d4af4",
+                "dwc:scientificName": "Calylophus greggii",
+                "dwc:dateIdentified": "Unknown"
+              }
+            ],
+            "dwc:month": "7",
+            "dwc:recordNumber": "13042",
+            "dcterms:modified": "2015-08-10 10:09:02",
+            "dwc:scientificName": "Oenothera greggii",
+            "dwc:day": "4",
+            "dwc:year": "1946"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+          "country": "united states",
+          "locality": "on rim of palo duro canyon, palo duro state park.",
+          "infraspecificepithet": "pubescens",
+          "canonicalname": "oenothera hartwegii pubescens",
+          "eventdate": "1946-07-04",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_multimedia_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_originalnameusageid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "gbif_vernacularname_added",
+            "dwc_specificepithet_replaced",
+            "dwc_phylum_replaced",
+            "dwc_infraspecificepithet_added",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_taxon_corrected",
+            "dwc_continent_added",
+            "dwc_parentnameusageid_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "c5b7dae8-b483-4742-9954-d7f9226daa34\\urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb",
+            "c5b7dae8-b483-4742-9954-d7f9226daa34\\1368233",
+            "urn:uuid:c54c9cfb-b59e-4309-9204-abd9bf7241cb"
+          ],
+          "genus": "oenothera",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "0dd17d83-ec7b-4bac-894a-2d00c2600a51",
+        "_score": 1,
+        "_source": {
+          "family": "myrtaceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p05263078",
+          "taxonrank": "species",
+          "specificepithet": "scoparium",
+          "uuid": "0dd17d83-ec7b-4bac-894a-2d00c2600a51",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "39817e06-e656-40f1-961f-fbac2d641b8e",
+            "45b2a7a2-ad60-4e57-81c3-6f3547ed5bf9"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "etag": "b3fc741b2dc3e69c92164e9f59ce6e1e68c094e0",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "3181762",
+          "scientificname": "leptospermum scoparium j.r.forst. & g.forst.",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "0dd17d83-ec7b-4bac-894a-2d00c2600a51",
+            "gbif:canonicalname": "leptospermum scoparium",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "J.R.Forst. & G.Forst.",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:multimedia": [
+              {
+                "dcterms:title": "leptospermum scoparium foliage and flowers",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:manukaflowers.jpg",
+                "coreid": "3181762",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/7/74/manukaflowers.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: manuka (leptospermum scoparium) flowers. Українська: Квіти чайного дерева «Манука» (leptospermum scoparium)",
+                "dcterms:creator": "(c) wikipedia user gerald.w",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "leptospermum scoparium, blüte",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:leptospermum_scoparium3.jpg",
+                "coreid": "3181762",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b8/leptospermum_scoparium3.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "leptospermum scoparium",
+                "dcterms:creator": "kenpei",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "b3fc741b2dc3e69c92164e9f59ce6e1e68c094e0",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Leptospermum",
+            "dwc:family": "Myrtaceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "39817e06-e656-40f1-961f-fbac2d641b8e",
+                "45b2a7a2-ad60-4e57-81c3-6f3547ed5bf9"
+              ]
+            },
+            "dwc:order": "myrtales",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "leptospermum",
+            "flag_dwc_multimedia_added": true,
+            "dwc:specificepithet": "scoparium",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3181696",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P05263078",
+            "dwc:taxonid": "3181762",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+                "dcterms:identifier": "A62B160D014C471CB4660DE1DFF5DA0D",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|63107",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "scoparium",
+                "dwc:identificationID": "SONNERAT|6850693",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+                "dwc:scientificNameAuthorship": "J.R.Forst. & G.Forst.",
+                "dwc:genus": "Leptospermum",
+                "dwc:scientificName": "Leptospermum scoparium J.R.Forst. & G.Forst.",
+                "dwc:higherClassification": "Leptospermum;Myrtaceae",
+                "dwc:family": "Myrtaceae"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "dcterms:modified": "2015-09-04 21:43:05.0",
+            "dwc:scientificName": "Leptospermum scoparium J.R.Forst. & G.Forst.",
+            "gbif:reference": [
+              {
+                "coreid": "3181762",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "j.r.forst. & g.forst. (1775) in: char. gen. pl. : 36"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "3181762",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "árvore-chá"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "broom teatree"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "broom teatree"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "érica"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "falsa-érica"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "leptospermo"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "en",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "manuka"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "manuka"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "af",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "manukamirt"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "manuka myrtle"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "manuka teatree"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "new zealand tea"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "new zealand teatree"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "sv",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "rosenmyrten"
+              },
+              {
+                "coreid": "3181762",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "südseemyrte"
+              }
+            ]
+          },
+          "data": {
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+                "dcterms:identifier": "A62B160D014C471CB4660DE1DFF5DA0D",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dcterms:modified": "2015-09-04 21:43:05.0",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|63107",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "scoparium",
+                "dwc:scientificNameAuthorship": "J.R.Forst. & G.Forst.",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+                "dwc:identificationID": "SONNERAT|6850693",
+                "dwc:genus": "Leptospermum",
+                "dwc:scientificName": "Leptospermum scoparium J.R.Forst. & G.Forst.",
+                "dwc:higherClassification": "Leptospermum;Myrtaceae",
+                "dwc:family": "Myrtaceae"
+              }
+            ],
+            "dwc:collectionCode": "P",
+            "dwc:scientificNameAuthorship": "J.R.Forst. & G.Forst.",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+            "dwc:preparations": "hb",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:institutionCode": "MNHN",
+            "dwc:genus": "Leptospermum",
+            "dwc:scientificName": "Leptospermum scoparium J.R.Forst. & G.Forst.",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+            "dwc:family": "Myrtaceae",
+            "dwc:catalogNumber": "P05263078"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078",
+          "dqs": 0.057971014492753624,
+          "collectioncode": "p",
+          "canonicalname": "leptospermum scoparium",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_canonicalname_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05263078"
+          ],
+          "genus": "leptospermum",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "a960ad53-8d14-4693-8337-92c079f8ef87",
+        "_score": 1,
+        "_source": {
+          "family": "onagraceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p04723187",
+          "taxonrank": "species",
+          "specificepithet": "palustre",
+          "uuid": "a960ad53-8d14-4693-8337-92c079f8ef87",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "2a4c9b61-9618-4271-9629-ffd63219ea46",
+            "7b4f9c60-5604-48d7-949f-d41c7cf4a1e2"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "etag": "f542a7c79ba8b20fda80888ed4814b5959916dd9",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "3189080",
+          "scientificname": "epilobium palustre l.",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "a960ad53-8d14-4693-8337-92c079f8ef87",
+            "gbif:canonicalname": "epilobium palustre",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "L.",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:epilobium_palustre_bluete.jpeg",
+                "coreid": "3189080",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/epilobium_palustre_bluete.jpeg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "sumpf-weidenröschen (epilobium palustre)",
+                "dcterms:creator": "kristian peters -- fabelfroh 08:57, 17 august 2007 (utc)",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "sumpf-weidenröschen (epilobium palustre)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:epilobium_palustre.jpeg",
+                "coreid": "3189080",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/9/9b/epilobium_palustre.jpeg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "sumpf-weidenröschen (epilobium palustre)",
+                "dcterms:creator": "kristian peters -- fabelfroh 08:57, 17 august 2007 (utc)",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "f542a7c79ba8b20fda80888ed4814b5959916dd9",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Epilobium",
+            "dwc:family": "Onagraceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "2a4c9b61-9618-4271-9629-ffd63219ea46",
+                "7b4f9c60-5604-48d7-949f-d41c7cf4a1e2"
+              ]
+            },
+            "dwc:order": "myrtales",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "epilobium",
+            "flag_dwc_multimedia_added": true,
+            "dwc:specificepithet": "palustre",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189067",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P04723187",
+            "dwc:taxonid": "3189080",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+                "dcterms:identifier": "18800BC2C2044E729719E4477C34621A",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|13915",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "palustre",
+                "dwc:identificationID": "SONNERAT|7049677",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+                "dwc:scientificNameAuthorship": "L.",
+                "dwc:genus": "Epilobium",
+                "dwc:scientificName": "Epilobium palustre L.",
+                "dwc:higherClassification": "Epilobium;Onagraceae",
+                "dwc:family": "Onagraceae"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "dcterms:modified": "2015-09-05 04:50:53.0",
+            "dwc:scientificName": "Epilobium palustre L.",
+            "gbif:reference": [
+              {
+                "coreid": "3189080",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "l. (1753) in: sp. pl.: 348"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "epilobe des marais",
+                "coreid": "3189080",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "fr"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "épilobe des marais"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "épilobe palustre"
+              },
+              {
+                "dwc:countrycode": "dk",
+                "dwc:country": "denmark",
+                "dwc:vernacularname": "kær-dueurt",
+                "coreid": "3189080",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "da"
+              },
+              {
+                "dwc:countrycode": "se",
+                "dwc:country": "sweden",
+                "dwc:vernacularname": "kärrdunört",
+                "coreid": "3189080",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "sv"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:source": "korean peninsula flora",
+                "dwc:vernacularname": "버들바늘꽃"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "marsh willowherb"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "marsh willowherb",
+                "coreid": "3189080",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "en"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "marsh willowherb"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "marsh willowherb"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "marsh willowherb"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "marsh willowweed"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "moerasbasterdwederik",
+                "coreid": "3189080",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "nl"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "nl",
+                "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                "dwc:vernacularname": "moerasbasterdwederik"
+              },
+              {
+                "dwc:countrycode": "no",
+                "dwc:country": "norway",
+                "dwc:vernacularname": "myrmjølke",
+                "coreid": "3189080",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "nb"
+              },
+              {
+                "dwc:countrycode": "no",
+                "dwc:country": "norway",
+                "dwc:vernacularname": "myrmjølke",
+                "coreid": "3189080",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "nn"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "sumpf-weidenröschen"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "sumpfweidenröschen",
+                "coreid": "3189080",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "sumpf-weidenröschen"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "sumpf-weidenröschen",
+                "coreid": "3189080",
+                "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "de",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "sumpf-weidenröschen"
+              },
+              {
+                "dwc:countrycode": "fi",
+                "dwc:country": "finland",
+                "dwc:vernacularname": "suohorsma",
+                "coreid": "3189080",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "fi"
+              },
+              {
+                "dwc:countrycode": "fi",
+                "dwc:country": "finland",
+                "dwc:vernacularname": "suohorsma",
+                "coreid": "3189080",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "sv"
+              },
+              {
+                "coreid": "3189080",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "swamp willowherb"
+              }
+            ]
+          },
+          "data": {
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+                "dcterms:identifier": "18800BC2C2044E729719E4477C34621A",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dcterms:modified": "2015-09-05 04:50:53.0",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|13915",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "palustre",
+                "dwc:scientificNameAuthorship": "L.",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+                "dwc:identificationID": "SONNERAT|7049677",
+                "dwc:genus": "Epilobium",
+                "dwc:scientificName": "Epilobium palustre L.",
+                "dwc:higherClassification": "Epilobium;Onagraceae",
+                "dwc:family": "Onagraceae"
+              }
+            ],
+            "dwc:collectionCode": "P",
+            "dwc:scientificNameAuthorship": "L.",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+            "dwc:preparations": "hb",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:institutionCode": "MNHN",
+            "dwc:genus": "Epilobium",
+            "dwc:scientificName": "Epilobium palustre L.",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+            "dwc:family": "Onagraceae",
+            "dwc:catalogNumber": "P04723187"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187",
+          "dqs": 0.057971014492753624,
+          "collectioncode": "p",
+          "canonicalname": "epilobium palustre",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_canonicalname_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723187"
+          ],
+          "genus": "epilobium",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "4f0c9922-42fe-4468-9d8d-22a7380ad9ac",
+        "_score": 1,
+        "_source": {
+          "family": "lythraceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p05141653",
+          "taxonrank": "species",
+          "specificepithet": "persistens",
+          "uuid": "4f0c9922-42fe-4468-9d8d-22a7380ad9ac",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "85b5dbec-faa1-4942-b6ab-48670b6d8c79",
+            "5885037a-ee1e-442e-af52-ff53130799c1"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "etag": "e8cfcb63799b438fb179da5de931ed8899c148e4",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "7286179",
+          "scientificname": "cuphea persistens koehne",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "4f0c9922-42fe-4468-9d8d-22a7380ad9ac",
+            "dwc:order": "myrtales",
+            "flag_dwc_phylum_added": true,
+            "dwc:scientificNameAuthorship": "koehne",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "cuphea nudicostata",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cuphea_nudicostata_2.jpg",
+                "coreid": "7675310",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/05/cuphea_nudicostata_2.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "cuphea nudicostata at the university of california botanical garden, berkeley, california",
+                "dcterms:creator": "stan shebs",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "cc-by-sa-2.5",
+                "dcterms:title": "zigarettenblümchen (cuphea ignea)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cuphea_ignea.jpg",
+                "coreid": "7675310",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/4/42/cuphea_ignea.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "cuphea ignea",
+                "dcterms:creator": "density",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "e8cfcb63799b438fb179da5de931ed8899c148e4",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Cuphea",
+            "dwc:family": "Lythraceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "flag_gbif_reference_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "85b5dbec-faa1-4942-b6ab-48670b6d8c79",
+                "5885037a-ee1e-442e-af52-ff53130799c1"
+              ]
+            },
+            "gbif:canonicalname": "cuphea persistens",
+            "flag_gbif_canonicalname_added": true,
+            "gbif:genericname": "cuphea",
+            "flag_dwc_multimedia_added": true,
+            "dwc:specificepithet": "persistens",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "7675310",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P05141653",
+            "dwc:taxonid": "7286179",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+                "dcterms:identifier": "D48A3900CDA048B5A32C22D52A03D606",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|3837460",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "persistens",
+                "dwc:identificationID": "SONNERAT|6972133",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+                "dwc:scientificNameAuthorship": "Koehne",
+                "dwc:genus": "Cuphea",
+                "dwc:scientificName": "Cuphea persistens Koehne",
+                "dwc:higherClassification": "Cuphea;Lythraceae",
+                "dwc:family": "Lythraceae"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "dcterms:modified": "2015-09-05 02:49:32.0",
+            "dwc:scientificName": "Cuphea persistens Koehne",
+            "gbif:reference": [
+              {
+                "coreid": "7286179",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "koehne (1888) in: verh. bot. ver. brand. 30: 277"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "7675310",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "köcherblümchen"
+              }
+            ]
+          },
+          "data": {
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+                "dcterms:identifier": "D48A3900CDA048B5A32C22D52A03D606",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dcterms:modified": "2015-09-05 02:49:32.0",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|3837460",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "persistens",
+                "dwc:scientificNameAuthorship": "Koehne",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+                "dwc:identificationID": "SONNERAT|6972133",
+                "dwc:genus": "Cuphea",
+                "dwc:scientificName": "Cuphea persistens Koehne",
+                "dwc:higherClassification": "Cuphea;Lythraceae",
+                "dwc:family": "Lythraceae"
+              }
+            ],
+            "dwc:collectionCode": "P",
+            "dwc:scientificNameAuthorship": "Koehne",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+            "dwc:preparations": "hb",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:institutionCode": "MNHN",
+            "dwc:genus": "Cuphea",
+            "dwc:scientificName": "Cuphea persistens Koehne",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+            "dwc:family": "Lythraceae",
+            "dwc:catalogNumber": "P05141653"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653",
+          "dqs": 0.043478260869565216,
+          "collectioncode": "p",
+          "canonicalname": "cuphea persistens",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_phylum_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05141653"
+          ],
+          "genus": "cuphea",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "819767d0-7f08-4c99-b7e9-21c868551bb8",
+        "_score": 1,
+        "_source": {
+          "family": "melastomataceae",
+          "recordset": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "dqs": 0.30434782608695654,
+          "stateprovince": "cusco",
+          "phylum": "tracheophyta",
+          "catalognumber": "2450720",
+          "startdayofyear": 341,
+          "taxonrank": "species",
+          "specificepithet": "jamesonii",
+          "continent": "south america",
+          "uuid": "819767d0-7f08-4c99-b7e9-21c868551bb8",
+          "countrycode": "per",
+          "basisofrecord": "preservedspecimen",
+          "collector": "j. l. luteyn",
+          "institutioncode": "ny",
+          "mediarecords": [
+            "f288e324-1676-4e39-91d5-3616fc160387"
+          ],
+          "datemodified": "2023-01-11T05:22:15.568523+00:00",
+          "datecollected": "1978-12-07T00:00:00+00:00",
+          "etag": "b769baf3a5ee9d7cda7a2ff1303edce52f19dd5d",
+          "recordnumber": "6387",
+          "hasImage": true,
+          "kingdom": "plantae",
+          "collectionid": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+          "taxonid": "3862373",
+          "scientificname": "brachyotum jamesonii triana",
+          "indexData": {
+            "dwc:startDayOfYear": "341",
+            "dwc:specificEpithet": "jamesonii",
+            "idigbio:dateModified": "2023-01-11T05:22:15.568523",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "J. L. Luteyn",
+            "idigbio:uuid": "819767d0-7f08-4c99-b7e9-21c868551bb8",
+            "dwc:order": "Myrtales",
+            "dwc:habitat": "Common along roadside.",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "Triana",
+            "idigbio:recordIds": [
+              "36d35b23-113e-4633-90ec-19d265a3b5f6\\3db45f4b-eb8a-4be5-9884-343ec0aa804d"
+            ],
+            "dwc:occurrenceID": "3db45f4b-eb8a-4be5-9884-343ec0aa804d",
+            "dcterms:language": "en",
+            "dwc:verbatimElevation": "10794-11483 ft",
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "dcterms:rightsHolder": "The New York Botanical Garden",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "dwc:stateProvince": "Cusco",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:eventDate": "1978-12-07",
+            "dwc:collectionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:country": "Peru",
+            "idigbio:etag": "b769baf3a5ee9d7cda7a2ff1303edce52f19dd5d",
+            "dwc:collectionCode": "NY",
+            "id": "3db45f4b-eb8a-4be5-9884-343ec0aa804d",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Brachyotum",
+            "dwc:continent": "South America",
+            "dwc:preparations": "sheet",
+            "idigbio:isocountrycode": "per",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_phylum_replaced": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "f288e324-1676-4e39-91d5-3616fc160387"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "gbif:canonicalname": "brachyotum jamesonii",
+            "dwc:phylum": "tracheophyta",
+            "dcterms:references": "http://sweetgum.nybg.org/science/vh/specimen_details.php?irn=2640883",
+            "gbif:genericname": "brachyotum",
+            "dwc:locality": "Region of Acanacu and the Cordillera of Tres Cruces. Ceja de la Montana.",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:institutionCode": "NY",
+            "dwc:taxonRank": "Species",
+            "dwc:parentnameusageid": "3861888",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "2450720",
+            "dwc:taxonid": "3862373",
+            "dwc:nomenclaturalCode": "ICN",
+            "dcterms:type": "PhysicalObject",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:endDayOfYear": "341",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "dwc:datasetName": "Vascular plants",
+            "dwc:verbatimEventDate": "07 Dec 1978",
+            "dwc:recordNumber": "6387",
+            "dwc:family": "Melastomataceae",
+            "flag_dwc_class_added": true,
+            "flag_taxon_match_failed": true,
+            "dcterms:modified": "T12:20+0400",
+            "dwc:scientificName": "Brachyotum jamesonii Triana",
+            "gbif:reference": [
+              {
+                "coreid": "3862373",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "triana (1871) in: trans. l. soc. 28: (1871) 49"
+              },
+              {
+                "coreid": "3862373",
+                "dcterms:source": "the plant list with literature",
+                "dcterms:bibliographiccitation": "triana j (1872) i. les mélastomacées. transactions of the linnean society of london 28(1): 1-188. doi: 10.1111/j.1096-3642.1871.tb00222.x."
+              }
+            ]
+          },
+          "hasMedia": true,
+          "data": {
+            "dwc:startDayOfYear": "341",
+            "dwc:specificEpithet": "jamesonii",
+            "dwc:kingdom": "Plantae",
+            "dwc:recordedBy": "J. L. Luteyn",
+            "dwc:order": "Myrtales",
+            "dwc:habitat": "Common along roadside.",
+            "dwc:scientificNameAuthorship": "Triana",
+            "dwc:occurrenceID": "3db45f4b-eb8a-4be5-9884-343ec0aa804d",
+            "dcterms:language": "en",
+            "dwc:verbatimElevation": "10794-11483 ft",
+            "id": "3db45f4b-eb8a-4be5-9884-343ec0aa804d",
+            "dwc:stateProvince": "Cusco",
+            "dwc:eventDate": "1978-12-07",
+            "dwc:collectionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:country": "Peru",
+            "dwc:collectionCode": "NY",
+            "dcterms:rightsHolder": "The New York Botanical Garden",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:genus": "Brachyotum",
+            "dwc:continent": "South America",
+            "dwc:preparations": "sheet",
+            "dwc:phylum": "Magnoliophyta",
+            "dcterms:references": "http://sweetgum.nybg.org/science/vh/specimen_details.php?irn=2640883",
+            "dwc:locality": "Region of Acanacu and the Cordillera of Tres Cruces. Ceja de la Montana.",
+            "dwc:institutionID": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+            "dwc:institutionCode": "NY",
+            "dwc:taxonRank": "Species",
+            "dwc:catalogNumber": "2450720",
+            "dwc:nomenclaturalCode": "ICN",
+            "dcterms:type": "PhysicalObject",
+            "dwc:endDayOfYear": "341",
+            "dwc:datasetName": "Vascular plants",
+            "dwc:verbatimEventDate": "07 Dec 1978",
+            "dwc:recordNumber": "6387",
+            "dwc:family": "Melastomataceae",
+            "dcterms:modified": "T12:20+0400",
+            "dwc:scientificName": "Brachyotum jamesonii Triana"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "3db45f4b-eb8a-4be5-9884-343ec0aa804d",
+          "institutionid": "http://biocol.org/urn:lsid:biocol.org:col:15556",
+          "country": "peru",
+          "locality": "region of acanacu and the cordillera of tres cruces. ceja de la montana.",
+          "collectioncode": "ny",
+          "canonicalname": "brachyotum jamesonii",
+          "eventdate": "1978-12-07",
+          "flags": [
+            "gbif_reference_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_taxon_corrected",
+            "dwc_parentnameusageid_added",
+            "dwc_phylum_replaced",
+            "dwc_taxonid_added",
+            "idigbio_isocountrycode_added",
+            "gbif_canonicalname_added",
+            "dwc_class_added",
+            "taxon_match_failed"
+          ],
+          "verbatimeventdate": "07 dec 1978",
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "36d35b23-113e-4633-90ec-19d265a3b5f6\\3db45f4b-eb8a-4be5-9884-343ec0aa804d"
+          ],
+          "genus": "brachyotum",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "4b9a0a6b-03af-47af-9021-8603a5039411",
+        "_score": 1,
+        "_source": {
+          "family": "onagraceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p04723645",
+          "taxonrank": "species",
+          "specificepithet": "obscurum",
+          "uuid": "4b9a0a6b-03af-47af-9021-8603a5039411",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "ef72c93c-7c70-4121-884a-33a529126951",
+            "72f99cdc-fe99-46d4-bdf3-86824c9d1b93"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "etag": "331a8999d33c7031123af4d5e1bfd33a49143ebb",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "3189152",
+          "scientificname": "epilobium obscurum schreb.",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "4b9a0a6b-03af-47af-9021-8603a5039411",
+            "gbif:canonicalname": "epilobium obscurum",
+            "flag_gbif_reference_added": true,
+            "dwc:scientificNameAuthorship": "Schreb.",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "idigbio:etag": "331a8999d33c7031123af4d5e1bfd33a49143ebb",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Epilobium",
+            "dwc:family": "Onagraceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "ef72c93c-7c70-4121-884a-33a529126951",
+                "72f99cdc-fe99-46d4-bdf3-86824c9d1b93"
+              ]
+            },
+            "dwc:order": "myrtales",
+            "flag_gbif_canonicalname_added": true,
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "epilobium",
+            "dwc:specificepithet": "obscurum",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189067",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P04723645",
+            "dwc:taxonid": "3189152",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+                "dcterms:identifier": "955DA181A90E4F0CAA8E9BC94CEC6615",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|13209",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "obscurum",
+                "dwc:identificationID": "SONNERAT|7047488",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+                "dwc:scientificNameAuthorship": "Schreb.",
+                "dwc:genus": "Epilobium",
+                "dwc:scientificName": "Epilobium obscurum Schreb.",
+                "dwc:higherClassification": "Epilobium;Onagraceae",
+                "dwc:family": "Onagraceae"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "dcterms:modified": "2015-09-05 04:48:28.0",
+            "dwc:scientificName": "Epilobium obscurum Schreb.",
+            "gbif:reference": [
+              {
+                "coreid": "3189152",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "schreb. (1771) in: spic. fl. lips.: 147"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "donkergroene basterdwederik",
+                "coreid": "3189152",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "nl"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "nl",
+                "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                "dwc:vernacularname": "donkergroene basterdwederik"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "dunkelgrünes weidenröschen"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "dunkelgrünes weidenröschen",
+                "coreid": "3189152",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "de"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "dunkelgrünes weidenröschen",
+                "coreid": "3189152",
+                "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "de",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "dunkelgrünes weidenröschen"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "dwarf willowherb"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "dwarf willowherb"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "épilobe foncé"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "epilobe vert foncé",
+                "coreid": "3189152",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "fr"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "épîlobe vert foncé"
+              },
+              {
+                "dwc:countrycode": "se",
+                "dwc:country": "sweden",
+                "dwc:vernacularname": "mörk dunört",
+                "coreid": "3189152",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "sv"
+              },
+              {
+                "dwc:countrycode": "no",
+                "dwc:country": "norway",
+                "dwc:vernacularname": "mørkmjølke",
+                "coreid": "3189152",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "nb"
+              },
+              {
+                "dwc:countrycode": "no",
+                "dwc:country": "norway",
+                "dwc:vernacularname": "mørkmjølke",
+                "coreid": "3189152",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "nn"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "no",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "mørkmjølke"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "obscure willowherb"
+              },
+              {
+                "dwc:countrycode": "dk",
+                "dwc:country": "denmark",
+                "dwc:vernacularname": "ris-dueurt",
+                "coreid": "3189152",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "da"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "short-fruited willowherb",
+                "coreid": "3189152",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "en"
+              },
+              {
+                "dwc:countrycode": "fi",
+                "dwc:country": "finland",
+                "dwc:vernacularname": "tummahorsma",
+                "coreid": "3189152",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "fi"
+              },
+              {
+                "dwc:countrycode": "fi",
+                "dwc:country": "finland",
+                "dwc:vernacularname": "tummahorsma",
+                "coreid": "3189152",
+                "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                "dcterms:language": "sv"
+              },
+              {
+                "coreid": "3189152",
+                "dcterms:language": "lv",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "tumšzala kazroze"
+              }
+            ]
+          },
+          "data": {
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+                "dcterms:identifier": "955DA181A90E4F0CAA8E9BC94CEC6615",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dcterms:modified": "2015-09-05 04:48:28.0",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|13209",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "obscurum",
+                "dwc:scientificNameAuthorship": "Schreb.",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+                "dwc:identificationID": "SONNERAT|7047488",
+                "dwc:genus": "Epilobium",
+                "dwc:scientificName": "Epilobium obscurum Schreb.",
+                "dwc:higherClassification": "Epilobium;Onagraceae",
+                "dwc:family": "Onagraceae"
+              }
+            ],
+            "dwc:collectionCode": "P",
+            "dwc:scientificNameAuthorship": "Schreb.",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+            "dwc:preparations": "hb",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:institutionCode": "MNHN",
+            "dwc:genus": "Epilobium",
+            "dwc:scientificName": "Epilobium obscurum Schreb.",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+            "dwc:family": "Onagraceae",
+            "dwc:catalogNumber": "P04723645"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645",
+          "dqs": 0.07246376811594203,
+          "collectioncode": "p",
+          "canonicalname": "epilobium obscurum",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_canonicalname_added",
+            "dwc_phylum_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p04723645"
+          ],
+          "genus": "epilobium",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "81d2d7c2-9e21-44e6-a1f3-f481b9cc8118",
+        "_score": 1,
+        "_source": {
+          "family": "lythraceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p05114499",
+          "taxonrank": "species",
+          "specificepithet": "dactylophora",
+          "uuid": "81d2d7c2-9e21-44e6-a1f3-f481b9cc8118",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "2cfbb17d-ef28-4ac4-ba43-961b58574601",
+            "5ee584c6-5c0f-4f1a-8dc2-ee40e7182c08"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "etag": "1b544db8a3362b600cbfd727011df1245b004dae",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "3989504",
+          "scientificname": "cuphea dactylophora koehne",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "81d2d7c2-9e21-44e6-a1f3-f481b9cc8118",
+            "dwc:order": "myrtales",
+            "flag_dwc_phylum_added": true,
+            "dwc:scientificNameAuthorship": "koehne",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "cuphea nudicostata",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cuphea_nudicostata_2.jpg",
+                "coreid": "7675310",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/05/cuphea_nudicostata_2.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "cuphea nudicostata at the university of california botanical garden, berkeley, california",
+                "dcterms:creator": "stan shebs",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "cc-by-sa-2.5",
+                "dcterms:title": "zigarettenblümchen (cuphea ignea)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:cuphea_ignea.jpg",
+                "coreid": "7675310",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/4/42/cuphea_ignea.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "cuphea ignea",
+                "dcterms:creator": "density",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "1b544db8a3362b600cbfd727011df1245b004dae",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:genus": "Cuphea",
+            "dwc:family": "Lythraceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "flag_gbif_reference_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "2cfbb17d-ef28-4ac4-ba43-961b58574601",
+                "5ee584c6-5c0f-4f1a-8dc2-ee40e7182c08"
+              ]
+            },
+            "gbif:canonicalname": "cuphea dactylophora",
+            "flag_gbif_canonicalname_added": true,
+            "gbif:genericname": "cuphea",
+            "flag_dwc_multimedia_added": true,
+            "dwc:specificepithet": "dactylophora",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "7675310",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P05114499",
+            "dwc:taxonid": "3989504",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+                "dcterms:identifier": "85B9EA1C0F8842D09C8FBDA36216D3DB",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|3837227",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "dactylophora",
+                "dwc:identificationID": "SONNERAT|6950044",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+                "dwc:scientificNameAuthorship": "Koehne",
+                "dwc:genus": "Cuphea",
+                "dwc:scientificName": "Cuphea dactylophora Koehne",
+                "dwc:higherClassification": "Cuphea;Lythraceae",
+                "dwc:family": "Lythraceae"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "dcterms:modified": "2015-09-05 01:43:21.0",
+            "dwc:scientificName": "Cuphea dactylophora Koehne",
+            "gbif:reference": [
+              {
+                "coreid": "3989504",
+                "dcterms:source": "brazilian flora 2020 project - projeto flora do brasil 2020",
+                "dcterms:bibliographiccitation": "flora brasiliensis,13(2): 266,1877"
+              },
+              {
+                "coreid": "3989504",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "koehne (1877) in: mart., fl. bras. 13(2): 266"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "7675310",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "köcherblümchen"
+              }
+            ]
+          },
+          "data": {
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+                "dcterms:identifier": "85B9EA1C0F8842D09C8FBDA36216D3DB",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dcterms:modified": "2015-09-05 01:43:21.0",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|3837227",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "dactylophora",
+                "dwc:scientificNameAuthorship": "Koehne",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+                "dwc:identificationID": "SONNERAT|6950044",
+                "dwc:genus": "Cuphea",
+                "dwc:scientificName": "Cuphea dactylophora Koehne",
+                "dwc:higherClassification": "Cuphea;Lythraceae",
+                "dwc:family": "Lythraceae"
+              }
+            ],
+            "dwc:collectionCode": "P",
+            "dwc:scientificNameAuthorship": "Koehne",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+            "dwc:preparations": "hb",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:institutionCode": "MNHN",
+            "dwc:genus": "Cuphea",
+            "dwc:scientificName": "Cuphea dactylophora Koehne",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+            "dwc:family": "Lythraceae",
+            "dwc:catalogNumber": "P05114499"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499",
+          "dqs": 0.043478260869565216,
+          "collectioncode": "p",
+          "canonicalname": "cuphea dactylophora",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_phylum_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_reference_added",
+            "gbif_canonicalname_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "taxonomicstatus": "accepted",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05114499"
+          ],
+          "genus": "cuphea",
+          "order": "myrtales",
+          "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "records",
+        "_id": "5139b629-a01d-4a3c-8bf6-d596fd6c1ed1",
+        "_score": 1,
+        "_source": {
+          "family": "melastomataceae",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "phylum": "tracheophyta",
+          "catalognumber": "p05228101",
+          "taxonrank": "species",
+          "specificepithet": "longifolia",
+          "uuid": "5139b629-a01d-4a3c-8bf6-d596fd6c1ed1",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "mnhn",
+          "mediarecords": [
+            "c9089b3e-0eab-46ea-91b0-ebe9c705f81b",
+            "f68e892a-2dc6-4da1-9d9b-606b3183a11c"
+          ],
+          "datemodified": "2021-04-19T22:06:14.550973+00:00",
+          "etag": "c190c35e6fee5d79e12823c81ed709867363cd9c",
+          "hasMedia": true,
+          "hasImage": true,
+          "kingdom": "plantae",
+          "taxonid": "8344091",
+          "scientificname": "tibouchina longifolia (vahl) baill.",
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "idigbio:dateModified": "2021-04-19T22:06:14.550973",
+            "dwc:kingdom": "plantae",
+            "idigbio:uuid": "5139b629-a01d-4a3c-8bf6-d596fd6c1ed1",
+            "dwc:order": "myrtales",
+            "flag_dwc_phylum_added": true,
+            "dwc:scientificNameAuthorship": "baill. ex cogn. (vahl)",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101"
+            ],
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "flag_gbif_genericname_added": true,
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dwc:datasetid": "66dd0960-2d7d-46ee-a491-87b9adcfe7b1",
+            "flag_dwc_scientificnameauthorship_replaced": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "tibouchina semidecandra at strybing arboretum, san francisco",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:tibouchina_semidecandra.jpg",
+                "coreid": "3188517",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/9/9c/tibouchina_semidecandra.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: photo of tibouchina semidecandra at the san francisco botanical garden",
+                "dcterms:creator": "stan shebs",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "idigbio:etag": "c190c35e6fee5d79e12823c81ed709867363cd9c",
+            "dwc:collectionCode": "P",
+            "flag_gbif_vernacularname_added": true,
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:taxonomicstatus": "doubtful",
+            "dwc:genus": "Tibouchina",
+            "dwc:family": "Melastomataceae",
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_dwc_taxonid_added": true,
+            "idigbio:siblings": {
+              "mediarecord": [
+                "c9089b3e-0eab-46ea-91b0-ebe9c705f81b",
+                "f68e892a-2dc6-4da1-9d9b-606b3183a11c"
+              ]
+            },
+            "dwc:taxonremarks": "possible variant of tibouchina longifolia (m. vahl) baillon",
+            "gbif:canonicalname": "tibouchina longifolia",
+            "flag_gbif_canonicalname_added": true,
+            "gbif:genericname": "tibouchina",
+            "flag_dwc_multimedia_added": true,
+            "dwc:specificepithet": "longifolia",
+            "dwc:institutionCode": "MNHN",
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3188517",
+            "dwc:class": "magnoliopsida",
+            "dwc:catalogNumber": "P05228101",
+            "dwc:taxonid": "8344091",
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+                "dcterms:identifier": "E1B9CEAD2B4D4430AFC27E60B41E5661",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dwc:taxonrank": "species",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|3854128",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "longifolia",
+                "dwc:identificationID": "SONNERAT|6844346",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+                "dwc:scientificNameAuthorship": "(Vahl) Baill.",
+                "dwc:genus": "Tibouchina",
+                "dwc:scientificName": "Tibouchina longifolia (Vahl) Baill.",
+                "dwc:higherClassification": "Tibouchina;Melastomataceae",
+                "dwc:family": "Melastomataceae"
+              }
+            ],
+            "flag_dwc_order_added": true,
+            "flag_dwc_taxonremarks_added": true,
+            "dwc:phylum": "tracheophyta",
+            "dwc:preparations": "hb",
+            "flag_dwc_class_added": true,
+            "dcterms:modified": "2015-09-04 21:24:06.0",
+            "dwc:scientificName": "Tibouchina longifolia (Vahl) Baill.",
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "8344091",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "longleaf glorytree"
+              }
+            ]
+          },
+          "data": {
+            "gbif:Identifier": [
+              {
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+                "dcterms:identifier": "E1B9CEAD2B4D4430AFC27E60B41E5661",
+                "dcterms:subject": "e-recolnat"
+              }
+            ],
+            "dcterms:modified": "2015-09-04 21:24:06.0",
+            "dwc:Identification": [
+              {
+                "dwc:taxonID": "SONNERAT|3854128",
+                "dwc:identificationRemarks": "operation de numerisation 2010-2012",
+                "dwc:specificEpithet": "longifolia",
+                "dwc:scientificNameAuthorship": "(Vahl) Baill.",
+                "dwc:identificationVerificationStatus": "1",
+                "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+                "dwc:identificationID": "SONNERAT|6844346",
+                "dwc:genus": "Tibouchina",
+                "dwc:scientificName": "Tibouchina longifolia (Vahl) Baill.",
+                "dwc:higherClassification": "Tibouchina;Melastomataceae",
+                "dwc:family": "Melastomataceae"
+              }
+            ],
+            "dwc:collectionCode": "P",
+            "dwc:scientificNameAuthorship": "(Vahl) Baill.",
+            "dwc:occurrenceID": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+            "dwc:preparations": "hb",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:institutionCode": "MNHN",
+            "dwc:genus": "Tibouchina",
+            "dwc:scientificName": "Tibouchina longifolia (Vahl) Baill.",
+            "id": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+            "dwc:family": "Melastomataceae",
+            "dwc:catalogNumber": "P05228101"
+          },
+          "class": "magnoliopsida",
+          "occurrenceid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101",
+          "dqs": 0.043478260869565216,
+          "collectioncode": "p",
+          "canonicalname": "tibouchina longifolia",
+          "flags": [
+            "dwc_taxonrank_added",
+            "dwc_phylum_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "gbif_genericname_added",
+            "dwc_datasetid_added",
+            "dwc_scientificnameauthorship_replaced",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "dwc_taxonid_added",
+            "gbif_canonicalname_added",
+            "dwc_multimedia_added",
+            "gbif_taxon_corrected",
+            "dwc_order_added",
+            "dwc_taxonremarks_added",
+            "dwc_class_added",
+            "dwc_kingdom_added"
+          ],
+          "taxonomicstatus": "doubtful",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\http://coldb.mnhn.fr/catalognumber/mnhn/p/p05228101"
+          ],
+          "genus": "tibouchina",
+          "order": "myrtales",
+          "datasetid": "66dd0960-2d7d-46ee-a491-87b9adcfe7b1"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_genus": {
+      "doc_count_error_upper_bound": 2002,
+      "sum_other_doc_count": 937446,
+      "buckets": [
+        {
+          "key": "miconia",
+          "doc_count": 151140
+        },
+        {
+          "key": "epilobium",
+          "doc_count": 142645
+        },
+        {
+          "key": "oenothera",
+          "doc_count": 118465
+        },
+        {
+          "key": "eugenia",
+          "doc_count": 100556
+        },
+        {
+          "key": "ludwigia",
+          "doc_count": 92024
+        },
+        {
+          "key": "myrcia",
+          "doc_count": 72481
+        },
+        {
+          "key": "cuphea",
+          "doc_count": 64340
+        },
+        {
+          "key": "eucalyptus",
+          "doc_count": 51552
+        },
+        {
+          "key": "tibouchina",
+          "doc_count": 49705
+        },
+        {
+          "key": "syzygium",
+          "doc_count": 39970
+        }
+      ]
+    }
+  }
+}
