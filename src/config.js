@@ -7,7 +7,7 @@
 // Use a system environment variable named NODE_ENV, default to "development" if unset.
 var env = process.env.NODE_ENV || "development";
 
-var indexAlias = "fuzzy";
+var indexAlias = "idigbio";
 if(env === "beta") {
   indexAlias = "beta";
 }
@@ -28,28 +28,28 @@ var config = {
 
   port: 19196,
   search: {
-    server: process.env.NODE_ENV ==='beta' ? "http://10.13.44.161:9200" : "http://10.13.45.186:9200",
+    server: process.env.NODE_ENV ==='beta' ? "http://c20node1.acis.ufl.edu:9200" : "http://esnodec1.acis.ufl.edu:9200",
     index: process.env.SEARCH_INDEX || indexAlias,
     statsIndex: process.env.STATS_INDEX || "stats",
   },
   elasticsearch: {
     hosts: process.env.NODE_ENV ==='prod' ? [
-      "http://10.13.45.186:9200",
-      "http://10.13.45.191:9200",
-      "http://10.13.45.192:9200"
+      "http://esnodec1.acis.ufl.edu:9200",
+      "http://esnodec2.acis.ufl.edu:9200",
+      "http://esnodec3.acis.ufl.edu:9200"
     ] : [
-      "http://10.13.44.161:9200",
-      "http://10.13.44.162:9200",
-      "http://10.13.44.163:9200",
-      "http://10.13.44.164:9200",
-      "http://10.13.44.165:9200",
-      "http://10.13.44.166:9200",
-      "http://10.13.44.167:9200",
-      "http://10.13.44.168:9200",
-      "http://10.13.44.169:9200",
-      "http://10.13.44.170:9200",
-      "http://10.13.44.171:9200",
-      "http://10.13.44.172:9200",
+      "http://c20node1.acis.ufl.edu:9200",
+      "http://c20node2.acis.ufl.edu:9200",
+      "http://c20node3.acis.ufl.edu:9200",
+      "http://c20node4.acis.ufl.edu:9200",
+      "http://c20node5.acis.ufl.edu:9200",
+      "http://c20node6.acis.ufl.edu:9200",
+      "http://c20node7.acis.ufl.edu:9200",
+      "http://c20node8.acis.ufl.edu:9200",
+      "http://c20node9.acis.ufl.edu:9200",
+      "http://c20node10.acis.ufl.edu:9200",
+      "http://c20node11.acis.ufl.edu:9200",
+      "http://c20node12.acis.ufl.edu:9200",
     ],
     apiVersion: "2.4",
     sniffOnStart: false,
@@ -62,8 +62,8 @@ var config = {
   indexterms: {},
   redis: {
     host: {
-      prod: "10.13.45.208",
-      beta: "10.13.45.208",
+      prod: "idb-redis10-prod.acis.ufl.edu",
+      beta: "idb-redis11-beta.acis.ufl.edu",
     }[env] || "localhost",
     db: 0,
     port: 6379,
