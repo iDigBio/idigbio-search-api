@@ -1,0 +1,31 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"match\":{\"scientificname\":{\"query\":\"nullius nullius\",\"operator\":\"and\",\"fuzziness\":0}}}]}}},\"aggs\":{\"rs\":{\"terms\":{\"field\":\"recordset\",\"size\":10000}},\"max_dm\":{\"max\":{\"field\":\"datemodified\"}},\"unique_scientific_names\":{\"terms\":{\"field\":\"scientificname\",\"size\":10}}}},\"sort\":[\"dqs:desc\"],\"size\":10}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 0,
+      "max_score": null,
+      "hits": []
+    },
+    "aggregations": {
+      "rs": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": []
+      },
+      "unique_scientific_names": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": []
+      },
+      "max_dm": {
+        "value": null
+      }
+    }
+  }
+}

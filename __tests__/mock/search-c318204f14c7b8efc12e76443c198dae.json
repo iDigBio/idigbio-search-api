@@ -1,0 +1,1902 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"term\":{\"stateprovince\":\"florida\"}},{\"missing\":{\"field\":\"scientificname\"}},{\"exists\":{\"field\":\"geopoint\"}}]}}},\"aggs\":{\"rs\":{\"terms\":{\"field\":\"recordset\",\"size\":10000}},\"gh\":{\"geohash_grid\":{\"field\":\"geopoint\",\"precision\":3,\"size\":\"500\"}},\"max_dm\":{\"max\":{\"field\":\"datemodified\"}},\"max_lat\":{\"max\":{\"field\":\"geopoint.lat\"}},\"max_lon\":{\"max\":{\"field\":\"geopoint.lon\"}},\"min_lat\":{\"min\":{\"field\":\"geopoint.lat\"}},\"min_lon\":{\"min\":{\"field\":\"geopoint.lon\"}}}}}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 13739,
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "f957cf9e-c883-414c-8cb1-f67002036ae2",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "florida",
+            "county": "okeechobee",
+            "startdayofyear": 220,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "f957cf9e-c883-414c-8cb1-f67002036ae2",
+            "countrycode": "usa",
+            "locality": "bassinger",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-08T00:00:00+00:00",
+            "etag": "c12c60a37b4a05671b66fb3cd778e5d3d9dca916",
+            "recordnumber": "5110",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "220",
+              "dwc:county": "Okeechobee",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "f957cf9e-c883-414c-8cb1-f67002036ae2",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031223",
+              "idigbio:recordIds": [
+                "urn:uuid:aef2ae89-a941-446c-bab3-546d446b16a7",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031223",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\aef2ae89-a941-446c-bab3-546d446b16a7"
+              ],
+              "dwc:occurrenceID": "aef2ae89-a941-446c-bab3-546d446b16a7",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-08",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:aef2ae89-a941-446c-bab3-546d446b16a7",
+              "idigbio:etag": "c12c60a37b4a05671b66fb3cd778e5d3d9dca916",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031223",
+              "dwc:decimalLatitude": "27.400319",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Bassinger",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-81.016454",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "8-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5110",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "8",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 1000,
+            "data": {
+              "dwc:startDayOfYear": "220",
+              "dwc:county": "Okeechobee",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031223",
+              "dwc:occurrenceID": "aef2ae89-a941-446c-bab3-546d446b16a7",
+              "id": "1031223",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-08",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:aef2ae89-a941-446c-bab3-546d446b16a7",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "27.400319",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:locality": "Bassinger",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-81.016454",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "8-Aug-58",
+              "dwc:recordNumber": "5110",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "8",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "aef2ae89-a941-446c-bab3-546d446b16a7",
+            "country": "united states",
+            "geopoint": {
+              "lat": 27.400319,
+              "lon": -81.016454
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "8-aug-58",
+            "recordids": [
+              "urn:uuid:aef2ae89-a941-446c-bab3-546d446b16a7",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031223",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\aef2ae89-a941-446c-bab3-546d446b16a7"
+            ],
+            "eventdate": "1958-08-08"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "cf3275a4-b879-49bf-9d43-dbdd0045c46e",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "florida",
+            "county": "alachua",
+            "startdayofyear": 230,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "cf3275a4-b879-49bf-9d43-dbdd0045c46e",
+            "countrycode": "usa",
+            "locality": "devil's millhopper, 7 mi. w of gainesville",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-18T00:00:00+00:00",
+            "etag": "cfc7fc48767a59c30f92d0cec51389d0f6f08794",
+            "recordnumber": "5198",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "230",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "cf3275a4-b879-49bf-9d43-dbdd0045c46e",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031311",
+              "idigbio:recordIds": [
+                "urn:uuid:de329040-370e-4ba6-b7f1-b1b2bfef8950",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031311",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\de329040-370e-4ba6-b7f1-b1b2bfef8950"
+              ],
+              "dwc:occurrenceID": "de329040-370e-4ba6-b7f1-b1b2bfef8950",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-18",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:de329040-370e-4ba6-b7f1-b1b2bfef8950",
+              "idigbio:etag": "cfc7fc48767a59c30f92d0cec51389d0f6f08794",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031311",
+              "dwc:decimalLatitude": "29.7128795",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Devil's Millhopper, 7 mi. W of Gainesville",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.3933411",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "18-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5198",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "18",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 1000,
+            "data": {
+              "dwc:startDayOfYear": "230",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031311",
+              "dwc:occurrenceID": "de329040-370e-4ba6-b7f1-b1b2bfef8950",
+              "id": "1031311",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-18",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:de329040-370e-4ba6-b7f1-b1b2bfef8950",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "29.7128795",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:locality": "Devil's Millhopper, 7 mi. W of Gainesville",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.3933411",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "18-Aug-58",
+              "dwc:recordNumber": "5198",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "18",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "de329040-370e-4ba6-b7f1-b1b2bfef8950",
+            "country": "united states",
+            "geopoint": {
+              "lat": 29.7128795,
+              "lon": -82.3933411
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "18-aug-58",
+            "recordids": [
+              "urn:uuid:de329040-370e-4ba6-b7f1-b1b2bfef8950",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031311",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\de329040-370e-4ba6-b7f1-b1b2bfef8950"
+            ],
+            "eventdate": "1958-08-18"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "ce499aeb-c0c3-4298-942d-3f3743f9e8d4",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.21739130434782608,
+            "stateprovince": "florida",
+            "municipality": "gainesville",
+            "county": "alachua",
+            "startdayofyear": 234,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "ce499aeb-c0c3-4298-942d-3f3743f9e8d4",
+            "countrycode": "usa",
+            "locality": "newnan's lake",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-22T00:00:00+00:00",
+            "etag": "1081793fda52d78d75b5095c6cd33104cc3af7d2",
+            "recordnumber": "5373",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "234",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "ce499aeb-c0c3-4298-942d-3f3743f9e8d4",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031486",
+              "idigbio:recordIds": [
+                "urn:uuid:cd4ea538-8b56-4541-b414-d69990501b16",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031486",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\cd4ea538-8b56-4541-b414-d69990501b16"
+              ],
+              "dwc:occurrenceID": "cd4ea538-8b56-4541-b414-d69990501b16",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-22",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:cd4ea538-8b56-4541-b414-d69990501b16",
+              "idigbio:etag": "1081793fda52d78d75b5095c6cd33104cc3af7d2",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031486",
+              "dwc:decimalLatitude": "29.7029645",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "dwc:municipality": "Gainesville",
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Newnan's Lake",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2141266",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "22-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5373",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "3500",
+              "dwc:day": "22",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 3500,
+            "data": {
+              "dwc:startDayOfYear": "234",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031486",
+              "dwc:occurrenceID": "cd4ea538-8b56-4541-b414-d69990501b16",
+              "id": "1031486",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-22",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:cd4ea538-8b56-4541-b414-d69990501b16",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "29.7029645",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:municipality": "Gainesville",
+              "dwc:locality": "Newnan's Lake",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2141266",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "22-Aug-58",
+              "dwc:recordNumber": "5373",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "3500",
+              "dwc:day": "22",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "cd4ea538-8b56-4541-b414-d69990501b16",
+            "country": "united states",
+            "geopoint": {
+              "lat": 29.7029645,
+              "lon": -82.2141266
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "22-aug-58",
+            "recordids": [
+              "urn:uuid:cd4ea538-8b56-4541-b414-d69990501b16",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031486",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\cd4ea538-8b56-4541-b414-d69990501b16"
+            ],
+            "eventdate": "1958-08-22"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "f5e7c902-38ed-4764-a436-dd4b6a6b38e0",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "florida",
+            "county": "highlands",
+            "startdayofyear": 216,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "f5e7c902-38ed-4764-a436-dd4b6a6b38e0",
+            "countrycode": "usa",
+            "locality": "archibold biological station, lake placid",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-04T00:00:00+00:00",
+            "etag": "78b468b68ad4bff4070135b7ed7a2d02deeb36c8",
+            "recordnumber": "5040",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "216",
+              "dwc:county": "Highlands",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "f5e7c902-38ed-4764-a436-dd4b6a6b38e0",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031153",
+              "idigbio:recordIds": [
+                "urn:uuid:eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031153",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\eedde90e-ea7f-4cd6-a379-50a609a2b37a"
+              ],
+              "dwc:occurrenceID": "eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-04",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+              "idigbio:etag": "78b468b68ad4bff4070135b7ed7a2d02deeb36c8",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031153",
+              "dwc:decimalLatitude": "27.182856",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Archibold Biological Station, Lake Placid",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-81.352086",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "4-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5040",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "4",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 1000,
+            "data": {
+              "dwc:startDayOfYear": "216",
+              "dwc:county": "Highlands",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031153",
+              "dwc:occurrenceID": "eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+              "id": "1031153",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-04",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "27.182856",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:locality": "Archibold Biological Station, Lake Placid",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-81.352086",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "4-Aug-58",
+              "dwc:recordNumber": "5040",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "4",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+            "country": "united states",
+            "geopoint": {
+              "lat": 27.182856,
+              "lon": -81.352086
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "4-aug-58",
+            "recordids": [
+              "urn:uuid:eedde90e-ea7f-4cd6-a379-50a609a2b37a",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031153",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\eedde90e-ea7f-4cd6-a379-50a609a2b37a"
+            ],
+            "eventdate": "1958-08-04"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "14fbc06a-a7e0-4e6d-adfe-f1353b715984",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "florida",
+            "county": "alachua",
+            "startdayofyear": 230,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "14fbc06a-a7e0-4e6d-adfe-f1353b715984",
+            "countrycode": "usa",
+            "locality": "oak woods near micanopy",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-18T00:00:00+00:00",
+            "etag": "0e811bf0060303bb8e5709bbc6dc76eab6991db8",
+            "recordnumber": "5313",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "230",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "14fbc06a-a7e0-4e6d-adfe-f1353b715984",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031426",
+              "idigbio:recordIds": [
+                "urn:uuid:f51dc0ea-e8dc-4316-89ce-c53367118194",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031426",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\f51dc0ea-e8dc-4316-89ce-c53367118194"
+              ],
+              "dwc:occurrenceID": "f51dc0ea-e8dc-4316-89ce-c53367118194",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-18",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:f51dc0ea-e8dc-4316-89ce-c53367118194",
+              "idigbio:etag": "0e811bf0060303bb8e5709bbc6dc76eab6991db8",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031426",
+              "dwc:decimalLatitude": "29.5137202",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Oak woods near Micanopy",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2893143",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "18-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5313",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "18",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 1000,
+            "data": {
+              "dwc:startDayOfYear": "230",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031426",
+              "dwc:occurrenceID": "f51dc0ea-e8dc-4316-89ce-c53367118194",
+              "id": "1031426",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-18",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:f51dc0ea-e8dc-4316-89ce-c53367118194",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "29.5137202",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:locality": "Oak woods near Micanopy",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2893143",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "18-Aug-58",
+              "dwc:recordNumber": "5313",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "18",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "f51dc0ea-e8dc-4316-89ce-c53367118194",
+            "country": "united states",
+            "geopoint": {
+              "lat": 29.5137202,
+              "lon": -82.2893143
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "18-aug-58",
+            "recordids": [
+              "urn:uuid:f51dc0ea-e8dc-4316-89ce-c53367118194",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031426",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\f51dc0ea-e8dc-4316-89ce-c53367118194"
+            ],
+            "eventdate": "1958-08-18"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "b2fd558f-d653-46f5-a8c4-bc0bb29f843b",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.21739130434782608,
+            "stateprovince": "florida",
+            "municipality": "gainesville",
+            "county": "alachua",
+            "startdayofyear": 207,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "b2fd558f-d653-46f5-a8c4-bc0bb29f843b",
+            "countrycode": "usa",
+            "locality": "newnan's lake",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-07-26T00:00:00+00:00",
+            "etag": "546757c2d2b7aeca86572c926cf559b1f9e46753",
+            "recordnumber": "4808",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "207",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "b2fd558f-d653-46f5-a8c4-bc0bb29f843b",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1030921",
+              "idigbio:recordIds": [
+                "urn:uuid:5273c97e-c2ee-472d-8dce-142d16ab1072",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1030921",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\5273c97e-c2ee-472d-8dce-142d16ab1072"
+              ],
+              "dwc:occurrenceID": "5273c97e-c2ee-472d-8dce-142d16ab1072",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-07-26",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:5273c97e-c2ee-472d-8dce-142d16ab1072",
+              "idigbio:etag": "546757c2d2b7aeca86572c926cf559b1f9e46753",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1030921",
+              "dwc:decimalLatitude": "29.7029645",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "dwc:municipality": "Gainesville",
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Newnan's Lake",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "7",
+              "dwc:decimalLongitude": "-82.2141266",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "26-Jul-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "4808",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "3500",
+              "dwc:day": "26",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 3500,
+            "data": {
+              "dwc:startDayOfYear": "207",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1030921",
+              "dwc:occurrenceID": "5273c97e-c2ee-472d-8dce-142d16ab1072",
+              "id": "1030921",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-07-26",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:5273c97e-c2ee-472d-8dce-142d16ab1072",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "29.7029645",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:municipality": "Gainesville",
+              "dwc:locality": "Newnan's Lake",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "7",
+              "dwc:decimalLongitude": "-82.2141266",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "26-Jul-58",
+              "dwc:recordNumber": "4808",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "3500",
+              "dwc:day": "26",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "5273c97e-c2ee-472d-8dce-142d16ab1072",
+            "country": "united states",
+            "geopoint": {
+              "lat": 29.7029645,
+              "lon": -82.2141266
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "26-jul-58",
+            "recordids": [
+              "urn:uuid:5273c97e-c2ee-472d-8dce-142d16ab1072",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1030921",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\5273c97e-c2ee-472d-8dce-142d16ab1072"
+            ],
+            "eventdate": "1958-07-26"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "496efe32-b90f-4d67-bf77-cdcec58c1c2d",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "florida",
+            "county": "hendry",
+            "startdayofyear": 219,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "496efe32-b90f-4d67-bf77-cdcec58c1c2d",
+            "countrycode": "usa",
+            "locality": "palmdale, la belle",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-07T00:00:00+00:00",
+            "etag": "d89c823da2c4626f71d6262d18aad11cfd02a9a7",
+            "recordnumber": "5106",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "219",
+              "dwc:county": "Hendry",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "496efe32-b90f-4d67-bf77-cdcec58c1c2d",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031219",
+              "idigbio:recordIds": [
+                "urn:uuid:a069e389-e834-4deb-8efd-1eafb60741ab",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031219",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\a069e389-e834-4deb-8efd-1eafb60741ab"
+              ],
+              "dwc:occurrenceID": "a069e389-e834-4deb-8efd-1eafb60741ab",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-07",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:a069e389-e834-4deb-8efd-1eafb60741ab",
+              "idigbio:etag": "d89c823da2c4626f71d6262d18aad11cfd02a9a7",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031219",
+              "dwc:decimalLatitude": "26.7216937",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Palmdale, La Belle",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-81.4519501",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "7-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5106",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "2000",
+              "dwc:day": "7",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 2000,
+            "data": {
+              "dwc:startDayOfYear": "219",
+              "dwc:county": "Hendry",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031219",
+              "dwc:occurrenceID": "a069e389-e834-4deb-8efd-1eafb60741ab",
+              "id": "1031219",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-07",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:a069e389-e834-4deb-8efd-1eafb60741ab",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "26.7216937",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:locality": "Palmdale, La Belle",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-81.4519501",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "7-Aug-58",
+              "dwc:recordNumber": "5106",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "2000",
+              "dwc:day": "7",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "a069e389-e834-4deb-8efd-1eafb60741ab",
+            "country": "united states",
+            "geopoint": {
+              "lat": 26.7216937,
+              "lon": -81.4519501
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "7-aug-58",
+            "recordids": [
+              "urn:uuid:a069e389-e834-4deb-8efd-1eafb60741ab",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031219",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\a069e389-e834-4deb-8efd-1eafb60741ab"
+            ],
+            "eventdate": "1958-08-07"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "2fe72df0-0d0d-42df-94a7-15e8a649f79c",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "florida",
+            "county": "alachua",
+            "startdayofyear": 230,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "2fe72df0-0d0d-42df-94a7-15e8a649f79c",
+            "countrycode": "usa",
+            "locality": "oak woods near micanopy",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-18T00:00:00+00:00",
+            "etag": "8027d6c32abbcb88e3daca823d5a3a74d13e411d",
+            "recordnumber": "5304",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "230",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "2fe72df0-0d0d-42df-94a7-15e8a649f79c",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031417",
+              "idigbio:recordIds": [
+                "urn:uuid:5a02ef34-9553-44a9-af23-efdaabe3f73b",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031417",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\5a02ef34-9553-44a9-af23-efdaabe3f73b"
+              ],
+              "dwc:occurrenceID": "5a02ef34-9553-44a9-af23-efdaabe3f73b",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-18",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:5a02ef34-9553-44a9-af23-efdaabe3f73b",
+              "idigbio:etag": "8027d6c32abbcb88e3daca823d5a3a74d13e411d",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031417",
+              "dwc:decimalLatitude": "29.5137202",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Oak woods near Micanopy",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2893143",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "18-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5304",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "18",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 1000,
+            "data": {
+              "dwc:startDayOfYear": "230",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031417",
+              "dwc:occurrenceID": "5a02ef34-9553-44a9-af23-efdaabe3f73b",
+              "id": "1031417",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-18",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:5a02ef34-9553-44a9-af23-efdaabe3f73b",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "29.5137202",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:locality": "Oak woods near Micanopy",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2893143",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "18-Aug-58",
+              "dwc:recordNumber": "5304",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "1000",
+              "dwc:day": "18",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "5a02ef34-9553-44a9-af23-efdaabe3f73b",
+            "country": "united states",
+            "geopoint": {
+              "lat": 29.5137202,
+              "lon": -82.2893143
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "18-aug-58",
+            "recordids": [
+              "urn:uuid:5a02ef34-9553-44a9-af23-efdaabe3f73b",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031417",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\5a02ef34-9553-44a9-af23-efdaabe3f73b"
+            ],
+            "eventdate": "1958-08-18"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "abf3fe20-f54e-4319-b7ad-fde581b5dd1d",
+          "_score": 1,
+          "_source": {
+            "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dqs": 0.21739130434782608,
+            "stateprovince": "florida",
+            "municipality": "gainesville",
+            "county": "alachua",
+            "startdayofyear": 234,
+            "collector": "h. d. thiers",
+            "continent": "north america",
+            "uuid": "abf3fe20-f54e-4319-b7ad-fde581b5dd1d",
+            "countrycode": "usa",
+            "locality": "newnan's lake",
+            "institutioncode": "sfsu",
+            "datecollected": "1958-08-22T00:00:00+00:00",
+            "etag": "2d47b12f3a5a86e2322d9cb4e3eb8c296f0c55ec",
+            "recordnumber": "5346",
+            "hasImage": false,
+            "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+            "indexData": {
+              "dwc:startDayOfYear": "234",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "idigbio:uuid": "abf3fe20-f54e-4319-b7ad-fde581b5dd1d",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031459",
+              "idigbio:recordIds": [
+                "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031459",
+                "46374ee7-7c70-48d8-bf16-2e6c1626565e\\e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1"
+              ],
+              "dwc:occurrenceID": "e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+              "symbiota:recordEnteredBy": "bthiers",
+              "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-22",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+              "idigbio:etag": "2d47b12f3a5a86e2322d9cb4e3eb8c296f0c55ec",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "id": "1031459",
+              "dwc:decimalLatitude": "29.7029645",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_country_replaced": true,
+              "dwc:municipality": "Gainesville",
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+              "dwc:locality": "Newnan's Lake",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2141266",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "22-Aug-58",
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "5346",
+              "idigbio:isocountrycode": "usa",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "3500",
+              "dwc:day": "22",
+              "dwc:year": "1958"
+            },
+            "hasMedia": false,
+            "coordinateuncertainty": 3500,
+            "data": {
+              "dwc:startDayOfYear": "234",
+              "dwc:county": "Alachua",
+              "dwc:recordedBy": "H. D. Thiers",
+              "dwc:georeferenceSources": "Google Maps",
+              "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031459",
+              "dwc:occurrenceID": "e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+              "id": "1031459",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "1958-08-22",
+              "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+              "dwc:institutionCode": "SFSU",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+              "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+              "symbiota:recordEnteredBy": "bthiers",
+              "dwc:decimalLatitude": "29.7029645",
+              "dwc:georeferenceVerificationStatus": "high confidence",
+              "dwc:basisOfRecord": "FieldBook",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:municipality": "Gainesville",
+              "dwc:locality": "Newnan's Lake",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-82.2141266",
+              "dwc:georeferencedBy": "B. Thiers",
+              "dwc:verbatimEventDate": "22-Aug-58",
+              "dwc:recordNumber": "5346",
+              "dwc:georeferenceProtocol": "GBIF Best Practices",
+              "dcterms:modified": "2015-01-08 13:04:45",
+              "dwc:coordinateUncertaintyInMeters": "3500",
+              "dwc:day": "22",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2021-04-19T22:45:11.573256+00:00",
+            "occurrenceid": "e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+            "country": "united states",
+            "geopoint": {
+              "lat": 29.7029645,
+              "lon": -82.2141266
+            },
+            "flags": [
+              "dwc_basisofrecord_removed",
+              "dwc_basisofrecord_invalid",
+              "dwc_country_replaced",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "22-aug-58",
+            "recordids": [
+              "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031459",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1"
+            ],
+            "eventdate": "1958-08-22"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "b71a1da9-7c3f-4cd9-be62-b93150a3f922",
+          "_score": 1,
+          "_source": {
+            "recordset": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "dqs": 0.2463768115942029,
+            "stateprovince": "florida",
+            "county": "liberty co.",
+            "catalognumber": "mem 36321",
+            "startdayofyear": 215,
+            "collector": "brown, r.l., plotkin, d.",
+            "continent": "north america",
+            "uuid": "b71a1da9-7c3f-4cd9-be62-b93150a3f922",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "institutioncode": "missa",
+            "datecollected": "2011-08-03T00:00:00+00:00",
+            "etag": "64ead3e89034ab8e9e56b23e6a9e58a117eb7305",
+            "hasMedia": false,
+            "hasImage": false,
+            "collectionid": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+            "locality": "apalachicola bluffs and ravines preserve",
+            "data": {
+              "dwc:startDayOfYear": "215",
+              "dwc:verbatimCoordinates": "302735N,845922W",
+              "dwc:county": "Liberty Co.",
+              "dwc:recordedBy": "Brown, R.L., Plotkin, D.",
+              "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+              "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23675092",
+              "dwc:occurrenceID": "06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+              "id": "23675092",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "2011-08-03",
+              "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+              "dwc:country": "United States",
+              "idigbio:recordId": "urn:uuid:06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+              "dwc:collectionCode": "MEM",
+              "dcterms:rightsHolder": "Mississippi Entomological Museum",
+              "dwc:decimalLatitude": "30.459722",
+              "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:habitat": "oak scrub-sand dune",
+              "dwc:locality": "Apalachicola Bluffs and Ravines Preserve",
+              "dwc:institutionCode": "MISSA",
+              "dwc:catalogNumber": "MEM 36321",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-84.989444",
+              "dwc:georeferencedBy": "whitehouse (2016-11-08 07:43:23)",
+              "dwc:verbatimEventDate": "3/Aug/2011",
+              "dcterms:modified": "2017-09-13 09:48:58",
+              "dwc:day": "3",
+              "dwc:year": "2011"
+            },
+            "datemodified": "2021-01-01T08:16:54.092375+00:00",
+            "occurrenceid": "06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+            "country": "united states",
+            "geopoint": {
+              "lat": 30.459722,
+              "lon": -84.989444
+            },
+            "collectioncode": "mem",
+            "flags": [
+              "geopoint_datum_missing",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "3/aug/2011",
+            "recordids": [
+              "urn:uuid:06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+              "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23675092"
+            ],
+            "eventdate": "2011-08-03",
+            "indexData": {
+              "dwc:startDayOfYear": "215",
+              "dwc:verbatimCoordinates": "302735N,845922W",
+              "dwc:county": "Liberty Co.",
+              "dwc:recordedBy": "Brown, R.L., Plotkin, D.",
+              "idigbio:uuid": "b71a1da9-7c3f-4cd9-be62-b93150a3f922",
+              "dwc:locality": "Apalachicola Bluffs and Ravines Preserve",
+              "dwc:habitat": "oak scrub-sand dune",
+              "idigbio:recordIds": [
+                "urn:uuid:06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+                "8eabbc48-2b30-419d-bd8f-eece9185eca1\\06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+                "8eabbc48-2b30-419d-bd8f-eece9185eca1\\23675092"
+              ],
+              "dwc:occurrenceID": "06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+              "dcterms:rightsHolder": "Mississippi Entomological Museum",
+              "idigbio:parent": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+              "dwc:stateProvince": "Florida",
+              "dwc:eventDate": "2011-08-03",
+              "dwc:collectionID": "681c0543-167b-4f2a-94d3-61e9d3183ad3",
+              "dwc:country": "United States",
+              "idigbio:recordId": "urn:uuid:06d5c35d-e277-4b37-9eb7-f794a27d5de3",
+              "idigbio:etag": "64ead3e89034ab8e9e56b23e6a9e58a117eb7305",
+              "dwc:collectionCode": "MEM",
+              "id": "23675092",
+              "dwc:decimalLatitude": "30.459722",
+              "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=23675092",
+              "idigbio:dateModified": "2021-01-01T08:16:54.092375",
+              "dwc:georeferenceSources": "georef batch tool 2016-11-08",
+              "dwc:institutionCode": "MISSA",
+              "dwc:catalogNumber": "MEM 36321",
+              "dwc:month": "8",
+              "dwc:decimalLongitude": "-84.989444",
+              "dwc:georeferencedBy": "whitehouse (2016-11-08 07:43:23)",
+              "dwc:verbatimEventDate": "3/Aug/2011",
+              "flag_dwc_continent_added": true,
+              "idigbio:isocountrycode": "usa",
+              "dcterms:modified": "2017-09-13 09:48:58",
+              "dwc:day": "3",
+              "dwc:year": "2011"
+            }
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "min_lon": {
+        "value": -133.77
+      },
+      "rs": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": [
+          {
+            "key": "6c6f34ed-58a4-4ba2-b9c7-34524f79a349",
+            "doc_count": 7332
+          },
+          {
+            "key": "6075f4b7-4242-4886-be7d-391614fffe41",
+            "doc_count": 1477
+          },
+          {
+            "key": "97e7aa9c-806e-4ac1-bde7-f24657c36b48",
+            "doc_count": 1477
+          },
+          {
+            "key": "9ff03c57-ba5a-4127-9439-4bf3e838c4df",
+            "doc_count": 739
+          },
+          {
+            "key": "8eabbc48-2b30-419d-bd8f-eece9185eca1",
+            "doc_count": 653
+          },
+          {
+            "key": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "doc_count": 460
+          },
+          {
+            "key": "1320a827-d62a-45b1-9d26-c0aa4790a422",
+            "doc_count": 246
+          },
+          {
+            "key": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "doc_count": 202
+          },
+          {
+            "key": "b8fa8ac9-a1b0-4b73-8dfb-69b5e93139c6",
+            "doc_count": 181
+          },
+          {
+            "key": "50e36e9a-99eb-42ed-b2b2-08a835b44723",
+            "doc_count": 117
+          },
+          {
+            "key": "97058091-eb35-401b-b286-18465761f832",
+            "doc_count": 111
+          },
+          {
+            "key": "32d433aa-9e2b-4ff9-bc55-5c3e30112207",
+            "doc_count": 109
+          },
+          {
+            "key": "91c5eec8-0cdc-4be2-9a99-a15ae5ec3edc",
+            "doc_count": 69
+          },
+          {
+            "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+            "doc_count": 61
+          },
+          {
+            "key": "7b0809fb-fd62-4733-8f40-74ceb04cbcac",
+            "doc_count": 48
+          },
+          {
+            "key": "837d99c6-3045-4ba3-8951-643ddb3d6676",
+            "doc_count": 48
+          },
+          {
+            "key": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+            "doc_count": 32
+          },
+          {
+            "key": "664bd710-8791-4dba-a3b6-000a1b140951",
+            "doc_count": 29
+          },
+          {
+            "key": "cb65cf5e-07b8-4d53-a91a-7dce9b8ccf80",
+            "doc_count": 27
+          },
+          {
+            "key": "c38b867b-05f3-4733-802e-d8d2d3324f84",
+            "doc_count": 26
+          },
+          {
+            "key": "d315c4a3-0bee-49d1-8d03-726358937cde",
+            "doc_count": 22
+          },
+          {
+            "key": "f00b6a32-5337-406b-a850-17f5d78470ad",
+            "doc_count": 21
+          },
+          {
+            "key": "3056112e-97c6-4d0d-b6c2-3c0a9adaca24",
+            "doc_count": 18
+          },
+          {
+            "key": "f9a33279-d6ba-41c7-a511-ef6adfcb6e20",
+            "doc_count": 18
+          },
+          {
+            "key": "b293a647-5fb8-4b82-bf5b-571e7d6fad03",
+            "doc_count": 15
+          },
+          {
+            "key": "fccc3c1d-d9df-4ffd-b7e1-1b9eb11f95b1",
+            "doc_count": 13
+          },
+          {
+            "key": "0e162e0a-bf3e-4710-9357-44258ca12abb",
+            "doc_count": 12
+          },
+          {
+            "key": "53feaa83-e3b6-4ad3-8597-293b153e7548",
+            "doc_count": 9
+          },
+          {
+            "key": "667a12e7-c6d8-4de0-933f-ce2f07cb7a92",
+            "doc_count": 9
+          },
+          {
+            "key": "e5b0c46a-5eb6-4b94-9d4c-fb1000f534b0",
+            "doc_count": 9
+          },
+          {
+            "key": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+            "doc_count": 7
+          },
+          {
+            "key": "89cf504a-1749-4619-8055-d1b4f54289e8",
+            "doc_count": 7
+          },
+          {
+            "key": "dde625e8-cc2a-4877-9ec4-0b8a20dfded9",
+            "doc_count": 7
+          },
+          {
+            "key": "3d3b2cfd-65f7-4d62-8135-06341b5c3f2a",
+            "doc_count": 6
+          },
+          {
+            "key": "ccd17772-d220-4088-8fa3-df3729f14df4",
+            "doc_count": 6
+          },
+          {
+            "key": "f84d528a-7d08-467e-b532-ace707316f1d",
+            "doc_count": 6
+          },
+          {
+            "key": "07c47dd3-a0a9-434a-b144-71c32996f278",
+            "doc_count": 4
+          },
+          {
+            "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+            "doc_count": 4
+          },
+          {
+            "key": "46c11153-2154-495d-89d2-7cdef6425cdb",
+            "doc_count": 4
+          },
+          {
+            "key": "482990c6-da88-4d99-8cf4-ccd27ee82f44",
+            "doc_count": 4
+          },
+          {
+            "key": "4f436daa-01d5-4be6-b5c3-fdd255677536",
+            "doc_count": 4
+          },
+          {
+            "key": "65536dcd-7bb2-44e5-af3f-4a13f08e53d0",
+            "doc_count": 4
+          },
+          {
+            "key": "77e7e6bd-7822-4b84-a46b-39a06abdac2e",
+            "doc_count": 4
+          },
+          {
+            "key": "a8a21f60-ce05-4abc-b17a-a81f8d0c15d0",
+            "doc_count": 4
+          },
+          {
+            "key": "ab8ebf72-3c12-4151-9caa-a5cee73341af",
+            "doc_count": 4
+          },
+          {
+            "key": "b3b89632-0a22-4532-a05b-6830d07542f7",
+            "doc_count": 4
+          },
+          {
+            "key": "1c8ec291-8067-4b48-848b-410c2c768420",
+            "doc_count": 3
+          },
+          {
+            "key": "4bec11d1-f8c3-43a7-9e70-ee0256fcedaf",
+            "doc_count": 3
+          },
+          {
+            "key": "5e29dbcc-ce45-4f05-9bb0-212baffa8932",
+            "doc_count": 3
+          },
+          {
+            "key": "879d475f-4b76-4d18-8cf6-a7e5a6d44926",
+            "doc_count": 3
+          },
+          {
+            "key": "988ac5c5-8b44-47cb-b3cb-93abd267dab1",
+            "doc_count": 3
+          },
+          {
+            "key": "e85a9948-9c9e-451d-9485-b2b4cb7b73d5",
+            "doc_count": 3
+          },
+          {
+            "key": "f4666aa7-93f0-41f7-83c2-497af7a06887",
+            "doc_count": 3
+          },
+          {
+            "key": "1ad40bde-8a2a-46bb-9252-0cdc53df5683",
+            "doc_count": 2
+          },
+          {
+            "key": "1eca069b-09e0-406d-9625-cb9c52e1e5cc",
+            "doc_count": 2
+          },
+          {
+            "key": "33b015c8-455c-438a-89dc-c936bf3af0e1",
+            "doc_count": 2
+          },
+          {
+            "key": "40987883-03cf-494a-a5cf-7c77c7aadb79",
+            "doc_count": 2
+          },
+          {
+            "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+            "doc_count": 2
+          },
+          {
+            "key": "5ab348ab-439a-4697-925c-d6abe0c09b92",
+            "doc_count": 2
+          },
+          {
+            "key": "5aef068f-efd3-4851-a623-f542e97350cd",
+            "doc_count": 2
+          },
+          {
+            "key": "6649f781-fc4a-410f-a366-208e16241942",
+            "doc_count": 2
+          },
+          {
+            "key": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
+            "doc_count": 2
+          },
+          {
+            "key": "d29b9265-07e6-4e73-8f72-fc42d3d83fb1",
+            "doc_count": 2
+          },
+          {
+            "key": "d83e31ec-22f0-4b35-a9eb-d9ac96287aa2",
+            "doc_count": 2
+          },
+          {
+            "key": "d90e8316-2649-475e-a8c0-80130dab1fd2",
+            "doc_count": 2
+          },
+          {
+            "key": "0dabd609-2505-4492-8b7a-3f8301d8d5e1",
+            "doc_count": 1
+          },
+          {
+            "key": "12059dc0-aed1-4fea-a465-50b9d1a8ec25",
+            "doc_count": 1
+          },
+          {
+            "key": "1ba0bbad-28a7-4c50-8992-a028f79d1dc5",
+            "doc_count": 1
+          },
+          {
+            "key": "205fa34c-2fcb-4492-b992-972b18560f6f",
+            "doc_count": 1
+          },
+          {
+            "key": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
+            "doc_count": 1
+          },
+          {
+            "key": "2f484dca-4e55-4d29-ad96-56c96573444f",
+            "doc_count": 1
+          },
+          {
+            "key": "34cad268-8226-4280-b637-dde38c82a29e",
+            "doc_count": 1
+          },
+          {
+            "key": "3c9420c9-c4a8-47dc-88b7-b5638ca5e716",
+            "doc_count": 1
+          },
+          {
+            "key": "5626f61a-822e-4692-b432-51f53d053e4d",
+            "doc_count": 1
+          },
+          {
+            "key": "65007e62-740c-4302-ba20-260fe68da291",
+            "doc_count": 1
+          },
+          {
+            "key": "6539877e-82dc-485c-ad3d-038f383d5431",
+            "doc_count": 1
+          },
+          {
+            "key": "6d9d4f55-4cb4-4c8f-acc7-b465eb5f703c",
+            "doc_count": 1
+          },
+          {
+            "key": "733616a3-f5f6-4b65-b62e-fe8892e75bdf",
+            "doc_count": 1
+          },
+          {
+            "key": "83ad8494-136b-485a-87d4-8ce01dd6a8de",
+            "doc_count": 1
+          },
+          {
+            "key": "9368e302-f8e7-4714-aed4-db2faa861e5c",
+            "doc_count": 1
+          },
+          {
+            "key": "9c1d51f2-067e-452b-a52b-ea7b03e50e25",
+            "doc_count": 1
+          },
+          {
+            "key": "b3d38693-5f9b-484d-aca3-6cefcc5b08e0",
+            "doc_count": 1
+          },
+          {
+            "key": "b531ea59-025d-4c29-9d23-99ae75bcd55f",
+            "doc_count": 1
+          },
+          {
+            "key": "c3134980-bf5c-49b8-a289-790d45f02c86",
+            "doc_count": 1
+          },
+          {
+            "key": "cab6d230-499b-4a21-9cc2-2750e14e92f8",
+            "doc_count": 1
+          },
+          {
+            "key": "d0769c31-e4f1-42b1-a21f-cd6bf2257edb",
+            "doc_count": 1
+          },
+          {
+            "key": "d5b27393-7d3f-4b91-aebe-9066f9b1562d",
+            "doc_count": 1
+          },
+          {
+            "key": "d7b285d4-2643-45ee-9302-b0c3d51dda5c",
+            "doc_count": 1
+          },
+          {
+            "key": "db6c3db9-1e6d-4def-af29-33aa0339bfa9",
+            "doc_count": 1
+          },
+          {
+            "key": "ea8f632f-3fe7-40f2-8a10-a7c2970c6752",
+            "doc_count": 1
+          }
+        ]
+      },
+      "gh": {
+        "buckets": [
+          {
+            "key": "djm",
+            "doc_count": 2011
+          },
+          {
+            "key": "dj6",
+            "doc_count": 1691
+          },
+          {
+            "key": "dj7",
+            "doc_count": 1657
+          },
+          {
+            "key": "djn",
+            "doc_count": 1645
+          },
+          {
+            "key": "dhv",
+            "doc_count": 951
+          },
+          {
+            "key": "dhy",
+            "doc_count": 756
+          },
+          {
+            "key": "djk",
+            "doc_count": 718
+          },
+          {
+            "key": "djq",
+            "doc_count": 648
+          },
+          {
+            "key": "dj3",
+            "doc_count": 630
+          },
+          {
+            "key": "dhq",
+            "doc_count": 527
+          },
+          {
+            "key": "djj",
+            "doc_count": 502
+          },
+          {
+            "key": "dhw",
+            "doc_count": 343
+          },
+          {
+            "key": "djh",
+            "doc_count": 264
+          },
+          {
+            "key": "dhu",
+            "doc_count": 247
+          },
+          {
+            "key": "dhz",
+            "doc_count": 203
+          },
+          {
+            "key": "dht",
+            "doc_count": 193
+          },
+          {
+            "key": "dhx",
+            "doc_count": 176
+          },
+          {
+            "key": "dhm",
+            "doc_count": 148
+          },
+          {
+            "key": "f07",
+            "doc_count": 139
+          },
+          {
+            "key": "dj9",
+            "doc_count": 51
+          },
+          {
+            "key": "dqd",
+            "doc_count": 39
+          },
+          {
+            "key": "c40",
+            "doc_count": 39
+          },
+          {
+            "key": "c41",
+            "doc_count": 36
+          },
+          {
+            "key": "djw",
+            "doc_count": 26
+          },
+          {
+            "key": "djr",
+            "doc_count": 21
+          },
+          {
+            "key": "djp",
+            "doc_count": 18
+          },
+          {
+            "key": "djx",
+            "doc_count": 9
+          },
+          {
+            "key": "6sf",
+            "doc_count": 9
+          },
+          {
+            "key": "dhr",
+            "doc_count": 7
+          },
+          {
+            "key": "dj5",
+            "doc_count": 6
+          },
+          {
+            "key": "djd",
+            "doc_count": 3
+          },
+          {
+            "key": "f0k",
+            "doc_count": 2
+          },
+          {
+            "key": "dtq",
+            "doc_count": 2
+          },
+          {
+            "key": "d5x",
+            "doc_count": 2
+          },
+          {
+            "key": "9vs",
+            "doc_count": 2
+          },
+          {
+            "key": "eud",
+            "doc_count": 1
+          },
+          {
+            "key": "ejm",
+            "doc_count": 1
+          },
+          {
+            "key": "dv2",
+            "doc_count": 1
+          },
+          {
+            "key": "dpn",
+            "doc_count": 1
+          },
+          {
+            "key": "dp5",
+            "doc_count": 1
+          },
+          {
+            "key": "dp4",
+            "doc_count": 1
+          },
+          {
+            "key": "dnw",
+            "doc_count": 1
+          },
+          {
+            "key": "dnu",
+            "doc_count": 1
+          },
+          {
+            "key": "dn7",
+            "doc_count": 1
+          },
+          {
+            "key": "dm2",
+            "doc_count": 1
+          },
+          {
+            "key": "dje",
+            "doc_count": 1
+          },
+          {
+            "key": "dj4",
+            "doc_count": 1
+          },
+          {
+            "key": "dj2",
+            "doc_count": 1
+          },
+          {
+            "key": "dj0",
+            "doc_count": 1
+          },
+          {
+            "key": "dhe",
+            "doc_count": 1
+          },
+          {
+            "key": "dh7",
+            "doc_count": 1
+          },
+          {
+            "key": "d5z",
+            "doc_count": 1
+          },
+          {
+            "key": "d5y",
+            "doc_count": 1
+          }
+        ]
+      },
+      "max_lat": {
+        "value": 57.3153
+      },
+      "max_lon": {
+        "value": -8.165
+      },
+      "max_dm": {
+        "value": 1738256556865,
+        "value_as_string": "2025-01-30T17:02:36.865Z"
+      },
+      "min_lat": {
+        "value": -18.245607
+      }
+    }
+  }
+}

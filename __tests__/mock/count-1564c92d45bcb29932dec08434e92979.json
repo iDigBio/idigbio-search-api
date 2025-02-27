@@ -1,0 +1,11 @@
+{
+  "query": "count([{\"index\":\"idigbio\",\"type\":\"recordsets\",\"body\":{\"query\":{\"filtered\":{\"filter\":{}}}}}])",
+  "response_snapshot": {
+    "count": 2124,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    }
+  }
+}

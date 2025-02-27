@@ -1,0 +1,26 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"mediarecords\",\"body\":{\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"term\":{\"type\":\"null\"}}]}}},\"aggs\":{\"rs\":{\"terms\":{\"field\":\"recordset\",\"size\":10000}},\"max_dm\":{\"max\":{\"field\":\"datemodified\"}}}},\"sort\":[\"dqs:desc\"],\"size\":47}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 0,
+      "max_score": null,
+      "hits": []
+    },
+    "aggregations": {
+      "rs": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": []
+      },
+      "max_dm": {
+        "value": null
+      }
+    }
+  }
+}

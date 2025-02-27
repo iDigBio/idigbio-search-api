@@ -163,11 +163,6 @@ Examine changed files for differences.
 Generally, changes in document counts are to be expected as occurrence record data grows.  
 Changes in response structure would need more consideration.
 
-> **NOTE:** The hash suffix for the mock response cache is based on the parameters given to the called esclient function.
-> One of the parameters is the _index name._ It is suggested to have the index name 'idigbio' set up as an alias to keep hashes stable for comparison.  
-> Otherwise, using a different index name when running tests **will** result in nearly all mocks being invalidated with different hashes, rendering the mock set practically incomparable.
-<!-- but if you want to fix this so that index name doesn't matter, see src/__mocks__/esclient.js for how hashes are calculated -->
-
 ### Getting Started
 
 For local development, run the following command:  

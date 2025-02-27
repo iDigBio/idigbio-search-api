@@ -1,0 +1,11 @@
+{
+  "query": "count([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{\"query\":{\"match_all\":{}}}}])",
+  "response_snapshot": {
+    "count": 145684313,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    }
+  }
+}
