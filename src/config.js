@@ -7,7 +7,7 @@
 // Use a system environment variable named NODE_ENV, default to "development" if unset.
 var env = process.env.NODE_ENV || "development";
 
-var indexAlias = "fuzzy";
+var indexAlias = "idigbio";
 if(env === "beta") {
   indexAlias = "beta";
 }
