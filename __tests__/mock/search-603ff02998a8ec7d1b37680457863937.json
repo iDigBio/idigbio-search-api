@@ -240,18 +240,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "e6c5dffc-4ad1-4d9d-800f-5796baec1f65",
-        "_score": null,
-        "_source": {
-          "uuid": "e6c5dffc-4ad1-4d9d-800f-5796baec1f65"
-        },
-        "sort": [
-          0.5797101
-        ]
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "000c4583-cf40-4a78-a0a1-6ed6ff7dac3b",
         "_score": null,
         "_source": {
@@ -268,6 +256,18 @@
         "_score": null,
         "_source": {
           "uuid": "b159d25d-06b6-48e7-a592-9bc32b9a18a0"
+        },
+        "sort": [
+          0.5797101
+        ]
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "e6c5dffc-4ad1-4d9d-800f-5796baec1f65",
+        "_score": null,
+        "_source": {
+          "uuid": "e6c5dffc-4ad1-4d9d-800f-5796baec1f65"
         },
         "sort": [
           0.5797101
@@ -528,18 +528,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "64c3277e-44bf-461f-85cd-40d4503d8bdc",
-        "_score": null,
-        "_source": {
-          "uuid": "64c3277e-44bf-461f-85cd-40d4503d8bdc"
-        },
-        "sort": [
-          0.5797101
-        ]
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "62aaa67e-6e23-465d-9cc3-9511f6c25b0f",
         "_score": null,
         "_source": {
@@ -564,10 +552,22 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "723100d4-7361-438d-9844-d8c6363b9542",
+        "_id": "64c3277e-44bf-461f-85cd-40d4503d8bdc",
         "_score": null,
         "_source": {
-          "uuid": "723100d4-7361-438d-9844-d8c6363b9542"
+          "uuid": "64c3277e-44bf-461f-85cd-40d4503d8bdc"
+        },
+        "sort": [
+          0.5797101
+        ]
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "4e0227e9-29eb-4d84-9b76-597116331488",
+        "_score": null,
+        "_source": {
+          "uuid": "4e0227e9-29eb-4d84-9b76-597116331488"
         },
         "sort": [
           0.5797101

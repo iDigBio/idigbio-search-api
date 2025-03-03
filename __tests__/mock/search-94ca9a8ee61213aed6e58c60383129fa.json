@@ -42,16 +42,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "777beade-f63c-4dd6-8a9e-fafbefc4d5f9",
-        "_score": null,
-        "_source": {},
-        "sort": [
-          "abrotanella"
-        ]
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "331f0cba-7474-4e3e-b4ab-03ab14f0adf7",
         "_score": null,
         "_source": {},
@@ -62,7 +52,7 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "2ec0905c-5d9a-4bd6-9b56-e8e6f796c4f0",
+        "_id": "777beade-f63c-4dd6-8a9e-fafbefc4d5f9",
         "_score": null,
         "_source": {},
         "sort": [
@@ -82,7 +72,7 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "5f1fd92e-5a83-42b2-8518-3960de149b7b",
+        "_id": "2ec0905c-5d9a-4bd6-9b56-e8e6f796c4f0",
         "_score": null,
         "_source": {},
         "sort": [
@@ -93,6 +83,16 @@
         "_index": "idigbio-2.10.25",
         "_type": "records",
         "_id": "b15dfe7a-dfd8-4a54-9a92-bc893f31b108",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          "abrotanella"
+        ]
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "5f1fd92e-5a83-42b2-8518-3960de149b7b",
         "_score": null,
         "_source": {},
         "sort": [

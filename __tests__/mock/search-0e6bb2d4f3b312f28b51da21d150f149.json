@@ -12,823 +12,43 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "80a37d64-244b-4581-95e0-f231d6aed569",
+        "_id": "0cc5f68e-ab46-49da-916f-1113790fad02",
         "_score": 1,
-        "_routing": "10baafb2-d242-4120-93e4-9c4ca5f54be9",
-        "_parent": "10baafb2-d242-4120-93e4-9c4ca5f54be9",
-        "_source": {
-          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
-          "uuid": "80a37d64-244b-4581-95e0-f231d6aed569",
-          "rights": "CC0",
-          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-          "dqs": 0.2727272727272727,
-          "hasSpecimen": true,
-          "records": [
-            "10baafb2-d242-4120-93e4-9c4ca5f54be9"
-          ],
-          "etag": "8f27df51a20229aa8cfa4b7e47f87fd88275ebea",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
-          "indexData": {
-            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
-            "dcterms:type": "Still Image",
-            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "idigbio:uuid": "80a37d64-244b-4581-95e0-f231d6aed569",
-            "idigbio:etag": "8f27df51a20229aa8cfa4b7e47f87fd88275ebea",
-            "coreid": "urn:catalog:CAS:BOT-BC:80",
-            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg",
-            "idigbio:recordIds": [
-              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
-            ],
-            "idigbio:dateModified": "2022-07-06T11:49:20.823602",
-            "idigbio:siblings": {
-              "record": [
-                "10baafb2-d242-4120-93e4-9c4ca5f54be9"
-              ]
-            }
-          },
-          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-          "recordids": [
-            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
-          ],
-          "data": {
-            "coreid": "urn:catalog:CAS:BOT-BC:80",
-            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "dcterms:type": "Still Image",
-            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
-          },
-          "datemodified": "2022-07-06T11:49:20.823602+00:00",
-          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "6c8b5d65-625b-435b-8cc6-de7c20b86d6d",
-        "_score": 1,
-        "_routing": "af6fcd08-cd31-4bde-bf15-b6354a821e60",
-        "_parent": "af6fcd08-cd31-4bde-bf15-b6354a821e60",
+        "_routing": "ee5795af-d3b5-4264-ab0b-6b06367a278a",
+        "_parent": "ee5795af-d3b5-4264-ab0b-6b06367a278a",
         "_source": {
           "hasSpecimen": true,
-          "uuid": "6c8b5d65-625b-435b-8cc6-de7c20b86d6d",
+          "uuid": "0cc5f68e-ab46-49da-916f-1113790fad02",
           "format": "image/jpeg",
-          "recordset": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+          "recordset": "1e054b9b-0193-4ff3-b623-9264cf982d4d",
           "data": {
             "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
             "ac:subtype": "Photograph",
             "dc:type": "StillImage",
-            "dcterms:title": "WTU-V-073843",
+            "dcterms:title": "SOC 15824",
             "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:digitizationDate": "2021-12-03T13:24:24-0800",
+            "ac:digitizationDate": "2014-04-21T16:05:37-0800",
             "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
             "dc:format": "image/jpeg",
-            "coreid": "103453",
-            "dcterms:identifier": "a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7",
-            "xmpRights:Owner": "University of Washington",
-            "dcterms:rights": "© 2024 University of Washington",
+            "coreid": "2245970",
+            "dcterms:identifier": "afe7b95a-0b69-4f91-8778-2f0c6071bcc3",
+            "xmpRights:Owner": "Southern Oregon University",
+            "dcterms:rights": "© 2024 Southern Oregon University",
             "ac:metadataLanguage": "en",
             "ac:taxonCoverage": "Sapindaceae",
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-073843.jpg",
-            "dcterms:modified": "2021-12-09T00:17:24-0800",
-            "dwc:scientificName": "Acer macrophyllum",
-            "ac:variant": "ac:Best Quality"
-          },
-          "dqs": -1.2727272727272727,
-          "modified": "2021-12-09T00:17:24-08:00",
-          "mediatype": "images",
-          "records": [
-            "af6fcd08-cd31-4bde-bf15-b6354a821e60"
-          ],
-          "etag": "1fb6cf782ff07ae00b8f6dd718eb61744fe3c867",
-          "flags": [
-            "dwc_taxonrank_added",
-            "gbif_reference_added",
-            "dwc_scientificnameauthorship_added",
-            "dwc_specificepithet_added",
-            "dwc_taxonomicstatus_added",
-            "dwc_datasetid_added",
-            "gbif_genericname_added",
-            "dwc_taxonid_added",
-            "dwc_phylum_added",
-            "dwc_multimedia_added",
-            "gbif_vernacularname_added",
-            "dwc_parentnameusageid_added",
-            "gbif_taxon_corrected",
-            "gbif_canonicalname_added",
-            "dwc_order_added",
-            "dwc_family_added",
-            "dwc_class_added",
-            "dwc_genus_added",
-            "dwc_kingdom_added"
-          ],
-          "indexData": {
-            "flag_dwc_taxonrank_added": true,
-            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "idigbio:dateModified": "2024-01-31T22:30:28.166148",
-            "dc:type": "StillImage",
-            "idigbio:etag": "1fb6cf782ff07ae00b8f6dd718eb61744fe3c867",
-            "idigbio:uuid": "6c8b5d65-625b-435b-8cc6-de7c20b86d6d",
-            "gbif:canonicalname": "acer macrophyllum",
-            "flag_gbif_reference_added": true,
-            "flag_dwc_scientificnameauthorship_added": true,
-            "idigbio:recordIds": [
-              "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7"
-            ],
-            "flag_dwc_specificepithet_added": true,
-            "flag_dwc_taxonomicstatus_added": true,
-            "ac:metadataLanguage": "en",
-            "flag_dwc_datasetid_added": true,
-            "idigbio:parent": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
-            "ac:subtype": "Photograph",
-            "flag_gbif_genericname_added": true,
-            "dwc:multimedia": [
-              {
-                "dcterms:license": "public domain",
-                "dcterms:title": "bigleaf maple foliage",
-                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_macrophyllum_1199.jpg",
-                "coreid": "3189835",
-                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/acer_macrophyllum_1199.jpg",
-                "dcterms:source": "english wikipedia - species pages",
-                "dcterms:description": "english: photo by tony perodeau",
-                "dcterms:creator": "original uploader was angilbas at en.wikipedia",
-                "dcterms:publisher": "wikimedia commons"
-              },
-              {
-                "dcterms:license": "gnu free documentation license",
-                "dcterms:title": "oregon-ahorn (acer macrophyllum)",
-                "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_3158.jpg",
-                "coreid": "3189835",
-                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b7/bigleafmaple_3158.jpg",
-                "dcterms:source": "german wikipedia - species pages",
-                "dcterms:publisher": "wikimedia commons"
-              }
-            ],
-            "ac:digitizationDate": "2021-12-03T13:24:24-0800",
-            "dwc:genus": "acer",
-            "dc:format": "image/jpeg",
-            "dwc:kingdom": "plantae",
-            "dwc:family": "sapindaceae",
-            "dwc:taxonomicstatus": "accepted",
-            "dwc:taxonrank": "species",
-            "idigbio:siblings": {
-              "record": [
-                "af6fcd08-cd31-4bde-bf15-b6354a821e60"
-              ]
-            },
-            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
-            "flag_dwc_taxonid_added": true,
-            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "dwc:order": "sapindales",
-            "coreid": "103453",
-            "dcterms:identifier": "a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7",
-            "dwc:phylum": "tracheophyta",
-            "flag_dwc_phylum_added": true,
-            "gbif:genericname": "acer",
-            "flag_dwc_multimedia_added": true,
-            "flag_gbif_vernacularname_added": true,
-            "flag_dwc_parentnameusageid_added": true,
-            "flag_gbif_taxon_corrected": true,
-            "dwc:parentnameusageid": "3189834",
-            "dwc:class": "magnoliopsida",
-            "ac:variant": "ac:Best Quality",
-            "dwc:taxonid": "3189835",
-            "dwc:scientificnameauthorship": "pursh",
-            "flag_gbif_canonicalname_added": true,
-            "dwc:specificepithet": "macrophyllum",
-            "flag_dwc_order_added": true,
-            "dcterms:title": "WTU-V-073843",
-            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "xmpRights:Owner": "University of Washington",
-            "dcterms:rights": "© 2024 University of Washington",
-            "flag_dwc_family_added": true,
-            "flag_dwc_class_added": true,
-            "ac:taxonCoverage": "Sapindaceae",
-            "flag_dwc_genus_added": true,
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-073843.jpg",
-            "dcterms:modified": "2021-12-09T00:17:24-0800",
-            "dwc:scientificName": "Acer macrophyllum",
-            "gbif:reference": [
-              {
-                "coreid": "3189835",
-                "dcterms:source": "catalogue of life",
-                "dcterms:bibliographiccitation": "pursh (1814) in: fl. am. sept. 1: 267"
-              }
-            ],
-            "flag_dwc_kingdom_added": true,
-            "gbif:vernacularname": [
-              {
-                "coreid": "3189835",
-                "dcterms:source": "catalogue of life",
-                "dwc:vernacularname": "bigleaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "big-leaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:source": "integrated taxonomic information system (itis)",
-                "dwc:vernacularname": "bigleaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "big-leaved maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "broad-leaved maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "canyon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "fr",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "érable à grandes feuilles"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "sv",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "jättelönn"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "de",
-                "dcterms:source": "german wikipedia - species pages",
-                "dwc:vernacularname": "oregon-ahorn"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "oregon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "oregon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "pacific maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "pacific maple"
-              }
-            ]
-          },
-          "recordids": [
-            "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7"
-          ],
-          "type": "stillimage",
-          "datemodified": "2024-01-31T22:30:28.166148+00:00",
-          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-073843.jpg"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "2cd59162-7cea-4ea8-8a4d-0a4d8c307ca3",
-        "_score": 1,
-        "_routing": "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492",
-        "_parent": "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492",
-        "_source": {
-          "hasSpecimen": true,
-          "uuid": "2cd59162-7cea-4ea8-8a4d-0a4d8c307ca3",
-          "format": "image/jpeg",
-          "recordset": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
-          "data": {
-            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:subtype": "Photograph",
-            "dc:type": "StillImage",
-            "dcterms:title": "WTU-V-051770",
-            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:digitizationDate": "2019-07-09T14:28:43-0800",
-            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "dc:format": "image/jpeg",
-            "coreid": "11875",
-            "dcterms:identifier": "b62a2e29-41e4-429e-bb94-8bbb64406e24",
-            "xmpRights:Owner": "University of Washington",
-            "dcterms:rights": "© 2024 University of Washington",
-            "ac:metadataLanguage": "en",
-            "ac:taxonCoverage": "Sapindaceae",
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051770.jpg",
-            "dcterms:modified": "2019-11-02T01:32:33-0800",
-            "dwc:scientificName": "Acer macrophyllum",
-            "dcterms:creator": "Crystal Shin",
-            "ac:variant": "ac:Best Quality"
-          },
-          "dqs": -1.2727272727272727,
-          "modified": "2019-11-02T01:32:33-08:00",
-          "mediatype": "images",
-          "records": [
-            "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492"
-          ],
-          "etag": "eb57f728573df0038c46b67ed21ef4c3fbebff8c",
-          "flags": [
-            "dwc_taxonrank_added",
-            "gbif_reference_added",
-            "dwc_scientificnameauthorship_added",
-            "dwc_specificepithet_added",
-            "dwc_taxonomicstatus_added",
-            "dwc_datasetid_added",
-            "gbif_genericname_added",
-            "dwc_taxonid_added",
-            "dwc_phylum_added",
-            "dwc_multimedia_added",
-            "gbif_vernacularname_added",
-            "dwc_parentnameusageid_added",
-            "gbif_taxon_corrected",
-            "gbif_canonicalname_added",
-            "dwc_order_added",
-            "dwc_family_added",
-            "dwc_class_added",
-            "dwc_genus_added",
-            "dwc_kingdom_added"
-          ],
-          "indexData": {
-            "flag_dwc_taxonrank_added": true,
-            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "idigbio:dateModified": "2024-01-31T22:30:28.166148",
-            "dc:type": "StillImage",
-            "idigbio:etag": "eb57f728573df0038c46b67ed21ef4c3fbebff8c",
-            "idigbio:uuid": "2cd59162-7cea-4ea8-8a4d-0a4d8c307ca3",
-            "gbif:canonicalname": "acer macrophyllum",
-            "flag_gbif_reference_added": true,
-            "flag_dwc_scientificnameauthorship_added": true,
-            "idigbio:recordIds": [
-              "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\b62a2e29-41e4-429e-bb94-8bbb64406e24"
-            ],
-            "flag_dwc_specificepithet_added": true,
-            "flag_dwc_taxonomicstatus_added": true,
-            "ac:metadataLanguage": "en",
-            "dcterms:creator": "Crystal Shin",
-            "flag_dwc_datasetid_added": true,
-            "idigbio:parent": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
-            "ac:subtype": "Photograph",
-            "flag_gbif_genericname_added": true,
-            "dwc:multimedia": [
-              {
-                "dcterms:license": "public domain",
-                "dcterms:title": "bigleaf maple foliage",
-                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_macrophyllum_1199.jpg",
-                "coreid": "3189835",
-                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/acer_macrophyllum_1199.jpg",
-                "dcterms:source": "english wikipedia - species pages",
-                "dcterms:description": "english: photo by tony perodeau",
-                "dcterms:creator": "original uploader was angilbas at en.wikipedia",
-                "dcterms:publisher": "wikimedia commons"
-              },
-              {
-                "dcterms:license": "gnu free documentation license",
-                "dcterms:title": "oregon-ahorn (acer macrophyllum)",
-                "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_3158.jpg",
-                "coreid": "3189835",
-                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b7/bigleafmaple_3158.jpg",
-                "dcterms:source": "german wikipedia - species pages",
-                "dcterms:publisher": "wikimedia commons"
-              }
-            ],
-            "ac:digitizationDate": "2019-07-09T14:28:43-0800",
-            "dwc:genus": "acer",
-            "dc:format": "image/jpeg",
-            "dwc:kingdom": "plantae",
-            "dwc:family": "sapindaceae",
-            "dwc:taxonomicstatus": "accepted",
-            "dwc:taxonrank": "species",
-            "idigbio:siblings": {
-              "record": [
-                "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492"
-              ]
-            },
-            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
-            "flag_dwc_taxonid_added": true,
-            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "dwc:order": "sapindales",
-            "coreid": "11875",
-            "dcterms:identifier": "b62a2e29-41e4-429e-bb94-8bbb64406e24",
-            "dwc:phylum": "tracheophyta",
-            "flag_dwc_phylum_added": true,
-            "gbif:genericname": "acer",
-            "flag_dwc_multimedia_added": true,
-            "flag_gbif_vernacularname_added": true,
-            "flag_dwc_parentnameusageid_added": true,
-            "flag_gbif_taxon_corrected": true,
-            "dwc:parentnameusageid": "3189834",
-            "dwc:class": "magnoliopsida",
-            "ac:variant": "ac:Best Quality",
-            "dwc:taxonid": "3189835",
-            "dwc:scientificnameauthorship": "pursh",
-            "flag_gbif_canonicalname_added": true,
-            "dwc:specificepithet": "macrophyllum",
-            "flag_dwc_order_added": true,
-            "dcterms:title": "WTU-V-051770",
-            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "xmpRights:Owner": "University of Washington",
-            "dcterms:rights": "© 2024 University of Washington",
-            "flag_dwc_family_added": true,
-            "flag_dwc_class_added": true,
-            "ac:taxonCoverage": "Sapindaceae",
-            "flag_dwc_genus_added": true,
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051770.jpg",
-            "dcterms:modified": "2019-11-02T01:32:33-0800",
-            "dwc:scientificName": "Acer macrophyllum",
-            "gbif:reference": [
-              {
-                "coreid": "3189835",
-                "dcterms:source": "catalogue of life",
-                "dcterms:bibliographiccitation": "pursh (1814) in: fl. am. sept. 1: 267"
-              }
-            ],
-            "flag_dwc_kingdom_added": true,
-            "gbif:vernacularname": [
-              {
-                "coreid": "3189835",
-                "dcterms:source": "catalogue of life",
-                "dwc:vernacularname": "bigleaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "big-leaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:source": "integrated taxonomic information system (itis)",
-                "dwc:vernacularname": "bigleaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "big-leaved maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "broad-leaved maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "canyon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "fr",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "érable à grandes feuilles"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "sv",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "jättelönn"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "de",
-                "dcterms:source": "german wikipedia - species pages",
-                "dwc:vernacularname": "oregon-ahorn"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "oregon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "oregon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "pacific maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "pacific maple"
-              }
-            ]
-          },
-          "recordids": [
-            "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\b62a2e29-41e4-429e-bb94-8bbb64406e24"
-          ],
-          "type": "stillimage",
-          "datemodified": "2024-01-31T22:30:28.166148+00:00",
-          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051770.jpg"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "5a7910db-1689-4180-812c-440d3c664876",
-        "_score": 1,
-        "_routing": "72f4b923-373b-4fba-a439-43bf1e4cc405",
-        "_parent": "72f4b923-373b-4fba-a439-43bf1e4cc405",
-        "_source": {
-          "hasSpecimen": true,
-          "uuid": "5a7910db-1689-4180-812c-440d3c664876",
-          "format": "image/jpeg",
-          "recordset": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
-          "data": {
-            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:subtype": "Photograph",
-            "dc:type": "StillImage",
-            "dcterms:title": "WTU-V-051786",
-            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:digitizationDate": "2019-07-09T14:16:11-0800",
-            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "dc:format": "image/jpeg",
-            "coreid": "103475",
-            "dcterms:identifier": "6cd8a659-d296-4716-a29e-09aaea029929",
-            "xmpRights:Owner": "University of Washington",
-            "dcterms:rights": "© 2024 University of Washington",
-            "ac:metadataLanguage": "en",
-            "ac:taxonCoverage": "Sapindaceae",
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051786.jpg",
-            "dcterms:modified": "2019-11-02T01:32:28-0800",
-            "dwc:scientificName": "Acer macrophyllum",
-            "dcterms:creator": "Crystal Shin",
-            "ac:variant": "ac:Best Quality"
-          },
-          "dqs": -1.2727272727272727,
-          "modified": "2019-11-02T01:32:28-08:00",
-          "mediatype": "images",
-          "records": [
-            "72f4b923-373b-4fba-a439-43bf1e4cc405"
-          ],
-          "etag": "649427540ed6293dbbdb06bc6acd2aece5dd5431",
-          "flags": [
-            "dwc_taxonrank_added",
-            "gbif_reference_added",
-            "dwc_scientificnameauthorship_added",
-            "dwc_specificepithet_added",
-            "dwc_taxonomicstatus_added",
-            "dwc_datasetid_added",
-            "gbif_genericname_added",
-            "dwc_taxonid_added",
-            "dwc_phylum_added",
-            "dwc_multimedia_added",
-            "gbif_vernacularname_added",
-            "dwc_parentnameusageid_added",
-            "gbif_taxon_corrected",
-            "gbif_canonicalname_added",
-            "dwc_order_added",
-            "dwc_family_added",
-            "dwc_class_added",
-            "dwc_genus_added",
-            "dwc_kingdom_added"
-          ],
-          "indexData": {
-            "flag_dwc_taxonrank_added": true,
-            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "idigbio:dateModified": "2024-01-31T22:30:28.166148",
-            "dc:type": "StillImage",
-            "idigbio:etag": "649427540ed6293dbbdb06bc6acd2aece5dd5431",
-            "idigbio:uuid": "5a7910db-1689-4180-812c-440d3c664876",
-            "gbif:canonicalname": "acer macrophyllum",
-            "flag_gbif_reference_added": true,
-            "flag_dwc_scientificnameauthorship_added": true,
-            "idigbio:recordIds": [
-              "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\6cd8a659-d296-4716-a29e-09aaea029929"
-            ],
-            "flag_dwc_specificepithet_added": true,
-            "flag_dwc_taxonomicstatus_added": true,
-            "ac:metadataLanguage": "en",
-            "dcterms:creator": "Crystal Shin",
-            "flag_dwc_datasetid_added": true,
-            "idigbio:parent": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
-            "ac:subtype": "Photograph",
-            "flag_gbif_genericname_added": true,
-            "dwc:multimedia": [
-              {
-                "dcterms:license": "public domain",
-                "dcterms:title": "bigleaf maple foliage",
-                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_macrophyllum_1199.jpg",
-                "coreid": "3189835",
-                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/acer_macrophyllum_1199.jpg",
-                "dcterms:source": "english wikipedia - species pages",
-                "dcterms:description": "english: photo by tony perodeau",
-                "dcterms:creator": "original uploader was angilbas at en.wikipedia",
-                "dcterms:publisher": "wikimedia commons"
-              },
-              {
-                "dcterms:license": "gnu free documentation license",
-                "dcterms:title": "oregon-ahorn (acer macrophyllum)",
-                "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_3158.jpg",
-                "coreid": "3189835",
-                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b7/bigleafmaple_3158.jpg",
-                "dcterms:source": "german wikipedia - species pages",
-                "dcterms:publisher": "wikimedia commons"
-              }
-            ],
-            "ac:digitizationDate": "2019-07-09T14:16:11-0800",
-            "dwc:genus": "acer",
-            "dc:format": "image/jpeg",
-            "dwc:kingdom": "plantae",
-            "dwc:family": "sapindaceae",
-            "dwc:taxonomicstatus": "accepted",
-            "dwc:taxonrank": "species",
-            "idigbio:siblings": {
-              "record": [
-                "72f4b923-373b-4fba-a439-43bf1e4cc405"
-              ]
-            },
-            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
-            "flag_dwc_taxonid_added": true,
-            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "dwc:order": "sapindales",
-            "coreid": "103475",
-            "dcterms:identifier": "6cd8a659-d296-4716-a29e-09aaea029929",
-            "dwc:phylum": "tracheophyta",
-            "flag_dwc_phylum_added": true,
-            "gbif:genericname": "acer",
-            "flag_dwc_multimedia_added": true,
-            "flag_gbif_vernacularname_added": true,
-            "flag_dwc_parentnameusageid_added": true,
-            "flag_gbif_taxon_corrected": true,
-            "dwc:parentnameusageid": "3189834",
-            "dwc:class": "magnoliopsida",
-            "ac:variant": "ac:Best Quality",
-            "dwc:taxonid": "3189835",
-            "dwc:scientificnameauthorship": "pursh",
-            "flag_gbif_canonicalname_added": true,
-            "dwc:specificepithet": "macrophyllum",
-            "flag_dwc_order_added": true,
-            "dcterms:title": "WTU-V-051786",
-            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "xmpRights:Owner": "University of Washington",
-            "dcterms:rights": "© 2024 University of Washington",
-            "flag_dwc_family_added": true,
-            "flag_dwc_class_added": true,
-            "ac:taxonCoverage": "Sapindaceae",
-            "flag_dwc_genus_added": true,
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051786.jpg",
-            "dcterms:modified": "2019-11-02T01:32:28-0800",
-            "dwc:scientificName": "Acer macrophyllum",
-            "gbif:reference": [
-              {
-                "coreid": "3189835",
-                "dcterms:source": "catalogue of life",
-                "dcterms:bibliographiccitation": "pursh (1814) in: fl. am. sept. 1: 267"
-              }
-            ],
-            "flag_dwc_kingdom_added": true,
-            "gbif:vernacularname": [
-              {
-                "coreid": "3189835",
-                "dcterms:source": "catalogue of life",
-                "dwc:vernacularname": "bigleaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "big-leaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:source": "integrated taxonomic information system (itis)",
-                "dwc:vernacularname": "bigleaf maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "big-leaved maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "broad-leaved maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "canyon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "fr",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "érable à grandes feuilles"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "sv",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "jättelönn"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "de",
-                "dcterms:source": "german wikipedia - species pages",
-                "dwc:vernacularname": "oregon-ahorn"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "oregon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "oregon maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "database of vascular plants of canada (vascan)",
-                "dwc:vernacularname": "pacific maple"
-              },
-              {
-                "coreid": "3189835",
-                "dcterms:language": "en",
-                "dcterms:source": "grin taxonomy",
-                "dwc:vernacularname": "pacific maple"
-              }
-            ]
-          },
-          "recordids": [
-            "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\6cd8a659-d296-4716-a29e-09aaea029929"
-          ],
-          "type": "stillimage",
-          "datemodified": "2024-01-31T22:30:28.166148+00:00",
-          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051786.jpg"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "5fef62d5-dd76-473b-90af-86372f630e09",
-        "_score": 1,
-        "_routing": "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d",
-        "_parent": "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d",
-        "_source": {
-          "hasSpecimen": true,
-          "uuid": "5fef62d5-dd76-473b-90af-86372f630e09",
-          "format": "image/jpeg",
-          "recordset": "f84d528a-7d08-467e-b532-ace707316f1d",
-          "data": {
-            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:subtype": "Photograph",
-            "dc:type": "StillImage",
-            "dcterms:title": "SRP 65339",
-            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "ac:digitizationDate": "2018-05-22T10:55:14-0800",
-            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "dc:format": "image/jpeg",
-            "coreid": "3210535",
-            "dcterms:identifier": "4b6e2afd-e556-4762-acb9-60d562e4537f",
-            "xmpRights:Owner": "Boise State University, Snake River Plains Herbarium",
-            "dcterms:rights": "© 2024 Boise State University, Snake River Plains Herbarium",
-            "ac:metadataLanguage": "en",
-            "ac:taxonCoverage": "Sapindaceae",
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SRP065339.jpg",
-            "dcterms:modified": "2018-05-30T08:27:52-0800",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SOC15824.jpg",
+            "dcterms:modified": "2015-04-03T20:26:22-0800",
             "dwc:scientificName": "Acer negundo",
-            "dcterms:creator": "JamesJarrett",
+            "dcterms:creator": "Vera S. Gottlieb",
             "ac:variant": "ac:Best Quality"
           },
           "dqs": -1.2727272727272727,
-          "modified": "2018-05-30T08:27:52-08:00",
+          "modified": "2015-04-03T20:26:22-08:00",
           "mediatype": "images",
           "records": [
-            "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d"
+            "ee5795af-d3b5-4264-ab0b-6b06367a278a"
           ],
-          "etag": "f720d3c743318138c837cde309ec3f4fd9cbe2d4",
+          "etag": "8b94f372d359680f03e6b15a290dd937835c8a0c",
           "flags": [
             "dwc_taxonrank_added",
             "gbif_reference_added",
@@ -853,22 +73,22 @@
           "indexData": {
             "flag_dwc_taxonrank_added": true,
             "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
-            "idigbio:dateModified": "2024-01-31T22:25:32.795016",
+            "idigbio:dateModified": "2024-05-14T22:27:52.891890",
             "dc:type": "StillImage",
-            "idigbio:etag": "f720d3c743318138c837cde309ec3f4fd9cbe2d4",
-            "idigbio:uuid": "5fef62d5-dd76-473b-90af-86372f630e09",
+            "idigbio:etag": "8b94f372d359680f03e6b15a290dd937835c8a0c",
+            "idigbio:uuid": "0cc5f68e-ab46-49da-916f-1113790fad02",
             "gbif:canonicalname": "acer negundo",
             "flag_gbif_reference_added": true,
             "flag_dwc_scientificnameauthorship_added": true,
             "idigbio:recordIds": [
-              "f84d528a-7d08-467e-b532-ace707316f1d\\media\\4b6e2afd-e556-4762-acb9-60d562e4537f"
+              "1e054b9b-0193-4ff3-b623-9264cf982d4d\\media\\afe7b95a-0b69-4f91-8778-2f0c6071bcc3"
             ],
             "flag_dwc_specificepithet_added": true,
             "flag_dwc_taxonomicstatus_added": true,
             "ac:metadataLanguage": "en",
-            "dcterms:creator": "JamesJarrett",
+            "dcterms:creator": "Vera S. Gottlieb",
             "flag_dwc_datasetid_added": true,
-            "idigbio:parent": "f84d528a-7d08-467e-b532-ace707316f1d",
+            "idigbio:parent": "1e054b9b-0193-4ff3-b623-9264cf982d4d",
             "ac:subtype": "Photograph",
             "flag_gbif_genericname_added": true,
             "dwc:multimedia": [
@@ -892,7 +112,7 @@
                 "dcterms:publisher": "wikimedia commons"
               }
             ],
-            "ac:digitizationDate": "2018-05-22T10:55:14-0800",
+            "ac:digitizationDate": "2014-04-21T16:05:37-0800",
             "dwc:genus": "acer",
             "dc:format": "image/jpeg",
             "dwc:kingdom": "plantae",
@@ -901,15 +121,15 @@
             "dwc:taxonrank": "species",
             "idigbio:siblings": {
               "record": [
-                "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d"
+                "ee5795af-d3b5-4264-ab0b-6b06367a278a"
               ]
             },
             "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
             "flag_dwc_taxonid_added": true,
             "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
             "dwc:order": "sapindales",
-            "coreid": "3210535",
-            "dcterms:identifier": "4b6e2afd-e556-4762-acb9-60d562e4537f",
+            "coreid": "2245970",
+            "dcterms:identifier": "afe7b95a-0b69-4f91-8778-2f0c6071bcc3",
             "dwc:phylum": "tracheophyta",
             "flag_dwc_phylum_added": true,
             "gbif:genericname": "acer",
@@ -925,16 +145,16 @@
             "flag_gbif_canonicalname_added": true,
             "dwc:specificepithet": "negundo",
             "flag_dwc_order_added": true,
-            "dcterms:title": "SRP 65339",
+            "dcterms:title": "SOC 15824",
             "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
-            "xmpRights:Owner": "Boise State University, Snake River Plains Herbarium",
-            "dcterms:rights": "© 2024 Boise State University, Snake River Plains Herbarium",
+            "xmpRights:Owner": "Southern Oregon University",
+            "dcterms:rights": "© 2024 Southern Oregon University",
             "flag_dwc_family_added": true,
             "flag_dwc_class_added": true,
             "ac:taxonCoverage": "Sapindaceae",
             "flag_dwc_genus_added": true,
-            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SRP065339.jpg",
-            "dcterms:modified": "2018-05-30T08:27:52-0800",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SOC15824.jpg",
+            "dcterms:modified": "2015-04-03T20:26:22-0800",
             "dwc:scientificName": "Acer negundo",
             "gbif:reference": [
               {
@@ -1244,390 +464,461 @@
             ]
           },
           "recordids": [
-            "f84d528a-7d08-467e-b532-ace707316f1d\\media\\4b6e2afd-e556-4762-acb9-60d562e4537f"
+            "1e054b9b-0193-4ff3-b623-9264cf982d4d\\media\\afe7b95a-0b69-4f91-8778-2f0c6071bcc3"
           ],
           "type": "stillimage",
-          "datemodified": "2024-01-31T22:25:32.795016+00:00",
-          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=SRP065339.jpg"
+          "datemodified": "2024-05-14T22:27:52.891890+00:00",
+          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=SOC15824.jpg"
         }
       },
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "eefcd5db-9ac1-4b74-9cb2-529152eef6a6",
+        "_id": "5b35c41c-b8e4-4861-b1a4-b12bfc6034a4",
         "_score": 1,
-        "_routing": "22984faf-06f3-43bf-8dc9-db30d4a06e6f",
-        "_parent": "22984faf-06f3-43bf-8dc9-db30d4a06e6f",
+        "_routing": "8162bfad-0206-4754-a5dd-0f575275e995",
+        "_parent": "8162bfad-0206-4754-a5dd-0f575275e995",
         "_source": {
           "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
-          "uuid": "eefcd5db-9ac1-4b74-9cb2-529152eef6a6",
-          "format": "image/jpeg",
-          "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
-          "dqs": 0.45454545454545453,
+          "uuid": "5b35c41c-b8e4-4861-b1a4-b12bfc6034a4",
           "rights": "CC0",
-          "mediatype": "images",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
           "hasSpecimen": true,
           "records": [
-            "22984faf-06f3-43bf-8dc9-db30d4a06e6f"
+            "8162bfad-0206-4754-a5dd-0f575275e995"
           ],
-          "etag": "3f7598c51ab9110d57da01649ac1199ac064a68f",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
+          "etag": "bc5847574f6a8e9ab1942cb2f80c40c433544367",
           "indexData": {
-            "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
-            "ac:subtype": "Photograph",
-            "xmp:MetadataDate": "2012-10-08 20:53:21",
-            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
-            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/1",
-            "idigbio:etag": "3f7598c51ab9110d57da01649ac1199ac064a68f",
-            "dcterms:format": "image/jpeg",
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "5b35c41c-b8e4-4861-b1a4-b12bfc6034a4",
+            "idigbio:etag": "bc5847574f6a8e9ab1942cb2f80c40c433544367",
+            "coreid": "urn:catalog:CAS:BOT-BC:330571",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg",
             "idigbio:recordIds": [
-              "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
-              "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204999/format/3"
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
             ],
-            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
-            "coreid": "269794",
-            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
             "idigbio:siblings": {
               "record": [
-                "22984faf-06f3-43bf-8dc9-db30d4a06e6f"
+                "8162bfad-0206-4754-a5dd-0f575275e995"
               ]
-            },
-            "idigbio:dateModified": "2016-04-21T13:40:34.206773",
-            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
-            "ac:metadataLanguage": "en",
-            "idigbio:uuid": "eefcd5db-9ac1-4b74-9cb2-529152eef6a6",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=269794"
+            }
           },
           "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
           "recordids": [
-            "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
-            "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204999/format/3"
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
           ],
           "data": {
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
-            "ac:subtype": "Photograph",
-            "ac:metadataLanguage": "en",
-            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
-            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/1",
-            "dcterms:format": "image/jpeg",
-            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
-            "coreid": "269794",
-            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
-            "xmp:MetadataDate": "2012-10-08 20:53:21",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=269794"
+            "coreid": "urn:catalog:CAS:BOT-BC:330571",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
           },
-          "datemodified": "2016-04-21T13:40:34.206773+00:00",
-          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3"
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
         }
       },
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "ef158cc6-2f94-48e5-92be-e608631f990f",
+        "_id": "e9150480-4eae-4c57-af4e-942671169541",
         "_score": 1,
-        "_routing": "df6e800e-e2e1-4fcf-9940-fb738b70e7ed",
-        "_parent": "df6e800e-e2e1-4fcf-9940-fb738b70e7ed",
-        "_source": {
-          "hasSpecimen": true,
-          "uuid": "ef158cc6-2f94-48e5-92be-e608631f990f",
-          "format": "image/jpeg",
-          "recordset": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
-          "dqs": 0.2727272727272727,
-          "rights": "Public Domain",
-          "mediatype": "images",
-          "records": [
-            "df6e800e-e2e1-4fcf-9940-fb738b70e7ed"
-          ],
-          "etag": "e94e1b945eb0bbe0af87a790d7fd36f5e8eb13c4",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
-          "indexData": {
-            "ac:comments": "http://creativecommons.org/publicdomain/mark/1.0/",
-            "idigbio:parent": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
-            "xmpRights:UsageTerms": "Public Domain",
-            "ac:thumbnailAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "ac:goodQualityAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "coreid": "807945",
-            "dcterms:identifier": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "idigbio:dateModified": "2016-04-21T13:40:35.966214",
-            "ac:metadataLanguage": "en",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=807945",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
-            "ac:subtype": "Photograph",
-            "idigbio:etag": "e94e1b945eb0bbe0af87a790d7fd36f5e8eb13c4",
-            "dcterms:format": "image/jpeg",
-            "idigbio:siblings": {
-              "record": [
-                "df6e800e-e2e1-4fcf-9940-fb738b70e7ed"
-              ]
-            },
-            "ac:caption": "YU YU.076227 Acer saccharum Marsh.",
-            "idigbio:recordIds": [
-              "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
-              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl",
-              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bisque.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl?resize=1250&format=jpeg"
-            ],
-            "ac:accessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "xmp:MetadataDate": "2015-02-04 18:08:03",
-            "idigbio:uuid": "ef158cc6-2f94-48e5-92be-e608631f990f"
-          },
-          "recordids": [
-            "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
-            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl",
-            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bisque.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl?resize=1250&format=jpeg"
-          ],
-          "data": {
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
-            "ac:subtype": "Photograph",
-            "ac:metadataLanguage": "en",
-            "xmpRights:UsageTerms": "Public Domain",
-            "ac:comments": "http://creativecommons.org/publicdomain/mark/1.0/",
-            "dcterms:format": "image/jpeg",
-            "ac:goodQualityAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "coreid": "807945",
-            "dcterms:identifier": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "ac:caption": "YU YU.076227 Acer saccharum Marsh.",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "ac:thumbnailAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "ac:accessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
-            "xmp:MetadataDate": "2015-02-04 18:08:03",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=807945"
-          },
-          "datemodified": "2016-04-21T13:40:35.966214+00:00",
-          "accessuri": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "eff82e1c-8962-4673-9885-0172c4c38ae1",
-        "_score": 1,
-        "_routing": "07d81427-448e-43aa-841a-8191b8bed86b",
-        "_parent": "07d81427-448e-43aa-841a-8191b8bed86b",
+        "_routing": "491c7730-fc52-40fa-9ad4-7254507b15ab",
+        "_parent": "491c7730-fc52-40fa-9ad4-7254507b15ab",
         "_source": {
           "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
-          "uuid": "eff82e1c-8962-4673-9885-0172c4c38ae1",
-          "format": "image/jpeg",
-          "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
-          "dqs": 0.45454545454545453,
+          "uuid": "e9150480-4eae-4c57-af4e-942671169541",
           "rights": "CC0",
-          "mediatype": "images",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
           "hasSpecimen": true,
           "records": [
-            "07d81427-448e-43aa-841a-8191b8bed86b"
+            "491c7730-fc52-40fa-9ad4-7254507b15ab"
           ],
-          "etag": "50481b54c26c47888b4fa6b3eef92e546d6c2df3",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
+          "etag": "bc00165c3ee9d3ebacb4a93954b4ee6d60cc8cab",
           "indexData": {
-            "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
-            "ac:subtype": "Photograph",
-            "xmp:MetadataDate": "2012-10-08 20:53:21",
-            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
-            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/1",
-            "idigbio:etag": "50481b54c26c47888b4fa6b3eef92e546d6c2df3",
-            "dcterms:format": "image/jpeg",
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "e9150480-4eae-4c57-af4e-942671169541",
+            "idigbio:etag": "bc00165c3ee9d3ebacb4a93954b4ee6d60cc8cab",
+            "coreid": "urn:catalog:CAS:BOT-BC:330580",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg",
             "idigbio:recordIds": [
-              "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
-              "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204975/format/3"
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
             ],
-            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
-            "coreid": "110466",
-            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
             "idigbio:siblings": {
               "record": [
-                "07d81427-448e-43aa-841a-8191b8bed86b"
+                "491c7730-fc52-40fa-9ad4-7254507b15ab"
               ]
-            },
-            "idigbio:dateModified": "2016-04-21T13:40:34.206773",
-            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
-            "ac:metadataLanguage": "en",
-            "idigbio:uuid": "eff82e1c-8962-4673-9885-0172c4c38ae1",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110466"
+            }
           },
           "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
           "recordids": [
-            "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
-            "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204975/format/3"
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
           ],
           "data": {
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
-            "ac:subtype": "Photograph",
-            "ac:metadataLanguage": "en",
-            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
-            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/1",
-            "dcterms:format": "image/jpeg",
-            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
-            "coreid": "110466",
-            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
-            "xmp:MetadataDate": "2012-10-08 20:53:21",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110466"
+            "coreid": "urn:catalog:CAS:BOT-BC:330580",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
           },
-          "datemodified": "2016-04-21T13:40:34.206773+00:00",
-          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3"
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
         }
       },
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "f850af40-634d-4011-b482-30d7f2cc18c1",
+        "_id": "c8305454-0b54-44da-8852-745e5c90b7ff",
         "_score": 1,
-        "_routing": "049c4098-969b-4d2c-a70e-2bcb011e5ba5",
-        "_parent": "049c4098-969b-4d2c-a70e-2bcb011e5ba5",
+        "_routing": "a265be4a-514f-441d-93c4-5bfedebe4c6d",
+        "_parent": "a265be4a-514f-441d-93c4-5bfedebe4c6d",
         "_source": {
           "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
-          "uuid": "f850af40-634d-4011-b482-30d7f2cc18c1",
-          "format": "image/jpeg",
-          "recordset": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
-          "dqs": 0.45454545454545453,
+          "uuid": "c8305454-0b54-44da-8852-745e5c90b7ff",
           "rights": "CC0",
-          "mediatype": "images",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
           "hasSpecimen": true,
           "records": [
-            "049c4098-969b-4d2c-a70e-2bcb011e5ba5"
+            "a265be4a-514f-441d-93c4-5bfedebe4c6d"
           ],
-          "etag": "14da2924b4b0b0f55f78b9ca4c54c2d53ad32d1c",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
+          "etag": "48e218ce8806f874ce968066fbe3c263fa066098",
           "indexData": {
-            "idigbio:parent": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
-            "ac:subtype": "Photograph",
-            "xmp:MetadataDate": "2012-10-08 21:00:15",
-            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
-            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/1",
-            "idigbio:etag": "14da2924b4b0b0f55f78b9ca4c54c2d53ad32d1c",
-            "dcterms:format": "image/jpeg",
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "c8305454-0b54-44da-8852-745e5c90b7ff",
+            "idigbio:etag": "48e218ce8806f874ce968066fbe3c263fa066098",
+            "coreid": "urn:catalog:CAS:BOT-BC:330613",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg",
             "idigbio:recordIds": [
-              "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
-              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/208039/format/3"
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
             ],
-            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
-            "coreid": "92468",
-            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
             "idigbio:siblings": {
               "record": [
-                "049c4098-969b-4d2c-a70e-2bcb011e5ba5"
+                "a265be4a-514f-441d-93c4-5bfedebe4c6d"
               ]
-            },
-            "idigbio:dateModified": "2016-04-21T13:40:35.966214",
-            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
-            "ac:metadataLanguage": "en",
-            "idigbio:uuid": "f850af40-634d-4011-b482-30d7f2cc18c1",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=92468"
+            }
           },
           "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
           "recordids": [
-            "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
-            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/208039/format/3"
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
           ],
           "data": {
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
-            "ac:subtype": "Photograph",
-            "ac:metadataLanguage": "en",
-            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
-            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/1",
-            "dcterms:format": "image/jpeg",
-            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
-            "coreid": "92468",
-            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
-            "xmp:MetadataDate": "2012-10-08 21:00:15",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=92468"
+            "coreid": "urn:catalog:CAS:BOT-BC:330613",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
           },
-          "datemodified": "2016-04-21T13:40:35.966214+00:00",
-          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3"
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
         }
       },
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "6d9fc1d6-0014-4f5c-aff6-03d2dc62f9c7",
+        "_id": "3fb0d2a7-b4bc-4a8e-99d3-28a8eee7b7a4",
         "_score": 1,
-        "_routing": "2824107d-8da1-4a13-b26a-5cc08dd2ca75",
-        "_parent": "2824107d-8da1-4a13-b26a-5cc08dd2ca75",
+        "_routing": "37be3f4a-f8b1-49a6-8451-644e30236d6a",
+        "_parent": "37be3f4a-f8b1-49a6-8451-644e30236d6a",
         "_source": {
-          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
-          "uuid": "6d9fc1d6-0014-4f5c-aff6-03d2dc62f9c7",
-          "format": "image/jpeg",
-          "recordset": "f062cb7d-c03e-4762-b1c4-49118fee1a56",
-          "dqs": 0.45454545454545453,
-          "rights": "BY",
-          "mediatype": "images",
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "3fb0d2a7-b4bc-4a8e-99d3-28a8eee7b7a4",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
           "hasSpecimen": true,
           "records": [
-            "2824107d-8da1-4a13-b26a-5cc08dd2ca75"
+            "37be3f4a-f8b1-49a6-8451-644e30236d6a"
           ],
-          "etag": "b8a5e1badf16cde111430af45b41b447a9bc86b5",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
+          "etag": "7e33b01807f026c895f95b5eb457d4ea19b70f06",
           "indexData": {
-            "idigbio:parent": "f062cb7d-c03e-4762-b1c4-49118fee1a56",
-            "dcterms:type": "StillImage",
-            "dcterms:license": "cc-by",
-            "idigbio:uuid": "6d9fc1d6-0014-4f5c-aff6-03d2dc62f9c7",
-            "idigbio:etag": "b8a5e1badf16cde111430af45b41b447a9bc86b5",
-            "dcterms:format": "image/jpeg",
-            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/f/12839.",
-            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1466604573865bM6kJSbYob0t5S3W",
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "3fb0d2a7-b4bc-4a8e-99d3-28a8eee7b7a4",
+            "idigbio:etag": "7e33b01807f026c895f95b5eb457d4ea19b70f06",
+            "coreid": "urn:catalog:CAS:BOT-BC:330698",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
             "idigbio:siblings": {
               "record": [
-                "2824107d-8da1-4a13-b26a-5cc08dd2ca75"
+                "37be3f4a-f8b1-49a6-8451-644e30236d6a"
               ]
-            },
-            "idigbio:recordIds": [
-              "f062cb7d-c03e-4762-b1c4-49118fee1a56\\media\\http://mediaphoto.mnhn.fr/media/1466604573865bm6kjsbyob0t5s3w"
-            ],
-            "idigbio:dateModified": "2018-04-23T16:13:37.838075",
-            "dcterms:creator": "Jocelyn FALCONNET"
+            }
           },
-          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
           "recordids": [
-            "f062cb7d-c03e-4762-b1c4-49118fee1a56\\media\\http://mediaphoto.mnhn.fr/media/1466604573865bm6kjsbyob0t5s3w"
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
           ],
           "data": {
-            "dcterms:type": "StillImage",
-            "dcterms:license": "cc-by",
-            "dcterms:format": "image/jpeg",
-            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/f/12839.",
-            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1466604573865bM6kJSbYob0t5S3W",
-            "dcterms:creator": "Jocelyn FALCONNET"
+            "coreid": "urn:catalog:CAS:BOT-BC:330698",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
           },
-          "datemodified": "2018-04-23T16:13:37.838075+00:00",
-          "accessuri": "http://mediaphoto.mnhn.fr/media/1466604573865bM6kJSbYob0t5S3W"
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "b01747cc-1ea4-4ce1-8435-4ef34113115b",
+        "_score": 1,
+        "_routing": "ba81898c-c2ae-4bbb-bbee-3df9c54fb621",
+        "_parent": "ba81898c-c2ae-4bbb-bbee-3df9c54fb621",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "b01747cc-1ea4-4ce1-8435-4ef34113115b",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "ba81898c-c2ae-4bbb-bbee-3df9c54fb621"
+          ],
+          "etag": "f0f5680191f4f0841112458e3552cc232c37e397",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "b01747cc-1ea4-4ce1-8435-4ef34113115b",
+            "idigbio:etag": "f0f5680191f4f0841112458e3552cc232c37e397",
+            "coreid": "urn:catalog:CAS:BOT-BC:330978",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "ba81898c-c2ae-4bbb-bbee-3df9c54fb621"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:330978",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "4bffa9b9-8bc7-4a13-9e70-18e775e5291d",
+        "_score": 1,
+        "_routing": "36b3abef-9314-4530-ba57-e375a0c83bd5",
+        "_parent": "36b3abef-9314-4530-ba57-e375a0c83bd5",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "4bffa9b9-8bc7-4a13-9e70-18e775e5291d",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "36b3abef-9314-4530-ba57-e375a0c83bd5"
+          ],
+          "etag": "7718bac2bda6b3ecef51a2af9abce25f3d2ad40e",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "4bffa9b9-8bc7-4a13-9e70-18e775e5291d",
+            "idigbio:etag": "7718bac2bda6b3ecef51a2af9abce25f3d2ad40e",
+            "coreid": "urn:catalog:CAS:BOT-BC:331027",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "36b3abef-9314-4530-ba57-e375a0c83bd5"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331027",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "c6b2d90e-199e-47c7-9547-f610ce4bb616",
+        "_score": 1,
+        "_routing": "15d3190c-e45f-4002-b724-a8f882511351",
+        "_parent": "15d3190c-e45f-4002-b724-a8f882511351",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "c6b2d90e-199e-47c7-9547-f610ce4bb616",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "15d3190c-e45f-4002-b724-a8f882511351"
+          ],
+          "etag": "5a21b47e8af75d867e67ec1d6d320fb7c4ff2213",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "c6b2d90e-199e-47c7-9547-f610ce4bb616",
+            "idigbio:etag": "5a21b47e8af75d867e67ec1d6d320fb7c4ff2213",
+            "coreid": "urn:catalog:CAS:BOT-BC:331042",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "15d3190c-e45f-4002-b724-a8f882511351"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331042",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "699ddc14-6a98-4dc1-b609-4390da2846c0",
+        "_score": 1,
+        "_routing": "9a4244dd-9f22-4c81-9be6-1a41f9050f04",
+        "_parent": "9a4244dd-9f22-4c81-9be6-1a41f9050f04",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "699ddc14-6a98-4dc1-b609-4390da2846c0",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "9a4244dd-9f22-4c81-9be6-1a41f9050f04"
+          ],
+          "etag": "2dafa50901c8ff78ddfbf4cee6de2f5f6aed9086",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "699ddc14-6a98-4dc1-b609-4390da2846c0",
+            "idigbio:etag": "2dafa50901c8ff78ddfbf4cee6de2f5f6aed9086",
+            "coreid": "urn:catalog:CAS:BOT-BC:331518",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "9a4244dd-9f22-4c81-9be6-1a41f9050f04"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331518",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "d014a0cd-4a19-46ca-96cc-690789edfc13",
+        "_score": 1,
+        "_routing": "bbac4db4-299f-49d3-a6d6-35fd6fe0a164",
+        "_parent": "bbac4db4-299f-49d3-a6d6-35fd6fe0a164",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "d014a0cd-4a19-46ca-96cc-690789edfc13",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "bbac4db4-299f-49d3-a6d6-35fd6fe0a164"
+          ],
+          "etag": "eab9ba7827bb7bfe23d55cc65da2936bde138e2b",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "d014a0cd-4a19-46ca-96cc-690789edfc13",
+            "idigbio:etag": "eab9ba7827bb7bfe23d55cc65da2936bde138e2b",
+            "coreid": "urn:catalog:CAS:BOT-BC:331533",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "bbac4db4-299f-49d3-a6d6-35fd6fe0a164"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331533",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
         }
       }
     ]

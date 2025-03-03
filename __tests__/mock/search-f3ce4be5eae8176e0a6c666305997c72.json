@@ -108,10 +108,10 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "6931ee22-b40e-4441-a60c-ae3682ffd75f",
+        "_id": "2e5b3fed-034d-4309-8dcf-af2456b2ece9",
         "_score": null,
         "_source": {
-          "scientificname": "carex albonigra"
+          "scientificname": "uncinia phleoides"
         },
         "sort": [
           0.47826087
@@ -120,10 +120,10 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "2e5b3fed-034d-4309-8dcf-af2456b2ece9",
+        "_id": "6931ee22-b40e-4441-a60c-ae3682ffd75f",
         "_score": null,
         "_source": {
-          "scientificname": "uncinia phleoides"
+          "scientificname": "carex albonigra"
         },
         "sort": [
           0.47826087

@@ -7,13 +7,13 @@
   },
   "hits": {
     "total": 1,
-    "max_score": 15.5134945,
+    "max_score": 15.46606,
     "hits": [
       {
         "_index": "idigbio-2.10.25",
         "_type": "recordsets",
         "_id": "6bb853ab-e8ea-43b1-bd83-47318fc4c345",
-        "_score": 15.5134945,
+        "_score": 15.46606,
         "_source": {
           "publisher": "350857a8-4940-4d02-ad42-49557f8006f1",
           "uuid": "6bb853ab-e8ea-43b1-bd83-47318fc4c345",
