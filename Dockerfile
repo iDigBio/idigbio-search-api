@@ -10,8 +10,7 @@ USER www-data
 WORKDIR /var/www
 ADD package.json /var/www/package.json
 ADD --chown=www-data:www-data . /var/www
-RUN yarn && yarn cache clean
-RUN npm i
+RUN yarn install
 
 EXPOSE 19196
 
