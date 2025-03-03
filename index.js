@@ -38,7 +38,7 @@ function startThisProcess(id) {
     id = id || 'main';
     const app = require(`${srcdir}/app`).default;
     return app.ready.then(function() {
-      const server = app.listen(config.port, "localhost", function() {
+      const server = app.listen(config.port, function() {
         logger.info(`Server(${id}) listening on port ${config.port}`);
       });
       registerGracefulShutdown('SIGTERM', server, id);
