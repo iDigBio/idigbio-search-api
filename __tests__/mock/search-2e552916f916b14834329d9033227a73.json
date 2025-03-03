@@ -1,0 +1,1423 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 13949,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "abf3fe20-f54e-4319-b7ad-fde581b5dd1d",
+        "_score": 1,
+        "_source": {
+          "recordset": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "municipality": "gainesville",
+          "county": "alachua",
+          "startdayofyear": 234,
+          "collector": "h. d. thiers",
+          "continent": "north america",
+          "uuid": "abf3fe20-f54e-4319-b7ad-fde581b5dd1d",
+          "countrycode": "usa",
+          "locality": "newnan's lake",
+          "institutioncode": "sfsu",
+          "datecollected": "1958-08-22T00:00:00+00:00",
+          "etag": "2d47b12f3a5a86e2322d9cb4e3eb8c296f0c55ec",
+          "recordnumber": "5346",
+          "hasImage": false,
+          "collectionid": "6d7928b7-550a-4842-9194-317610d85e74",
+          "indexData": {
+            "dwc:startDayOfYear": "234",
+            "dwc:county": "Alachua",
+            "dwc:recordedBy": "H. D. Thiers",
+            "idigbio:uuid": "abf3fe20-f54e-4319-b7ad-fde581b5dd1d",
+            "dwc:georeferenceSources": "Google Maps",
+            "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031459",
+            "idigbio:recordIds": [
+              "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031459",
+              "46374ee7-7c70-48d8-bf16-2e6c1626565e\\e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1"
+            ],
+            "dwc:occurrenceID": "e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+            "symbiota:recordEnteredBy": "bthiers",
+            "idigbio:parent": "46374ee7-7c70-48d8-bf16-2e6c1626565e",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1958-08-22",
+            "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+            "dwc:institutionCode": "SFSU",
+            "dwc:country": "united states",
+            "idigbio:recordId": "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+            "idigbio:etag": "2d47b12f3a5a86e2322d9cb4e3eb8c296f0c55ec",
+            "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+            "id": "1031459",
+            "dwc:decimalLatitude": "29.7029645",
+            "dwc:georeferenceVerificationStatus": "high confidence",
+            "dwc:basisOfRecord": "FieldBook",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "flag_dwc_country_replaced": true,
+            "dwc:municipality": "Gainesville",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2021-04-19T22:45:11.573256",
+            "dwc:locality": "Newnan's Lake",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-82.2141266",
+            "dwc:georeferencedBy": "B. Thiers",
+            "dwc:verbatimEventDate": "22-Aug-58",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "5346",
+            "idigbio:isocountrycode": "usa",
+            "dwc:georeferenceProtocol": "GBIF Best Practices",
+            "dcterms:modified": "2015-01-08 13:04:45",
+            "dwc:coordinateUncertaintyInMeters": "3500",
+            "dwc:day": "22",
+            "dwc:year": "1958"
+          },
+          "hasMedia": false,
+          "coordinateuncertainty": 3500,
+          "data": {
+            "dwc:startDayOfYear": "234",
+            "dwc:county": "Alachua",
+            "dwc:recordedBy": "H. D. Thiers",
+            "dwc:georeferenceSources": "Google Maps",
+            "dcterms:references": "https://mycoportal.org/portal/collections/individual/index.php?occid=1031459",
+            "dwc:occurrenceID": "e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+            "id": "1031459",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1958-08-22",
+            "dwc:collectionID": "6d7928b7-550a-4842-9194-317610d85e74",
+            "dwc:institutionCode": "SFSU",
+            "dwc:country": "USA",
+            "idigbio:recordId": "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+            "dwc:georeferenceRemarks": "point placed in center of likely collecting polygon; uncertainty calculated from center point to edge",
+            "symbiota:recordEnteredBy": "bthiers",
+            "dwc:decimalLatitude": "29.7029645",
+            "dwc:georeferenceVerificationStatus": "high confidence",
+            "dwc:basisOfRecord": "FieldBook",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:municipality": "Gainesville",
+            "dwc:locality": "Newnan's Lake",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:month": "8",
+            "dwc:decimalLongitude": "-82.2141266",
+            "dwc:georeferencedBy": "B. Thiers",
+            "dwc:verbatimEventDate": "22-Aug-58",
+            "dwc:recordNumber": "5346",
+            "dwc:georeferenceProtocol": "GBIF Best Practices",
+            "dcterms:modified": "2015-01-08 13:04:45",
+            "dwc:coordinateUncertaintyInMeters": "3500",
+            "dwc:day": "22",
+            "dwc:year": "1958"
+          },
+          "datemodified": "2021-04-19T22:45:11.573256+00:00",
+          "occurrenceid": "e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+          "country": "united states",
+          "geopoint": {
+            "lat": 29.7029645,
+            "lon": -82.2141266
+          },
+          "flags": [
+            "dwc_basisofrecord_removed",
+            "dwc_basisofrecord_invalid",
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "22-aug-58",
+          "recordids": [
+            "urn:uuid:e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1",
+            "46374ee7-7c70-48d8-bf16-2e6c1626565e\\1031459",
+            "46374ee7-7c70-48d8-bf16-2e6c1626565e\\e3d08324-c89a-4bbc-bf72-4c3eeb4ef7d1"
+          ],
+          "eventdate": "1958-08-22"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "19d1cd1e-7fb2-4b32-9164-218769c8afb4",
+        "_score": 1,
+        "_source": {
+          "recordset": "7b0809fb-fd62-4733-8f40-74ceb04cbcac",
+          "dqs": 0.2608695652173913,
+          "stateprovince": "florida",
+          "county": "bay",
+          "earliestperiodorlowestsystem": "quaternary",
+          "catalognumber": "npl00002695.000",
+          "startdayofyear": 182,
+          "collector": "kresile, james",
+          "verbatimlocality": "panama city, florida [unspecified county, florida usa    ]",
+          "uuid": "19d1cd1e-7fb2-4b32-9164-218769c8afb4",
+          "countrycode": "usa",
+          "basisofrecord": "fossilspecimen",
+          "continent": "north america",
+          "datecollected": "1950-07-01T00:00:00+00:00",
+          "etag": "9fc85666c6648365191367b76279a62293aadf20",
+          "flags": [
+            "geopoint_datum_missing",
+            "dwc_continent_added",
+            "idigbio_isocountrycode_added"
+          ],
+          "hasMedia": false,
+          "hasImage": false,
+          "earliesteraorlowesterathem": "cenozoic",
+          "locality": "panama city",
+          "data": {
+            "dwc:identificationRemarks": "unknown",
+            "dwc:county": "Bay",
+            "dwc:recordedBy": "Kresile, James",
+            "dwc:fieldNumber": "KRES-NPL-1950Jul-02",
+            "dwc:occurrenceID": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+            "id": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1950-07-01",
+            "dwc:country": "United States",
+            "dwc:earliestPeriodOrLowestSystem": "Quaternary",
+            "dwc:georeferenceRemarks": "uncertainty based on polygon",
+            "dwc:decimalLatitude": "30.1700600000",
+            "dwc:locationID": "34032614-0068-11e3-85b8-002219aba676",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:preparations": "Dry - 5",
+            "dwc:eventID": "b9142ab5-d020-4b74-9480-7a7357833ce8",
+            "dwc:locality": "Panama City",
+            "dwc:catalogNumber": "NPL00002695.000",
+            "dwc:higherGeography": "Bay, Florida, United States",
+            "dwc:month": "7",
+            "dwc:decimalLongitude": "-85.6507900000",
+            "dwc:verbatimLocality": "Panama City, Florida [unspecified County, Florida USA    ]",
+            "dwc:verbatimEventDate": "July 1950",
+            "dwc:earliestEraOrLowestErathem": "Cenozoic",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+                "dwc:relationshipOfResource": "sameAs",
+                "dwc:relatedResourceID": "d92c22af-7fa8-49ca-9130-2830d38f76cc"
+              }
+            ],
+            "dwc:day": "1",
+            "dwc:year": "1950"
+          },
+          "datemodified": "2021-04-19T22:02:30.923885+00:00",
+          "occurrenceid": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+          "country": "united states",
+          "geopoint": {
+            "lat": 30.17006,
+            "lon": -85.65079
+          },
+          "fieldnumber": "kres-npl-1950jul-02",
+          "verbatimeventdate": "july 1950",
+          "recordids": [
+            "7b0809fb-fd62-4733-8f40-74ceb04cbcac\\d92c22af-7fa8-49ca-9130-2830d38f76cc"
+          ],
+          "eventdate": "1950-07-01",
+          "indexData": {
+            "dwc:identificationRemarks": "unknown",
+            "dwc:county": "Bay",
+            "dwc:recordedBy": "Kresile, James",
+            "idigbio:uuid": "19d1cd1e-7fb2-4b32-9164-218769c8afb4",
+            "dwc:fieldNumber": "KRES-NPL-1950Jul-02",
+            "idigbio:recordIds": [
+              "7b0809fb-fd62-4733-8f40-74ceb04cbcac\\d92c22af-7fa8-49ca-9130-2830d38f76cc"
+            ],
+            "dwc:occurrenceID": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+            "id": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+            "idigbio:parent": "7b0809fb-fd62-4733-8f40-74ceb04cbcac",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1950-07-01",
+            "dwc:country": "United States",
+            "dwc:earliestPeriodOrLowestSystem": "Quaternary",
+            "idigbio:etag": "9fc85666c6648365191367b76279a62293aadf20",
+            "dwc:georeferenceRemarks": "uncertainty based on polygon",
+            "dwc:decimalLatitude": "30.1700600000",
+            "dwc:locationID": "34032614-0068-11e3-85b8-002219aba676",
+            "dwc:basisOfRecord": "FossilSpecimen",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Dry - 5",
+            "flag_dwc_continent_added": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:eventID": "b9142ab5-d020-4b74-9480-7a7357833ce8",
+            "idigbio:dateModified": "2021-04-19T22:02:30.923885",
+            "dwc:locality": "Panama City",
+            "dwc:catalogNumber": "NPL00002695.000",
+            "dwc:higherGeography": "Bay, Florida, United States",
+            "dwc:month": "7",
+            "dwc:decimalLongitude": "-85.6507900000",
+            "dwc:verbatimLocality": "Panama City, Florida [unspecified County, Florida USA    ]",
+            "dwc:verbatimEventDate": "July 1950",
+            "idigbio:isocountrycode": "usa",
+            "dwc:earliestEraOrLowestErathem": "Cenozoic",
+            "dwc:ResourceRelationship": [
+              {
+                "coreid": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+                "dwc:relatedResourceID": "d92c22af-7fa8-49ca-9130-2830d38f76cc",
+                "dwc:relationshipOfResource": "sameAs"
+              }
+            ],
+            "dwc:day": "1",
+            "dwc:year": "1950"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "e9094de0-5776-4dc5-8aee-b85afee700ce",
+        "_score": 1,
+        "_source": {
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00033751",
+          "collector": "mark deyrup",
+          "continent": "north america",
+          "uuid": "e9094de0-5776-4dc5-8aee-b85afee700ce",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "etag": "2b3767c7213a7b65ed2215016a78d05052c3d5e2",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "archbold biological station: trail 1 w. end, sso",
+          "data": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22813528",
+            "dwc:occurrenceID": "7947629c-3d40-4e3d-b1b0-8d7546f17488",
+            "id": "22813528",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1983-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:98b8fa44-a5f1-49c5-a059-07ed6fec6323",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:habitat": "Sand Pine Scrub with Oak",
+            "dwc:locality": "Archbold Biological Station: trail 1 W. end, Sso",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033751",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "5 /30/1983",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1983"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "7947629c-3d40-4e3d-b1b0-8d7546f17488",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.182843,
+            "lon": -81.352007
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "5 /30/1983",
+          "recordids": [
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22813528",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\7947629c-3d40-4e3d-b1b0-8d7546f17488",
+            "urn:uuid:98b8fa44-a5f1-49c5-a059-07ed6fec6323"
+          ],
+          "eventdate": "1983-00-00",
+          "indexData": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "idigbio:uuid": "e9094de0-5776-4dc5-8aee-b85afee700ce",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22813528",
+            "idigbio:recordIds": [
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22813528",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\7947629c-3d40-4e3d-b1b0-8d7546f17488",
+              "urn:uuid:98b8fa44-a5f1-49c5-a059-07ed6fec6323"
+            ],
+            "dwc:occurrenceID": "7947629c-3d40-4e3d-b1b0-8d7546f17488",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1983-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:98b8fa44-a5f1-49c5-a059-07ed6fec6323",
+            "idigbio:etag": "2b3767c7213a7b65ed2215016a78d05052c3d5e2",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "22813528",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "Sand Pine Scrub with Oak",
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Archbold Biological Station: trail 1 W. end, Sso",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033751",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "5 /30/1983",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1983"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "75f4cecf-e553-445d-9abb-29f33d9bd3aa",
+        "_score": 1,
+        "_source": {
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00034052",
+          "collector": "mark deyrup",
+          "continent": "north america",
+          "uuid": "75f4cecf-e553-445d-9abb-29f33d9bd3aa",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "etag": "cea9784b59b7b618a1e48dd5f7bbecbf9d4872d1",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "archbold biological station: by plaza",
+          "data": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22839543",
+            "dwc:occurrenceID": "ac828f8c-536d-47ad-a512-dbc1a0c298e5",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1989-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:34248a3c-2988-4f04-a5ba-f676eb15a8b2",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "22839543",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:locality": "Archbold Biological Station: by plaza",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00034052",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "4 /24/1989",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1989"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "ac828f8c-536d-47ad-a512-dbc1a0c298e5",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.182843,
+            "lon": -81.352007
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "4 /24/1989",
+          "recordids": [
+            "urn:uuid:34248a3c-2988-4f04-a5ba-f676eb15a8b2",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\ac828f8c-536d-47ad-a512-dbc1a0c298e5",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22839543"
+          ],
+          "eventdate": "1989-00-00",
+          "indexData": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "idigbio:uuid": "75f4cecf-e553-445d-9abb-29f33d9bd3aa",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22839543",
+            "idigbio:recordIds": [
+              "urn:uuid:34248a3c-2988-4f04-a5ba-f676eb15a8b2",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\ac828f8c-536d-47ad-a512-dbc1a0c298e5",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22839543"
+            ],
+            "dwc:occurrenceID": "ac828f8c-536d-47ad-a512-dbc1a0c298e5",
+            "id": "22839543",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1989-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:34248a3c-2988-4f04-a5ba-f676eb15a8b2",
+            "idigbio:etag": "cea9784b59b7b618a1e48dd5f7bbecbf9d4872d1",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Archbold Biological Station: by plaza",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00034052",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "4 /24/1989",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1989"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "578bd535-d4c2-4fc5-b865-01fd7afa2efb",
+        "_score": 1,
+        "_source": {
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00033773",
+          "collector": "mark deyrup",
+          "continent": "north america",
+          "uuid": "578bd535-d4c2-4fc5-b865-01fd7afa2efb",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "etag": "03c1bd3becb30bb96032de9a06bf1ef48a931af8",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "archbold biological station: sand pine scrub red hill, rd. 181",
+          "data": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22813543",
+            "dwc:occurrenceID": "b5864c52-89dd-40c5-8556-274ec64fb7b6",
+            "id": "22813543",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2006-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:360cd992-68d9-4545-a0cc-e318a7e013a1",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:habitat": "Sand Pine Scrub",
+            "dwc:locality": "Archbold Biological Station: sand pine scrub Red Hill, Rd. 181",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033773",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "4 /5 /2006",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "2006"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "b5864c52-89dd-40c5-8556-274ec64fb7b6",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.182843,
+            "lon": -81.352007
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "4 /5 /2006",
+          "recordids": [
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\b5864c52-89dd-40c5-8556-274ec64fb7b6",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22813543",
+            "urn:uuid:360cd992-68d9-4545-a0cc-e318a7e013a1"
+          ],
+          "eventdate": "2006-00-00",
+          "indexData": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "idigbio:uuid": "578bd535-d4c2-4fc5-b865-01fd7afa2efb",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22813543",
+            "idigbio:recordIds": [
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\b5864c52-89dd-40c5-8556-274ec64fb7b6",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22813543",
+              "urn:uuid:360cd992-68d9-4545-a0cc-e318a7e013a1"
+            ],
+            "dwc:occurrenceID": "b5864c52-89dd-40c5-8556-274ec64fb7b6",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2006-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:360cd992-68d9-4545-a0cc-e318a7e013a1",
+            "idigbio:etag": "03c1bd3becb30bb96032de9a06bf1ef48a931af8",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "22813543",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "Sand Pine Scrub",
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Archbold Biological Station: sand pine scrub Red Hill, Rd. 181",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033773",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "4 /5 /2006",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "2006"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "3d3ebfe8-1f83-4517-8eeb-30877e577dca",
+        "_score": 1,
+        "_source": {
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00033376",
+          "startdayofyear": 290,
+          "collector": "mark deyrup",
+          "continent": "north america",
+          "uuid": "3d3ebfe8-1f83-4517-8eeb-30877e577dca",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "datecollected": "1984-10-16T00:00:00+00:00",
+          "etag": "b1850b4e8ddf0c06ad7d43bb44729de05da62484",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "archbold biological station: trail 2 sso",
+          "data": {
+            "dwc:startDayOfYear": "290",
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22820045",
+            "dwc:occurrenceID": "d5f54d44-2219-45ab-85de-dc1c059abf46",
+            "id": "22820045",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1984-10-16",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:6b9b1681-dc57-442c-842a-23a4db31491c",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:habitat": "Sand Pine Scrub with Oak",
+            "dwc:locality": "Archbold Biological Station: trail 2 Sso",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033376",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "10/16/1984",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "16",
+            "dwc:year": "1984"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "d5f54d44-2219-45ab-85de-dc1c059abf46",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.182843,
+            "lon": -81.352007
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "10/16/1984",
+          "recordids": [
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22820045",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\d5f54d44-2219-45ab-85de-dc1c059abf46",
+            "urn:uuid:6b9b1681-dc57-442c-842a-23a4db31491c"
+          ],
+          "eventdate": "1984-10-16",
+          "indexData": {
+            "dwc:startDayOfYear": "290",
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "idigbio:uuid": "3d3ebfe8-1f83-4517-8eeb-30877e577dca",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22820045",
+            "idigbio:recordIds": [
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22820045",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\d5f54d44-2219-45ab-85de-dc1c059abf46",
+              "urn:uuid:6b9b1681-dc57-442c-842a-23a4db31491c"
+            ],
+            "dwc:occurrenceID": "d5f54d44-2219-45ab-85de-dc1c059abf46",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1984-10-16",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:6b9b1681-dc57-442c-842a-23a4db31491c",
+            "idigbio:etag": "b1850b4e8ddf0c06ad7d43bb44729de05da62484",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "22820045",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "Sand Pine Scrub with Oak",
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Archbold Biological Station: trail 2 Sso",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033376",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "10/16/1984",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "16",
+            "dwc:year": "1984"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "9964994b-0d6c-4ab3-b79a-919ebf25d742",
+        "_score": 1,
+        "_source": {
+          "recordset": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+          "dqs": 0.2463768115942029,
+          "stateprovince": "florida",
+          "municipality": "eustis",
+          "county": "lake",
+          "catalognumber": "msc0218790",
+          "collector": "geo. v. nash.",
+          "continent": "north america",
+          "uuid": "9964994b-0d6c-4ab3-b79a-919ebf25d742",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "msc",
+          "mediarecords": [
+            "1ee205ce-0c03-4de0-aeaf-41fa107cec2d"
+          ],
+          "etag": "8deb92ea5f19ccc370e67f923a6fa2a52fc3fe78",
+          "recordnumber": "1886",
+          "hasImage": true,
+          "collectionid": "9f240f3c-0ebe-463a-b610-4fa9beea74b7",
+          "indexData": {
+            "dwc:county": "Lake",
+            "dwc:recordedBy": "Geo. V. Nash.",
+            "idigbio:uuid": "9964994b-0d6c-4ab3-b79a-919ebf25d742",
+            "dcterms:references": "https://www.mycoportal.org/portal/collections/individual/index.php?occid=4473069",
+            "idigbio:recordIds": [
+              "urn:uuid:dc15db1e-d617-461a-9c23-021cf167b280",
+              "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\4473069",
+              "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\msc0218790"
+            ],
+            "dwc:occurrenceID": "MSC0218790",
+            "dwc:institutionCode": "MSC",
+            "idigbio:parent": "0266a3f4-872b-4d21-a6b4-5c9818d8742b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1895-00-00",
+            "dwc:collectionID": "9f240f3c-0ebe-463a-b610-4fa9beea74b7",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:dc15db1e-d617-461a-9c23-021cf167b280",
+            "idigbio:etag": "8deb92ea5f19ccc370e67f923a6fa2a52fc3fe78",
+            "id": "4473069",
+            "dwc:decimalLatitude": "28.84662",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:municipality": "Eustis",
+            "idigbio:siblings": {
+              "mediarecord": [
+                "1ee205ce-0c03-4de0-aeaf-41fa107cec2d"
+              ]
+            },
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "on Eriogonum longifolium",
+            "idigbio:dateModified": "2022-12-06T21:16:33.320324",
+            "dwc:georeferenceSources": "georef batch tool 2017-11-01; GeoLocate",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:catalogNumber": "MSC0218790",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.72718",
+            "dwc:associatedTaxa": "host: Eriogonum longifolium",
+            "dwc:otherCatalogNumbers": "110222",
+            "dwc:georeferencedBy": "MichaellaMcB (2017-11-01 16:48:05)",
+            "dwc:verbatimEventDate": "May 28- June 15 1895",
+            "flag_dwc_continent_added": true,
+            "dwc:recordNumber": "1886",
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2021-04-13 02:19:54",
+            "dwc:coordinateUncertaintyInMeters": "1500",
+            "dwc:day": "0",
+            "dwc:year": "1895"
+          },
+          "hasMedia": true,
+          "coordinateuncertainty": 1500,
+          "data": {
+            "dwc:county": "Lake",
+            "dwc:recordedBy": "Geo. V. Nash.",
+            "dcterms:references": "https://www.mycoportal.org/portal/collections/individual/index.php?occid=4473069",
+            "dwc:occurrenceID": "MSC0218790",
+            "id": "4473069",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1895-00-00",
+            "dwc:collectionID": "9f240f3c-0ebe-463a-b610-4fa9beea74b7",
+            "dwc:institutionCode": "MSC",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:dc15db1e-d617-461a-9c23-021cf167b280",
+            "dwc:decimalLatitude": "28.84662",
+            "dwc:georeferenceVerificationStatus": "reviewed - high confidence",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+            "dwc:municipality": "Eustis",
+            "dwc:habitat": "on Eriogonum longifolium",
+            "dwc:georeferenceSources": "georef batch tool 2017-11-01; GeoLocate",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:catalogNumber": "MSC0218790",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.72718",
+            "dwc:coordinateUncertaintyInMeters": "1500",
+            "dwc:otherCatalogNumbers": "110222",
+            "dwc:georeferencedBy": "MichaellaMcB (2017-11-01 16:48:05)",
+            "dwc:verbatimEventDate": "May 28- June 15 1895",
+            "dwc:recordNumber": "1886",
+            "dcterms:modified": "2021-04-13 02:19:54",
+            "dwc:associatedTaxa": "host: Eriogonum longifolium",
+            "dwc:day": "0",
+            "dwc:year": "1895"
+          },
+          "datemodified": "2022-12-06T21:16:33.320324+00:00",
+          "occurrenceid": "msc0218790",
+          "country": "united states",
+          "geopoint": {
+            "lat": 28.84662,
+            "lon": -81.72718
+          },
+          "flags": [
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "may 28- june 15 1895",
+          "recordids": [
+            "urn:uuid:dc15db1e-d617-461a-9c23-021cf167b280",
+            "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\4473069",
+            "0266a3f4-872b-4d21-a6b4-5c9818d8742b\\msc0218790"
+          ],
+          "eventdate": "1895-00-00"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "953681ff-fe5f-490a-bd8c-8a9a2854f09e",
+        "_score": 1,
+        "_source": {
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00032846",
+          "collector": "mark deyrup, sutton, gary steck",
+          "continent": "north america",
+          "uuid": "953681ff-fe5f-490a-bd8c-8a9a2854f09e",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "etag": "341328791db276d26ff5b5fe227a3bf9fded3ac6",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "archbold biological station: near butterfly garden scrubby flatwoods & mesic habitat",
+          "data": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup, Sutton, Gary Steck",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22813517",
+            "dwc:occurrenceID": "06ac4144-de08-4d6e-acab-b030361e56db",
+            "id": "22813517",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1997-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:60f4dc32-691d-48a6-8864-2e661ad04f6e",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:habitat": "Scrubby Flatwoods",
+            "dwc:locality": "Archbold Biological Station: near butterfly garden scrubby flatwoods & mesic habitat",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00032846",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "3 /29/1997",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1997"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "06ac4144-de08-4d6e-acab-b030361e56db",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.182843,
+            "lon": -81.352007
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "3 /29/1997",
+          "recordids": [
+            "urn:uuid:60f4dc32-691d-48a6-8864-2e661ad04f6e",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\06ac4144-de08-4d6e-acab-b030361e56db",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22813517"
+          ],
+          "eventdate": "1997-00-00",
+          "indexData": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup, Sutton, Gary Steck",
+            "idigbio:uuid": "953681ff-fe5f-490a-bd8c-8a9a2854f09e",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22813517",
+            "idigbio:recordIds": [
+              "urn:uuid:60f4dc32-691d-48a6-8864-2e661ad04f6e",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\06ac4144-de08-4d6e-acab-b030361e56db",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22813517"
+            ],
+            "dwc:occurrenceID": "06ac4144-de08-4d6e-acab-b030361e56db",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1997-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:60f4dc32-691d-48a6-8864-2e661ad04f6e",
+            "idigbio:etag": "341328791db276d26ff5b5fe227a3bf9fded3ac6",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "22813517",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "Scrubby Flatwoods",
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Archbold Biological Station: near butterfly garden scrubby flatwoods & mesic habitat",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00032846",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "3 /29/1997",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1997"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "12964ce3-c055-481d-8ace-721ce272a48e",
+        "_score": 1,
+        "_source": {
+          "recordset": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+          "dqs": 0.21739130434782608,
+          "stateprovince": "florida",
+          "county": "highlands county",
+          "catalognumber": "artharch00033386",
+          "collector": "mark deyrup",
+          "continent": "north america",
+          "uuid": "12964ce3-c055-481d-8ace-721ce272a48e",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "abs",
+          "etag": "691e260d44be29ee590a34e062237ae0952dd20a",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "f52df103-0126-47fd-8836-934641444fcd",
+          "locality": "archbold biological station: trail 1 sso",
+          "data": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22820071",
+            "dwc:occurrenceID": "174da79f-1d1c-4875-a157-b47dd221b30c",
+            "id": "22820071",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1986-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:1d6d3477-540e-4868-bef0-b2f319426100",
+            "dwc:collectionCode": "ARTHARCH",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "dwc:habitat": "Sand Pine Scrub with Oak",
+            "dwc:locality": "Archbold Biological Station: trail 1 Sso",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033386",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "7 /30/1986",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1986"
+          },
+          "datemodified": "2021-01-01T08:03:36.302288+00:00",
+          "occurrenceid": "174da79f-1d1c-4875-a157-b47dd221b30c",
+          "country": "united states",
+          "geopoint": {
+            "lat": 27.182843,
+            "lon": -81.352007
+          },
+          "collectioncode": "artharch",
+          "flags": [
+            "geopoint_datum_missing",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "7 /30/1986",
+          "recordids": [
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\174da79f-1d1c-4875-a157-b47dd221b30c",
+            "urn:uuid:1d6d3477-540e-4868-bef0-b2f319426100",
+            "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22820071"
+          ],
+          "eventdate": "1986-00-00",
+          "indexData": {
+            "dwc:county": "Highlands County",
+            "dwc:recordedBy": "Mark Deyrup",
+            "idigbio:uuid": "12964ce3-c055-481d-8ace-721ce272a48e",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=22820071",
+            "idigbio:recordIds": [
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\174da79f-1d1c-4875-a157-b47dd221b30c",
+              "urn:uuid:1d6d3477-540e-4868-bef0-b2f319426100",
+              "db4bb0df-8539-4617-ab5f-eb118aa3126b\\22820071"
+            ],
+            "dwc:occurrenceID": "174da79f-1d1c-4875-a157-b47dd221b30c",
+            "dcterms:rightsHolder": "Archbold Biological Station",
+            "idigbio:parent": "db4bb0df-8539-4617-ab5f-eb118aa3126b",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "1986-00-00",
+            "dwc:collectionID": "f52df103-0126-47fd-8836-934641444fcd",
+            "dwc:country": "United States",
+            "idigbio:recordId": "urn:uuid:1d6d3477-540e-4868-bef0-b2f319426100",
+            "idigbio:etag": "691e260d44be29ee590a34e062237ae0952dd20a",
+            "dwc:collectionCode": "ARTHARCH",
+            "id": "22820071",
+            "dwc:decimalLatitude": "27.182843",
+            "dwc:basisOfRecord": "Pinned Specimen",
+            "dwc:continent": "north america",
+            "dc:rights": "http://creativecommons.org/licenses/by-nc/4.0/",
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "dwc:habitat": "Sand Pine Scrub with Oak",
+            "idigbio:dateModified": "2021-01-01T08:03:36.302288",
+            "dwc:locality": "Archbold Biological Station: trail 1 Sso",
+            "dwc:institutionCode": "ABS",
+            "dwc:catalogNumber": "ARTHARCH00033386",
+            "dwc:month": "0",
+            "dwc:decimalLongitude": "-81.352007",
+            "dwc:verbatimEventDate": "7 /30/1986",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2017-03-10 13:54:31",
+            "dwc:day": "0",
+            "dwc:year": "1986"
+          }
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "9f3d07cd-03fa-4153-b6a9-49d9ae77930c",
+        "_score": 1,
+        "_source": {
+          "recordset": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+          "dqs": 0.2608695652173913,
+          "stateprovince": "florida",
+          "county": "collier",
+          "catalognumber": "msuc_arc_290722",
+          "startdayofyear": 286,
+          "collector": "m.c. nielsen",
+          "continent": "north america",
+          "uuid": "9f3d07cd-03fa-4153-b6a9-49d9ae77930c",
+          "countrycode": "usa",
+          "basisofrecord": "preservedspecimen",
+          "institutioncode": "msu",
+          "datecollected": "2000-10-12T00:00:00+00:00",
+          "etag": "8b26eb48789d02de38327d7a011a4b503d823bfc",
+          "hasMedia": false,
+          "hasImage": false,
+          "collectionid": "15cdb244-b82d-4798-af5e-ef7bc138f233",
+          "locality": "14 mi n everglades city",
+          "coordinateuncertainty": 19496,
+          "data": {
+            "dwc:startDayOfYear": "286",
+            "dwc:county": "Collier",
+            "dwc:recordedBy": "M.C. Nielsen",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=56423716",
+            "dwc:occurrenceID": "700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+            "dwc:lifeStage": "adult",
+            "id": "56423716",
+            "symbiota:recordEnteredBy": "fwest",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2000-10-12",
+            "dwc:collectionID": "15cdb244-b82d-4798-af5e-ef7bc138f233",
+            "dwc:institutionCode": "MSU",
+            "dwc:country": "USA",
+            "idigbio:recordId": "urn:uuid:700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+            "dwc:collectionCode": "MSUC",
+            "dcterms:rightsHolder": "Department of Entomology, MSU",
+            "dwc:decimalLatitude": "26.063471",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:preparations": "Pinned",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "dwc:locality": "14 mi N Everglades City",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:catalogNumber": "MSUC_ARC_290722",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-81.380357",
+            "dwc:verbatimEventDate": "12-13 October 2000",
+            "dcterms:modified": "2021-03-28 18:02:14",
+            "dwc:coordinateUncertaintyInMeters": "19496",
+            "dwc:day": "12",
+            "dwc:year": "2000"
+          },
+          "datemodified": "2021-05-20T21:27:49.767703+00:00",
+          "occurrenceid": "700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+          "country": "united states",
+          "geopoint": {
+            "lat": 26.063471,
+            "lon": -81.380357
+          },
+          "collectioncode": "msuc",
+          "flags": [
+            "dwc_country_replaced",
+            "idigbio_isocountrycode_added",
+            "dwc_continent_added"
+          ],
+          "verbatimeventdate": "12-13 october 2000",
+          "recordids": [
+            "87017793-00dc-4f5d-b95b-09e7d17327cc\\56423716",
+            "urn:uuid:700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+            "87017793-00dc-4f5d-b95b-09e7d17327cc\\700eac85-cbfc-4ce5-bc4c-388de8c981b8"
+          ],
+          "eventdate": "2000-10-12",
+          "indexData": {
+            "dwc:startDayOfYear": "286",
+            "dwc:geodeticDatum": "WGS84",
+            "dwc:county": "Collier",
+            "dwc:recordedBy": "M.C. Nielsen",
+            "idigbio:uuid": "9f3d07cd-03fa-4153-b6a9-49d9ae77930c",
+            "dwc:georeferenceSources": "GeoLocate",
+            "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=56423716",
+            "idigbio:recordIds": [
+              "87017793-00dc-4f5d-b95b-09e7d17327cc\\56423716",
+              "urn:uuid:700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+              "87017793-00dc-4f5d-b95b-09e7d17327cc\\700eac85-cbfc-4ce5-bc4c-388de8c981b8"
+            ],
+            "dwc:occurrenceID": "700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+            "dwc:lifeStage": "adult",
+            "id": "56423716",
+            "symbiota:recordEnteredBy": "fwest",
+            "idigbio:parent": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+            "dwc:stateProvince": "Florida",
+            "dwc:eventDate": "2000-10-12",
+            "dwc:collectionID": "15cdb244-b82d-4798-af5e-ef7bc138f233",
+            "dwc:country": "united states",
+            "idigbio:recordId": "urn:uuid:700eac85-cbfc-4ce5-bc4c-388de8c981b8",
+            "idigbio:etag": "8b26eb48789d02de38327d7a011a4b503d823bfc",
+            "dwc:collectionCode": "MSUC",
+            "dcterms:rightsHolder": "Department of Entomology, MSU",
+            "dwc:decimalLatitude": "26.063471",
+            "dwc:basisOfRecord": "PreservedSpecimen",
+            "dwc:continent": "north america",
+            "dwc:preparations": "Pinned",
+            "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "flag_dwc_country_replaced": true,
+            "idigbio:siblings": {},
+            "flag_idigbio_isocountrycode_added": true,
+            "idigbio:dateModified": "2021-05-20T21:27:49.767703",
+            "dwc:locality": "14 mi N Everglades City",
+            "dwc:institutionCode": "MSU",
+            "dwc:catalogNumber": "MSUC_ARC_290722",
+            "dwc:month": "10",
+            "dwc:decimalLongitude": "-81.380357",
+            "dwc:verbatimEventDate": "12-13 October 2000",
+            "flag_dwc_continent_added": true,
+            "idigbio:isocountrycode": "usa",
+            "dcterms:modified": "2021-03-28 18:02:14",
+            "dwc:coordinateUncertaintyInMeters": "19496",
+            "dwc:day": "12",
+            "dwc:year": "2000"
+          }
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "geohash": {
+      "buckets": [
+        {
+          "key": "djm",
+          "doc_count": 2063
+        },
+        {
+          "key": "dj6",
+          "doc_count": 1707
+        },
+        {
+          "key": "dj7",
+          "doc_count": 1680
+        },
+        {
+          "key": "djn",
+          "doc_count": 1651
+        },
+        {
+          "key": "dhv",
+          "doc_count": 961
+        },
+        {
+          "key": "dhy",
+          "doc_count": 773
+        },
+        {
+          "key": "djk",
+          "doc_count": 735
+        },
+        {
+          "key": "djq",
+          "doc_count": 652
+        },
+        {
+          "key": "dj3",
+          "doc_count": 631
+        },
+        {
+          "key": "dhq",
+          "doc_count": 544
+        },
+        {
+          "key": "djj",
+          "doc_count": 523
+        },
+        {
+          "key": "dhw",
+          "doc_count": 351
+        },
+        {
+          "key": "djh",
+          "doc_count": 271
+        },
+        {
+          "key": "dhu",
+          "doc_count": 247
+        },
+        {
+          "key": "dhz",
+          "doc_count": 205
+        },
+        {
+          "key": "dht",
+          "doc_count": 198
+        },
+        {
+          "key": "dhx",
+          "doc_count": 184
+        },
+        {
+          "key": "dhm",
+          "doc_count": 150
+        },
+        {
+          "key": "f07",
+          "doc_count": 139
+        },
+        {
+          "key": "dj9",
+          "doc_count": 51
+        },
+        {
+          "key": "dqd",
+          "doc_count": 39
+        },
+        {
+          "key": "c40",
+          "doc_count": 39
+        },
+        {
+          "key": "c41",
+          "doc_count": 36
+        },
+        {
+          "key": "djw",
+          "doc_count": 26
+        },
+        {
+          "key": "djr",
+          "doc_count": 21
+        },
+        {
+          "key": "djp",
+          "doc_count": 19
+        },
+        {
+          "key": "djx",
+          "doc_count": 9
+        },
+        {
+          "key": "dhr",
+          "doc_count": 7
+        },
+        {
+          "key": "dj5",
+          "doc_count": 6
+        },
+        {
+          "key": "djd",
+          "doc_count": 3
+        },
+        {
+          "key": "f0k",
+          "doc_count": 2
+        },
+        {
+          "key": "dtq",
+          "doc_count": 2
+        },
+        {
+          "key": "dhk",
+          "doc_count": 2
+        },
+        {
+          "key": "d5x",
+          "doc_count": 2
+        },
+        {
+          "key": "9vs",
+          "doc_count": 2
+        },
+        {
+          "key": "eud",
+          "doc_count": 1
+        },
+        {
+          "key": "ejm",
+          "doc_count": 1
+        },
+        {
+          "key": "dv2",
+          "doc_count": 1
+        },
+        {
+          "key": "dpn",
+          "doc_count": 1
+        },
+        {
+          "key": "dp5",
+          "doc_count": 1
+        },
+        {
+          "key": "dp4",
+          "doc_count": 1
+        },
+        {
+          "key": "dnw",
+          "doc_count": 1
+        },
+        {
+          "key": "dnu",
+          "doc_count": 1
+        },
+        {
+          "key": "dn7",
+          "doc_count": 1
+        },
+        {
+          "key": "dm2",
+          "doc_count": 1
+        },
+        {
+          "key": "dje",
+          "doc_count": 1
+        },
+        {
+          "key": "dj4",
+          "doc_count": 1
+        },
+        {
+          "key": "dj2",
+          "doc_count": 1
+        },
+        {
+          "key": "dj0",
+          "doc_count": 1
+        },
+        {
+          "key": "dhe",
+          "doc_count": 1
+        },
+        {
+          "key": "dh7",
+          "doc_count": 1
+        },
+        {
+          "key": "d5z",
+          "doc_count": 1
+        },
+        {
+          "key": "d5y",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}

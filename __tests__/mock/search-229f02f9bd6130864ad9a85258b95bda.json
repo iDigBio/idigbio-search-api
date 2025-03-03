@@ -1,0 +1,63 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 15.849607,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "publishers",
+        "_id": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+        "_score": 15.849607,
+        "_source": {
+          "uuid": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "dqs": -1,
+          "etag": "240e2ad96e0a858efb18157611294dd2902a36c3",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "rss_url": "https://scan-bugs.org:443/portal/webservices/dwc/rss.xml",
+            "name": "SCAN Darwin Core Archive rss feed",
+            "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+            "idigbio:uuid": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+            "idigbio:etag": "240e2ad96e0a858efb18157611294dd2902a36c3",
+            "base_url": "http://symbiota4.acis.ufl.edu/scan/portal/",
+            "auto_publish": false,
+            "publisher_type": "symbiota",
+            "idigbio:recordIds": [
+              "http://symbiota4.acis.ufl.edu/scan/portal/",
+              "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+              "http://symbiota1.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+              "http://symbiota1.acis.ufl.edu/scan/portal/"
+            ],
+            "idigbio:dateModified": "2020-12-28T13:20:19.827715",
+            "recordsets": {},
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://symbiota4.acis.ufl.edu/scan/portal/",
+            "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+            "http://symbiota1.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+            "http://symbiota1.acis.ufl.edu/scan/portal/"
+          ],
+          "data": {
+            "rss_url": "https://scan-bugs.org:443/portal/webservices/dwc/rss.xml",
+            "name": "SCAN Darwin Core Archive rss feed",
+            "auto_publish": false,
+            "base_url": "http://symbiota4.acis.ufl.edu/scan/portal/",
+            "publisher_type": "symbiota",
+            "recordsets": {}
+          },
+          "datemodified": "2020-12-28T13:20:19.827715+00:00",
+          "name": "scan darwin core archive rss feed"
+        }
+      }
+    ]
+  }
+}

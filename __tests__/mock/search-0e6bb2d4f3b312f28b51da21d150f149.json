@@ -1,0 +1,1683 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 93672,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "80a37d64-244b-4581-95e0-f231d6aed569",
+        "_score": 1,
+        "_routing": "10baafb2-d242-4120-93e4-9c4ca5f54be9",
+        "_parent": "10baafb2-d242-4120-93e4-9c4ca5f54be9",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "80a37d64-244b-4581-95e0-f231d6aed569",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.2727272727272727,
+          "hasSpecimen": true,
+          "records": [
+            "10baafb2-d242-4120-93e4-9c4ca5f54be9"
+          ],
+          "etag": "8f27df51a20229aa8cfa4b7e47f87fd88275ebea",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "80a37d64-244b-4581-95e0-f231d6aed569",
+            "idigbio:etag": "8f27df51a20229aa8cfa4b7e47f87fd88275ebea",
+            "coreid": "urn:catalog:CAS:BOT-BC:80",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
+            ],
+            "idigbio:dateModified": "2022-07-06T11:49:20.823602",
+            "idigbio:siblings": {
+              "record": [
+                "10baafb2-d242-4120-93e4-9c4ca5f54be9"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:80",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
+          },
+          "datemodified": "2022-07-06T11:49:20.823602+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/44/09/44097db3-1fdf-4dc5-ba19-e752d1a8907e.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "6c8b5d65-625b-435b-8cc6-de7c20b86d6d",
+        "_score": 1,
+        "_routing": "af6fcd08-cd31-4bde-bf15-b6354a821e60",
+        "_parent": "af6fcd08-cd31-4bde-bf15-b6354a821e60",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "6c8b5d65-625b-435b-8cc6-de7c20b86d6d",
+          "format": "image/jpeg",
+          "recordset": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:subtype": "Photograph",
+            "dc:type": "StillImage",
+            "dcterms:title": "WTU-V-073843",
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:digitizationDate": "2021-12-03T13:24:24-0800",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "dc:format": "image/jpeg",
+            "coreid": "103453",
+            "dcterms:identifier": "a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7",
+            "xmpRights:Owner": "University of Washington",
+            "dcterms:rights": "© 2024 University of Washington",
+            "ac:metadataLanguage": "en",
+            "ac:taxonCoverage": "Sapindaceae",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-073843.jpg",
+            "dcterms:modified": "2021-12-09T00:17:24-0800",
+            "dwc:scientificName": "Acer macrophyllum",
+            "ac:variant": "ac:Best Quality"
+          },
+          "dqs": -1.2727272727272727,
+          "modified": "2021-12-09T00:17:24-08:00",
+          "mediatype": "images",
+          "records": [
+            "af6fcd08-cd31-4bde-bf15-b6354a821e60"
+          ],
+          "etag": "1fb6cf782ff07ae00b8f6dd718eb61744fe3c867",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "idigbio:dateModified": "2024-01-31T22:30:28.166148",
+            "dc:type": "StillImage",
+            "idigbio:etag": "1fb6cf782ff07ae00b8f6dd718eb61744fe3c867",
+            "idigbio:uuid": "6c8b5d65-625b-435b-8cc6-de7c20b86d6d",
+            "gbif:canonicalname": "acer macrophyllum",
+            "flag_gbif_reference_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7"
+            ],
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:metadataLanguage": "en",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+            "ac:subtype": "Photograph",
+            "flag_gbif_genericname_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "bigleaf maple foliage",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_macrophyllum_1199.jpg",
+                "coreid": "3189835",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/acer_macrophyllum_1199.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: photo by tony perodeau",
+                "dcterms:creator": "original uploader was angilbas at en.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oregon-ahorn (acer macrophyllum)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_3158.jpg",
+                "coreid": "3189835",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b7/bigleafmaple_3158.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "ac:digitizationDate": "2021-12-03T13:24:24-0800",
+            "dwc:genus": "acer",
+            "dc:format": "image/jpeg",
+            "dwc:kingdom": "plantae",
+            "dwc:family": "sapindaceae",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "af6fcd08-cd31-4bde-bf15-b6354a821e60"
+              ]
+            },
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "dwc:order": "sapindales",
+            "coreid": "103453",
+            "dcterms:identifier": "a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7",
+            "dwc:phylum": "tracheophyta",
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "acer",
+            "flag_dwc_multimedia_added": true,
+            "flag_gbif_vernacularname_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "ac:variant": "ac:Best Quality",
+            "dwc:taxonid": "3189835",
+            "dwc:scientificnameauthorship": "pursh",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "macrophyllum",
+            "flag_dwc_order_added": true,
+            "dcterms:title": "WTU-V-073843",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "xmpRights:Owner": "University of Washington",
+            "dcterms:rights": "© 2024 University of Washington",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "ac:taxonCoverage": "Sapindaceae",
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-073843.jpg",
+            "dcterms:modified": "2021-12-09T00:17:24-0800",
+            "dwc:scientificName": "Acer macrophyllum",
+            "gbif:reference": [
+              {
+                "coreid": "3189835",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "pursh (1814) in: fl. am. sept. 1: 267"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "3189835",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "bigleaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "big-leaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "bigleaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "big-leaved maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "broad-leaved maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "canyon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à grandes feuilles"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "sv",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "jättelönn"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "oregon-ahorn"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "oregon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "oregon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "pacific maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "pacific maple"
+              }
+            ]
+          },
+          "recordids": [
+            "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\a63fd1c5-7967-4b05-af64-3d3ffb3cb6f7"
+          ],
+          "type": "stillimage",
+          "datemodified": "2024-01-31T22:30:28.166148+00:00",
+          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-073843.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "2cd59162-7cea-4ea8-8a4d-0a4d8c307ca3",
+        "_score": 1,
+        "_routing": "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492",
+        "_parent": "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "2cd59162-7cea-4ea8-8a4d-0a4d8c307ca3",
+          "format": "image/jpeg",
+          "recordset": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:subtype": "Photograph",
+            "dc:type": "StillImage",
+            "dcterms:title": "WTU-V-051770",
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:digitizationDate": "2019-07-09T14:28:43-0800",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "dc:format": "image/jpeg",
+            "coreid": "11875",
+            "dcterms:identifier": "b62a2e29-41e4-429e-bb94-8bbb64406e24",
+            "xmpRights:Owner": "University of Washington",
+            "dcterms:rights": "© 2024 University of Washington",
+            "ac:metadataLanguage": "en",
+            "ac:taxonCoverage": "Sapindaceae",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051770.jpg",
+            "dcterms:modified": "2019-11-02T01:32:33-0800",
+            "dwc:scientificName": "Acer macrophyllum",
+            "dcterms:creator": "Crystal Shin",
+            "ac:variant": "ac:Best Quality"
+          },
+          "dqs": -1.2727272727272727,
+          "modified": "2019-11-02T01:32:33-08:00",
+          "mediatype": "images",
+          "records": [
+            "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492"
+          ],
+          "etag": "eb57f728573df0038c46b67ed21ef4c3fbebff8c",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "idigbio:dateModified": "2024-01-31T22:30:28.166148",
+            "dc:type": "StillImage",
+            "idigbio:etag": "eb57f728573df0038c46b67ed21ef4c3fbebff8c",
+            "idigbio:uuid": "2cd59162-7cea-4ea8-8a4d-0a4d8c307ca3",
+            "gbif:canonicalname": "acer macrophyllum",
+            "flag_gbif_reference_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\b62a2e29-41e4-429e-bb94-8bbb64406e24"
+            ],
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:metadataLanguage": "en",
+            "dcterms:creator": "Crystal Shin",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+            "ac:subtype": "Photograph",
+            "flag_gbif_genericname_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "bigleaf maple foliage",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_macrophyllum_1199.jpg",
+                "coreid": "3189835",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/acer_macrophyllum_1199.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: photo by tony perodeau",
+                "dcterms:creator": "original uploader was angilbas at en.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oregon-ahorn (acer macrophyllum)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_3158.jpg",
+                "coreid": "3189835",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b7/bigleafmaple_3158.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "ac:digitizationDate": "2019-07-09T14:28:43-0800",
+            "dwc:genus": "acer",
+            "dc:format": "image/jpeg",
+            "dwc:kingdom": "plantae",
+            "dwc:family": "sapindaceae",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "fbb8f377-1995-47d7-bd4b-1cbe3ce4f492"
+              ]
+            },
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "dwc:order": "sapindales",
+            "coreid": "11875",
+            "dcterms:identifier": "b62a2e29-41e4-429e-bb94-8bbb64406e24",
+            "dwc:phylum": "tracheophyta",
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "acer",
+            "flag_dwc_multimedia_added": true,
+            "flag_gbif_vernacularname_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "ac:variant": "ac:Best Quality",
+            "dwc:taxonid": "3189835",
+            "dwc:scientificnameauthorship": "pursh",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "macrophyllum",
+            "flag_dwc_order_added": true,
+            "dcterms:title": "WTU-V-051770",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "xmpRights:Owner": "University of Washington",
+            "dcterms:rights": "© 2024 University of Washington",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "ac:taxonCoverage": "Sapindaceae",
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051770.jpg",
+            "dcterms:modified": "2019-11-02T01:32:33-0800",
+            "dwc:scientificName": "Acer macrophyllum",
+            "gbif:reference": [
+              {
+                "coreid": "3189835",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "pursh (1814) in: fl. am. sept. 1: 267"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "3189835",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "bigleaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "big-leaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "bigleaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "big-leaved maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "broad-leaved maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "canyon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à grandes feuilles"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "sv",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "jättelönn"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "oregon-ahorn"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "oregon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "oregon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "pacific maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "pacific maple"
+              }
+            ]
+          },
+          "recordids": [
+            "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\b62a2e29-41e4-429e-bb94-8bbb64406e24"
+          ],
+          "type": "stillimage",
+          "datemodified": "2024-01-31T22:30:28.166148+00:00",
+          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051770.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "5a7910db-1689-4180-812c-440d3c664876",
+        "_score": 1,
+        "_routing": "72f4b923-373b-4fba-a439-43bf1e4cc405",
+        "_parent": "72f4b923-373b-4fba-a439-43bf1e4cc405",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "5a7910db-1689-4180-812c-440d3c664876",
+          "format": "image/jpeg",
+          "recordset": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:subtype": "Photograph",
+            "dc:type": "StillImage",
+            "dcterms:title": "WTU-V-051786",
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:digitizationDate": "2019-07-09T14:16:11-0800",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "dc:format": "image/jpeg",
+            "coreid": "103475",
+            "dcterms:identifier": "6cd8a659-d296-4716-a29e-09aaea029929",
+            "xmpRights:Owner": "University of Washington",
+            "dcterms:rights": "© 2024 University of Washington",
+            "ac:metadataLanguage": "en",
+            "ac:taxonCoverage": "Sapindaceae",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051786.jpg",
+            "dcterms:modified": "2019-11-02T01:32:28-0800",
+            "dwc:scientificName": "Acer macrophyllum",
+            "dcterms:creator": "Crystal Shin",
+            "ac:variant": "ac:Best Quality"
+          },
+          "dqs": -1.2727272727272727,
+          "modified": "2019-11-02T01:32:28-08:00",
+          "mediatype": "images",
+          "records": [
+            "72f4b923-373b-4fba-a439-43bf1e4cc405"
+          ],
+          "etag": "649427540ed6293dbbdb06bc6acd2aece5dd5431",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "idigbio:dateModified": "2024-01-31T22:30:28.166148",
+            "dc:type": "StillImage",
+            "idigbio:etag": "649427540ed6293dbbdb06bc6acd2aece5dd5431",
+            "idigbio:uuid": "5a7910db-1689-4180-812c-440d3c664876",
+            "gbif:canonicalname": "acer macrophyllum",
+            "flag_gbif_reference_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\6cd8a659-d296-4716-a29e-09aaea029929"
+            ],
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:metadataLanguage": "en",
+            "dcterms:creator": "Crystal Shin",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7",
+            "ac:subtype": "Photograph",
+            "flag_gbif_genericname_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain",
+                "dcterms:title": "bigleaf maple foliage",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_macrophyllum_1199.jpg",
+                "coreid": "3189835",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/65/acer_macrophyllum_1199.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:description": "english: photo by tony perodeau",
+                "dcterms:creator": "original uploader was angilbas at en.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "gnu free documentation license",
+                "dcterms:title": "oregon-ahorn (acer macrophyllum)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_3158.jpg",
+                "coreid": "3189835",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/b/b7/bigleafmaple_3158.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "ac:digitizationDate": "2019-07-09T14:16:11-0800",
+            "dwc:genus": "acer",
+            "dc:format": "image/jpeg",
+            "dwc:kingdom": "plantae",
+            "dwc:family": "sapindaceae",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "72f4b923-373b-4fba-a439-43bf1e4cc405"
+              ]
+            },
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "dwc:order": "sapindales",
+            "coreid": "103475",
+            "dcterms:identifier": "6cd8a659-d296-4716-a29e-09aaea029929",
+            "dwc:phylum": "tracheophyta",
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "acer",
+            "flag_dwc_multimedia_added": true,
+            "flag_gbif_vernacularname_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "ac:variant": "ac:Best Quality",
+            "dwc:taxonid": "3189835",
+            "dwc:scientificnameauthorship": "pursh",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "macrophyllum",
+            "flag_dwc_order_added": true,
+            "dcterms:title": "WTU-V-051786",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "xmpRights:Owner": "University of Washington",
+            "dcterms:rights": "© 2024 University of Washington",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "ac:taxonCoverage": "Sapindaceae",
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051786.jpg",
+            "dcterms:modified": "2019-11-02T01:32:28-0800",
+            "dwc:scientificName": "Acer macrophyllum",
+            "gbif:reference": [
+              {
+                "coreid": "3189835",
+                "dcterms:source": "catalogue of life",
+                "dcterms:bibliographiccitation": "pursh (1814) in: fl. am. sept. 1: 267"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "3189835",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "bigleaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "big-leaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "bigleaf maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "big-leaved maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "broad-leaved maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "canyon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à grandes feuilles"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "sv",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "jättelönn"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "oregon-ahorn"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "oregon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "oregon maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "pacific maple"
+              },
+              {
+                "coreid": "3189835",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "pacific maple"
+              }
+            ]
+          },
+          "recordids": [
+            "8b0c1f4b-9de7-4521-98c2-983e0bfd33c7\\media\\6cd8a659-d296-4716-a29e-09aaea029929"
+          ],
+          "type": "stillimage",
+          "datemodified": "2024-01-31T22:30:28.166148+00:00",
+          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=WTU-V-051786.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "5fef62d5-dd76-473b-90af-86372f630e09",
+        "_score": 1,
+        "_routing": "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d",
+        "_parent": "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "5fef62d5-dd76-473b-90af-86372f630e09",
+          "format": "image/jpeg",
+          "recordset": "f84d528a-7d08-467e-b532-ace707316f1d",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:subtype": "Photograph",
+            "dc:type": "StillImage",
+            "dcterms:title": "SRP 65339",
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:digitizationDate": "2018-05-22T10:55:14-0800",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "dc:format": "image/jpeg",
+            "coreid": "3210535",
+            "dcterms:identifier": "4b6e2afd-e556-4762-acb9-60d562e4537f",
+            "xmpRights:Owner": "Boise State University, Snake River Plains Herbarium",
+            "dcterms:rights": "© 2024 Boise State University, Snake River Plains Herbarium",
+            "ac:metadataLanguage": "en",
+            "ac:taxonCoverage": "Sapindaceae",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SRP065339.jpg",
+            "dcterms:modified": "2018-05-30T08:27:52-0800",
+            "dwc:scientificName": "Acer negundo",
+            "dcterms:creator": "JamesJarrett",
+            "ac:variant": "ac:Best Quality"
+          },
+          "dqs": -1.2727272727272727,
+          "modified": "2018-05-30T08:27:52-08:00",
+          "mediatype": "images",
+          "records": [
+            "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d"
+          ],
+          "etag": "f720d3c743318138c837cde309ec3f4fd9cbe2d4",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "idigbio:dateModified": "2024-01-31T22:25:32.795016",
+            "dc:type": "StillImage",
+            "idigbio:etag": "f720d3c743318138c837cde309ec3f4fd9cbe2d4",
+            "idigbio:uuid": "5fef62d5-dd76-473b-90af-86372f630e09",
+            "gbif:canonicalname": "acer negundo",
+            "flag_gbif_reference_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "f84d528a-7d08-467e-b532-ace707316f1d\\media\\4b6e2afd-e556-4762-acb9-60d562e4537f"
+            ],
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:metadataLanguage": "en",
+            "dcterms:creator": "JamesJarrett",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "f84d528a-7d08-467e-b532-ace707316f1d",
+            "ac:subtype": "Photograph",
+            "flag_gbif_genericname_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain from united states department of agriculture",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acnegundo.jpg",
+                "coreid": "3189866",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/1/18/acnegundo.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "eschen-ahorn (acer negundo)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_negundo.jpg",
+                "coreid": "3189866",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/8/82/acer_negundo.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "deutsch: eschen-ahorn (acer negundo) polski: klon jesionolistny (acer negundo)",
+                "dcterms:creator": "agnieszka kwiecień - nova at pl.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "ac:digitizationDate": "2018-05-22T10:55:14-0800",
+            "dwc:genus": "acer",
+            "dc:format": "image/jpeg",
+            "dwc:kingdom": "plantae",
+            "dwc:family": "sapindaceae",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "09b8b5a8-bbbc-4de0-addf-6ffa1542ee5d"
+              ]
+            },
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "dwc:order": "sapindales",
+            "coreid": "3210535",
+            "dcterms:identifier": "4b6e2afd-e556-4762-acb9-60d562e4537f",
+            "dwc:phylum": "tracheophyta",
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "acer",
+            "flag_dwc_multimedia_added": true,
+            "flag_gbif_vernacularname_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "ac:variant": "ac:Best Quality",
+            "dwc:taxonid": "3189866",
+            "dwc:scientificnameauthorship": "l.",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "negundo",
+            "flag_dwc_order_added": true,
+            "dcterms:title": "SRP 65339",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "xmpRights:Owner": "Boise State University, Snake River Plains Herbarium",
+            "dcterms:rights": "© 2024 Boise State University, Snake River Plains Herbarium",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "ac:taxonCoverage": "Sapindaceae",
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SRP065339.jpg",
+            "dcterms:modified": "2018-05-30T08:27:52-0800",
+            "dwc:scientificName": "Acer negundo",
+            "gbif:reference": [
+              {
+                "coreid": "3189866",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "3189866",
+                "dcterms:language": "it",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "acero americano"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "ash-leaf maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "ashleaf maple"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "ash-leaved maple, box-elder",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "en"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "ash-leaved maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "sv",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "asklönn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "aulne-buis"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "box-elder, ash-leaved maple",
+                "coreid": "3189866",
+                "dcterms:source": "invasive alien species in belgium - harmonia database",
+                "dcterms:language": "en"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "boxelder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "box elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "boxelder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "box-elder maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "boxelder maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "california box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "california boxelder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à feuilles composées"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à feuilles de frêne"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à giguère"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable argilière"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable négondo"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "erable negundo",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "fr"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "erable negundo",
+                "coreid": "3189866",
+                "dcterms:source": "invasive alien species in belgium - harmonia database",
+                "dcterms:language": "fr"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable négundo"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "eschen-ahorn"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "eschenahorn",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "eschen-ahorn"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "eschen-ahorn",
+                "coreid": "3189866",
+                "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "de",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "eschenahorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "de",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "eschen-ahorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "af",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "essenblaarahorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "fu ye feng"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "af",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "kaliforniese esdoring"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "klen âsenelistnyj"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "korean peninsula flora",
+                "dwc:vernacularname": "네군도단풍"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "manitoba maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "manitoba maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "négondo"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "negundodanpung"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "plaine à giguère"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "three-leaf maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "three-leaved maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "tonerikoba-no-kaede"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "vederesdoorn",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "nl"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "vederesdoorn",
+                "coreid": "3189866",
+                "dcterms:source": "invasive alien species in belgium - harmonia database",
+                "dcterms:language": "nl"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "nl",
+                "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                "dwc:vernacularname": "vederesdoorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "western box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "western boxelder"
+              }
+            ]
+          },
+          "recordids": [
+            "f84d528a-7d08-467e-b532-ace707316f1d\\media\\4b6e2afd-e556-4762-acb9-60d562e4537f"
+          ],
+          "type": "stillimage",
+          "datemodified": "2024-01-31T22:25:32.795016+00:00",
+          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=SRP065339.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "eefcd5db-9ac1-4b74-9cb2-529152eef6a6",
+        "_score": 1,
+        "_routing": "22984faf-06f3-43bf-8dc9-db30d4a06e6f",
+        "_parent": "22984faf-06f3-43bf-8dc9-db30d4a06e6f",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "eefcd5db-9ac1-4b74-9cb2-529152eef6a6",
+          "format": "image/jpeg",
+          "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+          "dqs": 0.45454545454545453,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "22984faf-06f3-43bf-8dc9-db30d4a06e6f"
+          ],
+          "etag": "3f7598c51ab9110d57da01649ac1199ac064a68f",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2012-10-08 20:53:21",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/1",
+            "idigbio:etag": "3f7598c51ab9110d57da01649ac1199ac064a68f",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204999/format/3"
+            ],
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
+            "coreid": "269794",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {
+              "record": [
+                "22984faf-06f3-43bf-8dc9-db30d4a06e6f"
+              ]
+            },
+            "idigbio:dateModified": "2016-04-21T13:40:34.206773",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "eefcd5db-9ac1-4b74-9cb2-529152eef6a6",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=269794"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
+            "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204999/format/3"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:adc1cf49-83f0-4228-be67-181cf7469f49",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/1",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
+            "coreid": "269794",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3",
+            "xmp:MetadataDate": "2012-10-08 20:53:21",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=269794"
+          },
+          "datemodified": "2016-04-21T13:40:34.206773+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/204999/format/3"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "ef158cc6-2f94-48e5-92be-e608631f990f",
+        "_score": 1,
+        "_routing": "df6e800e-e2e1-4fcf-9940-fb738b70e7ed",
+        "_parent": "df6e800e-e2e1-4fcf-9940-fb738b70e7ed",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "ef158cc6-2f94-48e5-92be-e608631f990f",
+          "format": "image/jpeg",
+          "recordset": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+          "dqs": 0.2727272727272727,
+          "rights": "Public Domain",
+          "mediatype": "images",
+          "records": [
+            "df6e800e-e2e1-4fcf-9940-fb738b70e7ed"
+          ],
+          "etag": "e94e1b945eb0bbe0af87a790d7fd36f5e8eb13c4",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "ac:comments": "http://creativecommons.org/publicdomain/mark/1.0/",
+            "idigbio:parent": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+            "xmpRights:UsageTerms": "Public Domain",
+            "ac:thumbnailAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "ac:goodQualityAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "coreid": "807945",
+            "dcterms:identifier": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:dateModified": "2016-04-21T13:40:35.966214",
+            "ac:metadataLanguage": "en",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=807945",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
+            "ac:subtype": "Photograph",
+            "idigbio:etag": "e94e1b945eb0bbe0af87a790d7fd36f5e8eb13c4",
+            "dcterms:format": "image/jpeg",
+            "idigbio:siblings": {
+              "record": [
+                "df6e800e-e2e1-4fcf-9940-fb738b70e7ed"
+              ]
+            },
+            "ac:caption": "YU YU.076227 Acer saccharum Marsh.",
+            "idigbio:recordIds": [
+              "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
+              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl",
+              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bisque.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl?resize=1250&format=jpeg"
+            ],
+            "ac:accessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "xmp:MetadataDate": "2015-02-04 18:08:03",
+            "idigbio:uuid": "ef158cc6-2f94-48e5-92be-e608631f990f"
+          },
+          "recordids": [
+            "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
+            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl",
+            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bisque.iplantcollaborative.org/image_service/image/00-aetigli3e4ejehpfqfyddl?resize=1250&format=jpeg"
+          ],
+          "data": {
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:7705ca3c-df7a-40c4-9ff9-270b091a3f5f",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "Public Domain",
+            "ac:comments": "http://creativecommons.org/publicdomain/mark/1.0/",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "coreid": "807945",
+            "dcterms:identifier": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "ac:caption": "YU YU.076227 Acer saccharum Marsh.",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:thumbnailAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "ac:accessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg",
+            "xmp:MetadataDate": "2015-02-04 18:08:03",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=807945"
+          },
+          "datemodified": "2016-04-21T13:40:35.966214+00:00",
+          "accessuri": "http://bisque.iplantcollaborative.org/image_service/image/00-aetigLi3e4EjEhpFQFyddL?resize=1250&format=jpeg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "eff82e1c-8962-4673-9885-0172c4c38ae1",
+        "_score": 1,
+        "_routing": "07d81427-448e-43aa-841a-8191b8bed86b",
+        "_parent": "07d81427-448e-43aa-841a-8191b8bed86b",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "eff82e1c-8962-4673-9885-0172c4c38ae1",
+          "format": "image/jpeg",
+          "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+          "dqs": 0.45454545454545453,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "07d81427-448e-43aa-841a-8191b8bed86b"
+          ],
+          "etag": "50481b54c26c47888b4fa6b3eef92e546d6c2df3",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2012-10-08 20:53:21",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/1",
+            "idigbio:etag": "50481b54c26c47888b4fa6b3eef92e546d6c2df3",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204975/format/3"
+            ],
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
+            "coreid": "110466",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {
+              "record": [
+                "07d81427-448e-43aa-841a-8191b8bed86b"
+              ]
+            },
+            "idigbio:dateModified": "2016-04-21T13:40:34.206773",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "eff82e1c-8962-4673-9885-0172c4c38ae1",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110466"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
+            "09edf7d2-e68e-4a42-93da-762f86bb814f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/204975/format/3"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:e3f6005d-fd20-4924-a77f-5adc32da8481",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/1",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
+            "coreid": "110466",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3",
+            "xmp:MetadataDate": "2012-10-08 20:53:21",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110466"
+          },
+          "datemodified": "2016-04-21T13:40:34.206773+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/204975/format/3"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "f850af40-634d-4011-b482-30d7f2cc18c1",
+        "_score": 1,
+        "_routing": "049c4098-969b-4d2c-a70e-2bcb011e5ba5",
+        "_parent": "049c4098-969b-4d2c-a70e-2bcb011e5ba5",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "f850af40-634d-4011-b482-30d7f2cc18c1",
+          "format": "image/jpeg",
+          "recordset": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+          "dqs": 0.45454545454545453,
+          "rights": "CC0",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "049c4098-969b-4d2c-a70e-2bcb011e5ba5"
+          ],
+          "etag": "14da2924b4b0b0f55f78b9ca4c54c2d53ad32d1c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
+            "ac:subtype": "Photograph",
+            "xmp:MetadataDate": "2012-10-08 21:00:15",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/1",
+            "idigbio:etag": "14da2924b4b0b0f55f78b9ca4c54c2d53ad32d1c",
+            "dcterms:format": "image/jpeg",
+            "idigbio:recordIds": [
+              "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
+              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/208039/format/3"
+            ],
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
+            "coreid": "92468",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:siblings": {
+              "record": [
+                "049c4098-969b-4d2c-a70e-2bcb011e5ba5"
+              ]
+            },
+            "idigbio:dateModified": "2016-04-21T13:40:35.966214",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
+            "ac:metadataLanguage": "en",
+            "idigbio:uuid": "f850af40-634d-4011-b482-30d7f2cc18c1",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=92468"
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
+            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://deliver.odai.yale.edu/content/repository/ypm/id/208039/format/3"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "ac:providerManagedID": "urn:uuid:4914e132-646d-432b-9bc4-90408ce13d77",
+            "ac:subtype": "Photograph",
+            "ac:metadataLanguage": "en",
+            "xmpRights:UsageTerms": "Yale Peabody Museum of Natural History",
+            "ac:thumbnailAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/1",
+            "dcterms:format": "image/jpeg",
+            "ac:goodQualityAccessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
+            "coreid": "92468",
+            "dcterms:identifier": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
+            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "ac:accessURI": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3",
+            "xmp:MetadataDate": "2012-10-08 21:00:15",
+            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=92468"
+          },
+          "datemodified": "2016-04-21T13:40:35.966214+00:00",
+          "accessuri": "http://deliver.odai.yale.edu/content/repository/YPM/id/208039/format/3"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "6d9fc1d6-0014-4f5c-aff6-03d2dc62f9c7",
+        "_score": 1,
+        "_routing": "2824107d-8da1-4a13-b26a-5cc08dd2ca75",
+        "_parent": "2824107d-8da1-4a13-b26a-5cc08dd2ca75",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "6d9fc1d6-0014-4f5c-aff6-03d2dc62f9c7",
+          "format": "image/jpeg",
+          "recordset": "f062cb7d-c03e-4762-b1c4-49118fee1a56",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "2824107d-8da1-4a13-b26a-5cc08dd2ca75"
+          ],
+          "etag": "b8a5e1badf16cde111430af45b41b447a9bc86b5",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "f062cb7d-c03e-4762-b1c4-49118fee1a56",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "6d9fc1d6-0014-4f5c-aff6-03d2dc62f9c7",
+            "idigbio:etag": "b8a5e1badf16cde111430af45b41b447a9bc86b5",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/f/12839.",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1466604573865bM6kJSbYob0t5S3W",
+            "idigbio:siblings": {
+              "record": [
+                "2824107d-8da1-4a13-b26a-5cc08dd2ca75"
+              ]
+            },
+            "idigbio:recordIds": [
+              "f062cb7d-c03e-4762-b1c4-49118fee1a56\\media\\http://mediaphoto.mnhn.fr/media/1466604573865bm6kjsbyob0t5s3w"
+            ],
+            "idigbio:dateModified": "2018-04-23T16:13:37.838075",
+            "dcterms:creator": "Jocelyn FALCONNET"
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "f062cb7d-c03e-4762-b1c4-49118fee1a56\\media\\http://mediaphoto.mnhn.fr/media/1466604573865bm6kjsbyob0t5s3w"
+          ],
+          "data": {
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/f/12839.",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1466604573865bM6kJSbYob0t5S3W",
+            "dcterms:creator": "Jocelyn FALCONNET"
+          },
+          "datemodified": "2018-04-23T16:13:37.838075+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1466604573865bM6kJSbYob0t5S3W"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_recordset": {
+      "doc_count_error_upper_bound": 140,
+      "sum_other_doc_count": 47797,
+      "buckets": [
+        {
+          "key": "fabcdc12-9d29-4bd2-912b-176e71818144",
+          "doc_count": 8445
+        },
+        {
+          "key": "7450a9e3-ef95-4f9e-8260-09b498d2c5e6",
+          "doc_count": 7352
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 7079
+        },
+        {
+          "key": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "doc_count": 5950
+        },
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 4953
+        },
+        {
+          "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "doc_count": 2889
+        },
+        {
+          "key": "65536dcd-7bb2-44e5-af3f-4a13f08e53d0",
+          "doc_count": 2785
+        },
+        {
+          "key": "beab5209-9628-4d4d-851e-2bc9bb1a0105",
+          "doc_count": 2350
+        },
+        {
+          "key": "e60301d9-9b40-483f-92de-065769b9d3dd",
+          "doc_count": 2140
+        },
+        {
+          "key": "70abba3e-5f2a-4276-87f3-261706e24453",
+          "doc_count": 1932
+        }
+      ]
+    }
+  }
+}
