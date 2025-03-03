@@ -12,119 +12,774 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "recordsets",
-        "_id": "cdb6ec43-935e-4da2-8798-71e40ca6d12a",
+        "_id": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
         "_score": 1,
         "_source": {
-          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
-          "uuid": "cdb6ec43-935e-4da2-8798-71e40ca6d12a",
+          "publisher": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+          "uuid": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
           "dqs": -1,
-          "archivelink": "https://api.biodiversitydata.nl/v2/specimen/dwca/getdataset/mollusca",
-          "rights": "cc0",
+          "archivelink": "http://xbiod.osu.edu/ipt/archive.do?r=ucfc",
+          "rights": "no license, assume public domain",
           "contacts": [
             {
-              "first_name": "Jeroen",
-              "last_name": "Creuwels",
-              "role": "Data manager",
-              "email": "informatiemanagement@naturalis.nl"
+              "first_name": "Hojun",
+              "last_name": "Song",
+              "role": "Curator, Asst. Professor",
+              "email": "song@ucf.edu"
             },
             {
-              "first_name": "Jeroen",
-              "last_name": "Creuwels",
-              "role": "Data manager",
-              "email": "informatiemanagement@naturalis.nl"
+              "first_name": "Norman",
+              "last_name": "Johnson",
+              "role": "Director, Professor",
+              "email": "johnson.2@osu.edu"
             },
             {
-              "first_name": "Steven",
-              "last_name": "van der Mije",
-              "role": "Head Invertebrate collections",
-              "email": "collectie@naturalis.nl"
+              "first_name": "Sandor",
+              "last_name": "Kelly",
+              "role": "Collection Manager",
+              "email": "sandor.kelly@ucf.edu"
+            },
+            {
+              "first_name": "Hojun",
+              "last_name": "Song",
+              "role": "Curator, Asst. Professor",
+              "email": "song@ucf.edu"
             }
           ],
           "indexData": {
-            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
-            "eml_link": "https://raw.githubusercontent.com/naturalis/nba-eml/master/mollusca_eml.xml",
+            "idigbio:parent": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+            "eml_link": "http://xbiod.osu.edu/ipt/eml.do?r=ucfc",
             "contacts": [
               {
-                "first_name": "Jeroen",
-                "last_name": "Creuwels",
-                "role": "Data manager",
-                "email": "informatiemanagement@naturalis.nl"
+                "first_name": "Hojun",
+                "last_name": "Song",
+                "role": "Curator, Asst. Professor",
+                "email": "song@ucf.edu"
               },
               {
-                "first_name": "Jeroen",
-                "last_name": "Creuwels",
-                "role": "Data manager",
-                "email": "informatiemanagement@naturalis.nl"
+                "first_name": "Norman",
+                "last_name": "Johnson",
+                "role": "Director, Professor",
+                "email": "johnson.2@osu.edu"
               },
               {
-                "first_name": "Steven",
-                "last_name": "van der Mije",
-                "role": "Head Invertebrate collections",
-                "email": "collectie@naturalis.nl"
+                "first_name": "Sandor",
+                "last_name": "Kelly",
+                "role": "Collection Manager",
+                "email": "sandor.kelly@ucf.edu"
+              },
+              {
+                "first_name": "Hojun",
+                "last_name": "Song",
+                "role": "Curator, Asst. Professor",
+                "email": "song@ucf.edu"
               }
             ],
-            "collection_name": "Naturalis Biodiversity Center (NL) - Mollusca",
-            "idigbio:uuid": "cdb6ec43-935e-4da2-8798-71e40ca6d12a",
-            "idigbio:etag": "01b421b0da2809dd726796c57926674fdf3bb6b2",
-            "update": "2023-01-12T00:00:00",
+            "collection_name": "Stuart M. Fullerton Collection of Arthropods (UCFC), University of Central Florida",
+            "idigbio:uuid": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
+            "idigbio:etag": "41e6af7fc888b9ef73a8e01384ad73abed6f84a8",
+            "update": "2018-08-29T08:25:24",
+            "ingest": true,
+            "institution_web_address": "http://bugcloset.cos.ucf.edu",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+            ],
+            "link": "http://xbiod.osu.edu/ipt/archive.do?r=ucfc",
+            "idigbio:dateModified": "2018-08-29T09:25:42.776340",
+            "collection_description": "Vouchered occurrence records for arthropods, primarily insects, from the Stuart M. Fullerton Collection of Arthropods at the University of Central Florida.",
+            "id": "262f8270-f9c2-4bc6-a562-8ed71c0790e6",
+            "other_guids": [],
+            "data_rights": "No license, assume Public Domain"
+          },
+          "etag": "41e6af7fc888b9ef73a8e01384ad73abed6f84a8",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://xbiod.osu.edu/ipt/eml.do?r=ucfc",
+          "recordids": [
+            "262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+          ],
+          "data": {
+            "eml_link": "http://xbiod.osu.edu/ipt/eml.do?r=ucfc",
+            "contacts": [
+              {
+                "first_name": "Hojun",
+                "last_name": "Song",
+                "role": "Curator, Asst. Professor",
+                "email": "song@ucf.edu"
+              },
+              {
+                "first_name": "Norman",
+                "last_name": "Johnson",
+                "role": "Director, Professor",
+                "email": "johnson.2@osu.edu"
+              },
+              {
+                "first_name": "Sandor",
+                "last_name": "Kelly",
+                "role": "Collection Manager",
+                "email": "sandor.kelly@ucf.edu"
+              },
+              {
+                "first_name": "Hojun",
+                "last_name": "Song",
+                "role": "Curator, Asst. Professor",
+                "email": "song@ucf.edu"
+              }
+            ],
+            "collection_name": "Stuart M. Fullerton Collection of Arthropods (UCFC), University of Central Florida",
+            "update": "2018-08-29T08:25:24",
+            "ingest": true,
+            "data_rights": "No license, assume Public Domain",
+            "link": "http://xbiod.osu.edu/ipt/archive.do?r=ucfc",
+            "collection_description": "Vouchered occurrence records for arthropods, primarily insects, from the Stuart M. Fullerton Collection of Arthropods at the University of Central Florida.",
+            "other_guids": [],
+            "institution_web_address": "http://bugcloset.cos.ucf.edu",
+            "id": "262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+          },
+          "datemodified": "2018-08-29T09:25:42.776340+00:00",
+          "name": "stuart m. fullerton collection of arthropods (ucfc), university of central florida"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "9475a9e1-cd56-4f5c-8d21-4206b088231b",
+        "_score": 1,
+        "_source": {
+          "publisher": "26281097-694b-483d-ae22-676a2a448bf1",
+          "uuid": "9475a9e1-cd56-4f5c-8d21-4206b088231b",
+          "dqs": -1,
+          "archivelink": "http://danbif.au.dk/ipt/archive.do?r=macroarthropods_nuupkangerlua2013_greenland",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Toke Thomas",
+              "last_name": "Høye",
+              "role": "Senior scientist",
+              "email": "tth@bios.au.dk"
+            },
+            {
+              "first_name": "Toke Thomas",
+              "last_name": "Høye",
+              "role": "Senior scientist",
+              "email": "tth@bios.au.dk"
+            },
+            {
+              "first_name": "Isabel",
+              "last_name": "Calabuig",
+              "role": "Node manager, Data curator",
+              "email": "icalabuig@snm.ku.dk"
+            },
+            {
+              "first_name": "Toke Thomas",
+              "last_name": "Høye",
+              "role": "Senior scientist",
+              "email": "tth@bios.au.dk"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "26281097-694b-483d-ae22-676a2a448bf1",
+            "eml_link": "http://danbif.au.dk/ipt/eml.do?r=macroarthropods_nuupkangerlua2013_greenland",
+            "contacts": [
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
+              },
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
+              },
+              {
+                "first_name": "Isabel",
+                "last_name": "Calabuig",
+                "role": "Node manager, Data curator",
+                "email": "icalabuig@snm.ku.dk"
+              },
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
+              }
+            ],
+            "collection_name": "Macroarthropods, Godthåbsfjorden (Nuup Kangerlua) 2013, Greenland",
+            "idigbio:uuid": "9475a9e1-cd56-4f5c-8d21-4206b088231b",
+            "idigbio:etag": "2b558403c4bcd68517331e6d2d19d73d0ad465b4",
+            "update": "2017-08-09T08:49:56",
             "ingest": true,
             "institution_web_address": "",
             "idigbio:siblings": {},
             "idigbio:recordIds": [
-              "doi:10.15468/yefvnk"
+              "59d25ddf-355d-47d7-b8a1-c1e2819014c7"
             ],
-            "link": "https://api.biodiversitydata.nl/v2/specimen/dwca/getDataSet/mollusca",
-            "idigbio:dateModified": "2023-01-14T02:44:28.301122",
-            "collection_description": "Database contains specimen records from the Mollusca collection of the Naturalis Biodiversity Center (Leiden, Netherlands). The zoological specimens come from the National Museum of Natural History (RMNH; Rijksmuseum voor Natuurlijke Historie), later National Museum of Natural History, Naturalis in Leiden and the Zoological Museum Amsterdam (ZMA) and new acquisitions. This database replaces the dataset \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Conidae\", \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Netherlands\", and \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Pectinoidea\" which were hosted earlier on the GBIF dataportal and contains many new and updated records, especially from the RMNH collection. This dataset is an abstract of the Naturalis production database (BRD) of 2012-12-12. The datasets Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Types, and Naturalis National Natural History Museum (NL) – Mollusca fossils, are still separately hosted at GBIF, and are not included in this dataset. The old registration numbers of the former institutions (RMNH, ZMA) are also mentioned in the dataset. The Naturalis BC collection contains over 42.000 species of Recent Mollusca. Locality data have only been added in part to this molluscan dataset. Many identifications are original and can be as old as over a century. Many species level names were recently (2011-2012) updated with the help of literature and web based taxonomic databases containing synonymies.",
-            "id": "doi:10.15468/yefvnk",
+            "link": "http://danbif.au.dk/ipt/archive.do?r=macroarthropods_nuupkangerlua2013_greenland",
+            "idigbio:dateModified": "2017-08-09T09:05:46.761969",
+            "collection_description": "Pitfall trap data set collected by Toke Thomas Høye, Rikke Reisner Hansen, and Oskar Liset Pryds Hansen",
+            "id": "59d25ddf-355d-47d7-b8a1-c1e2819014c7",
             "other_guids": [],
-            "logo_url": "http://www.naturalis.nl/media/library/2012/07/Naturalis_logo_staand_rood_01.jpg",
-            "data_rights": "CC0"
+            "data_rights": "CC4 BY"
           },
-          "etag": "01b421b0da2809dd726796c57926674fdf3bb6b2",
+          "etag": "2b558403c4bcd68517331e6d2d19d73d0ad465b4",
           "flags": [
             "dwc_basisofrecord_invalid"
           ],
-          "emllink": "https://raw.githubusercontent.com/naturalis/nba-eml/master/mollusca_eml.xml",
-          "logourl": "http://www.naturalis.nl/media/library/2012/07/naturalis_logo_staand_rood_01.jpg",
+          "emllink": "http://danbif.au.dk/ipt/eml.do?r=macroarthropods_nuupkangerlua2013_greenland",
           "recordids": [
-            "doi:10.15468/yefvnk"
+            "59d25ddf-355d-47d7-b8a1-c1e2819014c7"
           ],
           "data": {
-            "eml_link": "https://raw.githubusercontent.com/naturalis/nba-eml/master/mollusca_eml.xml",
+            "eml_link": "http://danbif.au.dk/ipt/eml.do?r=macroarthropods_nuupkangerlua2013_greenland",
             "contacts": [
               {
-                "first_name": "Jeroen",
-                "last_name": "Creuwels",
-                "role": "Data manager",
-                "email": "informatiemanagement@naturalis.nl"
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
               },
               {
-                "first_name": "Jeroen",
-                "last_name": "Creuwels",
-                "role": "Data manager",
-                "email": "informatiemanagement@naturalis.nl"
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
               },
               {
-                "first_name": "Steven",
-                "last_name": "van der Mije",
-                "role": "Head Invertebrate collections",
-                "email": "collectie@naturalis.nl"
+                "first_name": "Isabel",
+                "last_name": "Calabuig",
+                "role": "Node manager, Data curator",
+                "email": "icalabuig@snm.ku.dk"
+              },
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
               }
             ],
-            "collection_name": "Naturalis Biodiversity Center (NL) - Mollusca",
-            "update": "2023-01-12T00:00:00",
+            "collection_name": "Macroarthropods, Godthåbsfjorden (Nuup Kangerlua) 2013, Greenland",
+            "update": "2017-08-09T08:49:56",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "http://danbif.au.dk/ipt/archive.do?r=macroarthropods_nuupkangerlua2013_greenland",
+            "collection_description": "Pitfall trap data set collected by Toke Thomas Høye, Rikke Reisner Hansen, and Oskar Liset Pryds Hansen",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "59d25ddf-355d-47d7-b8a1-c1e2819014c7"
+          },
+          "datemodified": "2017-08-09T09:05:46.761969+00:00",
+          "name": "macroarthropods, godthåbsfjorden (nuup kangerlua) 2013, greenland"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "8dc14464-57b3-423e-8cb0-950ab8f36b6f",
+        "_score": 1,
+        "_source": {
+          "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "uuid": "8dc14464-57b3-423e-8cb0-950ab8f36b6f",
+          "dqs": -1,
+          "archivelink": "http://bryophyteportal.org/portal/collections/datasets/dwc/cas_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "egbot@asu.edu"
+            },
+            {
+              "first_name": "Debra Trock, Collections Manager, Herbarium",
+              "email": "dtrock@calacademy.org"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Debra Trock, Collections Manager, Herbarium",
+                "email": "dtrock@calacademy.org"
+              }
+            ],
+            "collection_name": "California Academy of Sciences",
+            "idigbio:uuid": "8dc14464-57b3-423e-8cb0-950ab8f36b6f",
+            "idigbio:etag": "4e9fb98c216afc7ffc4647b7af09be98f397a627",
+            "update": "2015-09-28T21:12:12",
+            "ingest": true,
+            "institution_web_address": "http://research.calacademy.org/botany/collections",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937"
+            ],
+            "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.zip",
+            "idigbio:dateModified": "2015-09-29T00:21:36.226368",
+            "collection_description": "The herbarium of the California Academy of Sciences (CAS) is the largest collection of vascular plants in the western U.S. It is the sixth largest collection in the United States. Together with the Herbarium of the University of California at Berkeley (UC) the San Francisco Bay area is regarded as a National Resource Center for systematic botany. These two major collections have an informal agreement to avoid duplication, thus providing botanists with a rich and varied resource for research.",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937",
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/images/collicons/CAS.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "4e9fb98c216afc7ffc4647b7af09be98f397a627",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://bryophyteportal.org/portal/collections/datasets/dwc/cas_dwc-a.eml",
+          "logourl": "http://bryophyteportal.org/portal/images/collicons/cas.jpg",
+          "recordids": [
+            "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937"
+          ],
+          "data": {
+            "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Debra Trock, Collections Manager, Herbarium",
+                "email": "dtrock@calacademy.org"
+              }
+            ],
+            "collection_name": "California Academy of Sciences",
+            "update": "2015-09-28T21:12:12",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.zip",
+            "collection_description": "The herbarium of the California Academy of Sciences (CAS) is the largest collection of vascular plants in the western U.S. It is the sixth largest collection in the United States. Together with the Herbarium of the University of California at Berkeley (UC) the San Francisco Bay area is regarded as a National Resource Center for systematic botany. These two major collections have an informal agreement to avoid duplication, thus providing botanists with a rich and varied resource for research.",
+            "institution_web_address": "http://research.calacademy.org/botany/collections",
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/images/collicons/CAS.jpg",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937"
+          },
+          "datemodified": "2015-09-29T00:21:36.226368+00:00",
+          "name": "california academy of sciences"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
+        "_score": 1,
+        "_source": {
+          "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "uuid": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
+          "dqs": -1,
+          "archivelink": "http://bryophyteportal.org/portal/collections/datasets/dwc/ftu_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "egbot@asu.edu"
+            },
+            {
+              "first_name": "Patrick Bohlen, Director",
+              "email": "patrick.bohlen@ucf.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Patrick Bohlen, Director",
+                "email": "patrick.bohlen@ucf.edu"
+              }
+            ],
+            "collection_name": "University of Central Florida Herbarium",
+            "idigbio:uuid": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
+            "idigbio:etag": "b8231639fd3026f1f861e482b90b08f76044e256",
+            "update": "2015-09-28T21:12:12",
+            "ingest": true,
+            "institution_web_address": "http://arboretum.ucf.edu/programs/herbarium/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1",
+              "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=40"
+            ],
+            "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.zip",
+            "idigbio:dateModified": "2015-09-29T00:21:36.377947",
+            "collection_description": "Established by President Trevor Colbourn in 1983, the UCF Arboretum began with approximately 12 acres (4.9 ha) of a disturbed pond pine (Pinus serotina) community just east side of the developed area of campus, and east of the present biology building. In 1988, at President Altmans direction, the University expanded the Arboretum to include a 5-acre (2.0 ha) Cypress dome, an oak hammock of about 3 acres (1.2 ha), and about 15 acres (6.1 ha) of sand pine and Florida scrub, connected to the original Arboretum by a saw palmetto (Sabal palmetto) community and increasingly rare Florida longleaf pine (Pinus palustris) flatwoods. Currently, the official Arboretum Boundary encompasses approximately 82 acres (33.2 ha). The original Arboretum director was Dr. Henry O. Whittier, a professor in the Biology Department who remained director until his retirement 2003. Dr. Martin Quigley was director from 2003-2009.",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1",
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/images/collicons/Arboretum.png",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "b8231639fd3026f1f861e482b90b08f76044e256",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://bryophyteportal.org/portal/collections/datasets/dwc/ftu_dwc-a.eml",
+          "logourl": "http://bryophyteportal.org/portal/images/collicons/arboretum.png",
+          "recordids": [
+            "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1",
+            "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=40"
+          ],
+          "data": {
+            "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Patrick Bohlen, Director",
+                "email": "patrick.bohlen@ucf.edu"
+              }
+            ],
+            "collection_name": "University of Central Florida Herbarium",
+            "update": "2015-09-28T21:12:12",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.zip",
+            "collection_description": "Established by President Trevor Colbourn in 1983, the UCF Arboretum began with approximately 12 acres (4.9 ha) of a disturbed pond pine (Pinus serotina) community just east side of the developed area of campus, and east of the present biology building. In 1988, at President Altmans direction, the University expanded the Arboretum to include a 5-acre (2.0 ha) Cypress dome, an oak hammock of about 3 acres (1.2 ha), and about 15 acres (6.1 ha) of sand pine and Florida scrub, connected to the original Arboretum by a saw palmetto (Sabal palmetto) community and increasingly rare Florida longleaf pine (Pinus palustris) flatwoods. Currently, the official Arboretum Boundary encompasses approximately 82 acres (33.2 ha). The original Arboretum director was Dr. Henry O. Whittier, a professor in the Biology Department who remained director until his retirement 2003. Dr. Martin Quigley was director from 2003-2009.",
+            "institution_web_address": "http://arboretum.ucf.edu/programs/herbarium/",
+            "other_guids": [],
+            "logo_url": "http://bryophyteportal.org/portal/images/collicons/Arboretum.png",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1"
+          },
+          "datemodified": "2015-09-29T00:21:36.377947+00:00",
+          "name": "university of central florida herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "559e684e-c833-4b3b-a8fe-588fbc9759c4",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "559e684e-c833-4b3b-a8fe-588fbc9759c4",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/559e684e-c833-4b3b-a8fe-588fbc9759c4"
+            ],
+            "idigbio:dateModified": "2016-09-09T13:15:18.861035",
+            "idigbio:uuid": "559e684e-c833-4b3b-a8fe-588fbc9759c4",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/559e684e-c833-4b3b-a8fe-588fbc9759c4"
+          ],
+          "data": {},
+          "datemodified": "2016-09-09T13:15:18.861035+00:00"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+        "_score": 1,
+        "_source": {
+          "publisher": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+          "uuid": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+          "dqs": -1,
+          "archivelink": "http://www.gbif.se/ipt/archive.do?r=gb-general",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "first_name": "Anders",
+              "last_name": "Telenius",
+              "role": "Node manager",
+              "email": "anders.telenius@nrm.se"
+            },
+            {
+              "first_name": "Anders",
+              "last_name": "Telenius",
+              "role": "Node manager",
+              "email": "anders.telenius@nrm.se"
+            },
+            {
+              "first_name": "Anders",
+              "last_name": "Telenius",
+              "role": "Node manager",
+              "email": "anders.telenius@nrm.se"
+            },
+            {
+              "first_name": "Anders",
+              "last_name": "Telenius",
+              "role": "Node manager",
+              "email": "anders.telenius@nrm.se"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+            "eml_link": "http://www.gbif.se/ipt/eml.do?r=gb-general",
+            "contacts": [
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              }
+            ],
+            "collection_name": "Gothenburg Herbarium - General (GBIF:IH:GB:Herbarium)",
+            "idigbio:uuid": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+            "idigbio:etag": "3ce4113b4be5e3c26a6b7611090bfde38cd053a8",
+            "update": "2016-01-05T10:44:06",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "de49c340-0c61-11dd-84ce-b8a03c50a862"
+            ],
+            "link": "http://www.gbif.se/ipt/archive.do?r=gb-general",
+            "idigbio:dateModified": "2017-04-19T15:30:50.849849",
+            "collection_description": "This database contains information from Gothenburg (Sweden) general herbarium.",
+            "id": "de49c340-0c61-11dd-84ce-b8a03c50a862",
+            "other_guids": [],
+            "data_rights": "CC0"
+          },
+          "etag": "3ce4113b4be5e3c26a6b7611090bfde38cd053a8",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://www.gbif.se/ipt/eml.do?r=gb-general",
+          "recordids": [
+            "de49c340-0c61-11dd-84ce-b8a03c50a862"
+          ],
+          "data": {
+            "eml_link": "http://www.gbif.se/ipt/eml.do?r=gb-general",
+            "contacts": [
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              }
+            ],
+            "collection_name": "Gothenburg Herbarium - General (GBIF:IH:GB:Herbarium)",
+            "update": "2016-01-05T10:44:06",
             "ingest": true,
             "data_rights": "CC0",
-            "link": "https://api.biodiversitydata.nl/v2/specimen/dwca/getDataSet/mollusca",
-            "collection_description": "Database contains specimen records from the Mollusca collection of the Naturalis Biodiversity Center (Leiden, Netherlands). The zoological specimens come from the National Museum of Natural History (RMNH; Rijksmuseum voor Natuurlijke Historie), later National Museum of Natural History, Naturalis in Leiden and the Zoological Museum Amsterdam (ZMA) and new acquisitions. This database replaces the dataset \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Conidae\", \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Netherlands\", and \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Pectinoidea\" which were hosted earlier on the GBIF dataportal and contains many new and updated records, especially from the RMNH collection. This dataset is an abstract of the Naturalis production database (BRD) of 2012-12-12. The datasets Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Types, and Naturalis National Natural History Museum (NL) – Mollusca fossils, are still separately hosted at GBIF, and are not included in this dataset. The old registration numbers of the former institutions (RMNH, ZMA) are also mentioned in the dataset. The Naturalis BC collection contains over 42.000 species of Recent Mollusca. Locality data have only been added in part to this molluscan dataset. Many identifications are original and can be as old as over a century. Many species level names were recently (2011-2012) updated with the help of literature and web based taxonomic databases containing synonymies.",
-            "institution_web_address": "",
+            "link": "http://www.gbif.se/ipt/archive.do?r=gb-general",
+            "collection_description": "This database contains information from Gothenburg (Sweden) general herbarium.",
             "other_guids": [],
-            "logo_url": "http://www.naturalis.nl/media/library/2012/07/Naturalis_logo_staand_rood_01.jpg",
-            "id": "doi:10.15468/yefvnk"
+            "institution_web_address": "",
+            "id": "de49c340-0c61-11dd-84ce-b8a03c50a862"
           },
-          "datemodified": "2023-01-14T02:44:28.301122+00:00",
-          "name": "naturalis biodiversity center (nl) - mollusca"
+          "datemodified": "2017-04-19T15:30:50.849849+00:00",
+          "name": "gothenburg herbarium - general (gbif:ih:gb:herbarium)"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "1c8ec291-8067-4b48-848b-410c2c768420",
+        "_score": 1,
+        "_source": {
+          "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "uuid": "1c8ec291-8067-4b48-848b-410c2c768420",
+          "dqs": -1,
+          "archivelink": "http://lichenportal.org/portal/collections/datasets/dwc/usf_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "CNALHadmin@asu.edu"
+            },
+            {
+              "first_name": "Alan R. Franck, Ph.D., Curator",
+              "email": "afranck@mail.usf.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Alan R. Franck, Ph.D., Curator",
+                "email": "afranck@mail.usf.edu"
+              }
+            ],
+            "collection_name": "University of South Florida Herbarium",
+            "idigbio:uuid": "1c8ec291-8067-4b48-848b-410c2c768420",
+            "idigbio:etag": "3e168d40a69c9999fc5e61c3d02a652d4d34683a",
+            "update": "2015-09-28T21:55:43",
+            "ingest": true,
+            "institution_web_address": "http://florida.plantatlas.usf.edu",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b",
+              "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=58"
+            ],
+            "link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.zip",
+            "idigbio:dateModified": "2015-09-29T01:21:29.337684",
+            "collection_description": "The USF Herbarium, with nearly 270,000 specimens, is the second largest collection in Florida, the seventh largest in the southeastern United States, and ranks in the upper third of the world's herbaria in size.",
+            "id": "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/images/collicons/USF.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "3e168d40a69c9999fc5e61c3d02a652d4d34683a",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://lichenportal.org/portal/collections/datasets/dwc/usf_dwc-a.eml",
+          "logourl": "http://lichenportal.org/portal/images/collicons/usf.jpg",
+          "recordids": [
+            "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b",
+            "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=58"
+          ],
+          "data": {
+            "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Alan R. Franck, Ph.D., Curator",
+                "email": "afranck@mail.usf.edu"
+              }
+            ],
+            "collection_name": "University of South Florida Herbarium",
+            "update": "2015-09-28T21:55:43",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.zip",
+            "collection_description": "The USF Herbarium, with nearly 270,000 specimens, is the second largest collection in Florida, the seventh largest in the southeastern United States, and ranks in the upper third of the world's herbaria in size.",
+            "institution_web_address": "http://florida.plantatlas.usf.edu",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/images/collicons/USF.jpg",
+            "id": "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b"
+          },
+          "datemodified": "2015-09-29T01:21:29.337684+00:00",
+          "name": "university of south florida herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "35879d2c-063f-4046-9ac6-eda6410e21a9",
+        "_score": 1,
+        "_source": {
+          "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "uuid": "35879d2c-063f-4046-9ac6-eda6410e21a9",
+          "dqs": -1,
+          "archivelink": "http://lichenportal.org/portal/collections/datasets/dwc/bg_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "CNALHadmin@asu.edu"
+            },
+            {
+              "first_name": "Contact: Tor Tønsberg, curator of lichens",
+              "email": "tor.tonsberg@um.uib.no"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Contact: Tor Tønsberg, curator of lichens",
+                "email": "tor.tonsberg@um.uib.no"
+              }
+            ],
+            "collection_name": "University Museum of Bergen",
+            "idigbio:uuid": "35879d2c-063f-4046-9ac6-eda6410e21a9",
+            "idigbio:etag": "b570aadce05b701cb68c2cea6ac26b0b486f2c97",
+            "update": "2016-04-28T13:40:07",
+            "ingest": true,
+            "institution_web_address": "http://www.uib.no/en/universitymuseum",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d"
+            ],
+            "link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.zip",
+            "idigbio:dateModified": "2016-04-28T16:41:36.945153",
+            "collection_description": "The lichen collection at herbarium BG consists of 95000 fully computerized specimens. About 51000 are from Norway. Important material is also from and the Arctic (Svalbard with Bjørnøya), Antarctica (Mainland Antarctica, Argentine Islands, Bouvet Island, Gough Island, Kerguelen, Prince Edward Islands, and South Orkney Islands), and North-America. The herbarium includes material collected by, e.g., N.M. Blytt, T. Engelskjøn, Th.M. Fries, G. Gaarder, J.J. Havaas, J.I. Johnsen, P.M. Jørgensen, W. Maas, N.G. Moe, J.M. Norman, D.O. Øvstedal, C. Printzen, T. Spribille, and T. Tønsberg.",
+            "id": "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/images/collicons/BG.jpg",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "b570aadce05b701cb68c2cea6ac26b0b486f2c97",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://lichenportal.org/portal/collections/datasets/dwc/bg_dwc-a.eml",
+          "logourl": "http://lichenportal.org/portal/images/collicons/bg.jpg",
+          "recordids": [
+            "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d"
+          ],
+          "data": {
+            "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Contact: Tor Tønsberg, curator of lichens",
+                "email": "tor.tonsberg@um.uib.no"
+              }
+            ],
+            "collection_name": "University Museum of Bergen",
+            "update": "2016-04-28T13:40:07",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.zip",
+            "collection_description": "The lichen collection at herbarium BG consists of 95000 fully computerized specimens. About 51000 are from Norway. Important material is also from and the Arctic (Svalbard with Bjørnøya), Antarctica (Mainland Antarctica, Argentine Islands, Bouvet Island, Gough Island, Kerguelen, Prince Edward Islands, and South Orkney Islands), and North-America. The herbarium includes material collected by, e.g., N.M. Blytt, T. Engelskjøn, Th.M. Fries, G. Gaarder, J.J. Havaas, J.I. Johnsen, P.M. Jørgensen, W. Maas, N.G. Moe, J.M. Norman, D.O. Øvstedal, C. Printzen, T. Spribille, and T. Tønsberg.",
+            "institution_web_address": "http://www.uib.no/en/universitymuseum",
+            "other_guids": [],
+            "logo_url": "http://lichenportal.org/portal/images/collicons/BG.jpg",
+            "id": "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d"
+          },
+          "datemodified": "2016-04-28T16:41:36.945153+00:00",
+          "name": "university museum of bergen"
         }
       },
       {
@@ -349,801 +1004,6 @@
           },
           "datemodified": "2024-04-18T17:19:41.016869+00:00",
           "name": "diversidad del ictioplancton en las lagunas madre y almagre, tamaulipas, y laguna de tampamachoco, veracruz"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "03e291b1-e74e-489a-8ec9-d23ff481c13c",
-        "_score": 1,
-        "_source": {
-          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-          "uuid": "03e291b1-e74e-489a-8ec9-d23ff481c13c",
-          "dqs": 0,
-          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-l074",
-          "rights": "cc4 by",
-          "contacts": [
-            {
-              "first_name": "Teresa",
-              "last_name": "Terrazas Salgado",
-              "role": "Responsable",
-              "email": "winchi@colpos.colpos.mx"
-            },
-            {
-              "first_name": "CONABIO",
-              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            },
-            {
-              "first_name": "Patricia",
-              "last_name": "Ramos Rivera",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-L074",
-            "contacts": [
-              {
-                "first_name": "Teresa",
-                "last_name": "Terrazas Salgado",
-                "role": "Responsable",
-                "email": "winchi@colpos.colpos.mx"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Filogenia de las cactáceas columnares (Pachycereeae) con base en caracteres anatómico-morfológicos",
-            "idigbio:uuid": "03e291b1-e74e-489a-8ec9-d23ff481c13c",
-            "idigbio:etag": "dcd8aab00a85dc5935de93f43f614b1fbd8e1086",
-            "update": "2024-04-11T19:38:53",
-            "ingest": true,
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=L&Numero=74",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "80863c34-f762-11e1-a439-00145eb45e9a"
-            ],
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-L074",
-            "idigbio:dateModified": "2024-04-18T17:19:40.586286",
-            "collection_description": "La tribu Pachycereeae sensu Barthlott y Hunt contiene 10 géneros y 60 especies. El mayor número de especies de esta tribu son endémicas a México, además de ser elementos dominantes de algunas comunidades vegetales del país. La tribu fue dividida por Gibson y Horak en dos subtribus con base en caracteres anatómicos, morfológicos y fitioquímicos, no obstante la monofilia de algunos géneros se ha cuestionado en trabajos más recientes. Por otra parte un análisis riguroso (cladistico) con base en caracteres anatómicos y morfológicos no se ha realizado y la información existente a la fecha es parcial y difícil de re-analizarse, en especial para los caracteres anatómicos. Con base en lo anterior se plantea analizar la información anatómica-morfológica  de los miembros de este tribu a través del método de cladismo. Este proyecto pretende con base en colectas de campo: 1) generar información anivel anatómico para las especies de Pachycereeae y 2) generar/sintetizar información ya disponible de los caracteres morfológicos para las especies de dicha tribu y con ambos conjuntos de postular hipótesis de relaciones filogenéticas. Reino: 1\nFilo: 1\nClase: 1\nOrden: 1\nFamilia: 1\nGénero: 10\nEspecie: 48",
-            "id": "80863c34-f762-11e1-a439-00145eb45e9a",
-            "other_guids": [],
-            "data_rights": "CC4 BY"
-          },
-          "etag": "dcd8aab00a85dc5935de93f43f614b1fbd8e1086",
-          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-l074",
-          "recordids": [
-            "80863c34-f762-11e1-a439-00145eb45e9a"
-          ],
-          "data": {
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-L074",
-            "contacts": [
-              {
-                "first_name": "Teresa",
-                "last_name": "Terrazas Salgado",
-                "role": "Responsable",
-                "email": "winchi@colpos.colpos.mx"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Filogenia de las cactáceas columnares (Pachycereeae) con base en caracteres anatómico-morfológicos",
-            "update": "2024-04-11T19:38:53",
-            "ingest": true,
-            "data_rights": "CC4 BY",
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-L074",
-            "collection_description": "La tribu Pachycereeae sensu Barthlott y Hunt contiene 10 géneros y 60 especies. El mayor número de especies de esta tribu son endémicas a México, además de ser elementos dominantes de algunas comunidades vegetales del país. La tribu fue dividida por Gibson y Horak en dos subtribus con base en caracteres anatómicos, morfológicos y fitioquímicos, no obstante la monofilia de algunos géneros se ha cuestionado en trabajos más recientes. Por otra parte un análisis riguroso (cladistico) con base en caracteres anatómicos y morfológicos no se ha realizado y la información existente a la fecha es parcial y difícil de re-analizarse, en especial para los caracteres anatómicos. Con base en lo anterior se plantea analizar la información anatómica-morfológica  de los miembros de este tribu a través del método de cladismo. Este proyecto pretende con base en colectas de campo: 1) generar información anivel anatómico para las especies de Pachycereeae y 2) generar/sintetizar información ya disponible de los caracteres morfológicos para las especies de dicha tribu y con ambos conjuntos de postular hipótesis de relaciones filogenéticas. Reino: 1\nFilo: 1\nClase: 1\nOrden: 1\nFamilia: 1\nGénero: 10\nEspecie: 48",
-            "other_guids": [],
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=L&Numero=74",
-            "id": "80863c34-f762-11e1-a439-00145eb45e9a"
-          },
-          "datemodified": "2024-04-18T17:19:40.586286+00:00",
-          "name": "filogenia de las cactáceas columnares (pachycereeae) con base en caracteres anatómico-morfológicos"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "080f57e4-505c-4e56-bfad-d1861609f146",
-        "_score": 1,
-        "_source": {
-          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-          "uuid": "080f57e4-505c-4e56-bfad-d1861609f146",
-          "dqs": 0,
-          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-h285",
-          "rights": "cc4 by",
-          "contacts": [
-            {
-              "first_name": "Clementina de los Ángeles",
-              "last_name": "Equihua Zamora",
-              "role": "Responsable"
-            },
-            {
-              "first_name": "CONABIO",
-              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            },
-            {
-              "first_name": "Patricia",
-              "last_name": "Ramos Rivera",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-H285",
-            "contacts": [
-              {
-                "first_name": "Clementina de los Ángeles",
-                "last_name": "Equihua Zamora",
-                "role": "Responsable"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Brioflora de la Reserva de Montes Azules, Chis.: Diversidad, biogeografía y depauperación por actividad humana",
-            "idigbio:uuid": "080f57e4-505c-4e56-bfad-d1861609f146",
-            "idigbio:etag": "b646bbffc694fb1be88941048ed03fe03d9b1864",
-            "update": "2024-04-11T19:32:58",
-            "ingest": true,
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=H&Numero=285",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "80bfa122-f762-11e1-a439-00145eb45e9a"
-            ],
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-H285",
-            "idigbio:dateModified": "2024-04-18T17:19:52.045095",
-            "collection_description": "Los musgos y hepáticas (en conjunto denominados briofitas) constituyen el segundo grupo en diversidad del reino vegetal (Mishler, 1988 y Buck y Thiers, 1989).  Al igual que las angiospermas, es de esperar mayor diversidad en las briofloras tropicales que las de regiones templadas, y aún así, Delgadillo y Equihua (1990) solamente citan dos trabajos que dedican su investigación al estado de Chiapas. Ambos estudios están enfocados a la parte central y los altos de Chiapas. Chiapas es uno de los estados más diversos de nuestro país (Breedlove, 1973 y Flores-Villela y Gerez, 1988) y donde se ubica uno de los límites septentrionales de bosque húmedo tropical (Medellín, et al., 1992).  La zona Lacandona, específicamente la Reserva de Montes Azules, ha sido muy poco estudiada (Delgadillo, 1993).  Este es el primer trabajo formal sobre briofitas en la zona y abarcará tanto la adquisición de información elemental sobre la brioflora de la zona, como análisis básicos sobre su ecología y distribución geográfica. Se han realizado cuatro visitas a la Reserva de Montes Azules y a zonas aledañas incluidas en la selva Lacandona: la región de Ixcán, alrededores de la estación Chajul, zona del río Tzendales, alrededores de los poblados de Nahá, Lacanhá y Nuevo Chapultepec.  Durante estas visitas se han colectado un total de 994 ejemplares y se están procesando 623 previamente colectados.  Hasta el momento se han determinado 60% de los ejemplares distribuidos en 170 especies.  Dentro de estas especies se han encontrado 14 nuevos registros para el país: nueve de hepáticas epífilas (Pócs y Equihua en prep.) y 5 de musgos (Equihua y García-Ávila, en prep).  Al finalizar este proyecto, se depositarán los ejemplares en el herbario nacional (MEXU). También se han realizado colectas en cuadrantes en los diferentes tipos de perturbación más frecuentes en la zona: acahuales y cacaotales, para comparar la diversidad con sitios sin perturbar (Equihua y Gradstein, en prep.). Al finalizar este estudió se publicará un listado florístico, un estudio biogeográfico y un estudio comparativo del efecto de la perturbación humana sobre las comunidades de briofitas. Reino: 1\nFilo: 3\nClase: 5\nOrden: 20\nFamilia: 52\nGénero: 134\nEspecie: 226\nEpitetoinfraespecifico: 7",
-            "id": "80bfa122-f762-11e1-a439-00145eb45e9a",
-            "other_guids": [],
-            "data_rights": "CC4 BY"
-          },
-          "etag": "b646bbffc694fb1be88941048ed03fe03d9b1864",
-          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-h285",
-          "recordids": [
-            "80bfa122-f762-11e1-a439-00145eb45e9a"
-          ],
-          "data": {
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-H285",
-            "contacts": [
-              {
-                "first_name": "Clementina de los Ángeles",
-                "last_name": "Equihua Zamora",
-                "role": "Responsable"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Brioflora de la Reserva de Montes Azules, Chis.: Diversidad, biogeografía y depauperación por actividad humana",
-            "update": "2024-04-11T19:32:58",
-            "ingest": true,
-            "data_rights": "CC4 BY",
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-H285",
-            "collection_description": "Los musgos y hepáticas (en conjunto denominados briofitas) constituyen el segundo grupo en diversidad del reino vegetal (Mishler, 1988 y Buck y Thiers, 1989).  Al igual que las angiospermas, es de esperar mayor diversidad en las briofloras tropicales que las de regiones templadas, y aún así, Delgadillo y Equihua (1990) solamente citan dos trabajos que dedican su investigación al estado de Chiapas. Ambos estudios están enfocados a la parte central y los altos de Chiapas. Chiapas es uno de los estados más diversos de nuestro país (Breedlove, 1973 y Flores-Villela y Gerez, 1988) y donde se ubica uno de los límites septentrionales de bosque húmedo tropical (Medellín, et al., 1992).  La zona Lacandona, específicamente la Reserva de Montes Azules, ha sido muy poco estudiada (Delgadillo, 1993).  Este es el primer trabajo formal sobre briofitas en la zona y abarcará tanto la adquisición de información elemental sobre la brioflora de la zona, como análisis básicos sobre su ecología y distribución geográfica. Se han realizado cuatro visitas a la Reserva de Montes Azules y a zonas aledañas incluidas en la selva Lacandona: la región de Ixcán, alrededores de la estación Chajul, zona del río Tzendales, alrededores de los poblados de Nahá, Lacanhá y Nuevo Chapultepec.  Durante estas visitas se han colectado un total de 994 ejemplares y se están procesando 623 previamente colectados.  Hasta el momento se han determinado 60% de los ejemplares distribuidos en 170 especies.  Dentro de estas especies se han encontrado 14 nuevos registros para el país: nueve de hepáticas epífilas (Pócs y Equihua en prep.) y 5 de musgos (Equihua y García-Ávila, en prep).  Al finalizar este proyecto, se depositarán los ejemplares en el herbario nacional (MEXU). También se han realizado colectas en cuadrantes en los diferentes tipos de perturbación más frecuentes en la zona: acahuales y cacaotales, para comparar la diversidad con sitios sin perturbar (Equihua y Gradstein, en prep.). Al finalizar este estudió se publicará un listado florístico, un estudio biogeográfico y un estudio comparativo del efecto de la perturbación humana sobre las comunidades de briofitas. Reino: 1\nFilo: 3\nClase: 5\nOrden: 20\nFamilia: 52\nGénero: 134\nEspecie: 226\nEpitetoinfraespecifico: 7",
-            "other_guids": [],
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=H&Numero=285",
-            "id": "80bfa122-f762-11e1-a439-00145eb45e9a"
-          },
-          "datemodified": "2024-04-18T17:19:52.045095+00:00",
-          "name": "brioflora de la reserva de montes azules, chis.: diversidad, biogeografía y depauperación por actividad humana"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "a9223e1d-7a81-4311-800e-211c5a1b8205",
-        "_score": 1,
-        "_source": {
-          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-          "uuid": "a9223e1d-7a81-4311-800e-211c5a1b8205",
-          "dqs": 0,
-          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-j063",
-          "rights": "cc4 by",
-          "contacts": [
-            {
-              "first_name": "Diego David",
-              "last_name": "Reygadas Prado",
-              "role": "Responsable"
-            },
-            {
-              "first_name": "CONABIO",
-              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            },
-            {
-              "first_name": "Patricia",
-              "last_name": "Ramos Rivera",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-J063",
-            "contacts": [
-              {
-                "first_name": "Diego David",
-                "last_name": "Reygadas Prado",
-                "role": "Responsable"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Sistema de apoyo a la toma de decisiones para la reforestación rural en México",
-            "idigbio:uuid": "a9223e1d-7a81-4311-800e-211c5a1b8205",
-            "idigbio:etag": "82bd65431c9f013a4d2e08722896845045baa281",
-            "update": "2024-04-11T19:32:25",
-            "ingest": true,
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=J&Numero=63",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "80a89392-f762-11e1-a439-00145eb45e9a"
-            ],
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-J063",
-            "idigbio:dateModified": "2024-04-18T17:19:55.637591",
-            "collection_description": "La reforestación es la acción más directa e inmediata que apoya la recuperación de las áreas degradadas en México y a la conservación de aquellas susceptibles de afectación y pérdida de la cobertura vegetal y biodiversidad asociada. Se ha dado un impulso importante a los programas de reforestación a nivel nacional en los últimos años, de hecho se tiene programada una meta de 1,700 millones de plantas para el presente sexenio, aunque el enfoque que se ha dado a las plantaciones no se puede decir que refleja esta directriz de manera adecuada ya que la reforestación se ha dirigido en un alto porcentaje hacia las áreas urbanas y con especies exóticas. Es importante que el enfoque que se de a los trabajos futuros de reforestación se dirijan a especies nativas y en las áreas rurales de nuestro país dentro de las cuales los problemas ecológicos, económicos y sociales en conjunto requieren de una solución a corto plazo. En este contexto, este proyecto considera el empleo de herramientas como las bases de datos relacionales y los sistemas de información geográfica para conjuntar y analizar la información ecológica,, social y económica relacionada con la reforestación rural en México, a fin de proporcionar elementos de apoyo a la toma de decisiones que conlleven al desarrollo sustentable de las comunidades que habitan las áreas rurales de nuestro país. Reino: 1\nFilo: 1\nClase: 2\nOrden: 38\nFamilia: 85\nGénero: 262\nSubgénero: 7\nEspecie: 434\nEpitetoinfraespecifico: 5",
-            "id": "80a89392-f762-11e1-a439-00145eb45e9a",
-            "other_guids": [],
-            "data_rights": "CC4 BY"
-          },
-          "etag": "82bd65431c9f013a4d2e08722896845045baa281",
-          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-j063",
-          "recordids": [
-            "80a89392-f762-11e1-a439-00145eb45e9a"
-          ],
-          "data": {
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-J063",
-            "contacts": [
-              {
-                "first_name": "Diego David",
-                "last_name": "Reygadas Prado",
-                "role": "Responsable"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Sistema de apoyo a la toma de decisiones para la reforestación rural en México",
-            "update": "2024-04-11T19:32:25",
-            "ingest": true,
-            "data_rights": "CC4 BY",
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-J063",
-            "collection_description": "La reforestación es la acción más directa e inmediata que apoya la recuperación de las áreas degradadas en México y a la conservación de aquellas susceptibles de afectación y pérdida de la cobertura vegetal y biodiversidad asociada. Se ha dado un impulso importante a los programas de reforestación a nivel nacional en los últimos años, de hecho se tiene programada una meta de 1,700 millones de plantas para el presente sexenio, aunque el enfoque que se ha dado a las plantaciones no se puede decir que refleja esta directriz de manera adecuada ya que la reforestación se ha dirigido en un alto porcentaje hacia las áreas urbanas y con especies exóticas. Es importante que el enfoque que se de a los trabajos futuros de reforestación se dirijan a especies nativas y en las áreas rurales de nuestro país dentro de las cuales los problemas ecológicos, económicos y sociales en conjunto requieren de una solución a corto plazo. En este contexto, este proyecto considera el empleo de herramientas como las bases de datos relacionales y los sistemas de información geográfica para conjuntar y analizar la información ecológica,, social y económica relacionada con la reforestación rural en México, a fin de proporcionar elementos de apoyo a la toma de decisiones que conlleven al desarrollo sustentable de las comunidades que habitan las áreas rurales de nuestro país. Reino: 1\nFilo: 1\nClase: 2\nOrden: 38\nFamilia: 85\nGénero: 262\nSubgénero: 7\nEspecie: 434\nEpitetoinfraespecifico: 5",
-            "other_guids": [],
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=J&Numero=63",
-            "id": "80a89392-f762-11e1-a439-00145eb45e9a"
-          },
-          "datemodified": "2024-04-18T17:19:55.637591+00:00",
-          "name": "sistema de apoyo a la toma de decisiones para la reforestación rural en méxico"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "ea3c3b03-0ed5-42fc-b192-7328459ea04a",
-        "_score": 1,
-        "_source": {
-          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-          "uuid": "ea3c3b03-0ed5-42fc-b192-7328459ea04a",
-          "dqs": 0,
-          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-u048",
-          "rights": "cc4 by",
-          "contacts": [
-            {
-              "first_name": "Enrique",
-              "last_name": "Guízar Nolazco",
-              "role": "Responsable",
-              "email": "chap@taurus1.chapingo.mx"
-            },
-            {
-              "first_name": "CONABIO",
-              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            },
-            {
-              "first_name": "Patricia",
-              "last_name": "Ramos Rivera",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-U048",
-            "contacts": [
-              {
-                "first_name": "Enrique",
-                "last_name": "Guízar Nolazco",
-                "role": "Responsable",
-                "email": "chap@taurus1.chapingo.mx"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Banco de datos florísticos del Herbario CHAP",
-            "idigbio:uuid": "ea3c3b03-0ed5-42fc-b192-7328459ea04a",
-            "idigbio:etag": "0e7c19f29b2b92678855c3d3fad45072cb64ce3c",
-            "update": "2024-04-11T19:34:19",
-            "ingest": true,
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=U&Numero=48",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "9d300300-333d-4ac3-abcb-04d4b369e556"
-            ],
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-U048",
-            "idigbio:dateModified": "2024-04-18T17:19:56.843590",
-            "collection_description": "La colección científica del Herbario CHAP es la más antigua, cuantiosa e importante de la Universidad Autónoma Chapingo, esta constituida por aproximadamente 50,800 ejemplares debidamente registrados, pertenecientes a las diferentes formas biológicas de las plantas fanerógamas, así como de los diferentes tipos de vegetación existentes en México. Reviste importancia porque posee una de las colecciones más completas del grupo de las gimnospermas mexicanas y en general de la flora dendrológica. Contiene colecciones importantes entre las que destacan las de Pennington y Sarukhán del trópico cálido-húmedo, las colectas de Zsolt Debreczy e Iztvan Rácz correspondientes a las coníferas colectadas en México como parte del proyecto internacional Atlas Dendrológico, además de estar representadas las siguientes regiones: Sierra Nevada del Eje Neovolcánico, Noroeste de Chihuahua y Durango, cuenca alta del Balsas y las Mixtecas Poblana-Oaxaqueña. Reino: 1\nFilo: 1\nClase: 3\nOrden: 69\nFamilia: 267\nGénero: 1974\nSubgénero: 26\nEspecie: 8801\nEpitetoinfraespecifico: 465",
-            "id": "9d300300-333d-4ac3-abcb-04d4b369e556",
-            "other_guids": [],
-            "data_rights": "CC4 BY"
-          },
-          "etag": "0e7c19f29b2b92678855c3d3fad45072cb64ce3c",
-          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-u048",
-          "recordids": [
-            "9d300300-333d-4ac3-abcb-04d4b369e556"
-          ],
-          "data": {
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-U048",
-            "contacts": [
-              {
-                "first_name": "Enrique",
-                "last_name": "Guízar Nolazco",
-                "role": "Responsable",
-                "email": "chap@taurus1.chapingo.mx"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Banco de datos florísticos del Herbario CHAP",
-            "update": "2024-04-11T19:34:19",
-            "ingest": true,
-            "data_rights": "CC4 BY",
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-U048",
-            "collection_description": "La colección científica del Herbario CHAP es la más antigua, cuantiosa e importante de la Universidad Autónoma Chapingo, esta constituida por aproximadamente 50,800 ejemplares debidamente registrados, pertenecientes a las diferentes formas biológicas de las plantas fanerógamas, así como de los diferentes tipos de vegetación existentes en México. Reviste importancia porque posee una de las colecciones más completas del grupo de las gimnospermas mexicanas y en general de la flora dendrológica. Contiene colecciones importantes entre las que destacan las de Pennington y Sarukhán del trópico cálido-húmedo, las colectas de Zsolt Debreczy e Iztvan Rácz correspondientes a las coníferas colectadas en México como parte del proyecto internacional Atlas Dendrológico, además de estar representadas las siguientes regiones: Sierra Nevada del Eje Neovolcánico, Noroeste de Chihuahua y Durango, cuenca alta del Balsas y las Mixtecas Poblana-Oaxaqueña. Reino: 1\nFilo: 1\nClase: 3\nOrden: 69\nFamilia: 267\nGénero: 1974\nSubgénero: 26\nEspecie: 8801\nEpitetoinfraespecifico: 465",
-            "other_guids": [],
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=U&Numero=48",
-            "id": "9d300300-333d-4ac3-abcb-04d4b369e556"
-          },
-          "datemodified": "2024-04-18T17:19:56.843590+00:00",
-          "name": "banco de datos florísticos del herbario chap"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "8cae9490-b1c1-4199-a44e-3a1396666072",
-        "_score": 1,
-        "_source": {
-          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-          "uuid": "8cae9490-b1c1-4199-a44e-3a1396666072",
-          "dqs": 0,
-          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-ej008-ej0080809f-crustaceos",
-          "rights": "cc4 by",
-          "contacts": [
-            {
-              "first_name": "Ma del Carmen",
-              "last_name": "Franco Gordo",
-              "role": "Responsable",
-              "email": "cfranco@costera.melaque.udg.mx"
-            },
-            {
-              "first_name": "CONABIO",
-              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            },
-            {
-              "first_name": "Patricia",
-              "last_name": "Ramos Rivera",
-              "role": "Dirección General de Sistemas",
-              "email": "patricia.ramos@conabio.gob.mx"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-EJ008-EJ0080809F-crustaceos",
-            "contacts": [
-              {
-                "first_name": "Ma del Carmen",
-                "last_name": "Franco Gordo",
-                "role": "Responsable",
-                "email": "cfranco@costera.melaque.udg.mx"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Base de datos y colección de distintos grupos del zooplancton de regiones marinas prioritarias de Jalisco y Colima en el Pacífico mexicano (Crustáceos)",
-            "idigbio:uuid": "8cae9490-b1c1-4199-a44e-3a1396666072",
-            "idigbio:etag": "976fec84e6d9d61d21379d932a9eb8d0e3d2c40b",
-            "update": "2024-04-11T19:33:43",
-            "ingest": true,
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=EJ&Numero=8",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "17f76205-c629-41d8-afc6-8959f90c8ab3"
-            ],
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-EJ008-EJ0080809F-crustaceos",
-            "idigbio:dateModified": "2024-04-18T17:19:49.294141",
-            "collection_description": "Nuestro conocimiento de la fauna zooplanctónica, en toda la costa mexicana, es aún escaso, y los pocos estudios que existen son aislados y no secuenciales. Es por eso que en este proyecto se pretende estudiar y difundir los datos de varios grupos del zooplancton   que fueron recolectados desde el año 1988 (medusas),  1990 (copépodos,  eufáusidos)  y otros colectados de manera sistemática durante 1995-1998  (larvas de peces y quetognatos), conforman cerca de 70 sitios georeferenciados, ubicadas en tres Áreas Marinas Prioritarias del Jalisco y Colima.   Se creará una base de datos en versión BIOTICA con la información de los organismos encontrados y los datos de los sitios de recolección.   Se creará una colección de referencia con por lo menos un ejemplar de cada una de las distintas especies identificadas. Se calcula obtener un mínimo de 100 especies de larvas de peces, 20 especies de medusas, 40 especies de  copépodos,  5 especies de eufaúsidos y 11 especies de quetognatos, más de 10, 000 registros curatoriales y 6100  ejemplares a partir de 50 localidades georreferenciadas y más de 300  muestras analizadas.\nPalabras clave: colección, larvas de peces, copépodos, medusas, quetognatos, eufáusidos Reino: 1\nFilo: 1\nClase: 2\nOrden: 4\nFamilia: 18\nGénero: 25\nEspecie: 48",
-            "id": "17f76205-c629-41d8-afc6-8959f90c8ab3",
-            "other_guids": [],
-            "data_rights": "CC4 BY"
-          },
-          "etag": "976fec84e6d9d61d21379d932a9eb8d0e3d2c40b",
-          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-ej008-ej0080809f-crustaceos",
-          "recordids": [
-            "17f76205-c629-41d8-afc6-8959f90c8ab3"
-          ],
-          "data": {
-            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-EJ008-EJ0080809F-crustaceos",
-            "contacts": [
-              {
-                "first_name": "Ma del Carmen",
-                "last_name": "Franco Gordo",
-                "role": "Responsable",
-                "email": "cfranco@costera.melaque.udg.mx"
-              },
-              {
-                "first_name": "CONABIO",
-                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              },
-              {
-                "first_name": "Patricia",
-                "last_name": "Ramos Rivera",
-                "role": "Dirección General de Sistemas",
-                "email": "patricia.ramos@conabio.gob.mx"
-              }
-            ],
-            "collection_name": "Base de datos y colección de distintos grupos del zooplancton de regiones marinas prioritarias de Jalisco y Colima en el Pacífico mexicano (Crustáceos)",
-            "update": "2024-04-11T19:33:43",
-            "ingest": true,
-            "data_rights": "CC4 BY",
-            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-EJ008-EJ0080809F-crustaceos",
-            "collection_description": "Nuestro conocimiento de la fauna zooplanctónica, en toda la costa mexicana, es aún escaso, y los pocos estudios que existen son aislados y no secuenciales. Es por eso que en este proyecto se pretende estudiar y difundir los datos de varios grupos del zooplancton   que fueron recolectados desde el año 1988 (medusas),  1990 (copépodos,  eufáusidos)  y otros colectados de manera sistemática durante 1995-1998  (larvas de peces y quetognatos), conforman cerca de 70 sitios georeferenciados, ubicadas en tres Áreas Marinas Prioritarias del Jalisco y Colima.   Se creará una base de datos en versión BIOTICA con la información de los organismos encontrados y los datos de los sitios de recolección.   Se creará una colección de referencia con por lo menos un ejemplar de cada una de las distintas especies identificadas. Se calcula obtener un mínimo de 100 especies de larvas de peces, 20 especies de medusas, 40 especies de  copépodos,  5 especies de eufaúsidos y 11 especies de quetognatos, más de 10, 000 registros curatoriales y 6100  ejemplares a partir de 50 localidades georreferenciadas y más de 300  muestras analizadas.\nPalabras clave: colección, larvas de peces, copépodos, medusas, quetognatos, eufáusidos Reino: 1\nFilo: 1\nClase: 2\nOrden: 4\nFamilia: 18\nGénero: 25\nEspecie: 48",
-            "other_guids": [],
-            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=EJ&Numero=8",
-            "id": "17f76205-c629-41d8-afc6-8959f90c8ab3"
-          },
-          "datemodified": "2024-04-18T17:19:49.294141+00:00",
-          "name": "base de datos y colección de distintos grupos del zooplancton de regiones marinas prioritarias de jalisco y colima en el pacífico mexicano (crustáceos)"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
-        "_score": 1,
-        "_source": {
-          "publisher": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
-          "uuid": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
-          "dqs": 0,
-          "archivelink": "https://cvcoll.org/portal/content/dwca/ttrs-ornithology_dwc-a.zip",
-          "rights": "cc0",
-          "contacts": [
-            {
-              "email": "egbot@asu.edu"
-            },
-            {
-              "email": "egbot@asu.edu"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
-            "eml_link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.eml",
-            "contacts": [
-              {
-                "email": "egbot@asu.edu"
-              },
-              {
-                "email": "egbot@asu.edu"
-              }
-            ],
-            "collection_name": "Tall Timbers Research Station - Ornithology",
-            "idigbio:uuid": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
-            "idigbio:etag": "202a2a837a706e8343822b98e17efbfbdd769ac9",
-            "update": "2025-02-03T08:32:09",
-            "ingest": true,
-            "institution_web_address": "http://www.ttrs.org/museum.html",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0",
-              "250c2aa3-d76d-4305-a8e7-22c781fcf5d0"
-            ],
-            "link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.zip",
-            "idigbio:dateModified": "2025-02-03T16:26:26.107239",
-            "collection_description": "",
-            "id": "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0",
-            "other_guids": [],
-            "logo_url": "https://csvcoll.org/portal/content/collicon/ttrs-mammals.gif",
-            "data_rights": "CC0"
-          },
-          "etag": "202a2a837a706e8343822b98e17efbfbdd769ac9",
-          "emllink": "https://cvcoll.org/portal/content/dwca/ttrs-ornithology_dwc-a.eml",
-          "logourl": "https://csvcoll.org/portal/content/collicon/ttrs-mammals.gif",
-          "recordids": [
-            "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0",
-            "250c2aa3-d76d-4305-a8e7-22c781fcf5d0"
-          ],
-          "data": {
-            "eml_link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.eml",
-            "contacts": [
-              {
-                "email": "egbot@asu.edu"
-              },
-              {
-                "email": "egbot@asu.edu"
-              }
-            ],
-            "collection_name": "Tall Timbers Research Station - Ornithology",
-            "update": "2025-02-03T08:32:09",
-            "ingest": true,
-            "data_rights": "CC0",
-            "link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.zip",
-            "collection_description": "",
-            "institution_web_address": "http://www.ttrs.org/museum.html",
-            "other_guids": [],
-            "logo_url": "https://csvcoll.org/portal/content/collicon/ttrs-mammals.gif",
-            "id": "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0"
-          },
-          "datemodified": "2025-02-03T16:26:26.107239+00:00",
-          "name": "tall timbers research station - ornithology"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "recordsets",
-        "_id": "767c78b4-1c16-4cac-ad04-66333ac5a7f2",
-        "_score": 1,
-        "_source": {
-          "publisher": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
-          "uuid": "767c78b4-1c16-4cac-ad04-66333ac5a7f2",
-          "dqs": 0,
-          "archivelink": "https://sernecportal.org/portal/content/dwca/sel_dwc-a.zip",
-          "rights": "cc4 by-nc",
-          "contacts": [
-            {
-              "email": "hbrown@mailbox.sc.edu"
-            },
-            {
-              "email": "hbrown@mailbox.sc.edu"
-            },
-            {
-              "email": "bholst@selby.org"
-            },
-            {
-              "first_name": "Bruce",
-              "last_name": "Holst",
-              "role": "Vice President for Botany",
-              "email": "bholst@selby.org"
-            },
-            {
-              "first_name": "Yuley",
-              "last_name": "Encarnación-Piñyero",
-              "role": "Assistant Curator",
-              "email": "yencarnacion@selby.org"
-            },
-            {
-              "first_name": "Bruce",
-              "last_name": "Holst",
-              "role": "Vice President for Botany",
-              "email": "bholst@selby.org"
-            },
-            {
-              "first_name": "Yuley",
-              "last_name": "Encarnación-Piñyero",
-              "role": "Assistant Curator",
-              "email": "yencarnacion@selby.org"
-            }
-          ],
-          "indexData": {
-            "idigbio:parent": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
-            "eml_link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.eml",
-            "contacts": [
-              {
-                "email": "hbrown@mailbox.sc.edu"
-              },
-              {
-                "email": "hbrown@mailbox.sc.edu"
-              },
-              {
-                "email": "bholst@selby.org"
-              },
-              {
-                "first_name": "Bruce",
-                "last_name": "Holst",
-                "role": "Vice President for Botany",
-                "email": "bholst@selby.org"
-              },
-              {
-                "first_name": "Yuley",
-                "last_name": "Encarnación-Piñyero",
-                "role": "Assistant Curator",
-                "email": "yencarnacion@selby.org"
-              },
-              {
-                "first_name": "Bruce",
-                "last_name": "Holst",
-                "role": "Vice President for Botany",
-                "email": "bholst@selby.org"
-              },
-              {
-                "first_name": "Yuley",
-                "last_name": "Encarnación-Piñyero",
-                "role": "Assistant Curator",
-                "email": "yencarnacion@selby.org"
-              }
-            ],
-            "collection_name": "Marie Selby Botanical Gardens Herbarium",
-            "idigbio:uuid": "767c78b4-1c16-4cac-ad04-66333ac5a7f2",
-            "idigbio:etag": "a0f2ffe79b1132dc6373529b7c005975dd2becad",
-            "update": "2025-02-03T13:35:27",
-            "ingest": true,
-            "institution_web_address": "http://selby.org/",
-            "idigbio:siblings": {},
-            "idigbio:recordIds": [
-              "f91c3fd0-a151-4591-aad5-a7b1f6232a8b"
-            ],
-            "link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.zip",
-            "idigbio:dateModified": "2025-02-03T20:45:14.764337",
-            "collection_description": "",
-            "id": "f91c3fd0-a151-4591-aad5-a7b1f6232a8b",
-            "other_guids": [],
-            "logo_url": "https://sernecportal.org/portal/content/collicon/sel.jpg",
-            "data_rights": "CC4 BY-NC"
-          },
-          "etag": "a0f2ffe79b1132dc6373529b7c005975dd2becad",
-          "emllink": "https://sernecportal.org/portal/content/dwca/sel_dwc-a.eml",
-          "logourl": "https://sernecportal.org/portal/content/collicon/sel.jpg",
-          "recordids": [
-            "f91c3fd0-a151-4591-aad5-a7b1f6232a8b"
-          ],
-          "data": {
-            "eml_link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.eml",
-            "contacts": [
-              {
-                "email": "hbrown@mailbox.sc.edu"
-              },
-              {
-                "email": "hbrown@mailbox.sc.edu"
-              },
-              {
-                "email": "bholst@selby.org"
-              },
-              {
-                "first_name": "Bruce",
-                "last_name": "Holst",
-                "role": "Vice President for Botany",
-                "email": "bholst@selby.org"
-              },
-              {
-                "first_name": "Yuley",
-                "last_name": "Encarnación-Piñyero",
-                "role": "Assistant Curator",
-                "email": "yencarnacion@selby.org"
-              },
-              {
-                "first_name": "Bruce",
-                "last_name": "Holst",
-                "role": "Vice President for Botany",
-                "email": "bholst@selby.org"
-              },
-              {
-                "first_name": "Yuley",
-                "last_name": "Encarnación-Piñyero",
-                "role": "Assistant Curator",
-                "email": "yencarnacion@selby.org"
-              }
-            ],
-            "collection_name": "Marie Selby Botanical Gardens Herbarium",
-            "update": "2025-02-03T13:35:27",
-            "ingest": true,
-            "data_rights": "CC4 BY-NC",
-            "link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.zip",
-            "collection_description": "",
-            "institution_web_address": "http://selby.org/",
-            "other_guids": [],
-            "logo_url": "https://sernecportal.org/portal/content/collicon/sel.jpg",
-            "id": "f91c3fd0-a151-4591-aad5-a7b1f6232a8b"
-          },
-          "datemodified": "2025-02-03T20:45:14.764337+00:00",
-          "name": "marie selby botanical gardens herbarium"
         }
       }
     ]

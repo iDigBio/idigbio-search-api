@@ -6,19 +6,9 @@
     "failed": 0
   },
   "hits": {
-    "total": 5907318,
+    "total": 5907241,
     "max_score": null,
     "hits": [
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "a145fcd9-2325-40a0-919a-7a7a7a75b5aa",
-        "_score": null,
-        "_source": {},
-        "sort": [
-          null
-        ]
-      },
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
@@ -62,7 +52,7 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "eb8c55ec-e75e-4192-9580-54000dfcdee8",
+        "_id": "a145fcd9-2325-40a0-919a-7a7a7a75b5aa",
         "_score": null,
         "_source": {},
         "sort": [
@@ -72,7 +62,7 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "8fd24152-ede2-4f0e-b31a-232952917532",
+        "_id": "c5fc6fda-7fdf-46ed-8205-4f8892586d45",
         "_score": null,
         "_source": {},
         "sort": [
@@ -82,7 +72,7 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "55371ef0-4c13-435a-b3a1-b0e05359d38f",
+        "_id": "4861f34f-6459-4c45-88f9-270bf5fb5832",
         "_score": null,
         "_source": {},
         "sort": [
@@ -92,7 +82,7 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "0d4603d0-46c2-43bd-b0e3-bae26453f878",
+        "_id": "e430870c-85ce-419d-b382-7b7e1ab410e8",
         "_score": null,
         "_source": {},
         "sort": [
@@ -102,7 +92,17 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "2029ef92-1b4a-4902-9070-b2da5c2e8f7a",
+        "_id": "49644639-1df5-4559-b41b-78a30fb759c2",
+        "_score": null,
+        "_source": {},
+        "sort": [
+          null
+        ]
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "4e999713-7477-4ba9-be3d-edd53af2f7a0",
         "_score": null,
         "_source": {},
         "sort": [
@@ -158,11 +158,11 @@
         },
         {
           "key": "70abba3e-5f2a-4276-87f3-261706e24453",
-          "doc_count": 102418
+          "doc_count": 102419
         },
         {
           "key": "e6ccc2bd-9451-4802-8a51-8640d9f09793",
-          "doc_count": 95486
+          "doc_count": 95485
         },
         {
           "key": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
@@ -178,7 +178,7 @@
         },
         {
           "key": "62a36329-6b82-48bc-94d8-1cb9adb91ab5",
-          "doc_count": 69942
+          "doc_count": 69862
         },
         {
           "key": "c55ac6d0-180d-41be-829a-e82898c5ca54",
@@ -262,7 +262,7 @@
         },
         {
           "key": "3027c437-cdb3-4072-9410-5a46ec3b1fd5",
-          "doc_count": 31884
+          "doc_count": 31885
         },
         {
           "key": "e60301d9-9b40-483f-92de-065769b9d3dd",
@@ -382,7 +382,7 @@
         },
         {
           "key": "a6e02b78-6fc6-4cb6-bb87-8d5a443f2c2a",
-          "doc_count": 17098
+          "doc_count": 17099
         },
         {
           "key": "b9ab58cf-785e-44a7-a873-1966e14a6715",
@@ -786,7 +786,7 @@
         },
         {
           "key": "3420d3d5-f142-4db6-951c-5d37cb72ce53",
-          "doc_count": 3594
+          "doc_count": 3593
         },
         {
           "key": "3056112e-97c6-4d0d-b6c2-3c0a9adaca24",
@@ -2009,12 +2009,12 @@
           "doc_count": 107
         },
         {
-          "key": "688b7731-d818-4063-b29d-666bd0024b8b",
-          "doc_count": 106
+          "key": "988ac5c5-8b44-47cb-b3cb-93abd267dab1",
+          "doc_count": 107
         },
         {
-          "key": "988ac5c5-8b44-47cb-b3cb-93abd267dab1",
-          "doc_count": 104
+          "key": "688b7731-d818-4063-b29d-666bd0024b8b",
+          "doc_count": 106
         },
         {
           "key": "7ae4d15d-62e2-459b-842a-446f921b9d3f",
@@ -2089,6 +2089,10 @@
           "doc_count": 73
         },
         {
+          "key": "b5f4526b-f4fb-4d90-8ce0-975e0cda8ff6",
+          "doc_count": 73
+        },
+        {
           "key": "f4573d80-dd92-4337-9005-ba71e8a8563a",
           "doc_count": 73
         },
@@ -2103,10 +2107,6 @@
         {
           "key": "ce98b978-4542-45c6-aecf-79cf3f6979ed",
           "doc_count": 71
-        },
-        {
-          "key": "b5f4526b-f4fb-4d90-8ce0-975e0cda8ff6",
-          "doc_count": 70
         },
         {
           "key": "751b5d4c-aba7-4c1f-b0a1-dfe2e9346d1b",
@@ -2401,10 +2401,6 @@
           "doc_count": 6
         },
         {
-          "key": "56879e73-bf9d-4bd9-a7a4-4f2f940d0f62",
-          "doc_count": 6
-        },
-        {
           "key": "8f3b62fb-56ec-49e8-9f8f-bb257348291f",
           "doc_count": 6
         },
@@ -2534,6 +2530,10 @@
         },
         {
           "key": "5626f61a-822e-4692-b432-51f53d053e4d",
+          "doc_count": 2
+        },
+        {
+          "key": "56879e73-bf9d-4bd9-a7a4-4f2f940d0f62",
           "doc_count": 2
         },
         {

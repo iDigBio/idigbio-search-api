@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 146567270,
+    "total": 146567272,
     "max_score": null,
     "hits": [
       {
@@ -456,6 +456,18 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "787b099d-5fe8-44b4-a1f3-35e311bcd638",
+        "_score": null,
+        "_source": {
+          "uuid": "787b099d-5fe8-44b4-a1f3-35e311bcd638"
+        },
+        "sort": [
+          0.5797101
+        ]
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "5de99bab-c735-4d3c-9117-35278ba18e76",
         "_score": null,
         "_source": {
@@ -472,18 +484,6 @@
         "_score": null,
         "_source": {
           "uuid": "b32cfcb2-2e96-474c-94c3-8ff5c24ee511"
-        },
-        "sort": [
-          0.5797101
-        ]
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "787b099d-5fe8-44b4-a1f3-35e311bcd638",
-        "_score": null,
-        "_source": {
-          "uuid": "787b099d-5fe8-44b4-a1f3-35e311bcd638"
         },
         "sort": [
           0.5797101
@@ -564,10 +564,10 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "4e0227e9-29eb-4d84-9b76-597116331488",
+        "_id": "723100d4-7361-438d-9844-d8c6363b9542",
         "_score": null,
         "_source": {
-          "uuid": "4e0227e9-29eb-4d84-9b76-597116331488"
+          "uuid": "723100d4-7361-438d-9844-d8c6363b9542"
         },
         "sort": [
           0.5797101
@@ -1230,7 +1230,7 @@
         },
         {
           "key": "bd7cfd55-bf55-46fc-878d-e6e11f574ccd",
-          "doc_count": 185946
+          "doc_count": 185948
         },
         {
           "key": "7b0809fb-fd62-4733-8f40-74ceb04cbcac",

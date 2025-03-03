@@ -1254,368 +1254,296 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "097aa502-6c48-4011-89d3-ffa295b46cf3",
+        "_id": "5ee5e0a5-9103-44fb-be94-5529b8992588",
         "_score": 1,
-        "_routing": "3c7fa3f8-01c3-4e91-9f9a-75c550381ff3",
-        "_parent": "3c7fa3f8-01c3-4e91-9f9a-75c550381ff3",
+        "_routing": "a65c9d6f-2733-487f-90d9-f2e747225e6d",
+        "_parent": "a65c9d6f-2733-487f-90d9-f2e747225e6d",
         "_source": {
-          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
-          "uuid": "097aa502-6c48-4011-89d3-ffa295b46cf3",
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "5ee5e0a5-9103-44fb-be94-5529b8992588",
           "format": "image/jpeg",
-          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
           "dqs": 0.45454545454545453,
-          "rights": "BY-NC-SA",
+          "rights": "BY",
           "mediatype": "images",
           "hasSpecimen": true,
           "records": [
-            "3c7fa3f8-01c3-4e91-9f9a-75c550381ff3"
+            "a65c9d6f-2733-487f-90d9-f2e747225e6d",
+            "b588ec2a-661a-4bc6-bd26-e24d4034f4c8"
           ],
-          "etag": "ba5b48d755fc106ada509260bf732101149bbd8a",
+          "etag": "76da4ab5373bbcf49d71dc71d856c086f78b9ec2",
           "flags": [
             "dwc_basisofrecord_invalid"
           ],
           "indexData": {
-            "idigbio:parent": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
             "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "idigbio:uuid": "097aa502-6c48-4011-89d3-ffa295b46cf3",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00021995.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00021995",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00021995",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "idigbio:recordIds": [
-              "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00021995"
-            ],
-            "idigbio:siblings": {
-              "record": [
-                "3c7fa3f8-01c3-4e91-9f9a-75c550381ff3"
-              ]
-            },
-            "dcterms:rights": "© University of Connecticut",
-            "idigbio:dateModified": "2014-09-12T19:39:15.755000",
-            "idigbio:etag": "ba5b48d755fc106ada509260bf732101149bbd8a",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "recordids": [
-            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00021995"
-          ],
-          "data": {
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00021995.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00021995",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00021995",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "dcterms:rights": "© University of Connecticut",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "datemodified": "2014-09-12T19:39:15.755000+00:00",
-          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00021995.JPG"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "0b2fc030-1294-421b-9b9d-a3b1ed22bc37",
-        "_score": 1,
-        "_routing": "18cafbe5-3412-4620-890a-9ffe10a7e633",
-        "_parent": "18cafbe5-3412-4620-890a-9ffe10a7e633",
-        "_source": {
-          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
-          "uuid": "0b2fc030-1294-421b-9b9d-a3b1ed22bc37",
-          "format": "image/jpeg",
-          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-          "dqs": 0.45454545454545453,
-          "rights": "BY-NC-SA",
-          "mediatype": "images",
-          "hasSpecimen": true,
-          "records": [
-            "18cafbe5-3412-4620-890a-9ffe10a7e633"
-          ],
-          "etag": "0f35a52f4da103f6e13b7cf6381d5d5d4a6dc2e9",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
-          "indexData": {
-            "idigbio:parent": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "idigbio:uuid": "0b2fc030-1294-421b-9b9d-a3b1ed22bc37",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078840.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00078840",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078840",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "idigbio:recordIds": [
-              "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078840"
-            ],
-            "idigbio:siblings": {
-              "record": [
-                "18cafbe5-3412-4620-890a-9ffe10a7e633"
-              ]
-            },
-            "dcterms:rights": "© University of Connecticut",
-            "idigbio:dateModified": "2014-09-09T02:40:37.515000",
-            "idigbio:etag": "0f35a52f4da103f6e13b7cf6381d5d5d4a6dc2e9",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "recordids": [
-            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078840"
-          ],
-          "data": {
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078840.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00078840",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078840",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "dcterms:rights": "© University of Connecticut",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "datemodified": "2014-09-09T02:40:37.515000+00:00",
-          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078840.JPG"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "0b72a8c0-bcb5-40a6-8abf-a4e5a30b4e49",
-        "_score": 1,
-        "_routing": "0bc984e9-4e03-441b-94a8-75f433c26e70",
-        "_parent": "0bc984e9-4e03-441b-94a8-75f433c26e70",
-        "_source": {
-          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
-          "uuid": "0b72a8c0-bcb5-40a6-8abf-a4e5a30b4e49",
-          "format": "image/jpeg",
-          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-          "dqs": 0.45454545454545453,
-          "rights": "BY-NC-SA",
-          "mediatype": "images",
-          "hasSpecimen": true,
-          "records": [
-            "0bc984e9-4e03-441b-94a8-75f433c26e70"
-          ],
-          "etag": "2ff675afd19846d40b50d7d36965bbb4c90c6a2c",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
-          "indexData": {
-            "idigbio:parent": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "idigbio:uuid": "0b72a8c0-bcb5-40a6-8abf-a4e5a30b4e49",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078518.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00078518",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078518",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "idigbio:recordIds": [
-              "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078518"
-            ],
-            "idigbio:siblings": {
-              "record": [
-                "0bc984e9-4e03-441b-94a8-75f433c26e70"
-              ]
-            },
-            "dcterms:rights": "© University of Connecticut",
-            "idigbio:dateModified": "2014-09-09T01:28:25.004000",
-            "idigbio:etag": "2ff675afd19846d40b50d7d36965bbb4c90c6a2c",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "recordids": [
-            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00078518"
-          ],
-          "data": {
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078518.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00078518",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00078518",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "dcterms:rights": "© University of Connecticut",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "datemodified": "2014-09-09T01:28:25.004000+00:00",
-          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00078518.JPG"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "06155592-f333-4612-a841-c8b25e6249dd",
-        "_score": 1,
-        "_routing": "17c0326e-7984-4654-a6d8-1fd2568578fa",
-        "_parent": "17c0326e-7984-4654-a6d8-1fd2568578fa",
-        "_source": {
-          "licenselogourl": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png",
-          "uuid": "06155592-f333-4612-a841-c8b25e6249dd",
-          "format": "image/jpeg",
-          "recordset": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-          "dqs": 0.45454545454545453,
-          "rights": "BY-NC-SA",
-          "mediatype": "images",
-          "hasSpecimen": true,
-          "records": [
-            "17c0326e-7984-4654-a6d8-1fd2568578fa"
-          ],
-          "etag": "f0fb67b7cac772b30f43b0380209bfa556d05ddf",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
-          "indexData": {
-            "idigbio:parent": "e70af26a-fb9e-43ab-96a0-d62a2df37e6d",
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "idigbio:uuid": "06155592-f333-4612-a841-c8b25e6249dd",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00032251.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00032251",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00032251",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "idigbio:recordIds": [
-              "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00032251"
-            ],
-            "idigbio:siblings": {
-              "record": [
-                "17c0326e-7984-4654-a6d8-1fd2568578fa"
-              ]
-            },
-            "dcterms:rights": "© University of Connecticut",
-            "idigbio:dateModified": "2014-09-09T01:38:49.314000",
-            "idigbio:etag": "f0fb67b7cac772b30f43b0380209bfa556d05ddf",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "webstatement": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
-          "recordids": [
-            "e70af26a-fb9e-43ab-96a0-d62a2df37e6d\\media\\urn:catalog:uconn:conn:image:conn00032251"
-          ],
-          "data": {
-            "dcterms:type": "StillImage",
-            "xmpRights:WebStatement": "URL: http://creativecommons.org/licenses/by-nc-sa/4.0/",
-            "dcterms:title": "specimen image",
-            "ac:bestQualityFormat": "image/jpeg",
-            "ac:licenseLogoURL": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png",
-            "ac:bestQualityAccessURI": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00032251.JPG",
-            "coreid": "urn:catalog:UConn:CONN:CONN00032251",
-            "dcterms:identifier": "urn:catalog:UConn:CONN:Image:CONN00032251",
-            "xmpRights:Owner": "G. S. Torrey Herbarium, University of Connecticut",
-            "dcterms:rights": "© University of Connecticut",
-            "ac:metadataLanguage": "eng",
-            "dcterms:creator": "CONN"
-          },
-          "datemodified": "2014-09-09T01:38:49.314000+00:00",
-          "accessuri": "http://bgbaseserver.eeb.uconn.edu/DATABASEIMAGES/CONN00032251.JPG"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "mediarecords",
-        "_id": "120c9d5a-5faa-41c6-93f4-4b680e0ca311",
-        "_score": 1,
-        "_routing": "f7506eff-4f5c-4ede-b06a-b18753373c8a",
-        "_parent": "f7506eff-4f5c-4ede-b06a-b18753373c8a",
-        "_source": {
-          "hasSpecimen": true,
-          "uuid": "120c9d5a-5faa-41c6-93f4-4b680e0ca311",
-          "format": "image/jpeg",
-          "recordset": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
-          "dqs": 0.2727272727272727,
-          "rights": "Public Domain",
-          "mediatype": "images",
-          "records": [
-            "f7506eff-4f5c-4ede-b06a-b18753373c8a"
-          ],
-          "etag": "040004a97d744908f6d1b8ce705a712265ee53ef",
-          "flags": [
-            "dwc_basisofrecord_invalid"
-          ],
-          "indexData": {
-            "ac:comments": "http://creativecommons.org/publicdomain/mark/1.0/",
-            "idigbio:parent": "7a8d946d-083f-4d2a-9cc9-cd590398194f",
-            "xmpRights:UsageTerms": "Public Domain",
-            "ac:thumbnailAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "ac:goodQualityAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "coreid": "807963",
-            "dcterms:identifier": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "idigbio:dateModified": "2016-04-21T13:40:35.966214",
-            "ac:metadataLanguage": "en",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=807963",
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
-            "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:5b42d543-b5e6-43c8-b68a-9bb97b086f47",
-            "ac:subtype": "Photograph",
-            "idigbio:etag": "040004a97d744908f6d1b8ce705a712265ee53ef",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "5ee5e0a5-9103-44fb-be94-5529b8992588",
+            "idigbio:etag": "76da4ab5373bbcf49d71dc71d856c086f78b9ec2",
             "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04795023",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441433011955ctGbd3miyJkbhKYB",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441433011955ctgbd3miyjkbhkyb"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
             "idigbio:siblings": {
               "record": [
-                "f7506eff-4f5c-4ede-b06a-b18753373c8a"
+                "a65c9d6f-2733-487f-90d9-f2e747225e6d",
+                "b588ec2a-661a-4bc6-bd26-e24d4034f4c8"
               ]
-            },
-            "ac:caption": "YU YU.076242 Acer spicatum Lam.",
-            "idigbio:recordIds": [
-              "urn:uuid:5b42d543-b5e6-43c8-b68a-9bb97b086f47",
-              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-sdnv8pcuxtu3breruiborg",
-              "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bisque.iplantcollaborative.org/image_service/image/00-sdnv8pcuxtu3breruiborg?resize=1250&format=jpeg"
-            ],
-            "ac:accessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "xmp:MetadataDate": "2015-02-04 18:09:11",
-            "idigbio:uuid": "120c9d5a-5faa-41c6-93f4-4b680e0ca311"
+            }
           },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
           "recordids": [
-            "urn:uuid:5b42d543-b5e6-43c8-b68a-9bb97b086f47",
-            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bovary.iplantcollaborative.org/image_service/image/00-sdnv8pcuxtu3breruiborg",
-            "7a8d946d-083f-4d2a-9cc9-cd590398194f\\media\\http://bisque.iplantcollaborative.org/image_service/image/00-sdnv8pcuxtu3breruiborg?resize=1250&format=jpeg"
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441433011955ctgbd3miyjkbhkyb"
           ],
           "data": {
-            "xmpRights:Owner": "Yale Peabody Museum of Natural History",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04795023",
+            "dcterms:license": "cc-by",
             "dcterms:type": "StillImage",
-            "ac:providerManagedID": "urn:uuid:5b42d543-b5e6-43c8-b68a-9bb97b086f47",
-            "ac:subtype": "Photograph",
-            "ac:metadataLanguage": "en",
-            "xmpRights:UsageTerms": "Public Domain",
-            "ac:comments": "http://creativecommons.org/publicdomain/mark/1.0/",
             "dcterms:format": "image/jpeg",
-            "ac:goodQualityAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "coreid": "807963",
-            "dcterms:identifier": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "ac:caption": "YU YU.076242 Acer spicatum Lam.",
-            "xmpRights:WebStatement": "http://creativecommons.org/publicdomain/zero/1.0/",
-            "ac:thumbnailAccessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "ac:accessURI": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg",
-            "xmp:MetadataDate": "2015-02-04 18:09:11",
-            "ac:associatedSpecimenReference": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=807963"
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441433011955ctGbd3miyJkbhKYB"
           },
-          "datemodified": "2016-04-21T13:40:35.966214+00:00",
-          "accessuri": "http://bisque.iplantcollaborative.org/image_service/image/00-SDnv8PCUXTU3breruiboRG?resize=1250&format=jpeg"
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441433011955ctGbd3miyJkbhKYB"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "ac25f23c-41b4-48ac-9648-08d62e48fffe",
+        "_score": 1,
+        "_routing": "98c72285-0f5c-4a28-aea1-366e83242ec2",
+        "_parent": "98c72285-0f5c-4a28-aea1-366e83242ec2",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "ac25f23c-41b4-48ac-9648-08d62e48fffe",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "98c72285-0f5c-4a28-aea1-366e83242ec2",
+            "2f3dc3ef-055f-4b3a-9a85-53b1d5cb330d"
+          ],
+          "etag": "99886a06a33a78ba5789e41dfdeed0c79a1d0e95",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "ac25f23c-41b4-48ac-9648-08d62e48fffe",
+            "idigbio:etag": "99886a06a33a78ba5789e41dfdeed0c79a1d0e95",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05302639",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441392592812eVtk429z1VwggRZV",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441392592812evtk429z1vwggrzv"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "98c72285-0f5c-4a28-aea1-366e83242ec2",
+                "2f3dc3ef-055f-4b3a-9a85-53b1d5cb330d"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441392592812evtk429z1vwggrzv"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05302639",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441392592812eVtk429z1VwggRZV"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441392592812eVtk429z1VwggRZV"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "58a8fd71-dc17-4201-ae4c-977c92ccdc13",
+        "_score": 1,
+        "_routing": "2c10e0df-17b6-4db6-a790-7a2e58ca593f",
+        "_parent": "2c10e0df-17b6-4db6-a790-7a2e58ca593f",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "58a8fd71-dc17-4201-ae4c-977c92ccdc13",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "2c10e0df-17b6-4db6-a790-7a2e58ca593f",
+            "d0d6712d-1168-4213-ad0d-40d21d48280d"
+          ],
+          "etag": "97d4a95728cb6a4445123bb6500db73d52a5d893",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "58a8fd71-dc17-4201-ae4c-977c92ccdc13",
+            "idigbio:etag": "97d4a95728cb6a4445123bb6500db73d52a5d893",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p06602534",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441393454513PC4JCRbAi2FpAnqN",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441393454513pc4jcrbai2fpanqn"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "2c10e0df-17b6-4db6-a790-7a2e58ca593f",
+                "d0d6712d-1168-4213-ad0d-40d21d48280d"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441393454513pc4jcrbai2fpanqn"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p06602534",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441393454513PC4JCRbAi2FpAnqN"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441393454513PC4JCRbAi2FpAnqN"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "08840d5f-8171-4409-ba22-1c5a72d0bfd5",
+        "_score": 1,
+        "_routing": "57ce71c7-4176-4b62-af1e-766e6a2ed99d",
+        "_parent": "57ce71c7-4176-4b62-af1e-766e6a2ed99d",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "08840d5f-8171-4409-ba22-1c5a72d0bfd5",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "57ce71c7-4176-4b62-af1e-766e6a2ed99d",
+            "61b5fc55-a7f2-4617-a5a7-dd32af1e71a1"
+          ],
+          "etag": "f60b060a243b978f06e52bc4bcc3d18a4b9e38c2",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "08840d5f-8171-4409-ba22-1c5a72d0bfd5",
+            "idigbio:etag": "f60b060a243b978f06e52bc4bcc3d18a4b9e38c2",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05289261",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441396323055FNlSE7qR6Z2BBwYw",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441396323055fnlse7qr6z2bbwyw"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "57ce71c7-4176-4b62-af1e-766e6a2ed99d",
+                "61b5fc55-a7f2-4617-a5a7-dd32af1e71a1"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441396323055fnlse7qr6z2bbwyw"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p05289261",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441396323055FNlSE7qR6Z2BBwYw"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441396323055FNlSE7qR6Z2BBwYw"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "229c817e-b167-4511-a51b-331de03a98df",
+        "_score": 1,
+        "_routing": "5831183c-4d41-449f-8798-aec980573f64",
+        "_parent": "5831183c-4d41-449f-8798-aec980573f64",
+        "_source": {
+          "licenselogourl": "https://i.creativecommons.org/l/by/4.0/88x31.png",
+          "uuid": "229c817e-b167-4511-a51b-331de03a98df",
+          "format": "image/jpeg",
+          "recordset": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "dqs": 0.45454545454545453,
+          "rights": "BY",
+          "mediatype": "images",
+          "hasSpecimen": true,
+          "records": [
+            "5831183c-4d41-449f-8798-aec980573f64",
+            "22a95ab7-17a7-485d-bdc8-999a010c8412"
+          ],
+          "etag": "308b2b5fd31cfc7a47d6cdfd17e3ef110140a7ba",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+            "dcterms:type": "StillImage",
+            "dcterms:license": "cc-by",
+            "idigbio:uuid": "229c817e-b167-4511-a51b-331de03a98df",
+            "idigbio:etag": "308b2b5fd31cfc7a47d6cdfd17e3ef110140a7ba",
+            "dcterms:format": "image/jpeg",
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04795698",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441432854204dNFBqxk8PjCn2p8o",
+            "idigbio:recordIds": [
+              "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441432854204dnfbqxk8pjcn2p8o"
+            ],
+            "idigbio:dateModified": "2016-05-04T09:52:03.417244",
+            "idigbio:siblings": {
+              "record": [
+                "5831183c-4d41-449f-8798-aec980573f64",
+                "22a95ab7-17a7-485d-bdc8-999a010c8412"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/licenses/by/4.0/",
+          "recordids": [
+            "616857b7-f952-44ef-9b6f-576dc1e65b51\\media\\http://mediaphoto.mnhn.fr/media/1441432854204dnfbqxk8pjcn2p8o"
+          ],
+          "data": {
+            "coreid": "http://coldb.mnhn.fr/catalognumber/mnhn/p/p04795698",
+            "dcterms:license": "cc-by",
+            "dcterms:type": "StillImage",
+            "dcterms:format": "image/jpeg",
+            "dcterms:identifier": "http://mediaphoto.mnhn.fr/media/1441432854204dNFBqxk8PjCn2p8o"
+          },
+          "datemodified": "2016-05-04T09:52:03.417244+00:00",
+          "accessuri": "http://mediaphoto.mnhn.fr/media/1441432854204dNFBqxk8PjCn2p8o"
         }
       }
     ]

@@ -12,13 +12,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c53cdddd-7859-468d-a7f0-cdb2bbcf744f",
+        "_id": "81de027e-2d76-4309-9c47-ea7819dec11b",
         "_score": null,
-        "_routing": "80b2ffb5-876b-4e93-9d3f-9082f357c538",
-        "_parent": "80b2ffb5-876b-4e93-9d3f-9082f357c538",
+        "_routing": "5c19ad9f-f75e-4b0d-8c25-93975b9223b5",
+        "_parent": "5c19ad9f-f75e-4b0d-8c25-93975b9223b5",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=674378&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=100345&imgType=jpeg"
           }
         },
         "sort": [
@@ -28,13 +28,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c53e647b-cc02-4d14-b7ed-98dd95ad6764",
+        "_id": "81e74941-32b2-4642-a9bf-2baddfc0eae5",
         "_score": null,
-        "_routing": "f70e4a14-e68e-4576-8982-89d1e88067a3",
-        "_parent": "f70e4a14-e68e-4576-8982-89d1e88067a3",
+        "_routing": "88986f2b-1138-4ba6-bec7-e6e4c0ea7852",
+        "_parent": "88986f2b-1138-4ba6-bec7-e6e4c0ea7852",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=671648&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=733513&imgType=jpeg"
           }
         },
         "sort": [
@@ -44,13 +44,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c5736a26-2e32-43c4-bf23-bbc8d06c3adc",
+        "_id": "72fc5642-1df0-4721-911d-8f6a1194ebe3",
         "_score": null,
-        "_routing": "95d7ee27-3a69-4f29-b7f9-4e0c6123264a",
-        "_parent": "95d7ee27-3a69-4f29-b7f9-4e0c6123264a",
+        "_routing": "652938bc-29bf-4bdd-b55a-5dd8b24c5b2f",
+        "_parent": "652938bc-29bf-4bdd-b55a-5dd8b24c5b2f",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=99848&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=668350&imgType=jpeg"
           }
         },
         "sort": [
@@ -60,13 +60,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c5741b22-dbb9-45b3-9013-005a9f63af06",
+        "_id": "732b3f95-119f-4af9-be6c-905876cdcb8c",
         "_score": null,
-        "_routing": "460a8a37-121d-434d-ab97-1a79b30dafa8",
-        "_parent": "460a8a37-121d-434d-ab97-1a79b30dafa8",
+        "_routing": "9857b713-9511-4242-80d9-e47c61e36711",
+        "_parent": "9857b713-9511-4242-80d9-e47c61e36711",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=78285&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=714627&imgType=jpeg"
           }
         },
         "sort": [
@@ -76,13 +76,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c6044d63-5411-46fe-b834-48fc579ed71c",
+        "_id": "7345161e-d6be-4904-8214-bd3a9fd523b9",
         "_score": null,
-        "_routing": "97551f22-20f1-4d18-a701-40db7ef1fef6",
-        "_parent": "97551f22-20f1-4d18-a701-40db7ef1fef6",
+        "_routing": "7eb5e68f-ce8c-450a-8c00-ceda6a55201d",
+        "_parent": "7eb5e68f-ce8c-450a-8c00-ceda6a55201d",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=713538&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=765546&imgType=jpeg"
           }
         },
         "sort": [
@@ -92,13 +92,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c60bf86d-9119-4fc9-92ef-abb89224e21e",
+        "_id": "73663019-2231-413f-b0bb-ca09ffab89be",
         "_score": null,
-        "_routing": "4c278424-040e-4547-ae64-f857e57760f6",
-        "_parent": "4c278424-040e-4547-ae64-f857e57760f6",
+        "_routing": "16629efb-aac2-4a9c-9f6b-00013e2c0868",
+        "_parent": "16629efb-aac2-4a9c-9f6b-00013e2c0868",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=105508&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=753528&imgType=jpeg"
           }
         },
         "sort": [
@@ -108,13 +108,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c6480ce6-ad52-41a4-8aab-b948194cbed4",
+        "_id": "73bfda7d-26e9-44b7-a761-03ecfd5e6bb1",
         "_score": null,
-        "_routing": "2d86a6ae-a00e-402d-80c4-91df4460ef6f",
-        "_parent": "2d86a6ae-a00e-402d-80c4-91df4460ef6f",
+        "_routing": "cc5a185a-efe5-4818-8572-307e3d6bdcb4",
+        "_parent": "cc5a185a-efe5-4818-8572-307e3d6bdcb4",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=757578&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=67087&imgType=jpeg"
           }
         },
         "sort": [
@@ -124,13 +124,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c66e1632-6cd5-42d1-9f7e-f3b0b0cdd266",
+        "_id": "81f2c2bb-fae6-4e3e-86b0-c540c0debb8c",
         "_score": null,
-        "_routing": "e1f924a4-2b91-40f1-8c1d-b2d9e9a896de",
-        "_parent": "e1f924a4-2b91-40f1-8c1d-b2d9e9a896de",
+        "_routing": "224381b4-1b16-4362-a306-fc7977118090",
+        "_parent": "224381b4-1b16-4362-a306-fc7977118090",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=463699&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=683054&imgType=jpeg"
           }
         },
         "sort": [
@@ -140,13 +140,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c670114e-fc6f-418c-8b19-be1be3cfd591",
+        "_id": "82068296-e423-490b-9ca5-b000b462ed9a",
         "_score": null,
-        "_routing": "4ee897e1-e8c7-4d66-9c91-e957d56fa9b1",
-        "_parent": "4ee897e1-e8c7-4d66-9c91-e957d56fa9b1",
+        "_routing": "482ba5af-b6de-4c76-b9f2-3dd4972cf943",
+        "_parent": "482ba5af-b6de-4c76-b9f2-3dd4972cf943",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=576787&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=768714&imgType=jpeg"
           }
         },
         "sort": [
@@ -156,13 +156,13 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
-        "_id": "c6839e96-f33c-4382-91d2-1f1d019e3a5f",
+        "_id": "82590c9c-7464-43a1-88ca-a94df99c7ee7",
         "_score": null,
-        "_routing": "77855c1f-ad21-415c-8fc9-22bf85afbd1b",
-        "_parent": "77855c1f-ad21-415c-8fc9-22bf85afbd1b",
+        "_routing": "5e923a4c-46ee-42e2-b3c5-578e3d39070c",
+        "_parent": "5e923a4c-46ee-42e2-b3c5-578e3d39070c",
         "_source": {
           "data": {
-            "ac:accessURI": "http://www.morphbank.net?id=720181&imgType=jpeg"
+            "ac:accessURI": "http://www.morphbank.net?id=682931&imgType=jpeg"
           }
         },
         "sort": [

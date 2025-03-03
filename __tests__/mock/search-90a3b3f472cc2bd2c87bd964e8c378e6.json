@@ -7,13 +7,13 @@
   },
   "hits": {
     "total": 1,
-    "max_score": 15.944822,
+    "max_score": 15.869512,
     "hits": [
       {
         "_index": "idigbio-2.10.25",
         "_type": "mediarecords",
         "_id": "00100314-3220-4107-87f3-43cfdfa0cf10",
-        "_score": 15.944822,
+        "_score": 15.869512,
         "_routing": "16890fbf-5a49-4e8a-9357-b612b4a0ee62",
         "_parent": "16890fbf-5a49-4e8a-9357-b612b4a0ee62",
         "_source": {

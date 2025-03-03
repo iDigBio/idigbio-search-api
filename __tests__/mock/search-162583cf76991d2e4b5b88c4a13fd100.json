@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 205392433,
+    "total": 205392435,
     "max_score": 1,
     "hits": [
       {
@@ -634,7 +634,7 @@
       "buckets": [
         {
           "key": "records",
-          "doc_count": 146567270,
+          "doc_count": 146567272,
           "lastModified": {
             "value": 1740423927168,
             "value_as_string": "2025-02-24T19:05:27.168Z"

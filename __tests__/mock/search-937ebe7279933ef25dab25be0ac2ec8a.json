@@ -12,6 +12,19 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "565ec73f-234a-4431-b528-5e2fce4a16e4",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -87.42991,
+            "lat": 32.95601
+          },
+          "scientificname": "carex intumescens"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "22430ddf-3fd7-4c9a-a78a-114376160235",
         "_score": 1,
         "_source": {
@@ -46,19 +59,6 @@
             "lat": 61.6
           },
           "scientificname": "carex bigelowii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "565ec73f-234a-4431-b528-5e2fce4a16e4",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -87.42991,
-            "lat": 32.95601
-          },
-          "scientificname": "carex intumescens"
         }
       },
       {
@@ -987,19 +987,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "6072eb14-8203-4812-8886-4a755da672b5",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -85.9275056,
-            "lat": 30.2944222
-          },
-          "scientificname": "carex glaucescens"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "03f6da0d-6f40-4e7c-8512-b4a36967d548",
         "_score": 1,
         "_source": {
@@ -1021,6 +1008,19 @@
             "lat": 32.404194
           },
           "scientificname": "carex intumescens"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "6072eb14-8203-4812-8886-4a755da672b5",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -85.9275056,
+            "lat": 30.2944222
+          },
+          "scientificname": "carex glaucescens"
         }
       },
       {
@@ -1767,6 +1767,19 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "c6711164-d484-4cdc-90be-dc6f651dfeb6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.0326,
+            "lat": 29.67305
+          },
+          "scientificname": "carex longii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "62391947-6d08-4d85-b627-639fa5e70af3",
         "_score": 1,
         "_source": {
@@ -1814,19 +1827,6 @@
             "lat": 28.54616
           },
           "scientificname": "carex godfreyi"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "c6711164-d484-4cdc-90be-dc6f651dfeb6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.0326,
-            "lat": 29.67305
-          },
-          "scientificname": "carex longii"
         }
       },
       {
@@ -2079,6 +2079,19 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "f8f44141-3403-4965-bae2-8136906edcf4",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.2925,
+            "lat": 30.471
+          },
+          "scientificname": "carex striata"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "327cab5f-1ff2-4977-9440-f42ce2f5c104",
         "_score": 1,
         "_source": {
@@ -2100,19 +2113,6 @@
             "lat": 29.26775
           },
           "scientificname": "carex chapmannii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "f8f44141-3403-4965-bae2-8136906edcf4",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.2925,
-            "lat": 30.471
-          },
-          "scientificname": "carex striata"
         }
       },
       {
@@ -2313,32 +2313,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "3d5aead8-f62f-4f86-b6db-fff0cbb56db3",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -88.91411,
-            "lat": 32.39553
-          },
-          "scientificname": "carex picta"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "5b66f6ea-59e6-460a-a77c-853c8366cb1e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -70.2333333,
-            "lat": 18.45
-          },
-          "scientificname": "carex scabrella"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "49db6450-861e-432a-bf3c-f0349a401373",
         "_score": 1,
         "_source": {
@@ -2373,6 +2347,32 @@
             "lat": 29.8296167
           },
           "scientificname": "carex dasycarpa"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "3d5aead8-f62f-4f86-b6db-fff0cbb56db3",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -88.91411,
+            "lat": 32.39553
+          },
+          "scientificname": "carex picta"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "5b66f6ea-59e6-460a-a77c-853c8366cb1e",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -70.2333333,
+            "lat": 18.45
+          },
+          "scientificname": "carex scabrella"
         }
       },
       {
@@ -3145,6 +3145,97 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "ab68ff28-d99d-4538-81d6-98491d16668c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -80.52242,
+            "lat": 37.37482
+          },
+          "scientificname": "carex gynandra"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "5b2fec78-99ec-4096-8b48-d445a97846e3",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -71.3228,
+            "lat": 44.02657
+          },
+          "scientificname": "carex"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "e5f8d251-b5a0-4013-a833-1b064d1512c8",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -79.054049,
+            "lat": 33.772973
+          },
+          "scientificname": "carex joorii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "f315c05e-1341-408b-a49e-bf3f6f872e37",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -73.4733333,
+            "lat": 40.8297222
+          },
+          "scientificname": "carex tonsa"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "13696fe3-74da-4a07-87a1-336054cf5ec8",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -85.473993,
+            "lat": 36.512196
+          },
+          "scientificname": "carex ouachitana"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "fe1a382f-d659-48f2-bfe6-b232b2a119e3",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -71.55607,
+            "lat": 18.2084
+          },
+          "scientificname": "carex ekmanii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "51c920bf-6fe5-4405-b56a-6c34e58d18ad",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -70.60289,
+            "lat": 18.72242
+          },
+          "scientificname": "carex vulpinoidea"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "ae7d0d9b-4ace-4a91-bd8e-de25ff3b85ff",
         "_score": 1,
         "_source": {
@@ -3257,97 +3348,6 @@
             "lat": 30.4319444
           },
           "scientificname": "carex godfreyi"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "ab68ff28-d99d-4538-81d6-98491d16668c",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -80.52242,
-            "lat": 37.37482
-          },
-          "scientificname": "carex gynandra"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "5b2fec78-99ec-4096-8b48-d445a97846e3",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -71.3228,
-            "lat": 44.02657
-          },
-          "scientificname": "carex"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "fe1a382f-d659-48f2-bfe6-b232b2a119e3",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -71.55607,
-            "lat": 18.2084
-          },
-          "scientificname": "carex ekmanii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "51c920bf-6fe5-4405-b56a-6c34e58d18ad",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -70.60289,
-            "lat": 18.72242
-          },
-          "scientificname": "carex vulpinoidea"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "e5f8d251-b5a0-4013-a833-1b064d1512c8",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -79.054049,
-            "lat": 33.772973
-          },
-          "scientificname": "carex joorii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "f315c05e-1341-408b-a49e-bf3f6f872e37",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -73.4733333,
-            "lat": 40.8297222
-          },
-          "scientificname": "carex tonsa"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "13696fe3-74da-4a07-87a1-336054cf5ec8",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -85.473993,
-            "lat": 36.512196
-          },
-          "scientificname": "carex ouachitana"
         }
       },
       {
@@ -4887,6 +4887,110 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "c5277a63-c8ec-4261-b993-22eaa69e8765",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.3949722,
+            "lat": 29.63275
+          },
+          "scientificname": "carex alata"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "91ccaf11-7634-42fa-a4a2-233098d525a7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.6352778,
+            "lat": 29.2758333
+          },
+          "scientificname": "carex striata"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "9184bf87-1a1c-4a39-99dd-c97ce5283a93",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -88.7008,
+            "lat": 32.38895
+          },
+          "scientificname": "carex breviculmis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "9c797ddf-292d-44b9-895a-6c1f673db9ef",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -75.6702778,
+            "lat": 39.3516667
+          },
+          "scientificname": "carex albicans var. albicans"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "17a0b193-60fe-42b8-9fd1-b436d34224f6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -84.983244,
+            "lat": 29.725768
+          },
+          "scientificname": "carex crus-corvi"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "eaa465fc-4691-4df7-b4e0-0d4175476250",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.358536,
+            "lat": 29.645186
+          },
+          "scientificname": "carex sp."
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "aaae2ab7-905b-46f4-8391-cd7975fbeb17",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.354,
+            "lat": 29.638
+          },
+          "scientificname": "carex longii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "8f1ab580-cb6f-424c-95d4-9d3a5b3ca2d7",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.359,
+            "lat": 29.628
+          },
+          "scientificname": "carex striatula"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "4f588bb0-9b18-47ed-b25d-f5fdba6b9d08",
         "_score": 1,
         "_source": {
@@ -4978,123 +5082,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "9184bf87-1a1c-4a39-99dd-c97ce5283a93",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -88.7008,
-            "lat": 32.38895
-          },
-          "scientificname": "carex breviculmis"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "9c797ddf-292d-44b9-895a-6c1f673db9ef",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -75.6702778,
-            "lat": 39.3516667
-          },
-          "scientificname": "carex albicans var. albicans"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "17a0b193-60fe-42b8-9fd1-b436d34224f6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -84.983244,
-            "lat": 29.725768
-          },
-          "scientificname": "carex crus-corvi"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "eaa465fc-4691-4df7-b4e0-0d4175476250",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.358536,
-            "lat": 29.645186
-          },
-          "scientificname": "carex sp."
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "aaae2ab7-905b-46f4-8391-cd7975fbeb17",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.354,
-            "lat": 29.638
-          },
-          "scientificname": "carex longii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "8f1ab580-cb6f-424c-95d4-9d3a5b3ca2d7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.359,
-            "lat": 29.628
-          },
-          "scientificname": "carex striatula"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "c5277a63-c8ec-4261-b993-22eaa69e8765",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.3949722,
-            "lat": 29.63275
-          },
-          "scientificname": "carex alata"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "91ccaf11-7634-42fa-a4a2-233098d525a7",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.6352778,
-            "lat": 29.2758333
-          },
-          "scientificname": "carex striata"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "0d61670b-6619-449a-a623-689badf50481",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -81.7508333,
-            "lat": 29.5491667
-          },
-          "scientificname": "carex verrucosa"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "7aa9252f-11b1-44a6-92c9-0b664df734e2",
         "_score": 1,
         "_source": {
@@ -5142,6 +5129,19 @@
             "lat": 18.09718
           },
           "scientificname": "carex scabrella"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "0d61670b-6619-449a-a623-689badf50481",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -81.7508333,
+            "lat": 29.5491667
+          },
+          "scientificname": "carex verrucosa"
         }
       },
       {
@@ -5706,19 +5706,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "440c0e01-0614-45f8-aabe-dfb5b8ad3979",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.3578,
-            "lat": 29.64451
-          },
-          "scientificname": "carex bromoides"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "d962bc95-feab-469b-8bd4-7a83e9776ab0",
         "_score": 1,
         "_source": {
@@ -5727,6 +5714,19 @@
             "lat": 32.411758
           },
           "scientificname": "carex styloflexa"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "440c0e01-0614-45f8-aabe-dfb5b8ad3979",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.3578,
+            "lat": 29.64451
+          },
+          "scientificname": "carex bromoides"
         }
       },
       {
@@ -5784,19 +5784,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "bf53deb5-e0d3-4b9f-a4d3-96ccd25eb520",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -80.53374,
-            "lat": 37.37009
-          },
-          "scientificname": "carex digitalis"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "190edb62-e88e-43c4-bf35-100a36da44c0",
         "_score": 1,
         "_source": {
@@ -5810,14 +5797,14 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "02457776-c684-4b0f-bc15-ac696ed8716f",
+        "_id": "bf53deb5-e0d3-4b9f-a4d3-96ccd25eb520",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -71.51826,
-            "lat": 18.20572
+            "lon": -80.53374,
+            "lat": 37.37009
           },
-          "scientificname": "carex ekmanii"
+          "scientificname": "carex digitalis"
         }
       },
       {
@@ -5896,6 +5883,19 @@
             "lat": 29.725768
           },
           "scientificname": "carex oxylepis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "02457776-c684-4b0f-bc15-ac696ed8716f",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -71.51826,
+            "lat": 18.20572
+          },
+          "scientificname": "carex ekmanii"
         }
       },
       {
@@ -6161,6 +6161,32 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "35fd15f4-5628-4309-b7fe-d40bacdc48bc",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -89.15663,
+            "lat": 32.3997
+          },
+          "scientificname": "carex cherokeensis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "b89d0700-1a78-4696-85b6-7e00f30517fd",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -88.98965,
+            "lat": 32.46024
+          },
+          "scientificname": "carex reniformis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "ed66f5a6-3fc8-4148-8af2-a87a250fb534",
         "_score": 1,
         "_source": {
@@ -6195,32 +6221,6 @@
             "lat": 18.20572
           },
           "scientificname": "carex scabrella"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "35fd15f4-5628-4309-b7fe-d40bacdc48bc",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -89.15663,
-            "lat": 32.3997
-          },
-          "scientificname": "carex cherokeensis"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "b89d0700-1a78-4696-85b6-7e00f30517fd",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -88.98965,
-            "lat": 32.46024
-          },
-          "scientificname": "carex reniformis"
         }
       },
       {
@@ -6408,6 +6408,19 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "e1b03bcc-719b-468e-89ce-167fa8963918",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.4777778,
+            "lat": 30.3575
+          },
+          "scientificname": "carex chapmannii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "198d8e56-0592-4576-ae5d-1af424fdf211",
         "_score": 1,
         "_source": {
@@ -6486,19 +6499,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "e1b03bcc-719b-468e-89ce-167fa8963918",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.4777778,
-            "lat": 30.3575
-          },
-          "scientificname": "carex chapmannii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "349ebcea-c728-4b44-8bc1-72e6409039ff",
         "_score": 1,
         "_source": {
@@ -6559,19 +6559,6 @@
             "lat": 30.51582
           },
           "scientificname": "carex fissa"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "dc677c34-80c8-42a0-9bc0-6b6e3a0dfaa9",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -87.44094,
-            "lat": 32.89671
-          },
-          "scientificname": "carex"
         }
       },
       {
@@ -6655,6 +6642,19 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
+        "_id": "dc677c34-80c8-42a0-9bc0-6b6e3a0dfaa9",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -87.44094,
+            "lat": 32.89671
+          },
+          "scientificname": "carex"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
         "_id": "cf46a7d1-b9f3-4082-ac97-ac039ca3296d",
         "_score": 1,
         "_source": {
@@ -6728,6 +6728,45 @@
             "lat": 29.1866667
           },
           "scientificname": "carex gholsonii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "708d4576-66c4-4b23-b611-de865bf167ae",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.359,
+            "lat": 29.647
+          },
+          "scientificname": "carex chapmanii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "523f3878-c84a-43e0-bd55-88c619441523",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -80.9509722,
+            "lat": 28.8486667
+          },
+          "scientificname": "carex atlantica ssp. capillacea"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "d5fd2830-5864-4d4f-b436-fb9e381c2ef6",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -86.70775,
+            "lat": 30.8683333
+          },
+          "scientificname": "carex debilis"
         }
       },
       {
@@ -6811,45 +6850,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "708d4576-66c4-4b23-b611-de865bf167ae",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.359,
-            "lat": 29.647
-          },
-          "scientificname": "carex chapmanii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "523f3878-c84a-43e0-bd55-88c619441523",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -80.9509722,
-            "lat": 28.8486667
-          },
-          "scientificname": "carex atlantica ssp. capillacea"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "d5fd2830-5864-4d4f-b436-fb9e381c2ef6",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -86.70775,
-            "lat": 30.8683333
-          },
-          "scientificname": "carex debilis"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "78a3e137-5b08-4038-b0ad-1292c5813bea",
         "_score": 1,
         "_source": {
@@ -6902,14 +6902,40 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "3d774295-b806-442d-9ba5-9acb28c3fc72",
+        "_id": "696e794e-0fd6-4011-a52d-51e840fe259b",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -82.359,
-            "lat": 29.644
+            "lon": -72.17526,
+            "lat": 42.54023
           },
-          "scientificname": "carex digitalis"
+          "scientificname": "carex"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "a570cce4-dd32-4da9-830b-92f77716608e",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.87491,
+            "lat": 29.26775
+          },
+          "scientificname": "carex gholsonii"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "7e44d153-02c5-48cf-a93c-974d55aaa1eb",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -94.474164,
+            "lat": 42.00842
+          },
+          "scientificname": "carex blanda"
         }
       },
       {
@@ -7006,45 +7032,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "696e794e-0fd6-4011-a52d-51e840fe259b",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -72.17526,
-            "lat": 42.54023
-          },
-          "scientificname": "carex"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "a570cce4-dd32-4da9-830b-92f77716608e",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.87491,
-            "lat": 29.26775
-          },
-          "scientificname": "carex gholsonii"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "7e44d153-02c5-48cf-a93c-974d55aaa1eb",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -94.474164,
-            "lat": 42.00842
-          },
-          "scientificname": "carex blanda"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "9a383dba-03ae-41ae-887f-269d0353ae03",
         "_score": 1,
         "_source": {
@@ -7071,53 +7058,14 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "04ef5d9a-2f92-4ffa-ab5d-11691ee09bb9",
+        "_id": "3d774295-b806-442d-9ba5-9acb28c3fc72",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -82.3563056,
-            "lat": 29.6436111
+            "lon": -82.359,
+            "lat": 29.644
           },
-          "scientificname": "carex oxylepis"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "19a15a8b-8399-4b26-84c4-995d494de519",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.4544444,
-            "lat": 29.7094444
-          },
-          "scientificname": "carex bromoides"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "3793f910-074f-4e4a-ac12-a4d165bd4092",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.8425,
-            "lat": 29.285
-          },
-          "scientificname": "carex basiantha"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "fa105b36-28ec-4f2e-9fb4-53ac5c61b329",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -88.71904,
-            "lat": 32.34856
-          },
-          "scientificname": "carex breviculmis"
+          "scientificname": "carex digitalis"
         }
       },
       {
@@ -7170,6 +7118,58 @@
             "lat": 35.06092
           },
           "scientificname": "carex"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "19a15a8b-8399-4b26-84c4-995d494de519",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.4544444,
+            "lat": 29.7094444
+          },
+          "scientificname": "carex bromoides"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "3793f910-074f-4e4a-ac12-a4d165bd4092",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.8425,
+            "lat": 29.285
+          },
+          "scientificname": "carex basiantha"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "fa105b36-28ec-4f2e-9fb4-53ac5c61b329",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -88.71904,
+            "lat": 32.34856
+          },
+          "scientificname": "carex breviculmis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "04ef5d9a-2f92-4ffa-ab5d-11691ee09bb9",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.3563056,
+            "lat": 29.6436111
+          },
+          "scientificname": "carex oxylepis"
         }
       },
       {
@@ -7578,32 +7578,6 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "445585c5-c2e7-4842-92fd-cafec98f332d",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -83.9708333,
-            "lat": 30.11
-          },
-          "scientificname": "carex hyalinolepis"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
-        "_id": "77af82fa-a6d0-4faa-814c-6cfdba4b972c",
-        "_score": 1,
-        "_source": {
-          "geopoint": {
-            "lon": -82.41002,
-            "lat": 29.61307
-          },
-          "scientificname": "carex godfreyi"
-        }
-      },
-      {
-        "_index": "idigbio-2.10.25",
-        "_type": "records",
         "_id": "88e32309-af22-4e07-907c-1201534ff438",
         "_score": 1,
         "_source": {
@@ -7651,6 +7625,32 @@
             "lat": 30.4427222
           },
           "scientificname": "carex cherokeensis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "445585c5-c2e7-4842-92fd-cafec98f332d",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -83.9708333,
+            "lat": 30.11
+          },
+          "scientificname": "carex hyalinolepis"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "records",
+        "_id": "77af82fa-a6d0-4faa-814c-6cfdba4b972c",
+        "_score": 1,
+        "_source": {
+          "geopoint": {
+            "lon": -82.41002,
+            "lat": 29.61307
+          },
+          "scientificname": "carex godfreyi"
         }
       },
       {
@@ -7708,14 +7708,14 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "93342093-60dd-438e-8134-89161cfbfd4c",
+        "_id": "dcb509d3-a2c1-4089-bcb3-607172371fa0",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -73.6666667,
-            "lat": 43.5
+            "lon": -89.07238,
+            "lat": 32.428726
           },
-          "scientificname": "carex scoparia"
+          "scientificname": "carex flaccosperma"
         }
       },
       {
@@ -7747,14 +7747,14 @@
       {
         "_index": "idigbio-2.10.25",
         "_type": "records",
-        "_id": "dcb509d3-a2c1-4089-bcb3-607172371fa0",
+        "_id": "93342093-60dd-438e-8134-89161cfbfd4c",
         "_score": 1,
         "_source": {
           "geopoint": {
-            "lon": -89.07238,
-            "lat": 32.428726
+            "lon": -73.6666667,
+            "lat": 43.5
           },
-          "scientificname": "carex flaccosperma"
+          "scientificname": "carex scoparia"
         }
       },
       {
@@ -7787,7 +7787,7 @@
   },
   "aggregations": {
     "gstyle": {
-      "doc_count": 146567269,
+      "doc_count": 146567272,
       "f": {
         "doc_count": 603,
         "style": {

@@ -16,10 +16,10 @@ describe('indexTerms', function() {
       clear();
       const its = await loadIndexTerms();
       expect(its).toEqual({
-        publishers: expect.any(Object),
-        recordsets: expect.any(Object),
-        records: expect.any(Object),
-        mediarecords: expect.any(Object)
+        publishers: expect.any(jasmine.anything()),
+        recordsets: expect.any(jasmine.anything()),
+        records: expect.any(jasmine.anything()),
+        mediarecords: expect.any(jasmine.anything())
       });
     });
   });

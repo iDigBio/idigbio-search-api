@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 1460546,
+    "total": 1460541,
     "max_score": null,
     "hits": [
       {
@@ -178,7 +178,7 @@
         },
         {
           "key": "62a36329-6b82-48bc-94d8-1cb9adb91ab5",
-          "doc_count": 42280
+          "doc_count": 42276
         },
         {
           "key": "9e5aede6-bee5-4a3d-a255-513771b20035",
@@ -430,7 +430,7 @@
         },
         {
           "key": "5835f642-2560-4e3e-9c25-741a12cc3fe8",
-          "doc_count": 3693
+          "doc_count": 3692
         },
         {
           "key": "471835cc-feb6-4d05-a8d1-62ce71399326",

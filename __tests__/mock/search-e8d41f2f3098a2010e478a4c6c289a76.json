@@ -6,7 +6,7 @@
     "failed": 0
   },
   "hits": {
-    "total": 1021,
+    "total": 1020,
     "max_score": 1,
     "hits": [
       {
@@ -4250,10 +4250,6 @@
           "doc_count": 3
         },
         {
-          "key": "9tq",
-          "doc_count": 3
-        },
-        {
           "key": "9q7",
           "doc_count": 3
         },
@@ -4299,6 +4295,10 @@
         },
         {
           "key": "9u8",
+          "doc_count": 2
+        },
+        {
+          "key": "9tq",
           "doc_count": 2
         },
         {
