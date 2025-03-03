@@ -1,0 +1,1517 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 28,
+    "successful": 28,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2063,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "f2696243-01cd-4b91-9c13-1b30c8a85898",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "f2696243-01cd-4b91-9c13-1b30c8a85898",
+          "dqs": -1,
+          "archivelink": "http://www.snib.mx/iptconabio/archive.do?r=snib-be023",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Alejandro",
+              "last_name": "Novelo Retana",
+              "role": "Responsable"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Sonia Alejandra",
+              "last_name": "Careaga Olvera",
+              "role": "Subcoordinadora en Información y Análisis",
+              "email": "scareaga@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-BE023",
+            "contacts": [
+              {
+                "first_name": "Alejandro",
+                "last_name": "Novelo Retana",
+                "role": "Responsable"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Computarización de la Colección de plantas acuáticas mexicanas del Herbario Nacional (MEXU), 3a Etapa",
+            "idigbio:uuid": "f2696243-01cd-4b91-9c13-1b30c8a85898",
+            "idigbio:etag": "51208479b93bf2e04315aaf59542cdae088dbdab",
+            "update": "2020-05-30T15:56:06",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=BE&Numero=23",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "cb5cd6d7-1743-4d41-a5c0-43992b336c9c"
+            ],
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-BE023",
+            "idigbio:dateModified": "2020-07-23T14:09:35.145213",
+            "collection_description": "El grupo de las plantas acuáticas es muy amplio y se desarrolla en una gran diversidad de hábitats tanto marinos, salobres y dulceacuícolas. El Instituto de Biología de la UNAM, donde se encuentra ubicado el Herbario Nacional, ha tenido una gran tradición en la formación de especialistas que han estado interesados en la colecta y estudio de las plantas acuáticas de nuestro país. Destacan en sus primeros registros, especialistas reconocidos como Débora Ramírez Cantú, Teófilo Herrera, Eizi Matuda y aunque parezca raro, aún la Dra. Helia Bravo especialista en cactáceas, sus primeras experiencias botánicas fueron con el grupo de las plantas acuáticas, en particular las de la familia Lemnaceae. Posteriormente, a partir de la década de los 60's, se han interesado de manera más formal varias personas en la investigación de las plantas acuáticas. Actualmente, el Instituto de Biología cuenta con dos investigadores titulares de tiempo completo en el estudio de las plantas acuáticas. También numerosas tesis de licenciatura, maestría y doctorado se han realizado con el apoyo del Instituto de Biología en diversas regiones del país y que han abordado las plantas acuáticas de diversas maneras, pero más directamente en estudios florísticos. Por otro lado, estudiantes de provincia interesados en las plantas acuáticas han realizado varias estancias de entrenamiento en el Instituto de Biología y actualmente se mantienen excelentes relaciones de intercambio (incluyendo ejemplares de herbario) con dichos investigadores, en particular los que residen en Tamaulipas, Querétaro, Michoacán y Morelos.\nPor todo lo anterior, el Herbario Nacional ubicado en el Instituto de Biología, es considerado como el depositario de la colección más extensa de plantas acuáticas de México. De manera colateral, la presencia de especialistas de plantas acuáticas en el Herbario Nacional, permiten que la colección se mantenga con altos estándares en la actualización de nombres científicos.\nEn cuanto a la captura y sistematización de la información provenientes de los ejemplares de herbario, existen experiencias de cuatro proyectos apoyados por la CONABIO al Dr. Alejandro Novelo. Uno tuvo que ver con el inventario de la vegetación acuática vascular de la Reserva de la Biósfera Pantanos de Centla, el segundo con el inventario de la vegetación acuática vascular de cuatro regiones hidrológicas prioritarias del Centro de México y más reciente las dos primeras etapas de este mismo proyecto que tiene que ver con la computarización de las plantas acuáticas mexicanas del Herbario Nacional (MEXU). A continuación se presenta un cuadro comparativo donde se puede apreciar lo que ya se tiene capturado y lo que faltaría por capturar. Reino: 1\nFilo: 1\nClase: 2\nOrden: 27\nFamilia: 57\nGénero: 114\nSubgénero: 2\nEspecie: 236\nEpitetoinfraespecifico: 30",
+            "id": "cb5cd6d7-1743-4d41-a5c0-43992b336c9c",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "51208479b93bf2e04315aaf59542cdae088dbdab",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://www.snib.mx/iptconabio/eml.do?r=snib-be023",
+          "recordids": [
+            "cb5cd6d7-1743-4d41-a5c0-43992b336c9c"
+          ],
+          "data": {
+            "eml_link": "http://www.snib.mx/iptconabio/eml.do?r=SNIB-BE023",
+            "contacts": [
+              {
+                "first_name": "Alejandro",
+                "last_name": "Novelo Retana",
+                "role": "Responsable"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Sonia Alejandra",
+                "last_name": "Careaga Olvera",
+                "role": "Subcoordinadora en Información y Análisis",
+                "email": "scareaga@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Computarización de la Colección de plantas acuáticas mexicanas del Herbario Nacional (MEXU), 3a Etapa",
+            "update": "2020-05-30T15:56:06",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "http://www.snib.mx/iptconabio/archive.do?r=SNIB-BE023",
+            "collection_description": "El grupo de las plantas acuáticas es muy amplio y se desarrolla en una gran diversidad de hábitats tanto marinos, salobres y dulceacuícolas. El Instituto de Biología de la UNAM, donde se encuentra ubicado el Herbario Nacional, ha tenido una gran tradición en la formación de especialistas que han estado interesados en la colecta y estudio de las plantas acuáticas de nuestro país. Destacan en sus primeros registros, especialistas reconocidos como Débora Ramírez Cantú, Teófilo Herrera, Eizi Matuda y aunque parezca raro, aún la Dra. Helia Bravo especialista en cactáceas, sus primeras experiencias botánicas fueron con el grupo de las plantas acuáticas, en particular las de la familia Lemnaceae. Posteriormente, a partir de la década de los 60's, se han interesado de manera más formal varias personas en la investigación de las plantas acuáticas. Actualmente, el Instituto de Biología cuenta con dos investigadores titulares de tiempo completo en el estudio de las plantas acuáticas. También numerosas tesis de licenciatura, maestría y doctorado se han realizado con el apoyo del Instituto de Biología en diversas regiones del país y que han abordado las plantas acuáticas de diversas maneras, pero más directamente en estudios florísticos. Por otro lado, estudiantes de provincia interesados en las plantas acuáticas han realizado varias estancias de entrenamiento en el Instituto de Biología y actualmente se mantienen excelentes relaciones de intercambio (incluyendo ejemplares de herbario) con dichos investigadores, en particular los que residen en Tamaulipas, Querétaro, Michoacán y Morelos.\nPor todo lo anterior, el Herbario Nacional ubicado en el Instituto de Biología, es considerado como el depositario de la colección más extensa de plantas acuáticas de México. De manera colateral, la presencia de especialistas de plantas acuáticas en el Herbario Nacional, permiten que la colección se mantenga con altos estándares en la actualización de nombres científicos.\nEn cuanto a la captura y sistematización de la información provenientes de los ejemplares de herbario, existen experiencias de cuatro proyectos apoyados por la CONABIO al Dr. Alejandro Novelo. Uno tuvo que ver con el inventario de la vegetación acuática vascular de la Reserva de la Biósfera Pantanos de Centla, el segundo con el inventario de la vegetación acuática vascular de cuatro regiones hidrológicas prioritarias del Centro de México y más reciente las dos primeras etapas de este mismo proyecto que tiene que ver con la computarización de las plantas acuáticas mexicanas del Herbario Nacional (MEXU). A continuación se presenta un cuadro comparativo donde se puede apreciar lo que ya se tiene capturado y lo que faltaría por capturar. Reino: 1\nFilo: 1\nClase: 2\nOrden: 27\nFamilia: 57\nGénero: 114\nSubgénero: 2\nEspecie: 236\nEpitetoinfraespecifico: 30",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=BE&Numero=23",
+            "id": "cb5cd6d7-1743-4d41-a5c0-43992b336c9c"
+          },
+          "datemodified": "2020-07-23T14:09:35.145213+00:00",
+          "name": "computarización de la colección de plantas acuáticas mexicanas del herbario nacional (mexu), 3a etapa"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "2af72a37-04f1-4208-a50b-c05e84f47f1f",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "2af72a37-04f1-4208-a50b-c05e84f47f1f",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/2af72a37-04f1-4208-a50b-c05e84f47f1f"
+            ],
+            "idigbio:dateModified": "2016-01-21T16:20:09.103766",
+            "idigbio:uuid": "2af72a37-04f1-4208-a50b-c05e84f47f1f",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/2af72a37-04f1-4208-a50b-c05e84f47f1f"
+          ],
+          "data": {},
+          "datemodified": "2016-01-21T16:20:09.103766+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "81316846-80cb-4913-8941-b31537761eb0",
+        "_score": 1,
+        "_source": {
+          "publisher": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "uuid": "81316846-80cb-4913-8941-b31537761eb0",
+          "dqs": -1,
+          "archivelink": "http://ipt.vertnet.org:8080/ipt/archive.do?r=ncsm_vertpaleo",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "first_name": "Ben",
+              "last_name": "Norton",
+              "role": "Head of Technology",
+              "email": "ben.norton@naturalsciences.org"
+            },
+            {
+              "first_name": "Ben",
+              "last_name": "Norton",
+              "role": "Head of Technology",
+              "email": "ben.norton@naturalsciences.org"
+            },
+            {
+              "first_name": "Laura",
+              "last_name": "Russell",
+              "role": "VertNet Programmer",
+              "email": "larussell@vertnet.org"
+            },
+            {
+              "first_name": "David",
+              "last_name": "Bloom",
+              "role": "VertNet Coordinator",
+              "email": "dbloom@vertnet.org"
+            },
+            {
+              "first_name": "John",
+              "last_name": "Wieczorek",
+              "role": "Information Architect",
+              "email": "tuco@berkeley.edu"
+            },
+            {
+              "first_name": "Christian",
+              "last_name": "Kammerer",
+              "role": "Research Curator, Paleontology",
+              "email": "christian.kammerer@naturalsciences.org"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+            "eml_link": "http://ipt.vertnet.org:8080/ipt/eml.do?r=ncsm_vertpaleo",
+            "contacts": [
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Laura",
+                "last_name": "Russell",
+                "role": "VertNet Programmer",
+                "email": "larussell@vertnet.org"
+              },
+              {
+                "first_name": "David",
+                "last_name": "Bloom",
+                "role": "VertNet Coordinator",
+                "email": "dbloom@vertnet.org"
+              },
+              {
+                "first_name": "John",
+                "last_name": "Wieczorek",
+                "role": "Information Architect",
+                "email": "tuco@berkeley.edu"
+              },
+              {
+                "first_name": "Christian",
+                "last_name": "Kammerer",
+                "role": "Research Curator, Paleontology",
+                "email": "christian.kammerer@naturalsciences.org"
+              }
+            ],
+            "collection_name": "NCSM Vertebrate Paleontology Collection",
+            "idigbio:uuid": "81316846-80cb-4913-8941-b31537761eb0",
+            "idigbio:etag": "5a1eee96a70af0ddffc45f88ee3e69c65ace20a2",
+            "update": "2019-10-04T17:05:37",
+            "ingest": true,
+            "institution_web_address": "https://collections.naturalsciences.org/search/paleontology",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b"
+            ],
+            "link": "http://ipt.vertnet.org:8080/ipt/archive.do?r=ncsm_vertpaleo",
+            "idigbio:dateModified": "2019-10-04T17:41:57.554004",
+            "collection_description": "The North Carolina Museum of Natural Sciences' Vertebrate Paleontology collections contains approximately 63,000 specimens. Founded in the early 1900s, this collection consists of approximately 89% North Carolina material, although 31 states, 21 countries, and more than 405 genera are represented. The Vertebrate Paleontology Collection contains eight holotypes and twelve paratypes. The type collections include several different fish and sharks and one bird specimen. The most published on specimens in this collection are an Acrocanthosaurus atokensis which has been used in numerous phylogenetic studies of therapods and a Thescelosaurus specimen. The significant holding includes Late Triassic collections from North Carolina and Arizona, marine Cenozoic collections from North Carolina, and Cretaceous collections from North Carolina, Montana and Utah.",
+            "id": "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b",
+            "other_guids": [],
+            "data_rights": "CC0"
+          },
+          "etag": "5a1eee96a70af0ddffc45f88ee3e69c65ace20a2",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://ipt.vertnet.org:8080/ipt/eml.do?r=ncsm_vertpaleo",
+          "recordids": [
+            "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b"
+          ],
+          "data": {
+            "eml_link": "http://ipt.vertnet.org:8080/ipt/eml.do?r=ncsm_vertpaleo",
+            "contacts": [
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Ben",
+                "last_name": "Norton",
+                "role": "Head of Technology",
+                "email": "ben.norton@naturalsciences.org"
+              },
+              {
+                "first_name": "Laura",
+                "last_name": "Russell",
+                "role": "VertNet Programmer",
+                "email": "larussell@vertnet.org"
+              },
+              {
+                "first_name": "David",
+                "last_name": "Bloom",
+                "role": "VertNet Coordinator",
+                "email": "dbloom@vertnet.org"
+              },
+              {
+                "first_name": "John",
+                "last_name": "Wieczorek",
+                "role": "Information Architect",
+                "email": "tuco@berkeley.edu"
+              },
+              {
+                "first_name": "Christian",
+                "last_name": "Kammerer",
+                "role": "Research Curator, Paleontology",
+                "email": "christian.kammerer@naturalsciences.org"
+              }
+            ],
+            "collection_name": "NCSM Vertebrate Paleontology Collection",
+            "update": "2019-10-04T17:05:37",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://ipt.vertnet.org:8080/ipt/archive.do?r=ncsm_vertpaleo",
+            "collection_description": "The North Carolina Museum of Natural Sciences' Vertebrate Paleontology collections contains approximately 63,000 specimens. Founded in the early 1900s, this collection consists of approximately 89% North Carolina material, although 31 states, 21 countries, and more than 405 genera are represented. The Vertebrate Paleontology Collection contains eight holotypes and twelve paratypes. The type collections include several different fish and sharks and one bird specimen. The most published on specimens in this collection are an Acrocanthosaurus atokensis which has been used in numerous phylogenetic studies of therapods and a Thescelosaurus specimen. The significant holding includes Late Triassic collections from North Carolina and Arizona, marine Cenozoic collections from North Carolina, and Cretaceous collections from North Carolina, Montana and Utah.",
+            "other_guids": [],
+            "institution_web_address": "https://collections.naturalsciences.org/search/paleontology",
+            "id": "5f1568db-5d5b-4597-9c66-dfbd0d7ddd7b"
+          },
+          "datemodified": "2019-10-04T17:41:57.554004+00:00",
+          "name": "ncsm vertebrate paleontology collection"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "1c813b16-2c8b-466c-897f-883288cfef41",
+        "_score": 1,
+        "_source": {
+          "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "uuid": "1c813b16-2c8b-466c-897f-883288cfef41",
+          "dqs": -1,
+          "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "indexData": {
+            "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "idigbio:recordIds": [
+              "http://feeder.idigbio.org/datasets/1c813b16-2c8b-466c-897f-883288cfef41"
+            ],
+            "idigbio:dateModified": "2016-03-08T16:39:41.882428",
+            "idigbio:uuid": "1c813b16-2c8b-466c-897f-883288cfef41",
+            "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "idigbio:siblings": {}
+          },
+          "recordids": [
+            "http://feeder.idigbio.org/datasets/1c813b16-2c8b-466c-897f-883288cfef41"
+          ],
+          "data": {},
+          "datemodified": "2016-03-08T16:39:41.882428+00:00"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "97bc50fd-b67d-44cb-9cd0-b716e250c9cf",
+        "_score": 1,
+        "_source": {
+          "publisher": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+          "uuid": "97bc50fd-b67d-44cb-9cd0-b716e250c9cf",
+          "dqs": -1,
+          "archivelink": "http://data.canadensys.net/ipt/archive.do?r=ucalgaryherb",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "first_name": "Bonnie",
+              "last_name": "Smith",
+              "role": "Herbarium Technician",
+              "email": "smib@ucalgary.ca"
+            },
+            {
+              "first_name": "Jana",
+              "last_name": "Vamosi",
+              "role": "Associate Professor",
+              "email": "jvamosi@ucalgary.ca"
+            },
+            {
+              "first_name": "Jana",
+              "last_name": "Vamosi",
+              "role": "Associate Professor",
+              "email": "jvamosi@ucalgary.ca"
+            },
+            {
+              "first_name": "Elizabeth",
+              "last_name": "Dickson",
+              "role": "Adjunct Professor",
+              "email": "eedickso@ucalgary.ca"
+            },
+            {
+              "first_name": "Jillian",
+              "last_name": "Sick",
+              "role": "Student"
+            },
+            {
+              "first_name": "Michael",
+              "last_name": "Gavin",
+              "role": "Processor",
+              "email": "mpgavin@ucalgary.ca"
+            },
+            {
+              "first_name": "Ryan",
+              "last_name": "Taylor",
+              "role": "Student",
+              "email": "rtaylor@ucalgary.ca"
+            },
+            {
+              "first_name": "Dana",
+              "last_name": "Poscente",
+              "role": "Student"
+            },
+            {
+              "first_name": "Sonya",
+              "last_name": "Pastran",
+              "role": "Student",
+              "email": "sapastra@ucalgary.ca"
+            },
+            {
+              "first_name": "Haley",
+              "last_name": "Glass",
+              "role": "Graduate Student Teaching Assistant",
+              "email": "haley.glass@ucalgary.ca"
+            },
+            {
+              "first_name": "Morgan",
+              "last_name": "Cotroneo",
+              "role": "Student",
+              "email": "mbcotron@ucalgary.ca"
+            },
+            {
+              "first_name": "Hilary",
+              "last_name": "Goble",
+              "role": "Student",
+              "email": "hmgoble@ucalgary.ca"
+            },
+            {
+              "first_name": "Ashley",
+              "last_name": "Twarog",
+              "role": "Student",
+              "email": "actwarog@ucalgary.ca"
+            },
+            {
+              "first_name": "Lucille",
+              "last_name": "Fisher",
+              "role": "Student",
+              "email": "l.c.fisher@hotmail.ca"
+            },
+            {
+              "first_name": "Gary",
+              "last_name": "Thai",
+              "role": "Student",
+              "email": "gthai@ucalgary.ca"
+            },
+            {
+              "first_name": "Rachel",
+              "last_name": "Swart",
+              "role": "Student",
+              "email": "rrswart@ucalgary.ca"
+            },
+            {
+              "first_name": "Nicolette",
+              "last_name": "Bell",
+              "role": "Student",
+              "email": "nicolette.a.bell@gmail.com"
+            },
+            {
+              "first_name": "Caitlin",
+              "last_name": "Tomaszewski",
+              "role": "Student",
+              "email": "tomaszcat@hotmail.com"
+            },
+            {
+              "first_name": "Renae",
+              "last_name": "Hemsing",
+              "role": "Student",
+              "email": "rdhemsin@ucalgary.ca"
+            },
+            {
+              "first_name": "Janessa",
+              "last_name": "Bretner",
+              "role": "Student",
+              "email": "ja.bretner@gmail.com"
+            },
+            {
+              "first_name": "Amie",
+              "last_name": "Le",
+              "role": "Student",
+              "email": "amie.le@msn.com"
+            },
+            {
+              "first_name": "Himasara",
+              "last_name": "Marasinghe",
+              "role": "Student",
+              "email": "dhmarasi@ucalgary.ca"
+            },
+            {
+              "first_name": "Curtis",
+              "last_name": "Polowick",
+              "role": "Student",
+              "email": "capolowi@ucalgary.ca"
+            },
+            {
+              "first_name": "Ryan",
+              "last_name": "Taylor",
+              "role": "Student",
+              "email": "rtaylor@ucalgary.ca"
+            },
+            {
+              "first_name": "Jana",
+              "last_name": "Vamosi",
+              "role": "Associate Professor",
+              "email": "jvamosi@ucalgary.ca"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+            "eml_link": "http://data.canadensys.net/ipt/eml.do?r=ucalgaryherb",
+            "contacts": [
+              {
+                "first_name": "Bonnie",
+                "last_name": "Smith",
+                "role": "Herbarium Technician",
+                "email": "smib@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Elizabeth",
+                "last_name": "Dickson",
+                "role": "Adjunct Professor",
+                "email": "eedickso@ucalgary.ca"
+              },
+              {
+                "first_name": "Jillian",
+                "last_name": "Sick",
+                "role": "Student"
+              },
+              {
+                "first_name": "Michael",
+                "last_name": "Gavin",
+                "role": "Processor",
+                "email": "mpgavin@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Dana",
+                "last_name": "Poscente",
+                "role": "Student"
+              },
+              {
+                "first_name": "Sonya",
+                "last_name": "Pastran",
+                "role": "Student",
+                "email": "sapastra@ucalgary.ca"
+              },
+              {
+                "first_name": "Haley",
+                "last_name": "Glass",
+                "role": "Graduate Student Teaching Assistant",
+                "email": "haley.glass@ucalgary.ca"
+              },
+              {
+                "first_name": "Morgan",
+                "last_name": "Cotroneo",
+                "role": "Student",
+                "email": "mbcotron@ucalgary.ca"
+              },
+              {
+                "first_name": "Hilary",
+                "last_name": "Goble",
+                "role": "Student",
+                "email": "hmgoble@ucalgary.ca"
+              },
+              {
+                "first_name": "Ashley",
+                "last_name": "Twarog",
+                "role": "Student",
+                "email": "actwarog@ucalgary.ca"
+              },
+              {
+                "first_name": "Lucille",
+                "last_name": "Fisher",
+                "role": "Student",
+                "email": "l.c.fisher@hotmail.ca"
+              },
+              {
+                "first_name": "Gary",
+                "last_name": "Thai",
+                "role": "Student",
+                "email": "gthai@ucalgary.ca"
+              },
+              {
+                "first_name": "Rachel",
+                "last_name": "Swart",
+                "role": "Student",
+                "email": "rrswart@ucalgary.ca"
+              },
+              {
+                "first_name": "Nicolette",
+                "last_name": "Bell",
+                "role": "Student",
+                "email": "nicolette.a.bell@gmail.com"
+              },
+              {
+                "first_name": "Caitlin",
+                "last_name": "Tomaszewski",
+                "role": "Student",
+                "email": "tomaszcat@hotmail.com"
+              },
+              {
+                "first_name": "Renae",
+                "last_name": "Hemsing",
+                "role": "Student",
+                "email": "rdhemsin@ucalgary.ca"
+              },
+              {
+                "first_name": "Janessa",
+                "last_name": "Bretner",
+                "role": "Student",
+                "email": "ja.bretner@gmail.com"
+              },
+              {
+                "first_name": "Amie",
+                "last_name": "Le",
+                "role": "Student",
+                "email": "amie.le@msn.com"
+              },
+              {
+                "first_name": "Himasara",
+                "last_name": "Marasinghe",
+                "role": "Student",
+                "email": "dhmarasi@ucalgary.ca"
+              },
+              {
+                "first_name": "Curtis",
+                "last_name": "Polowick",
+                "role": "Student",
+                "email": "capolowi@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              }
+            ],
+            "collection_name": "University of Calgary Herbarium - Lycophytes and Monilophytes",
+            "idigbio:uuid": "97bc50fd-b67d-44cb-9cd0-b716e250c9cf",
+            "idigbio:etag": "479d662e57b83e53ada9be7b31dfa435914812aa",
+            "update": "2018-09-19T02:34:06",
+            "ingest": true,
+            "institution_web_address": "http://www.ucalgary.ca/herbarium/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "05bf3655-ef2e-46ba-8732-60517beb3567"
+            ],
+            "link": "http://data.canadensys.net/ipt/archive.do?r=ucalgaryherb",
+            "idigbio:dateModified": "2018-09-19T02:57:47.731472",
+            "collection_description": "The University of Calgary Herbarium (UAC) includes an extensive collection of land plants from Alberta, Canada and around the world (~90,000 specimens). The current dataset includes records of the Lycophytes and Monilophytes in the collection.",
+            "id": "05bf3655-ef2e-46ba-8732-60517beb3567",
+            "other_guids": [],
+            "logo_url": "http://data.canadensys.net/ipt/logo.do?r=ucalgaryherb",
+            "data_rights": "CC0"
+          },
+          "etag": "479d662e57b83e53ada9be7b31dfa435914812aa",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "http://data.canadensys.net/ipt/eml.do?r=ucalgaryherb",
+          "logourl": "http://data.canadensys.net/ipt/logo.do?r=ucalgaryherb",
+          "recordids": [
+            "05bf3655-ef2e-46ba-8732-60517beb3567"
+          ],
+          "data": {
+            "eml_link": "http://data.canadensys.net/ipt/eml.do?r=ucalgaryherb",
+            "contacts": [
+              {
+                "first_name": "Bonnie",
+                "last_name": "Smith",
+                "role": "Herbarium Technician",
+                "email": "smib@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              },
+              {
+                "first_name": "Elizabeth",
+                "last_name": "Dickson",
+                "role": "Adjunct Professor",
+                "email": "eedickso@ucalgary.ca"
+              },
+              {
+                "first_name": "Jillian",
+                "last_name": "Sick",
+                "role": "Student"
+              },
+              {
+                "first_name": "Michael",
+                "last_name": "Gavin",
+                "role": "Processor",
+                "email": "mpgavin@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Dana",
+                "last_name": "Poscente",
+                "role": "Student"
+              },
+              {
+                "first_name": "Sonya",
+                "last_name": "Pastran",
+                "role": "Student",
+                "email": "sapastra@ucalgary.ca"
+              },
+              {
+                "first_name": "Haley",
+                "last_name": "Glass",
+                "role": "Graduate Student Teaching Assistant",
+                "email": "haley.glass@ucalgary.ca"
+              },
+              {
+                "first_name": "Morgan",
+                "last_name": "Cotroneo",
+                "role": "Student",
+                "email": "mbcotron@ucalgary.ca"
+              },
+              {
+                "first_name": "Hilary",
+                "last_name": "Goble",
+                "role": "Student",
+                "email": "hmgoble@ucalgary.ca"
+              },
+              {
+                "first_name": "Ashley",
+                "last_name": "Twarog",
+                "role": "Student",
+                "email": "actwarog@ucalgary.ca"
+              },
+              {
+                "first_name": "Lucille",
+                "last_name": "Fisher",
+                "role": "Student",
+                "email": "l.c.fisher@hotmail.ca"
+              },
+              {
+                "first_name": "Gary",
+                "last_name": "Thai",
+                "role": "Student",
+                "email": "gthai@ucalgary.ca"
+              },
+              {
+                "first_name": "Rachel",
+                "last_name": "Swart",
+                "role": "Student",
+                "email": "rrswart@ucalgary.ca"
+              },
+              {
+                "first_name": "Nicolette",
+                "last_name": "Bell",
+                "role": "Student",
+                "email": "nicolette.a.bell@gmail.com"
+              },
+              {
+                "first_name": "Caitlin",
+                "last_name": "Tomaszewski",
+                "role": "Student",
+                "email": "tomaszcat@hotmail.com"
+              },
+              {
+                "first_name": "Renae",
+                "last_name": "Hemsing",
+                "role": "Student",
+                "email": "rdhemsin@ucalgary.ca"
+              },
+              {
+                "first_name": "Janessa",
+                "last_name": "Bretner",
+                "role": "Student",
+                "email": "ja.bretner@gmail.com"
+              },
+              {
+                "first_name": "Amie",
+                "last_name": "Le",
+                "role": "Student",
+                "email": "amie.le@msn.com"
+              },
+              {
+                "first_name": "Himasara",
+                "last_name": "Marasinghe",
+                "role": "Student",
+                "email": "dhmarasi@ucalgary.ca"
+              },
+              {
+                "first_name": "Curtis",
+                "last_name": "Polowick",
+                "role": "Student",
+                "email": "capolowi@ucalgary.ca"
+              },
+              {
+                "first_name": "Ryan",
+                "last_name": "Taylor",
+                "role": "Student",
+                "email": "rtaylor@ucalgary.ca"
+              },
+              {
+                "first_name": "Jana",
+                "last_name": "Vamosi",
+                "role": "Associate Professor",
+                "email": "jvamosi@ucalgary.ca"
+              }
+            ],
+            "collection_name": "University of Calgary Herbarium - Lycophytes and Monilophytes",
+            "update": "2018-09-19T02:34:06",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://data.canadensys.net/ipt/archive.do?r=ucalgaryherb",
+            "collection_description": "The University of Calgary Herbarium (UAC) includes an extensive collection of land plants from Alberta, Canada and around the world (~90,000 specimens). The current dataset includes records of the Lycophytes and Monilophytes in the collection.",
+            "institution_web_address": "http://www.ucalgary.ca/herbarium/",
+            "other_guids": [],
+            "logo_url": "http://data.canadensys.net/ipt/logo.do?r=ucalgaryherb",
+            "id": "05bf3655-ef2e-46ba-8732-60517beb3567"
+          },
+          "datemodified": "2018-09-19T02:57:47.731472+00:00",
+          "name": "university of calgary herbarium - lycophytes and monilophytes"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+        "_score": 1,
+        "_source": {
+          "publisher": "0bdd6e08-91e3-4ef0-a14f-7a987f9e9362",
+          "uuid": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+          "dqs": 0,
+          "archivelink": "http://ipt.peabody.yale.edu/ipt/archive.do?r=ipt_ip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "first_name": "Larry",
+              "last_name": "Gall",
+              "role": "Head, Computer Systems Office",
+              "email": "lawrence.gall@yale.edu"
+            },
+            {
+              "first_name": "Larry",
+              "last_name": "Gall",
+              "role": "Head, Computer Systems Office",
+              "email": "lawrence.gall@yale.edu"
+            },
+            {
+              "first_name": "Larry",
+              "last_name": "Gall",
+              "role": "Head, Computer Systems Office",
+              "email": "lawrence.gall@yale.edu"
+            },
+            {
+              "first_name": "Susan",
+              "last_name": "Butts",
+              "role": "Division of Invertebrate Paleontology",
+              "email": "susan.butts@yale.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "0bdd6e08-91e3-4ef0-a14f-7a987f9e9362",
+            "eml_link": "http://ipt.peabody.yale.edu/ipt/eml.do?r=ipt_ip",
+            "contacts": [
+              {
+                "first_name": "Larry",
+                "last_name": "Gall",
+                "role": "Head, Computer Systems Office",
+                "email": "lawrence.gall@yale.edu"
+              },
+              {
+                "first_name": "Larry",
+                "last_name": "Gall",
+                "role": "Head, Computer Systems Office",
+                "email": "lawrence.gall@yale.edu"
+              },
+              {
+                "first_name": "Larry",
+                "last_name": "Gall",
+                "role": "Head, Computer Systems Office",
+                "email": "lawrence.gall@yale.edu"
+              },
+              {
+                "first_name": "Susan",
+                "last_name": "Butts",
+                "role": "Division of Invertebrate Paleontology",
+                "email": "susan.butts@yale.edu"
+              }
+            ],
+            "collection_name": "Invertebrate Paleontology Division, Yale Peabody Museum",
+            "idigbio:uuid": "137ed4cd-5172-45a5-acdb-8e1de9a64e32",
+            "idigbio:etag": "0ead29266a2a349c1c075eb7a53859d0b4cd44a5",
+            "update": "2024-04-28T01:23:07",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://ipt.peabody.yale.edu/ipt/resource.do?id=ipt_ip",
+              "854bc2fc-f762-11e1-a439-00145eb45e9a",
+              "http://sprout018.sprout.yale.edu/ipt/resource.do?id=ipt_ip",
+              "http://ipt.peabody.yale.edu/ipt/resource?id=ipt_ip",
+              "http://sprout018.sprout.yale.edu/ipt/resource?id=ipt_ip"
+            ],
+            "link": "http://ipt.peabody.yale.edu/ipt/archive.do?r=ipt_ip",
+            "idigbio:dateModified": "2024-04-28T01:45:26.726569",
+            "collection_description": "The Yale Peabody Museum's collection of invertebrate fossils is one of largest in the United States, in volume and in geographic, stratigraphic and taxonomic representation. The holdings of the Division of Invertebrate Paleontology represent more than 350,000 specimen lots, approximately 4 million individuals. A total of 35,000 are type specimens; about 4,500 are the basis of new species descriptions. Over 300,000 specimen lots are available in the online specimen index; all known type specimens are included.",
+            "id": "http://ipt.peabody.yale.edu/ipt/resource.do?id=ipt_ip",
+            "other_guids": [],
+            "logo_url": "http://ipt.peabody.yale.edu/ipt/logo.do?r=ipt_ip",
+            "data_rights": "CC0"
+          },
+          "etag": "0ead29266a2a349c1c075eb7a53859d0b4cd44a5",
+          "emllink": "http://ipt.peabody.yale.edu/ipt/eml.do?r=ipt_ip",
+          "logourl": "http://ipt.peabody.yale.edu/ipt/logo.do?r=ipt_ip",
+          "recordids": [
+            "http://ipt.peabody.yale.edu/ipt/resource.do?id=ipt_ip",
+            "854bc2fc-f762-11e1-a439-00145eb45e9a",
+            "http://sprout018.sprout.yale.edu/ipt/resource.do?id=ipt_ip",
+            "http://ipt.peabody.yale.edu/ipt/resource?id=ipt_ip",
+            "http://sprout018.sprout.yale.edu/ipt/resource?id=ipt_ip"
+          ],
+          "data": {
+            "eml_link": "http://ipt.peabody.yale.edu/ipt/eml.do?r=ipt_ip",
+            "contacts": [
+              {
+                "first_name": "Larry",
+                "last_name": "Gall",
+                "role": "Head, Computer Systems Office",
+                "email": "lawrence.gall@yale.edu"
+              },
+              {
+                "first_name": "Larry",
+                "last_name": "Gall",
+                "role": "Head, Computer Systems Office",
+                "email": "lawrence.gall@yale.edu"
+              },
+              {
+                "first_name": "Larry",
+                "last_name": "Gall",
+                "role": "Head, Computer Systems Office",
+                "email": "lawrence.gall@yale.edu"
+              },
+              {
+                "first_name": "Susan",
+                "last_name": "Butts",
+                "role": "Division of Invertebrate Paleontology",
+                "email": "susan.butts@yale.edu"
+              }
+            ],
+            "collection_name": "Invertebrate Paleontology Division, Yale Peabody Museum",
+            "update": "2024-04-28T01:23:07",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "http://ipt.peabody.yale.edu/ipt/archive.do?r=ipt_ip",
+            "collection_description": "The Yale Peabody Museum's collection of invertebrate fossils is one of largest in the United States, in volume and in geographic, stratigraphic and taxonomic representation. The holdings of the Division of Invertebrate Paleontology represent more than 350,000 specimen lots, approximately 4 million individuals. A total of 35,000 are type specimens; about 4,500 are the basis of new species descriptions. Over 300,000 specimen lots are available in the online specimen index; all known type specimens are included.",
+            "institution_web_address": "",
+            "other_guids": [],
+            "logo_url": "http://ipt.peabody.yale.edu/ipt/logo.do?r=ipt_ip",
+            "id": "http://ipt.peabody.yale.edu/ipt/resource.do?id=ipt_ip"
+          },
+          "datemodified": "2024-04-28T01:45:26.726569+00:00",
+          "name": "invertebrate paleontology division, yale peabody museum"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "5076f892-a05d-4018-9c2c-d537a22095af",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "5076f892-a05d-4018-9c2c-d537a22095af",
+          "dqs": 0,
+          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-bj002-bj002608f-acahuales",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "María del Carmen",
+              "last_name": "Pozo de la Tijera",
+              "role": "Responsable",
+              "email": "cpozo@ecosur.mx"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Patricia",
+              "last_name": "Ramos Rivera",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-BJ002-BJ002608F-Acahuales",
+            "contacts": [
+              {
+                "first_name": "María del Carmen",
+                "last_name": "Pozo de la Tijera",
+                "role": "Responsable",
+                "email": "cpozo@ecosur.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Patricia",
+                "last_name": "Ramos Rivera",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Uso y monitoreo de los recursos naturales en el Corredor Biológico Mesoamericano (áreas focales Xpujil-Zoh Laguna y Carrillo Puerto) (Acahuales)",
+            "idigbio:uuid": "5076f892-a05d-4018-9c2c-d537a22095af",
+            "idigbio:etag": "8b066b7e808082f078026a2d946705180defdfbb",
+            "update": "2024-04-11T19:27:07",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=BJ&Numero=2",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "8026a170-f762-11e1-a439-00145eb45e9a"
+            ],
+            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-BJ002-BJ002608F-Acahuales",
+            "idigbio:dateModified": "2024-04-18T17:20:06.199180",
+            "collection_description": "BJ002\nEn el proyecto \"Uso y monitoreo de los recursos naturales en el Corredor Biológico Mesoamericano (Areas Focales Xpujil-Zoh Laguna y Carrillo Puerto)\" se pretende dar continuación a varios proyectos iniciados por investigadores de El Colegio de la Frontera Sur (ECOSUR) en las zonas focales de Carrillo Puerto y de Xpujil-Zoh Laguna. De manera especial, se pretende integrar la información de diversos tipos de aprovechamientos de los que ya se tienen antecedentes y que continuarán siendo evaluados en el periodo de duración del proyecto, en dichas áreas focales. Los tipos de aprovechamientos van desde los maderables, no maderables, de fauna silvestre, pesquerías y apicultura hasta los de uso ecológico recreativo, como es el caso del llamado Ecoturismo; las modalidades de los aprovechamientos abarcan aspectos de autoconsumo y los comerciales. Para su ejecución, hemos convocado la participación de investigadores y técnicos de El Colegio de la frontera Sur, unidad Chetumal, ha este esfuerzo se nos unieron dos exalumnos de la maestría como responsables de dos de los doce subproyectos que conforman el proyecto. También se contratará y capacitará personal con fondos de este financiamiento. Por otra parte, uno de los objetivos principales de esta convocatoria advierte la necesidad de monitorear los aprovechamientos que se desarrollan en este Corredor Biológico, por lo que en este proyecto daremos un taller de capacitación a ejidatarios locales para iniciar con la formación de una red de monitoreo llevada a cabo por residentes de las áreas focales que cuenten con bases teóricas y con métodos homogéneos que permitan la comparación de los resultados obtenidos a través del tiempo y del espacio. A estos grupos capacitados se les proveerá de equipo y formatos para registrar sus observaciones. Como principal resultado pretendemos obtener un diagnostico comparativo de los aprovechamientos estudiados en las dos áreas focales y como resultados colaterales tendremos folletos, colecciones biológicas, mapas, actualizaciones de bases de datos y creación de otras. Además se capacitarán varios estudiantes y técnicos de campo en las diversas actividades realizadas en el área. Reino: 1\nFilo: 1\nClase: 1\nOrden: 15\nFamilia: 22\nGénero: 41\nEspecie: 44",
+            "id": "8026a170-f762-11e1-a439-00145eb45e9a",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "8b066b7e808082f078026a2d946705180defdfbb",
+          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-bj002-bj002608f-acahuales",
+          "recordids": [
+            "8026a170-f762-11e1-a439-00145eb45e9a"
+          ],
+          "data": {
+            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-BJ002-BJ002608F-Acahuales",
+            "contacts": [
+              {
+                "first_name": "María del Carmen",
+                "last_name": "Pozo de la Tijera",
+                "role": "Responsable",
+                "email": "cpozo@ecosur.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Patricia",
+                "last_name": "Ramos Rivera",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Uso y monitoreo de los recursos naturales en el Corredor Biológico Mesoamericano (áreas focales Xpujil-Zoh Laguna y Carrillo Puerto) (Acahuales)",
+            "update": "2024-04-11T19:27:07",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-BJ002-BJ002608F-Acahuales",
+            "collection_description": "BJ002\nEn el proyecto \"Uso y monitoreo de los recursos naturales en el Corredor Biológico Mesoamericano (Areas Focales Xpujil-Zoh Laguna y Carrillo Puerto)\" se pretende dar continuación a varios proyectos iniciados por investigadores de El Colegio de la Frontera Sur (ECOSUR) en las zonas focales de Carrillo Puerto y de Xpujil-Zoh Laguna. De manera especial, se pretende integrar la información de diversos tipos de aprovechamientos de los que ya se tienen antecedentes y que continuarán siendo evaluados en el periodo de duración del proyecto, en dichas áreas focales. Los tipos de aprovechamientos van desde los maderables, no maderables, de fauna silvestre, pesquerías y apicultura hasta los de uso ecológico recreativo, como es el caso del llamado Ecoturismo; las modalidades de los aprovechamientos abarcan aspectos de autoconsumo y los comerciales. Para su ejecución, hemos convocado la participación de investigadores y técnicos de El Colegio de la frontera Sur, unidad Chetumal, ha este esfuerzo se nos unieron dos exalumnos de la maestría como responsables de dos de los doce subproyectos que conforman el proyecto. También se contratará y capacitará personal con fondos de este financiamiento. Por otra parte, uno de los objetivos principales de esta convocatoria advierte la necesidad de monitorear los aprovechamientos que se desarrollan en este Corredor Biológico, por lo que en este proyecto daremos un taller de capacitación a ejidatarios locales para iniciar con la formación de una red de monitoreo llevada a cabo por residentes de las áreas focales que cuenten con bases teóricas y con métodos homogéneos que permitan la comparación de los resultados obtenidos a través del tiempo y del espacio. A estos grupos capacitados se les proveerá de equipo y formatos para registrar sus observaciones. Como principal resultado pretendemos obtener un diagnostico comparativo de los aprovechamientos estudiados en las dos áreas focales y como resultados colaterales tendremos folletos, colecciones biológicas, mapas, actualizaciones de bases de datos y creación de otras. Además se capacitarán varios estudiantes y técnicos de campo en las diversas actividades realizadas en el área. Reino: 1\nFilo: 1\nClase: 1\nOrden: 15\nFamilia: 22\nGénero: 41\nEspecie: 44",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=BJ&Numero=2",
+            "id": "8026a170-f762-11e1-a439-00145eb45e9a"
+          },
+          "datemodified": "2024-04-18T17:20:06.199180+00:00",
+          "name": "uso y monitoreo de los recursos naturales en el corredor biológico mesoamericano (áreas focales xpujil-zoh laguna y carrillo puerto) (acahuales)"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "df1ba8de-421a-4031-a447-2a6a93f72fa8",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "df1ba8de-421a-4031-a447-2a6a93f72fa8",
+          "dqs": 0,
+          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-hc005",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Emma Josefina",
+              "last_name": "Fajer Ávila",
+              "role": "Responsable",
+              "email": "efajer@ciad.mx"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Patricia",
+              "last_name": "Ramos Rivera",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-HC005",
+            "contacts": [
+              {
+                "first_name": "Emma Josefina",
+                "last_name": "Fajer Ávila",
+                "role": "Responsable",
+                "email": "efajer@ciad.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Patricia",
+                "last_name": "Ramos Rivera",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Inventario computarizado de la colección de parásitos de peces del noroeste de México",
+            "idigbio:uuid": "df1ba8de-421a-4031-a447-2a6a93f72fa8",
+            "idigbio:etag": "bc317bc7c0bce1ba5119d1ce59709de2a4e10b95",
+            "update": "2024-04-11T19:40:23",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=HC&Numero=5",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "0dd60212-0793-485a-a04d-f6d50208861d"
+            ],
+            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-HC005",
+            "idigbio:dateModified": "2024-04-18T17:19:38.029352",
+            "collection_description": "En el CIAD, A.C.- Unidad Mazatlán existe una colección de parásitos de peces iniciada en 1998 como resultado de las investigaciones parasitológicas realizadas durante 11 años en esta institución. Con el apoyo de este proyecto se pretende organizar y validar esta colección de ejemplares de parásitos de los peces de la región noroeste de México asociada a su dato geográfico ( latitud, longitud) y compilar la información para establecer una base de datos de los parásitos de las especies de peces marinos y dulce acuícolas de importancia comercial y acuacultural que habitan en esta región, con énfasis especial en la Bahía de Mazatlán, Sinaloa y Bahía de Banderas, Nayarit. También se integrará a esta base de datos los parásitos de peces marinos y dulceacuícolas cultivados en la región en estudio. Esta información ha sido generada principalmente mediante la colecta, aislamiento e identificación de los parásitos potencialmente patógenos al cultivo; cuyos estudios han sido apoyados por los proyectos SAGARPA-CONACyT y los servicios de diagnóstico realizados al sector productivo en esta área. Sin embargo, el conocimiento está disperso en publicaciones científicas, informes y documentos técnicos inéditos; lo cual impide una consulta rápida y efectiva provocando en ocasiones un desconocimiento del material existente. El objetivo principal de este proyecto consiste en organizar, validar y captar toda esa información en una base de datos, de acuerdo a los lineamientos de la CONABIO para que pueda ser consultada, contribuyendo de esta forma con la información requerida por el Sistema Nacional de información sobre la  Biodiversidad (SNIB) Reino: 2\nFilo: 5\nClase: 10\nOrden: 17\nFamilia: 36\nGénero: 52\nEspecie: 40",
+            "id": "0dd60212-0793-485a-a04d-f6d50208861d",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "bc317bc7c0bce1ba5119d1ce59709de2a4e10b95",
+          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-hc005",
+          "recordids": [
+            "0dd60212-0793-485a-a04d-f6d50208861d"
+          ],
+          "data": {
+            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-HC005",
+            "contacts": [
+              {
+                "first_name": "Emma Josefina",
+                "last_name": "Fajer Ávila",
+                "role": "Responsable",
+                "email": "efajer@ciad.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Patricia",
+                "last_name": "Ramos Rivera",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Inventario computarizado de la colección de parásitos de peces del noroeste de México",
+            "update": "2024-04-11T19:40:23",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-HC005",
+            "collection_description": "En el CIAD, A.C.- Unidad Mazatlán existe una colección de parásitos de peces iniciada en 1998 como resultado de las investigaciones parasitológicas realizadas durante 11 años en esta institución. Con el apoyo de este proyecto se pretende organizar y validar esta colección de ejemplares de parásitos de los peces de la región noroeste de México asociada a su dato geográfico ( latitud, longitud) y compilar la información para establecer una base de datos de los parásitos de las especies de peces marinos y dulce acuícolas de importancia comercial y acuacultural que habitan en esta región, con énfasis especial en la Bahía de Mazatlán, Sinaloa y Bahía de Banderas, Nayarit. También se integrará a esta base de datos los parásitos de peces marinos y dulceacuícolas cultivados en la región en estudio. Esta información ha sido generada principalmente mediante la colecta, aislamiento e identificación de los parásitos potencialmente patógenos al cultivo; cuyos estudios han sido apoyados por los proyectos SAGARPA-CONACyT y los servicios de diagnóstico realizados al sector productivo en esta área. Sin embargo, el conocimiento está disperso en publicaciones científicas, informes y documentos técnicos inéditos; lo cual impide una consulta rápida y efectiva provocando en ocasiones un desconocimiento del material existente. El objetivo principal de este proyecto consiste en organizar, validar y captar toda esa información en una base de datos, de acuerdo a los lineamientos de la CONABIO para que pueda ser consultada, contribuyendo de esta forma con la información requerida por el Sistema Nacional de información sobre la  Biodiversidad (SNIB) Reino: 2\nFilo: 5\nClase: 10\nOrden: 17\nFamilia: 36\nGénero: 52\nEspecie: 40",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=HC&Numero=5",
+            "id": "0dd60212-0793-485a-a04d-f6d50208861d"
+          },
+          "datemodified": "2024-04-18T17:19:38.029352+00:00",
+          "name": "inventario computarizado de la colección de parásitos de peces del noroeste de méxico"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "0e162e0a-bf3e-4710-9357-44258ca12abb",
+        "_score": 1,
+        "_source": {
+          "publisher": "350857a8-4940-4d02-ad42-49557f8006f1",
+          "uuid": "0e162e0a-bf3e-4710-9357-44258ca12abb",
+          "dqs": 0,
+          "archivelink": "https://ipt.floridamuseum.ufl.edu/ipt/archive.do?r=ufpaleobotany",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "first_name": "Steven",
+              "last_name": "Manchester",
+              "role": "Curator of Paleobotany",
+              "email": "steven@flmnh.ufl.edu"
+            },
+            {
+              "first_name": "Warren",
+              "last_name": "Brown",
+              "role": "IT Director",
+              "email": "netadmin@flmnh.ufl.edu"
+            },
+            {
+              "first_name": "OMT",
+              "last_name": "FLMNH",
+              "email": "netadmin@flmnh.ufl.edu"
+            },
+            {
+              "first_name": "Steven",
+              "last_name": "Manchester",
+              "role": "Curator of Paleobotany",
+              "email": "steven@flmnh.ufl.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "350857a8-4940-4d02-ad42-49557f8006f1",
+            "eml_link": "https://ipt.floridamuseum.ufl.edu/ipt/eml.do?r=ufpaleobotany",
+            "contacts": [
+              {
+                "first_name": "Steven",
+                "last_name": "Manchester",
+                "role": "Curator of Paleobotany",
+                "email": "steven@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "Warren",
+                "last_name": "Brown",
+                "role": "IT Director",
+                "email": "netadmin@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "OMT",
+                "last_name": "FLMNH",
+                "email": "netadmin@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "Steven",
+                "last_name": "Manchester",
+                "role": "Curator of Paleobotany",
+                "email": "steven@flmnh.ufl.edu"
+              }
+            ],
+            "collection_name": "UF Florida Museum Paleobotany",
+            "idigbio:uuid": "0e162e0a-bf3e-4710-9357-44258ca12abb",
+            "idigbio:etag": "435423c2624fdf2b03b751346aad2603782e5fbd",
+            "update": "2024-06-17T04:00:21",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://ipt.flmnh.ufl.edu:8080/ipt/resource?id=ufpaleobotany",
+              "5f0d32a4-6902-481b-9694-6393ad40b973"
+            ],
+            "link": "https://ipt.floridamuseum.ufl.edu/ipt/archive.do?r=ufpaleobotany",
+            "idigbio:dateModified": "2024-06-17T04:44:52.072811",
+            "collection_description": "The Florida Museum's Paleobotanical Collection includes approximately 250,000 specimens. This is a conservative estimate that does not take into account the fact that an individual hand sample may contain more than one fossil of interest. In addition, the facility houses the John W. Hall paleobotanical collection (approximately 20,000 specimens) transferred from the University of Minnesota.\n\nThe collection is international in scope, ranging from the Proterozoic to the Pleistocene, and including collections from more than 50 countries. Particular strengths of the collection are: Cretaceous of the US western interior, Cretaceous and Eocene of southeastern North America, Paleocene and Eocene of the Rocky Mountain and Great Plains region, Eocene and Oligocene of the Pacific northwest, and Pennsylvanian of Indiana and Illinois. Systematically the greatest strength of the collection is in Cretaceous-Tertiary angiosperms, which are represented by large numbers of well-preserved fruits and flowers as well as leaves and wood. A majority of publications generated by the collection have dealt with angiosperm systematics, but publications also have been generated on algae, fungi, lycopods, ferns, seed ferns, conifers, and insect mines and have been used to address questions of phylogeny, paleogeography, and paleoclimate.\n\nThe type collection includes all Florida Museum paleobotanical specimens that have been cited in published literature, extending from the 1920's to the present. More than 280 publications are known to have cited specimens that now reside in the Florida Museum's paleobotanical collection (a list of these publications is available http://www.flmnh.ufl.edu/paleobotany/publications). There are currently more than 5,000 hand specimens, 1,500 thin section, cuticle, or pollen/spore slides and SEM stubs, 6,595 negatives and polaroid prints of SEM images of fern spores housed in 19 cabinets. Organization is by year of publication and in the order of citation presented in the publications.",
+            "id": "http://ipt.flmnh.ufl.edu:8080/ipt/resource?id=ufpaleobotany",
+            "other_guids": [],
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "435423c2624fdf2b03b751346aad2603782e5fbd",
+          "emllink": "https://ipt.floridamuseum.ufl.edu/ipt/eml.do?r=ufpaleobotany",
+          "recordids": [
+            "http://ipt.flmnh.ufl.edu:8080/ipt/resource?id=ufpaleobotany",
+            "5f0d32a4-6902-481b-9694-6393ad40b973"
+          ],
+          "data": {
+            "eml_link": "https://ipt.floridamuseum.ufl.edu/ipt/eml.do?r=ufpaleobotany",
+            "contacts": [
+              {
+                "first_name": "Steven",
+                "last_name": "Manchester",
+                "role": "Curator of Paleobotany",
+                "email": "steven@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "Warren",
+                "last_name": "Brown",
+                "role": "IT Director",
+                "email": "netadmin@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "OMT",
+                "last_name": "FLMNH",
+                "email": "netadmin@flmnh.ufl.edu"
+              },
+              {
+                "first_name": "Steven",
+                "last_name": "Manchester",
+                "role": "Curator of Paleobotany",
+                "email": "steven@flmnh.ufl.edu"
+              }
+            ],
+            "collection_name": "UF Florida Museum Paleobotany",
+            "update": "2024-06-17T04:00:21",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "https://ipt.floridamuseum.ufl.edu/ipt/archive.do?r=ufpaleobotany",
+            "collection_description": "The Florida Museum's Paleobotanical Collection includes approximately 250,000 specimens. This is a conservative estimate that does not take into account the fact that an individual hand sample may contain more than one fossil of interest. In addition, the facility houses the John W. Hall paleobotanical collection (approximately 20,000 specimens) transferred from the University of Minnesota.\n\nThe collection is international in scope, ranging from the Proterozoic to the Pleistocene, and including collections from more than 50 countries. Particular strengths of the collection are: Cretaceous of the US western interior, Cretaceous and Eocene of southeastern North America, Paleocene and Eocene of the Rocky Mountain and Great Plains region, Eocene and Oligocene of the Pacific northwest, and Pennsylvanian of Indiana and Illinois. Systematically the greatest strength of the collection is in Cretaceous-Tertiary angiosperms, which are represented by large numbers of well-preserved fruits and flowers as well as leaves and wood. A majority of publications generated by the collection have dealt with angiosperm systematics, but publications also have been generated on algae, fungi, lycopods, ferns, seed ferns, conifers, and insect mines and have been used to address questions of phylogeny, paleogeography, and paleoclimate.\n\nThe type collection includes all Florida Museum paleobotanical specimens that have been cited in published literature, extending from the 1920's to the present. More than 280 publications are known to have cited specimens that now reside in the Florida Museum's paleobotanical collection (a list of these publications is available http://www.flmnh.ufl.edu/paleobotany/publications). There are currently more than 5,000 hand specimens, 1,500 thin section, cuticle, or pollen/spore slides and SEM stubs, 6,595 negatives and polaroid prints of SEM images of fern spores housed in 19 cabinets. Organization is by year of publication and in the order of citation presented in the publications.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "http://ipt.flmnh.ufl.edu:8080/ipt/resource?id=ufpaleobotany"
+          },
+          "datemodified": "2024-06-17T04:44:52.072811+00:00",
+          "name": "uf florida museum paleobotany"
+        }
+      },
+      {
+        "_index": "fuzzy",
+        "_type": "recordsets",
+        "_id": "8291b0f8-11f1-4b84-8d39-65317801676f",
+        "_score": 1,
+        "_source": {
+          "publisher": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "uuid": "8291b0f8-11f1-4b84-8d39-65317801676f",
+          "dqs": 0,
+          "archivelink": "https://www.snib.mx/iptconabio/archive.do?r=snib-fq006",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "first_name": "Raúl Ernesto",
+              "last_name": "Alcalá Martínez",
+              "role": "Responsable",
+              "email": "raul.alcala@uaem.mx"
+            },
+            {
+              "first_name": "CONABIO",
+              "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            },
+            {
+              "first_name": "Patricia",
+              "last_name": "Ramos Rivera",
+              "role": "Dirección General de Sistemas",
+              "email": "patricia.ramos@conabio.gob.mx"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-FQ006",
+            "contacts": [
+              {
+                "first_name": "Raúl Ernesto",
+                "last_name": "Alcalá Martínez",
+                "role": "Responsable",
+                "email": "raul.alcala@uaem.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Patricia",
+                "last_name": "Ramos Rivera",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Ecología, genética y conservación de la caoba (Swietenia macrophylla): herramientas para un manejo adaptativo de la selva Maya de Quintana Roo, México",
+            "idigbio:uuid": "8291b0f8-11f1-4b84-8d39-65317801676f",
+            "idigbio:etag": "ad7cd1bff20d32da81b00e9f1c5e8c641936f3b2",
+            "update": "2024-04-11T19:35:30",
+            "ingest": true,
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=FQ&Numero=6",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "dd03d3f4-b4ea-490d-bba7-983888cce902"
+            ],
+            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-FQ006",
+            "idigbio:dateModified": "2024-04-18T17:19:50.620111",
+            "collection_description": "Realizar un buen manejo de los recursos siempre resultará más redituable que restaurar los ecosistemas después de estrategias fallidas de uso. Con el presente proyecto se obtuvieron datos relacionados con la estructura poblacional, regeneración, dispersión, diversidad y estructura genética de la caoba. La caoba (Swietenia macrophylla  King) (Meliaceae) es la especie maderable más importante de los neotrópicos; en México se restringe a la zona conocida como la Selva Maya.\nLos datos obtenidos con este estudio y las observaciones sobre las consecuencias del aprovechamiento selectivo permitirán proponer estrategias de manejo de la especie y su ecosistema, lo que redituará en la conservación de la especie y su hábitat: la Selva Maya de Quintana Roo. Dentro de los resultados más importantes se destaca que el manejo forestal altera parte de las interacciones entre las caobas con los depredadores de semillas y herbívoros, mientras que los resultados genéticos a nivel geográfico muestran que la caoba mexicana tiene menor diversidad genética que las poblaciones de otras regiones y una tasa de endogamia más alta. Además de que la diversidad genética no está? repartida aleatoriamente, sino que es mayor en los sitios mejor conservados y  ubicados al sur de su distribución en México. Los resultados indican que es posible que los programas de manejo actuales no garanticen la sustentabilidad del manejo de la caoba, debido en parte a que la regeneración natural está asociada con el potencial de producción de semillas, las cuales se encuentran ligadas a individuos con potencial reproductivo, por lo cual la remoción de éstos repercute en una disminución de la regeneración natural. Reino: 1\nFilo: 1\nClase: 1\nOrden: 1\nFamilia: 1\nGénero: 1\nEspecie: 1",
+            "id": "dd03d3f4-b4ea-490d-bba7-983888cce902",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "ad7cd1bff20d32da81b00e9f1c5e8c641936f3b2",
+          "emllink": "https://www.snib.mx/iptconabio/eml.do?r=snib-fq006",
+          "recordids": [
+            "dd03d3f4-b4ea-490d-bba7-983888cce902"
+          ],
+          "data": {
+            "eml_link": "https://www.snib.mx/iptconabio/eml.do?r=SNIB-FQ006",
+            "contacts": [
+              {
+                "first_name": "Raúl Ernesto",
+                "last_name": "Alcalá Martínez",
+                "role": "Responsable",
+                "email": "raul.alcala@uaem.mx"
+              },
+              {
+                "first_name": "CONABIO",
+                "last_name": "Comisión nacional para el conocimiento y uso de la biodiversidad",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              },
+              {
+                "first_name": "Patricia",
+                "last_name": "Ramos Rivera",
+                "role": "Dirección General de Sistemas",
+                "email": "patricia.ramos@conabio.gob.mx"
+              }
+            ],
+            "collection_name": "Ecología, genética y conservación de la caoba (Swietenia macrophylla): herramientas para un manejo adaptativo de la selva Maya de Quintana Roo, México",
+            "update": "2024-04-11T19:35:30",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "https://www.snib.mx/iptconabio/archive.do?r=SNIB-FQ006",
+            "collection_description": "Realizar un buen manejo de los recursos siempre resultará más redituable que restaurar los ecosistemas después de estrategias fallidas de uso. Con el presente proyecto se obtuvieron datos relacionados con la estructura poblacional, regeneración, dispersión, diversidad y estructura genética de la caoba. La caoba (Swietenia macrophylla  King) (Meliaceae) es la especie maderable más importante de los neotrópicos; en México se restringe a la zona conocida como la Selva Maya.\nLos datos obtenidos con este estudio y las observaciones sobre las consecuencias del aprovechamiento selectivo permitirán proponer estrategias de manejo de la especie y su ecosistema, lo que redituará en la conservación de la especie y su hábitat: la Selva Maya de Quintana Roo. Dentro de los resultados más importantes se destaca que el manejo forestal altera parte de las interacciones entre las caobas con los depredadores de semillas y herbívoros, mientras que los resultados genéticos a nivel geográfico muestran que la caoba mexicana tiene menor diversidad genética que las poblaciones de otras regiones y una tasa de endogamia más alta. Además de que la diversidad genética no está? repartida aleatoriamente, sino que es mayor en los sitios mejor conservados y  ubicados al sur de su distribución en México. Los resultados indican que es posible que los programas de manejo actuales no garanticen la sustentabilidad del manejo de la caoba, debido en parte a que la regeneración natural está asociada con el potencial de producción de semillas, las cuales se encuentran ligadas a individuos con potencial reproductivo, por lo cual la remoción de éstos repercute en una disminución de la regeneración natural. Reino: 1\nFilo: 1\nClase: 1\nOrden: 1\nFamilia: 1\nGénero: 1\nEspecie: 1",
+            "other_guids": [],
+            "institution_web_address": "http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=FQ&Numero=6",
+            "id": "dd03d3f4-b4ea-490d-bba7-983888cce902"
+          },
+          "datemodified": "2024-04-18T17:19:50.620111+00:00",
+          "name": "ecología, genética y conservación de la caoba (swietenia macrophylla): herramientas para un manejo adaptativo de la selva maya de quintana roo, méxico"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_publisher": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 716,
+      "buckets": [
+        {
+          "key": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "doc_count": 415
+        },
+        {
+          "key": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "doc_count": 264
+        },
+        {
+          "key": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "doc_count": 203
+        },
+        {
+          "key": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "doc_count": 119
+        },
+        {
+          "key": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "doc_count": 71
+        },
+        {
+          "key": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "doc_count": 69
+        },
+        {
+          "key": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "doc_count": 63
+        },
+        {
+          "key": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "doc_count": 57
+        },
+        {
+          "key": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+          "doc_count": 45
+        },
+        {
+          "key": "ab5bdf3a-6283-41c7-ac16-9ba46381aa24",
+          "doc_count": 41
+        }
+      ]
+    }
+  }
+}
