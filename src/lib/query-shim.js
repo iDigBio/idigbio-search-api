@@ -127,6 +127,24 @@ function exactFilter(k, shimK) { // handler for "exact" toggle on portal UI.
   }
 }
 
+function keywordFilter(k, shimK) {
+  let term = {}
+  term[k+'.keyword'] = shimK['text']
+
+  if (_.isArray(shimK['text'])) {
+    term[k+'.keyword'].map(str => str.toLowerCase())
+    return {
+      "terms": term 
+    }
+  } else {
+    term[k+'.keyword'] = term[k+'.keyword'].toLowerCase()
+    console.log(term)
+    return {
+      "term": term
+    }
+  }
+}
+
 function fuzzyFilter(k, shimK) {
   let queryParam = shimK['text']
   let esQuery = {}
@@ -192,7 +210,9 @@ function objectType(k, shimK) {
   } else if(shimK["type"] === "missing") {
     return missingFilter(k);
   } else if (shimK["type"] === "exact") {
-    return exactFilter(k, shimK)
+    return exactFilter(k, shimK) 
+  } else if (shimK["type"] === "keyword") {
+    return keywordFilter(k, shimK)
   } else if (shimK["type"] === "fuzzy") {
     return fuzzyFilter(k, shimK)
   } else if(shimK["type"] === "range") {
