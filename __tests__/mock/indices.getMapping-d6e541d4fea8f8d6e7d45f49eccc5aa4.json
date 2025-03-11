@@ -1,11 +1,97 @@
 {
   "query": "indices.getMapping([{\"index\":\"idigbio\",\"type\":\"_all\"}])",
   "response_snapshot": {
-    "idigbio-2.10.25": {
+    "idigbio-2.10.27": {
       "mappings": {
         "records": {
           "date_detection": false,
           "properties": {
+            "UberH3": {
+              "properties": {
+                "h3-p00": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p01": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p02": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p03": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p04": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p05": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p06": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p07": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p08": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p09": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p10": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p11": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p12": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p13": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p14": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                },
+                "h3-p15": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                }
+              }
+            },
+            "aggs": {
+              "properties": {
+                "count_buckets": {
+                  "properties": {
+                    "terms": {
+                      "properties": {
+                        "field": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "long"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "associatedsequences": {
               "type": "string",
               "analyzer": "keyword"
@@ -47,7 +133,13 @@
               "analyzer": "keyword"
             },
             "collector": {
-              "type": "string"
+              "type": "string",
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                }
+              }
             },
             "commonname": {
               "type": "string",
@@ -1168,7 +1260,13 @@
               "type": "boolean"
             },
             "highertaxon": {
-              "type": "string"
+              "type": "string",
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                }
+              }
             },
             "highestbiostratigraphiczone": {
               "type": "string",
@@ -2516,7 +2614,13 @@
               "analyzer": "keyword"
             },
             "locality": {
-              "type": "string"
+              "type": "string",
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                }
+              }
             },
             "lowestbiostratigraphiczone": {
               "type": "string",
@@ -2558,6 +2662,13 @@
               "type": "string",
               "analyzer": "keyword"
             },
+            "query": {
+              "properties": {
+                "match_all": {
+                  "type": "object"
+                }
+              }
+            },
             "recordids": {
               "type": "string",
               "analyzer": "keyword"
@@ -2583,6 +2694,9 @@
                 }
               },
               "analyzer": "keyword"
+            },
+            "size": {
+              "type": "long"
             },
             "specificepithet": {
               "type": "string",
@@ -4157,7 +4271,13 @@
               "analyzer": "keyword"
             },
             "tag": {
-              "type": "string"
+              "type": "string",
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "analyzer": "keyword"
+                }
+              }
             },
             "type": {
               "type": "string",
