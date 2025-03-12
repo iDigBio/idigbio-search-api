@@ -16,7 +16,11 @@ export function clear() {
 
 export function getSubKeys(mappingDict, fnPrefix) {
   var rv = {};
-  var properties = mappingDict["properties"];
+  // var properties = mappingDict["properties"];
+    var properties = {
+      ...mappingDict.properties,
+      ...mappingDict.fields
+    };
   _.forOwn(properties, function(prop, key) {
     const typ = prop.type;
     if(typ) {
@@ -28,7 +32,7 @@ export function getSubKeys(mappingDict, fnPrefix) {
         type: typ,
         fieldName: fnPrefix + key
       };
-    } else if(prop.properties) {
+    } else if(prop.properties || prop.fields) {
       rv[key] = getSubKeys(prop, fnPrefix + key + ".");
     }
   });
@@ -67,6 +71,7 @@ export function checkTerms(type, termList) {
   const root = getMappingForType(type);
 
   const missingTerms = _(termList)
+        .filter((t) => !t.endsWith('.keyword'))
         .filter((t) => !_.includes(t, "*"))
         .filter((t) => _.isEmpty(_.get(root, t)))
         .without("_id")
