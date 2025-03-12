@@ -1,10 +1,10 @@
 {
   "query": "count([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"term\":{\"genus\":\"acer\"}}]}}}}}])",
   "response_snapshot": {
-    "count": 123091,
+    "count": 123312,
     "_shards": {
-      "total": 48,
-      "successful": 48,
+      "total": 44,
+      "successful": 44,
       "failed": 0
     }
   }
