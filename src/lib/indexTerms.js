@@ -4,7 +4,7 @@ import config from "config";
 import searchShim from "searchShim";
 
 import {InvalidTypeError, TermNotFoundError} from "lib/exceptions";
-export const indexterms = jasmine.anything();
+export const indexterms = {};
 
 export function clear() {
   _(indexterms)
