@@ -1,0 +1,3619 @@
+{
+  "itemCount": 90,
+  "items": [
+    {
+      "uuid": "1c29be70-24e7-480b-aab1-61224ded0f34",
+      "type": "publishers",
+      "etag": "4312703f9addf0494c9e2319f9e0075f0eba8e08",
+      "data": {
+        "rss_url": "http://portal.neherbaria.org/portal/webservices/dwc/rss.xml",
+        "name": "CNH portal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://portal.neherbaria.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "1c29be70-24e7-480b-aab1-61224ded0f34",
+        "dqs": -1,
+        "etag": "4312703f9addf0494c9e2319f9e0075f0eba8e08",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://portal.neherbaria.org/portal/webservices/dwc/rss.xml",
+          "name": "CNH portal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "1c29be70-24e7-480b-aab1-61224ded0f34",
+          "idigbio:etag": "4312703f9addf0494c9e2319f9e0075f0eba8e08",
+          "base_url": "http://portal.neherbaria.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://portal.neherbaria.org/portal/",
+            "http://portal.neherbaria.org/portal/webservices/dwc/rss.xml"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:27.062917",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://portal.neherbaria.org/portal/",
+          "http://portal.neherbaria.org/portal/webservices/dwc/rss.xml"
+        ],
+        "datemodified": "2015-07-15T13:12:27.062917+00:00",
+        "name": "cnh portal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "e372a31d-2760-42b1-9b76-39f1a6a04206",
+      "type": "publishers",
+      "etag": "5da8f0c7518b05bfdee02fdcd60b996058934b58",
+      "data": {
+        "rss_url": "http://65.52.215.125/ipt/rss.do",
+        "name": "SNOMNH IPT",
+        "auto_publish": false,
+        "base_url": "http://65.52.215.125/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "e372a31d-2760-42b1-9b76-39f1a6a04206",
+        "dqs": -1,
+        "etag": "5da8f0c7518b05bfdee02fdcd60b996058934b58",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://65.52.215.125/ipt/rss.do",
+          "name": "SNOMNH IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "e372a31d-2760-42b1-9b76-39f1a6a04206",
+          "idigbio:etag": "5da8f0c7518b05bfdee02fdcd60b996058934b58",
+          "base_url": "http://65.52.215.125/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://iptsnomnh.cloudapp.net:8080/ipt/",
+            "http://iptsnomnh.cloudapp.net:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2016-03-24T16:25:50.310836",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://iptsnomnh.cloudapp.net:8080/ipt/",
+          "http://iptsnomnh.cloudapp.net:8080/ipt/rss.do"
+        ],
+        "datemodified": "2016-03-24T16:25:50.310836+00:00",
+        "name": "snomnh ipt"
+      }
+    },
+    {
+      "uuid": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+      "type": "publishers",
+      "etag": "ec23bfa09064ddbfaefd6317fc2b4578c85735e3",
+      "data": {
+        "rss_url": "https://bryophyteportal.org/portal/content/dwca/rss.xml",
+        "name": "Consortium of North American Bryophyte Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://bryophyteportal.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+        "dqs": -1,
+        "etag": "ec23bfa09064ddbfaefd6317fc2b4578c85735e3",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://bryophyteportal.org/portal/content/dwca/rss.xml",
+          "name": "Consortium of North American Bryophyte Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "idigbio:etag": "ec23bfa09064ddbfaefd6317fc2b4578c85735e3",
+          "base_url": "http://bryophyteportal.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://bryophyteportal.org/portal/webservices/dwc/rss.xml",
+            "http://bryophyteportal.org/portal/"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:03.481934",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://bryophyteportal.org/portal/webservices/dwc/rss.xml",
+          "http://bryophyteportal.org/portal/"
+        ],
+        "datemodified": "2022-12-06T02:46:03.481934+00:00",
+        "name": "consortium of north american bryophyte herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "1182c4eb-8e63-498a-9bc0-05aef51e8763",
+      "type": "publishers",
+      "etag": "5f5c4d214930fafe872521c879469cc3c4997b12",
+      "data": {
+        "rss_url": "https://ipt.sibbr.gov.br/goeldi/rss.do",
+        "name": "Museu Paraense Emílio Goeldi",
+        "auto_publish": false,
+        "base_url": "http://ipt.museu-goeldi.br/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "1182c4eb-8e63-498a-9bc0-05aef51e8763",
+        "dqs": -1,
+        "etag": "5f5c4d214930fafe872521c879469cc3c4997b12",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ipt.sibbr.gov.br/goeldi/rss.do",
+          "name": "Museu Paraense Emílio Goeldi",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "1182c4eb-8e63-498a-9bc0-05aef51e8763",
+          "idigbio:etag": "5f5c4d214930fafe872521c879469cc3c4997b12",
+          "base_url": "http://ipt.museu-goeldi.br/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.museu-goeldi.br/ipt/rss.do",
+            "http://ipt.museu-goeldi.br/ipt/"
+          ],
+          "idigbio:dateModified": "2021-01-22T16:41:38.084777",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.museu-goeldi.br/ipt/rss.do",
+          "http://ipt.museu-goeldi.br/ipt/"
+        ],
+        "datemodified": "2021-01-22T16:41:38.084777+00:00",
+        "name": "museu paraense emílio goeldi"
+      }
+    },
+    {
+      "uuid": "a26079a3-8413-44cb-9f41-4d80681ed639",
+      "type": "publishers",
+      "etag": "96e2e9ca48f3b8b585d297e0d9dae192f6b327dd",
+      "data": {
+        "rss_url": "https://mywaterbears.org/portal/content/dwca/rss.xml",
+        "name": "FCC Tardigrades Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "a26079a3-8413-44cb-9f41-4d80681ed639",
+        "dqs": -1,
+        "etag": "96e2e9ca48f3b8b585d297e0d9dae192f6b327dd",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://mywaterbears.org/portal/content/dwca/rss.xml",
+          "name": "FCC Tardigrades Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "a26079a3-8413-44cb-9f41-4d80681ed639",
+          "idigbio:etag": "96e2e9ca48f3b8b585d297e0d9dae192f6b327dd",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-20T07:14:28.234911",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-20T07:14:28.234911+00:00",
+        "name": "fcc tardigrades darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+      "type": "publishers",
+      "etag": "ee4c90fd7d1727f4984c4bb48dae7a4e7eacd221",
+      "data": {
+        "rss_url": "https://invertnet.org/idigbio-feed/rss.php",
+        "name": "InvertNet iDigBio Feed",
+        "auto_publish": false,
+        "base_url": "https://invertnet.org/idigbio-feed/",
+        "publisher_type": "feeder",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+        "dqs": -1,
+        "etag": "ee4c90fd7d1727f4984c4bb48dae7a4e7eacd221",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://invertnet.org/idigbio-feed/rss.php",
+          "name": "InvertNet iDigBio Feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+          "idigbio:etag": "ee4c90fd7d1727f4984c4bb48dae7a4e7eacd221",
+          "base_url": "https://invertnet.org/idigbio-feed/",
+          "auto_publish": false,
+          "publisher_type": "feeder",
+          "idigbio:recordIds": [
+            "https://invertnet.org/idigbio-feed/",
+            "https://invertnet.org/idigbio-feed/rss.php"
+          ],
+          "idigbio:dateModified": "2016-06-17T11:20:27.246453",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "https://invertnet.org/idigbio-feed/",
+          "https://invertnet.org/idigbio-feed/rss.php"
+        ],
+        "datemodified": "2016-06-17T11:20:27.246453+00:00",
+        "name": "invertnet idigbio feed"
+      }
+    },
+    {
+      "uuid": "0e9cc971-a4d7-4df2-af25-66091fcf4f61",
+      "type": "publishers",
+      "etag": "543ea0dedd901b8e10985ffd9e8094bcdb88a5ec",
+      "data": {
+        "rss_url": "https://botanydb.colorado.edu/webservices/dwc/rss.xml",
+        "name": "University of Colorado Museum of Natural History Herbarium Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "0e9cc971-a4d7-4df2-af25-66091fcf4f61",
+        "dqs": -1,
+        "etag": "543ea0dedd901b8e10985ffd9e8094bcdb88a5ec",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://botanydb.colorado.edu/webservices/dwc/rss.xml",
+          "name": "University of Colorado Museum of Natural History Herbarium Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "0e9cc971-a4d7-4df2-af25-66091fcf4f61",
+          "idigbio:etag": "543ea0dedd901b8e10985ffd9e8094bcdb88a5ec",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-04-25T10:28:13.831729",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-04-25T10:28:13.831729+00:00",
+        "name": "university of colorado museum of natural history herbarium darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "ebee146b-879b-4d51-8cb9-7e2c634a2d44",
+      "type": "publishers",
+      "etag": "9ae9f2d797365ba583cd6402e8fdb824caef8303",
+      "data": {
+        "rss_url": "http://greatlakesinvasives.org/portal/webservices/dwc/rss.xml",
+        "name": "Aquatic Invasives Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ebee146b-879b-4d51-8cb9-7e2c634a2d44",
+        "dqs": -1,
+        "etag": "9ae9f2d797365ba583cd6402e8fdb824caef8303",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://greatlakesinvasives.org/portal/webservices/dwc/rss.xml",
+          "name": "Aquatic Invasives Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ebee146b-879b-4d51-8cb9-7e2c634a2d44",
+          "idigbio:etag": "9ae9f2d797365ba583cd6402e8fdb824caef8303",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-10-26T08:43:51.063092",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-10-26T08:43:51.063092+00:00",
+        "name": "aquatic invasives darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+      "type": "publishers",
+      "etag": "b610f1c6997842a2726e03c208c36825d1737f79",
+      "data": {
+        "rss_url": "https://ipt.gbif.no/rss.do",
+        "name": "gbif.no",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+        "dqs": -1,
+        "etag": "b610f1c6997842a2726e03c208c36825d1737f79",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ipt.gbif.no/rss.do",
+          "name": "gbif.no",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "fe1636ab-bdc4-4b23-a104-294e9e7c3bfa",
+          "idigbio:etag": "b610f1c6997842a2726e03c208c36825d1737f79",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2020-11-26T12:32:11.115611",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2020-11-26T12:32:11.115611+00:00",
+        "name": "gbif.no"
+      }
+    },
+    {
+      "uuid": "d6f2c1d5-77d4-4ea5-98e8-e2e7ecc7aa93",
+      "type": "publishers",
+      "etag": "8c9d6c6ad089293bb923ba78f65ba94e9f9e41b1",
+      "data": {
+        "rss_url": "http://ipt.nhm.ku.edu/rss.do",
+        "name": "KU Biodiversity Institute IPT",
+        "auto_publish": false,
+        "base_url": "http://ipt.nhm.ku.edu/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "d6f2c1d5-77d4-4ea5-98e8-e2e7ecc7aa93",
+        "dqs": -1,
+        "etag": "8c9d6c6ad089293bb923ba78f65ba94e9f9e41b1",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.nhm.ku.edu/rss.do",
+          "name": "KU Biodiversity Institute IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "d6f2c1d5-77d4-4ea5-98e8-e2e7ecc7aa93",
+          "idigbio:etag": "8c9d6c6ad089293bb923ba78f65ba94e9f9e41b1",
+          "base_url": "http://ipt.nhm.ku.edu/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.nhm.ku.edu/ipt/",
+            "http://ipt.nhm.ku.edu/ipt/rss.do",
+            "http://ipt.nhm.ku.edu:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2022-12-20T00:25:14.606506",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.nhm.ku.edu/ipt/",
+          "http://ipt.nhm.ku.edu/ipt/rss.do",
+          "http://ipt.nhm.ku.edu:8080/ipt/rss.do"
+        ],
+        "datemodified": "2022-12-20T00:25:14.606506+00:00",
+        "name": "ku biodiversity institute ipt"
+      }
+    },
+    {
+      "uuid": "a8dbdab2-4e17-47d4-b051-d37552bf2396",
+      "type": "publishers",
+      "etag": "a20b6e16c64d08104bc5efbfccfb5b5246419b6f",
+      "data": {
+        "rss_url": "https://ipt.huh.harvard.edu/ipt/rss.do",
+        "name": "Harvard University Herbaria IPT installation",
+        "auto_publish": false,
+        "base_url": "http://firuta.huh.harvard.edu/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "a8dbdab2-4e17-47d4-b051-d37552bf2396",
+        "dqs": -1,
+        "etag": "a20b6e16c64d08104bc5efbfccfb5b5246419b6f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ipt.huh.harvard.edu/ipt/rss.do",
+          "name": "Harvard University Herbaria IPT installation",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "a8dbdab2-4e17-47d4-b051-d37552bf2396",
+          "idigbio:etag": "a20b6e16c64d08104bc5efbfccfb5b5246419b6f",
+          "base_url": "http://firuta.huh.harvard.edu/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://firuta.huh.harvard.edu/ipt/rss.do",
+            "http://firuta.huh.harvard.edu/ipt/",
+            "https://ipt.huh.harvard.edu/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2019-08-28T20:39:44.951329",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://firuta.huh.harvard.edu/ipt/rss.do",
+          "http://firuta.huh.harvard.edu/ipt/",
+          "https://ipt.huh.harvard.edu/ipt/rss.do"
+        ],
+        "datemodified": "2019-08-28T20:39:44.951329+00:00",
+        "name": "harvard university herbaria ipt installation"
+      }
+    },
+    {
+      "uuid": "b8a7e87d-df2a-44f3-bd62-545d8443bad8",
+      "type": "publishers",
+      "etag": "c8c0e2578f96159878793299a19333f045d7184f",
+      "data": {
+        "rss_url": "https://nansh.org/portal/content/dwca/rss.xml",
+        "name": "North American Network of Small Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://nansh.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "b8a7e87d-df2a-44f3-bd62-545d8443bad8",
+        "dqs": -1,
+        "etag": "c8c0e2578f96159878793299a19333f045d7184f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://nansh.org/portal/content/dwca/rss.xml",
+          "name": "North American Network of Small Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "b8a7e87d-df2a-44f3-bd62-545d8443bad8",
+          "idigbio:etag": "c8c0e2578f96159878793299a19333f045d7184f",
+          "base_url": "http://nansh.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://nansh.org/portal/",
+            "http://nansh.org/portal/webservices/dwc/rss.xml"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:36.953348",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://nansh.org/portal/",
+          "http://nansh.org/portal/webservices/dwc/rss.xml"
+        ],
+        "datemodified": "2022-12-06T02:46:36.953348+00:00",
+        "name": "north american network of small herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "b6bd1367-180a-4a50-b86a-ae6f89c59f90",
+      "type": "publishers",
+      "etag": "3c686feb66ecc81f01947e81b8e0d38088377c0c",
+      "data": {
+        "rss_url": "http://gbifdata.eeb.uconn.edu:7001/ipt/rss.do",
+        "name": "The University of Connecticut Biological Collections",
+        "auto_publish": false,
+        "base_url": "http://gbifdata.eeb.uconn.edu:7001/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "b6bd1367-180a-4a50-b86a-ae6f89c59f90",
+        "dqs": -1,
+        "etag": "3c686feb66ecc81f01947e81b8e0d38088377c0c",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://gbifdata.eeb.uconn.edu:7001/ipt/rss.do",
+          "name": "The University of Connecticut Biological Collections",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "b6bd1367-180a-4a50-b86a-ae6f89c59f90",
+          "idigbio:etag": "3c686feb66ecc81f01947e81b8e0d38088377c0c",
+          "base_url": "http://gbifdata.eeb.uconn.edu:7001/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://gbifdata.eeb.uconn.edu:7001/ipt/",
+            "http://gbifdata.eeb.uconn.edu:7001/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:42.571021",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://gbifdata.eeb.uconn.edu:7001/ipt/",
+          "http://gbifdata.eeb.uconn.edu:7001/ipt/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:12:42.571021+00:00",
+        "name": "the university of connecticut biological collections"
+      }
+    },
+    {
+      "uuid": "e84b1163-233d-4e46-9eb8-aa2d0d3ff7d8",
+      "type": "publishers",
+      "etag": "7dc56324e1adf8b72083dba5b62f30b5a897f12f",
+      "data": {
+        "rss_url": "http://sweetgum.nybg.org:8080/ipt/rss.do",
+        "name": "The New York Botanical Garden Herbarium",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "e84b1163-233d-4e46-9eb8-aa2d0d3ff7d8",
+        "dqs": -1,
+        "etag": "7dc56324e1adf8b72083dba5b62f30b5a897f12f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://sweetgum.nybg.org:8080/ipt/rss.do",
+          "name": "The New York Botanical Garden Herbarium",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "e84b1163-233d-4e46-9eb8-aa2d0d3ff7d8",
+          "idigbio:etag": "7dc56324e1adf8b72083dba5b62f30b5a897f12f",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2015-07-22T11:42:50.496907",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2015-07-22T11:42:50.496907+00:00",
+        "name": "the new york botanical garden herbarium"
+      }
+    },
+    {
+      "uuid": "1d4ad186-9398-4b2f-8ff6-45a7cfeec616",
+      "type": "publishers",
+      "etag": "d7a8b75cce3eddf65ceb766da849dcea0355098a",
+      "data": {
+        "rss_url": "http://ipt.nature.ca/rss.do",
+        "name": "Canadian Museum of Nature",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "1d4ad186-9398-4b2f-8ff6-45a7cfeec616",
+        "dqs": -1,
+        "etag": "d7a8b75cce3eddf65ceb766da849dcea0355098a",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.nature.ca/rss.do",
+          "name": "Canadian Museum of Nature",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "1d4ad186-9398-4b2f-8ff6-45a7cfeec616",
+          "idigbio:etag": "d7a8b75cce3eddf65ceb766da849dcea0355098a",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2018-03-01T14:59:51.447517",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2018-03-01T14:59:51.447517+00:00",
+        "name": "canadian museum of nature"
+      }
+    },
+    {
+      "uuid": "31ce49ec-c69a-46b3-9260-b694a643769e",
+      "type": "publishers",
+      "etag": "064f80f2462242fffe220235f66cd8bc4cb68ef7",
+      "data": {
+        "rss_url": "https://herbanwmex.net/portal/content/dwca/rss.xml",
+        "name": "Flora del noroeste dé Mexico Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "31ce49ec-c69a-46b3-9260-b694a643769e",
+        "dqs": -1,
+        "etag": "064f80f2462242fffe220235f66cd8bc4cb68ef7",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://herbanwmex.net/portal/content/dwca/rss.xml",
+          "name": "Flora del noroeste dé Mexico Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "31ce49ec-c69a-46b3-9260-b694a643769e",
+          "idigbio:etag": "064f80f2462242fffe220235f66cd8bc4cb68ef7",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T02:46:36.707784",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T02:46:36.707784+00:00",
+        "name": "flora del noroeste dé mexico darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "4233dd84-4adf-4fa6-8eb6-153f8bc77a61",
+      "type": "publishers",
+      "etag": "db9a393018c34d0f933369d64fb6456d53a33083",
+      "data": {
+        "rss_url": "http://www.invertebase.org/portal/webservices/dwc/rss.xml",
+        "name": "InvertEBase Data Portal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "4233dd84-4adf-4fa6-8eb6-153f8bc77a61",
+        "dqs": -1,
+        "etag": "db9a393018c34d0f933369d64fb6456d53a33083",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://www.invertebase.org/portal/webservices/dwc/rss.xml",
+          "name": "InvertEBase Data Portal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "4233dd84-4adf-4fa6-8eb6-153f8bc77a61",
+          "idigbio:etag": "db9a393018c34d0f933369d64fb6456d53a33083",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-10-12T15:33:25.956202",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-10-12T15:33:25.956202+00:00",
+        "name": "invertebase data portal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "d347ee15-f16e-4650-930c-4e54d9ce549e",
+      "type": "publishers",
+      "etag": "f7f11a4850dd236389295de294c4d7b598c4c587",
+      "data": {
+        "rss_url": "http://digir.mcz.harvard.edu/ipt/rss.do",
+        "name": "Museum of Comparative Zoology, Harvard University",
+        "auto_publish": false,
+        "base_url": "http://digir.mcz.harvard.edu/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "d347ee15-f16e-4650-930c-4e54d9ce549e",
+        "dqs": -1,
+        "etag": "f7f11a4850dd236389295de294c4d7b598c4c587",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://digir.mcz.harvard.edu/ipt/rss.do",
+          "name": "Museum of Comparative Zoology, Harvard University",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "d347ee15-f16e-4650-930c-4e54d9ce549e",
+          "idigbio:etag": "f7f11a4850dd236389295de294c4d7b598c4c587",
+          "base_url": "http://digir.mcz.harvard.edu/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://digir.mcz.harvard.edu/ipt/rss.do",
+            "http://digir.mcz.harvard.edu/ipt/"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:42.911246",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://digir.mcz.harvard.edu/ipt/rss.do",
+          "http://digir.mcz.harvard.edu/ipt/"
+        ],
+        "datemodified": "2015-07-15T13:12:42.911246+00:00",
+        "name": "museum of comparative zoology, harvard university"
+      }
+    },
+    {
+      "uuid": "ec58fca2-5760-4dcf-8943-130a5af5f1fe",
+      "type": "publishers",
+      "etag": "f6e4e232e5a05fbd0f00eb1f3e0f78eb3076d50d",
+      "data": {
+        "rss_url": "http://ipt.sibbr.gov.br/taxonline/rss.do",
+        "name": "IPT Taxonline - Rede Paranaense de Coleções Biológicas",
+        "auto_publish": false,
+        "base_url": "http://ipt.sibbr.gov.br/taxonline/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ec58fca2-5760-4dcf-8943-130a5af5f1fe",
+        "dqs": -1,
+        "etag": "f6e4e232e5a05fbd0f00eb1f3e0f78eb3076d50d",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.sibbr.gov.br/taxonline/rss.do",
+          "name": "IPT Taxonline - Rede Paranaense de Coleções Biológicas",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ec58fca2-5760-4dcf-8943-130a5af5f1fe",
+          "idigbio:etag": "f6e4e232e5a05fbd0f00eb1f3e0f78eb3076d50d",
+          "base_url": "http://ipt.sibbr.gov.br/taxonline/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.sibbr.gov.br/taxonline/",
+            "http://ipt.sibbr.gov.br/taxonline/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:34:49.191590",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.sibbr.gov.br/taxonline/",
+          "http://ipt.sibbr.gov.br/taxonline/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:34:49.191590+00:00",
+        "name": "ipt taxonline - rede paranaense de coleções biológicas"
+      }
+    },
+    {
+      "uuid": "a981b6a8-c40a-47ad-90e6-ba7be8aec9a1",
+      "type": "publishers",
+      "etag": "c8a50ee983b6c616797ac623fc909ea5c9ba4a0c",
+      "data": {
+        "rss_url": "https://iptmuse.colorado.edu/rss.do",
+        "name": "CU Museum of Natural History IPT",
+        "auto_publish": false,
+        "base_url": "http://iptmuse.colorado.edu:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "a981b6a8-c40a-47ad-90e6-ba7be8aec9a1",
+        "dqs": -1,
+        "etag": "c8a50ee983b6c616797ac623fc909ea5c9ba4a0c",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://iptmuse.colorado.edu/rss.do",
+          "name": "CU Museum of Natural History IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "a981b6a8-c40a-47ad-90e6-ba7be8aec9a1",
+          "idigbio:etag": "c8a50ee983b6c616797ac623fc909ea5c9ba4a0c",
+          "base_url": "http://iptmuse.colorado.edu:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://iptmuse.colorado.edu:8080/ipt/",
+            "http://iptmuse.colorado.edu:8080/ipt/rss.do",
+            "https://iptmuse.colorado.edu/rss.do"
+          ],
+          "idigbio:dateModified": "2019-08-07T22:05:52.915535",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://iptmuse.colorado.edu:8080/ipt/",
+          "http://iptmuse.colorado.edu:8080/ipt/rss.do",
+          "https://iptmuse.colorado.edu/rss.do"
+        ],
+        "datemodified": "2019-08-07T22:05:52.915535+00:00",
+        "name": "cu museum of natural history ipt"
+      }
+    },
+    {
+      "uuid": "42a9a35e-bd8f-4918-ac71-6ff0b4236ab6",
+      "type": "publishers",
+      "etag": "c4ff90421e3d3b7c273149731c6781cbbf15d3b8",
+      "data": {
+        "rss_url": "http://gbif.rom.on.ca:8180/ipt/rss.do",
+        "name": "Vertebrate and Invertebrate Collections of the Royal Ontario Museum",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "42a9a35e-bd8f-4918-ac71-6ff0b4236ab6",
+        "dqs": -1,
+        "etag": "c4ff90421e3d3b7c273149731c6781cbbf15d3b8",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://gbif.rom.on.ca:8180/ipt/rss.do",
+          "name": "Vertebrate and Invertebrate Collections of the Royal Ontario Museum",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "42a9a35e-bd8f-4918-ac71-6ff0b4236ab6",
+          "idigbio:etag": "c4ff90421e3d3b7c273149731c6781cbbf15d3b8",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-05-18T13:20:43.161563",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-05-18T13:20:43.161563+00:00",
+        "name": "vertebrate and invertebrate collections of the royal ontario museum"
+      }
+    },
+    {
+      "uuid": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+      "type": "publishers",
+      "etag": "653f9019eb235379700aa47ded5909ae3271b8d3",
+      "data": {
+        "rss_url": "https://lichenportal.org/cnalh/content/dwca/rss.xml",
+        "name": "CNALH Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://lichenportal.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+        "dqs": -1,
+        "etag": "653f9019eb235379700aa47ded5909ae3271b8d3",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://lichenportal.org/cnalh/content/dwca/rss.xml",
+          "name": "CNALH Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "idigbio:etag": "653f9019eb235379700aa47ded5909ae3271b8d3",
+          "base_url": "http://lichenportal.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://lichenportal.org/portal/webservices/dwc/rss.xml",
+            "http://lichenportal.org/portal/"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:15.972814",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://lichenportal.org/portal/webservices/dwc/rss.xml",
+          "http://lichenportal.org/portal/"
+        ],
+        "datemodified": "2022-12-06T02:46:15.972814+00:00",
+        "name": "cnalh darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+      "type": "publishers",
+      "etag": "671e6f2700d60b10036f148663fb38c320c66719",
+      "data": {
+        "rss_url": "http://feeder.idigbio.org/rss.php",
+        "name": "iDigBio Feeder RSS Feed",
+        "auto_publish": false,
+        "base_url": "http://feeder.idigbio.org/",
+        "publisher_type": "feeder",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+        "dqs": -1,
+        "etag": "671e6f2700d60b10036f148663fb38c320c66719",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://feeder.idigbio.org/rss.php",
+          "name": "iDigBio Feeder RSS Feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "idigbio:etag": "671e6f2700d60b10036f148663fb38c320c66719",
+          "base_url": "http://feeder.idigbio.org/",
+          "auto_publish": false,
+          "publisher_type": "feeder",
+          "idigbio:recordIds": [
+            "http://feeder.idigbio.org/",
+            "http://feeder.idigbio.org/rss.php"
+          ],
+          "idigbio:dateModified": "2017-02-13T09:32:19.300926",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://feeder.idigbio.org/",
+          "http://feeder.idigbio.org/rss.php"
+        ],
+        "datemodified": "2017-02-13T09:32:19.300926+00:00",
+        "name": "idigbio feeder rss feed"
+      }
+    },
+    {
+      "uuid": "438d109c-983d-4c32-be8c-05946efffb79",
+      "type": "publishers",
+      "etag": "fde15a43ec3e5b2a4b4ba226e50e7b9a7bc08370",
+      "data": {
+        "rss_url": "http://web.macs.ualberta.ca:8088/ipt/rss.do",
+        "name": "University of Alberta Museums IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "438d109c-983d-4c32-be8c-05946efffb79",
+        "dqs": -1,
+        "etag": "fde15a43ec3e5b2a4b4ba226e50e7b9a7bc08370",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://web.macs.ualberta.ca:8088/ipt/rss.do",
+          "name": "University of Alberta Museums IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "438d109c-983d-4c32-be8c-05946efffb79",
+          "idigbio:etag": "fde15a43ec3e5b2a4b4ba226e50e7b9a7bc08370",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2015-08-03T15:00:05.605884",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2015-08-03T15:00:05.605884+00:00",
+        "name": "university of alberta museums ipt"
+      }
+    },
+    {
+      "uuid": "b6ea1a04-03d2-4d79-a51b-989a658b57f9",
+      "type": "publishers",
+      "etag": "1bb3e6ce2fe24f52862bfa788eca68526cc9f279",
+      "data": {
+        "rss_url": "http://symbiota4.acis.ufl.edu/seinet/rockymt/portal/webservices/dwc/rss.xml",
+        "name": "Consortium of Rocky Mountain Regional Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "b6ea1a04-03d2-4d79-a51b-989a658b57f9",
+        "dqs": -1,
+        "etag": "1bb3e6ce2fe24f52862bfa788eca68526cc9f279",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://symbiota4.acis.ufl.edu/seinet/rockymt/portal/webservices/dwc/rss.xml",
+          "name": "Consortium of Rocky Mountain Regional Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "b6ea1a04-03d2-4d79-a51b-989a658b57f9",
+          "idigbio:etag": "1bb3e6ce2fe24f52862bfa788eca68526cc9f279",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-09-18T14:02:13.108486",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-09-18T14:02:13.108486+00:00",
+        "name": "consortium of rocky mountain regional herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "4fd1efcb-1528-4236-95cf-8419dcca7f4e",
+      "type": "publishers",
+      "etag": "8b9614e2252e910930472327151db23100ceacdd",
+      "data": {
+        "rss_url": "http://ipt.saiab.ac.za/rss.do",
+        "name": "SAIAB",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "4fd1efcb-1528-4236-95cf-8419dcca7f4e",
+        "dqs": -1,
+        "etag": "8b9614e2252e910930472327151db23100ceacdd",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.saiab.ac.za/rss.do",
+          "name": "SAIAB",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "4fd1efcb-1528-4236-95cf-8419dcca7f4e",
+          "idigbio:etag": "8b9614e2252e910930472327151db23100ceacdd",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-08-10T15:55:16.808807",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-08-10T15:55:16.808807+00:00",
+        "name": "saiab"
+      }
+    },
+    {
+      "uuid": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+      "type": "publishers",
+      "etag": "44f6dc472e02ce6c4ee06c06edfa5b20eb50c462",
+      "data": {
+        "rss_url": "http://www.gbif.se/ipt/rss.do",
+        "name": "IPT GBIF-Sweden",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+        "dqs": -1,
+        "etag": "44f6dc472e02ce6c4ee06c06edfa5b20eb50c462",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://www.gbif.se/ipt/rss.do",
+          "name": "IPT GBIF-Sweden",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+          "idigbio:etag": "44f6dc472e02ce6c4ee06c06edfa5b20eb50c462",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-02-17T14:28:00.248765",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-02-17T14:28:00.248765+00:00",
+        "name": "ipt gbif-sweden"
+      }
+    },
+    {
+      "uuid": "26281097-694b-483d-ae22-676a2a448bf1",
+      "type": "publishers",
+      "etag": "fc5f458ee4cd595686e72409d8f3f3364ebac23b",
+      "data": {
+        "rss_url": "http://danbif.au.dk/ipt/rss.do",
+        "name": "DanBIF IPT at Aarhus University",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "26281097-694b-483d-ae22-676a2a448bf1",
+        "dqs": -1,
+        "etag": "fc5f458ee4cd595686e72409d8f3f3364ebac23b",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://danbif.au.dk/ipt/rss.do",
+          "name": "DanBIF IPT at Aarhus University",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "26281097-694b-483d-ae22-676a2a448bf1",
+          "idigbio:etag": "fc5f458ee4cd595686e72409d8f3f3364ebac23b",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-04-27T14:41:22.499919",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-04-27T14:41:22.499919+00:00",
+        "name": "danbif ipt at aarhus university"
+      }
+    },
+    {
+      "uuid": "0eda6761-248e-4329-8339-680fced79353",
+      "type": "publishers",
+      "etag": "e02c113257b0eb84e3541c38fc8d27a7e80f87b0",
+      "data": {
+        "rss_url": "https://ipt.ltrr.arizona.edu/ipt/rss.do",
+        "name": "Laboratory of Tree-Ring Research",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "0eda6761-248e-4329-8339-680fced79353",
+        "dqs": -1,
+        "etag": "e02c113257b0eb84e3541c38fc8d27a7e80f87b0",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ipt.ltrr.arizona.edu/ipt/rss.do",
+          "name": "Laboratory of Tree-Ring Research",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "0eda6761-248e-4329-8339-680fced79353",
+          "idigbio:etag": "e02c113257b0eb84e3541c38fc8d27a7e80f87b0",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T03:25:30.466867",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T03:25:30.466867+00:00",
+        "name": "laboratory of tree-ring research"
+      }
+    },
+    {
+      "uuid": "47dc2b5f-2c3f-485c-a9dd-e1ba77d88551",
+      "type": "publishers",
+      "etag": "923ec2680c66cf77cd0374f685797bfac6f2c55a",
+      "data": {
+        "rss_url": "http://ipt.gbif.fr/rss.do",
+        "name": "IPT GBIF France",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "47dc2b5f-2c3f-485c-a9dd-e1ba77d88551",
+        "dqs": -1,
+        "etag": "923ec2680c66cf77cd0374f685797bfac6f2c55a",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.gbif.fr/rss.do",
+          "name": "IPT GBIF France",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "47dc2b5f-2c3f-485c-a9dd-e1ba77d88551",
+          "idigbio:etag": "923ec2680c66cf77cd0374f685797bfac6f2c55a",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-02-17T14:33:30.412734",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-02-17T14:33:30.412734+00:00",
+        "name": "ipt gbif france"
+      }
+    },
+    {
+      "uuid": "e699547d-080e-431a-8d9b-3d56e39808f0",
+      "type": "publishers",
+      "etag": "6a9ab61e33c7dd141a69376906e69995a6223b77",
+      "data": {
+        "rss_url": "http://ipt.vertnet.org:8080/iptstrays/rss.do",
+        "name": "http://ipt.vertnet.org:8080/iptstrays/rss.do",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "e699547d-080e-431a-8d9b-3d56e39808f0",
+        "dqs": -1,
+        "etag": "6a9ab61e33c7dd141a69376906e69995a6223b77",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.vertnet.org:8080/iptstrays/rss.do",
+          "name": "http://ipt.vertnet.org:8080/iptstrays/rss.do",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "e699547d-080e-431a-8d9b-3d56e39808f0",
+          "idigbio:etag": "6a9ab61e33c7dd141a69376906e69995a6223b77",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-03-03T01:15:26.914748",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-03-03T01:15:26.914748+00:00",
+        "name": "http://ipt.vertnet.org:8080/iptstrays/rss.do"
+      }
+    },
+    {
+      "uuid": "0e8eb850-aa63-4a4d-b0b7-2ec820ef808f",
+      "type": "publishers",
+      "etag": "0414d576b8b55f6db0ae07487e20ae73eb19beb8",
+      "data": {
+        "rss_url": "https://serv.biokic.asu.edu/ecdysis/content/dwca/rss.xml",
+        "name": "Ecdysis Portal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "0e8eb850-aa63-4a4d-b0b7-2ec820ef808f",
+        "dqs": -1,
+        "etag": "0414d576b8b55f6db0ae07487e20ae73eb19beb8",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://serv.biokic.asu.edu/ecdysis/content/dwca/rss.xml",
+          "name": "Ecdysis Portal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "0e8eb850-aa63-4a4d-b0b7-2ec820ef808f",
+          "idigbio:etag": "0414d576b8b55f6db0ae07487e20ae73eb19beb8",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-06-02T00:16:41.062960",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-06-02T00:16:41.062960+00:00",
+        "name": "ecdysis portal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "2daea127-0e40-4756-9762-cdaf0bd78166",
+      "type": "publishers",
+      "etag": "f1d9008de565e84397efd8552260082901992235",
+      "data": {
+        "rss_url": "https://intermountainbiota.org/portal/content/dwca/rss.xml",
+        "name": "Consortium of Intermountain Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://intermountainbiota.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "2daea127-0e40-4756-9762-cdaf0bd78166",
+        "dqs": -1,
+        "etag": "f1d9008de565e84397efd8552260082901992235",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://intermountainbiota.org/portal/content/dwca/rss.xml",
+          "name": "Consortium of Intermountain Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "2daea127-0e40-4756-9762-cdaf0bd78166",
+          "idigbio:etag": "f1d9008de565e84397efd8552260082901992235",
+          "base_url": "http://intermountainbiota.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://intermountainbiota.org/portal/webservices/dwc/rss.xml",
+            "http://intermountainbiota.org/portal/"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:45:47.579060",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://intermountainbiota.org/portal/webservices/dwc/rss.xml",
+          "http://intermountainbiota.org/portal/"
+        ],
+        "datemodified": "2022-12-06T02:45:47.579060+00:00",
+        "name": "consortium of intermountain herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "32069b11-a9d2-42e2-aa9c-b16350444909",
+      "type": "publishers",
+      "etag": "a9bf7d1e276527be53b726524bdf8f683140854a",
+      "data": {
+        "rss_url": "http://collections.nmnh.si.edu/ipt/rss.do",
+        "name": "NMNH IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "32069b11-a9d2-42e2-aa9c-b16350444909",
+        "dqs": -1,
+        "etag": "a9bf7d1e276527be53b726524bdf8f683140854a",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://collections.nmnh.si.edu/ipt/rss.do",
+          "name": "NMNH IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "32069b11-a9d2-42e2-aa9c-b16350444909",
+          "idigbio:etag": "a9bf7d1e276527be53b726524bdf8f683140854a",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-09-21T14:21:21.078741",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-09-21T14:21:21.078741+00:00",
+        "name": "nmnh ipt"
+      }
+    },
+    {
+      "uuid": "9e194ea0-3f13-4e6b-bd9c-a060491788a9",
+      "type": "publishers",
+      "etag": "5a07d4e7f04c3ccde4e71f6ef86bc0de571b94d0",
+      "data": {
+        "rss_url": "http://biomna.org/webservices/dwc/rss.xml",
+        "name": "Invertebrate Collections of the Museum of Northern Arizona Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "9e194ea0-3f13-4e6b-bd9c-a060491788a9",
+        "dqs": -1,
+        "etag": "5a07d4e7f04c3ccde4e71f6ef86bc0de571b94d0",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://biomna.org/webservices/dwc/rss.xml",
+          "name": "Invertebrate Collections of the Museum of Northern Arizona Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "9e194ea0-3f13-4e6b-bd9c-a060491788a9",
+          "idigbio:etag": "5a07d4e7f04c3ccde4e71f6ef86bc0de571b94d0",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2021-03-02T12:13:31.159906",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2021-03-02T12:13:31.159906+00:00",
+        "name": "invertebrate collections of the museum of northern arizona darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "5b01427d-dbc3-4dd9-933a-f0a46e9dbfb1",
+      "type": "publishers",
+      "etag": "60dc2878bea908bead3dc3874950504c8446fbbd",
+      "data": {
+        "rss_url": "http://tomwmdipt.uits.uconn.edu:8080/ipt-2.3.2/rss.do",
+        "name": "Army Ant Guest Collection",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "5b01427d-dbc3-4dd9-933a-f0a46e9dbfb1",
+        "dqs": -1,
+        "etag": "60dc2878bea908bead3dc3874950504c8446fbbd",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://tomwmdipt.uits.uconn.edu:8080/ipt-2.3.2/rss.do",
+          "name": "Army Ant Guest Collection",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "5b01427d-dbc3-4dd9-933a-f0a46e9dbfb1",
+          "idigbio:etag": "60dc2878bea908bead3dc3874950504c8446fbbd",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2020-08-22T20:28:27.956217",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2020-08-22T20:28:27.956217+00:00",
+        "name": "army ant guest collection"
+      }
+    },
+    {
+      "uuid": "9435f136-4f29-494d-b252-0e153364b093",
+      "type": "publishers",
+      "etag": "a33efcd86f0b069be3c07f40315c2efd74f911c2",
+      "data": {
+        "rss_url": "http://dmitriev.speciesfile.org/Export/rss.xml",
+        "name": "INHS Insect collection RSS Feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "9435f136-4f29-494d-b252-0e153364b093",
+        "dqs": -1,
+        "etag": "a33efcd86f0b069be3c07f40315c2efd74f911c2",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://dmitriev.speciesfile.org/Export/rss.xml",
+          "name": "INHS Insect collection RSS Feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "9435f136-4f29-494d-b252-0e153364b093",
+          "idigbio:etag": "a33efcd86f0b069be3c07f40315c2efd74f911c2",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2015-09-25T09:42:54.919847",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2015-09-25T09:42:54.919847+00:00",
+        "name": "inhs insect collection rss feed"
+      }
+    },
+    {
+      "uuid": "f5d3fd0c-f0cd-461b-86e8-89d159364dc1",
+      "type": "publishers",
+      "etag": "0537fde405eaef7e6a86355c7b8b6282a89ac793",
+      "data": {
+        "rss_url": "http://biocoll.inhs.illinois.edu/portal/webservices/dwc/rss.xml",
+        "name": "INHS collections data Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "f5d3fd0c-f0cd-461b-86e8-89d159364dc1",
+        "dqs": -1,
+        "etag": "0537fde405eaef7e6a86355c7b8b6282a89ac793",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://biocoll.inhs.illinois.edu/portal/webservices/dwc/rss.xml",
+          "name": "INHS collections data Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "f5d3fd0c-f0cd-461b-86e8-89d159364dc1",
+          "idigbio:etag": "0537fde405eaef7e6a86355c7b8b6282a89ac793",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2015-12-14T15:52:07.631755",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2015-12-14T15:52:07.631755+00:00",
+        "name": "inhs collections data darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
+      "type": "publishers",
+      "etag": "e6522de76c27b79f83babfd316c201a588047698",
+      "data": {
+        "rss_url": "https://csvcoll.org/portal/content/dwca/rss.xml",
+        "name": "Small Collections - Vertebrates Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
+        "dqs": -1,
+        "etag": "e6522de76c27b79f83babfd316c201a588047698",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://csvcoll.org/portal/content/dwca/rss.xml",
+          "name": "Small Collections - Vertebrates Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
+          "idigbio:etag": "e6522de76c27b79f83babfd316c201a588047698",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T02:46:01.597667",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T02:46:01.597667+00:00",
+        "name": "small collections - vertebrates darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+      "type": "publishers",
+      "etag": "682dd03070a5f73270eadb2714cf672cbaf1e157",
+      "data": {
+        "rss_url": "http://data.canadensys.net/ipt/rss.do",
+        "name": "Canadensys repository",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+        "dqs": -1,
+        "etag": "682dd03070a5f73270eadb2714cf672cbaf1e157",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://data.canadensys.net/ipt/rss.do",
+          "name": "Canadensys repository",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "36b3c4ad-dc51-4946-8f6d-4ac88b76657a",
+          "idigbio:etag": "682dd03070a5f73270eadb2714cf672cbaf1e157",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-01-11T15:36:47.410430",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-01-11T15:36:47.410430+00:00",
+        "name": "canadensys repository"
+      }
+    },
+    {
+      "uuid": "9c59cefc-4a78-4601-a452-830bc1fba3ae",
+      "type": "publishers",
+      "etag": "e502541588a418022ed4a863c2b87f98d450da1e",
+      "data": {
+        "rss_url": "https://vimsfish.specifycloud.org/export/rss/",
+        "name": "VIMS Ichthyology RSS Feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "9c59cefc-4a78-4601-a452-830bc1fba3ae",
+        "dqs": -1,
+        "etag": "e502541588a418022ed4a863c2b87f98d450da1e",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://vimsfish.specifycloud.org/export/rss/",
+          "name": "VIMS Ichthyology RSS Feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "9c59cefc-4a78-4601-a452-830bc1fba3ae",
+          "idigbio:etag": "e502541588a418022ed4a863c2b87f98d450da1e",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2018-11-05T15:40:17.279301",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2018-11-05T15:40:17.279301+00:00",
+        "name": "vims ichthyology rss feed"
+      }
+    },
+    {
+      "uuid": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+      "type": "publishers",
+      "etag": "aa25740bb1613ff103c1744e4379644d908a57bb",
+      "data": {
+        "rss_url": "https://www.mycoportal.org/portal/collections/datasets/rsshandler.php",
+        "name": "MyCoPortal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://mycoportal.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+        "dqs": -1,
+        "etag": "aa25740bb1613ff103c1744e4379644d908a57bb",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://www.mycoportal.org/portal/collections/datasets/rsshandler.php",
+          "name": "MyCoPortal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+          "idigbio:etag": "aa25740bb1613ff103c1744e4379644d908a57bb",
+          "base_url": "http://mycoportal.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://mycoportal.org/portal/webservices/dwc/rss.xml",
+            "http://mycoportal.org/portal/"
+          ],
+          "idigbio:dateModified": "2022-12-06T03:17:45.637368",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://mycoportal.org/portal/webservices/dwc/rss.xml",
+          "http://mycoportal.org/portal/"
+        ],
+        "datemodified": "2022-12-06T03:17:45.637368+00:00",
+        "name": "mycoportal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "c9c463ca-025d-485c-8014-ed429b92429c",
+      "type": "publishers",
+      "etag": "ce8ec113e2dee656a9bf434a46d555349bb9eba0",
+      "data": {
+        "rss_url": "https://unhcollection.unh.edu/database/webservices/dwc/rss.xml",
+        "name": "Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "c9c463ca-025d-485c-8014-ed429b92429c",
+        "dqs": -1,
+        "etag": "ce8ec113e2dee656a9bf434a46d555349bb9eba0",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://unhcollection.unh.edu/database/webservices/dwc/rss.xml",
+          "name": "Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "c9c463ca-025d-485c-8014-ed429b92429c",
+          "idigbio:etag": "ce8ec113e2dee656a9bf434a46d555349bb9eba0",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-03-03T01:16:17.939852",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-03-03T01:16:17.939852+00:00",
+        "name": "darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "51290816-f682-4e38-a06c-03bf5df2442d",
+      "type": "publishers",
+      "etag": "b8190538cbdb18517a592f93515db474da2be2e5",
+      "data": {
+        "rss_url": "https://www.morphosource.org/rss/ms_rss.xml",
+        "name": "MorphoSource RSS feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "51290816-f682-4e38-a06c-03bf5df2442d",
+        "dqs": -1,
+        "etag": "b8190538cbdb18517a592f93515db474da2be2e5",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://www.morphosource.org/rss/ms_rss.xml",
+          "name": "MorphoSource RSS feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "51290816-f682-4e38-a06c-03bf5df2442d",
+          "idigbio:etag": "b8190538cbdb18517a592f93515db474da2be2e5",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2021-01-22T16:35:07.376007",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2021-01-22T16:35:07.376007+00:00",
+        "name": "morphosource rss feed"
+      }
+    },
+    {
+      "uuid": "24106f87-9af2-4d91-ba05-14aaecce15fc",
+      "type": "publishers",
+      "etag": "cec54d145f39c4bab2bb0b589ebbf4c91362832d",
+      "data": {
+        "rss_url": "http://pontos.fwl.oregonstate.edu:8080/ipt/rss.do",
+        "name": "Oregon State University IPT",
+        "auto_publish": false,
+        "base_url": "http://pontos.fwl.oregonstate.edu:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "24106f87-9af2-4d91-ba05-14aaecce15fc",
+        "dqs": -1,
+        "etag": "cec54d145f39c4bab2bb0b589ebbf4c91362832d",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://pontos.fwl.oregonstate.edu:8080/ipt/rss.do",
+          "name": "Oregon State University IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "24106f87-9af2-4d91-ba05-14aaecce15fc",
+          "idigbio:etag": "cec54d145f39c4bab2bb0b589ebbf4c91362832d",
+          "base_url": "http://pontos.fwl.oregonstate.edu:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://pontos.fwl.oregonstate.edu:8080/ipt/",
+            "http://pontos.fwl.oregonstate.edu:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:27.354076",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://pontos.fwl.oregonstate.edu:8080/ipt/",
+          "http://pontos.fwl.oregonstate.edu:8080/ipt/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:12:27.354076+00:00",
+        "name": "oregon state university ipt"
+      }
+    },
+    {
+      "uuid": "2c98029a-c85a-460d-af23-2fb6d555adee",
+      "type": "publishers",
+      "etag": "54871e8c95f7dabc34c701d53a85fbbd6ed1449f",
+      "data": {
+        "rss_url": "http://www.amnh.begoniasociety.org/dwc/rss.xml",
+        "name": "Arthropod Easy Capture (AMNH)",
+        "auto_publish": false,
+        "base_url": "http://www.amnh.begoniasociety.org/",
+        "publisher_type": "feeder",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "2c98029a-c85a-460d-af23-2fb6d555adee",
+        "dqs": -1,
+        "etag": "54871e8c95f7dabc34c701d53a85fbbd6ed1449f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://www.amnh.begoniasociety.org/dwc/rss.xml",
+          "name": "Arthropod Easy Capture (AMNH)",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "2c98029a-c85a-460d-af23-2fb6d555adee",
+          "idigbio:etag": "54871e8c95f7dabc34c701d53a85fbbd6ed1449f",
+          "base_url": "http://www.amnh.begoniasociety.org/",
+          "auto_publish": false,
+          "publisher_type": "feeder",
+          "idigbio:recordIds": [
+            "http://www.amnh.begoniasociety.org/dwc/rss.xml",
+            "http://www.amnh.begoniasociety.org/",
+            "http://www.amnh.begoniasociety.org/rss.php"
+          ],
+          "idigbio:dateModified": "2015-11-30T10:21:18.576151",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://www.amnh.begoniasociety.org/dwc/rss.xml",
+          "http://www.amnh.begoniasociety.org/",
+          "http://www.amnh.begoniasociety.org/rss.php"
+        ],
+        "datemodified": "2015-11-30T10:21:18.576151+00:00",
+        "name": "arthropod easy capture (amnh)"
+      }
+    },
+    {
+      "uuid": "552a0e1a-4152-43ae-bad6-9314b4234536",
+      "type": "publishers",
+      "etag": "cf03b4bebbaf16c7cbb5efef6073b210b3abbf92",
+      "data": {
+        "rss_url": "http://bnhmipt.berkeley.edu/rss.do",
+        "name": "Berkeley Natural History Museums IPT",
+        "auto_publish": false,
+        "base_url": "http://bnhmipt.berkeley.edu/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "552a0e1a-4152-43ae-bad6-9314b4234536",
+        "dqs": -1,
+        "etag": "cf03b4bebbaf16c7cbb5efef6073b210b3abbf92",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://bnhmipt.berkeley.edu/rss.do",
+          "name": "Berkeley Natural History Museums IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "552a0e1a-4152-43ae-bad6-9314b4234536",
+          "idigbio:etag": "cf03b4bebbaf16c7cbb5efef6073b210b3abbf92",
+          "base_url": "http://bnhmipt.berkeley.edu/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://bnhmipt.berkeley.edu/ipt/",
+            "http://bnhmipt.berkeley.edu/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2021-01-22T16:35:00.061392",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://bnhmipt.berkeley.edu/ipt/",
+          "http://bnhmipt.berkeley.edu/ipt/rss.do"
+        ],
+        "datemodified": "2021-01-22T16:35:00.061392+00:00",
+        "name": "berkeley natural history museums ipt"
+      }
+    },
+    {
+      "uuid": "eaa701aa-2b56-4058-bbe7-c0bea9c1661d",
+      "type": "publishers",
+      "etag": "4d60d90b988d2393c11347f41a0e1a4ba956c7c2",
+      "data": {
+        "rss_url": "http://ipt.mobot.org:8080/ipt/rss.do",
+        "name": "Missouri Botanical Garden",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "eaa701aa-2b56-4058-bbe7-c0bea9c1661d",
+        "dqs": -1,
+        "etag": "4d60d90b988d2393c11347f41a0e1a4ba956c7c2",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.mobot.org:8080/ipt/rss.do",
+          "name": "Missouri Botanical Garden",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "eaa701aa-2b56-4058-bbe7-c0bea9c1661d",
+          "idigbio:etag": "4d60d90b988d2393c11347f41a0e1a4ba956c7c2",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-01-14T15:25:32.502676",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-01-14T15:25:32.502676+00:00",
+        "name": "missouri botanical garden"
+      }
+    },
+    {
+      "uuid": "376fa211-e1b1-436c-937e-316a9d6bbd85",
+      "type": "publishers",
+      "etag": "23e869c9437531fcaca77769dac1069c9fc8e80e",
+      "data": {
+        "rss_url": "http://www.pnwherbaria.org/data/dwca/rss.xml",
+        "name": "PNW Herbaria Darwin Core Archive RSS feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "376fa211-e1b1-436c-937e-316a9d6bbd85",
+        "dqs": -1,
+        "etag": "23e869c9437531fcaca77769dac1069c9fc8e80e",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://www.pnwherbaria.org/data/dwca/rss.xml",
+          "name": "PNW Herbaria Darwin Core Archive RSS feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "376fa211-e1b1-436c-937e-316a9d6bbd85",
+          "idigbio:etag": "23e869c9437531fcaca77769dac1069c9fc8e80e",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-10-13T12:01:38.662344",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-10-13T12:01:38.662344+00:00",
+        "name": "pnw herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "1a3c16b9-e699-439d-9ded-89dbbc84a100",
+      "type": "publishers",
+      "etag": "e1f8e081d70123f7654c557be7db2e319cc4e175",
+      "data": {
+        "rss_url": "http://services.morphbank.net/ipt-2.0.4/rss.do",
+        "name": "Morphbank IPT Feed",
+        "auto_publish": false,
+        "base_url": "http://services.morphbank.net/ipt-2.0.4/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "1a3c16b9-e699-439d-9ded-89dbbc84a100",
+        "dqs": -1,
+        "etag": "e1f8e081d70123f7654c557be7db2e319cc4e175",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://services.morphbank.net/ipt-2.0.4/rss.do",
+          "name": "Morphbank IPT Feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "1a3c16b9-e699-439d-9ded-89dbbc84a100",
+          "idigbio:etag": "e1f8e081d70123f7654c557be7db2e319cc4e175",
+          "base_url": "http://services.morphbank.net/ipt-2.0.4/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://services.morphbank.net/ipt-2.0.4/rss.do",
+            "http://services.morphbank.net/ipt-2.0.4/"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:26.913802",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://services.morphbank.net/ipt-2.0.4/rss.do",
+          "http://services.morphbank.net/ipt-2.0.4/"
+        ],
+        "datemodified": "2015-07-15T13:12:26.913802+00:00",
+        "name": "morphbank ipt feed"
+      }
+    },
+    {
+      "uuid": "3b02104f-2350-4cac-ae7d-bd983a5a540e",
+      "type": "publishers",
+      "etag": "159677714b83edc3efe9a7e274f3fcbd35fef9d6",
+      "data": {
+        "rss_url": "http://data.tubri.org/rss.xml",
+        "name": "TUBRI Data Portal RSS Feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "3b02104f-2350-4cac-ae7d-bd983a5a540e",
+        "dqs": -1,
+        "etag": "159677714b83edc3efe9a7e274f3fcbd35fef9d6",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://data.tubri.org/rss.xml",
+          "name": "TUBRI Data Portal RSS Feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "3b02104f-2350-4cac-ae7d-bd983a5a540e",
+          "idigbio:etag": "159677714b83edc3efe9a7e274f3fcbd35fef9d6",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-01-15T10:57:41.811080",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-01-15T10:57:41.811080+00:00",
+        "name": "tubri data portal rss feed"
+      }
+    },
+    {
+      "uuid": "fcf1b14b-c5ed-4cf7-bddd-b4d42758340d",
+      "type": "publishers",
+      "etag": "6f1f297d4ae846e30dce21b58b6ca378b5a8a0a2",
+      "data": {
+        "rss_url": "https://www.soroherbaria.org/portal/content/dwca/rss.xml",
+        "name": "Southern Rocky Mountain Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "fcf1b14b-c5ed-4cf7-bddd-b4d42758340d",
+        "dqs": -1,
+        "etag": "6f1f297d4ae846e30dce21b58b6ca378b5a8a0a2",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://www.soroherbaria.org/portal/content/dwca/rss.xml",
+          "name": "Southern Rocky Mountain Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "fcf1b14b-c5ed-4cf7-bddd-b4d42758340d",
+          "idigbio:etag": "6f1f297d4ae846e30dce21b58b6ca378b5a8a0a2",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T02:46:21.746951",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T02:46:21.746951+00:00",
+        "name": "southern rocky mountain herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "50ac82da-811d-4440-b1a7-d3a35a8c5f89",
+      "type": "publishers",
+      "etag": "dd25ddb036f2c9616e9cde74fe3c9a45b161bcb1",
+      "data": {
+        "rss_url": "https://fmipt.fieldmuseum.org/ipt/rss.do",
+        "name": "Field Museum of Natural History IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "50ac82da-811d-4440-b1a7-d3a35a8c5f89",
+        "dqs": -1,
+        "etag": "dd25ddb036f2c9616e9cde74fe3c9a45b161bcb1",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://fmipt.fieldmuseum.org/ipt/rss.do",
+          "name": "Field Museum of Natural History IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "50ac82da-811d-4440-b1a7-d3a35a8c5f89",
+          "idigbio:etag": "dd25ddb036f2c9616e9cde74fe3c9a45b161bcb1",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2021-01-22T16:33:48.701351",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2021-01-22T16:33:48.701351+00:00",
+        "name": "field museum of natural history ipt"
+      }
+    },
+    {
+      "uuid": "ce4b086a-5805-4edf-8044-4593f62f4790",
+      "type": "publishers",
+      "etag": "0309427a01ac6df82723fc313bdefdb4b6edf546",
+      "data": {
+        "rss_url": "http://ipt.plantatlas.usf.edu/rss.do",
+        "name": "IPT - Hosted by PlantAtlas.org",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ce4b086a-5805-4edf-8044-4593f62f4790",
+        "dqs": -1,
+        "etag": "0309427a01ac6df82723fc313bdefdb4b6edf546",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.plantatlas.usf.edu/rss.do",
+          "name": "IPT - Hosted by PlantAtlas.org",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ce4b086a-5805-4edf-8044-4593f62f4790",
+          "idigbio:etag": "0309427a01ac6df82723fc313bdefdb4b6edf546",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-06-09T14:29:16.711483",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-06-09T14:29:16.711483+00:00",
+        "name": "ipt - hosted by plantatlas.org"
+      }
+    },
+    {
+      "uuid": "ab5bdf3a-6283-41c7-ac16-9ba46381aa24",
+      "type": "publishers",
+      "etag": "257812a0fdd0219a615a7e97cb860a1acf272ec8",
+      "data": {
+        "rss_url": "https://ipt.idigbio.org/rss.do",
+        "name": "IPT - Hosted by iDigBio",
+        "auto_publish": false,
+        "base_url": "https://ipt.idigbio.org/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ab5bdf3a-6283-41c7-ac16-9ba46381aa24",
+        "dqs": -1,
+        "etag": "257812a0fdd0219a615a7e97cb860a1acf272ec8",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ipt.idigbio.org/rss.do",
+          "name": "IPT - Hosted by iDigBio",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ab5bdf3a-6283-41c7-ac16-9ba46381aa24",
+          "idigbio:etag": "257812a0fdd0219a615a7e97cb860a1acf272ec8",
+          "base_url": "https://ipt.idigbio.org/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "https://ipt.idigbio.org/",
+            "https://ipt.idigbio.org/rss.do"
+          ],
+          "idigbio:dateModified": "2017-04-25T10:26:41.878673",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "https://ipt.idigbio.org/",
+          "https://ipt.idigbio.org/rss.do"
+        ],
+        "datemodified": "2017-04-25T10:26:41.878673+00:00",
+        "name": "ipt - hosted by idigbio"
+      }
+    },
+    {
+      "uuid": "c6114a0f-85cc-4f97-a0cf-3e9662e1dcd6",
+      "type": "publishers",
+      "etag": "0a95ff3eab7fc1bae4cf321764c66ad51e1ff044",
+      "data": {
+        "rss_url": "https://macroalgae.org/portal/content/dwca/rss.xml",
+        "name": "Macroalgal Herbarium Portal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://macroalgae.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "c6114a0f-85cc-4f97-a0cf-3e9662e1dcd6",
+        "dqs": -1,
+        "etag": "0a95ff3eab7fc1bae4cf321764c66ad51e1ff044",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://macroalgae.org/portal/content/dwca/rss.xml",
+          "name": "Macroalgal Herbarium Portal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "c6114a0f-85cc-4f97-a0cf-3e9662e1dcd6",
+          "idigbio:etag": "0a95ff3eab7fc1bae4cf321764c66ad51e1ff044",
+          "base_url": "http://macroalgae.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://macroalgae.org/portal/",
+            "http://macroalgae.org/portal/webservices/dwc/rss.xml"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:22.143227",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://macroalgae.org/portal/",
+          "http://macroalgae.org/portal/webservices/dwc/rss.xml"
+        ],
+        "datemodified": "2022-12-06T02:46:22.143227+00:00",
+        "name": "macroalgal herbarium portal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "d6f2ff48-a362-4406-93ab-fdf7f140253b",
+      "type": "publishers",
+      "etag": "0fa4d2f15e2c75b7d62bcef0c04d887398e32089",
+      "data": {
+        "rss_url": "https://ngpherbaria.org/portal/content/dwca/rss.xml",
+        "name": "Great Plains Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://ngpherbaria.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "d6f2ff48-a362-4406-93ab-fdf7f140253b",
+        "dqs": -1,
+        "etag": "0fa4d2f15e2c75b7d62bcef0c04d887398e32089",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ngpherbaria.org/portal/content/dwca/rss.xml",
+          "name": "Great Plains Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "d6f2ff48-a362-4406-93ab-fdf7f140253b",
+          "idigbio:etag": "0fa4d2f15e2c75b7d62bcef0c04d887398e32089",
+          "base_url": "http://ngpherbaria.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://ngpherbaria.org/portal/",
+            "http://ngpherbaria.org/portal/webservices/dwc/rss.xml"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:10.284039",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ngpherbaria.org/portal/",
+          "http://ngpherbaria.org/portal/webservices/dwc/rss.xml"
+        ],
+        "datemodified": "2022-12-06T02:46:10.284039+00:00",
+        "name": "great plains herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "25b6b373-8115-43ee-9fee-a0e1a7262d7f",
+      "type": "publishers",
+      "etag": "fedc311aaba18d525c0b9dafa1c7fedc7c549551",
+      "data": {
+        "rss_url": "https://midatlanticherbaria.org/portal/content/dwca/rss.xml",
+        "name": "Mid-Atlantic Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "25b6b373-8115-43ee-9fee-a0e1a7262d7f",
+        "dqs": -1,
+        "etag": "fedc311aaba18d525c0b9dafa1c7fedc7c549551",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://midatlanticherbaria.org/portal/content/dwca/rss.xml",
+          "name": "Mid-Atlantic Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "25b6b373-8115-43ee-9fee-a0e1a7262d7f",
+          "idigbio:etag": "fedc311aaba18d525c0b9dafa1c7fedc7c549551",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T02:46:15.472378",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T02:46:15.472378+00:00",
+        "name": "mid-atlantic herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "350857a8-4940-4d02-ad42-49557f8006f1",
+      "type": "publishers",
+      "etag": "a0d89c3d5a61bcf8643441a3c1d9e332acbbf291",
+      "data": {
+        "rss_url": "http://ipt.flmnh.ufl.edu:8080/ipt/rss.do",
+        "name": "Florida Museum of Natural History IPT Service",
+        "auto_publish": false,
+        "base_url": "http://ipt.flmnh.ufl.edu:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "350857a8-4940-4d02-ad42-49557f8006f1",
+        "dqs": -1,
+        "etag": "a0d89c3d5a61bcf8643441a3c1d9e332acbbf291",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.flmnh.ufl.edu:8080/ipt/rss.do",
+          "name": "Florida Museum of Natural History IPT Service",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "350857a8-4940-4d02-ad42-49557f8006f1",
+          "idigbio:etag": "a0d89c3d5a61bcf8643441a3c1d9e332acbbf291",
+          "base_url": "http://ipt.flmnh.ufl.edu:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.flmnh.ufl.edu:8080/ipt/rss.do",
+            "http://ipt.flmnh.ufl.edu:8080/ipt/"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:27.852215",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.flmnh.ufl.edu:8080/ipt/rss.do",
+          "http://ipt.flmnh.ufl.edu:8080/ipt/"
+        ],
+        "datemodified": "2015-07-15T13:12:27.852215+00:00",
+        "name": "florida museum of natural history ipt service"
+      }
+    },
+    {
+      "uuid": "d41a68a7-8012-4f95-a53c-7c934b12049a",
+      "type": "publishers",
+      "etag": "461fd3b2bc3c43bb82248633dd0feceed635b50f",
+      "data": {
+        "rss_url": "http://specify.thomasmore.edu:8080/ipt/rss.do",
+        "name": "Cincinnati Museum Center IPT",
+        "auto_publish": false,
+        "base_url": "http://specify.thomasmore.edu:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "d41a68a7-8012-4f95-a53c-7c934b12049a",
+        "dqs": -1,
+        "etag": "461fd3b2bc3c43bb82248633dd0feceed635b50f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://specify.thomasmore.edu:8080/ipt/rss.do",
+          "name": "Cincinnati Museum Center IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "d41a68a7-8012-4f95-a53c-7c934b12049a",
+          "idigbio:etag": "461fd3b2bc3c43bb82248633dd0feceed635b50f",
+          "base_url": "http://specify.thomasmore.edu:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://specify.thomasmore.edu:8080/ipt/",
+            "http://specify.thomasmore.edu:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-29T11:47:13.732182",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://specify.thomasmore.edu:8080/ipt/",
+          "http://specify.thomasmore.edu:8080/ipt/rss.do"
+        ],
+        "datemodified": "2015-07-29T11:47:13.732182+00:00",
+        "name": "cincinnati museum center ipt"
+      }
+    },
+    {
+      "uuid": "5ee0c6b1-b9f6-4f62-8029-f970eae13200",
+      "type": "publishers",
+      "etag": "e0398f459de511935537ed41fd4d681e7f0eb133",
+      "data": {
+        "rss_url": "https://bison.usgs.gov/ipt/rss.do",
+        "name": "USGS Biodiversity Information Serving Our Nation (BISON) IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "5ee0c6b1-b9f6-4f62-8029-f970eae13200",
+        "dqs": -1,
+        "etag": "e0398f459de511935537ed41fd4d681e7f0eb133",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://bison.usgs.gov/ipt/rss.do",
+          "name": "USGS Biodiversity Information Serving Our Nation (BISON) IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "5ee0c6b1-b9f6-4f62-8029-f970eae13200",
+          "idigbio:etag": "e0398f459de511935537ed41fd4d681e7f0eb133",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2018-03-09T11:12:50.268315",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2018-03-09T11:12:50.268315+00:00",
+        "name": "usgs biodiversity information serving our nation (bison) ipt"
+      }
+    },
+    {
+      "uuid": "5946eff1-b27a-4651-8323-2ab8d62ef328",
+      "type": "publishers",
+      "etag": "a4fabe9a18306f0648dba96d07a6e31b1234919e",
+      "data": {
+        "rss_url": "https://midwestherbaria.org/portal/content/dwca/rss.xml",
+        "name": "Consortium of Midwest Herbaria Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://midwestherbaria.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "5946eff1-b27a-4651-8323-2ab8d62ef328",
+        "dqs": -1,
+        "etag": "a4fabe9a18306f0648dba96d07a6e31b1234919e",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://midwestherbaria.org/portal/content/dwca/rss.xml",
+          "name": "Consortium of Midwest Herbaria Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "5946eff1-b27a-4651-8323-2ab8d62ef328",
+          "idigbio:etag": "a4fabe9a18306f0648dba96d07a6e31b1234919e",
+          "base_url": "http://midwestherbaria.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://midwestherbaria.org/portal/webservices/dwc/rss.xml",
+            "http://midwestherbaria.org/portal/"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:11.569187",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://midwestherbaria.org/portal/webservices/dwc/rss.xml",
+          "http://midwestherbaria.org/portal/"
+        ],
+        "datemodified": "2022-12-06T02:46:11.569187+00:00",
+        "name": "consortium of midwest herbaria darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "6007eac4-a2e8-4fbe-9765-0cd20ff06fcc",
+      "type": "publishers",
+      "etag": "e3a7040e8e18706bef28c3f73af16abed7c9b63f",
+      "data": {
+        "rss_url": "https://oregonflora.org/collections/datasets/rsshandler.php",
+        "name": "OregonFlora Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "6007eac4-a2e8-4fbe-9765-0cd20ff06fcc",
+        "dqs": -1,
+        "etag": "e3a7040e8e18706bef28c3f73af16abed7c9b63f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://oregonflora.org/collections/datasets/rsshandler.php",
+          "name": "OregonFlora Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "6007eac4-a2e8-4fbe-9765-0cd20ff06fcc",
+          "idigbio:etag": "e3a7040e8e18706bef28c3f73af16abed7c9b63f",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-07-22T23:57:03.134723",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-07-22T23:57:03.134723+00:00",
+        "name": "oregonflora darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "3c49e4fe-de7c-4169-bb3b-c81b1c5a27db",
+      "type": "publishers",
+      "etag": "f7a015c39347a16fbd31c3d5a2bef7a1c7adbe78",
+      "data": {
+        "rss_url": "http://herb.valdosta.edu:8080/ipt/rss.do",
+        "name": "Valdosta State University Herbarium",
+        "auto_publish": false,
+        "base_url": "http://herb.valdosta.edu:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "3c49e4fe-de7c-4169-bb3b-c81b1c5a27db",
+        "dqs": -1,
+        "etag": "f7a015c39347a16fbd31c3d5a2bef7a1c7adbe78",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://herb.valdosta.edu:8080/ipt/rss.do",
+          "name": "Valdosta State University Herbarium",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "3c49e4fe-de7c-4169-bb3b-c81b1c5a27db",
+          "idigbio:etag": "f7a015c39347a16fbd31c3d5a2bef7a1c7adbe78",
+          "base_url": "http://herb.valdosta.edu:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://herb.valdosta.edu:8080/ipt/",
+            "http://herb.valdosta.edu:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:27.965061",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://herb.valdosta.edu:8080/ipt/",
+          "http://herb.valdosta.edu:8080/ipt/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:12:27.965061+00:00",
+        "name": "valdosta state university herbarium"
+      }
+    },
+    {
+      "uuid": "3db8f689-be5f-492d-8557-8f794e57892d",
+      "type": "publishers",
+      "etag": "74a967e045716eb75aeba7d3baaf8e5e820c1141",
+      "data": {
+        "rss_url": "https://herbarium.bio.fsu.edu:8443/ipt/rss.do",
+        "name": "FSU Herbarium IPT",
+        "auto_publish": false,
+        "base_url": "https://herbarium.bio.fsu.edu:8443/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "3db8f689-be5f-492d-8557-8f794e57892d",
+        "dqs": -1,
+        "etag": "74a967e045716eb75aeba7d3baaf8e5e820c1141",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://herbarium.bio.fsu.edu:8443/ipt/rss.do",
+          "name": "FSU Herbarium IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "3db8f689-be5f-492d-8557-8f794e57892d",
+          "idigbio:etag": "74a967e045716eb75aeba7d3baaf8e5e820c1141",
+          "base_url": "https://herbarium.bio.fsu.edu:8443/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "https://herbarium.bio.fsu.edu:8443/",
+            "https://herbarium.bio.fsu.edu:8443/rss.do",
+            "https://herbarium.bio.fsu.edu:8443/ipt/"
+          ],
+          "idigbio:dateModified": "2017-01-06T14:08:01.511374",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "https://herbarium.bio.fsu.edu:8443/",
+          "https://herbarium.bio.fsu.edu:8443/rss.do",
+          "https://herbarium.bio.fsu.edu:8443/ipt/"
+        ],
+        "datemodified": "2017-01-06T14:08:01.511374+00:00",
+        "name": "fsu herbarium ipt"
+      }
+    },
+    {
+      "uuid": "0bdd6e08-91e3-4ef0-a14f-7a987f9e9362",
+      "type": "publishers",
+      "etag": "203f7468f9a5298533758a7c9bb7387eb36b783b",
+      "data": {
+        "rss_url": "http://ipt.peabody.yale.edu/ipt/rss.do",
+        "name": "Yale Peabody Museum IPT Service",
+        "auto_publish": false,
+        "base_url": "http://ipt.peabody.yale.edu/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "0bdd6e08-91e3-4ef0-a14f-7a987f9e9362",
+        "dqs": -1,
+        "etag": "203f7468f9a5298533758a7c9bb7387eb36b783b",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.peabody.yale.edu/ipt/rss.do",
+          "name": "Yale Peabody Museum IPT Service",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "0bdd6e08-91e3-4ef0-a14f-7a987f9e9362",
+          "idigbio:etag": "203f7468f9a5298533758a7c9bb7387eb36b783b",
+          "base_url": "http://ipt.peabody.yale.edu/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.peabody.yale.edu/ipt/",
+            "http://ipt.peabody.yale.edu/ipt/rss.do",
+            "http://sprout018.sprout.yale.edu/ipt/",
+            "http://sprout018.sprout.yale.edu/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:08:59.276185",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.peabody.yale.edu/ipt/",
+          "http://ipt.peabody.yale.edu/ipt/rss.do",
+          "http://sprout018.sprout.yale.edu/ipt/",
+          "http://sprout018.sprout.yale.edu/ipt/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:08:59.276185+00:00",
+        "name": "yale peabody museum ipt service"
+      }
+    },
+    {
+      "uuid": "1ec7f699-b289-4551-8234-1c29df733e03",
+      "type": "publishers",
+      "etag": "52e8f070ec28d3f369c0fe6c522099cc15be9ef2",
+      "data": {
+        "rss_url": "https://symbiota.ccber.ucsb.edu/webservices/dwc/rss.xml",
+        "name": "South Central California Network Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "1ec7f699-b289-4551-8234-1c29df733e03",
+        "dqs": -1,
+        "etag": "52e8f070ec28d3f369c0fe6c522099cc15be9ef2",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://symbiota.ccber.ucsb.edu/webservices/dwc/rss.xml",
+          "name": "South Central California Network Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "1ec7f699-b289-4551-8234-1c29df733e03",
+          "idigbio:etag": "52e8f070ec28d3f369c0fe6c522099cc15be9ef2",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2018-10-12T15:57:20.994091",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2018-10-12T15:57:20.994091+00:00",
+        "name": "south central california network darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "c95b6324-10be-43a5-b11a-c0189e664863",
+      "type": "publishers",
+      "etag": "fbcf4ad99c2aafe9351bab748bd1510dd22f55b1",
+      "data": {
+        "rss_url": "http://ipt.jbrj.gov.br/jbrj/rss.do?request_locale=en",
+        "name": "JBRJ IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "c95b6324-10be-43a5-b11a-c0189e664863",
+        "dqs": -1,
+        "etag": "fbcf4ad99c2aafe9351bab748bd1510dd22f55b1",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.jbrj.gov.br/jbrj/rss.do?request_locale=en",
+          "name": "JBRJ IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "c95b6324-10be-43a5-b11a-c0189e664863",
+          "idigbio:etag": "fbcf4ad99c2aafe9351bab748bd1510dd22f55b1",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-01-29T09:13:09.700712",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-01-29T09:13:09.700712+00:00",
+        "name": "jbrj ipt"
+      }
+    },
+    {
+      "uuid": "7745cb1d-7823-4d65-9141-b142ade1439b",
+      "type": "publishers",
+      "etag": "86d8f9d7a45ceda71f71e11682ca1cf9ec0ef237",
+      "data": {
+        "rss_url": "http://ipt.inpa.gov.br/rss.do",
+        "name": "IPT - INPA",
+        "auto_publish": false,
+        "base_url": "http://ipt.inpa.gov.br/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "7745cb1d-7823-4d65-9141-b142ade1439b",
+        "dqs": -1,
+        "etag": "86d8f9d7a45ceda71f71e11682ca1cf9ec0ef237",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.inpa.gov.br/rss.do",
+          "name": "IPT - INPA",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "7745cb1d-7823-4d65-9141-b142ade1439b",
+          "idigbio:etag": "86d8f9d7a45ceda71f71e11682ca1cf9ec0ef237",
+          "base_url": "http://ipt.inpa.gov.br/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.inpa.gov.br/",
+            "http://ipt.inpa.gov.br/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:40.502473",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.inpa.gov.br/",
+          "http://ipt.inpa.gov.br/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:12:40.502473+00:00",
+        "name": "ipt - inpa"
+      }
+    },
+    {
+      "uuid": "ce89e2a5-b5e5-4cec-a4bb-1319f80376e9",
+      "type": "publishers",
+      "etag": "c46ecace7035fc0c643d7840dc5d090dbb6aeda9",
+      "data": {
+        "rss_url": "http://paleo.uoregon.edu/ipt/rss.do",
+        "name": "Condon Fossil Collection IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ce89e2a5-b5e5-4cec-a4bb-1319f80376e9",
+        "dqs": -1,
+        "etag": "c46ecace7035fc0c643d7840dc5d090dbb6aeda9",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://paleo.uoregon.edu/ipt/rss.do",
+          "name": "Condon Fossil Collection IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ce89e2a5-b5e5-4cec-a4bb-1319f80376e9",
+          "idigbio:etag": "c46ecace7035fc0c643d7840dc5d090dbb6aeda9",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-09-19T08:54:13.383721",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-09-19T08:54:13.383721+00:00",
+        "name": "condon fossil collection ipt"
+      }
+    },
+    {
+      "uuid": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+      "type": "publishers",
+      "etag": "edb24ef5388793f967789d82c7b25a952018a06b",
+      "data": {
+        "rss_url": "http://ipt.calacademy.org:8080/rss.do",
+        "name": "CAS-IPT",
+        "auto_publish": false,
+        "base_url": "http://ipt.calacademy.org:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+        "dqs": -1,
+        "etag": "edb24ef5388793f967789d82c7b25a952018a06b",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.calacademy.org:8080/rss.do",
+          "name": "CAS-IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "a383e7e0-9fcf-4ffb-9bbf-a42b0d665a7f",
+          "idigbio:etag": "edb24ef5388793f967789d82c7b25a952018a06b",
+          "base_url": "http://ipt.calacademy.org:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.calacademy.org:8080/ipt/",
+            "http://ipt.calacademy.org:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2021-04-16T12:29:31.477612",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.calacademy.org:8080/ipt/",
+          "http://ipt.calacademy.org:8080/ipt/rss.do"
+        ],
+        "datemodified": "2021-04-16T12:29:31.477612+00:00",
+        "name": "cas-ipt"
+      }
+    },
+    {
+      "uuid": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+      "type": "publishers",
+      "etag": "240e2ad96e0a858efb18157611294dd2902a36c3",
+      "data": {
+        "rss_url": "https://scan-bugs.org:443/portal/webservices/dwc/rss.xml",
+        "name": "SCAN Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://symbiota4.acis.ufl.edu/scan/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+        "dqs": -1,
+        "etag": "240e2ad96e0a858efb18157611294dd2902a36c3",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://scan-bugs.org:443/portal/webservices/dwc/rss.xml",
+          "name": "SCAN Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "idigbio:etag": "240e2ad96e0a858efb18157611294dd2902a36c3",
+          "base_url": "http://symbiota4.acis.ufl.edu/scan/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://symbiota4.acis.ufl.edu/scan/portal/",
+            "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+            "http://symbiota1.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+            "http://symbiota1.acis.ufl.edu/scan/portal/"
+          ],
+          "idigbio:dateModified": "2020-12-28T13:20:19.827715",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://symbiota4.acis.ufl.edu/scan/portal/",
+          "http://symbiota4.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+          "http://symbiota1.acis.ufl.edu/scan/portal/webservices/dwc/rss.xml",
+          "http://symbiota1.acis.ufl.edu/scan/portal/"
+        ],
+        "datemodified": "2020-12-28T13:20:19.827715+00:00",
+        "name": "scan darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "6cf8576a-769e-46ca-a6bd-3f1e1f7a3447",
+      "type": "publishers",
+      "etag": "38567e2937934795f752ae8012cd3a7513b5cbe4",
+      "data": {
+        "rss_url": "https://www.cch2.org/portal/content/dwca/rss.xml",
+        "name": "CCH2 Portal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "6cf8576a-769e-46ca-a6bd-3f1e1f7a3447",
+        "dqs": -1,
+        "etag": "38567e2937934795f752ae8012cd3a7513b5cbe4",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://www.cch2.org/portal/content/dwca/rss.xml",
+          "name": "CCH2 Portal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "6cf8576a-769e-46ca-a6bd-3f1e1f7a3447",
+          "idigbio:etag": "38567e2937934795f752ae8012cd3a7513b5cbe4",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T02:46:37.764035",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T02:46:37.764035+00:00",
+        "name": "cch2 portal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "eb8a7152-fa35-44ff-add9-342cad7cbb4c",
+      "type": "publishers",
+      "etag": "2e83580786b49706a1d3270fd738f8f12ff70fd8",
+      "data": {
+        "rss_url": "http://197.189.235.147:8080/iptsanbi/rss.do",
+        "name": "South African National Biodiversity Institute - IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "eb8a7152-fa35-44ff-add9-342cad7cbb4c",
+        "dqs": -1,
+        "etag": "2e83580786b49706a1d3270fd738f8f12ff70fd8",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://197.189.235.147:8080/iptsanbi/rss.do",
+          "name": "South African National Biodiversity Institute - IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "eb8a7152-fa35-44ff-add9-342cad7cbb4c",
+          "idigbio:etag": "2e83580786b49706a1d3270fd738f8f12ff70fd8",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-06-20T09:25:32.169764",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-06-20T09:25:32.169764+00:00",
+        "name": "south african national biodiversity institute - ipt"
+      }
+    },
+    {
+      "uuid": "2b242718-b9a5-4a2a-b76d-a6e083bac105",
+      "type": "publishers",
+      "etag": "a81b4a46bf462949b9bd78c11ff01cffd111311f",
+      "data": {
+        "rss_url": "http://prc-symbiota.tacc.utexas.edu/webservices/dwc/rss.xml",
+        "name": "PRC Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "2b242718-b9a5-4a2a-b76d-a6e083bac105",
+        "dqs": -1,
+        "etag": "a81b4a46bf462949b9bd78c11ff01cffd111311f",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://prc-symbiota.tacc.utexas.edu/webservices/dwc/rss.xml",
+          "name": "PRC Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "2b242718-b9a5-4a2a-b76d-a6e083bac105",
+          "idigbio:etag": "a81b4a46bf462949b9bd78c11ff01cffd111311f",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2016-02-17T14:10:34.171548",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2016-02-17T14:10:34.171548+00:00",
+        "name": "prc darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+      "type": "publishers",
+      "etag": "67ebdd8057d6ef79fb7689506b1949466b881857",
+      "data": {
+        "rss_url": "http://www.snib.mx/iptconabio/rss.do",
+        "name": "IPTCONABIO",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+        "dqs": -1,
+        "etag": "67ebdd8057d6ef79fb7689506b1949466b881857",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://www.snib.mx/iptconabio/rss.do",
+          "name": "IPTCONABIO",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "idigbio:etag": "67ebdd8057d6ef79fb7689506b1949466b881857",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-02-14T11:45:59.485101",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-02-14T11:45:59.485101+00:00",
+        "name": "iptconabio"
+      }
+    },
+    {
+      "uuid": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+      "type": "publishers",
+      "etag": "d4e89f9002ec0a44dca008bcc4042935f7f12208",
+      "data": {
+        "rss_url": "https://hymfiles.asc.ohio-state.edu/ipt/rss.do",
+        "name": "xBioD IPT in the Museum of Biological Diversity at the Ohio State University",
+        "auto_publish": false,
+        "base_url": "http://hymfiles.biosci.ohio-state.edu:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+        "dqs": -1,
+        "etag": "d4e89f9002ec0a44dca008bcc4042935f7f12208",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://hymfiles.asc.ohio-state.edu/ipt/rss.do",
+          "name": "xBioD IPT in the Museum of Biological Diversity at the Ohio State University",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+          "idigbio:etag": "d4e89f9002ec0a44dca008bcc4042935f7f12208",
+          "base_url": "http://hymfiles.biosci.ohio-state.edu:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://hymfiles.biosci.ohio-state.edu:8080/ipt/",
+            "http://hymfiles.biosci.ohio-state.edu:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2021-01-22T16:41:38.338908",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://hymfiles.biosci.ohio-state.edu:8080/ipt/",
+          "http://hymfiles.biosci.ohio-state.edu:8080/ipt/rss.do"
+        ],
+        "datemodified": "2021-01-22T16:41:38.338908+00:00",
+        "name": "xbiod ipt in the museum of biological diversity at the ohio state university"
+      }
+    },
+    {
+      "uuid": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+      "type": "publishers",
+      "etag": "be24a2ac2a8d0edc4b725510ef56145cbc7abbce",
+      "data": {
+        "rss_url": "http://ipt.vertnet.org:8080/ipt/rss.do",
+        "name": "IPT - Hosted by VertNet",
+        "auto_publish": false,
+        "base_url": "http://ipt.vertnet.org:8080/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+        "dqs": -1,
+        "etag": "be24a2ac2a8d0edc4b725510ef56145cbc7abbce",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.vertnet.org:8080/ipt/rss.do",
+          "name": "IPT - Hosted by VertNet",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "idigbio:etag": "be24a2ac2a8d0edc4b725510ef56145cbc7abbce",
+          "base_url": "http://ipt.vertnet.org:8080/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.vertnet.org:8080/ipt/",
+            "http://ipt.vertnet.org:8080/ipt/rss.do"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:41.070263",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.vertnet.org:8080/ipt/",
+          "http://ipt.vertnet.org:8080/ipt/rss.do"
+        ],
+        "datemodified": "2015-07-15T13:12:41.070263+00:00",
+        "name": "ipt - hosted by vertnet"
+      }
+    },
+    {
+      "uuid": "6cf095bf-368f-45a0-b1e1-4210240cd624",
+      "type": "publishers",
+      "etag": "391233151ec06dbe7d402aa57d4bf672496cafce",
+      "data": {
+        "rss_url": "http://ipt.sibbr.gov.br/mnrj/rss.do",
+        "name": "IPT do Museu Nacional do Rio de Janeiro / UFRJ",
+        "auto_publish": false,
+        "base_url": "http://ipt.sibbr.gov.br/mnrj/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "6cf095bf-368f-45a0-b1e1-4210240cd624",
+        "dqs": -1,
+        "etag": "391233151ec06dbe7d402aa57d4bf672496cafce",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.sibbr.gov.br/mnrj/rss.do",
+          "name": "IPT do Museu Nacional do Rio de Janeiro / UFRJ",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "6cf095bf-368f-45a0-b1e1-4210240cd624",
+          "idigbio:etag": "391233151ec06dbe7d402aa57d4bf672496cafce",
+          "base_url": "http://ipt.sibbr.gov.br/mnrj/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://ipt.sibbr.gov.br/mnrj/rss.do",
+            "http://ipt.sibbr.gov.br/mnrj/"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:39.546532",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://ipt.sibbr.gov.br/mnrj/rss.do",
+          "http://ipt.sibbr.gov.br/mnrj/"
+        ],
+        "datemodified": "2015-07-15T13:12:39.546532+00:00",
+        "name": "ipt do museu nacional do rio de janeiro / ufrj"
+      }
+    },
+    {
+      "uuid": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+      "type": "publishers",
+      "etag": "2d705c37dd836d3becd6df597e69509c60fe6de9",
+      "data": {
+        "rss_url": "http://ipt1.cria.org.br/ipt/rss.do",
+        "name": "speciesLink Network / INCT-HVFF IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+        "dqs": -1,
+        "etag": "2d705c37dd836d3becd6df597e69509c60fe6de9",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt1.cria.org.br/ipt/rss.do",
+          "name": "speciesLink Network / INCT-HVFF IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "idigbio:etag": "2d705c37dd836d3becd6df597e69509c60fe6de9",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2015-07-22T10:34:05.615487",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2015-07-22T10:34:05.615487+00:00",
+        "name": "specieslink network / inct-hvff ipt"
+      }
+    },
+    {
+      "uuid": "1daec65a-8ee1-4af8-a52f-f85af832533e",
+      "type": "publishers",
+      "etag": "01980b77a7320478f04c9fef6026f31184a0b201",
+      "data": {
+        "rss_url": "http://phylo.ansp.org:8080/ipt/rss.do",
+        "name": "Academy of Natural Sciences - Biodiversity Research Collections",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "1daec65a-8ee1-4af8-a52f-f85af832533e",
+        "dqs": -1,
+        "etag": "01980b77a7320478f04c9fef6026f31184a0b201",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://phylo.ansp.org:8080/ipt/rss.do",
+          "name": "Academy of Natural Sciences - Biodiversity Research Collections",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "1daec65a-8ee1-4af8-a52f-f85af832533e",
+          "idigbio:etag": "01980b77a7320478f04c9fef6026f31184a0b201",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2015-08-03T15:10:49.230335",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2015-08-03T15:10:49.230335+00:00",
+        "name": "academy of natural sciences - biodiversity research collections"
+      }
+    },
+    {
+      "uuid": "5ded2005-0563-4737-9830-e951dab59c66",
+      "type": "publishers",
+      "etag": "737bd48a202967dafb0e2d8a219e0743b56a8b13",
+      "data": {
+        "rss_url": "http://ipt.tacc.utexas.edu/rss.do",
+        "name": "UT IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "5ded2005-0563-4737-9830-e951dab59c66",
+        "dqs": -1,
+        "etag": "737bd48a202967dafb0e2d8a219e0743b56a8b13",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.tacc.utexas.edu/rss.do",
+          "name": "UT IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "5ded2005-0563-4737-9830-e951dab59c66",
+          "idigbio:etag": "737bd48a202967dafb0e2d8a219e0743b56a8b13",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2018-11-08T13:50:03.063036",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2018-11-08T13:50:03.063036+00:00",
+        "name": "ut ipt"
+      }
+    },
+    {
+      "uuid": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+      "type": "publishers",
+      "etag": "b5461af355a4ee047e4695ba14fba8155876161d",
+      "data": {
+        "rss_url": "https://sernecportal.org/portal/content/dwca/rss.xml",
+        "name": "SERNEC Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://sernecportal.org/portal/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+        "dqs": -1,
+        "etag": "b5461af355a4ee047e4695ba14fba8155876161d",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://sernecportal.org/portal/content/dwca/rss.xml",
+          "name": "SERNEC Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "idigbio:etag": "b5461af355a4ee047e4695ba14fba8155876161d",
+          "base_url": "http://sernecportal.org/portal/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://sernecportal.org/portal/webservices/dwc/rss.xml",
+            "http://sernecportal.org/portal/"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:45:11.603671",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://sernecportal.org/portal/webservices/dwc/rss.xml",
+          "http://sernecportal.org/portal/"
+        ],
+        "datemodified": "2022-12-06T02:45:11.603671+00:00",
+        "name": "sernec darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "8c493255-5867-485d-aaea-19a6e10c2ca5",
+      "type": "publishers",
+      "etag": "9f088a290e423dd862319deaefd03a948e8e26c7",
+      "data": {
+        "rss_url": "https://ipt.lsa.umich.edu/rss.do",
+        "name": "University of Michigan College of Literature, Science & Arts",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "8c493255-5867-485d-aaea-19a6e10c2ca5",
+        "dqs": -1,
+        "etag": "9f088a290e423dd862319deaefd03a948e8e26c7",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://ipt.lsa.umich.edu/rss.do",
+          "name": "University of Michigan College of Literature, Science & Arts",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "8c493255-5867-485d-aaea-19a6e10c2ca5",
+          "idigbio:etag": "9f088a290e423dd862319deaefd03a948e8e26c7",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2018-07-17T15:34:02.024946",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2018-07-17T15:34:02.024946+00:00",
+        "name": "university of michigan college of literature, science & arts"
+      }
+    },
+    {
+      "uuid": "a9684883-ce9b-4be1-9841-b063fc69e163",
+      "type": "publishers",
+      "etag": "b05c56e84a41449a6d49e06e88dbbc14a26896e1",
+      "data": {
+        "rss_url": "https://portal.torcherbaria.org/portal/content/dwca/rss.xml",
+        "name": "TORCH Portal Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "a9684883-ce9b-4be1-9841-b063fc69e163",
+        "dqs": -1,
+        "etag": "b05c56e84a41449a6d49e06e88dbbc14a26896e1",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://portal.torcherbaria.org/portal/content/dwca/rss.xml",
+          "name": "TORCH Portal Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "a9684883-ce9b-4be1-9841-b063fc69e163",
+          "idigbio:etag": "b05c56e84a41449a6d49e06e88dbbc14a26896e1",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-12-06T02:45:51.647532",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-12-06T02:45:51.647532+00:00",
+        "name": "torch portal darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "ac89daf3-2192-4b01-896f-4f7ea4edac2f",
+      "type": "publishers",
+      "etag": "4d808b15d65f06f5d27e8adc25660c779570a39d",
+      "data": {
+        "rss_url": "http://ipt.naturalsciences.be/ipt/rss.do",
+        "name": "RBINS IPT",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "ac89daf3-2192-4b01-896f-4f7ea4edac2f",
+        "dqs": -1,
+        "etag": "4d808b15d65f06f5d27e8adc25660c779570a39d",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://ipt.naturalsciences.be/ipt/rss.do",
+          "name": "RBINS IPT",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "ac89daf3-2192-4b01-896f-4f7ea4edac2f",
+          "idigbio:etag": "4d808b15d65f06f5d27e8adc25660c779570a39d",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2021-04-16T13:05:44.242580",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2021-04-16T13:05:44.242580+00:00",
+        "name": "rbins ipt"
+      }
+    },
+    {
+      "uuid": "95555bd3-6b87-4f62-8a79-8be7c298e239",
+      "type": "publishers",
+      "etag": "542104ea38200b1992aedeab5392d93b82172ce5",
+      "data": {
+        "rss_url": "https://www1.usgs.gov/obis-usa/ipt/rss.do",
+        "name": "Ocean Biodiversity Information System USA - OBIS-USA",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "95555bd3-6b87-4f62-8a79-8be7c298e239",
+        "dqs": -1,
+        "etag": "542104ea38200b1992aedeab5392d93b82172ce5",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://www1.usgs.gov/obis-usa/ipt/rss.do",
+          "name": "Ocean Biodiversity Information System USA - OBIS-USA",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "95555bd3-6b87-4f62-8a79-8be7c298e239",
+          "idigbio:etag": "542104ea38200b1992aedeab5392d93b82172ce5",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2022-08-13T10:43:12.654876",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2022-08-13T10:43:12.654876+00:00",
+        "name": "ocean biodiversity information system usa - obis-usa"
+      }
+    },
+    {
+      "uuid": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+      "type": "publishers",
+      "etag": "36f2ea68fb0291a495ca37bfb1b729e00f4b0050",
+      "data": {
+        "rss_url": "http://collections.mnhn.fr/ipt/rss.do",
+        "name": "MNHN - Collections",
+        "auto_publish": false,
+        "base_url": "http://collections.mnhn.fr/ipt/",
+        "publisher_type": "ipt",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+        "dqs": -1,
+        "etag": "36f2ea68fb0291a495ca37bfb1b729e00f4b0050",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://collections.mnhn.fr/ipt/rss.do",
+          "name": "MNHN - Collections",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "e3767b6a-ac91-49b9-9e69-bd2fa10caf42",
+          "idigbio:etag": "36f2ea68fb0291a495ca37bfb1b729e00f4b0050",
+          "base_url": "http://collections.mnhn.fr/ipt/",
+          "auto_publish": false,
+          "publisher_type": "ipt",
+          "idigbio:recordIds": [
+            "http://collections.mnhn.fr/ipt/rss.do",
+            "http://collections.mnhn.fr/ipt/"
+          ],
+          "idigbio:dateModified": "2015-07-15T13:12:45.830386",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://collections.mnhn.fr/ipt/rss.do",
+          "http://collections.mnhn.fr/ipt/"
+        ],
+        "datemodified": "2015-07-15T13:12:45.830386+00:00",
+        "name": "mnhn - collections"
+      }
+    },
+    {
+      "uuid": "28ad3bdd-c0be-4789-aef6-dd50be864463",
+      "type": "publishers",
+      "etag": "6fefe24827e050303a4ccac798388ec81815f801",
+      "data": {
+        "rss_url": "http://bellatlas.umn.edu/webservices/dwc/rss.xml",
+        "name": "Bell Museum Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": null,
+        "publisher_type": "rss",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "28ad3bdd-c0be-4789-aef6-dd50be864463",
+        "dqs": -1,
+        "etag": "6fefe24827e050303a4ccac798388ec81815f801",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "http://bellatlas.umn.edu/webservices/dwc/rss.xml",
+          "name": "Bell Museum Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "28ad3bdd-c0be-4789-aef6-dd50be864463",
+          "idigbio:etag": "6fefe24827e050303a4ccac798388ec81815f801",
+          "base_url": null,
+          "auto_publish": false,
+          "publisher_type": "rss",
+          "idigbio:recordIds": null,
+          "idigbio:dateModified": "2017-04-25T10:27:06.931458",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "datemodified": "2017-04-25T10:27:06.931458+00:00",
+        "name": "bell museum darwin core archive rss feed"
+      }
+    },
+    {
+      "uuid": "a9dfa037-425b-442b-8974-94487c29114e",
+      "type": "publishers",
+      "etag": "d7aa8c6571448644ea438def7b7547d450431988",
+      "data": {
+        "rss_url": "https://swbiodiversity.org/seinet/content/dwca/rss.xml",
+        "name": "SEINet - Arizona Chapter Darwin Core Archive rss feed",
+        "auto_publish": false,
+        "base_url": "http://swbiodiversity.org/seinet/",
+        "publisher_type": "symbiota",
+        "recordsets": {}
+      },
+      "indexTerms": {
+        "uuid": "a9dfa037-425b-442b-8974-94487c29114e",
+        "dqs": -1,
+        "etag": "d7aa8c6571448644ea438def7b7547d450431988",
+        "flags": [
+          "dwc_basisofrecord_invalid"
+        ],
+        "indexData": {
+          "rss_url": "https://swbiodiversity.org/seinet/content/dwca/rss.xml",
+          "name": "SEINet - Arizona Chapter Darwin Core Archive rss feed",
+          "idigbio:parent": "872733a2-67a3-4c54-aa76-862735a5f334",
+          "idigbio:uuid": "a9dfa037-425b-442b-8974-94487c29114e",
+          "idigbio:etag": "d7aa8c6571448644ea438def7b7547d450431988",
+          "base_url": "http://swbiodiversity.org/seinet/",
+          "auto_publish": false,
+          "publisher_type": "symbiota",
+          "idigbio:recordIds": [
+            "http://swbiodiversity.org/seinet/",
+            "http://swbiodiversity.org/seinet/webservices/dwc/rss.xml"
+          ],
+          "idigbio:dateModified": "2022-12-06T02:46:21.426966",
+          "recordsets": {},
+          "idigbio:siblings": {}
+        },
+        "recordids": [
+          "http://swbiodiversity.org/seinet/",
+          "http://swbiodiversity.org/seinet/webservices/dwc/rss.xml"
+        ],
+        "datemodified": "2022-12-06T02:46:21.426966+00:00",
+        "name": "seinet - arizona chapter darwin core archive rss feed"
+      }
+    }
+  ]
+}

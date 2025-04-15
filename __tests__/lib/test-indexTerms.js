@@ -1,7 +1,7 @@
 jest.mock("redisclient");
 jest.mock("esclient");
 
-import _ from "lodash";
+/* import _ from "lodash"; */
 
 import {TermNotFoundError, InvalidTypeError} from "lib/exceptions";
 import {loadIndexTerms, clear, getMappingForType, checkTerms} from "lib/indexTerms";

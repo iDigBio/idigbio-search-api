@@ -22,6 +22,7 @@ describe("statsFromResponse", function() {
     expect(postbody).toBeDefined();
     if(_.isString(postbody)) {
       postbody = JSON.parse(postbody);
+      console.log(postbody);
     }
     expect(postbody.type).toEqual("view");
     expect(postbody.record_type).toEqual(type);

@@ -1,0 +1,11 @@
+{
+    "testing.openTesting": "neverOpen",
+    "jest.outputConfig": {
+        "revealOn": "run",
+        "revealWithFocus": "none",
+        "clearOnRun": "none"
+    },
+    "jest.runMode": "on-demand",
+    "FSharp.suggestGitignore": false,
+    "testing.automaticallyOpenTestResults": "neverOpen"
+}
