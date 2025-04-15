@@ -99,5 +99,6 @@ export default async function searchShim(index, type, op, query, statsInfo) {
     console.error("Bad ElasticSearch request: ", response["error"]);
     throw new Error("Bad ElasticSearch request");
   }
+  console.log(query, options);
   return response;
 }

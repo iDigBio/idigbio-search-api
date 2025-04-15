@@ -355,6 +355,9 @@ const stats = async function(ctx) {
   const body = await searchShim(config.search.statsIndex, t, "_search", query);
   ctx.body = await formatter.stats_hist_formatter(body, inverted);
 
+  //if(ctx.body)
+    //console.dir(ctx.body,{depth:null});
+
 };
 
 

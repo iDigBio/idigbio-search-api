@@ -32,7 +32,7 @@ async function _loadAll() {
       res[b.key] = {"totalCount": b.doc_count};
     }
   });
-  console.log(Object.keys(res).length)
+  console.log(Object.keys(res).length);
   return res;
 }
 
