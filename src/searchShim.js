@@ -48,7 +48,6 @@ export default async function searchShim(index, type, op, query, statsInfo) {
    * Otherwise, a 300-field search request can result in a ~11000-character
    * URL, which might not be transmittable.
    */
-  
   if (query._source) {
     let source_object = {};
 
@@ -99,6 +98,5 @@ export default async function searchShim(index, type, op, query, statsInfo) {
     console.error("Bad ElasticSearch request: ", response["error"]);
     throw new Error("Bad ElasticSearch request");
   }
-  console.log(query, options);
   return response;
 }

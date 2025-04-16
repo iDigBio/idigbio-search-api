@@ -16,11 +16,11 @@ export function clear() {
 
 export function getSubKeys(mappingDict, fnPrefix) {
   var rv = {};
-  //var properties = mappingDict["properties"];
-  var properties = {
-    ...mappingDict.properties,
-    ...mappingDict.fields
-  };
+  // var properties = mappingDict["properties"];
+    var properties = {
+      ...mappingDict.properties,
+      ...mappingDict.fields
+    };
   _.forOwn(properties, function(prop, key) {
     const typ = prop.type;
     if(typ) {
@@ -32,7 +32,6 @@ export function getSubKeys(mappingDict, fnPrefix) {
         type: typ,
         fieldName: fnPrefix + key
       };
-    //} else if(prop.properties) {
     } else if(prop.properties || prop.fields) {
       rv[key] = getSubKeys(prop, fnPrefix + key + ".");
     }
