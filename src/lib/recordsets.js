@@ -13,9 +13,7 @@ async function _loadAll() {
   body.hits.hits.forEach(function(hit) {
     const id = hit._id,
       source = hit._source;
-    if(!source.data) {
-      res[id] = { "uuid": id };
-    } else { 
+    if(source.data) {
       res[id] = {
         "uuid": id,
         "name": source.data.collection_name,
