@@ -5,8 +5,8 @@
 "use strict";
 
 const _ = require("lodash");
-const http = require("http");
-http.globalAgent.maxSockets = 100; //obsolete in http/2
+const http2 = require("http2");
+// http.globalAgent.maxSockets = 100; //obsolete in http/2
 
 
 const config = require('./src/config');
@@ -38,8 +38,11 @@ function startThisProcess(id) {
     id = id || 'main';
     const app = require(`${srcdir}/app`).default;
     return app.ready.then(function() {
-      const server = app.listen(config.port, function() {
-        logger.info(`Server(${id}) listening on port ${config.port}`);
+      const server = http2.createServer(app.callback());
+      // Create an HTTP/2 server without SSL (SSL configured on the proxy)
+
+      server.listen(config.port, function () {
+        logger.info(`Server(${id}) listening on port ${config.port} with HTTP/2`);
       });
       registerGracefulShutdown('SIGTERM', server, id);
       registerGracefulShutdown('SIGINT', server, id);
