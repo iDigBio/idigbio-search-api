@@ -11,6 +11,7 @@ WORKDIR /var/www
 ADD package.json /var/www/package.json
 ADD --chown=www-data:www-data . /var/www
 RUN yarn install
+RUN yarn build
 
 EXPOSE 19196
 
