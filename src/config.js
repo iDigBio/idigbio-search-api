@@ -63,7 +63,7 @@ var config = {
   redis: {
     host: {
       prod: "10.13.45.208",
-      beta: "10.13.45.208",
+      beta: "10.13.44.11",
     }[env] || "localhost",
     db: 0,
     port: 6379,
