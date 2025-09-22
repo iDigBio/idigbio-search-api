@@ -21,6 +21,14 @@ if((env === "development") || (env === "test")) {
 var config = {
   ENV: env,
   LOGGER_LEVEL: process.env.LOGGER_LEVEL || logger_level,
+
+  /* Although '2' (HTTP/2) is used in production,
+   * '1' (HTTP/1.1) is useful for local development,
+   * since all major web browsers mandate HTTP/2 only over TLS
+   * and all other web clients may require prior knowledge that this server
+   * uses HTTP/2 (e.g. `curl --http2-prior-knowledge`). */
+  HTTP_VERSION: process.env.HTTP_VERSION || '2', //accepted values: '1' '2'
+
   GEN_MOCK: process.env.GEN_MOCK === "true",
   CLUSTER: process.env.CLUSTER !== "false",
   CLUSTER_WORKERS: Number(process.env.CLUSTER_WORKERS) || require('os').cpus().length,
