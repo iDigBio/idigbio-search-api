@@ -115,7 +115,7 @@ Ensure target Elasticsearch server is available from the host you are running te
 Navigating to "http://target-elasticsearch-host:9200/" should immediately return JSON version information.
 
 If timeouts occur, the Elasticsearch servers are only accessible from certain subnets. Attempted connections outside these subnets are silently dropped, so your Elasticsearch client will not be sent a rejection.  
-If failing quickly, ensure the correct Elasticsearch server is being targeted (see [/src/config.js](src/config.js)).
+If failing quickly, ensure the correct Elasticsearch server is being targeted (see [/src/config.js](src/config.js)) with URL scheme ("http://").
 
 ### (runtime) InvalidTypeError
 
@@ -130,7 +130,7 @@ Either seen in the network monitor of web browser developer tools (responses wit
 }
 ```
 ) or in the console session running `npm`:
-> **info**: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 400 150 - 51.517 ms
+> **info**: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 400 150 - 51.517 ms  
 > **error**: Request error InvalidTypeError: Invalid type  
 > &nbsp;&nbsp;&nbsp;at getMappingForType (/idigbio-search-api/src/lib/indexTerms.js:45:11)  
 > &nbsp;&nbsp;&nbsp;(rest of stack trace omitted)
