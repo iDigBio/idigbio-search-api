@@ -12,7 +12,6 @@
 
 
 import _ from 'lodash';
-import { memoize } from 'lodash/function';
 import geohash from "ngeohash";
 import Hashids from "hashids";
 import chroma from "chroma-js";
@@ -451,14 +450,14 @@ const resolveAutoType = async function(shortCode, map_def) {
   });
 };
 
-const lookupShortCode  = memoize(async function(shortCode) {
+const lookupShortCode  = async function(shortCode) {
   const rv = await redisclient.get(shortCode);
   if(!rv) {
     logger.error('%s ** in function lookupShortCode, shortCode not found in redis', shortCode);
     throw new createError.NotFound();
   }
   return JSON.parse(rv);
-});
+};
 
 async function getMapDef(shortCode, opts = {resolveAutoType: true}) {
   logger.debug("%s ** in function getMapDef - ready to lookupShortCode", shortCode);
