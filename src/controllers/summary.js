@@ -10,7 +10,7 @@
 /* eslint radix: "off" */
 /* eslint require-jsdoc: "off" */
 
-import _ from 'lodash';
+// import _ from 'lodash';
 
 import config from "config";
 import api from "api";
@@ -22,6 +22,7 @@ import searchShim from "searchShim.js";
 import {media_query, record_query, bare_query} from "lib/query-generators.js";
 import getParam from "lib/get-param.js";
 import {checkTerms} from "lib/indexTerms";
+import {queryStats} from "lib/clickhouse-shim.js";
 
 
 function top_fields_agg(top_fields, top_count) {
@@ -182,8 +183,8 @@ const date_hist = async function(ctx) {
 
   const rf = {};
   rf[dateField] = {
-    "gt": minDate,
-    "lte": maxDate,
+    "gt": "2022-10-01",
+    "lte": "2023-10-01",
   };
 
   query.aggs = {
@@ -195,7 +196,7 @@ const date_hist = async function(ctx) {
         "dh": {
           "date_histogram": {
             "field": dateField,
-            "interval": dateInterval,
+            "interval": "year",
             "format": "yyyy-MM-dd"
           },
           "aggs": top_agg
@@ -213,8 +214,8 @@ const stats = async function(ctx) {
   const query = { "size": 0 };
   const t = ctx.params.t;
   const recordset = getParam(ctx.request, "recordset");
-  const minDate = getParam(ctx.request, "minDate", null, "2014-01-01");
-  const maxDate = getParam(ctx.request, "maxDate", null, "now");
+  const minDate = getParam(ctx.request, "minDate", null, "2023-02-01");
+  const maxDate = getParam(ctx.request, "maxDate", null, "2023-02-01");
   const dateInterval = getParam(ctx.request, "dateInterval", null, "year");
   const inverted = cp.bool(ctx.request, "inverted", false);
 
@@ -352,11 +353,23 @@ const stats = async function(ctx) {
     query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
   }
 
-  const body = await searchShim(config.search.statsIndex, t, "_search", query);
-  ctx.body = await formatter.stats_hist_formatter(body, inverted);
+  //const body = await searchShim(config.search.statsIndex, t, "_search", query);
 
-  //if(ctx.body)
-    //console.dir(ctx.body,{depth:null});
+  //ctx.body = await formatter.stats_hist_formatter(body, inverted);
+
+  const body = await queryStats(t);
+
+  ctx.body = await formatter.stats_ch_formatter(body, inverted, minDate);
+
+  //await queryStats();
+
+  //console.log(ch_res);
+
+  if(ctx.body) {
+    //console.dir(ctx.body, {depth: null});
+  }
+
+  //console.dir(query, {depth: null});
 
 };
 

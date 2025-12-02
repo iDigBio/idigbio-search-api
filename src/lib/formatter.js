@@ -122,6 +122,14 @@ export async function date_hist_formatter(body) {
   return rb;
 }
 
+export function stats_ch_formatter(body, inverted, date) {
+
+  var rb = { "dates": body };
+  //console.log(rb);
+  return rb;
+
+}
+
 export async function stats_hist_formatter(body, inverted) {
   var rb = null;
 
