@@ -1,16 +1,36 @@
 /* eslint-disable require-jsdoc */
-import _ from "lodash";
-
-// import logger from "logging";
-var logger = require('winston');
 
 const request = require('request');
 
-export async function queryStats(type) {
+// eslint-disable-next-line max-params, max-statements
+export async function queryStats(type, recordset, dateInterval, minDate, maxDate, inverted) {
+
+    let qurl = `http://localhost:8888/v2/summary/stats/${type}`;
+
+    if(dateInterval) {
+        qurl = qurl.concat(`?dateInterval=${dateInterval}`);
+    }
+
+    if(recordset) {
+        qurl = qurl.concat(`&recordset=${recordset}`);
+    }
+
+    if(minDate) {
+        qurl = qurl.concat(`&minDate=${minDate}`);
+    }
+
+    if(maxDate) {
+        qurl = qurl.concat(`&maxDate=${maxDate}`);
+    }
+
+    if(inverted) {
+        qurl = qurl.concat(`&inverted=${inverted}`);
+    }
+
     return new Promise((resolve, reject) => {
         request(
             {
-                url: `http://localhost:8888/v2/summary/stats/${type}`,
+                url: qurl,
                 json: true
             },
             (error, response, body) => {
@@ -20,7 +40,7 @@ export async function queryStats(type) {
                 if(response.statusCode !== 200) {
                     return reject(new Error(`HTTP error! Status: ${response.statusCode}`));
                 }
-                resolve(body);
+                return resolve(body);
             }
         );
     });

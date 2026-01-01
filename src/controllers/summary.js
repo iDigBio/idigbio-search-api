@@ -211,165 +211,36 @@ const date_hist = async function(ctx) {
 };
 
 const stats = async function(ctx) {
-  const query = { "size": 0 };
   const t = ctx.params.t;
   const recordset = getParam(ctx.request, "recordset");
-  const minDate = getParam(ctx.request, "minDate", null, "2023-02-01");
-  const maxDate = getParam(ctx.request, "maxDate", null, "2023-02-01");
+  const minDate = getParam(ctx.request, "minDate", null, "2014-01-01");
+  const maxDate = getParam(ctx.request, "maxDate", null, "now");
   const dateInterval = getParam(ctx.request, "dateInterval", null, "year");
   const inverted = cp.bool(ctx.request, "inverted", false);
 
-  const rf = {
-    "harvest_date": {
-      "gte": minDate,
-      "lte": maxDate,
-    }
-  };
+  let minDateParse = new Date();
+  let maxDateParse = new Date();
 
-  let filt = {
-    "range": rf
-  };
-  if(recordset) {
-    filt = {
-      "and": [
-        {
-          "range": rf
-        },
-        {
-          "term": {
-            "recordset_id": recordset
-          }
-        }
-      ]
-    };
-  }
-
-  var internal_aggs = null;
-
-  if(t === "fields" || t === "search") {
-    internal_aggs = {
-      "seen": {
-        "sum": {
-          "field": "records.seen.total"
-        }
-      },
-      "search": {
-        "sum": {
-          "field": "records.search.total"
-        }
-      },
-      "download": {
-        "sum": {
-          "field": "records.download.total"
-        }
-      },
-      "viewed_records": {
-        "sum": {
-          "field": "records.view.total"
-        }
-      },
-      "viewed_media": {
-        "sum": {
-          "field": "mediarecords.view.total"
-        }
-      },
-      "search_count": {
-        "sum": {
-          "field": "records.search.count"
-        }
-      },
-      "download_count": {
-        "sum": {
-          "field": "records.download.count"
-        }
-      }
-    };
-  } else if(t === "api" || t === "digest") {
-    internal_aggs = {
-      "records": {
-        "max": {
-          "field": "records_count"
-        }
-      },
-      "mediarecords": {
-        "max": {
-          "field": "mediarecords_count"
-        }
-      }
-    };
+  if(minDate === "now-1y") {
+    minDateParse = new Date(new Date().setFullYear(new Date().getFullYear() - 1));
+  } else if(minDate === "now-1d") {
+    minDateParse = new Date(new Date().setDate(new Date().getDay() - 1));
   } else {
-    ctx.throw("Bad Type", 400);
+    minDateParse = new Date(minDate);
   }
 
-  if(inverted) {
-    query.aggs = {
-      "fdh": {
-        "filter": filt,
-        "aggs": {
-          "rs": {
-            "terms": {
-              "field": "recordset_id",
-              "size": config.maxRecordsets
-            },
-            "aggs": {
-              "dh": {
-                "date_histogram": {
-                  "field": "harvest_date",
-                  "interval": dateInterval,
-                  "format": "yyyy-MM-dd"
-                }
-              }
-            }
-          }
-        }
-      }
-    };
-
-    query.aggs.fdh.aggs.rs.aggs.dh.aggs = internal_aggs;
+  if(maxDate === "now") {
+    maxDateParse = new Date(Date.now());
   } else {
-    query.aggs = {
-      "fdh": {
-        "filter": filt,
-        "aggs": {
-          "dh": {
-            "date_histogram": {
-              "field": "harvest_date",
-              "interval": dateInterval,
-              "format": "yyyy-MM-dd"
-            },
-            "aggs": {
-              "rs": {
-                "terms": {
-                  "field": "recordset_id",
-                  "size": config.maxRecordsets
-                }
-              }
-            }
-          }
-        }
-      }
-    };
-
-    query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
+    maxDateParse =  new Date(maxDate);
   }
 
-  //const body = await searchShim(config.search.statsIndex, t, "_search", query);
+  const minDateOut = minDateParse.toISOString().split('T')[0];
+  const maxDateOut = maxDateParse.toISOString().split('T')[0];
 
-  //ctx.body = await formatter.stats_hist_formatter(body, inverted);
-
-  const body = await queryStats(t);
+  const body = await queryStats(t, recordset, dateInterval, minDateOut, maxDateOut, inverted);
 
   ctx.body = await formatter.stats_ch_formatter(body, inverted, minDate);
-
-  //await queryStats();
-
-  //console.log(ch_res);
-
-  if(ctx.body) {
-    //console.dir(ctx.body, {depth: null});
-  }
-
-  //console.dir(query, {depth: null});
 
 };
 
