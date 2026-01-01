@@ -1,0 +1,11 @@
+{
+  "query": "count([{\"index\":\"idigbio\",\"type\":\"mediarecords\",\"body\":{\"query\":{\"filtered\":{\"filter\":{},\"query\":{\"has_parent\":{\"parent_type\":\"records\",\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"term\":{\"genus\":\"acer\"}}]}}}}}}}}}])",
+  "response_snapshot": {
+    "count": 93689,
+    "_shards": {
+      "total": 44,
+      "successful": 44,
+      "failed": 0
+    }
+  }
+}

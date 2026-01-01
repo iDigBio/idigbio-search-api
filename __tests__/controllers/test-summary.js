@@ -27,6 +27,7 @@ describe('Summary', function() {
             .expect('Content-Type', /json/)
             .expect(200);
       expect(response.body.scientificname).to.be.an("Object");
+      console.log(response.body.scientificname);
       Object.keys(response.body.scientificname).length.should.not.equal(0);
     });
     it("should accept a count parameter`", async function() {

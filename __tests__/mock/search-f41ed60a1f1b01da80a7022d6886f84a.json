@@ -1,0 +1,41 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"match\":{\"scientificname\":{\"query\":\"nullius nullium\",\"operator\":\"and\",\"fuzziness\":0}}},{\"exists\":{\"field\":\"geopoint\"}}]}}},\"aggs\":{\"rs\":{\"terms\":{\"field\":\"recordset\",\"size\":10000}},\"gh\":{\"geohash_grid\":{\"field\":\"geopoint\",\"precision\":3,\"size\":\"500\"}},\"max_dm\":{\"max\":{\"field\":\"datemodified\"}},\"max_lat\":{\"max\":{\"field\":\"geopoint.lat\"}},\"max_lon\":{\"max\":{\"field\":\"geopoint.lon\"}},\"min_lat\":{\"min\":{\"field\":\"geopoint.lat\"}},\"min_lon\":{\"min\":{\"field\":\"geopoint.lon\"}}}}}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 0,
+      "max_score": null,
+      "hits": []
+    },
+    "aggregations": {
+      "min_lon": {
+        "value": null
+      },
+      "rs": {
+        "doc_count_error_upper_bound": 0,
+        "sum_other_doc_count": 0,
+        "buckets": []
+      },
+      "gh": {
+        "buckets": []
+      },
+      "max_lat": {
+        "value": null
+      },
+      "max_lon": {
+        "value": null
+      },
+      "max_dm": {
+        "value": null
+      },
+      "min_lat": {
+        "value": null
+      }
+    }
+  }
+}

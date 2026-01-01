@@ -38,6 +38,85 @@ Try the following, then retry `npm install`
 - Install python2.7.18
 - **(untested)** Try updating _npm_ or [updating the npm-bundled version of node-gyp](https://github.com/nodejs/node-gyp/blob/main/docs/Updating-npm-bundled-node-gyp.md) <!-- modified: 2022-07-13 04:25 EDT, accessed: 2023-11-14 -->
 
+### (testing) Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.&nbsp;/<br/>expected 200 "OK", got 500 "Internal Server Error"&nbsp;/<br/>No living connections
+
+This applies if tests are either running very slowly and failing with messages similar to:
+
+```
+● Summary › stats › returns a valid histogram for digest
+
+    Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+      
+      at Timeout.callback [as _onTimeout] (node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+      at Timer.processTimers (timers.js:223:10)
+
+  ● Summary › stats › returns a valid histogram for digest
+
+    TypeError: Cannot read property 'address' of null
+      
+      at Test.Object.<anonymous>.Test.serverAddress (node_modules/supertest/lib/test.js:55:18)
+      at new Test (node_modules/supertest/lib/test.js:36:12)
+      at Object.obj.(anonymous function) [as get] (node_modules/supertest/index.js:25:14)
+      at Object.<anonymous> (__tests__/controllers/test-summary.js:171:9)
+          at Generator.next (<anonymous>)
+      at step (__tests__/controllers/test-summary.js:10:431)
+      at __tests__/controllers/test-summary.js:10:668
+      at Object.<anonymous> (__tests__/controllers/test-summary.js:10:331)
+      From previous event:
+      at Timeout.callback (node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+      at Timer.processTimers (timers.js:223:10)
+```
+
+or failing very quickly with messages similar to:
+
+```
+● View › basic › should work for publishers
+
+expected 200 "OK", got 500 "Internal Server Error"
+
+  at Test.Object.<anonymous>.Test._assertStatus (node_modules/supertest/lib/test.js:268:12)
+  at Test.Object.<anonymous>.Test._assertFunction (node_modules/supertest/lib/test.js:283:11)
+  at Test.Object.<anonymous>.Test.assert (node_modules/supertest/lib/test.js:173:18)
+  at localAssert (node_modules/supertest/lib/test.js:131:12)
+  at node_modules/supertest/lib/test.js:128:5
+  at Test.Object.<anonymous>.Request.callback (node_modules/superagent/lib/node/index.js:728:3)
+  at parser (node_modules/superagent/lib/node/index.js:916:18)
+  at IncomingMessage.res.on (node_modules/superagent/lib/node/parsers/json.js:19:7)
+  at IncomingMessage.emit (events.js:203:15)
+  at endReadableNT (_stream_readable.js:1145:12)
+  at process._tickCallback (internal/process/next_tick.js:63:19)
+  From previous event:
+  at step (__tests__/controllers/test-view.js:12:555)
+  at __tests__/controllers/test-view.js:12:656
+  From previous event:
+  at Object.<anonymous> (__tests__/controllers/test-view.js:12:319)
+  From previous event:
+  at runCallback (timers.js:705:18)
+  at tryOnImmediate (timers.js:676:5)
+  at processImmediate (timers.js:658:5)
+  From previous event:
+  at process._tickCallback (internal/process/next_tick.js:68:7)
+```
+
+#### Cause
+
+Elasticsearch connection might not be able to be established.  
+
+#### Suggestions
+
+Ensure target Elasticsearch server is available from the host you are running tests from.
+
+Navigating to "http://target-elasticsearch-host:9200/" should immediately return JSON version information.
+
+If timeouts occur, the Elasticsearch servers are only accessible from certain subnets. Attempted connections outside these subnets are silently dropped, so your Elasticsearch client will not be sent a rejection.  
+If failing quickly, ensure the correct Elasticsearch server is being targeted (see [/src/config.js](src/config.js)) with URL scheme ("http://").
+
 ### (runtime) InvalidTypeError
 
 Either seen in the network monitor of web browser developer tools (responses with HTTP 400 return codes:  
@@ -51,7 +130,7 @@ Either seen in the network monitor of web browser developer tools (responses wit
 }
 ```
 ) or in the console session running `npm`:
-> **info**: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 400 150 - 51.517 ms
+> **info**: ::ffff:127.0.0.1 - "POST /v2/search/records/ HTTP/1.1" 400 150 - 51.517 ms  
 > **error**: Request error InvalidTypeError: Invalid type  
 > &nbsp;&nbsp;&nbsp;at getMappingForType (/idigbio-search-api/src/lib/indexTerms.js:45:11)  
 > &nbsp;&nbsp;&nbsp;(rest of stack trace omitted)
@@ -83,4 +162,4 @@ Elasticsearch might not be fully set up
 	   apiVersion: "2.4",
 	   sniffOnStart: false,
 	```
-- TODO: Make an Elasticsearch initialisation script available?
+- See Elasticsearch setup instructions in [our idb-backend project](https://github.com/iDigBio/idb-backend/blob/master/tests/README.md#dependencies) [\[permalink\]](https://github.com/iDigBio/idb-backend/blob/6b33df16b35b0b30d5447f6e7ea14133438ea7fd/tests/README.md#dependencies)

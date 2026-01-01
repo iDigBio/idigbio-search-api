@@ -1,0 +1,139 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{},\"size\":\"1\"}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 145684313,
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "30a6d0ca-8934-40b0-bb2d-6070af9646ed",
+          "_score": 1,
+          "_source": {
+            "recordset": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+            "dqs": 0.18840579710144928,
+            "stateprovince": "rhode island",
+            "county": "washington",
+            "catalognumber": "msuc_arc_23056",
+            "startdayofyear": 98,
+            "continent": "north america",
+            "uuid": "30a6d0ca-8934-40b0-bb2d-6070af9646ed",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "institutioncode": "msu",
+            "datecollected": "1958-04-08T00:00:00+00:00",
+            "etag": "eaa3af55e0f10817aa0b3ae009e36454d492daac",
+            "hasMedia": false,
+            "hasImage": false,
+            "collectionid": "15cdb244-b82d-4798-af5e-ef7bc138f233",
+            "locality": "uri greenhouse, kingston",
+            "data": {
+              "dwc:startDayOfYear": "98",
+              "dwc:county": "Washington",
+              "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=61917456",
+              "dwc:occurrenceID": "56b660ef-f01a-4388-afeb-560884ca0158",
+              "id": "61917456",
+              "dwc:stateProvince": "Rhode Island",
+              "dwc:eventDate": "1958-04-08",
+              "dwc:collectionID": "15cdb244-b82d-4798-af5e-ef7bc138f233",
+              "dwc:country": "United States",
+              "idigbio:recordId": "urn:uuid:56b660ef-f01a-4388-afeb-560884ca0158",
+              "dwc:collectionCode": "MSUC",
+              "dcterms:rightsHolder": "Department of Entomology, MSU",
+              "dwc:decimalLatitude": "41.4804",
+              "dwc:occurrenceRemarks": "MSUC_ARC_23056.jpg",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:preparations": "Hoyer's",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:habitat": "Lantana",
+              "dwc:locality": "URI Greenhouse, Kingston",
+              "dwc:institutionCode": "MSU",
+              "dwc:catalogNumber": "MSUC_ARC_23056",
+              "dwc:month": "4",
+              "dwc:decimalLongitude": "71.5226",
+              "dwc:verbatimEventDate": "8 April - IV 1958",
+              "dcterms:modified": "2022-09-12 12:39:09",
+              "dwc:associatedTaxa": "Lantana",
+              "dwc:day": "8",
+              "dwc:year": "1958"
+            },
+            "datemodified": "2022-12-07T01:39:57.474394+00:00",
+            "occurrenceid": "56b660ef-f01a-4388-afeb-560884ca0158",
+            "country": "united states",
+            "geopoint": {
+              "lat": 41.4804,
+              "lon": -71.5226
+            },
+            "collectioncode": "msuc",
+            "flags": [
+              "geopoint_datum_missing",
+              "rev_geocode_lon_sign",
+              "rev_geocode_corrected",
+              "rev_geocode_mismatch",
+              "idigbio_isocountrycode_added",
+              "dwc_continent_added"
+            ],
+            "verbatimeventdate": "8 april - iv 1958",
+            "recordids": [
+              "87017793-00dc-4f5d-b95b-09e7d17327cc\\56b660ef-f01a-4388-afeb-560884ca0158",
+              "87017793-00dc-4f5d-b95b-09e7d17327cc\\61917456",
+              "urn:uuid:56b660ef-f01a-4388-afeb-560884ca0158"
+            ],
+            "eventdate": "1958-04-08",
+            "indexData": {
+              "dwc:startDayOfYear": "98",
+              "dwc:county": "Washington",
+              "idigbio:uuid": "30a6d0ca-8934-40b0-bb2d-6070af9646ed",
+              "dcterms:references": "https://scan-bugs.org:443/portal/collections/individual/index.php?occid=61917456",
+              "idigbio:recordIds": [
+                "87017793-00dc-4f5d-b95b-09e7d17327cc\\56b660ef-f01a-4388-afeb-560884ca0158",
+                "87017793-00dc-4f5d-b95b-09e7d17327cc\\61917456",
+                "urn:uuid:56b660ef-f01a-4388-afeb-560884ca0158"
+              ],
+              "dwc:occurrenceID": "56b660ef-f01a-4388-afeb-560884ca0158",
+              "dcterms:rightsHolder": "Department of Entomology, MSU",
+              "idigbio:parent": "87017793-00dc-4f5d-b95b-09e7d17327cc",
+              "dwc:stateProvince": "Rhode Island",
+              "dwc:eventDate": "1958-04-08",
+              "dwc:collectionID": "15cdb244-b82d-4798-af5e-ef7bc138f233",
+              "dwc:country": "United States",
+              "idigbio:recordId": "urn:uuid:56b660ef-f01a-4388-afeb-560884ca0158",
+              "idigbio:etag": "eaa3af55e0f10817aa0b3ae009e36454d492daac",
+              "dwc:collectionCode": "MSUC",
+              "id": "61917456",
+              "dwc:decimalLatitude": "41.4804",
+              "dwc:occurrenceRemarks": "MSUC_ARC_23056.jpg",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:continent": "north america",
+              "dwc:preparations": "Hoyer's",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "idigbio:siblings": {},
+              "flag_idigbio_isocountrycode_added": true,
+              "dwc:habitat": "Lantana",
+              "idigbio:dateModified": "2022-12-07T01:39:57.474394",
+              "dwc:locality": "URI Greenhouse, Kingston",
+              "dwc:institutionCode": "MSU",
+              "dwc:catalogNumber": "MSUC_ARC_23056",
+              "dwc:month": "4",
+              "dwc:decimalLongitude": "71.5226",
+              "dwc:verbatimEventDate": "8 April - IV 1958",
+              "flag_dwc_continent_added": true,
+              "idigbio:isocountrycode": "usa",
+              "dcterms:modified": "2022-09-12 12:39:09",
+              "dwc:associatedTaxa": "Lantana",
+              "dwc:day": "8",
+              "dwc:year": "1958"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

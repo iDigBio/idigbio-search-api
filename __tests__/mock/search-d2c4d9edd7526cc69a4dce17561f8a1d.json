@@ -1,0 +1,16 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"recordsets\",\"body\":{\"query\":{\"term\":{\"uuid\":\"00000000-0000-0000-0000-000000000000\"}}}}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 0,
+      "max_score": null,
+      "hits": []
+    }
+  }
+}

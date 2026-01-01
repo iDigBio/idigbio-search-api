@@ -4,12 +4,15 @@
 
 "use strict";
 
+const config = require('./src/config');
+
 const _ = require("lodash");
 const http = require("http");
-http.globalAgent.maxSockets = 100; //obsolete in http/2
+const http2 = require("http2");
+if (config.HTTP_VERSION === '1')
+  http.globalAgent.maxSockets = 100; //obsolete in http/2
 
 
-const config = require('./src/config');
 let srcdir = null;
 if(config.ENV === 'prod') {
   srcdir = './build';
@@ -18,7 +21,8 @@ if(config.ENV === 'prod') {
   require('babel-register');
 }
 
-const logger = require(`${srcdir}/logging`).default;
+const loggingmod = require(`${srcdir}/logging`);
+const logger = loggingmod.default;
 
 logger.info("BEGIN LOGGING - SEVERITY = %s", config.LOGGER_LEVEL);
 logger.info("Current environment: %s", config.ENV)
@@ -34,18 +38,37 @@ function registerGracefulShutdown(signal, server, id) {
 }
 
 function startThisProcess(id) {
-  return new Promise(function (resolve, reject) {
-    id = id || 'main';
-    const app = require(`${srcdir}/app`).default;
-    return app.ready.then(function() {
-      const server = app.listen(config.port, function() {
-        logger.info(`Server(${id}) listening on port ${config.port}`);
+  const appmod = require(`${srcdir}/app`);
+  const app = appmod.default;
+
+  return appmod.checkAppPrerequisitesAsync().then(
+    () => {
+      logger.info('App prerequisites check passed');
+
+      id = id || 'main';
+      return app.ready.then(function () {
+        let server;
+        if (config.HTTP_VERSION === '2') {
+          server = http2.createServer(app.callback()); // Create an HTTP/2 server without SSL (SSL configured on the proxy)
+          server.listen(config.port, function () {
+            logger.info(`Server(${id}) listening on port ${config.port} with HTTP/2`);
+          });
+        } else {
+          server = app.listen(config.port, function() {
+            logger.info(`Server(${id}) listening on port ${config.port}`);
+          });
+        }
+        registerGracefulShutdown('SIGTERM', server, id);
+        registerGracefulShutdown('SIGINT', server, id);
+        return server;
       });
-      registerGracefulShutdown('SIGTERM', server, id);
-      registerGracefulShutdown('SIGINT', server, id);
-      resolve(server);
-    });
-  });
+    },
+    (reason) => {
+      logger.error('App prerequisites check failed');
+      loggingmod.exitAfterFlushAndWait(1, 1000);
+      throw new Error(reason);
+    }
+  );
 }
 
 
@@ -67,3 +90,14 @@ if(config.ENV === "test" || config.ENV === "development" || !config.CLUSTER) {
     startThisProcess(cluster.worker.process.pid);
   }
 }
+
+/* If you're ever wondering why the application does not end on error:
+ * (1) The version of Node.js in use might still allow unhandled promises
+ * (2) There are open handles that Node.js does not want to close prematurely
+ *     (uncomment code below to see them)
+ */
+
+//setInterval(() => {
+//  console.debug('ActiveRequests:', process._getActiveRequests());
+//  console.debug('ActiveHandles:', process._getActiveHandles());
+//}, 2000);

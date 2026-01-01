@@ -1,0 +1,1047 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"recordsets\",\"body\":{\"query\":{\"filtered\":{\"filter\":{}}},\"aggs\":{\"top_data.contacts.email\":{\"terms\":{\"field\":\"data.contacts.email\",\"size\":10}}},\"_source\":[]},\"sort\":[]}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 2124,
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
+          "_score": 1,
+          "_source": {
+            "publisher": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+            "uuid": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
+            "dqs": -1,
+            "archivelink": "http://xbiod.osu.edu/ipt/archive.do?r=ucfc",
+            "rights": "no license, assume public domain",
+            "contacts": [
+              {
+                "first_name": "Hojun",
+                "last_name": "Song",
+                "role": "Curator, Asst. Professor",
+                "email": "song@ucf.edu"
+              },
+              {
+                "first_name": "Norman",
+                "last_name": "Johnson",
+                "role": "Director, Professor",
+                "email": "johnson.2@osu.edu"
+              },
+              {
+                "first_name": "Sandor",
+                "last_name": "Kelly",
+                "role": "Collection Manager",
+                "email": "sandor.kelly@ucf.edu"
+              },
+              {
+                "first_name": "Hojun",
+                "last_name": "Song",
+                "role": "Curator, Asst. Professor",
+                "email": "song@ucf.edu"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "089a51fa-5f81-48e7-a1b7-9bc539555f29",
+              "eml_link": "http://xbiod.osu.edu/ipt/eml.do?r=ucfc",
+              "contacts": [
+                {
+                  "first_name": "Hojun",
+                  "last_name": "Song",
+                  "role": "Curator, Asst. Professor",
+                  "email": "song@ucf.edu"
+                },
+                {
+                  "first_name": "Norman",
+                  "last_name": "Johnson",
+                  "role": "Director, Professor",
+                  "email": "johnson.2@osu.edu"
+                },
+                {
+                  "first_name": "Sandor",
+                  "last_name": "Kelly",
+                  "role": "Collection Manager",
+                  "email": "sandor.kelly@ucf.edu"
+                },
+                {
+                  "first_name": "Hojun",
+                  "last_name": "Song",
+                  "role": "Curator, Asst. Professor",
+                  "email": "song@ucf.edu"
+                }
+              ],
+              "collection_name": "Stuart M. Fullerton Collection of Arthropods (UCFC), University of Central Florida",
+              "idigbio:uuid": "84006c59-fead-4b84-b3b5-cedf28f67ea9",
+              "idigbio:etag": "41e6af7fc888b9ef73a8e01384ad73abed6f84a8",
+              "update": "2018-08-29T08:25:24",
+              "ingest": true,
+              "institution_web_address": "http://bugcloset.cos.ucf.edu",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+              ],
+              "link": "http://xbiod.osu.edu/ipt/archive.do?r=ucfc",
+              "idigbio:dateModified": "2018-08-29T09:25:42.776340",
+              "collection_description": "Vouchered occurrence records for arthropods, primarily insects, from the Stuart M. Fullerton Collection of Arthropods at the University of Central Florida.",
+              "id": "262f8270-f9c2-4bc6-a562-8ed71c0790e6",
+              "other_guids": [],
+              "data_rights": "No license, assume Public Domain"
+            },
+            "etag": "41e6af7fc888b9ef73a8e01384ad73abed6f84a8",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://xbiod.osu.edu/ipt/eml.do?r=ucfc",
+            "recordids": [
+              "262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+            ],
+            "data": {
+              "eml_link": "http://xbiod.osu.edu/ipt/eml.do?r=ucfc",
+              "contacts": [
+                {
+                  "first_name": "Hojun",
+                  "last_name": "Song",
+                  "role": "Curator, Asst. Professor",
+                  "email": "song@ucf.edu"
+                },
+                {
+                  "first_name": "Norman",
+                  "last_name": "Johnson",
+                  "role": "Director, Professor",
+                  "email": "johnson.2@osu.edu"
+                },
+                {
+                  "first_name": "Sandor",
+                  "last_name": "Kelly",
+                  "role": "Collection Manager",
+                  "email": "sandor.kelly@ucf.edu"
+                },
+                {
+                  "first_name": "Hojun",
+                  "last_name": "Song",
+                  "role": "Curator, Asst. Professor",
+                  "email": "song@ucf.edu"
+                }
+              ],
+              "collection_name": "Stuart M. Fullerton Collection of Arthropods (UCFC), University of Central Florida",
+              "update": "2018-08-29T08:25:24",
+              "ingest": true,
+              "data_rights": "No license, assume Public Domain",
+              "link": "http://xbiod.osu.edu/ipt/archive.do?r=ucfc",
+              "collection_description": "Vouchered occurrence records for arthropods, primarily insects, from the Stuart M. Fullerton Collection of Arthropods at the University of Central Florida.",
+              "other_guids": [],
+              "institution_web_address": "http://bugcloset.cos.ucf.edu",
+              "id": "262f8270-f9c2-4bc6-a562-8ed71c0790e6"
+            },
+            "datemodified": "2018-08-29T09:25:42.776340+00:00",
+            "name": "stuart m. fullerton collection of arthropods (ucfc), university of central florida"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "9475a9e1-cd56-4f5c-8d21-4206b088231b",
+          "_score": 1,
+          "_source": {
+            "publisher": "26281097-694b-483d-ae22-676a2a448bf1",
+            "uuid": "9475a9e1-cd56-4f5c-8d21-4206b088231b",
+            "dqs": -1,
+            "archivelink": "http://danbif.au.dk/ipt/archive.do?r=macroarthropods_nuupkangerlua2013_greenland",
+            "rights": "cc4 by",
+            "contacts": [
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
+              },
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
+              },
+              {
+                "first_name": "Isabel",
+                "last_name": "Calabuig",
+                "role": "Node manager, Data curator",
+                "email": "icalabuig@snm.ku.dk"
+              },
+              {
+                "first_name": "Toke Thomas",
+                "last_name": "Høye",
+                "role": "Senior scientist",
+                "email": "tth@bios.au.dk"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "26281097-694b-483d-ae22-676a2a448bf1",
+              "eml_link": "http://danbif.au.dk/ipt/eml.do?r=macroarthropods_nuupkangerlua2013_greenland",
+              "contacts": [
+                {
+                  "first_name": "Toke Thomas",
+                  "last_name": "Høye",
+                  "role": "Senior scientist",
+                  "email": "tth@bios.au.dk"
+                },
+                {
+                  "first_name": "Toke Thomas",
+                  "last_name": "Høye",
+                  "role": "Senior scientist",
+                  "email": "tth@bios.au.dk"
+                },
+                {
+                  "first_name": "Isabel",
+                  "last_name": "Calabuig",
+                  "role": "Node manager, Data curator",
+                  "email": "icalabuig@snm.ku.dk"
+                },
+                {
+                  "first_name": "Toke Thomas",
+                  "last_name": "Høye",
+                  "role": "Senior scientist",
+                  "email": "tth@bios.au.dk"
+                }
+              ],
+              "collection_name": "Macroarthropods, Godthåbsfjorden (Nuup Kangerlua) 2013, Greenland",
+              "idigbio:uuid": "9475a9e1-cd56-4f5c-8d21-4206b088231b",
+              "idigbio:etag": "2b558403c4bcd68517331e6d2d19d73d0ad465b4",
+              "update": "2017-08-09T08:49:56",
+              "ingest": true,
+              "institution_web_address": "",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "59d25ddf-355d-47d7-b8a1-c1e2819014c7"
+              ],
+              "link": "http://danbif.au.dk/ipt/archive.do?r=macroarthropods_nuupkangerlua2013_greenland",
+              "idigbio:dateModified": "2017-08-09T09:05:46.761969",
+              "collection_description": "Pitfall trap data set collected by Toke Thomas Høye, Rikke Reisner Hansen, and Oskar Liset Pryds Hansen",
+              "id": "59d25ddf-355d-47d7-b8a1-c1e2819014c7",
+              "other_guids": [],
+              "data_rights": "CC4 BY"
+            },
+            "etag": "2b558403c4bcd68517331e6d2d19d73d0ad465b4",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://danbif.au.dk/ipt/eml.do?r=macroarthropods_nuupkangerlua2013_greenland",
+            "recordids": [
+              "59d25ddf-355d-47d7-b8a1-c1e2819014c7"
+            ],
+            "data": {
+              "eml_link": "http://danbif.au.dk/ipt/eml.do?r=macroarthropods_nuupkangerlua2013_greenland",
+              "contacts": [
+                {
+                  "first_name": "Toke Thomas",
+                  "last_name": "Høye",
+                  "role": "Senior scientist",
+                  "email": "tth@bios.au.dk"
+                },
+                {
+                  "first_name": "Toke Thomas",
+                  "last_name": "Høye",
+                  "role": "Senior scientist",
+                  "email": "tth@bios.au.dk"
+                },
+                {
+                  "first_name": "Isabel",
+                  "last_name": "Calabuig",
+                  "role": "Node manager, Data curator",
+                  "email": "icalabuig@snm.ku.dk"
+                },
+                {
+                  "first_name": "Toke Thomas",
+                  "last_name": "Høye",
+                  "role": "Senior scientist",
+                  "email": "tth@bios.au.dk"
+                }
+              ],
+              "collection_name": "Macroarthropods, Godthåbsfjorden (Nuup Kangerlua) 2013, Greenland",
+              "update": "2017-08-09T08:49:56",
+              "ingest": true,
+              "data_rights": "CC4 BY",
+              "link": "http://danbif.au.dk/ipt/archive.do?r=macroarthropods_nuupkangerlua2013_greenland",
+              "collection_description": "Pitfall trap data set collected by Toke Thomas Høye, Rikke Reisner Hansen, and Oskar Liset Pryds Hansen",
+              "other_guids": [],
+              "institution_web_address": "",
+              "id": "59d25ddf-355d-47d7-b8a1-c1e2819014c7"
+            },
+            "datemodified": "2017-08-09T09:05:46.761969+00:00",
+            "name": "macroarthropods, godthåbsfjorden (nuup kangerlua) 2013, greenland"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "8dc14464-57b3-423e-8cb0-950ab8f36b6f",
+          "_score": 1,
+          "_source": {
+            "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "uuid": "8dc14464-57b3-423e-8cb0-950ab8f36b6f",
+            "dqs": -1,
+            "archivelink": "http://bryophyteportal.org/portal/collections/datasets/dwc/cas_dwc-a.zip",
+            "rights": "cc3 by-nc",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Debra Trock, Collections Manager, Herbarium",
+                "email": "dtrock@calacademy.org"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+              "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "egbot@asu.edu"
+                },
+                {
+                  "first_name": "Debra Trock, Collections Manager, Herbarium",
+                  "email": "dtrock@calacademy.org"
+                }
+              ],
+              "collection_name": "California Academy of Sciences",
+              "idigbio:uuid": "8dc14464-57b3-423e-8cb0-950ab8f36b6f",
+              "idigbio:etag": "4e9fb98c216afc7ffc4647b7af09be98f397a627",
+              "update": "2015-09-28T21:12:12",
+              "ingest": true,
+              "institution_web_address": "http://research.calacademy.org/botany/collections",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937"
+              ],
+              "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.zip",
+              "idigbio:dateModified": "2015-09-29T00:21:36.226368",
+              "collection_description": "The herbarium of the California Academy of Sciences (CAS) is the largest collection of vascular plants in the western U.S. It is the sixth largest collection in the United States. Together with the Herbarium of the University of California at Berkeley (UC) the San Francisco Bay area is regarded as a National Resource Center for systematic botany. These two major collections have an informal agreement to avoid duplication, thus providing botanists with a rich and varied resource for research.",
+              "id": "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937",
+              "other_guids": [],
+              "logo_url": "http://bryophyteportal.org/portal/images/collicons/CAS.jpg",
+              "data_rights": "CC3 BY-NC"
+            },
+            "etag": "4e9fb98c216afc7ffc4647b7af09be98f397a627",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://bryophyteportal.org/portal/collections/datasets/dwc/cas_dwc-a.eml",
+            "logourl": "http://bryophyteportal.org/portal/images/collicons/cas.jpg",
+            "recordids": [
+              "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937"
+            ],
+            "data": {
+              "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "egbot@asu.edu"
+                },
+                {
+                  "first_name": "Debra Trock, Collections Manager, Herbarium",
+                  "email": "dtrock@calacademy.org"
+                }
+              ],
+              "collection_name": "California Academy of Sciences",
+              "update": "2015-09-28T21:12:12",
+              "ingest": true,
+              "data_rights": "CC3 BY-NC",
+              "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/CAS_DwC-A.zip",
+              "collection_description": "The herbarium of the California Academy of Sciences (CAS) is the largest collection of vascular plants in the western U.S. It is the sixth largest collection in the United States. Together with the Herbarium of the University of California at Berkeley (UC) the San Francisco Bay area is regarded as a National Resource Center for systematic botany. These two major collections have an informal agreement to avoid duplication, thus providing botanists with a rich and varied resource for research.",
+              "institution_web_address": "http://research.calacademy.org/botany/collections",
+              "other_guids": [],
+              "logo_url": "http://bryophyteportal.org/portal/images/collicons/CAS.jpg",
+              "id": "http://bryophyteportal.org/portal/webservices/dwc/d56640e5-4356-4610-8d1e-d5567c193937"
+            },
+            "datemodified": "2015-09-29T00:21:36.226368+00:00",
+            "name": "california academy of sciences"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
+          "_score": 1,
+          "_source": {
+            "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "uuid": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
+            "dqs": -1,
+            "archivelink": "http://bryophyteportal.org/portal/collections/datasets/dwc/ftu_dwc-a.zip",
+            "rights": "cc3 by-nc",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "first_name": "Patrick Bohlen, Director",
+                "email": "patrick.bohlen@ucf.edu"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+              "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "egbot@asu.edu"
+                },
+                {
+                  "first_name": "Patrick Bohlen, Director",
+                  "email": "patrick.bohlen@ucf.edu"
+                }
+              ],
+              "collection_name": "University of Central Florida Herbarium",
+              "idigbio:uuid": "c3a7b339-122e-4fe9-8851-371b1fdf584e",
+              "idigbio:etag": "b8231639fd3026f1f861e482b90b08f76044e256",
+              "update": "2015-09-28T21:12:12",
+              "ingest": true,
+              "institution_web_address": "http://arboretum.ucf.edu/programs/herbarium/",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1",
+                "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=40"
+              ],
+              "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.zip",
+              "idigbio:dateModified": "2015-09-29T00:21:36.377947",
+              "collection_description": "Established by President Trevor Colbourn in 1983, the UCF Arboretum began with approximately 12 acres (4.9 ha) of a disturbed pond pine (Pinus serotina) community just east side of the developed area of campus, and east of the present biology building. In 1988, at President Altmans direction, the University expanded the Arboretum to include a 5-acre (2.0 ha) Cypress dome, an oak hammock of about 3 acres (1.2 ha), and about 15 acres (6.1 ha) of sand pine and Florida scrub, connected to the original Arboretum by a saw palmetto (Sabal palmetto) community and increasingly rare Florida longleaf pine (Pinus palustris) flatwoods. Currently, the official Arboretum Boundary encompasses approximately 82 acres (33.2 ha). The original Arboretum director was Dr. Henry O. Whittier, a professor in the Biology Department who remained director until his retirement 2003. Dr. Martin Quigley was director from 2003-2009.",
+              "id": "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1",
+              "other_guids": [],
+              "logo_url": "http://bryophyteportal.org/portal/images/collicons/Arboretum.png",
+              "data_rights": "CC3 BY-NC"
+            },
+            "etag": "b8231639fd3026f1f861e482b90b08f76044e256",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://bryophyteportal.org/portal/collections/datasets/dwc/ftu_dwc-a.eml",
+            "logourl": "http://bryophyteportal.org/portal/images/collicons/arboretum.png",
+            "recordids": [
+              "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1",
+              "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=40"
+            ],
+            "data": {
+              "eml_link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "egbot@asu.edu"
+                },
+                {
+                  "first_name": "Patrick Bohlen, Director",
+                  "email": "patrick.bohlen@ucf.edu"
+                }
+              ],
+              "collection_name": "University of Central Florida Herbarium",
+              "update": "2015-09-28T21:12:12",
+              "ingest": true,
+              "data_rights": "CC3 BY-NC",
+              "link": "http://bryophyteportal.org/portal/collections/datasets/dwc/FTU_DwC-A.zip",
+              "collection_description": "Established by President Trevor Colbourn in 1983, the UCF Arboretum began with approximately 12 acres (4.9 ha) of a disturbed pond pine (Pinus serotina) community just east side of the developed area of campus, and east of the present biology building. In 1988, at President Altmans direction, the University expanded the Arboretum to include a 5-acre (2.0 ha) Cypress dome, an oak hammock of about 3 acres (1.2 ha), and about 15 acres (6.1 ha) of sand pine and Florida scrub, connected to the original Arboretum by a saw palmetto (Sabal palmetto) community and increasingly rare Florida longleaf pine (Pinus palustris) flatwoods. Currently, the official Arboretum Boundary encompasses approximately 82 acres (33.2 ha). The original Arboretum director was Dr. Henry O. Whittier, a professor in the Biology Department who remained director until his retirement 2003. Dr. Martin Quigley was director from 2003-2009.",
+              "institution_web_address": "http://arboretum.ucf.edu/programs/herbarium/",
+              "other_guids": [],
+              "logo_url": "http://bryophyteportal.org/portal/images/collicons/Arboretum.png",
+              "id": "http://bryophyteportal.org/portal/webservices/dwc/a9b5eac9-ba35-485e-98c7-0d66430f16e1"
+            },
+            "datemodified": "2015-09-29T00:21:36.377947+00:00",
+            "name": "university of central florida herbarium"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "559e684e-c833-4b3b-a8fe-588fbc9759c4",
+          "_score": 1,
+          "_source": {
+            "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "uuid": "559e684e-c833-4b3b-a8fe-588fbc9759c4",
+            "dqs": -1,
+            "etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "indexData": {
+              "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+              "idigbio:recordIds": [
+                "http://feeder.idigbio.org/datasets/559e684e-c833-4b3b-a8fe-588fbc9759c4"
+              ],
+              "idigbio:dateModified": "2016-09-09T13:15:18.861035",
+              "idigbio:uuid": "559e684e-c833-4b3b-a8fe-588fbc9759c4",
+              "idigbio:etag": "97d170e1550eee4afc0af065b78cda302a97674c",
+              "idigbio:siblings": {}
+            },
+            "recordids": [
+              "http://feeder.idigbio.org/datasets/559e684e-c833-4b3b-a8fe-588fbc9759c4"
+            ],
+            "data": {},
+            "datemodified": "2016-09-09T13:15:18.861035+00:00"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+          "_score": 1,
+          "_source": {
+            "publisher": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+            "uuid": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+            "dqs": -1,
+            "archivelink": "http://www.gbif.se/ipt/archive.do?r=gb-general",
+            "rights": "cc0",
+            "contacts": [
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              },
+              {
+                "first_name": "Anders",
+                "last_name": "Telenius",
+                "role": "Node manager",
+                "email": "anders.telenius@nrm.se"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "baaa8f8c-4a78-4dcf-b207-25289a6d533d",
+              "eml_link": "http://www.gbif.se/ipt/eml.do?r=gb-general",
+              "contacts": [
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                },
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                },
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                },
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                }
+              ],
+              "collection_name": "Gothenburg Herbarium - General (GBIF:IH:GB:Herbarium)",
+              "idigbio:uuid": "d38fd1e8-bc15-46b2-92d5-5f3df98cff53",
+              "idigbio:etag": "3ce4113b4be5e3c26a6b7611090bfde38cd053a8",
+              "update": "2016-01-05T10:44:06",
+              "ingest": true,
+              "institution_web_address": "",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "de49c340-0c61-11dd-84ce-b8a03c50a862"
+              ],
+              "link": "http://www.gbif.se/ipt/archive.do?r=gb-general",
+              "idigbio:dateModified": "2017-04-19T15:30:50.849849",
+              "collection_description": "This database contains information from Gothenburg (Sweden) general herbarium.",
+              "id": "de49c340-0c61-11dd-84ce-b8a03c50a862",
+              "other_guids": [],
+              "data_rights": "CC0"
+            },
+            "etag": "3ce4113b4be5e3c26a6b7611090bfde38cd053a8",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://www.gbif.se/ipt/eml.do?r=gb-general",
+            "recordids": [
+              "de49c340-0c61-11dd-84ce-b8a03c50a862"
+            ],
+            "data": {
+              "eml_link": "http://www.gbif.se/ipt/eml.do?r=gb-general",
+              "contacts": [
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                },
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                },
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                },
+                {
+                  "first_name": "Anders",
+                  "last_name": "Telenius",
+                  "role": "Node manager",
+                  "email": "anders.telenius@nrm.se"
+                }
+              ],
+              "collection_name": "Gothenburg Herbarium - General (GBIF:IH:GB:Herbarium)",
+              "update": "2016-01-05T10:44:06",
+              "ingest": true,
+              "data_rights": "CC0",
+              "link": "http://www.gbif.se/ipt/archive.do?r=gb-general",
+              "collection_description": "This database contains information from Gothenburg (Sweden) general herbarium.",
+              "other_guids": [],
+              "institution_web_address": "",
+              "id": "de49c340-0c61-11dd-84ce-b8a03c50a862"
+            },
+            "datemodified": "2017-04-19T15:30:50.849849+00:00",
+            "name": "gothenburg herbarium - general (gbif:ih:gb:herbarium)"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "1c8ec291-8067-4b48-848b-410c2c768420",
+          "_score": 1,
+          "_source": {
+            "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "uuid": "1c8ec291-8067-4b48-848b-410c2c768420",
+            "dqs": -1,
+            "archivelink": "http://lichenportal.org/portal/collections/datasets/dwc/usf_dwc-a.zip",
+            "rights": "cc3 by-nc",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Alan R. Franck, Ph.D., Curator",
+                "email": "afranck@mail.usf.edu"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+              "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "CNALHadmin@asu.edu"
+                },
+                {
+                  "first_name": "Alan R. Franck, Ph.D., Curator",
+                  "email": "afranck@mail.usf.edu"
+                }
+              ],
+              "collection_name": "University of South Florida Herbarium",
+              "idigbio:uuid": "1c8ec291-8067-4b48-848b-410c2c768420",
+              "idigbio:etag": "3e168d40a69c9999fc5e61c3d02a652d4d34683a",
+              "update": "2015-09-28T21:55:43",
+              "ingest": true,
+              "institution_web_address": "http://florida.plantatlas.usf.edu",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b",
+                "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=58"
+              ],
+              "link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.zip",
+              "idigbio:dateModified": "2015-09-29T01:21:29.337684",
+              "collection_description": "The USF Herbarium, with nearly 270,000 specimens, is the second largest collection in Florida, the seventh largest in the southeastern United States, and ranks in the upper third of the world's herbaria in size.",
+              "id": "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b",
+              "other_guids": [],
+              "logo_url": "http://lichenportal.org/portal/images/collicons/USF.jpg",
+              "data_rights": "CC3 BY-NC"
+            },
+            "etag": "3e168d40a69c9999fc5e61c3d02a652d4d34683a",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://lichenportal.org/portal/collections/datasets/dwc/usf_dwc-a.eml",
+            "logourl": "http://lichenportal.org/portal/images/collicons/usf.jpg",
+            "recordids": [
+              "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b",
+              "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=58"
+            ],
+            "data": {
+              "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "CNALHadmin@asu.edu"
+                },
+                {
+                  "first_name": "Alan R. Franck, Ph.D., Curator",
+                  "email": "afranck@mail.usf.edu"
+                }
+              ],
+              "collection_name": "University of South Florida Herbarium",
+              "update": "2015-09-28T21:55:43",
+              "ingest": true,
+              "data_rights": "CC3 BY-NC",
+              "link": "http://lichenportal.org/portal/collections/datasets/dwc/USF_DwC-A.zip",
+              "collection_description": "The USF Herbarium, with nearly 270,000 specimens, is the second largest collection in Florida, the seventh largest in the southeastern United States, and ranks in the upper third of the world's herbaria in size.",
+              "institution_web_address": "http://florida.plantatlas.usf.edu",
+              "other_guids": [],
+              "logo_url": "http://lichenportal.org/portal/images/collicons/USF.jpg",
+              "id": "http://lichenportal.org/portal/webservices/dwc/53d106d9-2fa4-4587-b060-93ce952c612b"
+            },
+            "datemodified": "2015-09-29T01:21:29.337684+00:00",
+            "name": "university of south florida herbarium"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "35879d2c-063f-4046-9ac6-eda6410e21a9",
+          "_score": 1,
+          "_source": {
+            "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "uuid": "35879d2c-063f-4046-9ac6-eda6410e21a9",
+            "dqs": -1,
+            "archivelink": "http://lichenportal.org/portal/collections/datasets/dwc/bg_dwc-a.zip",
+            "rights": "cc3 by-nc",
+            "contacts": [
+              {
+                "email": "CNALHadmin@asu.edu"
+              },
+              {
+                "first_name": "Contact: Tor Tønsberg, curator of lichens",
+                "email": "tor.tonsberg@um.uib.no"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+              "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "CNALHadmin@asu.edu"
+                },
+                {
+                  "first_name": "Contact: Tor Tønsberg, curator of lichens",
+                  "email": "tor.tonsberg@um.uib.no"
+                }
+              ],
+              "collection_name": "University Museum of Bergen",
+              "idigbio:uuid": "35879d2c-063f-4046-9ac6-eda6410e21a9",
+              "idigbio:etag": "b570aadce05b701cb68c2cea6ac26b0b486f2c97",
+              "update": "2016-04-28T13:40:07",
+              "ingest": true,
+              "institution_web_address": "http://www.uib.no/en/universitymuseum",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d"
+              ],
+              "link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.zip",
+              "idigbio:dateModified": "2016-04-28T16:41:36.945153",
+              "collection_description": "The lichen collection at herbarium BG consists of 95000 fully computerized specimens. About 51000 are from Norway. Important material is also from and the Arctic (Svalbard with Bjørnøya), Antarctica (Mainland Antarctica, Argentine Islands, Bouvet Island, Gough Island, Kerguelen, Prince Edward Islands, and South Orkney Islands), and North-America. The herbarium includes material collected by, e.g., N.M. Blytt, T. Engelskjøn, Th.M. Fries, G. Gaarder, J.J. Havaas, J.I. Johnsen, P.M. Jørgensen, W. Maas, N.G. Moe, J.M. Norman, D.O. Øvstedal, C. Printzen, T. Spribille, and T. Tønsberg.",
+              "id": "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d",
+              "other_guids": [],
+              "logo_url": "http://lichenportal.org/portal/images/collicons/BG.jpg",
+              "data_rights": "CC3 BY-NC"
+            },
+            "etag": "b570aadce05b701cb68c2cea6ac26b0b486f2c97",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "http://lichenportal.org/portal/collections/datasets/dwc/bg_dwc-a.eml",
+            "logourl": "http://lichenportal.org/portal/images/collicons/bg.jpg",
+            "recordids": [
+              "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d"
+            ],
+            "data": {
+              "eml_link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.eml",
+              "contacts": [
+                {
+                  "email": "CNALHadmin@asu.edu"
+                },
+                {
+                  "first_name": "Contact: Tor Tønsberg, curator of lichens",
+                  "email": "tor.tonsberg@um.uib.no"
+                }
+              ],
+              "collection_name": "University Museum of Bergen",
+              "update": "2016-04-28T13:40:07",
+              "ingest": true,
+              "data_rights": "CC3 BY-NC",
+              "link": "http://lichenportal.org/portal/collections/datasets/dwc/BG_DwC-A.zip",
+              "collection_description": "The lichen collection at herbarium BG consists of 95000 fully computerized specimens. About 51000 are from Norway. Important material is also from and the Arctic (Svalbard with Bjørnøya), Antarctica (Mainland Antarctica, Argentine Islands, Bouvet Island, Gough Island, Kerguelen, Prince Edward Islands, and South Orkney Islands), and North-America. The herbarium includes material collected by, e.g., N.M. Blytt, T. Engelskjøn, Th.M. Fries, G. Gaarder, J.J. Havaas, J.I. Johnsen, P.M. Jørgensen, W. Maas, N.G. Moe, J.M. Norman, D.O. Øvstedal, C. Printzen, T. Spribille, and T. Tønsberg.",
+              "institution_web_address": "http://www.uib.no/en/universitymuseum",
+              "other_guids": [],
+              "logo_url": "http://lichenportal.org/portal/images/collicons/BG.jpg",
+              "id": "http://lichenportal.org/portal/webservices/dwc/850637f1-f750-4ecb-aab8-c677a83ac32d"
+            },
+            "datemodified": "2016-04-28T16:41:36.945153+00:00",
+            "name": "university museum of bergen"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "833306f7-91b6-4ff7-bc16-0e406334d991",
+          "_score": 1,
+          "_source": {
+            "publisher": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+            "uuid": "833306f7-91b6-4ff7-bc16-0e406334d991",
+            "dqs": -1,
+            "archivelink": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+            "rights": "no license, assume public domain",
+            "contacts": [
+              {
+                "first_name": "Ralph",
+                "last_name": "Holzenthal",
+                "email": "holze001@umn.edu"
+              },
+              {
+                "first_name": "Ralph",
+                "last_name": "Holzenthal",
+                "email": "holze001@umn.edu"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+              "eml_link": "https://invertnet.org/idigbio-feed/datasets/umsp/eml.xml",
+              "contacts": [
+                {
+                  "first_name": "Ralph",
+                  "last_name": "Holzenthal",
+                  "email": "holze001@umn.edu"
+                },
+                {
+                  "first_name": "Ralph",
+                  "last_name": "Holzenthal",
+                  "email": "holze001@umn.edu"
+                }
+              ],
+              "collection_name": "University of Minnesota Digitized Collection",
+              "idigbio:uuid": "833306f7-91b6-4ff7-bc16-0e406334d991",
+              "idigbio:etag": "a1a5f016bedc28b03f46c6a0702a12db5fc8bb48",
+              "update": "2022-03-18T09:07:35",
+              "ingest": true,
+              "institution_web_address": "",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "https://invertnet.org/idigbio-feed/datasets/umsp.zip"
+              ],
+              "link": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+              "idigbio:dateModified": "2022-03-18T14:05:58.654194",
+              "collection_description": "Our mission is to explore, describe, and preserve representative specimens of Earth's remarkable diversity of insects and to make these specimens available to the global community for research and education. Contributions to the collection began in 1879 with specimens of insects and spiders from the North Shore of Lake Superior. During the last 135 years, the collection's holdings have grown from a regional collection of 3,000 specimens to a major national and international resource of more than 3.8 million specimens. The collection is the mainstay of graduate training in systematic entomology at the University of Minnesota.",
+              "id": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+              "other_guids": [],
+              "data_rights": "No license, assume Public Domain"
+            },
+            "etag": "a1a5f016bedc28b03f46c6a0702a12db5fc8bb48",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "https://invertnet.org/idigbio-feed/datasets/umsp/eml.xml",
+            "recordids": [
+              "https://invertnet.org/idigbio-feed/datasets/umsp.zip"
+            ],
+            "data": {
+              "eml_link": "https://invertnet.org/idigbio-feed/datasets/umsp/eml.xml",
+              "contacts": [
+                {
+                  "first_name": "Ralph",
+                  "last_name": "Holzenthal",
+                  "email": "holze001@umn.edu"
+                },
+                {
+                  "first_name": "Ralph",
+                  "last_name": "Holzenthal",
+                  "email": "holze001@umn.edu"
+                }
+              ],
+              "collection_name": "University of Minnesota Digitized Collection",
+              "update": "2022-03-18T09:07:35",
+              "ingest": true,
+              "data_rights": "No license, assume Public Domain",
+              "link": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+              "collection_description": "Our mission is to explore, describe, and preserve representative specimens of Earth's remarkable diversity of insects and to make these specimens available to the global community for research and education. Contributions to the collection began in 1879 with specimens of insects and spiders from the North Shore of Lake Superior. During the last 135 years, the collection's holdings have grown from a regional collection of 3,000 specimens to a major national and international resource of more than 3.8 million specimens. The collection is the mainstay of graduate training in systematic entomology at the University of Minnesota.",
+              "other_guids": [],
+              "institution_web_address": "",
+              "id": "https://invertnet.org/idigbio-feed/datasets/umsp.zip"
+            },
+            "datemodified": "2022-03-18T14:05:58.654194+00:00",
+            "name": "university of minnesota digitized collection"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "recordsets",
+          "_id": "cdb6ec43-935e-4da2-8798-71e40ca6d12a",
+          "_score": 1,
+          "_source": {
+            "publisher": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+            "uuid": "cdb6ec43-935e-4da2-8798-71e40ca6d12a",
+            "dqs": -1,
+            "archivelink": "https://api.biodiversitydata.nl/v2/specimen/dwca/getdataset/mollusca",
+            "rights": "cc0",
+            "contacts": [
+              {
+                "first_name": "Jeroen",
+                "last_name": "Creuwels",
+                "role": "Data manager",
+                "email": "informatiemanagement@naturalis.nl"
+              },
+              {
+                "first_name": "Jeroen",
+                "last_name": "Creuwels",
+                "role": "Data manager",
+                "email": "informatiemanagement@naturalis.nl"
+              },
+              {
+                "first_name": "Steven",
+                "last_name": "van der Mije",
+                "role": "Head Invertebrate collections",
+                "email": "collectie@naturalis.nl"
+              }
+            ],
+            "indexData": {
+              "idigbio:parent": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+              "eml_link": "https://raw.githubusercontent.com/naturalis/nba-eml/master/mollusca_eml.xml",
+              "contacts": [
+                {
+                  "first_name": "Jeroen",
+                  "last_name": "Creuwels",
+                  "role": "Data manager",
+                  "email": "informatiemanagement@naturalis.nl"
+                },
+                {
+                  "first_name": "Jeroen",
+                  "last_name": "Creuwels",
+                  "role": "Data manager",
+                  "email": "informatiemanagement@naturalis.nl"
+                },
+                {
+                  "first_name": "Steven",
+                  "last_name": "van der Mije",
+                  "role": "Head Invertebrate collections",
+                  "email": "collectie@naturalis.nl"
+                }
+              ],
+              "collection_name": "Naturalis Biodiversity Center (NL) - Mollusca",
+              "idigbio:uuid": "cdb6ec43-935e-4da2-8798-71e40ca6d12a",
+              "idigbio:etag": "01b421b0da2809dd726796c57926674fdf3bb6b2",
+              "update": "2023-01-12T00:00:00",
+              "ingest": true,
+              "institution_web_address": "",
+              "idigbio:siblings": {},
+              "idigbio:recordIds": [
+                "doi:10.15468/yefvnk"
+              ],
+              "link": "https://api.biodiversitydata.nl/v2/specimen/dwca/getDataSet/mollusca",
+              "idigbio:dateModified": "2023-01-14T02:44:28.301122",
+              "collection_description": "Database contains specimen records from the Mollusca collection of the Naturalis Biodiversity Center (Leiden, Netherlands). The zoological specimens come from the National Museum of Natural History (RMNH; Rijksmuseum voor Natuurlijke Historie), later National Museum of Natural History, Naturalis in Leiden and the Zoological Museum Amsterdam (ZMA) and new acquisitions. This database replaces the dataset \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Conidae\", \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Netherlands\", and \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Pectinoidea\" which were hosted earlier on the GBIF dataportal and contains many new and updated records, especially from the RMNH collection. This dataset is an abstract of the Naturalis production database (BRD) of 2012-12-12. The datasets Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Types, and Naturalis National Natural History Museum (NL) – Mollusca fossils, are still separately hosted at GBIF, and are not included in this dataset. The old registration numbers of the former institutions (RMNH, ZMA) are also mentioned in the dataset. The Naturalis BC collection contains over 42.000 species of Recent Mollusca. Locality data have only been added in part to this molluscan dataset. Many identifications are original and can be as old as over a century. Many species level names were recently (2011-2012) updated with the help of literature and web based taxonomic databases containing synonymies.",
+              "id": "doi:10.15468/yefvnk",
+              "other_guids": [],
+              "logo_url": "http://www.naturalis.nl/media/library/2012/07/Naturalis_logo_staand_rood_01.jpg",
+              "data_rights": "CC0"
+            },
+            "etag": "01b421b0da2809dd726796c57926674fdf3bb6b2",
+            "flags": [
+              "dwc_basisofrecord_invalid"
+            ],
+            "emllink": "https://raw.githubusercontent.com/naturalis/nba-eml/master/mollusca_eml.xml",
+            "logourl": "http://www.naturalis.nl/media/library/2012/07/naturalis_logo_staand_rood_01.jpg",
+            "recordids": [
+              "doi:10.15468/yefvnk"
+            ],
+            "data": {
+              "eml_link": "https://raw.githubusercontent.com/naturalis/nba-eml/master/mollusca_eml.xml",
+              "contacts": [
+                {
+                  "first_name": "Jeroen",
+                  "last_name": "Creuwels",
+                  "role": "Data manager",
+                  "email": "informatiemanagement@naturalis.nl"
+                },
+                {
+                  "first_name": "Jeroen",
+                  "last_name": "Creuwels",
+                  "role": "Data manager",
+                  "email": "informatiemanagement@naturalis.nl"
+                },
+                {
+                  "first_name": "Steven",
+                  "last_name": "van der Mije",
+                  "role": "Head Invertebrate collections",
+                  "email": "collectie@naturalis.nl"
+                }
+              ],
+              "collection_name": "Naturalis Biodiversity Center (NL) - Mollusca",
+              "update": "2023-01-12T00:00:00",
+              "ingest": true,
+              "data_rights": "CC0",
+              "link": "https://api.biodiversitydata.nl/v2/specimen/dwca/getDataSet/mollusca",
+              "collection_description": "Database contains specimen records from the Mollusca collection of the Naturalis Biodiversity Center (Leiden, Netherlands). The zoological specimens come from the National Museum of Natural History (RMNH; Rijksmuseum voor Natuurlijke Historie), later National Museum of Natural History, Naturalis in Leiden and the Zoological Museum Amsterdam (ZMA) and new acquisitions. This database replaces the dataset \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Conidae\", \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Netherlands\", and \"Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Pectinoidea\" which were hosted earlier on the GBIF dataportal and contains many new and updated records, especially from the RMNH collection. This dataset is an abstract of the Naturalis production database (BRD) of 2012-12-12. The datasets Zoological Museum Amsterdam, University of Amsterdam (NL) – Mollusca_Types, and Naturalis National Natural History Museum (NL) – Mollusca fossils, are still separately hosted at GBIF, and are not included in this dataset. The old registration numbers of the former institutions (RMNH, ZMA) are also mentioned in the dataset. The Naturalis BC collection contains over 42.000 species of Recent Mollusca. Locality data have only been added in part to this molluscan dataset. Many identifications are original and can be as old as over a century. Many species level names were recently (2011-2012) updated with the help of literature and web based taxonomic databases containing synonymies.",
+              "institution_web_address": "",
+              "other_guids": [],
+              "logo_url": "http://www.naturalis.nl/media/library/2012/07/Naturalis_logo_staand_rood_01.jpg",
+              "id": "doi:10.15468/yefvnk"
+            },
+            "datemodified": "2023-01-14T02:44:28.301122+00:00",
+            "name": "naturalis biodiversity center (nl) - mollusca"
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "top_data.contacts.email": {
+        "doc_count_error_upper_bound": 42,
+        "sum_other_doc_count": 6152,
+        "buckets": [
+          {
+            "key": "conabio.gob.mx",
+            "doc_count": 415
+          },
+          {
+            "key": "patricia.ramos",
+            "doc_count": 400
+          },
+          {
+            "key": "berkeley.edu",
+            "doc_count": 250
+          },
+          {
+            "key": "vertnet.org",
+            "doc_count": 246
+          },
+          {
+            "key": "dbloom",
+            "doc_count": 241
+          },
+          {
+            "key": "tuco",
+            "doc_count": 240
+          },
+          {
+            "key": "gmail.com",
+            "doc_count": 227
+          },
+          {
+            "key": "asu.edu",
+            "doc_count": 198
+          },
+          {
+            "key": "hbrown",
+            "doc_count": 183
+          },
+          {
+            "key": "mailbox.sc.edu",
+            "doc_count": 183
+          }
+        ]
+      }
+    }
+  }
+}

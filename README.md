@@ -1,5 +1,4 @@
 # idb-search-api
-# ncd prod
 
 The iDigBio search api is a nodejs that accepts search requests and
 translates those into backend search requests.
@@ -35,9 +34,9 @@ Please contact the iDigBio Technical Team (idigbio@acis.ufl.edu) if you need ass
 
 ##### Requirements
 
-- node-8.10.0  
+- node-10.24.1  
 	If using [_nvm (Node Version Manager)_](https://github.com/nvm-sh/nvm), install and use via command:  
-	`nvm install 8.10.0 && nvm use 8.10.0`
+	`nvm install 10.24.1 && nvm use 10.24.1`
 - python2.7, used by dependency _node-gyp_
 - Redis, available via:
 	- **apt:** `apt install redis-server`
@@ -61,19 +60,8 @@ Please contact the iDigBio Technical Team (idigbio@acis.ufl.edu) if you need ass
 2. 
 	Install Node.js package dependencies:  
 	`npm install`
-3. 
-	(recommended) Run tests:  
-	`npm test`
 
-	Expected result:
-	```
-	Test Suites: 16 passed, 16 total
-	Tests:       209 passed, 209 total
-	Snapshots:   0 total
-	Time:        8.497s
-	```
-
-> Skip to next section: [Getting Started](#getting-started)
+> Skip to next section: [Testing](#testing)
 
 #### ubuntu 18.04 (bionic)
 
@@ -128,26 +116,7 @@ npm install
 
 ```
 
-Run tests: 
-
-```
-npm test
-
-[...]
-Test Suites: 16 passed, 16 total
-Tests:       209 passed, 209 total
-Snapshots:   1 passed, 1 total
-Time:        12.73s
-Ran all test suites.
-```
-
-to run a single test, call it with the path to the test file:
-
-```
-npm test __tests__/lib/<somefile>.js
-```
-
-> Skip to next section: [Getting Started](#getting-started)
+> Skip to next section: [Testing](#testing)
 
 #### ubuntu 16.04 (xenial) / 14.04 (trusty)
 
@@ -166,6 +135,33 @@ sudo apt-get install libjpeg8-dev libjpeg-turbo8-dev libpng12-dev libcairo-dev l
 npm install
 npm start
 ```
+
+### Testing
+
+Before beginning development, it is recommended to have fully-passing tests to verify your setup.  
+Do so by running the command: `npm test`
+
+Expected result:
+```
+Test Suites: 16 passed, 16 total
+Tests:       209 passed, 209 total
+Snapshots:   0 total
+Time:        8.497s
+Ran all test suites.
+```
+
+To run select tests, supply the file path(s) accordingly:  
+`npm test __tests__/lib/test-{lastModified,indexTerms}.js`
+
+However, note that the tests are run using generated mocks (see [\_\_tests\_\_/mock](__tests__/mock/)).  
+Initially passing tests mean that idigbio-search-api may be set up correctly,
+but does not mean Elasticsearch is returning the same results,
+since mocks are _cached results._
+
+To regenerate the mocks, ensure you have direct access to Elasticsearch, clear the \_\_tests\_\_/mock/ directory, and re-run tests.  
+Examine changed files for differences.  
+Generally, changes in document counts are to be expected as occurrence record data grows.  
+Changes in response structure would need more consideration.
 
 ### Getting Started
 
@@ -200,6 +196,10 @@ level, "prod" will log at info lovel.
 
 Use LOGGER_LEVEL to specify the severity of events that go into log outputs.
 Common values are "info" or "debug".
+
+**IDB_REDIS_AUTH**
+
+Optional. If specified, used to authenticate with the redis server.
 
 ## Statistics
 

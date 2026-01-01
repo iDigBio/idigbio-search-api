@@ -1,0 +1,3708 @@
+{
+  "query": "search([{\"index\":\"idigbio\",\"type\":\"records\",\"body\":{\"query\":{\"filtered\":{\"filter\":{\"and\":[{\"term\":{\"genus\":\"acer\"}}]}}},\"aggs\":{\"top_scientificname\":{\"terms\":{\"field\":\"scientificname\",\"size\":10}}},\"_source\":[]},\"sort\":[]}])",
+  "response_snapshot": {
+    "timed_out": false,
+    "_shards": {
+      "total": 48,
+      "successful": 48,
+      "failed": 0
+    },
+    "hits": {
+      "total": 123091,
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "b41a953f-3419-4930-a968-dbf4f7fecfe0",
+          "_score": 1,
+          "_source": {
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "dqs": 0.2028985507246377,
+            "stateprovince": "south carolina",
+            "county": "greenville",
+            "catalognumber": "clems0066192",
+            "startdayofyear": 173,
+            "continent": "north america",
+            "uuid": "b41a953f-3419-4930-a968-dbf4f7fecfe0",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "l. w. zettler",
+            "institutioncode": "clems",
+            "mediarecords": [
+              "78883f32-7412-43a8-a664-2a2d22cfe9b4"
+            ],
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "1989-06-22T00:00:00+00:00",
+            "etag": "718f110d1c3643ec0b746b99528f1bd0a297985c",
+            "recordnumber": "635",
+            "hasImage": true,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "dwc:startDayOfYear": "173",
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Greenville",
+              "dwc:recordedBy": "L. W. Zettler",
+              "idigbio:uuid": "b41a953f-3419-4930-a968-dbf4f7fecfe0",
+              "flag_dwc_multimedia_added": true,
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19809569",
+              "flag_gbif_reference_added": true,
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "186f5caa-c992-4066-8c76-cd74498c3d06",
+              "dwc:lifeStage": "mature",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "South Carolina",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:eventDate": "1989-06-22",
+              "flag_dwc_scientificnameauthorship_replaced": true,
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer grandidentatum (bigtooth maple) in autumn colour",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:bi-colored_maple_tree.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/0f/bi-colored_maple_tree.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "latina: acer grandidentatum deutsch: obwohl die wurzeln dieser beiden ahornbäume zusammengewachsen sind, ist ihr zeitpunkt der herbstumfärbung der blätter verschieden: links noch grün, rechts schon rot. position: west trail, lost maples state natural area, vanderpool, texas, usa. english: although the roots of these two maple trees have grown together, they still exhibit startling different timing in their fall foliage color change. taken at west trail, lost maples state natural area, vanderpool, texas, usa.",
+                  "dcterms:creator": "wing-chi poon",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "public domain",
+                  "dcterms:title": "acer palmatum trees and bamboo in japan",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:tenryujimomiji.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/1/12/tenryujimomiji.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                  "dcterms:title": "acer ginnala foliage",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_ginnala.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/21/acer_ginnala.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer platanoides (norway maple) samaras",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:helicopter_leaves.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2b/helicopter_leaves.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "norway maple tree seeds.",
+                  "dcterms:creator": "nlitement",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer pseudoplatanus (sycamore maple) foliage",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pseudoplatanus_002.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/5/55/acer_pseudoplatanus_002.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "de: berg-ahorn (acer pseudoplatanus), blütenstand, ort: cappel, hessen, deutschland en: sycamore maple (acer pseudoplatanus), inflorescence, location: cappel, hesse, germany",
+                  "dcterms:creator": "willow",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer macrophyllum flowers and young leaves",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_0304.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/5/57/bigleafmaple_0304.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "acer macrophyllum english: bigleaf maple flowers and foliage",
+                  "dcterms:creator": "walter siegmund (talk)",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer platanoides leaf",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:maple_leaf_fcb981.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/67/maple_leaf_fcb981.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: an image of a norway maple leaf.",
+                  "dcterms:creator": "user:fcb981",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                  "dcterms:title": "feld-ahorn (acer campestre)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:feldahornblatt.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a0/feldahornblatt.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 2.0 unported",
+                  "dcterms:title": "acer palmatum leaf in autumn",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:red_maple_leaf.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/aa/red_maple_leaf.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "photo of a red maple leaf.",
+                  "dcterms:creator": "jim from lexington, ky, usa",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gfdl-1.2",
+                  "dcterms:title": "acer griseum (paperbark maple)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:paperbark_maple_acer_griseum_leaves_closeup_2856px.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/d/db/paperbark_maple_acer_griseum_leaves_closeup_2856px.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:creator": "photo by and (c)2007 derek ramsey (ram-man)",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:title": "acer freemanii 'autumn blaze' (a cross between acer rubrum and acer saccharinum",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:autumn_blaze_maple_foliage.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/e8/autumn_blaze_maple_foliage.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: autumn foliage on autumn blaze maple.",
+                  "dcterms:creator": "jnubbca",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer laevigatum leaves and fruit",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_laevigatum_3.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/ea/acer_laevigatum_3.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: photo of acer laevigatum at the san francisco botanical garden",
+                  "dcterms:creator": "stan shebs",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer cappadocicum (cappadocian maple)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_cappadocicum_spring.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/ee/acer_cappadocicum_spring.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "acer cappadocicum (cappadocian maple)",
+                  "dcterms:creator": "self: commons user michaelmaggs",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer sempervirens foliage",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_sempervirens_leaves.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/f3/acer_sempervirens_leaves.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer carpinifolium leaves",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_carpinifolium.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/f4/acer_carpinifolium.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "718f110d1c3643ec0b746b99528f1bd0a297985c",
+              "id": "19809569",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "doubtful",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "L. W. Zettler",
+              "flag_dwc_datasetid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "78883f32-7412-43a8-a664-2a2d22cfe9b4"
+                ]
+              },
+              "symbiota:recordID": "186f5caa-c992-4066-8c76-cd74498c3d06",
+              "dwc:taxonremarks": "possible variant of acer rubrum l.",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer rubrum",
+              "gbif:genericname": "acer",
+              "dwc:locality": "Greenville",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:parentnameusageid": "3189834",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066192",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "L. W. Zettler",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "rubrum",
+                  "idigbio:recordID": "urn:uuid:6f4b37f6-8977-4f94-8f0b-d7acfdb1b362",
+                  "coreid": "19809569",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "43130",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer rubrum"
+                }
+              ],
+              "dwc:month": "6",
+              "gbif:vernacularname": [
+                {
+                  "dwc:countrycode": "de",
+                  "dwc:country": "germany",
+                  "dwc:vernacularname": "ahorn",
+                  "coreid": "3189834",
+                  "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "ahorne"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "maple"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "maple"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "maple"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "maples"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "the woody plants of korea (한국의 수목)",
+                  "dwc:vernacularname": "단풍나무속"
+                }
+              ],
+              "flag_dwc_taxonremarks_added": true,
+              "dwc:otherCatalogNumbers": "50116",
+              "gbif:reference": [
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                  "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "idigbio:recordIds": [
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\19809569",
+                "urn:uuid:186f5caa-c992-4066-8c76-cd74498c3d06",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\186f5caa-c992-4066-8c76-cd74498c3d06"
+              ],
+              "dwc:recordNumber": "635",
+              "dwc:datasetid": "046bbc50-cae2-47ff-aa43-729fbf53f7c5",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_class_added": true,
+              "flag_taxon_match_failed": true,
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "22",
+              "dwc:year": "1989",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonID": "3189883",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer rubrum",
+              "dwc:specificEpithet": "rubrum",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "173",
+              "dwc:county": "Greenville",
+              "dwc:recordedBy": "L. W. Zettler",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19809569",
+              "dwc:occurrenceID": "186f5caa-c992-4066-8c76-cd74498c3d06",
+              "dwc:lifeStage": "mature",
+              "dcterms:language": "en",
+              "id": "19809569",
+              "dwc:taxonID": "43130",
+              "dwc:stateProvince": "South Carolina",
+              "dwc:eventDate": "1989-06-22",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "L. W. Zettler",
+              "symbiota:recordID": "186f5caa-c992-4066-8c76-cd74498c3d06",
+              "dwc:locality": "Greenville",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066192",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "L. W. Zettler",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "rubrum",
+                  "idigbio:recordID": "urn:uuid:6f4b37f6-8977-4f94-8f0b-d7acfdb1b362",
+                  "coreid": "19809569",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "43130",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer rubrum"
+                }
+              ],
+              "dwc:month": "6",
+              "dwc:otherCatalogNumbers": "50116",
+              "dwc:recordNumber": "635",
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "22",
+              "dwc:year": "1989",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer rubrum",
+              "dwc:specificEpithet": "rubrum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "186f5caa-c992-4066-8c76-cd74498c3d06",
+            "country": "united states",
+            "locality": "greenville",
+            "canonicalname": "acer rubrum",
+            "eventdate": "1989-06-22",
+            "flags": [
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_scientificnameauthorship_replaced",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_taxonremarks_added",
+              "dwc_continent_added",
+              "dwc_parentnameusageid_added",
+              "dwc_class_added",
+              "taxon_match_failed"
+            ],
+            "taxonomicstatus": "doubtful",
+            "recordids": [
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\19809569",
+              "urn:uuid:186f5caa-c992-4066-8c76-cd74498c3d06",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\186f5caa-c992-4066-8c76-cd74498c3d06"
+            ],
+            "datasetid": "046bbc50-cae2-47ff-aa43-729fbf53f7c5",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "rubrum",
+            "scientificname": "acer rubrum",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "3189883",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "f51e33b2-5d28-4000-a4dc-15ca959f943a",
+          "_score": 1,
+          "_source": {
+            "geopoint": {
+              "lat": 33.339722,
+              "lon": -81.859167
+            },
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "dqs": 0.21739130434782608,
+            "stateprovince": "south carolina",
+            "county": "aiken",
+            "catalognumber": "clems0066162",
+            "startdayofyear": 85,
+            "continent": "north america",
+            "uuid": "f51e33b2-5d28-4000-a4dc-15ca959f943a",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "damrel, d.z.; damrel, d.w.",
+            "institutioncode": "clems",
+            "mediarecords": [
+              "3e67d3be-fcd2-43ed-9e36-26d446981045"
+            ],
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "2011-03-26T00:00:00+00:00",
+            "etag": "9246a1aa83cbcb0b69d4804f2d87b5648d1dd953",
+            "recordnumber": "5476",
+            "minelevation": 38,
+            "hasImage": true,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "dwc:startDayOfYear": "85",
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Aiken",
+              "dwc:recordedBy": "Damrel, D.Z.; Damrel, D.W.",
+              "idigbio:uuid": "f51e33b2-5d28-4000-a4dc-15ca959f943a",
+              "flag_dwc_multimedia_added": true,
+              "dwc:habitat": "Surrounded by swamp and marshy woodlands.",
+              "flag_gbif_reference_added": true,
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "dwc:verbatimCoordinates": "N33 20'23\" W81 51'33\"",
+              "dwc:verbatimElevation": "125 ft",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "South Carolina",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:eventDate": "2011-03-26",
+              "flag_dwc_scientificnameauthorship_replaced": true,
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer grandidentatum (bigtooth maple) in autumn colour",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:bi-colored_maple_tree.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/0f/bi-colored_maple_tree.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "latina: acer grandidentatum deutsch: obwohl die wurzeln dieser beiden ahornbäume zusammengewachsen sind, ist ihr zeitpunkt der herbstumfärbung der blätter verschieden: links noch grün, rechts schon rot. position: west trail, lost maples state natural area, vanderpool, texas, usa. english: although the roots of these two maple trees have grown together, they still exhibit startling different timing in their fall foliage color change. taken at west trail, lost maples state natural area, vanderpool, texas, usa.",
+                  "dcterms:creator": "wing-chi poon",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "public domain",
+                  "dcterms:title": "acer palmatum trees and bamboo in japan",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:tenryujimomiji.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/1/12/tenryujimomiji.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                  "dcterms:title": "acer ginnala foliage",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_ginnala.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/21/acer_ginnala.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer platanoides (norway maple) samaras",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:helicopter_leaves.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/2b/helicopter_leaves.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "norway maple tree seeds.",
+                  "dcterms:creator": "nlitement",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer pseudoplatanus (sycamore maple) foliage",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pseudoplatanus_002.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/5/55/acer_pseudoplatanus_002.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "de: berg-ahorn (acer pseudoplatanus), blütenstand, ort: cappel, hessen, deutschland en: sycamore maple (acer pseudoplatanus), inflorescence, location: cappel, hesse, germany",
+                  "dcterms:creator": "willow",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer macrophyllum flowers and young leaves",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:bigleafmaple_0304.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/5/57/bigleafmaple_0304.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "acer macrophyllum english: bigleaf maple flowers and foliage",
+                  "dcterms:creator": "walter siegmund (talk)",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer platanoides leaf",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:maple_leaf_fcb981.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/67/maple_leaf_fcb981.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: an image of a norway maple leaf.",
+                  "dcterms:creator": "user:fcb981",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                  "dcterms:title": "feld-ahorn (acer campestre)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:feldahornblatt.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/a0/feldahornblatt.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 2.0 unported",
+                  "dcterms:title": "acer palmatum leaf in autumn",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:red_maple_leaf.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/a/aa/red_maple_leaf.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "photo of a red maple leaf.",
+                  "dcterms:creator": "jim from lexington, ky, usa",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gfdl-1.2",
+                  "dcterms:title": "acer griseum (paperbark maple)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:paperbark_maple_acer_griseum_leaves_closeup_2856px.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/d/db/paperbark_maple_acer_griseum_leaves_closeup_2856px.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:creator": "photo by and (c)2007 derek ramsey (ram-man)",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:title": "acer freemanii 'autumn blaze' (a cross between acer rubrum and acer saccharinum",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:autumn_blaze_maple_foliage.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/e8/autumn_blaze_maple_foliage.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: autumn foliage on autumn blaze maple.",
+                  "dcterms:creator": "jnubbca",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "acer laevigatum leaves and fruit",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_laevigatum_3.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/ea/acer_laevigatum_3.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: photo of acer laevigatum at the san francisco botanical garden",
+                  "dcterms:creator": "stan shebs",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer cappadocicum (cappadocian maple)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_cappadocicum_spring.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/ee/acer_cappadocicum_spring.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "acer cappadocicum (cappadocian maple)",
+                  "dcterms:creator": "self: commons user michaelmaggs",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer sempervirens foliage",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_sempervirens_leaves.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/f3/acer_sempervirens_leaves.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:title": "acer carpinifolium leaves",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_carpinifolium.jpg",
+                  "coreid": "3189834",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/f4/acer_carpinifolium.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "9246a1aa83cbcb0b69d4804f2d87b5648d1dd953",
+              "id": "19809601",
+              "dwc:decimalLatitude": "33.339722",
+              "dwc:occurrenceRemarks": "Occasional to common.; Red Maple. Native tree, samaras red.",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=d9371aa2-1e19-4f48-98eb-d5224155c6bd | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=9af27077-ceb5-4e34-9e9c-b393b109f3ec",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "doubtful",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Damrel, D.Z.",
+              "flag_dwc_datasetid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "3e67d3be-fcd2-43ed-9e36-26d446981045"
+                ]
+              },
+              "symbiota:recordID": "c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+              "dwc:taxonremarks": "possible variant of acer rubrum l.",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer rubrum",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19809601",
+              "gbif:genericname": "acer",
+              "dwc:locality": "Silver Bluff Audubon Center & Sanctuary. Berm road, near the cabin.",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "fruiting",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066162",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "Damrel, D.Z.",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "rubrum",
+                  "idigbio:recordID": "urn:uuid:0aaabf15-22ec-424c-82f7-7c959fd853ed",
+                  "coreid": "19809601",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "43130",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer rubrum"
+                }
+              ],
+              "dwc:month": "3",
+              "dwc:decimalLongitude": "-81.859167",
+              "dwc:associatedTaxa": "Acer rubrum, Lonicera japonica, Prunus, Rubus trivialis, Arundinaria tecta, Smilax, Persea palustris.",
+              "flag_dwc_taxonremarks_added": true,
+              "dwc:otherCatalogNumbers": "87775",
+              "flag_dwc_continent_added": true,
+              "gbif:reference": [
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                  "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+                }
+              ],
+              "gbif:vernacularname": [
+                {
+                  "dwc:countrycode": "de",
+                  "dwc:country": "germany",
+                  "dwc:vernacularname": "ahorn",
+                  "coreid": "3189834",
+                  "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "ahorne"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "maple"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "maple"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "maple"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "maples"
+                },
+                {
+                  "coreid": "3189834",
+                  "dcterms:source": "the woody plants of korea (한국의 수목)",
+                  "dwc:vernacularname": "단풍나무속"
+                }
+              ],
+              "idigbio:recordIds": [
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\19809601",
+                "urn:uuid:c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\c4cec504-6501-4a8c-9c83-9472aff1b0bb"
+              ],
+              "dwc:recordNumber": "5476",
+              "dwc:datasetid": "046bbc50-cae2-47ff-aa43-729fbf53f7c5",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_class_added": true,
+              "flag_taxon_match_failed": true,
+              "dwc:minimumElevationInMeters": "38",
+              "dcterms:modified": "2024-09-19 09:54:20",
+              "dwc:day": "26",
+              "dwc:year": "2011",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonID": "3189883",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer rubrum",
+              "dwc:specificEpithet": "rubrum",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "85",
+              "dwc:county": "Aiken",
+              "dwc:recordedBy": "Damrel, D.Z.; Damrel, D.W.",
+              "dwc:habitat": "Surrounded by swamp and marshy woodlands.",
+              "dwc:occurrenceID": "c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+              "dcterms:language": "en",
+              "dwc:verbatimCoordinates": "N33 20'23\" W81 51'33\"",
+              "dwc:verbatimElevation": "125 ft",
+              "id": "19809601",
+              "dwc:taxonID": "43130",
+              "dwc:stateProvince": "South Carolina",
+              "dwc:eventDate": "2011-03-26",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:decimalLatitude": "33.339722",
+              "dwc:occurrenceRemarks": "Occasional to common.; Red Maple. Native tree, samaras red.",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=d9371aa2-1e19-4f48-98eb-d5224155c6bd | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=9af27077-ceb5-4e34-9e9c-b393b109f3ec",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Damrel, D.Z.",
+              "symbiota:recordID": "c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19809601",
+              "dwc:locality": "Silver Bluff Audubon Center & Sanctuary. Berm road, near the cabin.",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "fruiting",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066162",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "Damrel, D.Z.",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "rubrum",
+                  "idigbio:recordID": "urn:uuid:0aaabf15-22ec-424c-82f7-7c959fd853ed",
+                  "coreid": "19809601",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "43130",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer rubrum"
+                }
+              ],
+              "dwc:month": "3",
+              "dwc:decimalLongitude": "-81.859167",
+              "dwc:otherCatalogNumbers": "87775",
+              "dwc:recordNumber": "5476",
+              "dwc:minimumElevationInMeters": "38",
+              "dcterms:modified": "2024-09-19 09:54:20",
+              "dwc:associatedTaxa": "Acer rubrum, Lonicera japonica, Prunus, Rubus trivialis, Arundinaria tecta, Smilax, Persea palustris.",
+              "dwc:day": "26",
+              "dwc:year": "2011",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer rubrum",
+              "dwc:specificEpithet": "rubrum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+            "country": "united states",
+            "locality": "silver bluff audubon center & sanctuary. berm road, near the cabin.",
+            "canonicalname": "acer rubrum",
+            "eventdate": "2011-03-26",
+            "flags": [
+              "geopoint_datum_missing",
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_scientificnameauthorship_replaced",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_taxonremarks_added",
+              "dwc_continent_added",
+              "dwc_parentnameusageid_added",
+              "dwc_class_added",
+              "taxon_match_failed"
+            ],
+            "taxonomicstatus": "doubtful",
+            "recordids": [
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\19809601",
+              "urn:uuid:c4cec504-6501-4a8c-9c83-9472aff1b0bb",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\c4cec504-6501-4a8c-9c83-9472aff1b0bb"
+            ],
+            "datasetid": "046bbc50-cae2-47ff-aa43-729fbf53f7c5",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "rubrum",
+            "scientificname": "acer rubrum",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "3189883",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "bc7e98f0-dade-416f-a6e9-b48c26d11caf",
+          "_score": 1,
+          "_source": {
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "dqs": 0.2318840579710145,
+            "stateprovince": "south carolina",
+            "county": "pickens",
+            "catalognumber": "clems0066258",
+            "startdayofyear": 225,
+            "continent": "north america",
+            "uuid": "bc7e98f0-dade-416f-a6e9-b48c26d11caf",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "damrel, d.z.",
+            "institutioncode": "clems",
+            "mediarecords": [
+              "6c8c270d-521b-43fa-8b2b-2bfaeec9f863"
+            ],
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "2010-08-13T00:00:00+00:00",
+            "etag": "8eb57fa4b282269fda563cec5abb263c03bcc9ed",
+            "recordnumber": "5406",
+            "hasImage": true,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "dwc:startDayOfYear": "225",
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Pickens",
+              "dwc:recordedBy": "Damrel, D.Z.",
+              "idigbio:uuid": "bc7e98f0-dade-416f-a6e9-b48c26d11caf",
+              "flag_dwc_multimedia_added": true,
+              "dwc:habitat": "Botanical garden, sunny lawn.",
+              "flag_gbif_reference_added": true,
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "South Carolina",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:eventDate": "2010-08-13",
+              "flag_dwc_scientificnameauthorship_replaced": true,
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_triflorum.jpg",
+                  "coreid": "7263031",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/3/34/acer_triflorum.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "acer triflorum",
+                  "dcterms:creator": "abrahami",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_triflorum.jpg",
+                  "coreid": "7263031",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/3/34/acer_triflorum.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "acer triflorum",
+                  "dcterms:creator": "abrahami",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "8eb57fa4b282269fda563cec5abb263c03bcc9ed",
+              "id": "19812855",
+              "dwc:occurrenceRemarks": "SCBG Accession #940338 Three-flower Maple. At present a small tree, 2 m tall x 2 m wide; in leaf. Sunny lawn. Origin: Central China",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_datasetid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "6c8c270d-521b-43fa-8b2b-2bfaeec9f863"
+                ]
+              },
+              "symbiota:recordID": "532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer triflorum",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812855",
+              "gbif:genericname": "acer",
+              "dwc:locality": "SCBG -- South Carolina Botanical Garden, Clemson University, Clemson. Schoenike Arboretum, Maple collection, near road.",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "vegetative",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066258",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "unknown",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "triflorum",
+                  "idigbio:recordID": "urn:uuid:5732f25c-5f0a-4116-9f27-143b9e308262",
+                  "coreid": "19812855",
+                  "dwc:scientificNameAuthorship": "Kom.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "192945",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer triflorum"
+                }
+              ],
+              "dwc:month": "8",
+              "gbif:vernacularname": [
+                {
+                  "coreid": "7263031",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "dreiblütiger ahorn"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:language": "de",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "dreiblütiger ahorn"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:language": "hu",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dwc:vernacularname": "foszlókérgű juhar"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "klöverlönn"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:source": "korean peninsula flora",
+                  "dwc:vernacularname": "나도박달, 복자기나무"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:source": "the woody plants of korea (한국의 수목)",
+                  "dwc:vernacularname": "rough-barked maple, threeflower maple"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:source": "the woody plants of korea (한국의 수목)",
+                  "dwc:vernacularname": "복자기나무"
+                },
+                {
+                  "coreid": "7263031",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "three-flower maple"
+                }
+              ],
+              "dwc:otherCatalogNumbers": "87158",
+              "gbif:reference": [
+                {
+                  "coreid": "7263031",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "kom. (1901) in: act. hort. petrop. 18: 430"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "idigbio:recordIds": [
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812855",
+                "urn:uuid:532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4"
+              ],
+              "dwc:recordNumber": "5406",
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "flag_dwc_class_added": true,
+              "dcterms:modified": "2024-09-19 09:54:20",
+              "dwc:day": "13",
+              "dwc:year": "2010",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "Kom.",
+              "dwc:taxonID": "7263031",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer triflorum",
+              "dwc:specificEpithet": "triflorum",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "225",
+              "dwc:county": "Pickens",
+              "dwc:recordedBy": "Damrel, D.Z.",
+              "dwc:habitat": "Botanical garden, sunny lawn.",
+              "dwc:occurrenceID": "532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+              "dcterms:language": "en",
+              "id": "19812855",
+              "dwc:taxonID": "192945",
+              "dwc:stateProvince": "South Carolina",
+              "dwc:eventDate": "2010-08-13",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:occurrenceRemarks": "SCBG Accession #940338 Three-flower Maple. At present a small tree, 2 m tall x 2 m wide; in leaf. Sunny lawn. Origin: Central China",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "symbiota:recordID": "532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812855",
+              "dwc:locality": "SCBG -- South Carolina Botanical Garden, Clemson University, Clemson. Schoenike Arboretum, Maple collection, near road.",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "vegetative",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066258",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "unknown",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "triflorum",
+                  "idigbio:recordID": "urn:uuid:5732f25c-5f0a-4116-9f27-143b9e308262",
+                  "coreid": "19812855",
+                  "dwc:scientificNameAuthorship": "Kom.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "192945",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer triflorum"
+                }
+              ],
+              "dwc:month": "8",
+              "dwc:otherCatalogNumbers": "87158",
+              "dwc:recordNumber": "5406",
+              "dcterms:modified": "2024-09-19 09:54:20",
+              "dwc:day": "13",
+              "dwc:year": "2010",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "Kom.",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer triflorum",
+              "dwc:specificEpithet": "triflorum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+            "country": "united states",
+            "locality": "scbg -- south carolina botanical garden, clemson university, clemson. schoenike arboretum, maple collection, near road.",
+            "canonicalname": "acer triflorum",
+            "eventdate": "2010-08-13",
+            "flags": [
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_scientificnameauthorship_replaced",
+              "dwc_parentnameusageid_added",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_continent_added",
+              "dwc_class_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812855",
+              "urn:uuid:532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\532159e8-6f7c-4cd7-8c7c-6a26e7f5e7f4"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "triflorum",
+            "scientificname": "acer triflorum",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "7263031",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "b3e67eb5-fae8-40ee-9098-d3e2d77fc67e",
+          "_score": 1,
+          "_source": {
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "dqs": 0.2463768115942029,
+            "stateprovince": "south carolina",
+            "county": "pickens",
+            "catalognumber": "clems0066245",
+            "startdayofyear": 71,
+            "continent": "north america",
+            "uuid": "b3e67eb5-fae8-40ee-9098-d3e2d77fc67e",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "hill, s.r.",
+            "institutioncode": "clems",
+            "mediarecords": [
+              "902cf080-793d-44ea-a832-8e4c38f1d043"
+            ],
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "1992-03-11T00:00:00+00:00",
+            "etag": "1c150a5f0167265a49f05cf0dfc87fdf4a509296",
+            "recordnumber": "22802",
+            "hasImage": true,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "dwc:startDayOfYear": "71",
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Pickens",
+              "dwc:recordedBy": "Hill, S.R.",
+              "idigbio:uuid": "b3e67eb5-fae8-40ee-9098-d3e2d77fc67e",
+              "flag_dwc_multimedia_added": true,
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812870",
+              "flag_gbif_reference_added": true,
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+              "dwc:dateIdentified": "11/92",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "South Carolina",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:eventDate": "1992-03-11",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "blattoberseite",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_saccharinum_002.jpg",
+                  "coreid": "3189837",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/0/08/acer_saccharinum_002.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "de: silber-ahorn (acer saccharinum) im neuen botanischen garten marburg, hessen, deutschland en: silver maple (acer saccharinum) in the new botanical garden marburg, hesse, germany",
+                  "dcterms:creator": "willow",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "cc-by-sa-2.5",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:silber-ahorn_(acer_saccharinum).jpg",
+                  "coreid": "3189837",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/6/64/silber-ahorn_%28acer_saccharinum%29.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "silber-ahorn (acer saccharinum)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_saccharinum_001.jpg",
+                  "coreid": "3189837",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/d/db/acer_saccharinum_001.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "de: silber-ahorn (acer saccharinum) im neuen botanischen garten marburg, hessen, deutschland en: silver maple (acer saccharinum) in the new botanical garden marburg, hesse, germany",
+                  "dcterms:creator": "willow",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "1c150a5f0167265a49f05cf0dfc87fdf4a509296",
+              "id": "19812870",
+              "dwc:occurrenceRemarks": "Female flowers red, young fruit green; planted tree ca. 30 ft.",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=6230c0b2-de04-495b-a662-4c699228c11f | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=A7C9312D-69EE-40AC-ABA3-30C84BA7C62D | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=2710748d-0b39-4418-ba3d-29a6d165c3f8 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=07685469-9daa-4898-a31a-fd633c07b77b",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Hill, S.R.",
+              "flag_dwc_datasetid_added": true,
+              "dwc:disposition": "DNR_MB",
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "902cf080-793d-44ea-a832-8e4c38f1d043"
+                ]
+              },
+              "symbiota:recordID": "ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer saccharinum",
+              "gbif:genericname": "acer",
+              "dwc:locality": "(Clemson Campus & Environs): NW corner, McAdams Hall, Clemson University campus, Clemson.",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "flowering",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066245",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "Steven R. Hill",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "saccharinum",
+                  "idigbio:recordID": "urn:uuid:eb37ec0c-2fb5-4038-8656-e970921e1dd4",
+                  "coreid": "19812870",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "17839",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer saccharinum"
+                }
+              ],
+              "dwc:month": "3",
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "it",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "acero argentato"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable argenté"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable blanc"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:source": "korean peninsula flora",
+                  "dwc:vernacularname": "은단풍"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "plaine blanche"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "plaine de france"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "river maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "silber-ahorn"
+                },
+                {
+                  "dwc:countrycode": "de",
+                  "dwc:country": "germany",
+                  "dwc:vernacularname": "silber-ahorn",
+                  "coreid": "3189837",
+                  "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "de",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "silberahorn"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "silverlönn"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "silver maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "silver maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "silver maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "silver maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "soft maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "soft maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "white maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "white maple"
+                },
+                {
+                  "coreid": "3189837",
+                  "dcterms:language": "nl",
+                  "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                  "dwc:vernacularname": "witte esdoorn"
+                }
+              ],
+              "dwc:otherCatalogNumbers": "44172",
+              "gbif:reference": [
+                {
+                  "coreid": "3189837",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "l. (1753) in: sp. pl. 1055"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "idigbio:recordIds": [
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812870",
+                "urn:uuid:ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\ac09eaf1-08da-4ce9-99d6-7d2a72606e95"
+              ],
+              "dwc:recordNumber": "22802",
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_class_added": true,
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "11",
+              "dwc:year": "1992",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonID": "3189837",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer saccharinum",
+              "dwc:specificEpithet": "saccharinum",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "71",
+              "dwc:county": "Pickens",
+              "dwc:recordedBy": "Hill, S.R.",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812870",
+              "dwc:occurrenceID": "ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+              "dwc:dateIdentified": "11/92",
+              "dcterms:language": "en",
+              "id": "19812870",
+              "dwc:taxonID": "17839",
+              "dwc:stateProvince": "South Carolina",
+              "dwc:eventDate": "1992-03-11",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:occurrenceRemarks": "Female flowers red, young fruit green; planted tree ca. 30 ft.",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=6230c0b2-de04-495b-a662-4c699228c11f | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=A7C9312D-69EE-40AC-ABA3-30C84BA7C62D | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=2710748d-0b39-4418-ba3d-29a6d165c3f8 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=07685469-9daa-4898-a31a-fd633c07b77b",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Hill, S.R.",
+              "dwc:disposition": "DNR_MB",
+              "symbiota:recordID": "ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+              "dwc:locality": "(Clemson Campus & Environs): NW corner, McAdams Hall, Clemson University campus, Clemson.",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "flowering",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066245",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "Steven R. Hill",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "saccharinum",
+                  "idigbio:recordID": "urn:uuid:eb37ec0c-2fb5-4038-8656-e970921e1dd4",
+                  "coreid": "19812870",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "17839",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer saccharinum"
+                }
+              ],
+              "dwc:month": "3",
+              "dwc:otherCatalogNumbers": "44172",
+              "dwc:recordNumber": "22802",
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "11",
+              "dwc:year": "1992",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer saccharinum",
+              "dwc:specificEpithet": "saccharinum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+            "country": "united states",
+            "locality": "(clemson campus & environs): nw corner, mcadams hall, clemson university campus, clemson.",
+            "canonicalname": "acer saccharinum",
+            "eventdate": "1992-03-11",
+            "flags": [
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_continent_added",
+              "dwc_parentnameusageid_added",
+              "dwc_class_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812870",
+              "urn:uuid:ac09eaf1-08da-4ce9-99d6-7d2a72606e95",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\ac09eaf1-08da-4ce9-99d6-7d2a72606e95"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "saccharinum",
+            "scientificname": "acer saccharinum",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "3189837",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "86a55a2a-0e59-4378-b08c-871917d5cd6c",
+          "_score": 1,
+          "_source": {
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "stateprovince": "north carolina",
+            "county": "watauga",
+            "catalognumber": "clems0066314",
+            "startdayofyear": 4,
+            "continent": "north america",
+            "uuid": "86a55a2a-0e59-4378-b08c-871917d5cd6c",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "carpenter, jr., i. w.",
+            "institutioncode": "clems",
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "1967-01-04",
+            "etag": "829dca486975559f63d8c2c1818a67f74370df85",
+            "hasMedia": false,
+            "hasImage": false,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Watauga",
+              "dwc:recordedBy": "Carpenter, Jr., I. W.",
+              "idigbio:uuid": "86a55a2a-0e59-4378-b08c-871917d5cd6c",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812950",
+              "flag_gbif_reference_added": true,
+              "dwc:informationWithheld": "field values redacted: eventDate, month, day, startDayOfYear, recordNumber, locality, minimumElevationInMeters, verbatimElevation, habitat",
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "100d81b5-b849-4372-81c9-5f91f47507cb",
+              "dwc:dateIdentified": "15 March 1985",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "North Carolina",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "public domain",
+                  "dcterms:title": "striped maple leaves, cranberry wilderness, west virginia",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:moosewood_leaves.jpg",
+                  "coreid": "3189836",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/7/72/moosewood_leaves.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: photo taken july, 2005, cranberry wilderness, west virginia",
+                  "dcterms:creator": "original uploader was jaknouse at en.wikipedia",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                  "dcterms:title": "streifen-ahorn (acer pensylvanicum)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pensylvanicum3.jpg",
+                  "coreid": "3189836",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/7/74/acer_pensylvanicum3.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "829dca486975559f63d8c2c1818a67f74370df85",
+              "id": "19812950",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=360d274e-5bbd-40ca-b5d5-d6b2f43af888 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=e958af6e-bef9-4f61-bec6-80c1f8ad134a | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=8eeede74-27a0-11e8-b7fb-04012ac90e01 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=C57626D9-D6BC-45E2-81A4-45DC4919C527 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=CEE31C6E-4065-42A0-BAA3-892785CB2C41",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Murray, Edward",
+              "flag_dwc_datasetid_added": true,
+              "dwc:disposition": "DNR_MB",
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {},
+              "symbiota:recordID": "100d81b5-b849-4372-81c9-5f91f47507cb",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer pensylvanicum",
+              "gbif:genericname": "acer",
+              "flag_dwc_multimedia_added": true,
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "fruiting",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066314",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "Carpenter, Jr., I. W.",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "pensylvanicum",
+                  "idigbio:recordID": "urn:uuid:89ddd66d-dde5-4982-b161-e207a1a0ff14",
+                  "coreid": "19812950",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "43129",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer pensylvanicum"
+                }
+              ],
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "amerikansk strimlönn"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "bois barré"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "bois d'orignal"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable bois-barré"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable de pennsylvanie"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "goosefoot"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "moosewood"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "moosewood"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "moosewood"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "de",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "pennsylvanischer ahorn"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "snakebark maple"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "snakebark maple"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "streifen-ahorn"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "de",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "streifenahorn"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "striped maple"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "striped maple"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "striped maple"
+                },
+                {
+                  "coreid": "3189836",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "striped maple"
+                }
+              ],
+              "dwc:otherCatalogNumbers": "1210",
+              "flag_dwc_continent_added": true,
+              "idigbio:recordIds": [
+                "urn:uuid:100d81b5-b849-4372-81c9-5f91f47507cb",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812950",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\100d81b5-b849-4372-81c9-5f91f47507cb"
+              ],
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_class_added": true,
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "gbif:reference": [
+                {
+                  "coreid": "3189836",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "l. (1753) in: sp. pl. 1055"
+                }
+              ],
+              "dwc:year": "1967",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonID": "3189836",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer pensylvanicum",
+              "dwc:specificEpithet": "pensylvanicum",
+              "dwc:order": "Sapindales"
+            },
+            "data": {
+              "dwc:county": "Watauga",
+              "dwc:recordedBy": "Carpenter, Jr., I. W.",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812950",
+              "dwc:informationWithheld": "field values redacted: eventDate, month, day, startDayOfYear, recordNumber, locality, minimumElevationInMeters, verbatimElevation, habitat",
+              "dwc:occurrenceID": "100d81b5-b849-4372-81c9-5f91f47507cb",
+              "dwc:dateIdentified": "15 March 1985",
+              "dcterms:language": "en",
+              "id": "19812950",
+              "dwc:taxonID": "43129",
+              "dwc:stateProvince": "North Carolina",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=360d274e-5bbd-40ca-b5d5-d6b2f43af888 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=e958af6e-bef9-4f61-bec6-80c1f8ad134a | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=8eeede74-27a0-11e8-b7fb-04012ac90e01 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=C57626D9-D6BC-45E2-81A4-45DC4919C527 | herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=CEE31C6E-4065-42A0-BAA3-892785CB2C41",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Murray, Edward",
+              "dwc:disposition": "DNR_MB",
+              "symbiota:recordID": "100d81b5-b849-4372-81c9-5f91f47507cb",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "fruiting",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066314",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "Carpenter, Jr., I. W.",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "pensylvanicum",
+                  "idigbio:recordID": "urn:uuid:89ddd66d-dde5-4982-b161-e207a1a0ff14",
+                  "coreid": "19812950",
+                  "dwc:scientificNameAuthorship": "L.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "43129",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer pensylvanicum"
+                }
+              ],
+              "dwc:otherCatalogNumbers": "1210",
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:year": "1967",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer pensylvanicum",
+              "dwc:specificEpithet": "pensylvanicum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "100d81b5-b849-4372-81c9-5f91f47507cb",
+            "country": "united states",
+            "dqs": 0.2028985507246377,
+            "canonicalname": "acer pensylvanicum",
+            "flags": [
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "dwc_multimedia_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_continent_added",
+              "dwc_parentnameusageid_added",
+              "dwc_class_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "urn:uuid:100d81b5-b849-4372-81c9-5f91f47507cb",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812950",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\100d81b5-b849-4372-81c9-5f91f47507cb"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "pensylvanicum",
+            "scientificname": "acer pensylvanicum",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "3189836",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "114354c0-3373-4ab8-9a07-5ea7447bb4e3",
+          "_score": 1,
+          "_source": {
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "dqs": 0.2318840579710145,
+            "stateprovince": "georgia",
+            "county": "elbert",
+            "catalognumber": "clems0066287",
+            "startdayofyear": 108,
+            "continent": "north america",
+            "uuid": "114354c0-3373-4ab8-9a07-5ea7447bb4e3",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "john e. fairey, iii",
+            "institutioncode": "clems",
+            "mediarecords": [
+              "0f9e958a-9671-40ba-a5f0-799147880a83"
+            ],
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "1978-04-18T00:00:00+00:00",
+            "etag": "034a70ebf74805b7a0133f1e1631b5747ec9f16a",
+            "recordnumber": "714",
+            "hasImage": true,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "dwc:startDayOfYear": "108",
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Elbert",
+              "dwc:recordedBy": "John E. Fairey, III",
+              "idigbio:uuid": "114354c0-3373-4ab8-9a07-5ea7447bb4e3",
+              "flag_dwc_multimedia_added": true,
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812985",
+              "flag_gbif_reference_added": true,
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "881b2328-0090-4177-a63c-a05bca358ade",
+              "dwc:lifeStage": "mature",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "Georgia",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:eventDate": "1978-04-18",
+              "flag_dwc_scientificnameauthorship_replaced": true,
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "creative commons attribution 2.0 unported",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_leucoderme_(6351476580).jpg",
+                  "coreid": "3189849",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/2/21/acer_leucoderme_%286351476580%29.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "english: acer leucoderme (syn. acer saccharum ssp. leucoderme), private garden, quitman, georgia, usa.",
+                  "dcterms:creator": "scott.zona",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "034a70ebf74805b7a0133f1e1631b5747ec9f16a",
+              "id": "19812985",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=eaa25ce4-a7e2-4015-b9c7-36121b55fe99",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "John E. Fairey, III",
+              "flag_dwc_datasetid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "0f9e958a-9671-40ba-a5f0-799147880a83"
+                ]
+              },
+              "symbiota:recordID": "881b2328-0090-4177-a63c-a05bca358ade",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer leucoderme",
+              "gbif:genericname": "acer",
+              "dwc:locality": "Elbert",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:parentnameusageid": "3189834",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066287",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "John E. Fairey, III",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "leucoderme",
+                  "idigbio:recordID": "urn:uuid:e5af1d0a-554f-4dc4-927b-03560241b047",
+                  "coreid": "19812985",
+                  "dwc:scientificNameAuthorship": "Small",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "70711",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer leucoderme"
+                }
+              ],
+              "dwc:month": "4",
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189849",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "chalk maple"
+                },
+                {
+                  "coreid": "3189849",
+                  "dcterms:language": "en",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dwc:vernacularname": "chalk maple"
+                },
+                {
+                  "coreid": "3189849",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "chalk maple"
+                },
+                {
+                  "coreid": "3189849",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "white-bark maple"
+                }
+              ],
+              "dwc:otherCatalogNumbers": "45381",
+              "gbif:reference": [
+                {
+                  "coreid": "3189849",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "small (1895) in: bull. torrey bot. club, 22: 367"
+                },
+                {
+                  "coreid": "3189849",
+                  "dcterms:source": "the plant list with literature",
+                  "dcterms:bibliographiccitation": "small jk (1895) studies in the botany of the southeastern united states.-iv. bulletin of the torrey botanical club 22: 365-369. doi: 10.2307/2478269."
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "idigbio:recordIds": [
+                "urn:uuid:881b2328-0090-4177-a63c-a05bca358ade",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812985",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\881b2328-0090-4177-a63c-a05bca358ade"
+              ],
+              "dwc:recordNumber": "714",
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_class_added": true,
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "18",
+              "dwc:year": "1978",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "Small",
+              "dwc:taxonID": "3189849",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer leucoderme",
+              "dwc:specificEpithet": "leucoderme",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "108",
+              "dwc:county": "Elbert",
+              "dwc:recordedBy": "John E. Fairey, III",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=19812985",
+              "dwc:occurrenceID": "881b2328-0090-4177-a63c-a05bca358ade",
+              "dwc:lifeStage": "mature",
+              "dcterms:language": "en",
+              "id": "19812985",
+              "dwc:taxonID": "70711",
+              "dwc:stateProvince": "Georgia",
+              "dwc:eventDate": "1978-04-18",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "United States",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:associatedOccurrences": "herbariumSpecimenDuplicate: https://sernecportal.org/portal/collections/individual/index.php?guid=eaa25ce4-a7e2-4015-b9c7-36121b55fe99",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "John E. Fairey, III",
+              "symbiota:recordID": "881b2328-0090-4177-a63c-a05bca358ade",
+              "dwc:locality": "Elbert",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0066287",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "John E. Fairey, III",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "leucoderme",
+                  "idigbio:recordID": "urn:uuid:e5af1d0a-554f-4dc4-927b-03560241b047",
+                  "coreid": "19812985",
+                  "dwc:scientificNameAuthorship": "Small",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "70711",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer leucoderme"
+                }
+              ],
+              "dwc:month": "4",
+              "dwc:otherCatalogNumbers": "45381",
+              "dwc:recordNumber": "714",
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "18",
+              "dwc:year": "1978",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "Small",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer leucoderme",
+              "dwc:specificEpithet": "leucoderme",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "881b2328-0090-4177-a63c-a05bca358ade",
+            "country": "united states",
+            "locality": "elbert",
+            "canonicalname": "acer leucoderme",
+            "eventdate": "1978-04-18",
+            "flags": [
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_scientificnameauthorship_replaced",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_continent_added",
+              "dwc_parentnameusageid_added",
+              "dwc_class_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "urn:uuid:881b2328-0090-4177-a63c-a05bca358ade",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\19812985",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\881b2328-0090-4177-a63c-a05bca358ade"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "leucoderme",
+            "scientificname": "acer leucoderme",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "3189849",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "35f9ea17-978a-4da5-a810-eeb1030a9da1",
+          "_score": 1,
+          "_source": {
+            "recordset": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+            "dqs": 0.2318840579710145,
+            "stateprovince": "quebec",
+            "county": "inverness",
+            "catalognumber": "clems0080547",
+            "startdayofyear": 225,
+            "continent": "north america",
+            "uuid": "35f9ea17-978a-4da5-a810-eeb1030a9da1",
+            "countrycode": "can",
+            "basisofrecord": "preservedspecimen",
+            "collector": "vasseur, liette",
+            "institutioncode": "clems",
+            "mediarecords": [
+              "6177602d-d5c0-4e5a-8637-8f2aeb159112"
+            ],
+            "datemodified": "2024-12-13T18:21:17.614719+00:00",
+            "datecollected": "1984-08-12T00:00:00+00:00",
+            "etag": "c00ee665ab16b981ec282a11723f7011b9e89579",
+            "recordnumber": "132",
+            "hasImage": true,
+            "highertaxon": "plantae|tracheophyta|spermatophyta|magnoliophyta|eudicots|core eudicots|malvids|rosids|sapindales|sapindaceae|acer",
+            "collectionid": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+            "indexData": {
+              "dwc:startDayOfYear": "225",
+              "idigbio:dateModified": "2024-12-13T18:21:17.614719",
+              "dwc:county": "Inverness",
+              "dwc:recordedBy": "Vasseur, Liette",
+              "idigbio:uuid": "35f9ea17-978a-4da5-a810-eeb1030a9da1",
+              "flag_dwc_multimedia_added": true,
+              "dwc:habitat": "Ground",
+              "flag_gbif_reference_added": true,
+              "flag_dwc_taxonid_replaced": true,
+              "dwc:occurrenceID": "ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+              "dwc:lifeStage": "mature",
+              "flag_dwc_taxonrank_replaced": true,
+              "dcterms:language": "en",
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "symbiota:recordEnteredBy": "ddamrel",
+              "idigbio:parent": "264c48ec-8636-451f-a7e0-74131bc6f84c",
+              "dwc:stateProvince": "Quebec",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:eventDate": "1984-08-12",
+              "flag_dwc_scientificnameauthorship_replaced": true,
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "Canada",
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:title": "blätter",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_spicatum_jpg1l.jpg",
+                  "coreid": "3189848",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/e3/acer_spicatum_jpg1l.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "français : feuilles d’érable à épis ou plaine bâtarde – acer spicatum année de plantation : 1998 position exacte : arboretum robert lenoir (s28 - 2968) - rendeux (belgique). english: hornbeam maple acer spicatum leaves planting date : 1998 precise location : arboretum robert lenoir (s28 - 2968) rendeux (belgium). walon: fouyes di bastaurde plane acer carpinifolium annéye do plantis' : 1998 place rècta : arboretum robert lenoir (s28 - 2968) - rindeu (bèljike).",
+                  "dcterms:creator": "jean-pol grandmont",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_spicatum_jpg1l.jpg",
+                  "coreid": "3189848",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/e3/acer_spicatum_jpg1l.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "français : feuilles d’érable à épis ou plaine bâtarde – acer spicatum année de plantation : 1998 position exacte : arboretum robert lenoir (s28 - 2968) - rendeux (belgique). english: hornbeam maple acer spicatum leaves planting date : 1998 precise location : arboretum robert lenoir (s28 - 2968) rendeux (belgium). walon: fouyes di bastaurde plane acer carpinifolium annéye do plantis' : 1998 place rècta : arboretum robert lenoir (s28 - 2968) - rindeu (bèljike).",
+                  "dcterms:creator": "jean-pol grandmont",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:etag": "c00ee665ab16b981ec282a11723f7011b9e89579",
+              "id": "24574393",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Vasseur, Liette",
+              "flag_dwc_datasetid_added": true,
+              "dwc:disposition": "DNR_MB",
+              "idigbio:isocountrycode": "can",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "6177602d-d5c0-4e5a-8637-8f2aeb159112"
+                ]
+              },
+              "symbiota:recordID": "ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "acer spicatum",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=24574393",
+              "gbif:genericname": "acer",
+              "dwc:locality": "Along the trail, near the lake, on the ground.",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "fruiting",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0080547",
+              "flag_dwc_phylum_replaced": true,
+              "flag_gbif_canonicalname_added": true,
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "L. Vasseur",
+                  "dwc:genus": "Acer",
+                  "dwc:specificEpithet": "spicatum",
+                  "idigbio:recordID": "urn:uuid:45d44ead-1e12-4253-849b-739e8e8cbc87",
+                  "coreid": "24574393",
+                  "dwc:scientificNameAuthorship": "Lam.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "70739",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:scientificName": "Acer spicatum"
+                }
+              ],
+              "dwc:month": "8",
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "axlönn"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable à épis"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable bâtard"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "plaine bâtarde"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "plaine bleue"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "vermont-ahorn"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "white maple"
+                }
+              ],
+              "dwc:otherCatalogNumbers": "31698",
+              "gbif:reference": [
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "lam. (1786) in: encyc. 2: 381"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "idigbio:recordIds": [
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\24574393",
+                "264c48ec-8636-451f-a7e0-74131bc6f84c\\ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+                "urn:uuid:ae4d6ca6-c1e2-4af5-9389-8b818564eee7"
+              ],
+              "dwc:recordNumber": "132",
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_class_added": true,
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "12",
+              "dwc:year": "1984",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:scientificNameAuthorship": "Lam.",
+              "dwc:taxonID": "3189848",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer spicatum",
+              "dwc:specificEpithet": "spicatum",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "225",
+              "dwc:county": "Inverness",
+              "dwc:recordedBy": "Vasseur, Liette",
+              "dwc:habitat": "Ground",
+              "dwc:occurrenceID": "ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+              "dwc:lifeStage": "mature",
+              "dcterms:language": "en",
+              "id": "24574393",
+              "dwc:taxonID": "70739",
+              "dwc:stateProvince": "Quebec",
+              "dwc:eventDate": "1984-08-12",
+              "dwc:collectionID": "81b5c57b-5f26-423f-93b6-d4dc434fe707",
+              "dwc:country": "Canada",
+              "symbiota:recordEnteredBy": "ddamrel",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/licenses/by-nc/3.0/",
+              "dwc:identifiedBy": "Vasseur, Liette",
+              "dwc:disposition": "DNR_MB",
+              "symbiota:recordID": "ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+              "dcterms:references": "https://sernecportal.org/portal/collections/individual/index.php?occid=24574393",
+              "dwc:locality": "Along the trail, near the lake, on the ground.",
+              "dwc:institutionCode": "CLEMS",
+              "dwc:reproductiveCondition": "fruiting",
+              "dwc:higherClassification": "Plantae|Tracheophyta|Spermatophyta|Magnoliophyta|Eudicots|Core Eudicots|Malvids|Rosids|Sapindales|Sapindaceae|Acer",
+              "dwc:catalogNumber": "CLEMS0080547",
+              "dwc:Identification": [
+                {
+                  "dwc:identifiedBy": "L. Vasseur",
+                  "dcterms:modified": "2023-07-16 05:07:11",
+                  "dwc:specificEpithet": "spicatum",
+                  "idigbio:recordID": "urn:uuid:45d44ead-1e12-4253-849b-739e8e8cbc87",
+                  "coreid": "24574393",
+                  "dwc:scientificNameAuthorship": "Lam.",
+                  "dwc:dateIdentified": "s.d.",
+                  "symbiota:tidInterpreted": "70739",
+                  "dwc:genus": "Acer",
+                  "dwc:scientificName": "Acer spicatum"
+                }
+              ],
+              "dwc:month": "8",
+              "dwc:otherCatalogNumbers": "31698",
+              "dwc:recordNumber": "132",
+              "dcterms:modified": "2013-05-17 15:59:38",
+              "dwc:day": "12",
+              "dwc:year": "1984",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Magnoliophyta",
+              "dwc:scientificNameAuthorship": "Lam.",
+              "dwc:taxonRank": "Species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer spicatum",
+              "dwc:specificEpithet": "spicatum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+            "country": "canada",
+            "locality": "along the trail, near the lake, on the ground.",
+            "canonicalname": "acer spicatum",
+            "eventdate": "1984-08-12",
+            "flags": [
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "dwc_taxonid_replaced",
+              "dwc_taxonrank_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "gbif_taxon_corrected",
+              "dwc_scientificnameauthorship_replaced",
+              "dwc_datasetid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "dwc_phylum_replaced",
+              "gbif_canonicalname_added",
+              "dwc_continent_added",
+              "dwc_parentnameusageid_added",
+              "dwc_class_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\24574393",
+              "264c48ec-8636-451f-a7e0-74131bc6f84c\\ae4d6ca6-c1e2-4af5-9389-8b818564eee7",
+              "urn:uuid:ae4d6ca6-c1e2-4af5-9389-8b818564eee7"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "specificepithet": "spicatum",
+            "scientificname": "acer spicatum",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "kingdom": "plantae",
+            "class": "magnoliopsida",
+            "taxonid": "3189848",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "9a8fb7bd-de66-499f-a229-366f76d4c08d",
+          "_score": 1,
+          "_source": {
+            "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+            "dqs": 0.2318840579710145,
+            "stateprovince": "connecticut",
+            "municipality": "cheshire",
+            "county": "new haven county",
+            "catalognumber": "cbs.026036",
+            "startdayofyear": 269,
+            "continent": "north america",
+            "uuid": "9a8fb7bd-de66-499f-a229-366f76d4c08d",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "arthur edmond blewitt",
+            "institutioncode": "yale peabody museum of natural history",
+            "mediarecords": [
+              "f0caf08c-a500-4327-9012-e839d62017ea"
+            ],
+            "datemodified": "2016-03-21T21:43:25.444854+00:00",
+            "datecollected": "1907-09-26T00:00:00+00:00",
+            "etag": "41d85c320a71e032c1fb6eddca3af7ca1daa97fe",
+            "recordnumber": "4290",
+            "hasImage": true,
+            "collectionid": "http://grbio.org/cool/x0m9-a3bs",
+            "indexData": {
+              "dwc:startDayOfYear": "269",
+              "flag_dwc_taxonrank_added": true,
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:title": "blätter",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_spicatum_jpg1l.jpg",
+                  "coreid": "3189848",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/e3/acer_spicatum_jpg1l.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "français : feuilles d’érable à épis ou plaine bâtarde – acer spicatum année de plantation : 1998 position exacte : arboretum robert lenoir (s28 - 2968) - rendeux (belgique). english: hornbeam maple acer spicatum leaves planting date : 1998 precise location : arboretum robert lenoir (s28 - 2968) rendeux (belgium). walon: fouyes di bastaurde plane acer carpinifolium annéye do plantis' : 1998 place rècta : arboretum robert lenoir (s28 - 2968) - rindeu (bèljike).",
+                  "dcterms:creator": "jean-pol grandmont",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "creative commons attribution share alike 3.0 unported",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_spicatum_jpg1l.jpg",
+                  "coreid": "3189848",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/e/e3/acer_spicatum_jpg1l.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "français : feuilles d’érable à épis ou plaine bâtarde – acer spicatum année de plantation : 1998 position exacte : arboretum robert lenoir (s28 - 2968) - rendeux (belgique). english: hornbeam maple acer spicatum leaves planting date : 1998 precise location : arboretum robert lenoir (s28 - 2968) rendeux (belgium). walon: fouyes di bastaurde plane acer carpinifolium annéye do plantis' : 1998 place rècta : arboretum robert lenoir (s28 - 2968) - rindeu (bèljike).",
+                  "dcterms:creator": "jean-pol grandmont",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:dateModified": "2016-03-21T21:43:25.444854",
+              "dwc:county": "New Haven County",
+              "dwc:recordedBy": "Arthur Edmond Blewitt",
+              "idigbio:uuid": "9a8fb7bd-de66-499f-a229-366f76d4c08d",
+              "flag_dwc_multimedia_added": true,
+              "dcterms:references": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110498",
+              "flag_gbif_reference_added": true,
+              "idigbio:recordIds": [
+                "urn:uuid:6c916224-a076-40d4-bb04-7670f7e7cfa2",
+                "09edf7d2-e68e-4a42-93da-762f86bb814f\\urn:uuid:9fc10d21-7148-4590-b1bd-259bf1e2548b",
+                "09edf7d2-e68e-4a42-93da-762f86bb814f\\110498"
+              ],
+              "dwc:occurrenceID": "urn:uuid:9fc10d21-7148-4590-b1bd-259bf1e2548b",
+              "flag_gbif_canonicalname_added": true,
+              "flag_dwc_country_replaced": true,
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+              "flag_dwc_datasetid_added": true,
+              "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+              "dwc:stateProvince": "Connecticut",
+              "dwc:eventDate": "1907-09-26",
+              "flag_dwc_scientificnameauthorship_replaced": true,
+              "dwc:collectionID": "http://grbio.org/cool/x0m9-a3bs",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:6c916224-a076-40d4-bb04-7670f7e7cfa2",
+              "idigbio:etag": "41d85c320a71e032c1fb6eddca3af7ca1daa97fe",
+              "dwc:collectionCode": "CBS",
+              "id": "110498",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_phylum_replaced": true,
+              "dwc:municipality": "Cheshire",
+              "flag_dwc_taxonid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "f0caf08c-a500-4327-9012-e839d62017ea"
+                ]
+              },
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "Acer spicatum",
+              "gbif:genericname": "acer",
+              "dwc:locality": "The Notch",
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "Yale Peabody Museum of Natural History",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:catalogNumber": "CBS.026036",
+              "dwc:taxonid": "3189848",
+              "dwc:taxonrank": "species",
+              "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "axlönn"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable à épis"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable bâtard"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "moose maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "mountain maple"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "plaine bâtarde"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "plaine bleue"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "vermont-ahorn"
+                },
+                {
+                  "coreid": "3189848",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "white maple"
+                }
+              ],
+              "dwc:month": "9",
+              "flag_dwc_class_replaced": true,
+              "gbif:reference": [
+                {
+                  "coreid": "3189848",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "lam. (1786) in: encyc. 2: 381"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "dwc:recordNumber": "4290",
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "dcterms:modified": "2011-07-23 00:00:00",
+              "dwc:day": "26",
+              "dwc:year": "1907",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:taxonID": "3189848",
+              "dwc:scientificNameAuthorship": "Lam.",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer spicatum",
+              "dwc:specificEpithet": "spicatum",
+              "dwc:order": "Sapindales"
+            },
+            "hasMedia": true,
+            "data": {
+              "dwc:startDayOfYear": "269",
+              "dwc:county": "New Haven County",
+              "dwc:recordedBy": "Arthur Edmond Blewitt",
+              "dcterms:references": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110498",
+              "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+              "dwc:occurrenceID": "urn:uuid:9fc10d21-7148-4590-b1bd-259bf1e2548b",
+              "id": "110498",
+              "dwc:stateProvince": "Connecticut",
+              "dwc:eventDate": "1907-09-26",
+              "dwc:collectionID": "http://grbio.org/cool/x0m9-a3bs",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:6c916224-a076-40d4-bb04-7670f7e7cfa2",
+              "dwc:collectionCode": "CBS",
+              "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:municipality": "Cheshire",
+              "dwc:locality": "The Notch",
+              "dwc:institutionCode": "Yale Peabody Museum of Natural History",
+              "dwc:catalogNumber": "CBS.026036",
+              "dwc:month": "9",
+              "dwc:recordNumber": "4290",
+              "dcterms:modified": "2011-07-23 00:00:00",
+              "dwc:day": "26",
+              "dwc:year": "1907",
+              "dwc:class": "Equisetopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Charophyta",
+              "dwc:scientificNameAuthorship": "Lam.",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer spicatum",
+              "dwc:specificEpithet": "spicatum",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "urn:uuid:9fc10d21-7148-4590-b1bd-259bf1e2548b",
+            "country": "united states",
+            "locality": "the notch",
+            "collectioncode": "cbs",
+            "canonicalname": "acer spicatum",
+            "eventdate": "1907-09-26",
+            "flags": [
+              "dwc_taxonrank_added",
+              "dwc_multimedia_added",
+              "gbif_reference_added",
+              "gbif_canonicalname_added",
+              "dwc_country_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "dwc_datasetid_added",
+              "dwc_scientificnameauthorship_replaced",
+              "dwc_parentnameusageid_added",
+              "dwc_phylum_replaced",
+              "dwc_taxonid_added",
+              "idigbio_isocountrycode_added",
+              "gbif_vernacularname_added",
+              "gbif_taxon_corrected",
+              "dwc_class_replaced",
+              "dwc_continent_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "urn:uuid:6c916224-a076-40d4-bb04-7670f7e7cfa2",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\urn:uuid:9fc10d21-7148-4590-b1bd-259bf1e2548b",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\110498"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "specificepithet": "spicatum",
+            "scientificname": "acer spicatum",
+            "kingdom": "plantae",
+            "taxonid": "3189848",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "class": "magnoliopsida",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "e0690554-8c60-494b-85f0-d07553b9e59e",
+          "_score": 1,
+          "_source": {
+            "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+            "dqs": 0.2463768115942029,
+            "stateprovince": "connecticut",
+            "municipality": "wethersfield",
+            "county": "hartford county",
+            "catalognumber": "cbs.025833",
+            "startdayofyear": 145,
+            "continent": "north america",
+            "uuid": "e0690554-8c60-494b-85f0-d07553b9e59e",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "hugh s. clark",
+            "institutioncode": "yale peabody museum of natural history",
+            "mediarecords": [
+              "c9f1880b-39de-4aaf-95d1-2365f9cae04d"
+            ],
+            "datemodified": "2016-03-21T21:43:25.444854+00:00",
+            "datecollected": "1901-05-25T00:00:00+00:00",
+            "etag": "10b5d8c49419e7524281708a71780f39e898f68c",
+            "hasMedia": true,
+            "hasImage": true,
+            "collectionid": "http://grbio.org/cool/x0m9-a3bs",
+            "indexData": {
+              "dwc:startDayOfYear": "145",
+              "flag_dwc_taxonrank_added": true,
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "a. pseudoplatanus in the bergpark wilhelmshöhe, kassel",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pseudoplatanus_005.jpg",
+                  "coreid": "3189870",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/c/cd/acer_pseudoplatanus_005.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "deutsch: bergahorn (acer pseudoplatanus) im schlosspark wilhelmshöhe, kassel, hessen, deutschland english: sycamore maple (acer pseudoplatanus) in the schlosspark wilhelmshöhe, kassel, hesse, germany",
+                  "dcterms:creator": "willow",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "public domain mark 1.0",
+                  "dcterms:title": "berg-ahorn (acer pseudoplatanus)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pseudoplatanusaa.jpg",
+                  "coreid": "3189870",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/fb/acer_pseudoplatanusaa.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "amsterdam, johannes allart, 1802 [-1808]",
+                  "dcterms:creator": "user:mpf",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:dateModified": "2016-03-21T21:43:25.444854",
+              "dwc:county": "Hartford County",
+              "dwc:recordedBy": "Hugh S. Clark",
+              "idigbio:uuid": "e0690554-8c60-494b-85f0-d07553b9e59e",
+              "dcterms:references": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110335",
+              "flag_gbif_reference_added": true,
+              "idigbio:recordIds": [
+                "urn:uuid:c183a846-5fe6-4901-8e6a-79147feead7d",
+                "09edf7d2-e68e-4a42-93da-762f86bb814f\\urn:uuid:bc642633-9440-430f-a6e4-b2c21fc10237",
+                "09edf7d2-e68e-4a42-93da-762f86bb814f\\110335"
+              ],
+              "dwc:occurrenceID": "urn:uuid:bc642633-9440-430f-a6e4-b2c21fc10237",
+              "flag_gbif_canonicalname_added": true,
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "it",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "acero montano"
+                },
+                {
+                  "dwc:countrycode": "dk",
+                  "dwc:country": "denmark",
+                  "dwc:vernacularname": "ahorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "da"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "bergahorn"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "bergahorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "berg-ahorn"
+                },
+                {
+                  "dwc:countrycode": "de",
+                  "dwc:country": "germany",
+                  "dwc:vernacularname": "berg-ahorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "de",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "bergahorn"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "de",
+                  "dcterms:source": "the european nature information system (eunis)",
+                  "dwc:vernacularname": "berg-ahorn"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "érable sycomore",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "fr"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable sycomore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "érable sycomore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "false planetree"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "gewone esdoorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "nl"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "nl",
+                  "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                  "dwc:vernacularname": "gewone esdoorn"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "great maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "klen lo&zcaron;noplatanovyj"
+                },
+                {
+                  "dwc:countrycode": "no",
+                  "dwc:country": "norway",
+                  "dwc:vernacularname": "platanlønn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "nb"
+                },
+                {
+                  "dwc:countrycode": "no",
+                  "dwc:country": "norway",
+                  "dwc:vernacularname": "platanlønn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "nn"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "scottish maple"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "sycamore",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "en"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "sycamore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "sycamore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "tysklönn"
+                },
+                {
+                  "dwc:countrycode": "se",
+                  "dwc:country": "sweden",
+                  "dwc:vernacularname": "tysklönn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "sv"
+                },
+                {
+                  "dwc:countrycode": "fi",
+                  "dwc:country": "finland",
+                  "dwc:vernacularname": "vuorivaahtera",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "fi"
+                },
+                {
+                  "dwc:countrycode": "fi",
+                  "dwc:country": "finland",
+                  "dwc:vernacularname": "vuorivaahtera",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "sv"
+                }
+              ],
+              "flag_dwc_country_replaced": true,
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+              "flag_dwc_datasetid_added": true,
+              "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+              "dwc:stateProvince": "Connecticut",
+              "dwc:eventDate": "1901-05-25",
+              "dwc:collectionID": "http://grbio.org/cool/x0m9-a3bs",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:c183a846-5fe6-4901-8e6a-79147feead7d",
+              "idigbio:etag": "10b5d8c49419e7524281708a71780f39e898f68c",
+              "dwc:collectionCode": "CBS",
+              "id": "110335",
+              "dwc:decimalLatitude": "41.7012",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_phylum_replaced": true,
+              "dwc:municipality": "Wethersfield",
+              "flag_dwc_taxonid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "dwc:geodeticDatum": "WGS84",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "c9f1880b-39de-4aaf-95d1-2365f9cae04d"
+                ]
+              },
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "Acer pseudoplatanus",
+              "gbif:genericname": "acer",
+              "flag_dwc_multimedia_added": true,
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "Yale Peabody Museum of Natural History",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:catalogNumber": "CBS.025833",
+              "dwc:taxonid": "3189870",
+              "dwc:taxonrank": "species",
+              "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+              "dwc:decimalLongitude": "-72.6704",
+              "dwc:month": "5",
+              "flag_dwc_class_replaced": true,
+              "gbif:reference": [
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "l. (1753) in: sp. pl.: 1054"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                  "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "dcterms:modified": "2011-07-20 00:00:00",
+              "dwc:coordinateUncertaintyInMeters": "4657",
+              "dwc:day": "25",
+              "dwc:year": "1901",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:taxonID": "3189870",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer pseudoplatanus",
+              "dwc:specificEpithet": "pseudoplatanus",
+              "dwc:order": "Sapindales"
+            },
+            "coordinateuncertainty": 4657,
+            "data": {
+              "dwc:startDayOfYear": "145",
+              "dwc:county": "Hartford County",
+              "dwc:recordedBy": "Hugh S. Clark",
+              "dcterms:references": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110335",
+              "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+              "dwc:occurrenceID": "urn:uuid:bc642633-9440-430f-a6e4-b2c21fc10237",
+              "id": "110335",
+              "dwc:stateProvince": "Connecticut",
+              "dwc:eventDate": "1901-05-25",
+              "dwc:collectionID": "http://grbio.org/cool/x0m9-a3bs",
+              "dwc:institutionCode": "Yale Peabody Museum of Natural History",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:c183a846-5fe6-4901-8e6a-79147feead7d",
+              "dwc:collectionCode": "CBS",
+              "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+              "dwc:decimalLatitude": "41.7012",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:municipality": "Wethersfield",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:catalogNumber": "CBS.025833",
+              "dwc:month": "5",
+              "dwc:decimalLongitude": "-72.6704",
+              "dwc:coordinateUncertaintyInMeters": "4657",
+              "dcterms:modified": "2011-07-20 00:00:00",
+              "dwc:day": "25",
+              "dwc:year": "1901",
+              "dwc:class": "Equisetopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Charophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer pseudoplatanus",
+              "dwc:specificEpithet": "pseudoplatanus",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "urn:uuid:bc642633-9440-430f-a6e4-b2c21fc10237",
+            "country": "united states",
+            "geopoint": {
+              "lat": 41.7012,
+              "lon": -72.6704
+            },
+            "collectioncode": "cbs",
+            "canonicalname": "acer pseudoplatanus",
+            "eventdate": "1901-05-25",
+            "flags": [
+              "dwc_taxonrank_added",
+              "gbif_reference_added",
+              "gbif_canonicalname_added",
+              "dwc_country_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "dwc_datasetid_added",
+              "dwc_parentnameusageid_added",
+              "dwc_phylum_replaced",
+              "dwc_taxonid_added",
+              "idigbio_isocountrycode_added",
+              "dwc_multimedia_added",
+              "gbif_vernacularname_added",
+              "gbif_taxon_corrected",
+              "dwc_class_replaced",
+              "dwc_continent_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "urn:uuid:c183a846-5fe6-4901-8e6a-79147feead7d",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\urn:uuid:bc642633-9440-430f-a6e4-b2c21fc10237",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\110335"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "specificepithet": "pseudoplatanus",
+            "scientificname": "acer pseudoplatanus",
+            "kingdom": "plantae",
+            "taxonid": "3189870",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "class": "magnoliopsida",
+            "order": "sapindales"
+          }
+        },
+        {
+          "_index": "idigbio-2.10.25",
+          "_type": "records",
+          "_id": "af9e5711-eaeb-4d07-8dd7-f7df02829377",
+          "_score": 1,
+          "_source": {
+            "recordset": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+            "dqs": 0.2463768115942029,
+            "stateprovince": "connecticut",
+            "municipality": "bridgeport",
+            "county": "fairfield county",
+            "catalognumber": "cbs.025830",
+            "startdayofyear": 151,
+            "continent": "north america",
+            "uuid": "af9e5711-eaeb-4d07-8dd7-f7df02829377",
+            "countrycode": "usa",
+            "basisofrecord": "preservedspecimen",
+            "collector": "hugh s. clark",
+            "institutioncode": "yale peabody museum of natural history",
+            "mediarecords": [
+              "cd8c9545-8adf-4de8-afe9-ffd8c9c265e2"
+            ],
+            "datemodified": "2016-03-21T21:43:25.444854+00:00",
+            "datecollected": "1910-05-31T00:00:00+00:00",
+            "etag": "e3c07a0a409c5f3f2582ce46d399e94a3b9581df",
+            "hasMedia": true,
+            "hasImage": true,
+            "collectionid": "http://grbio.org/cool/x0m9-a3bs",
+            "indexData": {
+              "dwc:startDayOfYear": "151",
+              "flag_dwc_taxonrank_added": true,
+              "dwc:multimedia": [
+                {
+                  "dcterms:license": "gnu free documentation license",
+                  "dcterms:title": "a. pseudoplatanus in the bergpark wilhelmshöhe, kassel",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pseudoplatanus_005.jpg",
+                  "coreid": "3189870",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/c/cd/acer_pseudoplatanus_005.jpg",
+                  "dcterms:source": "english wikipedia - species pages",
+                  "dcterms:description": "deutsch: bergahorn (acer pseudoplatanus) im schlosspark wilhelmshöhe, kassel, hessen, deutschland english: sycamore maple (acer pseudoplatanus) in the schlosspark wilhelmshöhe, kassel, hesse, germany",
+                  "dcterms:creator": "willow",
+                  "dcterms:publisher": "wikimedia commons"
+                },
+                {
+                  "dcterms:license": "public domain mark 1.0",
+                  "dcterms:title": "berg-ahorn (acer pseudoplatanus)",
+                  "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_pseudoplatanusaa.jpg",
+                  "coreid": "3189870",
+                  "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/f/fb/acer_pseudoplatanusaa.jpg",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dcterms:description": "amsterdam, johannes allart, 1802 [-1808]",
+                  "dcterms:creator": "user:mpf",
+                  "dcterms:publisher": "wikimedia commons"
+                }
+              ],
+              "idigbio:dateModified": "2016-03-21T21:43:25.444854",
+              "dwc:county": "Fairfield County",
+              "dwc:recordedBy": "Hugh S. Clark",
+              "idigbio:uuid": "af9e5711-eaeb-4d07-8dd7-f7df02829377",
+              "dcterms:references": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110334",
+              "flag_gbif_reference_added": true,
+              "idigbio:recordIds": [
+                "urn:uuid:3f201839-a9b2-4869-a659-39b8509e2c8b",
+                "09edf7d2-e68e-4a42-93da-762f86bb814f\\urn:uuid:c64bcab2-95df-47ed-b910-e78a8a5a9f85",
+                "09edf7d2-e68e-4a42-93da-762f86bb814f\\110334"
+              ],
+              "dwc:occurrenceID": "urn:uuid:c64bcab2-95df-47ed-b910-e78a8a5a9f85",
+              "flag_gbif_canonicalname_added": true,
+              "gbif:vernacularname": [
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "it",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "acero montano"
+                },
+                {
+                  "dwc:countrycode": "dk",
+                  "dwc:country": "denmark",
+                  "dwc:vernacularname": "ahorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "da"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "bergahorn"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "bergahorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "de",
+                  "dcterms:source": "german wikipedia - species pages",
+                  "dwc:vernacularname": "berg-ahorn"
+                },
+                {
+                  "dwc:countrycode": "de",
+                  "dwc:country": "germany",
+                  "dwc:vernacularname": "berg-ahorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                  "dcterms:language": "de"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "de",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "bergahorn"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "de",
+                  "dcterms:source": "the european nature information system (eunis)",
+                  "dwc:vernacularname": "berg-ahorn"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "érable sycomore",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "fr"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "érable sycomore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "fr",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "érable sycomore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "false planetree"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "gewone esdoorn",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "nl"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "nl",
+                  "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                  "dwc:vernacularname": "gewone esdoorn"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "great maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "klen lo&zcaron;noplatanovyj"
+                },
+                {
+                  "dwc:countrycode": "no",
+                  "dwc:country": "norway",
+                  "dwc:vernacularname": "platanlønn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "nb"
+                },
+                {
+                  "dwc:countrycode": "no",
+                  "dwc:country": "norway",
+                  "dwc:vernacularname": "platanlønn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "nn"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "scottish maple"
+                },
+                {
+                  "dwc:countrycode": "be",
+                  "dwc:country": "belgium",
+                  "dwc:vernacularname": "sycamore",
+                  "coreid": "3189870",
+                  "dcterms:source": "belgian species list",
+                  "dcterms:language": "en"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "sycamore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "sycamore"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "catalogue of life",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "database of vascular plants of canada (vascan)",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "en",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "integrated taxonomic information system (itis)",
+                  "dwc:vernacularname": "sycamore maple"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:language": "sv",
+                  "dcterms:source": "grin taxonomy",
+                  "dwc:vernacularname": "tysklönn"
+                },
+                {
+                  "dwc:countrycode": "se",
+                  "dwc:country": "sweden",
+                  "dwc:vernacularname": "tysklönn",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "sv"
+                },
+                {
+                  "dwc:countrycode": "fi",
+                  "dwc:country": "finland",
+                  "dwc:vernacularname": "vuorivaahtera",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "fi"
+                },
+                {
+                  "dwc:countrycode": "fi",
+                  "dwc:country": "finland",
+                  "dwc:vernacularname": "vuorivaahtera",
+                  "coreid": "3189870",
+                  "dcterms:source": "nordic crop wild relative (cwr) checklist",
+                  "dcterms:language": "sv"
+                }
+              ],
+              "flag_dwc_country_replaced": true,
+              "flag_dwc_taxonomicstatus_added": true,
+              "flag_gbif_genericname_added": true,
+              "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+              "flag_dwc_datasetid_added": true,
+              "idigbio:parent": "09edf7d2-e68e-4a42-93da-762f86bb814f",
+              "dwc:stateProvince": "Connecticut",
+              "dwc:eventDate": "1910-05-31",
+              "dwc:collectionID": "http://grbio.org/cool/x0m9-a3bs",
+              "dwc:country": "united states",
+              "idigbio:recordId": "urn:uuid:3f201839-a9b2-4869-a659-39b8509e2c8b",
+              "idigbio:etag": "e3c07a0a409c5f3f2582ce46d399e94a3b9581df",
+              "dwc:collectionCode": "CBS",
+              "id": "110334",
+              "dwc:decimalLatitude": "41.1932",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dwc:taxonomicstatus": "accepted",
+              "dwc:continent": "north america",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "flag_dwc_parentnameusageid_added": true,
+              "flag_dwc_phylum_replaced": true,
+              "dwc:municipality": "Bridgeport",
+              "flag_dwc_taxonid_added": true,
+              "idigbio:isocountrycode": "usa",
+              "dwc:geodeticDatum": "WGS84",
+              "idigbio:siblings": {
+                "mediarecord": [
+                  "cd8c9545-8adf-4de8-afe9-ffd8c9c265e2"
+                ]
+              },
+              "flag_idigbio_isocountrycode_added": true,
+              "gbif:canonicalname": "Acer pseudoplatanus",
+              "gbif:genericname": "acer",
+              "flag_dwc_multimedia_added": true,
+              "flag_gbif_vernacularname_added": true,
+              "dwc:institutionCode": "Yale Peabody Museum of Natural History",
+              "flag_gbif_taxon_corrected": true,
+              "dwc:parentnameusageid": "3189834",
+              "dwc:catalogNumber": "CBS.025830",
+              "dwc:taxonid": "3189870",
+              "dwc:taxonrank": "species",
+              "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+              "dwc:decimalLongitude": "-73.196",
+              "dwc:month": "5",
+              "flag_dwc_class_replaced": true,
+              "gbif:reference": [
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "catalogue of life",
+                  "dcterms:bibliographiccitation": "l. (1753) in: sp. pl.: 1054"
+                },
+                {
+                  "coreid": "3189870",
+                  "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                  "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+                }
+              ],
+              "flag_dwc_continent_added": true,
+              "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+              "dcterms:modified": "2011-07-21 00:00:00",
+              "dwc:coordinateUncertaintyInMeters": "6473",
+              "dwc:day": "31",
+              "dwc:year": "1910",
+              "dwc:class": "Magnoliopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Tracheophyta",
+              "dwc:taxonID": "3189870",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:taxonRank": "species",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer pseudoplatanus",
+              "dwc:specificEpithet": "pseudoplatanus",
+              "dwc:order": "Sapindales"
+            },
+            "coordinateuncertainty": 6473,
+            "data": {
+              "dwc:startDayOfYear": "151",
+              "dwc:county": "Fairfield County",
+              "dwc:recordedBy": "Hugh S. Clark",
+              "dcterms:references": "http://portal.neherbaria.org/portal/collections/individual/index.php?occid=110334",
+              "dcterms:accessRights": "Open Access, http://creativecommons.org/publicdomain/zero/1.0/; see Yale Peabody policies at: http://hdl.handle.net/10079/8931zqj",
+              "dwc:occurrenceID": "urn:uuid:c64bcab2-95df-47ed-b910-e78a8a5a9f85",
+              "id": "110334",
+              "dwc:stateProvince": "Connecticut",
+              "dwc:eventDate": "1910-05-31",
+              "dwc:collectionID": "http://grbio.org/cool/x0m9-a3bs",
+              "dwc:institutionCode": "Yale Peabody Museum of Natural History",
+              "dwc:country": "USA",
+              "idigbio:recordId": "urn:uuid:3f201839-a9b2-4869-a659-39b8509e2c8b",
+              "dwc:collectionCode": "CBS",
+              "dcterms:rightsHolder": "Yale Peabody Museum of Natural History",
+              "dwc:decimalLatitude": "41.1932",
+              "dwc:basisOfRecord": "PreservedSpecimen",
+              "dc:rights": "http://creativecommons.org/publicdomain/zero/1.0/",
+              "dwc:municipality": "Bridgeport",
+              "dwc:geodeticDatum": "WGS84",
+              "dwc:catalogNumber": "CBS.025830",
+              "dwc:month": "5",
+              "dwc:decimalLongitude": "-73.196",
+              "dwc:coordinateUncertaintyInMeters": "6473",
+              "dcterms:modified": "2011-07-21 00:00:00",
+              "dwc:day": "31",
+              "dwc:year": "1910",
+              "dwc:class": "Equisetopsida",
+              "dwc:genus": "Acer",
+              "dwc:phylum": "Charophyta",
+              "dwc:scientificNameAuthorship": "L.",
+              "dwc:kingdom": "Plantae",
+              "dwc:family": "Sapindaceae",
+              "dwc:scientificName": "Acer pseudoplatanus",
+              "dwc:specificEpithet": "pseudoplatanus",
+              "dwc:order": "Sapindales"
+            },
+            "occurrenceid": "urn:uuid:c64bcab2-95df-47ed-b910-e78a8a5a9f85",
+            "country": "united states",
+            "geopoint": {
+              "lat": 41.1932,
+              "lon": -73.196
+            },
+            "collectioncode": "cbs",
+            "canonicalname": "acer pseudoplatanus",
+            "eventdate": "1910-05-31",
+            "flags": [
+              "dwc_taxonrank_added",
+              "gbif_reference_added",
+              "gbif_canonicalname_added",
+              "dwc_country_replaced",
+              "dwc_taxonomicstatus_added",
+              "gbif_genericname_added",
+              "dwc_datasetid_added",
+              "dwc_parentnameusageid_added",
+              "dwc_phylum_replaced",
+              "dwc_taxonid_added",
+              "idigbio_isocountrycode_added",
+              "dwc_multimedia_added",
+              "gbif_vernacularname_added",
+              "gbif_taxon_corrected",
+              "dwc_class_replaced",
+              "dwc_continent_added"
+            ],
+            "taxonomicstatus": "accepted",
+            "recordids": [
+              "urn:uuid:3f201839-a9b2-4869-a659-39b8509e2c8b",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\urn:uuid:c64bcab2-95df-47ed-b910-e78a8a5a9f85",
+              "09edf7d2-e68e-4a42-93da-762f86bb814f\\110334"
+            ],
+            "datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "specificepithet": "pseudoplatanus",
+            "scientificname": "acer pseudoplatanus",
+            "kingdom": "plantae",
+            "taxonid": "3189870",
+            "phylum": "tracheophyta",
+            "genus": "acer",
+            "taxonrank": "species",
+            "family": "sapindaceae",
+            "class": "magnoliopsida",
+            "order": "sapindales"
+          }
+        }
+      ]
+    },
+    "aggregations": {
+      "top_scientificname": {
+        "doc_count_error_upper_bound": 110,
+        "sum_other_doc_count": 53579,
+        "buckets": [
+          {
+            "key": "acer rubrum",
+            "doc_count": 14405
+          },
+          {
+            "key": "acer negundo",
+            "doc_count": 12010
+          },
+          {
+            "key": "acer saccharum",
+            "doc_count": 8257
+          },
+          {
+            "key": "acer saccharinum",
+            "doc_count": 7345
+          },
+          {
+            "key": "acer spicatum",
+            "doc_count": 5846
+          },
+          {
+            "key": "acer platanoides",
+            "doc_count": 5599
+          },
+          {
+            "key": "acer pensylvanicum",
+            "doc_count": 4797
+          },
+          {
+            "key": "acer",
+            "doc_count": 3858
+          },
+          {
+            "key": "acer glabrum",
+            "doc_count": 3710
+          },
+          {
+            "key": "acer pseudoplatanus",
+            "doc_count": 3685
+          }
+        ]
+      }
+    }
+  }
+}
