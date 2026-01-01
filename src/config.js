@@ -27,7 +27,7 @@ var config = {
    * since all major web browsers mandate HTTP/2 only over TLS
    * and all other web clients may require prior knowledge that this server
    * uses HTTP/2 (e.g. `curl --http2-prior-knowledge`). */
-  HTTP_VERSION: process.env.HTTP_VERSION || '2', //accepted values: '1' '2'
+  HTTP_VERSION: process.env.HTTP_VERSION || '1', //accepted values: '1' '2'
 
   GEN_MOCK: process.env.GEN_MOCK === "true",
   CLUSTER: process.env.CLUSTER !== "false",
@@ -39,6 +39,9 @@ var config = {
     server: process.env.NODE_ENV ==='beta' ? "http://c20node1.acis.ufl.edu:9200" : "http://esnodec1.acis.ufl.edu:9200",
     index: process.env.SEARCH_INDEX || indexAlias,
     statsIndex: process.env.STATS_INDEX || "stats",
+  },
+  clickhouse: {
+    server: process.env.NODE_ENV === 'prod' ? process.env.IDB_CLICKHOUSE_SVC : "http://localhost:8888/v2/summary/stats"
   },
   elasticsearch: {
     hosts: process.env.NODE_ENV ==='prod' ? [

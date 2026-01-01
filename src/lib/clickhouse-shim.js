@@ -1,11 +1,11 @@
 /* eslint-disable require-jsdoc */
-
+import config from "config";
 const request = require('request');
 
 // eslint-disable-next-line max-params, max-statements
 export async function queryStats(type, recordset, dateInterval, minDate, maxDate, inverted) {
 
-    let qurl = `http://localhost:8888/v2/summary/stats/${type}`;
+    let qurl = `${config.clickhouse.server}/${type}`;
 
     if(dateInterval) {
         qurl = qurl.concat(`?dateInterval=${dateInterval}`);
