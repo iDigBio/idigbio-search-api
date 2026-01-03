@@ -891,10 +891,10 @@ cache-content-type@^1.0.0:
     mime-types "^2.1.18"
     ylru "^1.2.0"
 
-cache-manager-redis@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/cache-manager-redis/-/cache-manager-redis-0.4.0.tgz"
-  integrity sha512-zRcHUrgq4CPZdpS9M7lQd8OhBtMmjOVtkj2NgVtu2MBqly32LxQ1tkV1C6bhd3tj8LHYuh1sNYLbMlWxXFQ6NA==
+cache-manager-redis@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/cache-manager-redis/-/cache-manager-redis-0.6.0.tgz"
+  integrity sha512-i7grsVyuIppLyzKAAHM48Eo2YX51+D++Pp1MQiX/9GCBVr3ofayiBpLrz/k/IUpaU9HUZ56P+v5Ee7yJRkfk/w==
   dependencies:
     cache-manager "^2.2.0"
     redis-url "^1.2.1"
