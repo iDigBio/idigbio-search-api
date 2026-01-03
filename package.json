@@ -81,5 +81,10 @@
   "bugs": {
     "url": "https://github.com/iDigBio/idigbio-search-api/issues"
   },
+   "overrides": {
+    "sol-redis-pool": {
+      "redis": "2.8.0"
+    }
+  },
   "homepage": "https://github.com/iDigBio/idigbio-search-api#readme"
 }

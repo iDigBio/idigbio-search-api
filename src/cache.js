@@ -1,6 +1,6 @@
 import _ from "lodash";
-import cacheManager from "cache-manager";
-import redisStore from "cache-manager-redis";
+import * as cacheManager from "cache-manager";
+import * as redisStore from "cache-manager-redis";
 import config from "config";
 import {getLastModified} from "lib/lastModified";
 import hash from "lib/hasher";

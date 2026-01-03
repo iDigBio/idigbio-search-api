@@ -11,6 +11,7 @@ WORKDIR /var/www
 ADD package.json /var/www/package.json
 RUN npm install
 RUN yarn install; yarn cache clean
+RUN npm dedupe
 ADD . /var/www
 RUN yarn build
 
