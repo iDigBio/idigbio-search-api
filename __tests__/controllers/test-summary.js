@@ -155,6 +155,9 @@ describe('Summary', function() {
     });
   });
 
+  // uncomment for live ClickHouse system
+
+/*
   describe('stats', function() {
     it('returns a valid histogram for api', async function() {
       const response = await request(server)
@@ -187,5 +190,5 @@ describe('Summary', function() {
       response.body.dates.should.be.a('Object');
       Object.keys(response.body.dates).length.should.not.equal(0);
     });
-  });
+  });*/
 });
