@@ -159,7 +159,7 @@ describe('Summary', function() {
     it('returns a valid histogram for api', async function() {
       const response = await request(server)
             .get("/v2/summary/stats/api")
-            .query({minDate: "2014-01-01", maxDate: "2014-12-31"})
+            .query({minDate: "2015-01-01", maxDate: "2016-12-31"})
             .expect('Content-Type', /json/)
             .expect(200);
       response.body.should.have.property("dates");
@@ -169,7 +169,7 @@ describe('Summary', function() {
     it('returns a valid histogram for digest', async function() {
       const response = await request(server)
             .get("/v2/summary/stats/digest")
-            .query({minDate: "2014-01-01", maxDate: "2014-12-30"})
+            .query({minDate: "2015-01-01", maxDate: "2016-12-30"})
             .expect('Content-Type', /json/)
             .expect(200);
 
@@ -180,7 +180,7 @@ describe('Summary', function() {
     it('returns a valid histogram for search', async function() {
       const response = await request(server)
             .get("/v2/summary/stats/search")
-            .query({minDate: "2014-01-01", maxDate: "2015-12-31"})
+            .query({minDate: "2015-01-01", maxDate: "2016-12-31"})
             .expect('Content-Type', /json/)
             .expect(200);
       response.body.should.have.property("dates");
