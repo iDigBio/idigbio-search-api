@@ -41,7 +41,7 @@ var config = {
     statsIndex: process.env.STATS_INDEX || "stats",
   },
   clickhouse: {
-    server: process.env.NODE_ENV === 'beta' ? process.env.IDB_CLICKHOUSE_SVC : "http://localhost:8888/v2/summary/stats"
+    server: process.env.NODE_ENV === 'prod' ? process.env.IDB_CLICKHOUSE_SVC : "http://localhost:8888/v2/summary/stats"
   },
   elasticsearch: {
     hosts: process.env.NODE_ENV ==='prod' ? [
