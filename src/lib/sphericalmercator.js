@@ -119,14 +119,4 @@ SphericalMercator.prototype.xyz_to_envelope = function(x, y, zoom, TMS_SCHEME) {
   return mercator.forward(bbox);
 };
 
-SphericalMercator.prototype.xyz_to_envelope2 = function(x, y, zoom, TMS_SCHEME) {
-  if(TMS_SCHEME) {
-    y = (Math.pow(2, zoom) - 1) - y;
-  }
-  var ll = [x * this.size/2, (y + 1) * this.size/2];
-  var ur = [(x + 1) * this.size/2, y * this.size/2];
-  var bbox = this.px_to_ll(ll, zoom).concat(this.px_to_ll(ur, zoom));
-  return mercator.forward(bbox);
-};
-
 module.exports = new SphericalMercator();
