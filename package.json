@@ -6,7 +6,7 @@
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "bluebird": "^3.4.6",
-    "body-parser": "^1.12.0",
+    "body-parser": "^1.20.3",
     "cache-manager-redis": "^0.4.0",
     "chroma-js": "^1.1.1",
     "compression": "^1.5.0",
@@ -21,7 +21,7 @@
     "koa-ctx-cache-control": "^1.0.0",
     "koa-proxy": "^0.8.0",
     "koa-router": "^7.0.1",
-    "lodash": "^4.17.1",
+    "lodash": "^4.17.21",
     "mapnik": "4.0.0",
     "morgan": "^1.7.0",
     "ngeohash": "^0.6.0",
@@ -81,5 +81,33 @@
   "bugs": {
     "url": "https://github.com/iDigBio/idigbio-search-api/issues"
   },
-  "homepage": "https://github.com/iDigBio/idigbio-search-api#readme"
+  "homepage": "https://github.com/iDigBio/idigbio-search-api#readme",
+  "resolutions": {
+    "minimist": "^1.2.8",
+    "minimatch": "^3.1.2",
+    "semver": "^7.6.0",
+    "ajv": "^6.12.6",
+    "cross-spawn": "^7.0.6",
+    "json5": "^2.2.3",
+    "ws": "^8.18.0",
+    "cookie": "^0.7.2",
+    "path-to-regexp": "^0.1.12",
+    "send": "^0.19.0",
+    "on-headers": "^1.1.0",
+    "es5-ext": "^0.10.64",
+    "micromatch": "^4.0.8",
+    "braces": "^3.0.3",
+    "tough-cookie": "^4.1.4",
+    "follow-redirects": "^1.15.6",
+    "node-fetch": "^2.7.0",
+    "terser": "^5.31.0",
+    "elliptic": "^6.6.0",
+    "@babel/runtime": "^7.26.10",
+    "pbkdf2": "^3.1.3",
+    "form-data": "^4.0.1",
+    "cipher-base": "^1.0.6",
+    "sha.js": "^2.4.12",
+    "js-yaml": "^3.14.2",
+    "qs": "^6.14.1"
+  }
 }
