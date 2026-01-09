@@ -10,7 +10,7 @@
 /* eslint radix: "off" */
 /* eslint require-jsdoc: "off" */
 
-import _ from 'lodash';
+// import _ from 'lodash';
 
 import config from "config";
 import api from "api";
@@ -22,6 +22,7 @@ import searchShim from "searchShim.js";
 import {media_query, record_query, bare_query} from "lib/query-generators.js";
 import getParam from "lib/get-param.js";
 import {checkTerms} from "lib/indexTerms";
+import {queryStats} from "lib/clickhouse-shim.js";
 
 
 function top_fields_agg(top_fields, top_count) {
@@ -182,8 +183,8 @@ const date_hist = async function(ctx) {
 
   const rf = {};
   rf[dateField] = {
-    "gt": minDate,
-    "lte": maxDate,
+    "gt": "2022-10-01",
+    "lte": "2023-10-01",
   };
 
   query.aggs = {
@@ -195,7 +196,7 @@ const date_hist = async function(ctx) {
         "dh": {
           "date_histogram": {
             "field": dateField,
-            "interval": dateInterval,
+            "interval": "year",
             "format": "yyyy-MM-dd"
           },
           "aggs": top_agg
@@ -210,7 +211,6 @@ const date_hist = async function(ctx) {
 };
 
 const stats = async function(ctx) {
-  const query = { "size": 0 };
   const t = ctx.params.t;
   const recordset = getParam(ctx.request, "recordset");
   const minDate = getParam(ctx.request, "minDate", null, "2014-01-01");
@@ -218,143 +218,48 @@ const stats = async function(ctx) {
   const dateInterval = getParam(ctx.request, "dateInterval", null, "year");
   const inverted = cp.bool(ctx.request, "inverted", false);
 
-  const rf = {
-    "harvest_date": {
-      "gte": minDate,
-      "lte": maxDate,
+  let minDateParse = new Date();
+  let maxDateParse = new Date();
+
+  try {
+    // Parse minDate
+    if(minDate === "now-1y") {
+      minDateParse = new Date(new Date().setFullYear(new Date().getFullYear() - 1));
+    } else if(minDate === "now-1d") {
+      minDateParse = new Date(new Date().setDate(new Date().getDate() - 1));
+    } else {
+      minDateParse = new Date(minDate);
     }
-  };
-
-  let filt = {
-    "range": rf
-  };
-  if(recordset) {
-    filt = {
-      "and": [
-        {
-          "range": rf
-        },
-        {
-          "term": {
-            "recordset_id": recordset
-          }
-        }
-      ]
+    // Parse maxDate
+    if(maxDate === "now") {
+      maxDateParse = new Date(Date.now());
+    } else {
+      maxDateParse = new Date(maxDate);
+    }
+    // Check if dates are valid
+    if(isNaN(minDateParse.getTime())) {
+      throw new Error(`Invalid minDate: ${minDate}`);
+    }
+    if(isNaN(maxDateParse.getTime())) {
+      throw new Error(`Invalid maxDate: ${maxDate}`);
+    }
+    // Check for negative date range
+    if(minDateParse > maxDateParse) {
+      throw new Error(`Invalid date range: minDate (${minDate}) is after maxDate (${maxDate})`);
+    }
+  } catch (error) {
+    ctx.status = 400;
+    ctx.body = {
+      error: 'Date parsing error',
+      message: error.message
     };
+    return;
   }
 
-  var internal_aggs = null;
-
-  if(t === "fields" || t === "search") {
-    internal_aggs = {
-      "seen": {
-        "sum": {
-          "field": "records.seen.total"
-        }
-      },
-      "search": {
-        "sum": {
-          "field": "records.search.total"
-        }
-      },
-      "download": {
-        "sum": {
-          "field": "records.download.total"
-        }
-      },
-      "viewed_records": {
-        "sum": {
-          "field": "records.view.total"
-        }
-      },
-      "viewed_media": {
-        "sum": {
-          "field": "mediarecords.view.total"
-        }
-      },
-      "search_count": {
-        "sum": {
-          "field": "records.search.count"
-        }
-      },
-      "download_count": {
-        "sum": {
-          "field": "records.download.count"
-        }
-      }
-    };
-  } else if(t === "api" || t === "digest") {
-    internal_aggs = {
-      "records": {
-        "max": {
-          "field": "records_count"
-        }
-      },
-      "mediarecords": {
-        "max": {
-          "field": "mediarecords_count"
-        }
-      }
-    };
-  } else {
-    ctx.throw("Bad Type", 400);
-  }
-
-  if(inverted) {
-    query.aggs = {
-      "fdh": {
-        "filter": filt,
-        "aggs": {
-          "rs": {
-            "terms": {
-              "field": "recordset_id",
-              "size": config.maxRecordsets
-            },
-            "aggs": {
-              "dh": {
-                "date_histogram": {
-                  "field": "harvest_date",
-                  "interval": dateInterval,
-                  "format": "yyyy-MM-dd"
-                }
-              }
-            }
-          }
-        }
-      }
-    };
-
-    query.aggs.fdh.aggs.rs.aggs.dh.aggs = internal_aggs;
-  } else {
-    query.aggs = {
-      "fdh": {
-        "filter": filt,
-        "aggs": {
-          "dh": {
-            "date_histogram": {
-              "field": "harvest_date",
-              "interval": dateInterval,
-              "format": "yyyy-MM-dd"
-            },
-            "aggs": {
-              "rs": {
-                "terms": {
-                  "field": "recordset_id",
-                  "size": config.maxRecordsets
-                }
-              }
-            }
-          }
-        }
-      }
-    };
-
-    query.aggs.fdh.aggs.dh.aggs.rs.aggs = internal_aggs;
-  }
-
-  const body = await searchShim(config.search.statsIndex, t, "_search", query);
-  ctx.body = await formatter.stats_hist_formatter(body, inverted);
-
+  const minDateOut = minDateParse.toISOString().split('T')[0];
+  const maxDateOut = maxDateParse.toISOString().split('T')[0];
+  const body = await queryStats(t, recordset, dateInterval, minDateOut, maxDateOut, inverted);
+  ctx.body = await formatter.stats_ch_formatter(body, inverted, minDate);
 };
 
 

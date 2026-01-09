@@ -1,0 +1,1340 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2123,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "833306f7-91b6-4ff7-bc16-0e406334d991",
+        "_score": 1,
+        "_source": {
+          "publisher": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+          "uuid": "833306f7-91b6-4ff7-bc16-0e406334d991",
+          "dqs": -1,
+          "archivelink": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+          "rights": "no license, assume public domain",
+          "contacts": [
+            {
+              "first_name": "Ralph",
+              "last_name": "Holzenthal",
+              "email": "holze001@umn.edu"
+            },
+            {
+              "first_name": "Ralph",
+              "last_name": "Holzenthal",
+              "email": "holze001@umn.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "ffd89f80-7331-491f-a4af-a51dcc3a599c",
+            "eml_link": "https://invertnet.org/idigbio-feed/datasets/umsp/eml.xml",
+            "contacts": [
+              {
+                "first_name": "Ralph",
+                "last_name": "Holzenthal",
+                "email": "holze001@umn.edu"
+              },
+              {
+                "first_name": "Ralph",
+                "last_name": "Holzenthal",
+                "email": "holze001@umn.edu"
+              }
+            ],
+            "collection_name": "University of Minnesota Digitized Collection",
+            "idigbio:uuid": "833306f7-91b6-4ff7-bc16-0e406334d991",
+            "idigbio:etag": "a1a5f016bedc28b03f46c6a0702a12db5fc8bb48",
+            "update": "2022-03-18T09:07:35",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "https://invertnet.org/idigbio-feed/datasets/umsp.zip"
+            ],
+            "link": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+            "idigbio:dateModified": "2022-03-18T14:05:58.654194",
+            "collection_description": "Our mission is to explore, describe, and preserve representative specimens of Earth's remarkable diversity of insects and to make these specimens available to the global community for research and education. Contributions to the collection began in 1879 with specimens of insects and spiders from the North Shore of Lake Superior. During the last 135 years, the collection's holdings have grown from a regional collection of 3,000 specimens to a major national and international resource of more than 3.8 million specimens. The collection is the mainstay of graduate training in systematic entomology at the University of Minnesota.",
+            "id": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+            "other_guids": [],
+            "data_rights": "No license, assume Public Domain"
+          },
+          "etag": "a1a5f016bedc28b03f46c6a0702a12db5fc8bb48",
+          "flags": [
+            "dwc_basisofrecord_invalid"
+          ],
+          "emllink": "https://invertnet.org/idigbio-feed/datasets/umsp/eml.xml",
+          "recordids": [
+            "https://invertnet.org/idigbio-feed/datasets/umsp.zip"
+          ],
+          "data": {
+            "eml_link": "https://invertnet.org/idigbio-feed/datasets/umsp/eml.xml",
+            "contacts": [
+              {
+                "first_name": "Ralph",
+                "last_name": "Holzenthal",
+                "email": "holze001@umn.edu"
+              },
+              {
+                "first_name": "Ralph",
+                "last_name": "Holzenthal",
+                "email": "holze001@umn.edu"
+              }
+            ],
+            "collection_name": "University of Minnesota Digitized Collection",
+            "update": "2022-03-18T09:07:35",
+            "ingest": true,
+            "data_rights": "No license, assume Public Domain",
+            "link": "https://invertnet.org/idigbio-feed/datasets/umsp.zip",
+            "collection_description": "Our mission is to explore, describe, and preserve representative specimens of Earth's remarkable diversity of insects and to make these specimens available to the global community for research and education. Contributions to the collection began in 1879 with specimens of insects and spiders from the North Shore of Lake Superior. During the last 135 years, the collection's holdings have grown from a regional collection of 3,000 specimens to a major national and international resource of more than 3.8 million specimens. The collection is the mainstay of graduate training in systematic entomology at the University of Minnesota.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "https://invertnet.org/idigbio-feed/datasets/umsp.zip"
+          },
+          "datemodified": "2022-03-18T14:05:58.654194+00:00",
+          "name": "university of minnesota digitized collection"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
+        "_score": 1,
+        "_source": {
+          "publisher": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
+          "uuid": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
+          "dqs": 0,
+          "archivelink": "https://cvcoll.org/portal/content/dwca/ttrs-ornithology_dwc-a.zip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "email": "egbot@asu.edu"
+            },
+            {
+              "email": "egbot@asu.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "4ba32e51-1da1-46f7-a5d7-a95cef95ef8e",
+            "eml_link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "email": "egbot@asu.edu"
+              }
+            ],
+            "collection_name": "Tall Timbers Research Station - Ornithology",
+            "idigbio:uuid": "2b03a9d6-3575-43ea-8f43-38cbe0ee72e6",
+            "idigbio:etag": "202a2a837a706e8343822b98e17efbfbdd769ac9",
+            "update": "2025-02-03T08:32:09",
+            "ingest": true,
+            "institution_web_address": "http://www.ttrs.org/museum.html",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0",
+              "250c2aa3-d76d-4305-a8e7-22c781fcf5d0"
+            ],
+            "link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-03T16:26:26.107239",
+            "collection_description": "",
+            "id": "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0",
+            "other_guids": [],
+            "logo_url": "https://csvcoll.org/portal/content/collicon/ttrs-mammals.gif",
+            "data_rights": "CC0"
+          },
+          "etag": "202a2a837a706e8343822b98e17efbfbdd769ac9",
+          "emllink": "https://cvcoll.org/portal/content/dwca/ttrs-ornithology_dwc-a.eml",
+          "logourl": "https://csvcoll.org/portal/content/collicon/ttrs-mammals.gif",
+          "recordids": [
+            "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0",
+            "250c2aa3-d76d-4305-a8e7-22c781fcf5d0"
+          ],
+          "data": {
+            "eml_link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "egbot@asu.edu"
+              },
+              {
+                "email": "egbot@asu.edu"
+              }
+            ],
+            "collection_name": "Tall Timbers Research Station - Ornithology",
+            "update": "2025-02-03T08:32:09",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "https://cvcoll.org/portal/content/dwca/TTRS-Ornithology_DwC-A.zip",
+            "collection_description": "",
+            "institution_web_address": "http://www.ttrs.org/museum.html",
+            "other_guids": [],
+            "logo_url": "https://csvcoll.org/portal/content/collicon/ttrs-mammals.gif",
+            "id": "http://csvcoll.org/portal/webservices/dwc/250c2aa3-d76d-4305-a8e7-22c781fcf5d0"
+          },
+          "datemodified": "2025-02-03T16:26:26.107239+00:00",
+          "name": "tall timbers research station - ornithology"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "767c78b4-1c16-4cac-ad04-66333ac5a7f2",
+        "_score": 1,
+        "_source": {
+          "publisher": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "uuid": "767c78b4-1c16-4cac-ad04-66333ac5a7f2",
+          "dqs": 0,
+          "archivelink": "https://sernecportal.org/portal/content/dwca/sel_dwc-a.zip",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "email": "hbrown@mailbox.sc.edu"
+            },
+            {
+              "email": "hbrown@mailbox.sc.edu"
+            },
+            {
+              "email": "bholst@selby.org"
+            },
+            {
+              "first_name": "Bruce",
+              "last_name": "Holst",
+              "role": "Vice President for Botany",
+              "email": "bholst@selby.org"
+            },
+            {
+              "first_name": "Yuley",
+              "last_name": "Encarnación-Piñyero",
+              "role": "Assistant Curator",
+              "email": "yencarnacion@selby.org"
+            },
+            {
+              "first_name": "Bruce",
+              "last_name": "Holst",
+              "role": "Vice President for Botany",
+              "email": "bholst@selby.org"
+            },
+            {
+              "first_name": "Yuley",
+              "last_name": "Encarnación-Piñyero",
+              "role": "Assistant Curator",
+              "email": "yencarnacion@selby.org"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+            "eml_link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "bholst@selby.org"
+              },
+              {
+                "first_name": "Bruce",
+                "last_name": "Holst",
+                "role": "Vice President for Botany",
+                "email": "bholst@selby.org"
+              },
+              {
+                "first_name": "Yuley",
+                "last_name": "Encarnación-Piñyero",
+                "role": "Assistant Curator",
+                "email": "yencarnacion@selby.org"
+              },
+              {
+                "first_name": "Bruce",
+                "last_name": "Holst",
+                "role": "Vice President for Botany",
+                "email": "bholst@selby.org"
+              },
+              {
+                "first_name": "Yuley",
+                "last_name": "Encarnación-Piñyero",
+                "role": "Assistant Curator",
+                "email": "yencarnacion@selby.org"
+              }
+            ],
+            "collection_name": "Marie Selby Botanical Gardens Herbarium",
+            "idigbio:uuid": "767c78b4-1c16-4cac-ad04-66333ac5a7f2",
+            "idigbio:etag": "a0f2ffe79b1132dc6373529b7c005975dd2becad",
+            "update": "2025-02-03T13:35:27",
+            "ingest": true,
+            "institution_web_address": "http://selby.org/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "f91c3fd0-a151-4591-aad5-a7b1f6232a8b"
+            ],
+            "link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-03T20:45:14.764337",
+            "collection_description": "",
+            "id": "f91c3fd0-a151-4591-aad5-a7b1f6232a8b",
+            "other_guids": [],
+            "logo_url": "https://sernecportal.org/portal/content/collicon/sel.jpg",
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "a0f2ffe79b1132dc6373529b7c005975dd2becad",
+          "emllink": "https://sernecportal.org/portal/content/dwca/sel_dwc-a.eml",
+          "logourl": "https://sernecportal.org/portal/content/collicon/sel.jpg",
+          "recordids": [
+            "f91c3fd0-a151-4591-aad5-a7b1f6232a8b"
+          ],
+          "data": {
+            "eml_link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "bholst@selby.org"
+              },
+              {
+                "first_name": "Bruce",
+                "last_name": "Holst",
+                "role": "Vice President for Botany",
+                "email": "bholst@selby.org"
+              },
+              {
+                "first_name": "Yuley",
+                "last_name": "Encarnación-Piñyero",
+                "role": "Assistant Curator",
+                "email": "yencarnacion@selby.org"
+              },
+              {
+                "first_name": "Bruce",
+                "last_name": "Holst",
+                "role": "Vice President for Botany",
+                "email": "bholst@selby.org"
+              },
+              {
+                "first_name": "Yuley",
+                "last_name": "Encarnación-Piñyero",
+                "role": "Assistant Curator",
+                "email": "yencarnacion@selby.org"
+              }
+            ],
+            "collection_name": "Marie Selby Botanical Gardens Herbarium",
+            "update": "2025-02-03T13:35:27",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "https://sernecportal.org/portal/content/dwca/SEL_DwC-A.zip",
+            "collection_description": "",
+            "institution_web_address": "http://selby.org/",
+            "other_guids": [],
+            "logo_url": "https://sernecportal.org/portal/content/collicon/sel.jpg",
+            "id": "f91c3fd0-a151-4591-aad5-a7b1f6232a8b"
+          },
+          "datemodified": "2025-02-03T20:45:14.764337+00:00",
+          "name": "marie selby botanical gardens herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "21b563bc-70c2-46d5-bce8-2489db2db3d8",
+        "_score": 1,
+        "_source": {
+          "publisher": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "uuid": "21b563bc-70c2-46d5-bce8-2489db2db3d8",
+          "dqs": 0,
+          "archivelink": "https://sernecportal.org/portal/content/dwca/etsu_dwc-a.zip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "email": "hbrown@mailbox.sc.edu"
+            },
+            {
+              "email": "hbrown@mailbox.sc.edu"
+            },
+            {
+              "email": "MCDOWELT@mail.etsu.edu"
+            },
+            {
+              "first_name": "Tim",
+              "last_name": "McDowell",
+              "role": "ETSU Curator, retired",
+              "email": "MCDOWELT@mail.etsu.edu"
+            },
+            {
+              "first_name": "Garrett",
+              "last_name": "Billings",
+              "role": "Collections Manager",
+              "email": "billings@utk.edu"
+            },
+            {
+              "first_name": "Jessica",
+              "last_name": "Budke",
+              "role": "Herbarium Director",
+              "email": "jbudke@utk.edu"
+            },
+            {
+              "first_name": "Tim",
+              "last_name": "McDowell",
+              "role": "ETSU Curator, retired",
+              "email": "MCDOWELT@mail.etsu.edu"
+            },
+            {
+              "first_name": "Garrett",
+              "last_name": "Billings",
+              "role": "Collections Manager",
+              "email": "billings@utk.edu"
+            },
+            {
+              "first_name": "Jessica",
+              "last_name": "Budke",
+              "role": "Herbarium Director",
+              "email": "jbudke@utk.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+            "eml_link": "https://sernecportal.org/portal/collections/datasets/emlhandler.php?collid=362",
+            "contacts": [
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "MCDOWELT@mail.etsu.edu"
+              },
+              {
+                "first_name": "Tim",
+                "last_name": "McDowell",
+                "role": "ETSU Curator, retired",
+                "email": "MCDOWELT@mail.etsu.edu"
+              },
+              {
+                "first_name": "Garrett",
+                "last_name": "Billings",
+                "role": "Collections Manager",
+                "email": "billings@utk.edu"
+              },
+              {
+                "first_name": "Jessica",
+                "last_name": "Budke",
+                "role": "Herbarium Director",
+                "email": "jbudke@utk.edu"
+              },
+              {
+                "first_name": "Tim",
+                "last_name": "McDowell",
+                "role": "ETSU Curator, retired",
+                "email": "MCDOWELT@mail.etsu.edu"
+              },
+              {
+                "first_name": "Garrett",
+                "last_name": "Billings",
+                "role": "Collections Manager",
+                "email": "billings@utk.edu"
+              },
+              {
+                "first_name": "Jessica",
+                "last_name": "Budke",
+                "role": "Herbarium Director",
+                "email": "jbudke@utk.edu"
+              }
+            ],
+            "collection_name": "East Tennessee State University, John C. Warden Herbarium",
+            "idigbio:uuid": "21b563bc-70c2-46d5-bce8-2489db2db3d8",
+            "idigbio:etag": "51f59878dca6624ae411e70d315cf468acd759e6",
+            "update": "2025-02-24T15:52:03",
+            "ingest": true,
+            "institution_web_address": "https://herbarium.utk.edu/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "1d328472-3b59-43d8-834c-385410415424"
+            ],
+            "link": "https://sernecportal.org/portal/content/dwca/ETSU_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-24T22:53:04.238721",
+            "collection_description": "Permanently closed and transferred to the University of Tennessee - Knoxville Herbarium (TENN) in April 2024.",
+            "id": "1d328472-3b59-43d8-834c-385410415424",
+            "other_guids": [],
+            "logo_url": "https://sernecportal.org/portal/content/collicon/etsu.png",
+            "data_rights": "CC0"
+          },
+          "etag": "51f59878dca6624ae411e70d315cf468acd759e6",
+          "emllink": "https://sernecportal.org/portal/collections/datasets/emlhandler.php?collid=362",
+          "logourl": "https://sernecportal.org/portal/content/collicon/etsu.png",
+          "recordids": [
+            "1d328472-3b59-43d8-834c-385410415424"
+          ],
+          "data": {
+            "eml_link": "https://sernecportal.org/portal/collections/datasets/emlhandler.php?collid=362",
+            "contacts": [
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "hbrown@mailbox.sc.edu"
+              },
+              {
+                "email": "MCDOWELT@mail.etsu.edu"
+              },
+              {
+                "first_name": "Tim",
+                "last_name": "McDowell",
+                "role": "ETSU Curator, retired",
+                "email": "MCDOWELT@mail.etsu.edu"
+              },
+              {
+                "first_name": "Garrett",
+                "last_name": "Billings",
+                "role": "Collections Manager",
+                "email": "billings@utk.edu"
+              },
+              {
+                "first_name": "Jessica",
+                "last_name": "Budke",
+                "role": "Herbarium Director",
+                "email": "jbudke@utk.edu"
+              },
+              {
+                "first_name": "Tim",
+                "last_name": "McDowell",
+                "role": "ETSU Curator, retired",
+                "email": "MCDOWELT@mail.etsu.edu"
+              },
+              {
+                "first_name": "Garrett",
+                "last_name": "Billings",
+                "role": "Collections Manager",
+                "email": "billings@utk.edu"
+              },
+              {
+                "first_name": "Jessica",
+                "last_name": "Budke",
+                "role": "Herbarium Director",
+                "email": "jbudke@utk.edu"
+              }
+            ],
+            "collection_name": "East Tennessee State University, John C. Warden Herbarium",
+            "update": "2025-02-24T15:52:03",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "https://sernecportal.org/portal/content/dwca/ETSU_DwC-A.zip",
+            "collection_description": "Permanently closed and transferred to the University of Tennessee - Knoxville Herbarium (TENN) in April 2024.",
+            "institution_web_address": "https://herbarium.utk.edu/",
+            "other_guids": [],
+            "logo_url": "https://sernecportal.org/portal/content/collicon/etsu.png",
+            "id": "1d328472-3b59-43d8-834c-385410415424"
+          },
+          "datemodified": "2025-02-24T22:53:04.238721+00:00",
+          "name": "east tennessee state university, john c. warden herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "459bd81e-63b9-47d2-9818-dceb6657bea0",
+        "_score": 1,
+        "_source": {
+          "publisher": "8c493255-5867-485d-aaea-19a6e10c2ca5",
+          "uuid": "459bd81e-63b9-47d2-9818-dceb6657bea0",
+          "dqs": 0,
+          "archivelink": "https://ipt.lsa.umich.edu/archive.do?r=ummz_fish",
+          "rights": "cc4 by",
+          "contacts": [
+            {
+              "last_name": "UMMZ Fish Division Data Group",
+              "email": "ummz-fish-data@umich.edu"
+            },
+            {
+              "first_name": "Admins",
+              "last_name": "LSA IT",
+              "role": "LSA IT Admins",
+              "email": "lsa-it-infra-ipt-admins@umich.edu"
+            },
+            {
+              "first_name": "Admins",
+              "last_name": "LSA IT",
+              "email": "lsa-it-infra-ipt-admins@umich.edu"
+            },
+            {
+              "last_name": "UMMZ Fish Division Data Group",
+              "role": "Group",
+              "email": "ummz-fish-data@umich.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "8c493255-5867-485d-aaea-19a6e10c2ca5",
+            "eml_link": "https://ipt.lsa.umich.edu/eml.do?r=ummz_fish",
+            "contacts": [
+              {
+                "last_name": "UMMZ Fish Division Data Group",
+                "email": "ummz-fish-data@umich.edu"
+              },
+              {
+                "first_name": "Admins",
+                "last_name": "LSA IT",
+                "role": "LSA IT Admins",
+                "email": "lsa-it-infra-ipt-admins@umich.edu"
+              },
+              {
+                "first_name": "Admins",
+                "last_name": "LSA IT",
+                "email": "lsa-it-infra-ipt-admins@umich.edu"
+              },
+              {
+                "last_name": "UMMZ Fish Division Data Group",
+                "role": "Group",
+                "email": "ummz-fish-data@umich.edu"
+              }
+            ],
+            "collection_name": "University of Michigan Museum of Zoology, Division of Fishes",
+            "idigbio:uuid": "459bd81e-63b9-47d2-9818-dceb6657bea0",
+            "idigbio:etag": "22ab25e44e675721893ca6f29b37a2aacd4eeb62",
+            "update": "2025-02-01T05:01:57",
+            "ingest": true,
+            "institution_web_address": "",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "59825263-9f89-43a9-8f22-c22a6a53b8fc"
+            ],
+            "link": "https://ipt.lsa.umich.edu/archive.do?r=ummz_fish",
+            "idigbio:dateModified": "2025-02-01T05:10:34.711484",
+            "collection_description": "The collections of the Fish Division comprise 193,555 cataloged lots, with over 3.4 million total specimens.  406 fish families, 2,901 genera and approximately 8,000 nominal species are represented in the collections.  In addition to formalin-fixed, alcohol-preserved specimens, the collections contain 10,176 dry skeletons and 10,458 cleared and stained glycerin preparations.  Type material representing more than 1,500 nominal species includes 626 primary type specimens and 4,385 lots of paratypes.   Geographic strengths of the collections include North American fresh and marine waters, Southeast Asia, South America, and Mexico, but all major aquatic habitats are represented.  Digital images of field notes (> 5,000 records) and fish specimens (> 6,000 images), as well as catalog records and other collection documents, are available to researchers upon request.",
+            "id": "59825263-9f89-43a9-8f22-c22a6a53b8fc",
+            "other_guids": [],
+            "data_rights": "CC4 BY"
+          },
+          "etag": "22ab25e44e675721893ca6f29b37a2aacd4eeb62",
+          "emllink": "https://ipt.lsa.umich.edu/eml.do?r=ummz_fish",
+          "recordids": [
+            "59825263-9f89-43a9-8f22-c22a6a53b8fc"
+          ],
+          "data": {
+            "eml_link": "https://ipt.lsa.umich.edu/eml.do?r=ummz_fish",
+            "contacts": [
+              {
+                "last_name": "UMMZ Fish Division Data Group",
+                "email": "ummz-fish-data@umich.edu"
+              },
+              {
+                "first_name": "Admins",
+                "last_name": "LSA IT",
+                "role": "LSA IT Admins",
+                "email": "lsa-it-infra-ipt-admins@umich.edu"
+              },
+              {
+                "first_name": "Admins",
+                "last_name": "LSA IT",
+                "email": "lsa-it-infra-ipt-admins@umich.edu"
+              },
+              {
+                "last_name": "UMMZ Fish Division Data Group",
+                "role": "Group",
+                "email": "ummz-fish-data@umich.edu"
+              }
+            ],
+            "collection_name": "University of Michigan Museum of Zoology, Division of Fishes",
+            "update": "2025-02-01T05:01:57",
+            "ingest": true,
+            "data_rights": "CC4 BY",
+            "link": "https://ipt.lsa.umich.edu/archive.do?r=ummz_fish",
+            "collection_description": "The collections of the Fish Division comprise 193,555 cataloged lots, with over 3.4 million total specimens.  406 fish families, 2,901 genera and approximately 8,000 nominal species are represented in the collections.  In addition to formalin-fixed, alcohol-preserved specimens, the collections contain 10,176 dry skeletons and 10,458 cleared and stained glycerin preparations.  Type material representing more than 1,500 nominal species includes 626 primary type specimens and 4,385 lots of paratypes.   Geographic strengths of the collections include North American fresh and marine waters, Southeast Asia, South America, and Mexico, but all major aquatic habitats are represented.  Digital images of field notes (> 5,000 records) and fish specimens (> 6,000 images), as well as catalog records and other collection documents, are available to researchers upon request.",
+            "other_guids": [],
+            "institution_web_address": "",
+            "id": "59825263-9f89-43a9-8f22-c22a6a53b8fc"
+          },
+          "datemodified": "2025-02-01T05:10:34.711484+00:00",
+          "name": "university of michigan museum of zoology, division of fishes"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "6928bd35-4c17-49e1-aa0c-7785196bd4be",
+        "_score": 1,
+        "_source": {
+          "publisher": "c6114a0f-85cc-4f97-a0cf-3e9662e1dcd6",
+          "uuid": "6928bd35-4c17-49e1-aa0c-7785196bd4be",
+          "dqs": 0,
+          "archivelink": "https://macroalgae.org/portal/content/dwca/hxc-algae_dwc-a.zip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "email": "Chris.Neefus@unh.edu"
+            },
+            {
+              "email": "Chris.Neefus@unh.edu"
+            },
+            {
+              "email": "Reid@hendrix.edu"
+            },
+            {
+              "first_name": "Matthew",
+              "last_name": "Reid",
+              "role": "Primary Contact",
+              "email": "Reid@hendrix.edu"
+            },
+            {
+              "first_name": "Matthew",
+              "last_name": "Reid",
+              "role": "Primary Contact",
+              "email": "Reid@hendrix.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "c6114a0f-85cc-4f97-a0cf-3e9662e1dcd6",
+            "eml_link": "https://macroalgae.org/portal/content/dwca/HXC-Algae_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "Chris.Neefus@unh.edu"
+              },
+              {
+                "email": "Chris.Neefus@unh.edu"
+              },
+              {
+                "email": "Reid@hendrix.edu"
+              },
+              {
+                "first_name": "Matthew",
+                "last_name": "Reid",
+                "role": "Primary Contact",
+                "email": "Reid@hendrix.edu"
+              },
+              {
+                "first_name": "Matthew",
+                "last_name": "Reid",
+                "role": "Primary Contact",
+                "email": "Reid@hendrix.edu"
+              }
+            ],
+            "collection_name": "Hendrix College Herbarium - Algae",
+            "idigbio:uuid": "6928bd35-4c17-49e1-aa0c-7785196bd4be",
+            "idigbio:etag": "e7b6710476ab601b871423aaba76343c353cb719",
+            "update": "2025-02-03T08:35:59",
+            "ingest": true,
+            "institution_web_address": null,
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "0d904e51-4588-4899-8fe8-2687dd31a1e7"
+            ],
+            "link": "https://macroalgae.org/portal/content/dwca/HXC-Algae_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-03T16:26:30.066057",
+            "collection_description": "Major collectors include the late Hendrix biology faculty member G. Thomas Clark, David M. Johnson who collected here in the 1970s, and a nice set of most of the fern species of central Arkansas collected by Don Crank in 2010. The herbaria also contains small curated collections of bryophytes, lichen, and macroalgae, databased and searchable through bryophyteportal.org, lichenportal.org, and macroalgae.org.",
+            "id": "0d904e51-4588-4899-8fe8-2687dd31a1e7",
+            "other_guids": [],
+            "logo_url": "https://sernecportal.org/portal/content/collicon/hxc.jpg",
+            "data_rights": "CC0"
+          },
+          "etag": "e7b6710476ab601b871423aaba76343c353cb719",
+          "emllink": "https://macroalgae.org/portal/content/dwca/hxc-algae_dwc-a.eml",
+          "logourl": "https://sernecportal.org/portal/content/collicon/hxc.jpg",
+          "recordids": [
+            "0d904e51-4588-4899-8fe8-2687dd31a1e7"
+          ],
+          "data": {
+            "eml_link": "https://macroalgae.org/portal/content/dwca/HXC-Algae_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "Chris.Neefus@unh.edu"
+              },
+              {
+                "email": "Chris.Neefus@unh.edu"
+              },
+              {
+                "email": "Reid@hendrix.edu"
+              },
+              {
+                "first_name": "Matthew",
+                "last_name": "Reid",
+                "role": "Primary Contact",
+                "email": "Reid@hendrix.edu"
+              },
+              {
+                "first_name": "Matthew",
+                "last_name": "Reid",
+                "role": "Primary Contact",
+                "email": "Reid@hendrix.edu"
+              }
+            ],
+            "collection_name": "Hendrix College Herbarium - Algae",
+            "update": "2025-02-03T08:35:59",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "https://macroalgae.org/portal/content/dwca/HXC-Algae_DwC-A.zip",
+            "collection_description": "Major collectors include the late Hendrix biology faculty member G. Thomas Clark, David M. Johnson who collected here in the 1970s, and a nice set of most of the fern species of central Arkansas collected by Don Crank in 2010. The herbaria also contains small curated collections of bryophytes, lichen, and macroalgae, databased and searchable through bryophyteportal.org, lichenportal.org, and macroalgae.org.",
+            "institution_web_address": null,
+            "other_guids": [],
+            "logo_url": "https://sernecportal.org/portal/content/collicon/hxc.jpg",
+            "id": "0d904e51-4588-4899-8fe8-2687dd31a1e7"
+          },
+          "datemodified": "2025-02-03T16:26:30.066057+00:00",
+          "name": "hendrix college herbarium - algae"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "e11aab53-8a2e-4f1b-8681-d7fbeedd348d",
+        "_score": 1,
+        "_source": {
+          "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "uuid": "e11aab53-8a2e-4f1b-8681-d7fbeedd348d",
+          "dqs": 0,
+          "archivelink": "https://lichenportal.org/portal/content/dwca/dav-lichens_dwc-a.zip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "email": "CNALH.help@gmail.com"
+            },
+            {
+              "email": "CNALH.help@gmail.com"
+            },
+            {
+              "email": "aelcolwell@ucdavis.edu"
+            },
+            {
+              "last_name": "Alison Colwell",
+              "email": "aelcolwell@ucdavis.edu"
+            },
+            {
+              "last_name": "Alison Colwell",
+              "email": "aelcolwell@ucdavis.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "eml_link": "https://lichenportal.org/portal/content/dwca/DAV-Lichens_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "aelcolwell@ucdavis.edu"
+              },
+              {
+                "last_name": "Alison Colwell",
+                "email": "aelcolwell@ucdavis.edu"
+              },
+              {
+                "last_name": "Alison Colwell",
+                "email": "aelcolwell@ucdavis.edu"
+              }
+            ],
+            "collection_name": "University of California, Davis, Center for Plant Diversity - Lichens",
+            "idigbio:uuid": "e11aab53-8a2e-4f1b-8681-d7fbeedd348d",
+            "idigbio:etag": "260034419d97e7887c682491d45fa694f8c23b19",
+            "update": "2025-02-03T11:12:36",
+            "ingest": true,
+            "institution_web_address": "https://herbarium.ucdavis.edu/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "f1d83430-64fa-4c91-af99-a09a301439a3"
+            ],
+            "link": "https://lichenportal.org/portal/content/dwca/DAV-Lichens_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-03T18:35:13.020774",
+            "collection_description": "The DAV lichen collection was founded in 1968 by Shirley Tucker based on her own collections and exchange material she had acquired. Shirley intended this to form the basis for a California reference collection that currently stands at 850 specimens. Recent lichen floras added are from University of California Reserve units: Stebbins Cold Canyon and Quail Ridge Reserves. Other collections of note: 115 New Zealand lichens that are tardigrade hosts, collected by D.S. Horning and colleagues of the Bohart Museum of Entomology, 156 western North America (W.A. Weber, Exsiccatae), and 55 Jack Major collections from Alaska and British Columbia. The collection was rehoused and stabilized in 2020, and the label data was entered into Symbiota in 2021.&nbsp;",
+            "id": "f1d83430-64fa-4c91-af99-a09a301439a3",
+            "other_guids": [],
+            "logo_url": "https://lichenportal.org/cnalh/content/collicon/dav.png",
+            "data_rights": "CC0"
+          },
+          "etag": "260034419d97e7887c682491d45fa694f8c23b19",
+          "emllink": "https://lichenportal.org/portal/content/dwca/dav-lichens_dwc-a.eml",
+          "logourl": "https://lichenportal.org/cnalh/content/collicon/dav.png",
+          "recordids": [
+            "f1d83430-64fa-4c91-af99-a09a301439a3"
+          ],
+          "data": {
+            "eml_link": "https://lichenportal.org/portal/content/dwca/DAV-Lichens_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "aelcolwell@ucdavis.edu"
+              },
+              {
+                "last_name": "Alison Colwell",
+                "email": "aelcolwell@ucdavis.edu"
+              },
+              {
+                "last_name": "Alison Colwell",
+                "email": "aelcolwell@ucdavis.edu"
+              }
+            ],
+            "collection_name": "University of California, Davis, Center for Plant Diversity - Lichens",
+            "update": "2025-02-03T11:12:36",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "https://lichenportal.org/portal/content/dwca/DAV-Lichens_DwC-A.zip",
+            "collection_description": "The DAV lichen collection was founded in 1968 by Shirley Tucker based on her own collections and exchange material she had acquired. Shirley intended this to form the basis for a California reference collection that currently stands at 850 specimens. Recent lichen floras added are from University of California Reserve units: Stebbins Cold Canyon and Quail Ridge Reserves. Other collections of note: 115 New Zealand lichens that are tardigrade hosts, collected by D.S. Horning and colleagues of the Bohart Museum of Entomology, 156 western North America (W.A. Weber, Exsiccatae), and 55 Jack Major collections from Alaska and British Columbia. The collection was rehoused and stabilized in 2020, and the label data was entered into Symbiota in 2021.&nbsp;",
+            "institution_web_address": "https://herbarium.ucdavis.edu/",
+            "other_guids": [],
+            "logo_url": "https://lichenportal.org/cnalh/content/collicon/dav.png",
+            "id": "f1d83430-64fa-4c91-af99-a09a301439a3"
+          },
+          "datemodified": "2025-02-03T18:35:13.020774+00:00",
+          "name": "university of california, davis, center for plant diversity - lichens"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "41350373-fc6f-4dd9-b908-27805fff9155",
+        "_score": 1,
+        "_source": {
+          "publisher": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "uuid": "41350373-fc6f-4dd9-b908-27805fff9155",
+          "dqs": 0,
+          "archivelink": "https://bryophyteportal.org/portal/content/dwca/srp_dwc-a.zip",
+          "rights": "cc3 by-nc",
+          "contacts": [
+            {
+              "email": "BryophyteConsortium@gmail.com"
+            },
+            {
+              "email": "BryophyteConsortium@gmail.com"
+            },
+            {
+              "email": "roger.rosentreter0@gmail.com"
+            },
+            {
+              "last_name": "Roger Rosentreter",
+              "email": "roger.rosentreter0@gmail.com"
+            },
+            {
+              "last_name": "Roger Rosentreter",
+              "email": "roger.rosentreter0@gmail.com"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+            "eml_link": "https://bryophyteportal.org/portal/content/dwca/SRP_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "BryophyteConsortium@gmail.com"
+              },
+              {
+                "email": "BryophyteConsortium@gmail.com"
+              },
+              {
+                "email": "roger.rosentreter0@gmail.com"
+              },
+              {
+                "last_name": "Roger Rosentreter",
+                "email": "roger.rosentreter0@gmail.com"
+              },
+              {
+                "last_name": "Roger Rosentreter",
+                "email": "roger.rosentreter0@gmail.com"
+              }
+            ],
+            "collection_name": "Boise State University Lichen Herbarium",
+            "idigbio:uuid": "41350373-fc6f-4dd9-b908-27805fff9155",
+            "idigbio:etag": "d11282da0b03e59c6ef63fcccfb633a03fe24acc",
+            "update": "2025-02-03T10:01:08",
+            "ingest": true,
+            "institution_web_address": "http://biology.boisestate.edu/snake-river-plains/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://bryophyteportal.org/portal/webservices/dwc/a760ea7d-02c5-4c69-b95c-3573da41b3ab",
+              "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=35",
+              "a760ea7d-02c5-4c69-b95c-3573da41b3ab"
+            ],
+            "link": "https://bryophyteportal.org/portal/content/dwca/SRP_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-03T17:31:31.535546",
+            "collection_description": "The Snake River Plains (SRP) herbarium at Boise State University is a museum of plant, fungal, and lichen specimens to be used for basic and applied research by the Boise State University faculty, state and federal land managers working in southwest Idaho, and citizen scientists with legitimate botanical questions. Currently through the use of loans the collection is also accessible to the botanical community at large. With digitization of the collection the materials will be accessible without direct handling to the global botanical and ecological research community.",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/a760ea7d-02c5-4c69-b95c-3573da41b3ab",
+            "other_guids": [],
+            "logo_url": "https://bryophyteportal.org/portal/content/collicon/bsu.gif",
+            "data_rights": "CC3 BY-NC"
+          },
+          "etag": "d11282da0b03e59c6ef63fcccfb633a03fe24acc",
+          "emllink": "https://bryophyteportal.org/portal/content/dwca/srp_dwc-a.eml",
+          "logourl": "https://bryophyteportal.org/portal/content/collicon/bsu.gif",
+          "recordids": [
+            "http://bryophyteportal.org/portal/webservices/dwc/a760ea7d-02c5-4c69-b95c-3573da41b3ab",
+            "http://bryophyteportal.org/portal/collections/misc/collprofiles.php?collid=35",
+            "a760ea7d-02c5-4c69-b95c-3573da41b3ab"
+          ],
+          "data": {
+            "eml_link": "https://bryophyteportal.org/portal/content/dwca/SRP_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "BryophyteConsortium@gmail.com"
+              },
+              {
+                "email": "BryophyteConsortium@gmail.com"
+              },
+              {
+                "email": "roger.rosentreter0@gmail.com"
+              },
+              {
+                "last_name": "Roger Rosentreter",
+                "email": "roger.rosentreter0@gmail.com"
+              },
+              {
+                "last_name": "Roger Rosentreter",
+                "email": "roger.rosentreter0@gmail.com"
+              }
+            ],
+            "collection_name": "Boise State University Lichen Herbarium",
+            "update": "2025-02-03T10:01:08",
+            "ingest": true,
+            "data_rights": "CC3 BY-NC",
+            "link": "https://bryophyteportal.org/portal/content/dwca/SRP_DwC-A.zip",
+            "collection_description": "The Snake River Plains (SRP) herbarium at Boise State University is a museum of plant, fungal, and lichen specimens to be used for basic and applied research by the Boise State University faculty, state and federal land managers working in southwest Idaho, and citizen scientists with legitimate botanical questions. Currently through the use of loans the collection is also accessible to the botanical community at large. With digitization of the collection the materials will be accessible without direct handling to the global botanical and ecological research community.",
+            "institution_web_address": "http://biology.boisestate.edu/snake-river-plains/",
+            "other_guids": [],
+            "logo_url": "https://bryophyteportal.org/portal/content/collicon/bsu.gif",
+            "id": "http://bryophyteportal.org/portal/webservices/dwc/a760ea7d-02c5-4c69-b95c-3573da41b3ab"
+          },
+          "datemodified": "2025-02-03T17:31:31.535546+00:00",
+          "name": "boise state university lichen herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
+        "_score": 1,
+        "_source": {
+          "publisher": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+          "uuid": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
+          "dqs": 0,
+          "archivelink": "https://www.mycoportal.org/portal/content/dwca/montu_dwc-a.zip",
+          "rights": "cc0",
+          "contacts": [
+            {
+              "email": "help@mycoportal.org"
+            },
+            {
+              "email": "help@mycoportal.org"
+            },
+            {
+              "email": "Marilyn.marler@umontana.edu"
+            },
+            {
+              "last_name": "Marilyn Marler",
+              "email": "Marilyn.marler@umontana.edu"
+            },
+            {
+              "last_name": "Marilyn Marler",
+              "email": "Marilyn.marler@umontana.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+            "eml_link": "https://www.mycoportal.org/portal/collections/datasets/emlhandler.php?collid=28",
+            "contacts": [
+              {
+                "email": "help@mycoportal.org"
+              },
+              {
+                "email": "help@mycoportal.org"
+              },
+              {
+                "email": "Marilyn.marler@umontana.edu"
+              },
+              {
+                "last_name": "Marilyn Marler",
+                "email": "Marilyn.marler@umontana.edu"
+              },
+              {
+                "last_name": "Marilyn Marler",
+                "email": "Marilyn.marler@umontana.edu"
+              }
+            ],
+            "collection_name": "University of Montana Herbarium",
+            "idigbio:uuid": "7340c0df-8829-4197-9dc7-0328b8e7f5dd",
+            "idigbio:etag": "d77d79df0a525bc091e55fdcfec22c98b92248ba",
+            "update": "2025-02-24T11:32:06",
+            "ingest": true,
+            "institution_web_address": "http://herbarium.dbs.umt.edu/",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://mycoportal.org/portal/webservices/dwc/9d863f79-0cb6-4493-9872-8f72d6c79e69",
+              "http://mycoportal.org/portal/collections/misc/collprofiles.php?collid=28",
+              "9d863f79-0cb6-4493-9872-8f72d6c79e69"
+            ],
+            "link": "https://www.mycoportal.org/portal/content/dwca/MONTU_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-24T18:33:47.578240",
+            "collection_description": "The Herbarium at The University of Montana (MONTU, http://herbarium.dbs.umt.edu) contains over 150,000 plant specimens and has the largest and best representation of the flora of the Northern Rocky Mountains in the world. The Herbarium is particularly well-known for its collections from the alpine and montane regions of Montana. Our vascular plant collections can be accessed via http://pnwherbaria.org. MONTU is also home to the Montana Diatom collection (http://herbarium.dbs.umt.edu/diatoms.asp), and we are excited to have our fungi collection included in the Mycoportal Database.",
+            "id": "http://mycoportal.org/portal/webservices/dwc/9d863f79-0cb6-4493-9872-8f72d6c79e69",
+            "other_guids": [],
+            "logo_url": "https://www.mycoportal.org/portal/self/images/collicons/montu.jpg",
+            "data_rights": "CC0"
+          },
+          "etag": "d77d79df0a525bc091e55fdcfec22c98b92248ba",
+          "emllink": "https://www.mycoportal.org/portal/collections/datasets/emlhandler.php?collid=28",
+          "logourl": "https://www.mycoportal.org/portal/self/images/collicons/montu.jpg",
+          "recordids": [
+            "http://mycoportal.org/portal/webservices/dwc/9d863f79-0cb6-4493-9872-8f72d6c79e69",
+            "http://mycoportal.org/portal/collections/misc/collprofiles.php?collid=28",
+            "9d863f79-0cb6-4493-9872-8f72d6c79e69"
+          ],
+          "data": {
+            "eml_link": "https://www.mycoportal.org/portal/collections/datasets/emlhandler.php?collid=28",
+            "contacts": [
+              {
+                "email": "help@mycoportal.org"
+              },
+              {
+                "email": "help@mycoportal.org"
+              },
+              {
+                "email": "Marilyn.marler@umontana.edu"
+              },
+              {
+                "last_name": "Marilyn Marler",
+                "email": "Marilyn.marler@umontana.edu"
+              },
+              {
+                "last_name": "Marilyn Marler",
+                "email": "Marilyn.marler@umontana.edu"
+              }
+            ],
+            "collection_name": "University of Montana Herbarium",
+            "update": "2025-02-24T11:32:06",
+            "ingest": true,
+            "data_rights": "CC0",
+            "link": "https://www.mycoportal.org/portal/content/dwca/MONTU_DwC-A.zip",
+            "collection_description": "The Herbarium at The University of Montana (MONTU, http://herbarium.dbs.umt.edu) contains over 150,000 plant specimens and has the largest and best representation of the flora of the Northern Rocky Mountains in the world. The Herbarium is particularly well-known for its collections from the alpine and montane regions of Montana. Our vascular plant collections can be accessed via http://pnwherbaria.org. MONTU is also home to the Montana Diatom collection (http://herbarium.dbs.umt.edu/diatoms.asp), and we are excited to have our fungi collection included in the Mycoportal Database.",
+            "institution_web_address": "http://herbarium.dbs.umt.edu/",
+            "other_guids": [],
+            "logo_url": "https://www.mycoportal.org/portal/self/images/collicons/montu.jpg",
+            "id": "http://mycoportal.org/portal/webservices/dwc/9d863f79-0cb6-4493-9872-8f72d6c79e69"
+          },
+          "datemodified": "2025-02-24T18:33:47.578240+00:00",
+          "name": "university of montana herbarium"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "recordsets",
+        "_id": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+        "_score": 1,
+        "_source": {
+          "publisher": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "uuid": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+          "dqs": 0,
+          "archivelink": "https://lichenportal.org/portal/content/dwca/colo-l_dwc-a.zip",
+          "rights": "cc4 by-nc",
+          "contacts": [
+            {
+              "email": "CNALH.help@gmail.com"
+            },
+            {
+              "email": "CNALH.help@gmail.com"
+            },
+            {
+              "email": "james.r.allen@Colorado.EDU"
+            },
+            {
+              "first_name": "J Ryan ",
+              "last_name": "Allen",
+              "role": "Biodiversity Informatics Manager (Database inquiries)",
+              "email": "james.r.allen@Colorado.EDU"
+            },
+            {
+              "first_name": "Amber ",
+              "last_name": "Horning",
+              "role": "Collection Manager  (Loan and other inquiries)",
+              "email": "amber.horning@colorado.edu"
+            },
+            {
+              "first_name": "J Ryan ",
+              "last_name": "Allen",
+              "role": "Biodiversity Informatics Manager (Database inquiries)",
+              "email": "james.r.allen@Colorado.EDU"
+            },
+            {
+              "first_name": "Amber ",
+              "last_name": "Horning",
+              "role": "Collection Manager  (Loan and other inquiries)",
+              "email": "amber.horning@colorado.edu"
+            }
+          ],
+          "indexData": {
+            "idigbio:parent": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+            "eml_link": "https://lichenportal.org/portal/content/dwca/COLO-L_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "james.r.allen@Colorado.EDU"
+              },
+              {
+                "first_name": "J Ryan ",
+                "last_name": "Allen",
+                "role": "Biodiversity Informatics Manager (Database inquiries)",
+                "email": "james.r.allen@Colorado.EDU"
+              },
+              {
+                "first_name": "Amber ",
+                "last_name": "Horning",
+                "role": "Collection Manager  (Loan and other inquiries)",
+                "email": "amber.horning@colorado.edu"
+              },
+              {
+                "first_name": "J Ryan ",
+                "last_name": "Allen",
+                "role": "Biodiversity Informatics Manager (Database inquiries)",
+                "email": "james.r.allen@Colorado.EDU"
+              },
+              {
+                "first_name": "Amber ",
+                "last_name": "Horning",
+                "role": "Collection Manager  (Loan and other inquiries)",
+                "email": "amber.horning@colorado.edu"
+              }
+            ],
+            "collection_name": "University of Colorado, Museum of Natural History Herbarium Lichen Collection",
+            "idigbio:uuid": "995cc7f1-69c3-4317-ab77-28fd48f1e535",
+            "idigbio:etag": "74115b6dfe9e8d3dce89439fc4e0089c2c99ca20",
+            "update": "2025-02-03T11:15:57",
+            "ingest": true,
+            "institution_web_address": "https://www.colorado.edu/cumuseum/research-collections/botany-section-university-herbarium-colo",
+            "idigbio:siblings": {},
+            "idigbio:recordIds": [
+              "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=41",
+              "http://lichenportal.org/portal/webservices/dwc/ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+              "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c"
+            ],
+            "link": "https://lichenportal.org/portal/content/dwca/COLO-L_DwC-A.zip",
+            "idigbio:dateModified": "2025-02-03T18:35:07.733121",
+            "collection_description": "Herbarium COLO is the Botany Section of the University of Colorado Museum of Natural History on the Boulder campus. The Herbarium is available to anyone with an interest in botany. Users include faculty and students, visiting scholars, private consultants, local naturalists, and botanists from a variety of public and private agencies.\r\nThis dataset contains the COLO Lichen collection. North American specimens are transcribed and worldwide transcription is in progress.\r\nNo work has been done to georeference this collection. Any coordinates provided are from the collector's label and have not been verified.\r\nCollection strengths: Colorado, Southern Rocky Mountains and Western North American vascular plants and cryptogams, worldwide arctic and alpine, Appalachia, Galapagos Lichens, Australia, New Guinea, Altai, Mexico and the Seville Flowers Bryophyte Collection.",
+            "id": "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=41",
+            "other_guids": [],
+            "logo_url": "https://lichenportal.org/cnalh/content/collicon/COLO.jpg",
+            "data_rights": "CC4 BY-NC"
+          },
+          "etag": "74115b6dfe9e8d3dce89439fc4e0089c2c99ca20",
+          "emllink": "https://lichenportal.org/portal/content/dwca/colo-l_dwc-a.eml",
+          "logourl": "https://lichenportal.org/cnalh/content/collicon/colo.jpg",
+          "recordids": [
+            "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=41",
+            "http://lichenportal.org/portal/webservices/dwc/ef6d1fd7-8440-4e2d-bccf-85feddb1c08c",
+            "ef6d1fd7-8440-4e2d-bccf-85feddb1c08c"
+          ],
+          "data": {
+            "eml_link": "https://lichenportal.org/portal/content/dwca/COLO-L_DwC-A.eml",
+            "contacts": [
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "CNALH.help@gmail.com"
+              },
+              {
+                "email": "james.r.allen@Colorado.EDU"
+              },
+              {
+                "first_name": "J Ryan ",
+                "last_name": "Allen",
+                "role": "Biodiversity Informatics Manager (Database inquiries)",
+                "email": "james.r.allen@Colorado.EDU"
+              },
+              {
+                "first_name": "Amber ",
+                "last_name": "Horning",
+                "role": "Collection Manager  (Loan and other inquiries)",
+                "email": "amber.horning@colorado.edu"
+              },
+              {
+                "first_name": "J Ryan ",
+                "last_name": "Allen",
+                "role": "Biodiversity Informatics Manager (Database inquiries)",
+                "email": "james.r.allen@Colorado.EDU"
+              },
+              {
+                "first_name": "Amber ",
+                "last_name": "Horning",
+                "role": "Collection Manager  (Loan and other inquiries)",
+                "email": "amber.horning@colorado.edu"
+              }
+            ],
+            "collection_name": "University of Colorado, Museum of Natural History Herbarium Lichen Collection",
+            "update": "2025-02-03T11:15:57",
+            "ingest": true,
+            "data_rights": "CC4 BY-NC",
+            "link": "https://lichenportal.org/portal/content/dwca/COLO-L_DwC-A.zip",
+            "collection_description": "Herbarium COLO is the Botany Section of the University of Colorado Museum of Natural History on the Boulder campus. The Herbarium is available to anyone with an interest in botany. Users include faculty and students, visiting scholars, private consultants, local naturalists, and botanists from a variety of public and private agencies.\r\nThis dataset contains the COLO Lichen collection. North American specimens are transcribed and worldwide transcription is in progress.\r\nNo work has been done to georeference this collection. Any coordinates provided are from the collector's label and have not been verified.\r\nCollection strengths: Colorado, Southern Rocky Mountains and Western North American vascular plants and cryptogams, worldwide arctic and alpine, Appalachia, Galapagos Lichens, Australia, New Guinea, Altai, Mexico and the Seville Flowers Bryophyte Collection.",
+            "institution_web_address": "https://www.colorado.edu/cumuseum/research-collections/botany-section-university-herbarium-colo",
+            "other_guids": [],
+            "logo_url": "https://lichenportal.org/cnalh/content/collicon/COLO.jpg",
+            "id": "http://lichenportal.org/portal/collections/misc/collprofiles.php?collid=41"
+          },
+          "datemodified": "2025-02-03T18:35:07.733121+00:00",
+          "name": "university of colorado, museum of natural history herbarium lichen collection"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_publisher": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 737,
+      "buckets": [
+        {
+          "key": "3b5899c7-f3af-45b7-b992-af5e98b39ecb",
+          "doc_count": 415
+        },
+        {
+          "key": "842a2bb5-d705-4d6c-8401-abf3ca28c05d",
+          "doc_count": 264
+        },
+        {
+          "key": "520dcbb3-f35a-424c-8778-6df11afc9f95",
+          "doc_count": 242
+        },
+        {
+          "key": "96fbcd9e-3c30-41be-865e-7c92fce1bb55",
+          "doc_count": 119
+        },
+        {
+          "key": "efd00b2c-5ade-4a90-a95a-3f9188fcfa71",
+          "doc_count": 71
+        },
+        {
+          "key": "42f2a0a4-5981-4874-88d5-9efb1e8d52c9",
+          "doc_count": 69
+        },
+        {
+          "key": "4e1beef9-d7c0-4ac0-87df-065bc5a55361",
+          "doc_count": 63
+        },
+        {
+          "key": "076c0ff6-65e9-48a5-8e4b-2447936f9a1c",
+          "doc_count": 56
+        },
+        {
+          "key": "e9c875f0-d9c9-426b-bdc8-0999eb1b6deb",
+          "doc_count": 45
+        },
+        {
+          "key": "ab5bdf3a-6283-41c7-ac16-9ba46381aa24",
+          "doc_count": 42
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,974 @@
+{
+  "timed_out": false,
+  "_shards": {
+    "total": 48,
+    "successful": 48,
+    "failed": 0
+  },
+  "hits": {
+    "total": 93672,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "0cc5f68e-ab46-49da-916f-1113790fad02",
+        "_score": 1,
+        "_routing": "ee5795af-d3b5-4264-ab0b-6b06367a278a",
+        "_parent": "ee5795af-d3b5-4264-ab0b-6b06367a278a",
+        "_source": {
+          "hasSpecimen": true,
+          "uuid": "0cc5f68e-ab46-49da-916f-1113790fad02",
+          "format": "image/jpeg",
+          "recordset": "1e054b9b-0193-4ff3-b623-9264cf982d4d",
+          "data": {
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:subtype": "Photograph",
+            "dc:type": "StillImage",
+            "dcterms:title": "SOC 15824",
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "ac:digitizationDate": "2014-04-21T16:05:37-0800",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "dc:format": "image/jpeg",
+            "coreid": "2245970",
+            "dcterms:identifier": "afe7b95a-0b69-4f91-8778-2f0c6071bcc3",
+            "xmpRights:Owner": "Southern Oregon University",
+            "dcterms:rights": "© 2024 Southern Oregon University",
+            "ac:metadataLanguage": "en",
+            "ac:taxonCoverage": "Sapindaceae",
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SOC15824.jpg",
+            "dcterms:modified": "2015-04-03T20:26:22-0800",
+            "dwc:scientificName": "Acer negundo",
+            "dcterms:creator": "Vera S. Gottlieb",
+            "ac:variant": "ac:Best Quality"
+          },
+          "dqs": -1.2727272727272727,
+          "modified": "2015-04-03T20:26:22-08:00",
+          "mediatype": "images",
+          "records": [
+            "ee5795af-d3b5-4264-ab0b-6b06367a278a"
+          ],
+          "etag": "8b94f372d359680f03e6b15a290dd937835c8a0c",
+          "flags": [
+            "dwc_taxonrank_added",
+            "gbif_reference_added",
+            "dwc_scientificnameauthorship_added",
+            "dwc_specificepithet_added",
+            "dwc_taxonomicstatus_added",
+            "dwc_datasetid_added",
+            "gbif_genericname_added",
+            "dwc_taxonid_added",
+            "dwc_phylum_added",
+            "dwc_multimedia_added",
+            "gbif_vernacularname_added",
+            "dwc_parentnameusageid_added",
+            "gbif_taxon_corrected",
+            "gbif_canonicalname_added",
+            "dwc_order_added",
+            "dwc_family_added",
+            "dwc_class_added",
+            "dwc_genus_added",
+            "dwc_kingdom_added"
+          ],
+          "indexData": {
+            "flag_dwc_taxonrank_added": true,
+            "xmpRights:WebStatement": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "idigbio:dateModified": "2024-05-14T22:27:52.891890",
+            "dc:type": "StillImage",
+            "idigbio:etag": "8b94f372d359680f03e6b15a290dd937835c8a0c",
+            "idigbio:uuid": "0cc5f68e-ab46-49da-916f-1113790fad02",
+            "gbif:canonicalname": "acer negundo",
+            "flag_gbif_reference_added": true,
+            "flag_dwc_scientificnameauthorship_added": true,
+            "idigbio:recordIds": [
+              "1e054b9b-0193-4ff3-b623-9264cf982d4d\\media\\afe7b95a-0b69-4f91-8778-2f0c6071bcc3"
+            ],
+            "flag_dwc_specificepithet_added": true,
+            "flag_dwc_taxonomicstatus_added": true,
+            "ac:metadataLanguage": "en",
+            "dcterms:creator": "Vera S. Gottlieb",
+            "flag_dwc_datasetid_added": true,
+            "idigbio:parent": "1e054b9b-0193-4ff3-b623-9264cf982d4d",
+            "ac:subtype": "Photograph",
+            "flag_gbif_genericname_added": true,
+            "dwc:multimedia": [
+              {
+                "dcterms:license": "public domain from united states department of agriculture",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acnegundo.jpg",
+                "coreid": "3189866",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/1/18/acnegundo.jpg",
+                "dcterms:source": "english wikipedia - species pages",
+                "dcterms:publisher": "wikimedia commons"
+              },
+              {
+                "dcterms:license": "creative commons attribution share alike 3.0 migrated",
+                "dcterms:title": "eschen-ahorn (acer negundo)",
+                "dcterms:references": "http://commons.wikimedia.org/wiki/file:acer_negundo.jpg",
+                "coreid": "3189866",
+                "dcterms:identifier": "http://upload.wikimedia.org/wikipedia/commons/8/82/acer_negundo.jpg",
+                "dcterms:source": "german wikipedia - species pages",
+                "dcterms:description": "deutsch: eschen-ahorn (acer negundo) polski: klon jesionolistny (acer negundo)",
+                "dcterms:creator": "agnieszka kwiecień - nova at pl.wikipedia",
+                "dcterms:publisher": "wikimedia commons"
+              }
+            ],
+            "ac:digitizationDate": "2014-04-21T16:05:37-0800",
+            "dwc:genus": "acer",
+            "dc:format": "image/jpeg",
+            "dwc:kingdom": "plantae",
+            "dwc:family": "sapindaceae",
+            "dwc:taxonomicstatus": "accepted",
+            "dwc:taxonrank": "species",
+            "idigbio:siblings": {
+              "record": [
+                "ee5795af-d3b5-4264-ab0b-6b06367a278a"
+              ]
+            },
+            "dwc:datasetid": "7ddf754f-d193-4cc9-b351-99906754a03b",
+            "flag_dwc_taxonid_added": true,
+            "xmpRights:UsageTerms": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "dwc:order": "sapindales",
+            "coreid": "2245970",
+            "dcterms:identifier": "afe7b95a-0b69-4f91-8778-2f0c6071bcc3",
+            "dwc:phylum": "tracheophyta",
+            "flag_dwc_phylum_added": true,
+            "gbif:genericname": "acer",
+            "flag_dwc_multimedia_added": true,
+            "flag_gbif_vernacularname_added": true,
+            "flag_dwc_parentnameusageid_added": true,
+            "flag_gbif_taxon_corrected": true,
+            "dwc:parentnameusageid": "3189834",
+            "dwc:class": "magnoliopsida",
+            "ac:variant": "ac:Best Quality",
+            "dwc:taxonid": "3189866",
+            "dwc:scientificnameauthorship": "l.",
+            "flag_gbif_canonicalname_added": true,
+            "dwc:specificepithet": "negundo",
+            "flag_dwc_order_added": true,
+            "dcterms:title": "SOC 15824",
+            "ac:licenseLogoURL": "https://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png",
+            "xmpRights:Owner": "Southern Oregon University",
+            "dcterms:rights": "© 2024 Southern Oregon University",
+            "flag_dwc_family_added": true,
+            "flag_dwc_class_added": true,
+            "ac:taxonCoverage": "Sapindaceae",
+            "flag_dwc_genus_added": true,
+            "ac:accessURI": "https://www.pnwherbaria.org/images/jpeg.php?Image=SOC15824.jpg",
+            "dcterms:modified": "2015-04-03T20:26:22-0800",
+            "dwc:scientificName": "Acer negundo",
+            "gbif:reference": [
+              {
+                "coreid": "3189866",
+                "dcterms:source": "taxa watermanagement the netherlands (twn)",
+                "dcterms:bibliographiccitation": "van der meijden, r. (2005)"
+              }
+            ],
+            "flag_dwc_kingdom_added": true,
+            "gbif:vernacularname": [
+              {
+                "coreid": "3189866",
+                "dcterms:language": "it",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "acero americano"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "ash-leaf maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "ashleaf maple"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "ash-leaved maple, box-elder",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "en"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "ash-leaved maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "sv",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "asklönn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "aulne-buis"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "box-elder, ash-leaved maple",
+                "coreid": "3189866",
+                "dcterms:source": "invasive alien species in belgium - harmonia database",
+                "dcterms:language": "en"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "boxelder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "box elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "boxelder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "box-elder maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "boxelder maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "california box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "california boxelder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à feuilles composées"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à feuilles de frêne"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable à giguère"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable argilière"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable négondo"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "erable negundo",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "fr"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "erable negundo",
+                "coreid": "3189866",
+                "dcterms:source": "invasive alien species in belgium - harmonia database",
+                "dcterms:language": "fr"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "érable négundo"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "catalogue of life",
+                "dwc:vernacularname": "eschen-ahorn"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "eschenahorn",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "de",
+                "dcterms:source": "german wikipedia - species pages",
+                "dwc:vernacularname": "eschen-ahorn"
+              },
+              {
+                "dwc:countrycode": "de",
+                "dwc:country": "germany",
+                "dwc:vernacularname": "eschen-ahorn",
+                "coreid": "3189866",
+                "dcterms:source": "taxon list of vascular plants from bavaria, germany compiled in the context of the bfl project",
+                "dcterms:language": "de"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "de",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "eschenahorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "de",
+                "dcterms:source": "the european nature information system (eunis)",
+                "dwc:vernacularname": "eschen-ahorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "af",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "essenblaarahorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "fu ye feng"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "af",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "kaliforniese esdoring"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "klen âsenelistnyj"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "korean peninsula flora",
+                "dwc:vernacularname": "네군도단풍"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "manitoba maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "manitoba maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "négondo"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "negundodanpung"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "fr",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "plaine à giguère"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "three-leaf maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "three-leaved maple"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "grin taxonomy",
+                "dwc:vernacularname": "tonerikoba-no-kaede"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "vederesdoorn",
+                "coreid": "3189866",
+                "dcterms:source": "belgian species list",
+                "dcterms:language": "nl"
+              },
+              {
+                "dwc:countrycode": "be",
+                "dwc:country": "belgium",
+                "dwc:vernacularname": "vederesdoorn",
+                "coreid": "3189866",
+                "dcterms:source": "invasive alien species in belgium - harmonia database",
+                "dcterms:language": "nl"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "nl",
+                "dcterms:source": "checklist dutch species catalog - nederlands soortenregister",
+                "dwc:vernacularname": "vederesdoorn"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:language": "en",
+                "dcterms:source": "database of vascular plants of canada (vascan)",
+                "dwc:vernacularname": "western box-elder"
+              },
+              {
+                "coreid": "3189866",
+                "dcterms:source": "integrated taxonomic information system (itis)",
+                "dwc:vernacularname": "western boxelder"
+              }
+            ]
+          },
+          "recordids": [
+            "1e054b9b-0193-4ff3-b623-9264cf982d4d\\media\\afe7b95a-0b69-4f91-8778-2f0c6071bcc3"
+          ],
+          "type": "stillimage",
+          "datemodified": "2024-05-14T22:27:52.891890+00:00",
+          "accessuri": "https://www.pnwherbaria.org/images/jpeg.php?Image=SOC15824.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "5b35c41c-b8e4-4861-b1a4-b12bfc6034a4",
+        "_score": 1,
+        "_routing": "8162bfad-0206-4754-a5dd-0f575275e995",
+        "_parent": "8162bfad-0206-4754-a5dd-0f575275e995",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "5b35c41c-b8e4-4861-b1a4-b12bfc6034a4",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "8162bfad-0206-4754-a5dd-0f575275e995"
+          ],
+          "etag": "bc5847574f6a8e9ab1942cb2f80c40c433544367",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "5b35c41c-b8e4-4861-b1a4-b12bfc6034a4",
+            "idigbio:etag": "bc5847574f6a8e9ab1942cb2f80c40c433544367",
+            "coreid": "urn:catalog:CAS:BOT-BC:330571",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "8162bfad-0206-4754-a5dd-0f575275e995"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:330571",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/c7/c0/c7c096c6-57b2-47b0-aa62-3959c38d937a.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "e9150480-4eae-4c57-af4e-942671169541",
+        "_score": 1,
+        "_routing": "491c7730-fc52-40fa-9ad4-7254507b15ab",
+        "_parent": "491c7730-fc52-40fa-9ad4-7254507b15ab",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "e9150480-4eae-4c57-af4e-942671169541",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "491c7730-fc52-40fa-9ad4-7254507b15ab"
+          ],
+          "etag": "bc00165c3ee9d3ebacb4a93954b4ee6d60cc8cab",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "e9150480-4eae-4c57-af4e-942671169541",
+            "idigbio:etag": "bc00165c3ee9d3ebacb4a93954b4ee6d60cc8cab",
+            "coreid": "urn:catalog:CAS:BOT-BC:330580",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "491c7730-fc52-40fa-9ad4-7254507b15ab"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:330580",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/e3/c7/e3c77046-4e19-43da-8237-878f31a85f16.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "c8305454-0b54-44da-8852-745e5c90b7ff",
+        "_score": 1,
+        "_routing": "a265be4a-514f-441d-93c4-5bfedebe4c6d",
+        "_parent": "a265be4a-514f-441d-93c4-5bfedebe4c6d",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "c8305454-0b54-44da-8852-745e5c90b7ff",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "a265be4a-514f-441d-93c4-5bfedebe4c6d"
+          ],
+          "etag": "48e218ce8806f874ce968066fbe3c263fa066098",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "c8305454-0b54-44da-8852-745e5c90b7ff",
+            "idigbio:etag": "48e218ce8806f874ce968066fbe3c263fa066098",
+            "coreid": "urn:catalog:CAS:BOT-BC:330613",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "a265be4a-514f-441d-93c4-5bfedebe4c6d"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:330613",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/45/6c/456c98b4-ea33-4780-b59a-83cb88ef3d8d.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "3fb0d2a7-b4bc-4a8e-99d3-28a8eee7b7a4",
+        "_score": 1,
+        "_routing": "37be3f4a-f8b1-49a6-8451-644e30236d6a",
+        "_parent": "37be3f4a-f8b1-49a6-8451-644e30236d6a",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "3fb0d2a7-b4bc-4a8e-99d3-28a8eee7b7a4",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "37be3f4a-f8b1-49a6-8451-644e30236d6a"
+          ],
+          "etag": "7e33b01807f026c895f95b5eb457d4ea19b70f06",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "3fb0d2a7-b4bc-4a8e-99d3-28a8eee7b7a4",
+            "idigbio:etag": "7e33b01807f026c895f95b5eb457d4ea19b70f06",
+            "coreid": "urn:catalog:CAS:BOT-BC:330698",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "37be3f4a-f8b1-49a6-8451-644e30236d6a"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:330698",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/8e/e8/8ee8bb49-ff97-4cd0-b976-208c05cc3c5e.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "b01747cc-1ea4-4ce1-8435-4ef34113115b",
+        "_score": 1,
+        "_routing": "ba81898c-c2ae-4bbb-bbee-3df9c54fb621",
+        "_parent": "ba81898c-c2ae-4bbb-bbee-3df9c54fb621",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "b01747cc-1ea4-4ce1-8435-4ef34113115b",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "ba81898c-c2ae-4bbb-bbee-3df9c54fb621"
+          ],
+          "etag": "f0f5680191f4f0841112458e3552cc232c37e397",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "b01747cc-1ea4-4ce1-8435-4ef34113115b",
+            "idigbio:etag": "f0f5680191f4f0841112458e3552cc232c37e397",
+            "coreid": "urn:catalog:CAS:BOT-BC:330978",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "ba81898c-c2ae-4bbb-bbee-3df9c54fb621"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:330978",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/88/64/8864621c-4c01-4471-9b8c-6f34ffbda9d3.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "4bffa9b9-8bc7-4a13-9e70-18e775e5291d",
+        "_score": 1,
+        "_routing": "36b3abef-9314-4530-ba57-e375a0c83bd5",
+        "_parent": "36b3abef-9314-4530-ba57-e375a0c83bd5",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "4bffa9b9-8bc7-4a13-9e70-18e775e5291d",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "36b3abef-9314-4530-ba57-e375a0c83bd5"
+          ],
+          "etag": "7718bac2bda6b3ecef51a2af9abce25f3d2ad40e",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "4bffa9b9-8bc7-4a13-9e70-18e775e5291d",
+            "idigbio:etag": "7718bac2bda6b3ecef51a2af9abce25f3d2ad40e",
+            "coreid": "urn:catalog:CAS:BOT-BC:331027",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "36b3abef-9314-4530-ba57-e375a0c83bd5"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331027",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/82/00/82005a61-c3a7-4e07-a6ba-bfdcb260dbc8.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "c6b2d90e-199e-47c7-9547-f610ce4bb616",
+        "_score": 1,
+        "_routing": "15d3190c-e45f-4002-b724-a8f882511351",
+        "_parent": "15d3190c-e45f-4002-b724-a8f882511351",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "c6b2d90e-199e-47c7-9547-f610ce4bb616",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "15d3190c-e45f-4002-b724-a8f882511351"
+          ],
+          "etag": "5a21b47e8af75d867e67ec1d6d320fb7c4ff2213",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "c6b2d90e-199e-47c7-9547-f610ce4bb616",
+            "idigbio:etag": "5a21b47e8af75d867e67ec1d6d320fb7c4ff2213",
+            "coreid": "urn:catalog:CAS:BOT-BC:331042",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "15d3190c-e45f-4002-b724-a8f882511351"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331042",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/9e/0b/9e0bee79-bd5d-43be-b5d8-3e673abf8c11.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "699ddc14-6a98-4dc1-b609-4390da2846c0",
+        "_score": 1,
+        "_routing": "9a4244dd-9f22-4c81-9be6-1a41f9050f04",
+        "_parent": "9a4244dd-9f22-4c81-9be6-1a41f9050f04",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "699ddc14-6a98-4dc1-b609-4390da2846c0",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "9a4244dd-9f22-4c81-9be6-1a41f9050f04"
+          ],
+          "etag": "2dafa50901c8ff78ddfbf4cee6de2f5f6aed9086",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "699ddc14-6a98-4dc1-b609-4390da2846c0",
+            "idigbio:etag": "2dafa50901c8ff78ddfbf4cee6de2f5f6aed9086",
+            "coreid": "urn:catalog:CAS:BOT-BC:331518",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "9a4244dd-9f22-4c81-9be6-1a41f9050f04"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331518",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/45/4e/454ea301-e347-4beb-b7bc-6c28ab7fc0e4.jpg"
+        }
+      },
+      {
+        "_index": "idigbio-2.10.25",
+        "_type": "mediarecords",
+        "_id": "d014a0cd-4a19-46ca-96cc-690789edfc13",
+        "_score": 1,
+        "_routing": "bbac4db4-299f-49d3-a6d6-35fd6fe0a164",
+        "_parent": "bbac4db4-299f-49d3-a6d6-35fd6fe0a164",
+        "_source": {
+          "licenselogourl": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+          "uuid": "d014a0cd-4a19-46ca-96cc-690789edfc13",
+          "rights": "CC0",
+          "recordset": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+          "dqs": 0.36363636363636365,
+          "hasSpecimen": true,
+          "records": [
+            "bbac4db4-299f-49d3-a6d6-35fd6fe0a164"
+          ],
+          "etag": "eab9ba7827bb7bfe23d55cc65da2936bde138e2b",
+          "indexData": {
+            "idigbio:parent": "26f7cbde-fbcb-4500-80a9-a99daa0ead9d",
+            "dcterms:type": "Still Image",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "idigbio:uuid": "d014a0cd-4a19-46ca-96cc-690789edfc13",
+            "idigbio:etag": "eab9ba7827bb7bfe23d55cc65da2936bde138e2b",
+            "coreid": "urn:catalog:CAS:BOT-BC:331533",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg",
+            "idigbio:recordIds": [
+              "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+            ],
+            "idigbio:dateModified": "2024-06-11T20:42:16.069772",
+            "idigbio:siblings": {
+              "record": [
+                "bbac4db4-299f-49d3-a6d6-35fd6fe0a164"
+              ]
+            }
+          },
+          "webstatement": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "recordids": [
+            "26f7cbde-fbcb-4500-80a9-a99daa0ead9d\\media\\http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+          ],
+          "data": {
+            "coreid": "urn:catalog:CAS:BOT-BC:331533",
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "dcterms:type": "Still Image",
+            "dcterms:identifier": "http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+          },
+          "datemodified": "2024-06-11T20:42:16.069772+00:00",
+          "accessuri": "http://ibss-images.calacademy.org:80/static/botany/originals/72/5d/725d0c32-9723-4603-ab40-d5ba6f8bcf7a.jpg"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "top_recordset": {
+      "doc_count_error_upper_bound": 140,
+      "sum_other_doc_count": 47797,
+      "buckets": [
+        {
+          "key": "fabcdc12-9d29-4bd2-912b-176e71818144",
+          "doc_count": 8445
+        },
+        {
+          "key": "7450a9e3-ef95-4f9e-8260-09b498d2c5e6",
+          "doc_count": 7352
+        },
+        {
+          "key": "36d35b23-113e-4633-90ec-19d265a3b5f6",
+          "doc_count": 7079
+        },
+        {
+          "key": "616857b7-f952-44ef-9b6f-576dc1e65b51",
+          "doc_count": 5950
+        },
+        {
+          "key": "a6eee223-cf3b-4079-8bb2-b77dad8cae9d",
+          "doc_count": 4953
+        },
+        {
+          "key": "4e3043a6-d48a-4a35-b5fb-f67d50cbc158",
+          "doc_count": 2889
+        },
+        {
+          "key": "65536dcd-7bb2-44e5-af3f-4a13f08e53d0",
+          "doc_count": 2785
+        },
+        {
+          "key": "beab5209-9628-4d4d-851e-2bc9bb1a0105",
+          "doc_count": 2350
+        },
+        {
+          "key": "e60301d9-9b40-483f-92de-065769b9d3dd",
+          "doc_count": 2140
+        },
+        {
+          "key": "70abba3e-5f2a-4276-87f3-261706e24453",
+          "doc_count": 1932
+        }
+      ]
+    }
+  }
+}

@@ -122,6 +122,14 @@ export async function date_hist_formatter(body) {
   return rb;
 }
 
+/** Body formatter for ClickHouse stats
+ * @param {string} body raw json body payload
+ * @returns {string} json body wrapped within dates object
+*/
+export function stats_ch_formatter(body) {
+  return { "dates": body };
+}
+
 export async function stats_hist_formatter(body, inverted) {
   var rb = null;
 

@@ -1,7 +1,9 @@
+/* eslint-disable no-negated-condition */
 import searchShim from "searchShim";
 import config from "config";
 import logger from "logging";
 import cache from "cache";
+
 export var recordsets = {};
 
 async function _loadAll() {

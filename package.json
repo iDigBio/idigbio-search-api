@@ -22,7 +22,7 @@
     "koa-proxy": "^0.8.0",
     "koa-router": "^7.0.1",
     "lodash": "^4.17.21",
-    "mapnik": "4.0.0",
+    "mapnik": "^4.5.9",
     "morgan": "^1.9.1",
     "ngeohash": "^0.6.0",
     "redis": "^3.1.2",
@@ -45,10 +45,10 @@
     "eslint-import-resolver-babel-module": "^3.0.0",
     "eslint-plugin-import": "^2.2.0",
     "jest": "^18.0.0",
+    "node-pre-gyp": "^0.6.39",
     "nodemon": "^1.11.0",
     "redis-mock": "^0.16.0",
-    "supertest": "^3.0.0",
-    "node-pre-gyp": "^0.6.39"
+    "supertest": "^3.0.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -80,6 +80,11 @@
   ],
   "bugs": {
     "url": "https://github.com/iDigBio/idigbio-search-api/issues"
+  },
+   "overrides": {
+    "sol-redis-pool": {
+      "redis": "^3.1.2"
+    }
   },
   "homepage": "https://github.com/iDigBio/idigbio-search-api#readme",
   "resolutions": {

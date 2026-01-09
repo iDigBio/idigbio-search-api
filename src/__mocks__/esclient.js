@@ -12,11 +12,11 @@ const esclient = require.requireActual('esclient').default;
 
 const MOCKDIR = '__tests__/mock';
 
-logger.info("Using mocks from %s", fs.realpathSync(MOCKDIR)); // eslint-disable-line no-sync
+logger.info("Using mocks from, %s", fs.realpathSync(MOCKDIR)); // eslint-disable-line no-sync
 
 function wrap(name) {
   const lookup = _.includes(name, '.') ? _.split(name, '.').slice(0, -1) : null;
-
+  
   return async function(...args) {
     // Verify parameter length for the hash normalisation I'm about to do.
     // Surely this is only used for testing, so bold assumptions are okay, yeah?
@@ -26,6 +26,16 @@ function wrap(name) {
       // Without _.omit(), a change in index name will cause entirely different
       // hashes, which would be incomparable.
     const filename = `${MOCKDIR}/${name}-${h}.json`;
+    logger.info("filename: ", filename);
+
+    fs.stat(filename, function(err, stat) {
+      if(err == null) {
+          logger.info("fstat check: file exists -- %s", filename);
+      } else if(err.code == 'ENOENT') {
+          logger.error("fstat check: file does not exist -- %s", filename, err);
+      } 
+    });
+
     const qstring = `${name}(${JSON.stringify(args)})`;
     try {
       const jp = JSON.parse(await fs.readFileAsync(filename));
@@ -38,6 +48,7 @@ function wrap(name) {
     const client = esclient(),
           fn = _.get(client, name),
           ctx = lookup ? _.get(client, lookup) : client;
+          
 
     const result = await fn.apply(ctx, args);
 

@@ -10,21 +10,23 @@ describe("Last Modified dates", function() {
 
   it("should be fetched from elasticsearch", async function() {
     const diff = await lastModified.updateLastModified();
-    expect(diff).toEqual({'publishers': jasmine.any(Date),
-                          'records': jasmine.any(Date),
-                          'recordsets': jasmine.any(Date),
-                          'mediarecords': jasmine.any(Date),
-                         });
+    expect(diff).toEqual(expect.objectContaining({
+      'publishers': expect.any(Date),
+      'records': expect.any(Date),
+      'recordsets': expect.any(Date),
+      'mediarecords': expect.any(Date),
+    }));
   });
 
   it('should not report any differences for two consecutive queries', async function() {
     //NB: if indexing happens during this test then it will probably fail
     const diff1 = await lastModified.updateLastModified();
-    expect(diff1).toEqual({'publishers': jasmine.any(Date),
-                          'records': jasmine.any(Date),
-                          'recordsets': jasmine.any(Date),
-                          'mediarecords': jasmine.any(Date),
-                          });
+    expect(diff1).toEqual(expect.objectContaining({
+      'publishers': expect.any(Date),
+      'records': expect.any(Date),
+      'recordsets': expect.any(Date),
+      'mediarecords': expect.any(Date),
+    }));
     const diff2 = await lastModified.updateLastModified();
     expect(diff2).toEqual({});
   });

@@ -8,6 +8,7 @@ import {checkTerms} from "lib/indexTerms";
 import {QueryParseError, TermNotFoundError} from "lib/exceptions";
 
 
+
 function existFilter(k) {
   return {
     "exists": {
