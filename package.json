@@ -21,7 +21,7 @@
     "koa-ctx-cache-control": "^1.0.0",
     "koa-proxy": "^0.8.0",
     "koa-router": "^7.0.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "mapnik": "4.0.0",
     "morgan": "^1.9.1",
     "ngeohash": "^0.6.0",
@@ -128,6 +128,11 @@
     "json-schema": "^0.4.0",
     "ansi-regex": "^5.0.1",
     "got": "^11.8.5",
-    "async": "^2.6.4"
+    "async": "^2.6.4",
+    "hoek": "^6.1.3",
+    "cryptiles": "^4.1.3",
+    "hawk": "^9.0.2",
+    "lodash": "^4.17.23",
+    "redis": "^3.1.2"
   }
 }
